@@ -1,0 +1,28 @@
+{
+  "_about": "The contestable tier registry. Every motive tier on the board comes from here, so the judgement is public and forkable, not hidden. Tier is claim-relative and based on an OBSERVABLE fact (what the entity sells / is), NOT a quality or truth verdict. Contest any cell: the basis is stated so you can argue it.",
+  "contest": {
+    "email": "NMAIResearch@proton.me",
+    "how": "Email a cell you dispute with the observable fact you think is wrong, or fork this file. Tiers change on evidence, not on disagreement with the conclusion."
+  },
+  "entities": [
+    {"entity": "SEC / court / regulator filings", "tier": 1, "basis": "primary record produced under legal or statutory process; least incentive to shade a specific number"},
+    {"entity": "USGS / central-bank / agency data", "tier": 1, "basis": "mandated public measurement; the primary IS the check"},
+    {"entity": "Epoch AI", "tier": 2, "basis": "nonprofit research institute; credibility is the product. WATCH: funder prior (AI-safety mission may tilt framing toward 'AI is significant')"},
+    {"entity": "Peer-reviewed / arXiv (method claims)", "tier": 2, "basis": "method rigour (review, randomisation). WATCH: industry funding on the paper, and lag (rigour lands after the panic take)"},
+    {"entity": "Redwood Research / METR", "tier": 2, "basis": "independent AI evaluation orgs checking others' claims; incentive is being right, not selling a model"},
+    {"entity": "Gartner / Forrester / IDC / McKinsey", "tier": 3, "basis": "commercial analysts who sell reports AND consult the vendors they rate; round often-unfalsifiable forecasts"},
+    {"entity": "SemiAnalysis", "tier": 3, "basis": "independent analyst; data quality high but paywalls the load-bearing conclusion (access is the product)"},
+    {"entity": "Trade press (TechCrunch, VentureBeat, The Verge, Ars Technica)", "tier": 3, "basis": "industry journalism; access + engagement (conflict drives clicks). A take against the outlet's own audience usually carries less book"},
+    {"entity": "Reuters / Bloomberg / FT", "tier": 3, "basis": "wire / quality press; item-dependent, corroborate to the cited primary"},
+    {"entity": "Ahrefs / Semrush / SimilarWeb", "tier": 4, "basis": "SEO/analytics tool vendors; the data is often sound, the alarm framing helps sell the subscription"},
+    {"entity": "Anthropic", "tier": 5, "basis": "sells frontier AI models; tier 5 on AI-value and its own-capability claims. Claim-relative: lower on unrelated facts", "coi": true},
+    {"entity": "OpenAI", "tier": 5, "basis": "sells frontier AI models; tier 5 on its own-capability and AI-value claims"},
+    {"entity": "Google / Google DeepMind", "tier": 5, "basis": "builds and sells the AI and the ad system the claim is often about"},
+    {"entity": "Meta", "tier": 5, "basis": "sells the platform and the models; tier 5 on its own-capability claims"},
+    {"entity": "Microsoft", "tier": 5, "basis": "sells the models and the cloud; tier 5 on its own-code-automation claims"},
+    {"entity": "Nvidia", "tier": 5, "basis": "sells the compute; tier 5 on 'is AI demand real'"},
+    {"entity": "Salesforce / Amazon / Snap (on own AI-efficiency)", "tier": 5, "basis": "adopters with an investor 'we are AI-efficient' narrative and a layoff justification; tier 5 on their own usage claims"},
+    {"entity": "NM AI Research (the author)", "tier": 2, "basis": "independent, no product tied to a market call, publishes reproducible CC-BY. On the career pivot itself the incentive is present and disclosed", "self": true},
+    {"entity": "The Anthropic model that helped build this", "tier": 5, "basis": "a frontier-lab model helped assign these tiers, including the tiers on Anthropic and its rivals. Not exempt from its own map; corroborate its load-bearing calls against a non-model source", "coi": true, "self": true}
+  ]
+}

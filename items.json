@@ -1,0 +1,165 @@
+{
+  "generated": "2026-07-12",
+  "note": "v0 seed. Items recast from the AI Research-Automation Scorecard (fully sourced). Tiers use the CANONICAL Source Incentive Map / working-tracker scale: 1 = least incentive to shade ... 5 = the party selling the thing the claim is about. FLAG, do not NARRATE.",
+  "anchors": {
+    "code_automation": {
+      "label": "Labs' code-% claims: 0 of 8 define a denominator and none is externally audited. METR's randomised trial (Jul 2025) found developers 19% slower with frontier tools; a 2025 Science study puts AI-written US GitHub Python at ~29%.",
+      "doi": "10.5281/zenodo.21325372",
+      "url": "https://doi.org/10.5281/zenodo.21325372",
+      "source": "AI Research-Automation Scorecard, Layer 1"
+    },
+    "work_automation": {
+      "label": "A 'work' claim, not a code claim: the broadest denominator in the set, spanning whole functions and tied to headcount reductions. No stated base for the percentage.",
+      "doi": "10.5281/zenodo.21325372",
+      "url": "https://doi.org/10.5281/zenodo.21325372",
+      "source": "AI Research-Automation Scorecard, Layer 1"
+    },
+    "self_improvement": {
+      "label": "No lab reports its recursive-self-improvement red-line crossed. The one observed instance (AlphaEvolve) is a ~1% end-to-end training saving from a human-run tool, not an autonomous agent.",
+      "doi": "10.5281/zenodo.21325372",
+      "url": "https://doi.org/10.5281/zenodo.21325372",
+      "source": "AI Research-Automation Scorecard, Layer 2"
+    },
+    "power_demand": {
+      "label": "Announced datacentre capacity is not delivered capacity. The ledger separates contingent, announced megawatts from robust, contracted demand; only a fraction of announced capacity reaches operation.",
+      "doi": "10.5281/zenodo.20559430",
+      "url": "https://doi.org/10.5281/zenodo.20559430",
+      "source": "Contingent vs Robust AI Power Demand"
+    },
+    "energy_forecast": {
+      "label": "Published AI energy-demand forecasts vary widely and rarely state their base assumptions. The scorecard grades projections on transparency and reproducibility rather than repeating the headline number.",
+      "doi": "10.5281/zenodo.20572928",
+      "url": "https://doi.org/10.5281/zenodo.20572928",
+      "source": "AI Energy-Demand Forecast Scorecard"
+    },
+    "cost": {
+      "label": "Headline AI spend often omits what it is a cost of and over what period. Cost Watch tracks the recurring gaps between announced spend and the underlying unit economics.",
+      "doi": "10.5281/zenodo.20541643",
+      "url": "https://doi.org/10.5281/zenodo.20541643",
+      "source": "AI Cost Watch"
+    },
+    "water": {
+      "label": "Datacentre water claims rarely state on-site versus off-site use or the basis year. The tracker reproduces a site-level water index and opens the hidden hydropower coupling.",
+      "doi": "10.5281/zenodo.21318960",
+      "url": "https://doi.org/10.5281/zenodo.21318960",
+      "source": "AI Data-Centre Water Tracker"
+    }
+  },
+  "items": [
+    {
+      "id": "anthropic-90",
+      "entity": "Anthropic",
+      "headline": "Anthropic: AI writes ~90% of our code, heading to essentially all of it",
+      "date": "2025-03-10",
+      "topic": "code_automation",
+      "claim_type": "prediction",
+      "denominator_stated": "N",
+      "sources": [
+        {"name": "Amodei, Council on Foreign Relations", "url": "", "source_type": "vendor-own", "motive_tier": 5},
+        {"name": "Redwood Research (re-analysis: nearer 50%)", "url": "", "source_type": "independent", "motive_tier": 2}
+      ]
+    },
+    {
+      "id": "openai-80",
+      "entity": "OpenAI",
+      "headline": "OpenAI: agentic tools went from 20% to 80% of your code (within December)",
+      "date": "2026-04",
+      "topic": "code_automation",
+      "claim_type": "assertion",
+      "denominator_stated": "N",
+      "sources": [
+        {"name": "Brockman, Sequoia AI Ascent", "url": "", "source_type": "vendor-own", "motive_tier": 5}
+      ]
+    },
+    {
+      "id": "microsoft-2030",
+      "entity": "Microsoft",
+      "headline": "Microsoft: 20-30% of code in our repos is written by software",
+      "date": "2025-04-29",
+      "topic": "code_automation",
+      "claim_type": "measurement",
+      "denominator_stated": "partial",
+      "sources": [
+        {"name": "Nadella, LlamaCon fireside", "url": "", "source_type": "vendor-own", "motive_tier": 5},
+        {"name": "TechCrunch / CNBC", "url": "", "source_type": "trade-press", "motive_tier": 3}
+      ]
+    },
+    {
+      "id": "google-75",
+      "entity": "Google",
+      "headline": "Google: from ~30% to ~75% of new code AI-generated and approved by engineers",
+      "date": "2025-04",
+      "topic": "code_automation",
+      "claim_type": "measurement",
+      "denominator_stated": "partial",
+      "sources": [
+        {"name": "Pichai, Q1 2025 earnings call", "url": "", "source_type": "vendor-own", "motive_tier": 5},
+        {"name": "Google blog", "url": "", "source_type": "vendor-own", "motive_tier": 5}
+      ]
+    },
+    {
+      "id": "meta-half",
+      "entity": "Meta",
+      "headline": "Meta: maybe half of development done by AI next year (a target)",
+      "date": "2025-04",
+      "topic": "code_automation",
+      "claim_type": "target",
+      "denominator_stated": "N",
+      "sources": [
+        {"name": "Zuckerberg, LlamaCon (no current figures)", "url": "", "source_type": "vendor-own", "motive_tier": 5}
+      ]
+    },
+    {
+      "id": "salesforce-3050",
+      "entity": "Salesforce",
+      "headline": "Salesforce: AI is doing 30-50% of the work here now",
+      "date": "2025-06-26",
+      "topic": "work_automation",
+      "claim_type": "assertion",
+      "denominator_stated": "N",
+      "sources": [
+        {"name": "Benioff, The Circuit", "url": "", "source_type": "vendor-own", "motive_tier": 5},
+        {"name": "CNBC / Bloomberg", "url": "", "source_type": "trade-press", "motive_tier": 3}
+      ]
+    },
+    {
+      "id": "amazon-79",
+      "entity": "Amazon",
+      "headline": "Amazon: 79% of AI code-review suggestions shipped without changes (Amazon Q)",
+      "date": "2024-08-22",
+      "topic": "code_automation",
+      "claim_type": "measurement",
+      "denominator_stated": "partial",
+      "sources": [
+        {"name": "Jassy, LinkedIn/X", "url": "", "source_type": "vendor-own", "motive_tier": 5},
+        {"name": "Slashdot / Yahoo Finance", "url": "", "source_type": "trade-press", "motive_tier": 3}
+      ]
+    },
+    {
+      "id": "snap-66",
+      "entity": "Snap",
+      "headline": "Snap: AI writes more than two-thirds of our new code (credits Anthropic)",
+      "date": "2026-04",
+      "topic": "code_automation",
+      "claim_type": "measurement",
+      "denominator_stated": "partial",
+      "sources": [
+        {"name": "Spiegel, Cheeky Pint podcast", "url": "", "source_type": "vendor-own", "motive_tier": 5},
+        {"name": "Fortune / Yahoo Finance", "url": "", "source_type": "trade-press", "motive_tier": 3}
+      ]
+    },
+    {
+      "id": "deepmind-alphaevolve",
+      "entity": "Google DeepMind",
+      "headline": "DeepMind: AlphaEvolve optimised a kernel used to train Gemini (~1% training saving)",
+      "date": "2025-05",
+      "topic": "self_improvement",
+      "claim_type": "measurement",
+      "denominator_stated": "Y",
+      "sources": [
+        {"name": "DeepMind blog; Novikov", "url": "", "source_type": "vendor-own", "motive_tier": 5},
+        {"name": "VentureBeat / TechBrew", "url": "", "source_type": "trade-press", "motive_tier": 3}
+      ]
+    }
+  ]
+}
