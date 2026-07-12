@@ -60,6 +60,14 @@ TOPIC_KEYWORDS = [
 ]
 
 
+TOPIC_LABELS = {
+    "code_automation": "Code automation", "work_automation": "Work automation",
+    "self_improvement": "Self-improvement", "water": "Water",
+    "power_demand": "Power demand", "energy_forecast": "Energy forecast",
+    "cost": "Cost / spend", "": "Untagged",
+}
+
+
 def tag_topic(headline):
     """Return the first topic whose keyword matches the headline, else '' (no anchor)."""
     hay = " " + (headline or "").lower() + " "
@@ -96,13 +104,13 @@ def item_card(it, anchors, plain=False):
         t = int(s["motive_tier"])
         tiers[t] = tiers.get(t, 0) + 1
         if plain:  # motive tiering off: neutral chip, no tier colour or tooltip
-            chips.append(f'<span style="display:inline-block;font-size:12px;padding:2px 8px;'
-                         f'margin:2px 4px 2px 0;border-radius:10px;color:{BODY};'
+            chips.append(f'<span class="tierchip" style="display:inline-block;font-size:12px;'
+                         f'padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:{BODY};'
                          f'background:#edf2f7;border:1px solid {LINE}">{esc(s["name"])}</span>')
             continue
         col = TIER[t][0]
-        chips.append(f'<span style="display:inline-block;font-size:12px;padding:2px 8px;'
-                     f'margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:{col}" '
+        chips.append(f'<span class="tierchip" style="display:inline-block;font-size:12px;'
+                     f'padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:{col}" '
                      f'title="tier {t}: {esc(TIER[t][1])}">{esc(s["name"])}</span>')
     d = it["denominator_stated"].strip().lower()
     dcol, dlabel = DENOM.get(d, DENOM["n"])
@@ -137,13 +145,19 @@ def item_card(it, anchors, plain=False):
             f'<strong style="color:{NAVY}">{head}</strong> {esc(a["label"])} '
             f'<a href="{esc(a["url"])}" style="color:{NAVY}">'
             f'{esc(a.get("source",""))} (DOI)</a></div>')
+    # data-* for client-side search + filters (used by the sidebar JS)
+    srcnames = " ".join(s.get("name", "") for s in it["sources"])
+    blob = f'{it["entity"]} {it["headline"]} {srcnames}'.lower()
+    tierlist = " ".join(str(x) for x in sorted(tiers))
+    data = (f'class="card" data-search="{esc(blob)}" data-topic="{esc(it.get("topic",""))}" '
+            f'data-tiers="{esc(tierlist)}"')
     return f"""
-    <article style="border:1px solid {LINE};border-radius:8px;padding:14px 16px;margin:0 0 14px">
+    <article {data} style="border:1px solid {LINE};border-radius:8px;padding:14px 16px;margin:0 0 14px">
       <div style="font-size:12px;color:{SLATE};margin-bottom:4px">
         {esc(it["entity"])} &middot; {esc(it["date"])}
       </div>
       <div style="font-size:16px;font-weight:600;color:{NAVY};line-height:1.35">{esc(it["headline"])}</div>
-      {'' if plain else f'<div style="margin:10px 0 6px">{bar(tiers)}</div>'}
+      {'' if plain else f'<div class="motivebar" style="margin:10px 0 6px">{bar(tiers)}</div>'}
       <div style="margin:10px 0 6px">{''.join(chips)}</div>
       <div style="font-size:12px">
         <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
@@ -253,8 +267,10 @@ def main():
             kind = "Dataset" if s.get("kind") == "dataset" else "Paper"
             meta = " &middot; ".join(x for x in [esc(s.get("venue","")), esc(s.get("authors","")),
                                                  esc(s.get("date",""))] if x)
+            sblob = f'{s.get("title","")} {s.get("authors","")} {s.get("venue","")}'.lower()
             rows.append(
-                f'<div style="padding:8px 0;border-bottom:1px solid {LINE}">'
+                f'<div class="scholarrow" data-search="{esc(sblob)}" '
+                f'style="padding:8px 0;border-bottom:1px solid {LINE}">'
                 f'<span style="display:inline-block;font-size:11px;padding:1px 7px;border-radius:4px;'
                 f'color:#fff;background:{TIER[2][0]};margin-right:6px">{kind}</span>'
                 f'<a href="{esc(s.get("url",""))}" style="color:{NAVY};font-weight:600;'
@@ -311,36 +327,121 @@ def main():
         f'<th style="text-align:right;padding:4px 10px;color:{SLATE}">Items</th></tr></thead>'
         f'<tbody>{movers}</tbody></table></div>')
 
+    # ---- sidebar controls: search + topic/tier filters + live tier toggle ----
+    topic_counts, tiers_present = {}, set()
+    for it in items:
+        tp = it.get("topic", "")
+        topic_counts[tp] = topic_counts.get(tp, 0) + 1
+        for s in it["sources"]:
+            tiers_present.add(int(s["motive_tier"]))
+    topic_boxes = "".join(
+        f'<label><input type="checkbox" class="f-topic" value="{esc(k)}" checked> '
+        f'{esc(TOPIC_LABELS.get(k, k or "Untagged"))} '
+        f'<span style="color:{SLATE}">({topic_counts[k]})</span></label>'
+        for k in TOPIC_LABELS if k in topic_counts)
+    tier_boxes = "".join(
+        f'<label><input type="checkbox" class="f-tier" value="{t}" checked> '
+        f'<span style="display:inline-block;width:10px;height:10px;border-radius:2px;'
+        f'background:{TIER[t][0]};margin-right:4px"></span>Tier {t}</label>'
+        for t in sorted(tiers_present))
+    btn_label = "Show motive tiers" if plain else "Hide motive tiers"
+    sidebar_html = (
+        f'<aside class="side">'
+        f'<input id="q" class="search" type="search" placeholder="Search feed and papers...">'
+        f'<div class="fgroup"><h4>Topics</h4>{topic_boxes}</div>'
+        f'<div class="fgroup tierui"><h4>Motive tier</h4>{tier_boxes}</div>'
+        f'<button id="tiertoggle" class="tierbtn">{btn_label}</button>'
+        f'<div id="count" class="count"></div></aside>')
+
+    style_block = f"""<style>
+  body{{margin:0;background:{ALT};color:{BODY};font-family:Arial,Helvetica,sans-serif;line-height:1.5}}
+  .wrap{{max-width:1040px;margin:0 auto;padding:28px 20px 60px}}
+  .layout{{display:flex;gap:24px;align-items:flex-start}}
+  .side{{flex:0 0 210px;position:sticky;top:16px}}
+  .main{{flex:1;min-width:0}}
+  .search{{width:100%;padding:8px 10px;border:1px solid {LINE};border-radius:6px;font-size:14px;margin-bottom:16px}}
+  .fgroup{{margin-bottom:16px;font-size:13px}}
+  .fgroup h4{{margin:0 0 6px;color:{NAVY};font-size:11px;text-transform:uppercase;letter-spacing:.05em}}
+  .fgroup label{{display:block;margin:4px 0;cursor:pointer;color:{BODY}}}
+  .tierbtn{{width:100%;padding:9px;border:1px solid {NAVY};background:#fff;color:{NAVY};border-radius:6px;cursor:pointer;font-size:13px}}
+  .tierbtn:hover{{background:{ALT}}}
+  .count{{font-size:12px;color:{SLATE};margin-top:12px}}
+  body.plainmode .tierui{{display:none!important}}
+  body.plainmode .motivebar{{display:none!important}}
+  body.plainmode .tierchip{{background:#edf2f7!important;color:{BODY}!important;border:1px solid {LINE}!important}}
+  @media(max-width:720px){{.layout{{flex-direction:column}}.side{{position:static;flex:1 1 auto;width:100%}}}}
+</style>"""
+
+    script_block = """<script>
+(function(){
+  var q=document.getElementById('q');
+  var tb=[].slice.call(document.querySelectorAll('.f-topic'));
+  var tr=[].slice.call(document.querySelectorAll('.f-tier'));
+  var cards=[].slice.call(document.querySelectorAll('.card'));
+  var sch=[].slice.call(document.querySelectorAll('.scholarrow'));
+  var cnt=document.getElementById('count');
+  function vals(a){return a.filter(function(b){return b.checked}).map(function(b){return b.value})}
+  function apply(){
+    var term=(q.value||'').toLowerCase().trim();
+    var tp=vals(tb), ti=vals(tr), shown=0;
+    cards.forEach(function(c){
+      var okS=!term||(c.getAttribute('data-search')||'').indexOf(term)>-1;
+      var okT=tp.indexOf(c.getAttribute('data-topic')||'')>-1;
+      var cts=(c.getAttribute('data-tiers')||'').split(' ').filter(Boolean);
+      var okTi=cts.some(function(x){return ti.indexOf(x)>-1});
+      var v=okS&&okT&&okTi;
+      c.style.display=v?'':'none'; if(v)shown++;
+    });
+    sch.forEach(function(e){
+      var okS=!term||(e.getAttribute('data-search')||'').indexOf(term)>-1;
+      e.style.display=okS?'':'none';
+    });
+    if(cnt)cnt.textContent=shown+' of '+cards.length+' items';
+  }
+  q.addEventListener('input',apply);
+  tb.concat(tr).forEach(function(b){b.addEventListener('change',apply)});
+  var tt=document.getElementById('tiertoggle');
+  tt.addEventListener('click',function(){
+    var off=document.body.classList.toggle('plainmode');
+    tt.textContent=off?'Show motive tiers':'Hide motive tiers';
+  });
+  apply();
+})();
+</script>"""
+
     doc = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AI News Reality Board</title></head>
-<body style="margin:0;background:{ALT};color:{BODY};
- font-family:Arial,Helvetica,sans-serif;line-height:1.5">
-<div style="max-width:820px;margin:0 auto;padding:28px 20px 60px">
+<title>AI News Reality Board</title>{style_block}</head>
+<body class="{'plainmode' if plain else ''}">
+<div class="wrap">
   <h1 style="color:{NAVY};margin:0 0 4px;font-size:26px">AI News Reality Board</h1>
-  <div style="color:{SLATE};font-size:14px;margin-bottom:20px">
+  <div style="color:{SLATE};font-size:14px;margin-bottom:20px;max-width:760px">
     AI news, sorted by incentive rather than by political lean. Every claim is tagged by who
     is telling you and what they gain if you believe it, flagged for whether it states a
     denominator, and anchored to a published base rate. It flags; it does not narrate, so the
     reader draws the conclusion. Generated {esc(data.get("generated",""))}.
   </div>
-  {plain_note}
-  {legend_html}
-  {neutrality_html}
-  {tiermap_html}
-  {sourcemix_html}
-  {scholar_html}
-  {cards}
-  <div style="font-size:12px;color:{SLATE};margin-top:24px;border-top:1px solid {LINE};padding-top:14px">
-    Method: source type and motive tier are assigned from a curated entity map; denominator
-    and claim type are the announced-vs-delivered lens; the reality anchor links to a published
-    base rate when the topic matches. Feed selection is editorial and disclosed. This surfaces
-    the structural weakness of a claim; it does not adjudicate truth.<br><br>
-    Conflict of interest: the maker of this board is an independent researcher assisted by an
-    Anthropic model. Anthropic appears here as a subject and is tagged the same way as every
-    other entity. Independent analysis, not investment advice.
+  <div class="layout">
+    {sidebar_html}
+    <main class="main">
+      {plain_note}
+      <div class="tierui">{legend_html}{neutrality_html}{tiermap_html}{sourcemix_html}</div>
+      {scholar_html}
+      {cards}
+      <div style="font-size:12px;color:{SLATE};margin-top:24px;border-top:1px solid {LINE};padding-top:14px">
+        Method: source type and motive tier are assigned from a curated entity map; denominator
+        and claim type are the announced-vs-delivered lens; the reality anchor links to a published
+        base rate when the topic matches. Feed selection is editorial and disclosed. This surfaces
+        the structural weakness of a claim; it does not adjudicate truth.<br><br>
+        Conflict of interest: the maker of this board is an independent researcher assisted by an
+        Anthropic model. Anthropic appears here as a subject and is tagged the same way as every
+        other entity. Independent analysis, not investment advice.
+      </div>
+    </main>
   </div>
-</div></body></html>"""
+</div>
+{script_block}
+</body></html>"""
     open(OUT, "w", encoding="utf-8").write(doc)
     mode = "plain (motive tier OFF)" if plain else "motive-tiered"
     print(f"written: {OUT}  ({len(items)} items, {len(entity_counts)} entities, {mode})")
