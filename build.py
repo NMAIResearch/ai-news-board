@@ -226,11 +226,10 @@ def gov_conflict_panel(gc):
         f'<td style="padding:4px 10px;border-bottom:1px solid {LINE};font-size:12px;color:{SLATE}">{esc(r["layer"])}</td></tr>'
         for r in gc.get("roster", []))
     sep = "".join(f'<li style="margin:2px 0">{esc(s)}</li>' for s in gc.get("separate", []))
-    amber = TIER[5][0]
     return (
-        f'<details class="govconflict" style="border:1px solid {LINE};border-left:4px solid {amber};'
-        f'border-radius:8px;padding:12px 16px;margin:0 0 18px;background:#fffaf0">'
-        f'<summary style="font-weight:600;color:{amber};cursor:pointer">{esc(gc.get("title",""))}</summary>'
+        f'<details class="govconflict" style="border:1px solid {LINE};'
+        f'border-radius:8px;padding:12px 16px;margin:0 0 18px;background:#fff">'
+        f'<summary style="font-weight:600;color:{NAVY};cursor:pointer">{esc(gc.get("title",""))}</summary>'
         f'<div style="font-size:13px;color:{BODY};margin-top:10px">{esc(gc.get("intro",""))}</div>'
         f'<div style="font-size:13px;margin:10px 0">{hats}</div>'
         f'<div style="font-size:12px;color:{SLATE};margin:6px 0 8px">{esc(gc.get("roster_note",""))}</div>'
