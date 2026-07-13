@@ -28,13 +28,13 @@
     reader draws the conclusion. Generated 2026-07-12.
   </div>
   <div class="layout">
-    <aside class="side"><input id="q" class="search" type="search" placeholder="Search feed and papers..."><div class="fgroup"><h4>Topics</h4><label><input type="checkbox" class="f-topic" value="code_automation" checked> Code automation <span style="color:#4a5568">(9)</span></label><label><input type="checkbox" class="f-topic" value="work_automation" checked> Work automation <span style="color:#4a5568">(1)</span></label><label><input type="checkbox" class="f-topic" value="self_improvement" checked> Self-improvement <span style="color:#4a5568">(1)</span></label><label><input type="checkbox" class="f-topic" value="" checked> Untagged <span style="color:#4a5568">(34)</span></label></div><div class="fgroup tierui"><h4>Motive tier</h4><label><input type="checkbox" class="f-tier" value="2" checked> <span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#6ba368;margin-right:4px"></span>Tier 2</label><label><input type="checkbox" class="f-tier" value="3" checked> <span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#c7a53b;margin-right:4px"></span>Tier 3</label><label><input type="checkbox" class="f-tier" value="5" checked> <span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#b23b2e;margin-right:4px"></span>Tier 5</label></div><button id="tiertoggle" class="tierbtn">Hide motive tiers</button><div id="count" class="count"></div></aside>
+    <aside class="side"><input id="q" class="search" type="search" placeholder="Search feed and papers..."><div class="fgroup"><h4>Topics</h4><label><input type="checkbox" class="f-topic" value="code_automation" checked> Code automation <span style="color:#4a5568">(9)</span></label><label><input type="checkbox" class="f-topic" value="work_automation" checked> Work automation <span style="color:#4a5568">(2)</span></label><label><input type="checkbox" class="f-topic" value="self_improvement" checked> Self-improvement <span style="color:#4a5568">(1)</span></label><label><input type="checkbox" class="f-topic" value="power_demand" checked> Power demand <span style="color:#4a5568">(1)</span></label><label><input type="checkbox" class="f-topic" value="" checked> Untagged <span style="color:#4a5568">(32)</span></label></div><div class="fgroup tierui"><h4>Motive tier</h4><label><input type="checkbox" class="f-tier" value="2" checked> <span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#6ba368;margin-right:4px"></span>Tier 2</label><label><input type="checkbox" class="f-tier" value="3" checked> <span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#c7a53b;margin-right:4px"></span>Tier 3</label><label><input type="checkbox" class="f-tier" value="5" checked> <span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#b23b2e;margin-right:4px"></span>Tier 5</label></div><div class="fgroup"><label><input type="checkbox" id="conflictonly"> Disclosed conflict only</label></div><button id="tiertoggle" class="tierbtn">Hide motive tiers</button><div id="count" class="count"></div></aside>
     <main class="main">
       
-      <div class="tierui"><div style="border:1px solid #e2e8f0;border-radius:8px;padding:12px 14px;margin:0 0 18px;background:#fff"><div style="font-weight:600;color:#1a365d;margin-bottom:6px">Motive key (who benefits if the claim is true)</div><div style="display:flex;align-items:center;font-size:12px;color:#2d3748;margin:2px 0"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#2f7d4f;margin-right:8px"></span>Tier 1: Primary record / regulator / adversarial process (least incentive)</div><div style="display:flex;align-items:center;font-size:12px;color:#2d3748;margin:2px 0"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#6ba368;margin-right:8px"></span>Tier 2: Research institute or academia (credibility-aligned)</div><div style="display:flex;align-items:center;font-size:12px;color:#2d3748;margin:2px 0"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#c7a53b;margin-right:8px"></span>Tier 3: Analyst house or trade press (sells reports, access or clicks)</div><div style="display:flex;align-items:center;font-size:12px;color:#2d3748;margin:2px 0"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#cc7a33;margin-right:8px"></span>Tier 4: Tool or data vendor (product benefits from the framing)</div><div style="display:flex;align-items:center;font-size:12px;color:#2d3748;margin:2px 0"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#b23b2e;margin-right:8px"></span>Tier 5: Party selling the thing the claim is about (own topic)</div><div style="font-size:11px;color:#4a5568;margin-top:8px">Colour is incentive distance, not trust. A tier-5 source can be entirely correct; the tier says only where an independent second source is worth the effort.</div></div><section style="border:1px solid #e2e8f0;border-radius:8px;padding:12px 16px;margin:0 0 18px;background:#f7fafc"><div style="font-weight:600;color:#1a365d;margin-bottom:4px">How to read this, and where it is not neutral</div><ul style="margin:4px 0 0 18px;padding:0;font-size:13px;color:#2d3748"><li style="margin:3px 0">Tier is claim-relative and based on an observable fact (what an entity sells or is), not a truth or quality verdict.</li><li style="margin:3px 0">Colour is incentive distance, not trust: a tier-5 source can be entirely correct. The tier only says where an independent second source is worth the effort.</li><li style="margin:3px 0">One curator sets these tiers (assisted by an AI model), unlike aggregators that average several rater organisations. So every cell is published with its basis and is open to challenge.</li><li style="margin:3px 0">The reality anchor only covers topics this portfolio addresses, so claims near that work get more scrutiny than others. Most items carry no anchor, which is honest.</li></ul><div style="font-size:12px;color:#4a5568;margin-top:8px">Conflict of interest: a frontier-lab (Anthropic) model helped assign these tiers, including the tiers on Anthropic and its rivals. It is tiered in its own map and not exempt.</div></section><details style="border:1px solid #e2e8f0;border-radius:8px;padding:10px 14px;margin:0 0 18px;background:#fff"><summary style="font-weight:600;color:#1a365d;cursor:pointer">Tier map: every tier with its basis (contest any cell)</summary><div style="font-size:12px;color:#4a5568;margin:6px 0 8px">Contest any cell: email <a href="mailto:NMAIResearch@proton.me" style="color:#1a365d">NMAIResearch@proton.me</a> or fork <code>tier_map.json</code>. Email a cell you dispute with the observable fact you think is wrong, or fork this file. Tiers change on evidence, not on disagreement with the conclusion.</div><table style="border-collapse:collapse;width:100%;font-size:13px"><thead><tr><th style="text-align:left;padding:4px 10px;color:#4a5568">Entity</th><th style="padding:4px 10px;color:#4a5568">Tier</th><th style="text-align:left;padding:4px 10px;color:#4a5568">Observable basis</th></tr></thead><tbody><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#2f7d4f;margin-right:6px"></span>SEC / court / regulator filings</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">1</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">primary record produced under legal or statutory process; least incentive to shade a specific number</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#2f7d4f;margin-right:6px"></span>USGS / central-bank / agency data</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">1</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">mandated public measurement; the primary IS the check</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#6ba368;margin-right:6px"></span>Epoch AI</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">2</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">nonprofit research institute; credibility is the product. WATCH: funder prior (AI-safety mission may tilt framing toward &#x27;AI is significant&#x27;)</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#6ba368;margin-right:6px"></span>Peer-reviewed / arXiv (method claims)</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">2</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">method rigour (review, randomisation). WATCH: industry funding on the paper, and lag (rigour lands after the panic take)</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#6ba368;margin-right:6px"></span>Redwood Research / METR</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">2</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">independent AI evaluation orgs checking others&#x27; claims; incentive is being right, not selling a model</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#c7a53b;margin-right:6px"></span>Gartner / Forrester / IDC / McKinsey</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">3</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">commercial analysts who sell reports AND consult the vendors they rate; round often-unfalsifiable forecasts</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#c7a53b;margin-right:6px"></span>SemiAnalysis</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">3</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">independent analyst; data quality high but paywalls the load-bearing conclusion (access is the product)</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#c7a53b;margin-right:6px"></span>Trade press (TechCrunch, VentureBeat, The Verge, Ars Technica)</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">3</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">industry journalism; access + engagement (conflict drives clicks). A take against the outlet&#x27;s own audience usually carries less book</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#c7a53b;margin-right:6px"></span>Reuters / Bloomberg / FT</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">3</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">wire / quality press; item-dependent, corroborate to the cited primary</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#cc7a33;margin-right:6px"></span>Ahrefs / Semrush / SimilarWeb</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">4</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">SEO/analytics tool vendors; the data is often sound, the alarm framing helps sell the subscription</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#b23b2e;margin-right:6px"></span>Anthropic &#9888;</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">5</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">sells frontier AI models; tier 5 on AI-value and its own-capability claims. Claim-relative: lower on unrelated facts</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#b23b2e;margin-right:6px"></span>OpenAI</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">5</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">sells frontier AI models; tier 5 on its own-capability and AI-value claims</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#b23b2e;margin-right:6px"></span>Google / Google DeepMind</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">5</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">builds and sells the AI and the ad system the claim is often about</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#b23b2e;margin-right:6px"></span>Meta</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">5</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">sells the platform and the models; tier 5 on its own-capability claims</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#b23b2e;margin-right:6px"></span>Microsoft</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">5</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">sells the models and the cloud; tier 5 on its own-code-automation claims</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#b23b2e;margin-right:6px"></span>Nvidia</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">5</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">sells the compute; tier 5 on &#x27;is AI demand real&#x27;</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#b23b2e;margin-right:6px"></span>Salesforce / Amazon / Snap (on own AI-efficiency)</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">5</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">adopters with an investor &#x27;we are AI-efficient&#x27; narrative and a layoff justification; tier 5 on their own usage claims</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#6ba368;margin-right:6px"></span>NM AI Research (the author)</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">2</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">independent, no product tied to a market call, publishes reproducible CC-BY. On the career pivot itself the incentive is present and disclosed</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#b23b2e;margin-right:6px"></span>The Anthropic model that helped build this &#9888;</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">5</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">a frontier-lab model helped assign these tiers, including the tiers on Anthropic and its rivals. Not exempt from its own map; corroborate its load-bearing calls against a non-model source</td></tr></tbody></table></details><div style="border:1px solid #e2e8f0;border-radius:8px;padding:12px 14px;margin:0 0 18px;background:#fff"><div style="font-weight:600;color:#1a365d;margin-bottom:6px">Source mix across all items</div><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 2: Research institute or academia (credibility-aligned) (1)" style="display:inline-block;height:12px;width:1.9%;background:#6ba368"></span><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (35)" style="display:inline-block;height:12px;width:67.3%;background:#c7a53b"></span><span title="tier 5: Party selling the thing the claim is about (own topic) (16)" style="display:inline-block;height:12px;width:30.8%;background:#b23b2e"></span></span><table style="border-collapse:collapse;font-size:13px;margin-top:12px;width:100%"><thead><tr><th style="text-align:left;padding:4px 10px;color:#4a5568">Most-covered entity</th><th style="text-align:right;padding:4px 10px;color:#4a5568">Items</th></tr></thead><tbody><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">OpenAI</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">6</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Meta</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">5</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">deepmind.google</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">5</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Google</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">3</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">techcrunch.com</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">3</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">venturebeat.com</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">3</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">arstechnica.com</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">3</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Anthropic</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">2</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Google DeepMind</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">2</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">theverge.com</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">2</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Microsoft</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Salesforce</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Amazon</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Snap</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Apple</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">spectrum.ieee.org</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">iroh.computer</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">blog.yaelwrites.com</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">geohot.github.io</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">pluralistic.net</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">mixfont.com</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr></tbody></table></div></div>
+      <details class="tierui" style="border:1px solid #e2e8f0;border-radius:8px;padding:10px 14px;margin:0 0 18px;background:#fff"><summary style="font-weight:600;color:#1a365d;cursor:pointer">How to read this board &middot; motive key, neutrality notes, tier map and source mix</summary><div style="margin-top:12px"><div style="border:1px solid #e2e8f0;border-radius:8px;padding:12px 14px;margin:0 0 18px;background:#fff"><div style="font-weight:600;color:#1a365d;margin-bottom:6px">Motive key (who benefits if the claim is true)</div><div style="display:flex;align-items:center;font-size:12px;color:#2d3748;margin:2px 0"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#2f7d4f;margin-right:8px"></span>Tier 1: Primary record / regulator / adversarial process (least incentive)</div><div style="display:flex;align-items:center;font-size:12px;color:#2d3748;margin:2px 0"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#6ba368;margin-right:8px"></span>Tier 2: Research institute or academia (credibility-aligned)</div><div style="display:flex;align-items:center;font-size:12px;color:#2d3748;margin:2px 0"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#c7a53b;margin-right:8px"></span>Tier 3: Analyst house or trade press (sells reports, access or clicks)</div><div style="display:flex;align-items:center;font-size:12px;color:#2d3748;margin:2px 0"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#cc7a33;margin-right:8px"></span>Tier 4: Tool or data vendor (product benefits from the framing)</div><div style="display:flex;align-items:center;font-size:12px;color:#2d3748;margin:2px 0"><span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#b23b2e;margin-right:8px"></span>Tier 5: Party selling the thing the claim is about (own topic)</div><div style="font-size:11px;color:#4a5568;margin-top:8px">Colour is incentive distance, not trust. A tier-5 source can be entirely correct; the tier says only where an independent second source is worth the effort.</div></div><section style="border:1px solid #e2e8f0;border-radius:8px;padding:12px 16px;margin:0 0 18px;background:#f7fafc"><div style="font-weight:600;color:#1a365d;margin-bottom:4px">How to read this, and where it is not neutral</div><ul style="margin:4px 0 0 18px;padding:0;font-size:13px;color:#2d3748"><li style="margin:3px 0">Tier is claim-relative and based on an observable fact (what an entity sells or is), not a truth or quality verdict.</li><li style="margin:3px 0">Colour is incentive distance, not trust: a tier-5 source can be entirely correct. The tier only says where an independent second source is worth the effort.</li><li style="margin:3px 0">One curator sets these tiers (assisted by an AI model), unlike aggregators that average several rater organisations. So every cell is published with its basis and is open to challenge.</li><li style="margin:3px 0">The reality anchor only covers topics this portfolio addresses, so claims near that work get more scrutiny than others. Most items carry no anchor, which is honest.</li></ul><div style="font-size:12px;color:#4a5568;margin-top:8px">Conflict of interest: a frontier-lab (Anthropic) model helped assign these tiers, including the tiers on Anthropic and its rivals. It is tiered in its own map and not exempt.</div></section><details style="border:1px solid #e2e8f0;border-radius:8px;padding:10px 14px;margin:0 0 18px;background:#fff"><summary style="font-weight:600;color:#1a365d;cursor:pointer">Tier map: every tier with its basis (contest any cell)</summary><div style="font-size:12px;color:#4a5568;margin:6px 0 8px">Contest any cell: email <a href="mailto:NMAIResearch@proton.me" style="color:#1a365d">NMAIResearch@proton.me</a> or fork <code>tier_map.json</code>. Email a cell you dispute with the observable fact you think is wrong, or fork this file. Tiers change on evidence, not on disagreement with the conclusion.</div><table style="border-collapse:collapse;width:100%;font-size:13px"><thead><tr><th style="text-align:left;padding:4px 10px;color:#4a5568">Entity</th><th style="padding:4px 10px;color:#4a5568">Tier</th><th style="text-align:left;padding:4px 10px;color:#4a5568">Observable basis</th></tr></thead><tbody><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#2f7d4f;margin-right:6px"></span>SEC / court / regulator filings</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">1</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">primary record produced under legal or statutory process; least incentive to shade a specific number</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#2f7d4f;margin-right:6px"></span>USGS / central-bank / agency data</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">1</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">mandated public measurement; the primary IS the check</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#6ba368;margin-right:6px"></span>Epoch AI</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">2</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">nonprofit research institute; credibility is the product. WATCH: funder prior (AI-safety mission may tilt framing toward &#x27;AI is significant&#x27;)</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#6ba368;margin-right:6px"></span>Peer-reviewed / arXiv (method claims)</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">2</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">method rigour (review, randomisation). WATCH: industry funding on the paper, and lag (rigour lands after the panic take)</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#6ba368;margin-right:6px"></span>Redwood Research / METR</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">2</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">independent AI evaluation orgs checking others&#x27; claims; incentive is being right, not selling a model</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#c7a53b;margin-right:6px"></span>Gartner / Forrester / IDC / McKinsey</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">3</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">commercial analysts who sell reports AND consult the vendors they rate; round often-unfalsifiable forecasts</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#c7a53b;margin-right:6px"></span>SemiAnalysis</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">3</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">independent analyst; data quality high but paywalls the load-bearing conclusion (access is the product)</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#c7a53b;margin-right:6px"></span>Trade press (TechCrunch, VentureBeat, The Verge, Ars Technica)</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">3</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">industry journalism; access + engagement (conflict drives clicks). A take against the outlet&#x27;s own audience usually carries less book</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#c7a53b;margin-right:6px"></span>Reuters / Bloomberg / FT</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">3</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">wire / quality press; item-dependent, corroborate to the cited primary</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#cc7a33;margin-right:6px"></span>Ahrefs / Semrush / SimilarWeb</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">4</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">SEO/analytics tool vendors; the data is often sound, the alarm framing helps sell the subscription</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#b23b2e;margin-right:6px"></span>Anthropic &#9888;</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">5</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">sells frontier AI models; tier 5 on AI-value and its own-capability claims. Claim-relative: lower on unrelated facts</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#b23b2e;margin-right:6px"></span>OpenAI</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">5</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">sells frontier AI models; tier 5 on its own-capability and AI-value claims</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#b23b2e;margin-right:6px"></span>Google / Google DeepMind</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">5</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">builds and sells the AI and the ad system the claim is often about</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#b23b2e;margin-right:6px"></span>Meta</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">5</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">sells the platform and the models; tier 5 on its own-capability claims</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#b23b2e;margin-right:6px"></span>Microsoft</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">5</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">sells the models and the cloud; tier 5 on its own-code-automation claims</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#b23b2e;margin-right:6px"></span>Nvidia</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">5</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">sells the compute; tier 5 on &#x27;is AI demand real&#x27;</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#b23b2e;margin-right:6px"></span>Salesforce / Amazon / Snap (on own AI-efficiency)</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">5</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">adopters with an investor &#x27;we are AI-efficient&#x27; narrative and a layoff justification; tier 5 on their own usage claims</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#6ba368;margin-right:6px"></span>NM AI Research (the author)</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">2</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">independent, no product tied to a market call, publishes reproducible CC-BY. On the career pivot itself the incentive is present and disclosed</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;vertical-align:top"><span style="display:inline-block;width:12px;height:12px;border-radius:2px;background:#b23b2e;margin-right:6px"></span>The Anthropic model that helped build this &#9888;</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:center">5</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;font-size:12px;color:#4a5568">a frontier-lab model helped assign these tiers, including the tiers on Anthropic and its rivals. Not exempt from its own map; corroborate its load-bearing calls against a non-model source</td></tr></tbody></table></details><div style="border:1px solid #e2e8f0;border-radius:8px;padding:12px 14px;margin:0 0 18px;background:#fff"><div style="font-weight:600;color:#1a365d;margin-bottom:6px">Source mix across all items</div><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 2: Research institute or academia (credibility-aligned) (1)" style="display:inline-block;height:12px;width:1.9%;background:#6ba368"></span><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (35)" style="display:inline-block;height:12px;width:67.3%;background:#c7a53b"></span><span title="tier 5: Party selling the thing the claim is about (own topic) (16)" style="display:inline-block;height:12px;width:30.8%;background:#b23b2e"></span></span><table style="border-collapse:collapse;font-size:13px;margin-top:12px;width:100%"><thead><tr><th style="text-align:left;padding:4px 10px;color:#4a5568">Most-covered entity</th><th style="text-align:right;padding:4px 10px;color:#4a5568">Items</th></tr></thead><tbody><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Google DeepMind</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">7</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Meta</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">6</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">OpenAI</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">4</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Anthropic</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">2</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Google</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">2</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Salesforce</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">2</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Apple / OpenAI</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">2</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Hugging Face</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">2</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Microsoft</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Amazon</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Snap</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">SK Hynix</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Apple</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Multiple (data centres)</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">UC San Diego (study)</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Brown University (study)</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">xAI (Grok)</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Univ. of Chicago (study)</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">iroh (Mesh LLM)</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Yael (opinion)</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">George Hotz (opinion)</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Cory Doctorow (opinion)</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Ghost Font</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Railway</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Anthropic / Block (Goose)</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr><tr><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0">Listen Labs</td><td style="padding:4px 10px;border-bottom:1px solid #e2e8f0;text-align:right">1</td></tr></tbody></table></div></div></details>
       <section style="border:1px solid #e2e8f0;border-left:4px solid #6ba368;border-radius:8px;padding:14px 16px;margin:0 0 18px;background:#fff"><h2 style="color:#1a365d;font-size:18px;margin:0 0 2px">Primary sources</h2><div style="font-size:13px;color:#4a5568;margin-bottom:8px">Recent papers and public datasets on AI, so a claim can be checked against the underlying research rather than the coverage of it. Fetched 2026-07-12 20:59 UTC.</div><div class="scholarrow" data-search="opencof: learning to reason through video generation xinyan chen, ziyu guo, renrui zhang et al. arxiv" style="padding:8px 0;border-bottom:1px solid #e2e8f0"><span style="display:inline-block;font-size:11px;padding:1px 7px;border-radius:4px;color:#fff;background:#6ba368;margin-right:6px">Paper</span><a href="https://arxiv.org/abs/2607.08763v1" style="color:#1a365d;font-weight:600;font-size:14px;text-decoration:none">OpenCoF: Learning to Reason Through Video Generation</a><div style="font-size:12px;color:#4a5568;margin-top:2px">arXiv &middot; Xinyan Chen, Ziyu Guo, Renrui Zhang et al. &middot; 2026-07-09</div></div><div class="scholarrow" data-search="ideas have genomes: benchmarking scientific lineage reasoning and lineage-grounded idea generation yifan zhou, qihao yang, yan li et al. arxiv" style="padding:8px 0;border-bottom:1px solid #e2e8f0"><span style="display:inline-block;font-size:11px;padding:1px 7px;border-radius:4px;color:#fff;background:#6ba368;margin-right:6px">Paper</span><a href="https://arxiv.org/abs/2607.08758v1" style="color:#1a365d;font-weight:600;font-size:14px;text-decoration:none">Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation</a><div style="font-size:12px;color:#4a5568;margin-top:2px">arXiv &middot; Yifan Zhou, Qihao Yang, Yan Li et al. &middot; 2026-07-09</div></div><div class="scholarrow" data-search="score accuracy along the forward diffusion does not certify numerical stability in diffusion sampling yiwei zhou arxiv" style="padding:8px 0;border-bottom:1px solid #e2e8f0"><span style="display:inline-block;font-size:11px;padding:1px 7px;border-radius:4px;color:#fff;background:#6ba368;margin-right:6px">Paper</span><a href="https://arxiv.org/abs/2607.08757v1" style="color:#1a365d;font-weight:600;font-size:14px;text-decoration:none">Score Accuracy Along the Forward Diffusion Does Not Certify Numerical Stability in Diffusion Sampling</a><div style="font-size:12px;color:#4a5568;margin-top:2px">arXiv &middot; Yiwei Zhou &middot; 2026-07-09</div></div><div class="scholarrow" data-search="multtipop: a multitrack transcription dataset for pop music nathan pruyne, benjamin stoler, william chen et al. arxiv" style="padding:8px 0;border-bottom:1px solid #e2e8f0"><span style="display:inline-block;font-size:11px;padding:1px 7px;border-radius:4px;color:#fff;background:#6ba368;margin-right:6px">Paper</span><a href="https://arxiv.org/abs/2607.08756v1" style="color:#1a365d;font-weight:600;font-size:14px;text-decoration:none">MulTTiPop: A Multitrack Transcription Dataset for Pop Music</a><div style="font-size:12px;color:#4a5568;margin-top:2px">arXiv &middot; Nathan Pruyne, Benjamin Stoler, William Chen et al. &middot; 2026-07-09</div></div><div class="scholarrow" data-search="slorr: simple and efficient in-training low-rank regularization david gonzález-martínez, shiwei liu arxiv" style="padding:8px 0;border-bottom:1px solid #e2e8f0"><span style="display:inline-block;font-size:11px;padding:1px 7px;border-radius:4px;color:#fff;background:#6ba368;margin-right:6px">Paper</span><a href="https://arxiv.org/abs/2607.08754v1" style="color:#1a365d;font-weight:600;font-size:14px;text-decoration:none">SLORR: Simple and Efficient In-Training Low-Rank Regularization</a><div style="font-size:12px;color:#4a5568;margin-top:2px">arXiv &middot; David González-Martínez, Shiwei Liu &middot; 2026-07-09</div></div><div class="scholarrow" data-search="using ai-based learning assistants in higher education: a large-scale descriptive analysis kristina schaaff, quintus stierstorfer, valerie heckel arxiv" style="padding:8px 0;border-bottom:1px solid #e2e8f0"><span style="display:inline-block;font-size:11px;padding:1px 7px;border-radius:4px;color:#fff;background:#6ba368;margin-right:6px">Paper</span><a href="https://arxiv.org/abs/2607.08748v1" style="color:#1a365d;font-weight:600;font-size:14px;text-decoration:none">Using AI-based Learning Assistants in Higher Education: A Large-Scale Descriptive Analysis</a><div style="font-size:12px;color:#4a5568;margin-top:2px">arXiv &middot; Kristina Schaaff, Quintus Stierstorfer, Valerie Heckel &middot; 2026-07-09</div></div><div class="scholarrow" data-search="dimensionality reduction meets network science: sensemaking on umap&#x27;s knn graph duen horng chau, donghao ren, fred hohman et al. arxiv" style="padding:8px 0;border-bottom:1px solid #e2e8f0"><span style="display:inline-block;font-size:11px;padding:1px 7px;border-radius:4px;color:#fff;background:#6ba368;margin-right:6px">Paper</span><a href="https://arxiv.org/abs/2607.08746v1" style="color:#1a365d;font-weight:600;font-size:14px;text-decoration:none">Dimensionality Reduction Meets Network Science: Sensemaking on UMAP&#x27;s kNN Graph</a><div style="font-size:12px;color:#4a5568;margin-top:2px">arXiv &middot; Duen Horng Chau, Donghao Ren, Fred Hohman et al. &middot; 2026-07-09</div></div><div class="scholarrow" data-search="autopilot vqa: benchmarking vision-language models for incident-centric dashcam understanding siddharth damodharan, radhika gupta, ali alshami et al. arxiv" style="padding:8px 0;border-bottom:1px solid #e2e8f0"><span style="display:inline-block;font-size:11px;padding:1px 7px;border-radius:4px;color:#fff;background:#6ba368;margin-right:6px">Paper</span><a href="https://arxiv.org/abs/2607.08745v1" style="color:#1a365d;font-weight:600;font-size:14px;text-decoration:none">AUTOPILOT VQA: Benchmarking Vision-Language Models for Incident-Centric Dashcam Understanding</a><div style="font-size:12px;color:#4a5568;margin-top:2px">arXiv &middot; Siddharth Damodharan, Radhika Gupta, Ali Alshami et al. &middot; 2026-07-09</div></div><div class="scholarrow" data-search="anisoleai/fineweb-tokenized anisoleai hugging face" style="padding:8px 0;border-bottom:1px solid #e2e8f0"><span style="display:inline-block;font-size:11px;padding:1px 7px;border-radius:4px;color:#fff;background:#6ba368;margin-right:6px">Dataset</span><a href="https://huggingface.co/datasets/anisoleai/fineweb-tokenized" style="color:#1a365d;font-weight:600;font-size:14px;text-decoration:none">anisoleai/fineweb-tokenized</a><div style="font-size:12px;color:#4a5568;margin-top:2px">Hugging Face &middot; anisoleai &middot; 2026-05-29</div></div><div class="scholarrow" data-search="codeparrot/github-code codeparrot hugging face" style="padding:8px 0;border-bottom:1px solid #e2e8f0"><span style="display:inline-block;font-size:11px;padding:1px 7px;border-radius:4px;color:#fff;background:#6ba368;margin-right:6px">Dataset</span><a href="https://huggingface.co/datasets/codeparrot/github-code" style="color:#1a365d;font-weight:600;font-size:14px;text-decoration:none">codeparrot/github-code</a><div style="font-size:12px;color:#4a5568;margin-top:2px">Hugging Face &middot; codeparrot &middot; 2022-10-20</div></div><div class="scholarrow" data-search="benjy/typed_digital_signatures benjy hugging face" style="padding:8px 0;border-bottom:1px solid #e2e8f0"><span style="display:inline-block;font-size:11px;padding:1px 7px;border-radius:4px;color:#fff;background:#6ba368;margin-right:6px">Dataset</span><a href="https://huggingface.co/datasets/Benjy/typed_digital_signatures" style="color:#1a365d;font-weight:600;font-size:14px;text-decoration:none">Benjy/typed_digital_signatures</a><div style="font-size:12px;color:#4a5568;margin-top:2px">Hugging Face &middot; Benjy &middot; 2025-02-05</div></div><div class="scholarrow" data-search="huggingface/documentation-images huggingface hugging face" style="padding:8px 0;border-bottom:1px solid #e2e8f0"><span style="display:inline-block;font-size:11px;padding:1px 7px;border-radius:4px;color:#fff;background:#6ba368;margin-right:6px">Dataset</span><a href="https://huggingface.co/datasets/huggingface/documentation-images" style="color:#1a365d;font-weight:600;font-size:14px;text-decoration:none">huggingface/documentation-images</a><div style="font-size:12px;color:#4a5568;margin-top:2px">Hugging Face &middot; huggingface &middot; 2026-07-10</div></div><div class="scholarrow" data-search="kakologarchives/kakologarchives kakologarchives hugging face" style="padding:8px 0;border-bottom:1px solid #e2e8f0"><span style="display:inline-block;font-size:11px;padding:1px 7px;border-radius:4px;color:#fff;background:#6ba368;margin-right:6px">Dataset</span><a href="https://huggingface.co/datasets/KakologArchives/KakologArchives" style="color:#1a365d;font-weight:600;font-size:14px;text-decoration:none">KakologArchives/KakologArchives</a><div style="font-size:12px;color:#4a5568;margin-top:2px">Hugging Face &middot; KakologArchives &middot; 2026-07-12</div></div><div class="scholarrow" data-search="ksolovev/finenews ksolovev hugging face" style="padding:8px 0;border-bottom:1px solid #e2e8f0"><span style="display:inline-block;font-size:11px;padding:1px 7px;border-radius:4px;color:#fff;background:#6ba368;margin-right:6px">Dataset</span><a href="https://huggingface.co/datasets/ksolovev/FineNews" style="color:#1a365d;font-weight:600;font-size:14px;text-decoration:none">ksolovev/FineNews</a><div style="font-size:12px;color:#4a5568;margin-top:2px">Hugging Face &middot; ksolovev &middot; 2026-03-23</div></div><div class="scholarrow" data-search="hallucinations-leaderboard/results hallucinations-leaderboard hugging face" style="padding:8px 0;border-bottom:1px solid #e2e8f0"><span style="display:inline-block;font-size:11px;padding:1px 7px;border-radius:4px;color:#fff;background:#6ba368;margin-right:6px">Dataset</span><a href="https://huggingface.co/datasets/hallucinations-leaderboard/results" style="color:#1a365d;font-weight:600;font-size:14px;text-decoration:none">hallucinations-leaderboard/results</a><div style="font-size:12px;color:#4a5568;margin-top:2px">Hugging Face &middot; hallucinations-leaderboard &middot; 2024-10-31</div></div><div class="scholarrow" data-search="allenai/c4 allenai hugging face" style="padding:8px 0;border-bottom:1px solid #e2e8f0"><span style="display:inline-block;font-size:11px;padding:1px 7px;border-radius:4px;color:#fff;background:#6ba368;margin-right:6px">Dataset</span><a href="https://huggingface.co/datasets/allenai/c4" style="color:#1a365d;font-weight:600;font-size:14px;text-decoration:none">allenai/c4</a><div style="font-size:12px;color:#4a5568;margin-top:2px">Hugging Face &middot; allenai &middot; 2024-01-09</div></div></section>
       
-    <article class="card" data-search="anthropic anthropic: ai writes ~90% of our code, heading to essentially all of it amodei, council on foreign relations redwood research (re-analysis: nearer 50%)" data-topic="code_automation" data-tiers="2 5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+    <article class="card" data-search="anthropic anthropic: ai writes ~90% of our code, heading to essentially all of it amodei, council on foreign relations redwood research (re-analysis: nearer 50%) " data-topic="code_automation" data-tiers="2 5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
       <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
         Anthropic &middot; 2025-03-10
       </div>
@@ -47,9 +47,10 @@
         <span style="display:inline-block;padding:2px 8px;border-radius:4px;
               color:#fff;background:#b23b2e">no denominator</span>
       </div>
+      
       <div style="margin-top:10px;padding:10px 12px;background:#f7fafc;border-left:3px solid #1a365d;font-size:13px;color:#2d3748"><strong style="color:#1a365d">Reality anchor.</strong> Labs&#x27; code-% claims: 0 of 8 define a denominator and none is externally audited. METR&#x27;s randomised trial (Jul 2025) found developers 19% slower with frontier tools; a 2025 Science study puts AI-written US GitHub Python at ~29%. <a href="https://doi.org/10.5281/zenodo.21325372" style="color:#1a365d">AI Research-Automation Scorecard, Layer 1 (DOI)</a></div>
     </article>
-    <article class="card" data-search="openai openai: agentic tools went from 20% to 80% of your code (within december) brockman, sequoia ai ascent" data-topic="code_automation" data-tiers="5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+    <article class="card" data-search="openai openai: agentic tools went from 20% to 80% of your code (within december) brockman, sequoia ai ascent " data-topic="code_automation" data-tiers="5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
       <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
         OpenAI &middot; 2026-04
       </div>
@@ -62,9 +63,10 @@
         <span style="display:inline-block;padding:2px 8px;border-radius:4px;
               color:#fff;background:#b23b2e">no denominator</span>
       </div>
+      
       <div style="margin-top:10px;padding:10px 12px;background:#f7fafc;border-left:3px solid #1a365d;font-size:13px;color:#2d3748"><strong style="color:#1a365d">Reality anchor.</strong> Labs&#x27; code-% claims: 0 of 8 define a denominator and none is externally audited. METR&#x27;s randomised trial (Jul 2025) found developers 19% slower with frontier tools; a 2025 Science study puts AI-written US GitHub Python at ~29%. <a href="https://doi.org/10.5281/zenodo.21325372" style="color:#1a365d">AI Research-Automation Scorecard, Layer 1 (DOI)</a></div>
     </article>
-    <article class="card" data-search="microsoft microsoft: 20-30% of code in our repos is written by software nadella, llamacon fireside techcrunch / cnbc" data-topic="code_automation" data-tiers="3 5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+    <article class="card" data-search="microsoft microsoft: 20-30% of code in our repos is written by software nadella, llamacon fireside techcrunch / cnbc " data-topic="code_automation" data-tiers="3 5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
       <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
         Microsoft &middot; 2025-04-29
       </div>
@@ -77,9 +79,10 @@
         <span style="display:inline-block;padding:2px 8px;border-radius:4px;
               color:#fff;background:#cc7a33">partial denominator</span>
       </div>
+      
       <div style="margin-top:10px;padding:10px 12px;background:#f7fafc;border-left:3px solid #1a365d;font-size:13px;color:#2d3748"><strong style="color:#1a365d">Reality anchor.</strong> Labs&#x27; code-% claims: 0 of 8 define a denominator and none is externally audited. METR&#x27;s randomised trial (Jul 2025) found developers 19% slower with frontier tools; a 2025 Science study puts AI-written US GitHub Python at ~29%. <a href="https://doi.org/10.5281/zenodo.21325372" style="color:#1a365d">AI Research-Automation Scorecard, Layer 1 (DOI)</a></div>
     </article>
-    <article class="card" data-search="google google: from ~30% to ~75% of new code ai-generated and approved by engineers pichai, q1 2025 earnings call google blog" data-topic="code_automation" data-tiers="5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+    <article class="card" data-search="google google: from ~30% to ~75% of new code ai-generated and approved by engineers pichai, q1 2025 earnings call google blog " data-topic="code_automation" data-tiers="5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
       <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
         Google &middot; 2025-04
       </div>
@@ -92,9 +95,10 @@
         <span style="display:inline-block;padding:2px 8px;border-radius:4px;
               color:#fff;background:#cc7a33">partial denominator</span>
       </div>
+      
       <div style="margin-top:10px;padding:10px 12px;background:#f7fafc;border-left:3px solid #1a365d;font-size:13px;color:#2d3748"><strong style="color:#1a365d">Reality anchor.</strong> Labs&#x27; code-% claims: 0 of 8 define a denominator and none is externally audited. METR&#x27;s randomised trial (Jul 2025) found developers 19% slower with frontier tools; a 2025 Science study puts AI-written US GitHub Python at ~29%. <a href="https://doi.org/10.5281/zenodo.21325372" style="color:#1a365d">AI Research-Automation Scorecard, Layer 1 (DOI)</a></div>
     </article>
-    <article class="card" data-search="meta meta: maybe half of development done by ai next year (a target) zuckerberg, llamacon (no current figures)" data-topic="code_automation" data-tiers="5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+    <article class="card" data-search="meta meta: maybe half of development done by ai next year (a target) zuckerberg, llamacon (no current figures) " data-topic="code_automation" data-tiers="5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
       <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
         Meta &middot; 2025-04
       </div>
@@ -107,9 +111,10 @@
         <span style="display:inline-block;padding:2px 8px;border-radius:4px;
               color:#fff;background:#b23b2e">no denominator</span>
       </div>
+      
       <div style="margin-top:10px;padding:10px 12px;background:#f7fafc;border-left:3px solid #1a365d;font-size:13px;color:#2d3748"><strong style="color:#1a365d">Reality anchor.</strong> Labs&#x27; code-% claims: 0 of 8 define a denominator and none is externally audited. METR&#x27;s randomised trial (Jul 2025) found developers 19% slower with frontier tools; a 2025 Science study puts AI-written US GitHub Python at ~29%. <a href="https://doi.org/10.5281/zenodo.21325372" style="color:#1a365d">AI Research-Automation Scorecard, Layer 1 (DOI)</a></div>
     </article>
-    <article class="card" data-search="salesforce salesforce: ai is doing 30-50% of the work here now benioff, the circuit cnbc / bloomberg" data-topic="work_automation" data-tiers="3 5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+    <article class="card" data-search="salesforce salesforce: ai is doing 30-50% of the work here now benioff, the circuit cnbc / bloomberg " data-topic="work_automation" data-tiers="3 5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
       <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
         Salesforce &middot; 2025-06-26
       </div>
@@ -122,9 +127,10 @@
         <span style="display:inline-block;padding:2px 8px;border-radius:4px;
               color:#fff;background:#b23b2e">no denominator</span>
       </div>
+      
       <div style="margin-top:10px;padding:10px 12px;background:#f7fafc;border-left:3px solid #1a365d;font-size:13px;color:#2d3748"><strong style="color:#1a365d">Reality anchor.</strong> A &#x27;work&#x27; claim, not a code claim: the broadest denominator in the set, spanning whole functions and tied to headcount reductions. No stated base for the percentage. <a href="https://doi.org/10.5281/zenodo.21325372" style="color:#1a365d">AI Research-Automation Scorecard, Layer 1 (DOI)</a></div>
     </article>
-    <article class="card" data-search="amazon amazon: 79% of ai code-review suggestions shipped without changes (amazon q) jassy, linkedin/x slashdot / yahoo finance" data-topic="code_automation" data-tiers="3 5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+    <article class="card" data-search="amazon amazon: 79% of ai code-review suggestions shipped without changes (amazon q) jassy, linkedin/x slashdot / yahoo finance " data-topic="code_automation" data-tiers="3 5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
       <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
         Amazon &middot; 2024-08-22
       </div>
@@ -137,9 +143,10 @@
         <span style="display:inline-block;padding:2px 8px;border-radius:4px;
               color:#fff;background:#cc7a33">partial denominator</span>
       </div>
+      
       <div style="margin-top:10px;padding:10px 12px;background:#f7fafc;border-left:3px solid #1a365d;font-size:13px;color:#2d3748"><strong style="color:#1a365d">Reality anchor.</strong> Labs&#x27; code-% claims: 0 of 8 define a denominator and none is externally audited. METR&#x27;s randomised trial (Jul 2025) found developers 19% slower with frontier tools; a 2025 Science study puts AI-written US GitHub Python at ~29%. <a href="https://doi.org/10.5281/zenodo.21325372" style="color:#1a365d">AI Research-Automation Scorecard, Layer 1 (DOI)</a></div>
     </article>
-    <article class="card" data-search="snap snap: ai writes more than two-thirds of our new code (credits anthropic) spiegel, cheeky pint podcast fortune / yahoo finance" data-topic="code_automation" data-tiers="3 5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+    <article class="card" data-search="snap snap: ai writes more than two-thirds of our new code (credits anthropic) spiegel, cheeky pint podcast fortune / yahoo finance " data-topic="code_automation" data-tiers="3 5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
       <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
         Snap &middot; 2026-04
       </div>
@@ -152,9 +159,10 @@
         <span style="display:inline-block;padding:2px 8px;border-radius:4px;
               color:#fff;background:#cc7a33">partial denominator</span>
       </div>
+      
       <div style="margin-top:10px;padding:10px 12px;background:#f7fafc;border-left:3px solid #1a365d;font-size:13px;color:#2d3748"><strong style="color:#1a365d">Reality anchor.</strong> Labs&#x27; code-% claims: 0 of 8 define a denominator and none is externally audited. METR&#x27;s randomised trial (Jul 2025) found developers 19% slower with frontier tools; a 2025 Science study puts AI-written US GitHub Python at ~29%. <a href="https://doi.org/10.5281/zenodo.21325372" style="color:#1a365d">AI Research-Automation Scorecard, Layer 1 (DOI)</a></div>
     </article>
-    <article class="card" data-search="google deepmind deepmind: alphaevolve optimised a kernel used to train gemini (~1% training saving) deepmind blog; novikov venturebeat / techbrew" data-topic="self_improvement" data-tiers="3 5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+    <article class="card" data-search="google deepmind deepmind: alphaevolve optimised a kernel used to train gemini (~1% training saving) deepmind blog; novikov venturebeat / techbrew " data-topic="self_improvement" data-tiers="3 5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
       <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
         Google DeepMind &middot; 2025-05
       </div>
@@ -167,9 +175,10 @@
         <span style="display:inline-block;padding:2px 8px;border-radius:4px;
               color:#fff;background:#2f7d4f">denominator stated</span>
       </div>
+      
       <div style="margin-top:10px;padding:10px 12px;background:#f7fafc;border-left:3px solid #1a365d;font-size:13px;color:#2d3748"><strong style="color:#1a365d">Reality anchor.</strong> No lab reports its recursive-self-improvement red-line crossed. The one observed instance (AlphaEvolve) is a ~1% end-to-end training saving from a human-run tool, not an autonomous agent. <a href="https://doi.org/10.5281/zenodo.21325372" style="color:#1a365d">AI Research-Automation Scorecard, Layer 2 (DOI)</a></div>
     </article><h2 style="color:#1a365d;font-size:18px;margin:26px 0 4px">Incoming feed</h2><div style="color:#4a5568;font-size:13px;margin-bottom:12px">Auto-tagged on pull: source type and motive tier are set from the domain; claim type and denominator are left as "unreviewed" until a human pass. Fetched 2026-07-12 21:09 UTC.</div>
-    <article class="card" data-search="openai openai bets on families as chatgpt goes deeper into households techcrunch.com" data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+    <article class="card" data-search="openai openai bets on families as chatgpt goes deeper into households techcrunch.com " data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
       <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
         OpenAI &middot; Sat, 11 Jul 2026
       </div>
@@ -178,13 +187,14 @@
       <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">techcrunch.com</span></div>
       <div style="font-size:12px">
         <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:#4a5568">announced</span>
+              color:#fff;background:#2f7d4f">measurement</span>
         <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
+              color:#fff;background:#2f7d4f">denominator stated</span>
       </div>
       
+      
     </article>
-    <article class="card" data-search="meta meta removes controversial ai feature on instagram after backlash techcrunch.com" data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+    <article class="card" data-search="meta meta removes controversial ai feature on instagram after backlash techcrunch.com " data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
       <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
         Meta &middot; Fri, 10 Jul 2026
       </div>
@@ -195,43 +205,46 @@
         <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
               color:#fff;background:#4a5568">announced</span>
         <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
+              color:#fff;background:#64748b">no quantitative claim</span>
       </div>
       
+      
     </article>
-    <article class="card" data-search="openai apple sues openai over alleged trade secret theft techcrunch.com" data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+    <article class="card" data-search="apple / openai apple sues openai over alleged trade secret theft techcrunch.com " data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
       <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        OpenAI &middot; Fri, 10 Jul 2026
+        Apple / OpenAI &middot; Fri, 10 Jul 2026
       </div>
       <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Apple sues OpenAI over alleged trade secret theft</div>
       <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
       <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">techcrunch.com</span></div>
       <div style="font-size:12px">
         <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:#4a5568">announced</span>
+              color:#fff;background:#8a5a3b">lawsuit</span>
         <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
+              color:#fff;background:#64748b">no quantitative claim</span>
       </div>
       
+      
     </article>
-    <article class="card" data-search="techcrunch.com open source ai matters more than ever, according to hugging face’s clem delangue techcrunch.com" data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+    <article class="card" data-search="hugging face open source ai matters more than ever, according to hugging face’s clem delangue techcrunch.com " data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
       <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        techcrunch.com &middot; Fri, 10 Jul 2026
+        Hugging Face &middot; Fri, 10 Jul 2026
       </div>
       <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Open source AI matters more than ever, according to Hugging Face’s Clem Delangue</div>
       <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
       <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">techcrunch.com</span></div>
       <div style="font-size:12px">
         <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:#4a5568">announced</span>
+              color:#fff;background:#6b7280">opinion</span>
         <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
+              color:#fff;background:#cc7a33">partial denominator</span>
       </div>
       
+      
     </article>
-    <article class="card" data-search="techcrunch.com sk hynix raises $26.5b in the biggest foreign ipo in us history, is urged to build new us fabs techcrunch.com" data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+    <article class="card" data-search="sk hynix sk hynix raises $26.5b in the biggest foreign ipo in us history, is urged to build new us fabs techcrunch.com " data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
       <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        techcrunch.com &middot; Fri, 10 Jul 2026
+        SK Hynix &middot; Fri, 10 Jul 2026
       </div>
       <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">SK Hynix raises $26.5B in the biggest foreign IPO in US history, is urged to build new US fabs</div>
       <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
@@ -240,26 +253,412 @@
         <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
               color:#fff;background:#4a5568">announced</span>
         <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
+              color:#fff;background:#2f7d4f">denominator stated</span>
       </div>
       
+      
     </article>
-    <article class="card" data-search="techcrunch.com hugging face’s ceo on why companies are done renting their ai techcrunch.com" data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+    <article class="card" data-search="hugging face hugging face’s ceo on why companies are done renting their ai techcrunch.com " data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
       <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        techcrunch.com &middot; Fri, 10 Jul 2026
+        Hugging Face &middot; Fri, 10 Jul 2026
       </div>
       <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Hugging Face’s CEO on why companies are done renting their AI</div>
       <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
       <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">techcrunch.com</span></div>
       <div style="font-size:12px">
         <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:#4a5568">announced</span>
+              color:#fff;background:#5b7fa6">assertion</span>
         <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
+              color:#fff;background:#cc7a33">partial denominator</span>
       </div>
       
+      
     </article>
-    <article class="card" data-search="google google just redesigned the search box for the first time in 25 years — here’s why it matters more than you think. venturebeat.com" data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+    <article class="card" data-search="meta lorde says ray-ban meta ai glasses are ‘not sexy’ theverge.com " data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
+        Meta &middot; 2026-07-12T16:10
+      </div>
+      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Lorde says Ray-Ban Meta AI glasses are ‘not sexy’</div>
+      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
+      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">theverge.com</span></div>
+      <div style="font-size:12px">
+        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
+              color:#fff;background:#6b7280">opinion</span>
+        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
+              color:#fff;background:#64748b">no quantitative claim</span>
+      </div>
+      
+      
+    </article>
+    <article class="card" data-search="apple apple’s failed self-driving car program left a legacy of powerful ai chips theverge.com " data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
+        Apple &middot; 2026-07-12T12:27
+      </div>
+      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Apple’s failed self-driving car program left a legacy of powerful AI chips</div>
+      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
+      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">theverge.com</span></div>
+      <div style="font-size:12px">
+        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
+              color:#fff;background:#5b7fa6">assertion</span>
+        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
+              color:#fff;background:#cc7a33">partial denominator</span>
+      </div>
+      
+      
+    </article>
+    <article class="card" data-search="multiple (data centres) the fight against ai data centers is just beginning theverge.com " data-topic="power_demand" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
+        Multiple (data centres) &middot; 2026-07-10T12:18
+      </div>
+      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">The fight against AI data centers is just beginning</div>
+      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
+      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">theverge.com</span></div>
+      <div style="font-size:12px">
+        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
+              color:#fff;background:#6b7280">opinion</span>
+        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
+              color:#fff;background:#64748b">no quantitative claim</span>
+      </div>
+      
+      <div style="margin-top:10px;padding:10px 12px;background:#f7fafc;border-left:3px solid #1a365d;font-size:13px;color:#2d3748"><strong style="color:#1a365d">Reality anchor.</strong> Announced datacentre capacity is not delivered capacity. The ledger separates contingent, announced megawatts from robust, contracted demand; only a fraction of announced capacity reaches operation. <a href="https://doi.org/10.5281/zenodo.20559430" style="color:#1a365d">Contingent vs Robust AI Power Demand (DOI)</a></div>
+    </article>
+    <article class="card" data-search="meta meta turns off the instagram feature that let users make ai deepfakes of public accounts theverge.com " data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
+        Meta &middot; 2026-07-10T19:56
+      </div>
+      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Meta turns off the Instagram feature that let users make AI deepfakes of public accounts</div>
+      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
+      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">theverge.com</span></div>
+      <div style="font-size:12px">
+        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
+              color:#fff;background:#4a5568">announced</span>
+        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
+              color:#fff;background:#64748b">no quantitative claim</span>
+      </div>
+      
+      
+    </article>
+    <article class="card" data-search="apple / openai apple sues openai for allegedly stealing hardware secrets theverge.com " data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
+        Apple / OpenAI &middot; 2026-07-10T18:33
+      </div>
+      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Apple sues OpenAI for allegedly stealing hardware secrets</div>
+      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
+      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">theverge.com</span></div>
+      <div style="font-size:12px">
+        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
+              color:#fff;background:#8a5a3b">lawsuit</span>
+        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
+              color:#fff;background:#64748b">no quantitative claim</span>
+      </div>
+      
+      
+    </article>
+    <article class="card" data-search="meta instagram’s adam mosseri: if you don&amp;#8217;t like ai, &amp;#8216;then you shouldn&amp;#8217;t have it in your feed&amp;#8217; theverge.com " data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
+        Meta &middot; 2026-07-10T09:59
+      </div>
+      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Instagram’s Adam Mosseri: If you don&amp;#8217;t like AI, &amp;#8216;then you shouldn&amp;#8217;t have it in your feed&amp;#8217;</div>
+      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
+      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">theverge.com</span></div>
+      <div style="font-size:12px">
+        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
+              color:#fff;background:#6b7280">opinion</span>
+        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
+              color:#fff;background:#64748b">no quantitative claim</span>
+      </div>
+      
+      
+    </article>
+    <article class="card" data-search="meta disable autoplay and infinite scroll or risk massive fines, eu tells meta arstechnica.com " data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
+        Meta &middot; Fri, 10 Jul 2026
+      </div>
+      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Disable autoplay and infinite scroll or risk massive fines, EU tells Meta</div>
+      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
+      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">arstechnica.com</span></div>
+      <div style="font-size:12px">
+        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
+              color:#fff;background:#4a5568">announced</span>
+        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
+              color:#fff;background:#64748b">no quantitative claim</span>
+      </div>
+      
+      
+    </article>
+    <article class="card" data-search="openai openai wants its new tool to do your work for you and with you arstechnica.com " data-topic="work_automation" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
+        OpenAI &middot; Thu, 09 Jul 2026
+      </div>
+      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">OpenAI wants its new tool to do your work for you and with you</div>
+      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
+      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">arstechnica.com</span></div>
+      <div style="font-size:12px">
+        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
+              color:#fff;background:#4a5568">announced</span>
+        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
+              color:#fff;background:#64748b">no quantitative claim</span>
+      </div>
+      
+      <div style="margin-top:10px;padding:10px 12px;background:#f7fafc;border-left:3px solid #1a365d;font-size:13px;color:#2d3748"><strong style="color:#1a365d">Reality anchor.</strong> A &#x27;work&#x27; claim, not a code claim: the broadest denominator in the set, spanning whole functions and tied to headcount reductions. No stated base for the percentage. <a href="https://doi.org/10.5281/zenodo.21325372" style="color:#1a365d">AI Research-Automation Scorecard, Layer 1 (DOI)</a></div>
+    </article>
+    <article class="card" data-search="uc san diego (study) humanoid robots controlled by surgeons did world-first operation on live pigs arstechnica.com " data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
+        UC San Diego (study) &middot; Thu, 09 Jul 2026
+      </div>
+      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Humanoid robots controlled by surgeons did world-first operation on live pigs</div>
+      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
+      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">arstechnica.com</span></div>
+      <div style="font-size:12px">
+        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
+              color:#fff;background:#2f7d4f">study</span>
+        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
+              color:#fff;background:#cc7a33">partial denominator</span>
+      </div>
+      
+      
+    </article>
+    <article class="card" data-search="openai openai may have made a fatal misstep in copyright fight with news orgs arstechnica.com " data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
+        OpenAI &middot; Thu, 09 Jul 2026
+      </div>
+      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">OpenAI may have made a fatal misstep in copyright fight with news orgs</div>
+      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
+      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">arstechnica.com</span></div>
+      <div style="font-size:12px">
+        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
+              color:#fff;background:#8a5a3b">lawsuit</span>
+        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
+              color:#fff;background:#64748b">no quantitative claim</span>
+      </div>
+      
+      
+    </article>
+    <article class="card" data-search="brown university (study) suspecting ai cheating, ivy league prof ordered an in-person final; scores fell 50% arstechnica.com " data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
+        Brown University (study) &middot; Wed, 08 Jul 2026
+      </div>
+      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Suspecting AI cheating, Ivy League prof ordered an in-person final; scores fell 50%</div>
+      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
+      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">arstechnica.com</span></div>
+      <div style="font-size:12px">
+        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
+              color:#fff;background:#2f7d4f">study</span>
+        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
+              color:#fff;background:#cc7a33">partial denominator</span>
+      </div>
+      
+      
+    </article>
+    <article class="card" data-search="xai (grok) lawsuit: man used grok to make 7k sex images of stepdaughter, then shot himself arstechnica.com " data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
+        xAI (Grok) &middot; Wed, 08 Jul 2026
+      </div>
+      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Lawsuit: Man used Grok to make 7K sex images of stepdaughter, then shot himself</div>
+      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
+      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">arstechnica.com</span></div>
+      <div style="font-size:12px">
+        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
+              color:#fff;background:#8a5a3b">lawsuit</span>
+        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
+              color:#fff;background:#64748b">no quantitative claim</span>
+      </div>
+      
+      
+    </article>
+    <article class="card" data-search="google deepmind google deepmind and a24 announce first-of-its-kind research partnership deepmind.google " data-topic="" data-tiers="5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
+        Google DeepMind &middot; Fri, 03 Jul 2026
+      </div>
+      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Google DeepMind and A24 announce first-of-its-kind research partnership</div>
+      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 5: Party selling the thing the claim is about (own topic) (1)" style="display:inline-block;height:12px;width:100.0%;background:#b23b2e"></span></span></div>
+      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#b23b2e" title="tier 5: Party selling the thing the claim is about (own topic)">deepmind.google</span></div>
+      <div style="font-size:12px">
+        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
+              color:#fff;background:#4a5568">announced</span>
+        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
+              color:#fff;background:#64748b">no quantitative claim</span><span title="rated trusted in sources.md" style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#fff;background:#6ba368">track record: trusted</span>
+      </div>
+      
+      
+    </article>
+    <article class="card" data-search="google deepmind start building with nano banana 2 lite and gemini omni flash deepmind.google " data-topic="" data-tiers="5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
+        Google DeepMind &middot; Tue, 30 Jun 2026
+      </div>
+      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Start building with Nano Banana 2 Lite and Gemini Omni Flash</div>
+      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 5: Party selling the thing the claim is about (own topic) (1)" style="display:inline-block;height:12px;width:100.0%;background:#b23b2e"></span></span></div>
+      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#b23b2e" title="tier 5: Party selling the thing the claim is about (own topic)">deepmind.google</span></div>
+      <div style="font-size:12px">
+        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
+              color:#fff;background:#4a5568">announced</span>
+        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
+              color:#fff;background:#2f7d4f">denominator stated</span><span title="rated trusted in sources.md" style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#fff;background:#6ba368">track record: trusted</span>
+      </div>
+      
+      
+    </article>
+    <article class="card" data-search="google deepmind introducing computer use in gemini 3.5 flash deepmind.google " data-topic="" data-tiers="5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
+        Google DeepMind &middot; Wed, 24 Jun 2026
+      </div>
+      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Introducing computer use in Gemini 3.5 Flash</div>
+      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 5: Party selling the thing the claim is about (own topic) (1)" style="display:inline-block;height:12px;width:100.0%;background:#b23b2e"></span></span></div>
+      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#b23b2e" title="tier 5: Party selling the thing the claim is about (own topic)">deepmind.google</span></div>
+      <div style="font-size:12px">
+        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
+              color:#fff;background:#4a5568">announced</span>
+        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
+              color:#fff;background:#64748b">no quantitative claim</span><span title="rated trusted in sources.md" style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#fff;background:#6ba368">track record: trusted</span>
+      </div>
+      
+      
+    </article>
+    <article class="card" data-search="google deepmind unlocking uk house-building with ai-accelerated planning deepmind.google " data-topic="" data-tiers="5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
+        Google DeepMind &middot; Tue, 16 Jun 2026
+      </div>
+      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Unlocking UK house-building with AI-accelerated planning</div>
+      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 5: Party selling the thing the claim is about (own topic) (1)" style="display:inline-block;height:12px;width:100.0%;background:#b23b2e"></span></span></div>
+      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#b23b2e" title="tier 5: Party selling the thing the claim is about (own topic)">deepmind.google</span></div>
+      <div style="font-size:12px">
+        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
+              color:#fff;background:#4a5568">announced</span>
+        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
+              color:#fff;background:#2f7d4f">denominator stated</span><span title="rated trusted in sources.md" style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#fff;background:#6ba368">track record: trusted</span>
+      </div>
+      
+      
+    </article>
+    <article class="card" data-search="google deepmind securing the future of ai agents deepmind.google " data-topic="" data-tiers="5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
+        Google DeepMind &middot; Tue, 16 Jun 2026
+      </div>
+      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Securing the future of AI agents</div>
+      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 5: Party selling the thing the claim is about (own topic) (1)" style="display:inline-block;height:12px;width:100.0%;background:#b23b2e"></span></span></div>
+      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#b23b2e" title="tier 5: Party selling the thing the claim is about (own topic)">deepmind.google</span></div>
+      <div style="font-size:12px">
+        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
+              color:#fff;background:#4a5568">announced</span>
+        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
+              color:#fff;background:#cc7a33">partial denominator</span><span title="rated trusted in sources.md" style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#fff;background:#6ba368">track record: trusted</span>
+      </div>
+      
+      
+    </article>
+    <article class="card" data-search="google deepmind diffusiongemma: 4x faster text generation deepmind.google " data-topic="" data-tiers="5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
+        Google DeepMind &middot; Wed, 10 Jun 2026
+      </div>
+      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">DiffusionGemma: 4x faster text generation</div>
+      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 5: Party selling the thing the claim is about (own topic) (1)" style="display:inline-block;height:12px;width:100.0%;background:#b23b2e"></span></span></div>
+      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#b23b2e" title="tier 5: Party selling the thing the claim is about (own topic)">deepmind.google</span></div>
+      <div style="font-size:12px">
+        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
+              color:#fff;background:#4a5568">announced</span>
+        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
+              color:#fff;background:#cc7a33">partial denominator</span><span title="rated trusted in sources.md" style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#fff;background:#6ba368">track record: trusted</span>
+      </div>
+      
+      
+    </article>
+    <article class="card" data-search="univ. of chicago (study) ai boosts research careers but narrow the span of ideas explored: study spectrum.ieee.org " data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
+        Univ. of Chicago (study) &middot; Sun, 12 Jul 2026
+      </div>
+      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">AI boosts research careers but narrow the span of ideas explored: study</div>
+      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
+      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">spectrum.ieee.org</span></div>
+      <div style="font-size:12px">
+        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
+              color:#fff;background:#2f7d4f">study</span>
+        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
+              color:#fff;background:#2f7d4f">denominator stated</span>
+      </div>
+      
+      
+    </article>
+    <article class="card" data-search="iroh (mesh llm) mesh llm: distributed ai computing on iroh iroh.computer " data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
+        iroh (Mesh LLM) &middot; Sat, 11 Jul 2026
+      </div>
+      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Mesh LLM: distributed AI computing on iroh</div>
+      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
+      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">iroh.computer</span></div>
+      <div style="font-size:12px">
+        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
+              color:#fff;background:#4a5568">announced</span>
+        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
+              color:#fff;background:#cc7a33">partial denominator</span>
+      </div>
+      
+      
+    </article>
+    <article class="card" data-search="yael (opinion) stop telling me to ask an llm blog.yaelwrites.com " data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
+        Yael (opinion) &middot; Sat, 11 Jul 2026
+      </div>
+      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Stop Telling Me to Ask an LLM</div>
+      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
+      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">blog.yaelwrites.com</span></div>
+      <div style="font-size:12px">
+        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
+              color:#fff;background:#6b7280">opinion</span>
+        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
+              color:#fff;background:#64748b">no quantitative claim</span>
+      </div>
+      
+      
+    </article>
+    <article class="card" data-search="george hotz (opinion) ai 2040 and the cult of intelligence geohot.github.io " data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
+        George Hotz (opinion) &middot; Sat, 11 Jul 2026
+      </div>
+      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">AI 2040 and the cult of intelligence</div>
+      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
+      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">geohot.github.io</span></div>
+      <div style="font-size:12px">
+        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
+              color:#fff;background:#6b7280">opinion</span>
+        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
+              color:#fff;background:#64748b">no quantitative claim</span>
+      </div>
+      
+      
+    </article>
+    <article class="card" data-search="cory doctorow (opinion) reverse centaurs are the answer to the ai paradox (2025) pluralistic.net " data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
+        Cory Doctorow (opinion) &middot; Sat, 11 Jul 2026
+      </div>
+      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Reverse centaurs are the answer to the AI paradox (2025)</div>
+      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
+      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">pluralistic.net</span></div>
+      <div style="font-size:12px">
+        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
+              color:#fff;background:#6b7280">opinion</span>
+        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
+              color:#fff;background:#64748b">no quantitative claim</span>
+      </div>
+      
+      
+    </article>
+    <article class="card" data-search="ghost font ghost font: a font that humans can read but ai cannot mixfont.com " data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
+        Ghost Font &middot; Sat, 11 Jul 2026
+      </div>
+      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Ghost Font: A font that humans can read but AI cannot</div>
+      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
+      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">mixfont.com</span></div>
+      <div style="font-size:12px">
+        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
+              color:#fff;background:#5b7fa6">assertion</span>
+        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
+              color:#fff;background:#cc7a33">partial denominator</span>
+      </div>
+      
+      
+    </article>
+    <article class="card" data-search="google google just redesigned the search box for the first time in 25 years — here’s why it matters more than you think. venturebeat.com " data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
       <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
         Google &middot; Tue, 19 May 2026
       </div>
@@ -273,10 +672,11 @@
               color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
       </div>
       
+      
     </article>
-    <article class="card" data-search="venturebeat.com railway secures $100 million to challenge aws with ai-native cloud infrastructure venturebeat.com" data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+    <article class="card" data-search="railway railway secures $100 million to challenge aws with ai-native cloud infrastructure venturebeat.com " data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
       <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        venturebeat.com &middot; Thu, 22 Jan 2026
+        Railway &middot; Thu, 22 Jan 2026
       </div>
       <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Railway secures $100 million to challenge AWS with AI-native cloud infrastructure</div>
       <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
@@ -288,10 +688,11 @@
               color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
       </div>
       
+      
     </article>
-    <article class="card" data-search="venturebeat.com claude code costs up to $200 a month. goose does the same thing for free. venturebeat.com" data-topic="code_automation" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+    <article class="card" data-search="anthropic / block (goose) claude code costs up to $200 a month. goose does the same thing for free. venturebeat.com " data-topic="code_automation" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
       <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        venturebeat.com &middot; Mon, 19 Jan 2026
+        Anthropic / Block (Goose) &middot; Mon, 19 Jan 2026
       </div>
       <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Claude Code costs up to $200 a month. Goose does the same thing for free.</div>
       <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
@@ -302,11 +703,12 @@
         <span style="display:inline-block;padding:2px 8px;border-radius:4px;
               color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
       </div>
+      
       <div style="margin-top:10px;padding:10px 12px;background:#f7fafc;border-left:3px solid #4a5568;font-size:13px;color:#2d3748"><strong style="color:#1a365d">Possible anchor (auto-matched, unreviewed).</strong> Labs&#x27; code-% claims: 0 of 8 define a denominator and none is externally audited. METR&#x27;s randomised trial (Jul 2025) found developers 19% slower with frontier tools; a 2025 Science study puts AI-written US GitHub Python at ~29%. <a href="https://doi.org/10.5281/zenodo.21325372" style="color:#1a365d">AI Research-Automation Scorecard, Layer 1 (DOI)</a></div>
     </article>
-    <article class="card" data-search="venturebeat.com listen labs raises $69m after viral billboard hiring stunt to scale ai customer interviews venturebeat.com" data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+    <article class="card" data-search="listen labs listen labs raises $69m after viral billboard hiring stunt to scale ai customer interviews venturebeat.com " data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
       <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        venturebeat.com &middot; Fri, 16 Jan 2026
+        Listen Labs &middot; Fri, 16 Jan 2026
       </div>
       <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Listen Labs raises $69M after viral billboard hiring stunt to scale AI customer interviews</div>
       <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
@@ -318,10 +720,11 @@
               color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
       </div>
       
+      
     </article>
-    <article class="card" data-search="google salesforce rolls out new slackbot ai agent as it battles microsoft and google in workplace ai venturebeat.com" data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+    <article class="card" data-search="salesforce salesforce rolls out new slackbot ai agent as it battles microsoft and google in workplace ai venturebeat.com " data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
       <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        Google &middot; Tue, 13 Jan 2026
+        Salesforce &middot; Tue, 13 Jan 2026
       </div>
       <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Salesforce rolls out new Slackbot AI agent as it battles Microsoft and Google in workplace AI</div>
       <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
@@ -333,8 +736,9 @@
               color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
       </div>
       
+      
     </article>
-    <article class="card" data-search="anthropic anthropic launches cowork, a claude desktop agent that works in your files — no coding required venturebeat.com" data-topic="code_automation" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
+    <article class="card" data-search="anthropic anthropic launches cowork, a claude desktop agent that works in your files — no coding required venturebeat.com " data-topic="code_automation" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
       <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
         Anthropic &middot; Mon, 12 Jan 2026
       </div>
@@ -347,367 +751,8 @@
         <span style="display:inline-block;padding:2px 8px;border-radius:4px;
               color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
       </div>
+      
       <div style="margin-top:10px;padding:10px 12px;background:#f7fafc;border-left:3px solid #4a5568;font-size:13px;color:#2d3748"><strong style="color:#1a365d">Possible anchor (auto-matched, unreviewed).</strong> Labs&#x27; code-% claims: 0 of 8 define a denominator and none is externally audited. METR&#x27;s randomised trial (Jul 2025) found developers 19% slower with frontier tools; a 2025 Science study puts AI-written US GitHub Python at ~29%. <a href="https://doi.org/10.5281/zenodo.21325372" style="color:#1a365d">AI Research-Automation Scorecard, Layer 1 (DOI)</a></div>
-    </article>
-    <article class="card" data-search="meta lorde says ray-ban meta ai glasses are ‘not sexy’ theverge.com" data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
-      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        Meta &middot; 2026-07-12T16:10
-      </div>
-      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Lorde says Ray-Ban Meta AI glasses are ‘not sexy’</div>
-      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
-      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">theverge.com</span></div>
-      <div style="font-size:12px">
-        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:#4a5568">announced</span>
-        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
-      </div>
-      
-    </article>
-    <article class="card" data-search="apple apple’s failed self-driving car program left a legacy of powerful ai chips theverge.com" data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
-      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        Apple &middot; 2026-07-12T12:27
-      </div>
-      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Apple’s failed self-driving car program left a legacy of powerful AI chips</div>
-      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
-      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">theverge.com</span></div>
-      <div style="font-size:12px">
-        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:#4a5568">announced</span>
-        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
-      </div>
-      
-    </article>
-    <article class="card" data-search="theverge.com the fight against ai data centers is just beginning theverge.com" data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
-      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        theverge.com &middot; 2026-07-10T12:18
-      </div>
-      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">The fight against AI data centers is just beginning</div>
-      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
-      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">theverge.com</span></div>
-      <div style="font-size:12px">
-        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:#4a5568">announced</span>
-        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
-      </div>
-      
-    </article>
-    <article class="card" data-search="meta meta turns off the instagram feature that let users make ai deepfakes of public accounts theverge.com" data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
-      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        Meta &middot; 2026-07-10T19:56
-      </div>
-      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Meta turns off the Instagram feature that let users make AI deepfakes of public accounts</div>
-      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
-      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">theverge.com</span></div>
-      <div style="font-size:12px">
-        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:#4a5568">announced</span>
-        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
-      </div>
-      
-    </article>
-    <article class="card" data-search="openai apple sues openai for allegedly stealing hardware secrets theverge.com" data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
-      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        OpenAI &middot; 2026-07-10T18:33
-      </div>
-      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Apple sues OpenAI for allegedly stealing hardware secrets</div>
-      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
-      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">theverge.com</span></div>
-      <div style="font-size:12px">
-        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:#4a5568">announced</span>
-        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
-      </div>
-      
-    </article>
-    <article class="card" data-search="theverge.com instagram’s adam mosseri: if you don&amp;#8217;t like ai, &amp;#8216;then you shouldn&amp;#8217;t have it in your feed&amp;#8217; theverge.com" data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
-      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        theverge.com &middot; 2026-07-10T09:59
-      </div>
-      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Instagram’s Adam Mosseri: If you don&amp;#8217;t like AI, &amp;#8216;then you shouldn&amp;#8217;t have it in your feed&amp;#8217;</div>
-      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
-      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">theverge.com</span></div>
-      <div style="font-size:12px">
-        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:#4a5568">announced</span>
-        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
-      </div>
-      
-    </article>
-    <article class="card" data-search="meta disable autoplay and infinite scroll or risk massive fines, eu tells meta arstechnica.com" data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
-      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        Meta &middot; Fri, 10 Jul 2026
-      </div>
-      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Disable autoplay and infinite scroll or risk massive fines, EU tells Meta</div>
-      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
-      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">arstechnica.com</span></div>
-      <div style="font-size:12px">
-        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:#4a5568">announced</span>
-        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
-      </div>
-      
-    </article>
-    <article class="card" data-search="openai openai wants its new tool to do your work for you and with you arstechnica.com" data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
-      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        OpenAI &middot; Thu, 09 Jul 2026
-      </div>
-      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">OpenAI wants its new tool to do your work for you and with you</div>
-      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
-      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">arstechnica.com</span></div>
-      <div style="font-size:12px">
-        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:#4a5568">announced</span>
-        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
-      </div>
-      
-    </article>
-    <article class="card" data-search="arstechnica.com humanoid robots controlled by surgeons did world-first operation on live pigs arstechnica.com" data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
-      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        arstechnica.com &middot; Thu, 09 Jul 2026
-      </div>
-      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Humanoid robots controlled by surgeons did world-first operation on live pigs</div>
-      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
-      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">arstechnica.com</span></div>
-      <div style="font-size:12px">
-        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:#4a5568">announced</span>
-        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
-      </div>
-      
-    </article>
-    <article class="card" data-search="openai openai may have made a fatal misstep in copyright fight with news orgs arstechnica.com" data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
-      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        OpenAI &middot; Thu, 09 Jul 2026
-      </div>
-      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">OpenAI may have made a fatal misstep in copyright fight with news orgs</div>
-      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
-      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">arstechnica.com</span></div>
-      <div style="font-size:12px">
-        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:#4a5568">announced</span>
-        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
-      </div>
-      
-    </article>
-    <article class="card" data-search="arstechnica.com suspecting ai cheating, ivy league prof ordered an in-person final; scores fell 50% arstechnica.com" data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
-      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        arstechnica.com &middot; Wed, 08 Jul 2026
-      </div>
-      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Suspecting AI cheating, Ivy League prof ordered an in-person final; scores fell 50%</div>
-      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
-      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">arstechnica.com</span></div>
-      <div style="font-size:12px">
-        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:#4a5568">announced</span>
-        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
-      </div>
-      
-    </article>
-    <article class="card" data-search="arstechnica.com lawsuit: man used grok to make 7k sex images of stepdaughter, then shot himself arstechnica.com" data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
-      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        arstechnica.com &middot; Wed, 08 Jul 2026
-      </div>
-      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Lawsuit: Man used Grok to make 7K sex images of stepdaughter, then shot himself</div>
-      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
-      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">arstechnica.com</span></div>
-      <div style="font-size:12px">
-        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:#4a5568">announced</span>
-        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
-      </div>
-      
-    </article>
-    <article class="card" data-search="google deepmind google deepmind and a24 announce first-of-its-kind research partnership deepmind.google" data-topic="" data-tiers="5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
-      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        Google DeepMind &middot; Fri, 03 Jul 2026
-      </div>
-      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Google DeepMind and A24 announce first-of-its-kind research partnership</div>
-      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 5: Party selling the thing the claim is about (own topic) (1)" style="display:inline-block;height:12px;width:100.0%;background:#b23b2e"></span></span></div>
-      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#b23b2e" title="tier 5: Party selling the thing the claim is about (own topic)">deepmind.google</span></div>
-      <div style="font-size:12px">
-        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:#4a5568">announced</span>
-        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span title="rated trusted in sources.md" style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#fff;background:#6ba368">track record: trusted</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
-      </div>
-      
-    </article>
-    <article class="card" data-search="deepmind.google start building with nano banana 2 lite and gemini omni flash deepmind.google" data-topic="" data-tiers="5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
-      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        deepmind.google &middot; Tue, 30 Jun 2026
-      </div>
-      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Start building with Nano Banana 2 Lite and Gemini Omni Flash</div>
-      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 5: Party selling the thing the claim is about (own topic) (1)" style="display:inline-block;height:12px;width:100.0%;background:#b23b2e"></span></span></div>
-      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#b23b2e" title="tier 5: Party selling the thing the claim is about (own topic)">deepmind.google</span></div>
-      <div style="font-size:12px">
-        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:#4a5568">announced</span>
-        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span title="rated trusted in sources.md" style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#fff;background:#6ba368">track record: trusted</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
-      </div>
-      
-    </article>
-    <article class="card" data-search="deepmind.google introducing computer use in gemini 3.5 flash deepmind.google" data-topic="" data-tiers="5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
-      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        deepmind.google &middot; Wed, 24 Jun 2026
-      </div>
-      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Introducing computer use in Gemini 3.5 Flash</div>
-      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 5: Party selling the thing the claim is about (own topic) (1)" style="display:inline-block;height:12px;width:100.0%;background:#b23b2e"></span></span></div>
-      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#b23b2e" title="tier 5: Party selling the thing the claim is about (own topic)">deepmind.google</span></div>
-      <div style="font-size:12px">
-        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:#4a5568">announced</span>
-        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span title="rated trusted in sources.md" style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#fff;background:#6ba368">track record: trusted</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
-      </div>
-      
-    </article>
-    <article class="card" data-search="deepmind.google unlocking uk house-building with ai-accelerated planning deepmind.google" data-topic="" data-tiers="5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
-      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        deepmind.google &middot; Tue, 16 Jun 2026
-      </div>
-      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Unlocking UK house-building with AI-accelerated planning</div>
-      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 5: Party selling the thing the claim is about (own topic) (1)" style="display:inline-block;height:12px;width:100.0%;background:#b23b2e"></span></span></div>
-      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#b23b2e" title="tier 5: Party selling the thing the claim is about (own topic)">deepmind.google</span></div>
-      <div style="font-size:12px">
-        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:#4a5568">announced</span>
-        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span title="rated trusted in sources.md" style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#fff;background:#6ba368">track record: trusted</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
-      </div>
-      
-    </article>
-    <article class="card" data-search="deepmind.google securing the future of ai agents deepmind.google" data-topic="" data-tiers="5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
-      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        deepmind.google &middot; Tue, 16 Jun 2026
-      </div>
-      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Securing the future of AI agents</div>
-      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 5: Party selling the thing the claim is about (own topic) (1)" style="display:inline-block;height:12px;width:100.0%;background:#b23b2e"></span></span></div>
-      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#b23b2e" title="tier 5: Party selling the thing the claim is about (own topic)">deepmind.google</span></div>
-      <div style="font-size:12px">
-        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:#4a5568">announced</span>
-        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span title="rated trusted in sources.md" style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#fff;background:#6ba368">track record: trusted</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
-      </div>
-      
-    </article>
-    <article class="card" data-search="deepmind.google diffusiongemma: 4x faster text generation deepmind.google" data-topic="" data-tiers="5" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
-      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        deepmind.google &middot; Wed, 10 Jun 2026
-      </div>
-      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">DiffusionGemma: 4x faster text generation</div>
-      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 5: Party selling the thing the claim is about (own topic) (1)" style="display:inline-block;height:12px;width:100.0%;background:#b23b2e"></span></span></div>
-      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#b23b2e" title="tier 5: Party selling the thing the claim is about (own topic)">deepmind.google</span></div>
-      <div style="font-size:12px">
-        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:#4a5568">announced</span>
-        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span title="rated trusted in sources.md" style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#fff;background:#6ba368">track record: trusted</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
-      </div>
-      
-    </article>
-    <article class="card" data-search="spectrum.ieee.org ai boosts research careers but narrow the span of ideas explored: study spectrum.ieee.org" data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
-      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        spectrum.ieee.org &middot; Sun, 12 Jul 2026
-      </div>
-      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">AI boosts research careers but narrow the span of ideas explored: study</div>
-      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
-      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">spectrum.ieee.org</span></div>
-      <div style="font-size:12px">
-        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:#4a5568">announced</span>
-        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
-      </div>
-      
-    </article>
-    <article class="card" data-search="iroh.computer mesh llm: distributed ai computing on iroh iroh.computer" data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
-      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        iroh.computer &middot; Sat, 11 Jul 2026
-      </div>
-      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Mesh LLM: distributed AI computing on iroh</div>
-      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
-      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">iroh.computer</span></div>
-      <div style="font-size:12px">
-        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:#4a5568">announced</span>
-        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
-      </div>
-      
-    </article>
-    <article class="card" data-search="blog.yaelwrites.com stop telling me to ask an llm blog.yaelwrites.com" data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
-      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        blog.yaelwrites.com &middot; Sat, 11 Jul 2026
-      </div>
-      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Stop Telling Me to Ask an LLM</div>
-      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
-      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">blog.yaelwrites.com</span></div>
-      <div style="font-size:12px">
-        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:#4a5568">announced</span>
-        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
-      </div>
-      
-    </article>
-    <article class="card" data-search="geohot.github.io ai 2040 and the cult of intelligence geohot.github.io" data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
-      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        geohot.github.io &middot; Sat, 11 Jul 2026
-      </div>
-      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">AI 2040 and the cult of intelligence</div>
-      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
-      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">geohot.github.io</span></div>
-      <div style="font-size:12px">
-        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:#4a5568">announced</span>
-        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
-      </div>
-      
-    </article>
-    <article class="card" data-search="pluralistic.net reverse centaurs are the answer to the ai paradox (2025) pluralistic.net" data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
-      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        pluralistic.net &middot; Sat, 11 Jul 2026
-      </div>
-      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Reverse centaurs are the answer to the AI paradox (2025)</div>
-      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
-      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">pluralistic.net</span></div>
-      <div style="font-size:12px">
-        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:#4a5568">announced</span>
-        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
-      </div>
-      
-    </article>
-    <article class="card" data-search="mixfont.com ghost font: a font that humans can read but ai cannot mixfont.com" data-topic="" data-tiers="3" style="border:1px solid #e2e8f0;border-radius:8px;padding:14px 16px;margin:0 0 14px">
-      <div style="font-size:12px;color:#4a5568;margin-bottom:4px">
-        mixfont.com &middot; Sat, 11 Jul 2026
-      </div>
-      <div style="font-size:16px;font-weight:600;color:#1a365d;line-height:1.35">Ghost Font: A font that humans can read but AI cannot</div>
-      <div class="motivebar" style="margin:10px 0 6px"><span style="display:inline-block;width:100%;border-radius:3px;overflow:hidden;line-height:0"><span title="tier 3: Analyst house or trade press (sells reports, access or clicks) (1)" style="display:inline-block;height:12px;width:100.0%;background:#c7a53b"></span></span></div>
-      <div style="margin:10px 0 6px"><span class="tierchip" style="display:inline-block;font-size:12px;padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:#c7a53b" title="tier 3: Analyst house or trade press (sells reports, access or clicks)">mixfont.com</span></div>
-      <div style="font-size:12px">
-        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:#4a5568">announced</span>
-        <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:#94a3b8">denominator: unreviewed</span><span style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;color:#4a5568;background:#edf2f7;border:1px dashed #4a5568">auto-tagged, unreviewed</span>
-      </div>
-      
     </article>
       <div style="font-size:12px;color:#4a5568;margin-top:24px;border-top:1px solid #e2e8f0;padding-top:14px">
         Method: source type and motive tier are assigned from a curated entity map; denominator
@@ -729,16 +774,19 @@
   var cards=[].slice.call(document.querySelectorAll('.card'));
   var sch=[].slice.call(document.querySelectorAll('.scholarrow'));
   var cnt=document.getElementById('count');
+  var cf=document.getElementById('conflictonly');
   function vals(a){return a.filter(function(b){return b.checked}).map(function(b){return b.value})}
   function apply(){
     var term=(q.value||'').toLowerCase().trim();
     var tp=vals(tb), ti=vals(tr), shown=0;
+    var conly=cf&&cf.checked;
     cards.forEach(function(c){
       var okS=!term||(c.getAttribute('data-search')||'').indexOf(term)>-1;
       var okT=tp.indexOf(c.getAttribute('data-topic')||'')>-1;
       var cts=(c.getAttribute('data-tiers')||'').split(' ').filter(Boolean);
       var okTi=cts.some(function(x){return ti.indexOf(x)>-1});
-      var v=okS&&okT&&okTi;
+      var okC=!conly||c.getAttribute('data-conflict')==='1';
+      var v=okS&&okT&&okTi&&okC;
       c.style.display=v?'':'none'; if(v)shown++;
     });
     sch.forEach(function(e){
@@ -749,6 +797,7 @@
   }
   q.addEventListener('input',apply);
   tb.concat(tr).forEach(function(b){b.addEventListener('change',apply)});
+  if(cf)cf.addEventListener('change',apply);
   var tt=document.getElementById('tiertoggle');
   tt.addEventListener('click',function(){
     var off=document.body.classList.toggle('plainmode');

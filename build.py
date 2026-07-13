@@ -34,9 +34,11 @@ TIER = {
 DENOM = {"y": ("#2f7d4f", "denominator stated"),
          "partial": ("#cc7a33", "partial denominator"),
          "n": ("#b23b2e", "no denominator"),
+         "n/a": ("#64748b", "no quantitative claim"),
          "?": ("#94a3b8", "denominator: unreviewed")}
 CLAIM = {"measurement": "#2f7d4f", "assertion": "#5b7fa6",
-         "target": "#cc7a33", "prediction": "#cc7a33"}
+         "target": "#cc7a33", "prediction": "#cc7a33",
+         "study": "#2f7d4f", "opinion": "#6b7280", "lawsuit": "#8a5a3b"}
 
 # topic -> keywords, to auto-suggest a reality anchor for an unreviewed feed item.
 # Order is priority: the first topic whose keyword matches the headline wins. This
@@ -64,7 +66,7 @@ TOPIC_LABELS = {
     "code_automation": "Code automation", "work_automation": "Work automation",
     "self_improvement": "Self-improvement", "water": "Water",
     "power_demand": "Power demand", "energy_forecast": "Energy forecast",
-    "cost": "Cost / spend", "": "Untagged",
+    "cost": "Cost / spend", "governance": "Politics / governance", "": "Untagged",
 }
 
 
@@ -145,12 +147,30 @@ def item_card(it, anchors, plain=False):
             f'<strong style="color:{NAVY}">{head}</strong> {esc(a["label"])} '
             f'<a href="{esc(a["url"])}" style="color:{NAVY}">'
             f'{esc(a.get("source",""))} (DOI)</a></div>')
+    # disclosed-conflict flag: an INDEPENDENT facet from the tier. It marks a
+    # checkable structural stake (a source that regulates, buys from, or owns the
+    # subject of the claim), never an imputation of motive from party. Per-source
+    # note, plus an optional item-level one.
+    cnotes = []
+    if it.get("conflict"):
+        cnotes.append(it["conflict"])
+    cnotes += [f'{s.get("name","")}: {s["conflict"]}' for s in it["sources"] if s.get("conflict")]
+    conflict_html = ""
+    if cnotes:
+        lines = "".join(f'<div style="margin:2px 0">{esc(n)}</div>' for n in cnotes)
+        conflict_html = (
+            f'<div style="margin-top:8px;padding:8px 12px;background:#fffaf0;'
+            f'border-left:3px solid {TIER[5][0]};font-size:12px;color:{BODY}">'
+            f'<strong style="color:{TIER[5][0]}">Disclosed conflict.</strong> Structural stake, '
+            f'not an accusation. {lines}</div>')
+
     # data-* for client-side search + filters (used by the sidebar JS)
     srcnames = " ".join(s.get("name", "") for s in it["sources"])
-    blob = f'{it["entity"]} {it["headline"]} {srcnames}'.lower()
+    blob = f'{it["entity"]} {it["headline"]} {srcnames} {" ".join(cnotes)}'.lower()
     tierlist = " ".join(str(x) for x in sorted(tiers))
+    conflict_attr = ' data-conflict="1"' if cnotes else ""
     data = (f'class="card" data-search="{esc(blob)}" data-topic="{esc(it.get("topic",""))}" '
-            f'data-tiers="{esc(tierlist)}"')
+            f'data-tiers="{esc(tierlist)}"{conflict_attr}')
     return f"""
     <article {data} style="border:1px solid {LINE};border-radius:8px;padding:14px 16px;margin:0 0 14px">
       <div style="font-size:12px;color:{SLATE};margin-bottom:4px">
@@ -165,6 +185,7 @@ def item_card(it, anchors, plain=False):
         <span style="display:inline-block;padding:2px 8px;border-radius:4px;
               color:#fff;background:{dcol}">{esc(dlabel)}</span>{rmark}{flag}
       </div>
+      {conflict_html}
       {anchor_html}
     </article>"""
 
@@ -250,10 +271,15 @@ def main():
         # auto-suggest a reality anchor for feed items with no topic yet (plumbing,
         # flagged as unreviewed so it is a suggestion, not an assertion)
         for it in incoming:
-            if not it.get("topic"):
+            # only suggest an anchor for items NOT yet human-reviewed; a reviewed
+            # item with an empty topic means "reviewed, no honest anchor" and is left as-is
+            if not it.get("topic") and not it.get("reviewed"):
                 t = tag_topic(it.get("headline", ""))
                 if t:
                     it["topic"], it["_auto_topic"] = t, True
+
+        # keep reviewed feed items above the unreviewed tail within the incoming block
+        incoming.sort(key=lambda it: not it.get("reviewed", False))
 
     items = reviewed + incoming
 
@@ -327,6 +353,16 @@ def main():
         f'<th style="text-align:right;padding:4px 10px;color:{SLATE}">Items</th></tr></thead>'
         f'<tbody>{movers}</tbody></table></div>')
 
+    # the four explainer panels are collapsed into one closed panel so the reader
+    # reaches the news cards immediately (they were stacked open and congested the top)
+    about_html = ("" if plain else
+        f'<details class="tierui" style="border:1px solid {LINE};border-radius:8px;'
+        f'padding:10px 14px;margin:0 0 18px;background:#fff">'
+        f'<summary style="font-weight:600;color:{NAVY};cursor:pointer">'
+        f'How to read this board &middot; motive key, neutrality notes, tier map and source mix</summary>'
+        f'<div style="margin-top:12px">{legend_html}{neutrality_html}{tiermap_html}{sourcemix_html}</div>'
+        f'</details>')
+
     # ---- sidebar controls: search + topic/tier filters + live tier toggle ----
     topic_counts, tiers_present = {}, set()
     for it in items:
@@ -350,6 +386,8 @@ def main():
         f'<input id="q" class="search" type="search" placeholder="Search feed and papers...">'
         f'<div class="fgroup"><h4>Topics</h4>{topic_boxes}</div>'
         f'<div class="fgroup tierui"><h4>Motive tier</h4>{tier_boxes}</div>'
+        f'<div class="fgroup"><label><input type="checkbox" id="conflictonly"> '
+        f'Disclosed conflict only</label></div>'
         f'<button id="tiertoggle" class="tierbtn">{btn_label}</button>'
         f'<div id="count" class="count"></div></aside>')
 
@@ -380,16 +418,19 @@ def main():
   var cards=[].slice.call(document.querySelectorAll('.card'));
   var sch=[].slice.call(document.querySelectorAll('.scholarrow'));
   var cnt=document.getElementById('count');
+  var cf=document.getElementById('conflictonly');
   function vals(a){return a.filter(function(b){return b.checked}).map(function(b){return b.value})}
   function apply(){
     var term=(q.value||'').toLowerCase().trim();
     var tp=vals(tb), ti=vals(tr), shown=0;
+    var conly=cf&&cf.checked;
     cards.forEach(function(c){
       var okS=!term||(c.getAttribute('data-search')||'').indexOf(term)>-1;
       var okT=tp.indexOf(c.getAttribute('data-topic')||'')>-1;
       var cts=(c.getAttribute('data-tiers')||'').split(' ').filter(Boolean);
       var okTi=cts.some(function(x){return ti.indexOf(x)>-1});
-      var v=okS&&okT&&okTi;
+      var okC=!conly||c.getAttribute('data-conflict')==='1';
+      var v=okS&&okT&&okTi&&okC;
       c.style.display=v?'':'none'; if(v)shown++;
     });
     sch.forEach(function(e){
@@ -400,6 +441,7 @@ def main():
   }
   q.addEventListener('input',apply);
   tb.concat(tr).forEach(function(b){b.addEventListener('change',apply)});
+  if(cf)cf.addEventListener('change',apply);
   var tt=document.getElementById('tiertoggle');
   tt.addEventListener('click',function(){
     var off=document.body.classList.toggle('plainmode');
@@ -425,7 +467,7 @@ def main():
     {sidebar_html}
     <main class="main">
       {plain_note}
-      <div class="tierui">{legend_html}{neutrality_html}{tiermap_html}{sourcemix_html}</div>
+      {about_html}
       {scholar_html}
       {cards}
       <div style="font-size:12px;color:{SLATE};margin-top:24px;border-top:1px solid {LINE};padding-top:14px">
