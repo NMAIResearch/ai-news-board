@@ -8,6 +8,7 @@ narrate. The reader draws the conclusion.
 ## Run
 
     python3 fetch_feeds.py     # pull BROAD AI news into feed_items.json (neutral intake)
+    python3 carry_reviews.py   # re-apply prior review labels by URL; only NEW items stay unreviewed
     python3 apply_ratings.py   # layer the a local ratings file trust ratings
     python3 fetch_scholar.py   # pull latest arXiv papers + HF datasets
     python3 build.py           # reads items.json (+ feeds), writes index.html
