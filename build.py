@@ -114,6 +114,13 @@ def item_card(it, anchors, plain=False):
         chips.append(f'<span class="tierchip" style="display:inline-block;font-size:12px;'
                      f'padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:{col}" '
                      f'title="tier {t}: {esc(TIER[t][1])}">{esc(s["name"])}</span>')
+    # link the headline to its primary source when one exists (curated items have
+    # no url, so they stay plain text rather than becoming a dead link)
+    src_url = next((s.get("url", "") for s in it["sources"] if s.get("url")), "")
+    headline_html = esc(it["headline"])
+    if src_url:
+        headline_html = (f'<a href="{esc(src_url)}" target="_blank" rel="noopener noreferrer" '
+                         f'style="color:{NAVY};text-decoration:none">{esc(it["headline"])}</a>')
     d = it["denominator_stated"].strip().lower()
     dcol, dlabel = DENOM.get(d, DENOM["n"])
     ct = it["claim_type"].strip().lower()
@@ -176,7 +183,7 @@ def item_card(it, anchors, plain=False):
       <div style="font-size:12px;color:{SLATE};margin-bottom:4px">
         {esc(it["entity"])} &middot; {esc(it["date"])}
       </div>
-      <div style="font-size:16px;font-weight:600;color:{NAVY};line-height:1.35">{esc(it["headline"])}</div>
+      <div style="font-size:16px;font-weight:600;color:{NAVY};line-height:1.35">{headline_html}</div>
       {'' if plain else f'<div class="motivebar" style="margin:10px 0 6px">{bar(tiers)}</div>'}
       <div style="margin:10px 0 6px">{''.join(chips)}</div>
       <div style="font-size:12px">
