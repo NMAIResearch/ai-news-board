@@ -211,6 +211,42 @@ def legend():
             f'margin-bottom:6px">Motive key (who benefits if the claim is true)</div>{rows}{caveat}</div>')
 
 
+def gov_conflict_panel(gc):
+    """Render the disclosed-conflict panel for government-on-AI (data in gov_conflict.json).
+    Flag, not narrate: a sourced, claim-relative structural conflict, not an accusation."""
+    if not gc:
+        return ""
+    hats = "".join(
+        f'<div style="margin:4px 0"><strong style="color:{NAVY}">{esc(h["hat"])}.</strong> {esc(h["detail"])}</div>'
+        for h in gc.get("hats", []))
+    rows = "".join(
+        f'<tr><td style="padding:4px 10px;border-bottom:1px solid {LINE}">{esc(r["company"])}</td>'
+        f'<td style="padding:4px 10px;border-bottom:1px solid {LINE};font-size:12px">{esc(r["position"])}</td>'
+        f'<td style="padding:4px 10px;border-bottom:1px solid {LINE};text-align:center;font-size:12px">{esc(r["status"])}</td>'
+        f'<td style="padding:4px 10px;border-bottom:1px solid {LINE};font-size:12px;color:{SLATE}">{esc(r["layer"])}</td></tr>'
+        for r in gc.get("roster", []))
+    sep = "".join(f'<li style="margin:2px 0">{esc(s)}</li>' for s in gc.get("separate", []))
+    amber = TIER[5][0]
+    return (
+        f'<details class="govconflict" style="border:1px solid {LINE};border-left:4px solid {amber};'
+        f'border-radius:8px;padding:12px 16px;margin:0 0 18px;background:#fffaf0">'
+        f'<summary style="font-weight:600;color:{amber};cursor:pointer">{esc(gc.get("title",""))}</summary>'
+        f'<div style="font-size:13px;color:{BODY};margin-top:10px">{esc(gc.get("intro",""))}</div>'
+        f'<div style="font-size:13px;margin:10px 0">{hats}</div>'
+        f'<div style="font-size:12px;color:{SLATE};margin:6px 0 8px">{esc(gc.get("roster_note",""))}</div>'
+        f'<table style="border-collapse:collapse;width:100%;font-size:13px">'
+        f'<thead><tr><th style="text-align:left;padding:4px 10px;color:{SLATE}">Company</th>'
+        f'<th style="text-align:left;padding:4px 10px;color:{SLATE}">Government position</th>'
+        f'<th style="padding:4px 10px;color:{SLATE}">Status</th>'
+        f'<th style="text-align:left;padding:4px 10px;color:{SLATE}">Stack layer</th></tr></thead>'
+        f'<tbody>{rows}</tbody></table>'
+        f'<div style="font-size:12px;color:{BODY};margin-top:10px"><strong>Kept separate (not equity):</strong>'
+        f'<ul style="margin:4px 0 0 18px;padding:0">{sep}</ul></div>'
+        f'<div style="font-size:11px;color:{SLATE};margin-top:10px">Sources: {esc(gc.get("sources",""))}</div>'
+        f'<div style="font-size:11px;color:{SLATE};margin-top:6px"><strong>Conflict of interest:</strong> '
+        f'{esc(gc.get("coi",""))}</div></details>')
+
+
 def main():
     import argparse
     ap = argparse.ArgumentParser(description="Render the AI News Reality Board.")
@@ -370,6 +406,13 @@ def main():
         f'<div style="margin-top:12px">{legend_html}{neutrality_html}{tiermap_html}{sourcemix_html}</div>'
         f'</details>')
 
+    # disclosed-conflict panel: the US government's three hats on AI (gov_conflict.json).
+    # Shown in both modes: it is a conflict-disclosure axis, independent of motive tiering.
+    gc_path = os.path.join(HERE, "gov_conflict.json")
+    govconflict_html = ""
+    if os.path.isfile(gc_path):
+        govconflict_html = gov_conflict_panel(json.load(open(gc_path, encoding="utf-8")))
+
     # ---- sidebar controls: search + topic/tier filters + live tier toggle ----
     topic_counts, tiers_present = {}, set()
     for it in items:
@@ -475,6 +518,7 @@ def main():
     <main class="main">
       {plain_note}
       {about_html}
+      {govconflict_html}
       {scholar_html}
       {cards}
       <div style="font-size:12px;color:{SLATE};margin-top:24px;border-top:1px solid {LINE};padding-top:14px">

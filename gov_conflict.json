@@ -1,0 +1,29 @@
+{
+  "title": "Disclosed conflict: the US government's three hats on AI",
+  "intro": "When a government source comments on AI it is not a neutral regulator. It regulates the technology, buys it, and holds equity in the stack it comments on. This is a structural, left-right-neutral flag, not a claim of wrongdoing. Claim-relative: agency primary DATA (Federal Reserve, BLS, USGS) stays tier 1; only government commentary and claims ON AI carry this flag.",
+  "hats": [
+    {"hat": "Regulator", "detail": "Gates model releases and sets AI policy (2026 safety-review holds on GPT-5.6 and Fable 5 / Mythos 5)."},
+    {"hat": "Customer", "detail": "Procures AI and awards or withholds federal contracts (Anthropic reportedly frozen out of the stake talks and blocked from federal contracts, mid-2026)."},
+    {"hat": "Owner", "detail": "Holds equity across the AI-buildout stack, and was offered a 5% stake in a model lab (OpenAI)."}
+  ],
+  "roster_note": "CFR tracker: roughly $20.9B across 17 equity or quasi-equity deals since Jan 2025 (a broader count reaches 28 firms once letters of intent are included). By dollars: semiconductors ~52%, critical minerals ~43%. Held equity below; revenue-share and proposed positions are kept separate so they are not miscounted.",
+  "roster": [
+    {"company": "Intel", "position": "9.9-10%, $8.9B (Aug 2025) + warrant for 5% more", "status": "Held", "layer": "Fab / compute"},
+    {"company": "MP Materials", "position": "15% (largest shareholder, Jul 2025)", "status": "Held", "layer": "Rare earths"},
+    {"company": "Lithium Americas", "position": "5% (some sources 10%) + 5% of the GM Thacker Pass JV", "status": "Held", "layer": "Critical minerals"},
+    {"company": "Trilogy Metals", "position": "10% ($35.6M) + warrants for 7.5% more", "status": "Held", "layer": "Copper / zinc"},
+    {"company": "US Steel", "position": "golden share (veto + board seat, no economic stake)", "status": "Held", "layer": "Governance only"},
+    {"company": "Westinghouse", "position": "up to 20% discussed", "status": "Under negotiation", "layer": "Nuclear power (DC energy)"},
+    {"company": "IBM", "position": "~$1B, equity attached", "status": "Letter of intent", "layer": "Quantum / AI"},
+    {"company": "GlobalFoundries", "position": "$375M", "status": "Announced (May 2026)", "layer": "Fab"},
+    {"company": "D-Wave / Rigetti / Infleqtion", "position": "~$100M each", "status": "Announced", "layer": "Quantum"},
+    {"company": "Vulcan Elements", "position": "$50M equity + Pentagon warrants", "status": "Announced", "layer": "Rare-earth magnets"}
+  ],
+  "separate": [
+    "Nvidia: a 25% cut of its China chip sales. Revenue-share, not ownership.",
+    "OpenAI: 5% offered (~$42.6B on the $852B March-2026 valuation); an early-stage proposal, not held, reportedly with no board seat or vote.",
+    "Trump personal / brokerage buys (Broadcom, Synopsys, Dell, Intel in Q1) are a separate entity from the federal stakes and are not folded into this roster."
+  ],
+  "sources": "CNBC, CFR government-deals tracker (via NAI500), Motley Fool, Built In, 24/7 Wall St, TheStreet, CNN, Time, TechCrunch, NOTUS, Crypto Briefing. Verified 2026-07-13.",
+  "coi": "This board's author is assisted by an Anthropic model, and Anthropic is named in this reporting (reportedly frozen out of the stake talks and blocked from federal contracts). Non-neutral on this node; carried as reported."
+}
