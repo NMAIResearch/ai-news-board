@@ -181,7 +181,7 @@ def item_card(it, anchors, plain=False):
     return f"""
     <article {data} style="border:1px solid {LINE};border-radius:8px;padding:14px 16px;margin:0 0 14px">
       <div style="font-size:12px;color:{SLATE};margin-bottom:4px">
-        {esc(it["entity"])} &middot; {esc(it["date"])}
+        {esc(it["entity"])} &middot; {esc(fmt_date(it.get("date", "")))}
       </div>
       <div style="font-size:16px;font-weight:600;color:{NAVY};line-height:1.35">{headline_html}</div>
       {'' if plain else f'<div class="motivebar" style="margin:10px 0 6px">{bar(tiers)}</div>'}
@@ -244,6 +244,88 @@ def gov_conflict_panel(gc):
         f'<div style="font-size:11px;color:{SLATE};margin-top:10px">Sources: {esc(gc.get("sources",""))}</div>'
         f'<div style="font-size:11px;color:{SLATE};margin-top:6px"><strong>Conflict of interest:</strong> '
         f'{esc(gc.get("coi",""))}</div></details>')
+
+
+def ai_watch_panel(reg):
+    """AI Watch: a dated resolution calendar plus live gauges (registers.json), curated
+    public rows extracted from the maintainer's working tracker. Static: values are as of
+    the last build, so each gauge carries its own as-of date."""
+    if not reg:
+        return ""
+    def anchor_bit(a):
+        if not a:
+            return ""
+        return (f'<div style="font-size:11px;margin-top:3px"><a href="https://doi.org/{esc(a["doi"])}" '
+                f'style="color:{NAVY}">Reality anchor: {esc(a["label"])} (DOI)</a></div>')
+    rows = "".join(
+        f'<tr><td style="padding:6px 10px;border-bottom:1px solid {LINE};white-space:nowrap;'
+        f'vertical-align:top;font-weight:600;color:{NAVY}">{esc(r["label"])}</td>'
+        f'<td style="padding:6px 10px;border-bottom:1px solid {LINE}">{esc(r["question"])}'
+        f'<div style="font-size:12px;color:{SLATE};margin-top:2px">Settles on: {esc(r["settles"])}</div>'
+        f'{anchor_bit(r.get("anchor"))}</td></tr>'
+        for r in reg.get("rows", []))
+    gauges = "".join(
+        f'<div style="border:1px solid {LINE};border-radius:6px;padding:8px 12px;margin:6px 0;background:{ALT}">'
+        f'<div style="font-weight:600;color:{NAVY}">{esc(g["name"])} '
+        f'<span style="font-weight:400;color:{SLATE};font-size:11px">(as of {esc(g.get("as_of",""))})</span></div>'
+        f'<div style="font-size:13px;margin-top:3px">{esc(g["reading"])}</div>'
+        f'<div style="font-size:12px;color:{SLATE};margin-top:3px">Watch: {esc(g["watch"])}</div>'
+        + (f'<div style="font-size:12px;color:{SLATE};margin-top:3px">{esc(g["context"])}</div>' if g.get("context") else "")
+        + '</div>'
+        for g in reg.get("gauges", []))
+    gauge_block = (f'<div style="font-weight:600;color:{NAVY};font-size:13px;margin:12px 0 4px">'
+                   f'Live gauges</div>{gauges}') if gauges else ""
+    return (
+        f'<details class="aiwatch" style="border:1px solid {LINE};border-radius:8px;'
+        f'padding:12px 16px;margin:0 0 18px;background:#fff">'
+        f'<summary style="font-weight:600;color:{NAVY};cursor:pointer">{esc(reg.get("title","AI Watch"))}</summary>'
+        f'<div style="font-size:13px;color:{BODY};margin:10px 0">{esc(reg.get("intro",""))}</div>'
+        f'<div style="font-weight:600;color:{NAVY};font-size:13px;margin:8px 0 4px">Resolution calendar</div>'
+        f'<table style="border-collapse:collapse;width:100%;font-size:13px"><tbody>{rows}</tbody></table>'
+        f'{gauge_block}'
+        f'<div style="font-size:11px;color:{SLATE};margin-top:10px">{esc(reg.get("provenance",""))} '
+        f'{esc(reg.get("note",""))}</div></details>')
+
+
+def parse_date(s):
+    """Best-effort parse of the mixed feed date formats (RFC-822, ISO, YYYY-MM, YYYY)
+    to a sortable aware datetime. Undated sinks to the bottom."""
+    from email.utils import parsedate_tz
+    from datetime import datetime, timezone
+    s = (s or "").strip()
+    floor = datetime.min.replace(tzinfo=timezone.utc)
+    if not s:
+        return floor
+    # ISO first: handles 2024-08-22 and 2026-07-10T09:59
+    try:
+        d = datetime.fromisoformat(s)
+        return d if d.tzinfo else d.replace(tzinfo=timezone.utc)
+    except ValueError:
+        pass
+    # RFC-822 / feed dates, lenient (accepts date-only "Sat, 11 Jul 2026")
+    t = parsedate_tz(s)
+    if t is not None:
+        try:
+            return datetime(*t[:6], tzinfo=timezone.utc)
+        except (TypeError, ValueError):
+            pass
+    # RFC-822 with weekday (feeds use date-only "Sat, 11 Jul 2026"), partial ISO, year-only
+    for fmt in ("%a, %d %b %Y %H:%M:%S %z", "%a, %d %b %Y %H:%M:%S", "%a, %d %b %Y",
+                "%d %b %Y", "%Y-%m", "%Y", "%b %Y"):
+        try:
+            return datetime.strptime(s, fmt).replace(tzinfo=timezone.utc)
+        except ValueError:
+            continue
+    return floor
+
+
+def fmt_date(s):
+    """Uniform display date; falls back to the original string if unparseable."""
+    from datetime import datetime, timezone
+    d = parse_date(s)
+    if d == datetime.min.replace(tzinfo=timezone.utc):
+        return s or ""
+    return d.strftime("%d %b %Y")
 
 
 def main():
@@ -320,9 +402,10 @@ def main():
                 if t:
                     it["topic"], it["_auto_topic"] = t, True
 
-        # keep reviewed feed items above the unreviewed tail within the incoming block
-        incoming.sort(key=lambda it: not it.get("reviewed", False))
+        # freshest first: order the live feed by parsed date, newest at the top
+        incoming.sort(key=lambda it: parse_date(it.get("date", "")), reverse=True)
 
+    reviewed.sort(key=lambda it: parse_date(it.get("date", "")), reverse=True)
     items = reviewed + incoming
 
     # scholarship nudge: latest primary papers + datasets (fetch_scholar.py)
@@ -367,15 +450,23 @@ def main():
         f'<td style="padding:4px 10px;border-bottom:1px solid {LINE};text-align:right">{n}</td></tr>'
         for e, n in sorted(entity_counts.items(), key=lambda kv: -kv[1]))
 
-    cards = "".join(item_card(it, anchors, plain) for it in reviewed)
+    # freshest news leads; curated anchored examples (seed, some pre-2026) sit below.
+    feed_block = ""
     if incoming:
-        cards += (
-            f'<h2 style="color:{NAVY};font-size:18px;margin:26px 0 4px">Incoming feed</h2>'
+        feed_block = (
+            f'<h2 style="color:{NAVY};font-size:18px;margin:0 0 4px">Latest</h2>'
             f'<div style="color:{SLATE};font-size:13px;margin-bottom:12px">'
-            f'Auto-tagged on pull: source type and motive tier are set from the domain; '
-            f'claim type and denominator are left as "unreviewed" until a human pass. '
-            f'Fetched {esc(fetched)}.</div>')
-        cards += "".join(item_card(it, anchors, plain) for it in incoming)
+            f'Live pull, newest first. Auto-tagged: source type and motive tier are set from the '
+            f'domain; claim type and denominator are left as "unreviewed" until a human pass. '
+            f'Fetched {esc(fetched)}.</div>'
+            + "".join(item_card(it, anchors, plain) for it in incoming))
+    seed_block = (
+        f'<h2 style="color:{NAVY};font-size:18px;margin:30px 0 4px">Anchored examples</h2>'
+        f'<div style="color:{SLATE};font-size:13px;margin-bottom:12px">'
+        f'Curated claims each carried against a published base rate, kept for reference. '
+        f'Newest first; some predate 2026.</div>'
+        + "".join(item_card(it, anchors, plain) for it in reviewed))
+    cards = feed_block + seed_block
 
     # motive-tier UI is optional: --plain drops the key, the tier map and both bars
     legend_html = "" if plain else legend()
@@ -411,6 +502,12 @@ def main():
     govconflict_html = ""
     if os.path.isfile(gc_path):
         govconflict_html = gov_conflict_panel(json.load(open(gc_path, encoding="utf-8")))
+
+    # AI Watch dashboard: dated resolution calendar + live gauges (registers.json)
+    reg_path = os.path.join(HERE, "registers.json")
+    ai_watch_html = ""
+    if os.path.isfile(reg_path):
+        ai_watch_html = ai_watch_panel(json.load(open(reg_path, encoding="utf-8")))
 
     # ---- sidebar controls: search + topic/tier filters + live tier toggle ----
     topic_counts, tiers_present = {}, set()
@@ -507,19 +604,20 @@ def main():
 <div class="wrap">
   <h1 style="color:{NAVY};margin:0 0 4px;font-size:26px">AI News Reality Board</h1>
   <div style="color:{SLATE};font-size:14px;margin-bottom:20px;max-width:760px">
-    AI news, sorted by incentive rather than by political lean. Every claim is tagged by who
-    is telling you and what they gain if you believe it, flagged for whether it states a
-    denominator, and anchored to a published base rate. It flags; it does not narrate, so the
-    reader draws the conclusion. Generated {esc(data.get("generated",""))}.
+    An experimental board that labels AI-news items by source type and the incentive behind a
+    claim, notes whether a figure states a denominator, and links to a published base rate where
+    one applies. It labels rather than narrates, so the reader draws the conclusion.
+    Generated {esc(data.get("generated",""))}.
   </div>
   <div class="layout">
     {sidebar_html}
     <main class="main">
       {plain_note}
       {about_html}
+      {cards}
+      {ai_watch_html}
       {govconflict_html}
       {scholar_html}
-      {cards}
       <div style="font-size:12px;color:{SLATE};margin-top:24px;border-top:1px solid {LINE};padding-top:14px">
         Method: source type and motive tier are assigned from a curated entity map; denominator
         and claim type are the announced-vs-delivered lens; the reality anchor links to a published
