@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-AI News Reality Board - build.py (stdlib only, no dependencies).
+AI News Board - build.py (stdlib only, no dependencies).
 NM AI Research.
 
 Reads items.json and renders a static index.html that sorts AI-news claims by
@@ -330,7 +330,7 @@ def fmt_date(s):
 
 def main():
     import argparse
-    ap = argparse.ArgumentParser(description="Render the AI News Reality Board.")
+    ap = argparse.ArgumentParser(description="Render the AI News Board.")
     ap.add_argument("--plain", action="store_true",
                     help="turn the motive tier OFF entirely: no tier colours, bars, key or "
                          "tier map. Sources shown plain. The other axes (denominator, claim "
@@ -599,10 +599,10 @@ def main():
 
     doc = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AI News Reality Board</title>{style_block}</head>
+<title>AI News Board</title>{style_block}</head>
 <body class="{'plainmode' if plain else ''}">
 <div class="wrap">
-  <h1 style="color:{NAVY};margin:0 0 4px;font-size:26px">AI News Reality Board</h1>
+  <h1 style="color:{NAVY};margin:0 0 4px;font-size:26px">AI News Board</h1>
   <div style="color:{SLATE};font-size:14px;margin-bottom:20px;max-width:760px">
     An experimental board that labels AI-news items by source type and the incentive behind a
     claim, notes whether a figure states a denominator, and links to a published base rate where

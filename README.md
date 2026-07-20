@@ -1,4 +1,4 @@
-# AI News Reality Board
+# AI News Board
 
 AI news, sorted by incentive rather than by political lean. Every AI-news claim is
 tagged by who is telling you and what they gain if you believe it, flagged for whether

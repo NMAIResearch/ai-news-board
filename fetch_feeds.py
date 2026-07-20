@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-AI News Reality Board - fetch_feeds.py (stdlib only).
+AI News Board - fetch_feeds.py (stdlib only).
 
 Pulls AI-news RSS/Atom feeds and auto-tags ONLY the automatable fields: source_type
 from the domain, a default motive_tier from that type, and the entity if a known
