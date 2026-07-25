@@ -51,10 +51,12 @@ TOPIC_KEYWORDS = [
                           "automate ai research", "ai r&d", "ai r and d"]),
     ("code_automation", ["code", "coding", "programmer", "software engineer",
                          "developer", "copilot", "pull request"]),
-    ("work_automation", ["layoff", "layoffs", "headcount", "workforce", "job cuts",
+    ("work_automation", ["layoff", "layoffs", "laying off", "lay off", "headcount",
+                         "workforce", "job cuts", "job losses", "redundanc",
                          "replace workers", "automate the work"]),
     ("power_demand", ["gigawatt", "megawatt", "gw", "mw", "data center", "data centre",
-                      "datacenter", "grid", "nuclear", "power plant", "capacity buildout"]),
+                      "datacenter", "grid", "nuclear", "power plant", "capacity buildout",
+                      "electricity", "substation", "turbine"]),
     ("energy_forecast", ["energy demand", "electricity demand", "power consumption",
                          "terawatt", "twh", "energy forecast", "power forecast"]),
     ("cost", ["capex", "billion", "spend", "spending", "investment", "funding round",
@@ -70,12 +72,26 @@ TOPIC_LABELS = {
 }
 
 
+# Suffix tolerance. "code" failed to match "coders" and "layoff" failed to match
+# "laying off", so real matches were missed on a morphology technicality. Deliberately
+# narrow: common English inflections only, never a prefix match, because loosening this
+# further starts anchoring items the portfolio has no base rate for, and a wrong anchor
+# is worse than a blank one.
+_SUFFIX = r"(?:s|es|ed|ing|er|ers)?"
+
+
 def tag_topic(headline):
-    """Return the first topic whose keyword matches the headline, else '' (no anchor)."""
+    """Return the first topic whose keyword matches the headline, else '' (no anchor).
+
+    A blank is a legitimate outcome and the common one. The portfolio holds base rates for
+    energy, water, cost and code automation; most AI news is product launches and funding
+    rounds, which those base rates do not speak to. Raising the hit rate by loosening this
+    would mean anchoring claims to numbers that do not measure them.
+    """
     hay = " " + (headline or "").lower() + " "
     for topic, kws in TOPIC_KEYWORDS:
         for kw in kws:
-            if re.search(r"(?<![a-z0-9])" + re.escape(kw) + r"(?![a-z0-9])", hay):
+            if re.search(r"(?<![a-z0-9])" + re.escape(kw) + _SUFFIX + r"(?![a-z0-9])", hay):
                 return topic
     return ""
 
@@ -309,6 +325,65 @@ def item_card(it, anchors, plain=False, mk=None, tmap=None):
       {conflict_html}
       {anchor_html}
     </article>"""
+
+
+def freshness(built, fetched, mk, reg):
+    """One block naming every layer's age, because the page has four different clocks.
+
+    The market strip, the news feed, the registers and the build each update on their own
+    schedule, and they were each printing their own timestamp in a different place with no
+    indication of what it referred to. A reader seeing "Built 16:38", "Quotes captured
+    14:42" and "Fetched 06:32" cannot tell which one is the freshness of the thing they are
+    looking at. Layers that update at different rates need their ages stated together, or
+    the fastest one makes the others look broken.
+    """
+    import datetime as _dt
+    now = _dt.datetime.now(_dt.timezone.utc)
+
+    def ago(ts):
+        if not ts:
+            return None
+        for fmt in ("%Y-%m-%d %H:%M UTC", "%Y-%m-%d %H:%M", "%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%d"):
+            try:
+                d = _dt.datetime.strptime(ts.strip(), fmt)
+                if d.tzinfo is None:
+                    d = d.replace(tzinfo=_dt.timezone.utc)
+                # A date-only value parses to midnight, so reporting it in hours claims a
+                # precision the source never had: "generated today" would read "16h ago".
+                if fmt == "%Y-%m-%d":
+                    days = (now.date() - d.date()).days
+                    return "today" if days == 0 else f"{days}d ago"
+                h = (now - d).total_seconds() / 3600
+                if h < 1:
+                    return "just now"
+                if h < 48:
+                    return f"{int(h)}h ago"
+                return f"{int(h / 24)}d ago"
+            except ValueError:
+                continue
+        return None
+
+    parts = []
+    for label, ts in (("Market quotes", (mk or {}).get("generated", "")),
+                      ("News feed", fetched),
+                      ("Registers", (reg or {}).get("generated", "")),
+                      ("Page built", built)):
+        if not ts:
+            continue
+        a = ago(ts)
+        # Only the ISO date/time separator, not every T: a blanket replace turns
+        # "06:32 UTC" into "06:32 U C".
+        shown = re.sub(r"(?<=\d)T(?=\d)", " ", ts).replace("+00:00", "")
+        parts.append(f'<span style="margin-right:16px;white-space:nowrap">'
+                     f'<span style="color:{SLATE}">{esc(label)}</span> '
+                     f'<strong style="color:{BODY}">{esc(shown)}</strong>'
+                     f'{f" <span style=\'color:{SLATE}\'>({a})</span>" if a else ""}</span>')
+    if not parts:
+        return ""
+    return (f'<div style="font-size:12px;margin:0 0 14px;padding:7px 12px;border:1px solid '
+            f'{LINE};border-radius:6px;background:#fff">'
+            f'<span style="color:{NAVY};font-weight:600;margin-right:10px">Freshness</span>'
+            f'{"".join(parts)}</div>')
 
 
 def deflation_panel(reg):
@@ -596,7 +671,7 @@ def main():
                 f'<h2 style="color:{NAVY};font-size:18px;margin:0 0 2px">Primary sources</h2>'
                 f'<div style="font-size:13px;color:{SLATE};margin-bottom:8px">Recent papers and '
                 f'public datasets on AI, so a claim can be checked against the underlying research '
-                f'rather than the coverage of it. Fetched {esc(sd.get("fetched",""))}.</div>'
+                f'rather than the coverage of it.</div>'
                 + "".join(rows) + "</section>")
 
     # board-level aggregates (over everything)
@@ -620,7 +695,7 @@ def main():
             f'<div style="color:{SLATE};font-size:13px;margin-bottom:12px">'
             f'Live pull, newest first. Auto-tagged: source type and motive tier are set from the '
             f'domain; claim type and denominator are left as "unreviewed" until a human pass. '
-            f'Fetched {esc(fetched)}.</div>'
+            f'</div>'
             + "".join(item_card(it, anchors, plain, mk, tmap) for it in incoming))
     seed_block = (
         f'<h2 style="color:{NAVY};font-size:18px;margin:30px 0 4px">Anchored examples</h2>'
@@ -816,7 +891,9 @@ def main():
     });
     var u = document.getElementById("mktupd");
     if (u && mk.generated) {
-      u.textContent = "Quotes captured " + mk.generated.replace("T", " ") + ".";
+      /* The header freshness block owns the timestamps; this only flags a refresh
+         that happened after the page was built. */
+      u.textContent = "";
     }
   }
   function tick() {
@@ -845,8 +922,8 @@ def main():
     An experimental board that labels AI-news items by source type and the incentive behind a
     claim, notes whether a figure states a denominator, and links to a published base rate where
     one applies. It labels rather than narrates, so the reader draws the conclusion.
-    Built {esc(built)}.
   </div>
+  {freshness(built, fetched, mk, _reg if os.path.isfile(reg_path) else {})}
   {market_strip(mk)}
   <div class="layout">
     {sidebar_html}
