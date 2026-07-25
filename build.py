@@ -274,14 +274,20 @@ def item_card(it, anchors, plain=False, mk=None, tmap=None):
     # so it is surfaced for review rather than presented as settled.
     cc = it.get("crosscheck") or {}
     xchip = ""
-    if cc.get("agrees") is False:
-        xchip = (f'<span title="{esc(cc.get("model_a","A"))} read '
-                 f'{esc(it.get("claim_type",""))} / {esc(it.get("denominator_stated",""))}; '
-                 f'{esc(cc.get("model_b","B"))} read {esc(cc.get("claim_type",""))} / '
-                 f'{esc(cc.get("denominator",""))}. Shown for review; neither is treated as '
-                 f'correct." style="display:inline-block;padding:2px 8px;margin-left:6px;'
-                 f'border-radius:4px;font-size:11px;color:{TIER[4][0]};background:#fff7ed;'
-                 f'border:1px dashed {TIER[4][0]}">labellers disagree</span>')
+    if cc.get("verdict") in ("split", "tied", "majority") or cc.get("agrees") is False:
+        readers = cc.get("readers") or []
+        detail = "; ".join(f'{r.get("model","?")}: {r.get("claim_type","")} / '
+                           f'{r.get("denominator","")}' for r in readers)
+        v = cc.get("verdict")
+        label = {"split": "labellers split", "tied": "labellers tied",
+                 "majority": "labellers differ"}.get(v, "labellers disagree")
+        # A majority is not shown as a resolution: readers from one family share a
+        # lineage, so a shared error is indistinguishable from agreement.
+        tip = (f'{detail}. Shown for review; no reading is treated as correct and a '
+               f'majority does not settle it.') if detail else 'readers differ'
+        xchip = (f'<span title="{esc(tip)}" style="display:inline-block;padding:2px 8px;'
+                 f'margin-left:6px;border-radius:4px;font-size:11px;color:{TIER[4][0]};'
+                 f'background:#fff7ed;border:1px dashed {TIER[4][0]}">{esc(label)}</span>')
     mchip = market_chip(it.get("entity", ""), mk or {}, tmap or {})
     a = anchors.get(it.get("topic", ""), {})
     anchor_html = ""
