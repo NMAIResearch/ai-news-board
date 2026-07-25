@@ -80,6 +80,7 @@ def main():
         if dn in DENOM:
             it["denominator_stated"] = DENOM[dn]
         it["auto_labelled"] = True  # data trail; reviewed stays False
+        it["auto_labelled_by"] = MODEL
         changed += 1
     json.dump(data, open(FEED, "w"), indent=2, ensure_ascii=False)
     print(f"auto-labelled {changed}/{len(todo)} unreviewed items with {MODEL} "
