@@ -34,7 +34,11 @@ a finding under this board's method.
 observable fact about a company, not a judgement about a claim.
 
 Sources: **Finnhub** for equities (free tier, real-time quotes, no history) and **FRED** for
-indices, because Finnhub's free tier refuses index data. Indices therefore run one trading day
+indices, because Finnhub's free tier refuses index data. **Twelve Data** is a fallback: if
+Finnhub rate-limits or goes down, a symbol degrades to a second live quote rather than to
+yesterday's number, and only a failure of *both* falls back to carrying the previous value
+forward. It widens resilience, not coverage: its free tier is US and OTC only, and Hong Kong,
+Shanghai and Seoul symbols return "available starting with the Pro or Venture plan". Indices therefore run one trading day
 behind, which the strip says on its face. No euro-area index is shown: FRED's only euro-area
 share-price series is monthly and about six months behind, so it would print stale beside
 daily values.
