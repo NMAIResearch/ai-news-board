@@ -1,0 +1,69 @@
+{
+  "title": "AI Watch: resolution calendar",
+  "intro": "Dated moments when an open, AI-relevant question resolves, each paired with the specific observable that settles it. These are not predictions. Each row states what to watch and the tell that decides it.",
+  "generated": "2026-07-25",
+  "rows": [
+    {
+      "id": "2026-07-31-is-the-ai-capex-tell-still-accelerating",
+      "date": "2026-07-31",
+      "label": "Late Jul 2026",
+      "question": "Is the AI data-centre capital-expenditure boom still accelerating?",
+      "settles": "Hyperscaler Q2 earnings: 2026 capex guidance raised, held or cut, plus memory (HBM) allocation commentary. A held-or-cut guide would be the first crack.",
+      "matters": "The buildout is the load-bearing assumption under current AI valuations.",
+      "anchor": {
+        "label": "Contingent vs Robust AI Power Demand",
+        "doi": "10.5281/zenodo.20559430"
+      }
+    },
+    {
+      "id": "2026-08-02-eu-ai-act-art-50-transparency-obligations-live",
+      "date": "2026-08-02",
+      "label": "2 Aug 2026",
+      "question": "EU AI Act Article 50 transparency obligations take effect.",
+      "settles": "First enforcement posture and guidance on AI-content transparency and disclosure duties.",
+      "matters": "The first hard, dated EU AI Act obligation to bind AI products.",
+      "anchor": null
+    },
+    {
+      "id": "2026-10-01-colorado-river-2007-rules-replaced",
+      "date": "2026-10-01",
+      "label": "1 Oct 2026",
+      "question": "Are the Colorado River's 2007 operating rules replaced before they expire?",
+      "settles": "New interim operating guidelines agreed, or a deadlock. A deadlock raises litigation and water-siting risk for Western US data centres.",
+      "matters": "AI data-centre siting in the US Southwest turns on water and hydropower allocation.",
+      "anchor": {
+        "label": "AI Data-Centre Water Tracker",
+        "doi": "10.5281/zenodo.21318960"
+      }
+    },
+    {
+      "id": "2026-11-27-china-rare-earth-neon-export-control-expiry",
+      "date": "2026-11-27",
+      "label": "27 Nov 2026",
+      "question": "Do China's rare-earth and neon export controls renew, widen or lapse?",
+      "settles": "The renewal decision, with neon controls the specific trigger to watch.",
+      "matters": "Neon and rare earths are chokepoints in the chip supply chain behind AI compute.",
+      "anchor": null
+    },
+    {
+      "id": "2027-12-02-eu-ai-act-high-risk-annex-iii-obligations-live",
+      "date": "2027-12-02",
+      "label": "2 Dec 2027",
+      "question": "EU AI Act high-risk (Annex III) obligations take effect.",
+      "settles": "The high-risk compliance regime comes into force.",
+      "matters": "The heaviest tier of EU AI Act obligations, covering high-risk AI systems.",
+      "anchor": null
+    }
+  ],
+  "gauges": [
+    {
+      "name": "Strait of Hormuz risk",
+      "as_of": "2026-07-25",
+      "reading": "Brent crossed $100 on 23 July and traded near $100 on 24 July, up roughly 14% on the week and from a low of $70.55 on 2 July. Triggered by reported tanker strikes off Saudi Arabia, Houthi attacks on two Saudi tankers in the Red Sea, and the Caspian Pipeline Consortium suspending Black Sea loadings.",
+      "watch": "The $100 level flagged here on 13 July has now been crossed, so the tell moves on: whether it holds above $100 rather than whether it gets there. Goldman puts Brent above $120 in Q4 if Hormuz disruption persists.",
+      "context": "This runs against the forecast anchor. The EIA Short-Term Energy Outlook base case of 7 July had Brent easing to about $70 by Q4 2026 as the tanker backlog cleared. Rapidan has since raised its Q4 estimate to near $100 from $85. The base case is not yet withdrawn by its author, but it is now the minority view and is recorded here as contested rather than quietly dropped."
+    }
+  ],
+  "provenance": "Generated from rows explicitly marked for publication in the maintainer's working tracker. The tracker's analysis column is never read by the generator, so private notes cannot reach this file. Public wording is written by hand and carried across regenerations. Nothing is published unless it is marked; the default is private.",
+  "note": "Status is upcoming until the date passes. The observable, not the outcome, is the point."
+}
