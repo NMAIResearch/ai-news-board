@@ -36,6 +36,9 @@ jobs:
         env:
           FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          # Optional fallback. If this secret is absent the run still succeeds, it just
+          # loses the second provider; a missing nice-to-have must not fail the fetch.
+          TWELVEDATA_API_KEY: ${{ secrets.TWELVEDATA_API_KEY }}
         run: python3 fetch_market.py
 
       - name: Commit if changed

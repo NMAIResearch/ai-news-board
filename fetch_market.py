@@ -58,8 +58,14 @@ FRED_BASE = "https://api.stlouisfed.org/fred/series/observations"
 FINNHUB_BASE = "https://finnhub.io/api/v1/quote"
 
 
+REQUIRED_KEYS = ("FINNHUB_API_KEY", "FRED_API_KEY")
+# Optional: if absent the run still succeeds, it just loses the fallback. A missing
+# nice-to-have must never fail the whole fetch.
+OPTIONAL_KEYS = ("TWELVEDATA_API_KEY",)
+
+
 def keys():
-    out = {k: os.environ.get(k, "") for k in ("FINNHUB_API_KEY", "FRED_API_KEY")}
+    out = {k: os.environ.get(k, "") for k in REQUIRED_KEYS + OPTIONAL_KEYS}
     local = pathlib.Path.home() / ".config" / "nmai" / "keys.env"
     if local.exists():
         for line in local.read_text().splitlines():
@@ -68,7 +74,7 @@ def keys():
                 k, v = line.split("=", 1)
                 out.setdefault(k.strip(), "")
                 out[k.strip()] = out[k.strip()] or v.strip()
-    missing = [k for k, v in out.items() if not v]
+    missing = [k for k in REQUIRED_KEYS if not out.get(k)]
     if missing:
         sys.exit(f"missing key(s): {', '.join(missing)}")
     return out
@@ -111,6 +117,23 @@ def finnhub_quote(symbol, key, attempts=3):
     raise RuntimeError("unreachable")
 
 
+def twelvedata_quote(symbol, key):
+    """Fallback quote source. Same US coverage as Finnhub, different failure modes.
+
+    ⚠️ Its free tier is US and OTC only: Hong Kong, Shanghai and Seoul symbols return
+    "available starting with the Pro or Venture plan" (tested 2026-07-25). So this widens
+    resilience, not coverage. Cross-checked against Finnhub on NVDA: 206.84 / -0.9197 from
+    both, to the decimal.
+    """
+    d = get_json(f"https://api.twelvedata.com/quote?symbol={urllib.parse.quote(symbol)}"
+                 f"&apikey={urllib.parse.quote(key)}")
+    if d.get("status") == "error" or not d.get("close"):
+        raise RuntimeError(d.get("message", "empty quote")[:120])
+    return {"value": float(d["close"]),
+            "change_pct": float(d["percent_change"]) if d.get("percent_change") else None,
+            "asof": d.get("datetime", "")[:10], "source": "twelvedata"}
+
+
 def main():
     k = keys()
     tm = json.loads(TICKER_MAP.read_text())
@@ -136,12 +159,20 @@ def main():
         try:
             equities[sym] = finnhub_quote(sym, k["FINNHUB_API_KEY"])
         except Exception as e:
-            errors[sym] = f"{type(e).__name__}: {e}"
+            # Second provider before giving up. Finnhub rate-limiting or an outage should
+            # degrade to a different live quote, not to yesterday's number.
+            if k.get("TWELVEDATA_API_KEY"):
+                try:
+                    equities[sym] = twelvedata_quote(sym, k["TWELVEDATA_API_KEY"])
+                except Exception as e2:
+                    errors[sym] = f"finnhub: {e}; twelvedata: {e2}"
+            else:
+                errors[sym] = f"{type(e).__name__}: {e}"
         time.sleep(1.1)  # stay inside 60 calls/minute rather than relying on the retry
 
-    # A partial pull must NEVER overwrite a complete one. A transient 429 in CI would
-    # otherwise publish a strip with holes in it. Carry the last known value forward and
-    # mark it stale, so the page can say the quote is old rather than show nothing.
+    # Only if BOTH providers failed. A partial pull must never overwrite a complete one:
+    # a transient outage in CI would otherwise publish a strip with holes in it. Carry the
+    # last known value forward and mark it stale, so the page can say the quote is old.
     if errors and OUT.exists():
         try:
             prev = json.loads(OUT.read_text()).get("equities", {})
