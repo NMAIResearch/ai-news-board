@@ -65,5 +65,97 @@
     }
   ],
   "provenance": "Generated from rows explicitly marked for publication in the maintainer's working tracker. The tracker's analysis column is never read by the generator, so private notes cannot reach this file. Public wording is written by hand and carried across regenerations. Nothing is published unless it is marked; the default is private.",
-  "note": "Status is upcoming until the date passes. The observable, not the outcome, is the point."
+  "note": "Status is upcoming until the date passes. The observable, not the outcome, is the point.",
+  "deflations": [
+    {
+      "id": "bot-web-traffic-energy-use",
+      "claim": "Bot web-traffic energy use",
+      "source": "public/press [4]",
+      "corrected": "~15–20× lower",
+      "error": "3 methodological errors (see bot-energy v1.1, Zenodo 20707001)",
+      "multiple": "~15–20×",
+      "tier": 4
+    },
+    {
+      "id": "267-data-centre-power-figure",
+      "claim": "\"267%\" data-centre power figure",
+      "source": "press/aggregator [4]",
+      "corrected": "excluded entirely",
+      "error": "measures wholesale price at specific grid nodes, not a household bill",
+      "multiple": "",
+      "tier": 4
+    },
+    {
+      "id": "spruce-pine-hpq-all-chips-depend-on-it-apocalypse",
+      "claim": "Spruce Pine HPQ \"all chips depend on it\" apocalypse",
+      "source": "popular-chokepoint narrative [4]",
+      "corrected": "not a live crisis",
+      "error": "Helene hit it directly; production restarted ~10 days; absent from 12-mo sell-side notes",
+      "multiple": "",
+      "tier": 4
+    },
+    {
+      "id": "neon-supply-shock-post-2022",
+      "claim": "Neon supply shock (post-2022)",
+      "source": "legacy-shock narrative [3]",
+      "corrected": "no acute 2026 shortage",
+      "error": "absorbed — China dominant, recycling >90%, fabs hold 1–12mo buffers; real risk is relocated concentration",
+      "multiple": "",
+      "tier": 3
+    },
+    {
+      "id": "tesla-optimus-1m-units-yr",
+      "claim": "Tesla Optimus \"1M units/yr\"",
+      "source": "vendor [5]",
+      "corrected": "ambition, not settled proof",
+      "error": "no commercial-availability page; Musk admits \"still R&D\"",
+      "multiple": "claim ≠ deliverable",
+      "tier": 5
+    },
+    {
+      "id": "spr-20-operational-floor-62-usable-days",
+      "claim": "SPR \"~20% operational floor → ~62 usable days\"",
+      "source": "MY OWN TRACKER [self]",
+      "corrected": "no published hard floor: drawdown RATE degrades as caverns empty",
+      "error": "\"days to empty at max rate\" is the wrong metric. The rival \"160M bbl minimum\" (TLDR video) attaches to the cancelled Richton MS site (160M capacity), not a reserve minimum. Compounded by GAO-26-106918: >25% of SPR oil cannot currently be surfaced",
+      "multiple": "",
+      "tier": null
+    },
+    {
+      "id": "may-pce-4-1-inflation-surging-broad-based",
+      "claim": "\"May PCE 4.1% = inflation surging / broad-based\"",
+      "source": "press/political panic [4]",
+      "corrected": "Dallas trimmed-mean PCE FELL to 2.4% (from 2.6% a yr earlier)",
+      "error": "the 4.1% headline is idiosyncratic energy + tariff + AI-goods spikes, NOT broad-based: the Fed's own trimmed-mean (drops the largest outliers each month) declined y/y even as headline hit a 3-yr high; the core-goods leg is AI-demand driven and tariff-EXEMPT. Fed MPR Jul-2026 [1]",
+      "multiple": "",
+      "tier": 4
+    },
+    {
+      "id": "memory-prices-355-by-the-end-of-this-year",
+      "claim": "Memory prices \"+355% by the end of this year\"",
+      "source": "YouTube explainer [4], no source given",
+      "corrected": "Gartner: +125% across 2026; DRAM +100-116% Q1-26; TrendForce +13-18% QoQ Q3-26, cooling from ~60% QoQ in Q2; Counterpoint 80-90% QoQ Q4-25→Q1-26",
+      "error": "No source exists for 355%. Probable mechanism: a supply-partner note advising customers to \"plan for 10-20% per month\" compounded across a year lands near a triple-digit figure ⇒ a planning ceiling read as a forecast. Note the direction of the real data is decelerating (Q2 ~60% QoQ → Q3 13-18%) while the claim implies acceleration. Added 2026-07-17 from the transcript sweep (IBM video)",
+      "multiple": "~2.8× vs Gartner",
+      "tier": 4
+    },
+    {
+      "id": "pjm-2028-29-capacity-spiking-to-the-cap-fresh-grid-crisis",
+      "claim": "PJM 2028/29 capacity \"spiking to the cap = fresh grid crisis\"",
+      "source": "grid-doom framing [4]",
+      "corrected": "the $325/MW-day clear is −2.5% BELOW the prior cap = flat-high, NOT a spike; but the collar MASKED ~$13.3B",
+      "error": "two-sided: the level is not a new spike (capped, down y/y), yet the collar hid a real ~$13.3B ($29.7B uncapped vs $16.4B actual) DC-driven cost — carry BOTH denominators (DC ~40% this auction / 45% = $21.3B of $47.2B over three). Monitoring Analytics. Added Session 5 from the §3.7② fold",
+      "multiple": "~1.8× (masked)",
+      "tier": 4
+    },
+    {
+      "id": "llm-token-index-fell-50",
+      "claim": "LLM token index \"fell ~50%\"",
+      "source": "YouTube AI-finance video [4]",
+      "corrected": "−20% from its May peak (Silicon Data SDLLMTK, now ~1.62; ~doubled since Dec inception)",
+      "error": "direction right (willingness-to-pay per Mtoken falling as users substitute to cheaper models, per Citadel), magnitude ~2.5× overstated. Bankable real signal: Allianz flags a 46% AI investment-vs-sales growth gap vs 32% in the 2001 telecom bubble. Added 2026-07-18 (transcript sweep)",
+      "multiple": "~2.5× (overstated)",
+      "tier": 4
+    }
+  ]
 }

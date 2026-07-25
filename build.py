@@ -311,6 +311,47 @@ def item_card(it, anchors, plain=False, mk=None, tmap=None):
     </article>"""
 
 
+def deflation_panel(reg):
+    """The deflation register: claims where a checkable figure came back different.
+
+    This is CONTENT, not another explainer. The tier map explains the colour scale and the
+    neutrality panel explains the method; this shows the method applied to named cases. It
+    is the one thing here that states an outcome rather than a flag, so every row carries
+    the corrected figure and where it came from, and rows arrive only via an explicit
+    publication mark on the private register.
+    """
+    rows = (reg or {}).get("deflations") or []
+    if not rows:
+        return ""
+    trs = []
+    for r in rows:
+        tier = r.get("tier")
+        dot = ""
+        if tier and int(tier) in TIER:
+            dot = (f'<span title="motive tier {esc(tier)}: {esc(TIER[int(tier)][1])}" '
+                   f'style="display:inline-block;width:9px;height:9px;border-radius:2px;'
+                   f'background:{TIER[int(tier)][0]};margin-right:5px"></span>')
+        mult = esc(r.get("multiple", ""))
+        trs.append(
+            f'<div style="padding:9px 0;border-bottom:1px solid {LINE}">'
+            f'<div style="font-size:13px;color:{BODY}">{dot}<strong>{esc(r.get("claim",""))}</strong></div>'
+            f'<div style="font-size:12px;color:{SLATE};margin-top:2px">'
+            f'{esc(r.get("source",""))}</div>'
+            f'<div style="font-size:12.5px;color:{BODY};margin-top:4px">'
+            f'&rarr; {esc(r.get("corrected",""))}'
+            f'{f" <span style=\'color:{TIER[5][0]};font-weight:600\'>({mult})</span>" if mult else ""}</div>'
+            f'<div style="font-size:12px;color:{SLATE};margin-top:2px">{esc(r.get("error",""))}</div>'
+            f'</div>')
+    return (
+        f'<section class="railcard"><h2 style="color:{NAVY}">Deflation register</h2>'
+        f'<div style="font-size:12px;color:{SLATE};margin-bottom:6px">'
+        f'Claims where the checkable figure came back different, with the correction and '
+        f'where it came from. The dot is the motive tier of the source that carried the '
+        f'original claim. Being wrong once is not a verdict on a source; the register '
+        f'records the specific figure, not the outlet.</div>'
+        f'{"".join(trs)}</section>')
+
+
 def legend():
     rows = "".join(
         f'<div style="display:flex;align-items:center;font-size:12px;color:{BODY};margin:2px 0">'
@@ -451,6 +492,8 @@ def main():
                          "type, track record, anchors) are unaffected.")
     plain = ap.parse_args().plain
 
+    import datetime as _dt
+    built = _dt.datetime.now(_dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     data = json.load(open(SRC, encoding="utf-8"))
     mk, tmap = load_market()
     if mk:
@@ -624,9 +667,11 @@ def main():
 
     # AI Watch dashboard: dated resolution calendar + live gauges (registers.json)
     reg_path = os.path.join(HERE, "registers.json")
-    ai_watch_html = ""
+    ai_watch_html = deflation_html = ""
     if os.path.isfile(reg_path):
-        ai_watch_html = ai_watch_panel(json.load(open(reg_path, encoding="utf-8")))
+        _reg = json.load(open(reg_path, encoding="utf-8"))
+        ai_watch_html = ai_watch_panel(_reg)
+        deflation_html = deflation_panel(_reg)
 
     # ---- sidebar controls: search + topic/tier filters + live tier toggle ----
     topic_counts, tiers_present = {}, set()
@@ -658,10 +703,16 @@ def main():
 
     style_block = f"""<style>
   body{{margin:0;background:{ALT};color:{BODY};font-family:Arial,Helvetica,sans-serif;line-height:1.5}}
-  .wrap{{max-width:1040px;margin:0 auto;padding:28px 20px 60px}}
+  .wrap{{max-width:1560px;margin:0 auto;padding:28px 20px 60px}}
   .layout{{display:flex;gap:24px;align-items:flex-start}}
   .side{{flex:0 0 210px;position:sticky;top:16px}}
-  .main{{flex:1;min-width:0}}
+  /* The feed is prose and stays readable; the rail takes the space a wide screen
+     would otherwise waste, and gets the reference panels out from under a 45-item
+     feed where nobody scrolls to them. */
+  .main{{flex:1 1 auto;min-width:0;max-width:820px}}
+  .rail{{flex:0 0 380px;position:sticky;top:16px;max-height:calc(100vh - 32px);overflow-y:auto}}
+  .rail h2{{font-size:15px;margin:0 0 8px}}
+  .railcard{{border:1px solid #e2e8f0;border-radius:8px;padding:12px 14px;margin:0 0 14px;background:#fff}}
   .search{{width:100%;padding:8px 10px;border:1px solid {LINE};border-radius:6px;font-size:14px;margin-bottom:16px}}
   .fgroup{{margin-bottom:16px;font-size:13px}}
   .fgroup h4{{margin:0 0 6px;color:{NAVY};font-size:11px;text-transform:uppercase;letter-spacing:.05em}}
@@ -672,6 +723,10 @@ def main():
   body.plainmode .tierui{{display:none!important}}
   body.plainmode .motivebar{{display:none!important}}
   body.plainmode .tierchip{{background:#edf2f7!important;color:{BODY}!important;border:1px solid {LINE}!important}}
+  /* Rail folds below the feed before the sidebar does: it is reference material,
+     so it is the first thing that should stop competing for width. */
+  @media(max-width:1200px){{.rail{{position:static;flex:1 1 auto;width:100%;max-height:none;overflow:visible}}
+    .layout{{flex-wrap:wrap}}.main{{max-width:none}}}}
   @media(max-width:720px){{.layout{{flex-direction:column}}.side{{position:static;flex:1 1 auto;width:100%}}}}
 </style>"""
 
@@ -790,7 +845,7 @@ def main():
     An experimental board that labels AI-news items by source type and the incentive behind a
     claim, notes whether a figure states a denominator, and links to a published base rate where
     one applies. It labels rather than narrates, so the reader draws the conclusion.
-    Generated {esc(data.get("generated",""))}.
+    Built {esc(built)}.
   </div>
   {market_strip(mk)}
   <div class="layout">
@@ -799,9 +854,6 @@ def main():
       {plain_note}
       {about_html}
       {cards}
-      {ai_watch_html}
-      {govconflict_html}
-      {scholar_html}
       <div style="font-size:12px;color:{SLATE};margin-top:24px;border-top:1px solid {LINE};padding-top:14px">
         Method: source type and motive tier are assigned from a curated entity map; denominator
         and claim type are the announced-vs-delivered lens; the reality anchor links to a published
@@ -812,6 +864,12 @@ def main():
         other entity. Independent analysis, not investment advice.
       </div>
     </main>
+    <aside class="rail">
+      {ai_watch_html}
+      {deflation_html}
+      {govconflict_html}
+      {scholar_html}
+    </aside>
   </div>
 </div>
 {script_block}
