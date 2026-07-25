@@ -11,6 +11,7 @@ narrate. The reader draws the conclusion.
     python3 carry_reviews.py   # re-apply prior review labels by URL; only NEW items stay unreviewed
     python3 apply_ratings.py   # layer NM's ~/Desktop/Scripts/sources.md trust ratings
     python3 fetch_scholar.py   # pull latest arXiv papers + HF datasets
+    python3 fetch_market.py    # pull quotes into data/market.json (needs API keys)
     python3 build.py           # reads items.json (+ feeds), writes index.html
     python3 build.py --plain   # same, but motive tiering OFF: plain sources only
 
@@ -20,6 +21,43 @@ All stdlib, no dependencies. Open `index.html` in any browser.
 key or tier map): sources are shown plain, for a reader who would rather judge them
 without the incentive layer. The other axes (denominator, claim type, track record
 and reality anchors) are unaffected.
+
+## Market context (added 2026-07-25)
+A header strip and a per-item chip give the price context for an announced-vs-delivered
+claim. The board **states the move and the window, and stops**: it never says an item caused
+a move, never ranks a company and never implies a trade. A tier-5 source can be right while
+the stock falls. An entity that is privately held (OpenAI, Anthropic, xAI) gets an explicit
+**"no listed security"** rather than a blank, because the absence of a market check is itself
+a finding under this board's method.
+
+`ticker_map.json` is contestable in the same way as `tier_map.json`: a ticker is an
+observable fact about a company, not a judgement about a claim.
+
+Sources: **Finnhub** for equities (free tier, real-time quotes, no history) and **FRED** for
+indices, because Finnhub's free tier refuses index data. Indices therefore run one trading day
+behind, which the strip says on its face. No euro-area index is shown: FRED's only euro-area
+share-price series is monthly and about six months behind, so it would print stale beside
+daily values.
+
+**Coverage limit, disclosed rather than papered over.** The quote source serves US-listed and
+OTC ADR securities only; native Hong Kong, Shanghai, Seoul and European symbols are refused.
+So the reachable China names (Alibaba, Baidu, Tencent, Xiaomi, Kingsoft Cloud) are platform
+and cloud companies, **not** the domestic chipmakers: SMIC, Hua Hong and Cambricon cannot be
+shown, and neither can Samsung or SK Hynix. Reading the visible China names as coverage of
+Chinese AI hardware would be a denominator error of the kind this board flags elsewhere.
+Those entities therefore render **"listed, not covered here"**, a third state kept distinct
+from "no listed security", because one is a fact about the company and the other is a limit
+of this data tier. OTC ADRs (Infineon, Schneider, Siemens, Tencent, Xiaomi) are thinly traded
+and can lag their home listing, which is noted on each. Yahoo Finance and Stooq were both
+tested on 2026-07-25 and are unusable: Yahoo returns 429 and blocks browser CORS, Stooq now
+runs a JavaScript proof-of-work wall.
+
+Refreshed by `.github/workflows/market.yml` (weekdays, twice) which writes **only**
+`data/market.json`. It deliberately does not run the feed pipeline or rebuild `index.html`,
+because the review pass is a human call and a timer-driven rebuild would publish unreviewed
+items. The page renders real numbers at build time and works with JavaScript off; the
+client-side refresh only keeps an open tab current, via a same-origin fetch of a static file,
+so no API key reaches the browser.
 
 ## Neutrality (why the intake is broad, not watchlist-filtered)
 The public board takes BROAD AI news (RSS), it does NOT run through the personal

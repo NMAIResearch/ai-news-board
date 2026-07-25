@@ -99,7 +99,120 @@ def bar(counts):
             'overflow:hidden;line-height:0">' + "".join(segs) + "</span>")
 
 
-def item_card(it, anchors, plain=False):
+def load_market():
+    """data/market.json + ticker_map.json, or ({}, {}) if fetch_market.py has not run.
+
+    The board must build without them: market data is an enhancement, and a missing or
+    stale quote file should degrade the page quietly rather than break the build.
+    """
+    mk = tmap = {}
+    mk_path = os.path.join(HERE, "data", "market.json")
+    tm_path = os.path.join(HERE, "ticker_map.json")
+    if os.path.isfile(mk_path):
+        mk = json.load(open(mk_path, encoding="utf-8"))
+    if os.path.isfile(tm_path):
+        tmap = json.load(open(tm_path, encoding="utf-8")).get("entities", {})
+    return mk, tmap
+
+
+def money(v, dp=2, prefix=""):
+    return f"{prefix}{v:,.{dp}f}"
+
+
+def market_chip(entity, mk, tmap):
+    """The market context chip for one item's entity.
+
+    States the move and the window, and stops. It does NOT assert that the item caused the
+    move, and it is not rendered as a verdict on the claim: a tier-5 source can be right
+    while the stock falls. A privately held entity gets an explicit "no listed security"
+    rather than nothing, because the absence of a market check is itself informative under
+    the announced-vs-delivered lens.
+    """
+    ent = tmap.get(entity or "")
+    if not ent:
+        return ""
+    if not ent.get("ticker"):
+        # Three distinct states, and collapsing them would misreport the gap. "No listed
+        # security" is a fact about the company; "not covered" is a limit of THIS data
+        # tier, which serves US and OTC ADR listings only. SMIC being invisible here says
+        # nothing about SMIC, and the label has to make that clear.
+        if ent.get("uncovered"):
+            return (f'<span title="{esc(ent["uncovered"])}" style="display:inline-block;'
+                    f'padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;'
+                    f'color:{SLATE};background:#edf2f7;border:1px dashed {TIER[3][0]}">'
+                    f'listed, not covered here</span>')
+        why = esc(ent.get("private", "no listed security"))
+        return (f'<span title="{why}" style="display:inline-block;padding:2px 8px;'
+                f'margin-left:6px;border-radius:4px;font-size:11px;color:{SLATE};'
+                f'background:#edf2f7;border:1px dashed {SLATE}">no listed security</span>')
+    sym = ent["ticker"]
+    q = (mk.get("equities") or {}).get(sym)
+    if not q:
+        return ""
+    dp_ = q.get("change_pct")
+    col = SLATE if dp_ is None else (TIER[5][0] if dp_ < 0 else DENOM["y"][0])
+    arrow = "" if dp_ is None else (f"{dp_:+.2f}%")
+    stale = " &middot; previous close carried forward" if q.get("stale") else ""
+    note = esc(ent.get("note", ""))
+    title = (f"{sym} {money(q['value'])} as of {q.get('asof','')}"
+             f"{'; ' + note if note else ''}. Market context only: no causal link to this "
+             f"item is asserted.")
+    return (f'<span class="mktchip" data-mkt="{esc(sym)}" title="{esc(title)}" '
+            f'style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;'
+            f'font-size:11px;color:#fff;background:{col}">{esc(sym)} '
+            f'<span class="mktval">{money(q["value"])}</span> '
+            f'<span class="mktpct">{arrow}</span>{stale}</span>')
+
+
+def market_strip(mk):
+    """The header strip. Indices are a trading day behind and say so."""
+    if not mk or not mk.get("indices"):
+        return ""
+    cells = []
+    for key, q in mk["indices"].items():
+        pct = q.get("change_pct")
+        col = SLATE if pct is None else (TIER[5][0] if pct < 0 else DENOM["y"][0])
+        cells.append(
+            f'<span data-mkt-idx="{esc(key)}" data-dp="{q.get("dp", 2)}" '
+            f'data-prefix="{esc(q.get("prefix", ""))}" '
+            f'style="display:inline-block;margin:0 18px 0 0;white-space:nowrap">'
+            f'<span style="color:{SLATE};font-size:11px">{esc(q["label"])}</span> '
+            f'<span class="mktval" style="color:{BODY};font-weight:600">'
+            f'{money(q["value"], q.get("dp", 2), q.get("prefix", ""))}</span> '
+            f'<span class="mktpct" style="color:{col}">'
+            f'{"" if pct is None else f"{pct:+.2f}%"}</span></span>')
+    for sym in (mk.get("strip_equities") or []):
+        q = mk["equities"].get(sym)
+        if not q:
+            continue
+        pct = q.get("change_pct")
+        col = SLATE if pct is None else (TIER[5][0] if pct < 0 else DENOM["y"][0])
+        cells.append(
+            f'<span data-mkt="{esc(sym)}" style="display:inline-block;margin:0 18px 0 0;'
+            f'white-space:nowrap"><span style="color:{SLATE};font-size:11px">{esc(sym)}</span> '
+            f'<span class="mktval" style="color:{BODY};font-weight:600">'
+            f'{money(q["value"])}</span> '
+            f'<span class="mktpct" style="color:{col}">'
+            f'{"" if pct is None else f"{pct:+.2f}%"}</span></span>')
+
+    asof = esc((mk.get("indices", {}).get("spx") or {}).get("asof", ""))
+    return (
+        f'<section id="mktstrip" style="border:1px solid {LINE};border-radius:8px;'
+        f'padding:9px 14px;margin:0 0 14px;background:#fff;overflow-x:auto;font-size:13px">'
+        f'<div style="margin-bottom:3px">{"".join(cells)}</div>'
+        f'<div style="font-size:11px;color:{SLATE}">'
+        f'Indices close <span id="mktidxasof">{asof}</span> (FRED, one trading day behind); '
+        f'equities live (Finnhub). '
+        f'Context for the announced-vs-delivered lens, not a market call and not investment '
+        f'advice. <span id="mktupd"></span><br>'
+        f'<strong>Coverage limit:</strong> the quote source serves US and OTC ADR listings '
+        f'only, so the reachable China names are platform and cloud companies, not the '
+        f'domestic chipmakers. SMIC, Hua Hong, Cambricon, Samsung and SK Hynix cannot be '
+        f'shown here. OTC ADRs are thinly traded and can lag their home listing.'
+        f'</div></section>')
+
+
+def item_card(it, anchors, plain=False, mk=None, tmap=None):
     tiers = {}
     chips = []
     for s in it["sources"]:
@@ -141,6 +254,7 @@ def item_card(it, anchors, plain=False):
         rmark = (f'<span title="{esc(note)}" style="display:inline-block;padding:2px 8px;'
                  f'margin-left:6px;border-radius:4px;font-size:11px;color:#fff;'
                  f'background:{TIER[4][0]}">track record: caution</span>')
+    mchip = market_chip(it.get("entity", ""), mk or {}, tmap or {})
     a = anchors.get(it.get("topic", ""), {})
     anchor_html = ""
     if a:
@@ -190,7 +304,7 @@ def item_card(it, anchors, plain=False):
         <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
               color:#fff;background:{ccol}">{esc(it["claim_type"])}</span>
         <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:{dcol}">{esc(dlabel)}</span>{rmark}{flag}
+              color:#fff;background:{dcol}">{esc(dlabel)}</span>{rmark}{flag}{mchip}
       </div>
       {conflict_html}
       {anchor_html}
@@ -338,6 +452,11 @@ def main():
     plain = ap.parse_args().plain
 
     data = json.load(open(SRC, encoding="utf-8"))
+    mk, tmap = load_market()
+    if mk:
+        mk["strip_equities"] = json.load(
+            open(os.path.join(HERE, "ticker_map.json"), encoding="utf-8")
+        )["strip"]["equities"]
     anchors = data.get("anchors", {})
     reviewed = [dict(it, reviewed=it.get("reviewed", True)) for it in data["items"]]
 
@@ -459,13 +578,13 @@ def main():
             f'Live pull, newest first. Auto-tagged: source type and motive tier are set from the '
             f'domain; claim type and denominator are left as "unreviewed" until a human pass. '
             f'Fetched {esc(fetched)}.</div>'
-            + "".join(item_card(it, anchors, plain) for it in incoming))
+            + "".join(item_card(it, anchors, plain, mk, tmap) for it in incoming))
     seed_block = (
         f'<h2 style="color:{NAVY};font-size:18px;margin:30px 0 4px">Anchored examples</h2>'
         f'<div style="color:{SLATE};font-size:13px;margin-bottom:12px">'
         f'Curated claims each carried against a published base rate, kept for reference. '
         f'Newest first; some predate 2026.</div>'
-        + "".join(item_card(it, anchors, plain) for it in reviewed))
+        + "".join(item_card(it, anchors, plain, mk, tmap) for it in reviewed))
     cards = feed_block + seed_block
 
     # motive-tier UI is optional: --plain drops the key, the tier map and both bars
@@ -595,7 +714,71 @@ def main():
   });
   apply();
 })();
+
+/* Market refresh. The page is rendered with real numbers at build time and works with
+   JavaScript off; this only keeps an open tab current. Same-origin fetch of a static
+   file, so there is no API key in the client and no CORS involved. */
+(function () {
+  var NEG = "__NEG__", POS = "__POS__", MUTED = "__MUTED__";
+  function paint(mk) {
+    var eq = mk.equities || {}, idx = mk.indices || {};
+    /* Indices refresh too. Without this the strip's index values and their close date
+       would freeze at whatever build.py last rendered, while the equities beside them
+       moved, which is a worse failure than showing nothing. */
+    document.querySelectorAll("[data-mkt-idx]").forEach(function (el) {
+      var q = idx[el.getAttribute("data-mkt-idx")];
+      if (!q) return;
+      var dp = parseInt(el.getAttribute("data-dp") || "2", 10);
+      var v = el.querySelector(".mktval"), p = el.querySelector(".mktpct");
+      if (v) v.textContent = (el.getAttribute("data-prefix") || "") +
+        q.value.toLocaleString(undefined,
+          {minimumFractionDigits: dp, maximumFractionDigits: dp});
+      if (p) {
+        p.textContent = (q.change_pct === null || q.change_pct === undefined)
+          ? "" : (q.change_pct >= 0 ? "+" : "") + q.change_pct.toFixed(2) + "%";
+        p.style.color = (q.change_pct === null || q.change_pct === undefined)
+          ? MUTED : (q.change_pct < 0 ? NEG : POS);
+      }
+    });
+    var ia = document.getElementById("mktidxasof");
+    if (ia && idx.spx && idx.spx.asof) { ia.textContent = idx.spx.asof; }
+
+    document.querySelectorAll("[data-mkt]").forEach(function (el) {
+      var q = eq[el.getAttribute("data-mkt")];
+      if (!q) return;
+      var v = el.querySelector(".mktval"), p = el.querySelector(".mktpct");
+      if (v) v.textContent = q.value.toLocaleString(undefined,
+        {minimumFractionDigits: 2, maximumFractionDigits: 2});
+      if (p) {
+        p.textContent = (q.change_pct === null || q.change_pct === undefined)
+          ? "" : (q.change_pct >= 0 ? "+" : "") + q.change_pct.toFixed(2) + "%";
+        /* Only the strip recolours: a chip sits on a solid tier-coloured background. */
+        if (!el.classList.contains("mktchip")) {
+          p.style.color = (q.change_pct === null || q.change_pct === undefined)
+            ? MUTED : (q.change_pct < 0 ? NEG : POS);
+        }
+      }
+    });
+    var u = document.getElementById("mktupd");
+    if (u && mk.generated) {
+      u.textContent = "Quotes captured " + mk.generated.replace("T", " ") + ".";
+    }
+  }
+  function tick() {
+    fetch("data/market.json", {cache: "no-store"})
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (mk) { if (mk) paint(mk); })
+      .catch(function () { /* offline or file absent: leave the built-in numbers alone */ });
+  }
+  if (document.getElementById("mktstrip")) { tick(); setInterval(tick, 60000); }
+})();
 </script>"""
+    # Plain string, not an f-string: the JS is full of braces. Substituting the
+    # palette by placeholder avoids both brace-doubling and %-format collisions
+    # with the literal percent signs in the existing filter script.
+    script_block = (script_block.replace("__NEG__", TIER[5][0])
+                                .replace("__POS__", DENOM["y"][0])
+                                .replace("__MUTED__", SLATE))
 
     doc = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -609,6 +792,7 @@ def main():
     one applies. It labels rather than narrates, so the reader draws the conclusion.
     Generated {esc(data.get("generated",""))}.
   </div>
+  {market_strip(mk)}
   <div class="layout">
     {sidebar_html}
     <main class="main">
