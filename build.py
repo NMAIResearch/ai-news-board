@@ -270,6 +270,18 @@ def item_card(it, anchors, plain=False, mk=None, tmap=None):
         rmark = (f'<span title="{esc(note)}" style="display:inline-block;padding:2px 8px;'
                  f'margin-left:6px;border-radius:4px;font-size:11px;color:#fff;'
                  f'background:{TIER[4][0]}">track record: caution</span>')
+    # Two labellers read the same headline and differed: the item is genuinely ambiguous,
+    # so it is surfaced for review rather than presented as settled.
+    cc = it.get("crosscheck") or {}
+    xchip = ""
+    if cc.get("agrees") is False:
+        xchip = (f'<span title="{esc(cc.get("model_a","A"))} read '
+                 f'{esc(it.get("claim_type",""))} / {esc(it.get("denominator_stated",""))}; '
+                 f'{esc(cc.get("model_b","B"))} read {esc(cc.get("claim_type",""))} / '
+                 f'{esc(cc.get("denominator",""))}. Shown for review; neither is treated as '
+                 f'correct." style="display:inline-block;padding:2px 8px;margin-left:6px;'
+                 f'border-radius:4px;font-size:11px;color:{TIER[4][0]};background:#fff7ed;'
+                 f'border:1px dashed {TIER[4][0]}">labellers disagree</span>')
     mchip = market_chip(it.get("entity", ""), mk or {}, tmap or {})
     a = anchors.get(it.get("topic", ""), {})
     anchor_html = ""
@@ -320,7 +332,7 @@ def item_card(it, anchors, plain=False, mk=None, tmap=None):
         <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
               color:#fff;background:{ccol}">{esc(it["claim_type"])}</span>
         <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:{dcol}">{esc(dlabel)}</span>{rmark}{flag}{mchip}
+              color:#fff;background:{dcol}">{esc(dlabel)}</span>{rmark}{flag}{xchip}{mchip}
       </div>
       {conflict_html}
       {anchor_html}
