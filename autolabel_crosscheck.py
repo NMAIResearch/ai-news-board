@@ -179,11 +179,18 @@ def main():
             readings.append(r)
         v = verdict(readings)
         counts[v] += 1
-        fams = {FAMILY(r["model"]) for r in readers}
+        # A reader whose model was never recorded must NOT be counted as its own family.
+        # It was, on 2026-07-25: the first pass predated model-name recording, so it
+        # registered as the literal string "autolabel" and inflated the family count from
+        # 3 to 4 — the precise over-claim this field exists to prevent.
+        known = [r["model"] for r in readers if r.get("model") and ":" in r["model"]]
+        unknown = len(readers) - len(known)
+        fams = {FAMILY(m) for m in known}
         it["crosscheck"] = {
             "verdict": v, "readers": readers,
             # Recorded so a unanimous verdict is not mistaken for independent confirmation.
             "independent_families": len(fams), "families": sorted(fams),
+            **({"readers_of_unrecorded_provenance": unknown} if unknown else {}),
         }
 
     json.dump(data, open(FEED, "w"), indent=2, ensure_ascii=False)
