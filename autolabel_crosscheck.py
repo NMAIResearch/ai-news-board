@@ -41,6 +41,23 @@ builds did NOT clump. Dissent in the twelve 2-1 splits fell qwen3.6:27b 5, gemma
 qwen3.6:35b 3, against ~33% each under independence. n=12, so this settles nothing, but the
 family-correlation worry is asserted rather than demonstrated and should be stated that way.
 
+↻ [2026-07-30] glm-4.7-flash:q4_K_M ADDED as a fourth reader (lineages: gemma / qwen /
+mistral / GLM). Added, not swapped for qwen3.6:35b: the MEASURED note above shows the qwen
+pair did not clump, so there is no evidence to drop one on.
+
+⚠️ READER CALIBRATION, as of 2026-07-30. Weigh dissent accordingly:
+    SCORED on the Model Dependency extraction task: gemma3:27b, qwen3.6:27b, qwen3.6:35b
+        (91%, 0 misattributions). glm-4.7-flash: 8/8 on condition A, n=8, too small to rank.
+    NOT SCORED AT ALL: mistral-small:24b. It appears nowhere in that project. The only
+        mistral scored there is mistral:7b at 42/66.
+⛔ The WITHDRAWN note above therefore overstates its case: "capacity-matched ... without
+dropping capability" substituted parameter count for accuracy. Do not present mistral-small
+or glm as peers of the scored three until they are run.
+
+⚠️ glm-4.7-flash and qwen3.6 are REASONING models. Measured 2026-07-30: 1,643 output tokens
+to return 60 tokens of JSON on 4 items, ~96% discarded thinking. This is why the labelling
+pass times out. Keep batches small; see autolabel.py.
+
 USAGE
 -----
     python3 autolabel_crosscheck.py                       # default readers, one command
@@ -60,7 +77,8 @@ import urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from autolabel import CLAIM, DENOM, FEED, HOST, INSTRUCT, NUM_CTX
 
-DEFAULT_MODELS = ["gemma3:27b", "qwen3.6:35b", "mistral-small:24b"]
+DEFAULT_MODELS = ["gemma3:27b", "qwen3.6:35b", "mistral-small:24b",
+                  "glm-4.7-flash:q4_K_M"]
 # Readers sharing a prefix share a lineage. Used only to annotate the output, never to
 # discount a reading: the point is that the reader is told, not that the code decides.
 FAMILY = lambda m: m.split(":")[0].rstrip("0123456789.")

@@ -20,6 +20,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 FEED = os.path.join(HERE, "feed_items.json")
 STORE = os.path.join(HERE, "reviews_store.json")
 FIELDS = ("entity", "claim_type", "denominator_stated", "topic", "_note")
+# Machine passes carry their own trail. Kept separate from FIELDS so a machine entry
+# can never be mistaken for a human one on read-back.
+MACHINE_FIELDS = FIELDS + ("auto_labelled", "auto_labelled_by", "crosscheck")
 
 
 def url_of(it):
@@ -36,27 +39,51 @@ def main():
     d = json.load(open(FEED, encoding="utf-8"))
     items = d.get("items", [])
 
-    # 1) HARVEST: remember reviews present in the current feed
-    harvested = 0
+    # 1) HARVEST both human reviews and machine labels.
+    # Machine labels MUST be harvested here. autolabel.py never sets reviewed=True, so a
+    # harvest gated on reviewed alone drops them and the next fetch_feeds.py destroys the
+    # whole auto-label pass (happened 2026-07-29: a four-reader cross-check over 35 items
+    # was lost and the board shipped with every card unlabelled).
+    harvested = harvested_machine = 0
     for it in items:
         u = url_of(it)
-        if u and it.get("reviewed"):
+        if not u:
+            continue
+        if it.get("reviewed"):
             store[u] = {k: it[k] for k in FIELDS if k in it}
             store[u]["reviewed"] = True
+            store[u]["label_source"] = "human"
             harvested += 1
+        elif it.get("auto_labelled"):
+            # ⛔ Never downgrade: a human entry already in the store outranks a machine
+            # pass over the same URL and must not be overwritten by it.
+            if store.get(u, {}).get("label_source") == "human":
+                continue
+            store[u] = {k: it[k] for k in MACHINE_FIELDS if k in it}
+            store[u]["reviewed"] = False
+            store[u]["label_source"] = "machine"
+            harvested_machine += 1
 
-    # 2) APPLY: refill not-yet-reviewed items from the store
-    applied = 0
+    # 2) APPLY: refill not-yet-reviewed items from the store.
+    # reviewed stays whatever the store says, so a machine label comes back still flagged
+    # unreviewed and the board keeps showing "auto-tagged, unreviewed" on it.
+    applied = applied_machine = 0
     for it in items:
         u = url_of(it)
         if u in store and not it.get("reviewed"):
-            it.update(store[u]); applied += 1
+            it.update(store[u])
+            if store[u].get("label_source") == "machine":
+                applied_machine += 1
+            else:
+                applied += 1
 
     json.dump(store, open(STORE, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     json.dump(d, open(FEED, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
-    still_new = sum(1 for it in items if not it.get("reviewed"))
-    print(f"carry_reviews: harvested {harvested}, re-applied {applied} "
-          f"({len(store)} remembered). {still_new} item(s) still need review.")
+    still_new = sum(1 for it in items
+                    if not it.get("reviewed") and not it.get("auto_labelled"))
+    print(f"carry_reviews: harvested {harvested} human + {harvested_machine} machine, "
+          f"re-applied {applied} human + {applied_machine} machine "
+          f"({len(store)} remembered). {still_new} item(s) have no label at all.")
 
 
 if __name__ == "__main__":

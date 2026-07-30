@@ -13,22 +13,65 @@ Run:  python3 fetch_feeds.py     # writes feed_items.json, then re-run build.py
 Edit FEEDS below to change sources. Network required; a feed that fails is skipped.
 """
 import json, os, re, sys, urllib.request, xml.etree.ElementTree as ET
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
+from email.utils import parsedate_to_datetime
+
+# ↻ [2026-07-30, his call] Drop feed items older than this at intake. Low-volume feeds
+# return posts from months back, so the board was carrying items dated January and May 2026
+# among the current ones; day grouping made them visible.
+# ⚠️ An item with an UNPARSEABLE date is KEPT, not dropped. Dropping on a parse failure
+# would silently discard current items from any feed whose date format is not handled.
+# ↻ Resolved same day, archive.py now exists: the intake cutoff STAYS. Items are captured
+# while fresh and the archive keeps them permanently after, so the revisit view is not
+# starved. The only items lost are ones already older than the cutoff when first seen, which
+# are the stale feed artefacts this was added to remove.
+MAX_AGE_DAYS = int(os.environ.get("FEED_MAX_AGE_DAYS", "30"))
+# ⚠️ The cutoff is PER SOURCE TYPE because news and regulation decay at different rates.
+# A single 30-day rule deleted the tier-1 feeds the same day they were added: NIST had 10 AI
+# items and every one was over 30 days old, Ofgem's was from 2024. A trade-press story is
+# stale in a month; a Federal Register policy statement or a NIST framework is not.
+MAX_AGE_BY_TYPE = {"primary-record": 180, "independent": 120}
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "feed_items.json")
 
+# (url, needs_ai_filter). Trade-press feeds are already AI-scoped by the publisher's own
+# category, so they pass through. Regulator and agency feeds are general-purpose and must be
+# filtered, or the board fills with advisory-committee notices. The filter does for a primary
+# feed what the publisher's category tag does for trade press; it is topic scope, not motive
+# selection, and every source stays tiered by who it is.
 FEEDS = [
-    # trade press, AI sections
-    "https://techcrunch.com/category/artificial-intelligence/feed/",
-    "https://venturebeat.com/category/ai/feed/",
-    "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
-    "https://arstechnica.com/ai/feed/",
-    # primary / lab
-    "https://deepmind.google/blog/rss.xml",
-    # aggregator / community
-    "https://hnrss.org/newest?q=AI+OR+LLM+OR+OpenAI+OR+Anthropic&points=50",
+    # trade press, AI sections (tier 3)
+    ("https://techcrunch.com/category/artificial-intelligence/feed/", False),
+    # ⛔ venturebeat.com REMOVED 2026-07-30: its AI feed serves nothing under 30 days old.
+    # All 7 items it returned were dated May 2026 or January 2026, and it was the sole
+    # source of the stale January items on the board. Re-add if the feed starts moving.
+    ("https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", False),
+    ("https://arstechnica.com/ai/feed/", False),
+    # vendor-own (tier 5)
+    ("https://deepmind.google/blog/rss.xml", False),
+    # aggregator (tier 3)
+    ("https://hnrss.org/newest?q=AI+OR+LLM+OR+OpenAI+OR+Anthropic&points=50", False),
+    # ↻ [2026-07-30] primary record (tier 1). Added because the board scored ZERO tier-1 and
+    # zero tier-2 sources on 2026-07-30 (30 items at tier 3, 6 at tier 5): a scale whose green
+    # end is "regulator, primary record, adversarial process" had an empty green end.
+    ("https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bterm%5D=artificial+intelligence", True),
+    ("https://www.ftc.gov/feeds/press-release.xml", True),
+    ("https://www.sec.gov/news/pressreleases.rss", True),
+    ("https://www.gov.uk/search/news-and-communications.atom?organisations%5B%5D=competition-and-markets-authority", True),
+    ("https://www.gov.uk/search/news-and-communications.atom?organisations%5B%5D=ofgem", True),
+    ("https://www.nist.gov/news-events/news/rss.xml", True),
 ]
+
+# Checked 2026-07-30, do NOT re-add without re-testing: hai.stanford.edu (malformed XML),
+# epoch.ai/rss.xml (404), ico.org.uk/rss/news-and-blogs (404),
+# adalovelaceinstitute.org/feed (parses to 0 items).
+
+AI_TERMS = re.compile(
+    r"\b(a\.?i\.?|artificial intelligence|machine learning|algorithm\w*|"
+    r"large language model|LLM|chatbot|generative|OpenAI|Anthropic|DeepMind|"
+    r"Nvidia|data cent(?:re|er)|compute|semiconductor|chip\w*|automat\w*)\b",
+    re.I)
 
 # domain fragment -> source_type. A lab's own blog about AI is the party selling
 # the topic (vendor-own); a regulator/court/agency is a primary record.
@@ -46,6 +89,8 @@ DOMAIN_TYPE = [
     ("bloomberg.com", "trade-press"), ("ft.com", "trade-press"),
     ("news.ycombinator.com", "aggregator"), ("ycombinator.com", "aggregator"),
     ("reddit.com", "aggregator"), ("news.google.com", "aggregator"),
+    ("federalregister.gov", "primary-record"), ("gov.uk", "primary-record"),
+    ("nist.gov", "primary-record"), ("arxiv.org", "independent"),
 ]
 # canonical distance tier: 1 = least incentive ... 5 = sells the thing
 TYPE_TIER = {"primary-record": 1, "independent": 2, "trade-press": 3,
@@ -53,6 +98,18 @@ TYPE_TIER = {"primary-record": 1, "independent": 2, "trade-press": 3,
 VENDORS = ["OpenAI", "Anthropic", "Google DeepMind", "DeepMind", "Google",
            "Microsoft", "Meta", "Nvidia", "Amazon", "Salesforce", "Snap",
            "xAI", "Apple", "Mistral", "Cohere", "Perplexity"]
+
+# A named principal IS the company for motive purposes: a Zuckerberg forecast about
+# personal AI agents is a Meta claim, whatever masthead relays it. Headline-only text
+# often names the person and never the firm, which is why 19 of 36 items in the
+# 2026-07-30 feed resolved to no entity at all.
+PRINCIPALS = [
+    ("Zuckerberg", "Meta"), ("Altman", "OpenAI"), ("Amodei", "Anthropic"),
+    ("Huang", "Nvidia"), ("Musk", "xAI"), ("Pichai", "Google"),
+    ("Hassabis", "Google DeepMind"), ("Nadella", "Microsoft"),
+    ("Jassy", "Amazon"), ("Cook", "Apple"), ("Benioff", "Salesforce"),
+    ("LeCun", "Meta"), ("Sutskever", "OpenAI"),
+]
 
 
 def source_type(url):
@@ -63,10 +120,65 @@ def source_type(url):
 
 
 def entity_of(title):
+    """The entity the claim is ABOUT, best-effort from the headline.
+
+    Picks the name appearing EARLIEST IN THE TEXT, not first in VENDORS. Headlines lead with
+    their subject, so position beats list order: "Salesforce rolls out X as it battles
+    Microsoft and Google" returned Google under list order, because Google sits above
+    Salesforce in VENDORS.
+
+    ⚠️ Still a heuristic, and it will be wrong on headlines that open with the object
+    ("Nvidia chips power Meta's new cluster"). Items stay flagged unreviewed; a human pass
+    is what settles the entity.
+    """
+    hits = []
     for v in VENDORS:
-        if re.search(r"\b" + re.escape(v) + r"\b", title, re.I):
-            return v
-    return ""
+        m = re.search(r"\b" + re.escape(v) + r"\b", title, re.I)
+        if m:
+            hits.append((m.start(), -len(v), v))
+    for person, firm in PRINCIPALS:
+        m = re.search(r"\b" + re.escape(person) + r"\b", title, re.I)
+        if m:
+            hits.append((m.start(), -len(person), firm))
+    if not hits:
+        return ""
+    # Tie on position: prefer the longer match, so "Google DeepMind" beats "Google".
+    return min(hits)[2]
+
+
+def item_date(s):
+    """Feed date -> aware datetime, or None if it does not parse."""
+    s = (s or "").strip()
+    if not s:
+        return None
+    try:                                    # RFC 822: "Wed, 29 Jul 2026 18:25:00 +0000"
+        d = parsedate_to_datetime(s)
+    except (TypeError, ValueError):
+        d = None
+    if d is None:
+        try:                                # ISO 8601: "2026-07-29T18:25:00Z"
+            d = datetime.fromisoformat(s.replace("Z", "+00:00"))
+        except ValueError:
+            d = None
+    if d is None:
+        # Date-only variants. parsedate_to_datetime rejects "Tue, 19 May 2026" (no time),
+        # which let a 2-month-old item through the cutoff on the first test.
+        for fmt in ("%a, %d %b %Y", "%d %b %Y", "%Y-%m-%d"):
+            try:
+                d = datetime.strptime(s[:len("Tue, 19 May 2026")].strip(), fmt)
+                break
+            except ValueError:
+                continue
+    if d is None:
+        return None
+    return d if d.tzinfo else d.replace(tzinfo=timezone.utc)
+
+
+def too_old(s, now, stype="other"):
+    d = item_date(s)
+    if d is None:                     # unparseable date: keep, never drop on a parse failure
+        return False
+    return (now - d) > timedelta(days=MAX_AGE_BY_TYPE.get(stype, MAX_AGE_DAYS))
 
 
 def domain(url):
@@ -93,13 +205,22 @@ def parse(xmlbytes):
 
 
 def main():
-    per_feed, collected = 6, []
-    for f in FEEDS:
+    per_feed, collected, dropped_old = 6, [], 0
+    now = datetime.now(timezone.utc)
+    for f, needs_filter in FEEDS:
         try:
             req = urllib.request.Request(
                 f, headers={"User-Agent": "Mozilla/5.0 (NM AI Research board)"})
             raw = urllib.request.urlopen(req, timeout=20).read()
-            rows = parse(raw)[:per_feed]
+            rows = parse(raw)
+            if needs_filter:
+                # Filter BEFORE truncating, or a general feed's first 6 items crowd out the
+                # AI ones further down.
+                rows = [r for r in rows if AI_TERMS.search(r[0] or "")]
+            fresh = [r for r in rows
+                     if not too_old(r[2], now, source_type(r[1] or f))]
+            dropped_old += len(rows) - len(fresh)
+            rows = fresh[:per_feed]
         except Exception as e:
             print(f"skip {domain(f)}: {e}", file=sys.stderr)
             continue
@@ -108,11 +229,18 @@ def main():
                 continue
             st = source_type(link or f)
             collected.append({
-                "entity": entity_of(title) or domain(link or f),
+                # ⛔ Do NOT fall back to the domain. The entity answers "who is the claim
+                # about", the source chip already answers "who published it". Conflating
+                # them put outlet names into the most-covered-entity table and silently
+                # told the reader that TechCrunch was the claimant.
+                "entity": entity_of(title),
                 "headline": title,
                 "date": date[:16] if date else "",
                 "topic": "",
-                "claim_type": "announced",
+                # ⛔ Not "announced". That is a judgement about the rhetorical form of the
+                # claim and nobody has made it yet. A board that flags unearned assertion
+                # must not open by asserting a claim_type it has not checked.
+                "claim_type": "unclassified",
                 "denominator_stated": "?",
                 "reviewed": False,
                 "sources": [{"name": domain(link or f), "url": link,
@@ -120,7 +248,9 @@ def main():
             })
     json.dump({"fetched": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
                "items": collected}, open(OUT, "w", encoding="utf-8"), indent=1)
-    print(f"written: {OUT}  ({len(collected)} items). Now run: python3 build.py")
+    print(f"written: {OUT}  ({len(collected)} items"
+          + (f", {dropped_old} dropped older than {MAX_AGE_DAYS}d" if dropped_old else "")
+          + "). Now run: python3 build.py")
 
 
 if __name__ == "__main__":

@@ -61,6 +61,24 @@ TOPIC_KEYWORDS = [
                          "terawatt", "twh", "energy forecast", "power forecast"]),
     ("cost", ["capex", "billion", "spend", "spending", "investment", "funding round",
               "valuation", "revenue"]),
+    # ↻ [2026-07-30] Descriptive topics added below. The seven above are ANCHOR topics: the
+    # portfolio holds a published base rate for each, so an item tagged with one gets a
+    # reality anchor. These do not anchor, they only make the filter usable.
+    # ⚠️ Keep them BELOW the anchor topics. tag_topic returns the FIRST match, so putting a
+    # descriptive topic above an anchor topic would strip the anchor off an anchorable item.
+    ("chips", ["chip", "semiconductor", "gpu", "tpu", "wafer", "foundry", "nvidia",
+               "tsmc", "asml", "lithograph", "hbm", "accelerator", "silicon"]),
+    ("regulation", ["regulat", "lawsuit", "sued", "sues", "antitrust", "court",
+                    "settlement", "copyright", "ftc", "sec", "eu ai act", "compliance",
+                    "subpoena", "investigation", "ruling", "legislat", "policy statement"]),
+    ("safety", ["safety", "alignment", "jailbreak", "guardrail", "red team", "misuse",
+                "hallucinat", "breach", "vulnerab", "exploit", "deepfake", "csam",
+                "privacy", "surveillance"]),
+    ("models", ["model release", "launches", "unveil", "releases", "benchmark",
+                "open-weight", "open weights", "fine-tun", "context window",
+                "multimodal", "reasoning model"]),
+    ("agents", ["agent", "agentic", "tool use", "autonomous", "assistant", "chatbot",
+                "copilot mode", "orchestrat"]),
 ]
 
 
@@ -68,7 +86,11 @@ TOPIC_LABELS = {
     "code_automation": "Code automation", "work_automation": "Work automation",
     "self_improvement": "Self-improvement", "water": "Water",
     "power_demand": "Power demand", "energy_forecast": "Energy forecast",
-    "cost": "Cost / spend", "governance": "Politics / governance", "": "Untagged",
+    "cost": "Cost / spend", "governance": "Politics / governance",
+    # Descriptive only, no reality anchor behind them.
+    "chips": "Chips / hardware", "regulation": "Regulation / legal",
+    "safety": "Safety / security", "models": "Model releases", "agents": "Agents",
+    "": "Untagged",
 }
 
 
@@ -220,12 +242,24 @@ def market_strip(mk):
         f'Indices close <span id="mktidxasof">{asof}</span> (FRED, one trading day behind); '
         f'equities live (Finnhub). '
         f'Context for the announced-vs-delivered lens, not a market call and not investment '
-        f'advice. <span id="mktupd"></span><br>'
-        f'<strong>Coverage limit:</strong> the quote source serves US and OTC ADR listings '
-        f'only, so the reachable China names are platform and cloud companies, not the '
-        f'domestic chipmakers. SMIC, Hua Hong, Cambricon, Samsung and SK Hynix cannot be '
-        f'shown here. OTC ADRs are thinly traded and can lag their home listing.'
-        f'</div></section>')
+        f'advice. <span id="mktupd"></span></div>'
+        # Collapsed by default: the disclosure ran as long as the price strip it qualifies.
+        # It stays one click away, never removed.
+        f'<details style="font-size:11px;color:{SLATE};margin-top:4px">'
+        f'<summary style="cursor:pointer;color:{NAVY}">Coverage limit: this is a US-listed '
+        f'view of AI hardware, not the market for it</summary>'
+        f'<div style="margin-top:6px;line-height:1.5">'
+        f'The quote source serves US and OTC ADR listings only, so the reachable China names '
+        f'are platform and cloud companies, not the domestic chipmakers. SMIC, Hua Hong, '
+        f'Cambricon, Samsung and SK Hynix cannot be shown here. OTC ADRs are thinly traded '
+        f'and can lag their home listing.<br>'
+        f'<strong>What that hides:</strong> the Shanghai STAR Market listings are where the '
+        f'domestic AI-chip complex is being repriced, and none of them are reachable at this '
+        f'data tier. Moore Threads closed its 5 December 2025 debut up about 425 per cent '
+        f'(offer 114.28 yuan, close 600.50), and MetaX opened up about 693 per cent on 17 '
+        f'December. Neither is a small move and neither can appear above. The absence is a '
+        f'limit of this data tier, not evidence that nothing is happening.'
+        f'</div></details></section>')
 
 
 def item_card(it, anchors, plain=False, mk=None, tmap=None):
@@ -329,7 +363,7 @@ def item_card(it, anchors, plain=False, mk=None, tmap=None):
     return f"""
     <article {data} style="border:1px solid {LINE};border-radius:8px;padding:14px 16px;margin:0 0 14px">
       <div style="font-size:12px;color:{SLATE};margin-bottom:4px">
-        {esc(it["entity"])} &middot; {esc(fmt_date(it.get("date", "")))}
+        {esc(it["entity"]) if it.get("entity") else "<em>entity not identified</em>"} &middot; {esc(fmt_date(it.get("date", "")))}
       </div>
       <div style="font-size:16px;font-weight:600;color:{NAVY};line-height:1.35">{headline_html}</div>
       {'' if plain else f'<div class="motivebar" style="margin:10px 0 6px">{bar(tiers)}</div>'}
@@ -358,7 +392,11 @@ def freshness(built, fetched, mk, reg):
     import datetime as _dt
     now = _dt.datetime.now(_dt.timezone.utc)
 
-    def ago(ts):
+    # ⛔ Never compute a relative age here. Baked into static HTML it freezes: `now` and
+    # the build time are the same instant, so every page shipped "(just now)" permanently
+    # (caught 2026-07-30, 14h stale on the live site). Emit ISO, let the browser compute
+    # the age at read time. JS off = absolute time, no age, which is true.
+    def iso(ts):
         if not ts:
             return None
         for fmt in ("%Y-%m-%d %H:%M UTC", "%Y-%m-%d %H:%M", "%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%d"):
@@ -366,17 +404,10 @@ def freshness(built, fetched, mk, reg):
                 d = _dt.datetime.strptime(ts.strip(), fmt)
                 if d.tzinfo is None:
                     d = d.replace(tzinfo=_dt.timezone.utc)
-                # A date-only value parses to midnight, so reporting it in hours claims a
-                # precision the source never had: "generated today" would read "16h ago".
-                if fmt == "%Y-%m-%d":
-                    days = (now.date() - d.date()).days
-                    return "today" if days == 0 else f"{days}d ago"
-                h = (now - d).total_seconds() / 3600
-                if h < 1:
-                    return "just now"
-                if h < 48:
-                    return f"{int(h)}h ago"
-                return f"{int(h / 24)}d ago"
+                # A date-only value carries no time, so mark it: reporting midnight in
+                # hours claims a precision the source never had.
+                return d.astimezone(_dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ") + (
+                    "|dateonly" if fmt == "%Y-%m-%d" else "")
             except ValueError:
                 continue
         return None
@@ -388,14 +419,15 @@ def freshness(built, fetched, mk, reg):
                       ("Page built", built)):
         if not ts:
             continue
-        a = ago(ts)
+        a = iso(ts)
         # Only the ISO date/time separator, not every T: a blanket replace turns
         # "06:32 UTC" into "06:32 U C".
         shown = re.sub(r"(?<=\d)T(?=\d)", " ", ts).replace("+00:00", "")
+        age = (f' <span class="age" data-ts="{esc(a)}" style="color:{SLATE}"></span>'
+               if a else "")
         parts.append(f'<span style="margin-right:16px;white-space:nowrap">'
                      f'<span style="color:{SLATE}">{esc(label)}</span> '
-                     f'<strong style="color:{BODY}">{esc(shown)}</strong>'
-                     f'{f" <span style=\'color:{SLATE}\'>({a})</span>" if a else ""}</span>')
+                     f'<strong style="color:{BODY}">{esc(shown)}</strong>{age}</span>')
     if not parts:
         return ""
     return (f'<div style="font-size:12px;margin:0 0 14px;padding:7px 12px;border:1px solid '
@@ -436,13 +468,16 @@ def deflation_panel(reg):
             f'<div style="font-size:12px;color:{SLATE};margin-top:2px">{esc(r.get("error",""))}</div>'
             f'</div>')
     return (
-        f'<section class="railcard"><h2 style="color:{NAVY}">Deflation register</h2>'
-        f'<div style="font-size:12px;color:{SLATE};margin-bottom:6px">'
+        f'<details open class="railcard"><summary style="color:{NAVY};font-weight:600;'
+        f'font-size:15px;cursor:pointer">Deflation register '
+        f'<span style="font-weight:400;color:{SLATE};font-size:12px">({len(trs)})</span>'
+        f'</summary>'
+        f'<div style="font-size:12px;color:{SLATE};margin:6px 0">'
         f'Claims where the checkable figure came back different, with the correction and '
         f'where it came from. The dot is the motive tier of the source that carried the '
         f'original claim. Being wrong once is not a verdict on a source; the register '
         f'records the specific figure, not the outlet.</div>'
-        f'{"".join(trs)}</section>')
+        f'{"".join(trs)}</details>')
 
 
 def legend():
@@ -576,6 +611,49 @@ def fmt_date(s):
     return d.strftime("%d %b %Y")
 
 
+def day_heading(d, today):
+    """Coarse buckets, NOT one heading per day.
+
+    A per-day heading spans the full grid width, so a day with one item leaves the rest of
+    the row empty. On 2026-07-30 that produced 14 headings for 36 items (2.6 items per day)
+    and the middle column read as mostly whitespace. Four buckets keep the chronology
+    legible and let cards fill their rows; each card already carries its own exact date.
+    """
+    delta = (today - d.date()).days
+    if delta <= 0:
+        return "Today"
+    if delta == 1:
+        return "Yesterday"
+    if delta < 7:
+        return "Earlier this week"
+    if delta < 31:
+        return "Earlier this month"
+    return "Older"
+
+
+def group_by_day(items, anchors, plain, mk, tmap):
+    """Render items under day headings. Items are already sorted newest first.
+
+    Undated items render under "Date not stated" at the end rather than being dropped or
+    silently sorted to one end of the list.
+    """
+    from datetime import datetime, timezone
+    today = datetime.now(timezone.utc).date()
+    floor = datetime.min.replace(tzinfo=timezone.utc)
+    out, current = [], object()
+    for it in items:
+        d = parse_date(it.get("date", ""))
+        head = "Date not stated" if d == floor else day_heading(d, today)
+        if head != current:
+            out.append(
+                f'<div class="dayhead" style="font-size:12px;font-weight:600;color:{SLATE};'
+                f'text-transform:uppercase;letter-spacing:.04em;margin:18px 0 8px;'
+                f'padding-bottom:4px;border-bottom:1px solid {LINE}">{esc(head)}</div>')
+            current = head
+        out.append(item_card(it, anchors, plain, mk, tmap))
+    return f'<div class="feedgrid">{"".join(out)}</div>'
+
+
 def main():
     import argparse
     ap = argparse.ArgumentParser(description="Render the AI News Board.")
@@ -683,19 +761,71 @@ def main():
                 f'font-size:14px;text-decoration:none">{esc(s.get("title",""))}</a>'
                 f'<div style="font-size:12px;color:{SLATE};margin-top:2px">{meta}</div></div>')
         if rows:
+            # Collapsed. Five stacked rail panels meant scrolling inside the rail to reach
+            # the last one, so reference material opens on demand.
             scholar_html = (
-                f'<section style="border:1px solid {LINE};border-left:4px solid {TIER[2][0]};'
-                f'border-radius:8px;padding:14px 16px;margin:0 0 18px;background:#fff">'
-                f'<h2 style="color:{NAVY};font-size:18px;margin:0 0 2px">Primary sources</h2>'
-                f'<div style="font-size:13px;color:{SLATE};margin-bottom:8px">Recent papers and '
+                f'<details open style="border:1px solid {LINE};border-left:4px solid {TIER[2][0]};'
+                f'border-radius:8px;padding:12px 16px;margin:0 0 12px;background:#fff">'
+                f'<summary style="color:{NAVY};font-size:15px;font-weight:600;cursor:pointer">'
+                f'Primary sources <span style="font-weight:400;color:{SLATE};font-size:12px">'
+                f'({len(rows)})</span></summary>'
+                f'<div style="font-size:13px;color:{SLATE};margin:6px 0 8px">Recent papers and '
                 f'public datasets on AI, so a claim can be checked against the underlying research '
                 f'rather than the coverage of it.</div>'
-                + "".join(rows) + "</section>")
+                + "".join(rows) + "</details>")
+
+    # Model releases. Open weights only, and the panel says why: an artefact you can
+    # download is a different KIND of evidence from a model described in a press release.
+    # ⛔ Never add benchmark scores here. That is a leaderboard, and a percentage with no
+    # stated denominator is the defect this board flags elsewhere.
+    rel_path = os.path.join(HERE, "releases.json")
+    releases_html = ""
+    if os.path.isfile(rel_path):
+        rd = json.load(open(rel_path, encoding="utf-8"))
+        rrows = []
+        for r in rd.get("releases", [])[:16]:
+            closed = r.get("evidence") == "closed"
+            # Tier 5 = the party selling it is the only source. Tier 1 = inspectable artefact.
+            badge_col = TIER[5][0] if closed else TIER[1][0]
+            badge = "closed" if closed else "open weights"
+            rrows.append(
+                f'<div class="scholarrow" data-search="{esc((r.get("id","") + " " + r.get("lab","")).lower())}" '
+                f'style="padding:7px 0;border-bottom:1px solid {LINE}">'
+                f'<div style="font-size:11px;color:{SLATE}">{esc(r.get("date",""))} '
+                f'&middot; {esc(r.get("lab",""))}'
+                f'<span title="{esc(r.get("evidence_note",""))}" style="display:inline-block;'
+                f'font-size:10px;padding:1px 6px;margin-left:6px;border-radius:4px;color:#fff;'
+                f'background:{badge_col}">{badge}</span></div>'
+                f'<a href="{esc(r.get("url",""))}" style="color:{NAVY};font-weight:600;'
+                f'font-size:13px;text-decoration:none">{esc(r.get("model",""))}</a></div>')
+        c = rd.get("counts", {})
+        if rrows:
+            releases_html = (
+                f'<details open style="border:1px solid {LINE};border-left:4px solid {NAVY};'
+                f'border-radius:8px;padding:12px 16px;margin:0 0 12px;background:#fff">'
+                f'<summary style="color:{NAVY};font-size:15px;font-weight:600;cursor:pointer">'
+                f'Model releases <span style="font-weight:400;color:{SLATE};font-size:12px">'
+                f'({c.get("total", len(rrows))})</span></summary>'
+                f'<div style="font-size:13px;color:{SLATE};margin:6px 0 8px">'
+                f'{c.get("total", len(rrows))} in the last {rd.get("window_days", 60)} days: '
+                f'<strong>{c.get("open_weights", 0)} open weights</strong>, an artefact you '
+                f'can download and hash, and <strong>{c.get("closed", 0)} closed</strong>, '
+                f'known only because the party selling it says so. Same list, two different '
+                f'kinds of evidence.</div>'
+                + "".join(rrows)
+                + f'<details style="font-size:11px;color:{SLATE};margin-top:8px">'
+                f'<summary style="cursor:pointer;color:{NAVY}">Sourcing, and what a release '
+                f'list cannot show</summary><div style="margin-top:6px;line-height:1.5">'
+                f'{esc(rd.get("disclosure",""))}</div></details></details>')
 
     # board-level aggregates (over everything)
     all_tiers, entity_counts = {}, {}
     for it in items:
-        entity_counts[it["entity"]] = entity_counts.get(it["entity"], 0) + 1
+        # Unidentified entities are not an entity. Counting "" here would print a blank
+        # row in the most-covered table; counting the domain (the old fetch_feeds
+        # fallback) printed outlet names as if they were the claimant.
+        if it.get("entity"):
+            entity_counts[it["entity"]] = entity_counts.get(it["entity"], 0) + 1
         for s in it["sources"]:
             t = int(s["motive_tier"])
             all_tiers[t] = all_tiers.get(t, 0) + 1
@@ -714,13 +844,20 @@ def main():
             f'Live pull, newest first. Auto-tagged: source type and motive tier are set from the '
             f'domain; claim type and denominator are left as "unreviewed" until a human pass. '
             f'</div>'
-            + "".join(item_card(it, anchors, plain, mk, tmap) for it in incoming))
+            + group_by_day(incoming, anchors, plain, mk, tmap))
+    # Collapsed: reference material sitting in a news position. It is nine static cards
+    # under a live feed, so it opens on demand rather than lengthening every scroll.
     seed_block = (
-        f'<h2 style="color:{NAVY};font-size:18px;margin:30px 0 4px">Anchored examples</h2>'
-        f'<div style="color:{SLATE};font-size:13px;margin-bottom:12px">'
+        f'<details style="margin:28px 0 0"><summary style="color:{NAVY};font-size:18px;'
+        f'font-weight:600;cursor:pointer">Anchored examples '
+        f'<span style="font-weight:400;color:{SLATE};font-size:13px">'
+        f'({len(reviewed)})</span></summary>'
+        f'<div style="color:{SLATE};font-size:13px;margin:6px 0 12px">'
         f'Curated claims each carried against a published base rate, kept for reference. '
         f'Newest first; some predate 2026.</div>'
-        + "".join(item_card(it, anchors, plain, mk, tmap) for it in reviewed))
+        f'<div class="feedgrid">'
+        + "".join(item_card(it, anchors, plain, mk, tmap) for it in reviewed)
+        + '</div></details>')
     cards = feed_block + seed_block
 
     # motive-tier UI is optional: --plain drops the key, the tier map and both bars
@@ -784,26 +921,46 @@ def main():
         f'background:{TIER[t][0]};margin-right:4px"></span>Tier {t}</label>'
         for t in sorted(tiers_present))
     btn_label = "Show motive tiers" if plain else "Hide motive tiers"
+    # Controls run horizontally above the feed. They were a 210px left column, which spent
+    # a whole column of a wide screen on six checkboxes and pushed the reference panels into
+    # one over-long rail. The freed column now carries Model releases and Primary sources.
+    # ⚠️ The ids and classes below are the JS contract (#q, .f-topic, .f-tier, #conflictonly,
+    # #tiertoggle, #count). Renaming any of them silently breaks filtering.
+    # Controls live in the left column. The template wraps this and the deflation register
+    # together in <aside class="side">.
+    # ⚠️ The ids and classes here are the JS contract (#q, .f-topic, .f-tier, #conflictonly,
+    # #tiertoggle, #count). Renaming any of them silently breaks filtering.
     sidebar_html = (
-        f'<aside class="side">'
         f'<input id="q" class="search" type="search" placeholder="Search feed and papers...">'
         f'<div class="fgroup"><h4>Topics</h4>{topic_boxes}</div>'
         f'<div class="fgroup tierui"><h4>Motive tier</h4>{tier_boxes}</div>'
         f'<div class="fgroup"><label><input type="checkbox" id="conflictonly"> '
         f'Disclosed conflict only</label></div>'
         f'<button id="tiertoggle" class="tierbtn">{btn_label}</button>'
-        f'<div id="count" class="count"></div></aside>')
+        f'<div id="count" class="count"></div>')
 
     style_block = f"""<style>
   body{{margin:0;background:{ALT};color:{BODY};font-family:Arial,Helvetica,sans-serif;line-height:1.5}}
-  .wrap{{max-width:1560px;margin:0 auto;padding:28px 20px 60px}}
+  .wrap{{max-width:2200px;margin:0 auto;padding:28px 20px 60px}}
   .layout{{display:flex;gap:24px;align-items:flex-start}}
-  .side{{flex:0 0 210px;position:sticky;top:16px}}
-  /* The feed is prose and stays readable; the rail takes the space a wide screen
-     would otherwise waste, and gets the reference panels out from under a 45-item
-     feed where nobody scrolls to them. */
-  .main{{flex:1 1 auto;min-width:0;max-width:820px}}
-  .rail{{flex:0 0 380px;position:sticky;top:16px;max-height:calc(100vh - 32px);overflow-y:auto}}
+  /* Left column: controls, then the deflation register under them. Own scroll so a long
+     register never lengthens the page. */
+  .side{{flex:0 0 290px;position:sticky;top:16px;max-height:calc(100vh - 32px);overflow-y:auto}}
+  /* The rail takes the space a wide screen would otherwise waste, and gets the
+     reference panels out from under a 45-item feed where nobody scrolls to them. */
+  .main{{flex:1 1 auto;min-width:0}}
+  /* Two columns, fixed. Auto-fill gave three or four on a wide screen and the cards read
+     as a wall; two keeps a headline and its chips on one or two lines. */
+  .feedgrid{{display:grid;grid-template-columns:repeat(2,1fr);gap:0 16px;align-items:start}}
+  .feedgrid .card{{margin:0 0 14px}}
+  /* A day heading labels every card under it, so it must span the whole grid. */
+  .dayhead{{grid-column:1/-1}}
+  /* Four columns: controls+register | feed | releases | reference.
+     The feed is narrowed so the releases column sits beside it rather than the feed
+     running the full width and the rail carrying everything. */
+  .relcol{{flex:0 0 320px;position:sticky;top:16px;max-height:calc(100vh - 32px);overflow-y:auto}}
+  .rail{{flex:0 0 340px;position:sticky;top:16px;max-height:calc(100vh - 32px);overflow-y:auto}}
+  .relcol h2,.rail h2{{font-size:15px;margin:0 0 8px}}
   .rail h2{{font-size:15px;margin:0 0 8px}}
   .railcard{{border:1px solid #e2e8f0;border-radius:8px;padding:12px 14px;margin:0 0 14px;background:#fff}}
   .search{{width:100%;padding:8px 10px;border:1px solid {LINE};border-radius:6px;font-size:14px;margin-bottom:16px}}
@@ -818,8 +975,14 @@ def main():
   body.plainmode .tierchip{{background:#edf2f7!important;color:{BODY}!important;border:1px solid {LINE}!important}}
   /* Rail folds below the feed before the sidebar does: it is reference material,
      so it is the first thing that should stop competing for width. */
-  @media(max-width:1200px){{.rail{{position:static;flex:1 1 auto;width:100%;max-height:none;overflow:visible}}
+  /* Reference columns fold below the feed before the controls do: they are reference
+     material, so they are the first thing that should stop competing for width. */
+  @media(max-width:1600px){{.relcol{{position:static;flex:1 1 320px;max-height:none;overflow:visible}}
+    .layout{{flex-wrap:wrap}}}}
+  @media(max-width:1200px){{.rail,.relcol{{position:static;flex:1 1 auto;width:100%;max-height:none;overflow:visible}}
     .layout{{flex-wrap:wrap}}.main{{max-width:none}}}}
+  /* One column below 1100px: two cards plus a rail no longer fit. */
+  @media(max-width:1100px){{.feedgrid{{grid-template-columns:1fr}}}}
   @media(max-width:720px){{.layout{{flex-direction:column}}.side{{position:static;flex:1 1 auto;width:100%}}}}
 </style>"""
 
@@ -922,6 +1085,34 @@ def main():
   }
   if (document.getElementById("mktstrip")) { tick(); setInterval(tick, 60000); }
 })();
+(function(){
+  // Ages are computed HERE, at read time, never at build time. A static "(just now)"
+  // is true for one instant and wrong for every instant after it.
+  function label(ms, dateOnly){
+    var h = ms / 3600000;
+    if (dateOnly) {
+      var d = Math.floor(h / 24);
+      return d <= 0 ? "today" : d + "d ago";
+    }
+    if (h < 0) return "";                    // clock skew: say nothing rather than "in 3h"
+    if (h < 1) return Math.max(1, Math.round(h * 60)) + "m ago";
+    if (h < 48) return Math.floor(h) + "h ago";
+    return Math.floor(h / 24) + "d ago";
+  }
+  function paintAges(){
+    var now = Date.now();
+    [].slice.call(document.querySelectorAll(".age")).forEach(function(el){
+      var raw = el.getAttribute("data-ts") || "";
+      var dateOnly = raw.indexOf("|dateonly") > -1;
+      var t = Date.parse(raw.replace("|dateonly", ""));
+      if (isNaN(t)) { el.textContent = ""; return; }
+      var s = label(now - t, dateOnly);
+      el.textContent = s ? "(" + s + ")" : "";
+    });
+  }
+  paintAges();
+  setInterval(paintAges, 60000);
+})();
 </script>"""
     # Plain string, not an f-string: the JS is full of braces. Substituting the
     # palette by placeholder avoids both brace-doubling and %-format collisions
@@ -937,15 +1128,18 @@ def main():
 <div class="wrap">
   <h1 style="color:{NAVY};margin:0 0 4px;font-size:26px">AI News Board</h1>
   <div style="color:{SLATE};font-size:14px;margin-bottom:20px;max-width:760px">
-    An experimental board that labels AI-news items by source type and the incentive behind a
-    claim, notes whether a figure states a denominator, and links to a published base rate where
-    one applies. It labels rather than narrates, so the reader draws the conclusion.
+    AI news with two things marked on every item: who is making the claim, and what they gain
+    if you believe it. Where an item quotes a figure, the board says whether the figure states
+    what it is out of. Where the subject has a published base rate, there is a link to it.
   </div>
   {freshness(built, fetched, mk, _reg if os.path.isfile(reg_path) else {})}
   {market_strip(mk)}
   <div class="layout">
-    {sidebar_html}
-    <main class="main">
+    <aside class="side">
+      {sidebar_html}
+      {deflation_html}
+    </aside>
+    <main class="main narrow">
       {plain_note}
       {about_html}
       {cards}
@@ -956,14 +1150,18 @@ def main():
         the structural weakness of a claim; it does not adjudicate truth.<br><br>
         Conflict of interest: the maker of this board is an independent researcher assisted by an
         Anthropic model. Anthropic appears here as a subject and is tagged the same way as every
-        other entity. Independent analysis, not investment advice.
+        other entity. Independent analysis, not investment advice.<br><br>
+        Corrections welcome on any judgement here, and they are marked in place with their reason:
+        <a href="mailto:NMAIResearch@proton.me" style="color:{NAVY}">NMAIResearch@proton.me</a>
       </div>
     </main>
-    <aside class="rail">
+    <aside class="relcol">
       {ai_watch_html}
-      {deflation_html}
-      {govconflict_html}
       {scholar_html}
+    </aside>
+    <aside class="rail">
+      {releases_html}
+      {govconflict_html}
     </aside>
   </div>
 </div>
