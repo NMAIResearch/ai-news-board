@@ -838,12 +838,34 @@ def main():
     # freshest news leads; curated anchored examples (seed, some pre-2026) sit below.
     feed_block = ""
     if incoming:
+        # Who labelled what, stated ON THE PAGE rather than in a title= tooltip. The model
+        # names were previously only visible on hover, which is no disclosure at all on a
+        # touch screen. Read from the data so it cannot drift from what actually ran.
+        labellers = sorted({it.get("auto_labelled_by") for it in incoming
+                            if it.get("auto_labelled_by")})
+        n_auto = sum(1 for it in incoming if it.get("auto_labelled"))
+        n_human = sum(1 for it in incoming if it.get("reviewed"))
+        n_none = len(incoming) - n_auto - n_human
+        who = (f'<strong>{n_auto} of {len(incoming)}</strong> labelled by '
+               f'<strong>{", ".join(esc(m) for m in labellers)}</strong> running locally'
+               if labellers else "none machine-labelled yet")
+        machine_note = (
+            f'<div style="color:{SLATE};font-size:13px;margin:0 0 12px;padding:8px 12px;'
+            f'background:{ALT};border-left:3px solid {SLATE};border-radius:4px">'
+            f'<strong>How these labels were made.</strong> Source type and motive tier come '
+            f'from the domain. Claim type and denominator are set by an open-weight model: '
+            f'{who}, {n_human} checked by a human, {n_none} not labelled at all. '
+            f'A machine label never counts as reviewed, which is why items stay marked '
+            f'&ldquo;auto-tagged, unreviewed&rdquo;. '
+            f'<strong>⚠️ The model sees the headline only</strong>, not the article, so '
+            f'&ldquo;no denominator&rdquo; means the headline does not state one. The article '
+            f'may. Treat the flag as a prompt to check, not as a finding about the claim.'
+            f'</div>')
         feed_block = (
             f'<h2 style="color:{NAVY};font-size:18px;margin:0 0 4px">Latest</h2>'
-            f'<div style="color:{SLATE};font-size:13px;margin-bottom:12px">'
-            f'Live pull, newest first. Auto-tagged: source type and motive tier are set from the '
-            f'domain; claim type and denominator are left as "unreviewed" until a human pass. '
-            f'</div>'
+            f'<div style="color:{SLATE};font-size:13px;margin-bottom:8px">'
+            f'Live pull, newest first.</div>'
+            + machine_note
             + group_by_day(incoming, anchors, plain, mk, tmap))
     # Collapsed: reference material sitting in a news position. It is nine static cards
     # under a live feed, so it opens on demand rather than lengthening every scroll.
