@@ -1,9 +1,33 @@
 # AI News Board
 
-AI news, sorted by incentive rather than by political lean. Every AI-news claim is
-tagged by who is telling you and what they gain if you believe it, flagged for whether
-it states a denominator, and anchored to a published base rate. It flags; it does not
-narrate. The reader draws the conclusion.
+AI news with two things marked on every item: who is making the claim, and what they gain
+if you believe it. Where an item quotes a figure, the board says whether the figure states
+what it is out of. Where the subject has a published base rate, there is a link to it.
+
+## Who sets the labels, and on how much text
+
+Stated here and on the page itself, not only in a hover tooltip.
+
+**Set from the domain, no model involved:** source type and motive tier.
+
+**Set by a local open-weight model:** `claim_type` and `denominator_stated`. `autolabel.py`
+calls a model over Ollama (currently `qwen3.6:27b`), and `autolabel_crosscheck.py` runs three
+more (`gemma3:27b`, `qwen3.6:35b`, `mistral-small:24b`, `glm-4.7-flash`) over the identical
+prompt and records where they disagree. Disagreement lowers an item's review priority; it
+settles nothing. A 2-1 split is recorded as a split, never resolved to the majority, because
+readers from one model family share a lineage and a shared error looks exactly like agreement.
+
+**No machine pass ever sets `reviewed = true`.** That is why items keep the "auto-tagged,
+unreviewed" mark. A machine guess is never presented as a human check.
+
+⚠️ **The model sees the headline and nothing else.** No article body is fetched; the prompt is
+about 27 tokens per item. So "no denominator" means *the headline does not state one*, and the
+article may well do. Read the flag as a prompt to check rather than as a finding about the
+claim. Reader-facing wording on the page says the same.
+
+⚠️ **Calibration is uneven.** On the extraction task in the companion Model Dependency work,
+`gemma3:27b`, `qwen3.6:27b` and `qwen3.6:35b` are scored; `mistral-small:24b` and
+`glm-4.7-flash` are not. Do not treat all four cross-check readers as equivalent.
 
 ## Run
 
