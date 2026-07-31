@@ -84,16 +84,13 @@ before the fix was built:
 Spans are quoted, never summarised. A span is checkable by exact substring; a paraphrase is
 checkable by nothing.
 
-### Cross-check readers
+### The reader cross-check was retired with the headline era
 
-`autolabel_crosscheck.py` runs several local models over an identical prompt and records where
-they disagree. Disagreement lowers an item's review priority; it settles nothing. A 2-1 split
-is recorded as a split, never resolved to the majority, because readers from one model family
-share a lineage and a shared error looks exactly like agreement.
-
-⚠️ **Calibration is uneven.** On the extraction task in the companion Model Dependency work,
-`gemma3:27b`, `qwen3.6:27b` and `qwen3.6:35b` are scored; `mistral-small:24b` and
-`glm-4.7-flash` are not. Do not treat the readers as equivalent.
+Several local models used to read the same headline and their disagreement was rendered as a
+chip. Two of its three fields are now gone: `claim_type` is retired, and the denominator comes
+from quoted spans, which is checkable rather than voted on. Provenance travels on the label
+itself instead. The tooling is in [`archive/`](archive/), which explains what it did and what
+is worth keeping if it is ever rebuilt on spans.
 
 ## What each item shows
 
