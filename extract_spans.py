@@ -386,8 +386,15 @@ def main():
                     "figure_offsets": [o for _, o in figs],
                     "base_cue": bool(BASE_CUE.search(sent)),
                 })
+        # ⚠️ publisher_tags MUST be copied out to here. article_text.json is gitignored (it
+        # holds article bodies), so anything that only lives there is invisible to a clean
+        # clone. resolve_entity.py reads the cache directly and is fine; build.py reads THIS
+        # file and could not see the tags at all, which silently cost the topic matcher its
+        # best signal. Tags are a short keyword list, not article text, so they commit.
         spans[url] = {"headline": headline, "source": src, "fetch": rec["status"],
                       "n_chars": len(body), "tier": 1, "furniture_dropped": furniture,
+                      "publisher_tags": rec.get("publisher_tags") or [],
+                      "site_name": rec.get("site_name", ""),
                       "spans": got}
         mark = "ok" if rec["status"] == "ok" else rec["status"]
         print(f"  {mark:18s} {len(got):3d} span(s)  {headline[:56]}")
