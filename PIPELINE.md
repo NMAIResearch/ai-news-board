@@ -26,7 +26,7 @@ its first two columns at read time, so the private columns are never bound to a 
 When you write them, you are moving material across the boundary by hand. Check that what you
 write is a public fact rather than a private read of one.
 
-## Direction 2: board to tracker (NOT BUILT, designed here)
+## Direction 2: board to tracker (BUILT 2026-07-31, `suggest_register_rows.py`)
 
 The board must never write a tracker row. A tracker row is a judgement, and the standing rule
 is automate the plumbing, never the call. What the board can do is **nominate candidates**
@@ -42,8 +42,20 @@ Screening rules, all of which reuse labels the board already carries:
                      scheduled event (expiry, deadline, auction, hearing, effective date).
                      Emit the date, the span, the URL.
 
-Output is a markdown list, appended to a dated file in this folder. It is not `registers.json`
-and it is not the tracker. Nothing published, nothing decided.
+Output is a markdown list written to `register_candidates_<date>.md` in this folder. It is
+not `registers.json` and it is not the tracker. Nothing published, nothing decided.
+
+⛔ **The §RC screen reads `article_text.json`, not the spans, and that is structural.** Spans
+are sentences containing a figure, and `extract_spans.py` filters dates out of its figure set
+because most digits in an article are dates and version numbers. A sentence like "the
+consultation closes on 16 September" carries no other number, so it never becomes a span.
+Measured over the whole span store on 2026-07-31: 46 spans matched a date pattern, 2 held a
+scheduled-event word, and 0 held both. The text cache is gitignored, so this half only runs
+on a machine that has fetched articles; when the cache is absent the screen says it skipped.
+
+⚠️ First run: 19 deflation candidates, 1 calendar candidate. The calendar hit arrived wrapped
+in page furniture, because the sentence splitter runs over raw cached text. Read it as a
+pointer to the article, not as copy.
 
 ⛔ Do not have the board suggest the CORRECTED figure for a §DR row. The deflation is the
 call, and a model proposing both the error and its correction is the cascade trap: it would
