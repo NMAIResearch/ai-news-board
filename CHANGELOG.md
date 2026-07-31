@@ -66,6 +66,18 @@ listed 7 steps against a 12-step pipeline: no vendor newsrooms, no spans, no ent
 resolution, no article evidence, no releases and no archive. Rewritten to the real order,
 with the reason each step sits where it does.
 
+**Registers extended.** Deflation register 14 rows to 16: OpenAI's "lost $38.5B in 2025"
+(operating loss $20.9B; the headline carries a $41.55B non-cash charge from the nonprofit to
+for-profit conversion) and Pangram's "1-in-10,000 false-positive rate". The second corrects a
+skew in the register itself: 11 of the previous 14 rows deflated tier-4 press and creator
+claims, while the board's thesis is that incentive concentrates at tier 5, the party selling
+the thing. Resolution calendar 5 rows to 7: the ASML lithography controls expiring 10 November
+and the PJM 2030/31 capacity auction in December.
+
+**`PIPELINE.md`** states which store owns what. The tracker owns judgements, the board owns
+intake, and neither writes to the other. Direction two, the board nominating candidate rows,
+is designed there and not built.
+
 ## 2026-07-30
 
 **Machine labels never survived a fetch.** `carry_reviews.py` harvested only items with
