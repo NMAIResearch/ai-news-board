@@ -53,6 +53,19 @@ its fix.
 **Docs realigned to the deployed board** (README and script docstrings): retired fields
 marked as dead rather than described as live, the run order corrected to the full pipeline.
 
+**Reader cross-check retired to `archive/`.** `autolabel.py`, `autolabel_crosscheck.py` and
+the three runner scripts were built to read headlines, and two of the cross-check's three
+fields no longer exist: `claim_type` is retired and the denominator now comes from quoted
+spans, which is checkable rather than voted on. The chip is removed from `build.py` and the
+stored disagreement is stripped from 19 items in `feed_items.json` and 38 in
+`reviews_store.json`, so nothing renders a reading that nothing can regenerate. Provenance
+travels on the label instead, as `label_tier` and `label_evidence`.
+
+**`refresh.sh` was running the retired labeller and skipping the span ladder entirely.** It
+listed 7 steps against a 12-step pipeline: no vendor newsrooms, no spans, no entity
+resolution, no article evidence, no releases and no archive. Rewritten to the real order,
+with the reason each step sits where it does.
+
 ## 2026-07-30
 
 **Machine labels never survived a fetch.** `carry_reviews.py` harvested only items with

@@ -407,24 +407,13 @@ def item_card(it, anchors, plain=False, mk=None, tmap=None, ev=None):
         rmark = (f'<span title="{esc(note)}" style="display:inline-block;padding:2px 8px;'
                  f'margin-left:6px;border-radius:4px;font-size:11px;color:#fff;'
                  f'background:{TIER[4][0]}">track record: caution</span>')
-    # Two labellers read the same headline and differed: the item is genuinely ambiguous,
-    # so it is surfaced for review rather than presented as settled.
-    cc = it.get("crosscheck") or {}
+    # ⛔ The reader cross-check chip was removed 2026-07-31 with the tooling (see archive/).
+    # It reported disagreement between local models reading a HEADLINE, over claim_type,
+    # which is retired. Provenance now travels on the label itself: label_tier and
+    # label_evidence say whether a quoted span settled the field or a model judged it.
+    # Do not reinstate reader agreement as a quality signal. A shared error between readers
+    # of one model family is indistinguishable from agreement.
     xchip = ""
-    if cc.get("verdict") in ("split", "tied", "majority") or cc.get("agrees") is False:
-        readers = cc.get("readers") or []
-        detail = "; ".join(f'{r.get("model","?")}: {r.get("claim_type","")} / '
-                           f'{r.get("denominator","")}' for r in readers)
-        v = cc.get("verdict")
-        label = {"split": "labellers split", "tied": "labellers tied",
-                 "majority": "labellers differ"}.get(v, "labellers disagree")
-        # A majority is not shown as a resolution: readers from one family share a
-        # lineage, so a shared error is indistinguishable from agreement.
-        tip = (f'{detail}. Shown for review; no reading is treated as correct and a '
-               f'majority does not settle it.') if detail else 'readers differ'
-        xchip = (f'<span title="{esc(tip)}" style="display:inline-block;padding:2px 8px;'
-                 f'margin-left:6px;border-radius:4px;font-size:11px;color:{TIER[4][0]};'
-                 f'background:#fff7ed;border:1px dashed {TIER[4][0]}">{esc(label)}</span>')
     # No source URL means a curated reference card, which has no citation trail to report.
     # Saying "no cited source found" there states an absence about a thing never checked.
     # Header: the subject organisation, else the publisher's own topic tag, else the date

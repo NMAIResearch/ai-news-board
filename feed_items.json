@@ -412,37 +412,6 @@
    "entity_basis": "headline",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
-   "crosscheck": {
-    "verdict": "majority",
-    "readers": [
-     {
-      "model": "qwen3.6:27b",
-      "claim_type": "target",
-      "denominator": "N"
-     },
-     {
-      "model": "gemma3:27b",
-      "claim_type": "announced",
-      "denominator": "N"
-     },
-     {
-      "model": "qwen3.6:35b",
-      "claim_type": "target",
-      "denominator": "N"
-     },
-     {
-      "model": "mistral-small:24b",
-      "claim_type": "target",
-      "denominator": "N"
-     }
-    ],
-    "independent_families": 3,
-    "families": [
-     "gemma",
-     "mistral-small",
-     "qwen"
-    ]
-   },
    "label_tier": 3,
    "label_evidence": "model read 3 figure-sentence(s), no base cue matched",
    "label_source": "machine",
@@ -486,37 +455,6 @@
    "entity_basis": "headline",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
-   "crosscheck": {
-    "verdict": "unanimous",
-    "readers": [
-     {
-      "model": "qwen3.6:27b",
-      "claim_type": "target",
-      "denominator": "N"
-     },
-     {
-      "model": "gemma3:27b",
-      "claim_type": "target",
-      "denominator": "N"
-     },
-     {
-      "model": "qwen3.6:35b",
-      "claim_type": "target",
-      "denominator": "N"
-     },
-     {
-      "model": "mistral-small:24b",
-      "claim_type": "target",
-      "denominator": "N"
-     }
-    ],
-    "independent_families": 3,
-    "families": [
-     "gemma",
-     "mistral-small",
-     "qwen"
-    ]
-   },
    "label_tier": 3,
    "label_evidence": "model read 7 figure-sentence(s), no base cue matched",
    "label_source": "machine",
@@ -706,38 +644,6 @@
    "entity_basis": "unresolved",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
-   "crosscheck": {
-    "verdict": "majority",
-    "readers": [
-     {
-      "model": "autolabel",
-      "claim_type": "unclassified",
-      "denominator": "?"
-     },
-     {
-      "model": "gemma3:27b",
-      "claim_type": "assertion",
-      "denominator": "N"
-     },
-     {
-      "model": "qwen3.6:35b",
-      "claim_type": "announced",
-      "denominator": "N"
-     },
-     {
-      "model": "mistral-small:24b",
-      "claim_type": "announced",
-      "denominator": "N"
-     }
-    ],
-    "independent_families": 3,
-    "families": [
-     "gemma",
-     "mistral-small",
-     "qwen"
-    ],
-    "readers_of_unrecorded_provenance": 1
-   },
    "label_tier": 3,
    "label_evidence": "model read 2 figure-sentence(s), no base cue matched",
    "label_source": "machine",
@@ -786,37 +692,6 @@
    "entity_source": "human",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
-   "crosscheck": {
-    "verdict": "majority",
-    "readers": [
-     {
-      "model": "qwen3.6:27b",
-      "claim_type": "measurement",
-      "denominator": "N"
-     },
-     {
-      "model": "gemma3:27b",
-      "claim_type": "announced",
-      "denominator": "N"
-     },
-     {
-      "model": "qwen3.6:35b",
-      "claim_type": "measurement",
-      "denominator": "N"
-     },
-     {
-      "model": "mistral-small:24b",
-      "claim_type": "measurement",
-      "denominator": "Y"
-     }
-    ],
-    "independent_families": 3,
-    "families": [
-     "gemma",
-     "mistral-small",
-     "qwen"
-    ]
-   },
    "label_tier": 3,
    "label_evidence": "model read 4 figure-sentence(s), no base cue matched",
    "label_source": "machine",
@@ -856,44 +731,6 @@
    "entity_basis": "product:Gemini Robotics",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
-   "crosscheck": {
-    "verdict": "tied",
-    "readers": [
-     {
-      "model": "autolabel",
-      "claim_type": "unclassified",
-      "denominator": "?"
-     },
-     {
-      "model": "gemma3:27b",
-      "claim_type": "assertion",
-      "denominator": "N"
-     },
-     {
-      "model": "qwen3.6:35b",
-      "claim_type": "announced",
-      "denominator": "N"
-     },
-     {
-      "model": "mistral-small:24b",
-      "claim_type": "assertion",
-      "denominator": "N"
-     },
-     {
-      "model": "glm-4.7-flash:q4_K_M",
-      "claim_type": "announced",
-      "denominator": "N"
-     }
-    ],
-    "independent_families": 4,
-    "families": [
-     "gemma",
-     "glm-4.7-flash",
-     "mistral-small",
-     "qwen"
-    ],
-    "readers_of_unrecorded_provenance": 1
-   },
    "label_tier": 3,
    "label_evidence": "model read 6 figure-sentence(s), no base cue matched",
    "label_source": "machine",
@@ -926,43 +763,6 @@
    "entity_source": "human",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
-   "crosscheck": {
-    "verdict": "unanimous",
-    "readers": [
-     {
-      "model": "qwen3.6:27b",
-      "claim_type": "announced",
-      "denominator": "N"
-     },
-     {
-      "model": "gemma3:27b",
-      "claim_type": "announced",
-      "denominator": "N"
-     },
-     {
-      "model": "qwen3.6:35b",
-      "claim_type": "announced",
-      "denominator": "N"
-     },
-     {
-      "model": "mistral-small:24b",
-      "claim_type": "announced",
-      "denominator": "N"
-     },
-     {
-      "model": "glm-4.7-flash:q4_K_M",
-      "claim_type": "announced",
-      "denominator": "N"
-     }
-    ],
-    "independent_families": 4,
-    "families": [
-     "gemma",
-     "glm-4.7-flash",
-     "mistral-small",
-     "qwen"
-    ]
-   },
    "label_tier": 3,
    "label_evidence": "model read 2 figure-sentence(s), no base cue matched",
    "label_source": "machine",
@@ -989,44 +789,6 @@
    "entity_basis": "product:Gemini Robotics",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
-   "crosscheck": {
-    "verdict": "tied",
-    "readers": [
-     {
-      "model": "autolabel",
-      "claim_type": "unclassified",
-      "denominator": "?"
-     },
-     {
-      "model": "gemma3:27b",
-      "claim_type": "assertion",
-      "denominator": "N"
-     },
-     {
-      "model": "qwen3.6:35b",
-      "claim_type": "announced",
-      "denominator": "N"
-     },
-     {
-      "model": "mistral-small:24b",
-      "claim_type": "assertion",
-      "denominator": "N"
-     },
-     {
-      "model": "glm-4.7-flash:q4_K_M",
-      "claim_type": "announced",
-      "denominator": "N"
-     }
-    ],
-    "independent_families": 4,
-    "families": [
-     "gemma",
-     "glm-4.7-flash",
-     "mistral-small",
-     "qwen"
-    ],
-    "readers_of_unrecorded_provenance": 1
-   },
    "label_tier": 3,
    "label_evidence": "model read 4 figure-sentence(s), no base cue matched",
    "label_source": "machine",
@@ -1058,43 +820,6 @@
    "entity_basis": "headline",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
-   "crosscheck": {
-    "verdict": "tied",
-    "readers": [
-     {
-      "model": "qwen3.6:27b",
-      "claim_type": "announced",
-      "denominator": "partial"
-     },
-     {
-      "model": "gemma3:27b",
-      "claim_type": "announced",
-      "denominator": "N"
-     },
-     {
-      "model": "qwen3.6:35b",
-      "claim_type": "announced",
-      "denominator": "partial"
-     },
-     {
-      "model": "mistral-small:24b",
-      "claim_type": "measurement",
-      "denominator": "Y"
-     },
-     {
-      "model": "glm-4.7-flash:q4_K_M",
-      "claim_type": "announced",
-      "denominator": "N"
-     }
-    ],
-    "independent_families": 4,
-    "families": [
-     "gemma",
-     "glm-4.7-flash",
-     "mistral-small",
-     "qwen"
-    ]
-   },
    "label_tier": 3,
    "label_evidence": "model read 5 figure-sentence(s), no base cue matched",
    "label_source": "machine",
@@ -1121,43 +846,6 @@
    "entity_basis": "product:Gemini",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
-   "crosscheck": {
-    "verdict": "unanimous",
-    "readers": [
-     {
-      "model": "qwen3.6:27b",
-      "claim_type": "announced",
-      "denominator": "N"
-     },
-     {
-      "model": "gemma3:27b",
-      "claim_type": "announced",
-      "denominator": "N"
-     },
-     {
-      "model": "qwen3.6:35b",
-      "claim_type": "announced",
-      "denominator": "N"
-     },
-     {
-      "model": "mistral-small:24b",
-      "claim_type": "announced",
-      "denominator": "N"
-     },
-     {
-      "model": "glm-4.7-flash:q4_K_M",
-      "claim_type": "announced",
-      "denominator": "N"
-     }
-    ],
-    "independent_families": 4,
-    "families": [
-     "gemma",
-     "glm-4.7-flash",
-     "mistral-small",
-     "qwen"
-    ]
-   },
    "label_tier": 1,
    "label_evidence": "9 of 46 figure-sentence(s) state a base",
    "label_source": "machine",
@@ -1189,43 +877,6 @@
    "entity_basis": "product:Gemini",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
-   "crosscheck": {
-    "verdict": "unanimous",
-    "readers": [
-     {
-      "model": "qwen3.6:27b",
-      "claim_type": "announced",
-      "denominator": "N"
-     },
-     {
-      "model": "gemma3:27b",
-      "claim_type": "announced",
-      "denominator": "N"
-     },
-     {
-      "model": "qwen3.6:35b",
-      "claim_type": "announced",
-      "denominator": "N"
-     },
-     {
-      "model": "mistral-small:24b",
-      "claim_type": "announced",
-      "denominator": "N"
-     },
-     {
-      "model": "glm-4.7-flash:q4_K_M",
-      "claim_type": "announced",
-      "denominator": "N"
-     }
-    ],
-    "independent_families": 4,
-    "families": [
-     "gemma",
-     "glm-4.7-flash",
-     "mistral-small",
-     "qwen"
-    ]
-   },
    "label_tier": 1,
    "label_evidence": "6 of 28 figure-sentence(s) state a base",
    "label_source": "machine",
@@ -1390,38 +1041,6 @@
    "entity_basis": "headline",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
-   "crosscheck": {
-    "verdict": "majority",
-    "readers": [
-     {
-      "model": "autolabel",
-      "claim_type": "unclassified",
-      "denominator": "?"
-     },
-     {
-      "model": "gemma3:27b",
-      "claim_type": "assertion",
-      "denominator": "N"
-     },
-     {
-      "model": "qwen3.6:35b",
-      "claim_type": "announced",
-      "denominator": "N"
-     },
-     {
-      "model": "mistral-small:24b",
-      "claim_type": "announced",
-      "denominator": "N"
-     }
-    ],
-    "independent_families": 3,
-    "families": [
-     "gemma",
-     "mistral-small",
-     "qwen"
-    ],
-    "readers_of_unrecorded_provenance": 1
-   },
    "label_tier": 3,
    "label_evidence": "model read 2 figure-sentence(s), no base cue matched",
    "label_source": "machine",
@@ -1449,38 +1068,6 @@
    "entity_source": "human",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
-   "crosscheck": {
-    "verdict": "majority",
-    "readers": [
-     {
-      "model": "autolabel",
-      "claim_type": "unclassified",
-      "denominator": "?"
-     },
-     {
-      "model": "gemma3:27b",
-      "claim_type": "announced",
-      "denominator": "N"
-     },
-     {
-      "model": "qwen3.6:35b",
-      "claim_type": "assertion",
-      "denominator": "N"
-     },
-     {
-      "model": "mistral-small:24b",
-      "claim_type": "announced",
-      "denominator": "N"
-     }
-    ],
-    "independent_families": 3,
-    "families": [
-     "gemma",
-     "mistral-small",
-     "qwen"
-    ],
-    "readers_of_unrecorded_provenance": 1
-   },
    "label_tier": 3,
    "label_evidence": "model read 14 figure-sentence(s), no base cue matched",
    "label_source": "machine",
@@ -1513,38 +1100,6 @@
    "entity_source": "human",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
-   "crosscheck": {
-    "verdict": "majority",
-    "readers": [
-     {
-      "model": "autolabel",
-      "claim_type": "unclassified",
-      "denominator": "?"
-     },
-     {
-      "model": "gemma3:27b",
-      "claim_type": "assertion",
-      "denominator": "N"
-     },
-     {
-      "model": "qwen3.6:35b",
-      "claim_type": "assertion",
-      "denominator": "N"
-     },
-     {
-      "model": "mistral-small:24b",
-      "claim_type": "assertion",
-      "denominator": "N"
-     }
-    ],
-    "independent_families": 3,
-    "families": [
-     "gemma",
-     "mistral-small",
-     "qwen"
-    ],
-    "readers_of_unrecorded_provenance": 1
-   },
    "label_tier": 1,
    "label_evidence": "1 of 138 figure-sentence(s) state a base",
    "label_source": "machine",
@@ -1576,38 +1131,6 @@
    "entity_basis": "headline",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
-   "crosscheck": {
-    "verdict": "majority",
-    "readers": [
-     {
-      "model": "autolabel",
-      "claim_type": "unclassified",
-      "denominator": "?"
-     },
-     {
-      "model": "gemma3:27b",
-      "claim_type": "measurement",
-      "denominator": "N"
-     },
-     {
-      "model": "qwen3.6:35b",
-      "claim_type": "assertion",
-      "denominator": "N"
-     },
-     {
-      "model": "mistral-small:24b",
-      "claim_type": "measurement",
-      "denominator": "N"
-     }
-    ],
-    "independent_families": 3,
-    "families": [
-     "gemma",
-     "mistral-small",
-     "qwen"
-    ],
-    "readers_of_unrecorded_provenance": 1
-   },
    "label_tier": 3,
    "label_evidence": "model read 1 figure-sentence(s), no base cue matched",
    "label_source": "machine",
@@ -1639,38 +1162,6 @@
    "entity_basis": "site",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
-   "crosscheck": {
-    "verdict": "majority",
-    "readers": [
-     {
-      "model": "autolabel",
-      "claim_type": "unclassified",
-      "denominator": "?"
-     },
-     {
-      "model": "gemma3:27b",
-      "claim_type": "assertion",
-      "denominator": "N"
-     },
-     {
-      "model": "qwen3.6:35b",
-      "claim_type": "assertion",
-      "denominator": "N"
-     },
-     {
-      "model": "mistral-small:24b",
-      "claim_type": "target",
-      "denominator": "N"
-     }
-    ],
-    "independent_families": 3,
-    "families": [
-     "gemma",
-     "mistral-small",
-     "qwen"
-    ],
-    "readers_of_unrecorded_provenance": 1
-   },
    "label_tier": 3,
    "label_evidence": "model read 2 figure-sentence(s), no base cue matched",
    "label_source": "machine",
@@ -1706,38 +1197,6 @@
    "entity_basis": "headline",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
-   "crosscheck": {
-    "verdict": "majority",
-    "readers": [
-     {
-      "model": "autolabel",
-      "claim_type": "unclassified",
-      "denominator": "?"
-     },
-     {
-      "model": "gemma3:27b",
-      "claim_type": "announced",
-      "denominator": "N"
-     },
-     {
-      "model": "qwen3.6:35b",
-      "claim_type": "announced",
-      "denominator": "N"
-     },
-     {
-      "model": "mistral-small:24b",
-      "claim_type": "announced",
-      "denominator": "N"
-     }
-    ],
-    "independent_families": 3,
-    "families": [
-     "gemma",
-     "mistral-small",
-     "qwen"
-    ],
-    "readers_of_unrecorded_provenance": 1
-   },
    "label_tier": 1,
    "label_evidence": "1 of 2 figure-sentence(s) state a base",
    "label_source": "machine",
@@ -1769,38 +1228,6 @@
    "entity_basis": "headline",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
-   "crosscheck": {
-    "verdict": "majority",
-    "readers": [
-     {
-      "model": "autolabel",
-      "claim_type": "unclassified",
-      "denominator": "?"
-     },
-     {
-      "model": "gemma3:27b",
-      "claim_type": "announced",
-      "denominator": "N"
-     },
-     {
-      "model": "qwen3.6:35b",
-      "claim_type": "announced",
-      "denominator": "N"
-     },
-     {
-      "model": "mistral-small:24b",
-      "claim_type": "announced",
-      "denominator": "N"
-     }
-    ],
-    "independent_families": 3,
-    "families": [
-     "gemma",
-     "mistral-small",
-     "qwen"
-    ],
-    "readers_of_unrecorded_provenance": 1
-   },
    "label_tier": 3,
    "label_evidence": "model read 1 figure-sentence(s), no base cue matched",
    "label_source": "machine",
@@ -1832,44 +1259,6 @@
    "entity_basis": "site",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
-   "crosscheck": {
-    "verdict": "majority",
-    "readers": [
-     {
-      "model": "autolabel",
-      "claim_type": "unclassified",
-      "denominator": "?"
-     },
-     {
-      "model": "gemma3:27b",
-      "claim_type": "announced",
-      "denominator": "N"
-     },
-     {
-      "model": "qwen3.6:35b",
-      "claim_type": "announced",
-      "denominator": "N"
-     },
-     {
-      "model": "mistral-small:24b",
-      "claim_type": "announced",
-      "denominator": "N"
-     },
-     {
-      "model": "glm-4.7-flash:q4_K_M",
-      "claim_type": "announced",
-      "denominator": "N"
-     }
-    ],
-    "independent_families": 4,
-    "families": [
-     "gemma",
-     "glm-4.7-flash",
-     "mistral-small",
-     "qwen"
-    ],
-    "readers_of_unrecorded_provenance": 1
-   },
    "label_tier": 1,
    "label_evidence": "no figure in 3766 chars of article text",
    "label_source": "machine",
@@ -1901,44 +1290,6 @@
    "entity_basis": "headline",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
-   "crosscheck": {
-    "verdict": "tied",
-    "readers": [
-     {
-      "model": "autolabel",
-      "claim_type": "unclassified",
-      "denominator": "?"
-     },
-     {
-      "model": "gemma3:27b",
-      "claim_type": "measurement",
-      "denominator": "partial"
-     },
-     {
-      "model": "qwen3.6:35b",
-      "claim_type": "announced",
-      "denominator": "partial"
-     },
-     {
-      "model": "mistral-small:24b",
-      "claim_type": "measurement",
-      "denominator": "partial"
-     },
-     {
-      "model": "glm-4.7-flash:q4_K_M",
-      "claim_type": "announced",
-      "denominator": "partial"
-     }
-    ],
-    "independent_families": 4,
-    "families": [
-     "gemma",
-     "glm-4.7-flash",
-     "mistral-small",
-     "qwen"
-    ],
-    "readers_of_unrecorded_provenance": 1
-   },
    "label_tier": 1,
    "label_evidence": "1 of 12 figure-sentence(s) state a base",
    "label_source": "machine",
