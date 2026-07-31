@@ -1,8 +1,10 @@
 # AI News Board
 
-AI news with two things marked on every item: who is making the claim, and what they gain
-if you believe it. Where an item quotes a figure, the board says whether the figure states
-what it is out of. Where the subject has a published base rate, there is a link to it.
+A live board that applies a consistent method to AI news coverage. For each item it records
+the publisher's incentive in the claim being true, whether a quoted figure states the base it
+is measured against, and a link to a published base rate where one exists. Figures are quoted
+verbatim from the article text with their position recorded, and every label carries the
+method that produced it, so a reader can check any of it against the source.
 
 ## Who sets the labels, and on how much text
 

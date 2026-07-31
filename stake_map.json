@@ -1,0 +1,59 @@
+{
+ "_README": [
+  "Contestable registry behind the claim-relative motive tier. Same status as tier_map.json:",
+  "it is published so a reader can dispute it.",
+  "",
+  "publisher_owner  publisher domain -> the organisation that owns it.",
+  "entity_domains   an entity -> domains it publishes on. Used to spot an article that",
+  "                 cites only the subject's own site.",
+  "stakes           owner -> entities it holds a financial stake in. A publisher owned by a",
+  "                 stakeholder is tier 4 on claims about that entity.",
+  "aliases          entity -> other surface forms used in article prose.",
+  "",
+  "⛔ EMPTY IS CORRECT WHERE IT IS EMPTY. An unlisted publisher keeps its source-type tier",
+  "and is marked tier_basis 'source-type'. Never fill an entry from recollection: every",
+  "ownership and stake claim rendered on the board must trace to a filing or company",
+  "statement first (the 25b rule). 'stakes' is deliberately blank pending that sourcing."
+ ],
+
+ "publisher_owner": {
+  "deepmind.google": "Google DeepMind",
+  "blog.google": "Google",
+  "openai.com": "OpenAI",
+  "anthropic.com": "Anthropic",
+  "ai.meta.com": "Meta",
+  "microsoft.com": "Microsoft",
+  "blogs.nvidia.com": "Nvidia",
+  "aws.amazon.com": "Amazon"
+ },
+
+ "entity_domains": {
+  "Google": ["google.com", "deepmind.google", "blog.google", "abc.xyz"],
+  "Google DeepMind": ["deepmind.google", "google.com"],
+  "OpenAI": ["openai.com"],
+  "Anthropic": ["anthropic.com"],
+  "Meta": ["meta.com", "fb.com", "ai.meta.com"],
+  "Microsoft": ["microsoft.com"],
+  "Nvidia": ["nvidia.com"],
+  "Amazon": ["amazon.com", "aws.amazon.com"],
+  "Apple": ["apple.com"],
+  "xAI": ["x.ai"],
+  "Salesforce": ["salesforce.com"],
+  "Okta": ["okta.com"],
+  "Nscale": ["nscale.com"],
+  "Hugging Face": ["huggingface.co"]
+ },
+
+ "stakes": {},
+
+ "aliases": {
+  "Google DeepMind": ["DeepMind", "Google"],
+  "Meta": ["Facebook", "Instagram", "Zuckerberg"],
+  "OpenAI": ["Altman"],
+  "Anthropic": ["Amodei"],
+  "Nvidia": ["Huang"],
+  "Microsoft": ["Nadella"],
+  "xAI": ["Musk", "Grok"],
+  "Amazon": ["AWS", "Jassy"]
+ }
+}

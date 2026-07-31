@@ -72,11 +72,16 @@ import json
 import os
 import re
 import sys
+import time
 import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from autolabel import CLAIM, DENOM, FEED, HOST, INSTRUCT, NUM_CTX
+from autolabel import (CLAIM, DENOM, FEED, HOST, INSTRUCT, NUM_CTX, NUM_PREDICT,
+                       retry_call)
 
+BATCH = int(os.environ.get("LABEL_BATCH", "6"))
+SPANS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "article_spans.json")
+TEXTS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "article_text.json")
 DEFAULT_MODELS = ["gemma3:27b", "qwen3.6:35b", "mistral-small:24b",
                   "glm-4.7-flash:q4_K_M"]
 # Readers sharing a prefix share a lineage. Used only to annotate the output, never to
@@ -87,7 +92,8 @@ FAMILY = lambda m: m.split(":")[0].rstrip("0123456789.")
 def call(model, prompt):
     payload = json.dumps({
         "model": model, "prompt": prompt, "stream": False,
-        "options": {"num_ctx": NUM_CTX, "temperature": 0.1},
+        "options": {"num_ctx": NUM_CTX, "temperature": 0.1,
+                    "num_predict": NUM_PREDICT},
     }).encode()
     req = urllib.request.Request(HOST + "/api/generate", data=payload,
                                  headers={"Content-Type": "application/json"})
@@ -95,28 +101,96 @@ def call(model, prompt):
         return json.loads(r.read()).get("response", "")
 
 
-def label_pass(model, todo):
-    """Return {item_index: (claim_type, denominator)} for one model, or {} on failure."""
-    lines = [f'{k+1}. [{it.get("entity","?")}] {it.get("headline","")}'
-             for k, (_, it) in enumerate(todo)]
-    raw = call(model, INSTRUCT + "\n\nITEMS:\n" + "\n".join(lines))
-    m = re.search(r"\[.*\]", raw, re.S)
-    if not m:
-        print(f"  ! {model}: no JSON array parsed, skipping this reader")
-        return {}
-    try:
-        arr = json.loads(m.group(0))
-    except (json.JSONDecodeError, ValueError) as e:
-        print(f"  ! {model}: unparseable array ({e}), skipping this reader")
-        return {}
-    out = {}
-    for o in arr:
-        if "i" not in o:
+def parse_array(raw):
+    """Last JSON array in a response, or None.
+
+    Reasoning models emit a thinking trace that can itself contain brackets, so the LAST
+    array is taken rather than the first, and any <think> block is stripped before matching.
+    """
+    raw = re.sub(r"<think>.*?</think>", "", raw, flags=re.S)
+    best = None
+    for m in re.finditer(r"\[.*?\]", raw, re.S):
+        try:
+            v = json.loads(m.group(0))
+        except ValueError:
             continue
-        ct = str(o.get("claim_type", "")).strip().lower()
-        dn = str(o.get("denominator", "")).strip().lower()
-        if ct in CLAIM and dn in DENOM:
-            out[int(o["i"])] = (ct, DENOM[dn])
+        if isinstance(v, list) and v:
+            best = v
+    if best is None:
+        m = re.search(r"\[.*\]", raw, re.S)
+        if m:
+            try:
+                best = json.loads(m.group(0))
+            except ValueError:
+                best = None
+    return best
+
+
+def article_lines(chunk):
+    """Headline + article opening + verbatim figure sentences, per item.
+
+    Used by --with-article to test whether claim_type disagreement is caused by starving
+    the readers of input. Falls back to the headline where no article was fetched.
+    """
+    spans = json.load(open(SPANS)) if os.path.exists(SPANS) else {}
+    text = json.load(open(TEXTS)) if os.path.exists(TEXTS) else {}
+    out = []
+    for k, (_, it) in enumerate(chunk):
+        url = next((s["url"] for s in it.get("sources", [])
+                    if s.get("url", "").startswith("http")), "")
+        block = [f'{k+1}. HEADLINE: [{it.get("entity","?")}] {it.get("headline","")}']
+        lead = (text.get(url) or {}).get("text", "")[:400]
+        if lead:
+            block.append(f"   OPENING: {lead}")
+        for s in (spans.get(url) or {}).get("spans", [])[:4]:
+            block.append(f"   FIGURE SENTENCE: {s['sentence'][:240]}")
+        out.append("\n".join(block))
+    return out
+
+
+def label_pass(model, todo, batch=BATCH, lines_fn=None):
+    """Return {item_index: (claim_type, denominator)} for one model.
+
+    ⛔ BATCHED, and it must stay batched. Sending every item in one call is what killed the
+    2026-07-29 pass: the prompt is small (~27 tokens/item) but reasoning readers emit ~400
+    DISCARDED thinking tokens per headline, so a 38-item call generates ~15k tokens and
+    overruns. Output is the constraint, never context. A batch that fails costs that batch
+    only; partial results from a reader are kept and counted as far as they go.
+    """
+    out, failed = {}, 0
+    nb = (len(todo) + batch - 1) // batch
+    for b in range(nb):
+        chunk = todo[b * batch:(b + 1) * batch]
+        lines = (lines_fn(chunk) if lines_fn else
+                 [f'{k+1}. [{it.get("entity","?")}] {it.get("headline","")}'
+                  for k, (_, it) in enumerate(chunk)])
+        t0 = time.time()
+        try:
+            raw = retry_call(
+                lambda: call(model, INSTRUCT + "\n\nITEMS:\n" + "\n".join(lines)))
+        except Exception as e:
+            print(f"    {model} batch {b+1}/{nb}: FAILED after {time.time()-t0:.0f}s ({e})")
+            failed += 1
+            continue
+        arr = parse_array(raw)
+        if not arr:
+            print(f"    {model} batch {b+1}/{nb}: no JSON parsed, skipped")
+            failed += 1
+            continue
+        n = 0
+        for o in arr:
+            if not isinstance(o, dict) or "i" not in o:
+                continue
+            ct = str(o.get("claim_type", "")).strip().lower()
+            dn = str(o.get("denominator", "")).strip().lower()
+            # Indices are 1-based WITHIN the chunk; map back to the whole-run index.
+            idx = b * batch + int(o["i"])
+            if ct in CLAIM and dn in DENOM:
+                out[idx] = (ct, DENOM[dn])
+                n += 1
+        print(f"    {model} batch {b+1}/{nb}: {n}/{len(chunk)} in {time.time()-t0:.0f}s")
+    if failed:
+        print(f"  ! {model}: {failed}/{nb} batch(es) failed; keeping the {len(out)} that landed")
     return out
 
 
@@ -139,14 +213,14 @@ def verdict(readings):
     return "majority" if top[0][1] > top[1][1] else "tied"
 
 
-def report(items):
+def report(items, field="crosscheck"):
     order = {"split": 0, "tied": 1, "majority": 2, "unanimous": 3, "single": 4}
     flagged = [it for it in items
-               if (it.get("crosscheck") or {}).get("verdict") in ("split", "tied", "majority")]
-    flagged.sort(key=lambda it: order[it["crosscheck"]["verdict"]])
-    print(f"{len(flagged)} item(s) where the readers do not all agree:\n")
+               if (it.get(field) or {}).get("verdict") in ("split", "tied", "majority")]
+    flagged.sort(key=lambda it: order[it[field]["verdict"]])
+    print(f"{len(flagged)} item(s) where the readers do not all agree ({field}):\n")
     for it in flagged:
-        c = it["crosscheck"]
+        c = it[field]
         print(f"  [{c['verdict'].upper():<9}] {it.get('headline','')[:80]}")
         for r in c["readers"]:
             print(f"      {r['model']:<16} {r['claim_type']:<12} {r['denominator']}")
@@ -158,12 +232,17 @@ def main():
     ap.add_argument("--models", default=",".join(DEFAULT_MODELS),
                     help="comma-separated extra readers")
     ap.add_argument("--report", action="store_true")
+    # ⛔ Writes to crosscheck_article, NOT crosscheck. The headline run is the baseline this
+    # is compared against; overwriting it destroys the comparison.
+    ap.add_argument("--with-article", action="store_true",
+                    help="readers see article opening + figure spans, not the headline alone")
     args = ap.parse_args()
 
+    field = "crosscheck_article" if args.with_article else "crosscheck"
     data = json.load(open(FEED))
     items = data["items"]
     if args.report:
-        return report(items)
+        return report(items, field)
 
     todo = [(n, it) for n, it in enumerate(items) if it.get("reviewed") is False]
     if not todo:
@@ -177,7 +256,7 @@ def main():
     passes = {}
     for model in extra:
         print(f"  running {model} ...", flush=True)
-        got = label_pass(model, todo)
+        got = label_pass(model, todo, lines_fn=article_lines if args.with_article else None)
         if got:
             passes[model] = got
     if not passes:
@@ -204,7 +283,7 @@ def main():
         known = [r["model"] for r in readers if r.get("model") and ":" in r["model"]]
         unknown = len(readers) - len(known)
         fams = {FAMILY(m) for m in known}
-        it["crosscheck"] = {
+        it[field] = {
             "verdict": v, "readers": readers,
             # Recorded so a unanimous verdict is not mistaken for independent confirmation.
             "independent_families": len(fams), "families": sorted(fams),

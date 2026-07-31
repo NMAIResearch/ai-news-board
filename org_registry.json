@@ -1,0 +1,157 @@
+{
+ "_README": [
+  "Contestable registry for entity resolution: who a claim is ABOUT.",
+  "",
+  "orgs          canonical name -> surface forms found in headlines and publisher tags.",
+  "products      product or model name -> the organisation that ships it.",
+  "site_org      domain -> the organisation whose own site it is. Used only when the",
+  "              headline names no other organisation.",
+  "",
+  "⛔ EMPTY IS A VALID ANSWER AND A COMMON ONE. A piece about a labour market, a lawsuit",
+  "trend or a research field has no subject organisation. Forcing one produced 'Artists',",
+  "'AI startups', 'Researchers' and 'None' on 2026-07-31. Publisher tagging agrees: the",
+  "TechCrunch forward-deployed-engineers piece is tagged 'AI talent wars, FDE' with no",
+  "company in it. When nothing resolves, leave the entity blank and let the motive tier",
+  "fall back to source type."
+ ],
+ "orgs": {
+  "OpenAI": [
+   "OpenAI",
+   "Altman"
+  ],
+  "Anthropic": [
+   "Anthropic",
+   "Amodei"
+  ],
+  "Google DeepMind": [
+   "Google DeepMind",
+   "DeepMind",
+   "Hassabis"
+  ],
+  "Google": [
+   "Google",
+   "Alphabet",
+   "Pichai"
+  ],
+  "Microsoft": [
+   "Microsoft",
+   "Nadella"
+  ],
+  "Meta": [
+   "Meta",
+   "Facebook",
+   "Instagram",
+   "Zuckerberg",
+   "LeCun"
+  ],
+  "Nvidia": [
+   "Nvidia",
+   "Huang"
+  ],
+  "Amazon": [
+   "Amazon",
+   "AWS",
+   "Jassy"
+  ],
+  "Apple": [
+   "Apple",
+   "Cook"
+  ],
+  "xAI": [
+   "xAI",
+   "Musk"
+  ],
+  "Salesforce": [
+   "Salesforce",
+   "Benioff"
+  ],
+  "Mistral": [
+   "Mistral"
+  ],
+  "Cohere": [
+   "Cohere"
+  ],
+  "Perplexity": [
+   "Perplexity"
+  ],
+  "Snap": [
+   "Snap"
+  ],
+  "Hugging Face": [
+   "Hugging Face",
+   "HuggingFace"
+  ],
+  "Okta": [
+   "Okta"
+  ],
+  "Permiso": [
+   "Permiso"
+  ],
+  "Nscale": [
+   "Nscale"
+  ],
+  "Anyscale": [
+   "Anyscale"
+  ],
+  "NIST": [
+   "NIST",
+   "National Institute of Standards and Technology",
+   "CAISI"
+  ],
+  "FTC": [
+   "FTC",
+   "Federal Trade Commission"
+  ],
+  "SEC": [
+   "SEC",
+   "Securities and Exchange Commission"
+  ],
+  "FCC": [
+   "FCC",
+   "Federal Communications Commission"
+  ],
+  "CMA": [
+   "CMA",
+   "Competition and Markets Authority"
+  ],
+  "Ofgem": [
+   "Ofgem"
+  ],
+  "OpenJDK": [
+   "OpenJDK"
+  ],
+  "GCC": [
+   "GCC steering committee",
+   "GCC"
+  ],
+  "TechCrunch": [
+   "TechCrunch"
+  ],
+  "Bureau of Labor Statistics": [
+   "Bureau of Labor Statistics",
+   "BLS"
+  ]
+ },
+ "products": {
+  "Gemini": "Google DeepMind",
+  "Gemini Robotics": "Google DeepMind",
+  "Lyria": "Google DeepMind",
+  "Flow Music": "Google DeepMind",
+  "Copilot": "Microsoft",
+  "Grok": "xAI",
+  "Claude": "Anthropic",
+  "ChatGPT": "OpenAI",
+  "Sora": "OpenAI",
+  "Llama": "Meta"
+ },
+ "site_org": {
+  "deepmind.google": "Google DeepMind",
+  "blog.google": "Google",
+  "openai.com": "OpenAI",
+  "anthropic.com": "Anthropic",
+  "nist.gov": "NIST",
+  "ftc.gov": "FTC",
+  "sec.gov": "SEC",
+  "federalregister.gov": ""
+ }
+}

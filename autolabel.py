@@ -19,6 +19,15 @@ import argparse, json, os, re, time, urllib.request
 HOST = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
 MODEL = os.environ.get("QWEN_MODEL", "qwen2.5:14b")
 NUM_CTX = int(os.environ.get("QWEN_CTX", "32768"))
+# Output cap. Without it the only stop condition is filling NUM_CTX: a looping reader runs
+# to 16k-28k tokens for a ~120-token answer (glm-4.7-flash, 5 batches at 11-19 min each,
+# truncated and unparseable, 2026-07-30).
+# 6000 clears the largest observed successful generation (qwen3.6:35b, 4,180 tokens on a
+# 6-item batch). ⛔ Do NOT lower toward the median: gemma3 and mistral finish under 350
+# tokens, but a cap that fits them truncates every qwen and glm batch.
+# A truncated response is still unparseable. This bounds a runaway's cost, it does not
+# rescue the batch.
+NUM_PREDICT = int(os.environ.get("LABEL_NUM_PREDICT", "6000"))
 # Batch size is the cost control, not context. The 36-item prompt is ~1,010 tokens against a
 # 32,768 window; what times out is OUTPUT. Reasoning models spend ~400 discarded thinking
 # tokens per headline (measured 2026-07-30: 1,643 out for 60 tokens of JSON on 4 items), so
@@ -57,12 +66,29 @@ def call(prompt, timeout=TIMEOUT):
         # ⛔ Do not vary num_ctx between calls: ollama reloads the model when it changes.
         # Measured 2026-07-30: same 4-item prompt took 33s at 32768 and 232s at 8192,
         # returning nothing at all on the smaller window.
-        "options": {"num_ctx": NUM_CTX, "temperature": 0.1},
+        "options": {"num_ctx": NUM_CTX, "temperature": 0.1,
+                    "num_predict": NUM_PREDICT},
     }).encode()
     req = urllib.request.Request(HOST + "/api/generate", data=payload,
                                  headers={"Content-Type": "application/json"})
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return json.loads(r.read()).get("response", "")
+
+
+def retry_call(fn, tries=2, wait=5):
+    """Call fn(), retrying once on any exception. Shared with autolabel_crosscheck.py.
+
+    llama-server can abort mid-request and return HTTP 500 (CUDA illegal memory access,
+    2026-07-30). Ollama respawns it and the next call succeeds; without a retry the batch is
+    dropped for a fault that has already cleared.
+    """
+    for t in range(tries):
+        try:
+            return fn()
+        except Exception:
+            if t == tries - 1:
+                raise
+            time.sleep(wait)
 
 
 def parse_labels(raw):
@@ -113,7 +139,7 @@ def main():
                  for k, it in enumerate(chunk)]
         t0 = time.time()
         try:
-            raw = call(INSTRUCT + "\n\nITEMS:\n" + "\n".join(lines))
+            raw = retry_call(lambda: call(INSTRUCT + "\n\nITEMS:\n" + "\n".join(lines)))
         except Exception as e:
             print(f"  batch {b+1}/{nbatch}: FAILED after {time.time()-t0:.0f}s ({e}); "
                   f"{len(chunk)} item(s) left unlabelled")
