@@ -65,7 +65,11 @@ step "12/12 fetch market"
 if [ -f ~/.config/nmai/keys.env ]; then python3 fetch_market.py || echo "  ! market fetch failed"
 else echo "  skipped: no ~/.config/nmai/keys.env"; fi
 
-step "build";                 python3 build.py
+step "build"
+# ⛔ Never pipe build.py into tail/head when chaining with &&. The pipeline's exit status is
+# the LAST command's, so a build that raises still reports success and a stale index.html
+# gets committed. Cost that mistake once, 2026-07-31.
+python3 build.py || { echo "  ! BUILD FAILED - do not commit, index.html is stale"; exit 1; }
 
 cat <<'EOF'
 
