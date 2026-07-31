@@ -4,10 +4,13 @@ AI News Board - fetch_feeds.py (stdlib only).
 
 Pulls AI-news RSS/Atom feeds and auto-tags ONLY the automatable fields: source_type
 from the domain, a default motive_tier from that type, and the entity if a known
-vendor is named in the headline. It deliberately does NOT set claim_type or
-denominator_stated: those are the call, left for a human or LLM review pass. So every
-fetched item is written with reviewed=false, claim_type "announced" and denominator
-"?" until someone reviews it. That is "automate the plumbing, not the call" in code.
+vendor is named in the headline. It deliberately does NOT set denominator_stated: that is
+the call, left to label_items.py over the article spans, or to a human. Every fetched item
+is written with reviewed=false and denominator "?" until then. That is "automate the
+plumbing, not the call" in code.
+
+⛔ claim_type is RETIRED (2026-07-31). Still written here as a dead field so old stores
+carry across; nothing reads it and build.py does not render it. Do not revive it.
 
 Run:  python3 fetch_feeds.py     # writes feed_items.json, then re-run build.py
 Edit FEEDS below to change sources. Network required; a feed that fails is skipped.

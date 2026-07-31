@@ -6,12 +6,17 @@ fetch_feeds.py overwrites feed_items.json with a fresh pull (all unreviewed). Th
 script remembers prior reviews in reviews_store.json, keyed by source URL, and:
   1) HARVEST any reviewed items currently in feed_items.json into the store,
   2) APPLY the store back onto the feed, so previously-seen items keep their
-     entity / claim_type / denominator_stated / topic / reviewed=True, and only
+     entity / denominator_stated / topic / reviewed=True, and only
      GENUINELY NEW items are left flagged unreviewed.
 
 Net effect: you never re-digest the whole feed, only what is actually new.
 
-Run order:  fetch_feeds.py -> carry_reviews.py -> apply_ratings.py -> fetch_scholar.py -> build.py
+⛔ claim_type is RETIRED (2026-07-31). It stays in FIELDS so existing store entries survive
+a round trip; nothing reads it. Do not revive it.
+
+Run order:  fetch_feeds.py -> fetch_vendor_news.py -> carry_reviews.py -> apply_ratings.py
+            -> extract_spans.py -> label_items.py -> resolve_entity.py -> article_evidence.py
+            -> fetch_scholar.py -> fetch_releases.py -> archive.py -> build.py
 Also safe to run after any manual review so the new labels are remembered.
 """
 import json, os

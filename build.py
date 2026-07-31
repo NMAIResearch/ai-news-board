@@ -6,8 +6,11 @@ NM AI Research.
 Reads items.json and renders a static index.html that sorts AI-news claims by
 incentive rather than by political lean. The axis is MOTIVE: who is telling you
 this and what they gain if you believe it. Each item shows a source distribution bar by
-motive tier, a claim_type and denominator flag, and a "reality anchor" linking
-the claim to a published base rate. FLAG, do not NARRATE: the tags speak.
+motive tier, a denominator flag with the tier and evidence that produced it, a citation
+chain, and a "reality anchor" linking the claim to a published base rate. FLAG, do not
+NARRATE: the tags speak.
+
+⛔ claim_type is RETIRED (2026-07-31). Not rendered. Do not revive it: see line ~373.
 
 Run:  python3 build.py   ->   writes index.html next to items.json
 """
@@ -776,8 +779,8 @@ def main():
     ap = argparse.ArgumentParser(description="Render the AI News Board.")
     ap.add_argument("--plain", action="store_true",
                     help="turn the motive tier OFF entirely: no tier colours, bars, key or "
-                         "tier map. Sources shown plain. The other axes (denominator, claim "
-                         "type, track record, anchors) are unaffected.")
+                         "tier map. Sources shown plain. The other axes (denominator, track "
+                         "record, citation chain, anchors) are unaffected.")
     plain = ap.parse_args().plain
 
     import datetime as _dt
