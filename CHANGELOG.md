@@ -74,6 +74,18 @@ claims, while the board's thesis is that incentive concentrates at tier 5, the p
 the thing. Resolution calendar 5 rows to 7: the ASML lithography controls expiring 10 November
 and the PJM 2030/31 capacity auction in December.
 
+**Hormuz gauge updated, and it now records a call that did not hold.** It read "Brent crossed
+$100 on 23 July, the tell is whether it holds above $100". It did not: $105.32 on 23 July,
+$100.31 on 24 July, $91.82 by 27 July, from a low of $68.53 on 2 July. Roughly $37 up and $13
+back inside four weeks. All figures from FRED DCOILBRENTEU, the same series the market strip
+reads, so the gauge and the strip can no longer disagree. Goldman's above-$120 case required
+Hormuz disruption to persist, which on this path it has not.
+
+**Hyperscaler capex row extended rather than closed**, from late July to late October. The Q2
+read confirmed acceleration, so the crack the row watches for has not fired and the question
+is still open. Extending changes the row id, so the hand-written public copy was rewritten
+under the new id rather than silently lost.
+
 **The deflation register implied an attribution it did not have.** Measured over the 16
 published rows, 13 had a claim side that read like a citation and was not one: "YouTube
 AI-finance video [4]", "grid-doom framing [4]", "press/aggregator [4]". A reader could not

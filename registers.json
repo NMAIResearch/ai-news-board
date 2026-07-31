@@ -1,239 +1,239 @@
 {
-  "title": "AI Watch: resolution calendar",
-  "intro": "Dated moments when an open, AI-relevant question resolves, each paired with the specific observable that settles it. These are not predictions. Each row states what to watch and the tell that decides it.",
-  "generated": "2026-07-31",
-  "rows": [
-    {
-      "id": "2026-07-31-is-the-ai-capex-tell-still-accelerating",
-      "date": "2026-07-31",
-      "label": "Late Jul 2026",
-      "question": "Is the AI data-centre capital-expenditure boom still accelerating?",
-      "settles": "Hyperscaler Q2 earnings: 2026 capex guidance raised, held or cut, plus memory (HBM) allocation commentary. A held-or-cut guide would be the first crack.",
-      "matters": "The buildout is the load-bearing assumption under current AI valuations.",
-      "anchor": {
-        "label": "Contingent vs Robust AI Power Demand",
-        "doi": "10.5281/zenodo.20559430"
-      }
-    },
-    {
-      "id": "2026-08-02-eu-ai-act-art-50-transparency-obligations-live",
-      "date": "2026-08-02",
-      "label": "2 Aug 2026",
-      "question": "EU AI Act Article 50 transparency obligations take effect.",
-      "settles": "First enforcement posture and guidance on AI-content transparency and disclosure duties.",
-      "matters": "The first hard, dated EU AI Act obligation to bind AI products.",
-      "anchor": null
-    },
-    {
-      "id": "2026-10-01-colorado-river-2007-rules-replaced",
-      "date": "2026-10-01",
-      "label": "1 Oct 2026",
-      "question": "Are the Colorado River's 2007 operating rules replaced before they expire?",
-      "settles": "New interim operating guidelines agreed, or a deadlock. A deadlock raises litigation and water-siting risk for Western US data centres.",
-      "matters": "AI data-centre siting in the US Southwest turns on water and hydropower allocation.",
-      "anchor": {
-        "label": "AI Data-Centre Water Tracker",
-        "doi": "10.5281/zenodo.21318960"
-      }
-    },
-    {
-      "id": "2026-11-10-dutch-asml-lithography-chokepoint-do-us-curbs-ti",
-      "date": "2026-11-10",
-      "label": "10 Nov 2026",
-      "question": "Do US controls on lithography exports to China tighten in November?",
-      "settles": "The Affiliates Rule suspension, a carve-out of the current trade truce, expires on 10 November. Three observables: whether it is renewed or allowed to lapse, whether the MATCH Act advances (it would bar all ASML deep-ultraviolet sales to China and start a 150-day clock on Dutch alignment), and what ASML's own guidance says about China revenue.",
-      "matters": "Lithography is the narrowest point in the chain that makes AI accelerators. A constraint here is felt years before it appears in anything a lab announces.",
-      "anchor": {
-        "label": "The AI Capital-Infrastructure Barbell",
-        "doi": "10.5281/zenodo.20586863"
-      }
-    },
-    {
-      "id": "2026-11-27-china-rare-earth-neon-export-control-expiry",
-      "date": "2026-11-27",
-      "label": "27 Nov 2026",
-      "question": "Do China's rare-earth and neon export controls renew, widen or lapse?",
-      "settles": "The renewal decision, with neon controls the specific trigger to watch.",
-      "matters": "Neon and rare earths are chokepoints in the chip supply chain behind AI compute.",
-      "anchor": null
-    },
-    {
-      "id": "2026-12-01-pjm-next-capacity-auction-2030-31-the-last-colla",
-      "date": "2026-12-01",
-      "label": "Dec 2026",
-      "question": "Does data-centre load keep pinning the PJM capacity price at its cap?",
-      "settles": "The 2030/31 base residual auction, the last one under the price collar. Three readings: how much new supply clears against the shortfall, whether the $325 per MW-day cap holds, and the data-centre share of capacity cost. For scale, the 2028/29 auction cleared about 525 MW against a 6,831 MW shortfall, with data centres carrying 40% of capacity cost in that auction.",
-      "matters": "It is the clearest price test of whether AI demand is being met by building new generation or by bidding existing supply away from everyone else.",
-      "anchor": {
-        "label": "Contingent vs Robust AI Power Demand",
-        "doi": "10.5281/zenodo.20559430"
-      }
-    },
-    {
-      "id": "2027-12-02-eu-ai-act-high-risk-annex-iii-obligations-live",
-      "date": "2027-12-02",
-      "label": "2 Dec 2027",
-      "question": "EU AI Act high-risk (Annex III) obligations take effect.",
-      "settles": "The high-risk compliance regime comes into force.",
-      "matters": "The heaviest tier of EU AI Act obligations, covering high-risk AI systems.",
-      "anchor": null
-    }
-  ],
-  "gauges": [
-    {
-      "name": "Strait of Hormuz risk",
-      "as_of": "2026-07-25",
-      "reading": "Brent crossed $100 on 23 July and traded near $100 on 24 July, up roughly 14% on the week and from a low of $70.55 on 2 July. Triggered by reported tanker strikes off Saudi Arabia, Houthi attacks on two Saudi tankers in the Red Sea, and the Caspian Pipeline Consortium suspending Black Sea loadings.",
-      "watch": "The $100 level flagged here on 13 July has now been crossed, so the tell moves on: whether it holds above $100 rather than whether it gets there. Goldman puts Brent above $120 in Q4 if Hormuz disruption persists.",
-      "context": "This runs against the forecast anchor. The EIA Short-Term Energy Outlook base case of 7 July had Brent easing to about $70 by Q4 2026 as the tanker backlog cleared. Rapidan has since raised its Q4 estimate to near $100 from $85. The base case is not yet withdrawn by its author, but it is now the minority view and is recorded here as contested rather than quietly dropped."
-    }
-  ],
-  "provenance": "Generated from rows explicitly marked for publication in the maintainer's working tracker. The tracker's analysis column is never read by the generator, so private notes cannot reach this file. Public wording is written by hand and carried across regenerations. Nothing is published unless it is marked; the default is private.",
-  "note": "Status is upcoming until the date passes. The observable, not the outcome, is the point.",
-  "deflations": [
-    {
-      "id": "bot-web-traffic-energy-use",
-      "claim": "Bot web-traffic energy use",
-      "source": "public/press [4]",
-      "corrected": "~15–20× lower",
-      "error": "3 methodological errors (see bot-energy v1.1, Zenodo 20707001)",
-      "multiple": "~15–20×",
-      "tier": 4
-    },
-    {
-      "id": "267-data-centre-power-figure",
-      "claim": "\"267%\" data-centre power figure",
-      "source": "press/aggregator [4]",
-      "corrected": "excluded entirely",
-      "error": "measures wholesale price at specific grid nodes, not a household bill",
-      "multiple": "",
-      "tier": 4
-    },
-    {
-      "id": "spruce-pine-hpq-all-chips-depend-on-it-apocalypse",
-      "claim": "Spruce Pine HPQ \"all chips depend on it\" apocalypse",
-      "source": "popular-chokepoint narrative [4]",
-      "corrected": "not a live crisis",
-      "error": "Helene hit it directly; production restarted ~10 days; absent from 12-mo sell-side notes",
-      "multiple": "",
-      "tier": 4
-    },
-    {
-      "id": "neon-supply-shock-post-2022",
-      "claim": "Neon supply shock (post-2022)",
-      "source": "legacy-shock narrative [3]",
-      "corrected": "no acute 2026 shortage",
-      "error": "absorbed — China dominant, recycling >90%, fabs hold 1–12mo buffers; real risk is relocated concentration",
-      "multiple": "",
-      "tier": 3
-    },
-    {
-      "id": "tesla-optimus-1m-units-yr",
-      "claim": "Tesla Optimus \"1M units/yr\"",
-      "source": "vendor [5]",
-      "corrected": "ambition, not settled proof",
-      "error": "no commercial-availability page; Musk admits \"still R&D\"",
-      "multiple": "claim ≠ deliverable",
-      "tier": 5
-    },
-    {
-      "id": "openai-lost-38-5b-in-2025",
-      "claim": "OpenAI \"lost $38.5B in 2025\"",
-      "source": "YouTube capital-cycle video [4], off Zitron/FT [2]",
-      "corrected": "operating loss $20.9B on $13.07B rev; cash burn ~$8B per one FT source",
-      "error": "headline net loss carries a $41.55B NON-CASH charge from the nonprofit→for-profit conversion (revaluing convertibles + warrants). Cited as proof competition compressed returns: category error. The S&M line ($5.73B, +418%, 44% of rev) DOES survive",
-      "multiple": "~1.8× (op) / ~4.8× (cash)",
-      "tier": 4
-    },
-    {
-      "id": "spr-20-operational-floor-62-usable-days",
-      "claim": "SPR \"~20% operational floor → ~62 usable days\"",
-      "source": "MY OWN TRACKER [self]",
-      "corrected": "no published hard floor: drawdown RATE degrades as caverns empty",
-      "error": "\"days to empty at max rate\" is the wrong metric. The rival \"160M bbl minimum\" (TLDR video) attaches to the cancelled Richton MS site (160M capacity), not a reserve minimum. Compounded by GAO-26-106918: >25% of SPR oil cannot currently be surfaced",
-      "multiple": "",
-      "tier": null
-    },
-    {
-      "id": "pangram-1-in-10-000-false-positive-rate",
-      "claim": "Pangram \"1-in-10,000 false-positive rate\"",
-      "source": "vendor [5]",
-      "corrected": "direction independently supported, the exact figure is not",
-      "error": "UChicago Booth WP (Jabarian & Imas, BFI 2025-116) confirms ~zero FPR on long/medium text and a unique ability to hold a 0.5% policy cap, but does not reproduce 0.01%; degrades on short/unusual text; humanizers exist",
-      "multiple": "",
-      "tier": 5
-    },
-    {
-      "id": "may-pce-4-1-inflation-surging-broad-based",
-      "claim": "\"May PCE 4.1% = inflation surging / broad-based\"",
-      "source": "press/political panic [4]",
-      "corrected": "Dallas trimmed-mean PCE FELL to 2.4% (from 2.6% a yr earlier)",
-      "error": "the 4.1% headline is idiosyncratic energy + tariff + AI-goods spikes, NOT broad-based: the Fed's own trimmed-mean (drops the largest outliers each month) declined y/y even as headline hit a 3-yr high; the core-goods leg is AI-demand driven and tariff-EXEMPT. Fed MPR Jul-2026 [1]",
-      "multiple": "",
-      "tier": 4
-    },
-    {
-      "id": "memory-prices-355-by-the-end-of-this-year",
-      "claim": "Memory prices \"+355% by the end of this year\"",
-      "source": "YouTube explainer [4], no source given",
-      "corrected": "Gartner: +125% across 2026; DRAM +100-116% Q1-26; TrendForce +13-18% QoQ Q3-26, cooling from ~60% QoQ in Q2; Counterpoint 80-90% QoQ Q4-25→Q1-26",
-      "error": "No source exists for 355%. Probable mechanism: a supply-partner note advising customers to \"plan for 10-20% per month\" compounded across a year lands near a triple-digit figure ⇒ a planning ceiling read as a forecast. Note the direction of the real data is decelerating (Q2 ~60% QoQ → Q3 13-18%) while the claim implies acceleration. Added 2026-07-17 from the transcript sweep (IBM video)",
-      "multiple": "~2.8× vs Gartner",
-      "tier": 4
-    },
-    {
-      "id": "pjm-2028-29-capacity-spiking-to-the-cap-fresh-grid-crisis",
-      "claim": "PJM 2028/29 capacity \"spiking to the cap = fresh grid crisis\"",
-      "source": "grid-doom framing [4]",
-      "corrected": "the $325/MW-day clear is −2.5% BELOW the prior cap = flat-high, NOT a spike; but the collar MASKED ~$13.3B",
-      "error": "two-sided: the level is not a new spike (capped, down y/y), yet the collar hid a real ~$13.3B ($29.7B uncapped vs $16.4B actual) DC-driven cost — carry BOTH denominators (DC ~40% this auction / 45% = $21.3B of $47.2B over three). Monitoring Analytics. Added Session 5 from the §3.7② fold",
-      "multiple": "~1.8× (masked)",
-      "tier": 4
-    },
-    {
-      "id": "llm-token-index-fell-50",
-      "claim": "LLM token index \"fell ~50%\"",
-      "source": "YouTube AI-finance video [4]",
-      "corrected": "−20% from its May peak (Silicon Data SDLLMTK, now ~1.62; ~doubled since Dec inception)",
-      "error": "direction right (willingness-to-pay per Mtoken falling as users substitute to cheaper models, per Citadel), magnitude ~2.5× overstated. Bankable real signal: Allianz flags a 46% AI investment-vs-sales growth gap vs 32% in the 2001 telecom bubble. Added 2026-07-18 (transcript sweep)",
-      "multiple": "~2.5× (overstated)",
-      "tier": 4
-    },
-    {
-      "id": "s-p-top-10-concentration-10-in-2000-vs-40-today",
-      "claim": "S&P top-10 concentration \"~10% in 2000 vs 40% today\"",
-      "source": "YouTube market-valuation video [4]",
-      "corrected": "~23% in 2000 (Visual Capitalist; 20-25% across sources) vs ~36% today, off a ~41% peak in 2025",
-      "error": "Both ends wrong in the direction that inflates the change: the claim implies a 4× rise, the data show 23→36, roughly 1.6×. The honest version of the point survives and is stronger for being smaller. ⭐ The caveat the same video omits, which cuts the other way: in 2000 tech was ~33% of S&P market cap on only ~15% of its earnings; today's top-10 weight sits on real profits, so weight alone is not equivalent excess. Added 2026-07-29 (transcript sweep)",
-      "multiple": "~2.5× (the change, overstated)",
-      "tier": 4
-    },
-    {
-      "id": "margin-debt-record-1-42t-as-evidence-of-a-top",
-      "claim": "Margin debt \"record $1.42T\" as evidence of a top",
-      "source": "YouTube market-valuation video [4], off FINRA [1]",
-      "corrected": "level TRUE ($1.416T, May-2026, +8.5% m/m, +53.7% y/y), the INFERENCE fails on the denominator",
-      "error": "⭐ Same numerator, opposite story depending on the base. Against market cap margin debt is ~2.2%, BELOW the 2000 peak (~2.3%) and well below 2007 (~3.0%). Against GDP (~4%) it IS a record, just past Oct-2021's 3.97%. The video quotes only the nominal record, which is the one base that guarantees a record in any year prices rise. Also stale by two months when quoted. What genuinely survives: leverage grew at ~2× the pace of the S&P over the same May-to-May window, and only 1999-2000, mid-2007 and spring 2021 saw comparable growth RATES. Added 2026-07-29",
-      "multiple": "",
-      "tier": 4
-    },
-    {
-      "id": "banks-tightening-lending-standards-40-in-2023-8-today",
-      "claim": "Banks tightening lending standards \"~40% in 2023 → 8% today\"",
-      "source": "YouTube macro-strategy video [4], which books sales calls at the end",
-      "corrected": "NOT CHECKABLE AS FRAMED, and the latest actual reading points the other way",
-      "error": "The July-2026 SLOOS (Q2) is not published (the Fed releases it in early August), so no \"today\" figure exists. The most recent, April 2026, reports net TIGHTENING on C&I citing a less favourable outlook and reduced risk tolerance, plus tighter standards across all NDFI categories over the year. The video's entire \"no recession, therefore buy the dip\" thesis rests on this single series. ⚠️ SLOOS is reported as a net percentage (tightened minus eased), so a raw \"8% of banks\" reading would be a category error on top. Do not bank the 8%; re-check the series (FRED DRTSCILM) when the July release lands. Added 2026-07-29",
-      "multiple": "",
-      "tier": 4
-    },
-    {
-      "id": "dow-closed-above-50-000-for-the-first-time-ever-on-friday",
-      "claim": "\"Dow closed above 50,000 for the first time ever on Friday\"",
-      "source": "YouTube market-valuation video [4]",
-      "corrected": "first close above 50,000 was Fri 6 Feb 2026 (50,115.67); it first closed above 53,000 on 6 Jul",
-      "error": "⭐ Logged as a VINTAGE catch, not an arithmetic one, because it dates the source. A video presenting a nearly six-month-old milestone as this week's news is either stale or splicing archival clips as current. Its Korea line (\"bounced back above 7,000, Citi calls it a technical correction\") was already dead when checked (6,023.66). ⇒ date-the-data applies to the SOURCE, not only to its figures: the same video's Buffett-indicator and margin-debt numbers checked out, so vintage failure is item-by-item, and each claim needs its own date. Added 2026-07-29",
-      "multiple": "",
-      "tier": 4
-    }
-  ]
+ "title": "AI Watch: resolution calendar",
+ "intro": "Dated moments when an open, AI-relevant question resolves, each paired with the specific observable that settles it. These are not predictions. Each row states what to watch and the tell that decides it.",
+ "generated": "2026-07-31",
+ "rows": [
+  {
+   "id": "2026-08-02-eu-ai-act-art-50-transparency-obligations-live",
+   "date": "2026-08-02",
+   "label": "2 Aug 2026",
+   "question": "EU AI Act Article 50 transparency obligations take effect.",
+   "settles": "First enforcement posture and guidance on AI-content transparency and disclosure duties.",
+   "matters": "The first hard, dated EU AI Act obligation to bind AI products.",
+   "anchor": null
+  },
+  {
+   "id": "2026-10-01-colorado-river-2007-rules-replaced",
+   "date": "2026-10-01",
+   "label": "1 Oct 2026",
+   "question": "Are the Colorado River's 2007 operating rules replaced before they expire?",
+   "settles": "New interim operating guidelines agreed, or a deadlock. A deadlock raises litigation and water-siting risk for Western US data centres.",
+   "matters": "AI data-centre siting in the US Southwest turns on water and hydropower allocation.",
+   "anchor": {
+    "label": "AI Data-Centre Water Tracker",
+    "doi": "10.5281/zenodo.21318960"
+   }
+  },
+  {
+   "id": "2026-10-31-is-the-ai-capex-tell-still-accelerating",
+   "date": "2026-10-31",
+   "label": "late-Oct 2026",
+   "question": "Is the AI data-centre capital-expenditure boom still accelerating?",
+   "settles": "Hyperscaler Q3 earnings, reported through late October: whether 2026 capital expenditure guidance is raised, held or cut, and what is said about high-bandwidth memory allocation for 2027. A held or cut guide would be the first crack. The Q2 round did not produce one, which is why this row was extended rather than closed.",
+   "matters": "Current AI valuations rest on the buildout continuing. A change of direction here is felt across everything downstream of it.",
+   "anchor": {
+    "label": "Contingent vs Robust AI Power Demand",
+    "doi": "10.5281/zenodo.20559430"
+   }
+  },
+  {
+   "id": "2026-11-10-dutch-asml-lithography-chokepoint-do-us-curbs-ti",
+   "date": "2026-11-10",
+   "label": "10 Nov 2026",
+   "question": "Do US controls on lithography exports to China tighten in November?",
+   "settles": "The Affiliates Rule suspension, a carve-out of the current trade truce, expires on 10 November. Three observables: whether it is renewed or allowed to lapse, whether the MATCH Act advances (it would bar all ASML deep-ultraviolet sales to China and start a 150-day clock on Dutch alignment), and what ASML's own guidance says about China revenue.",
+   "matters": "Lithography is the narrowest point in the chain that makes AI accelerators. A constraint here is felt years before it appears in anything a lab announces.",
+   "anchor": {
+    "label": "The AI Capital-Infrastructure Barbell",
+    "doi": "10.5281/zenodo.20586863"
+   }
+  },
+  {
+   "id": "2026-11-27-china-rare-earth-neon-export-control-expiry",
+   "date": "2026-11-27",
+   "label": "27 Nov 2026",
+   "question": "Do China's rare-earth and neon export controls renew, widen or lapse?",
+   "settles": "The renewal decision, with neon controls the specific trigger to watch.",
+   "matters": "Neon and rare earths are chokepoints in the chip supply chain behind AI compute.",
+   "anchor": null
+  },
+  {
+   "id": "2026-12-01-pjm-next-capacity-auction-2030-31-the-last-colla",
+   "date": "2026-12-01",
+   "label": "Dec 2026",
+   "question": "Does data-centre load keep pinning the PJM capacity price at its cap?",
+   "settles": "The 2030/31 base residual auction, the last one under the price collar. Three readings: how much new supply clears against the shortfall, whether the $325 per MW-day cap holds, and the data-centre share of capacity cost. For scale, the 2028/29 auction cleared about 525 MW against a 6,831 MW shortfall, with data centres carrying 40% of capacity cost in that auction.",
+   "matters": "It is the clearest price test of whether AI demand is being met by building new generation or by bidding existing supply away from everyone else.",
+   "anchor": {
+    "label": "Contingent vs Robust AI Power Demand",
+    "doi": "10.5281/zenodo.20559430"
+   }
+  },
+  {
+   "id": "2027-12-02-eu-ai-act-high-risk-annex-iii-obligations-live",
+   "date": "2027-12-02",
+   "label": "2 Dec 2027",
+   "question": "EU AI Act high-risk (Annex III) obligations take effect.",
+   "settles": "The high-risk compliance regime comes into force.",
+   "matters": "The heaviest tier of EU AI Act obligations, covering high-risk AI systems.",
+   "anchor": null
+  }
+ ],
+ "gauges": [
+  {
+   "name": "Strait of Hormuz risk",
+   "as_of": "2026-07-31",
+   "reading": "Brent peaked at $105.32 on 23 July, held $100.31 on 24 July, then fell to $91.82 by 27 July, the most recent daily observation. The move up ran from a low of $68.53 on 2 July, so the round trip is roughly $37 up and $13 back inside four weeks. Source throughout: FRED series DCOILBRENTEU, Europe Brent spot, which is the same series the board's market strip reads.",
+   "watch": "The $100 level flagged here on 13 July was crossed on 23 July and did not hold. The tell moves on again: whether the July low near $68 or the July high near $105 is the better guide to Q4, and whether any renewed disruption puts it back through $100 rather than whether it gets there once.",
+   "context": "This still runs against the forecast anchor, but by less than it did. The EIA Short-Term Energy Outlook base case of 7 July had Brent easing to about $70 by Q4 2026 as the tanker backlog cleared, and Rapidan raised its Q4 estimate to near $100 from $85. At $91.82 neither is settled. Goldman's above-$120 case required Hormuz disruption to persist, which on this price path it has not. The base case is recorded as contested, not withdrawn."
+  }
+ ],
+ "provenance": "Generated from rows explicitly marked for publication in the maintainer's working tracker. The tracker's analysis column is never read by the generator, so private notes cannot reach this file. Public wording is written by hand and carried across regenerations. Nothing is published unless it is marked; the default is private.",
+ "note": "Status is upcoming until the date passes. The observable, not the outcome, is the point.",
+ "deflations": [
+  {
+   "id": "bot-web-traffic-energy-use",
+   "claim": "Bot web-traffic energy use",
+   "source": "public/press [4]",
+   "corrected": "~15–20× lower",
+   "error": "3 methodological errors (see bot-energy v1.1, Zenodo 20707001)",
+   "multiple": "~15–20×",
+   "tier": 4
+  },
+  {
+   "id": "267-data-centre-power-figure",
+   "claim": "\"267%\" data-centre power figure",
+   "source": "press/aggregator [4]",
+   "corrected": "excluded entirely",
+   "error": "measures wholesale price at specific grid nodes, not a household bill",
+   "multiple": "",
+   "tier": 4
+  },
+  {
+   "id": "spruce-pine-hpq-all-chips-depend-on-it-apocalypse",
+   "claim": "Spruce Pine HPQ \"all chips depend on it\" apocalypse",
+   "source": "popular-chokepoint narrative [4]",
+   "corrected": "not a live crisis",
+   "error": "Helene hit it directly; production restarted ~10 days; absent from 12-mo sell-side notes",
+   "multiple": "",
+   "tier": 4
+  },
+  {
+   "id": "neon-supply-shock-post-2022",
+   "claim": "Neon supply shock (post-2022)",
+   "source": "legacy-shock narrative [3]",
+   "corrected": "no acute 2026 shortage",
+   "error": "absorbed — China dominant, recycling >90%, fabs hold 1–12mo buffers; real risk is relocated concentration",
+   "multiple": "",
+   "tier": 3
+  },
+  {
+   "id": "tesla-optimus-1m-units-yr",
+   "claim": "Tesla Optimus \"1M units/yr\"",
+   "source": "vendor [5]",
+   "corrected": "ambition, not settled proof",
+   "error": "no commercial-availability page; Musk admits \"still R&D\"",
+   "multiple": "claim ≠ deliverable",
+   "tier": 5
+  },
+  {
+   "id": "openai-lost-38-5b-in-2025",
+   "claim": "OpenAI \"lost $38.5B in 2025\"",
+   "source": "YouTube capital-cycle video [4], off Zitron/FT [2]",
+   "corrected": "operating loss $20.9B on $13.07B rev; cash burn ~$8B per one FT source",
+   "error": "headline net loss carries a $41.55B NON-CASH charge from the nonprofit→for-profit conversion (revaluing convertibles + warrants). Cited as proof competition compressed returns: category error. The S&M line ($5.73B, +418%, 44% of rev) DOES survive",
+   "multiple": "~1.8× (op) / ~4.8× (cash)",
+   "tier": 4
+  },
+  {
+   "id": "spr-20-operational-floor-62-usable-days",
+   "claim": "SPR \"~20% operational floor → ~62 usable days\"",
+   "source": "MY OWN TRACKER [self]",
+   "corrected": "no published hard floor: drawdown RATE degrades as caverns empty",
+   "error": "\"days to empty at max rate\" is the wrong metric. The rival \"160M bbl minimum\" (TLDR video) attaches to the cancelled Richton MS site (160M capacity), not a reserve minimum. Compounded by GAO-26-106918: >25% of SPR oil cannot currently be surfaced",
+   "multiple": "",
+   "tier": null
+  },
+  {
+   "id": "pangram-1-in-10-000-false-positive-rate",
+   "claim": "Pangram \"1-in-10,000 false-positive rate\"",
+   "source": "vendor [5]",
+   "corrected": "direction independently supported, the exact figure is not",
+   "error": "UChicago Booth WP (Jabarian & Imas, BFI 2025-116) confirms ~zero FPR on long/medium text and a unique ability to hold a 0.5% policy cap, but does not reproduce 0.01%; degrades on short/unusual text; humanizers exist",
+   "multiple": "",
+   "tier": 5
+  },
+  {
+   "id": "may-pce-4-1-inflation-surging-broad-based",
+   "claim": "\"May PCE 4.1% = inflation surging / broad-based\"",
+   "source": "press/political panic [4]",
+   "corrected": "Dallas trimmed-mean PCE FELL to 2.4% (from 2.6% a yr earlier)",
+   "error": "the 4.1% headline is idiosyncratic energy + tariff + AI-goods spikes, NOT broad-based: the Fed's own trimmed-mean (drops the largest outliers each month) declined y/y even as headline hit a 3-yr high; the core-goods leg is AI-demand driven and tariff-EXEMPT. Fed MPR Jul-2026 [1]",
+   "multiple": "",
+   "tier": 4
+  },
+  {
+   "id": "memory-prices-355-by-the-end-of-this-year",
+   "claim": "Memory prices \"+355% by the end of this year\"",
+   "source": "YouTube explainer [4], no source given",
+   "corrected": "Gartner: +125% across 2026; DRAM +100-116% Q1-26; TrendForce +13-18% QoQ Q3-26, cooling from ~60% QoQ in Q2; Counterpoint 80-90% QoQ Q4-25→Q1-26",
+   "error": "No source exists for 355%. Probable mechanism: a supply-partner note advising customers to \"plan for 10-20% per month\" compounded across a year lands near a triple-digit figure ⇒ a planning ceiling read as a forecast. Note the direction of the real data is decelerating (Q2 ~60% QoQ → Q3 13-18%) while the claim implies acceleration. Added 2026-07-17 from the transcript sweep (IBM video)",
+   "multiple": "~2.8× vs Gartner",
+   "tier": 4
+  },
+  {
+   "id": "pjm-2028-29-capacity-spiking-to-the-cap-fresh-grid-crisis",
+   "claim": "PJM 2028/29 capacity \"spiking to the cap = fresh grid crisis\"",
+   "source": "grid-doom framing [4]",
+   "corrected": "the $325/MW-day clear is −2.5% BELOW the prior cap = flat-high, NOT a spike; but the collar MASKED ~$13.3B",
+   "error": "two-sided: the level is not a new spike (capped, down y/y), yet the collar hid a real ~$13.3B ($29.7B uncapped vs $16.4B actual) DC-driven cost — carry BOTH denominators (DC ~40% this auction / 45% = $21.3B of $47.2B over three). Monitoring Analytics. Added Session 5 from the §3.7② fold",
+   "multiple": "~1.8× (masked)",
+   "tier": 4
+  },
+  {
+   "id": "llm-token-index-fell-50",
+   "claim": "LLM token index \"fell ~50%\"",
+   "source": "YouTube AI-finance video [4]",
+   "corrected": "−20% from its May peak (Silicon Data SDLLMTK, now ~1.62; ~doubled since Dec inception)",
+   "error": "direction right (willingness-to-pay per Mtoken falling as users substitute to cheaper models, per Citadel), magnitude ~2.5× overstated. Bankable real signal: Allianz flags a 46% AI investment-vs-sales growth gap vs 32% in the 2001 telecom bubble. Added 2026-07-18 (transcript sweep)",
+   "multiple": "~2.5× (overstated)",
+   "tier": 4
+  },
+  {
+   "id": "s-p-top-10-concentration-10-in-2000-vs-40-today",
+   "claim": "S&P top-10 concentration \"~10% in 2000 vs 40% today\"",
+   "source": "YouTube market-valuation video [4]",
+   "corrected": "~23% in 2000 (Visual Capitalist; 20-25% across sources) vs ~36% today, off a ~41% peak in 2025",
+   "error": "Both ends wrong in the direction that inflates the change: the claim implies a 4× rise, the data show 23→36, roughly 1.6×. The honest version of the point survives and is stronger for being smaller. ⭐ The caveat the same video omits, which cuts the other way: in 2000 tech was ~33% of S&P market cap on only ~15% of its earnings; today's top-10 weight sits on real profits, so weight alone is not equivalent excess. Added 2026-07-29 (transcript sweep)",
+   "multiple": "~2.5× (the change, overstated)",
+   "tier": 4
+  },
+  {
+   "id": "margin-debt-record-1-42t-as-evidence-of-a-top",
+   "claim": "Margin debt \"record $1.42T\" as evidence of a top",
+   "source": "YouTube market-valuation video [4], off FINRA [1]",
+   "corrected": "level TRUE ($1.416T, May-2026, +8.5% m/m, +53.7% y/y), the INFERENCE fails on the denominator",
+   "error": "⭐ Same numerator, opposite story depending on the base. Against market cap margin debt is ~2.2%, BELOW the 2000 peak (~2.3%) and well below 2007 (~3.0%). Against GDP (~4%) it IS a record, just past Oct-2021's 3.97%. The video quotes only the nominal record, which is the one base that guarantees a record in any year prices rise. Also stale by two months when quoted. What genuinely survives: leverage grew at ~2× the pace of the S&P over the same May-to-May window, and only 1999-2000, mid-2007 and spring 2021 saw comparable growth RATES. Added 2026-07-29",
+   "multiple": "",
+   "tier": 4
+  },
+  {
+   "id": "banks-tightening-lending-standards-40-in-2023-8-today",
+   "claim": "Banks tightening lending standards \"~40% in 2023 → 8% today\"",
+   "source": "YouTube macro-strategy video [4], which books sales calls at the end",
+   "corrected": "NOT CHECKABLE AS FRAMED, and the latest actual reading points the other way",
+   "error": "The July-2026 SLOOS (Q2) is not published (the Fed releases it in early August), so no \"today\" figure exists. The most recent, April 2026, reports net TIGHTENING on C&I citing a less favourable outlook and reduced risk tolerance, plus tighter standards across all NDFI categories over the year. The video's entire \"no recession, therefore buy the dip\" thesis rests on this single series. ⚠️ SLOOS is reported as a net percentage (tightened minus eased), so a raw \"8% of banks\" reading would be a category error on top. Do not bank the 8%; re-check the series (FRED DRTSCILM) when the July release lands. Added 2026-07-29",
+   "multiple": "",
+   "tier": 4
+  },
+  {
+   "id": "dow-closed-above-50-000-for-the-first-time-ever-on-friday",
+   "claim": "\"Dow closed above 50,000 for the first time ever on Friday\"",
+   "source": "YouTube market-valuation video [4]",
+   "corrected": "first close above 50,000 was Fri 6 Feb 2026 (50,115.67); it first closed above 53,000 on 6 Jul",
+   "error": "⭐ Logged as a VINTAGE catch, not an arithmetic one, because it dates the source. A video presenting a nearly six-month-old milestone as this week's news is either stale or splicing archival clips as current. Its Korea line (\"bounced back above 7,000, Citi calls it a technical correction\") was already dead when checked (6,023.66). ⇒ date-the-data applies to the SOURCE, not only to its figures: the same video's Buffett-indicator and margin-debt numbers checked out, so vintage failure is item-by-item, and each claim needs its own date. Added 2026-07-29",
+   "multiple": "",
+   "tier": 4
+  }
+ ]
 }

@@ -12,7 +12,7 @@
     {"entity": "Peer-reviewed / arXiv (method claims)", "tier": 2, "basis": "method rigour (review, randomisation). WATCH: industry funding on the paper, and lag (rigour lands after the panic take)"},
     {"entity": "Redwood Research / METR", "tier": 2, "basis": "independent AI evaluation orgs checking others' claims; incentive is being right, not selling a model"},
     {"entity": "Gartner / Forrester / IDC / McKinsey", "tier": 3, "basis": "commercial analysts who sell reports AND consult the vendors they rate; round often-unfalsifiable forecasts"},
-    {"entity": "SemiAnalysis", "tier": 3, "basis": "independent analyst; data quality high but paywalls the load-bearing conclusion (access is the product)"},
+    {"entity": "SemiAnalysis", "tier": 3, "basis": "independent analyst; data quality high but paywalls the conclusion that matters (access is the product)"},
     {"entity": "Trade press (TechCrunch, VentureBeat, The Verge, Ars Technica)", "tier": 3, "basis": "industry journalism; access + engagement (conflict drives clicks). A take against the outlet's own audience usually carries less book"},
     {"entity": "Reuters / Bloomberg / FT", "tier": 3, "basis": "wire / quality press; item-dependent, corroborate to the cited primary"},
     {"entity": "Ahrefs / Semrush / SimilarWeb", "tier": 4, "basis": "SEO/analytics tool vendors; the data is often sound, the alarm framing helps sell the subscription"},
@@ -24,6 +24,6 @@
     {"entity": "Nvidia", "tier": 5, "basis": "sells the compute; tier 5 on 'is AI demand real'"},
     {"entity": "Salesforce / Amazon / Snap (on own AI-efficiency)", "tier": 5, "basis": "adopters with an investor 'we are AI-efficient' narrative and a layoff justification; tier 5 on their own usage claims"},
     {"entity": "NM AI Research (the author)", "tier": 2, "basis": "independent, no product tied to a market call, publishes reproducible CC-BY. Scored here rather than omitted: a motive map that exempts its own author is incomplete", "self": true},
-    {"entity": "The Anthropic model that helped build this", "tier": 5, "basis": "a frontier-lab model helped assign these tiers, including the tiers on Anthropic and its rivals. Not exempt from its own map; corroborate its load-bearing calls against a non-model source", "coi": true, "self": true}
+    {"entity": "The Anthropic model that helped build this", "tier": 5, "basis": "a frontier-lab model helped assign these tiers, including the tiers on Anthropic and its rivals. Not exempt from its own map; corroborate its most consequential calls against a non-model source", "coi": true, "self": true}
   ]
 }
