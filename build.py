@@ -895,8 +895,12 @@ def main():
                 f'rather than the coverage of it.</div>'
                 + "".join(rows) + "</details>")
 
-    # Model releases. Open weights only, and the panel says why: an artefact you can
-    # download is a different KIND of evidence from a model described in a press release.
+    # Model releases: what came out recently. That is the whole job.
+    # ⛔ Do not make the open vs API-only split the headline. The two sides are not collected
+    # the same way (OpenRouter in full, Hugging Face a fixed org list capped at 5 repos each),
+    # so the totals are not comparable. See fetch_releases.py.
+    # ⛔ Do not grade an API-only model as a lesser release. It is shipped and serving traffic.
+    # Whether the weights are published is an attribute of the row, nothing more.
     # ⛔ Never add benchmark scores here. That is a leaderboard, and a percentage with no
     # stated denominator is the defect this board flags elsewhere.
     rel_path = os.path.join(HERE, "releases.json")
@@ -906,9 +910,9 @@ def main():
         rrows = []
         for r in rd.get("releases", [])[:16]:
             closed = r.get("evidence") == "closed"
-            # Tier 5 = the party selling it is the only source. Tier 1 = inspectable artefact.
-            badge_col = TIER[5][0] if closed else TIER[1][0]
-            badge = "closed" if closed else "open weights"
+            # ⛔ Keep this badge neutral. Motive-tier colours here read as a grade.
+            badge_col = SLATE
+            badge = "API only" if closed else "open weights"
             rrows.append(
                 f'<div class="scholarrow" data-search="{esc((r.get("id","") + " " + r.get("lab","")).lower())}" '
                 f'style="padding:7px 0;border-bottom:1px solid {LINE}">'
@@ -928,11 +932,8 @@ def main():
                 f'Model releases <span style="font-weight:400;color:{SLATE};font-size:12px">'
                 f'({c.get("total", len(rrows))})</span></summary>'
                 f'<div style="font-size:13px;color:{SLATE};margin:6px 0 8px">'
-                f'{c.get("total", len(rrows))} in the last {rd.get("window_days", 60)} days: '
-                f'<strong>{c.get("open_weights", 0)} open weights</strong>, an artefact you '
-                f'can download and hash, and <strong>{c.get("closed", 0)} closed</strong>, '
-                f'known only because the party selling it says so. Same list, two different '
-                f'kinds of evidence.</div>'
+                f'<strong>{c.get("total", len(rrows))} models</strong> in the last '
+                f'{rd.get("window_days", 60)} days.</div>'
                 + "".join(rrows)
                 + f'<details style="font-size:11px;color:{SLATE};margin-top:8px">'
                 f'<summary style="cursor:pointer;color:{NAVY}">Sourcing, and what a release '

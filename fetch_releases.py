@@ -1,18 +1,27 @@
 #!/usr/bin/env python3
 """fetch_releases.py (stdlib only) - model releases, open and closed, with evidence class.
 
-WHY IT IS SOURCED THIS WAY
---------------------------
-A release list is only worth having if it says HOW each release is known, because the two
-kinds are not the same fact:
+WHAT THIS IS
+------------
+A feed of models that came out recently. That is the whole job.
 
-    OPEN WEIGHTS    the artefact exists; anyone can download it, hash it, run it. Primary
-                    record. Verified here by OpenRouter reporting a `hugging_face_id`, and
-                    supplemented by a direct Hugging Face query for labs whose research
-                    models never reach a reseller.
-    CLOSED          served over an API, nothing to inspect. The model is known only because
-                    the party selling it says it exists. That is a tier-5 claim about a
-                    product, and it is labelled as one.
+    OPEN WEIGHTS    the file is published; it can be downloaded, hashed and run later.
+                    Detected by OpenRouter reporting a `hugging_face_id`, and supplemented
+                    by a direct Hugging Face query for labs whose research models never
+                    reach a reseller.
+    API ONLY        served over an API, nothing to download.
+
+⛔ Do not treat API only as a lesser release. It is shipped and serving traffic. Whether the
+weights can be downloaded later is an auditability question; it belongs in the Model
+Dependency work, not in a list of what came out.
+
+⛔ Do not present the open and API-only totals as a ratio. OpenRouter is taken in full;
+Hugging Face is HF_ORGS, a hand-written list capped at five repositories per org, four of
+which sat on the cap on 2026-07-31. OpenRouter rows are deduped to a base model, Hugging Face
+rows are not. Such a ratio moves with the org list, not with the world.
+
+⚠️ The two dates differ in kind. An OpenRouter date is a listing observed by a third party. A
+Hugging Face `createdAt` is repo creation and can sit either side of the public release.
 
 ⛔ NOT HAND-CURATED, deliberately. An earlier version of this file kept a hand-written list
 of closed releases. It was replaced 2026-07-30 because it lagged: llm-stats and
@@ -76,6 +85,13 @@ LAB = {"meta-llama": "Meta", "mistralai": "Mistral", "qwen": "Alibaba (Qwen)",
 # Serving variants of one model, not separate releases.
 VARIANT = re.compile(r"(:free|:batch|:thinking|:extended|:online|:nitro|:floor)$", re.I)
 
+# Moving pointers, not releases. OpenRouter carries entries such as `~x-ai/grok-latest` and
+# `~anthropic/claude-fable-latest`. Their `created` is when the ALIAS was made; the target
+# changes underneath the name with no new date, so each duplicates a versioned row already
+# in the list (grok-latest 14:02 vs grok-4.5 15:05 on 2026-07-08; claude-fable-latest 18:32
+# vs claude-fable-5 12:18 on 2026-06-09). Exclude them.
+ALIAS = re.compile(r"^~|-latest$")
+
 
 def get_json(url):
     with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=30) as r:
@@ -104,6 +120,13 @@ def from_openrouter(cutoff):
         base = VARIANT.sub("", mid)
         # The reseller's own routing products are not model releases.
         if base.split("/")[0].lower() in ("openrouter", "auto"):
+            continue
+        # Nor are moving pointers (see ALIAS above).
+        # ⛔ Do NOT add `canonical_slug != id` as a second alias test. It looks right and is
+        # wrong: measured 2026-07-31, 41 of the 41 in-window OpenRouter rows have a DATED
+        # canonical slug behind an undated public id (`anthropic/claude-opus-5` ->
+        # `anthropic/claude-opus-5-20260723`), so that rule deletes the entire list.
+        if ALIAS.search(base):
             continue
         # Keep the EARLIEST timestamp per base model: a variant added later is not a
         # second release.
@@ -200,15 +223,18 @@ def main():
         "counts": {"total": len(rows), "closed": closed, "open_weights": len(rows) - closed},
         "releases": rows,
         "errors": errors,
-        "disclosure": ("Releases in the window, from OpenRouter (a reseller, tier 4 on this "
-                       "board's scale) and the Hugging Face API. Each row states its evidence "
-                       "class: open weights means the artefact can be downloaded and hashed; "
-                       "closed means the model is served over an API and is known only "
-                       "because the party selling it says it exists. Dates are when the model "
-                       "reached the source, which tracks the vendor release closely but is "
-                       "not the vendor's own date. No benchmark scores, by choice. A model "
-                       "announced but never shipped cannot appear in any release list, "
-                       "including this one."),
+        "disclosure": ("Models that reached OpenRouter or the Hugging Face API in the "
+                       "window. Each row says whether the weights are published, which is "
+                       "an attribute of the release rather than a grade: an API-only model "
+                       "is shipped and serving traffic, it is simply not downloadable. "
+                       "Dates are when the model reached the source, not the vendor's own "
+                       "announcement date, and the Hugging Face dates are repo creation, "
+                       "which can sit either side of a public release. The two sides are "
+                       "not counted the same way, so the open and API-only totals are not "
+                       "comparable: OpenRouter is taken in full, while Hugging Face is a "
+                       "fixed list of labs capped at five repositories each. No benchmark "
+                       "scores, by choice. A model announced but never shipped cannot "
+                       "appear in any release list, including this one."),
     }
     with open(OUT, "w", encoding="utf-8") as fh:
         json.dump(payload, fh, indent=1, ensure_ascii=False)
