@@ -28,9 +28,8 @@ write is a public fact rather than a private read of one.
 
 ## Direction 2: board to tracker (BUILT 2026-07-31, `suggest_register_rows.py`)
 
-The board must never write a tracker row. A tracker row is a judgement, and the standing rule
-is automate the plumbing, never the call. What the board can do is **nominate candidates**
-into a dated file that you read and act on, or ignore.
+The board must never write a tracker row, because a tracker row is a judgement. What it can
+do is **nominate candidates** into a dated file that you read and act on, or ignore.
 
 Screening rules, all of which reuse labels the board already carries:
 

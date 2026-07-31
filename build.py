@@ -115,20 +115,45 @@ TOPIC_LABELS = {
 _SUFFIX = r"(?:s|es|ed|ing|er|ers)?"
 
 
-def tag_topic(headline):
-    """Return the first topic whose keyword matches the headline, else '' (no anchor).
+def tag_topic(text):
+    """Return the first topic whose keyword matches the text, else '' (no anchor).
 
-    A blank is a legitimate outcome and the common one. The portfolio holds base rates for
-    energy, water, cost and code automation; most AI news is product launches and funding
-    rounds, which those base rates do not speak to. Raising the hit rate by loosening this
-    would mean anchoring claims to numbers that do not measure them.
+    A blank is a legitimate outcome. But it was ALSO covering a matching failure: measured
+    2026-07-31, 53 of 76 items matched no topic at all and only 6 got an anchor, because this
+    read the headline and nothing else. That is the same defect the labeller had, in the one
+    component that never got upgraded. See topic_of.
     """
-    hay = " " + (headline or "").lower() + " "
+    hay = " " + (text or "").lower() + " "
     for topic, kws in TOPIC_KEYWORDS:
         for kw in kws:
             if re.search(r"(?<![a-z0-9])" + re.escape(kw) + _SUFFIX + r"(?![a-z0-9])", hay):
                 return topic
     return ""
+
+
+def topic_of(it, spans):
+    """Topic plus how it was reached: the headline, or the article's figure sentences.
+
+    ⛔ Falls back to SPANS, not to the article body. A span is a sentence carrying a figure,
+    so a keyword hit there is near the claim rather than in a nav menu or a related-links
+    rail. Matching the whole body would anchor an item on a passing mention, and a wrong
+    anchor is worse than a blank one.
+
+    Measured 2026-07-31 over 76 items: headline only gave 6 anchored and 53 untagged; adding
+    the first 6 spans gives 23 anchored and 29 untagged.
+
+    ⚠️ publisher_tags is the obvious third input and it is EMPTY on all 76 span records, so
+    either the harvest is broken or these publishers serve no JSON-LD keywords. Check before
+    wiring it in; do not assume it works.
+    """
+    t = tag_topic(it.get("headline", ""))
+    if t:
+        return t, "headline"
+    url = (it.get("sources") or [{}])[0].get("url", "")
+    rec = spans.get(url) or {}
+    body = " ".join(sp["sentence"] for sp in (rec.get("spans") or [])[:6])
+    t = tag_topic(body)
+    return (t, "article spans") if t else ("", "")
 
 
 esc = lambda s: html.escape(str(s), quote=True)
@@ -436,7 +461,12 @@ def item_card(it, anchors, plain=False, mk=None, tmap=None, ev=None):
     anchor_html = ""
     if a:
         auto = it.get("_auto_topic", False)
-        head = ("Possible anchor (auto-matched, unreviewed)." if auto
+        # An anchor matched on the headline and one matched on the article's figure
+        # sentences are different evidence, so the page says which. Same rule as
+        # label_tier: never render two provenances identically.
+        basis = it.get("_topic_basis", "")
+        head = (f"Possible anchor (auto-matched on the {basis}, unreviewed)." if auto and basis
+                else "Possible anchor (auto-matched, unreviewed)." if auto
                 else "Reality anchor.")
         border = SLATE if auto else NAVY
         anchor_html = (
@@ -842,6 +872,10 @@ def main():
     # Citation chains and the per-article evidence counts.
     ev_path = os.path.join(HERE, "article_evidence.json")
     ev = json.load(open(ev_path, encoding="utf-8")) if os.path.isfile(ev_path) else {}
+    # Figure sentences, used as the topic matcher's second look. Absent is fine: topic_of
+    # then behaves exactly as the old headline-only matcher did.
+    sp_path = os.path.join(HERE, "article_spans.json")
+    _spans = json.load(open(sp_path, encoding="utf-8")) if os.path.isfile(sp_path) else {}
     feed_path = os.path.join(HERE, "feed_items.json")
     incoming = []
     fetched = ""
@@ -855,9 +889,10 @@ def main():
             # only suggest an anchor for items NOT yet human-reviewed; a reviewed
             # item with an empty topic means "reviewed, no honest anchor" and is left as-is
             if not it.get("topic") and not it.get("reviewed"):
-                t = tag_topic(it.get("headline", ""))
+                t, basis = topic_of(it, _spans)
                 if t:
                     it["topic"], it["_auto_topic"] = t, True
+                    it["_topic_basis"] = basis
 
         # freshest first: order the live feed by parsed date, newest at the top
         incoming.sort(key=lambda it: parse_date(it.get("date", "")), reverse=True)

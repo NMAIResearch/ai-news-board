@@ -12,8 +12,7 @@ could be asked again later. The archive keeps them; the queue asks the second qu
 WHAT IS AUTOMATED AND WHAT IS NOT
 ---------------------------------
 Automated: capture, the due date, the ranking, the cap. Not automated: `outcome`. Whether a
-thing was delivered is the call, and a model must not make it. Rule: automate the plumbing,
-never the call.
+thing was delivered is a judgement, and a model must not make it.
 
 THE CAP IS THE DESIGN, NOT A LIMITATION
 ---------------------------------------
