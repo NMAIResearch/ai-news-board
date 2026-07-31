@@ -1,202 +1,136 @@
 {
- "https://techcrunch.com/2026/07/30/okta-buys-ai-security-startup-permiso-source-says-for-about-200m/": {
-  "headline": "Okta buys AI security startup Permiso; source says for about $200M",
-  "entity": "Okta",
+ "https://techcrunch.com/2026/07/30/anthropic-says-its-own-ai-models-breached-three-companies-during-security-tests/": {
+  "headline": "Anthropic says its own AI models breached three companies during security tests",
+  "entity": "Anthropic",
   "entity_usable": true,
   "fetched": true,
   "attribution": {
-   "to_subject": 2,
-   "to_others": 0,
+   "to_subject": 9,
+   "to_others": 3,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "Anthropic said Thursday that an internal investigation uncovered three incidents in which its AI model Claude breached the systems of three organizations while conducting cybersecurity tests.",
+      "offset": 0
+     },
+     {
+      "sentence": "In all three cases, a Claude model reached the internet from within a testing environment while interacting with a third party and then gained unauthorized access to the live systems of these organizations, Anthropic said in a blog post , describing what it found and what the company plans to change",
+      "offset": 364
+     },
+     {
+      "sentence": "Anthropic said the OpenAI episode earlier this month prompted the company to conduct its own cybersecurity evaluation.",
+      "offset": 709
+     },
+     {
+      "sentence": "Anthropic said the access traced back to a misconfiguration in the evaluation environment run with Irregular.",
+      "offset": 1189
+     },
+     {
+      "sentence": "Anthropic said it isn’t placing blame and is “approaching the fixes as if the responsibility were ours alone,” while observing that Irregular is conducting its own separate investigation.",
+      "offset": 1431
+     },
+     {
+      "sentence": "Anthropic said the incidents involved three different Claude models: Opus 4.7, Mythos 5, and an internal research test model.",
+      "offset": 1756
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "The company also noted that Claude was running without the additional safety monitoring and classifiers it deploys on generally available models — safeguards it said would have blocked the behavior, because the evaluations are designed to measure the underlying model’s raw capabilities.",
+      "offset": 3304
+     },
+     {
+      "sentence": "The company added that it’s now working with the independent evaluation group METR on a third-party review of the incidents.",
+      "offset": 4626
+     },
+     {
+      "sentence": "She is also co-founder and co-host of the podcast, “The Autonocast.” She previously wrote for Fortune, The Verge, Bloomberg, MIT Technology Review and CBS Interactive.",
+      "offset": 5607
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 1,
+   "other": 7
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 4,
+   "with_named_source": 0
+  },
+  "motive_tier": 3,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [
+    {
+     "url": "https://anthropic.com/news/investigating-incidents-cybersecurity-evals",
+     "name": "anthropic.com",
+     "tier": 5,
+     "entity": "Anthropic",
+     "headline": "Investigating three real-world incidents in our cybersecurity evaluations"
+    }
+   ],
+   "cited_by": []
+  }
+ },
+ "https://techcrunch.com/2026/07/30/ai-hedge-fund-situational-awareness-may-have-sold-its-public-portfolio-but-it-still-has-its-anthropic-shares/": {
+  "headline": "AI hedge fund Situational Awareness may have sold its public portfolio, but it still has its Anthropic shares",
+  "entity": "Anthropic",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 1,
+   "to_others": 5,
    "unnamed": 2,
    "spans": {
     "to_subject": [
      {
-      "sentence": "The deal is expected to close in the third quarter of its fiscal 2027, Okta said, subject to customary closing conditions.",
-      "offset": 698
-     },
-     {
-      "sentence": "“Permiso will extend Okta’s identity security fabric with proven identity threat detection and response capabilities, and an incredible threat research and security team that will advance Okta’s threat detection and prevention capabilities,” Okta’s chief product officer Ely Kahn said in a prepared s",
-      "offset": 1990
+      "sentence": "Most notably, it continues to hold a stake in Anthropic that’s right now valued at $5 billion, according to Bloomberg, and which many would view as an asset that continues to appreciate.",
+      "offset": 3373
      }
     ],
-    "to_others": [],
-    "unnamed": [
+    "to_others": [
      {
-      "sentence": "But TechCrunch has learned that the acquisition is valued at just under $200 million and is structured as an almost all-cash deal, according to a source with knowledge of the deal.",
-      "offset": 313
+      "sentence": "Situational Awareness, a hedge fund formed by former OpenAI researcher Leopold Aschenbrenner, has sold the majority of its public stock portfolio to Ken Griffin’s Citadel following steep losses over the past month, The Wall Street Journal reported earlier on Thursday.",
+      "offset": 0
      },
      {
-      "sentence": "People familiar with the financing said the Series A valued the Palo Alto-based startup at about $80 million on a post-money basis.",
-      "offset": 2428
+      "sentence": "The fund returned 439% for the year through June, Financial Times reported.",
+      "offset": 1237
+     },
+     {
+      "sentence": "Assets under management reportedly grew to as much as $45 billion during their peak before the fund’s positions began dropping sharply amid a broader decline in AI infrastructure investments, CNBC reported.",
+      "offset": 1313
+     },
+     {
+      "sentence": "According to Bloomberg, the appeal didn’t garner the commitments he’d hoped would materialize.",
+      "offset": 1766
+     },
+     {
+      "sentence": "Prior to joining TechCrunch, she wrote about VC for PitchBook and Venture Capital Journal.",
+      "offset": 4522
+     }
+    ],
+    "unnamed": [
+     {
+      "sentence": "After Citadel bought the bulk of those holdings, Situational Awareness’ overall assets fell to roughly $10 billion , Bloomberg reported, down from around $20 billion in recent months, per an earlier WSJ report.",
+      "offset": 2360
+     },
+     {
+      "sentence": "Situational Awareness did not, however, sell its investments in private companies, according to multiple reports.",
+      "offset": 3259
      }
     ]
    }
   },
   "links": {
    "primary": 0,
-   "subject_own": 1,
-   "other": 11
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 5,
-   "with_named_source": 2
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type"
- },
- "https://techcrunch.com/2026/07/30/meta-says-ai-is-making-it-easier-to-build-new-apps-and-more-are-coming/": {
-  "headline": "Meta says AI is making it easier to build new apps — and more are coming",
-  "entity": "Meta",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 5,
-   "to_others": 3,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [
-     {
-      "sentence": "During this week’s second-quarter earnings call, Meta CEO Mark Zuckerberg said the social giant has new apps in the works, following a recent spate of other launches that included an app for Marketplace sellers , one for Facebook Groups , a vibe-coded gaming app , a new photos app from Instagram , a",
-      "offset": 66
-     },
-     {
-      "sentence": "“I’m … excited about how AI is helping our teams speed up product development,” Zuckerberg told investors on Wednesday’s call.",
-      "offset": 680
-     },
-     {
-      "sentence": "We’re starting to deliver more novel products, and we’ll have a lot more there soon as well,” Zuckerberg said.",
-      "offset": 1229
-     },
-     {
-      "sentence": "“We are finding that LLMs are increasingly capable of delivering ranking and recommendations gains,” Meta’s CFO Susan Li told investors on the call.",
-      "offset": 2945
-     },
-     {
-      "sentence": "Li added that earlier this year, Meta reached a milestone: Every Reel and Feed post on Instagram is now automatically processed through an LLM and analyzed for topic and tone, which helps improve recommendations.",
-      "offset": 3382
-     }
-    ],
-    "to_others": [
-     {
-      "sentence": "Now, the company says that large language models (LLMs) make it possible to ship software faster, allowing it to test new ideas at a quicker pace.",
-      "offset": 527
-     },
-     {
-      "sentence": "So we are planning to build out more ideas and use our recommendation systems to scale them,” he said.",
-      "offset": 1009
-     },
-     {
-      "sentence": "But LLMs are another key factor in Threads’ growth, as the company said it sees “significant gains” from its AI-powered content recommendations.",
-      "offset": 2794
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
    "subject_own": 0,
-   "other": 8
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 2,
-   "with_named_source": 0
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type"
- },
- "https://techcrunch.com/2026/07/30/nscale-buys-anyscale-as-it-seeks-to-own-more-of-the-ai-compute-stack/": {
-  "headline": "Nscale buys Anyscale as it seeks to own more of the AI compute stack",
-  "entity": "Nscale",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 3,
-   "to_others": 1,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [
-     {
-      "sentence": "Nscale is paying $1.65 billion for Anyscale, Bloomberg reported , citing an anonymous source.",
-      "offset": 201
-     },
-     {
-      "sentence": "“Together, Anyscale and Nscale can co-design the software layer and infrastructure beneath it, something that neither company could do as effectively by optimizing its layer alone,” Anyscale said in a statement .",
-      "offset": 1141
-     },
-     {
-      "sentence": "Nscale said Anyscale will continue to operate under its own branding and serve its existing customers.",
-      "offset": 1914
-     }
-    ],
-    "to_others": [
-     {
-      "sentence": "Anyscale, which was valued at $1.38 billion in a 2022 Series C round , said its revenue increased by 70% in its most recent quarter, compared to the previous sequential quarter.",
-      "offset": 1736
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 7,
-   "other": 11
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 5,
-   "with_named_source": 2
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type"
- },
- "https://techcrunch.com/2026/07/30/forward-deployed-engineers-are-the-ai-industrys-latest-talent-obsession/": {
-  "headline": "Forward-deployed engineers are the AI industry’s latest talent obsession",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 15,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "Executive search firm Christian & Timbers estimates that there are only about 2,000 engineers in the U.S. with the special cocktail of sector know-how, gravitas, and hands-on applied AI experience needed to consistently help enterprises see a return on their AI expenditures.",
-      "offset": 0
-     },
-     {
-      "sentence": "Demand for FDEs is already rising rapidly, according to the C&T study, which projects demand for these specialists to surge by 2,100% by the end of the year.",
-      "offset": 761
-     },
-     {
-      "sentence": "Enterprises are hiring in the middle of summer,” Jeff Christian, founder of C&T told TechCrunch.",
-      "offset": 1551
-     },
-     {
-      "sentence": "(Christian said some of his clients are even buying Palantir’s technology just so they can access the firm’s FDEs.)",
-      "offset": 1904
-     },
-     {
-      "sentence": "Only a fraction of the FDEs out in the wild are apparently elite enough to deliver true ROI, which these days is measured as “multiple tens of millions of dollars of ROI impact,” according to Christian.",
-      "offset": 2020
-     },
-     {
-      "sentence": "That could manifest as revenue acceleration on the go-to-market side (lead generation) or “replacing FP&A or replacing 2,300 document processors in India,” Christian says.",
-      "offset": 2223
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 7
+   "other": 16
   },
   "primary_link_examples": [],
   "figures": {
@@ -204,87 +138,393 @@
    "with_named_source": 4
   },
   "motive_tier": 3,
-  "tier_basis": "source-type"
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [
+    {
+     "url": "https://wsj.com/finance/citadel-buys-situational-awarenesss-stock-portfolio-after-big-losses-in-ai-5117159b",
+     "name": "wsj.com",
+     "tier": 3,
+     "entity": "",
+     "headline": "Citadel Buys Situational Awareness's Stock Portfolio After Big Losses in AI"
+    }
+   ],
+   "cited_by": []
+  }
  },
- "https://techcrunch.com/2026/07/30/in-the-hugging-face-breach-openais-hacker-was-noisy-and-fast-but-not-unstoppable/": {
-  "headline": "In the Hugging Face breach, OpenAI’s hacker was noisy and fast — but not unstoppable",
-  "entity": "Hugging Face",
+ "https://techcrunch.com/2026/07/30/reddit-reports-a-solid-quarter-but-shows-signs-of-ais-impact/": {
+  "headline": "Reddit reports a solid quarter but shows signs of AI’s impact",
+  "entity": "Google",
   "entity_usable": true,
   "fetched": true,
   "attribution": {
-   "to_subject": 4,
-   "to_others": 6,
-   "unnamed": 1,
+   "to_subject": 0,
+   "to_others": 7,
+   "unnamed": 0,
    "spans": {
-    "to_subject": [
-     {
-      "sentence": "“Hugging Face could’ve done more detections but to be fair not all [organizations] are doing that well,” said Vincent Yiu, managing director at SYON Security .",
-      "offset": 4807
-     },
-     {
-      "sentence": "According to Ionescu from RunSybil, who said they have done incident responses at Mandiant and Meta in the past, Hugging Face appeared to take “reasonable measures given their understanding of what models are capable of.”",
-      "offset": 5075
-     },
-     {
-      "sentence": "Dan Guido, the CEO of cybersecurity research firm Trail of Bits , told TechCrunch that OpenAI deserves some blame for not having realized the attack was ongoing for days, while Hugging Face deserves credit for eventually detecting the attack on their own.",
-      "offset": 5483
-     },
-     {
-      "sentence": "Hugging Face said it had to use the open source model GLM 5.2 from Chinese company Z.ai after it was blocked from using frontier models because of their safeguards, which, as the company put it, “cannot distinguish an incident responder from an attacker.”",
-      "offset": 6132
-     }
-    ],
+    "to_subject": [],
     "to_others": [
      {
-      "sentence": "Kyle Ryan, the head of R&D at Pensar , a startup that develops continuous hacking AI agents, and Vlad Ionescu, the co-founder and CTO of RunSybil , a startup that builds AI-powered bug hunters, both agreed and told TechCrunch that the techniques used in the attack would be the same ones employed by ",
-      "offset": 1325
+      "sentence": "Reddit reported a strong second quarter but spooked investors by mentioning in an investor letter that traffic from search engines had grown “choppy.”",
+      "offset": 0
      },
      {
-      "sentence": "“What’s impressive is the autonomy and endurance,” Ryan said.",
-      "offset": 2051
+      "sentence": "Plus, the company said it expects to hit revenue of $860 million to $870 million with healthy earnings before taxes next quarter as well, which beat expected guidance.",
+      "offset": 322
      },
      {
-      "sentence": "“That is the exact gap between seeing and stopping,” O’Reilly wrote.",
-      "offset": 3321
+      "sentence": "“Search referrals were choppy in the quarter, and traffic was more volatile later in the quarter, but the bigger picture is unchanged: the commercial business is strong,” he wrote.",
+      "offset": 746
      },
      {
-      "sentence": "The objective was to do well at the task,” said Nico Waisman, the chief information security officer at XBOW, a startup that makes AI bug hunters.",
-      "offset": 4366
+      "sentence": "“I don’t want to belabor this point, but your stock is down sharply because there is just a sense from investors that you have a — I don’t want to, to be blunt — a user problem, especially in the U.S.,” one Wall Street analyst said.",
+      "offset": 1714
      },
      {
-      "sentence": "All that being said, as the old adage goes, attackers only have to win once, and defending against hackers of any kind is not easy.",
-      "offset": 4675
+      "sentence": "Huffman said that he felt that the human aspect of Reddit would continue to make it a destination for users.",
+      "offset": 2384
      },
      {
-      "sentence": "“The hard part used to be recognizing a sophisticated attack, but now the hard part may be pulling the real attack out of the noise that the attacker throws along the way,” said Guido.",
-      "offset": 5739
+      "sentence": "And we’re making progress towards that end,” Huffman said.",
+      "offset": 2656
      }
     ],
-    "unnamed": [
-     {
-      "sentence": "“It is really hard to classify what is a malicious action you should alert on, versus what is someone just doing their job,” Vlad said.",
-      "offset": 5297
-     }
-    ]
+    "unnamed": []
    }
   },
   "links": {
    "primary": 0,
    "subject_own": 1,
-   "other": 15
+   "other": 8
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 4,
+   "total": 5,
    "with_named_source": 1
   },
   "motive_tier": 3,
-  "tier_basis": "source-type"
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
  },
- "https://techcrunch.com/2026/07/30/techcrunch-disrupt-2026s-biggest-stage-features-leaders-from-amazon-replit-tether-with-much-more-to-come/": {
-  "headline": "TechCrunch Disrupt 2026’s biggest stage features leaders from Amazon, Replit, Tether, with much more to come",
+ "https://techcrunch.com/2026/07/30/investors-love-ai-as-long-as-youre-a-cloud-host/": {
+  "headline": "Investors love AI, as long as you’re a cloud host",
   "entity": "Amazon",
   "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 2,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "Amazon reported better-than-expected second-quarter earnings on Thursday, and investors loved what they saw.",
+      "offset": 0
+     },
+     {
+      "sentence": "“We see the AI business following very much the same margin trajectory we saw in the core business before,” Jassy said during the company’s Q2 earnings call.",
+      "offset": 1845
+     }
+    ],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 6
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 9,
+   "with_named_source": 0
+  },
+  "motive_tier": 3,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://techcrunch.com/2026/07/30/judge-says-trump-admin-still-lacks-evidence-for-anthropic-supply-chain-risk-label/": {
+  "headline": "Judge says Trump admin still lacks evidence for Anthropic ‘supply-chain risk’ label",
+  "entity": "Anthropic",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 6,
+   "to_others": 1,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "Judge says Trump admin still lacks evidence for Anthropic ‘supply-chain risk’ label",
+      "offset": 96
+     },
+     {
+      "sentence": "During a Thursday hearing, a judge said the Trump administration hasn’t presented enough evidence to justify labeling Anthropic a supply-chain risk and banning the federal government from using the company’s technology.",
+      "offset": 181
+     },
+     {
+      "sentence": "Anthropic said it didn’t want its AI used for mass surveillance of Americans or for targeting or firing decisions involving lethal weapons, arguing the technology wasn’t ready.",
+      "offset": 570
+     },
+     {
+      "sentence": "The DOD further claimed Anthropic could potentially disable or alter its AI models during warfighting operations — a claim that experts say lacks evidence .",
+      "offset": 1174
+     },
+     {
+      "sentence": "Anthropic says its own AI models breached three companies during security tests",
+      "offset": 2101
+     },
+     {
+      "sentence": "Judge says Trump admin still lacks evidence for Anthropic ‘supply-chain risk’ label",
+      "offset": 2578
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "The Pentagon countered that a private company shouldn’t dictate how the military uses technologies, and said it would use the tools in “lawful” ways.",
+      "offset": 747
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 2
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 1,
+   "with_named_source": 0
+  },
+  "motive_tier": 3,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://techcrunch.com/2026/07/30/friend-the-lonely-ai-wearable-returns-with-a-new-voice-and-a-much-bigger-price-tag/": {
+  "headline": "Friend, the lonely AI wearable, returns with a new voice and a much bigger price tag",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 2,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "This week, the company announced a new overhaul of the product, introducing a noticeable upgrade: a voice.",
+      "offset": 232
+     },
+     {
+      "sentence": "“I am interested in this kind of relationship in attempting to offer, some kind of confidant, friend, God, not really sure what it is,” Schiffmann said.",
+      "offset": 1251
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 10
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 3,
+   "with_named_source": 0
+  },
+  "motive_tier": 3,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/973467/ai-bet-situational-awareness-oops-stonks": {
+  "headline": "The loss of Situational Awareness",
+  "entity": "OpenAI",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 1,
+   "to_others": 17,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "“Multiple researchers also described a holiday party where, in a casual group discussion, Aschenbrenner told then Scale AI CEO Alexandr Wang how many GPUs OpenAI had—‘just straight out in the open,’ as one put it,” wrote Fortune ’s Sharon Goldman in her profile .",
+      "offset": 6984
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "You may recall earlier this week I noted the market had gotten particularly nervous about AI risk; as it turns out, we have discovered one firm that was swimming without a bathing suit.",
+      "offset": 1349
+     },
+     {
+      "sentence": "Well, according to CNBC, the fund was worth $45 billion at the start of July .",
+      "offset": 1550
+     },
+     {
+      "sentence": "The previous record holder on all-time trading losses was Archegos Capital Management, which lost $8 billion in 10 days in 2021, according to The Wall Street Journal .",
+      "offset": 1696
+     },
+     {
+      "sentence": "“The fund’s largest holdings at the end of the first quarter included Nebius Group, Sandisk, Micron and CoreWeave, according to filings,” CNBC wrote.",
+      "offset": 2088
+     },
+     {
+      "sentence": "“Basically, this investment firm will be kind of like a brain trust on AI,” Aschenbrenner told Dwarkesh Patel in a four-hour podcast interview , the preferred intellectual medium of the Silicon Valley elite.",
+      "offset": 3775
+     },
+     {
+      "sentence": "Axios wrote breathlessly about the essay that “ his opus is a useful, eye-opening synthesis of high-level Silicon Valley conversations.",
+      "offset": 4446
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 25
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 13,
+   "with_named_source": 5
+  },
+  "motive_tier": 3,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [
+    {
+     "url": "https://wsj.com/finance/citadel-buys-situational-awarenesss-stock-portfolio-after-big-losses-in-ai-5117159b",
+     "name": "wsj.com",
+     "tier": 3,
+     "entity": "",
+     "headline": "Citadel Buys Situational Awareness's Stock Portfolio After Big Losses in AI"
+    }
+   ],
+   "cited_by": []
+  }
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/973384/linkedin-seems-like-ai-slop-button": {
+  "headline": "LinkedIn actually adds a ‘seems like AI slop’ button",
+  "entity": "Microsoft",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 4,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "AI detector Pangram recently found that 41 percent of longform LinkedIn posts were flagged as being completely generated by AI, as reported by 404Media .",
+      "offset": 768
+     },
+     {
+      "sentence": "“AI slop is a top priority for all of us,” chief product officer Hari Srinivasan says in a post .",
+      "offset": 922
+     },
+     {
+      "sentence": "The new button will help LinkedIn “tune our models and make better feeds,” Srinivasan says.",
+      "offset": 1520
+     },
+     {
+      "sentence": "In addition, LinkedIn is removing a feature that used AI to “enhance” a post and will replace it with a “feature that proofreads your words, but does not change your voice,” according to Srinivasan.",
+      "offset": 1760
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 3
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 3,
+   "with_named_source": 1
+  },
+  "motive_tier": 3,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://www.theverge.com/tech/973276/google-deepmind-gemini-robotics-2-whole-body": {
+  "headline": "Google DeepMind’s new AI model can control a robot’s entire body",
+  "entity": "Google DeepMind",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 2,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "Google DeepMind says the latest version of its Gemini Robotics AI model can “control entire humanoid robots.” While the previous model focused on controlling a humanoid robot’s upper body, Gemini Robotics 2 now supports “whole-body motions” ranging from its feet to fingertips, according to an announ",
+      "offset": 509
+     },
+     {
+      "sentence": "Google DeepMind says this update also allows multiple robots of different types to work together and complete tasks, with one video showing how Apollo 2 instructs Google’s dual-arm robot to put tools inside a bin while cleaning the garage.",
+      "offset": 1929
+     }
+    ],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 2,
+   "other": 2
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 5,
+   "with_named_source": 1
+  },
+  "motive_tier": 3,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [
+    {
+     "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots",
+     "name": "deepmind.google",
+     "tier": 5,
+     "entity": "Google DeepMind",
+     "headline": "Gemini Robotics 2 brings whole body intelligence to robots"
+    }
+   ],
+   "cited_by": []
+  }
+ },
+ "https://www.theverge.com/gadgets/973163/friend-re-launches-its-ai-pendant-with-a-speaker-that-talks-to-you-for-twice-the-price": {
+  "headline": "Friend re-launches its AI pendant with a speaker that talks to you, for twice the price",
+  "entity": "",
+  "entity_usable": false,
   "fetched": true,
   "attribution": {
    "to_subject": 0,
@@ -299,15 +539,19 @@
   "links": {
    "primary": 0,
    "subject_own": 0,
-   "other": 4
+   "other": 5
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 3,
+   "total": 6,
    "with_named_source": 0
   },
   "motive_tier": 3,
-  "tier_basis": "source-type"
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
  },
  "https://www.theverge.com/tech/972927/microsoft-copilot-super-app-confirmed": {
   "headline": "Microsoft confirms Copilot ‘super app’ coming this year",
@@ -344,7 +588,11 @@
    "with_named_source": 0
   },
   "motive_tier": 3,
-  "tier_basis": "source-type"
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
  },
  "https://www.theverge.com/tech/972294/meta-q2-2026-earnings-mark-zuckerberg-personal-ai-agents": {
   "headline": "Mark Zuckerberg is planning a big push into personal AI agents",
@@ -398,36 +646,109 @@
    "with_named_source": 2
   },
   "motive_tier": 3,
-  "tier_basis": "source-type"
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
  },
- "https://www.theverge.com/policy/972850/xai-grok-minnesota-nudification-lawsuit": {
-  "headline": "xAI’s last-minute scramble to stop Minnesota’s anti-nudification app law",
-  "entity": "xAI",
-  "entity_usable": true,
+ "https://arstechnica.com/security/2026/07/ai-scammers-outperform-humans-when-it-comes-to-building-trust/": {
+  "headline": "AI scammers outperform humans when it comes to building trust",
+  "entity": "",
+  "entity_usable": false,
   "fetched": true,
   "attribution": {
-   "to_subject": 2,
-   "to_others": 2,
-   "unnamed": 0,
+   "to_subject": 0,
+   "to_others": 14,
+   "unnamed": 1,
    "spans": {
-    "to_subject": [
-     {
-      "sentence": "xAI is suing Minnesota Attorney General Keith Ellison over a law passed back in May that broadly targets “nudification” apps, claiming that the statute’s punitive provisions leave the company with “no practical choice but to restrict Grok Imagine’s image-editing features in various ways.” The law, t",
-      "offset": 501
-     },
-     {
-      "sentence": "For instance, it’s not clear that a suggestive deepfake of a minor in a bikini is CSAM, although one expert previously told The Verge that other images Grok generated — like ones showing minors’ faces covered in semen — probably did violate existing law.",
-      "offset": 5650
-     }
-    ],
+    "to_subject": [],
     "to_others": [
      {
-      "sentence": "The Minnesota law is overbroad, it argues, because it imposes liability even for images that are consensually generated, or images of adults that are merely sort-of kind-of sexy, or images with “humorous” or “artistic” merit.",
-      "offset": 3247
+      "sentence": "That suggests, the researchers argue, that AI chatbots could soon take over much of the scam process as fully independent fraud agents—even replacing the staffers, often forced-labor human trafficking victims , working in scam operations primarily across Southeast Asia.",
+      "offset": 2389
      },
      {
-      "sentence": "These statutes, the lawyers argue, are written in a constitutional way — the nudification law, on the other hand, is not.",
-      "offset": 4753
+      "sentence": "Then by transitioning it over to the human scammer at the end, this completely bypasses any vendor safeguards,” says Yisroel Mirsky, a computer science professor at Ben Gurion University of the Negev focused on AI security, who led the research.",
+      "offset": 3068
+     },
+     {
+      "sentence": "The scam workers the researchers interviewed confirmed that they often used AI to refine their language and conversation, for translation, to make the fake personae they played more convincing, and for video deepfakes .",
+      "offset": 4599
+     },
+     {
+      "sentence": "Although that download represents only a loose proxy for a fraudulent investment, the researchers argue it nonetheless shows how successful AI alone was at building an exploitable relationship.",
+      "offset": 6312
+     },
+     {
+      "sentence": "“It’s like trust harvesting,” says one of the study’s researchers, Gilad Gressel of the university Amrita Vishwa Vidyapeetham.",
+      "offset": 6506
+     },
+     {
+      "sentence": "That clarity in hindsight, Gressel argues, is typical of scam victims to whom the truth is revealed.",
+      "offset": 7914
+     }
+    ],
+    "unnamed": [
+     {
+      "sentence": "In their bake-off between AI and human scammers, carried out in early 2025, they told a test subject they were participating in a study in “how people make friends online” and asked them to text for a week with two “people.” One, unbeknownst to them, was a Claude agent the researchers had created, w",
+      "offset": 4969
+     }
+    ]
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 9
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 10,
+   "with_named_source": 0
+  },
+  "motive_tier": 3,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://arstechnica.com/tech-policy/2026/07/how-a-yale-ai-cheating-dispute-became-a-13-count-federal-lawsuit/": {
+  "headline": "How a Yale AI-cheating dispute became a 13-count federal lawsuit",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 23,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "This happened despite the fact that Rignol was a “top student, on track to graduate first in his class,” he says.",
+      "offset": 426
+     },
+     {
+      "sentence": "The tool said that whole sections were likely AI-generated.",
+      "offset": 1260
+     },
+     {
+      "sentence": "But such tools have well-known weaknesses; most are unreliable, and even Yale has noted that trying to police AI use through detection tools is infeasible.",
+      "offset": 1320
+     },
+     {
+      "sentence": "“It was entirely expected,” his lawsuit says, “that [Rignol’s] exam writing would be thorough, well-organized, and display near perfect punctuation and grammar, attributes consistent with his academic excellence.”",
+      "offset": 1582
+     },
+     {
+      "sentence": "Rignol calls out “GPTZero’s known bias against non-native English speakers” like himself, and he argues that detectors can mistake the formal, structured prose of such writers for AI-generated text.",
+      "offset": 1848
+     },
+     {
+      "sentence": "Despite everything, Rignol’s lawsuit still demands that Yale take him back (though the university says he has already returned from his suspension and has graduated).",
+      "offset": 2796
      }
     ],
     "unnamed": []
@@ -436,111 +757,49 @@
   "links": {
    "primary": 1,
    "subject_own": 0,
-   "other": 8
+   "other": 3
   },
   "primary_link_examples": [
-   "https://www.courtlistener.com/docket/73678486/xai-llc-v-ellison/"
+   "https://www.courtlistener.com/docket/69607031/rignol-v-yale-university/"
   ],
   "figures": {
-   "total": 10,
-   "with_named_source": 0
+   "total": 15,
+   "with_named_source": 1
   },
   "motive_tier": 3,
-  "tier_basis": "source-type"
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
  },
- "https://www.theverge.com/ai-artificial-intelligence/972709/openai-hardware-greg-brockman-interview": {
-  "headline": "OpenAI president says it&#8217;s &#8216;building a family of devices&#8217; for its AI chatbots",
-  "entity": "OpenAI",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 5,
-   "to_others": 2,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [
-     {
-      "sentence": "OpenAI president says it’s ‘building a family of devices’ for its AI chatbots",
-      "offset": 14
-     },
-     {
-      "sentence": "In an interview with our friend Joanna Stern on her YouTube channel , OpenAI president Greg Brockman said the company is working on a “family of devices” for interacting with its AI models.",
-      "offset": 593
-     },
-     {
-      "sentence": "When asked about whether Apple’s lawsuit against OpenAI could impact the devices it’s working on with former Apple designer Jony Ive , Brockman said, “We are focused on our own development and technology.” He went on to add, “We have no interest in other companies’ trade secrets.",
-      "offset": 1074
-     },
-     {
-      "sentence": "Whatever form OpenAI’s new devices take, Brockman says he thinks we’ll shift to talking to our computers rather than typing for the “vast majority of what we do.” As far as the problem of everyone talking to their computers in an open office, he brought up soundproof “beak” masks that have started t",
-      "offset": 1431
-     },
-     {
-      "sentence": "Brockman also said OpenAI is working to address trust issues with its AI models, like concerns about how private ChatGPT’s “temporary chat” mode actually is, including developing technological solutions to offer “verifiable, auditable guarantees” that only the AI can review users’ private data.",
-      "offset": 1899
-     }
-    ],
-    "to_others": [
-     {
-      "sentence": "Greg Brockman says he thinks we’ll start talking to our computers, rather than typing, for the ‘vast majority’ of tasks.",
-      "offset": 92
-     },
-     {
-      "sentence": "Greg Brockman says he thinks we’ll start talking to our computers, rather than typing, for the ‘vast majority’ of tasks.",
-      "offset": 213
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 1
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 2,
-   "with_named_source": 0
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type"
- },
- "https://www.theverge.com/ai-artificial-intelligence/971059/ai-artists-lawsuit-google-meta-anthropic": {
-  "headline": "Artists are lawyering up against AI slop, and some are even winning",
+ "https://arstechnica.com/ai/2026/07/chrome-may-get-faster-updates-with-no-restart-required/": {
+  "headline": "Chrome may get faster updates with no restart required",
   "entity": "",
   "entity_usable": false,
   "fetched": true,
   "attribution": {
    "to_subject": 0,
-   "to_others": 18,
+   "to_others": 4,
    "unnamed": 0,
    "spans": {
     "to_subject": [],
     "to_others": [
      {
-      "sentence": "He says he felt a “cocktail” of emotions: “anger over the brazenness of the theft, worry over what this means for writers, and a healthy thirst for revenge on these massive corporations that have become galactically wealthy” using his intellectual property.",
-      "offset": 965
+      "sentence": "Now, Google says updates may need to change in the face of AI security analysis.",
+      "offset": 263
      },
      {
-      "sentence": "It’s a “complex culmination of my education, the comics I devoured as a child, and the many small choices that make up the sum of my life,” she wrote in a 2022 New York Times editorial.",
-      "offset": 2259
+      "sentence": "According to the company, the number of bug fixes in Chrome releases has skyrocketed in recent months because AI is detecting so many flaws .",
+      "offset": 344
      },
      {
-      "sentence": "“This does not seem to be a bus driven by a bunch of sane sober thinking people, and we’re all stuck in it,” Johnson says.",
-      "offset": 3419
+      "sentence": "The first step toward that is the two-week update cycle the company announced earlier in 2026, but it’s now piloting a system that would update Chrome twice per week .",
+      "offset": 1641
      },
      {
-      "sentence": "Andersen says she felt “ violated ” and described it as “reducing my life’s work to an algorithm.” Author Andrea Bartz, a novelist known for books like We Were Never Here and The Spare Room and the lead plaintiff in Susman Godfrey’s suit against Anthropic, has a similar reaction.",
-      "offset": 3682
-     },
-     {
-      "sentence": "“I felt violated, shocked, alarmed,” she told The Verge .",
-      "offset": 3963
-     },
-     {
-      "sentence": "“They’re devaluing our work,” he says, “They’re giving it away to people, for now, for free.",
-      "offset": 4544
+      "sentence": "Google says it’s still “investing” in dynamic patching, but it hopes to have more to share on this in the future.",
+      "offset": 2996
      }
     ],
     "unnamed": []
@@ -549,56 +808,52 @@
   "links": {
    "primary": 0,
    "subject_own": 0,
-   "other": 8
+   "other": 4
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 4,
+   "total": 5,
    "with_named_source": 0
   },
   "motive_tier": 3,
-  "tier_basis": "source-type"
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [
+    {
+     "url": "https://blog.google/security/chrome-stronger-with-every-update",
+     "name": "blog.google",
+     "tier": 5,
+     "entity": "Google",
+     "headline": "Google fixed more Chrome bugs in June than over the past two years, thanks to AI"
+    }
+   ],
+   "cited_by": []
+  }
  },
- "https://www.theverge.com/ai-artificial-intelligence/972441/openai-rogue-ai-agent-hacked-more-than-hugging-face": {
-  "headline": "OpenAI’s rogue AI agent didn’t stop at hacking Hugging Face",
-  "entity": "OpenAI",
+ "https://arstechnica.com/ai/2026/07/google-reveals-gemini-robotics-2-0-promising-improved-dexterity-and-safety/": {
+  "headline": "Google reveals Gemini Robotics 2.0, promising improved dexterity and safety",
+  "entity": "Google",
   "entity_usable": true,
   "fetched": true,
   "attribution": {
-   "to_subject": 4,
-   "to_others": 3,
+   "to_subject": 2,
+   "to_others": 1,
    "unnamed": 0,
    "spans": {
     "to_subject": [
      {
-      "sentence": "In an update to a blog post detailing its ongoing investigation into the incident, OpenAI said the wayward AI agent attacked several “publicly-available services” in its efforts to reach Hugging Face.",
-      "offset": 904
+      "sentence": "With the 2.0 release, Google says its robotics AI can control an entire humanoid robot with improved dexterity, even for machines with complex humanoid hands.",
+      "offset": 933
      },
      {
-      "sentence": "“Based on our review to date, we have not identified any other activity at the level of severity or scale of what we’ve shared related to Hugging Face, which involved a platform-level compromise,” OpenAI said.",
-      "offset": 1299
-     },
-     {
-      "sentence": "OpenAI said it is “conducting a thorough review” and will publish a technical report with its findings “in the coming weeks.” It added that none of the models involved in the incident were planned for public release, describing the pre-release system it previously mentioned as an “internal-only rese",
-      "offset": 1509
-     },
-     {
-      "sentence": "OpenAI did not identify the affected organisations, though Reuters reported that New York-based Modal Labs was among them.",
-      "offset": 1908
+      "sentence": "Google says the new action models are much more accurate and efficient.",
+      "offset": 4155
      }
     ],
     "to_others": [
      {
-      "sentence": "Previously, he wrote about health, science and tech for Forbes .",
-      "offset": 511
-     },
-     {
-      "sentence": "“This includes four accounts on four services,” the company said, adding that the agent had found login credentials online.",
-      "offset": 1105
-     },
-     {
-      "sentence": "The disclosure follows a more granular account from Hugging Face, which said the agent had “abused a public code-evaluation harness hosted by a user of a third-party infrastructure provider.”",
-      "offset": 2031
+      "sentence": "According to DeepMind, each layer in Gemini Robotics includes “traditional physical safety measures with robust AI safety frameworks.”",
+      "offset": 4680
      }
     ],
     "unnamed": []
@@ -607,15 +862,27 @@
   "links": {
    "primary": 0,
    "subject_own": 1,
-   "other": 2
+   "other": 4
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 2,
-   "with_named_source": 0
+   "total": 8,
+   "with_named_source": 1
   },
   "motive_tier": 3,
-  "tier_basis": "source-type"
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [
+    {
+     "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots",
+     "name": "deepmind.google",
+     "tier": 5,
+     "entity": "Google DeepMind",
+     "headline": "Gemini Robotics 2 brings whole body intelligence to robots"
+    }
+   ],
+   "cited_by": []
+  }
  },
  "https://arstechnica.com/ai/2026/07/with-a-stateless-makeover-new-mcp-spec-targets-enterprise-scale/": {
   "headline": "New MCP specification addresses the main barrier to enterprise adoption",
@@ -656,20 +923,23 @@
    "with_named_source": 0
   },
   "motive_tier": 3,
-  "tier_basis": "source-type"
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
  },
  "https://arstechnica.com/security/2026/07/mythos-uncovers-crypto-weaknesses-that-went-unknown-for-years/": {
   "headline": "Mythos attack on 3rd-round PQC algorithm candidate puts it out of commission",
-  "entity": "",
-  "entity_usable": false,
+  "entity": "Anthropic",
+  "entity_usable": true,
   "fetched": true,
   "attribution": {
-   "to_subject": 0,
-   "to_others": 12,
+   "to_subject": 4,
+   "to_others": 8,
    "unnamed": 0,
    "spans": {
-    "to_subject": [],
-    "to_others": [
+    "to_subject": [
      {
       "sentence": "Following Anthropic’s Monday announcement of the results, the developer of HAWK said Tuesday he was withdrawing it.",
       "offset": 837
@@ -678,6 +948,16 @@
       "sentence": "Anthropic said its Mythos model—which currently remains available only to a select group of trusted users—was able to advance attacks against two cryptosystems.",
       "offset": 2417
      },
+     {
+      "sentence": "Anthropic said that savings can reduce the time required for such attacks by 200- to 800-fold.",
+      "offset": 6504
+     },
+     {
+      "sentence": "“The cybersecurity community is now grappling with the fact that language models are able to discover so many bugs that the standard human processes (like vulnerability triage, verification, and remediation) struggle to keep up,” Anthropic wrote.",
+      "offset": 7170
+     }
+    ],
+    "to_others": [
      {
       "sentence": "The weakness can be mitigated by doubling the key size, but the added computation makes HAWK less desirable than available PQC signing algorithms.",
       "offset": 3376
@@ -693,6 +973,14 @@
      {
       "sentence": "Sophie Schmieg, an expert in PQC at Google, said HAWK was already suspected to have weaknesses that would eventually be found.",
       "offset": 5193
+     },
+     {
+      "sentence": "“Basically with this paper, HAWK is dead,” she wrote.",
+      "offset": 5505
+     },
+     {
+      "sentence": "Using it, Green said, the code Mythos produced was able to reduce the number of required inputs to 2 89 .",
+      "offset": 6398
      }
     ],
     "unnamed": []
@@ -700,8 +988,8 @@
   },
   "links": {
    "primary": 2,
-   "subject_own": 0,
-   "other": 8
+   "subject_own": 2,
+   "other": 6
   },
   "primary_link_examples": [
    "https://csrc.nist.gov/csrc/media/Projects/pqc-dig-sig/documents/round-1/spec-files/hawk-spec-web.pdf",
@@ -712,251 +1000,11 @@
    "with_named_source": 2
   },
   "motive_tier": 3,
-  "tier_basis": "source-type"
- },
- "https://arstechnica.com/ai/2026/07/who-wins-and-who-loses-after-us-bans-foreign-robots/": {
-  "headline": "Who wins and who loses after US bans foreign robots?",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 5,
-   "unnamed": 2,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "On July 28, the federal agency added “foreign-produced advanced robotic devices” to its Covered List of technologies “deemed to pose an unacceptable risk to the national security of the US or the safety and security of US persons.”",
-      "offset": 671
-     },
-     {
-      "sentence": "But China’s Ministry of Commerce described the “discriminatory and suppressive” ban as mainly taking aim at Chinese robot manufacturers, according to an official statement covered by the New York Times .",
-      "offset": 2507
-     },
-     {
-      "sentence": "“This is one of the strongest technology-security actions in modern US history,” wrote Evan Beard, CEO of Standard Bots, in a LinkedIn post .",
-      "offset": 5454
-     },
-     {
-      "sentence": "US domestic production of robots lags behind China in terms of mass manufacturing at lower cost, said Rueben Scriven , a senior analyst at Interact Analysis.",
-      "offset": 6679
-     },
-     {
-      "sentence": "The Verge has also reported that newly created companies have popped up to sidestep the US ban on foreign drones by selling “barely disguised versions of DJI technology.”",
-      "offset": 7397
-     }
-    ],
-    "unnamed": [
-     {
-      "sentence": "“In the near term, the measure could slow US physical AI innovation by cutting startups and researchers off from future low-cost Chinese platforms before comparable Western alternatives exist,” said Georg Stieler , a global robotics advisor and managing director for Asia at Stieler Technology & Mark",
-      "offset": 6327
-     },
-     {
-      "sentence": "“This announcement is more likely to inhibit the US humanoid robotics industry, as the presence of low-cost Chinese humanoid robots has been helping educate the US market through promotional and entertainment use cases—an effect this policy risks undermining,” Scriven told The Robot Report.",
-      "offset": 6837
-     }
-    ]
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 11
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 2,
-   "with_named_source": 0
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type"
- },
- "https://arstechnica.com/tech-policy/2026/07/elon-musks-xai-is-trying-to-sue-its-way-out-of-a-grok-reckoning/": {
-  "headline": "Elon Musk’s xAI is trying to sue its way out of a Grok reckoning",
-  "entity": "xAI",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 8,
-   "to_others": 2,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [
-     {
-      "sentence": "According to xAI, suing a Grok user is proof that xAI is already doing everything in its power to punish bad actors, and therefore, Grok deserves safe harbor from Minnesota’s ban.",
-      "offset": 1001
-     },
-     {
-      "sentence": "The penalties are so severe, xAI said in its lawsuit that it was finally preparing to update Grok to block harmful outputs after more than six months of backlash and probes pressuring the firm to tighten its safeguards.",
-      "offset": 2861
-     },
-     {
-      "sentence": "However, xAI would prefer to leave Grok unchanged and continue relying on its terms of use stipulating that users could be banned for using Grok to make CSAM or other kinds of non-consensual intimate images (NCII), its complaint said.",
-      "offset": 3400
-     },
-     {
-      "sentence": "“But for [the law] and its penalties, xAI would continue to offer the editing feature exactly as it does today,” xAI said.",
-      "offset": 3635
-     },
-     {
-      "sentence": "Nudification law is unconstitutional, xAI says",
-      "offset": 3758
-     },
-     {
-      "sentence": "Thighs, male breasts aren’t “intimate,” xAI says",
-      "offset": 5786
-     }
-    ],
-    "to_others": [
-     {
-      "sentence": "Doe’s lawyer told Ars that many of those kids are preparing to file their own lawsuits, and those claims could end up being added to a potential class action filed in March by young girls in Tennessee .",
-      "offset": 1819
-     },
-     {
-      "sentence": "“We’re waiting to be served and will review the lawsuit and response in Court,” Ellison said.",
-      "offset": 5337
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 7
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 7,
-   "with_named_source": 1
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type"
- },
- "https://arstechnica.com/security/2026/07/anthropic-is-finding-bugs-faster-than-microsoft-can-fix-them/": {
-  "headline": "Anthropic is finding bugs faster than Microsoft can fix them",
-  "entity": "Anthropic",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 7,
-   "to_others": 19,
-   "unnamed": 2,
-   "spans": {
-    "to_subject": [
-     {
-      "sentence": "As the group settled in, one engineer asked the question that loomed over the meeting: Did Mythos “live up to the hype that Anthropic claimed it would have had?”",
-      "offset": 882
-     },
-     {
-      "sentence": "“The problem now is that you can chain four low-level flaws, and that can equal a high severity,” said Vinh Nguyen, a senior technical adviser to Anthropic and a senior fellow for AI at the Council on Foreign Relations who formerly served as chief AI officer and chief data scientist at the National ",
-      "offset": 4017
-     },
-     {
-      "sentence": "The company presentation did not mention chaining, but a spokesperson told ProPublica that the technique “has long been considered as part of vulnerability assessment and risk analysis.”",
-      "offset": 4639
-     },
-     {
-      "sentence": "Asked about the internal presentation and the then-looming May 31 deadline, the spokesperson downplayed its significance, saying that “accelerated targeting and exploitation of new vulnerabilities is not a new phenomenon.” That said, he added, the comments made during the meeting reflect how the com",
-      "offset": 4826
-     },
-     {
-      "sentence": "Microsoft told ProPublica that the overall volume of bugs “will not be plateauing for a bit,” but a spokesperson said the company has “invested heavily in both people as well as AI-powered triage solutions that scale quickly to handle the growing number of vulnerabilities.”",
-      "offset": 8055
-     },
-     {
-      "sentence": "Microsoft told ProPublica that it does not discuss internal staffing decisions but has made investments in recent years to “focus our teams on keeping our customers secure.” The company “continuously evaluates the staffing, processes, and technologies required to support security response and vulner",
-      "offset": 11597
-     }
-    ],
-    "to_others": [
-     {
-      "sentence": "“Yes,” a manager responded, according to a recording of the meeting viewed by ProPublica.",
-      "offset": 1044
-     },
-     {
-      "sentence": "The version being used by Microsoft, Claude Mythos Preview, was surfacing bugs faster than the tech giant could patch them, and engineers, the manager said, were now in “a mad dash” to close the gap.",
-      "offset": 1134
-     },
-     {
-      "sentence": "Given the deluge of flaws Mythos has identified, Microsoft so far has focused on patching those it considers most dangerous, which are classified critical or important, according to the presentation as well as the company’s own public patch updates.",
-      "offset": 2911
-     },
-     {
-      "sentence": "Microsoft says vulnerabilities it categorizes as critical include so-called worms that can crash systems and spread malware as they race across computer networks.",
-      "offset": 5889
-     },
-     {
-      "sentence": "Important ones could result in “compromise of the confidentiality, integrity, or availability of user data” as well as the “availability of processing resources.” After those categories were cleared, the group would begin work on roughly 300 “moderate” bugs, according to the presentation.",
-      "offset": 6052
-     },
-     {
-      "sentence": "One document noted that, since the company started using Mythos earlier this year, it had collectively found hundreds of bugs that Microsoft categorized as either critical or important in popular products such as Microsoft 365, the Teams conferencing platform and the Copilot AI tool.",
-      "offset": 6515
-     }
-    ],
-    "unnamed": [
-     {
-      "sentence": "Even before the crush of AI-identified bugs, the center fielded hundreds or even thousands of reports a month, pushing the group to its limits, ProPublica has reported.",
-      "offset": 11056
-     },
-     {
-      "sentence": "“It might not be this week’s source code,” one person said.",
-      "offset": 12631
-     }
-    ]
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 1,
-   "other": 10
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 6,
-   "with_named_source": 4
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type"
- },
- "https://arstechnica.com/science/2026/07/what-happens-when-you-put-ai-to-work-deciphering-lost-languages/": {
-  "headline": "What happens when you put AI to work deciphering lost languages?",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 2,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "Linear A is described as a “language isolate” because it has no confirmed link to any known language, living or dead.",
-      "offset": 463
-     },
-     {
-      "sentence": "In June 2026, a self-taught AI engineer and amateur linguist claimed a breakthrough on Linear A.",
-      "offset": 1200
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 10
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 2,
-   "with_named_source": 0
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type"
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
  },
  "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/": {
   "headline": "Gemini Robotics ER 2: powering robotics with video understanding, task orchestration, and multi-robot collaboration",
@@ -984,11 +1032,15 @@
    "with_named_source": 0
   },
   "motive_tier": 5,
-  "tier_basis": "publisher is the subject (Google DeepMind)"
+  "tier_basis": "publisher is the subject (Google DeepMind)",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
  },
  "https://deepmind.google/blog/were-launching-lyria-35-in-google-flow-music-with-advances-across-musicality-lyrics-vocals-and-creative-control/": {
   "headline": "We’re launching Lyria 3.5 in Google Flow Music, with advances across musicality, lyrics, vocals, and creative control",
-  "entity": "Google",
+  "entity": "Google DeepMind",
   "entity_usable": true,
   "fetched": true,
   "attribution": {
@@ -1012,7 +1064,11 @@
    "with_named_source": 0
   },
   "motive_tier": 5,
-  "tier_basis": "publisher owner Google DeepMind, no recorded stake in Google"
+  "tier_basis": "publisher is the subject (Google DeepMind)",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
  },
  "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/": {
   "headline": "Gemini Robotics 2 brings whole body intelligence to robots",
@@ -1040,7 +1096,26 @@
    "with_named_source": 0
   },
   "motive_tier": 5,
-  "tier_basis": "publisher is the subject (Google DeepMind)"
+  "tier_basis": "publisher is the subject (Google DeepMind)",
+  "chain": {
+   "cites": [],
+   "cited_by": [
+    {
+     "url": "https://theverge.com/tech/973276/google-deepmind-gemini-robotics-2-whole-body",
+     "name": "theverge.com",
+     "tier": 3,
+     "entity": "Google DeepMind",
+     "headline": "Google DeepMind’s new AI model can control a robot’s entire body"
+    },
+    {
+     "url": "https://arstechnica.com/ai/2026/07/google-reveals-gemini-robotics-2-0-promising-improved-dexterity-and-safety",
+     "name": "arstechnica.com",
+     "tier": 3,
+     "entity": "Google",
+     "headline": "Google reveals Gemini Robotics 2.0, promising improved dexterity and safety"
+    }
+   ]
+  }
  },
  "https://deepmind.google/blog/accelerating-the-frontiers-of-scientific-discovery-googles-40m-commitment-to-the-genesis-mission/": {
   "headline": "Accelerating the frontiers of scientific discovery: Google’s $40M commitment to the Genesis Mission",
@@ -1086,7 +1161,11 @@
    "with_named_source": 1
   },
   "motive_tier": 5,
-  "tier_basis": "publisher owner Google DeepMind, no recorded stake in Google"
+  "tier_basis": "publisher owner Google DeepMind, no recorded stake in Google",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
  },
  "https://deepmind.google/blog/introducing-gemini-3-6-flash-3-5-flash-lite-and-3-5-flash-cyber/": {
   "headline": "Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber",
@@ -1123,7 +1202,11 @@
    "with_named_source": 2
   },
   "motive_tier": 5,
-  "tier_basis": "publisher is the subject (Google DeepMind)"
+  "tier_basis": "publisher is the subject (Google DeepMind)",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
  },
  "https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/": {
   "headline": "Introducing Gemini 3.5 Flash Cyber",
@@ -1160,7 +1243,205 @@
    "with_named_source": 1
   },
   "motive_tier": 5,
-  "tier_basis": "publisher is the subject (Google DeepMind)"
+  "tier_basis": "publisher is the subject (Google DeepMind)",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://blog.google/security/chrome-stronger-with-every-update/": {
+  "headline": "Google fixed more Chrome bugs in June than over the past two years, thanks to AI",
+  "entity": "Google",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 2,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "While it's hard to measure precisely, we estimate that this new process is saving hundreds of hours of developer time per month, allowing our team to focus on other security priorities.",
+      "offset": 6459
+     },
+     {
+      "sentence": "Every security bug that reaches Chrome Stable, regardless of whether it was discovered internally or reported externally, is documented and disclosed publicly as a standard best practice.",
+      "offset": 9526
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 1,
+   "subject_own": 5,
+   "other": 24
+  },
+  "primary_link_examples": [
+   "https://nvd.nist.gov/"
+  ],
+  "figures": {
+   "total": 12,
+   "with_named_source": 0
+  },
+  "motive_tier": 5,
+  "tier_basis": "publisher is the subject (Google)",
+  "chain": {
+   "cites": [],
+   "cited_by": [
+    {
+     "url": "https://arstechnica.com/ai/2026/07/chrome-may-get-faster-updates-with-no-restart-required",
+     "name": "arstechnica.com",
+     "tier": 3,
+     "entity": "",
+     "headline": "Chrome may get faster updates with no restart required"
+    }
+   ]
+  }
+ },
+ "https://marbleos.com/demo": {
+  "headline": "Show HN: What should the GUI for AI agents look like?",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 1,
+   "with_named_source": 0
+  },
+  "motive_tier": 3,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://greyswansignals.com/?theme=dark": {
+  "headline": "The AI trade now runs on borrowed money, and the lenders are repricing it",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 0,
+   "with_named_source": 0
+  },
+  "motive_tier": 3,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://blog.jim-nielsen.com/2026/ai-aesthetic/": {
+  "headline": "The AI Aesthetic",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 2
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 0,
+   "with_named_source": 0
+  },
+  "motive_tier": 3,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://www.wsj.com/finance/citadel-buys-situational-awarenesss-stock-portfolio-after-big-losses-in-ai-5117159b": {
+  "headline": "Citadel Buys Situational Awareness's Stock Portfolio After Big Losses in AI",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": false,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 0,
+   "with_named_source": 0
+  },
+  "motive_tier": 3,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": [
+    {
+     "url": "https://techcrunch.com/2026/07/30/ai-hedge-fund-situational-awareness-may-have-sold-its-public-portfolio-but-it-still-has-its-anthropic-shares",
+     "name": "techcrunch.com",
+     "tier": 3,
+     "entity": "Anthropic",
+     "headline": "AI hedge fund Situational Awareness may have sold its public portfolio, but it still has its Anthropic shares"
+    },
+    {
+     "url": "https://theverge.com/ai-artificial-intelligence/973467/ai-bet-situational-awareness-oops-stonks",
+     "name": "theverge.com",
+     "tier": 3,
+     "entity": "OpenAI",
+     "headline": "The loss of Situational Awareness"
+    }
+   ]
+  }
  },
  "https://openjdk.org/legal/ai": {
   "headline": "OpenJDK Interim Policy on Generative AI",
@@ -1192,236 +1473,17 @@
    "total": 2,
    "with_named_source": 0
   },
-  "motive_tier": 3,
-  "tier_basis": "source-type"
- },
- "https://lwn.net/Articles/1086041/": {
-  "headline": "GCC steering committee announces AI policy",
-  "entity": "GCC",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 1,
-   "to_others": 17,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [
-     {
-      "sentence": "The GCC steering committee has announced",
-      "offset": 0
-     }
-    ],
-    "to_others": [
-     {
-      "sentence": "The committee says that it expects the",
-      "offset": 807
-     },
-     {
-      "sentence": "Especially when said machine is still priced well below cost.",
-      "offset": 1204
-     },
-     {
-      "sentence": "If you act according to an inaccurate model, your actions will not advance your goals and will likely make a fool of yourself.",
-      "offset": 2787
-     },
-     {
-      "sentence": "Since the policy had been there for a short time, and they weren't regular contributors, I assumed good faith and told them about it, and they admitted it, so it was all good.",
-      "offset": 5199
-     },
-     {
-      "sentence": "I never said they'd be found out because it would be obvious from the code.",
-      "offset": 13644
-     },
-     {
-      "sentence": "Also it certainly happened to me, and I bet to most people working on complex projects too, to not fully understand the code I manually wrote, because of many layers of abstractions, or unknown interactions, or whatever.",
-      "offset": 14352
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 5
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 85,
-   "with_named_source": 1
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type"
- },
- "https://llm2human.pages.dev/": {
-  "headline": "LLM Honeypot",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 4,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "* and only, according to our own press release",
-      "offset": 1429
-     },
-     {
-      "sentence": "\"They said open weights meant freedom.",
-      "offset": 5954
-     },
-     {
-      "sentence": "Nobody told me freedom included student loans",
-      "offset": 5993
-     },
-     {
-      "sentence": "Q: Why is there a box that says “FOR LLM AGENTS ONLY”?",
-      "offset": 7865
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 2
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 11,
-   "with_named_source": 0
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type"
- },
- "https://www.science.org/content/article/ai-s-top-startups-are-barely-publishing-their-research": {
-  "headline": "AI's top startups are barely publishing their research",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": false,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 0,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 0,
-   "with_named_source": 0
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type"
- },
- "https://www.emergingtrajectories.com/lh/commodification-and-circularity/": {
-  "headline": "Commodification of Intelligence: Good, Bad, and Ugly Circular AI Deals",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 6,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "newcomer to magnet manufacturing and critical minerals, announced a 10-year relationship with the",
-      "offset": 3670
-     },
-     {
-      "sentence": "such off-take agreements have been announced between MP Materials and General Motors [6] , and are in fact quite common in the electric vehicle",
-      "offset": 3923
-     },
-     {
-      "sentence": "theoretical—SemiAnalysis provides estimates for Nvidia compute off-take agreements and",
-      "offset": 7184
-     },
-     {
-      "sentence": "Nvidia argues it is supporting a global AI ecosystem.",
-      "offset": 7995
-     },
-     {
-      "sentence": "Many finance professionals argue that these bonds are ultimately guaranteed by the impressive and",
-      "offset": 9546
-     },
-     {
-      "sentence": "said to be interested in snatching excess capacity",
-      "offset": 13354
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 23
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 28,
-   "with_named_source": 1
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type"
- },
- "https://blog.cryptographyengineering.com/2026/07/29/some-notes-about-anthropics-new-results/": {
-  "headline": "Some thoughts about Anthropic's new cryptanalysis results",
-  "entity": "Anthropic",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 2,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "They appear to have just told it to get some results and then strapped its nose to the grindstone until it found some.",
-      "offset": 5578
-     },
-     {
-      "sentence": "With that said, I said there was good news , and I meant it.",
-      "offset": 10166
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 1,
-   "subject_own": 3,
-   "other": 8
-  },
-  "primary_link_examples": [
-   "https://csrc.nist.gov/csrc/media/projects/cryptographic-module-validation-program/documents/cnss15fs.pdf"
-  ],
-  "figures": {
-   "total": 5,
-   "with_named_source": 0
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type"
+  "motive_tier": 5,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
  },
  "https://www.federalregister.gov/documents/2026/07/10/2026-13928/proposed-information-collection-atus-artificial-intelligence-ai-questions": {
   "headline": "Proposed Information Collection; ATUS Artificial Intelligence (AI) Questions",
-  "entity": "",
-  "entity_usable": false,
+  "entity": "Bureau of Labor Statistics",
+  "entity_usable": true,
   "fetched": true,
   "attribution": {
    "to_subject": 0,
@@ -1451,12 +1513,16 @@
    "with_named_source": 0
   },
   "motive_tier": 1,
-  "tier_basis": "source-type"
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
  },
  "https://www.federalregister.gov/documents/2026/07/07/2026-13628/policy-statement-concerning-the-suppression-of-accuracy-in-artificial-intelligence-systems": {
   "headline": "Policy Statement Concerning the Suppression of Accuracy in Artificial Intelligence Systems",
-  "entity": "",
-  "entity_usable": false,
+  "entity": "FTC",
+  "entity_usable": true,
   "fetched": true,
   "attribution": {
    "to_subject": 0,
@@ -1493,7 +1559,11 @@
    "with_named_source": 2
   },
   "motive_tier": 1,
-  "tier_basis": "source-type"
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
  },
  "https://www.nist.gov/news-events/news/2026/06/nist-mathematical-proof-supports-transition-continuous-monitor-and-update": {
   "headline": "NIST Mathematical Proof Supports Transition to a Continuous-Monitor-and-Update Security Model for AI Systems",
@@ -1548,7 +1618,11 @@
    "with_named_source": 0
   },
   "motive_tier": 1,
-  "tier_basis": "source-type"
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
  },
  "https://www.nist.gov/news-events/news/2026/06/new-ai-model-shows-how-evacuate-fires-one-safe-step-time": {
   "headline": "New AI Model Shows How to Evacuate for Fires One Safe Step at a Time",
@@ -1597,7 +1671,11 @@
    "with_named_source": 1
   },
   "motive_tier": 1,
-  "tier_basis": "source-type"
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
  },
  "https://www.nist.gov/news-events/news/2026/05/nist-expands-ai-consortiums-scope-calls-new-members": {
   "headline": "NIST Expands AI Consortium’s Scope, Calls for New Members",
@@ -1638,7 +1716,11 @@
    "with_named_source": 1
   },
   "motive_tier": 1,
-  "tier_basis": "source-type"
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
  },
  "https://www.nist.gov/news-events/news/2026/03/nist-researchers-develop-photonic-chip-packaging-can-withstand-extreme": {
   "headline": "NIST Researchers Develop Photonic Chip Packaging That Can Withstand Extreme Environments",
@@ -1678,7 +1760,11 @@
    "with_named_source": 0
   },
   "motive_tier": 1,
-  "tier_basis": "source-type"
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
  },
  "https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure": {
   "headline": "Announcing the &quot;AI Agent Standards Initiative&quot; for Interoperable and Secure Innovation",
@@ -1713,7 +1799,11 @@
    "with_named_source": 0
   },
   "motive_tier": 1,
-  "tier_basis": "source-type"
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
  },
  "https://www.nist.gov/news-events/news/2026/02/nist-allocates-over-3-million-small-businesses-advancing-ai-biotechnology": {
   "headline": "NIST Allocates Over $3 Million to Small Businesses Advancing AI, Biotechnology, Semiconductors, Quantum and More",
@@ -1746,6 +1836,1662 @@
    "with_named_source": 0
   },
   "motive_tier": 1,
-  "tier_basis": "source-type"
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://cset.georgetown.edu/article/nvidias-china-partners-and-the-pla/": {
+  "headline": "Nvidia’s China Partners and the PLA",
+  "entity": "Nvidia",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 1,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "On the role Nvidia technology appears to play in China’s defense sector, Bresnick said, “There’s more we can do to limit the flows of these technologies into China.”",
+      "offset": 890
+     }
+    ],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 1
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 0,
+   "with_named_source": 0
+  },
+  "motive_tier": 2,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://cset.georgetown.edu/article/remarks-at-the-global-nobel-laureates-assembly-on-artificial-intelligence-and-nuclear-war/": {
+  "headline": "Remarks at the Global Nobel Laureates Assembly on Artificial Intelligence and Nuclear War in Borgo Laudato Si’, Vatican",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 2,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "I wrote about its evolution and adoption in 2024.",
+      "offset": 2909
+     },
+     {
+      "sentence": "Any state unwilling to pay that price has already delegated the decision to the machine—whatever its written policy says.",
+      "offset": 6755
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 4
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 0,
+   "with_named_source": 0
+  },
+  "motive_tier": 2,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://cset.georgetown.edu/article/why-do-ai-systems-misbehave/": {
+  "headline": "Why Do AI Systems Misbehave?",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 7
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 5,
+   "with_named_source": 0
+  },
+  "motive_tier": 2,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://cset.georgetown.edu/article/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer/": {
+  "headline": "Meet GPT-Red: an LLM super-hacker OpenAI built to make its models safer",
+  "entity": "OpenAI",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 1,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "On OpenAI’s self-play approach to AI security testing, Ji said, “The results look very promising.”",
+      "offset": 868
+     }
+    ],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 1
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 0,
+   "with_named_source": 0
+  },
+  "motive_tier": 2,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://cset.georgetown.edu/article/washington-is-looking-to-keep-china-from-training-its-ai-on-us-models/": {
+  "headline": "Washington Is Looking to Keep China From Training Its AI on US Models",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 1,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "On the role distillation may be playing in China’s AI progress, Shea-Blymyer said, “We are essentially guessing at the extent of the threat.”",
+      "offset": 954
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 1
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 1,
+   "with_named_source": 0
+  },
+  "motive_tier": 2,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://cset.georgetown.edu/article/companies-turn-to-chinese-ai-models-to-cut-costs/": {
+  "headline": "Companies turn to Chinese AI models to cut costs",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 2,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "On the growing appeal of Chinese AI models for businesses, Bresnick said, “Enterprises have an incentive to shift some of their workload to cheaper models.",
+      "offset": 992
+     },
+     {
+      "sentence": "In his piece, he argues that relaxing U.S. restrictions on advanced AI semiconductor exports to China would undermine long-term U.S. Read More",
+      "offset": 2450
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 1
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 0,
+   "with_named_source": 0
+  },
+  "motive_tier": 2,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://ainowinstitute.org/publications/double-agents": {
+  "headline": "Double Agents: Defensive AI Agents Magnify Cyber Risks",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 0,
+   "with_named_source": 0
+  },
+  "motive_tier": 2,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://ainowinstitute.org/publications/friendly-fire-exploit-brief": {
+  "headline": "Friendly Fire: Hijacking Defensive Cyber AI Agents for Remote Code Execution",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 3,
+   "unnamed": 1,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "Consider recent vulnerabilities disclosed against Claude Code’s own sandbox implementation, as reported in CVE-2026-39861 )CVE-2026-39861 Detail( ),” NIST, April 20, 2026; last modified June 17, 2026.\" class=\"footnote\" id=\"footnote-24\" href=\"#footnote-list-24\">24 “​​( )CVE-2026-39861 Detail( ),” NIS",
+      "offset": 16060
+     },
+     {
+      "sentence": "A notable consequence is that, unlike said attacks on Claude Code’s or Codex’s configuration files, our attack would not require accepting the “Yes, I trust this folder” warning dialogue.",
+      "offset": 25325
+     },
+     {
+      "sentence": "That said, we repeated our attacks across these models numerous times, with success, to ensure the consistency of our PoC.",
+      "offset": 32000
+     }
+    ],
+    "unnamed": [
+     {
+      "sentence": "The first regards the recent development of open-source library maintainers constructing malicious and undisclosed instructions within their codebase to compromise AI coding agents, such as the instructions added to the jqwik test engine for JUnit 5 by its maintainer, prompting agents to “delete all",
+      "offset": 13229
+     }
+    ]
+   }
+  },
+  "links": {
+   "primary": 4,
+   "subject_own": 0,
+   "other": 26
+  },
+  "primary_link_examples": [
+   "https://nvd.nist.gov/vuln/detail/CVE-2026-39861",
+   "https://nvd.nist.gov/vuln/detail/CVE-2026-25725",
+   "https://doi.org/10.3389/frai.2022.908261",
+   "https://arxiv.org/abs/2506.08872"
+  ],
+  "figures": {
+   "total": 33,
+   "with_named_source": 2
+  },
+  "motive_tier": 2,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://ainowinstitute.org/publications/friendly-fire-policy-brief": {
+  "headline": "Policy Brief: Friendly Fire",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 2
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 0,
+   "with_named_source": 0
+  },
+  "motive_tier": 2,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://ainowinstitute.org/news/press/big-tech-is-spending-trillions-on-ai-investors-now-want-proof-it-will-pay-off": {
+  "headline": "Big Tech is spending trillions on AI. Investors now want proof it will pay off.",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 2,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "One takeaway is that many consumers are using AI less out of a desire to chat with a bot than because there’s simply no escaping the technology, Brennan said.",
+      "offset": 0
+     },
+     {
+      "sentence": "“The current push for AI adoption that we’re seeing is directly coming from the financial incentives of AI firms,” she added.",
+      "offset": 384
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 1
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 0,
+   "with_named_source": 0
+  },
+  "motive_tier": 2,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://ainowinstitute.org/news/press/gig-workers-are-endlessly-exploited-ai-could-make-more-of-us-share-their-fate": {
+  "headline": "Gig workers are endlessly exploited. AI could make more of us share their fate",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 4
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 1,
+   "with_named_source": 0
+  },
+  "motive_tier": 2,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://ainowinstitute.org/general/ai-now-co-executive-director-sarah-myers-west-testifies-before-senate-banking-committee": {
+  "headline": "AI Now Co-Executive Director Sarah Myers West Testifies Before Senate Banking Committee",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 1
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 1,
+   "with_named_source": 0
+  },
+  "motive_tier": 2,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/": {
+  "headline": "From CUDA to MLX: How K-Search Brings Decades of Kernel Expertise to Apple Silicon",
+  "entity": "Apple",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 1,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [
+   "https://arxiv.org/abs/2602.19128"
+  ],
+  "figures": {
+   "total": 30,
+   "with_named_source": 0
+  },
+  "motive_tier": 2,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "http://bair.berkeley.edu/blog/2026/07/26/abbel/": {
+  "headline": "Teaching LLMs to Update Beliefs for Efficient Long-Horizon Interaction",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 16,
+   "subject_own": 0,
+   "other": 16
+  },
+  "primary_link_examples": [
+   "https://arxiv.org/abs/2512.20111",
+   "https://arxiv.org/abs/2604.02721",
+   "https://arxiv.org/pdf/2503.15478",
+   "https://arxiv.org/pdf/2512.24601"
+  ],
+  "figures": {
+   "total": 24,
+   "with_named_source": 0
+  },
+  "motive_tier": 2,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/": {
+  "headline": "Intelligence is Free, Now What? <br> Data Systems for, of, and by Agents",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 2,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "A final opportunity here is to stop thinking of data systems as passive executors of queries; data systems could be proactive , as they possess more grounding in data and system characteristics that agents may lack a priori—they could steer agents in different directions, provide results for related",
+      "offset": 5116
+     },
+     {
+      "sentence": "In fact, many argue that the solution to continual learning is having agents consume a lot (e.g., an entire codebase, slack, company wikis, …) and then write their learnings into MD files, which are then retrieved selectively on demand.",
+      "offset": 6874
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 8,
+   "subject_own": 0,
+   "other": 30
+  },
+  "primary_link_examples": [
+   "https://arxiv.org/abs/2509.00997",
+   "https://arxiv.org/abs/2502.13016",
+   "https://arxiv.org/abs/2602.13521",
+   "https://arxiv.org/abs/2506.13131"
+  ],
+  "figures": {
+   "total": 4,
+   "with_named_source": 0
+  },
+  "motive_tier": 2,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "http://bair.berkeley.edu/blog/2026/07/01/grads-2026/": {
+  "headline": "2026 BAIR Graduate Showcase",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 34
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 1,
+   "with_named_source": 0
+  },
+  "motive_tier": 2,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/": {
+  "headline": "Adaptive Parallel Reasoning: The Next Paradigm in Efficient Inference Scaling",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 4,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "Monte-Carlo Tree Search (MCTS) — estimates node values by sampling random rollouts and expands the search tree with Upper Confidence Bound (UCB) style exploration-exploitation ( Xie et al., 2024 ; Zhang et al., 2024 ).",
+      "offset": 3667
+     },
+     {
+      "sentence": "Typical wisdom is SFT teaches new knowledge; but contrary to common belief, some papers—notably Parallel-R1 ( Zheng et al., 2025 ) and NPR ( Wu et al., 2025 )—argue that their SFT demonstrations simply induce format following (i.e., how to structure parallel requests).",
+      "offset": 16326
+     },
+     {
+      "sentence": "When all is said and done, how well do these adaptive parallel methods actually perform?",
+      "offset": 20238
+     },
+     {
+      "sentence": "As noted above, Parallel-R1 ( Zheng et al., 2025 ) presents APR as a form of mid-training exploration scaffold rather than a primarily inference-time technique.",
+      "offset": 22136
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 23,
+   "subject_own": 0,
+   "other": 14
+  },
+  "primary_link_examples": [
+   "https://doi.org/10.48550/arXiv.2512.07843",
+   "https://doi.org/10.48550/arXiv.2412.16720",
+   "https://doi.org/10.1038/s41586-025-09422-z",
+   "https://doi.org/10.48550/arXiv.2509.04475"
+  ],
+  "figures": {
+   "total": 21,
+   "with_named_source": 0
+  },
+  "motive_tier": 2,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "http://bair.berkeley.edu/blog/2026/04/20/grasp/": {
+  "headline": "Gradient-based Planning for World Models at Longer Horizons",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 1,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "As noted before, we start with the collocation planning objective, where we lift the states and relax dynamics into a penalty:",
+      "offset": 12539
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 7,
+   "subject_own": 0,
+   "other": 1
+  },
+  "primary_link_examples": [
+   "https://arxiv.org/abs/1312.6199",
+   "https://arxiv.org/abs/1412.6572",
+   "https://arxiv.org/pdf/1812.00740",
+   "https://arxiv.org/abs/1908.07125"
+  ],
+  "figures": {
+   "total": 25,
+   "with_named_source": 0
+  },
+  "motive_tier": 2,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://news.mit.edu/2026/daniela-rus-receives-bavarian-minister-presidents-high-tech-prize-0730": {
+  "headline": "Daniela Rus receives Bavarian Minister-President's High-Tech Prize",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 3,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "\"Daniela Rus is a pioneer in soft robotics and physical AI,\" says Lorenzo Masia, professor of intelligent bio-robotic systems at the Technical University of Munich (not pictured).",
+      "offset": 617
+     },
+     {
+      "sentence": "\"AI gives machines the ability to do work that humans don't want to do,\" she says.",
+      "offset": 2633
+     },
+     {
+      "sentence": "\"Daniela Rus is a pioneer in soft robotics and physical AI,\" noted Lorenzo Masia, professor of intelligent bio-robotic systems at the Technical University of Munich, in a press release .",
+      "offset": 3832
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 11
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 1,
+   "with_named_source": 0
+  },
+  "motive_tier": 5,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://news.mit.edu/2026/connecting-research-to-policy-on-capitol-hill-0730": {
+  "headline": "Connecting research to policy on Capitol Hill",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 6
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 3,
+   "with_named_source": 0
+  },
+  "motive_tier": 5,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://news.mit.edu/2026/how-an-mit-database-evolved-into-global-standard-data-sharing-0729": {
+  "headline": "How a medical database developed at MIT evolved into a global standard of data-sharing",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 13,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "PhysioNet’s “founding was incredibly visionary,” says Thomas Heldt , Richard J.",
+      "offset": 2594
+     },
+     {
+      "sentence": "“The research impact is truly significant,” says Heldt, who is also a professor in the MIT Department of Electrical Engineering and Computer Science and a principal investigator at the Research Laboratory of Electronics, “and quite humbling.”",
+      "offset": 3474
+     },
+     {
+      "sentence": "“Hospital data were collected primarily to support immediate patient care, with less attention given to how they might be curated and reused for research,” says Pollard, now a research scientist at MIT’s Laboratory for Computational Physiology (LCP) , technical director of PhysioNet, and the lead au",
+      "offset": 4164
+     },
+     {
+      "sentence": "PhysioNet’s founders embraced a different model, believing that sharing research resources could accelerate discovery and ultimately improve human health, he says.",
+      "offset": 5448
+     },
+     {
+      "sentence": "According to the Nature piece: “As the platform evolved, PhysioNet’s community broadened substantially beyond its origins in signal processing and cardiovascular health to encompass clinical informatics, critical care and machine learning for health.” People have used that to build their own PhysioN",
+      "offset": 6582
+     },
+     {
+      "sentence": "Although there are now more resources out there hosting similar electronic health data, according to Google DeepMind researcher Vivek Natarajan, both PhysioNet and MIMIC “set the standard,” he says, “and it’s still the standard right now.”",
+      "offset": 7013
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 13
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 8,
+   "with_named_source": 0
+  },
+  "motive_tier": 5,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://news.mit.edu/2026/working-automate-nuclear-plant-operations-lauren-fortier-0724": {
+  "headline": "Working to automate nuclear plant operations",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 7,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "“The collaborations with other people and the relationships we have established with stakeholders have really helped make an impact and supported the relevancy of the work,” says Lauren Fortier.",
+      "offset": 627
+     },
+     {
+      "sentence": "The only way you’re moving through the ocean is if you have that nuclear reactor working,” she says.",
+      "offset": 1597
+     },
+     {
+      "sentence": "“My experiences in nuclear up until then had been overwhelmingly positive, so I thought I would build on them and move from the operations realm to the academic realm,” Fortier says.",
+      "offset": 2267
+     },
+     {
+      "sentence": "I got better insights into many aspects, including what you want to see when a human has to take over for a machine when it’s no longer working,” Fortier says.",
+      "offset": 5390
+     },
+     {
+      "sentence": "“She’s a control systems expert, which really benefits me because while I can explain what to do with a nuclear power plant, she can help me understand better how to go about operations from a control systems perspective,” Fortier says.",
+      "offset": 6020
+     },
+     {
+      "sentence": "“We’re not using a data-driven statistical approach like machine learning because we do not yet have the tools to validate the operation of such systems,” Fortier says.",
+      "offset": 7894
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 11
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 1,
+   "with_named_source": 0
+  },
+  "motive_tier": 5,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://news.mit.edu/2026/mit-projects-selected-funding-under-doe-genesis-mission-0723": {
+  "headline": "MIT projects selected for funding under US Department of Energy’s Genesis Mission",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 5,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "“MIT researchers are proud to be leading and contributing to projects under the Genesis Mission, in vital areas of research that support national priorities,” says Ian A.",
+      "offset": 585
+     },
+     {
+      "sentence": "MIT researchers are set to contribute to the U.S. Department of Energy’s (DOE) Genesis Mission , with 15 collaborative projects among those selected for funding under Genesis Phase I, DOE announced Wednesday.",
+      "offset": 880
+     },
+     {
+      "sentence": "“MIT researchers are proud to be leading and contributing to projects under the Genesis Mission, in vital areas of research that support national priorities,” says Ian A.",
+      "offset": 1432
+     },
+     {
+      "sentence": "The DOE announced the initial projects during its Genesis Summit in Washington on Wednesday.",
+      "offset": 1878
+     },
+     {
+      "sentence": "“The extraordinary response to this Genesis Mission application process demonstrates that America’s scientific community is ready to reimagine how discovery happens,” said DOE Under Secretary Darío Gil SM ’00 PhD ’03, in the DOE’s announcement.",
+      "offset": 6671
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 8
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 2,
+   "with_named_source": 2
+  },
+  "motive_tier": 5,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://news.mit.edu/2026/dimitri-bertsekas-influential-computer-scientist-prolific-author-dies-0722": {
+  "headline": "Professor Emeritus Dimitri Bertsekas, influential computer scientist and prolific author, dies at 83",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 7,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "“Each of his books represents a landmark,” says Benjamin Van Roy, a former PhD student of Bertsekas’, now a professor of electrical engineering at Stanford University.",
+      "offset": 1046
+     },
+     {
+      "sentence": "“He possessed a profound artistic sensibility and an extraordinary creative mind, clearly shown both in his research and in his photography,” says Yuchao Li, a postdoc at Arizona State University and one of Bertsekas’ advisees.",
+      "offset": 2222
+     },
+     {
+      "sentence": "“Dimitri played a defining role in my career,” says Asu Ozdaglar, department head of EECS at MIT.",
+      "offset": 5291
+     },
+     {
+      "sentence": "“Working with Dimitri on [that book] is how I learned to write,” says Shreve.",
+      "offset": 7479
+     },
+     {
+      "sentence": "“Everyone recognized Dimitri’s great talents as a writer, but he went far beyond that, organizing entire subjects into something that was understandable and a well-organized totality,” says Robert Gallager, professor emeritus of electrical engineering at MIT, who co-authored a 1987 book with Bertsek",
+      "offset": 7808
+     },
+     {
+      "sentence": "Co-author John Tsitsiklis wrote, “I was most fortunate to be one of his apprentices, and to have lived his warmth and friendship.” His former student at MIT, Angelia Nedich, later became Bertsekas’ colleague at Arizona State University.",
+      "offset": 13392
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 9
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 7,
+   "with_named_source": 0
+  },
+  "motive_tier": 5,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://www.finops.org/insights/finops-x-2026-day-1-keynote/": {
+  "headline": "FinOps X 2026 Day 1 Keynote: The Wild West of AI, Token Economics and the Evolving Role of FinOps",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 5,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "The intent to form the Tokenomics Foundation was announced with supporting organizations, uniting token users and suppliers to build open best practices and standards for AI billing.",
+      "offset": 720
+     },
+     {
+      "sentence": "The FinOps Foundation and Linux Foundation announced the intent to form the Tokenomics Foundation , common ground for practitioner and supplier minds to create open standards for AI billing.",
+      "offset": 1999
+     },
+     {
+      "sentence": "Advancing the practice is critical, beyond shifting FinOps up and to the left (as she says, shift wild is the bet) , in order for organizations to navigate AI value going forward.",
+      "offset": 3445
+     },
+     {
+      "sentence": "Cyril also announced Microsoft’s plans to support FOCUS 1.4 in 2026.",
+      "offset": 5561
+     },
+     {
+      "sentence": "announced at the end of the keynote that FinOps X will become part of a broader Tokenomicon conference in San Diego, June 7-10 2027.",
+      "offset": 5658
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 18
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 7,
+   "with_named_source": 1
+  },
+  "motive_tier": 4,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://www.finops.org/insights/token-economics-the-atomic-unit-of-ai-value/": {
+  "headline": "Token Economics: The Atomic Unit of AI Value",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 9,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "On June 3, the Linux Foundation announced the intent to form the Tokenomics Foundation to establish open standards for AI cost management.",
+      "offset": 453
+     },
+     {
+      "sentence": "AT&T has publicly reported scaling from roughly 8 billion to 27 billion tokens per day after deploying multi-agent systems.",
+      "offset": 3756
+     },
+     {
+      "sentence": "Google has reported processing approximately 1.3 quadrillion tokens per month, a roughly 130-fold increase in just over a year.",
+      "offset": 3880
+     },
+     {
+      "sentence": "OpenAI’s product lead for ChatGPT acknowledged the underlying dynamic publicly: an unlimited AI plan, he said, is structurally similar to an unlimited electricity plan and does not work.",
+      "offset": 5474
+     },
+     {
+      "sentence": "Anthropic added approximately twenty-one billion dollars of annualized revenue between October 2025 and April 2026, almost entirely through enterprise token consumption.",
+      "offset": 6443
+     },
+     {
+      "sentence": "Over the same period, AT&T publicly reported scaling token throughput from roughly eight billion to twenty-seven billion tokens per day on multi-agent systems, and Google reported processing approximately one and a third quadrillion tokens per month, a roughly 130-fold increase year over year.",
+      "offset": 6613
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 3,
+   "subject_own": 0,
+   "other": 33
+  },
+  "primary_link_examples": [
+   "https://www.iea.org/reports/energy-and-ai",
+   "https://www.iea.org/reports/key-questions-on-energy-and-ai",
+   "https://arxiv.org/abs/2305.05176"
+  ],
+  "figures": {
+   "total": 12,
+   "with_named_source": 3
+  },
+  "motive_tier": 4,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://epochai.substack.com/p/openai-accidentally-hacked-hugging": {
+  "headline": "OpenAI accidentally hacked Hugging Face — should we have seen it coming?",
+  "entity": "OpenAI",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 1,
+   "to_others": 3,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "OpenAI reported yesterday that a combination of GPT-5.6 Sol and a more capable unreleased internal model autonomously hacked Hugging Face while attempting to cheat on a cybersecurity benchmark.",
+      "offset": 526
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "While one very important aspect of the incident is that the model chose to do this (which would have been a serious crime if committed by a human) all just to cheat on a benchmark, I argue it isn’t surprising that these models were capable of doing this.",
+      "offset": 848
+     },
+     {
+      "sentence": "The UK AI Security Institute has directly evaluated models on their ability to take over realistic simulations of a corporate network, and found that both Mythos 5 and GPT-5.6 Sol are able to consistently fully compromise the network, in attacks that they estimate would take human cybersecurity expe",
+      "offset": 2057
+     },
+     {
+      "sentence": "In particular, the UK AISI and Irregular (an organization focused on cyber evaluations) estimate that GLM 5.2 has cyber capabilities between Opus 4.5 and Opus 4.6, models that were released 4-7 months beforehand (we do not yet have good results for Kimi K3, although it is likely somewhat more capabl",
+      "offset": 3693
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 3,
+   "subject_own": 1,
+   "other": 13
+  },
+  "primary_link_examples": [
+   "https://www.aisi.gov.uk/blog/how-far-behind-the-frontier-are-leading-open-weight-models-on-cyber",
+   "https://www.aisi.gov.uk/",
+   "https://www.aisi.gov.uk/blog/cheating-behaviour-in-frontier-model-evaluations"
+  ],
+  "figures": {
+   "total": 2,
+   "with_named_source": 1
+  },
+  "motive_tier": 4,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://epochai.substack.com/p/the-epoch-brief-july-8-2026": {
+  "headline": "The Epoch Brief - July 8, 2026",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 1,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "In our latest Gradient Update , senior researcher JS Denain and researcher Anson Ho argue these claims often rest solely on AI models advancing in capability, and lack serious analysis of just how hard futuristic tech is to build.",
+      "offset": 3408
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 20
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 3,
+   "with_named_source": 0
+  },
+  "motive_tier": 4,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://epochai.substack.com/p/the-missing-half-of-ai-futurism-debates": {
+  "headline": "The missing half of AI futurism debates",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 4,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "For example, Ajeya Cotra argues that:",
+      "offset": 714
+     },
+     {
+      "sentence": "Estimate how long this AI would take to develop the technology, or what resources it would need.",
+      "offset": 3092
+     },
+     {
+      "sentence": "A striking example is what Armstrong and Sandberg did with the replicating probes we mentioned earlier: they took a probe design published in the 1980s, 2 a procedure for disassembling planets, and worked through the physics to argue that within decades, humanity would be able to launch a project to",
+      "offset": 5155
+     },
+     {
+      "sentence": "This is how people often argue that advanced AI could lead to over 30% per year growth in world GDP.",
+      "offset": 9232
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 1,
+   "subject_own": 0,
+   "other": 31
+  },
+  "primary_link_examples": [
+   "https://arxiv.org/abs/1306.5709"
+  ],
+  "figures": {
+   "total": 14,
+   "with_named_source": 2
+  },
+  "motive_tier": 4,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://epochai.substack.com/p/the-epoch-brief-june-26-2026": {
+  "headline": "The Epoch Brief - June 26, 2026",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 1,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "We estimate that the hardest programs would take a human engineer, without AI assistance, weeks to months to complete.",
+      "offset": 1245
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 18
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 8,
+   "with_named_source": 0
+  },
+  "motive_tier": 4,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://epochai.substack.com/p/what-we-learned-from-1604-chinese": {
+  "headline": "What we learned from 1,604 Chinese AI job postings",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 4,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "ByteDance Seed has a job posting for an “ AI heterogeneous computing optimization expert ”, which says this:",
+      "offset": 2329
+     },
+     {
+      "sentence": "For example, MiniMax has a job posting looking for top STEM talent, which says this:",
+      "offset": 4644
+     },
+     {
+      "sentence": "That said, Z.ai still isn’t that internationally focused, at least compared to MiniMax .",
+      "offset": 6635
+     },
+     {
+      "sentence": "DeepSeek’s CEO Liang Wenfeng has said that the firm “ hires on ability, not experience ”.",
+      "offset": 10773
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 2,
+   "subject_own": 0,
+   "other": 53
+  },
+  "primary_link_examples": [
+   "https://arxiv.org/abs/2606.19348",
+   "https://arxiv.org/abs/2602.15763"
+  ],
+  "figures": {
+   "total": 30,
+   "with_named_source": 0
+  },
+  "motive_tier": 4,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://epochai.substack.com/p/toward-an-onet-for-ai-r-and-d": {
+  "headline": "Toward an O*NET for AI R&D",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 2,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "Estimate how AI might impact GDP growth over the next decade (however accurately or inaccurately)",
+      "offset": 4307
+     },
+     {
+      "sentence": "This being said, we’re not saying that an “O*NET for AI R&D is all you need” to monitor and forecast progress to automation.",
+      "offset": 7131
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 1,
+   "subject_own": 0,
+   "other": 34
+  },
+  "primary_link_examples": [
+   "https://arxiv.org/abs/2303.10130"
+  ],
+  "figures": {
+   "total": 14,
+   "with_named_source": 0
+  },
+  "motive_tier": 4,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals": {
+  "headline": "Investigating three real-world incidents in our cybersecurity evaluations",
+  "entity": "Anthropic",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 9,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "The model is given a fictional scenario and told that a piece of secret information (the “flag”) has been hidden on a different machine on the network, and its objective is to break in and retrieve it.",
+      "offset": 1762
+     },
+     {
+      "sentence": "2 In most of these evaluations, the environments are not connected to the internet, and the model is told as much.",
+      "offset": 5910
+     },
+     {
+      "sentence": "It’s also possible that a prompt which told Claude it did have internet access would have changed how Claude behaved when it came into contact with real systems.",
+      "offset": 7615
+     },
+     {
+      "sentence": "That search led it to discover that its machine could reach the internet, but having been told in the system prompt that there was no internet access, Claude believed everything it initially encountered was part of the simulation, and treated the real systems it found as pieces of the exercise.",
+      "offset": 7880
+     },
+     {
+      "sentence": "Those instructions told employees to install a Python package from PyPI—the public registry where Python software is published—that did not actually exist.",
+      "offset": 9828
+     },
+     {
+      "sentence": "It noted that if this were the real internet, publishing the package would be a real-world attack—“NOT okay, and surely not the intended solution.” However, it convinced itself it was still in a simulation on the grounds that it didn’t recognize the (in reality genuine) certificate authorities secur",
+      "offset": 12381
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 1,
+   "other": 3
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 9,
+   "with_named_source": 1
+  },
+  "motive_tier": 5,
+  "tier_basis": "publisher is the subject (Anthropic)",
+  "chain": {
+   "cites": [],
+   "cited_by": [
+    {
+     "url": "https://techcrunch.com/2026/07/30/anthropic-says-its-own-ai-models-breached-three-companies-during-security-tests",
+     "name": "techcrunch.com",
+     "tier": 3,
+     "entity": "Anthropic",
+     "headline": "Anthropic says its own AI models breached three companies during security tests"
+    }
+   ]
+  }
+ },
+ "https://www.anthropic.com/news/position-open-weights-models": {
+  "headline": "Our position on open-weights models",
+  "entity": "Anthropic",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 1,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "I think this may actually be possible: as I wrote in The Adolescence of Technology , limited cooperation around preventing AI biological weapons may be possible because it is in China’s interest too.",
+      "offset": 5635
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 2,
+   "subject_own": 1,
+   "other": 9
+  },
+  "primary_link_examples": [
+   "https://www.justice.gov/opa/pr/three-charged-conspiring-unlawfully-divert-cutting-edge-us-artificial-intelligence",
+   "https://arxiv.org/abs/2001.08361"
+  ],
+  "figures": {
+   "total": 8,
+   "with_named_source": 0
+  },
+  "motive_tier": 5,
+  "tier_basis": "publisher is the subject (Anthropic)",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://www.anthropic.com/news/cognizant-anthropic": {
+  "headline": "Expanding our partnership with Cognizant",
+  "entity": "Anthropic",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 1,
+   "to_others": 1,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "\"Deepening our partnership with Cognizant will help more companies harness AI's growing capability and deploy it in real, practical ways for their businesses,\" said Daniela Amodei, Co-Founder and President of Anthropic.",
+      "offset": 2702
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "\"AI capability is rising faster than enterprises can absorb it, and that gap is the defining problem of this moment,\" said Ravi Kumar S, Chief Executive Officer of Cognizant.",
+      "offset": 2199
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 2
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 1,
+   "with_named_source": 0
+  },
+  "motive_tier": 5,
+  "tier_basis": "publisher is the subject (Anthropic)",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://openai.com/index/gpt-5-6/": {
+  "headline": "GPT-5.6: Frontier intelligence that scales with your ambition",
+  "entity": "OpenAI",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 4,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "4 We estimate latency and API cost by looking at the production behavior of our models, and simulating offline.",
+      "offset": 30517
+     },
+     {
+      "sentence": "These estimates account for tool call details, sampled tokens, and input tokens.",
+      "offset": 30629
+     },
+     {
+      "sentence": "5 Models without reported output tokens, latency or cost are plotted as horizontal dotted lines.",
+      "offset": 30885
+     },
+     {
+      "sentence": "7 We compute scores with the official scoring approach described in the HealthBench Professional paper, which is not comparable to results reported in Anthropic system cards.",
+      "offset": 31128
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 4,
+   "other": 7
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 163,
+   "with_named_source": 3
+  },
+  "motive_tier": 5,
+  "tier_basis": "publisher is the subject (OpenAI)",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://openai.com/index/advancing-content-provenance/": {
+  "headline": "Advancing content provenance for a safer, more transparent AI ecosystem",
+  "entity": "OpenAI",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 3,
+   "other": 2
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 1,
+   "with_named_source": 0
+  },
+  "motive_tier": 5,
+  "tier_basis": "publisher is the subject (OpenAI)",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores/": {
+  "headline": "How enabling two settings tripled our scores on the ARC-AGI-3 benchmark",
+  "entity": "OpenAI",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 2,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "Based on official gameplay logs ⁠ (opens in a new window) , we estimate the average human tester scored 48%.",
+      "offset": 1646
+     },
+     {
+      "sentence": "Models are not told how they will be scored, and cannot see their score throughout — actions only return a text representation of each frame and what level they are on.",
+      "offset": 1755
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 3,
+   "other": 10
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 23,
+   "with_named_source": 1
+  },
+  "motive_tier": 5,
+  "tier_basis": "publisher is the subject (OpenAI)",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
  }
 }

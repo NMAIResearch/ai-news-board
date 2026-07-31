@@ -51,6 +51,41 @@ def find_in(text, reg):
     return hits
 
 
+# Tags that name a section, not a subject. Publisher taxonomies lead with these.
+GENERIC_TAG = re.compile(
+    r"^(ai|a\.i\.|artificial intelligence|tech|technology|news|policy|business|law|"
+    r"books|music|entertainment|exclusive|gadgets|enterprise|security|startups|science|"
+    r"research|analysis|opinion|features|reviews|culture|health|climate|energy|"
+    r"government federal register.*)$", re.I)
+
+
+def mentions_of(text, reg, limit=6, exclude=()):
+    """Registry organisations named anywhere in the article, with counts.
+
+    ⛔ NOT the subject. "Friend re-launches its AI pendant" names only Google, and an
+    exactly-one-org rule over the body would make Google the subject of a story about a
+    startup called Friend. This field exists for search and coverage counts and must never
+    feed the claim-relative tier or a market chip.
+    """
+    out = []
+    for canon, forms in reg.get("orgs", {}).items():
+        if canon in exclude:            # a publisher is not a mention in its own article
+            continue
+        n = sum(len(re.findall(r"\b" + re.escape(f) + r"\b", text, re.I)) for f in forms)
+        if n:
+            out.append({"name": canon, "count": n})
+    return sorted(out, key=lambda m: -m["count"])[:limit]
+
+
+def publisher_topic(tags):
+    """The publisher's own subject tag, section labels and organisation names removed."""
+    for t in tags:
+        t = t.strip()
+        if 2 < len(t) <= 40 and not GENERIC_TAG.match(t):
+            return t
+    return ""
+
+
 def resolve(it, texts, reg):
     head = it.get("headline", "")
     hits = find_in(head, reg)
@@ -94,6 +129,24 @@ def main():
     counts, resolved = {}, []
     for it in data["items"]:
         old = it.get("entity", "")
+        # mentions and publisher_topic are independent of the entity decision, so they are
+        # set for every item including ones whose entity a person has already confirmed.
+        txt = texts.get(url_of(it)) or {}
+        if not a.dry_run:
+            net = re.sub(r"^www\.", "", (url_of(it).split("/")[2:3] or [""])[0]).lower()
+            own = {c for c, forms in reg["orgs"].items()
+                   if any(f.lower().replace(" ", "") in net for f in forms)}
+            it["mentions"] = mentions_of(txt.get("text", "")[:20000], reg, exclude=own)
+            # ⛔ NOT `topic`: that field is the internal DOI-anchor key, and setting it here
+            # would suppress the anchor auto-matcher in build.py.
+            it["publisher_topic"] = publisher_topic(txt.get("publisher_tags", []))
+        # ⛔ Never overwrite an entity a person confirmed against the article text.
+        if it.get("entity_source") == "human":
+            resolved.append(old)
+            counts["confirmed"] = counts.get("confirmed", 0) + 1
+            print(f"   {(old or '(blank)'):22s} {'confirmed':18s} "
+                  f"{'kept':27s} {it.get('headline','')[:44]}")
+            continue
         ent, basis = resolve(it, texts, reg)
         resolved.append(ent)
         counts[basis.split(":")[0]] = counts.get(basis.split(":")[0], 0) + 1

@@ -23,7 +23,11 @@ FIELDS = ("entity", "entity_basis", "entity_source", "claim_type",
           "denominator_stated", "topic", "_note")
 # Machine passes carry their own trail. Kept separate from FIELDS so a machine entry
 # can never be mistaken for a human one on read-back.
-MACHINE_FIELDS = FIELDS + ("auto_labelled", "auto_labelled_by", "crosscheck")
+MACHINE_FIELDS = FIELDS + ("auto_labelled", "auto_labelled_by", "crosscheck",
+                           # Carry the tier and its evidence with the label. Without these a
+                           # carried item shows a denominator while the page reports that
+                           # none was derived, and label_items.py re-runs work already done.
+                           "label_tier", "label_evidence")
 
 
 def url_of(it):

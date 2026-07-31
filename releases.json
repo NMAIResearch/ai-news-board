@@ -1,12 +1,24 @@
 {
- "generated": "2026-07-30 16:26 UTC",
+ "generated": "2026-07-31 13:53 UTC",
  "window_days": 60,
  "counts": {
-  "total": 81,
+  "total": 80,
   "closed": 27,
-  "open_weights": 54
+  "open_weights": 53
  },
  "releases": [
+  {
+   "lab": "DeepSeek",
+   "model": "DeepSeek: DeepSeek V4 Flash 0731",
+   "id": "deepseek/deepseek-v4-flash-0731",
+   "date": "2026-07-31",
+   "url": "https://openrouter.ai/deepseek/deepseek-v4-flash-0731",
+   "context_length": 1048576,
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731; downloadable and hashable",
+   "hf_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
   {
    "lab": "Alibaba (Qwen)",
    "model": "Qwen: Qwen3.7 Flash",
@@ -584,18 +596,6 @@
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
-   "lab": "DeepSeek",
-   "model": "dflash_gemma4_12b_block7",
-   "id": "deepseek-ai/dflash_gemma4_12b_block7",
-   "date": "2026-06-28",
-   "url": "https://huggingface.co/deepseek-ai/dflash_gemma4_12b_block7",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "deepseek-ai/dflash_gemma4_12b_block7",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
    "lab": "Alibaba (Qwen)",
    "model": "Qwen3-ForcedAligner-0.6B-hf",
    "id": "Qwen/Qwen3-ForcedAligner-0.6B-hf",
@@ -965,18 +965,6 @@
    "evidence": "closed",
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Minimax",
-   "model": "MiniMax: MiniMax M3",
-   "id": "minimax/minimax-m3",
-   "date": "2026-05-31",
-   "url": "https://openrouter.ai/minimax/minimax-m3",
-   "context_length": 1048576,
-   "evidence": "open-weights",
-   "evidence_note": "weights published at huggingface.co/MiniMaxAI/Minimax-M3; downloadable and hashable",
-   "hf_id": "MiniMaxAI/Minimax-M3",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   }
  ],

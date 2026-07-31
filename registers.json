@@ -1,7 +1,7 @@
 {
   "title": "AI Watch: resolution calendar",
   "intro": "Dated moments when an open, AI-relevant question resolves, each paired with the specific observable that settles it. These are not predictions. Each row states what to watch and the tell that decides it.",
-  "generated": "2026-07-25",
+  "generated": "2026-07-31",
   "rows": [
     {
       "id": "2026-07-31-is-the-ai-capex-tell-still-accelerating",
@@ -155,6 +155,42 @@
       "corrected": "−20% from its May peak (Silicon Data SDLLMTK, now ~1.62; ~doubled since Dec inception)",
       "error": "direction right (willingness-to-pay per Mtoken falling as users substitute to cheaper models, per Citadel), magnitude ~2.5× overstated. Bankable real signal: Allianz flags a 46% AI investment-vs-sales growth gap vs 32% in the 2001 telecom bubble. Added 2026-07-18 (transcript sweep)",
       "multiple": "~2.5× (overstated)",
+      "tier": 4
+    },
+    {
+      "id": "s-p-top-10-concentration-10-in-2000-vs-40-today",
+      "claim": "S&P top-10 concentration \"~10% in 2000 vs 40% today\"",
+      "source": "YouTube market-valuation video [4]",
+      "corrected": "~23% in 2000 (Visual Capitalist; 20-25% across sources) vs ~36% today, off a ~41% peak in 2025",
+      "error": "Both ends wrong in the direction that inflates the change: the claim implies a 4× rise, the data show 23→36, roughly 1.6×. The honest version of the point survives and is stronger for being smaller. ⭐ The caveat the same video omits, which cuts the other way: in 2000 tech was ~33% of S&P market cap on only ~15% of its earnings; today's top-10 weight sits on real profits, so weight alone is not equivalent excess. Added 2026-07-29 (transcript sweep)",
+      "multiple": "~2.5× (the change, overstated)",
+      "tier": 4
+    },
+    {
+      "id": "margin-debt-record-1-42t-as-evidence-of-a-top",
+      "claim": "Margin debt \"record $1.42T\" as evidence of a top",
+      "source": "YouTube market-valuation video [4], off FINRA [1]",
+      "corrected": "level TRUE ($1.416T, May-2026, +8.5% m/m, +53.7% y/y), the INFERENCE fails on the denominator",
+      "error": "⭐ Same numerator, opposite story depending on the base. Against market cap margin debt is ~2.2%, BELOW the 2000 peak (~2.3%) and well below 2007 (~3.0%). Against GDP (~4%) it IS a record, just past Oct-2021's 3.97%. The video quotes only the nominal record, which is the one base that guarantees a record in any year prices rise. Also stale by two months when quoted. What genuinely survives: leverage grew at ~2× the pace of the S&P over the same May-to-May window, and only 1999-2000, mid-2007 and spring 2021 saw comparable growth RATES. Added 2026-07-29",
+      "multiple": "",
+      "tier": 4
+    },
+    {
+      "id": "banks-tightening-lending-standards-40-in-2023-8-today",
+      "claim": "Banks tightening lending standards \"~40% in 2023 → 8% today\"",
+      "source": "YouTube macro-strategy video [4], which books sales calls at the end",
+      "corrected": "NOT CHECKABLE AS FRAMED, and the latest actual reading points the other way",
+      "error": "The July-2026 SLOOS (Q2) is not published (the Fed releases it in early August), so no \"today\" figure exists. The most recent, April 2026, reports net TIGHTENING on C&I citing a less favourable outlook and reduced risk tolerance, plus tighter standards across all NDFI categories over the year. The video's entire \"no recession, therefore buy the dip\" thesis rests on this single series. ⚠️ SLOOS is reported as a net percentage (tightened minus eased), so a raw \"8% of banks\" reading would be a category error on top. Do not bank the 8%; re-check the series (FRED DRTSCILM) when the July release lands. Added 2026-07-29",
+      "multiple": "",
+      "tier": 4
+    },
+    {
+      "id": "dow-closed-above-50-000-for-the-first-time-ever-on-friday",
+      "claim": "\"Dow closed above 50,000 for the first time ever on Friday\"",
+      "source": "YouTube market-valuation video [4]",
+      "corrected": "first close above 50,000 was Fri 6 Feb 2026 (50,115.67); it first closed above 53,000 on 6 Jul",
+      "error": "⭐ Logged as a VINTAGE catch, not an arithmetic one, because it dates the source. A video presenting a nearly six-month-old milestone as this week's news is either stale or splicing archival clips as current. Its Korea line (\"bounced back above 7,000, Citi calls it a technical correction\") was already dead when checked (6,023.66). ⇒ date-the-data applies to the SOURCE, not only to its figures: the same video's Buffett-indicator and margin-debt numbers checked out, so vintage failure is item-by-item, and each claim needs its own date. Added 2026-07-29",
+      "multiple": "",
       "tier": 4
     }
   ]

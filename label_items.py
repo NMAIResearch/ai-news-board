@@ -139,12 +139,17 @@ def main():
             it["denominator_stated"] = val
             it["label_tier"] = 1
             it["label_evidence"] = why
+            it["label_source"] = "deterministic"
             settled += 1
         else:
             it["_pending"] = why
-        todo.append(it)
+            # ⛔ Only unsettled items reach the model. Sending Tier 1 items too wasted 8 of
+            # 20 calls on 2026-07-31 and stamped auto_labelled_by on 14 regex-derived
+            # labels, so the record named a model the label never used.
+            todo.append(it)
 
-    print(f"TIER 1 settled the denominator on {settled}/{len(todo)} item(s)")
+    print(f"TIER 1 settled the denominator on {settled} item(s); "
+          f"{len(todo)} escalated to {MODEL}")
     if a.tier1_only:
         for it in todo:
             it.pop("_pending", None)
