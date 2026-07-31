@@ -1,10 +1,10 @@
 {
- "generated": "2026-07-31 13:53 UTC",
+ "generated": "2026-07-31 18:13 UTC",
  "window_days": 60,
  "counts": {
-  "total": 80,
-  "closed": 27,
-  "open_weights": 53
+  "total": 79,
+  "closed": 25,
+  "open_weights": 54
  },
  "releases": [
   {
@@ -17,6 +17,18 @@
    "evidence": "open-weights",
    "evidence_note": "weights published at huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731; downloadable and hashable",
    "hf_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Thinking Machines",
+   "model": "Thinking Machines: Inkling Small",
+   "id": "thinkingmachines/inkling-small",
+   "date": "2026-07-30",
+   "url": "https://openrouter.ai/thinkingmachines/inkling-small",
+   "context_length": 524288,
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/thinkingmachines/Inkling-Small; downloadable and hashable",
+   "hf_id": "thinkingmachines/Inkling-Small",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
@@ -385,18 +397,6 @@
    "id": "x-ai/grok-4.5",
    "date": "2026-07-08",
    "url": "https://openrouter.ai/x-ai/grok-4.5",
-   "context_length": 500000,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "~X Ai",
-   "model": "xAI: Grok Latest",
-   "id": "~x-ai/grok-latest",
-   "date": "2026-07-08",
-   "url": "https://openrouter.ai/~x-ai/grok-latest",
    "context_length": 500000,
    "evidence": "closed",
    "evidence_note": "served over an API only; no artefact to inspect",
@@ -836,18 +836,6 @@
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
-   "lab": "~Anthropic",
-   "model": "Anthropic: Claude Fable Latest",
-   "id": "~anthropic/claude-fable-latest",
-   "date": "2026-06-09",
-   "url": "https://openrouter.ai/~anthropic/claude-fable-latest",
-   "context_length": 1000000,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
    "lab": "Anthropic",
    "model": "Anthropic: Claude Fable 5",
    "id": "anthropic/claude-fable-5",
@@ -969,5 +957,5 @@
   }
  ],
  "errors": [],
- "disclosure": "Releases in the window, from OpenRouter (a reseller, tier 4 on this board's scale) and the Hugging Face API. Each row states its evidence class: open weights means the artefact can be downloaded and hashed; closed means the model is served over an API and is known only because the party selling it says it exists. Dates are when the model reached the source, which tracks the vendor release closely but is not the vendor's own date. No benchmark scores, by choice. A model announced but never shipped cannot appear in any release list, including this one."
+ "disclosure": "Models that reached OpenRouter or the Hugging Face API in the window. Each row says whether the weights are published, which is an attribute of the release rather than a grade: an API-only model is shipped and serving traffic, it is simply not downloadable. Dates are when the model reached the source, not the vendor's own announcement date, and the Hugging Face dates are repo creation, which can sit either side of a public release. The two sides are not counted the same way, so the open and API-only totals are not comparable: OpenRouter is taken in full, while Hugging Face is a fixed list of labs capped at five repositories each. No benchmark scores, by choice. A model announced but never shipped cannot appear in any release list, including this one."
 }
