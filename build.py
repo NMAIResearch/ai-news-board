@@ -142,15 +142,19 @@ def topic_of(it, spans):
     Measured 2026-07-31 over 76 items: headline only gave 6 anchored and 53 untagged; adding
     the first 6 spans gives 23 anchored and 29 untagged.
 
-    ⚠️ publisher_tags is the obvious third input and it is EMPTY on all 76 span records, so
-    either the harvest is broken or these publishers serve no JSON-LD keywords. Check before
-    wiring it in; do not assume it works.
+    ⭐ publisher_tags is tried SECOND, ahead of the spans, because it is the publisher's own
+    subject tagging rather than our keyword guess. It was invisible here until 2026-07-31:
+    extract_spans.py harvested it into article_text.json, which is gitignored, and never
+    copied it into the spans file this reads. The harvest was working the whole time.
     """
     t = tag_topic(it.get("headline", ""))
     if t:
         return t, "headline"
     url = (it.get("sources") or [{}])[0].get("url", "")
     rec = spans.get(url) or {}
+    t = tag_topic(" ".join(rec.get("publisher_tags") or []))
+    if t:
+        return t, "publisher's own tags"
     body = " ".join(sp["sentence"] for sp in (rec.get("spans") or [])[:6])
     t = tag_topic(body)
     return (t, "article spans") if t else ("", "")
