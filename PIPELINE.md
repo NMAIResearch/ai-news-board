@@ -60,6 +60,25 @@ pointer to the article, not as copy.
 call, and a model proposing both the error and its correction is the cascade trap: it would
 launder a guess through a format that looks audited.
 
+## The refresh rule: no cell displays under a date it does not have
+
+Four things refresh on different clocks: the market Action twice a weekday, the feed when it
+is run, the registers when they are regenerated, the page when it is built. Anything that
+prints one timestamp over several of them will be wrong.
+
+The rule, applied to the market strip on 2026-07-31 and the pattern for anything similar:
+
+1. The **freshest** value in the payload sets the reference date, not the first one, and not a
+   nominated series.
+2. Every cell carries **its own** date, and a cell behind the reference is marked in visible
+   text, not only in a tooltip.
+3. A percentage states the window it covers. A gap in a source series makes the move longer
+   than a day, and calling it a daily change would be wrong.
+
+⛔ Do not flatten the spread by showing only the oldest date or hiding the stale cells. The
+spread is real and per-source: FRED runs a trading day behind by design, Finnhub is live, and
+a market closed on a day has no later price. Reporting the spread is correct.
+
 ## What must not flow, in either direction
 
 - The interest watchlist. Public intake stays broad, or the board is a personal feed with a

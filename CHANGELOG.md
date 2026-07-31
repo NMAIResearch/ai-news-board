@@ -74,6 +74,17 @@ claims, while the board's thesis is that incentive concentrates at tier 5, the p
 the thing. Resolution calendar 5 rows to 7: the ASML lithography controls expiring 10 November
 and the PJM 2030/31 capacity auction in December.
 
+**The market strip stamped one date over four vintages.** Brent read 27 July, the US indices
+30 July, the Nikkei and 29 of 34 equities 31 July, and the footer said "indices close
+2026-07-30" because it took the S&P's date and applied it to everything. A four-day-old oil
+price was displaying under a date that was not its own, which is the vintage error this board
+flags in other people's work. The label-to-value pairing was never wrong; the date was.
+
+Now the freshest value sets the reference, each cell carries its own date, and a cell behind
+the reference is marked in visible text. Eight cells currently carry one. The footer also says
+what each percentage is measured over, since a gap in a source series makes the window longer
+than a day. Rule written up in PIPELINE.md.
+
 **Hormuz gauge updated, and it now records a call that did not hold.** It read "Brent crossed
 $100 on 23 July, the tell is whether it holds above $100". It did not: $105.32 on 23 July,
 $100.31 on 24 July, $91.82 by 27 July, from a low of $68.53 on 2 July. Roughly $37 up and $13
