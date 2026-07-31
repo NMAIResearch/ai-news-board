@@ -50,12 +50,6 @@
    "url": "https://doi.org/10.5281/zenodo.21543579",
    "source": "The Model Is a Dependency"
   },
-  "agents": {
-   "label": "An agent acting for a user is arranged by whoever ships it. The arrangements are what decide whose interest it serves, and they are what can be audited.",
-   "doi": "10.5281/zenodo.20790896",
-   "url": "https://doi.org/10.5281/zenodo.20790896",
-   "source": "Who Does Your Shopping Agent Work For?"
-  },
   "chips": {
    "label": "Supply-side chokepoints graded by likelihood and severity. A named bottleneck is not the same as a binding one, and most named ones are not binding.",
    "doi": "10.5281/zenodo.20586863",
@@ -259,5 +253,8 @@
     }
    ]
   }
- ]
+ ],
+ "_anchor_notes": {
+  "agents": "DELIBERATELY NOT ANCHORED. The shopping-agent paper is a base rate for who a COMMERCIAL agent works for, and the `agents` topic keywords (agent, agentic, autonomous, assistant) also catch robotics and embodied AI. Anchoring it mapped an MIT robotics award to a retail-commerce finding. Narrow the topic before anchoring it, not the other way round."
+ }
 }
