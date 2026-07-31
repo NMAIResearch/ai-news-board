@@ -19,6 +19,8 @@
 #   fetch_scholar     broad arXiv + HF pull for the scholarship panel
 #   fetch_releases    models that reached OpenRouter or Hugging Face in the window
 #   archive           permanent record + revisit queue; run before the build
+#   suggest_register_rows  nominates candidate tracker rows into a dated, gitignored file.
+#                     Writes nothing anyone publishes from, so it is safe to run every time.
 #   fetch_market      quotes; needs keys, skipped if absent
 #   build             renders index.html
 #
@@ -56,6 +58,8 @@ step "8/12 article evidence"; python3 article_evidence.py  || echo "  ! article 
 step "9/12 fetch scholar";    python3 fetch_scholar.py     || echo "  ! scholar fetch failed"
 step "10/12 fetch releases";  python3 fetch_releases.py    || echo "  ! release fetch failed"
 step "11/12 archive";         python3 archive.py           || echo "  ! archive failed"
+step "  + candidates";        python3 suggest_register_rows.py --write >/dev/null \
+                              || echo "  ! candidate scan failed"
 
 step "12/12 fetch market"
 if [ -f ~/.config/nmai/keys.env ]; then python3 fetch_market.py || echo "  ! market fetch failed"
