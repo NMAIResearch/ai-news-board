@@ -4,3 +4,15 @@ __pycache__/
 feed_items_prerefresh_backup.json
 gov_equity_sweep_2026-07.md
 refresh_*.log
+
+# Local fetch cache: full article bodies from third-party publishers. Regenerable with
+# `python3 extract_spans.py`. ⛔ Never commit: republishing whole articles is not quotation.
+# article_spans.json IS committed: single sentences with offsets, which is the evidence
+# every denominator label rests on.
+article_text.json
+
+# Run logs
+allreaders_*.log
+crosscheck_*.log
+article_crosscheck_*.log
+slow_*.log

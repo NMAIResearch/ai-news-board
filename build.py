@@ -286,11 +286,27 @@ def item_card(it, anchors, plain=False, mk=None, tmap=None):
                          f'style="color:{NAVY};text-decoration:none">{esc(it["headline"])}</a>')
     d = it["denominator_stated"].strip().lower()
     dcol, dlabel = DENOM.get(d, DENOM["n"])
-    ct = it["claim_type"].strip().lower()
-    ccol = CLAIM.get(ct, SLATE)
+    # ⛔ claim_type RETIRED 2026-07-31, his call. Not rendered. Measured on 38 items with two
+    # readers at full coverage: kappa 0.52 on headlines, 0.56 given the article opening plus
+    # figure spans. Article context did not fix it, and there is no ground truth to score
+    # against, so the board cannot publish it as a label. The stored values and the
+    # crosscheck fields are kept as the record of why.
     unreviewed = it.get("reviewed", True) is False
-    flag = (f'<span style="display:inline-block;padding:2px 8px;margin-left:6px;'
-            f'border-radius:4px;font-size:11px;color:{SLATE};background:#edf2f7;'
+    # Hover carries the provenance: which model set this label, and on how much text. Named
+    # from the item's own auto_labelled_by so it cannot drift from what actually ran.
+    by = it.get("auto_labelled_by")
+    tier, why = it.get("label_tier"), it.get("label_evidence", "")
+    if tier == 1:
+        ftip = (f'Denominator derived from the article itself, no model involved: {why}. '
+                f'Every figure sentence behind this is stored verbatim with its position in '
+                f'the article and can be checked against the source.')
+    elif tier == 3:
+        ftip = (f'Denominator set by {by or "a local model"} reading the figure sentences '
+                f'quoted from the article ({why}). Not a human check.')
+    else:
+        ftip = 'no denominator has been derived for this item'
+    flag = (f'<span title="{esc(ftip)}" style="display:inline-block;padding:2px 8px;'
+            f'margin-left:6px;border-radius:4px;font-size:11px;color:{SLATE};background:#edf2f7;'
             f'border:1px dashed {SLATE}">auto-tagged, unreviewed</span>' if unreviewed else "")
     # reliability mark (second axis, from sources.md via apply_ratings.py)
     rating = it.get("rating", "")
@@ -369,8 +385,6 @@ def item_card(it, anchors, plain=False, mk=None, tmap=None):
       {'' if plain else f'<div class="motivebar" style="margin:10px 0 6px">{bar(tiers)}</div>'}
       <div style="margin:10px 0 6px">{''.join(chips)}</div>
       <div style="font-size:12px">
-        <span style="display:inline-block;padding:2px 8px;margin-right:6px;border-radius:4px;
-              color:#fff;background:{ccol}">{esc(it["claim_type"])}</span>
         <span style="display:inline-block;padding:2px 8px;border-radius:4px;
               color:#fff;background:{dcol}">{esc(dlabel)}</span>{rmark}{flag}{xchip}{mchip}
       </div>
@@ -838,34 +852,14 @@ def main():
     # freshest news leads; curated anchored examples (seed, some pre-2026) sit below.
     feed_block = ""
     if incoming:
-        # Who labelled what, stated ON THE PAGE rather than in a title= tooltip. The model
-        # names were previously only visible on hover, which is no disclosure at all on a
-        # touch screen. Read from the data so it cannot drift from what actually ran.
-        labellers = sorted({it.get("auto_labelled_by") for it in incoming
-                            if it.get("auto_labelled_by")})
-        n_auto = sum(1 for it in incoming if it.get("auto_labelled"))
-        n_human = sum(1 for it in incoming if it.get("reviewed"))
-        n_none = len(incoming) - n_auto - n_human
-        who = (f'<strong>{n_auto} of {len(incoming)}</strong> labelled by '
-               f'<strong>{", ".join(esc(m) for m in labellers)}</strong> running locally'
-               if labellers else "none machine-labelled yet")
-        machine_note = (
-            f'<div style="color:{SLATE};font-size:13px;margin:0 0 12px;padding:8px 12px;'
-            f'background:{ALT};border-left:3px solid {SLATE};border-radius:4px">'
-            f'<strong>How these labels were made.</strong> Source type and motive tier come '
-            f'from the domain. Claim type and denominator are set by an open-weight model: '
-            f'{who}, {n_human} checked by a human, {n_none} not labelled at all. '
-            f'A machine label never counts as reviewed, which is why items stay marked '
-            f'&ldquo;auto-tagged, unreviewed&rdquo;. '
-            f'<strong>⚠️ The model sees the headline only</strong>, not the article, so '
-            f'&ldquo;no denominator&rdquo; means the headline does not state one. The article '
-            f'may. Treat the flag as a prompt to check, not as a finding about the claim.'
-            f'</div>')
         feed_block = (
             f'<h2 style="color:{NAVY};font-size:18px;margin:0 0 4px">Latest</h2>'
-            f'<div style="color:{SLATE};font-size:13px;margin-bottom:8px">'
-            f'Live pull, newest first.</div>'
-            + machine_note
+            f'<div style="color:{SLATE};font-size:13px;margin-bottom:12px">'
+            f'Live pull, newest first. Auto-tagged: source type and motive tier are set from the '
+            f'domain. The denominator flag is derived from figure sentences quoted verbatim '
+            f'from the article. Claim type was retired on 31 Jul 2026: four local readers '
+            f'agreed on it barely above chance, so the board no longer asserts it. '
+            f'</div>'
             + group_by_day(incoming, anchors, plain, mk, tmap))
     # Collapsed: reference material sitting in a news position. It is nine static cards
     # under a live feed, so it opens on demand rather than lengthening every scroll.
@@ -1150,9 +1144,12 @@ def main():
 <div class="wrap">
   <h1 style="color:{NAVY};margin:0 0 4px;font-size:26px">AI News Board</h1>
   <div style="color:{SLATE};font-size:14px;margin-bottom:20px;max-width:760px">
-    AI news with two things marked on every item: who is making the claim, and what they gain
-    if you believe it. Where an item quotes a figure, the board says whether the figure states
-    what it is out of. Where the subject has a published base rate, there is a link to it.
+    A live board that applies a consistent method to AI news coverage. For each item it
+    records the publisher's incentive in the claim being true, whether a quoted figure states
+    the base it is measured against, and a link to a published base rate where one exists.
+    Figures are quoted verbatim from the article text with their position recorded, and every
+    label carries the method that produced it, so a reader can check any of it against the
+    source.
   </div>
   {freshness(built, fetched, mk, _reg if os.path.isfile(reg_path) else {})}
   {market_strip(mk)}

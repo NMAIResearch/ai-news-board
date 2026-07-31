@@ -2,12 +2,12 @@
  "fetched": "2026-07-30 16:38 UTC",
  "items": [
   {
-   "entity": "",
+   "entity": "Okta",
    "headline": "Okta buys AI security startup Permiso; source says for about $200M",
    "date": "Thu, 30 Jul 2026",
    "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
+   "claim_type": "announced",
+   "denominator_stated": "Y",
    "reviewed": false,
    "sources": [
     {
@@ -16,15 +16,78 @@
      "source_type": "trade-press",
      "motive_tier": 3
     }
-   ]
+   ],
+   "crosscheck": {
+    "verdict": "split",
+    "readers": [
+     {
+      "model": "autolabel",
+      "claim_type": "unclassified",
+      "denominator": "?"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "partial"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 2,
+    "families": [
+     "gemma",
+     "mistral-small"
+    ],
+    "readers_of_unrecorded_provenance": 1
+   },
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_tier": 3,
+   "label_evidence": "model read 5 figure-sentence(s), no base cue matched",
+   "label_source": "machine",
+   "crosscheck_article": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "announced",
+      "denominator": "Y"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "partial"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "headline"
   },
   {
    "entity": "Meta",
    "headline": "Meta says AI is making it easier to build new apps — and more are coming",
    "date": "Thu, 30 Jul 2026",
    "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
+   "claim_type": "assertion",
+   "denominator_stated": "n/a",
    "reviewed": false,
    "sources": [
     {
@@ -33,15 +96,78 @@
      "source_type": "trade-press",
      "motive_tier": 3
     }
-   ]
+   ],
+   "crosscheck": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "autolabel",
+      "claim_type": "unclassified",
+      "denominator": "?"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 2,
+    "families": [
+     "gemma",
+     "mistral-small"
+    ],
+    "readers_of_unrecorded_provenance": 1
+   },
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_tier": 3,
+   "label_evidence": "model read 2 figure-sentence(s), no base cue matched",
+   "label_source": "machine",
+   "crosscheck_article": {
+    "verdict": "split",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "assertion",
+      "denominator": "n/a"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "measurement",
+      "denominator": "Y"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "assertion",
+      "denominator": "Y"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "headline"
   },
   {
-   "entity": "",
+   "entity": "Nscale",
    "headline": "Nscale buys Anyscale as it seeks to own more of the AI compute stack",
    "date": "Thu, 30 Jul 2026",
    "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
+   "claim_type": "announced",
+   "denominator_stated": "partial",
    "reviewed": false,
    "sources": [
     {
@@ -50,15 +176,78 @@
      "source_type": "trade-press",
      "motive_tier": 3
     }
-   ]
+   ],
+   "crosscheck": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "autolabel",
+      "claim_type": "unclassified",
+      "denominator": "?"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 2,
+    "families": [
+     "gemma",
+     "mistral-small"
+    ],
+    "readers_of_unrecorded_provenance": 1
+   },
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_tier": 1,
+   "label_evidence": "1 of 5 figure-sentence(s) state a base",
+   "label_source": "machine",
+   "crosscheck_article": {
+    "verdict": "tied",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "announced",
+      "denominator": "partial"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "partial"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "headline"
   },
   {
    "entity": "",
    "headline": "Forward-deployed engineers are the AI industry’s latest talent obsession",
    "date": "Thu, 30 Jul 2026",
    "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
+   "claim_type": "target",
+   "denominator_stated": "partial",
    "reviewed": false,
    "sources": [
     {
@@ -67,15 +256,78 @@
      "source_type": "trade-press",
      "motive_tier": 3
     }
-   ]
+   ],
+   "crosscheck": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "autolabel",
+      "claim_type": "unclassified",
+      "denominator": "?"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 2,
+    "families": [
+     "gemma",
+     "mistral-small"
+    ],
+    "readers_of_unrecorded_provenance": 1
+   },
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_tier": 1,
+   "label_evidence": "2 of 11 figure-sentence(s) state a base",
+   "label_source": "machine",
+   "crosscheck_article": {
+    "verdict": "split",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "target",
+      "denominator": "partial"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "assertion",
+      "denominator": "partial"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "measurement",
+      "denominator": "partial"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "unresolved"
   },
   {
    "entity": "OpenAI",
    "headline": "In the Hugging Face breach, OpenAI’s hacker was noisy and fast — but not unstoppable",
    "date": "Thu, 30 Jul 2026",
    "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
+   "claim_type": "assertion",
+   "denominator_stated": "Y",
    "reviewed": false,
    "sources": [
     {
@@ -84,10 +336,74 @@
      "source_type": "trade-press",
      "motive_tier": 3
     }
-   ]
+   ],
+   "crosscheck": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "autolabel",
+      "claim_type": "unclassified",
+      "denominator": "?"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "measurement",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "measurement",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 2,
+    "families": [
+     "gemma",
+     "mistral-small"
+    ],
+    "readers_of_unrecorded_provenance": 1
+   },
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_tier": 3,
+   "label_evidence": "model read 4 figure-sentence(s), no base cue matched",
+   "label_source": "machine",
+   "crosscheck_article": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "assertion",
+      "denominator": "Y"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "measurement",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "measurement",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "measurement",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "article: OpenAI's agent is the actor in the breach",
+   "entity_source": "human"
   },
   {
-   "entity": "Amazon",
+   "entity": "TechCrunch",
    "headline": "TechCrunch Disrupt 2026’s biggest stage features leaders from Amazon, Replit, Tether, with much more to come",
    "date": "Thu, 30 Jul 2026",
    "topic": "",
@@ -103,8 +419,69 @@
     }
    ],
    "auto_labelled": true,
-   "auto_labelled_by": "qwen3.6:27b",
-   "label_source": "machine"
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "crosscheck": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen3.6:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "target",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "target",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "label_tier": 3,
+   "label_evidence": "model read 3 figure-sentence(s), no base cue matched",
+   "crosscheck_article": {
+    "verdict": "tied",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "target",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "target",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "article: TechCrunch promoting its own Disrupt event",
+   "entity_source": "human"
   },
   {
    "entity": "Microsoft",
@@ -112,7 +489,7 @@
    "date": "2026-07-29T18:25",
    "topic": "",
    "claim_type": "target",
-   "denominator_stated": "N",
+   "denominator_stated": "Y",
    "reviewed": false,
    "sources": [
     {
@@ -123,8 +500,73 @@
     }
    ],
    "auto_labelled": true,
-   "auto_labelled_by": "qwen3.6:27b",
-   "label_source": "machine"
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "crosscheck": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen3.6:27b",
+      "claim_type": "target",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "target",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "target",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "label_tier": 3,
+   "label_evidence": "model read 3 figure-sentence(s), no base cue matched",
+   "crosscheck_article": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "target",
+      "denominator": "Y"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "target",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "target",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "headline"
   },
   {
    "entity": "Meta",
@@ -143,15 +585,80 @@
     }
    ],
    "auto_labelled": true,
-   "auto_labelled_by": "qwen3.6:27b",
-   "label_source": "machine"
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "crosscheck": {
+    "verdict": "unanimous",
+    "readers": [
+     {
+      "model": "qwen3.6:27b",
+      "claim_type": "target",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "target",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "target",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "target",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "label_tier": 3,
+   "label_evidence": "model read 7 figure-sentence(s), no base cue matched",
+   "crosscheck_article": {
+    "verdict": "unanimous",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "target",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "target",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "target",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "target",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "headline"
   },
   {
    "entity": "xAI",
    "headline": "xAI’s last-minute scramble to stop Minnesota’s anti-nudification app law",
    "date": "2026-07-29T17:24",
    "topic": "",
-   "claim_type": "announced",
+   "claim_type": "assertion",
    "denominator_stated": "N",
    "reviewed": false,
    "sources": [
@@ -163,16 +670,81 @@
     }
    ],
    "auto_labelled": true,
-   "auto_labelled_by": "qwen3.6:27b",
-   "label_source": "machine"
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "crosscheck": {
+    "verdict": "tied",
+    "readers": [
+     {
+      "model": "qwen3.6:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "label_tier": 3,
+   "label_evidence": "model read 10 figure-sentence(s), no base cue matched",
+   "crosscheck_article": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "headline"
   },
   {
    "entity": "OpenAI",
    "headline": "OpenAI president says it&#8217;s &#8216;building a family of devices&#8217; for its AI chatbots",
    "date": "2026-07-29T14:19",
    "topic": "",
-   "claim_type": "target",
-   "denominator_stated": "N",
+   "claim_type": "announced",
+   "denominator_stated": "Y",
    "reviewed": false,
    "sources": [
     {
@@ -183,15 +755,80 @@
     }
    ],
    "auto_labelled": true,
-   "auto_labelled_by": "qwen3.6:27b",
-   "label_source": "machine"
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "crosscheck": {
+    "verdict": "tied",
+    "readers": [
+     {
+      "model": "qwen3.6:27b",
+      "claim_type": "target",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "target",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "label_tier": 3,
+   "label_evidence": "model read 2 figure-sentence(s), no base cue matched",
+   "crosscheck_article": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "announced",
+      "denominator": "Y"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "target",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "target",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "headline"
   },
   {
    "entity": "",
    "headline": "Artists are lawyering up against AI slop, and some are even winning",
    "date": "2026-07-28T16:19",
    "topic": "",
-   "claim_type": "assertion",
+   "claim_type": "target",
    "denominator_stated": "N",
    "reviewed": false,
    "sources": [
@@ -203,15 +840,80 @@
     }
    ],
    "auto_labelled": true,
-   "auto_labelled_by": "qwen3.6:27b",
-   "label_source": "machine"
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "crosscheck": {
+    "verdict": "tied",
+    "readers": [
+     {
+      "model": "qwen3.6:27b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "measurement",
+      "denominator": "partial"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "measurement",
+      "denominator": "partial"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "label_tier": 3,
+   "label_evidence": "model read 4 figure-sentence(s), no base cue matched",
+   "crosscheck_article": {
+    "verdict": "split",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "target",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "measurement",
+      "denominator": "partial"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "assertion",
+      "denominator": "Y"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "tags-name-3-orgs"
   },
   {
    "entity": "OpenAI",
    "headline": "OpenAI’s rogue AI agent didn’t stop at hacking Hugging Face",
    "date": "2026-07-29T07:54",
    "topic": "",
-   "claim_type": "announced",
+   "claim_type": "assertion",
    "denominator_stated": "N",
    "reviewed": false,
    "sources": [
@@ -223,16 +925,81 @@
     }
    ],
    "auto_labelled": true,
-   "auto_labelled_by": "qwen3.6:27b",
-   "label_source": "machine"
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "crosscheck": {
+    "verdict": "tied",
+    "readers": [
+     {
+      "model": "qwen3.6:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "label_tier": 3,
+   "label_evidence": "model read 2 figure-sentence(s), no base cue matched",
+   "crosscheck_article": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "measurement",
+      "denominator": "partial"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "headline"
   },
   {
    "entity": "",
    "headline": "New MCP specification addresses the main barrier to enterprise adoption",
    "date": "Thu, 30 Jul 2026",
    "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
+   "claim_type": "assertion",
+   "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
@@ -241,15 +1008,84 @@
      "source_type": "trade-press",
      "motive_tier": 3
     }
-   ]
+   ],
+   "crosscheck": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "autolabel",
+      "claim_type": "unclassified",
+      "denominator": "?"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ],
+    "readers_of_unrecorded_provenance": 1
+   },
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_tier": 3,
+   "label_evidence": "model read 2 figure-sentence(s), no base cue matched",
+   "label_source": "machine",
+   "crosscheck_article": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "unresolved"
   },
   {
-   "entity": "",
+   "entity": "Anthropic",
    "headline": "Mythos attack on 3rd-round PQC algorithm candidate puts it out of commission",
    "date": "Wed, 29 Jul 2026",
    "topic": "",
-   "claim_type": "measurement",
-   "denominator_stated": "N",
+   "claim_type": "assertion",
+   "denominator_stated": "Y",
    "reviewed": false,
    "sources": [
     {
@@ -260,15 +1096,81 @@
     }
    ],
    "auto_labelled": true,
-   "auto_labelled_by": "qwen3.6:27b",
-   "label_source": "machine"
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "crosscheck": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen3.6:27b",
+      "claim_type": "measurement",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "measurement",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "measurement",
+      "denominator": "Y"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "label_tier": 3,
+   "label_evidence": "model read 4 figure-sentence(s), no base cue matched",
+   "crosscheck_article": {
+    "verdict": "split",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "assertion",
+      "denominator": "Y"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "measurement",
+      "denominator": "partial"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "measurement",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "assertion",
+      "denominator": "partial"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "article: 'an Anthropic security model helped find a flaw'",
+   "entity_source": "human"
   },
   {
-   "entity": "",
+   "entity": "FCC",
    "headline": "Who wins and who loses after US bans foreign robots?",
    "date": "Wed, 29 Jul 2026",
    "topic": "",
-   "claim_type": "prediction",
+   "claim_type": "assertion",
    "denominator_stated": "N",
    "reviewed": false,
    "sources": [
@@ -280,16 +1182,82 @@
     }
    ],
    "auto_labelled": true,
-   "auto_labelled_by": "qwen3.6:27b",
-   "label_source": "machine"
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "crosscheck": {
+    "verdict": "tied",
+    "readers": [
+     {
+      "model": "qwen3.6:27b",
+      "claim_type": "prediction",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "prediction",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "label_tier": 3,
+   "label_evidence": "model read 2 figure-sentence(s), no base cue matched",
+   "crosscheck_article": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "target",
+      "denominator": "Y"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "article: 'a new ban imposed by the US Federal Communications Commission'",
+   "entity_source": "human"
   },
   {
    "entity": "xAI",
    "headline": "Elon Musk’s xAI is trying to sue its way out of a Grok reckoning",
    "date": "Wed, 29 Jul 2026",
    "topic": "",
-   "claim_type": "assertion",
-   "denominator_stated": "N",
+   "claim_type": "target",
+   "denominator_stated": "partial",
    "reviewed": false,
    "sources": [
     {
@@ -300,8 +1268,73 @@
     }
    ],
    "auto_labelled": true,
-   "auto_labelled_by": "qwen3.6:27b",
-   "label_source": "machine"
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "crosscheck": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen3.6:27b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "target",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "label_tier": 1,
+   "label_evidence": "1 of 7 figure-sentence(s) state a base",
+   "crosscheck_article": {
+    "verdict": "split",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "target",
+      "denominator": "partial"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "prediction",
+      "denominator": "partial"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "prediction",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "headline"
   },
   {
    "entity": "Anthropic",
@@ -320,16 +1353,81 @@
     }
    ],
    "auto_labelled": true,
-   "auto_labelled_by": "qwen3.6:27b",
-   "label_source": "machine"
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "crosscheck": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen3.6:27b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "measurement",
+      "denominator": "partial"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "prediction",
+      "denominator": "partial"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "label_tier": 3,
+   "label_evidence": "model read 6 figure-sentence(s), no base cue matched",
+   "crosscheck_article": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "measurement",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "measurement",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "measurement",
+      "denominator": "partial"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "headline"
   },
   {
    "entity": "",
    "headline": "What happens when you put AI to work deciphering lost languages?",
    "date": "Wed, 29 Jul 2026",
    "topic": "",
-   "claim_type": "prediction",
-   "denominator_stated": "N",
+   "claim_type": "target",
+   "denominator_stated": "Y",
    "reviewed": false,
    "sources": [
     {
@@ -340,16 +1438,81 @@
     }
    ],
    "auto_labelled": true,
-   "auto_labelled_by": "qwen3.6:27b",
-   "label_source": "machine"
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "crosscheck": {
+    "verdict": "tied",
+    "readers": [
+     {
+      "model": "qwen3.6:27b",
+      "claim_type": "prediction",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "prediction",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "label_tier": 3,
+   "label_evidence": "model read 2 figure-sentence(s), no base cue matched",
+   "crosscheck_article": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "target",
+      "denominator": "Y"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "measurement",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "unresolved"
   },
   {
-   "entity": "",
+   "entity": "Google DeepMind",
    "headline": "Gemini Robotics ER 2: powering robotics with video understanding, task orchestration, and multi-robot collaboration",
    "date": "Thu, 30 Jul 2026",
    "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
+   "claim_type": "announced",
+   "denominator_stated": "Y",
    "reviewed": false,
    "sources": [
     {
@@ -358,10 +1521,85 @@
      "source_type": "vendor-own",
      "motive_tier": 5
     }
-   ]
+   ],
+   "crosscheck": {
+    "verdict": "tied",
+    "readers": [
+     {
+      "model": "autolabel",
+      "claim_type": "unclassified",
+      "denominator": "?"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "glm-4.7-flash:q4_K_M",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 4,
+    "families": [
+     "gemma",
+     "glm-4.7-flash",
+     "mistral-small",
+     "qwen"
+    ],
+    "readers_of_unrecorded_provenance": 1
+   },
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_tier": 3,
+   "label_evidence": "model read 6 figure-sentence(s), no base cue matched",
+   "label_source": "machine",
+   "crosscheck_article": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "announced",
+      "denominator": "Y"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "measurement",
+      "denominator": "Y"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "Y"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "product:Gemini Robotics"
   },
   {
-   "entity": "Google",
+   "entity": "Google DeepMind",
    "headline": "We’re launching Lyria 3.5 in Google Flow Music, with advances across musicality, lyrics, vocals, and creative control",
    "date": "Wed, 29 Jul 2026",
    "topic": "",
@@ -377,16 +1615,88 @@
     }
    ],
    "auto_labelled": true,
-   "auto_labelled_by": "qwen3.6:27b",
-   "label_source": "machine"
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "crosscheck": {
+    "verdict": "unanimous",
+    "readers": [
+     {
+      "model": "qwen3.6:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "glm-4.7-flash:q4_K_M",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 4,
+    "families": [
+     "gemma",
+     "glm-4.7-flash",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "label_tier": 3,
+   "label_evidence": "model read 2 figure-sentence(s), no base cue matched",
+   "crosscheck_article": {
+    "verdict": "unanimous",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "DeepMind blog post; 'Google' matched only via 'Google Flow Music'",
+   "entity_source": "human"
   },
   {
-   "entity": "",
+   "entity": "Google DeepMind",
    "headline": "Gemini Robotics 2 brings whole body intelligence to robots",
    "date": "Tue, 28 Jul 2026",
    "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
+   "claim_type": "announced",
+   "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
@@ -395,7 +1705,82 @@
      "source_type": "vendor-own",
      "motive_tier": 5
     }
-   ]
+   ],
+   "crosscheck": {
+    "verdict": "tied",
+    "readers": [
+     {
+      "model": "autolabel",
+      "claim_type": "unclassified",
+      "denominator": "?"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "glm-4.7-flash:q4_K_M",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 4,
+    "families": [
+     "gemma",
+     "glm-4.7-flash",
+     "mistral-small",
+     "qwen"
+    ],
+    "readers_of_unrecorded_provenance": 1
+   },
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_tier": 3,
+   "label_evidence": "model read 4 figure-sentence(s), no base cue matched",
+   "label_source": "machine",
+   "crosscheck_article": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "product:Gemini Robotics"
   },
   {
    "entity": "Google",
@@ -403,7 +1788,7 @@
    "date": "Wed, 22 Jul 2026",
    "topic": "",
    "claim_type": "announced",
-   "denominator_stated": "partial",
+   "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
@@ -414,16 +1799,87 @@
     }
    ],
    "auto_labelled": true,
-   "auto_labelled_by": "qwen3.6:27b",
-   "label_source": "machine"
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "crosscheck": {
+    "verdict": "tied",
+    "readers": [
+     {
+      "model": "qwen3.6:27b",
+      "claim_type": "announced",
+      "denominator": "partial"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "partial"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "measurement",
+      "denominator": "Y"
+     },
+     {
+      "model": "glm-4.7-flash:q4_K_M",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 4,
+    "families": [
+     "gemma",
+     "glm-4.7-flash",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "label_tier": 3,
+   "label_evidence": "model read 5 figure-sentence(s), no base cue matched",
+   "crosscheck_article": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "measurement",
+      "denominator": "partial"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "headline"
   },
   {
-   "entity": "",
+   "entity": "Google DeepMind",
    "headline": "Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber",
    "date": "Tue, 21 Jul 2026",
    "topic": "",
    "claim_type": "announced",
-   "denominator_stated": "N",
+   "denominator_stated": "partial",
    "reviewed": false,
    "sources": [
     {
@@ -434,16 +1890,87 @@
     }
    ],
    "auto_labelled": true,
-   "auto_labelled_by": "qwen3.6:27b",
-   "label_source": "machine"
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "crosscheck": {
+    "verdict": "unanimous",
+    "readers": [
+     {
+      "model": "qwen3.6:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "glm-4.7-flash:q4_K_M",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 4,
+    "families": [
+     "gemma",
+     "glm-4.7-flash",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "label_tier": 1,
+   "label_evidence": "9 of 46 figure-sentence(s) state a base",
+   "crosscheck_article": {
+    "verdict": "split",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "announced",
+      "denominator": "partial"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "measurement",
+      "denominator": "Y"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "Y"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "product:Gemini"
   },
   {
-   "entity": "",
+   "entity": "Google DeepMind",
    "headline": "Introducing Gemini 3.5 Flash Cyber",
    "date": "Fri, 17 Jul 2026",
    "topic": "",
    "claim_type": "announced",
-   "denominator_stated": "N",
+   "denominator_stated": "partial",
    "reviewed": false,
    "sources": [
     {
@@ -454,16 +1981,87 @@
     }
    ],
    "auto_labelled": true,
-   "auto_labelled_by": "qwen3.6:27b",
-   "label_source": "machine"
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "crosscheck": {
+    "verdict": "unanimous",
+    "readers": [
+     {
+      "model": "qwen3.6:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "glm-4.7-flash:q4_K_M",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 4,
+    "families": [
+     "gemma",
+     "glm-4.7-flash",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "label_tier": 1,
+   "label_evidence": "6 of 28 figure-sentence(s) state a base",
+   "crosscheck_article": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "announced",
+      "denominator": "partial"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "product:Gemini"
   },
   {
-   "entity": "",
+   "entity": "OpenJDK",
    "headline": "OpenJDK Interim Policy on Generative AI",
    "date": "Thu, 30 Jul 2026",
    "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
+   "claim_type": "assertion",
+   "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
@@ -472,15 +2070,84 @@
      "source_type": "other",
      "motive_tier": 3
     }
-   ]
+   ],
+   "crosscheck": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "autolabel",
+      "claim_type": "unclassified",
+      "denominator": "?"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ],
+    "readers_of_unrecorded_provenance": 1
+   },
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_tier": 3,
+   "label_evidence": "model read 2 figure-sentence(s), no base cue matched",
+   "label_source": "machine",
+   "crosscheck_article": {
+    "verdict": "tied",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "headline"
   },
   {
-   "entity": "",
+   "entity": "GCC",
    "headline": "GCC steering committee announces AI policy",
    "date": "Thu, 30 Jul 2026",
    "topic": "",
    "claim_type": "announced",
-   "denominator_stated": "N",
+   "denominator_stated": "Y",
    "reviewed": false,
    "sources": [
     {
@@ -491,8 +2158,73 @@
     }
    ],
    "auto_labelled": true,
-   "auto_labelled_by": "qwen3.6:27b",
-   "label_source": "machine"
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "crosscheck": {
+    "verdict": "unanimous",
+    "readers": [
+     {
+      "model": "qwen3.6:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "label_tier": 3,
+   "label_evidence": "model read 84 figure-sentence(s), no base cue matched",
+   "crosscheck_article": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "announced",
+      "denominator": "Y"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "partial"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "partial"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "headline"
   },
   {
    "entity": "",
@@ -500,7 +2232,7 @@
    "date": "Wed, 29 Jul 2026",
    "topic": "",
    "claim_type": "assertion",
-   "denominator_stated": "N",
+   "denominator_stated": "n/a",
    "reviewed": false,
    "sources": [
     {
@@ -511,16 +2243,81 @@
     }
    ],
    "auto_labelled": true,
-   "auto_labelled_by": "qwen3.6:27b",
-   "label_source": "machine"
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "crosscheck": {
+    "verdict": "unanimous",
+    "readers": [
+     {
+      "model": "qwen3.6:27b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "label_tier": 3,
+   "label_evidence": "model read 11 figure-sentence(s), no base cue matched",
+   "crosscheck_article": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "assertion",
+      "denominator": "n/a"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
    "headline": "AI's top startups are barely publishing their research",
    "date": "Wed, 29 Jul 2026",
    "topic": "",
-   "claim_type": "assertion",
-   "denominator_stated": "N",
+   "claim_type": "measurement",
+   "denominator_stated": "partial",
    "reviewed": false,
    "sources": [
     {
@@ -531,8 +2328,73 @@
     }
    ],
    "auto_labelled": true,
-   "auto_labelled_by": "qwen3.6:27b",
-   "label_source": "machine"
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "crosscheck": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen3.6:27b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "measurement",
+      "denominator": "partial"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "label_tier": 1,
+   "label_evidence": "2 of 10 figure-sentence(s) state a base",
+   "crosscheck_article": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "measurement",
+      "denominator": "partial"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "measurement",
+      "denominator": "Y"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "measurement",
+      "denominator": "Y"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "measurement",
+      "denominator": "Y"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "no-article (fetch failed)"
   },
   {
    "entity": "",
@@ -551,8 +2413,73 @@
     }
    ],
    "auto_labelled": true,
-   "auto_labelled_by": "qwen3.6:27b",
-   "label_source": "machine"
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "crosscheck": {
+    "verdict": "unanimous",
+    "readers": [
+     {
+      "model": "qwen3.6:27b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "label_tier": 3,
+   "label_evidence": "model read 28 figure-sentence(s), no base cue matched",
+   "crosscheck_article": {
+    "verdict": "unanimous",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "unresolved"
   },
   {
    "entity": "Anthropic",
@@ -560,7 +2487,7 @@
    "date": "Wed, 29 Jul 2026",
    "topic": "",
    "claim_type": "measurement",
-   "denominator_stated": "N",
+   "denominator_stated": "partial",
    "reviewed": false,
    "sources": [
     {
@@ -571,16 +2498,81 @@
     }
    ],
    "auto_labelled": true,
-   "auto_labelled_by": "qwen3.6:27b",
-   "label_source": "machine"
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "crosscheck": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen3.6:27b",
+      "claim_type": "measurement",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "measurement",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "label_tier": 1,
+   "label_evidence": "1 of 5 figure-sentence(s) state a base",
+   "crosscheck_article": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "measurement",
+      "denominator": "partial"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "measurement",
+      "denominator": "partial"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "partial"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "headline"
   },
   {
-   "entity": "",
+   "entity": "Bureau of Labor Statistics",
    "headline": "Proposed Information Collection; ATUS Artificial Intelligence (AI) Questions",
    "date": "Fri, 10 Jul 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "?",
+   "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
@@ -589,15 +2581,85 @@
      "source_type": "primary-record",
      "motive_tier": 1
     }
-   ]
+   ],
+   "crosscheck": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "autolabel",
+      "claim_type": "unclassified",
+      "denominator": "?"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ],
+    "readers_of_unrecorded_provenance": 1
+   },
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_tier": 3,
+   "label_evidence": "model read 14 figure-sentence(s), no base cue matched",
+   "label_source": "machine",
+   "crosscheck_article": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "unclassified",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "document: 'Agencies: Department of Labor / Bureau of Labor Statistics'",
+   "entity_source": "human"
   },
   {
-   "entity": "",
+   "entity": "FTC",
    "headline": "Policy Statement Concerning the Suppression of Accuracy in Artificial Intelligence Systems",
    "date": "Tue, 07 Jul 2026",
    "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
+   "claim_type": "assertion",
+   "denominator_stated": "partial",
    "reviewed": false,
    "sources": [
     {
@@ -606,15 +2668,85 @@
      "source_type": "primary-record",
      "motive_tier": 1
     }
-   ]
+   ],
+   "crosscheck": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "autolabel",
+      "claim_type": "unclassified",
+      "denominator": "?"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ],
+    "readers_of_unrecorded_provenance": 1
+   },
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_tier": 1,
+   "label_evidence": "1 of 138 figure-sentence(s) state a base",
+   "label_source": "machine",
+   "crosscheck_article": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "assertion",
+      "denominator": "partial"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "document: 'A Notice by the Federal Trade Commission', docket FTC-2026-0859",
+   "entity_source": "human"
   },
   {
-   "entity": "",
+   "entity": "NIST",
    "headline": "NIST Mathematical Proof Supports Transition to a Continuous-Monitor-and-Update Security Model for AI Systems",
    "date": "Tue, 09 Jun 2026",
    "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
+   "claim_type": "measurement",
+   "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
@@ -623,15 +2755,84 @@
      "source_type": "primary-record",
      "motive_tier": 1
     }
-   ]
+   ],
+   "crosscheck": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "autolabel",
+      "claim_type": "unclassified",
+      "denominator": "?"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "measurement",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "measurement",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ],
+    "readers_of_unrecorded_provenance": 1
+   },
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_tier": 3,
+   "label_evidence": "model read 1 figure-sentence(s), no base cue matched",
+   "label_source": "machine",
+   "crosscheck_article": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "measurement",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "measurement",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "assertion",
+      "denominator": "Y"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "headline"
   },
   {
-   "entity": "",
+   "entity": "NIST",
    "headline": "New AI Model Shows How to Evacuate for Fires One Safe Step at a Time",
    "date": "Thu, 04 Jun 2026",
    "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
+   "claim_type": "target",
+   "denominator_stated": "Y",
    "reviewed": false,
    "sources": [
     {
@@ -640,15 +2841,84 @@
      "source_type": "primary-record",
      "motive_tier": 1
     }
-   ]
+   ],
+   "crosscheck": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "autolabel",
+      "claim_type": "unclassified",
+      "denominator": "?"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "target",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ],
+    "readers_of_unrecorded_provenance": 1
+   },
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_tier": 3,
+   "label_evidence": "model read 2 figure-sentence(s), no base cue matched",
+   "label_source": "machine",
+   "crosscheck_article": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "target",
+      "denominator": "Y"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "prediction",
+      "denominator": "partial"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "assertion",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "prediction",
+      "denominator": "partial"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "site"
   },
   {
-   "entity": "",
+   "entity": "NIST",
    "headline": "NIST Expands AI Consortium’s Scope, Calls for New Members",
    "date": "Fri, 29 May 2026",
    "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
+   "claim_type": "announced",
+   "denominator_stated": "partial",
    "reviewed": false,
    "sources": [
     {
@@ -657,15 +2927,84 @@
      "source_type": "primary-record",
      "motive_tier": 1
     }
-   ]
+   ],
+   "crosscheck": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "autolabel",
+      "claim_type": "unclassified",
+      "denominator": "?"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ],
+    "readers_of_unrecorded_provenance": 1
+   },
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_tier": 1,
+   "label_evidence": "1 of 2 figure-sentence(s) state a base",
+   "label_source": "machine",
+   "crosscheck_article": {
+    "verdict": "tied",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "announced",
+      "denominator": "partial"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "partial"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "headline"
   },
   {
-   "entity": "",
+   "entity": "NIST",
    "headline": "NIST Researchers Develop Photonic Chip Packaging That Can Withstand Extreme Environments",
    "date": "Mon, 30 Mar 2026",
    "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
+   "claim_type": "announced",
+   "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
@@ -674,15 +3013,84 @@
      "source_type": "primary-record",
      "motive_tier": 1
     }
-   ]
+   ],
+   "crosscheck": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "autolabel",
+      "claim_type": "unclassified",
+      "denominator": "?"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ],
+    "readers_of_unrecorded_provenance": 1
+   },
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_tier": 3,
+   "label_evidence": "model read 1 figure-sentence(s), no base cue matched",
+   "label_source": "machine",
+   "crosscheck_article": {
+    "verdict": "unanimous",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 3,
+    "families": [
+     "gemma",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "headline"
   },
   {
-   "entity": "",
+   "entity": "NIST",
    "headline": "Announcing the &quot;AI Agent Standards Initiative&quot; for Interoperable and Secure Innovation",
    "date": "Tue, 17 Feb 2026",
    "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
+   "claim_type": "announced",
+   "denominator_stated": "n/a",
    "reviewed": false,
    "sources": [
     {
@@ -691,15 +3099,96 @@
      "source_type": "primary-record",
      "motive_tier": 1
     }
-   ]
+   ],
+   "crosscheck": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "autolabel",
+      "claim_type": "unclassified",
+      "denominator": "?"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "glm-4.7-flash:q4_K_M",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 4,
+    "families": [
+     "gemma",
+     "glm-4.7-flash",
+     "mistral-small",
+     "qwen"
+    ],
+    "readers_of_unrecorded_provenance": 1
+   },
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_tier": 1,
+   "label_evidence": "no figure in 3766 chars of article text",
+   "label_source": "machine",
+   "crosscheck_article": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "announced",
+      "denominator": "n/a"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "glm-4.7-flash:q4_K_M",
+      "claim_type": "announced",
+      "denominator": "N"
+     }
+    ],
+    "independent_families": 4,
+    "families": [
+     "gemma",
+     "glm-4.7-flash",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "site"
   },
   {
-   "entity": "",
+   "entity": "NIST",
    "headline": "NIST Allocates Over $3 Million to Small Businesses Advancing AI, Biotechnology, Semiconductors, Quantum and More",
    "date": "Tue, 10 Feb 2026",
    "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
+   "claim_type": "assertion",
+   "denominator_stated": "partial",
    "reviewed": false,
    "sources": [
     {
@@ -708,7 +3197,88 @@
      "source_type": "primary-record",
      "motive_tier": 1
     }
-   ]
+   ],
+   "crosscheck": {
+    "verdict": "tied",
+    "readers": [
+     {
+      "model": "autolabel",
+      "claim_type": "unclassified",
+      "denominator": "?"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "measurement",
+      "denominator": "partial"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "partial"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "measurement",
+      "denominator": "partial"
+     },
+     {
+      "model": "glm-4.7-flash:q4_K_M",
+      "claim_type": "announced",
+      "denominator": "partial"
+     }
+    ],
+    "independent_families": 4,
+    "families": [
+     "gemma",
+     "glm-4.7-flash",
+     "mistral-small",
+     "qwen"
+    ],
+    "readers_of_unrecorded_provenance": 1
+   },
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_tier": 1,
+   "label_evidence": "1 of 12 figure-sentence(s) state a base",
+   "label_source": "machine",
+   "crosscheck_article": {
+    "verdict": "majority",
+    "readers": [
+     {
+      "model": "qwen2.5:14b",
+      "claim_type": "assertion",
+      "denominator": "partial"
+     },
+     {
+      "model": "gemma3:27b",
+      "claim_type": "measurement",
+      "denominator": "Y"
+     },
+     {
+      "model": "qwen3.6:35b",
+      "claim_type": "announced",
+      "denominator": "N"
+     },
+     {
+      "model": "mistral-small:24b",
+      "claim_type": "measurement",
+      "denominator": "partial"
+     },
+     {
+      "model": "glm-4.7-flash:q4_K_M",
+      "claim_type": "measurement",
+      "denominator": "partial"
+     }
+    ],
+    "independent_families": 4,
+    "families": [
+     "gemma",
+     "glm-4.7-flash",
+     "mistral-small",
+     "qwen"
+    ]
+   },
+   "entity_basis": "headline"
   }
  ]
 }

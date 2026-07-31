@@ -19,7 +19,8 @@ import json, os
 HERE = os.path.dirname(os.path.abspath(__file__))
 FEED = os.path.join(HERE, "feed_items.json")
 STORE = os.path.join(HERE, "reviews_store.json")
-FIELDS = ("entity", "claim_type", "denominator_stated", "topic", "_note")
+FIELDS = ("entity", "entity_basis", "entity_source", "claim_type",
+          "denominator_stated", "topic", "_note")
 # Machine passes carry their own trail. Kept separate from FIELDS so a machine entry
 # can never be mistaken for a human one on read-back.
 MACHINE_FIELDS = FIELDS + ("auto_labelled", "auto_labelled_by", "crosscheck")
@@ -50,14 +51,22 @@ def main():
         if not u:
             continue
         if it.get("reviewed"):
+            # ⛔ reviewed=True does NOT establish who labelled the item. label_source was
+            # added 2026-07-30; the 30 entries written on 2026-07-13 carry no provenance,
+            # and assigning "human" here retroactively promoted them to ground truth on
+            # evidence the file does not hold. Keep an existing source, otherwise record
+            # "unattributed". Only an explicit human review may write "human".
+            prior = store.get(u, {}).get("label_source")
             store[u] = {k: it[k] for k in FIELDS if k in it}
             store[u]["reviewed"] = True
-            store[u]["label_source"] = "human"
+            store[u]["label_source"] = prior or it.get("label_source") or "unattributed"
             harvested += 1
         elif it.get("auto_labelled"):
-            # ⛔ Never downgrade: a human entry already in the store outranks a machine
-            # pass over the same URL and must not be overwritten by it.
-            if store.get(u, {}).get("label_source") == "human":
+            # ⛔ Never downgrade: a hand-set entry outranks a machine pass over the same URL.
+            # "unattributed" is protected too. Its provenance is unknown, which is not the
+            # same as being machine output, and overwriting it would destroy the only
+            # article-level labels the board has.
+            if store.get(u, {}).get("label_source") in ("human", "unattributed"):
                 continue
             store[u] = {k: it[k] for k in MACHINE_FIELDS if k in it}
             store[u]["reviewed"] = False
