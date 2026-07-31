@@ -74,6 +74,23 @@ claims, while the board's thesis is that incentive concentrates at tier 5, the p
 the thing. Resolution calendar 5 rows to 7: the ASML lithography controls expiring 10 November
 and the PJM 2030/31 capacity auction in December.
 
+**Reality anchors: 6 of 76 to 32 of 76, and two mistakes made getting there.**
+`publisher_tags` was never broken. `extract_spans.py` harvested it into `article_text.json`,
+which is gitignored, and never copied it to `article_spans.json`. Anything living only in a
+gitignored file is invisible to a clean clone. Backfilled from the local cache, no refetch.
+Three topics the portfolio already covered were then wired: models to The Model Is a
+Dependency, chips to the Barbell.
+
+⛔ WITHDRAWN: the commit for that work says "anchored 38 of 76". The measured figure is 32.
+The number was written before the script printed it.
+
+Two errors worth keeping in view. A failed build was committed because `build.py` was piped
+into `tail`, and a pipeline reports the exit status of its last command, so a raised exception
+looked like success; `refresh.sh` now aborts on a failed build. And the `agents` topic was
+anchored to the shopping-agent paper, which mapped an MIT robotics award to a retail-commerce
+finding, because the topic keywords catch embodied AI. Anchor removed. Narrow the topic before
+anchoring it, not the other way round.
+
 **The market strip stamped one date over four vintages.** Brent read 27 July, the US indices
 30 July, the Nikkei and 29 of 34 equities 31 July, and the footer said "indices close
 2026-07-30" because it took the S&P's date and applied it to everything. A four-day-old oil

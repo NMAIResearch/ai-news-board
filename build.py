@@ -1055,7 +1055,9 @@ def main():
         f'({len(reviewed)})</span></summary>'
         f'<div style="color:{SLATE};font-size:13px;margin:6px 0 12px">'
         f'Curated claims each carried against a published base rate, kept for reference. '
-        f'Newest first; some predate 2026.</div>'
+        f'Newest first, spanning Aug 2024 to Apr 2026. These are fixed exhibits, not news, '
+        f'so they sit outside the staleness cutoffs that drop old items from the feed. '
+        f'Read them as dated claims rather than current ones.</div>'
         f'<div class="feedgrid">'
         + "".join(item_card(it, anchors, plain, mk, tmap, ev) for it in reviewed)
         + '</div></details>')
