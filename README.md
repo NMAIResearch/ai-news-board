@@ -103,8 +103,9 @@ is worth keeping if it is ever rebuilt on spans.
   second-hand.
 - **Reality anchor**, a link to a published base rate when the topic matches (a code-share
   claim anchors to the AI Research-Automation Scorecard, energy to the Forecast Scorecard, GW
-  announcements to Contingent-Demand, water to the Water Tracker, cost to Cost Watch). Blank
-  when no anchor exists, which is honest.
+  announcements to Contingent-Demand, water to the Water Tracker, cost to Cost Watch). The
+  card says whether the match came from the headline or from the article's figure sentences,
+  because those are different evidence.
 
 ## Model releases
 
@@ -235,8 +236,10 @@ been reviewed, and which private register rows may be published.
   per entity, transparently, not per item.
 - `stake_map.json` needs curating. An unlisted publisher keeps its source-type tier and is
   marked as such, never guessed.
-- The anchor map only covers topics the portfolio addresses, so most items have a blank
-  anchor. That is honest, not a gap to paper over.
+- The anchor map covers seven topics, so an item outside them has no anchor. 23 of 76 items
+  carry one. That was 6 until the matcher stopped reading only headlines, so treat the
+  remaining blanks as two different things: topics the portfolio genuinely does not measure,
+  and matching this has not solved yet. Do not read a blank as the former by default.
 - Feed selection is editorial and disclosed. This is a curated digest, not a real-time
   firehose.
 - Span precision is unmeasured. Long documents dominate the span counts, and in those the
