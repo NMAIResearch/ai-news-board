@@ -220,7 +220,7 @@ a coverage bar keyed on motive rather than on a left or right axis.
 
 `tier_map.json` records every tier with its basis, and every cell is contestable.
 
-## Automate the plumbing, not the call
+## What is decided by hand, and what is not
 
 Automatable: the feed pull, source type from the URL, motive tier by entity lookup, entity
 resolution against a registry, the denominator where quoted spans settle it, entity counting,
