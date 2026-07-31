@@ -74,6 +74,24 @@ claims, while the board's thesis is that incentive concentrates at tier 5, the p
 the thing. Resolution calendar 5 rows to 7: the ASML lithography controls expiring 10 November
 and the PJM 2030/31 capacity auction in December.
 
+**The deflation register implied an attribution it did not have.** Measured over the 16
+published rows, 13 had a claim side that read like a citation and was not one: "YouTube
+AI-finance video [4]", "grid-doom framing [4]", "press/aggregator [4]". A reader could not
+check that anyone said it, on a board that flags exactly that failure in others, and whose
+own ResearchGate row calls it institutional-name laundering.
+
+Fixed by changing what the column claims rather than by naming creators. The claim line now
+reads "circulating via" and the panel states the rule: the register grades the number, not
+the person, so a figure taken from video or press is described by genre and motive tier, and
+the checkable weight sits on the corrected line. Naming individual channels would turn a
+register of numbers into a list of people being corrected.
+
+`make_registers.py` gains a publication gate on the corrected side, since that is now where
+all the weight sits. It blocks a row with no corrected reading or no stated error, which is
+deterministic, and warns where no institution is named anywhere in the row, which is not: a
+correction can rest on reasoning a reader can follow or on a fact anyone can look up. Six
+rows warn, of which two want a source added.
+
 **`PIPELINE.md`** states which store owns what. The tracker owns judgements, the board owns
 intake, and neither writes to the other. Direction two, the board nominating candidate rows,
 is designed there and not built.

@@ -553,6 +553,12 @@ def deflation_panel(reg):
     is the one thing here that states an outcome rather than a flag, so every row carries
     the corrected figure and where it came from, and rows arrive only via an explicit
     publication mark on the private register.
+
+    ⛔ The claim side describes WHERE A FIGURE CIRCULATES. It is not an attribution and must
+    not be formatted as one. Naming individual creators would make this a list of people
+    being corrected; the register grades the number. The checkable weight therefore sits
+    entirely on the corrected side, which is what the publication gate in make_registers.py
+    tests. Do not add a channel, a title or a URL to the claim side.
     """
     rows = (reg or {}).get("deflations") or []
     if not rows:
@@ -569,8 +575,10 @@ def deflation_panel(reg):
         trs.append(
             f'<div style="padding:9px 0;border-bottom:1px solid {LINE}">'
             f'<div style="font-size:13px;color:{BODY}">{dot}<strong>{esc(r.get("claim",""))}</strong></div>'
-            f'<div style="font-size:12px;color:{SLATE};margin-top:2px">'
-            f'{esc(r.get("source",""))}</div>'
+            f'<div style="font-size:12px;color:{SLATE};margin-top:2px" '
+            f'title="Where the figure circulates, described by genre and motive tier. '
+            f'Not an attribution to a named person.">'
+            f'circulating via {esc(r.get("source",""))}</div>'
             f'<div style="font-size:12.5px;color:{BODY};margin-top:4px">'
             f'&rarr; {esc(r.get("corrected",""))}'
             f'{f" <span style=\'color:{TIER[5][0]};font-weight:600\'>({mult})</span>" if mult else ""}</div>'
@@ -583,9 +591,12 @@ def deflation_panel(reg):
         f'</summary>'
         f'<div style="font-size:12px;color:{SLATE};margin:6px 0">'
         f'Claims where the checkable figure came back different, with the correction and '
-        f'where it came from. The dot is the motive tier of the source that carried the '
-        f'original claim. Being wrong once is not a verdict on a source; the register '
-        f'records the specific figure, not the outlet.</div>'
+        f'where it came from. <strong>This register grades the number, not the person.</strong> '
+        f'A figure taken from video or press is described by genre and motive tier rather '
+        f'than named, so the claim line says where it circulates and is not an attribution; '
+        f'the checkable weight sits on the corrected line, which is what a reader should '
+        f'test. The dot is the motive tier of the source that carried the original claim. '
+        f'Being wrong once is not a verdict on a source.</div>'
         f'{"".join(trs)}</details>')
 
 
