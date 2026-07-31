@@ -19,6 +19,11 @@ OUT = os.path.join(HERE, "index.html")
 
 # house palette
 NAVY, SLATE, BODY, ALT, LINE = "#1a365d", "#4a5568", "#2d3748", "#f7fafc", "#e2e8f0"
+# Surfaces. The page sits on ALT and every panel and card sits on PAPER above it.
+# Cards previously set no background, so they inherited ALT and separated from the
+# page by a 1px border alone, while the side panels were already white.
+PAPER = "#ffffff"
+SHADOW = "0 1px 2px rgba(26,54,93,.06), 0 1px 8px rgba(26,54,93,.04)"
 
 # distance tier (canonical house scale, from the Source Incentive Map + working
 # tracker): 1 = LEAST incentive to shade the claim ... 5 = the party selling the
@@ -31,11 +36,16 @@ TIER = {
     4: ("#cc7a33", "Tool or data vendor (product benefits from the framing)"),
     5: ("#b23b2e", "Party selling the thing the claim is about (own topic)"),
 }
-DENOM = {"y": ("#2f7d4f", "denominator stated"),
-         "partial": ("#cc7a33", "partial denominator"),
-         "n": ("#b23b2e", "no denominator"),
-         "n/a": ("#64748b", "no quantitative claim"),
-         "?": ("#94a3b8", "denominator: unreviewed")}
+# Plain-English labels, matching the wording used in the page description. "denominator"
+# is the analytical term and stays in the method panel; a card should read without it.
+DENOM = {"y": ("#2f7d4f", "Figures: base stated"),
+         "partial": ("#cc7a33", "Figures: base partly stated"),
+         "n": ("#b23b2e", "Figures: no base stated"),
+         "n/a": ("#64748b", "No figures in this article"),
+         "?": ("#94a3b8", "Figures not assessed")}
+# Short names for the motive scale. The long strings in TIER stay as the hover text.
+TIER_SHORT = {1: "primary record", 2: "research institute", 3: "trade press",
+              4: "tool or data vendor", 5: "party selling the thing"}
 CLAIM = {"measurement": "#2f7d4f", "assertion": "#5b7fa6",
          "target": "#cc7a33", "prediction": "#cc7a33",
          "study": "#2f7d4f", "opinion": "#6b7280", "lawsuit": "#8a5a3b"}
@@ -122,19 +132,50 @@ esc = lambda s: html.escape(str(s), quote=True)
 
 
 def bar(counts):
-    """A stacked distribution bar keyed by motive tier -> proportion."""
+    """Stacked distribution across MANY sources. Page level only.
+
+    ⛔ Not for a single item: with one source it renders as one block at 100% width, which
+    tells the reader nothing. Items use tier_scale().
+    """
     total = sum(counts.values()) or 1
     segs = []
     for t in sorted(counts):
         if counts[t] == 0:
             continue
         pct = 100.0 * counts[t] / total
-        col = TIER[t][0]
         segs.append(f'<span title="tier {t}: {esc(TIER[t][1])} ({counts[t]})" '
                     f'style="display:inline-block;height:12px;width:{pct:.1f}%;'
-                    f'background:{col}"></span>')
+                    f'background:{TIER[t][0]}"></span>')
     return ('<span style="display:inline-block;width:100%;border-radius:3px;'
             'overflow:hidden;line-height:0">' + "".join(segs) + "</span>")
+
+
+def tier_scale(tiers):
+    """The five-point scale with this item's tier(s) filled.
+
+    ⛔ Replaces a stacked distribution bar. Almost every item has exactly one source, so the
+    distribution rendered as a single block at 100% width: it showed the reader nothing and
+    read as a rendering fault. The scale shows WHERE the source sits and what the other
+    points are, which is information on every item including single-source ones.
+    """
+    active = sorted(int(t) for t in tiers)
+    steps = []
+    for t in (1, 2, 3, 4, 5):
+        on = t in active
+        col = TIER[t][0] if on else "#e2e8f0"
+        steps.append(
+            f'<span title="tier {t}: {esc(TIER[t][1])}" style="display:inline-block;'
+            f'width:26px;height:8px;border-radius:2px;background:{col};margin-right:3px"></span>')
+    if len(active) == 1:
+        t = active[0]
+        label = f'tier {t} &middot; {esc(TIER_SHORT[t])}'
+    else:
+        label = " &middot; ".join(f"tier {t}" for t in active)
+    return (f'<div style="display:flex;align-items:center;gap:10px;margin:12px 0 8px">'
+            f'<span style="font-size:11px;color:{SLATE};letter-spacing:.04em;'
+            f'text-transform:uppercase">Motive</span>'
+            f'<span style="line-height:0">{"".join(steps)}</span>'
+            f'<span style="font-size:12px;color:{BODY}">{label}</span></div>')
 
 
 def load_market():
@@ -262,7 +303,50 @@ def market_strip(mk):
         f'</div></details></section>')
 
 
-def item_card(it, anchors, plain=False, mk=None, tmap=None):
+def chain_block(chain):
+    """Citation edges between board items, or an explicit statement that none was found.
+
+    ⛔ The label is "cites", never "restates". The evidence is that one article LINKS TO
+    another; whether it restates it is unknown and is not the board's to assert.
+    ⛔ Absence is stated, not implied: a paywalled or link-averse outlet produces no edge
+    whether or not it is reporting someone else's claim, so an empty chain is not evidence
+    of independent reporting.
+
+    The rail takes the colour of the OTHER item's tier, so colour still means one thing.
+    """
+    cites = chain.get("cites") or []
+    cited = chain.get("cited_by") or []
+    if not cites and not cited:
+        return (f'<div style="margin:10px 0 2px;font-size:12px;color:{SLATE}" '
+                f'title="Absence of a link is not evidence of first-hand reporting.">'
+                f'No cited source found.</div>')
+    rows = []
+    if cites:
+        c = cites[0]
+        col = TIER[c["tier"]][0]
+        more = f' <span style="color:{SLATE}">+{len(cites)-1} more</span>' if len(cites) > 1 else ""
+        rows.append(
+            f'<div style="border-left:3px solid {col};padding:6px 0 6px 10px;margin:10px 0">'
+            f'<div style="font-size:11px;color:{SLATE};letter-spacing:.04em;'
+            f'text-transform:uppercase">Cites a tier {c["tier"]} source</div>'
+            f'<a href="{esc(c["url"])}" target="_blank" rel="noopener noreferrer" '
+            f'style="font-size:13px;color:{NAVY};text-decoration:none">'
+            f'{esc(c["entity"] or c["name"])} &middot; {esc(c["headline"][:96])} &rarr;</a>{more}</div>')
+    if cited:
+        tset = sorted({x["tier"] for x in cited})
+        col = TIER[tset[0]][0]
+        who = ", ".join(dict.fromkeys(x["name"] for x in cited))
+        tlabel = " and ".join(f"tier {t}" for t in tset)
+        rows.append(
+            f'<div style="border-left:3px solid {col};padding:6px 0 6px 10px;margin:10px 0">'
+            f'<div style="font-size:11px;color:{SLATE};letter-spacing:.04em;'
+            f'text-transform:uppercase">Cited by {len(cited)} {esc(tlabel)} '
+            f'report{"s" if len(cited) != 1 else ""}</div>'
+            f'<div style="font-size:13px;color:{BODY}">{esc(who)}</div></div>')
+    return "".join(rows)
+
+
+def item_card(it, anchors, plain=False, mk=None, tmap=None, ev=None):
     tiers = {}
     chips = []
     for s in it["sources"]:
@@ -338,6 +422,23 @@ def item_card(it, anchors, plain=False, mk=None, tmap=None):
         xchip = (f'<span title="{esc(tip)}" style="display:inline-block;padding:2px 8px;'
                  f'margin-left:6px;border-radius:4px;font-size:11px;color:{TIER[4][0]};'
                  f'background:#fff7ed;border:1px dashed {TIER[4][0]}">{esc(label)}</span>')
+    # No source URL means a curated reference card, which has no citation trail to report.
+    # Saying "no cited source found" there states an absence about a thing never checked.
+    # Header: the subject organisation, else the publisher's own topic tag, else the date
+    # alone. "entity not identified" read as a fault; no subject is a property of the piece.
+    if it.get("entity"):
+        subject_html = esc(it["entity"])
+    elif it.get("publisher_topic"):
+        subject_html = (f'<span title="the publisher\'s own tag, not an assessment">'
+                        f'{esc(it["publisher_topic"])}</span>')
+    else:
+        subject_html = "&mdash;"
+    ments = [m["name"] for m in (it.get("mentions") or [])][:4]
+    mentions_html = ("" if not ments or it.get("entity") else
+                     f'<div style="font-size:12px;color:{SLATE};margin-top:6px">'
+                     f'Mentions {esc(" &middot; ".join(ments))}</div>'.replace("&amp;middot;", "&middot;"))
+    chain_html = "" if (plain or not src_url) else chain_block(
+        ((ev or {}).get(src_url) or {}).get("chain", {}))
     mchip = market_chip(it.get("entity", ""), mk or {}, tmap or {})
     a = anchors.get(it.get("topic", ""), {})
     anchor_html = ""
@@ -377,13 +478,15 @@ def item_card(it, anchors, plain=False, mk=None, tmap=None):
     data = (f'class="card" data-search="{esc(blob)}" data-topic="{esc(it.get("topic",""))}" '
             f'data-tiers="{esc(tierlist)}"{conflict_attr}')
     return f"""
-    <article {data} style="border:1px solid {LINE};border-radius:8px;padding:14px 16px;margin:0 0 14px">
+    <article {data} style="border:1px solid {LINE};border-radius:8px;padding:14px 16px;
+      margin:0 0 14px;background:{PAPER};box-shadow:{SHADOW}">
       <div style="font-size:12px;color:{SLATE};margin-bottom:4px">
-        {esc(it["entity"]) if it.get("entity") else "<em>entity not identified</em>"} &middot; {esc(fmt_date(it.get("date", "")))}
+        {subject_html} &middot; {esc(fmt_date(it.get("date", "")))}
       </div>
       <div style="font-size:16px;font-weight:600;color:{NAVY};line-height:1.35">{headline_html}</div>
-      {'' if plain else f'<div class="motivebar" style="margin:10px 0 6px">{bar(tiers)}</div>'}
-      <div style="margin:10px 0 6px">{''.join(chips)}</div>
+      {chain_html}
+      {'' if plain else f'<div class="motivebar">{tier_scale(tiers)}</div>'}
+      <div style="margin:10px 0 6px">{''.join(chips)}</div>{mentions_html}
       <div style="font-size:12px">
         <span style="display:inline-block;padding:2px 8px;border-radius:4px;
               color:#fff;background:{dcol}">{esc(dlabel)}</span>{rmark}{flag}{xchip}{mchip}
@@ -645,7 +748,7 @@ def day_heading(d, today):
     return "Older"
 
 
-def group_by_day(items, anchors, plain, mk, tmap):
+def group_by_day(items, anchors, plain, mk, tmap, ev=None):
     """Render items under day headings. Items are already sorted newest first.
 
     Undated items render under "Date not stated" at the end rather than being dropped or
@@ -664,7 +767,7 @@ def group_by_day(items, anchors, plain, mk, tmap):
                 f'text-transform:uppercase;letter-spacing:.04em;margin:18px 0 8px;'
                 f'padding-bottom:4px;border-bottom:1px solid {LINE}">{esc(head)}</div>')
             current = head
-        out.append(item_card(it, anchors, plain, mk, tmap))
+        out.append(item_card(it, anchors, plain, mk, tmap, ev))
     return f'<div class="feedgrid">{"".join(out)}</div>'
 
 
@@ -703,12 +806,13 @@ def main():
         dl = "".join(f'<li style="margin:3px 0">{esc(x)}</li>' for x in disclosures)
         neutrality_html = (
             f'<section style="border:1px solid {LINE};border-radius:8px;padding:12px 16px;'
-            f'margin:0 0 18px;background:{ALT}"><div style="font-weight:600;color:{NAVY};'
-            f'margin-bottom:4px">How to read this, and where it is not neutral</div>'
+            f'margin:0 0 18px;background:{PAPER};box-shadow:{SHADOW}"><div style="font-weight:600;color:{NAVY};'
+            f'margin-bottom:4px">Method and limits</div>'
             f'<ul style="margin:4px 0 0 18px;padding:0;font-size:13px;color:{BODY}">{dl}</ul>'
-            f'<div style="font-size:12px;color:{SLATE};margin-top:8px">Conflict of interest: a '
-            f'frontier-lab (Anthropic) model helped assign these tiers, including the tiers on '
-            f'Anthropic and its rivals. It is tiered in its own map and not exempt.</div></section>')
+            f'<div style="font-size:12px;color:{SLATE};margin-top:8px">Conflict of interest: an '
+            f'Anthropic model assisted in building this board, including the tiers applied to '
+            f'Anthropic and its competitors. Anthropic is tiered in the map on the same basis '
+            f'as any other source.</div></section>')
         trows = "".join(
             f'<tr><td style="padding:4px 10px;border-bottom:1px solid {LINE};vertical-align:top">'
             f'<span style="display:inline-block;width:12px;height:12px;border-radius:2px;'
@@ -732,6 +836,9 @@ def main():
             f'<tbody>{trows}</tbody></table></details>')
 
     # merge the live feed if fetch_feeds.py has produced it
+    # Citation chains and the per-article evidence counts.
+    ev_path = os.path.join(HERE, "article_evidence.json")
+    ev = json.load(open(ev_path, encoding="utf-8")) if os.path.isfile(ev_path) else {}
     feed_path = os.path.join(HERE, "feed_items.json")
     incoming = []
     fetched = ""
@@ -855,12 +962,12 @@ def main():
         feed_block = (
             f'<h2 style="color:{NAVY};font-size:18px;margin:0 0 4px">Latest</h2>'
             f'<div style="color:{SLATE};font-size:13px;margin-bottom:12px">'
-            f'Live pull, newest first. Auto-tagged: source type and motive tier are set from the '
-            f'domain. The denominator flag is derived from figure sentences quoted verbatim '
-            f'from the article. Claim type was retired on 31 Jul 2026: four local readers '
-            f'agreed on it barely above chance, so the board no longer asserts it. '
+            f'Live pull, newest first. Motive tier is set from the source domain. The figures '
+            f'flag is derived from quoted sentences in the article; where a rule settles it, '
+            f'no model is involved. Citation links are between items on this board. '
+            f'Claim type was retired on 31 Jul 2026 at inter-reader agreement of &kappa;&nbsp;0.56. '
             f'</div>'
-            + group_by_day(incoming, anchors, plain, mk, tmap))
+            + group_by_day(incoming, anchors, plain, mk, tmap, ev))
     # Collapsed: reference material sitting in a news position. It is nine static cards
     # under a live feed, so it opens on demand rather than lengthening every scroll.
     seed_block = (
@@ -872,7 +979,7 @@ def main():
         f'Curated claims each carried against a published base rate, kept for reference. '
         f'Newest first; some predate 2026.</div>'
         f'<div class="feedgrid">'
-        + "".join(item_card(it, anchors, plain, mk, tmap) for it in reviewed)
+        + "".join(item_card(it, anchors, plain, mk, tmap, ev) for it in reviewed)
         + '</div></details>')
     cards = feed_block + seed_block
 
@@ -882,11 +989,10 @@ def main():
         f'<div style="border:1px solid {LINE};border-radius:8px;padding:10px 14px;'
         f'margin:0 0 18px;background:#fff;font-size:13px;color:{BODY}">'
         f'<strong style="color:{NAVY}">Motive tiering is off.</strong> Sources are shown '
-        f'plain, with no incentive colouring. The denominator, claim-type, track-record and '
-        f'reality-anchor flags are unchanged. Rebuild without <code>--plain</code> to restore '
-        f'the motive view.</div>')
+        f'without incentive colouring. Figures, track-record and anchor flags are '
+        f'unchanged.</div>')
     sourcemix_html = ("" if plain else
-        f'<div style="border:1px solid {LINE};border-radius:8px;padding:12px 14px;margin:0 0 18px;background:#fff">'
+        f'<div style="border:1px solid {LINE};border-radius:8px;padding:12px 14px;margin:0 0 18px;background:#fff;box-shadow:{SHADOW}">'
         f'<div style="font-weight:600;color:{NAVY};margin-bottom:6px">Source mix across all items</div>'
         f'{bar(all_tiers)}'
         f'<table style="border-collapse:collapse;font-size:13px;margin-top:12px;width:100%">'
@@ -900,7 +1006,7 @@ def main():
         f'<details class="tierui" style="border:1px solid {LINE};border-radius:8px;'
         f'padding:10px 14px;margin:0 0 18px;background:#fff">'
         f'<summary style="font-weight:600;color:{NAVY};cursor:pointer">'
-        f'How to read this board &middot; motive key, neutrality notes, tier map and source mix</summary>'
+        f'Method &middot; motive key, limits, tier map and source mix</summary>'
         f'<div style="margin-top:12px">{legend_html}{neutrality_html}{tiermap_html}{sourcemix_html}</div>'
         f'</details>')
 
@@ -968,7 +1074,8 @@ def main():
   /* Two columns, fixed. Auto-fill gave three or four on a wide screen and the cards read
      as a wall; two keeps a headline and its chips on one or two lines. */
   .feedgrid{{display:grid;grid-template-columns:repeat(2,1fr);gap:0 16px;align-items:start}}
-  .feedgrid .card{{margin:0 0 14px}}
+  .feedgrid .card{{margin:0 0 16px}}
+  .dayhead{{margin-top:26px}}
   /* A day heading labels every card under it, so it must span the whole grid. */
   .dayhead{{grid-column:1/-1}}
   /* Four columns: controls+register | feed | releases | reference.
@@ -978,7 +1085,7 @@ def main():
   .rail{{flex:0 0 340px;position:sticky;top:16px;max-height:calc(100vh - 32px);overflow-y:auto}}
   .relcol h2,.rail h2{{font-size:15px;margin:0 0 8px}}
   .rail h2{{font-size:15px;margin:0 0 8px}}
-  .railcard{{border:1px solid #e2e8f0;border-radius:8px;padding:12px 14px;margin:0 0 14px;background:#fff}}
+  .railcard{{border:1px solid #e2e8f0;border-radius:8px;padding:12px 14px;margin:0 0 14px;background:{PAPER};box-shadow:{SHADOW}}}
   .search{{width:100%;padding:8px 10px;border:1px solid {LINE};border-radius:6px;font-size:14px;margin-bottom:16px}}
   .fgroup{{margin-bottom:16px;font-size:13px}}
   .fgroup h4{{margin:0 0 6px;color:{NAVY};font-size:11px;text-transform:uppercase;letter-spacing:.05em}}
@@ -1144,12 +1251,11 @@ def main():
 <div class="wrap">
   <h1 style="color:{NAVY};margin:0 0 4px;font-size:26px">AI News Board</h1>
   <div style="color:{SLATE};font-size:14px;margin-bottom:20px;max-width:760px">
-    A live board that applies a consistent method to AI news coverage. For each item it
-    records the publisher's incentive in the claim being true, whether a quoted figure states
-    the base it is measured against, and a link to a published base rate where one exists.
-    Figures are quoted verbatim from the article text with their position recorded, and every
-    label carries the method that produced it, so a reader can check any of it against the
-    source.
+    AI news coverage assessed on four axes: the publisher's incentive in the claim, whether
+    quoted figures state the base they are measured against, which items cite which, and a
+    link to a published base rate where one exists. Figures and citations are taken verbatim
+    from the article text and stored with their position. Each label records the method that
+    produced it.
   </div>
   {freshness(built, fetched, mk, _reg if os.path.isfile(reg_path) else {})}
   {market_strip(mk)}

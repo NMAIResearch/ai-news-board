@@ -30,7 +30,8 @@ MAX_AGE_DAYS = int(os.environ.get("FEED_MAX_AGE_DAYS", "30"))
 # A single 30-day rule deleted the tier-1 feeds the same day they were added: NIST had 10 AI
 # items and every one was over 30 days old, Ofgem's was from 2024. A trade-press story is
 # stale in a month; a Federal Register policy statement or a NIST framework is not.
-MAX_AGE_BY_TYPE = {"primary-record": 180, "independent": 120}
+MAX_AGE_BY_TYPE = {"primary-record": 180, "independent": 120,
+                   "tool-vendor": 90, "press-office": 30}
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "feed_items.json")
@@ -61,6 +62,18 @@ FEEDS = [
     ("https://www.gov.uk/search/news-and-communications.atom?organisations%5B%5D=competition-and-markets-authority", True),
     ("https://www.gov.uk/search/news-and-communications.atom?organisations%5B%5D=ofgem", True),
     ("https://www.nist.gov/news-events/news/rss.xml", True),
+    # ↻ [2026-07-31] tier 2 (research institute / academia). The tier read ZERO before this:
+    # `independent` mapped only to arxiv.org, which fetch_scholar.py sends to its own panel.
+    ("https://cset.georgetown.edu/feed/", True),
+    ("https://ainowinstitute.org/feed", False),
+    ("https://bair.berkeley.edu/blog/feed.xml", False),
+    ("https://www.csail.mit.edu/rss.xml", True),
+    # ↻ [2026-07-31] tier 5, MIT's press office, deliberately NOT the same source as CSAIL
+    ("https://news.mit.edu/rss/topic/artificial-intelligence2", False),
+    # ↻ [2026-07-31] tier 4 (tool or data vendor)
+    ("https://semianalysis.com/feed/", True),
+    ("https://www.finops.org/feed/", True),
+    ("https://epochai.substack.com/feed", False),
 ]
 
 # Checked 2026-07-30, do NOT re-add without re-testing: hai.stanford.edu (malformed XML),
@@ -91,10 +104,26 @@ DOMAIN_TYPE = [
     ("reddit.com", "aggregator"), ("news.google.com", "aggregator"),
     ("federalregister.gov", "primary-record"), ("gov.uk", "primary-record"),
     ("nist.gov", "primary-record"), ("arxiv.org", "independent"),
+    # tier 2, research institutes and academic labs (credibility-aligned)
+    ("cset.georgetown.edu", "independent"), ("ainowinstitute.org", "independent"),
+    ("bair.berkeley.edu", "independent"), ("csail.mit.edu", "independent"),
+    # tier 5, an institution's PRESS OFFICE, kept separate from its research
+    ("news.mit.edu", "press-office"),
+    # tier 4, sells data, research access or tooling on the topics it reports
+    ("semianalysis.com", "tool-vendor"), ("finops.org", "tool-vendor"),
+    ("epoch.ai", "tool-vendor"), ("epochai.substack.com", "tool-vendor"),
+    # a project publishing its own policy is a vendor-own claim, not trade press
+    ("openjdk.org", "vendor-own"),
 ]
 # canonical distance tier: 1 = least incentive ... 5 = sells the thing
+# ⚠️ Every tier on the published scale must be reachable from this map. Until 2026-07-31
+# no key mapped to 4, so "tool or data vendor" could never be assigned however the domain
+# table grew, and the board showed a five-point scale with a permanently empty point.
+# press-office sits at 5 deliberately: a university or lab press release about its own
+# research is the party publicising the thing, whatever the research itself is worth.
 TYPE_TIER = {"primary-record": 1, "independent": 2, "trade-press": 3,
-             "aggregator": 3, "vendor-own": 5, "other": 3}
+             "aggregator": 3, "tool-vendor": 4, "vendor-own": 5,
+             "press-office": 5, "other": 3}
 VENDORS = ["OpenAI", "Anthropic", "Google DeepMind", "DeepMind", "Google",
            "Microsoft", "Meta", "Nvidia", "Amazon", "Salesforce", "Snap",
            "xAI", "Apple", "Mistral", "Cohere", "Perplexity"]

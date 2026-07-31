@@ -140,9 +140,49 @@ def claim_relative_tier(item, entity, stakes):
     return base, f"publisher owner {owner}, no recorded stake in {entity or 'the subject'}"
 
 
+def canon(u):
+    return u.rstrip("/").split("?")[0].replace("https://www.", "https://")
+
+
+def story_chains(items, texts):
+    """{url: {"cites": [...], "cited_by": [...]}} from one article linking to another.
+
+    ⛔ An edge means A LINKS TO B. It does not mean A restates B, and the board must not say
+    so. Absence of an edge says nothing either: a paywalled or link-averse outlet produces
+    no edge whether or not it is reporting someone else's claim.
+
+    Text similarity was measured and rejected: on 44 items, shared headline words found 1
+    pair and shared outbound links 11 mostly incidental ones, while citation edges found 7,
+    5 of them across tiers. A link is also checkable by clicking it.
+    """
+    url_of_item = {}
+    for it in items:
+        u = next((s["url"] for s in it.get("sources", []) if s.get("url")), "")
+        if u:
+            url_of_item[canon(u)] = it
+    chains = {u: {"cites": [], "cited_by": []} for u in url_of_item}
+    for u, it in url_of_item.items():
+        links = {canon(x) for x in (texts.get(
+            next(s["url"] for s in it["sources"] if s.get("url"))) or {}).get("links", [])}
+        for other in links & set(url_of_item):
+            if other == u:
+                continue
+            tgt = url_of_item[other]
+            chains[u]["cites"].append({
+                "url": other, "name": tgt["sources"][0].get("name", ""),
+                "tier": int(tgt["sources"][0].get("motive_tier", 3)),
+                "entity": tgt.get("entity", ""), "headline": tgt.get("headline", "")})
+            chains[other]["cited_by"].append({
+                "url": u, "name": it["sources"][0].get("name", ""),
+                "tier": int(it["sources"][0].get("motive_tier", 3)),
+                "entity": it.get("entity", ""), "headline": it.get("headline", "")})
+    return chains
+
+
 def compute():
     items = load(FEED, {"items": []})["items"]
     spans, texts, stakes = load(SPANS), load(TEXTS), load(STAKES)
+    chains = story_chains(items, texts)
     out = {}
     for it in items:
         u = url_of(it)
@@ -171,6 +211,7 @@ def compute():
             "primary_link_examples": kinds["primary"][:4],
             "figures": {"total": len(figs), "with_named_source": len(attributed)},
             "motive_tier": tier, "tier_basis": basis,
+            "chain": chains.get(canon(u), {"cites": [], "cited_by": []}),
         }
     json.dump(out, open(OUT, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     return out
@@ -204,6 +245,12 @@ def report(ev):
     att = sum(v["figures"]["with_named_source"] for v in f)
     print(f"  figures: {tot}, of which {att} name a source in the same sentence "
           f"({100*att/tot:.0f}%)" if tot else "  no figures")
+    ch = [v for v in ok if v.get("chain", {}).get("cites") or v.get("chain", {}).get("cited_by")]
+    cross = [v for v in ok for c in v.get("chain", {}).get("cites", [])
+             if c["tier"] != v["motive_tier"]]
+    print("\nSTORY CHAINS")
+    print(f"  items in a citation chain:                        {len(ch)}/{len(ok)}")
+    print(f"  citations that cross a tier:                      {len(cross)}")
     print("\nMOTIVE TIER")
     bas = {}
     for v in ok:
