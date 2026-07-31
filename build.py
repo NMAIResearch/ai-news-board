@@ -271,10 +271,43 @@ def market_chip(entity, mk, tmap):
             f'<span class="mktpct">{arrow}</span>{stale}</span>')
 
 
+def _asof_rule(mk):
+    """THE RULE: no cell displays under a date it does not have.
+
+    Measured 2026-07-31, the strip stamped one date over four vintages. Brent read 27 Jul,
+    the US indices 30 Jul, the Nikkei and 29 of 34 equities 31 Jul, and the footer said
+    "indices close 2026-07-30" because it read the S&P's date and applied it to everything.
+    A four-day-old oil price under a date that is not its own is a vintage error, and this
+    board flags vintage errors in other people's work.
+
+    So: the freshest date in the payload is the reference, every cell carries its OWN date,
+    and any cell behind the reference is marked in visible text rather than in a tooltip.
+
+    ⛔ Do not "fix" this by showing only the oldest date, or by hiding the stale cells. The
+    spread is real and per-source: FRED is a trading day behind by design, Finnhub is live,
+    and a market closed on a given day has no later price. Reporting the spread is correct;
+    flattening it is what caused the error.
+    """
+    dates = [q.get("asof") for q in (mk.get("indices") or {}).values() if q.get("asof")]
+    dates += [q.get("asof") for q in (mk.get("equities") or {}).values() if q.get("asof")]
+    return max(dates) if dates else ""
+
+
+def _vintage(q, ref):
+    """Visible mark for a cell older than the freshest cell in the same strip."""
+    a = q.get("asof") or ""
+    if not a or not ref or a >= ref:
+        return ""
+    return (f'<span style="color:{SLATE};font-size:10px" '
+            f'title="This cell is from {a}, the strip\'s freshest data is {ref}.">'
+            f' {a[5:]}</span>')
+
+
 def market_strip(mk):
     """The header strip. Indices are a trading day behind and say so."""
     if not mk or not mk.get("indices"):
         return ""
+    ref = _asof_rule(mk)
     cells = []
     for key, q in mk["indices"].items():
         pct = q.get("change_pct")
@@ -287,7 +320,7 @@ def market_strip(mk):
             f'<span class="mktval" style="color:{BODY};font-weight:600">'
             f'{money(q["value"], q.get("dp", 2), q.get("prefix", ""))}</span> '
             f'<span class="mktpct" style="color:{col}">'
-            f'{"" if pct is None else f"{pct:+.2f}%"}</span></span>')
+            f'{"" if pct is None else f"{pct:+.2f}%"}</span>{_vintage(q, ref)}</span>')
     for sym in (mk.get("strip_equities") or []):
         q = mk["equities"].get(sym)
         if not q:
@@ -300,16 +333,18 @@ def market_strip(mk):
             f'<span class="mktval" style="color:{BODY};font-weight:600">'
             f'{money(q["value"])}</span> '
             f'<span class="mktpct" style="color:{col}">'
-            f'{"" if pct is None else f"{pct:+.2f}%"}</span></span>')
+            f'{"" if pct is None else f"{pct:+.2f}%"}</span>{_vintage(q, ref)}</span>')
 
-    asof = esc((mk.get("indices", {}).get("spx") or {}).get("asof", ""))
+    asof = esc(ref)
     return (
         f'<section id="mktstrip" style="border:1px solid {LINE};border-radius:8px;'
         f'padding:9px 14px;margin:0 0 14px;background:#fff;overflow-x:auto;font-size:13px">'
         f'<div style="margin-bottom:3px">{"".join(cells)}</div>'
         f'<div style="font-size:11px;color:{SLATE}">'
-        f'Indices close <span id="mktidxasof">{asof}</span> (FRED, one trading day behind); '
-        f'equities live (Finnhub). '
+        f'Freshest data <span id="mktidxasof">{asof}</span>. A small date after a cell means '
+        f'that cell is older: FRED indices run a trading day behind, and a market closed on a '
+        f'given day has no later price. Each percentage is the move since that series own '
+        f'previous observation, so a gap in the series is a longer window than a day. '
         f'Context for the announced-vs-delivered lens, not a market call and not investment '
         f'advice. <span id="mktupd"></span></div>'
         # Collapsed by default: the disclosure ran as long as the price strip it qualifies.
