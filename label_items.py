@@ -28,7 +28,7 @@ import json
 import os
 import time
 
-from autolabel import DENOM, HOST, MODEL, NUM_CTX, NUM_PREDICT, call, parse_labels, retry_call
+from llm_client import DENOM, HOST, MODEL, NUM_CTX, NUM_PREDICT, call, parse_labels, retry_call
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 FEED = os.path.join(HERE, "feed_items.json")
