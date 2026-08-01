@@ -69,14 +69,14 @@
     "indices": [
       {"key": "spx",    "label": "S&P 500",  "fred": "SP500",        "dp": 2},
       {"key": "nasdaq", "label": "Nasdaq",   "fred": "NASDAQCOM",    "dp": 2},
-      {"key": "dow",    "label": "Dow",      "fred": "DJIA",         "dp": 2},
+      {"key": "ust10y", "label": "US 10Y",   "fred": "DGS10",        "dp": 2},
       {"key": "vix",    "label": "VIX",      "fred": "VIXCLS",       "dp": 2},
       {"key": "brent",  "label": "Brent",    "fred": "DCOILBRENTEU", "dp": 2, "prefix": "$"},
       {"key": "btc",    "label": "Bitcoin",  "fred": "CBBTCUSD",     "dp": 0, "prefix": "$"},
       {"key": "nikkei", "label": "Nikkei",   "fred": "NIKKEI225",    "dp": 2}
     ],
     "_indices_note": "No euro-area index: FRED's only euro-area share-price series is monthly and runs about six months behind, which would print stale next to daily values.",
-    "equities": ["NVDA", "MSFT", "GOOGL", "AMZN", "META", "ORCL", "AMD", "TSM", "MU", "CRWV", "PLTR", "SPCX",
-                 "ASML", "STM", "SBGSY", "BABA", "BIDU", "TCEHY"]
+    "equities": ["NVDA", "MSFT", "GOOGL", "AMZN", "META", "ORCL", "AMD", "AVGO", "TSM", "MU", "CRWV", "PLTR", "SPCX",
+                 "ASML", "STM", "SBGSY", "BABA", "BIDU", "TCEHY", "SMH"]
   }
 }
