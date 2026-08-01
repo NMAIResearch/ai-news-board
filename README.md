@@ -109,8 +109,7 @@ is worth keeping if it is ever rebuilt on spans.
 
 ## Model releases
 
-Models that reached OpenRouter or the Hugging Face API in the last 60 days. That is the whole
-job of the panel: what came out recently.
+Models that reached OpenRouter or the Hugging Face API in the last 60 days.
 
 Each row says whether the weights are published. This is an attribute of the release, not a
 grade. An API-only model is shipped, it is serving traffic and people are paying for it, it is

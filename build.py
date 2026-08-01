@@ -972,7 +972,7 @@ def main():
                 f'rather than the coverage of it.</div>'
                 + "".join(rows) + "</details>")
 
-    # Model releases: what came out recently. That is the whole job.
+    # Model releases: models that reached OpenRouter or the Hugging Face API in the last 60 days.
     # ⛔ Do not make the open vs API-only split the headline. The two sides are not collected
     # the same way (OpenRouter in full, Hugging Face a fixed org list capped at 5 repos each),
     # so the totals are not comparable. See fetch_releases.py.
