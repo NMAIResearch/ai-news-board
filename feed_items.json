@@ -1,13 +1,130 @@
 {
- "fetched": "2026-08-01 17:09 UTC",
+ "fetched": "2026-08-03 00:03 UTC",
  "items": [
+  {
+   "entity": "OpenAI",
+   "headline": "Sam Altman and AI’s decel debate",
+   "date": "Sun, 02 Aug 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/08/02/sam-altman-and-ais-decel-debate/",
+     "source_type": "trade-press",
+     "motive_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "label_tier": 1,
+   "label_evidence": "no figure in 7726 chars of article text",
+   "label_source": "deterministic",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 16
+    },
+    {
+     "name": "Hugging Face",
+     "count": 5
+    },
+    {
+     "name": "Anthropic",
+     "count": 3
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Apple",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Hugging Face",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "xAI",
+   "headline": "Judge denies xAI’s request to block Minnesota ban on ‘nudify’ apps",
+   "date": "Sat, 01 Aug 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps/",
+     "source_type": "trade-press",
+     "motive_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 1 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "xAI",
+     "count": 11
+    },
+    {
+     "name": "OpenAI",
+     "count": 2
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "SpaceX",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "YouTuber Hank Green says his AI usage is ‘not healthy’",
+   "date": "Sat, 01 Aug 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/08/01/youtuber-hank-green-says-his-ai-usage-is-not-healthy/",
+     "source_type": "trade-press",
+     "motive_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "label_tier": 1,
+   "label_evidence": "no figure in 3927 chars of article text",
+   "label_source": "deterministic",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 1
+    },
+    {
+     "name": "Google",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "hank green",
+   "entity_basis": "unresolved"
+  },
   {
    "entity": "OpenAI",
    "headline": "Sam Altman is still making the case for parenting via ChatGPT",
    "date": "Sat, 01 Aug 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "N",
+   "denominator_stated": "partial",
    "reviewed": false,
    "sources": [
     {
@@ -18,6 +135,11 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 2 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
    "mentions": [
     {
      "name": "OpenAI",
@@ -41,12 +163,7 @@
     }
    ],
    "publisher_topic": "OpenAI",
-   "entity_basis": "headline",
-   "label_tier": 3,
-   "label_evidence": "model read 2 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "entity_basis": "headline"
   },
   {
    "entity": "",
@@ -65,6 +182,11 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 4 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
    "mentions": [
     {
      "name": "OpenAI",
@@ -88,12 +210,7 @@
     }
    ],
    "publisher_topic": "",
-   "entity_basis": "unresolved",
-   "label_tier": 3,
-   "label_evidence": "model read 4 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "entity_basis": "unresolved"
   },
   {
    "entity": "OpenAI",
@@ -101,7 +218,7 @@
    "date": "Fri, 31 Jul 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "n/a",
+   "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
@@ -112,6 +229,11 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 2 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
    "mentions": [
     {
      "name": "OpenAI",
@@ -127,145 +249,104 @@
     }
    ],
    "publisher_topic": "Hugging Face",
-   "entity_basis": "headline",
-   "label_tier": 3,
-   "label_evidence": "model read 2 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "entity_basis": "headline"
   },
   {
    "entity": "",
-   "headline": "India is starting to pay for apps, not just download them",
-   "date": "Fri, 31 Jul 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "partial",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/07/31/india-is-starting-to-pay-for-apps-not-just-download-them/",
-     "source_type": "trade-press",
-     "motive_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 3
-    },
-    {
-     "name": "OpenAI",
-     "count": 2
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Amazon",
-     "count": 1
-    },
-    {
-     "name": "Okta",
-     "count": 1
-    },
-    {
-     "name": "Permiso",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "app market",
-   "entity_basis": "unresolved",
-   "label_tier": 1,
-   "label_evidence": "3 of 10 figure-sentence(s) state a base",
-   "label_source": "deterministic"
-  },
-  {
-   "entity": "Google",
-   "headline": "Google nixes its Earth AI feature one day after launch, amid criticism it would spread misinformation",
-   "date": "Fri, 31 Jul 2026",
+   "headline": "Fender’s CEO seems to think your bandmates are just analog AI",
+   "date": "2026-08-02T15:40",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/07/31/google-nixes-its-earth-ai-feature-one-day-after-launch-amid-criticism-it-would-spread-misinformation/",
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/974265/fender-ceo-bud-cole-ai-music",
      "source_type": "trade-press",
      "motive_tier": 3
     }
    ],
    "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 7 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
    "mentions": [
     {
-     "name": "Google",
-     "count": 14
-    },
-    {
-     "name": "OpenAI",
+     "name": "Apple",
      "count": 1
     }
    ],
-   "publisher_topic": "Google",
-   "entity_basis": "headline",
-   "label_tier": 3,
-   "label_evidence": "model read 3 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "publisher_topic": "Report",
+   "entity_basis": "unresolved"
   },
   {
-   "entity": "OpenAI",
-   "headline": "Sam Altman\u00a0isn\u2019t\u00a0the only one who wants to pump the brakes on AI",
-   "date": "Fri, 31 Jul 2026",
+   "entity": "",
+   "headline": "Is paying artists enough to convince them to embrace AI?",
+   "date": "2026-07-31T17:16",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "partial",
+   "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/video/sam-altman-isnt-the-only-one-who-wants-to-pump-the-brakes-on-ai/",
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/974018/pippa-seedance-artist-royalties",
      "source_type": "trade-press",
      "motive_tier": 3
     }
    ],
    "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 9 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
    "mentions": [
     {
-     "name": "OpenAI",
-     "count": 10
-    },
+     "name": "Apple",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "Report",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "Is this Billboard Hot 100 hit AI slop?",
+   "date": "2026-08-02T09:25",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
     {
-     "name": "Anthropic",
-     "count": 4
-    },
-    {
-     "name": "Google",
-     "count": 1
-    },
-    {
-     "name": "Amazon",
-     "count": 1
-    },
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/974209/fenix-flexin-billboard-hot-100-rubberz-ai-slop",
+     "source_type": "trade-press",
+     "motive_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 14 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "mentions": [
     {
      "name": "Apple",
      "count": 1
     },
     {
-     "name": "xAI",
+     "name": "Snap",
      "count": 1
     }
    ],
-   "publisher_topic": "Amazon",
-   "entity_basis": "headline",
-   "label_tier": 1,
-   "label_evidence": "1 of 3 figure-sentence(s) state a base",
-   "label_source": "deterministic"
+   "publisher_topic": "Report",
+   "entity_basis": "unresolved"
   },
   {
    "entity": "Google",
@@ -284,6 +365,11 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 4 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
    "mentions": [
     {
      "name": "Google",
@@ -291,16 +377,11 @@
     }
    ],
    "publisher_topic": "Apps",
-   "entity_basis": "headline",
-   "label_tier": 3,
-   "label_evidence": "model read 4 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "entity_basis": "headline"
   },
   {
    "entity": "Google",
-   "headline": "Here\u2019s the problem with putting an AI image generator in Google Earth",
+   "headline": "Here’s the problem with putting an AI image generator in Google Earth",
    "date": "2026-07-31T16:12",
    "topic": "",
    "claim_type": "unclassified",
@@ -315,6 +396,11 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 3 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
    "mentions": [
     {
      "name": "Google",
@@ -322,12 +408,7 @@
     }
    ],
    "publisher_topic": "Google",
-   "entity_basis": "headline",
-   "label_tier": 3,
-   "label_evidence": "model read 3 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "entity_basis": "headline"
   },
   {
    "entity": "",
@@ -346,6 +427,11 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 3 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
    "mentions": [
     {
      "name": "Google",
@@ -353,141 +439,7 @@
     }
    ],
    "publisher_topic": "",
-   "entity_basis": "unresolved",
-   "label_tier": 3,
-   "label_evidence": "model read 3 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "It\u2019s time to panic about AI safety",
-   "date": "2026-07-31T10:31",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/podcast/973668/ai-safety-openai-hugging-face-vergecast",
-     "source_type": "trade-press",
-     "motive_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 5
-    },
-    {
-     "name": "Anthropic",
-     "count": 2
-    },
-    {
-     "name": "Google",
-     "count": 2
-    },
-    {
-     "name": "Meta",
-     "count": 2
-    },
-    {
-     "name": "Apple",
-     "count": 1
-    },
-    {
-     "name": "Hugging Face",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "OpenAI",
-   "entity_basis": "tag",
-   "label_tier": 3,
-   "label_evidence": "model read 3 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
-  },
-  {
-   "entity": "Anthropic",
-   "headline": "Anthropic says Claude accidentally hacked real companies too",
-   "date": "2026-07-31T09:41",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/973670/anthropic-claude-hacked-organizations-during-cyber-tests",
-     "source_type": "trade-press",
-     "motive_tier": 3
-    }
-   ],
-   "entity_basis": "headline",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_tier": 3,
-   "label_evidence": "model read 4 figure-sentence(s), no base cue matched",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Anthropic",
-     "count": 13
-    },
-    {
-     "name": "OpenAI",
-     "count": 10
-    },
-    {
-     "name": "Hugging Face",
-     "count": 5
-    },
-    {
-     "name": "Google",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Anthropic"
-  },
-  {
-   "entity": "Apple",
-   "headline": "Tim Cook hints at iCloud Plus tier for AI power users",
-   "date": "2026-07-30T18:31",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/tech/973552/apple-ceo-tim-cook-icloud-plus-ai",
-     "source_type": "trade-press",
-     "motive_tier": 3
-    }
-   ],
-   "entity_basis": "headline",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_tier": 3,
-   "label_evidence": "model read 4 figure-sentence(s), no base cue matched",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Apple",
-     "count": 13
-    },
-    {
-     "name": "Google",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Apple"
+   "entity_basis": "unresolved"
   },
   {
    "entity": "Google",
@@ -506,6 +458,9 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 1,
+   "label_evidence": "1 of 5 figure-sentence(s) state a base",
+   "label_source": "deterministic",
    "mentions": [
     {
      "name": "Google",
@@ -517,10 +472,7 @@
     }
    ],
    "publisher_topic": "",
-   "entity_basis": "headline",
-   "label_tier": 1,
-   "label_evidence": "1 of 5 figure-sentence(s) state a base",
-   "label_source": "deterministic"
+   "entity_basis": "headline"
   },
   {
    "entity": "Google",
@@ -539,6 +491,11 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 1 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
    "mentions": [
     {
      "name": "Google",
@@ -550,12 +507,7 @@
     }
    ],
    "publisher_topic": "",
-   "entity_basis": "headline",
-   "label_tier": 3,
-   "label_evidence": "model read 1 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "entity_basis": "headline"
   },
   {
    "entity": "Anthropic",
@@ -574,6 +526,11 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 8 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
    "mentions": [
     {
      "name": "Anthropic",
@@ -589,12 +546,7 @@
     }
    ],
    "publisher_topic": "",
-   "entity_basis": "product:Claude",
-   "label_tier": 3,
-   "label_evidence": "model read 8 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "entity_basis": "product:Claude"
   },
   {
    "entity": "Google",
@@ -613,6 +565,11 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 3 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
    "mentions": [
     {
      "name": "Google",
@@ -620,12 +577,7 @@
     }
    ],
    "publisher_topic": "",
-   "entity_basis": "headline",
-   "label_tier": 3,
-   "label_evidence": "model read 3 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "entity_basis": "headline"
   },
   {
    "entity": "",
@@ -644,14 +596,14 @@
     }
    ],
    "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved",
    "label_tier": 3,
    "label_evidence": "model read 5 figure-sentence(s), no base cue matched",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -659,7 +611,7 @@
    "date": "Fri, 31 Jul 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "N",
+   "denominator_stated": "Y",
    "reviewed": false,
    "sources": [
     {
@@ -670,14 +622,14 @@
     }
    ],
    "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved",
    "label_tier": 3,
    "label_evidence": "model read 7 figure-sentence(s), no base cue matched",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
   },
   {
    "entity": "Google DeepMind",
@@ -712,7 +664,7 @@
   },
   {
    "entity": "Google DeepMind",
-   "headline": "We\u2019re launching Lyria 3.5 in Google Flow Music, with advances across musicality, lyrics, vocals, and creative control",
+   "headline": "We’re launching Lyria 3.5 in Google Flow Music, with advances across musicality, lyrics, vocals, and creative control",
    "date": "Wed, 29 Jul 2026",
    "topic": "",
    "claim_type": "announced",
@@ -770,7 +722,7 @@
   },
   {
    "entity": "Google",
-   "headline": "Accelerating the frontiers of scientific discovery: Google\u2019s $40M commitment to the Genesis Mission",
+   "headline": "Accelerating the frontiers of scientific discovery: Google’s $40M commitment to the Genesis Mission",
    "date": "Wed, 22 Jul 2026",
    "topic": "",
    "claim_type": "announced",
@@ -852,12 +804,144 @@
    "publisher_topic": ""
   },
   {
+   "entity": "",
+   "headline": "AI poster wins Ohio State Fair contest",
+   "date": "Sun, 02 Aug 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "ohiostatefair.com",
+     "url": "https://www.ohiostatefair.com/p/get-involved/arts/poster-contest",
+     "source_type": "other",
+     "motive_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "label_tier": 1,
+   "label_evidence": "no figure in 59 chars of article text",
+   "label_source": "deterministic",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "My personal AI benchmark: \"Generate an SVG of a frog with a Habsburg jaw.\"",
+   "date": "Sun, 02 Aug 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "partial",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "frogs.vaguespac.es",
+     "url": "https://frogs.vaguespac.es/",
+     "source_type": "other",
+     "motive_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "label_tier": 1,
+   "label_evidence": "3 of 126 figure-sentence(s) state a base",
+   "label_source": "deterministic",
+   "mentions": [
+    {
+     "name": "Anthropic",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "Show HN: Sprocket – The Best AI Agent for Hardware and Software Development",
+   "date": "Sun, 02 Aug 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "sprocket-demo.spikonado.com",
+     "url": "https://sprocket-demo.spikonado.com",
+     "source_type": "other",
+     "motive_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 4 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "Zitron: \"Everyone Has Been Sold a Lie\" on AI [video]",
+   "date": "Sat, 01 Aug 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "youtube.com",
+     "url": "https://www.youtube.com/watch?v=pHcZpvIfho0",
+     "source_type": "other",
+     "motive_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "label_tier": 1,
+   "label_evidence": "no figure in 253 chars of article text",
+   "label_source": "deterministic",
+   "mentions": [
+    {
+     "name": "Google",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Anthropic",
+   "entity_basis": "tags-name-4-orgs"
+  },
+  {
+   "entity": "",
+   "headline": "AI financial advice is surprisingly good, especially if you ask right questions",
+   "date": "Sat, 01 Aug 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "partial",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "mitsloan.mit.edu",
+     "url": "https://mitsloan.mit.edu/ideas-made-to-matter/ai-financial-advice-surprisingly-good-especially-if-you-ask-right-questions",
+     "source_type": "other",
+     "motive_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "label_tier": 1,
+   "label_evidence": "1 of 10 figure-sentence(s) state a base",
+   "label_source": "deterministic",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
    "entity": "Google",
    "headline": "Google kills Earth AI generator after one day",
    "date": "Sat, 01 Aug 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "n/a",
+   "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
@@ -868,149 +952,14 @@
     }
    ],
    "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "headline",
    "label_tier": 3,
    "label_evidence": "model read article not fetched (robots-disallowed)",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
-  },
-  {
-   "entity": "",
-   "headline": "Charlie Stross \u2013 On the non-use of AI in my writing process",
-   "date": "Sat, 01 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "antipope.org",
-     "url": "https://www.antipope.org/charlie/blog-static/2026/08/on-the-non-use-of-ai-in-my-wri.html",
-     "source_type": "other",
-     "motive_tier": 3
-    }
-   ],
-   "rating": "ok",
+   "label_source": "machine",
    "mentions": [],
    "publisher_topic": "",
-   "entity_basis": "unresolved",
-   "label_tier": 3,
-   "label_evidence": "model read article not fetched (urlerror)",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
-  },
-  {
-   "entity": "",
-   "headline": "EU will mandate labels on authentic-looking AI content starting August 2",
-   "date": "Sat, 01 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "engadget.com",
-     "url": "https://www.engadget.com/2227966/eu-mandate-labels-on-authentic-looking-ai-content/",
-     "source_type": "other",
-     "motive_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved",
-   "label_tier": 3,
-   "label_evidence": "model read 2 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
-  },
-  {
-   "entity": "",
-   "headline": "AI doesn't generate working products, that's still your job",
-   "date": "Sat, 01 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "weeraman.com",
-     "url": "https://weeraman.com/the-prototype-isnt-the-product/",
-     "source_type": "other",
-     "motive_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved",
-   "label_tier": 1,
-   "label_evidence": "no figure in 5913 chars of article text",
-   "label_source": "deterministic"
-  },
-  {
-   "entity": "",
-   "headline": "Flint: A Visualization Language for the AI Era",
-   "date": "Sat, 01 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "microsoft.github.io",
-     "url": "https://microsoft.github.io/flint-chart/",
-     "source_type": "other",
-     "motive_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved",
-   "label_tier": 1,
-   "label_evidence": "no figure in 46 chars of article text",
-   "label_source": "deterministic"
-  },
-  {
-   "entity": "",
-   "headline": "Everyone is building LLM routers, we deprecated ours",
-   "date": "Fri, 31 Jul 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "manifest.build",
-     "url": "https://manifest.build/blog/why-we-deprecated-our-llm-router/",
-     "source_type": "other",
-     "motive_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved",
-   "label_tier": 3,
-   "label_evidence": "model read 2 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "entity_basis": "headline"
   },
   {
    "entity": "Bureau of Labor Statistics",
@@ -1144,7 +1093,7 @@
   },
   {
    "entity": "NIST",
-   "headline": "NIST Expands AI Consortium\u2019s Scope, Calls for New Members",
+   "headline": "NIST Expands AI Consortium’s Scope, Calls for New Members",
    "date": "Fri, 29 May 2026",
    "topic": "",
    "claim_type": "announced",
@@ -1268,7 +1217,7 @@
   },
   {
    "entity": "Nvidia",
-   "headline": "Nvidia\u2019s China Partners and the PLA",
+   "headline": "Nvidia’s China Partners and the PLA",
    "date": "Sun, 26 Jul 2026",
    "topic": "",
    "claim_type": "unclassified",
@@ -1283,6 +1232,9 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 1,
+   "label_evidence": "no figure in 2380 chars of article text",
+   "label_source": "deterministic",
    "mentions": [
     {
      "name": "Nvidia",
@@ -1290,14 +1242,11 @@
     }
    ],
    "publisher_topic": "China",
-   "entity_basis": "headline",
-   "label_tier": 1,
-   "label_evidence": "no figure in 2380 chars of article text",
-   "label_source": "deterministic"
+   "entity_basis": "headline"
   },
   {
    "entity": "",
-   "headline": "Remarks at the Global Nobel Laureates Assembly on Artificial Intelligence and Nuclear War in Borgo Laudato Si\u2019, Vatican",
+   "headline": "Remarks at the Global Nobel Laureates Assembly on Artificial Intelligence and Nuclear War in Borgo Laudato Si’, Vatican",
    "date": "Wed, 22 Jul 2026",
    "topic": "",
    "claim_type": "unclassified",
@@ -1312,12 +1261,12 @@
     }
    ],
    "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved",
    "label_tier": 1,
    "label_evidence": "no figure in 10281 chars of article text",
-   "label_source": "deterministic"
+   "label_source": "deterministic",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -1325,7 +1274,7 @@
    "date": "Tue, 21 Jul 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "n/a",
+   "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
@@ -1336,6 +1285,11 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 5 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
    "mentions": [
     {
      "name": "Google",
@@ -1343,12 +1297,7 @@
     }
    ],
    "publisher_topic": "",
-   "entity_basis": "unresolved",
-   "label_tier": 3,
-   "label_evidence": "model read 5 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "entity_basis": "unresolved"
   },
   {
    "entity": "OpenAI",
@@ -1367,6 +1316,9 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 1,
+   "label_evidence": "no figure in 2378 chars of article text",
+   "label_source": "deterministic",
    "mentions": [
     {
      "name": "OpenAI",
@@ -1386,10 +1338,7 @@
     }
    ],
    "publisher_topic": "United States",
-   "entity_basis": "headline",
-   "label_tier": 1,
-   "label_evidence": "no figure in 2378 chars of article text",
-   "label_source": "deterministic"
+   "entity_basis": "headline"
   },
   {
    "entity": "",
@@ -1408,14 +1357,14 @@
     }
    ],
    "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "China",
-   "entity_basis": "unresolved",
    "label_tier": 3,
    "label_evidence": "model read 1 figure-sentence(s), no base cue matched",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "China",
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -1434,6 +1383,9 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 1,
+   "label_evidence": "no figure in 2592 chars of article text",
+   "label_source": "deterministic",
    "mentions": [
     {
      "name": "OpenAI",
@@ -1445,10 +1397,7 @@
     }
    ],
    "publisher_topic": "China",
-   "entity_basis": "unresolved",
-   "label_tier": 1,
-   "label_evidence": "no figure in 2592 chars of article text",
-   "label_source": "deterministic"
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -1467,6 +1416,9 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 1,
+   "label_evidence": "no figure in 574 chars of article text",
+   "label_source": "deterministic",
    "mentions": [
     {
      "name": "OpenAI",
@@ -1478,10 +1430,7 @@
     }
    ],
    "publisher_topic": "",
-   "entity_basis": "unresolved",
-   "label_tier": 1,
-   "label_evidence": "no figure in 574 chars of article text",
-   "label_source": "deterministic"
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -1500,6 +1449,11 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 33 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
    "mentions": [
     {
      "name": "OpenAI",
@@ -1515,12 +1469,7 @@
     }
    ],
    "publisher_topic": "",
-   "entity_basis": "unresolved",
-   "label_tier": 3,
-   "label_evidence": "model read 33 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -1539,6 +1488,9 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 1,
+   "label_evidence": "no figure in 4408 chars of article text",
+   "label_source": "deterministic",
    "mentions": [
     {
      "name": "OpenAI",
@@ -1550,10 +1502,7 @@
     }
    ],
    "publisher_topic": "",
-   "entity_basis": "unresolved",
-   "label_tier": 1,
-   "label_evidence": "no figure in 4408 chars of article text",
-   "label_source": "deterministic"
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -1572,6 +1521,9 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 1,
+   "label_evidence": "no figure in 729 chars of article text",
+   "label_source": "deterministic",
    "mentions": [
     {
      "name": "Google",
@@ -1579,10 +1531,7 @@
     }
    ],
    "publisher_topic": "",
-   "entity_basis": "unresolved",
-   "label_tier": 1,
-   "label_evidence": "no figure in 729 chars of article text",
-   "label_source": "deterministic"
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -1601,14 +1550,14 @@
     }
    ],
    "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved",
    "label_tier": 3,
    "label_evidence": "model read 1 figure-sentence(s), no base cue matched",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -1627,14 +1576,14 @@
     }
    ],
    "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved",
    "label_tier": 3,
    "label_evidence": "model read 1 figure-sentence(s), no base cue matched",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
   },
   {
    "entity": "Apple",
@@ -1653,6 +1602,9 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 1,
+   "label_evidence": "2 of 30 figure-sentence(s) state a base",
+   "label_source": "deterministic",
    "mentions": [
     {
      "name": "Apple",
@@ -1668,10 +1620,7 @@
     }
    ],
    "publisher_topic": "CUDA",
-   "entity_basis": "headline",
-   "label_tier": 1,
-   "label_evidence": "2 of 30 figure-sentence(s) state a base",
-   "label_source": "deterministic"
+   "entity_basis": "headline"
   },
   {
    "entity": "",
@@ -1690,12 +1639,12 @@
     }
    ],
    "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "Long Horizon",
-   "entity_basis": "unresolved",
    "label_tier": 1,
    "label_evidence": "4 of 24 figure-sentence(s) state a base",
-   "label_source": "deterministic"
+   "label_source": "deterministic",
+   "mentions": [],
+   "publisher_topic": "Long Horizon",
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -1714,6 +1663,11 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 4 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
    "mentions": [
     {
      "name": "OpenAI",
@@ -1725,12 +1679,7 @@
     }
    ],
    "publisher_topic": "data systems",
-   "entity_basis": "unresolved",
-   "label_tier": 3,
-   "label_evidence": "model read 4 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -1749,6 +1698,11 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 1 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
    "mentions": [
     {
      "name": "Google DeepMind",
@@ -1776,12 +1730,7 @@
     }
    ],
    "publisher_topic": "graduates",
-   "entity_basis": "unresolved",
-   "label_tier": 3,
-   "label_evidence": "model read 1 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -1800,6 +1749,9 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 1,
+   "label_evidence": "2 of 21 figure-sentence(s) state a base",
+   "label_source": "deterministic",
    "mentions": [
     {
      "name": "OpenAI",
@@ -1807,10 +1759,7 @@
     }
    ],
    "publisher_topic": "adaptive parallel reasoning",
-   "entity_basis": "unresolved",
-   "label_tier": 1,
-   "label_evidence": "2 of 21 figure-sentence(s) state a base",
-   "label_source": "deterministic"
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -1829,6 +1778,11 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 25 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
    "mentions": [
     {
      "name": "Meta",
@@ -1836,12 +1790,7 @@
     }
    ],
    "publisher_topic": "world models",
-   "entity_basis": "unresolved",
-   "label_tier": 3,
-   "label_evidence": "model read 25 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -1860,6 +1809,11 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 1 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
    "mentions": [
     {
      "name": "Meta",
@@ -1867,12 +1821,7 @@
     }
    ],
    "publisher_topic": "MIT CSAIL",
-   "entity_basis": "unresolved",
-   "label_tier": 3,
-   "label_evidence": "model read 1 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -1891,6 +1840,11 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 3 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
    "mentions": [
     {
      "name": "Meta",
@@ -1898,12 +1852,7 @@
     }
    ],
    "publisher_topic": "MIT Science Policy Initiative",
-   "entity_basis": "unresolved",
-   "label_tier": 3,
-   "label_evidence": "model read 3 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -1922,6 +1871,11 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 8 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
    "mentions": [
     {
      "name": "Google DeepMind",
@@ -1937,12 +1891,7 @@
     }
    ],
    "publisher_topic": "MIT RLE",
-   "entity_basis": "unresolved",
-   "label_tier": 3,
-   "label_evidence": "model read 8 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -1961,6 +1910,11 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 1 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
    "mentions": [
     {
      "name": "Meta",
@@ -1968,16 +1922,11 @@
     }
    ],
    "publisher_topic": "MIT nuclear science and engineering",
-   "entity_basis": "unresolved",
-   "label_tier": 3,
-   "label_evidence": "model read 1 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
-   "headline": "MIT projects selected for funding under US Department of Energy\u2019s Genesis Mission",
+   "headline": "MIT projects selected for funding under US Department of Energy’s Genesis Mission",
    "date": "Thu, 23 Jul 2026",
    "topic": "",
    "claim_type": "unclassified",
@@ -1992,6 +1941,11 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 2 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
    "mentions": [
     {
      "name": "Meta",
@@ -1999,12 +1953,7 @@
     }
    ],
    "publisher_topic": "DOE",
-   "entity_basis": "unresolved",
-   "label_tier": 3,
-   "label_evidence": "model read 2 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -2023,6 +1972,11 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 7 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
    "mentions": [
     {
      "name": "Meta",
@@ -2030,12 +1984,7 @@
     }
    ],
    "publisher_topic": "MIT EECS faculty",
-   "entity_basis": "unresolved",
-   "label_tier": 3,
-   "label_evidence": "model read 7 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -2054,6 +2003,11 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 7 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
    "mentions": [
     {
      "name": "Microsoft",
@@ -2073,12 +2027,7 @@
     }
    ],
    "publisher_topic": "",
-   "entity_basis": "unresolved",
-   "label_tier": 3,
-   "label_evidence": "model read 7 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -2097,6 +2046,9 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 1,
+   "label_evidence": "1 of 12 figure-sentence(s) state a base",
+   "label_source": "deterministic",
    "mentions": [
     {
      "name": "Nvidia",
@@ -2120,10 +2072,7 @@
     }
    ],
    "publisher_topic": "",
-   "entity_basis": "unresolved",
-   "label_tier": 1,
-   "label_evidence": "1 of 12 figure-sentence(s) state a base",
-   "label_source": "deterministic"
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -2142,6 +2091,9 @@
     }
    ],
    "rating": "trusted",
+   "label_tier": 1,
+   "label_evidence": "2 of 9 figure-sentence(s) state a base",
+   "label_source": "deterministic",
    "mentions": [
     {
      "name": "OpenAI",
@@ -2157,14 +2109,11 @@
     }
    ],
    "publisher_topic": "",
-   "entity_basis": "unresolved",
-   "label_tier": 1,
-   "label_evidence": "2 of 9 figure-sentence(s) state a base",
-   "label_source": "deterministic"
+   "entity_basis": "unresolved"
   },
   {
    "entity": "OpenAI",
-   "headline": "OpenAI accidentally hacked Hugging Face \u2014 should we have seen it coming?",
+   "headline": "OpenAI accidentally hacked Hugging Face — should we have seen it coming?",
    "date": "Thu, 23 Jul 2026",
    "topic": "",
    "claim_type": "unclassified",
@@ -2179,6 +2128,9 @@
     }
    ],
    "rating": "trusted",
+   "label_tier": 1,
+   "label_evidence": "1 of 2 figure-sentence(s) state a base",
+   "label_source": "deterministic",
    "mentions": [
     {
      "name": "Hugging Face",
@@ -2194,10 +2146,7 @@
     }
    ],
    "publisher_topic": "",
-   "entity_basis": "headline",
-   "label_tier": 1,
-   "label_evidence": "1 of 2 figure-sentence(s) state a base",
-   "label_source": "deterministic"
+   "entity_basis": "headline"
   },
   {
    "entity": "",
@@ -2216,6 +2165,11 @@
     }
    ],
    "rating": "trusted",
+   "label_tier": 3,
+   "label_evidence": "model read 3 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
    "mentions": [
     {
      "name": "OpenAI",
@@ -2227,12 +2181,7 @@
     }
    ],
    "publisher_topic": "",
-   "entity_basis": "unresolved",
-   "label_tier": 3,
-   "label_evidence": "model read 3 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -2251,12 +2200,12 @@
     }
    ],
    "rating": "trusted",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved",
    "label_tier": 1,
    "label_evidence": "1 of 14 figure-sentence(s) state a base",
-   "label_source": "deterministic"
+   "label_source": "deterministic",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -2275,6 +2224,9 @@
     }
    ],
    "rating": "trusted",
+   "label_tier": 1,
+   "label_evidence": "1 of 8 figure-sentence(s) state a base",
+   "label_source": "deterministic",
    "mentions": [
     {
      "name": "Google",
@@ -2294,10 +2246,7 @@
     }
    ],
    "publisher_topic": "",
-   "entity_basis": "unresolved",
-   "label_tier": 1,
-   "label_evidence": "1 of 8 figure-sentence(s) state a base",
-   "label_source": "deterministic"
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -2316,6 +2265,9 @@
     }
    ],
    "rating": "trusted",
+   "label_tier": 1,
+   "label_evidence": "5 of 30 figure-sentence(s) state a base",
+   "label_source": "deterministic",
    "mentions": [
     {
      "name": "Nvidia",
@@ -2343,10 +2295,7 @@
     }
    ],
    "publisher_topic": "",
-   "entity_basis": "unresolved",
-   "label_tier": 1,
-   "label_evidence": "5 of 30 figure-sentence(s) state a base",
-   "label_source": "deterministic"
+   "entity_basis": "unresolved"
   },
   {
    "entity": "Anthropic",
@@ -2365,6 +2314,9 @@
     }
    ],
    "rating": "ok",
+   "label_tier": 1,
+   "label_evidence": "2 of 9 figure-sentence(s) state a base",
+   "label_source": "deterministic",
    "mentions": [
     {
      "name": "OpenAI",
@@ -2376,10 +2328,7 @@
     }
    ],
    "publisher_topic": "",
-   "entity_basis": "site",
-   "label_tier": 1,
-   "label_evidence": "2 of 9 figure-sentence(s) state a base",
-   "label_source": "deterministic"
+   "entity_basis": "site"
   },
   {
    "entity": "Anthropic",
@@ -2398,12 +2347,12 @@
     }
    ],
    "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "site",
    "label_tier": 1,
    "label_evidence": "1 of 8 figure-sentence(s) state a base",
-   "label_source": "deterministic"
+   "label_source": "deterministic",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "site"
   },
   {
    "entity": "Anthropic",
@@ -2434,7 +2383,7 @@
   {
    "entity": "OpenAI",
    "headline": "Introducing GPT-Live",
-   "date": "2026-08-01",
+   "date": "2026-08-02",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "N",
@@ -2448,14 +2397,14 @@
     }
    ],
    "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "site",
    "label_tier": 3,
    "label_evidence": "model read 2 figure-sentence(s), no base cue matched",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "site"
   },
   {
    "entity": "OpenAI",
@@ -2463,7 +2412,7 @@
    "date": "2026-08-01",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "n/a",
+   "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
@@ -2474,14 +2423,14 @@
     }
    ],
    "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "site",
    "label_tier": 3,
-   "label_evidence": "model read article not fetched (http-403)",
+   "label_evidence": "model read 1 figure-sentence(s), no base cue matched",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine"
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "site"
   },
   {
    "entity": "OpenAI",
