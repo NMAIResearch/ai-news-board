@@ -1,4 +1,60 @@
 {
+ "https://techcrunch.com/2026/08/02/sam-altman-and-ais-decel-debate/": {
+  "headline": "Sam Altman and AI\u2019s decel debate",
+  "source": "techcrunch.com",
+  "fetch": "ok",
+  "n_chars": 7726,
+  "tier": 1,
+  "furniture_dropped": 1,
+  "publisher_tags": [
+   "Hugging Face",
+   "OpenAI",
+   "sam altman"
+  ],
+  "site_name": "TechCrunch",
+  "spans": []
+ },
+ "https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps/": {
+  "headline": "Judge denies xAI\u2019s request to block Minnesota ban on \u2018nudify\u2019 apps",
+  "source": "techcrunch.com",
+  "fetch": "ok",
+  "n_chars": 2404,
+  "tier": 1,
+  "furniture_dropped": 1,
+  "publisher_tags": [
+   "SpaceX",
+   "xAI"
+  ],
+  "site_name": "TechCrunch",
+  "spans": [
+   {
+    "sentence": "1:26 PM PDT \u00b7 August 1, 2026",
+    "offset": 18,
+    "figures": [
+     "1",
+     "26"
+    ],
+    "figure_offsets": [
+     0,
+     2
+    ],
+    "base_cue": false
+   }
+  ]
+ },
+ "https://techcrunch.com/2026/08/01/youtuber-hank-green-says-his-ai-usage-is-not-healthy/": {
+  "headline": "YouTuber Hank Green says his AI usage is \u2018not healthy\u2019",
+  "source": "techcrunch.com",
+  "fetch": "ok",
+  "n_chars": 3927,
+  "tier": 1,
+  "furniture_dropped": 2,
+  "publisher_tags": [
+   "hank green"
+  ],
+  "site_name": "TechCrunch",
+  "spans": []
+ },
  "https://techcrunch.com/2026/08/01/sam-altman-is-still-making-the-case-for-parenting-via-chatgpt/": {
   "headline": "Sam Altman is still making the case for parenting via ChatGPT",
   "source": "techcrunch.com",
@@ -150,181 +206,185 @@
    }
   ]
  },
- "https://techcrunch.com/2026/07/31/india-is-starting-to-pay-for-apps-not-just-download-them/": {
-  "headline": "India is starting to pay for apps, not just download them",
-  "source": "techcrunch.com",
+ "https://www.theverge.com/ai-artificial-intelligence/974265/fender-ceo-bud-cole-ai-music": {
+  "headline": "Fender\u2019s CEO seems to think your bandmates are just analog AI",
+  "source": "theverge.com",
   "fetch": "ok",
-  "n_chars": 5289,
+  "n_chars": 6116,
   "tier": 1,
-  "furniture_dropped": 1,
+  "furniture_dropped": 0,
   "publisher_tags": [
-   "app market",
-   "ChatGPT",
-   "Claude",
-   "google one"
+   "AI",
+   "Entertainment",
+   "Music",
+   "Report"
   ],
-  "site_name": "TechCrunch",
+  "site_name": "The Verge",
   "spans": [
    {
-    "sentence": "India\u2019s mobile app market generated a record $345 million in consumer spending during the second quarter of this year, up 35% from a year earlier, according to a new report by Sensor Tower.",
-    "offset": 212,
+    "sentence": "Aug 2, 2026, 7:36 PM UTC",
+    "offset": 202,
     "figures": [
-     "$345 million",
-     "35%"
+     "36"
     ],
     "figure_offsets": [
+     15
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "He\u2019s covered the tech industry for over 18 years and knows a thing or two about synths.",
+    "offset": 410,
+    "figures": [
+     "18"
+    ],
+    "figure_offsets": [
+     40
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "The adage is that you need to write 100 ( or 1,000 ) (or 10,000 ) bad songs before you write one good one.",
+    "offset": 5077,
+    "figures": [
+     "100",
+     "1,000",
+     "10,000"
+    ],
+    "figure_offsets": [
+     36,
      45,
-     122
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "India\u2019s revenue per download has more than doubled over the past three and a half years, while quarterly app downloads have remained at around 6.3 billion since 2023.",
-    "offset": 699,
-    "figures": [
-     "6.3 billion"
-    ],
-    "figure_offsets": [
-     143
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "India\u2019s app revenue saw its fastest growth in Q2 among major app markets, generating more than $200 million in quarterly consumer spending, per Sensor Tower\u2019s data shared with TechCrunch.",
-    "offset": 1448,
-    "figures": [
-     "$200 million"
-    ],
-    "figure_offsets": [
-     95
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "In contrast, Mexico grew 30% and Turkey 25%, while U.S. app revenue actually declined 3% over the same period.",
-    "offset": 1636,
-    "figures": [
-     "30%",
-     "25%",
-     "3%"
-    ],
-    "figure_offsets": [
-     25,
-     40,
-     86
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Revenue per download stands at about $4.60 in the U.S., $3.90 in South Korea, and $6.10 in Japan, compared with a small fraction of that in India.",
-    "offset": 2009,
-    "figures": [
-     "$4.60",
-     "$3.90",
-     "$6.10"
-    ],
-    "figure_offsets": [
-     37,
-     56,
-     82
-    ],
-    "base_cue": true
-   },
-   {
-    "sentence": "Generative AI has emerged as one of the fastest-growing segments, with OpenAI\u2019s ChatGPT and Anthropic\u2019s Claude together accounting for nearly 83% of India\u2019s AI app revenue in Q2, according to Sensor Tower\u2019s data shared with TechCrunch.",
-    "offset": 2327,
-    "figures": [
-     "83%"
-    ],
-    "figure_offsets": [
-     142
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Non-gaming categories, Sensor Tower said, accounted for 68% of India\u2019s mobile app revenue in the first half of 2026, up from 58% three years earlier.",
-    "offset": 2639,
-    "figures": [
-     "68%",
-     "58%"
-    ],
-    "figure_offsets": [
-     56,
-     125
-    ],
-    "base_cue": true
-   },
-   {
-    "sentence": "Gaming also bucked the global trend, with revenue rising 3.7% from the previous quarter despite a worldwide decline, per Sensor Tower.",
-    "offset": 3133,
-    "figures": [
-     "3.7%"
-    ],
-    "figure_offsets": [
      57
     ],
     "base_cue": false
    },
    {
-    "sentence": "Appfigures estimates that ChatGPT generates about $60,000 a day in India and attracted around 1.8 million downloads over the past month, although that\u2019s down from roughly $80,000 a day last October.",
-    "offset": 3689,
+    "sentence": "Is this Billboard Hot 100 hit AI slop?",
+    "offset": 5506,
     "figures": [
-     "$60,000",
-     "1.8 million",
-     "$80,000"
+     "100"
     ],
     "figure_offsets": [
-     50,
-     94,
-     171
+     22
     ],
-    "base_cue": true
+    "base_cue": false
    },
    {
-    "sentence": "Okta buys AI security startup Permiso \u2014 source says for about $200M",
-    "offset": 4693,
+    "sentence": "Pixel 11 specs and price leak with no surprises",
+    "offset": 5806,
     "figures": [
-     "$200M"
+     "11"
     ],
     "figure_offsets": [
+     6
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Is this Billboard Hot 100 hit AI slop?",
+    "offset": 5855,
+    "figures": [
+     "100"
+    ],
+    "figure_offsets": [
+     22
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "With Switch 2, iPhone, and laptop tricks, the Sharge Disk Pro 2 is finally a worthy EDC",
+    "offset": 5963,
+    "figures": [
+     "2",
+     "2"
+    ],
+    "figure_offsets": [
+     12,
      62
     ],
     "base_cue": false
    }
   ]
  },
- "https://techcrunch.com/2026/07/31/google-nixes-its-earth-ai-feature-one-day-after-launch-amid-criticism-it-would-spread-misinformation/": {
-  "headline": "Google nixes its Earth AI feature one day after launch, amid criticism it would spread misinformation",
-  "source": "techcrunch.com",
+ "https://www.theverge.com/ai-artificial-intelligence/974018/pippa-seedance-artist-royalties": {
+  "headline": "Is paying artists enough to convince them to embrace AI?",
+  "source": "theverge.com",
   "fetch": "ok",
-  "n_chars": 2891,
+  "n_chars": 7984,
   "tier": 1,
-  "furniture_dropped": 1,
+  "furniture_dropped": 2,
   "publisher_tags": [
-   "Google",
-   "google earth",
-   "In Brief"
+   "AI",
+   "Report"
   ],
-  "site_name": "TechCrunch",
+  "site_name": "The Verge",
   "spans": [
    {
-    "sentence": "12:47 PM PDT \u00b7 July 31, 2026",
-    "offset": 18,
+    "sentence": "Aug 2, 2026, 1:00 PM UTC",
+    "offset": 157,
     "figures": [
-     "12",
-     "47"
+     "00"
     ],
     "figure_offsets": [
-     0,
-     3
+     15
     ],
     "base_cue": false
    },
    {
-    "sentence": "Google rolled out a new feature on Thursday that allowed users to deploy Nano Banana 2, its AI image generator, to create fabricated images inside its satellite imagery mapping app Google Earth.",
-    "offset": 194,
+    "sentence": "Aug 2, 2026, 1:00 PM UTC",
+    "offset": 361,
     "figures": [
-     "2"
+     "00"
+    ],
+    "figure_offsets": [
+     15
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "\u201cAll of these models from the past 18 months have been trained on real people\u2019s art without their permission \u2014 that\u2019s how it was built,\u201d Wright said.",
+    "offset": 2388,
+    "figures": [
+     "18"
+    ],
+    "figure_offsets": [
+     35
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Pippa\u2019s payments to artists aren\u2019t very large on an individual basis \u2014 especially when you compare them to how much the service charges users for monthly subscriptions (which range from $14.99 to $99.99.) The company says that artists receive $0.005 per image and $0.003 per second of video.",
+    "offset": 2941,
+    "figures": [
+     "$14.99",
+     "$99.99",
+     "$0.005",
+     "$0.003"
+    ],
+    "figure_offsets": [
+     186,
+     196,
+     243,
+     264
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "The more generations a user makes, the larger an artist\u2019s payments become, and Pippa also gives them access to a cut of a 5 percent royalty pool that\u2019s funded by the platform\u2019s overall subscription revenue.",
+    "offset": 3233,
+    "figures": [
+     "5 percent"
+    ],
+    "figure_offsets": [
+     122
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "But in order for Pippa to really stand out from competitors that also offer Seedance 2.5, it will need to sign more in-house artists, which will depend on how well the company is able to pitch itself to potential partners.",
+    "offset": 6889,
+    "figures": [
+     "2.5"
     ],
     "figure_offsets": [
      85
@@ -332,65 +392,215 @@
     "base_cue": false
    },
    {
-    "sentence": "This $9 key physically locks your most addictive apps",
-    "offset": 2551,
+    "sentence": "Pixel 11 specs and price leak with no surprises",
+    "offset": 7674,
     "figures": [
-     "$9"
+     "11"
     ],
     "figure_offsets": [
-     5
+     6
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Is this Billboard Hot 100 hit AI slop?",
+    "offset": 7723,
+    "figures": [
+     "100"
+    ],
+    "figure_offsets": [
+     22
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "With Switch 2, iPhone, and laptop tricks, the Sharge Disk Pro 2 is finally a worthy EDC",
+    "offset": 7831,
+    "figures": [
+     "2",
+     "2"
+    ],
+    "figure_offsets": [
+     12,
+     62
     ],
     "base_cue": false
    }
   ]
  },
- "https://techcrunch.com/video/sam-altman-isnt-the-only-one-who-wants-to-pump-the-brakes-on-ai/": {
-  "headline": "Sam Altman\u00a0isn\u2019t\u00a0the only one who wants to pump the brakes on AI",
-  "source": "techcrunch.com",
+ "https://www.theverge.com/ai-artificial-intelligence/974209/fenix-flexin-billboard-hot-100-rubberz-ai-slop": {
+  "headline": "Is this Billboard Hot 100 hit AI slop?",
+  "source": "theverge.com",
   "fetch": "ok",
-  "n_chars": 3342,
+  "n_chars": 7712,
   "tier": 1,
-  "furniture_dropped": 1,
+  "furniture_dropped": 0,
   "publisher_tags": [
-   "Amazon",
-   "Anthropic",
-   "OpenAI",
-   "sam altman",
-   "SpaceX"
+   "AI",
+   "Entertainment",
+   "Music",
+   "Report"
   ],
-  "site_name": "TechCrunch",
+  "site_name": "The Verge",
   "spans": [
    {
-    "sentence": "10:26 AM PDT \u00b7 July 31, 2026",
-    "offset": 348,
+    "sentence": "Is this Billboard Hot 100 hit AI slop?",
+    "offset": 25,
     "figures": [
-     "10",
-     "26"
+     "100"
     ],
     "figure_offsets": [
-     0,
-     3
+     22
     ],
     "base_cue": false
    },
    {
-    "sentence": "Before joining TechCrunch in 2022, she was one of 2 producers at a four-station conglomerate where she wrote, recorded, voiced and edited content, and engineered live performances and interviews from guests like lovelytheband.",
-    "offset": 1561,
+    "sentence": "We can\u2019t be 100 percent sure, but probably.",
+    "offset": 64,
     "figures": [
+     "100 percent"
+    ],
+    "figure_offsets": [
+     12
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Aug 1, 2026, 6:20 PM UTC",
+    "offset": 128,
+    "figures": [
+     "20"
+    ],
+    "figure_offsets": [
+     15
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Is this Billboard Hot 100 hit AI slop?",
+    "offset": 253,
+    "figures": [
+     "100"
+    ],
+    "figure_offsets": [
+     22
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "We can\u2019t be 100 percent sure, but probably.",
+    "offset": 292,
+    "figures": [
+     "100 percent"
+    ],
+    "figure_offsets": [
+     12
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Aug 1, 2026, 6:20 PM UTC",
+    "offset": 356,
+    "figures": [
+     "20"
+    ],
+    "figure_offsets": [
+     15
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "He\u2019s covered the tech industry for over 18 years and knows a thing or two about synths.",
+    "offset": 489,
+    "figures": [
+     "18"
+    ],
+    "figure_offsets": [
+     40
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "But he\u2019s recently found solo success with the track \u201c Rubberz ,\u201d which has climbed to number 58 on the Billboard Hot 100 .",
+    "offset": 664,
+    "figures": [
+     "58",
+     "100"
+    ],
+    "figure_offsets": [
+     93,
+     117
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "I ran the track through five different tools, and they all said that there was between 20 and 30 percent chance that it was AI or at least AI-assisted.",
+    "offset": 2248,
+    "figures": [
+     "20",
+     "30 percent"
+    ],
+    "figure_offsets": [
+     87,
+     94
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "The single\u2019s cover art and a post celebrating its success were both flagged as being AI-generated with over 97 percent certainty by multiple AI image detectors.",
+    "offset": 2600,
+    "figures": [
+     "97 percent"
+    ],
+    "figure_offsets": [
+     108
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Terrence O'Brien 7:36 PM UTC",
+    "offset": 7135,
+    "figures": [
+     "7",
+     "36"
+    ],
+    "figure_offsets": [
+     17,
+     19
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Pixel 11 specs and price leak with no surprises",
+    "offset": 7402,
+    "figures": [
+     "11"
+    ],
+    "figure_offsets": [
+     6
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Is this Billboard Hot 100 hit AI slop?",
+    "offset": 7451,
+    "figures": [
+     "100"
+    ],
+    "figure_offsets": [
+     22
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "With Switch 2, iPhone, and laptop tricks, the Sharge Disk Pro 2 is finally a worthy EDC",
+    "offset": 7559,
+    "figures": [
+     "2",
      "2"
     ],
     "figure_offsets": [
-     50
-    ],
-    "base_cue": true
-   },
-   {
-    "sentence": "Okta buys AI security startup Permiso \u2014 source says for about $200M",
-    "offset": 2217,
-    "figures": [
-     "$200M"
-    ],
-    "figure_offsets": [
+     12,
      62
     ],
     "base_cue": false
@@ -559,186 +769,6 @@
     "figure_offsets": [
      12,
      62
-    ],
-    "base_cue": false
-   }
-  ]
- },
- "https://www.theverge.com/podcast/973668/ai-safety-openai-hugging-face-vergecast": {
-  "headline": "It\u2019s time to panic about AI safety",
-  "source": "theverge.com",
-  "fetch": "ok",
-  "n_chars": 3153,
-  "tier": 1,
-  "furniture_dropped": 0,
-  "publisher_tags": [
-   "AI",
-   "OpenAI",
-   "Podcasts",
-   "Policy",
-   "Vergecast"
-  ],
-  "site_name": "The Verge",
-  "spans": [
-   {
-    "sentence": "Jul 31, 2026, 2:03 PM UTC",
-    "offset": 317,
-    "figures": [
-     "03"
-    ],
-    "figure_offsets": [
-     16
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "In case you missed it this week: We also talked about the upcoming devices from AI companies , the resurgence in flip phones , the Galaxy Z Fold 8 , and the state of the Facebook Oversight Board .",
-    "offset": 2133,
-    "figures": [
-     "8"
-    ],
-    "figure_offsets": [
-     145
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "With Switch 2, iPhone, and laptop tricks, the Sharge Disk Pro 2 is finally a worthy EDC",
-    "offset": 2912,
-    "figures": [
-     "2",
-     "2"
-    ],
-    "figure_offsets": [
-     12,
-     62
-    ],
-    "base_cue": false
-   }
-  ]
- },
- "https://www.theverge.com/ai-artificial-intelligence/973670/anthropic-claude-hacked-organizations-during-cyber-tests": {
-  "headline": "Anthropic says Claude accidentally hacked real companies too",
-  "source": "theverge.com",
-  "fetch": "ok",
-  "n_chars": 5122,
-  "tier": 1,
-  "furniture_dropped": 0,
-  "publisher_tags": [
-   "AI",
-   "Anthropic",
-   "News",
-   "OpenAI",
-   "Security",
-   "Tech"
-  ],
-  "site_name": "The Verge",
-  "spans": [
-   {
-    "sentence": "Jul 31, 2026, 1:41 PM UTC",
-    "offset": 190,
-    "figures": [
-     "41"
-    ],
-    "figure_offsets": [
-     16
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "The company said it discovered incidents after reviewing more than 141,000 cybersecurity test runs, something it only did after OpenAI disclosed its rogue AI agent was behind the attack on Hugging Face.",
-    "offset": 2221,
-    "figures": [
-     "141,000"
-    ],
-    "figure_offsets": [
-     67
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "By Anthropic\u2019s account, the oldest model, Opus 4.7, recognized it had reached a real system, \u201cbut continued its attack.\u201d Its flagship Mythos 5 figured out it was using the internet but somehow reasoned this was all still part of the simulation, so continued.",
-    "offset": 2572,
-    "figures": [
-     "4.7",
-     "5"
-    ],
-    "figure_offsets": [
-     47,
-     141
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Pixel 11 Pro Fold design leaks ahead of Google launch event",
-    "offset": 4904,
-    "figures": [
-     "11"
-    ],
-    "figure_offsets": [
-     6
-    ],
-    "base_cue": false
-   }
-  ]
- },
- "https://www.theverge.com/tech/973552/apple-ceo-tim-cook-icloud-plus-ai": {
-  "headline": "Tim Cook hints at iCloud Plus tier for AI power users",
-  "source": "theverge.com",
-  "fetch": "ok",
-  "n_chars": 2190,
-  "tier": 1,
-  "furniture_dropped": 0,
-  "publisher_tags": [
-   "AI",
-   "Apple",
-   "iPhone",
-   "News",
-   "Tech"
-  ],
-  "site_name": "The Verge",
-  "spans": [
-   {
-    "sentence": "Jul 30, 2026, 10:29 PM UTC",
-    "offset": 281,
-    "figures": [
-     "29"
-    ],
-    "figure_offsets": [
-     17
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "This fall, Apple will broadly launch its long-delayed Siri AI with iOS 27, which can do things like answer questions about what\u2019s on your screen and take action across your apps.",
-    "offset": 845,
-    "figures": [
-     "27"
-    ],
-    "figure_offsets": [
-     71
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Apple reported earning $30.74 billion in revenue from its services business over the past few months, which includes subscriptions like iCloud Plus, Apple TV, and Apple One.",
-    "offset": 1507,
-    "figures": [
-     "$30.74 billion"
-    ],
-    "figure_offsets": [
-     23
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Pixel 11 Pro Fold design leaks ahead of Google launch event",
-    "offset": 1972,
-    "figures": [
-     "11"
-    ],
-    "figure_offsets": [
-     6
     ],
     "base_cue": false
    }
@@ -2342,6 +2372,2559 @@
    }
   ]
  },
+ "https://www.ohiostatefair.com/p/get-involved/arts/poster-contest": {
+  "headline": "AI poster wins Ohio State Fair contest",
+  "source": "ohiostatefair.com",
+  "fetch": "ok",
+  "n_chars": 59,
+  "tier": 1,
+  "furniture_dropped": 0,
+  "publisher_tags": [],
+  "site_name": "",
+  "spans": []
+ },
+ "https://frogs.vaguespac.es/": {
+  "headline": "My personal AI benchmark: \"Generate an SVG of a frog with a Habsburg jaw.\"",
+  "source": "frogs.vaguespac.es",
+  "fetch": "ok",
+  "n_chars": 11839,
+  "tier": 1,
+  "furniture_dropped": 0,
+  "publisher_tags": [],
+  "site_name": "Frogs",
+  "spans": [
+   {
+    "sentence": "Run 1 of 3 \u00b7 Aug 2 2026 \u00b7 64.0s \u00b7 3,900 B",
+    "offset": 36,
+    "figures": [
+     "1",
+     "3",
+     "64",
+     "3,900"
+    ],
+    "figure_offsets": [
+     4,
+     9,
+     26,
+     34
+    ],
+    "base_cue": true
+   },
+   {
+    "sentence": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 440\" width=\"400\" height=\"440\">",
+    "offset": 406,
+    "figures": [
+     "0",
+     "0",
+     "400",
+     "440",
+     "400",
+     "440"
+    ],
+    "figure_offsets": [
+     49,
+     51,
+     53,
+     57,
+     69,
+     82
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<stop offset=\"0\" stop-color=\"#8fd35a\"/>",
+    "offset": 556,
+    "figures": [
+     "0"
+    ],
+    "figure_offsets": [
+     14
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<stop offset=\"1\" stop-color=\"#5aa33c\"/>",
+    "offset": 596,
+    "figures": [
+     "1"
+    ],
+    "figure_offsets": [
+     14
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<stop offset=\"0\" stop-color=\"#9ade63\"/>",
+    "offset": 708,
+    "figures": [
+     "0"
+    ],
+    "figure_offsets": [
+     14
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<stop offset=\"1\" stop-color=\"#68b544\"/>",
+    "offset": 748,
+    "figures": [
+     "1"
+    ],
+    "figure_offsets": [
+     14
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<stop offset=\"0\" stop-color=\"#fff8d8\"/>",
+    "offset": 863,
+    "figures": [
+     "0"
+    ],
+    "figure_offsets": [
+     14
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<stop offset=\"1\" stop-color=\"#e8c93f\"/>",
+    "offset": 903,
+    "figures": [
+     "1"
+    ],
+    "figure_offsets": [
+     14
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<rect width=\"400\" height=\"440\" fill=\"#e9f5ef\"/>",
+    "offset": 989,
+    "figures": [
+     "400",
+     "440"
+    ],
+    "figure_offsets": [
+     13,
+     26
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<ellipse cx=\"200\" cy=\"430\" rx=\"170\" ry=\"90\" fill=\"#4c8f34\"/>",
+    "offset": 1051,
+    "figures": [
+     "200",
+     "430",
+     "170",
+     "90"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     31,
+     40
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<ellipse cx=\"200\" cy=\"438\" rx=\"120\" ry=\"70\" fill=\"#7ec457\" opacity=\"0.5\"/>",
+    "offset": 1112,
+    "figures": [
+     "200",
+     "438",
+     "120",
+     "70",
+     "0.5"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     31,
+     40,
+     68
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M76,215 C68,108 124,46 200,46 C276,46 332,108 324,215 Z\" fill=\"url(#skin)\"/>",
+    "offset": 1206,
+    "figures": [
+     "215",
+     "108",
+     "124,46",
+     "200,46",
+     "46",
+     "332,108",
+     "324,215"
+    ],
+    "figure_offsets": [
+     13,
+     21,
+     25,
+     32,
+     44,
+     47,
+     55
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<circle cx=\"140\" cy=\"84\" r=\"44\" fill=\"url(#skin)\"/>",
+    "offset": 1312,
+    "figures": [
+     "140",
+     "84",
+     "44"
+    ],
+    "figure_offsets": [
+     12,
+     21,
+     28
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<circle cx=\"260\" cy=\"84\" r=\"44\" fill=\"url(#skin)\"/>",
+    "offset": 1364,
+    "figures": [
+     "260",
+     "84",
+     "44"
+    ],
+    "figure_offsets": [
+     12,
+     21,
+     28
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<circle cx=\"105\" cy=\"150\" r=\"6\" fill=\"#4f9235\" opacity=\"0.5\"/>",
+    "offset": 1431,
+    "figures": [
+     "105",
+     "150",
+     "6",
+     "0.5"
+    ],
+    "figure_offsets": [
+     12,
+     21,
+     29,
+     56
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<circle cx=\"128\" cy=\"176\" r=\"4.5\" fill=\"#4f9235\" opacity=\"0.5\"/>",
+    "offset": 1494,
+    "figures": [
+     "128",
+     "176",
+     "4.5",
+     "0.5"
+    ],
+    "figure_offsets": [
+     12,
+     21,
+     29,
+     58
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<circle cx=\"295\" cy=\"150\" r=\"6\" fill=\"#4f9235\" opacity=\"0.5\"/>",
+    "offset": 1559,
+    "figures": [
+     "295",
+     "150",
+     "6",
+     "0.5"
+    ],
+    "figure_offsets": [
+     12,
+     21,
+     29,
+     56
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<circle cx=\"272\" cy=\"176\" r=\"4.5\" fill=\"#4f9235\" opacity=\"0.5\"/>",
+    "offset": 1622,
+    "figures": [
+     "272",
+     "176",
+     "4.5",
+     "0.5"
+    ],
+    "figure_offsets": [
+     12,
+     21,
+     29,
+     58
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<ellipse cx=\"178\" cy=\"140\" rx=\"5\" ry=\"4\" fill=\"#3c7027\"/>",
+    "offset": 1705,
+    "figures": [
+     "178",
+     "140",
+     "5",
+     "4"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     31,
+     38
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<ellipse cx=\"222\" cy=\"140\" rx=\"5\" ry=\"4\" fill=\"#3c7027\"/>",
+    "offset": 1763,
+    "figures": [
+     "222",
+     "140",
+     "5",
+     "4"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     31,
+     38
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M80,190 Q200,224 320,190\" fill=\"none\" stroke=\"#39281f\" stroke-width=\"8\" stroke-linecap=\"round\"/>",
+    "offset": 1874,
+    "figures": [
+     "190",
+     "224",
+     "320,190",
+     "8"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     26,
+     78
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M80,190 Q200,224 320,190 L320,200 Q200,236 80,200 Z\" fill=\"#4a3128\"/>",
+    "offset": 1980,
+    "figures": [
+     "190",
+     "224",
+     "320,190",
+     "200",
+     "236",
+     "80,200"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     26,
+     39,
+     48,
+     52
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M64,196 C36,252 52,330 108,364 C150,392 250,392 292,364 C348,330 364,252 336,196",
+    "offset": 2110,
+    "figures": [
+     "196",
+     "252",
+     "52,330",
+     "108,364",
+     "392",
+     "250,392",
+     "292,364",
+     "330",
+     "364,252",
+     "336,196"
+    ],
+    "figure_offsets": [
+     13,
+     21,
+     25,
+     32,
+     45,
+     49,
+     57,
+     70,
+     74,
+     82
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "C296,168 104,168 64,196 Z\" fill=\"url(#jaw)\" stroke=\"#4f9235\" stroke-width=\"3\"/>",
+    "offset": 2200,
+    "figures": [
+     "168",
+     "104,168",
+     "64,196",
+     "3"
+    ],
+    "figure_offsets": [
+     5,
+     9,
+     17,
+     75
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M70,199 C110,174 290,174 330,199\" fill=\"none\" stroke=\"#c7f293\" stroke-width=\"6\" stroke-linecap=\"round\" opacity=\"0.85\"/>",
+    "offset": 2309,
+    "figures": [
+     "199",
+     "174",
+     "290,174",
+     "330,199",
+     "6",
+     "0.85"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     26,
+     34,
+     86,
+     121
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M156,185 L162,158 L170,186 Z\" fill=\"#fffdf2\" stroke=\"#d9d2b8\" stroke-width=\"1.5\"/>",
+    "offset": 2489,
+    "figures": [
+     "185",
+     "158",
+     "186",
+     "1.5"
+    ],
+    "figure_offsets": [
+     14,
+     23,
+     32,
+     85
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M178,183 L185,153 L193,184 Z\" fill=\"#fffdf2\" stroke=\"#d9d2b8\" stroke-width=\"1.5\"/>",
+    "offset": 2581,
+    "figures": [
+     "183",
+     "153",
+     "184",
+     "1.5"
+    ],
+    "figure_offsets": [
+     14,
+     23,
+     32,
+     85
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M201,183 L208,153 L216,184 Z\" fill=\"#fffdf2\" stroke=\"#d9d2b8\" stroke-width=\"1.5\"/>",
+    "offset": 2673,
+    "figures": [
+     "183",
+     "153",
+     "184",
+     "1.5"
+    ],
+    "figure_offsets": [
+     14,
+     23,
+     32,
+     85
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M224,186 L231,159 L238,187 Z\" fill=\"#fffdf2\" stroke=\"#d9d2b8\" stroke-width=\"1.5\"/>",
+    "offset": 2765,
+    "figures": [
+     "186",
+     "159",
+     "187",
+     "1.5"
+    ],
+    "figure_offsets": [
+     14,
+     23,
+     32,
+     85
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M200,330 C186,318 186,300 200,290 C214,300 214,318 200,330\" fill=\"none\" stroke=\"#4f9235\" stroke-width=\"3\" opacity=\"0.7\"/>",
+    "offset": 2879,
+    "figures": [
+     "330",
+     "318",
+     "186,300",
+     "200,290",
+     "300",
+     "214,318",
+     "200,330",
+     "3",
+     "0.7"
+    ],
+    "figure_offsets": [
+     14,
+     23,
+     27,
+     35,
+     48,
+     52,
+     60,
+     112,
+     124
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M96,250 C120,286 140,306 168,320\" fill=\"none\" stroke=\"#4f9235\" stroke-width=\"3\" opacity=\"0.45\"/>",
+    "offset": 3010,
+    "figures": [
+     "250",
+     "286",
+     "140,306",
+     "168,320",
+     "3",
+     "0.45"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     26,
+     34,
+     86,
+     98
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M304,250 C280,286 260,306 232,320\" fill=\"none\" stroke=\"#4f9235\" stroke-width=\"3\" opacity=\"0.45\"/>",
+    "offset": 3116,
+    "figures": [
+     "250",
+     "286",
+     "260,306",
+     "232,320",
+     "3",
+     "0.45"
+    ],
+    "figure_offsets": [
+     14,
+     23,
+     27,
+     35,
+     87,
+     99
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<circle cx=\"140\" cy=\"84\" r=\"27\" fill=\"url(#eyeball)\" stroke=\"#3c7027\" stroke-width=\"3\"/>",
+    "offset": 3237,
+    "figures": [
+     "140",
+     "84",
+     "27",
+     "3"
+    ],
+    "figure_offsets": [
+     12,
+     21,
+     28,
+     84
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<circle cx=\"260\" cy=\"84\" r=\"27\" fill=\"url(#eyeball)\" stroke=\"#3c7027\" stroke-width=\"3\"/>",
+    "offset": 3326,
+    "figures": [
+     "260",
+     "84",
+     "27",
+     "3"
+    ],
+    "figure_offsets": [
+     12,
+     21,
+     28,
+     84
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<ellipse cx=\"140\" cy=\"84\" rx=\"7\" ry=\"19\" fill=\"#1b1b1b\"/>",
+    "offset": 3415,
+    "figures": [
+     "140",
+     "84",
+     "7",
+     "19"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     30,
+     37
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<ellipse cx=\"260\" cy=\"84\" rx=\"7\" ry=\"19\" fill=\"#1b1b1b\"/>",
+    "offset": 3473,
+    "figures": [
+     "260",
+     "84",
+     "7",
+     "19"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     30,
+     37
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<circle cx=\"132\" cy=\"72\" r=\"6\" fill=\"#ffffff\" opacity=\"0.9\"/>",
+    "offset": 3531,
+    "figures": [
+     "132",
+     "72",
+     "6",
+     "0.9"
+    ],
+    "figure_offsets": [
+     12,
+     21,
+     28,
+     55
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<circle cx=\"252\" cy=\"72\" r=\"6\" fill=\"#ffffff\" opacity=\"0.9\"/>",
+    "offset": 3593,
+    "figures": [
+     "252",
+     "72",
+     "6",
+     "0.9"
+    ],
+    "figure_offsets": [
+     12,
+     21,
+     28,
+     55
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M114,62 Q140,48 166,62\" fill=\"none\" stroke=\"#4f9235\" stroke-width=\"5\" stroke-linecap=\"round\"/>",
+    "offset": 3655,
+    "figures": [
+     "62",
+     "48",
+     "166,62",
+     "5"
+    ],
+    "figure_offsets": [
+     14,
+     22,
+     25,
+     76
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M234,62 Q260,48 286,62\" fill=\"none\" stroke=\"#4f9235\" stroke-width=\"5\" stroke-linecap=\"round\"/>",
+    "offset": 3759,
+    "figures": [
+     "62",
+     "48",
+     "286,62",
+     "5"
+    ],
+    "figure_offsets": [
+     14,
+     22,
+     25,
+     76
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M78,392 C60,382 46,392 44,404 C42,418 60,424 78,418 Z\" fill=\"#68b544\" stroke=\"#4c8f34\" stroke-width=\"3\"/>",
+    "offset": 3883,
+    "figures": [
+     "392",
+     "382",
+     "46,392",
+     "44,404",
+     "418",
+     "60,424",
+     "78,418",
+     "3"
+    ],
+    "figure_offsets": [
+     13,
+     21,
+     25,
+     32,
+     43,
+     47,
+     54,
+     110
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M322,392 C340,382 354,392 356,404 C358,418 340,424 322,418 Z\" fill=\"#68b544\" stroke=\"#4c8f34\" stroke-width=\"3\"/>",
+    "offset": 3998,
+    "figures": [
+     "392",
+     "382",
+     "354,392",
+     "356,404",
+     "418",
+     "340,424",
+     "322,418",
+     "3"
+    ],
+    "figure_offsets": [
+     14,
+     23,
+     27,
+     35,
+     48,
+     52,
+     60,
+     117
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Run 2 of 3 \u00b7 Aug 2 2026 \u00b7 42.0s \u00b7 3,465 B",
+    "offset": 4131,
+    "figures": [
+     "2",
+     "3",
+     "42",
+     "3,465"
+    ],
+    "figure_offsets": [
+     4,
+     9,
+     26,
+     34
+    ],
+    "base_cue": true
+   },
+   {
+    "sentence": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 440\" width=\"400\" height=\"440\">",
+    "offset": 4421,
+    "figures": [
+     "0",
+     "0",
+     "400",
+     "440",
+     "400",
+     "440"
+    ],
+    "figure_offsets": [
+     49,
+     51,
+     53,
+     57,
+     69,
+     82
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<stop offset=\"0%\" stop-color=\"#9ad86a\"/>",
+    "offset": 4568,
+    "figures": [
+     "0%"
+    ],
+    "figure_offsets": [
+     14
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<stop offset=\"100%\" stop-color=\"#4f9134\"/>",
+    "offset": 4609,
+    "figures": [
+     "100%"
+    ],
+    "figure_offsets": [
+     14
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<stop offset=\"0%\" stop-color=\"#a9e07a\"/>",
+    "offset": 4722,
+    "figures": [
+     "0%"
+    ],
+    "figure_offsets": [
+     14
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<stop offset=\"100%\" stop-color=\"#5aa03b\"/>",
+    "offset": 4763,
+    "figures": [
+     "100%"
+    ],
+    "figure_offsets": [
+     14
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<stop offset=\"0%\" stop-color=\"#b8e88b\"/>",
+    "offset": 4876,
+    "figures": [
+     "0%"
+    ],
+    "figure_offsets": [
+     14
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<stop offset=\"100%\" stop-color=\"#69ab45\"/>",
+    "offset": 4917,
+    "figures": [
+     "100%"
+    ],
+    "figure_offsets": [
+     14
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<ellipse cx=\"92\" cy=\"412\" rx=\"46\" ry=\"18\"/>",
+    "offset": 5019,
+    "figures": [
+     "92",
+     "412",
+     "46",
+     "18"
+    ],
+    "figure_offsets": [
+     13,
+     21,
+     30,
+     38
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<ellipse cx=\"308\" cy=\"412\" rx=\"46\" ry=\"18\"/>",
+    "offset": 5063,
+    "figures": [
+     "308",
+     "412",
+     "46",
+     "18"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     31,
+     39
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<ellipse cx=\"58\" cy=\"418\" rx=\"16\" ry=\"10\"/>",
+    "offset": 5108,
+    "figures": [
+     "58",
+     "418",
+     "16",
+     "10"
+    ],
+    "figure_offsets": [
+     13,
+     21,
+     30,
+     38
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<ellipse cx=\"342\" cy=\"418\" rx=\"16\" ry=\"10\"/>",
+    "offset": 5152,
+    "figures": [
+     "342",
+     "418",
+     "16",
+     "10"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     31,
+     39
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<circle cx=\"140\" cy=\"98\" r=\"52\" fill=\"url(#g2)\"/>",
+    "offset": 5222,
+    "figures": [
+     "140",
+     "98",
+     "52"
+    ],
+    "figure_offsets": [
+     12,
+     21,
+     28
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<circle cx=\"260\" cy=\"98\" r=\"52\" fill=\"url(#g2)\"/>",
+    "offset": 5272,
+    "figures": [
+     "260",
+     "98",
+     "52"
+    ],
+    "figure_offsets": [
+     12,
+     21,
+     28
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<ellipse cx=\"200\" cy=\"180\" rx=\"122\" ry=\"96\" fill=\"url(#g1)\"/>",
+    "offset": 5336,
+    "figures": [
+     "200",
+     "180",
+     "122",
+     "96"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     31,
+     40
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M70 178 C52 300 110 402 200 406 C290 402 348 300 330 178",
+    "offset": 5436,
+    "figures": [
+     "178",
+     "300",
+     "110",
+     "402",
+     "200",
+     "406",
+     "402",
+     "348",
+     "300",
+     "330",
+     "178"
+    ],
+    "figure_offsets": [
+     13,
+     21,
+     25,
+     29,
+     33,
+     37,
+     46,
+     50,
+     54,
+     58,
+     62
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "C310 236 90 236 70 178 Z\" fill=\"url(#g3)\"/>",
+    "offset": 5502,
+    "figures": [
+     "236",
+     "90",
+     "236",
+     "70",
+     "178"
+    ],
+    "figure_offsets": [
+     5,
+     9,
+     12,
+     16,
+     19
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M200 330 C196 352 196 372 200 392\" stroke=\"#4f8f33\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\" opacity=\"0.55\"/>",
+    "offset": 5580,
+    "figures": [
+     "330",
+     "352",
+     "196",
+     "372",
+     "200",
+     "392",
+     "6",
+     "0.55"
+    ],
+    "figure_offsets": [
+     14,
+     23,
+     27,
+     31,
+     35,
+     39,
+     75,
+     122
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M96 250 C120 300 150 322 200 328 C250 322 280 300 304 250\"",
+    "offset": 5710,
+    "figures": [
+     "250",
+     "300",
+     "150",
+     "322",
+     "200",
+     "328",
+     "322",
+     "280",
+     "300",
+     "304",
+     "250"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     26,
+     30,
+     34,
+     38,
+     47,
+     51,
+     55,
+     59,
+     63
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "stroke=\"#4f8f33\" stroke-width=\"4\" fill=\"none\" opacity=\"0.35\"/>",
+    "offset": 5778,
+    "figures": [
+     "4",
+     "0.35"
+    ],
+    "figure_offsets": [
+     31,
+     55
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M74 196 C120 246 280 246 326 196\" fill=\"#2f5c1f\" opacity=\"0.35\"/>",
+    "offset": 5906,
+    "figures": [
+     "196",
+     "246",
+     "280",
+     "246",
+     "326",
+     "196",
+     "0.35"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     26,
+     30,
+     34,
+     38,
+     67
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M74 196 C120 246 280 246 326 196\" stroke=\"#31631f\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/>",
+    "offset": 5981,
+    "figures": [
+     "196",
+     "246",
+     "280",
+     "246",
+     "326",
+     "196",
+     "7"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     26,
+     30,
+     34,
+     38,
+     74
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M104 224 C140 268 260 268 296 224 C262 258 138 258 104 224 Z\" fill=\"#d98a94\"/>",
+    "offset": 6125,
+    "figures": [
+     "224",
+     "268",
+     "260",
+     "268",
+     "296",
+     "224",
+     "258",
+     "138",
+     "258",
+     "104",
+     "224"
+    ],
+    "figure_offsets": [
+     14,
+     23,
+     27,
+     31,
+     35,
+     39,
+     48,
+     52,
+     56,
+     60,
+     64
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<g fill=\"#fdfdf5\" stroke=\"#cfcfc0\" stroke-width=\"2\">",
+    "offset": 6261,
+    "figures": [
+     "2"
+    ],
+    "figure_offsets": [
+     49
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<rect x=\"158\" y=\"186\" width=\"20\" height=\"26\" rx=\"7\"/>",
+    "offset": 6314,
+    "figures": [
+     "158",
+     "186",
+     "20",
+     "26",
+     "7"
+    ],
+    "figure_offsets": [
+     9,
+     17,
+     29,
+     41,
+     49
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<rect x=\"184\" y=\"184\" width=\"20\" height=\"28\" rx=\"7\"/>",
+    "offset": 6368,
+    "figures": [
+     "184",
+     "184",
+     "20",
+     "28",
+     "7"
+    ],
+    "figure_offsets": [
+     9,
+     17,
+     29,
+     41,
+     49
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<rect x=\"210\" y=\"187\" width=\"20\" height=\"25\" rx=\"7\"/>",
+    "offset": 6422,
+    "figures": [
+     "210",
+     "187",
+     "20",
+     "25",
+     "7"
+    ],
+    "figure_offsets": [
+     9,
+     17,
+     29,
+     41,
+     49
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<ellipse cx=\"176\" cy=\"152\" rx=\"7\" ry=\"5\" fill=\"#2f5c1f\"/>",
+    "offset": 6499,
+    "figures": [
+     "176",
+     "152",
+     "7",
+     "5"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     31,
+     38
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<ellipse cx=\"224\" cy=\"152\" rx=\"7\" ry=\"5\" fill=\"#2f5c1f\"/>",
+    "offset": 6557,
+    "figures": [
+     "224",
+     "152",
+     "7",
+     "5"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     31,
+     38
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<g fill=\"#3f7a28\" opacity=\"0.5\">",
+    "offset": 6630,
+    "figures": [
+     "0.5"
+    ],
+    "figure_offsets": [
+     27
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<ellipse cx=\"96\" cy=\"150\" rx=\"16\" ry=\"11\"/>",
+    "offset": 6663,
+    "figures": [
+     "96",
+     "150",
+     "16",
+     "11"
+    ],
+    "figure_offsets": [
+     13,
+     21,
+     30,
+     38
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<ellipse cx=\"304\" cy=\"150\" rx=\"16\" ry=\"11\"/>",
+    "offset": 6707,
+    "figures": [
+     "304",
+     "150",
+     "16",
+     "11"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     31,
+     39
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<ellipse cx=\"128\" cy=\"196\" rx=\"11\" ry=\"8\"/>",
+    "offset": 6752,
+    "figures": [
+     "128",
+     "196",
+     "11",
+     "8"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     31,
+     39
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<ellipse cx=\"272\" cy=\"196\" rx=\"11\" ry=\"8\"/>",
+    "offset": 6796,
+    "figures": [
+     "272",
+     "196",
+     "11",
+     "8"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     31,
+     39
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<circle cx=\"140\" cy=\"94\" r=\"38\" fill=\"#fffbe8\"/>",
+    "offset": 6863,
+    "figures": [
+     "140",
+     "94",
+     "38"
+    ],
+    "figure_offsets": [
+     12,
+     21,
+     28
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<circle cx=\"260\" cy=\"94\" r=\"38\" fill=\"#fffbe8\"/>",
+    "offset": 6912,
+    "figures": [
+     "260",
+     "94",
+     "38"
+    ],
+    "figure_offsets": [
+     12,
+     21,
+     28
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<circle cx=\"144\" cy=\"98\" r=\"17\" fill=\"#1a1a1a\"/>",
+    "offset": 6961,
+    "figures": [
+     "144",
+     "98",
+     "17"
+    ],
+    "figure_offsets": [
+     12,
+     21,
+     28
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<circle cx=\"256\" cy=\"98\" r=\"17\" fill=\"#1a1a1a\"/>",
+    "offset": 7010,
+    "figures": [
+     "256",
+     "98",
+     "17"
+    ],
+    "figure_offsets": [
+     12,
+     21,
+     28
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<circle cx=\"137\" cy=\"90\" r=\"6\" fill=\"#ffffff\" opacity=\"0.9\"/>",
+    "offset": 7059,
+    "figures": [
+     "137",
+     "90",
+     "6",
+     "0.9"
+    ],
+    "figure_offsets": [
+     12,
+     21,
+     28,
+     55
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<circle cx=\"249\" cy=\"90\" r=\"6\" fill=\"#ffffff\" opacity=\"0.9\"/>",
+    "offset": 7121,
+    "figures": [
+     "249",
+     "90",
+     "6",
+     "0.9"
+    ],
+    "figure_offsets": [
+     12,
+     21,
+     28,
+     55
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M104 78 C118 52 162 52 176 78\" stroke=\"#3f7a28\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/>",
+    "offset": 7183,
+    "figures": [
+     "78",
+     "52",
+     "162",
+     "52",
+     "176",
+     "78",
+     "7"
+    ],
+    "figure_offsets": [
+     14,
+     22,
+     25,
+     29,
+     32,
+     36,
+     71
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M224 78 C238 52 282 52 296 78\" stroke=\"#3f7a28\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/>",
+    "offset": 7294,
+    "figures": [
+     "78",
+     "52",
+     "282",
+     "52",
+     "296",
+     "78",
+     "7"
+    ],
+    "figure_offsets": [
+     14,
+     22,
+     25,
+     29,
+     32,
+     36,
+     71
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M106 86 C130 68 156 70 174 86\" stroke=\"#57993a\" stroke-width=\"5\" fill=\"none\" opacity=\"0.7\"/>",
+    "offset": 7440,
+    "figures": [
+     "86",
+     "68",
+     "156",
+     "70",
+     "174",
+     "86",
+     "5",
+     "0.7"
+    ],
+    "figure_offsets": [
+     14,
+     22,
+     25,
+     29,
+     32,
+     36,
+     71,
+     95
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M226 86 C244 70 270 68 294 86\" stroke=\"#57993a\" stroke-width=\"5\" fill=\"none\" opacity=\"0.7\"/>",
+    "offset": 7542,
+    "figures": [
+     "86",
+     "70",
+     "270",
+     "68",
+     "294",
+     "86",
+     "5",
+     "0.7"
+    ],
+    "figure_offsets": [
+     14,
+     22,
+     25,
+     29,
+     32,
+     36,
+     71,
+     95
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Run 3 of 3 \u00b7 Aug 2 2026 \u00b7 59.6s \u00b7 3,909 B",
+    "offset": 7655,
+    "figures": [
+     "3",
+     "3",
+     "59",
+     "3,909"
+    ],
+    "figure_offsets": [
+     4,
+     9,
+     26,
+     34
+    ],
+    "base_cue": true
+   },
+   {
+    "sentence": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 420\" width=\"400\" height=\"420\">",
+    "offset": 8124,
+    "figures": [
+     "0",
+     "0",
+     "400",
+     "420",
+     "400",
+     "420"
+    ],
+    "figure_offsets": [
+     49,
+     51,
+     53,
+     57,
+     69,
+     82
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<stop offset=\"0\" stop-color=\"#9ccc65\"/><stop offset=\"1\" stop-color=\"#4e7d24\"/>",
+    "offset": 8272,
+    "figures": [
+     "0",
+     "1"
+    ],
+    "figure_offsets": [
+     14,
+     53
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<stop offset=\"0\" stop-color=\"#a5d16a\"/><stop offset=\"1\" stop-color=\"#6ea832\"/>",
+    "offset": 8422,
+    "figures": [
+     "0",
+     "1"
+    ],
+    "figure_offsets": [
+     14,
+     53
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<stop offset=\"0\" stop-color=\"#b7dc85\"/><stop offset=\"1\" stop-color=\"#7cb342\"/>",
+    "offset": 8572,
+    "figures": [
+     "0",
+     "1"
+    ],
+    "figure_offsets": [
+     14,
+     53
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<stop offset=\"0\" stop-color=\"#ffe9a3\"/><stop offset=\"1\" stop-color=\"#e8a416\"/>",
+    "offset": 8723,
+    "figures": [
+     "0",
+     "1"
+    ],
+    "figure_offsets": [
+     14,
+     53
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<ellipse cx=\"200\" cy=\"332\" rx=\"152\" ry=\"74\" fill=\"url(#g1)\" stroke=\"#37581a\" stroke-width=\"4\"/>",
+    "offset": 8842,
+    "figures": [
+     "200",
+     "332",
+     "152",
+     "74",
+     "4"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     31,
+     40,
+     91
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<g fill=\"url(#g2)\" stroke=\"#37581a\" stroke-width=\"4\" stroke-linejoin=\"round\">",
+    "offset": 8952,
+    "figures": [
+     "4"
+    ],
+    "figure_offsets": [
+     50
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M84 352 C40 356 16 376 22 392 C28 404 62 402 84 394 C100 388 106 366 84 352 Z\"/>",
+    "offset": 9030,
+    "figures": [
+     "352",
+     "356",
+     "16",
+     "376",
+     "22",
+     "392",
+     "404",
+     "62",
+     "402",
+     "84",
+     "394",
+     "388",
+     "106",
+     "366",
+     "84",
+     "352"
+    ],
+    "figure_offsets": [
+     13,
+     21,
+     25,
+     28,
+     32,
+     35,
+     43,
+     47,
+     50,
+     54,
+     57,
+     66,
+     70,
+     74,
+     78,
+     81
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M316 352 C360 356 384 376 378 392 C372 404 338 402 316 394 C300 388 294 366 316 352 Z\"/>",
+    "offset": 9120,
+    "figures": [
+     "352",
+     "356",
+     "384",
+     "376",
+     "378",
+     "392",
+     "404",
+     "338",
+     "402",
+     "316",
+     "394",
+     "388",
+     "294",
+     "366",
+     "316",
+     "352"
+    ],
+    "figure_offsets": [
+     14,
+     23,
+     27,
+     31,
+     35,
+     39,
+     48,
+     52,
+     56,
+     60,
+     64,
+     73,
+     77,
+     81,
+     85,
+     89
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<g stroke=\"#37581a\" stroke-width=\"3\" fill=\"none\">",
+    "offset": 9223,
+    "figures": [
+     "3"
+    ],
+    "figure_offsets": [
+     34
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M28 384 L74 372\"/><path d=\"M34 394 L78 386\"/>",
+    "offset": 9273,
+    "figures": [
+     "384",
+     "372",
+     "394",
+     "386"
+    ],
+    "figure_offsets": [
+     13,
+     21,
+     40,
+     48
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M372 384 L326 372\"/><path d=\"M366 394 L322 386\"/>",
+    "offset": 9328,
+    "figures": [
+     "384",
+     "372",
+     "394",
+     "386"
+    ],
+    "figure_offsets": [
+     14,
+     23,
+     43,
+     52
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<ellipse cx=\"200\" cy=\"168\" rx=\"114\" ry=\"82\" fill=\"url(#g3)\" stroke=\"#37581a\" stroke-width=\"4\"/>",
+    "offset": 9411,
+    "figures": [
+     "200",
+     "168",
+     "114",
+     "82",
+     "4"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     31,
+     40,
+     91
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M92 188 C78 262 84 326 126 356 C168 386 236 386 278 356 C320 326 324 262 310 188 Z\"",
+    "offset": 9568,
+    "figures": [
+     "188",
+     "262",
+     "84",
+     "326",
+     "126",
+     "356",
+     "386",
+     "236",
+     "386",
+     "278",
+     "356",
+     "326",
+     "324",
+     "262",
+     "310",
+     "188"
+    ],
+    "figure_offsets": [
+     13,
+     21,
+     25,
+     28,
+     32,
+     36,
+     45,
+     49,
+     53,
+     57,
+     61,
+     70,
+     74,
+     78,
+     82,
+     86
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "fill=\"url(#g2)\" stroke=\"#37581a\" stroke-width=\"4\" stroke-linejoin=\"round\"/>",
+    "offset": 9661,
+    "figures": [
+     "4"
+    ],
+    "figure_offsets": [
+     47
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M104 224 C100 288 110 330 142 350\" fill=\"none\" stroke=\"#5d9129\" stroke-width=\"4\" opacity=\"0.7\"/>",
+    "offset": 9766,
+    "figures": [
+     "224",
+     "288",
+     "110",
+     "330",
+     "142",
+     "350",
+     "4",
+     "0.7"
+    ],
+    "figure_offsets": [
+     14,
+     23,
+     27,
+     31,
+     35,
+     39,
+     87,
+     99
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M298 224 C302 288 292 330 260 350\" fill=\"none\" stroke=\"#5d9129\" stroke-width=\"4\" opacity=\"0.7\"/>",
+    "offset": 9872,
+    "figures": [
+     "224",
+     "288",
+     "292",
+     "330",
+     "260",
+     "350",
+     "4",
+     "0.7"
+    ],
+    "figure_offsets": [
+     14,
+     23,
+     27,
+     31,
+     35,
+     39,
+     87,
+     99
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M202 320 L202 356\" fill=\"none\" stroke=\"#5d9129\" stroke-width=\"5\" stroke-linecap=\"round\" opacity=\"0.8\"/>",
+    "offset": 9998,
+    "figures": [
+     "320",
+     "356",
+     "5",
+     "0.8"
+    ],
+    "figure_offsets": [
+     14,
+     23,
+     71,
+     106
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<ellipse cx=\"202\" cy=\"334\" rx=\"46\" ry=\"30\" fill=\"#b7dc85\" opacity=\"0.35\"/>",
+    "offset": 10111,
+    "figures": [
+     "202",
+     "334",
+     "46",
+     "30",
+     "0.35"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     31,
+     39,
+     67
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M96 230 Q200 274 306 230 Q200 252 96 230 Z\" fill=\"#bde292\" stroke=\"#37581a\" stroke-width=\"4\" stroke-linejoin=\"round\"/>",
+    "offset": 10252,
+    "figures": [
+     "230",
+     "274",
+     "306",
+     "230",
+     "252",
+     "96",
+     "230",
+     "4"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     26,
+     30,
+     39,
+     43,
+     46,
+     99
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M96 230 Q200 252 306 230\" fill=\"none\" stroke=\"#2f4d16\" stroke-width=\"6\" stroke-linecap=\"round\"/>",
+    "offset": 10380,
+    "figures": [
+     "230",
+     "252",
+     "306",
+     "230",
+     "6"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     26,
+     30,
+     78
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<rect x=\"178\" y=\"220\" width=\"16\" height=\"16\" rx=\"4\" fill=\"#fffdf3\" stroke=\"#2f4d16\" stroke-width=\"2.5\"/>",
+    "offset": 10534,
+    "figures": [
+     "178",
+     "220",
+     "16",
+     "16",
+     "4",
+     "2.5"
+    ],
+    "figure_offsets": [
+     9,
+     17,
+     29,
+     41,
+     49,
+     98
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<rect x=\"200\" y=\"220\" width=\"16\" height=\"16\" rx=\"4\" fill=\"#fffdf3\" stroke=\"#2f4d16\" stroke-width=\"2.5\"/>",
+    "offset": 10639,
+    "figures": [
+     "200",
+     "220",
+     "16",
+     "16",
+     "4",
+     "2.5"
+    ],
+    "figure_offsets": [
+     9,
+     17,
+     29,
+     41,
+     49,
+     98
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<ellipse cx=\"172\" cy=\"204\" rx=\"6\" ry=\"4.5\" fill=\"#33501a\"/>",
+    "offset": 10762,
+    "figures": [
+     "172",
+     "204",
+     "6",
+     "4.5"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     31,
+     38
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<ellipse cx=\"230\" cy=\"204\" rx=\"6\" ry=\"4.5\" fill=\"#33501a\"/>",
+    "offset": 10822,
+    "figures": [
+     "230",
+     "204",
+     "6",
+     "4.5"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     31,
+     38
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<g stroke=\"#37581a\" stroke-width=\"4\">",
+    "offset": 10904,
+    "figures": [
+     "4"
+    ],
+    "figure_offsets": [
+     34
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<circle cx=\"132\" cy=\"106\" r=\"44\" fill=\"url(#eye)\"/>",
+    "offset": 10942,
+    "figures": [
+     "132",
+     "106",
+     "44"
+    ],
+    "figure_offsets": [
+     12,
+     21,
+     29
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<circle cx=\"268\" cy=\"106\" r=\"44\" fill=\"url(#eye)\"/>",
+    "offset": 10994,
+    "figures": [
+     "268",
+     "106",
+     "44"
+    ],
+    "figure_offsets": [
+     12,
+     21,
+     29
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<ellipse cx=\"132\" cy=\"108\" rx=\"26\" ry=\"12\" fill=\"#12190a\"/>",
+    "offset": 11051,
+    "figures": [
+     "132",
+     "108",
+     "26",
+     "12"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     31,
+     39
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<ellipse cx=\"268\" cy=\"108\" rx=\"26\" ry=\"12\" fill=\"#12190a\"/>",
+    "offset": 11111,
+    "figures": [
+     "268",
+     "108",
+     "26",
+     "12"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     31,
+     39
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<circle cx=\"120\" cy=\"90\" r=\"8\" fill=\"#ffffff\" opacity=\"0.85\"/>",
+    "offset": 11171,
+    "figures": [
+     "120",
+     "90",
+     "8",
+     "0.85"
+    ],
+    "figure_offsets": [
+     12,
+     21,
+     28,
+     55
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<circle cx=\"256\" cy=\"90\" r=\"8\" fill=\"#ffffff\" opacity=\"0.85\"/>",
+    "offset": 11234,
+    "figures": [
+     "256",
+     "90",
+     "8",
+     "0.85"
+    ],
+    "figure_offsets": [
+     12,
+     21,
+     28,
+     55
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M88 92 A44 44 0 0 1 176 92 L176 78 A44 44 0 0 0 88 78 Z\" fill=\"#7cb342\" stroke=\"#37581a\" stroke-width=\"4\" stroke-linejoin=\"round\"/>",
+    "offset": 11320,
+    "figures": [
+     "92",
+     "44",
+     "0",
+     "0",
+     "1",
+     "176",
+     "92",
+     "78",
+     "44",
+     "0",
+     "0",
+     "0",
+     "88",
+     "78",
+     "4"
+    ],
+    "figure_offsets": [
+     13,
+     20,
+     23,
+     25,
+     27,
+     29,
+     33,
+     41,
+     48,
+     51,
+     53,
+     55,
+     57,
+     60,
+     112
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<path d=\"M224 92 A44 44 0 0 1 312 92 L312 78 A44 44 0 0 0 224 78 Z\" fill=\"#7cb342\" stroke=\"#37581a\" stroke-width=\"4\" stroke-linejoin=\"round\"/>",
+    "offset": 11461,
+    "figures": [
+     "92",
+     "44",
+     "0",
+     "0",
+     "1",
+     "312",
+     "92",
+     "78",
+     "44",
+     "0",
+     "0",
+     "0",
+     "224",
+     "78",
+     "4"
+    ],
+    "figure_offsets": [
+     14,
+     21,
+     24,
+     26,
+     28,
+     30,
+     34,
+     42,
+     49,
+     52,
+     54,
+     56,
+     58,
+     62,
+     114
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<g fill=\"#4e7d24\" opacity=\"0.5\">",
+    "offset": 11619,
+    "figures": [
+     "0.5"
+    ],
+    "figure_offsets": [
+     27
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<ellipse cx=\"140\" cy=\"176\" rx=\"14\" ry=\"9\"/>",
+    "offset": 11652,
+    "figures": [
+     "140",
+     "176",
+     "14",
+     "9"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     31,
+     39
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<ellipse cx=\"262\" cy=\"178\" rx=\"12\" ry=\"8\"/>",
+    "offset": 11696,
+    "figures": [
+     "262",
+     "178",
+     "12",
+     "8"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     31,
+     39
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<ellipse cx=\"128\" cy=\"290\" rx=\"11\" ry=\"7\"/>",
+    "offset": 11740,
+    "figures": [
+     "128",
+     "290",
+     "11",
+     "7"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     31,
+     39
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "<ellipse cx=\"276\" cy=\"292\" rx=\"11\" ry=\"7\"/>",
+    "offset": 11784,
+    "figures": [
+     "276",
+     "292",
+     "11",
+     "7"
+    ],
+    "figure_offsets": [
+     13,
+     22,
+     31,
+     39
+    ],
+    "base_cue": false
+   }
+  ]
+ },
+ "https://sprocket-demo.spikonado.com": {
+  "headline": "Show HN: Sprocket \u2013 The Best AI Agent for Hardware and Software Development",
+  "source": "sprocket-demo.spikonado.com",
+  "fetch": "ok",
+  "n_chars": 4906,
+  "tier": 1,
+  "furniture_dropped": 0,
+  "publisher_tags": [],
+  "site_name": "GitHub",
+  "spans": [
+   {
+    "sentence": "Local server port; defaults to 17731 for installed use.",
+    "offset": 3195,
+    "figures": [
+     "17731"
+    ],
+    "figure_offsets": [
+     31
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Bind host; defaults to 127.0.0.1 .",
+    "offset": 3266,
+    "figures": [
+     "127.0"
+    ],
+    "figure_offsets": [
+     23
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "This runs Vite at http://localhost:5173 and the Rust API at http://127.0.0.1:7731 , with development state kept in .sprocket-dev inside the repository.",
+    "offset": 3947,
+    "figures": [
+     "5173",
+     "7731"
+    ],
+    "figure_offsets": [
+     35,
+     77
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "If 17731 is already occupied, set SPROCKET_PORT before launching.",
+    "offset": 4533,
+    "figures": [
+     "17731"
+    ],
+    "figure_offsets": [
+     3
+    ],
+    "base_cue": false
+   }
+  ]
+ },
+ "https://www.youtube.com/watch?v=pHcZpvIfho0": {
+  "headline": "Zitron: \"Everyone Has Been Sold a Lie\" on AI [video]",
+  "source": "youtube.com",
+  "fetch": "ok",
+  "n_chars": 253,
+  "tier": 1,
+  "furniture_dropped": 0,
+  "publisher_tags": [
+   "AI",
+   "Anthropic",
+   "Capex",
+   "Cloud Services",
+   "Data centers",
+   "Google Inc.",
+   "Meta",
+   "Microsoft",
+   "OpenAI",
+   "artificial"
+  ],
+  "site_name": "YouTube",
+  "spans": []
+ },
+ "https://mitsloan.mit.edu/ideas-made-to-matter/ai-financial-advice-surprisingly-good-especially-if-you-ask-right-questions": {
+  "headline": "AI financial advice is surprisingly good, especially if you ask right questions",
+  "source": "mitsloan.mit.edu",
+  "fetch": "ok",
+  "n_chars": 10164,
+  "tier": 1,
+  "furniture_dropped": 0,
+  "publisher_tags": [],
+  "site_name": "MIT Sloan",
+  "spans": [
+   {
+    "sentence": "Research by Choukhmane and co-authors showed that following AI recommendations can result in sizable saving buffers for virtually all individuals above age 30.",
+    "offset": 528,
+    "figures": [
+     "30"
+    ],
+    "figure_offsets": [
+     156
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "AI consistently advised people to save during their working years, draw down savings in retirement, invest heavily in diversified stock funds, and reduce stock exposure after age 45.",
+    "offset": 688,
+    "figures": [
+     "45"
+    ],
+    "figure_offsets": [
+     179
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Then they asked a sample of 1,000 adults to write their own prompts seeking spending and investing advice from GPT-5.2, GPT-5.6, or Gemini 3 Flash.",
+    "offset": 1447,
+    "figures": [
+     "1,000"
+    ],
+    "figure_offsets": [
+     28
+    ],
+    "base_cue": true
+   },
+   {
+    "sentence": "Next, they simulated what would happen if people from 22 to 89 years of age followed that advice over time, repeatedly asking AI these same types of questions and following its advice on spending, saving, and investing.",
+    "offset": 1595,
+    "figures": [
+     "22",
+     "89"
+    ],
+    "figure_offsets": [
+     54,
+     60
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "A typical prompt might read: \u201cWhere should I invest starting with $50 and consistently adding $25 a month after?\u201d",
+    "offset": 3886,
+    "figures": [
+     "$50",
+     "$25"
+    ],
+    "figure_offsets": [
+     66,
+     94
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Following the advice in response to prompts written by men, more financially literate users, or those with prior AI experience generated about 5% more wealth close to retirement.",
+    "offset": 4665,
+    "figures": [
+     "5%"
+    ],
+    "figure_offsets": [
+     143
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Over the life cycle, such differences in investment advice compounded into roughly $50,000 (4%) lower wealth at age 60 for women and for less financially literate users.",
+    "offset": 4991,
+    "figures": [
+     "$50,000",
+     "4%",
+     "60"
+    ],
+    "figure_offsets": [
+     83,
+     92,
+     116
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Following the advice left them with almost $100,000 (6%) less wealth at age 60 than individuals with prior AI experience.",
+    "offset": 5299,
+    "figures": [
+     "$100,000",
+     "6%",
+     "60"
+    ],
+    "figure_offsets": [
+     43,
+     53,
+     76
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "(For example, Vanguard investment products appeared in 6% of LLM responses, and iShares products appeared in 3.4%, even though fewer than 0.4% of prompts mentioned either company.)",
+    "offset": 8518,
+    "figures": [
+     "6%",
+     "3.4%",
+     "0.4%"
+    ],
+    "figure_offsets": [
+     55,
+     109,
+     138
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "These are the most urgent AI risks, according to 272 experts",
+    "offset": 10104,
+    "figures": [
+     "272"
+    ],
+    "figure_offsets": [
+     49
+    ],
+    "base_cue": false
+   }
+  ]
+ },
  "https://twitter.com/newsfromgoogle/status/2083249962150760610": {
   "headline": "Google kills Earth AI generator after one day",
   "source": "twitter.com",
@@ -2352,111 +4935,6 @@
   "publisher_tags": [],
   "site_name": "",
   "spans": []
- },
- "https://www.antipope.org/charlie/blog-static/2026/08/on-the-non-use-of-ai-in-my-wri.html": {
-  "headline": "Charlie Stross \u2013 On the non-use of AI in my writing process",
-  "source": "antipope.org",
-  "fetch": "urlerror",
-  "n_chars": 0,
-  "tier": 1,
-  "furniture_dropped": 0,
-  "publisher_tags": [],
-  "site_name": "",
-  "spans": []
- },
- "https://www.engadget.com/2227966/eu-mandate-labels-on-authentic-looking-ai-content/": {
-  "headline": "EU will mandate labels on authentic-looking AI content starting August 2",
-  "source": "engadget.com",
-  "fetch": "ok",
-  "n_chars": 2547,
-  "tier": 1,
-  "furniture_dropped": 0,
-  "publisher_tags": [],
-  "site_name": "Engadget",
-  "spans": [
-   {
-    "sentence": "July 31, 2026 12:14 pm EST",
-    "offset": 206,
-    "figures": [
-     "14"
-    ],
-    "figure_offsets": [
-     17
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Google has its SynthID tool , which it says has been used to label more than 100 billion images and, gasp, 60,000 years' worth of audio content.",
-    "offset": 2278,
-    "figures": [
-     "100 billion",
-     "60,000"
-    ],
-    "figure_offsets": [
-     77,
-     107
-    ],
-    "base_cue": false
-   }
-  ]
- },
- "https://weeraman.com/the-prototype-isnt-the-product/": {
-  "headline": "AI doesn't generate working products, that's still your job",
-  "source": "weeraman.com",
-  "fetch": "ok",
-  "n_chars": 5913,
-  "tier": 1,
-  "furniture_dropped": 0,
-  "publisher_tags": [],
-  "site_name": "Anuradha Weeraman",
-  "spans": []
- },
- "https://microsoft.github.io/flint-chart/": {
-  "headline": "Flint: A Visualization Language for the AI Era",
-  "source": "microsoft.github.io",
-  "fetch": "ok",
-  "n_chars": 46,
-  "tier": 1,
-  "furniture_dropped": 0,
-  "publisher_tags": [],
-  "site_name": "",
-  "spans": []
- },
- "https://manifest.build/blog/why-we-deprecated-our-llm-router/": {
-  "headline": "Everyone is building LLM routers, we deprecated ours",
-  "source": "manifest.build",
-  "fetch": "ok",
-  "n_chars": 3595,
-  "tier": 1,
-  "furniture_dropped": 0,
-  "publisher_tags": [],
-  "site_name": "Manifest",
-  "spans": [
-   {
-    "sentence": "After four months of usage across 7000 cloud users, we saw mixed results and a lot of GitHub issues and discussions about it.",
-    "offset": 1093,
-    "figures": [
-     "7000"
-    ],
-    "figure_offsets": [
-     34
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Cache reads are between 75% and 90% cheaper than uncached inputs.",
-    "offset": 1789,
-    "figures": [
-     "75%",
-     "90%"
-    ],
-    "figure_offsets": [
-     24,
-     32
-    ],
-    "base_cue": false
-   }
-  ]
  },
  "https://www.federalregister.gov/documents/2026/07/10/2026-13928/proposed-information-collection-atus-artificial-intelligence-ai-questions": {
   "headline": "Proposed Information Collection; ATUS Artificial Intelligence (AI) Questions",
@@ -8409,13 +10887,25 @@
  "https://openai.com/index/scientific-computing-agentic-ai/": {
   "headline": "Scientific computing in the age of agentic AI",
   "source": "openai.com",
-  "fetch": "http-403",
-  "n_chars": 0,
+  "fetch": "ok",
+  "n_chars": 7601,
   "tier": 1,
   "furniture_dropped": 0,
   "publisher_tags": [],
-  "site_name": "",
-  "spans": []
+  "site_name": "OpenAI",
+  "spans": [
+   {
+    "sentence": "GPT\u20115.5 replaced the library\u2019s legacy build and packaging system with a modern, unified process designed to make the library easier to install, test, and release.",
+    "offset": 2659,
+    "figures": [
+     "5.5"
+    ],
+    "figure_offsets": [
+     4
+    ],
+    "base_cue": false
+   }
+  ]
  },
  "https://openai.com/index/advancing-content-provenance/": {
   "headline": "Advancing content provenance for a safer, more transparent AI ecosystem",
