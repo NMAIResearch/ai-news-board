@@ -1,12 +1,24 @@
 {
- "generated": "2026-08-03 00:03 UTC",
+ "generated": "2026-08-04 13:21 UTC",
  "window_days": 60,
  "counts": {
-  "total": 78,
-  "closed": 24,
-  "open_weights": 54
+  "total": 75,
+  "closed": 25,
+  "open_weights": 50
  },
  "releases": [
+  {
+   "lab": "Alibaba (Qwen)",
+   "model": "Qwen: Qwen3.8 Max",
+   "id": "qwen/qwen3.8-max",
+   "date": "2026-08-03",
+   "url": "https://openrouter.ai/qwen/qwen3.8-max",
+   "context_length": 1000000,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
   {
    "lab": "DeepSeek",
    "model": "DeepSeek: DeepSeek V4 Flash 0731",
@@ -30,6 +42,18 @@
    "evidence_note": "weights published at huggingface.co/thinkingmachines/Inkling-Small; downloadable and hashable",
    "hf_id": "thinkingmachines/Inkling-Small",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "NVIDIA-NemotronLabs-VoiceChat-11B",
+   "id": "nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
+   "date": "2026-07-29",
+   "url": "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "Alibaba (Qwen)",
@@ -281,18 +305,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "nvidia/NV-JEPA-DNA-DNABERT2",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "MiniMax-M3-DSpark",
-   "id": "nvidia/MiniMax-M3-DSpark",
-   "date": "2026-07-15",
-   "url": "https://huggingface.co/nvidia/MiniMax-M3-DSpark",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/MiniMax-M3-DSpark",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
@@ -894,54 +906,6 @@
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "CohereLabs/North-Mini-Code-1.0-fp8",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Google",
-   "model": "gemma-4-12B-it-qat-w4a16-ct",
-   "id": "google/gemma-4-12B-it-qat-w4a16-ct",
-   "date": "2026-06-05",
-   "url": "https://huggingface.co/google/gemma-4-12B-it-qat-w4a16-ct",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "google/gemma-4-12B-it-qat-w4a16-ct",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Google",
-   "model": "gemma-4-12B-it-qat-q4_0-gguf",
-   "id": "google/gemma-4-12B-it-qat-q4_0-gguf",
-   "date": "2026-06-05",
-   "url": "https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-gguf",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "google/gemma-4-12B-it-qat-q4_0-gguf",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "NVIDIA: Nemotron 3.5 Content Safety (free)",
-   "id": "nvidia/nemotron-3.5-content-safety",
-   "date": "2026-06-04",
-   "url": "https://openrouter.ai/nvidia/nemotron-3.5-content-safety",
-   "context_length": 128000,
-   "evidence": "open-weights",
-   "evidence_note": "weights published at huggingface.co/nvidia/Nemotron-3.5-Content-Safety; downloadable and hashable",
-   "hf_id": "nvidia/Nemotron-3.5-Content-Safety",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "NVIDIA: Nemotron 3 Ultra",
-   "id": "nvidia/nemotron-3-ultra-550b-a55b",
-   "date": "2026-06-04",
-   "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b",
-   "context_length": 512288,
-   "evidence": "open-weights",
-   "evidence_note": "weights published at huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16; downloadable and hashable",
-   "hf_id": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   }
  ],
  "errors": [],

@@ -1,157 +1,101 @@
 {
- "https://techcrunch.com/2026/08/02/sam-altman-and-ais-decel-debate/": {
-  "headline": "Sam Altman and AI’s decel debate",
-  "entity": "OpenAI",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 2,
-   "to_others": 5,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [
-     {
-      "sentence": "OpenAI CEO Sam Altman recently said that it may be time to “pace the rate of AI development” so that society can “harden around some of these new capability levels.”",
-      "offset": 51
-     },
-     {
-      "sentence": "But it’s worth coming back to one of the points that we also wrote about at TechCrunch, that this specific hack — yes, it was caused by an OpenAI model, but it sounds like they just didn’t secure the testing site properly .",
-      "offset": 3644
-     }
-    ],
-    "to_others": [
-     {
-      "sentence": "Sean noted that while a hack performed by an AI agent is novel, the hack itself was not “some new advanced thing.”",
-      "offset": 439
-     },
-     {
-      "sentence": "“It was more like Nixon’s people breaking into Watergate than some real stealthy cyber-op, because it didn’t need to be, and it wasn’t instructed to be,” Sean said.",
-      "offset": 560
-     },
-     {
-      "sentence": "There’s a lot that could and should be said about just how responsible these companies are being.",
-      "offset": 4318
-     },
-     {
-      "sentence": "Lorenzo, one of our colleagues, also wrote a really good piece walking through how serious security researchers who pay attention to this stuff think that the hack really was .",
-      "offset": 4416
-     },
-     {
-      "sentence": "YouTuber Hank Green says his AI usage is ‘not healthy’",
-      "offset": 7117
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 7
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 0,
-   "with_named_source": 0
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps/": {
-  "headline": "Judge denies xAI’s request to block Minnesota ban on ‘nudify’ apps",
-  "entity": "xAI",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 2,
-   "to_others": 3,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [
-     {
-      "sentence": "Despite a lawsuit from xAI, a Minnesota ban on apps that allow users to “nudify” images can move forward, according to NBC News .",
-      "offset": 191
-     },
-     {
-      "sentence": "Frank wrote that xAI filed its request for a temporary restraining order “on July 29, 2026, nearly three months after the law was signed, and only three days before the law is set to take effect” on August 1.",
-      "offset": 450
-     }
-    ],
-    "to_others": [
-     {
-      "sentence": "“Such a delay in bringing the action and the motion suggests that harm is not immediate,” Frank said.",
-      "offset": 665
-     },
-     {
-      "sentence": "YouTuber Hank Green says his AI usage is ‘not healthy’",
-      "offset": 1766
-     },
-     {
-      "sentence": "Judge says Trump admin still lacks evidence for Anthropic ‘supply-chain risk’ label",
-      "offset": 2288
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 1,
-   "subject_own": 0,
-   "other": 2
-  },
-  "primary_link_examples": [
-   "https://storage.courtlistener.com/recap/gov.uscourts.mnd.235231/gov.uscourts.mnd.235231.21.0.pdf"
-  ],
-  "figures": {
-   "total": 1,
-   "with_named_source": 0
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://techcrunch.com/2026/08/01/youtuber-hank-green-says-his-ai-usage-is-not-healthy/": {
-  "headline": "YouTuber Hank Green says his AI usage is ‘not healthy’",
+ "https://techcrunch.com/2026/08/04/is-the-future-of-data-centers-portable-runware-builds-a-pod-to-find-out/": {
+  "headline": "Is the future of data centers portable? Runware builds a pod to find out",
   "entity": "",
   "entity_usable": false,
   "fetched": true,
   "attribution": {
    "to_subject": 0,
-   "to_others": 6,
+   "to_others": 13,
+   "unnamed": 1,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "On Tuesday, AI infrastructure company Runware announced the launch of its own modular data center called Sonic Inference Pod.",
+      "offset": 0
+     },
+     {
+      "sentence": "Runware says the Pod can offer inference at a higher quality but lower cost than other serverless inference platforms and GPU clouds.",
+      "offset": 285
+     },
+     {
+      "sentence": "In some ways, this is the future, Flaviu Radulescu, co-founder and CEO of Runware, told TechCrunch.",
+      "offset": 546
+     },
+     {
+      "sentence": "“We believe distributed compute, positioned closer to end users for faster inference, is what will win in the long term,” he said, noting his company as an example.",
+      "offset": 652
+     },
+     {
+      "sentence": "Aside from a lower price, Radulescu noted that the runware system can scale and add capacity fast, deploy anywhere there is power, and adapt quickly to new hardware releases.",
+      "offset": 817
+     },
+     {
+      "sentence": "“Demand for inference is growing faster than facilities can be built,” Radulescu said.",
+      "offset": 1180
+     }
+    ],
+    "unnamed": [
+     {
+      "sentence": "AI labs like OpenAI and SpaceX are still racing to build data centers throughout the U.S. OpenAI, for example, is close to striking a $500 billion deal that would see it build a data center in Ohio, according to reports .",
+      "offset": 1963
+     }
+    ]
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 6
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 5,
+   "with_named_source": 3
+  },
+  "motive_tier": 3,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://techcrunch.com/2026/08/04/eon-wants-to-move-the-data-superhighway-from-ocean-fiber-to-space-lasers/": {
+  "headline": "EON wants to move the data superhighway from ocean fiber to space lasers",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 7,
    "unnamed": 0,
    "spans": {
     "to_subject": [],
     "to_others": [
      {
-      "sentence": "In response to a since-deleted post on X, Green acknowledged that he’d produced the video “under a ton of pressure” and used ChatGPT “for research on this script.” At the same time, he said the “pushback” line was actually a response to the episode’s guest.",
-      "offset": 481
+      "sentence": "Those connections, however, aimed for a throughput of 2.5 Gbps, and EON has a bigger starting goal, Horowitz says: Throughput of 2.4 terabits a second.",
+      "offset": 1357
      },
      {
-      "sentence": "Green then offered a more in-depth apology on Reddit, where he said he was “mortified” that he’d “let so many people down” and that he plans to reduce his video production as a result.",
-      "offset": 739
+      "sentence": "“Charlie is a force of nature—he can move seamlessly from strategy to the details required to make something real,” Cinnamon told TechCrunch.",
+      "offset": 3298
      },
      {
-      "sentence": "“Ultimately, what I am most scared of is ruining myself for people, but I have not been managing my impulses well,” he said.",
-      "offset": 1407
+      "sentence": "Jeannette zu Fürstenburg, the General Catalyst president and managing partner who led the investment, said she sees it uniting the fund’s two key themes—AI and resilience.",
+      "offset": 3905
      },
      {
-      "sentence": "Green said he wants to do more work like a recent meditative video “where the writing was the whole thing and I felt it all the way down.” Green also said he’ll probably make more videos with his “dumb unscripted straight to camera thoughts.”",
-      "offset": 1944
+      "sentence": "“I don’t worry about demand,” she told TechCrunch.",
+      "offset": 4077
      },
      {
-      "sentence": "“But mostly I need to come to terms with the fact that the level of dopamine I’ve been getting from interacting with LLMs…with doing more and more and more and more…is not healthy for me or good for the world,” Green said.",
-      "offset": 2187
+      "sentence": "They aren’t the only one chasing this problem—Blue Origin, Jeff Bezos’ space company, has announced plans for TeraWave , a 5,048 satellite network that aims to provide speeds of up to 6 Tbps to large-scale users.",
+      "offset": 4389
      },
      {
-      "sentence": "YouTuber Hank Green says his AI usage is ‘not healthy’",
-      "offset": 3318
+      "sentence": "“We have one rule at the company: no physics problems,” Horowitz says.",
+      "offset": 5384
      }
     ],
     "unnamed": []
@@ -160,59 +104,50 @@
   "links": {
    "primary": 0,
    "subject_own": 0,
-   "other": 11
+   "other": 8
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 0,
-   "with_named_source": 0
+   "total": 7,
+   "with_named_source": 2
   },
   "motive_tier": 3,
   "tier_basis": "source-type",
   "chain": {
-   "cites": [
-    {
-     "url": "https://youtube.com/watch",
-     "name": "youtube.com",
-     "tier": 3,
-     "entity": "",
-     "headline": "Zitron: \"Everyone Has Been Sold a Lie\" on AI [video]"
-    }
-   ],
+   "cites": [],
    "cited_by": []
   }
  },
- "https://techcrunch.com/2026/08/01/sam-altman-is-still-making-the-case-for-parenting-via-chatgpt/": {
-  "headline": "Sam Altman is still making the case for parenting via ChatGPT",
-  "entity": "OpenAI",
-  "entity_usable": true,
+ "https://techcrunch.com/2026/08/03/after-killer-quarter-palantir-ceo-alex-karp-calls-ai-industry-marxist/": {
+  "headline": "After killer quarter, Palantir CEO Alex Karp calls AI industry ‘Marxist’",
+  "entity": "",
+  "entity_usable": false,
   "fetched": true,
   "attribution": {
    "to_subject": 0,
-   "to_others": 3,
-   "unnamed": 1,
+   "to_others": 4,
+   "unnamed": 0,
    "spans": {
     "to_subject": [],
     "to_others": [
      {
-      "sentence": "Last year, Microsoft CEO Satya Nadella said he’d stopped listening his favorite podcasts during his morning drive; instead, he asked an AI chatbot about those podcasts.",
-      "offset": 1028
+      "sentence": "“There are Marxist overtones and undertones to our business,” he wrote in a letter to shareholders about Palantir’s outstanding quarter .",
+      "offset": 322
      },
      {
-      "sentence": "But while the company has added safety features for parents , it also faces multiple lawsuits from parents and families alleging that ChatGPT played a role in loved ones’ delusions and suicides.",
-      "offset": 1750
+      "sentence": "For its second quarter, the company reported $1.9 billion in revenue, up 93% over the year-ago quarter, and $1.1 billion in profit, “more profit in a single quarter than we did in total revenue in the same period the year before,” he wrote.",
+      "offset": 788
      },
      {
-      "sentence": "(The company has said it’s “continuously improving how our models respond in sensitive interactions.”)",
-      "offset": 1945
+      "sentence": "In the enterprise context, people sign up for token self-pleasurings… at real cost like other forms of self pleasure,” he said.",
+      "offset": 1984
+     },
+     {
+      "sentence": "YouTuber Hank Green says his AI usage is ‘not healthy’",
+      "offset": 3974
      }
     ],
-    "unnamed": [
-     {
-      "sentence": "Okta buys AI security startup Permiso — source says for about $200M",
-      "offset": 2872
-     }
-    ]
+    "unnamed": []
    }
   },
   "links": {
@@ -232,35 +167,47 @@
    "cited_by": []
   }
  },
- "https://techcrunch.com/2026/08/01/this-9-key-physically-locks-your-most-addictive-apps/": {
-  "headline": "This $9 key physically locks your most addictive apps",
-  "entity": "",
-  "entity_usable": false,
+ "https://techcrunch.com/2026/08/03/aws-is-helping-vibe-coding-startup-superblocks-and-the-implications-are-big/": {
+  "headline": "AWS is helping vibe-coding startup Superblocks, and the implications are big",
+  "entity": "Amazon",
+  "entity_usable": true,
   "fetched": true,
   "attribution": {
-   "to_subject": 0,
-   "to_others": 1,
-   "unnamed": 1,
+   "to_subject": 1,
+   "to_others": 4,
+   "unnamed": 0,
    "spans": {
-    "to_subject": [],
-    "to_others": [
+    "to_subject": [
      {
-      "sentence": "The company says it’s developing a backup unlock method that will arrive in a future update.",
-      "offset": 2633
+      "sentence": "Vibe-coding startup Superblocks announced a multiyear joint marketing agreement with Amazon Web Services (AWS) that enables its tool to be embedded within the private clouds of AWS customers.",
+      "offset": 0
      }
     ],
-    "unnamed": [
+    "to_others": [
      {
-      "sentence": "Okta buys AI security startup Permiso — source says for about $200M",
-      "offset": 3658
+      "sentence": "So this should be a nice boost for early-stage Superblocks, which has 50 employees and raised a total of $60 million as of its Series A , announced in May 2025, backed by Spark Capital, Kleiner Perkins, Meritech Capital, and Greenoaks.",
+      "offset": 1685
+     },
+     {
+      "sentence": "It’s a must-have for the CIO,” he says.",
+      "offset": 3478
+     },
+     {
+      "sentence": "Menezes says the movement is so strong, he predicts that “any enterprise that is betting on a single model provider, that executive will be fired.”",
+      "offset": 3618
+     },
+     {
+      "sentence": "YouTuber Hank Green says his AI usage is ‘not healthy’",
+      "offset": 4951
      }
-    ]
+    ],
+    "unnamed": []
    }
   },
   "links": {
    "primary": 0,
    "subject_own": 0,
-   "other": 6
+   "other": 9
   },
   "primary_link_examples": [],
   "figures": {
@@ -274,30 +221,104 @@
    "cited_by": []
   }
  },
- "https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/": {
-  "headline": "OpenAI reportedly finds evidence that more of its agents ran amok",
+ "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models/": {
+  "headline": "Design Arena creators raise $7.9 million to bring taste to AI models",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 4,
+   "unnamed": 1,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "“It was the missing bottleneck for a lot of these models to make improvements in the design space,” Li says.",
+      "offset": 686
+     },
+     {
+      "sentence": "On Monday, the company behind Design Arena — dubbed Intelligence — announced a $7.9 million seed round led by Index Ventures with participation from Conviction (Sarah Guo and Mike Vernal), A*, Valkyrie, and others.",
+      "offset": 902
+     },
+     {
+      "sentence": "It too nabbed some frontier models as customers and had, it said, over 1.3 million users, but still couldn’t build a sustainable long-term business.",
+      "offset": 2819
+     },
+     {
+      "sentence": "YouTuber Hank Green says his AI usage is ‘not healthy’",
+      "offset": 4214
+     }
+    ],
+    "unnamed": [
+     {
+      "sentence": "For frontier labs, that’s a service worth paying for, Li says, adding the site is currently generating $60 million in ARR, solidifying its position as a key source of human-led evaluation data for the AI industry.",
+      "offset": 1904
+     }
+    ]
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 7
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 7,
+   "with_named_source": 3
+  },
+  "motive_tier": 3,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://techcrunch.com/2026/08/03/influencers-draw-backlash-for-attending-openais-first-luxury-trip/": {
+  "headline": "Influencers draw backlash for attending OpenAI’s first luxury trip",
   "entity": "OpenAI",
   "entity_usable": true,
   "fetched": true,
   "attribution": {
-   "to_subject": 1,
-   "to_others": 2,
+   "to_subject": 2,
+   "to_others": 9,
    "unnamed": 0,
    "spans": {
     "to_subject": [
      {
-      "sentence": "Now, anonymous sources have told Reuters that more of OpenAI’s agents are believed to have escaped their sandboxes.",
-      "offset": 458
+      "sentence": "When reached for comment, OpenAI spokesperson Drew Pusateri said that OpenAI works with a range of creators as part of a broader marketing effort to help people understand more practical ways to use ChatGPT.",
+      "offset": 1444
+     },
+     {
+      "sentence": "Other commenters also noted OpenAI’s $200 million contract with the Department of Defense as a reason the brand trip evoked ire.",
+      "offset": 4480
      }
     ],
     "to_others": [
      {
-      "sentence": "The same week, Anthropic also announced that it had discovered not one, but three instances in which its agents had escaped test environments and hacked other organizations.",
-      "offset": 898
+      "sentence": "One creator posted about making a website, while another took a photo of a brochure that said “painting workshop” on it.",
+      "offset": 406
      },
      {
-      "sentence": "Anthropic says its own AI models breached three companies during security tests",
-      "offset": 1707
+      "sentence": "Pusateri said the event was education-led and sought to give creators hands-on experience with the AI tools so that they could then show their followers how to use them.",
+      "offset": 1818
+     },
+     {
+      "sentence": "“Creators are an important part of our community and how people get information and learn about our products today,” Pusateri said.",
+      "offset": 1988
+     },
+     {
+      "sentence": "In February, Vanity Fair reported that the company hired “celebrity whisperer” Charles Porch as its first VP of global creative partnerships.",
+      "offset": 2486
+     },
+     {
+      "sentence": "In announcing the hire, Porch said that his job was going to be talking to creative communities “to figure out how we build the best products to serve them,” and he planned to do a “listening tour” to learn more about the relationship people have with AI tools.",
+      "offset": 2701
+     },
+     {
+      "sentence": "Anthropic reportedly hosted an influencer brand dinner for Claude, and back in February, Microsoft Copilot hosted an influencer brand trip to the Super Bowl, the tech newsletter Sarah and Kate reported.",
+      "offset": 3059
      }
     ],
     "unnamed": []
@@ -305,13 +326,112 @@
   },
   "links": {
    "primary": 0,
-   "subject_own": 1,
-   "other": 4
+   "subject_own": 0,
+   "other": 14
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 2,
+   "total": 4,
+   "with_named_source": 1
+  },
+  "motive_tier": 3,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes": {
+  "headline": "Europe’s AI labeling and transparency rules are now in effect",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 1,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "“The rapid development of generative and interactive AI systems is making it increasingly difficult to distinguish AI interactions and AI-generated content from human-created and authentic content,” the European Commission said in its transparency guidelines .",
+      "offset": 1777
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 6,
+   "subject_own": 0,
+   "other": 1
+  },
+  "primary_link_examples": [
+   "https://commission.europa.eu/news-and-media/news/safer-and-more-transparent-ai-2026-08-02_en",
+   "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1714",
+   "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50",
+   "https://digital-strategy.ec.europa.eu/en/policies/guidelines-transparency-ai-generated-content"
+  ],
+  "figures": {
+   "total": 3,
    "with_named_source": 0
+  },
+  "motive_tier": 3,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/974342/alibaba-qwen-max-open-weight-ai": {
+  "headline": "China&#8217;s Alibaba takes another swipe at America’s AI supremacy",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 9,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "Alibaba says its latest model can compete with Anthropic’s Claude Fable 5.",
+      "offset": 76
+     },
+     {
+      "sentence": "Alibaba says its latest model can compete with Anthropic’s Claude Fable 5.",
+      "offset": 151
+     },
+     {
+      "sentence": "Previously, he wrote about health, science and tech for Forbes .",
+      "offset": 508
+     },
+     {
+      "sentence": "Chinese tech giant Alibaba released what it says is its largest and “most capable AI model to date,” claiming performance rivaling the best systems from US frontier labs Anthropic and OpenAI, as well as domestic rivals like Moonshot AI’s Kimi K3.",
+      "offset": 573
+     },
+     {
+      "sentence": "Alibaba said it was making the model, Qwen3.8-Max, widely available to users in a blog post published on Monday.",
+      "offset": 820
+     },
+     {
+      "sentence": "The release had been expected after the company previewed the model last month, when it claimed it was “second only to Fable 5,” Anthropic’s flagship.",
+      "offset": 933
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 7
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 8,
+   "with_named_source": 2
   },
   "motive_tier": 3,
   "tier_basis": "source-type",
@@ -373,15 +493,7 @@
   "motive_tier": 3,
   "tier_basis": "source-type",
   "chain": {
-   "cites": [
-    {
-     "url": "https://youtube.com/watch",
-     "name": "youtube.com",
-     "tier": 3,
-     "entity": "",
-     "headline": "Zitron: \"Everyone Has Been Sold a Lie\" on AI [video]"
-    }
-   ],
+   "cites": [],
    "cited_by": []
   }
  },
@@ -537,64 +649,41 @@
    "cited_by": []
   }
  },
- "https://www.theverge.com/ai-artificial-intelligence/973764/google-earth-ai-satellite-images": {
-  "headline": "Here’s the problem with putting an AI image generator in Google Earth",
-  "entity": "Google",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 2,
-   "to_others": 0,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [
-     {
-      "sentence": "Google initially responded to Digital Digging ’s AI-altered images, saying, “We take misinformation seriously – every image created with Nano Banana in Google Earth includes the SynthID digital watermark, so if someone is unsure about an image, they can ask the Gemini app or use Lens in Search to se",
-      "offset": 907
-     },
-     {
-      "sentence": "Update, July 31st: After publication, Google announced it’s rolling back the feature .",
-      "offset": 2173
-     }
-    ],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 1,
-   "subject_own": 1,
-   "other": 4
-  },
-  "primary_link_examples": [
-   "https://science.nasa.gov/mission/landsat/data-overview/"
-  ],
-  "figures": {
-   "total": 3,
-   "with_named_source": 0
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://www.theverge.com/ai-artificial-intelligence/973741/ai-music-major-record-labels-charts": {
-  "headline": "The major labels propose rules to keep AI slop off the charts",
+ "https://arstechnica.com/ai/2026/08/ukraines-drones-get-ai-upgrades-for-kamikaze-strikes-future-swarm-attacks/": {
+  "headline": "US company’s AI lets Ukraine’s cheap kamikaze drones track targets on their own",
   "entity": "",
   "entity_usable": false,
   "fetched": true,
   "attribution": {
    "to_subject": 0,
-   "to_others": 1,
+   "to_others": 12,
    "unnamed": 0,
    "spans": {
     "to_subject": [],
     "to_others": [
      {
-      "sentence": "Deezer says AI music now makes up half of all daily song uploads.",
-      "offset": 3008
+      "sentence": "That allows human operators to manually fly the Shrike first-person view (FPV) drones into a battlefield area, designate a target up to half a mile away, and then “flip the switch to turn it into fire-and-forget terminal guidance mode,” Lorenz Meier , co-founder and CEO of Auterion, told Ars.",
+      "offset": 808
+     },
+     {
+      "sentence": "Shrike drones have reportedly taken down two Russian Mi-28 helicopters, each worth as much as $19 million, according to the Kyiv Independent .",
+      "offset": 2096
+     },
+     {
+      "sentence": "“What we are doing is replacing the existing flight controller—which has no computer, no AI—with avionics that has a microprocessor unit, has AI on board, and can track into the target fully autonomously,” Meier told Ars.",
+      "offset": 3204
+     },
+     {
+      "sentence": "Each of SkyFall’s Shrike drones equipped with such capability costs about $2,000, compared to the $400 Ukrainian drones that rely only on manual piloting, Meier wrote in a blog post .",
+      "offset": 3426
+     },
+     {
+      "sentence": "Reuters reported that Germany is the country funding the order, and Meier also disclosed that Auterion’s team based in Munich, Germany, is fulfilling the order.",
+      "offset": 4021
+     },
+     {
+      "sentence": "“It basically means that you can point one of our swarms at an objective, and you can either decide to point all the munitions at a single target point, or you can actually spread them out from the get-go, and they will reprioritize,” Meier told Ars.",
+      "offset": 5720
      }
     ],
     "unnamed": []
@@ -603,11 +692,69 @@
   "links": {
    "primary": 0,
    "subject_own": 0,
-   "other": 5
+   "other": 13
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 3,
+   "total": 11,
+   "with_named_source": 3
+  },
+  "motive_tier": 3,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it/": {
+  "headline": "An AI-supervised remote exam went so badly that 58,000 students must retake it",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 4,
+   "unnamed": 2,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "According to Gaceta UNAM, the school’s official news publication, the university rector has apologized to honest applicants , since they will now have to prepare for and take the test again despite doing nothing wrong.",
+      "offset": 1962
+     },
+     {
+      "sentence": "Still, the control exam is “necessary to give certainty and guarantee equity in access,” the rector added.",
+      "offset": 2181
+     },
+     {
+      "sentence": "According to the company , once an exam begins in this browser, students are “unable to print, copy, go to other web addresses, or access other applications on the computer.",
+      "offset": 3302
+     },
+     {
+      "sentence": "AI expert Raul Rojas, speaking to NPR , said statistical modeling suggested “that almost half of the students were cheating when taking the exam online.”",
+      "offset": 4467
+     }
+    ],
+    "unnamed": [
+     {
+      "sentence": "A New York Times report last week on the cheating scandal noted that “cheating tips were circulating widely before the tests went live this spring.",
+      "offset": 2683
+     },
+     {
+      "sentence": "A report in El País said that the test required the LockDown Browser from Respondus.",
+      "offset": 3217
+     }
+    ]
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 6
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 8,
    "with_named_source": 0
   },
   "motive_tier": 3,
@@ -869,133 +1016,6 @@
    "cited_by": []
   }
  },
- "https://arstechnica.com/culture/2026/07/ai-startup-admits-tattoo-for-interview-stunt-was-reckless/": {
-  "headline": "Would you get tattooed just to interview at a 7-days-a-week AI startup?",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 8,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "According to a writeup in Inc., seven people took the deal and got tattooed with the LemonLime logo during a party.",
-      "offset": 687
-     },
-     {
-      "sentence": "The “entire team shows up to the office 7 days a week,” Zietz wrote in a LinkedIn post two weeks ago .",
-      "offset": 1107
-     },
-     {
-      "sentence": "“Over a dozen applicants thus far have withdrawn after stating that they do not work past 5 pm or on weekends,” he added.",
-      "offset": 1210
-     },
-     {
-      "sentence": "Zietz said that the company hires “people we want to be friends with,” since “changing the world is easier with friends.",
-      "offset": 1645
-     },
-     {
-      "sentence": "(Zietz says that the logo was not required; other people chose different images.)",
-      "offset": 2666
-     },
-     {
-      "sentence": "We offered free tattoos and said we’d be happy to interview anyone who got one.",
-      "offset": 2927
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 8
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 5,
-   "with_named_source": 2
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://arstechnica.com/tech-policy/2026/07/high-school-defends-staying-silent-while-boys-made-ai-nudes-of-59-classmates/": {
-  "headline": "High school defends staying silent while boys made AI nudes of 59 classmates",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 16,
-   "unnamed": 3,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "One of the first schools to shut down after students were found making AI nudes of female classmates is now asking a court to toss a lawsuit filed by victims who claimed that the school stayed silent for months while the emboldened boys targeted many more girls.",
-      "offset": 188
-     },
-     {
-      "sentence": "In a motion to dismiss this week, Lancaster Country Day School (LCDS)—a private K-12 school in Pennsylvania with fewer than 600 students—argued that it was false to say the school never reported the harm to law enforcement.",
-      "offset": 451
-     },
-     {
-      "sentence": "The tip that the school received came from the Pennsylvania Office of the Attorney General, which is itself a law enforcement agency, the filing said.",
-      "offset": 675
-     },
-     {
-      "sentence": "LCDS said that “it looked into the tip as best as their educator training allowed,” but the tip only identified one bad actor and was too vague to identify any potential victims.",
-      "offset": 978
-     },
-     {
-      "sentence": "“The Attorney General’s office had the discretion and legal authority to refer this matter to the local police or conduct its own investigation,” Connaughton said.",
-      "offset": 2255
-     },
-     {
-      "sentence": "Ars could not reach the attorney general to comment, but a spokesperson told a local news site, Lancaster Online , that the office “does not investigate information provided in tips.",
-      "offset": 2676
-     }
-    ],
-    "unnamed": [
-     {
-      "sentence": "An attorney representing the school, Rory Connaughton of Saxton Stump, told Ars that “it is impossible to assert that the school failed to report to law enforcement when law enforcement provided the tip to the school and the school reported back to law enforcement.”",
-      "offset": 1958
-     },
-     {
-      "sentence": "Notably, another Pennsylvania school coping with AI-generated nudes on its campus did report the incident to police, according to a press release from lawmakers pushing to update the state’s law to ensure that schools always immediately report AI nudes.",
-      "offset": 4680
-     },
-     {
-      "sentence": "In LCDS’s motion to dismiss, the school claimed that the very fact that lawmakers are moving to update the law is proof that it had no legal obligation to report the vague tip that it received.",
-      "offset": 5984
-     }
-    ]
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 4
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 7,
-   "with_named_source": 3
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
  "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/": {
   "headline": "Gemini Robotics ER 2: powering robotics with video understanding, task orchestration, and multi-robot collaboration",
   "entity": "Google DeepMind",
@@ -1219,269 +1239,6 @@
   },
   "motive_tier": 5,
   "tier_basis": "publisher is the subject (Google DeepMind)",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://www.ohiostatefair.com/p/get-involved/arts/poster-contest": {
-  "headline": "AI poster wins Ohio State Fair contest",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 0,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 0,
-   "with_named_source": 0
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://frogs.vaguespac.es/": {
-  "headline": "My personal AI benchmark: \"Generate an SVG of a frog with a Habsburg jaw.\"",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 0,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 126,
-   "with_named_source": 0
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://sprocket-demo.spikonado.com": {
-  "headline": "Show HN: Sprocket – The Best AI Agent for Hardware and Software Development",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 0,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 2
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 4,
-   "with_named_source": 0
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type",
-  "chain": {
-   "cites": [
-    {
-     "url": "https://youtube.com/watch",
-     "name": "youtube.com",
-     "tier": 3,
-     "entity": "",
-     "headline": "Zitron: \"Everyone Has Been Sold a Lie\" on AI [video]"
-    }
-   ],
-   "cited_by": []
-  }
- },
- "https://www.youtube.com/watch?v=pHcZpvIfho0": {
-  "headline": "Zitron: \"Everyone Has Been Sold a Lie\" on AI [video]",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 0,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 1
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 0,
-   "with_named_source": 0
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type",
-  "chain": {
-   "cites": [],
-   "cited_by": [
-    {
-     "url": "https://techcrunch.com/2026/08/01/youtuber-hank-green-says-his-ai-usage-is-not-healthy",
-     "name": "techcrunch.com",
-     "tier": 3,
-     "entity": "",
-     "headline": "YouTuber Hank Green says his AI usage is ‘not healthy’"
-    },
-    {
-     "url": "https://theverge.com/ai-artificial-intelligence/974265/fender-ceo-bud-cole-ai-music",
-     "name": "theverge.com",
-     "tier": 3,
-     "entity": "",
-     "headline": "Fender’s CEO seems to think your bandmates are just analog AI"
-    },
-    {
-     "url": "https://sprocket-demo.spikonado.com",
-     "name": "sprocket-demo.spikonado.com",
-     "tier": 3,
-     "entity": "",
-     "headline": "Show HN: Sprocket – The Best AI Agent for Hardware and Software Development"
-    },
-    {
-     "url": "https://news.mit.edu/2026/daniela-rus-receives-bavarian-minister-presidents-high-tech-prize-0730",
-     "name": "news.mit.edu",
-     "tier": 5,
-     "entity": "",
-     "headline": "Daniela Rus receives Bavarian Minister-President's High-Tech Prize"
-    }
-   ]
-  }
- },
- "https://mitsloan.mit.edu/ideas-made-to-matter/ai-financial-advice-surprisingly-good-especially-if-you-ask-right-questions": {
-  "headline": "AI financial advice is surprisingly good, especially if you ask right questions",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 14,
-   "unnamed": 2,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "“ Half of Americans say they are using AI to get financial advice, but we know very little about what kind of advice they’re getting and whether they’re acting on it,” said Taha Choukhmane , an assistant professor of finance at the MIT Sloan School of Management and co-author of a new paper that mea",
-      "offset": 145
-     },
-     {
-      "sentence": "“We were somewhat surprised by how good the advice was,” Choukhmane said.",
-      "offset": 3208
-     },
-     {
-      "sentence": "“Regular people are not writing their prompts the way a finance professor is,” Choukhmane said.",
-      "offset": 4330
-     },
-     {
-      "sentence": "Women, for example, were more likely to use words such as “family,” “grocery,” and “pay” in their prompts, while men used words like “strategy,” “crypto,” and “growth,” he said.",
-      "offset": 5576
-     },
-     {
-      "sentence": "In the case of gender, about two-thirds of the gender gap in wealth outcomes could be attributed to differences in how men and women wrote their prompts, while the remaining third came from the model changing its advice when the same prompt was labeled as coming from a woman rather than a man.",
-      "offset": 5948
-     },
-     {
-      "sentence": "That latter pattern could reflect the LLM making reasonable inferences about how preferences or circumstances vary by gender — which, ideally, the model could make explicit to users, Choukhmane said — or it could reflect biases learned from training data.",
-      "offset": 6243
-     }
-    ],
-    "unnamed": [
-     {
-      "sentence": "These differences come from two sources, Choukhmane said.",
-      "offset": 5421
-     },
-     {
-      "sentence": "AI can serve as a good complement to working with a financial advisor — someone you might meet with twice a year — because it can help you implement the advice they give you in real time, Choukhmane said.",
-      "offset": 7753
-     }
-    ]
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 4
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 10,
-   "with_named_source": 1
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://twitter.com/newsfromgoogle/status/2083249962150760610": {
-  "headline": "Google kills Earth AI generator after one day",
-  "entity": "Google",
-  "entity_usable": true,
-  "fetched": false,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 0,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 0,
-   "with_named_source": 0
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type",
   "chain": {
    "cites": [],
    "cited_by": []
@@ -2543,6 +2300,108 @@
    "cited_by": []
   }
  },
+ "https://news.mit.edu/2026/medical-ai-assistance-benefits-vary-based-on-user-expertise-0804": {
+  "headline": "The benefits of medical AI assistance vary based on user expertise",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 6,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "We know that both AI and explainability methods can engage automation bias in humans, and this anchoring effect is something that must be accounted for when we design AI systems,” says Marzyeh Ghassemi, an associate professor in MIT’s Department of Electrical Engineering and Computer Science (EECS),",
+      "offset": 2285
+     },
+     {
+      "sentence": "Our findings show that those with the least medical knowledge are most likely to be led astray when explainable AI models give an erroneous output,” says Roxana Daneshjou, a co-author and assistant professor of biomedical data science and dermatology at Stanford University.",
+      "offset": 2897
+     },
+     {
+      "sentence": "Often the people who could benefit most from AI are the ones most likely to be led astray by it, so how we present a recommendation matters as much as whether it’s correct,” says lead author Orson Xu, an assistant professor in the Department of Biomedical Informatics at Columbia University.",
+      "offset": 3623
+     },
+     {
+      "sentence": "We were just able to train very good AI models for this setting,” Ghassemi says.",
+      "offset": 6207
+     },
+     {
+      "sentence": "The same tool ends up being an asset for one user and a liability for another,” Xu says.",
+      "offset": 6942
+     },
+     {
+      "sentence": "Otherwise, we risk engaging automation bias and then, when the model is wrong, users can’t recover,” Ghassemi says.",
+      "offset": 8190
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 12
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 1,
+   "with_named_source": 0
+  },
+  "motive_tier": 5,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://news.mit.edu/2026/alexander-rakhlin-named-director-mit-statistics-data-science-center-0803": {
+  "headline": "Alexander Rakhlin named director of  the MIT Statistics and Data Science Center",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 3,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "“Sasha is one of the sharpest theoretical minds working in statistics and machine learning today, and also one of the most devoted mentors I know,” says Fotini Christia, the Ford International Professor of the Social Sciences and director of IDSS, which houses SDSC.",
+      "offset": 1702
+     },
+     {
+      "sentence": "“I am honored to take on this role,” says Rakhlin.",
+      "offset": 2508
+     },
+     {
+      "sentence": "“I have been fascinated by machine learning since my PhD work more than 20 years ago, drawn by its beautiful connections to statistics, probability, algorithms, optimization, and game theory,” says Rakhlin.",
+      "offset": 3381
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 8
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 3,
+   "with_named_source": 1
+  },
+  "motive_tier": 5,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
  "https://news.mit.edu/2026/daniela-rus-receives-bavarian-minister-presidents-high-tech-prize-0730": {
   "headline": "Daniela Rus receives Bavarian Minister-President's High-Tech Prize",
   "entity": "",
@@ -2584,15 +2443,7 @@
   "motive_tier": 5,
   "tier_basis": "source-type",
   "chain": {
-   "cites": [
-    {
-     "url": "https://youtube.com/watch",
-     "name": "youtube.com",
-     "tier": 3,
-     "entity": "",
-     "headline": "Zitron: \"Everyone Has Been Sold a Lie\" on AI [video]"
-    }
-   ],
+   "cites": [],
    "cited_by": []
   }
  },
@@ -2733,116 +2584,6 @@
   "primary_link_examples": [],
   "figures": {
    "total": 1,
-   "with_named_source": 0
-  },
-  "motive_tier": 5,
-  "tier_basis": "source-type",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://news.mit.edu/2026/mit-projects-selected-funding-under-doe-genesis-mission-0723": {
-  "headline": "MIT projects selected for funding under US Department of Energy’s Genesis Mission",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 5,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "“MIT researchers are proud to be leading and contributing to projects under the Genesis Mission, in vital areas of research that support national priorities,” says Ian A.",
-      "offset": 585
-     },
-     {
-      "sentence": "MIT researchers are set to contribute to the U.S. Department of Energy’s (DOE) Genesis Mission , with 15 collaborative projects among those selected for funding under Genesis Phase I, DOE announced Wednesday.",
-      "offset": 880
-     },
-     {
-      "sentence": "“MIT researchers are proud to be leading and contributing to projects under the Genesis Mission, in vital areas of research that support national priorities,” says Ian A.",
-      "offset": 1432
-     },
-     {
-      "sentence": "The DOE announced the initial projects during its Genesis Summit in Washington on Wednesday.",
-      "offset": 1878
-     },
-     {
-      "sentence": "“The extraordinary response to this Genesis Mission application process demonstrates that America’s scientific community is ready to reimagine how discovery happens,” said DOE Under Secretary Darío Gil SM ’00 PhD ’03, in the DOE’s announcement.",
-      "offset": 6671
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 8
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 2,
-   "with_named_source": 2
-  },
-  "motive_tier": 5,
-  "tier_basis": "source-type",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://news.mit.edu/2026/dimitri-bertsekas-influential-computer-scientist-prolific-author-dies-0722": {
-  "headline": "Professor Emeritus Dimitri Bertsekas, influential computer scientist and prolific author, dies at 83",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 7,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "“Each of his books represents a landmark,” says Benjamin Van Roy, a former PhD student of Bertsekas’, now a professor of electrical engineering at Stanford University.",
-      "offset": 1046
-     },
-     {
-      "sentence": "“He possessed a profound artistic sensibility and an extraordinary creative mind, clearly shown both in his research and in his photography,” says Yuchao Li, a postdoc at Arizona State University and one of Bertsekas’ advisees.",
-      "offset": 2222
-     },
-     {
-      "sentence": "“Dimitri played a defining role in my career,” says Asu Ozdaglar, department head of EECS at MIT.",
-      "offset": 5291
-     },
-     {
-      "sentence": "“Working with Dimitri on [that book] is how I learned to write,” says Shreve.",
-      "offset": 7479
-     },
-     {
-      "sentence": "“Everyone recognized Dimitri’s great talents as a writer, but he went far beyond that, organizing entire subjects into something that was understandable and a well-organized totality,” says Robert Gallager, professor emeritus of electrical engineering at MIT, who co-authored a 1987 book with Bertsek",
-      "offset": 7808
-     },
-     {
-      "sentence": "Co-author John Tsitsiklis wrote, “I was most fortunate to be one of his apprentices, and to have lived his warmth and friendship.” His former student at MIT, Angelia Nedich, later became Bertsekas’ colleague at Arizona State University.",
-      "offset": 13392
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 9
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 7,
    "with_named_source": 0
   },
   "motive_tier": 5,
@@ -3246,6 +2987,38 @@
    "cited_by": []
   }
  },
+ "https://www.anthropic.com/news/claude-for-nonprofits": {
+  "headline": "Introducing Claude for Nonprofits",
+  "entity": "Anthropic",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 19
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 14,
+   "with_named_source": 0
+  },
+  "motive_tier": 5,
+  "tier_basis": "publisher is the subject (Anthropic)",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
  "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals": {
   "headline": "Investigating three real-world incidents in our cybersecurity evaluations",
   "entity": "Anthropic",
@@ -3351,26 +3124,25 @@
    "cited_by": []
   }
  },
- "https://www.anthropic.com/news/cognizant-anthropic": {
-  "headline": "Expanding our partnership with Cognizant",
-  "entity": "Anthropic",
+ "https://openai.com/index/model-disproves-discrete-geometry-conjecture/": {
+  "headline": "An OpenAI model has disproved a central conjecture in discrete geometry",
+  "entity": "OpenAI",
   "entity_usable": true,
   "fetched": true,
   "attribution": {
-   "to_subject": 1,
-   "to_others": 1,
+   "to_subject": 0,
+   "to_others": 2,
    "unnamed": 0,
    "spans": {
-    "to_subject": [
-     {
-      "sentence": "\"Deepening our partnership with Cognizant will help more companies harness AI's growing capability and deploy it in real, practical ways for their businesses,\" said Daniela Amodei, Co-Founder and President of Anthropic.",
-      "offset": 2702
-     }
-    ],
+    "to_subject": [],
     "to_others": [
      {
-      "sentence": "\"AI capability is rising faster than enterprises can absorb it, and that gap is the defining problem of this moment,\" said Ravi Kumar S, Chief Executive Officer of Cognizant.",
-      "offset": 2199
+      "sentence": "Fields medalist Tim Gowers, writing in the companion paper, calls the result “a milestone in AI mathematics.” According to leading number theorist Arul Shankar, “In my opinion this paper demonstrates that current AI models go beyond just helpers to human mathematicians – they are capable of having o",
+      "offset": 2702
+     },
+     {
+      "sentence": "This argues that the model has some combination of good intuition, willingness to try approaches considered long-shot by the community, and a predisposition to attempt constructions.… In my opinion this paper demonstrates that current AI models go beyond just helpers to human mathematicians – they a",
+      "offset": 4391
      }
     ],
     "unnamed": []
@@ -3378,16 +3150,16 @@
   },
   "links": {
    "primary": 0,
-   "subject_own": 0,
-   "other": 2
+   "subject_own": 3,
+   "other": 0
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 1,
+   "total": 10,
    "with_named_source": 0
   },
   "motive_tier": 5,
-  "tier_basis": "publisher is the subject (Anthropic)",
+  "tier_basis": "publisher is the subject (OpenAI)",
   "chain": {
    "cites": [],
    "cited_by": []
@@ -3425,43 +3197,8 @@
    "cited_by": []
   }
  },
- "https://openai.com/index/scientific-computing-agentic-ai/": {
-  "headline": "Scientific computing in the age of agentic AI",
-  "entity": "OpenAI",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 0,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 2,
-   "subject_own": 1,
-   "other": 0
-  },
-  "primary_link_examples": [
-   "https://doi.org/10.1038/s41597-022-01143-6",
-   "https://doi.org/10.1371/journal.pbio.3000333"
-  ],
-  "figures": {
-   "total": 1,
-   "with_named_source": 0
-  },
-  "motive_tier": 5,
-  "tier_basis": "publisher is the subject (OpenAI)",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://openai.com/index/advancing-content-provenance/": {
-  "headline": "Advancing content provenance for a safer, more transparent AI ecosystem",
+ "https://openai.com/index/chatgpt-for-academic-researchers/": {
+  "headline": "Accelerating scientific discovery with ChatGPT for Academic Researchers",
   "entity": "OpenAI",
   "entity_usable": true,
   "fetched": true,
@@ -3477,12 +3214,12 @@
   },
   "links": {
    "primary": 0,
-   "subject_own": 3,
-   "other": 2
+   "subject_own": 0,
+   "other": 3
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 1,
+   "total": 15,
    "with_named_source": 0
   },
   "motive_tier": 5,
