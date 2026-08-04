@@ -1,55 +1,10 @@
 {
- "fetched": "2026-08-03 00:03 UTC",
+ "fetched": "2026-08-04 13:20 UTC",
  "items": [
   {
-   "entity": "OpenAI",
-   "headline": "Sam Altman and AI’s decel debate",
-   "date": "Sun, 02 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/08/02/sam-altman-and-ais-decel-debate/",
-     "source_type": "trade-press",
-     "motive_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "label_tier": 1,
-   "label_evidence": "no figure in 7726 chars of article text",
-   "label_source": "deterministic",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 16
-    },
-    {
-     "name": "Hugging Face",
-     "count": 5
-    },
-    {
-     "name": "Anthropic",
-     "count": 3
-    },
-    {
-     "name": "Google",
-     "count": 1
-    },
-    {
-     "name": "Apple",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Hugging Face",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "xAI",
-   "headline": "Judge denies xAI’s request to block Minnesota ban on ‘nudify’ apps",
-   "date": "Sat, 01 Aug 2026",
+   "entity": "",
+   "headline": "Is the future of data centers portable? Runware builds a pod to find out",
+   "date": "Tue, 04 Aug 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "N",
@@ -57,53 +12,45 @@
    "sources": [
     {
      "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps/",
+     "url": "https://techcrunch.com/2026/08/04/is-the-future-of-data-centers-portable-runware-builds-a-pod-to-find-out/",
      "source_type": "trade-press",
      "motive_tier": 3
     }
    ],
    "rating": "ok",
    "label_tier": 3,
-   "label_evidence": "model read 1 figure-sentence(s), no base cue matched",
+   "label_evidence": "model read 5 figure-sentence(s), no base cue matched",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
    "label_source": "machine",
    "mentions": [
     {
-     "name": "xAI",
-     "count": 11
-    },
-    {
      "name": "OpenAI",
-     "count": 2
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
+     "count": 3
     }
    ],
-   "publisher_topic": "SpaceX",
-   "entity_basis": "headline"
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
-   "headline": "YouTuber Hank Green says his AI usage is ‘not healthy’",
-   "date": "Sat, 01 Aug 2026",
+   "headline": "EON wants to move the data superhighway from ocean fiber to space lasers",
+   "date": "Tue, 04 Aug 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "n/a",
+   "denominator_stated": "partial",
    "reviewed": false,
    "sources": [
     {
      "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/08/01/youtuber-hank-green-says-his-ai-usage-is-not-healthy/",
+     "url": "https://techcrunch.com/2026/08/04/eon-wants-to-move-the-data-superhighway-from-ocean-fiber-to-space-lasers/",
      "source_type": "trade-press",
      "motive_tier": 3
     }
    ],
    "rating": "ok",
    "label_tier": 1,
-   "label_evidence": "no figure in 3927 chars of article text",
+   "label_evidence": "1 of 7 figure-sentence(s) state a base",
    "label_source": "deterministic",
    "mentions": [
     {
@@ -113,23 +60,31 @@
     {
      "name": "Google",
      "count": 1
+    },
+    {
+     "name": "Amazon",
+     "count": 1
+    },
+    {
+     "name": "xAI",
+     "count": 1
     }
    ],
-   "publisher_topic": "hank green",
+   "publisher_topic": "",
    "entity_basis": "unresolved"
   },
   {
-   "entity": "OpenAI",
-   "headline": "Sam Altman is still making the case for parenting via ChatGPT",
-   "date": "Sat, 01 Aug 2026",
+   "entity": "",
+   "headline": "After killer quarter, Palantir CEO Alex Karp calls AI industry ‘Marxist’",
+   "date": "Mon, 03 Aug 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "partial",
+   "denominator_stated": "Y",
    "reviewed": false,
    "sources": [
     {
      "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/08/01/sam-altman-is-still-making-the-case-for-parenting-via-chatgpt/",
+     "url": "https://techcrunch.com/2026/08/03/after-killer-quarter-palantir-ceo-alex-karp-calls-ai-industry-marxist/",
      "source_type": "trade-press",
      "motive_tier": 3
     }
@@ -143,32 +98,65 @@
    "mentions": [
     {
      "name": "OpenAI",
-     "count": 10
+     "count": 2
     },
     {
      "name": "Microsoft",
      "count": 2
     },
     {
-     "name": "Google",
-     "count": 1
-    },
-    {
-     "name": "Okta",
-     "count": 1
-    },
-    {
-     "name": "Permiso",
+     "name": "Anthropic",
      "count": 1
     }
    ],
-   "publisher_topic": "OpenAI",
+   "publisher_topic": "Alex Karp",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "Amazon",
+   "headline": "AWS is helping vibe-coding startup Superblocks, and the implications are big",
+   "date": "Mon, 03 Aug 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "partial",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/08/03/aws-is-helping-vibe-coding-startup-superblocks-and-the-implications-are-big/",
+     "source_type": "trade-press",
+     "motive_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "label_tier": 1,
+   "label_evidence": "1 of 4 figure-sentence(s) state a base",
+   "label_source": "deterministic",
+   "mentions": [
+    {
+     "name": "Amazon",
+     "count": 13
+    },
+    {
+     "name": "Microsoft",
+     "count": 3
+    },
+    {
+     "name": "OpenAI",
+     "count": 2
+    },
+    {
+     "name": "Anthropic",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "AWS",
    "entity_basis": "headline"
   },
   {
    "entity": "",
-   "headline": "This $9 key physically locks your most addictive apps",
-   "date": "Sat, 01 Aug 2026",
+   "headline": "Design Arena creators raise $7.9 million to bring taste to AI models",
+   "date": "Mon, 03 Aug 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "N",
@@ -176,7 +164,42 @@
    "sources": [
     {
      "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/08/01/this-9-key-physically-locks-your-most-addictive-apps/",
+     "url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models/",
+     "source_type": "trade-press",
+     "motive_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 7 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 1
+    },
+    {
+     "name": "Hugging Face",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "OpenAI",
+   "headline": "Influencers draw backlash for attending OpenAI’s first luxury trip",
+   "date": "Mon, 03 Aug 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/08/03/influencers-draw-backlash-for-attending-openais-first-luxury-trip/",
      "source_type": "trade-press",
      "motive_tier": 3
     }
@@ -190,22 +213,92 @@
    "mentions": [
     {
      "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Google",
-     "count": 1
+     "count": 17
     },
     {
      "name": "Meta",
+     "count": 4
+    },
+    {
+     "name": "Anthropic",
      "count": 1
     },
     {
-     "name": "Okta",
+     "name": "Microsoft",
      "count": 1
+    }
+   ],
+   "publisher_topic": "OpenAI",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "Europe’s AI labeling and transparency rules are now in effect",
+   "date": "2026-08-03T13:46",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes",
+     "source_type": "trade-press",
+     "motive_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 3 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 3
     },
     {
-     "name": "Permiso",
+     "name": "Microsoft",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Politics",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "China&#8217;s Alibaba takes another swipe at America’s AI supremacy",
+   "date": "2026-08-03T07:20",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/974342/alibaba-qwen-max-open-weight-ai",
+     "source_type": "trade-press",
+     "motive_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 8 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Anthropic",
+     "count": 8
+    },
+    {
+     "name": "OpenAI",
+     "count": 4
+    },
+    {
+     "name": "Microsoft",
      "count": 1
     }
    ],
@@ -213,51 +306,12 @@
    "entity_basis": "unresolved"
   },
   {
-   "entity": "OpenAI",
-   "headline": "OpenAI reportedly finds evidence that more of its agents ran amok",
-   "date": "Fri, 31 Jul 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/",
-     "source_type": "trade-press",
-     "motive_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "label_tier": 3,
-   "label_evidence": "model read 2 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 8
-    },
-    {
-     "name": "Anthropic",
-     "count": 2
-    },
-    {
-     "name": "Hugging Face",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "Hugging Face",
-   "entity_basis": "headline"
-  },
-  {
    "entity": "",
    "headline": "Fender’s CEO seems to think your bandmates are just analog AI",
-   "date": "2026-08-02T15:40",
+   "date": "2026-08-03T05:23",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "N",
+   "denominator_stated": "partial",
    "reviewed": false,
    "sources": [
     {
@@ -316,7 +370,7 @@
   {
    "entity": "",
    "headline": "Is this Billboard Hot 100 hit AI slop?",
-   "date": "2026-08-02T09:25",
+   "date": "2026-08-03T05:45",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "N",
@@ -380,64 +434,57 @@
    "entity_basis": "headline"
   },
   {
-   "entity": "Google",
-   "headline": "Here’s the problem with putting an AI image generator in Google Earth",
-   "date": "2026-07-31T16:12",
+   "entity": "",
+   "headline": "US company’s AI lets Ukraine’s cheap kamikaze drones track targets on their own",
+   "date": "Mon, 03 Aug 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "N",
+   "denominator_stated": "partial",
    "reviewed": false,
    "sources": [
     {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/973764/google-earth-ai-satellite-images",
+     "name": "arstechnica.com",
+     "url": "https://arstechnica.com/ai/2026/08/ukraines-drones-get-ai-upgrades-for-kamikaze-strikes-future-swarm-attacks/",
      "source_type": "trade-press",
      "motive_tier": 3
     }
    ],
    "rating": "ok",
-   "label_tier": 3,
-   "label_evidence": "model read 3 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine",
+   "label_tier": 1,
+   "label_evidence": "1 of 11 figure-sentence(s) state a base",
+   "label_source": "deterministic",
    "mentions": [
     {
      "name": "Google",
-     "count": 16
+     "count": 1
     }
    ],
-   "publisher_topic": "Google",
-   "entity_basis": "headline"
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
-   "headline": "The major labels propose rules to keep AI slop off the charts",
-   "date": "2026-07-31T12:36",
+   "headline": "An AI-supervised remote exam went so badly that 58,000 students must retake it",
+   "date": "Mon, 03 Aug 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "N",
+   "denominator_stated": "Y",
    "reviewed": false,
    "sources": [
     {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/973741/ai-music-major-record-labels-charts",
+     "name": "arstechnica.com",
+     "url": "https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it/",
      "source_type": "trade-press",
      "motive_tier": 3
     }
    ],
    "rating": "ok",
    "label_tier": 3,
-   "label_evidence": "model read 3 figure-sentence(s), no base cue matched",
+   "label_evidence": "model read 8 figure-sentence(s), no base cue matched",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
    "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 2
-    }
-   ],
+   "mentions": [],
    "publisher_topic": "",
    "entity_basis": "unresolved"
   },
@@ -480,7 +527,7 @@
    "date": "Fri, 31 Jul 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "N",
+   "denominator_stated": "n/a",
    "reviewed": false,
    "sources": [
     {
@@ -578,58 +625,6 @@
    ],
    "publisher_topic": "",
    "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "Would you get tattooed just to interview at a 7-days-a-week AI startup?",
-   "date": "Fri, 31 Jul 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "arstechnica.com",
-     "url": "https://arstechnica.com/culture/2026/07/ai-startup-admits-tattoo-for-interview-stunt-was-reckless/",
-     "source_type": "trade-press",
-     "motive_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "label_tier": 3,
-   "label_evidence": "model read 5 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "High school defends staying silent while boys made AI nudes of 59 classmates",
-   "date": "Fri, 31 Jul 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "arstechnica.com",
-     "url": "https://arstechnica.com/tech-policy/2026/07/high-school-defends-staying-silent-while-boys-made-ai-nudes-of-59-classmates/",
-     "source_type": "trade-press",
-     "motive_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "label_tier": 3,
-   "label_evidence": "model read 7 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
   },
   {
    "entity": "Google DeepMind",
@@ -802,164 +797,6 @@
    "rating": "trusted",
    "mentions": [],
    "publisher_topic": ""
-  },
-  {
-   "entity": "",
-   "headline": "AI poster wins Ohio State Fair contest",
-   "date": "Sun, 02 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "ohiostatefair.com",
-     "url": "https://www.ohiostatefair.com/p/get-involved/arts/poster-contest",
-     "source_type": "other",
-     "motive_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "label_tier": 1,
-   "label_evidence": "no figure in 59 chars of article text",
-   "label_source": "deterministic",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "My personal AI benchmark: \"Generate an SVG of a frog with a Habsburg jaw.\"",
-   "date": "Sun, 02 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "partial",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "frogs.vaguespac.es",
-     "url": "https://frogs.vaguespac.es/",
-     "source_type": "other",
-     "motive_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "label_tier": 1,
-   "label_evidence": "3 of 126 figure-sentence(s) state a base",
-   "label_source": "deterministic",
-   "mentions": [
-    {
-     "name": "Anthropic",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Show HN: Sprocket – The Best AI Agent for Hardware and Software Development",
-   "date": "Sun, 02 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "sprocket-demo.spikonado.com",
-     "url": "https://sprocket-demo.spikonado.com",
-     "source_type": "other",
-     "motive_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "label_tier": 3,
-   "label_evidence": "model read 4 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Zitron: \"Everyone Has Been Sold a Lie\" on AI [video]",
-   "date": "Sat, 01 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "youtube.com",
-     "url": "https://www.youtube.com/watch?v=pHcZpvIfho0",
-     "source_type": "other",
-     "motive_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "label_tier": 1,
-   "label_evidence": "no figure in 253 chars of article text",
-   "label_source": "deterministic",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Anthropic",
-   "entity_basis": "tags-name-4-orgs"
-  },
-  {
-   "entity": "",
-   "headline": "AI financial advice is surprisingly good, especially if you ask right questions",
-   "date": "Sat, 01 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "partial",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "mitsloan.mit.edu",
-     "url": "https://mitsloan.mit.edu/ideas-made-to-matter/ai-financial-advice-surprisingly-good-especially-if-you-ask-right-questions",
-     "source_type": "other",
-     "motive_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "label_tier": 1,
-   "label_evidence": "1 of 10 figure-sentence(s) state a base",
-   "label_source": "deterministic",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Google",
-   "headline": "Google kills Earth AI generator after one day",
-   "date": "Sat, 01 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "twitter.com",
-     "url": "https://twitter.com/newsfromgoogle/status/2083249962150760610",
-     "source_type": "other",
-     "motive_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "label_tier": 3,
-   "label_evidence": "model read article not fetched (robots-disallowed)",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "headline"
   },
   {
    "entity": "Bureau of Labor Statistics",
@@ -1687,7 +1524,7 @@
    "date": "Wed, 01 Jul 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "n/a",
+   "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
@@ -1790,6 +1627,68 @@
     }
    ],
    "publisher_topic": "world models",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "The benefits of medical AI assistance vary based on user expertise",
+   "date": "Tue, 04 Aug 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "news.mit.edu",
+     "url": "https://news.mit.edu/2026/medical-ai-assistance-benefits-vary-based-on-user-expertise-0804",
+     "source_type": "press-office",
+     "motive_tier": 5
+    }
+   ],
+   "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 1 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Marzyeh Ghassemi",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "Alexander Rakhlin named director of  the MIT Statistics and Data Science Center",
+   "date": "Mon, 03 Aug 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "news.mit.edu",
+     "url": "https://news.mit.edu/2026/alexander-rakhlin-named-director-mit-statistics-data-science-center-0803",
+     "source_type": "press-office",
+     "motive_tier": 5
+    }
+   ],
+   "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 3 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "MIT IDSS",
    "entity_basis": "unresolved"
   },
   {
@@ -1922,68 +1821,6 @@
     }
    ],
    "publisher_topic": "MIT nuclear science and engineering",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "MIT projects selected for funding under US Department of Energy’s Genesis Mission",
-   "date": "Thu, 23 Jul 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "news.mit.edu",
-     "url": "https://news.mit.edu/2026/mit-projects-selected-funding-under-doe-genesis-mission-0723",
-     "source_type": "press-office",
-     "motive_tier": 5
-    }
-   ],
-   "rating": "ok",
-   "label_tier": 3,
-   "label_evidence": "model read 2 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "DOE",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Professor Emeritus Dimitri Bertsekas, influential computer scientist and prolific author, dies at 83",
-   "date": "Wed, 22 Jul 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "news.mit.edu",
-     "url": "https://news.mit.edu/2026/dimitri-bertsekas-influential-computer-scientist-prolific-author-dies-0722",
-     "source_type": "press-office",
-     "motive_tier": 5
-    }
-   ],
-   "rating": "ok",
-   "label_tier": 3,
-   "label_evidence": "model read 7 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "MIT EECS faculty",
    "entity_basis": "unresolved"
   },
   {
@@ -2154,7 +1991,7 @@
    "date": "Wed, 08 Jul 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "N",
+   "denominator_stated": "partial",
    "reviewed": false,
    "sources": [
     {
@@ -2299,8 +2136,47 @@
   },
   {
    "entity": "Anthropic",
+   "headline": "Introducing Claude for Nonprofits",
+   "date": "2026-08-03",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "anthropic.com",
+     "url": "https://www.anthropic.com/news/claude-for-nonprofits",
+     "source_type": "vendor-own",
+     "motive_tier": 5
+    }
+   ],
+   "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 14 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Microsoft",
+     "count": 1
+    },
+    {
+     "name": "Amazon",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "product:Claude"
+  },
+  {
+   "entity": "Anthropic",
    "headline": "Investigating three real-world incidents in our cybersecurity evaluations",
-   "date": "2026-07-30",
+   "date": "2026-08-03",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "partial",
@@ -2355,35 +2231,35 @@
    "entity_basis": "site"
   },
   {
-   "entity": "Anthropic",
-   "headline": "Expanding our partnership with Cognizant",
-   "date": "2026-07-27",
+   "entity": "OpenAI",
+   "headline": "An OpenAI model has disproved a central conjecture in discrete geometry",
+   "date": "2026-08-04",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
-     "name": "anthropic.com",
-     "url": "https://www.anthropic.com/news/cognizant-anthropic",
+     "name": "openai.com",
+     "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/",
      "source_type": "vendor-own",
      "motive_tier": 5
     }
    ],
-   "entity_basis": "site",
+   "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 10 figure-sentence(s), no base cue matched",
    "auto_labelled": true,
    "auto_labelled_by": "qwen2.5:14b",
-   "label_tier": 3,
-   "label_evidence": "model read 1 figure-sentence(s), no base cue matched",
    "label_source": "machine",
-   "rating": "ok",
    "mentions": [],
-   "publisher_topic": ""
+   "publisher_topic": "",
+   "entity_basis": "headline"
   },
   {
    "entity": "OpenAI",
    "headline": "Introducing GPT-Live",
-   "date": "2026-08-02",
+   "date": "2026-08-03",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "N",
@@ -2408,64 +2284,27 @@
   },
   {
    "entity": "OpenAI",
-   "headline": "Scientific computing in the age of agentic AI",
-   "date": "2026-08-01",
+   "headline": "Accelerating scientific discovery with ChatGPT for Academic Researchers",
+   "date": "2026-08-03",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "N",
+   "denominator_stated": "partial",
    "reviewed": false,
    "sources": [
     {
      "name": "openai.com",
-     "url": "https://openai.com/index/scientific-computing-agentic-ai/",
+     "url": "https://openai.com/index/chatgpt-for-academic-researchers/",
      "source_type": "vendor-own",
      "motive_tier": 5
     }
    ],
    "rating": "ok",
-   "label_tier": 3,
-   "label_evidence": "model read 1 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine",
+   "label_tier": 1,
+   "label_evidence": "3 of 15 figure-sentence(s) state a base",
+   "label_source": "deterministic",
    "mentions": [],
    "publisher_topic": "",
-   "entity_basis": "site"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "Advancing content provenance for a safer, more transparent AI ecosystem",
-   "date": "2026-07-31",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "openai.com",
-     "url": "https://openai.com/index/advancing-content-provenance/",
-     "source_type": "vendor-own",
-     "motive_tier": 5
-    }
-   ],
-   "entity_basis": "site",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_tier": 3,
-   "label_evidence": "model read 1 figure-sentence(s), no base cue matched",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 3
-    },
-    {
-     "name": "Google DeepMind",
-     "count": 2
-    }
-   ],
-   "publisher_topic": ""
+   "entity_basis": "product:ChatGPT"
   }
  ],
  "rated_against": "/home/Noel/Desktop/Scripts/sources.md"
