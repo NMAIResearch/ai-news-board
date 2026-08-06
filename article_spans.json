@@ -385,47 +385,108 @@
    }
   ]
  },
- "https://www.theverge.com/tech/975381/amd-q2-2026-earnings-ai-gaming-ryzen": {
-  "headline": "AMD&#8217;s data center business is booming while gaming takes a backseat",
+ "https://www.theverge.com/tech/976042/openai-apple-trade-secrets-lawsuit-dismissal-request": {
+  "headline": "OpenAI says Apple\u2019s trade secrets lawsuit is \u2018rotten to its core\u2019",
   "source": "theverge.com",
   "fetch": "ok",
-  "n_chars": 2628,
+  "n_chars": 3387,
   "tier": 1,
   "furniture_dropped": 0,
   "publisher_tags": [
    "AI",
-   "AMD",
-   "Business",
+   "Apple",
+   "Law",
    "News",
+   "OpenAI",
+   "Policy",
    "Tech"
   ],
   "site_name": "The Verge",
   "spans": [
    {
-    "sentence": "The company\u2019s data center revenue has more than doubled, hitting $6.7 billion.",
-    "offset": 86,
+    "sentence": "Aug 6, 2026, 9:33 AM UTC",
+    "offset": 283,
     "figures": [
-     "$6.7 billion"
+     "33"
     ],
     "figure_offsets": [
-     65
+     15
+    ],
+    "base_cue": false
+   }
+  ]
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/976004/elon-musk-grokipedia-ai-wikipedia-not-updating-dead": {
+  "headline": "Elon Musk&#8217;s attempt at an AI Wikipedia hasn&#8217;t been updated in months",
+  "source": "theverge.com",
+  "fetch": "ok",
+  "n_chars": 2286,
+  "tier": 1,
+  "furniture_dropped": 0,
+  "publisher_tags": [
+   "AI",
+   "Elon Musk",
+   "News",
+   "Tech",
+   "xAI"
+  ],
+  "site_name": "The Verge",
+  "spans": [
+   {
+    "sentence": "Aug 6, 2026, 12:25 AM UTC",
+    "offset": 269,
+    "figures": [
+     "25"
+    ],
+    "figure_offsets": [
+     16
     ],
     "base_cue": false
    },
    {
-    "sentence": "The company\u2019s data center revenue has more than doubled, hitting $6.7 billion.",
-    "offset": 165,
+    "sentence": "Grokipedia launched in v0.1 in October 2025 with an initial batch of 885,000 articles, and is now on v0.2 (released in November 2025 ) and has more than 6,000,000 total articles, according to grokipedia.com/live .",
+    "offset": 792,
     "figures": [
-     "$6.7 billion"
+     "6,000,000"
     ],
     "figure_offsets": [
-     65
+     153
     ],
-    "base_cue": false
+    "base_cue": true
    },
    {
-    "sentence": "Aug 4, 2026, 8:57 PM UTC",
-    "offset": 264,
+    "sentence": "\u201cIn our subsequent analysis of 34,519 pages with at least one suggested edit in our sample, containing a total of 225,496 recommended edits, we found no accepted or rejected corrections dated within the past three months,\u201d Lawfare said.",
+    "offset": 1337,
+    "figures": [
+     "34,519",
+     "225,496"
+    ],
+    "figure_offsets": [
+     31,
+     114
+    ],
+    "base_cue": true
+   }
+  ]
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/975528/fenix-flexin-ai-music-generator-treblo": {
+  "headline": "Sure seems like Fenix Flexin used AI music generator Treblo",
+  "source": "theverge.com",
+  "fetch": "ok",
+  "n_chars": 3152,
+  "tier": 1,
+  "furniture_dropped": 0,
+  "publisher_tags": [
+   "AI",
+   "Entertainment",
+   "Music",
+   "News"
+  ],
+  "site_name": "The Verge",
+  "spans": [
+   {
+    "sentence": "Aug 5, 2026, 4:57 PM UTC",
+    "offset": 247,
     "figures": [
      "57"
     ],
@@ -435,93 +496,77 @@
     "base_cue": false
    },
    {
-    "sentence": "Driven by demand for AI capacity, AMD\u2019s data center revenue more than doubled year-over-year in its latest earnings report , reaching $6.7 billion.",
-    "offset": 495,
+    "sentence": "He\u2019s covered the tech industry for over 18 years and knows a thing or two about synths.",
+    "offset": 448,
     "figures": [
-     "$6.7 billion"
+     "18"
     ],
     "figure_offsets": [
-     134
+     40
     ],
     "base_cue": false
    },
    {
-    "sentence": "That\u2019s up from $5.8 billion in Q1 , and jumping 107 percent from the $3.2 billion it reported for the same period a year ago.",
-    "offset": 643,
+    "sentence": "According to a blog post, it has a false positive rate of less than 1 in 10,000.",
+    "offset": 904,
     "figures": [
-     "$5.8 billion",
-     "107 percent",
-     "$3.2 billion"
+     "1",
+     "10,000"
     ],
     "figure_offsets": [
-     15,
-     48,
-     69
-    ],
-    "base_cue": true
-   },
-   {
-    "sentence": "At the same time, AMD\u2019s gaming revenue fell 31 percent compared to last year, to $779 million, as price hikes and component shortages slowed sales for the Xbox Series X / S, PS5, and Valve\u2019s Steam Deck.",
-    "offset": 925,
-    "figures": [
-     "31 percent",
-     "$779 million"
-    ],
-    "figure_offsets": [
-     44,
-     81
-    ],
-    "base_cue": true
-   },
-   {
-    "sentence": "\u201cRevenue increased 50 percent year-over-year to a record $11.5 billion, driven by continued strength in our Data Center business, which represented 58% of company revenue in the quarter,\u201d wrote AMD CFO Jean Hu.",
-    "offset": 1377,
-    "figures": [
-     "50 percent",
-     "$11.5 billion",
-     "58%"
-    ],
-    "figure_offsets": [
-     19,
-     57,
-     148
+     68,
+     73
     ],
     "base_cue": false
    },
    {
-    "sentence": "Its overall PC and gaming business revenue grew six percent compared to last year, with Client revenue up 23 percent thanks to Ryzen processor sales.",
-    "offset": 1588,
+    "sentence": "That would make it the first known AI-generated song to reach the Billboard Hot 100,\u201d CEO Ryan Tremblay said in a statement to The Verge .",
+    "offset": 1381,
     "figures": [
-     "23 percent"
+     "100"
     ],
     "figure_offsets": [
-     106
+     80
     ],
-    "base_cue": true
+    "base_cue": false
+   },
+   {
+    "sentence": "Correction August 5th: This story originally stated that the false positive rate for Treblo\u2019s detector was 1 in 1,000; it is 1 in 10,000.",
+    "offset": 2201,
+    "figures": [
+     "1",
+     "1,000",
+     "1",
+     "10,000"
+    ],
+    "figure_offsets": [
+     107,
+     112,
+     125,
+     130
+    ],
+    "base_cue": false
    }
   ]
  },
- "https://www.theverge.com/science/975335/spacex-made-more-money-as-a-neocloud": {
-  "headline": "SpaceX made more revenue as an AI company than a space company",
+ "https://www.theverge.com/tech/975677/google-deepmind-ai-demis-hassabis-shakeup": {
+  "headline": "Google just announced a major shakeup of its top AI leadership",
   "source": "theverge.com",
   "fetch": "ok",
-  "n_chars": 4302,
+  "n_chars": 2892,
   "tier": 1,
   "furniture_dropped": 0,
   "publisher_tags": [
    "AI",
-   "Business",
-   "Science",
-   "Space",
-   "SpaceX",
-   "Tech",
-   "xAI"
+   "Google",
+   "News",
+   "Tech"
   ],
   "site_name": "The Verge",
   "spans": [
    {
-    "sentence": "Aug 4, 2026, 8:47 PM UTC",
-    "offset": 179,
+    "sentence": "Aug 5, 2026, 4:47 PM UTC",
+    "offset": 331,
     "figures": [
      "47"
     ],
@@ -529,89 +574,53 @@
      15
     ],
     "base_cue": false
-   },
+   }
+  ]
+ },
+ "https://www.theverge.com/science/975545/spacex-x-earnings-ai-data-centers-compute-space": {
+  "headline": "SpaceX is barely Space and mostly X",
+  "source": "theverge.com",
+  "fetch": "ok",
+  "n_chars": 8916,
+  "tier": 1,
+  "furniture_dropped": 0,
+  "publisher_tags": [
+   "AI",
+   "Elon Musk",
+   "Science",
+   "Space",
+   "SpaceX",
+   "Tech"
+  ],
+  "site_name": "The Verge",
+  "spans": [
    {
-    "sentence": "SpaceX\u2019s AI revenue grew more than three times to $2.6 billion from the year before, mostly because of deals that the company made to provide compute to other AI companies, according to SpaceX\u2019s quarterly earnings.",
-    "offset": 489,
+    "sentence": "Aug 5, 2026, 4:35 PM UTC",
+    "offset": 142,
     "figures": [
-     "$2.6 billion"
+     "35"
     ],
     "figure_offsets": [
-     50
+     15
     ],
     "base_cue": false
    },
    {
-    "sentence": "The AI division, which the company said in its documents to go public was the source of most of its value, lost $1.5 billion this quarter, slightly less than in the same quarter last year.",
-    "offset": 704,
+    "sentence": "Aug 5, 2026, 4:35 PM UTC",
+    "offset": 411,
     "figures": [
-     "$1.5 billion"
+     "35"
     ],
     "figure_offsets": [
-     112
+     15
     ],
     "base_cue": false
    },
    {
-    "sentence": "The increased presence in AI is also driving the company to spend more \u2014 capital expenditures reached $18.37 billion.",
-    "offset": 1069,
+    "sentence": "The space sector of the business didn\u2019t break a billion dollars this quarter and contributed only a touch over 10 percent of the company\u2019s revenue.",
+    "offset": 1050,
     "figures": [
-     "$18.37 billion"
-    ],
-    "figure_offsets": [
-     102
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Space had $962 million in revenue this quarter, and SpaceX remained the biggest user of SpaceX rockets.",
-    "offset": 1720,
-    "figures": [
-     "$962 million"
-    ],
-    "figure_offsets": [
-     10
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "The Starlink service had $4.2 billion in revenue.",
-    "offset": 1824,
-    "figures": [
-     "$4.2 billion"
-    ],
-    "figure_offsets": [
-     25
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "SpaceX is still losing money, but the loss this quarter narrowed to $143 million dollars.",
-    "offset": 2370,
-    "figures": [
-     "$143 million"
-    ],
-    "figure_offsets": [
-     68
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "The costs of developing technology in its space division also rose by $389 million from the year before, with Starship as the primary driver of spending.",
-    "offset": 2605,
-    "figures": [
-     "$389 million"
-    ],
-    "figure_offsets": [
-     70
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Some of these satellites have already been manufactured, and in today\u2019s documents, SpaceX said it had launched 20 of them.",
-    "offset": 2990,
-    "figures": [
-     "20"
+     "10 percent"
     ],
     "figure_offsets": [
      111
@@ -619,30 +628,131 @@
     "base_cue": false
    },
    {
-    "sentence": "It\u2019s not clear how far away the full deployment \u2014 of 60 satellites at once \u2014 is.",
-    "offset": 3113,
+    "sentence": "The telecom part \u2014 SpaceX calls it \u201cconnectivity\u201d \u2014 is Starlink, the satellite internet service, which had $4.2 billion in revenue, and was the only part of SpaceX that did not have a loss from operations.",
+    "offset": 1577,
     "figures": [
-     "60"
+     "$4.2 billion"
     ],
     "figure_offsets": [
-     53
+     107
     ],
-    "base_cue": true
+    "base_cue": false
    },
    {
-    "sentence": "Update 5:40PM ET August 4th: Adds revenue from space and connectivity sectors of the business, as well as details on SpaceX\u2019s history with AI, and details from the investor call.",
-    "offset": 3331,
+    "sentence": "Analyst Alexander Potter expects spending on the neocloud business, which leases data center capacity to AI companies, to climb to $65 billion next year, $17 billion more than he\u2019d previously estimated, Bloomberg notes .",
+    "offset": 2078,
     "figures": [
-     "5"
+     "$65 billion",
+     "$17 billion"
     ],
     "figure_offsets": [
-     7
+     131,
+     154
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Not only did it make more money than SpaceX\u2019s rockets, it also drove more spending \u2014 $15.8 billion on AI alone in the second quarter.",
+    "offset": 2374,
+    "figures": [
+     "$15.8 billion"
+    ],
+    "figure_offsets": [
+     85
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Musk built SpaceX\u2019s Colossus 1 data center in Memphis for Grok, his also-ran AI that also occasionally refers to itself as MechaHitler and has a penchant for undressing women and children without their consent.",
+    "offset": 2735,
+    "figures": [
+     "1"
+    ],
+    "figure_offsets": [
+     29
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "On the earnings call, Musk said that only 10 percent of the compute SpaceX builds will go to Grok .",
+    "offset": 3181,
+    "figures": [
+     "10 percent"
+    ],
+    "figure_offsets": [
+     42
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "On the second quarter earnings call, SpaceX chief financial officer Bret Johnsen said those deals put the company \u201con a trajectory, including contribution from Cursor, to reach $100 billion of ARR, or annualized revenue run rate,\u201d a financial measurement used to estimate how much money a company will receive in a year, based on an estimate from a shorter period of time.",
+    "offset": 3463,
+    "figures": [
+     "$100 billion"
+    ],
+    "figure_offsets": [
+     177
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Musk was even more bullish , saying that \u201cthe $100 billion ARR in December is not a question mark,\u201d and that the actual ARR might be higher.",
+    "offset": 3836,
+    "figures": [
+     "$100 billion"
+    ],
+    "figure_offsets": [
+     46
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "SpaceX has even proposed an orbital data center consisting of as many as 1 million satellites to the Federal Communications Commission.",
+    "offset": 4847,
+    "figures": [
+     "1 million"
+    ],
+    "figure_offsets": [
+     73
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "What it does do, however, is provide Tesla with an important customer, one that buys $295 million in Tesla Megapack battery storage .",
+    "offset": 6652,
+    "figures": [
+     "$295 million"
+    ],
+    "figure_offsets": [
+     85
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "As of this writing, Tesla stock is down 25 percent since January of this year.",
+    "offset": 6877,
+    "figures": [
+     "25 percent"
+    ],
+    "figure_offsets": [
+     40
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Musk can maybe charge a premium on his compute because of his political connections \u2014 I don\u2019t think he\u2019s planning on splashing out $100 million on the midterms for nothing .",
+    "offset": 6956,
+    "figures": [
+     "$100 million"
+    ],
+    "figure_offsets": [
+     131
     ],
     "base_cue": false
    },
    {
     "sentence": "SpaceX\u2019s Starship Flight 13 launch attempt fizzled out.",
-    "offset": 3881,
+    "offset": 8495,
     "figures": [
      "13"
     ],
@@ -653,144 +763,26 @@
    }
   ]
  },
- "https://www.theverge.com/tech/975173/openai-influencers-brand-trip-ai-backlash-marketing": {
-  "headline": "How an OpenAI influencer trip backfired",
+ "https://www.theverge.com/tech/975398/reddit-ai-rules-hub-moderator-old-reddit-developer-platform": {
+  "headline": "Reddit is introducing a new moderator: AI",
   "source": "theverge.com",
   "fetch": "ok",
-  "n_chars": 8846,
+  "n_chars": 6525,
   "tier": 1,
   "furniture_dropped": 0,
   "publisher_tags": [
    "AI",
-   "Analysis",
-   "Creators",
-   "Culture",
-   "Entertainment",
-   "Internet Culture",
-   "OpenAI",
-   "Report",
-   "Tech"
-  ],
-  "site_name": "The Verge",
-  "spans": [
-   {
-    "sentence": "Aug 4, 2026, 5:46 PM UTC",
-    "offset": 247,
-    "figures": [
-     "46"
-    ],
-    "figure_offsets": [
-     15
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Grace McCarrick, who has 145,000 followers on TikTok, vlogged from her suite as she ran a bath at night.",
-    "offset": 1536,
-    "figures": [
-     "145,000"
-    ],
-    "figure_offsets": [
-     25
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Another influencer, Nat Lucy (57,000 followers), filmed herself spotting a deer outside of her cabin.",
-    "offset": 1641,
-    "figures": [
-     "57,000"
-    ],
-    "figure_offsets": [
-     30
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Most of the videos got relatively little traction: McCarrick\u2019s video has just under 300 likes, and Lucy\u2019s video has fewer than 15,000 views.",
-    "offset": 2017,
-    "figures": [
-     "300",
-     "15,000"
-    ],
-    "figure_offsets": [
-     84,
-     127
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "That\u2019s not to say it wasn\u2019t luxurious \u2014 the rooms at the retreat cost upwards of $2,000 a night \u2014 but it is nothing compared to the brands that go all out in order to milk content from every last moment (some commenters poked fun at the fact that it was a domestic trip, not a far-flung, international vacation).",
-    "offset": 4840,
-    "figures": [
-     "$2,000"
-    ],
-    "figure_offsets": [
-     81
-    ],
-    "base_cue": true
-   }
-  ]
- },
- "https://www.theverge.com/ai-artificial-intelligence/975180/llm-ai-chatbot-use-not-healthy": {
-  "headline": "\u2018Not healthy\u2019 LLM use is more common than you think",
-  "source": "theverge.com",
-  "fetch": "ok",
-  "n_chars": 5076,
-  "tier": 1,
-  "furniture_dropped": 0,
-  "publisher_tags": [
-   "AI",
-   "Tech"
-  ],
-  "site_name": "The Verge",
-  "spans": [
-   {
-    "sentence": "Aug 4, 2026, 5:33 PM UTC",
-    "offset": 128,
-    "figures": [
-     "33"
-    ],
-    "figure_offsets": [
-     15
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Comprehensive data covering all available tools is hard to come by, but OpenAI alone this year said it has more than 900 million weekly active users.",
-    "offset": 4037,
-    "figures": [
-     "900 million"
-    ],
-    "figure_offsets": [
-     117
-    ],
-    "base_cue": false
-   }
-  ]
- },
- "https://www.theverge.com/policy/975071/texas-data-center-audit": {
-  "headline": "Texas says data centers must pass an audit before connecting to the grid",
-  "source": "theverge.com",
-  "fetch": "ok",
-  "n_chars": 2976,
-  "tier": 1,
-  "furniture_dropped": 0,
-  "publisher_tags": [
-   "AI",
-   "Energy",
    "News",
-   "Policy",
-   "Politics",
-   "Science"
+   "Reddit",
+   "Tech"
   ],
   "site_name": "The Verge",
   "spans": [
    {
-    "sentence": "Aug 4, 2026, 3:33 PM UTC",
-    "offset": 228,
+    "sentence": "Aug 5, 2026, 4:00 PM UTC",
+    "offset": 194,
     "figures": [
-     "33"
+     "00"
     ],
     "figure_offsets": [
      15
@@ -798,100 +790,24 @@
     "base_cue": false
    },
    {
-    "sentence": "She spent 5 years covering tech policy at CNBC, writing about antitrust, privacy, and content moderation reform.",
-    "offset": 495,
+    "sentence": "Reddit says that Rules Hub has been in testing for \u201cthe past few months\u201d with \u201cnew and experienced moderators from over 700 communities, including members of Reddit\u2019s Mod Council Network.\u201d That test of Rules Hub is now expanding to \u201call newly created communities\u201d and will be \u201cwidely available\u201d at some point later in 2026.",
+    "offset": 1267,
     "figures": [
-     "5"
+     "700"
     ],
     "figure_offsets": [
-     10
+     120
     ],
     "base_cue": false
    },
    {
-    "sentence": "ERCOT is considering over 474 gigawatts worth of requests to connect to Texas\u2019 grid, according to Abbott\u2019s office, which is more than five times its record peak electricity demand.",
-    "offset": 1726,
+    "sentence": "Reddit sues Anthropic, alleging its bots accessed Reddit more than 100,000 times since last July",
+    "offset": 5253,
     "figures": [
-     "474"
+     "100,000"
     ],
     "figure_offsets": [
-     26
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Data centers account for about 90 percent of new power requests.",
-    "offset": 1907,
-    "figures": [
-     "90 percent"
-    ],
-    "figure_offsets": [
-     31
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "A Tribune analysis found there\u2019s already at least 335 data centers operating in the state and at least 248 more planned, making it the second-largest data center market in the country behind Virginia.",
-    "offset": 1972,
-    "figures": [
-     "335",
-     "248"
-    ],
-    "figure_offsets": [
-     50,
-     103
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "At least 37 people have reportedly been arrested for protesting data centers.",
-    "offset": 2473,
-    "figures": [
-     "37"
-    ],
-    "figure_offsets": [
-     9
-    ],
-    "base_cue": false
-   }
-  ]
- },
- "https://www.theverge.com/ai-artificial-intelligence/974914/openai-blog-response-apple-lawsuit-messages": {
-  "headline": "OpenAI drags Apple\u2019s lawsuit into the court of public opinion",
-  "source": "theverge.com",
-  "fetch": "ok",
-  "n_chars": 4896,
-  "tier": 1,
-  "furniture_dropped": 0,
-  "publisher_tags": [
-   "AI",
-   "Apple",
-   "Law",
-   "OpenAI",
-   "Policy",
-   "Tech"
-  ],
-  "site_name": "The Verge",
-  "spans": [
-   {
-    "sentence": "Aug 4, 2026, 11:27 AM UTC",
-    "offset": 295,
-    "figures": [
-     "27"
-    ],
-    "figure_offsets": [
-     16
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Liu was a former iPhone engineer who now works on OpenAI\u2019s technical team, and Tan was employed by Apple for 25 years, formerly overseeing the iPhone and Apple Watch design before taking on the role of OpenAI\u2019s chief hardware officer.",
-    "offset": 1365,
-    "figures": [
-     "25"
-    ],
-    "figure_offsets": [
-     109
+     67
     ],
     "base_cue": false
    }

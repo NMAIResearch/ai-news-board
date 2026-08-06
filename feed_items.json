@@ -1,5 +1,5 @@
 {
- "fetched": "2026-08-06 11:20 UTC",
+ "fetched": "2026-08-06 11:27 UTC",
  "items": [
   {
    "entity": "Meta",
@@ -222,9 +222,48 @@
    "entity_basis": "headline"
   },
   {
-   "entity": "",
-   "headline": "AMD&#8217;s data center business is booming while gaming takes a backseat",
-   "date": "2026-08-04T19:03",
+   "entity": "OpenAI",
+   "headline": "OpenAI says Apple’s trade secrets lawsuit is ‘rotten to its core’",
+   "date": "2026-08-06T05:33",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/tech/976042/openai-apple-trade-secrets-lawsuit-dismissal-request",
+     "source_type": "trade-press",
+     "motive_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 1 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 19
+    },
+    {
+     "name": "Apple",
+     "count": 19
+    },
+    {
+     "name": "Google",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "Apple",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "xAI",
+   "headline": "Elon Musk&#8217;s attempt at an AI Wikipedia hasn&#8217;t been updated in months",
+   "date": "2026-08-05T20:25",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "partial",
@@ -232,16 +271,20 @@
    "sources": [
     {
      "name": "theverge.com",
-     "url": "https://www.theverge.com/tech/975381/amd-q2-2026-earnings-ai-gaming-ryzen",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/976004/elon-musk-grokipedia-ai-wikipedia-not-updating-dead",
      "source_type": "trade-press",
      "motive_tier": 3
     }
    ],
    "rating": "ok",
    "label_tier": 1,
-   "label_evidence": "3 of 8 figure-sentence(s) state a base",
+   "label_evidence": "2 of 3 figure-sentence(s) state a base",
    "label_source": "deterministic",
    "mentions": [
+    {
+     "name": "xAI",
+     "count": 7
+    },
     {
      "name": "Google",
      "count": 2
@@ -251,33 +294,113 @@
      "count": 1
     }
    ],
-   "publisher_topic": "AMD",
-   "entity_basis": "unresolved"
+   "publisher_topic": "Elon Musk",
+   "entity_basis": "headline"
   },
   {
-   "entity": "xAI",
-   "headline": "SpaceX made more revenue as an AI company than a space company",
-   "date": "2026-08-04T17:42",
+   "entity": "",
+   "headline": "Sure seems like Fenix Flexin used AI music generator Treblo",
+   "date": "2026-08-05T14:04",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "partial",
+   "denominator_stated": "Y",
    "reviewed": false,
    "sources": [
     {
      "name": "theverge.com",
-     "url": "https://www.theverge.com/science/975335/spacex-made-more-money-as-a-neocloud",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/975528/fenix-flexin-ai-music-generator-treblo",
      "source_type": "trade-press",
      "motive_tier": 3
     }
    ],
    "rating": "ok",
-   "label_tier": 1,
-   "label_evidence": "1 of 12 figure-sentence(s) state a base",
-   "label_source": "deterministic",
+   "label_tier": 3,
+   "label_evidence": "model read 5 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Google",
+     "count": 2
+    },
+    {
+     "name": "OpenAI",
+     "count": 1
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "Google",
+   "headline": "Google just announced a major shakeup of its top AI leadership",
+   "date": "2026-08-05T14:01",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/tech/975677/google-deepmind-ai-demis-hassabis-shakeup",
+     "source_type": "trade-press",
+     "motive_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 1 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Google",
+     "count": 24
+    },
+    {
+     "name": "Google DeepMind",
+     "count": 20
+    },
+    {
+     "name": "OpenAI",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Google",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "SpaceX is barely Space and mostly X",
+   "date": "2026-08-05T12:44",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/science/975545/spacex-x-earnings-ai-data-centers-compute-space",
+     "source_type": "trade-press",
+     "motive_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "label_tier": 3,
+   "label_evidence": "model read 15 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
    "mentions": [
     {
      "name": "xAI",
-     "count": 5
+     "count": 22
     },
     {
      "name": "Google",
@@ -290,36 +413,38 @@
     {
      "name": "Anthropic",
      "count": 1
+    },
+    {
+     "name": "FCC",
+     "count": 1
     }
    ],
-   "publisher_topic": "Space",
-   "entity_basis": "tag"
+   "publisher_topic": "Elon Musk",
+   "entity_basis": "unresolved"
   },
   {
-   "entity": "OpenAI",
-   "headline": "How an OpenAI influencer trip backfired",
-   "date": "2026-08-04T14:16",
+   "entity": "",
+   "headline": "Reddit is introducing a new moderator: AI",
+   "date": "2026-08-05T12:48",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "partial",
+   "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
      "name": "theverge.com",
-     "url": "https://www.theverge.com/tech/975173/openai-influencers-brand-trip-ai-backlash-marketing",
+     "url": "https://www.theverge.com/tech/975398/reddit-ai-rules-hub-moderator-old-reddit-developer-platform",
      "source_type": "trade-press",
      "motive_tier": 3
     }
    ],
    "rating": "ok",
-   "label_tier": 1,
-   "label_evidence": "1 of 5 figure-sentence(s) state a base",
-   "label_source": "deterministic",
+   "label_tier": 3,
+   "label_evidence": "model read 3 figure-sentence(s), no base cue matched",
+   "auto_labelled": true,
+   "auto_labelled_by": "qwen2.5:14b",
+   "label_source": "machine",
    "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 11
-    },
     {
      "name": "Anthropic",
      "count": 2
@@ -329,125 +454,16 @@
      "count": 2
     },
     {
-     "name": "Meta",
-     "count": 2
+     "name": "OpenAI",
+     "count": 1
     },
     {
-     "name": "Amazon",
+     "name": "Perplexity",
      "count": 1
     }
    ],
-   "publisher_topic": "Creators",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "‘Not healthy’ LLM use is more common than you think",
-   "date": "2026-08-04T13:33",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/975180/llm-ai-chatbot-use-not-healthy",
-     "source_type": "trade-press",
-     "motive_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "label_tier": 3,
-   "label_evidence": "model read 2 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 2
-    },
-    {
-     "name": "Google",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "",
+   "publisher_topic": "Reddit",
    "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Texas says data centers must pass an audit before connecting to the grid",
-   "date": "2026-08-04T11:33",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/policy/975071/texas-data-center-audit",
-     "source_type": "trade-press",
-     "motive_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "label_tier": 3,
-   "label_evidence": "model read 6 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 2
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Politics",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "OpenAI drags Apple’s lawsuit into the court of public opinion",
-   "date": "2026-08-04T08:07",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/974914/openai-blog-response-apple-lawsuit-messages",
-     "source_type": "trade-press",
-     "motive_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "label_tier": 3,
-   "label_evidence": "model read 2 figure-sentence(s), no base cue matched",
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen2.5:14b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Apple",
-     "count": 36
-    },
-    {
-     "name": "OpenAI",
-     "count": 23
-    },
-    {
-     "name": "Google",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "Apple",
-   "entity_basis": "headline"
   },
   {
    "entity": "",
@@ -455,7 +471,7 @@
    "date": "Thu, 06 Aug 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "N",
+   "denominator_stated": "Y",
    "reviewed": false,
    "sources": [
     {
@@ -848,7 +864,7 @@
    "date": "Wed, 05 Aug 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "N",
+   "denominator_stated": "partial",
    "reviewed": false,
    "sources": [
     {
@@ -887,7 +903,7 @@
    "date": "Wed, 05 Aug 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "n/a",
+   "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
@@ -913,7 +929,7 @@
    "date": "Wed, 05 Aug 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "n/a",
+   "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
@@ -939,7 +955,7 @@
    "date": "Wed, 05 Aug 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "N",
+   "denominator_stated": "n/a",
    "reviewed": false,
    "sources": [
     {
@@ -1696,7 +1712,7 @@
    "date": "Tue, 07 Jul 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "N",
+   "denominator_stated": "partial",
    "reviewed": false,
    "sources": [
     {
@@ -1811,7 +1827,7 @@
    "date": "Mon, 20 Apr 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "n/a",
+   "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
@@ -1842,7 +1858,7 @@
    "date": "Tue, 04 Aug 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "N",
+   "denominator_stated": "Y",
    "reviewed": false,
    "sources": [
     {
@@ -1966,7 +1982,7 @@
    "date": "Thu, 30 Jul 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "N",
+   "denominator_stated": "Y",
    "reviewed": false,
    "sources": [
     {
@@ -1997,7 +2013,7 @@
    "date": "Wed, 29 Jul 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "N",
+   "denominator_stated": "Y",
    "reviewed": false,
    "sources": [
     {
@@ -2222,7 +2238,7 @@
    "date": "Wed, 08 Jul 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "Y",
+   "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
@@ -2371,7 +2387,7 @@
    "date": "2026-08-04",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "N",
+   "denominator_stated": "Y",
    "reviewed": false,
    "sources": [
     {
@@ -2495,7 +2511,7 @@
    "date": "2026-08-05",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "n/a",
+   "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
