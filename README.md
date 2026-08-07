@@ -23,15 +23,53 @@ Method changes and defects found, dated: [CHANGELOG.md](CHANGELOG.md)
     python3 fetch_releases.py     # models released in the last 60 days
     python3 archive.py            # permanent record + revisit queue
     python3 fetch_market.py       # pull quotes into data/market.json (needs API keys)
-    python3 build.py              # writes index.html
-    python3 build.py --plain      # same, but motive tiering OFF: plain sources only
+    python3 build.py              # writes index.html. LAST STEP: see the --plain warning below
+
+Optional check, after `extract_spans.py`:
+
+    python3 extract_spans.py --verify   # every span is an exact substring of the stored article
 
 All stdlib, no dependencies. Open `index.html` in any browser. A feed refresh costs nothing
 but time; the only optional cost in the pipeline is the local model in `label_items.py`.
 
+### ⛔ `--plain` is a toggle, not a fourteenth step
+
+    python3 build.py --plain      # same page, motive tiering OFF
+
+**`build.py` and `build.py --plain` write the same `index.html`.** There is one `OUT` path and
+no separate plain file. This block used to sit as the last line of the run list above, which
+reads as a step to run after `build.py`; doing that leaves the tier-OFF page published as the
+board. Caught 2026-08-07 by falling into it.
+
+Run one or the other. If you build `--plain` to look at it, **re-run plain `build.py` before
+committing.** To check which one is in the file:
+
+    grep -c motivebar index.html    # 1 = plain, one per item + 1 = tiered (87 on 2026-08-07)
+
+⚠️ It is **1 on a plain build, not 0**: the `.motivebar` CSS rule is emitted either way and only
+the per-item divs are dropped. Do not write a check that tests for zero.
+
 `--plain` turns the motive tier off entirely (no tier colours, per-item bar, motive key or
 tier map): sources are shown plain, for a reader who would rather judge them without the
 incentive layer. The other axes (denominator, track record, reality anchors) are unaffected.
+
+### Publishing, and the step that is not a script
+
+The board deploys from `origin/main`, and a CI job commits market-data refreshes to origin on
+its own schedule. A local pipeline run therefore **diverges from origin most days**: local is
+ahead on feed data, origin is ahead on market data. `git push` fails until the two are
+reconciled, and the reconcile is a judgement (which side wins for `data/market.json`), not a
+mechanical step.
+
+The pattern that works, and the reason `bd4ef19` and `aadda8b` exist:
+
+    git fetch origin && git status -sb     # read the ahead/behind counts first
+    git merge origin/main                  # CI touches only data/, so this merges clean
+    # then run the pipeline, so fetch_market.py rewrites data/market.json over the merge
+
+⚠️ Running the pipeline **before** merging is what strands a good refresh: the data is correct
+locally and never reaches the board. On 2026-08-06 a full run sat unpushed at `ahead 2, behind
+4` while the live board served the 4 August feed.
 
 ## Who sets the labels, and on how much text
 
