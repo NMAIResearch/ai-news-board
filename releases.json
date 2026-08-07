@@ -1,12 +1,24 @@
 {
- "generated": "2026-08-06 11:27 UTC",
+ "generated": "2026-08-07 00:09 UTC",
  "window_days": 60,
  "counts": {
   "total": 77,
-  "closed": 25,
-  "open_weights": 52
+  "closed": 26,
+  "open_weights": 51
  },
  "releases": [
+  {
+   "lab": "Inclusionai",
+   "model": "inclusionAI: Ling 3.0 Tiny (free)",
+   "id": "inclusionai/ling-3.0-tiny",
+   "date": "2026-08-06",
+   "url": "https://openrouter.ai/inclusionai/ling-3.0-tiny",
+   "context_length": 262144,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
   {
    "lab": "Meta",
    "model": "Meta: Muse Spark 1.2",
@@ -157,7 +169,7 @@
    "id": "inclusionai/ling-3.0-flash",
    "date": "2026-07-23",
    "url": "https://openrouter.ai/inclusionai/ling-3.0-flash",
-   "context_length": 131072,
+   "context_length": 262144,
    "evidence": "open-weights",
    "evidence_note": "weights published at huggingface.co/inclusionAI/Ling-3.0-flash; downloadable and hashable",
    "hf_id": "inclusionAI/Ling-3.0-flash",
@@ -918,18 +930,6 @@
    "evidence_note": "weights published at huggingface.co/nex-agi/Nex-N2-Pro; downloadable and hashable",
    "hf_id": "nex-agi/Nex-N2-Pro",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Cohere",
-   "model": "North-Mini-Code-1.0-fp8",
-   "id": "CohereLabs/North-Mini-Code-1.0-fp8",
-   "date": "2026-06-08",
-   "url": "https://huggingface.co/CohereLabs/North-Mini-Code-1.0-fp8",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "CohereLabs/North-Mini-Code-1.0-fp8",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
   }
  ],
  "errors": [],
