@@ -38,6 +38,27 @@ step() { printf '\n\033[1m== %s\033[0m\n' "$1"; }
 LABEL=1
 [ "${1:-}" = "--no-label" ] && LABEL=0
 
+# Pre-flight, READ-ONLY. A CI job commits market data to origin on its own schedule, so the
+# local branch falls behind most days. Push then fails, and a full refresh sits unpushed while
+# the live board serves stale data. That happened on 2026-08-06: a good run stranded at
+# `ahead 2, behind 4` and the board showed the 4 August feed for two days.
+# This warns and does not act: `git fetch` writes no working-tree file, and merging is a
+# judgement about which side wins for data/market.json, which is not a script's call.
+step "0/12 pre-flight: origin divergence"
+if git rev-parse --git-dir >/dev/null 2>&1; then
+  git fetch -q origin 2>/dev/null || echo "  ! could not reach origin, continuing offline"
+  behind=$(git rev-list --count HEAD..@{u} 2>/dev/null || echo 0)
+  ahead=$(git rev-list --count @{u}..HEAD 2>/dev/null || echo 0)
+  echo "  ahead $ahead, behind $behind"
+  if [ "${behind:-0}" -gt 0 ]; then
+    echo "  ⚠️  BEHIND origin by $behind commit(s). Push WILL be rejected after this run."
+    echo "     Merge first, then re-run, so fetch_market.py rewrites data/ over the merge:"
+    echo "         git merge origin/main"
+  fi
+else
+  echo "  not a git repo, skipping"
+fi
+
 step "1/12 fetch feeds";      python3 fetch_feeds.py       || echo "  ! feed fetch failed, continuing with the existing feed"
 step "2/12 vendor newsrooms"; python3 fetch_vendor_news.py || echo "  ! vendor news failed"
 step "3/12 carry reviews";    python3 carry_reviews.py     || echo "  ! carry_reviews failed - CHECK BEFORE BUILDING, prior labels may be lost"
