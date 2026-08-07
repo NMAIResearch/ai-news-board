@@ -2,6 +2,53 @@
 
 Dated, descriptive, newest first. Method changes and defects found, not every commit.
 
+## 2026-08-07
+
+**Defect: headlines printed their own HTML entities.** The board showed
+`Jony Ive&#8217;s first OpenAI gadget` and `Announcing the &quot;AI Agent Standards
+Initiative&quot;`. Publishers escape titles in the feed body, so an apostrophe arrives as
+`&#8217;`; `build.py` then runs `html.escape` over every rendered field, turning that leading
+`&` into `&amp;` and printing the entity verbatim. Escaping is right, escaping something
+already escaped is the bug. Fixed at intake in `fetch_feeds.py` (`clean_title`, one
+`html.unescape` on the RSS and Atom paths) rather than in `esc()`, because `esc()` touches
+every string on the page and unescaping there would corrupt text meant to show an entity
+literally. `fetch_vendor_news.py` had done this correctly since it was written, so only the
+RSS path was wrong and the two intake paths now agree. 11 stored headlines were migrated
+across `feed_items.json`, `archive.json` and `article_evidence.json`. ⛔ `article_spans.json`
+and `article_text.json` were deliberately NOT touched: spans carry character offsets into the
+cached article and must stay byte-exact. `extract_spans.py --verify` re-run after the
+migration: 687 spans, 0 mismatched.
+
+**Defect: the feed grid left dead space between tiles.** `.feedgrid` carried
+`align-items:start`, and a CSS grid places items row by row, so whenever two cards in a row
+differed in height the shorter one ended early and left a hole until the next row began. With
+one column often carrying long "possible anchor" blocks and the other not, this was most of
+the feed. Removed `align-items:start` (stretch is the default) and gave `.feedgrid .card`
+`height:calc(100% - 16px)`. Row-major reading order is unchanged, newest first, left to
+right; the whitespace moves inside the shorter card. Verified against before-and-after renders
+at 1900px. ⛔ True masonry packing was considered and rejected: CSS columns pack with no gaps
+at all but reorder the feed column-major, which changes what "first" means on a
+recency-ordered board.
+
+**`refresh.sh` was invisible in the README, so the pipeline looked like fourteen manual
+commands.** It has existed and been maintained for weeks. The `## Run` section listed the raw
+steps and never mentioned it, which is how a full run gets done by hand. `## Run` now leads
+with `./refresh.sh` and keeps the step list for reading or re-running a single step. The list
+was also missing `suggest_register_rows.py`, which the script has always run.
+
+**`build.py --plain` sat as the last line of the run list, and both builds write the same
+`index.html`.** Following the list literally publishes the motive-tier-OFF page. Moved into
+its own block with a check command. The check is `grep -c motivebar index.html` == 1 for
+plain, **not 0**: the `.motivebar` CSS rule is emitted either way and only the per-item divs
+are dropped.
+
+**`refresh.sh` gained a read-only pre-flight for origin divergence.** A CI job commits market
+data to origin on its own schedule, so the local branch falls behind most days and the push
+after a refresh is rejected. On 2026-08-06 a complete, correct run sat unpushed at `ahead 2,
+behind 4` while the live board served the 4 August feed. The pre-flight fetches and prints the
+ahead/behind counts, warning before the work rather than after. It does not merge: which side
+wins for `data/market.json` is a judgement, not a step in a script.
+
 ## 2026-07-31
 
 **Releases panel states what came out, not how well it is evidenced.** The headline was

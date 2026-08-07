@@ -11,6 +11,21 @@ Method changes and defects found, dated: [CHANGELOG.md](CHANGELOG.md)
 
 ## Run
 
+**One command does the whole thing.** Use this, not the list below:
+
+    ./refresh.sh                  # every step in order, then builds index.html
+    ./refresh.sh --no-label       # same, skipping the local-model pass (fast)
+
+It runs the twelve steps in the required order, skips the label pass automatically if ollama
+is not answering on :11434, skips the market pull if `~/.config/nmai/keys.env` is absent, and
+**aborts rather than leaving a stale `index.html`** if the build raises. It never runs
+`--plain`, never commits and never pushes.
+
+The step list below is what `refresh.sh` runs. Keep it for reading a single step in isolation
+or for re-running one after a failure. ⚠️ Running these by hand is how you end up publishing a
+`--plain` page or skipping `suggest_register_rows.py`, which is in the script but was missing
+from this list until 2026-08-07.
+
     python3 fetch_feeds.py        # pull BROAD AI news into feed_items.json (neutral intake)
     python3 fetch_vendor_news.py  # append vendor newsroom posts that publish no RSS
     python3 carry_reviews.py      # re-apply prior labels by URL; only NEW items stay unreviewed
@@ -22,6 +37,7 @@ Method changes and defects found, dated: [CHANGELOG.md](CHANGELOG.md)
     python3 fetch_scholar.py      # pull latest arXiv papers + HF datasets
     python3 fetch_releases.py     # models released in the last 60 days
     python3 archive.py            # permanent record + revisit queue
+    python3 suggest_register_rows.py --write   # nominate candidate tracker rows, gitignored
     python3 fetch_market.py       # pull quotes into data/market.json (needs API keys)
     python3 build.py              # writes index.html. LAST STEP: see the --plain warning below
 

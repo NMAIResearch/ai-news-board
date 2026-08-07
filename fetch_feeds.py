@@ -15,7 +15,7 @@ carry across; nothing reads it and build.py does not render it. Do not revive it
 Run:  python3 fetch_feeds.py     # writes feed_items.json, then re-run build.py
 Edit FEEDS below to change sources. Network required; a feed that fails is skipped.
 """
-import json, os, re, sys, urllib.request, xml.etree.ElementTree as ET
+import html, json, os, re, sys, urllib.request, xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 
@@ -218,19 +218,35 @@ def domain(url):
     return m.group(1).replace("www.", "") if m else (url or "")
 
 
+def clean_title(s):
+    """Decode entities ONCE at intake, so the store holds real characters.
+
+    Publishers escape titles in the feed body, so an apostrophe arrives as &#8217; and a
+    quote as &quot;. build.py runs html.escape over every field it renders, which turns
+    that leading & into &amp; and prints the entity to the reader verbatim. Escaping is
+    right; escaping something already escaped is the bug.
+
+    Fixed at intake rather than in build.py's esc(), because esc() is applied to every
+    string on the page and unescaping there would corrupt any text meant to show an
+    entity literally. fetch_vendor_news.py already did this, so the two intake paths now
+    agree. Seen 2026-08-07 on "Jony Ive&#8217;s first OpenAI gadget".
+    """
+    return html.unescape((s or "").strip())
+
+
 def parse(xmlbytes):
     out, root = [], ET.fromstring(xmlbytes)
     items = list(root.iter("item"))
     if items:                                   # RSS
         for it in items:
-            out.append(((it.findtext("title") or "").strip(),
+            out.append((clean_title(it.findtext("title")),
                         (it.findtext("link") or "").strip(),
                         (it.findtext("pubDate") or "").strip()))
     else:                                       # Atom
         ns = "{http://www.w3.org/2005/Atom}"
         for e in root.iter(ns + "entry"):
             le = e.find(ns + "link")
-            out.append(((e.findtext(ns + "title") or "").strip(),
+            out.append((clean_title(e.findtext(ns + "title")),
                         (le.get("href") if le is not None else "").strip(),
                         (e.findtext(ns + "updated") or "").strip()))
     return out

@@ -1153,8 +1153,15 @@ def main():
   .main{{flex:1 1 auto;min-width:0}}
   /* Two columns, fixed. Auto-fill gave three or four on a wide screen and the cards read
      as a wall; two keeps a headline and its chips on one or two lines. */
-  .feedgrid{{display:grid;grid-template-columns:repeat(2,1fr);gap:0 16px;align-items:start}}
-  .feedgrid .card{{margin:0 0 16px}}
+  /* align-items defaults to stretch, and that is deliberate: it was `start` until
+     2026-08-07, which let a short card end above its taller neighbour and leave dead
+     space until the next row began. A grid places items row by row, so ragged heights
+     read as holes in the feed. Stretching moves that whitespace inside the shorter card
+     and keeps the row-major order (newest first, left to right). ⛔ Do not set
+     align-items:start here again; use CSS columns if true masonry packing is ever
+     wanted, and accept that it reorders the feed column-major. */
+  .feedgrid{{display:grid;grid-template-columns:repeat(2,1fr);gap:0 16px}}
+  .feedgrid .card{{margin:0 0 16px;height:calc(100% - 16px);box-sizing:border-box}}
   .dayhead{{margin-top:26px}}
   /* A day heading labels every card under it, so it must span the whole grid. */
   .dayhead{{grid-column:1/-1}}
