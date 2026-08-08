@@ -1,10 +1,10 @@
 {
- "generated": "2026-08-07 00:09 UTC",
+ "generated": "2026-08-08 16:38 UTC",
  "window_days": 60,
  "counts": {
-  "total": 77,
-  "closed": 26,
-  "open_weights": 51
+  "total": 73,
+  "closed": 25,
+  "open_weights": 48
  },
  "releases": [
   {
@@ -881,54 +881,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights published at huggingface.co/moonshotai/Kimi-K2.7-Code; downloadable and hashable",
    "hf_id": "moonshotai/Kimi-K2.7-Code",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Anthropic",
-   "model": "Anthropic: Claude Fable 5",
-   "id": "anthropic/claude-fable-5",
-   "date": "2026-06-09",
-   "url": "https://openrouter.ai/anthropic/claude-fable-5",
-   "context_length": 1000000,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Google",
-   "model": "diffusiongemma-26B-A4B-it",
-   "id": "google/diffusiongemma-26B-A4B-it",
-   "date": "2026-06-09",
-   "url": "https://huggingface.co/google/diffusiongemma-26B-A4B-it",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "google/diffusiongemma-26B-A4B-it",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Z.ai",
-   "model": "SCAIL-2",
-   "id": "zai-org/SCAIL-2",
-   "date": "2026-06-09",
-   "url": "https://huggingface.co/zai-org/SCAIL-2",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "zai-org/SCAIL-2",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nex Agi",
-   "model": "Nex AGI: Nex-N2-Pro",
-   "id": "nex-agi/nex-n2-pro",
-   "date": "2026-06-08",
-   "url": "https://openrouter.ai/nex-agi/nex-n2-pro",
-   "context_length": 262144,
-   "evidence": "open-weights",
-   "evidence_note": "weights published at huggingface.co/nex-agi/Nex-N2-Pro; downloadable and hashable",
-   "hf_id": "nex-agi/Nex-N2-Pro",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   }
  ],
