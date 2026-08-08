@@ -4,10 +4,13 @@
 The board tiers a vendor's own claims at 5, the party selling the thing, but until
 2026-07-31 it watched exactly one vendor blog (DeepMind). Anthropic and OpenAI both serve
 no usable RSS (anthropic.com/rss.xml 404s, openai.com/news/rss.xml redirects to an empty
-document) and both publish sitemaps carrying <lastmod>, which is enough to find what is new.
+document). Both publish sitemaps carrying <lastmod>, which identifies pages worth checking
+but does not establish when an article was published.
 
-Sitemaps give URLs and dates but no titles, so each NEW url costs one page fetch for its
-<title>. Titles are cached in vendor_titles.json, so a run only pays for what changed.
+Each recently modified URL is fetched once for its title and publication date. The metadata
+is cached in vendor_titles.json, so later runs fetch only unseen candidate pages. Ranking,
+the freshness cutoff and the displayed date all use the page publication date, never
+<lastmod>.
 
 Appends to feed_items.json, deduped by URL, so the rest of the pipeline treats these like
 any other item. Run directly after fetch_feeds.py and before carry_reviews.py.
@@ -26,7 +29,8 @@ import urllib.request
 from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from fetch_feeds import TYPE_TIER, domain, entity_of, source_type, too_old
+from fetch_feeds import (TYPE_TIER, domain, entity_of, publication_date_from_html,
+                         source_type, too_old)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 FEED = os.path.join(HERE, "feed_items.json")
@@ -35,6 +39,10 @@ TITLES = os.path.join(HERE, "vendor_titles.json")
 UA = "Mozilla/5.0 (NM AI Research board; +https://nmairesearch.github.io/ai-news-board)"
 PER_VENDOR = 3   # per VENDOR, not per sitemap: OpenAI splits one newsroom across several
 DELAY = 1.5
+CACHE_PURPOSE = (
+    "Caches vendor page titles and publication dates so sitemap modification times are "
+    "used only to discover pages that may need checking."
+)
 
 # (label, sitemap url, path fragment identifying a post)
 SITEMAPS = [
@@ -58,12 +66,42 @@ def get(url, timeout=25):
         return r.read().decode(r.headers.get_content_charset() or "utf-8", "replace")
 
 
-def title_of(url):
-    raw = get(url)
+def title_from_html(raw):
     m = OGTITLE.search(raw) or TITLE.search(raw)
     if not m:
         return ""
     return SUFFIX.sub("", html.unescape(re.sub(r"\s+", " ", m.group(1))).strip())
+
+
+def metadata_of(url):
+    raw = get(url)
+    return title_from_html(raw), publication_date_from_html(raw)
+
+
+def load_cache():
+    if not os.path.exists(TITLES):
+        return {}
+    with open(TITLES, encoding="utf-8") as handle:
+        raw = json.load(handle)
+    cache = {}
+    for url, value in raw.items():
+        if not url.startswith(("http://", "https://")):
+            continue
+        if isinstance(value, str):
+            cache[url] = {"title": value}
+        elif isinstance(value, dict):
+            cache[url] = {
+                "title": value.get("title", ""),
+                "published": value.get("published", ""),
+            }
+    return cache
+
+
+def save_cache(cache):
+    payload = {"_purpose": CACHE_PURPOSE}
+    payload.update({url: cache[url] for url in sorted(cache)})
+    with open(TITLES, "w", encoding="utf-8") as handle:
+        json.dump(payload, handle, indent=1, ensure_ascii=False)
 
 
 def main():
@@ -72,9 +110,13 @@ def main():
     ap.add_argument("--per-vendor", type=int, default=PER_VENDOR)
     a = ap.parse_args()
 
-    data = json.load(open(FEED, encoding="utf-8")) if os.path.exists(FEED) else {"items": []}
+    if os.path.exists(FEED):
+        with open(FEED, encoding="utf-8") as handle:
+            data = json.load(handle)
+    else:
+        data = {"items": []}
     known = {s["url"] for it in data["items"] for s in it.get("sources", []) if s.get("url")}
-    titles = json.load(open(TITLES, encoding="utf-8")) if os.path.exists(TITLES) else {}
+    cache = load_cache()
     now = datetime.now(timezone.utc)
 
     # Merge every sitemap belonging to a vendor before ranking, or a vendor that splits its
@@ -90,35 +132,53 @@ def main():
         by_vendor.setdefault(label, {}).update(dict(hits))
         print(f"  {label:10s} {domain(sm)}: {len(rows)} urls, {len(hits)} posts")
 
-    added, skipped_old, seen = [], 0, set()
+    added, skipped_old, missing_date, seen, cache_changed = [], 0, 0, set(), False
     for label, posts_map in by_vendor.items():
-        posts = sorted(posts_map.items(), key=lambda t: t[1], reverse=True)[:a.per_vendor]
-        print(f"  {label}: taking {len(posts)} most recent")
+        posts = sorted(posts_map.items(), key=lambda t: t[1], reverse=True)
+        candidates = []
         for url, lastmod in posts:
             if url in known or url in seen:
                 continue
             seen.add(url)
-            if too_old(lastmod, now, "vendor-own"):
+            meta = cache.get(url, {})
+            if not meta.get("published"):
+                # A page cannot have been published after its own modification timestamp.
+                # Old unseen sitemap rows therefore need no page fetch.
+                if too_old(lastmod, now, "vendor-own"):
+                    skipped_old += 1
+                    continue
+                try:
+                    time.sleep(DELAY)
+                    title, published = metadata_of(url)
+                except Exception as e:
+                    print(f"    no metadata for {url.split('/')[-1]}: {e}")
+                    continue
+                if not published:
+                    missing_date += 1
+                    print(f"    no publication date for {url.split('/')[-1]}")
+                    continue
+                meta = {"title": title, "published": published}
+                cache[url] = meta
+                cache_changed = True
+
+            title = meta.get("title", "")
+            published = meta.get("published", "")
+            if not title or not published:
+                continue
+            if too_old(published, now, "vendor-own"):
                 skipped_old += 1
                 continue
-            if url not in titles:
-                if a.dry_run:
-                    titles[url] = "(title not fetched in dry run)"
-                else:
-                    try:
-                        time.sleep(DELAY)
-                        titles[url] = title_of(url)
-                    except Exception as e:
-                        print(f"    no title for {url.split('/')[-1]}: {e}")
-                        continue
-            t = titles[url]
-            if not t:
-                continue
+            candidates.append((published, lastmod, url, title))
+
+        candidates.sort(reverse=True)
+        selected = candidates[:a.per_vendor]
+        print(f"  {label}: taking {len(selected)} most recent by publication date")
+        for published, lastmod, url, title in selected:
             st = source_type(url)
             added.append({
-                "entity": entity_of(t) or label,
-                "headline": t,
-                "date": lastmod[:10],
+                "entity": entity_of(title) or label,
+                "headline": title,
+                "date": published,
                 "topic": "",
                 "claim_type": "unclassified",
                 "denominator_stated": "?",
@@ -126,17 +186,21 @@ def main():
                 "sources": [{"name": domain(url), "url": url, "source_type": st,
                              "motive_tier": TYPE_TIER.get(st, 5)}],
             })
-            print(f"    + tier {TYPE_TIER.get(st, 5)}  {lastmod[:10]}  {t[:62]}")
+            print(f"    + tier {TYPE_TIER.get(st, 5)}  {published}  {title[:62]}")
 
-    print(f"\n{len(added)} new vendor post(s), {skipped_old} dropped as stale")
+    print(f"\n{len(added)} new vendor post(s), {skipped_old} dropped as stale"
+          + (f", {missing_date} without a publication date" if missing_date else ""))
     if a.dry_run:
         print("dry run: nothing written")
         return
     if added:
         data["items"] = data["items"] + added
-        json.dump(data, open(FEED, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
-        json.dump(titles, open(TITLES, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
+        with open(FEED, "w", encoding="utf-8") as handle:
+            json.dump(data, handle, indent=1, ensure_ascii=False)
         print(f"written: {FEED} ({len(data['items'])} items). Now run carry_reviews.py")
+    if cache_changed:
+        save_cache(cache)
+        print(f"metadata cache written: {TITLES} ({len(cache)} pages)")
 
 
 if __name__ == "__main__":
