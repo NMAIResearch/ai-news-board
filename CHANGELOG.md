@@ -2,6 +2,18 @@
 
 Dated, descriptive, newest first. Method changes and defects found, not every commit.
 
+## 2026-08-08
+
+**Defect: modification and submission times were displayed as article dates.** The vendor
+intake treated sitemap `<lastmod>` as a publication date. OpenAI marked three pages as
+modified on 8 August even though the pages were published on 12 February, 5 March and
+25 March. All three were consequently presented as current. The vendor intake now fetches
+the publication date from each candidate page, caches it, and uses it for ranking, the
+freshness cutoff and display. Sitemap modification times are used only to discover unseen
+pages worth checking. The Hacker News intake now makes the same distinction: its `pubDate`
+is the link's submission time, so the linked page's own publication date is used when the
+page exposes one.
+
 ## 2026-08-07
 
 **Defect: headlines printed their own HTML entities.** The board showed

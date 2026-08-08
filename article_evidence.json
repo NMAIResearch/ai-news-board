@@ -582,7 +582,7 @@
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 4,
+   "total": 5,
    "with_named_source": 2
   },
   "motive_tier": 3,
@@ -635,7 +635,7 @@
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 2,
+   "total": 3,
    "with_named_source": 0
   },
   "motive_tier": 3,
@@ -1465,7 +1465,7 @@
     "to_others": [
      {
       "sentence": "Evaluate the accuracy of the agency's estimate of the burden of the proposed collection of information, including the validity of the methodology and assumptions used.",
-      "offset": 11871
+      "offset": 11870
      }
     ],
     "unnamed": []
@@ -2621,15 +2621,15 @@
     "to_others": [
      {
       "sentence": "“Sasha is one of the sharpest theoretical minds working in statistics and machine learning today, and also one of the most devoted mentors I know,” says Fotini Christia, the Ford International Professor of the Social Sciences and director of IDSS, which houses SDSC.",
-      "offset": 1793
+      "offset": 1702
      },
      {
       "sentence": "“I am honored to take on this role,” says Rakhlin.",
-      "offset": 2599
+      "offset": 2508
      },
      {
       "sentence": "“I have been fascinated by machine learning since my PhD work more than 20 years ago, drawn by its beautiful connections to statistics, probability, algorithms, optimization, and game theory,” says Rakhlin.",
-      "offset": 3472
+      "offset": 3381
      }
     ],
     "unnamed": []
@@ -2800,19 +2800,19 @@
     "to_others": [
      {
       "sentence": "Gaming metrics is, as one FinOps leader noted, more or less what engineers are paid to do.",
-      "offset": 3284
+      "offset": 3278
      },
      {
       "sentence": "The composites described in the room included lines of code added against lines removed, the severity and volume of incidents traced to AI-assisted pull requests, and normalization against cycle time and delivered points.",
-      "offset": 3375
+      "offset": 3369
      },
      {
       "sentence": "Underneath these is a four-category model used to decide who sets which budget: Seat-based software that has added AI, coding copilots, external customer-facing applications, and internal, non-coder agentic work.",
-      "offset": 6943
+      "offset": 6937
      },
      {
       "sentence": "The 2026 FinOps Framework added Executive Strategy Alignment as a capability for a reason.",
-      "offset": 10210
+      "offset": 10204
      }
     ],
     "unnamed": []
@@ -2902,19 +2902,19 @@
     "to_others": [
      {
       "sentence": "The hope, according to Thomas Bloom, Royal Society University Research Fellow and a member of FM:OP’s expert editorial board, is “that many of these problems are difficult enough that an AI will have to invent new techniques to make progress.” Read the full commentary from Bloom and fellow editorial",
-      "offset": 1792
+      "offset": 1790
      },
      {
       "sentence": "Epoch’s head of economics, Philip Trammell, argues that constraints on the parallelizability of AI R&D (the ability to divide, coordinate, and recombine work) are missing from models of technological growth.",
-      "offset": 2355
+      "offset": 2353
      },
      {
       "sentence": "We analyzed 41 core contributors to OpenAI’s public Codex repository, asking LLM judges to estimate how long each merged pull request would take an experienced engineer without AI assistance.",
-      "offset": 4497
+      "offset": 4495
      },
      {
       "sentence": "He argues that a frontier model autonomously finding and exploiting a real vulnerability shouldn’t be too surprising.",
-      "offset": 5152
+      "offset": 5150
      }
     ],
     "unnamed": []
@@ -3247,9 +3247,107 @@
    "cited_by": []
   }
  },
- "https://www.anthropic.com/news/claude-for-nonprofits": {
-  "headline": "Introducing Claude for Nonprofits",
+ "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals": {
+  "headline": "Investigating three real-world incidents in our cybersecurity evaluations",
   "entity": "Anthropic",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 9,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "The model is given a fictional scenario and told that a piece of secret information (the “flag”) has been hidden on a different machine on the network, and its objective is to break in and retrieve it.",
+      "offset": 1762
+     },
+     {
+      "sentence": "2 In most of these evaluations, the environments are not connected to the internet, and the model is told as much.",
+      "offset": 5910
+     },
+     {
+      "sentence": "It’s also possible that a prompt which told Claude it did have internet access would have changed how Claude behaved when it came into contact with real systems.",
+      "offset": 7615
+     },
+     {
+      "sentence": "That search led it to discover that its machine could reach the internet, but having been told in the system prompt that there was no internet access, Claude believed everything it initially encountered was part of the simulation, and treated the real systems it found as pieces of the exercise.",
+      "offset": 7880
+     },
+     {
+      "sentence": "Those instructions told employees to install a Python package from PyPI—the public registry where Python software is published—that did not actually exist.",
+      "offset": 9828
+     },
+     {
+      "sentence": "It noted that if this were the real internet, publishing the package would be a real-world attack—“NOT okay, and surely not the intended solution.” However, it convinced itself it was still in a simulation on the grounds that it didn’t recognize the (in reality genuine) certificate authorities secur",
+      "offset": 12381
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 1,
+   "other": 3
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 9,
+   "with_named_source": 1
+  },
+  "motive_tier": 5,
+  "tier_basis": "publisher is the subject (Anthropic)",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores/": {
+  "headline": "How enabling two settings tripled our scores on the ARC-AGI-3 benchmark",
+  "entity": "OpenAI",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 2,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "Based on official gameplay logs ⁠ (opens in a new window) , we estimate the average human tester scored 48%.",
+      "offset": 1646
+     },
+     {
+      "sentence": "Models are not told how they will be scored, and cannot see their score throughout — actions only return a text representation of each frame and what level they are on.",
+      "offset": 1755
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 3,
+   "other": 10
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 23,
+   "with_named_source": 1
+  },
+  "motive_tier": 5,
+  "tier_basis": "publisher is the subject (OpenAI)",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://openai.com/index/chatgpt-for-academic-researchers/": {
+  "headline": "Accelerating scientific discovery with ChatGPT for Academic Researchers",
+  "entity": "OpenAI",
   "entity_usable": true,
   "fetched": true,
   "attribution": {
@@ -3265,48 +3363,11 @@
   "links": {
    "primary": 0,
    "subject_own": 0,
-   "other": 19
+   "other": 3
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 14,
-   "with_named_source": 0
-  },
-  "motive_tier": 5,
-  "tier_basis": "publisher is the subject (Anthropic)",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://openai.com/index/introducing-gpt-5-3-codex-spark/": {
-  "headline": "Introducing GPT-5.3-Codex-Spark",
-  "entity": "OpenAI",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 1,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "Codex-Spark marks the first milestone in our partnership with Cerebras, which we announced in January ⁠ .",
-      "offset": 298
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 1
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 6,
+   "total": 15,
    "with_named_source": 0
   },
   "motive_tier": 5,
@@ -3316,88 +3377,30 @@
    "cited_by": []
   }
  },
- "https://openai.com/index/introducing-gpt-5-4/": {
-  "headline": "Introducing GPT-5.4",
+ "https://openai.com/index/scientific-computing-agentic-ai/": {
+  "headline": "Scientific computing in the age of agentic AI",
   "entity": "OpenAI",
   "entity_usable": true,
   "fetched": true,
   "attribution": {
    "to_subject": 0,
-   "to_others": 4,
+   "to_others": 0,
    "unnamed": 0,
    "spans": {
     "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "*Previously reported as 64.7%.",
-      "offset": 2578
-     },
-     {
-      "sentence": "We estimate latency by looking at the production behavior of our models, and simulating this offline.",
-      "offset": 9986
-     },
-     {
-      "sentence": "The latency estimate accounts for tool call duration (code execution time), sampled tokens, and input tokens.",
-      "offset": 10088
-     },
-     {
-      "sentence": "1 Human performance reported in OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments ⁠ (opens in a new window) .",
-      "offset": 24993
-     }
-    ],
+    "to_others": [],
     "unnamed": []
    }
   },
   "links": {
    "primary": 2,
-   "subject_own": 6,
-   "other": 6
+   "subject_own": 1,
+   "other": 0
   },
   "primary_link_examples": [
-   "https://arxiv.org/pdf/2506.07982",
-   "https://arxiv.org/abs/2404.07972"
+   "https://doi.org/10.1038/s41597-022-01143-6",
+   "https://doi.org/10.1371/journal.pbio.3000333"
   ],
-  "figures": {
-   "total": 85,
-   "with_named_source": 2
-  },
-  "motive_tier": 5,
-  "tier_basis": "publisher is the subject (OpenAI)",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://openai.com/index/our-approach-to-the-model-spec/": {
-  "headline": "Inside our approach to the Model Spec",
-  "entity": "OpenAI",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 2,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "That said, the preamble still matters.",
-      "offset": 5688
-     },
-     {
-      "sentence": "That said, we do not think everything that matters about model behavior will always be reducible to explicit rules.",
-      "offset": 17964
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 22,
-   "other": 1
-  },
-  "primary_link_examples": [],
   "figures": {
    "total": 1,
    "with_named_source": 0

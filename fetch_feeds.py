@@ -143,6 +143,101 @@ PRINCIPALS = [
     ("LeCun", "Meta"), ("Sutskever", "OpenAI"),
 ]
 
+MONTH_NAME = (
+    r"(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|June?|July?|"
+    r"Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)"
+)
+HUMAN_PUBLICATION_DATE = re.compile(
+    rf"\b({MONTH_NAME}\s+\d{{1,2}},\s+\d{{4}})\b", re.I)
+JSON_PUBLICATION_DATE = re.compile(
+    r'["\']datePublished["\']\s*:\s*["\']([^"\']+)["\']', re.I)
+META_TAG = re.compile(r"<meta\b[^>]*>", re.I)
+META_ATTR = re.compile(r"([:\w-]+)\s*=\s*[\"']([^\"']*)[\"']", re.I)
+URL_PUBLICATION_DATE = (
+    re.compile(r"/(\d{4})/(\d{1,2})/(\d{1,2})(?:/|$)"),
+    re.compile(rf"/(\d{{4}})/({MONTH_NAME})/(\d{{1,2}})(?:/|$)", re.I),
+)
+
+
+def normalise_publication_date(value):
+    """Return a page publication date as YYYY-MM-DD, or blank if it is not a date."""
+    value = html.unescape((value or "").strip())
+    if not value:
+        return ""
+    try:
+        return datetime.fromisoformat(value.replace("Z", "+00:00")).date().isoformat()
+    except ValueError:
+        pass
+    for fmt in ("%B %d, %Y", "%b %d, %Y"):
+        try:
+            return datetime.strptime(value, fmt).date().isoformat()
+        except ValueError:
+            continue
+    return ""
+
+
+def publication_date_from_html(raw):
+    """Extract the article's publication date, never its modified timestamp.
+
+    Structured metadata is preferred. OpenAI and Anthropic currently omit it from these
+    newsroom pages, so the fallback takes the human-readable date nearest the first h1.
+    Restricting that fallback to the heading region avoids dates mentioned in the article.
+    """
+    m = JSON_PUBLICATION_DATE.search(raw or "")
+    if m:
+        date = normalise_publication_date(m.group(1))
+        if date:
+            return date
+
+    for tag in META_TAG.findall(raw or ""):
+        attrs = {k.lower(): v for k, v in META_ATTR.findall(tag)}
+        key = (attrs.get("property") or attrs.get("name") or
+               attrs.get("itemprop") or "").lower()
+        if key in {"article:published_time", "datepublished", "publishdate"}:
+            date = normalise_publication_date(attrs.get("content", ""))
+            if date:
+                return date
+
+    heading = re.search(r"<h1\b", raw or "", re.I)
+    if not heading:
+        return ""
+    start = max(0, heading.start() - 1800)
+    end = min(len(raw), heading.start() + 1800)
+    matches = list(HUMAN_PUBLICATION_DATE.finditer(raw[start:end]))
+    if not matches:
+        return ""
+    nearest = min(matches, key=lambda hit: abs(start + hit.start() - heading.start()))
+    return normalise_publication_date(nearest.group(1))
+
+
+def publication_date_from_url(url):
+    """Extract a date from an explicit YYYY/MM/DD or YYYY/Mon/DD URL path."""
+    for index, pattern in enumerate(URL_PUBLICATION_DATE):
+        match = pattern.search(url or "")
+        if not match:
+            continue
+        try:
+            if index == 0:
+                value = datetime(int(match.group(1)), int(match.group(2)),
+                                 int(match.group(3)))
+            else:
+                month = datetime.strptime(match.group(2)[:3], "%b").month
+                value = datetime(int(match.group(1)), month, int(match.group(3)))
+            return value.date().isoformat()
+        except ValueError:
+            continue
+    return ""
+
+
+def publication_date_of_url(url):
+    """Fetch one article page and return its publication date, if exposed."""
+    req = urllib.request.Request(
+        url, headers={"User-Agent": "Mozilla/5.0 (NM AI Research board)"})
+    with urllib.request.urlopen(req, timeout=20) as response:
+        raw = response.read().decode(
+            response.headers.get_content_charset() or "utf-8", "replace")
+    return publication_date_from_html(raw)
+
 
 def source_type(url):
     for dom, t in DOMAIN_TYPE:
@@ -268,7 +363,31 @@ def main():
             fresh = [r for r in rows
                      if not too_old(r[2], now, source_type(r[1] or f))]
             dropped_old += len(rows) - len(fresh)
-            rows = fresh[:per_feed]
+
+            # HN's RSS pubDate is when somebody submitted the link, not when the linked
+            # article was published. Prefer the article's own date before applying the
+            # cutoff and displaying it. If a page exposes no date, keep the feed date rather
+            # than silently dropping the item.
+            if "hnrss.org" in f:
+                dated = []
+                for title, link, feed_date in fresh:
+                    page_date = ""
+                    if link:
+                        page_date = publication_date_from_url(link)
+                        try:
+                            page_date = publication_date_of_url(link) or page_date
+                        except Exception as e:
+                            print(f"  no page date for {domain(link)}: {e}", file=sys.stderr)
+                    effective_date = page_date or feed_date
+                    if too_old(effective_date, now, source_type(link or f)):
+                        dropped_old += 1
+                        continue
+                    dated.append((title, link, effective_date))
+                    if len(dated) == per_feed:
+                        break
+                rows = dated
+            else:
+                rows = fresh[:per_feed]
         except Exception as e:
             print(f"skip {domain(f)}: {e}", file=sys.stderr)
             continue
