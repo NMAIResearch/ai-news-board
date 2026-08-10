@@ -6,6 +6,10 @@ is measured against, and a link to a published base rate where one exists. Figur
 verbatim from the article text with their position recorded, and every label carries the
 method that produced it, so a reader can check any of it against the source.
 
+AI disclosure: parts of this text were artificially generated with AI assistance and reviewed
+by the author. The models, and the conflicts they create, are named in the Conflict of interest
+section.
+
 Live: https://nmairesearch.github.io/ai-news-board/
 Method changes and defects found, dated: [CHANGELOG.md](CHANGELOG.md)
 
@@ -48,7 +52,7 @@ Optional check, after `extract_spans.py`:
 All stdlib, no dependencies. Open `index.html` in any browser. A feed refresh costs nothing
 but time; the only optional cost in the pipeline is the local model in `label_items.py`.
 
-### ⛔ `--plain` is a toggle, not a fourteenth step
+### `--plain` is a toggle, not a fourteenth step
 
     python3 build.py --plain      # same page, motive tiering OFF
 
@@ -170,7 +174,7 @@ grade. An API-only model is shipped, it is serving traffic and people are paying
 simply not downloadable. Whether it can be hashed and re-run later is an auditability question
 and belongs in the companion Model Dependency work, not in a list of what came out.
 
-⛔ **The open and API-only totals are not a ratio and are not presented as one.** OpenRouter is
+**The open and API-only totals are not a ratio and are not presented as one.** OpenRouter is
 taken in full; Hugging Face is a hand-written list of labs capped at five repositories each,
 four of which sat on that cap on 2026-07-31. OpenRouter rows are deduped to a base model,
 Hugging Face rows are not. Such a ratio would move with the org list rather than with the
@@ -301,6 +305,7 @@ been reviewed, and which private register rows may be published.
 
 ## Conflict of interest
 
-The maker is an independent researcher assisted by an Anthropic model. Anthropic appears here
-as a subject and is tagged the same way as every other entity. Independent analysis, not
-investment advice.
+The maker is an independent researcher. An Anthropic model helped build the method and tiers.
+An OpenAI model later assisted with feed-pipeline code and deployment checks, but did not assign
+the refreshed item labels or revise motive tiers. Anthropic and OpenAI appear here as subjects
+and are tiered on the same basis as other sources. Independent analysis, not investment advice.

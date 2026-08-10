@@ -882,9 +882,11 @@ def main():
             f'margin-bottom:4px">Method and limits</div>'
             f'<ul style="margin:4px 0 0 18px;padding:0;font-size:13px;color:{BODY}">{dl}</ul>'
             f'<div style="font-size:12px;color:{SLATE};margin-top:8px">Conflict of interest: an '
-            f'Anthropic model assisted in building this board, including the tiers applied to '
-            f'Anthropic and its competitors. Anthropic is tiered in the map on the same basis '
-            f'as any other source.</div></section>')
+            f'Anthropic model helped build the method and tiers, including tiers applied to '
+            f'Anthropic and its competitors. An OpenAI model later assisted with feed-pipeline '
+            f'code and deployment checks, but did not assign the refreshed item labels or revise '
+            f'motive tiers. Both companies are tiered in the map on the same basis as other '
+            f'sources.</div></section>')
         trows = "".join(
             f'<tr><td style="padding:4px 10px;border-bottom:1px solid {LINE};vertical-align:top">'
             f'<span style="display:inline-block;width:12px;height:12px;border-radius:2px;'
@@ -1344,6 +1346,11 @@ def main():
     from the article text and stored with their position. Each label records the method that
     produced it.
   </div>
+  <div style="font-size:12px;color:{SLATE};margin:0 0 14px;max-width:900px">
+    AI disclosure: parts of this page were artificially generated with AI assistance and reviewed
+    by the author. The models, and the conflicts they create, are named in the Conflict of interest
+    note under Method and limits.
+  </div>
   {freshness(built, fetched, mk, _reg if os.path.isfile(reg_path) else {})}
   {market_strip(mk)}
   <div class="layout">
@@ -1360,9 +1367,11 @@ def main():
         and claim type are the announced-vs-delivered lens; the reality anchor links to a published
         base rate when the topic matches. Feed selection is editorial and disclosed. This surfaces
         the structural weakness of a claim; it does not adjudicate truth.<br><br>
-        Conflict of interest: the maker of this board is an independent researcher assisted by an
-        Anthropic model. Anthropic appears here as a subject and is tagged the same way as every
-        other entity. Independent analysis, not investment advice.<br><br>
+        Conflict of interest: the maker is an independent researcher. An Anthropic model helped
+        build the method and tiers. An OpenAI model later assisted with feed-pipeline code and
+        deployment checks, but did not assign the refreshed item labels or revise motive tiers.
+        Anthropic and OpenAI appear here as subjects and are tiered on the same basis as other
+        sources. Independent analysis, not investment advice.<br><br>
         Corrections welcome on any judgement here, and they are marked in place with their reason:
         <a href="mailto:NMAIResearch@proton.me" style="color:{NAVY}">NMAIResearch@proton.me</a>
       </div>
@@ -1379,6 +1388,7 @@ def main():
 </div>
 {script_block}
 </body></html>"""
+    doc = "\n".join(line.rstrip() for line in doc.splitlines())
     open(OUT, "w", encoding="utf-8").write(doc)
     mode = "plain (motive tier OFF)" if plain else "motive-tiered"
     print(f"written: {OUT}  ({len(items)} items, {len(entity_counts)} entities, {mode})")

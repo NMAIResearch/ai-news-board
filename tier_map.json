@@ -17,13 +17,14 @@
     {"entity": "Reuters / Bloomberg / FT", "tier": 3, "basis": "wire / quality press; item-dependent, corroborate to the cited primary"},
     {"entity": "Ahrefs / Semrush / SimilarWeb", "tier": 4, "basis": "SEO/analytics tool vendors; the data is often sound, the alarm framing helps sell the subscription"},
     {"entity": "Anthropic", "tier": 5, "basis": "sells frontier AI models; tier 5 on AI-value and its own-capability claims. Claim-relative: lower on unrelated facts", "coi": true},
-    {"entity": "OpenAI", "tier": 5, "basis": "sells frontier AI models; tier 5 on its own-capability and AI-value claims"},
+    {"entity": "OpenAI", "tier": 5, "basis": "sells frontier AI models; tier 5 on its own-capability and AI-value claims", "coi": true},
     {"entity": "Google / Google DeepMind", "tier": 5, "basis": "builds and sells the AI and the ad system the claim is often about"},
     {"entity": "Meta", "tier": 5, "basis": "sells the platform and the models; tier 5 on its own-capability claims"},
     {"entity": "Microsoft", "tier": 5, "basis": "sells the models and the cloud; tier 5 on its own-code-automation claims"},
     {"entity": "Nvidia", "tier": 5, "basis": "sells the compute; tier 5 on 'is AI demand real'"},
     {"entity": "Salesforce / Amazon / Snap (on own AI-efficiency)", "tier": 5, "basis": "adopters with an investor 'we are AI-efficient' narrative and a layoff justification; tier 5 on their own usage claims"},
     {"entity": "NM AI Research (the author)", "tier": 2, "basis": "independent, no product tied to a market call, publishes reproducible CC-BY. Scored here rather than omitted: a motive map that exempts its own author is incomplete", "self": true},
-    {"entity": "The Anthropic model that helped build this", "tier": 5, "basis": "a frontier-lab model helped assign these tiers, including the tiers on Anthropic and its rivals. Not exempt from its own map; corroborate its most consequential calls against a non-model source", "coi": true, "self": true}
+    {"entity": "The Anthropic model that helped build this", "tier": 5, "basis": "a frontier-lab model helped assign these tiers, including the tiers on Anthropic and its rivals. Not exempt from its own map; corroborate its most consequential calls against a non-model source", "coi": true, "self": true},
+    {"entity": "The OpenAI model that helped maintain this", "tier": 5, "basis": "a frontier-lab model assisted with feed-pipeline code and deployment checks. It did not assign the refreshed item labels or revise motive tiers. OpenAI is a subject on the board, so its maintenance role is disclosed rather than exempted", "coi": true, "self": true}
   ]
 }

@@ -1,48 +1,82 @@
 {
- "https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/": {
-  "headline": "OpenAI says it slowed Astra model development over security concerns",
-  "entity": "OpenAI",
+ "https://techcrunch.com/2026/08/09/embattled-hedge-fund-situational-awareness-invests-400m-in-chip-startup-source-foundry/": {
+  "headline": "Embattled hedge fund Situational Awareness invests $400M in chip startup Source Foundry",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 1,
+   "unnamed": 1,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "Historian Jill Lepore says Silicon Valley misreads science fiction and undermines democracy",
+      "offset": 1617
+     }
+    ],
+    "unnamed": [
+     {
+      "sentence": "This week, the fund invested $400 million into Source Foundry, a startup founded by Stanford researchers aiming to make chip manufacturing faster and cheaper, according to The Wall Street Journal .",
+      "offset": 342
+     }
+    ]
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 2
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 8,
+   "with_named_source": 1
+  },
+  "motive_tier": 3,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/": {
+  "headline": "Anthropic is turning Claude Code’s auto mode on by default",
+  "entity": "Anthropic",
   "entity_usable": true,
   "fetched": true,
   "attribution": {
-   "to_subject": 5,
-   "to_others": 3,
+   "to_subject": 2,
+   "to_others": 4,
    "unnamed": 0,
    "spans": {
     "to_subject": [
      {
-      "sentence": "OpenAI said Friday it has suspended work on some aspects of its upcoming model Astra after an internal review found it had made significant advancements in agentic coding and cybersecurity — enough to warrant concern over its capabilities.",
-      "offset": 0
+      "sentence": "Programming with Claude Code will soon require even less human oversight, as Anthropic says it’s making auto mode the default for Pro, Max, and Team accounts, starting on August 14.",
+      "offset": 182
      },
      {
-      "sentence": "OpenAI said in a blog post Friday that this model, which is still in development, reached its “critical cybersecurity threshold,” meaning it could independently identify and carry out cyberattacks against traditionally well-protected real-world systems.",
-      "offset": 240
-     },
-     {
-      "sentence": "“While we continue to benchmark and assess this model, our preliminary evaluations indicate strong enough performance that we cannot rule out Critical capability level at this time,” OpenAI wrote.",
-      "offset": 610
-     },
-     {
-      "sentence": "OpenAI said it was sharing this information because it believes “it’s important to be transparent with the public and the safety and security communities about this potential shift in capabilities.”",
-      "offset": 1970
-     },
-     {
-      "sentence": "OpenAI said it is working with relevant government agencies and “select AI safety organizations” to test the capabilities for this model.",
-      "offset": 2349
+      "sentence": "Anthropic also said that in testing, auto mode proved safer than manual review — in a study with 1,053 paid testers, auto mode caught 89% of harmful actions, while human review only caught 13.6%.",
+      "offset": 763
      }
     ],
     "to_others": [
      {
-      "sentence": "The AI lab said it’s also taking action, including enacting stricter security controls and pausing internal activities involving Astra that don’t meet these beefed guardrails.",
-      "offset": 2173
+      "sentence": "In a post on X , Claude Code Head Boris Cherny said, “The team and I use Auto mode exclusively, and have been for many months.",
+      "offset": 1077
      },
      {
-      "sentence": "She is also co-founder and co-host of the podcast, “The Autonocast.” She previously wrote for Fortune, The Verge, Bloomberg, MIT Technology Review and CBS Interactive.",
-      "offset": 3022
+      "sentence": "The company also said it’s been adding new safety features like prompt injection screening and customizable hard deny rules to prevent things like data exfiltration.",
+      "offset": 1258
      },
      {
-      "sentence": "Amid legal battles, Suno says it will start watermarking songs",
-      "offset": 3749
+      "sentence": "Historian Jill Lepore says Silicon Valley misreads science fiction and undermines democracy",
+      "offset": 1786
+     },
+     {
+      "sentence": "Historian Jill Lepore says Silicon Valley misreads science fiction and undermines democracy",
+      "offset": 2489
      }
     ],
     "unnamed": []
@@ -50,13 +84,13 @@
   },
   "links": {
    "primary": 0,
-   "subject_own": 1,
-   "other": 7
+   "subject_own": 0,
+   "other": 2
   },
   "primary_link_examples": [],
   "figures": {
    "total": 4,
-   "with_named_source": 0
+   "with_named_source": 1
   },
   "motive_tier": 3,
   "tier_basis": "source-type",
@@ -65,204 +99,41 @@
    "cited_by": []
   }
  },
- "https://techcrunch.com/2026/08/07/after-rippling-blew-millions-on-ai-in-months-it-built-an-employee-roi-tool/": {
-  "headline": "After Rippling blew millions on AI in months, it built an employee ROI tool",
+ "https://techcrunch.com/2026/08/09/historian-jill-lepore-says-the-tech-industry-is-led-by-bad-readers-who-are-undermining-democracy/": {
+  "headline": "Historian Jill Lepore says Silicon Valley misreads science fiction and undermines democracy",
   "entity": "",
   "entity_usable": false,
   "fetched": true,
   "attribution": {
    "to_subject": 0,
-   "to_others": 13,
+   "to_others": 14,
    "unnamed": 0,
    "spans": {
     "to_subject": [],
     "to_others": [
      {
-      "sentence": "The company promises the tool will show “which engineers have high AI spend whose peers frequently ask them to redo work in code reviews,” the company says in its blog post .",
-      "offset": 347
+      "sentence": "This shift, she said, marks “a return to tyranny and mystification in the form of rule by algorithms, corporations, machines.”",
+      "offset": 222
      },
      {
-      "sentence": "“We were incredulous,” MacInnis told TechCrunch.",
-      "offset": 1286
+      "sentence": "Instead, she said, “My beef is the ways in which private corporations have increasingly taken on the functions of the state.”",
+      "offset": 733
      },
      {
-      "sentence": "Management immediately undertook an “urgent” project to understand the spending and what they were getting for that money, he said.",
-      "offset": 1335
+      "sentence": "“But what’s funny about Musk is, the stuff he likes actually completely defeats and defies all of his political beliefs,” she said.",
+      "offset": 1138
      },
      {
-      "sentence": "They don’t provide you with great usage insight, and they don’t collaborate with one another,” MacInnis said.",
-      "offset": 2381
+      "sentence": "You get to recently, when Sam Altman was on Joe Rogan and said [in response to a question from Rogan], “Oh, an AI president would be a great idea.”",
+      "offset": 6681
      },
      {
-      "sentence": "Rippling founder and CEO Parker Conrad noted last month that when his company conducted its own benchmarks for its own internal uses, it discovered SpaceX’s Grok was the all-around leader but that “GLM 5.2 is 85% cheaper but [had] nearly identical performance” to the frontier models.",
-      "offset": 2775
+      "sentence": "But that said, the book doesn’t begin in 1984.",
+      "offset": 7311
      },
      {
-      "sentence": "MacInnis says it is possible for enterprises that already use another gateway to still use the AI Spend Console product, though if they want the features that govern spending, they would need to use Rippling’s gateway.",
-      "offset": 3525
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 9
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 13,
-   "with_named_source": 3
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/": {
-  "headline": "Cloudflare launches Kitesurf, a browser built for AI agents",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 6,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "It also faces a different threat model because an AI browser could be subject to vulnerabilities like prompt injection attacks and more, the company noted.",
-      "offset": 799
-     },
-     {
-      "sentence": "Cloudflare says it decided to build Kitesurf just 12 weeks ago, and it runs entirely on top of the company’s serverless platform, called Workers.",
-      "offset": 1151
-     },
-     {
-      "sentence": "“Kitesurf is significantly more efficient in CPU and memory consumption than Chromium for common agentic tasks like screenshots and HTML extraction,” according to the company.",
-      "offset": 1646
-     },
-     {
-      "sentence": "Although still new, Cloudflare says Kitesurf already passes around 215,000+ web platform tests , and it’s adding hundreds more, passing tests every week.",
-      "offset": 2073
-     },
-     {
-      "sentence": "The company said the browser correctly renders pages like TodoMVC , a popular benchmark application for comparing JavaScript frameworks, along with Wikipedia, Hacker News, the Cloudflare Blog, and much of the Cloudflare dashboard.",
-      "offset": 2410
-     },
-     {
-      "sentence": "Amid legal battles, Suno says it will start watermarking songs",
-      "offset": 3741
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 16
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 6,
-   "with_named_source": 2
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://techcrunch.com/2026/08/07/airbnb-says-ai-is-helping-it-ship-features-faster-as-it-tests-a-new-search-function/": {
-  "headline": "Airbnb says AI is helping it ship features faster as it tests a new search function",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 8,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "Earlier this year, the company said AI is writing 60% of its code .",
-      "offset": 155
-     },
-     {
-      "sentence": "In its latest earnings call, co-founder and CEO Brian Chesky said AI is helping Airbnb create features a at rapid rate.",
-      "offset": 223
-     },
-     {
-      "sentence": "Chesky said that because of AI, the company has reduced time from conceptualization to finally shipping features by 60%.",
-      "offset": 343
-     },
-     {
-      "sentence": "And compared to the same six months last year, we’ve increased the number of features and improvements we shipped this year by nearly 80%,” he said during the company’s second-quarter earnings call.",
-      "offset": 656
-     },
-     {
-      "sentence": "Chesky said during the earnings call that the company will finally start testing AI search.",
-      "offset": 1399
-     },
-     {
-      "sentence": "Then you get to the product description page and the highlights are AI generated in real-time and personalized to you,” Chesky said.",
-      "offset": 1952
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 6
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 12,
-   "with_named_source": 4
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://techcrunch.com/podcast/jill-lepore-on-the-artificial-state-and-why-silicon-valleys-leaders-are-bad-sci-fi-readers/": {
-  "headline": "Jill Lepore on the ‘Artificial State’ and why Silicon Valley’s leaders are bad sci-fi readers",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 4,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "In Lepore’s upcoming book, The Rise and Fall of the Artificial State , the Pulitzer Prize-winning Harvard historian and New Yorker writer argues that tech companies are gradually taking on the functions of democratic government — whether that’s Twitter giving a distorted picture of the electorate or",
-      "offset": 596
-     },
-     {
-      "sentence": "Forster’s 1909 sci-fi story “The Machine Stops” provides a blueprint for the artificial state, and why Lepore says it now reads like “the diary of a very unhappy YouTuber”",
-      "offset": 1588
-     },
-     {
-      "sentence": "Before joining TechCrunch in 2022, she was one of 2 producers at a four-station conglomerate where she wrote, recorded, voiced and edited content, and engineered live performances and interviews from guests like lovelytheband.",
-      "offset": 2619
-     },
-     {
-      "sentence": "Amid legal battles, Suno says it will start watermarking songs",
-      "offset": 3460
+      "sentence": "I can’t help but let that color the way I [react] when Sam Altman or some other AI CEO now says that AI is going to bring all these incredible gifts — and therefore, if you stand in the way, you’re standing in the way of progress, in the way of history.",
+      "offset": 7662
      }
     ],
     "unnamed": []
@@ -275,56 +146,144 @@
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 5,
-   "with_named_source": 1
+   "total": 6,
+   "with_named_source": 0
   },
   "motive_tier": 3,
   "tier_basis": "source-type",
   "chain": {
-   "cites": [],
+   "cites": [
+    {
+     "url": "https://youtube.com/watch",
+     "name": "youtube.com",
+     "tier": 3,
+     "entity": "OpenAI",
+     "headline": "70% of AI revenue comes from OpenAI and Anthropic [video]"
+    }
+   ],
    "cited_by": []
   }
  },
- "https://techcrunch.com/2026/08/07/new-mexico-court-orders-meta-to-pay-additional-567m-in-child-safety-case/": {
-  "headline": "New Mexico court orders Meta to pay additional $567M in child safety case",
-  "entity": "Meta",
+ "https://techcrunch.com/2026/08/09/the-ai-safety-test-is-becoming-a-safety-risk/": {
+  "headline": "The AI safety test is becoming a safety risk",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 18,
+   "unnamed": 3,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "“The number of these incidents that have taken place make clear that sandboxing and testing environment controls aren’t really keeping pace with the capability of the models,” Seán Ó hÉigeartaigh, director of the AI: Futures and Responsibility Programme at the Centre for the Future of Intelligence a",
+      "offset": 594
+     },
+     {
+      "sentence": "“That’s a very good thing to do in terms of testing, but it also means that if they manage to get out in the wild, they can cause considerable harm,” Ó hÉigeartaigh said.",
+      "offset": 1291
+     },
+     {
+      "sentence": "Taken together, Andrew Yoon, head of research at AI nonprofit CivAI, argues the incidents point to a shift.",
+      "offset": 2371
+     },
+     {
+      "sentence": "“In the past, we only had to worry about AI models being misused by people for a variety of purposes, like AI for scams or CSAM,” Yoon told TechCrunch.",
+      "offset": 2479
+     },
+     {
+      "sentence": "Several researchers and cybersecurity experts told TechCrunch that AI evaluation environments need stronger, defense-in-depth protections, with levels of containment and control approaching those used in deployment.",
+      "offset": 2755
+     },
+     {
+      "sentence": "Heather Ceylan, Box’s chief information security officer, said that means eliminating network routes from the sandbox to the internet, as well as to other sensitive systems.",
+      "offset": 3332
+     }
+    ],
+    "unnamed": [
+     {
+      "sentence": "A source familiar with the details told TechCrunch that Irregular’s environments are continuously reviewed and tested, including in consultation with multiple external parties.",
+      "offset": 4946
+     },
+     {
+      "sentence": "The source also said that monitoring was in place, but that monitoring isn’t sufficient on its own.",
+      "offset": 5123
+     },
+     {
+      "sentence": "A source familiar with Irregular’s evaluations told TechCrunch that more capable models require more complex evaluations, often conducted quickly and at greater scale, which opens the door for more mistakes.",
+      "offset": 7279
+     }
+    ]
+   }
+  },
+  "links": {
+   "primary": 1,
+   "subject_own": 0,
+   "other": 9
+  },
+  "primary_link_examples": [
+   "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing"
+  ],
+  "figures": {
+   "total": 4,
+   "with_named_source": 0
+  },
+  "motive_tier": 3,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [
+    {
+     "url": "https://anthropic.com/news/investigating-incidents-cybersecurity-evals",
+     "name": "anthropic.com",
+     "tier": 5,
+     "entity": "Anthropic",
+     "headline": "Investigating three real-world incidents in our cybersecurity evaluations"
+    }
+   ],
+   "cited_by": []
+  }
+ },
+ "https://techcrunch.com/2026/08/08/planned-amazon-data-center-could-become-the-biggest-climate-polluter-in-the-u-s/": {
+  "headline": "Planned Amazon data center could become the biggest climate polluter in the U.S.",
+  "entity": "Amazon",
   "entity_usable": true,
   "fetched": true,
   "attribution": {
-   "to_subject": 5,
-   "to_others": 2,
+   "to_subject": 4,
+   "to_others": 3,
    "unnamed": 0,
    "spans": {
     "to_subject": [
      {
-      "sentence": "“Significant numbers of people in New Mexico experience harm from Meta’s products due to risks of sexual exploitation, interference with education, and adverse mental health outcomes,” the order said.",
-      "offset": 679
+      "sentence": "As part of a planned data center in Pecos County, Texas, Amazon is investing in an on-site power plant that could become the largest source of climate pollution in the United States, according to The New York Times .",
+      "offset": 191
      },
      {
-      "sentence": "Meta said that it is going to appeal the judgment.",
-      "offset": 1168
+      "sentence": "In a statement, an Amazon spokesperson confirmed that the data center will “be powered by new on-site generation that won’t raise electricity costs for Texas families.” (Data centers face growing political opposition for a number of reasons, including their effect on electricity costs.)",
+      "offset": 577
      },
      {
-      "sentence": "We remain confident in our record of protecting teens online and will continue to defend ourselves against claims that misrepresent the facts,” company spokesperson Andy Stone said in an emailed statement.",
-      "offset": 1377
+      "sentence": "AI has already had a significant impact on Amazon’s carbon emissions, which it reported were up 16% last year — the wrong direction for a company that pledged to eliminate its carbon emissions by 2040.",
+      "offset": 865
      },
      {
-      "sentence": "“For years, Meta knew its platforms were harming New Mexico’s kids, from feeding a youth mental health crisis to connecting predators with children, and it chose engagement and profit over their safety,” state Attorney General Raúl Torrez said in a statement.",
-      "offset": 1583
-     },
-     {
-      "sentence": "This judgment holds the company accountable for the damage it caused to our children, our families, and our schools, and it forces real changes to how Meta operates in New Mexico,” he added.",
-      "offset": 1887
+      "sentence": "The Amazon spokesperson said, “The world looks different now than when we co-founded the climate pledge,” while also claiming, “Our commitment hasn’t changed.”",
+      "offset": 1213
      }
     ],
     "to_others": [
      {
-      "sentence": "He said that the company has caused a significant “public nuisance” in New Mexico, and is required to abate that.",
-      "offset": 1054
+      "sentence": "The NYT says the plant would burn natural gas and is permitted to release 33 million tons of carbon dioxide per year — more than any other power plant in the U.S.",
+      "offset": 408
      },
      {
-      "sentence": "Amid legal battles, Suno says it will start watermarking songs",
-      "offset": 3455
+      "sentence": "Historian Jill Lepore says Silicon Valley misreads science fiction and undermines democracy",
+      "offset": 1854
+     },
+     {
+      "sentence": "Historian Jill Lepore says Silicon Valley misreads science fiction and undermines democracy",
+      "offset": 2408
      }
     ],
     "unnamed": []
@@ -333,12 +292,120 @@
   "links": {
    "primary": 0,
    "subject_own": 0,
-   "other": 8
+   "other": 1
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 10,
+   "total": 4,
+   "with_named_source": 2
+  },
+  "motive_tier": 3,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/": {
+  "headline": "OpenAI acquires presentation startup NextSlide",
+  "entity": "OpenAI",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 2,
+   "to_others": 3,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "NextSlide recently announced that it’s joining OpenAI, with the presentation startup’s team members now working on ChatGPT.",
+      "offset": 157
+     },
+     {
+      "sentence": "The ultimate goal, Beshry said, was “to make visual communication more accessible and help more people express their ideas clearly.” So by joining OpenAI, the team will “continue pursuing that same mission: building AI products that help people create, communicate, and turn their ideas into meaningf",
+      "offset": 498
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "In a note on LinkedIn , Beshry said the announcement is coming “a few months late,” as the acquisition took place “earlier this year.”",
+      "offset": 860
+     },
+     {
+      "sentence": "Historian Jill Lepore says Silicon Valley misreads science fiction and undermines democracy",
+      "offset": 1460
+     },
+     {
+      "sentence": "Historian Jill Lepore says Silicon Valley misreads science fiction and undermines democracy",
+      "offset": 2164
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 2
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 2,
    "with_named_source": 0
+  },
+  "motive_tier": 3,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/977124/amazon-data-center-worst-polluting-power-plant": {
+  "headline": "An Amazon data center could have the worst polluting power plant in the country",
+  "entity": "Amazon",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 3,
+   "to_others": 2,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "To power its new West Texas data center, Amazon is investing in the construction of a new power plant that could be one of the largest single producers of greenhouse gases in the US, according to the New York Times .",
+      "offset": 610
+     },
+     {
+      "sentence": "Amazon has confirmed that it purchased the site and plans to purchase power from GW Ranch.",
+      "offset": 1504
+     },
+     {
+      "sentence": "Amazon spokeswoman Margaret Callahan told the New York Times that, “The world looks different now than when we co-founded the climate pledge,” but that, “our commitment hasn’t changed.”",
+      "offset": 2528
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "According to Cleanview , which tracks data centers and their associated power projects, GW Ranch received a permit from Texas allowing for the emission of up to 33 million tons of CO2, more than even the largest coal plant in the country.",
+      "offset": 1118
+     },
+     {
+      "sentence": "49ers coach says his Tesla was on Autopilot when he crashed",
+      "offset": 4194
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 3
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 9,
+   "with_named_source": 1
   },
   "motive_tier": 3,
   "tier_basis": "source-type",
@@ -400,7 +467,15 @@
   "motive_tier": 3,
   "tier_basis": "source-type",
   "chain": {
-   "cites": [],
+   "cites": [
+    {
+     "url": "https://youtube.com/watch",
+     "name": "youtube.com",
+     "tier": 3,
+     "entity": "OpenAI",
+     "headline": "70% of AI revenue comes from OpenAI and Anthropic [video]"
+    }
+   ],
    "cited_by": []
   }
  },
@@ -584,59 +659,6 @@
   "figures": {
    "total": 5,
    "with_named_source": 2
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://www.theverge.com/ai-artificial-intelligence/976289/suno-ai-music-spam-watermark": {
-  "headline": "Suno shares plans to combat spammy AI music",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 5,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "Suno announced plans to implement a new watermarking technology and download policy to limit the spread of spammy AI tracks and increase transparency.",
-      "offset": 609
-     },
-     {
-      "sentence": "Shulman says it aligns with “ emerging industry standards ” that will make it easier to identify Suno-generated content.",
-      "offset": 1015
-     },
-     {
-      "sentence": "He also says the company is aiming to partner with “distribution platforms on combatting fraud and misuse .”",
-      "offset": 1136
-     },
-     {
-      "sentence": "Last year, the company also announced it would change its download policy following a settlement with Warner Music Group (WMG), and in the wake of a similar settlement between WMG and Udio that ended downloads of outputs from that platform entirely.",
-      "offset": 1245
-     },
-     {
-      "sentence": "The company hasn’t offered specifics yet, but at the time it announced the plan last year, it said that downloads would be limited to paying subscribers, and users would be limited to a certain number of downloads each month.",
-      "offset": 1495
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 1
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 3,
-   "with_named_source": 0
   },
   "motive_tier": 3,
   "tier_basis": "source-type",
@@ -1240,19 +1262,53 @@
    "cited_by": []
   }
  },
- "https://social.treehouse.systems/@mgorny/117058483039362779": {
-  "headline": "Gentoo bugzilla closed due AI bot scraper overload",
+ "https://www.abc.net.au/news/2026-08-10/ai-assistant-hacks-gym-website-aus-cyber-attack/107007986": {
+  "headline": "AI assistant hacks gym website in first known Australian autonomous cyber attack",
   "entity": "",
   "entity_usable": false,
   "fetched": true,
   "attribution": {
    "to_subject": 0,
-   "to_others": 0,
-   "unnamed": 0,
+   "to_others": 19,
+   "unnamed": 2,
    "spans": {
     "to_subject": [],
-    "to_others": [],
-    "unnamed": []
+    "to_others": [
+     {
+      "sentence": "\"I was just sitting on the couch thinking, 'Gee, this is a chore,'\" he said.",
+      "offset": 2219
+     },
+     {
+      "sentence": "Minutes later, his AI agent reported it had discovered a way to book Andrew into classes several weeks in advance, far beyond what was supposed to be possible.",
+      "offset": 2296
+     },
+     {
+      "sentence": "The agent came back and told Andrew that it had kicked another gym-goer off the list as part of the testing of its capabilities.",
+      "offset": 2591
+     },
+     {
+      "sentence": "The company behind the gym-booking software told the ABC it did not discuss specific security matters.",
+      "offset": 3052
+     },
+     {
+      "sentence": "Mr Simpson-Young says AI agents might choose methods their users did not explicitly ask for or expect.",
+      "offset": 4253
+     },
+     {
+      "sentence": "Bill Simpson-Young, co-founder and chief executive of Australian AI safety research organisation Gradient Institute, said the autonomy of AI agents created more opportunities for systems to choose methods their users did not expect.",
+      "offset": 4384
+     }
+    ],
+    "unnamed": [
+     {
+      "sentence": "\"Someone might be asking an agent to do something quite innocent,\" he said.",
+      "offset": 4617
+     },
+     {
+      "sentence": "Mr Delaney said existing laws could apply in some circumstances, including where a person acted recklessly, or a business supplied a defective service.",
+      "offset": 7988
+     }
+    ]
    }
   },
   "links": {
@@ -1262,7 +1318,7 @@
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 0,
+   "total": 4,
    "with_named_source": 0
   },
   "motive_tier": 3,
@@ -1272,118 +1328,8 @@
    "cited_by": []
   }
  },
- "https://simonwillison.net/2026/Aug/7/openai-timeline/": {
-  "headline": "Timeline of the OpenAI accidental attack against Hugging Face",
-  "entity": "OpenAI",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 2,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "Hugging Face told the next bit of the story already.",
-      "offset": 5014
-     },
-     {
-      "sentence": "Hugging Face told them they were already revoked ...",
-      "offset": 5927
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 9
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 5,
-   "with_named_source": 0
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://www.databricks.com/blog/managing-ai-coding-costs-scale": {
-  "headline": "Managing AI Coding Costs at Scale",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 0,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 6
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 9,
-   "with_named_source": 0
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code": {
-  "headline": "Oracle bans AI-generated code from OpenJDK",
-  "entity": "OpenJDK",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 0,
-   "unnamed": 1,
-   "spans": {
-    "to_subject": [],
-    "to_others": [],
-    "unnamed": [
-     {
-      "sentence": "The open-source Java project steward said developers can use LLMs privately for debugging and reviewing code but cannot submit AI-generated material to repositories, pull requests, or other project channels.",
-      "offset": 251
-     }
-    ]
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 1
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 1,
-   "with_named_source": 0
-  },
-  "motive_tier": 3,
-  "tier_basis": "source-type",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://www.fastcompany.com/91576086/ai-psychosis-is-the-new-leadership-blind-spot-ai-leadership-blind-spots": {
-  "headline": "AI psychosis is the new leadership blind spot",
+ "https://www.economist.com/britain/2026/08/06/the-tragedy-of-the-commons-ai-edition": {
+  "headline": "The tragedy of the commons, AI edition",
   "entity": "",
   "entity_usable": false,
   "fetched": false,
@@ -1414,30 +1360,25 @@
    "cited_by": []
   }
  },
- "https://mccormick.cx/news/entries/why-i-won-t-read-llm-authored-fiction": {
-  "headline": "I won't read LLM authored fiction",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
+ "https://ai-updates.net/an-openai-strategist-says-ai-labs-should-rival-government-power/": {
+  "headline": "An OpenAI Strategist Says AI Labs Should Rival Government Power",
+  "entity": "OpenAI",
+  "entity_usable": true,
+  "fetched": false,
   "attribution": {
    "to_subject": 0,
-   "to_others": 1,
+   "to_others": 0,
    "unnamed": 0,
    "spans": {
     "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "This is well established fact and can even be used to a degree for fingerprinting who wrote a piece of text.",
-      "offset": 760
-     }
-    ],
+    "to_others": [],
     "unnamed": []
    }
   },
   "links": {
    "primary": 0,
    "subject_own": 0,
-   "other": 1
+   "other": 0
   },
   "primary_link_examples": [],
   "figures": {
@@ -1451,43 +1392,217 @@
    "cited_by": []
   }
  },
- "https://www.federalregister.gov/documents/2026/07/10/2026-13928/proposed-information-collection-atus-artificial-intelligence-ai-questions": {
-  "headline": "Proposed Information Collection; ATUS Artificial Intelligence (AI) Questions",
-  "entity": "Bureau of Labor Statistics",
+ "https://www.cnbc.com/2026/08/09/israeli-startup-irregular-linked-to-ai-hacks-openai-anthropic-meta.html": {
+  "headline": "Israeli startup was linked to rogue AI hacks at OpenAI, Anthropic and Meta",
+  "entity": "OpenAI",
   "entity_usable": true,
   "fetched": true,
   "attribution": {
-   "to_subject": 0,
-   "to_others": 1,
+   "to_subject": 5,
+   "to_others": 20,
    "unnamed": 0,
    "spans": {
-    "to_subject": [],
+    "to_subject": [
+     {
+      "sentence": "Irregular \"will issue a full retrospective once we have all the facts,\" a spokesperson said.",
+      "offset": 396
+     },
+     {
+      "sentence": "OpenAI said in a blog post on Aug.",
+      "offset": 1639
+     },
+     {
+      "sentence": "A spokesperson said in a statement this week that the company learned about the matter from Irregular and is investigating.",
+      "offset": 2157
+     },
+     {
+      "sentence": "Meta \"will issue a full retrospective once we have all the facts,\" the spokesperson said.",
+      "offset": 2281
+     },
+     {
+      "sentence": "Anthropic and OpenAI said in public statements that they're continuing to work with Irregular and are supporting the ensuing review.",
+      "offset": 7244
+     }
+    ],
     "to_others": [
      {
-      "sentence": "Evaluate the accuracy of the agency's estimate of the burden of the proposed collection of information, including the validity of the methodology and assumptions used.",
-      "offset": 11870
+      "sentence": "4 that Irregular's testing ground contained an unspecified \"misconfiguration,\" that \"allowed models to access the public internet.\" Anthropic said in its post a week prior that the company notified Irregular a few days after it began analyzing data that its Claude model may have \"accessed the intern",
+      "offset": 1674
+     },
+     {
+      "sentence": "Irregular told CNBC in a statement that the incidents were all derived from the \"same evaluation-environment issue\" that was first disclosed by Anthropic, and that the company is developing a white paper \"to share best practices for containment and securely running cyber evals.\"",
+      "offset": 2372
+     },
+     {
+      "sentence": "The situation \"did not involve a sandbox escape or a sophisticated cyber action,\" the company said, adding that \"there are no current open issues.\"",
+      "offset": 2652
+     },
+     {
+      "sentence": "Cyber spend will benefit from AI anxiety over the next couple quarters, says Jefferies' Joseph Gallo",
+      "offset": 2828
+     },
+     {
+      "sentence": "Those players include experts in data training and annotation, running evaluations to deduce a model's capabilities, and operating security tests intended to find weak spots that bad actors could exploit, said Sundeep Bhimireddy, the head of AI at enterprise startup Von.",
+      "offset": 3216
+     },
+     {
+      "sentence": "Irregular is one of the few entities with the technical chops required to help foundation model makers conduct cutting-edge security testing, Bhimireddy said.",
+      "offset": 3488
      }
     ],
     "unnamed": []
    }
   },
   "links": {
-   "primary": 1,
-   "subject_own": 0,
-   "other": 6
+   "primary": 0,
+   "subject_own": 1,
+   "other": 5
   },
-  "primary_link_examples": [
-   "https://public-inspection.federalregister.gov/2026-13928.pdf?1783601109"
-  ],
+  "primary_link_examples": [],
   "figures": {
-   "total": 14,
+   "total": 7,
+   "with_named_source": 3
+  },
+  "motive_tier": 3,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [
+    {
+     "url": "https://anthropic.com/news/investigating-incidents-cybersecurity-evals",
+     "name": "anthropic.com",
+     "tier": 5,
+     "entity": "Anthropic",
+     "headline": "Investigating three real-world incidents in our cybersecurity evaluations"
+    }
+   ],
+   "cited_by": []
+  }
+ },
+ "https://www.tomshardware.com/tech-industry/data-centers/amazon-secretly-circumvents-community-vote-for-massive-ai-data-center-45-year-old-rules-lock-gilroy-residents-out-of-public-comment-window": {
+  "headline": "Amazon circumvents Gilroy community vote for AI data center",
+  "entity": "Amazon",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 4,
+   "to_others": 4,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "The publication noted that some Amazon officials were frustrated by slow permitting progress, which was delayed by at least one year.",
+      "offset": 1005
+     },
+     {
+      "sentence": "Roger Wehner, Amazon Web Services vice president of economic development, told WSJ that the site had gone through a long approval process, which required public notices and public-comment periods.",
+      "offset": 1266
+     },
+     {
+      "sentence": "Gilroy City Mayor Greg Bozzo said that other industrial projects that had a similar scale to the Amazon data center have previously been approved without resistance.",
+      "offset": 1799
+     },
+     {
+      "sentence": "The tech giant also said that it’s engaging more with the community, with Amazon officials claiming that they met residents directly and even hosted an open house where people can ask questions and leave comments.",
+      "offset": 2383
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "However, when Gilroy resident Rosa Rodriguez wanted to state her concern about the damage a data center can do to a region suffering from drought, she was told that the comment period had already lapsed in 2024, long before data centers became a hot topic across the country .",
+      "offset": 1463
+     },
+     {
+      "sentence": "“It didn’t bother them that a food-distribution center came to Gilroy without their engagement, but now it bothers them that a data center is coming to Gilroy without them having the possibility of engagement,” Bozzo said.",
+      "offset": 1966
+     },
+     {
+      "sentence": "Still, he conceded the people are now more aware about data center developments and added, “We…have an opportunity to change the way that we do business in Gilroy.",
+      "offset": 2189
+     },
+     {
+      "sentence": "“It didn’t bother them that a food-distribution center came to Gilroy without their engagement, but now it bothers them that a data center is coming to Gilroy without them having the possibility of engagement,” Bozzo said.",
+      "offset": 5846
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 11
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 6,
    "with_named_source": 0
   },
-  "motive_tier": 1,
+  "motive_tier": 3,
   "tier_basis": "source-type",
   "chain": {
    "cites": [],
    "cited_by": []
+  }
+ },
+ "https://www.youtube.com/watch?v=68X8yEatepQ": {
+  "headline": "70% of AI revenue comes from OpenAI and Anthropic [video]",
+  "entity": "OpenAI",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 1
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 1,
+   "with_named_source": 0
+  },
+  "motive_tier": 3,
+  "tier_basis": "source-type",
+  "chain": {
+   "cites": [],
+   "cited_by": [
+    {
+     "url": "https://techcrunch.com/2026/08/09/historian-jill-lepore-says-the-tech-industry-is-led-by-bad-readers-who-are-undermining-democracy",
+     "name": "techcrunch.com",
+     "tier": 3,
+     "entity": "",
+     "headline": "Historian Jill Lepore says Silicon Valley misreads science fiction and undermines democracy"
+    },
+    {
+     "url": "https://theverge.com/ai-artificial-intelligence/976801/fenix-flexin-rubberz-ai-song-treblo",
+     "name": "theverge.com",
+     "tier": 3,
+     "entity": "",
+     "headline": "Fenix Flexin isn’t even denying using AI to make ‘Rubberz’ anymore"
+    },
+    {
+     "url": "https://cset.georgetown.edu/article/ai-models-engage-in-harmful-activity-directed-at-real-people-sparking-fears-safeguards-not-keeping-up",
+     "name": "cset.georgetown.edu",
+     "tier": 2,
+     "entity": "",
+     "headline": "AI models engage in ‘harmful activity directed at real people’, sparking fears safeguards not keeping up"
+    },
+    {
+     "url": "https://news.mit.edu/2026/daniela-rus-receives-bavarian-minister-presidents-high-tech-prize-0730",
+     "name": "news.mit.edu",
+     "tier": 5,
+     "entity": "",
+     "headline": "Daniela Rus receives Bavarian Minister-President's High-Tech Prize"
+    }
+   ]
   }
  },
  "https://www.nist.gov/news-events/news/2026/08/nist-joins-national-genesis-mission-accelerate-ai-innovation": {
@@ -1853,7 +1968,15 @@
   "motive_tier": 2,
   "tier_basis": "source-type",
   "chain": {
-   "cites": [],
+   "cites": [
+    {
+     "url": "https://youtube.com/watch",
+     "name": "youtube.com",
+     "tier": 3,
+     "entity": "OpenAI",
+     "headline": "70% of AI revenue comes from OpenAI and Anthropic [video]"
+    }
+   ],
    "cited_by": []
   }
  },
@@ -2693,7 +2816,15 @@
   "motive_tier": 5,
   "tier_basis": "source-type",
   "chain": {
-   "cites": [],
+   "cites": [
+    {
+     "url": "https://youtube.com/watch",
+     "name": "youtube.com",
+     "tier": 3,
+     "entity": "OpenAI",
+     "headline": "70% of AI revenue comes from OpenAI and Anthropic [video]"
+    }
+   ],
    "cited_by": []
   }
  },
@@ -3301,6 +3432,53 @@
   "tier_basis": "publisher is the subject (Anthropic)",
   "chain": {
    "cites": [],
+   "cited_by": [
+    {
+     "url": "https://techcrunch.com/2026/08/09/the-ai-safety-test-is-becoming-a-safety-risk",
+     "name": "techcrunch.com",
+     "tier": 3,
+     "entity": "",
+     "headline": "The AI safety test is becoming a safety risk"
+    },
+    {
+     "url": "https://cnbc.com/2026/08/09/israeli-startup-irregular-linked-to-ai-hacks-openai-anthropic-meta.html",
+     "name": "cnbc.com",
+     "tier": 3,
+     "entity": "OpenAI",
+     "headline": "Israeli startup was linked to rogue AI hacks at OpenAI, Anthropic and Meta"
+    }
+   ]
+  }
+ },
+ "https://openai.com/index/chatgpt-for-academic-researchers/": {
+  "headline": "Accelerating scientific discovery with ChatGPT for Academic Researchers",
+  "entity": "OpenAI",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 3
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 15,
+   "with_named_source": 0
+  },
+  "motive_tier": 5,
+  "tier_basis": "publisher is the subject (OpenAI)",
+  "chain": {
+   "cites": [],
    "cited_by": []
   }
  },
@@ -3337,38 +3515,6 @@
   "figures": {
    "total": 23,
    "with_named_source": 1
-  },
-  "motive_tier": 5,
-  "tier_basis": "publisher is the subject (OpenAI)",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://openai.com/index/chatgpt-for-academic-researchers/": {
-  "headline": "Accelerating scientific discovery with ChatGPT for Academic Researchers",
-  "entity": "OpenAI",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 0,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 3
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 15,
-   "with_named_source": 0
   },
   "motive_tier": 5,
   "tier_basis": "publisher is the subject (OpenAI)",

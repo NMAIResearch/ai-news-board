@@ -2,6 +2,18 @@
 
 Dated, descriptive, newest first. Method changes and defects found, not every commit.
 
+## 2026-08-10
+
+**Cross-lab assistance is now disclosed.** The first-exposure line, method panel, footer,
+README and tier map name the distinct Anthropic and OpenAI roles. The OpenAI model assisted
+with feed-pipeline code and deployment checks. It did not assign the refreshed item labels or
+revise motive tiers. OpenAI is marked as a direct conflict because it is also a subject on the
+board.
+
+**Defect: generated cards contained whitespace-only lines.** Empty optional card fields left
+indentation in `index.html`, which failed `git diff --check`. The renderer now strips trailing
+whitespace from every generated line before writing the page.
+
 ## 2026-08-08
 
 **Defect: modification and submission times were displayed as article dates.** The vendor
