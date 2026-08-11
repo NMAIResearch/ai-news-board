@@ -25,7 +25,7 @@ asks for attention.
 RANKING SIGNALS, all computable, no judgement:
     stated figure or date in the headline   a claim with a number is checkable later
     claim_type == target                    carries its own deadline
-    motive_tier == 5                        the party selling the thing said it
+    source_tier == 5                        a vendor or press office published it
     has a reality anchor                    the portfolio already holds a base rate
 
 OUTCOME VOCABULARY (set by hand, in archive.json):
@@ -113,7 +113,7 @@ def capture():
         u = url_of(it)
         if not u:
             continue
-        tiers = [int(s["motive_tier"]) for s in it.get("sources", []) if s.get("motive_tier")]
+        tiers = [int(s["source_tier"]) for s in it.get("sources", []) if s.get("source_tier")]
         row = {
             "headline": it.get("headline", ""),
             "entity": it.get("entity", ""),

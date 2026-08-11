@@ -1,8 +1,18 @@
 {
-  "_about": "The contestable tier registry. Every motive tier on the board comes from here, so the judgement is public and forkable, not hidden. Tier is claim-relative and based on an OBSERVABLE fact (what the entity sells / is), NOT a quality or truth verdict. Contest any cell: the basis is stated so you can argue it.",
+  "_about": "The executable tier registry. Source-class defaults come from source_types. A claim-relative tier is shown only when article_evidence.py resolves a publisher relationship to the subject. Unresolved relationships remain visibly unresolved rather than inheriting a source-class number under a claim-relative label.",
   "contest": {
     "email": "NMAIResearch@proton.me",
     "how": "Email a cell you dispute with the observable fact you think is wrong, or fork this file. Tiers change on evidence, not on disagreement with the conclusion."
+  },
+  "source_types": {
+    "primary-record": {"tier": 1, "label": "primary record", "basis": "record produced under a legal, statutory or official measurement process"},
+    "independent": {"tier": 2, "label": "research institute", "basis": "research institute or academic source whose published method is the product"},
+    "trade-press": {"tier": 3, "label": "trade press", "basis": "industry reporting funded by access, subscriptions or attention"},
+    "aggregator": {"tier": 3, "label": "aggregator", "basis": "distribution layer rather than the originating evidence"},
+    "tool-vendor": {"tier": 4, "label": "tool or data vendor", "basis": "sells tooling, data or research access connected to the topic"},
+    "vendor-own": {"tier": 5, "label": "vendor publication", "basis": "publishes about products, capabilities or markets in which the publisher participates"},
+    "press-office": {"tier": 5, "label": "press office", "basis": "institution publicising its own work"},
+    "other": {"tier": 3, "label": "unclassified publisher", "basis": "publisher class has not been resolved more specifically"}
   },
   "entities": [
     {"entity": "SEC / court / regulator filings", "tier": 1, "basis": "primary record produced under legal or statutory process; least incentive to shade a specific number"},
@@ -25,6 +35,6 @@
     {"entity": "Salesforce / Amazon / Snap (on own AI-efficiency)", "tier": 5, "basis": "adopters with an investor 'we are AI-efficient' narrative and a layoff justification; tier 5 on their own usage claims"},
     {"entity": "NM AI Research (the author)", "tier": 2, "basis": "independent, no product tied to a market call, publishes reproducible CC-BY. Scored here rather than omitted: a motive map that exempts its own author is incomplete", "self": true},
     {"entity": "The Anthropic model that helped build this", "tier": 5, "basis": "a frontier-lab model helped assign these tiers, including the tiers on Anthropic and its rivals. Not exempt from its own map; corroborate its most consequential calls against a non-model source", "coi": true, "self": true},
-    {"entity": "The OpenAI model that helped maintain this", "tier": 5, "basis": "a frontier-lab model assisted with feed-pipeline code and deployment checks. It did not assign the refreshed item labels or revise motive tiers. OpenAI is a subject on the board, so its maintenance role is disclosed rather than exempted", "coi": true, "self": true}
+    {"entity": "The OpenAI model that helped maintain this", "tier": 5, "basis": "a frontier-lab model implemented the current source-class split, label provenance, URL identity checks and anchor rules. OpenAI is a subject on the board, so this role is disclosed and is not treated as an independent audit of OpenAI-related output", "coi": true, "self": true}
   ]
 }

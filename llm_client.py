@@ -12,8 +12,8 @@ Constants are overridable by environment variable. The comments record hard-won 
 import json, os, re, time, urllib.request
 
 HOST = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
-MODEL = os.environ.get("QWEN_MODEL", "qwen2.5:14b")
-NUM_CTX = int(os.environ.get("QWEN_CTX", "32768"))
+MODEL = os.environ.get("LABEL_MODEL", os.environ.get("QWEN_MODEL", "gemma4:12b"))
+NUM_CTX = int(os.environ.get("LABEL_CTX", os.environ.get("QWEN_CTX", "32768")))
 # Output cap. Without it the only stop condition is filling NUM_CTX: a looping reader runs
 # to 16k-28k tokens for a ~120-token answer (glm-4.7-flash, 5 batches at 11-19 min each,
 # truncated and unparseable, 2026-07-30). 6000 clears the largest observed successful
@@ -22,10 +22,11 @@ NUM_CTX = int(os.environ.get("QWEN_CTX", "32768"))
 # and glm batch. A truncated response is still unparseable; this bounds a runaway's cost.
 NUM_PREDICT = int(os.environ.get("LABEL_NUM_PREDICT", "6000"))
 TIMEOUT = int(os.environ.get("LABEL_TIMEOUT", "300"))
-# Do NOT downgrade the reader models to make this faster (his call, 2026-07-30). The 27-30B
-# readers exceed 16 GB VRAM (RTX 4070 Ti SUPER) and spill to system RAM; the machine has
-# 64 GB DDR5 provisioned for exactly that. Slow runs are accepted; a weaker reader is not.
-# Batching is the fix for the timeouts, not a smaller model.
+# The default changed after a measured local check on 2026-08-11. Gemma 4 12B returned valid
+# structured output for 6/6 single-item requests, N=6, in 9-60 seconds each. Qwen 3.5 9B
+# returned valid output for 4/8 two-item requests, N=8. Qwen 3.6 27B returned valid labels
+# for 40/59 escalated items, N=59, and spilled into system RAM. These measurements establish
+# speed and output compliance only. They do not establish label accuracy.
 
 # denominator vocab: model output -> stored value
 DENOM = {"y": "Y", "partial": "partial", "n": "N"}

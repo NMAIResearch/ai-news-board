@@ -8,7 +8,8 @@ reuses his TRUSTED / CAUTION / BLOCKED judgements WITHOUT touching watch_routine
 and WITHOUT importing his interest watchlist, so the board's topic intake stays
 neutral (broad AI news in) while gaining his source-quality axis.
 
-Reliability (track record) is a SECOND axis, orthogonal to motive_tier (incentive):
+Reliability (track record) is a SECOND axis, orthogonal to source class and any resolved
+claim relationship:
 the two are kept separate so a source's past accuracy is not confused with its
 incentive on a given claim. Blocked sources are dropped;
 trusted get a star, caution get a warning plus the note. Matches on source name +
@@ -20,9 +21,18 @@ Run order:  fetch_feeds.py  ->  apply_ratings.py  ->  build.py
 import json, os
 from pathlib import Path
 
+from url_identity import hostname
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 FEED = os.path.join(HERE, "feed_items.json")
 SOURCES = Path.home() / "Desktop" / "Scripts" / "sources.md"
+TIER_MAP = os.path.join(HERE, "tier_map.json")
+
+
+def source_tiers(path=TIER_MAP):
+    with open(path, encoding="utf-8") as handle:
+        return {key: int(value["tier"])
+                for key, value in json.load(handle)["source_types"].items()}
 
 
 def read_sources(p):
@@ -54,15 +64,29 @@ def rate(hay, src):
     return "ok", ""
 
 
+def source_identity(item):
+    """Publisher names and hostnames only, excluding article paths and headlines."""
+    return " ".join([source.get("name", "") for source in item.get("sources", [])]
+                    + [hostname(source.get("url", ""))
+                       for source in item.get("sources", [])]).lower()
+
+
 def main():
     if not os.path.isfile(FEED):
         print("no feed_items.json; run fetch_feeds.py first"); return
     src = read_sources(SOURCES)
+    tiers = source_tiers()
     d = json.load(open(FEED, encoding="utf-8"))
     kept, dropped = [], 0
     for it in d.get("items", []):
-        hay = " ".join([s.get("name", "") for s in it["sources"]]
-                       + [s.get("url", "") for s in it["sources"]]).lower()
+        for source in it.get("sources", []):
+            source["source_tier"] = tiers.get(source.get("source_type", "other"),
+                                               tiers["other"])
+            source.pop("motive_tier", None)
+        # Match the publisher identity, never the URL path. Article slugs repeat names from
+        # the headline, so a path containing "deepmind" previously promoted reporting about
+        # DeepMind to DeepMind's own trusted-source rating.
+        hay = source_identity(it)
         verdict, note = rate(hay, src)
         if verdict == "blocked":
             dropped += 1

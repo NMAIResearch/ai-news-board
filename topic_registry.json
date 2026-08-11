@@ -1,0 +1,223 @@
+{
+  "_about": "Executable topic and anchor registry. Topics may be plural and require headline or publisher-tag evidence; article spans can strengthen but cannot create a topic alone. Automatic portfolio anchors require headline evidence and publish only when one topic clears its threshold without a tie. Article-linked primaries are added separately and never described as supporting the headline merely because the article links to them.",
+  "topics": {
+    "water": {
+      "label": "Water",
+      "topic_min_score": 2,
+      "anchor_min_score": 4,
+      "rules": [
+        {"phrase": "water", "score": 2}, {"phrase": "aquifer", "score": 3},
+        {"phrase": "wastewater", "score": 3}, {"phrase": "gallon", "score": 2},
+        {"phrase": "water consumption", "score": 3}, {"phrase": "water use", "score": 3}
+      ],
+      "exclude": ["watermark", "underwater", "chums the waters"],
+      "anchors": [{
+        "kind": "portfolio synthesis",
+        "label": "AI Data-Centre Water Tracker",
+        "note": "Datacentre water claims require a location, basis year and on-site versus off-site boundary.",
+        "url": "https://doi.org/10.5281/zenodo.21318960"
+      }]
+    },
+    "self_improvement": {
+      "label": "Self-improvement",
+      "topic_min_score": 3,
+      "anchor_min_score": 6,
+      "rules": [
+        {"phrase": "self-improvement", "score": 3}, {"phrase": "self improvement", "score": 3},
+        {"phrase": "recursive self-improvement", "score": 4}, {"phrase": "automate ai research", "score": 4},
+        {"phrase": "ai r&d", "score": 3}, {"phrase": "ai r and d", "score": 3}
+      ],
+      "exclude": [],
+      "anchors": [{
+        "kind": "portfolio synthesis",
+        "label": "AI Research-Automation Scorecard, research-loop layer",
+        "note": "Separates an observed tool-assisted saving from autonomous recursive improvement.",
+        "url": "https://doi.org/10.5281/zenodo.21325372"
+      }]
+    },
+    "code_automation": {
+      "label": "Code automation",
+      "topic_min_score": 2,
+      "anchor_min_score": 6,
+      "rules": [
+        {"phrase": "code automation", "score": 4}, {"phrase": "ai-written code", "score": 4},
+        {"phrase": "writes code", "score": 3}, {"phrase": "coding productivity", "score": 3},
+        {"phrase": "software developer productivity", "score": 3},
+        {"regex": "(?:\\d+(?:\\.\\d+)?\\s*(?:%|per cent)|most|all).*\\bcode\\b|\\bcode\\b.*(?:\\d+(?:\\.\\d+)?\\s*(?:%|per cent)|most|all)", "score": 4},
+        {"phrase": "code", "score": 1}, {"phrase": "coding", "score": 1},
+        {"phrase": "programmer", "score": 1}, {"phrase": "software engineer", "score": 2},
+        {"phrase": "pull request", "score": 2}
+      ],
+      "exclude": ["remote code execution", "code execution", "source code vulnerability"],
+      "headline_exclude": ["remote code execution", "code execution", "source code vulnerability"],
+      "anchors": [{
+        "kind": "portfolio synthesis",
+        "label": "AI Research-Automation Scorecard, code layer",
+        "note": "Tests whether a code-share claim defines its denominator, can be reproduced and has an independent check.",
+        "url": "https://doi.org/10.5281/zenodo.21325372"
+      }]
+    },
+    "work_automation": {
+      "label": "Work automation",
+      "topic_min_score": 3,
+      "anchor_min_score": 6,
+      "rules": [
+        {"phrase": "replace workers", "score": 4}, {"phrase": "automate the work", "score": 4},
+        {"phrase": "job cut", "score": 3}, {"phrase": "job loss", "score": 3},
+        {"phrase": "layoff", "score": 2}, {"phrase": "headcount", "score": 2},
+        {"phrase": "workforce", "score": 2}, {"phrase": "redundancy", "score": 2}
+      ],
+      "exclude": [],
+      "anchors": [{
+        "kind": "portfolio synthesis",
+        "label": "AI Research-Automation Scorecard, work layer",
+        "note": "Keeps whole-function and headcount claims separate from code-production claims.",
+        "url": "https://doi.org/10.5281/zenodo.21325372"
+      }]
+    },
+    "power_demand": {
+      "label": "Power demand",
+      "topic_min_score": 3,
+      "anchor_min_score": 6,
+      "rules": [
+        {"phrase": "data center", "score": 3}, {"phrase": "data centre", "score": 3},
+        {"phrase": "datacenter", "score": 3}, {"phrase": "gigawatt", "score": 3},
+        {"phrase": "megawatt", "score": 3}, {"phrase": "electricity", "score": 2},
+        {"phrase": "substation", "score": 2}, {"phrase": "turbine", "score": 2},
+        {"phrase": "power plant", "score": 2}, {"phrase": "grid", "score": 2}
+      ],
+      "exclude": [],
+      "anchors": [{
+        "kind": "portfolio synthesis",
+        "label": "Contingent vs Robust AI Power Demand",
+        "note": "Separates announced capacity from contracted and delivered demand.",
+        "url": "https://doi.org/10.5281/zenodo.20559430"
+      }]
+    },
+    "energy_forecast": {
+      "label": "Energy forecast",
+      "topic_min_score": 4,
+      "anchor_min_score": 6,
+      "rules": [
+        {"phrase": "energy demand", "score": 3}, {"phrase": "electricity demand", "score": 3},
+        {"phrase": "power consumption", "score": 3}, {"phrase": "energy forecast", "score": 4},
+        {"phrase": "power forecast", "score": 4}, {"phrase": "terawatt", "score": 3}
+      ],
+      "exclude": [],
+      "anchors": [{
+        "kind": "portfolio synthesis",
+        "label": "AI Energy-Demand Forecast Scorecard",
+        "note": "Compares forecast assumptions and reproducibility rather than repeating a point estimate.",
+        "url": "https://doi.org/10.5281/zenodo.20572928"
+      }]
+    },
+    "cost": {
+      "label": "Cost and spend",
+      "topic_min_score": 3,
+      "anchor_min_score": 6,
+      "rules": [
+        {"phrase": "capex", "score": 3}, {"phrase": "capital expenditure", "score": 3},
+        {"phrase": "funding round", "score": 3}, {"phrase": "unit economics", "score": 3},
+        {"phrase": "spend", "score": 2}, {"phrase": "spending", "score": 2},
+        {"regex": "\\binvest(?:s|ed|ing|ment|ments)?\\b", "score": 2},
+        {"phrase": "investment", "score": 2},
+        {"phrase": "valuation", "score": 2}, {"phrase": "revenue", "score": 2},
+        {"phrase": "billion", "score": 1}, {"phrase": "trillion", "score": 1}
+      ],
+      "exclude": [],
+      "anchors": [{
+        "kind": "portfolio synthesis",
+        "label": "AI Cost Watch",
+        "note": "Checks the unit, period and announced-versus-delivered boundary behind AI spending claims.",
+        "url": "https://doi.org/10.5281/zenodo.20541643"
+      }]
+    },
+    "chips": {
+      "label": "Chips and hardware",
+      "topic_min_score": 3,
+      "anchor_min_score": 6,
+      "rules": [
+        {"phrase": "semiconductor", "score": 3}, {"phrase": "foundry", "score": 3},
+        {"phrase": "wafer", "score": 3}, {"phrase": "lithography", "score": 3},
+        {"phrase": "hbm", "score": 3}, {"phrase": "gpu", "score": 2},
+        {"phrase": "tpu", "score": 2}, {"phrase": "chip packaging", "score": 3},
+        {"phrase": "chip", "score": 2}, {"phrase": "accelerator", "score": 2},
+        {"phrase": "apple silicon", "score": 3}
+      ],
+      "exclude": ["silicon valley"],
+      "anchors": [{
+        "kind": "portfolio synthesis",
+        "label": "The AI Capital-Infrastructure Barbell",
+        "note": "Distinguishes a named supply bottleneck from one shown to be binding.",
+        "url": "https://doi.org/10.5281/zenodo.20586863"
+      }]
+    },
+    "regulation": {
+      "label": "Regulation and legal",
+      "topic_min_score": 3,
+      "rules": [
+        {"phrase": "regulation", "score": 2}, {"phrase": "lawsuit", "score": 2},
+        {"phrase": "antitrust", "score": 3}, {"phrase": "copyright", "score": 3},
+        {"phrase": "eu ai act", "score": 4}, {"phrase": "federal register", "score": 3},
+        {"phrase": "subpoena", "score": 3}, {"phrase": "legislation", "score": 2}
+      ],
+      "exclude": [],
+      "anchors": []
+    },
+    "safety": {
+      "label": "Safety and security",
+      "topic_min_score": 3,
+      "rules": [
+        {"phrase": "ai safety", "score": 3}, {"phrase": "cyber", "score": 2},
+        {"phrase": "jailbreak", "score": 3},
+        {"phrase": "guardrail", "score": 2}, {"phrase": "red team", "score": 2},
+        {"phrase": "hallucination", "score": 2}, {"phrase": "vulnerability", "score": 2},
+        {"phrase": "deepfake", "score": 2}, {"phrase": "privacy", "score": 2},
+        {"phrase": "surveillance", "score": 2}, {"phrase": "exploit", "score": 1}
+      ],
+      "exclude": ["gig workers are endlessly exploited"],
+      "anchors": []
+    },
+    "models": {
+      "label": "Model releases",
+      "topic_min_score": 3,
+      "anchor_min_score": 6,
+      "rules": [
+        {"phrase": "model release", "score": 3}, {"phrase": "releases model", "score": 3},
+        {"phrase": "ai model", "score": 2}, {"phrase": "new model", "score": 2},
+        {"phrase": "open weights", "score": 3}, {"phrase": "open-weight", "score": 3},
+        {"phrase": "context window", "score": 3}, {"phrase": "reasoning model", "score": 3},
+        {"phrase": "benchmark", "score": 2}, {"phrase": "fine-tune", "score": 2},
+        {"regex": "\\b(?:gpt|claude|gemini|llama|grok|mistral)\\s*[-\\w.]*\\d", "score": 4}
+      ],
+      "exclude": [],
+      "anchors": [{
+        "kind": "portfolio synthesis",
+        "label": "The Model Is a Dependency",
+        "note": "A model name or tag does not by itself identify the weights and runtime that produced an output.",
+        "url": "https://doi.org/10.5281/zenodo.21543579"
+      }]
+    },
+    "agents": {
+      "label": "Agents",
+      "topic_min_score": 3,
+      "rules": [
+        {"phrase": "ai agent", "score": 3}, {"phrase": "agentic", "score": 2},
+        {"phrase": "autonomous agent", "score": 3}, {"phrase": "tool use", "score": 2},
+        {"phrase": "orchestration", "score": 2}, {"phrase": "chatbot", "score": 2}
+      ],
+      "exclude": [],
+      "anchors": []
+    },
+    "governance": {
+      "label": "Politics and governance",
+      "topic_min_score": 4,
+      "rules": [
+        {"phrase": "ai governance", "score": 3}, {"phrase": "government power", "score": 3},
+        {"phrase": "public policy", "score": 2}
+      ],
+      "exclude": [],
+      "anchors": []
+    }
+  }
+}

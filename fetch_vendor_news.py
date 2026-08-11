@@ -184,7 +184,7 @@ def main():
                 "denominator_stated": "?",
                 "reviewed": False,
                 "sources": [{"name": domain(url), "url": url, "source_type": st,
-                             "motive_tier": TYPE_TIER.get(st, 5)}],
+                             "source_tier": TYPE_TIER.get(st, 3)}],
             })
             print(f"    + tier {TYPE_TIER.get(st, 5)}  {published}  {title[:62]}")
 

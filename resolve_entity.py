@@ -13,7 +13,7 @@ Resolution order, first hit wins, and every result carries how it was reached:
   5 (blank)    nothing resolved
 
 ⛔ Blank is a valid and common outcome. A piece about a labour market or a lawsuit trend
-has no subject organisation, and the motive tier correctly falls back to source type.
+has no subject organisation. The source class remains separate and no claim tier is guessed.
 
   python3 resolve_entity.py            # write entity + entity_basis into feed_items.json
   python3 resolve_entity.py --dry-run  # print the table, write nothing

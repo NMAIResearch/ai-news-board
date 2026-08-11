@@ -16,11 +16,10 @@ is either a verbatim span or a label the board already carries.
 
 WHAT QUALIFIES, AND WHY THOSE RULES
 -----------------------------------
-  §DR candidate   a verbatim figure span, from a source at motive tier 4 or 5, on an item
-                  whose denominator_stated is N. That is a quantitative claim from a party
-                  with an incentive, with no stated base. Nothing is asserted about whether
-                  the figure is wrong; it is a claim worth checking, which is all a
-                  candidate is.
+  §DR candidate   a verbatim figure span from source class 4 or 5, on an item whose
+                  denominator_stated is N. That is a quantitative claim from a tool vendor,
+                  vendor publication or press office with no stated base. Nothing is asserted
+                  about whether the figure is wrong.
 
   §RC candidate   a sentence naming a future date AND a scheduled event (expiry, deadline,
                   effective date, auction, hearing, ruling). §RC rows are dated moments when
@@ -38,9 +37,8 @@ gitignored because it holds third-party article bodies in full, so this screen o
 a machine that has run extract_spans.py. If the cache is absent the screen reports that it
 skipped, rather than silently returning nothing.
 
-⚠️ Tier-1 denominator labels are worth more than tier-3 ones and the output says which
-produced each candidate, because a candidate settled by a quoted span and one guessed by a
-local model are not the same evidence.
+⚠️ The output states the denominator evidence method and coverage. A deterministic label
+and a local-model label are not the same evidence.
 
     python3 suggest_register_rows.py            # print candidates
     python3 suggest_register_rows.py --write    # also write register_candidates_<date>.md
@@ -60,9 +58,8 @@ TEXT = os.path.join(HERE, "article_text.json")   # gitignored fetch cache, local
 # A sentence, roughly. Good enough to quote from; the URL is always given alongside.
 SENTENCE = re.compile(r"(?<=[.!?])\s+")
 
-# Motive tiers where a quantitative claim is worth a second look: 4 = tool or data vendor,
-# 5 = the party selling the thing the claim is about.
-INCENTIVE_TIERS = (4, 5)
+# Source classes where a quantitative claim is worth a second look.
+HIGH_STAKE_SOURCE_CLASSES = (4, 5)
 
 MONTHS = ("January|February|March|April|May|June|July|August|September|October|November|"
           "December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec")
@@ -85,13 +82,13 @@ def items_of(feed):
 
 
 def primary_source(it):
-    """URL and motive tier live in the item's `sources` list, not at the top level.
+    """URL and source tier live in the item's `sources` list, not at the top level.
 
     ⚠️ An item can carry several sources. The first is the one the board renders and the one
     article_spans.json is keyed on, so it is the one a candidate must quote.
     """
     src = (it.get("sources") or [{}])[0]
-    return src.get("url", ""), src.get("name", ""), src.get("motive_tier")
+    return src.get("url", ""), src.get("name", ""), src.get("source_tier")
 
 
 def seen_date(it):
@@ -138,10 +135,11 @@ def main():
                   "source": name or rec.get("source", ""), "tier": tier,
                   "entity": it.get("entity", ""),
                   "date": seen.isoformat() if seen else "",
-                  "label_tier": it.get("label_tier"),
+                  "evidence_method": it.get("evidence_method", "unassessed"),
+                  "evidence_coverage": it.get("evidence_coverage") or {},
                   "label_evidence": it.get("label_evidence", "")}
 
-        if tier in INCENTIVE_TIERS and it.get("denominator_stated") == "N":
+        if tier in HIGH_STAKE_SOURCE_CLASSES and it.get("denominator_stated") == "N":
             for sp in rec["spans"][:3]:
                 dr.append(dict(common, span=sp["sentence"], figures=sp.get("figures", [])))
 
@@ -159,12 +157,13 @@ def main():
     def block(title, rows, note):
         out = [f"## {title} ({len(rows)})", "", note, ""]
         for r in rows:
-            lt = r.get("label_tier")
-            prov = (f"tier {lt} label" + (f", {r['label_evidence']}" if r.get("label_evidence")
-                                          else "")) if lt else "no label"
+            coverage = r.get("evidence_coverage") or {}
+            prov = (f"{r.get('evidence_method', 'unassessed')} label, "
+                    f"{coverage.get('seen', 0)}/{coverage.get('total', 0)} spans"
+                    + (f", {r['label_evidence']}" if r.get("label_evidence") else ""))
             out += [f"- **{r['headline']}**",
                     f"  - span: \"{r['span'].strip()}\"",
-                    f"  - source: {r['source']} (motive tier {r['tier']}) · {prov}",
+                    f"  - source: {r['source']} (source class {r['tier']}) · {prov}",
                     f"  - {r['url']}", ""]
         return "\n".join(out)
 

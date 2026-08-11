@@ -12,8 +12,9 @@
 #                     with a character offset. Must precede label_items: it is the evidence
 #                     label_items reads.
 #   label_items       denominator from spans where they settle it, a local model for the
-#                     rest. OPTIONAL. Skipped automatically if ollama is down; the
-#                     deterministic tier-1 labels still land.
+#                     rest. If ollama is unavailable, deterministic labels still land and
+#                     unresolved items remain visibly unassessed.
+#   carry_reviews     persists the labels before the next feed pull can replace the feed.
 #   resolve_entity    who the claim is about, from the registry, or blank
 #   article_evidence  attribution, primary links, figure sourcing, claim-relative tier
 #   fetch_scholar     broad arXiv + HF pull for the scholarship panel
@@ -30,7 +31,7 @@
 # ⛔ The cross-check readers are retired (archive/). Do not add them back here.
 #
 # Usage:  ./refresh.sh            full refresh
-#         ./refresh.sh --no-label skip the local-model pass (fast)
+#         ./refresh.sh --no-label run deterministic labels only (fast)
 set -uo pipefail
 cd "$(dirname "$0")"
 
@@ -44,7 +45,7 @@ LABEL=1
 # `ahead 2, behind 4` and the board showed the 4 August feed for two days.
 # This warns and does not act: `git fetch` writes no working-tree file, and merging is a
 # judgement about which side wins for data/market.json, which is not a script's call.
-step "0/12 pre-flight: origin divergence"
+step "0/13 pre-flight: origin divergence"
 if git rev-parse --git-dir >/dev/null 2>&1; then
   git fetch -q origin 2>/dev/null || echo "  ! could not reach origin, continuing offline"
   behind=$(git rev-list --count HEAD..@{u} 2>/dev/null || echo 0)
@@ -59,30 +60,32 @@ else
   echo "  not a git repo, skipping"
 fi
 
-step "1/12 fetch feeds";      python3 fetch_feeds.py       || echo "  ! feed fetch failed, continuing with the existing feed"
-step "2/12 vendor newsrooms"; python3 fetch_vendor_news.py || echo "  ! vendor news failed"
-step "3/12 carry reviews";    python3 carry_reviews.py     || echo "  ! carry_reviews failed - CHECK BEFORE BUILDING, prior labels may be lost"
-step "4/12 apply ratings";    python3 apply_ratings.py     || echo "  ! apply_ratings failed"
-step "5/12 extract spans";    python3 extract_spans.py     || echo "  ! span extraction failed - labels will fall back to tier 3"
+step "1/13 fetch feeds";      python3 fetch_feeds.py       || echo "  ! feed fetch failed, continuing with the existing feed"
+step "2/13 vendor newsrooms"; python3 fetch_vendor_news.py || echo "  ! vendor news failed"
+step "3/13 carry reviews";    python3 carry_reviews.py     || echo "  ! carry_reviews failed - CHECK BEFORE BUILDING, prior labels may be lost"
+step "4/13 apply ratings";    python3 apply_ratings.py     || echo "  ! apply_ratings failed"
+step "5/13 extract spans";    python3 extract_spans.py     || echo "  ! span extraction failed - affected labels remain unassessed"
 
-step "6/12 label items"
+step "6/13 label items"
 if [ "$LABEL" = "0" ]; then
-  echo "  skipped (--no-label)"
+  python3 label_items.py --rules-only || echo "  ! deterministic label pass failed"
 elif ! curl -sf --max-time 3 http://localhost:11434/api/tags >/dev/null 2>&1; then
-  echo "  skipped: ollama is not responding on :11434"
+  echo "  ollama is not responding on :11434; running deterministic labels only"
+  python3 label_items.py --rules-only || echo "  ! deterministic label pass failed"
 else
   python3 label_items.py || echo "  ! label pass failed"
 fi
 
-step "7/12 resolve entity";   python3 resolve_entity.py    || echo "  ! entity resolution failed"
-step "8/12 article evidence"; python3 article_evidence.py  || echo "  ! article evidence failed"
-step "9/12 fetch scholar";    python3 fetch_scholar.py     || echo "  ! scholar fetch failed"
-step "10/12 fetch releases";  python3 fetch_releases.py    || echo "  ! release fetch failed"
-step "11/12 archive";         python3 archive.py           || echo "  ! archive failed"
+step "7/13 persist labels";   python3 carry_reviews.py     || echo "  ! labels were not persisted"
+step "8/13 resolve entity";   python3 resolve_entity.py    || echo "  ! entity resolution failed"
+step "9/13 article evidence"; python3 article_evidence.py  || echo "  ! article evidence failed"
+step "10/13 fetch scholar";   python3 fetch_scholar.py     || echo "  ! scholar fetch failed"
+step "11/13 fetch releases";  python3 fetch_releases.py    || echo "  ! release fetch failed"
+step "12/13 archive";         python3 archive.py           || echo "  ! archive failed"
 step "  + candidates";        python3 suggest_register_rows.py --write >/dev/null \
                               || echo "  ! candidate scan failed"
 
-step "12/12 fetch market"
+step "13/13 fetch market"
 if [ -f ~/.config/nmai/keys.env ]; then python3 fetch_market.py || echo "  ! market fetch failed"
 else echo "  skipped: no ~/.config/nmai/keys.env"; fi
 

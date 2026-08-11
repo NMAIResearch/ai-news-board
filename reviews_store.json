@@ -519,42 +519,50 @@
   "label_source": "machine"
  },
  "https://deepmind.google/blog/were-launching-lyria-35-in-google-flow-music-with-advances-across-musicality-lyrics-vocals-and-creative-control/": {
-  "entity": "Google DeepMind",
-  "entity_basis": "DeepMind blog post; 'Google' matched only via 'Google Flow Music'",
-  "entity_source": "human",
-  "claim_type": "announced",
-  "denominator_stated": "N",
-  "topic": "",
+  "denominator_stated": "?",
   "auto_labelled": true,
-  "auto_labelled_by": "qwen2.5:14b",
-  "label_tier": 3,
-  "label_evidence": "model read 2 figure-sentence(s), no base cue matched",
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model returned an invalid denominator label",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "d3b3eaaf985f7d1abfeb3dbcd21eb8f51a31f021cfe1a0f48d97744a624a11ad",
+  "evidence_hash": "6438e19b4b8603bb0912b7523f62d096917e066b41e62e35822f60cd339be468",
   "reviewed": false,
   "label_source": "machine"
  },
  "https://deepmind.google/blog/accelerating-the-frontiers-of-scientific-discovery-googles-40m-commitment-to-the-genesis-mission/": {
-  "entity": "Google",
-  "entity_basis": "headline",
-  "claim_type": "announced",
-  "denominator_stated": "N",
-  "topic": "",
+  "denominator_stated": "partial",
   "auto_labelled": true,
-  "auto_labelled_by": "qwen2.5:14b",
-  "label_tier": 3,
-  "label_evidence": "model read 5 figure-sentence(s), no base cue matched",
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model read all 5 figure-sentence(s); 0 of 5 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 5,
+   "total": 5
+  },
+  "label_schema_version": 2,
+  "content_hash": "70c6db6b274f23b21b16d68741c596f85cf7c81134afb14c34238c6fe3d15b0e",
+  "evidence_hash": "9a0ad7f089f0dfb5bed09f3e1e3b73b197900f42f3b046d9e93537beae108b1b",
   "reviewed": false,
   "label_source": "machine"
  },
  "https://deepmind.google/blog/introducing-gemini-3-6-flash-3-5-flash-lite-and-3-5-flash-cyber/": {
-  "entity": "Google DeepMind",
-  "entity_basis": "product:Gemini",
-  "claim_type": "announced",
-  "denominator_stated": "partial",
-  "topic": "",
+  "denominator_stated": "N",
   "auto_labelled": true,
-  "auto_labelled_by": "qwen2.5:14b",
-  "label_tier": 1,
-  "label_evidence": "9 of 46 figure-sentence(s) state a base",
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model read all 46 figure-sentence(s); 9 of 46 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 46,
+   "total": 46
+  },
+  "label_schema_version": 2,
+  "content_hash": "0def399cfe285c30e789cdee2b1850be09fe99bf2e06c49aed8a284415c6a84e",
+  "evidence_hash": "b6834def3c762a0b13eb1e95ae869b5edb0ebd3b5a910f8ebb846534d171731f",
   "reviewed": false,
   "label_source": "machine"
  },
@@ -746,28 +754,33 @@
   "label_source": "machine"
  },
  "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/": {
-  "entity": "Google DeepMind",
-  "entity_basis": "product:Gemini Robotics",
-  "claim_type": "announced",
-  "denominator_stated": "Y",
-  "topic": "",
+  "denominator_stated": "N",
   "auto_labelled": true,
-  "auto_labelled_by": "qwen2.5:14b",
-  "label_tier": 3,
-  "label_evidence": "model read 6 figure-sentence(s), no base cue matched",
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model read all 6 figure-sentence(s); 0 of 6 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 6,
+   "total": 6
+  },
+  "label_schema_version": 2,
+  "content_hash": "fd2da10105fa1b690340dbf3df4a4479aa041083bb47c5fd675f2aea4c7d8e08",
+  "evidence_hash": "c83e01365459df37406c73866cfe5fd1f63a5bbb1496e20e40f0f33d328342cc",
   "reviewed": false,
   "label_source": "machine"
  },
  "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/": {
-  "entity": "Google DeepMind",
-  "entity_basis": "product:Gemini Robotics",
-  "claim_type": "announced",
-  "denominator_stated": "N",
-  "topic": "",
+  "denominator_stated": "n/a",
   "auto_labelled": true,
-  "auto_labelled_by": "qwen2.5:14b",
-  "label_tier": 3,
-  "label_evidence": "model read 4 figure-sentence(s), no base cue matched",
+  "label_evidence": "no figure in 27 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "2d74c50f1df16fe67002fdad4f8b137bbff7802fec21840c4feb29320b0e70f8",
+  "evidence_hash": "82ec342b4912c2764a76e2bdc86ed03df61b12f23d23a1d6db9eabd1433b58fe",
   "reviewed": false,
   "label_source": "machine"
  },
@@ -813,67 +826,79 @@
   "label_source": "machine"
  },
  "https://www.nist.gov/news-events/news/2026/06/nist-mathematical-proof-supports-transition-continuous-monitor-and-update": {
-  "entity": "NIST",
-  "entity_basis": "headline",
-  "claim_type": "measurement",
-  "denominator_stated": "N",
-  "topic": "",
+  "denominator_stated": "n/a",
   "auto_labelled": true,
-  "auto_labelled_by": "qwen2.5:14b",
-  "label_tier": 3,
-  "label_evidence": "model read 1 figure-sentence(s), no base cue matched",
+  "label_evidence": "no figure in 7572 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "30fb27d13d86b773cf84252e99a770322b5de372ad580a29e1f252dfa4db0cfc",
+  "evidence_hash": "3748dc31d02d8cc02282c6c2f0f915ed25d611f9a8da9f58ec06ef6553c0b336",
   "reviewed": false,
   "label_source": "machine"
  },
  "https://www.nist.gov/news-events/news/2026/06/new-ai-model-shows-how-evacuate-fires-one-safe-step-time": {
-  "entity": "NIST",
-  "entity_basis": "site",
-  "claim_type": "target",
-  "denominator_stated": "Y",
-  "topic": "",
+  "denominator_stated": "N",
   "auto_labelled": true,
-  "auto_labelled_by": "qwen2.5:14b",
-  "label_tier": 3,
-  "label_evidence": "model read 2 figure-sentence(s), no base cue matched",
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "5e05f359c131642da4c6959fd166a3ac4d0d33269b59e39b916a608ea1061353",
+  "evidence_hash": "bc8882dca8c594be1d9a78e27f3427644b60a26e77f6472ae26fdd97951310d1",
   "reviewed": false,
   "label_source": "machine"
  },
  "https://www.nist.gov/news-events/news/2026/05/nist-expands-ai-consortiums-scope-calls-new-members": {
-  "entity": "NIST",
-  "entity_basis": "headline",
-  "claim_type": "announced",
-  "denominator_stated": "partial",
-  "topic": "",
+  "denominator_stated": "N",
   "auto_labelled": true,
-  "auto_labelled_by": "qwen2.5:14b",
-  "label_tier": 1,
-  "label_evidence": "1 of 2 figure-sentence(s) state a base",
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model read all 2 figure-sentence(s); 1 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "776f0d62c645952cba8092aef68c57ad4f3ba18f01f2a7940abdd5a41ae54640",
+  "evidence_hash": "b86ad9305faafca1c2a8509a989f431c2d5a055a09603683c46cc57d2d653331",
   "reviewed": false,
   "label_source": "machine"
  },
  "https://www.nist.gov/news-events/news/2026/03/nist-researchers-develop-photonic-chip-packaging-can-withstand-extreme": {
-  "entity": "NIST",
-  "entity_basis": "headline",
-  "claim_type": "announced",
-  "denominator_stated": "N",
-  "topic": "",
+  "denominator_stated": "n/a",
   "auto_labelled": true,
-  "auto_labelled_by": "qwen2.5:14b",
-  "label_tier": 3,
-  "label_evidence": "model read 1 figure-sentence(s), no base cue matched",
+  "label_evidence": "no figure in 6989 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "6b7e27fe38a8211dac4bbe98cef4b797f175db5d19d7bdabd1cb582bc849b1b8",
+  "evidence_hash": "ed9fba685292221069444233fc13a16b2fd703dc01afa45d89b293a6ee643bdc",
   "reviewed": false,
   "label_source": "machine"
  },
  "https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure": {
-  "entity": "NIST",
-  "entity_basis": "site",
-  "claim_type": "announced",
   "denominator_stated": "n/a",
-  "topic": "",
   "auto_labelled": true,
-  "auto_labelled_by": "qwen2.5:14b",
-  "label_tier": 1,
   "label_evidence": "no figure in 3766 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "850d5acc1e77641d51b73ce46d729a0f6bacad1eda3ba490e741e0623e45601e",
+  "evidence_hash": "f2190ed5b8ee7170a20f46dfa963a33a4f8c5df8f26e89ac307a5d373c3b2681",
   "reviewed": false,
   "label_source": "machine"
  },
@@ -1069,6 +1094,1005 @@
   "auto_labelled_by": "qwen2.5:14b",
   "label_tier": 3,
   "label_evidence": "model read 1 figure-sentence(s), no base cue matched",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/08/09/embattled-hedge-fund-situational-awareness-invests-400m-in-chip-startup-source-foundry/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.5:9b",
+  "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 4,
+   "total": 4
+  },
+  "label_schema_version": 2,
+  "content_hash": "f58f68b98165649cd5283b12509f4c27b8bd343d8b847e68633828feb60acd82",
+  "evidence_hash": "e600baf4364e46941e0312b252e9696c00a530cb242acc59056be20698bd121a",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.5:9b",
+  "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "6ba83c57758ff4ace156c3474d7dc00a6fdf11efd2172a64418f1f3387259951",
+  "evidence_hash": "10062e8c1c4d3a688595b9c88f1a1d024df3677d33a2fab512c2b02b7fd0aa03",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/08/09/historian-jill-lepore-says-the-tech-industry-is-led-by-bad-readers-who-are-undermining-democracy/": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model read all 3 figure-sentence(s); 1 of 3 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 3,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "430a02b0ce421d583e0adc0a5d171998c032ab39b98c7f5fe1fd6a3ee8ea4834",
+  "evidence_hash": "1c4907ce45e1ad2a43571cb66282ccec9beaa24f89d3fc26f8b56f86eeb23c9a",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/08/09/the-ai-safety-test-is-becoming-a-safety-risk/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "b2a9beb5518b7aad7cbf5d57282321f92a4b5593a5b47824d43a8befff7e6979",
+  "evidence_hash": "5fab4bf246061ce8ec48ba7e80028d1b77924ff5dcfd769bde1be1fdfa94b508",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/08/08/planned-amazon-data-center-could-become-the-biggest-climate-polluter-in-the-u-s/": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "a5bbce2646af22a85c352847caef08f13aaddb4deea8139cbadba34079d37ddc",
+  "evidence_hash": "11d0e2ed50789a906b5927c325d1cd6a24b4630775ff9adf66ccef7d7d5ce1dd",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 1422 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "1eadff5ad4ddc1edaf1ccf6fbe1dfefd8c0a56c55904032bc4d1ae2a38813217",
+  "evidence_hash": "b79e10ec417099229fb447d08b07389bf9831440f28a0383d3829dd9017d9d2b",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/977124/amazon-data-center-worst-polluting-power-plant": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 5
+  },
+  "label_schema_version": 2,
+  "content_hash": "9bbf79fe4121ce86bdb89cae68fd1c4f63dbdeb416b4ebf1e837a93603c7b1c3",
+  "evidence_hash": "15744ff0790c7ed30fb18bfa0d2f97b054f5576b8df2eab9f86c70a9547da9e9",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/976801/fenix-flexin-rubberz-ai-song-treblo": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "62243c1074c017b8a9088e061a1876aeed5cbff3b6766bffbf5e8bdec3e53eab",
+  "evidence_hash": "b7f85ca054f99e2d8e7a7ef50a0b9a5d5915e38f9dfc782e990c708f24802558",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/entertainment/976939/roku-fairground-ai-fast-channel": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 5683 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "b97ac1d0b1a62102df71818fcdafa24890b21720cb0f02da442a4ade75f67079",
+  "evidence_hash": "cee3da1d42f7e2d9e8dec1253924ad3b696339964dc6c6556b7e143ecf94df68",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 2544 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "5e46ae72a2843da61d46acac5bac9ee21c78509c09de774d472cbf399fa468cb",
+  "evidence_hash": "7bc67bac30e22b1adea31ca83c8bb3b0c142d81f109cb1abb091cd10c6a79d99",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/podcast/976784/google-deepmind-ai-race-vergecast": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 2551 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "e526900030389bf69ab93083f0c8c4281595db99a1f0c066c59787a30d2a570d",
+  "evidence_hash": "3f24d179302ce46216c2725c3cd17ba4106780b08e9d16fdf689e5c1eb457f06",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/976431/openai-chatgpt-battery-smart-speaker-rumor": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "ede8fdd139456353e7e33da3e560e808a837d425dd588506df86c0a6fcd61089",
+  "evidence_hash": "38ef787a31836d85281d10bb0f15310fafe7f2f38c29396dfc4e93f7929e93e3",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/science/2026/08/deepminds-hurricane-model-bought-forecasters-an-extra-day/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 3,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "58b2b5894bca34706cda666b48b9ebee0ba823e6f4f3a793edd6b85f1135a295",
+  "evidence_hash": "eb9db77fac1822c40db5d151ee51ff85f047de9edbf44ae8edc65ca0ec8bc2c1",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/gadgets/2026/08/openais-expensive-smart-speaker-will-use-moving-parts-to-seem-more-alive/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model read all 6 figure-sentence(s); 0 of 6 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 6,
+   "total": 6
+  },
+  "label_schema_version": 2,
+  "content_hash": "65d7622f1f6f89a7c0bcbab24fdab9a967e516f4c1c08684fcae649cdf9032ce",
+  "evidence_hash": "8eba7128e10ca7902cb5d99ada20ecfbb8a73afa163d86047c5c7318f2bbc6ab",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/ai/2026/08/ai-chatbots-have-failed-people-in-crisis-can-that-be-fixed/": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 3,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "090b99717ba611c9b554fddfb711b3820c549234e8055e7172bc38ea20077dca",
+  "evidence_hash": "1b0efdd1359428f1e48f082902a57f8abf069e644ab59cb6ebf9cb92f06855f5",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/ai/2026/08/bytedance-trains-massive-ai-model-in-bid-to-rival-anthropic/": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model read all 7 figure-sentence(s); 0 of 7 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 7,
+   "total": 7
+  },
+  "label_schema_version": 2,
+  "content_hash": "9aa7f4f90821d153493a560eaeedfd97b097a1cd9dcc4f8b78cebcbd27461232",
+  "evidence_hash": "f10fccaccbebd987959ffe3cdade2eba6eeeda5d54978bfdfa6ce81f91ca5423",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/ai/2026/08/suno-hopes-to-go-legit-with-watermarks-for-ai-generated-music/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "0f311661f948df73a1594681874938c922c8658bc64ecf2d0b36888f5461e72b",
+  "evidence_hash": "327cff7c549cbeb8090e8aeda71c62ba09b4a8c05056a76019024ba66cb79683",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/ai/2026/08/anthropic-confirms-plans-to-build-an-in-house-silicon-team/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 3570 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "b26a2a74020998d698d17804ef8022f4523c781e04985659325411b9dcf5c2d8",
+  "evidence_hash": "b45ec15e1fe4559a65355f21c18ab78709f630894160971ebb537f0d1e9bcdab",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 25 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "97c4a594a03a474bb7407022e47674bb5403b0c964566eca3c44bcceabbe83cf",
+  "evidence_hash": "a416230d8dae51aed87bde489b9fb9f7c8f3001c48f4ad009d469c6ee8de0c5c",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.abc.net.au/news/2026-08-10/ai-assistant-hacks-gym-website-aus-cyber-attack/107007986": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.5:9b",
+  "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 3,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "90bb289be2b5bb8952fe347b976b8b20b5bbfd7cfb561215ba14137e620213e9",
+  "evidence_hash": "b1c8fc87aadf48b1eba00cf16194bdedd39551e08fb210128ee409d0790192ee",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.economist.com/britain/2026/08/06/the-tragedy-of-the-commons-ai-edition": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "57875e123dcdff4899e9bae86b392d419d5ad79198ff83fb630d47123780238d",
+  "evidence_hash": "232b2ebf8d639a35a97a42b59fef1fc017b593c5d7a8a461df1c0c9ade6fa65c",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://ai-updates.net/an-openai-strategist-says-ai-labs-should-rival-government-power/": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "article not fetched (http-403)",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.cnbc.com/2026/08/09/israeli-startup-irregular-linked-to-ai-hacks-openai-anthropic-meta.html": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.5:9b",
+  "label_evidence": "model read all 6 figure-sentence(s); 0 of 6 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 6,
+   "total": 6
+  },
+  "label_schema_version": 2,
+  "content_hash": "13339650f853889ed34cb1214ec37094a459b97b2af718d122a74819d05324a9",
+  "evidence_hash": "7452a39720c083e015b61a0e536f73ce4ef3192057004aaab53a599e0f84a79c",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.tomshardware.com/tech-industry/data-centers/amazon-secretly-circumvents-community-vote-for-massive-ai-data-center-45-year-old-rules-lock-gilroy-residents-out-of-public-comment-window": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "a8abbca56f990e040252d25019c2f177460885d839997163a4e2047c4256b405",
+  "evidence_hash": "e3c5d54db3cf461e5c7299aa41b3a3354963256769d073d827a3cbde8666fa8f",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.youtube.com/watch?v=68X8yEatepQ": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "b7f4819babe33783b7cb650403e810aceb1e9f205e400fc9804af28d26ed4888",
+  "evidence_hash": "e14562d53cb95aa6e9600d1a640919270ed881003f74f43fa68953eb63cf85cd",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.nist.gov/news-events/news/2026/08/nist-joins-national-genesis-mission-accelerate-ai-innovation": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 4537 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "9600232290dcdb535b3aa7c6248990fd02109e1bb53b6df48ac2c01dd67e2dd7",
+  "evidence_hash": "1b28d63997fc51dc69664318da5ad8ce8c811240ce2fc77eee2befe3ad1de1ab",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://cset.georgetown.edu/article/expanded-collaboration-to-boost-critical-ai-governance-data-and-tracking-tool/": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "label_evidence": "all 2 figure-sentence(s) state a base",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "29549aa22946dad03f2ef9c58b19c3c91aa5d8862a091025687931e9b3daec93",
+  "evidence_hash": "3db81d01be4dcc4316b44e78ae0ff538c2ea9a6501d369d68d3c5cc7d9903d20",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://cset.georgetown.edu/article/ai-models-engage-in-harmful-activity-directed-at-real-people-sparking-fears-safeguards-not-keeping-up/": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model returned an invalid denominator label",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "0a0dc73c81f2fcc8679deb9543b6f4d65790d1981b86f0de3324ae46adf6ef28",
+  "evidence_hash": "44c82ff7f076eec043e556014a0fba7683bc80dcd41022d39e113bfc3e7615aa",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://cset.georgetown.edu/article/trump-meets-ai-giants-senate-dems-decry-unpredictable-governance-and-cheap-chinese-ai-looms-as-giant-security-risk/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 1699 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "d7f8381f9f73f9bab55ac474622cb9b2675536ce2fa34d6862a2d561d568194b",
+  "evidence_hash": "06bf5aaf896b0baff5ab27a92fd60e78f3dab10c8256c363a49d27c21289fdad",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://cset.georgetown.edu/article/assessing-sovereign-ai-a-two-pronged-framework/": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model read all 7 figure-sentence(s); 1 of 7 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 7,
+   "total": 7
+  },
+  "label_schema_version": 2,
+  "content_hash": "889ebe1f569d9500131aa8de7c166fe41264a14eec516a45753ddf2c0346b07c",
+  "evidence_hash": "8b165164c9421f5463ed164fb05ab60155cf394b5a9af6fe4c9cda6731f479a6",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://cset.georgetown.edu/article/helen-toner-the-hugging-face-hack-was-just-a-matter-of-time-and-exposes-a-huge-blind-spot-in-ai-policy/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 1344 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "3ecc0c47285b1e5efb5b69206041b830ff7ac13ba8b60f2ad6ea8dc79c38cbcb",
+  "evidence_hash": "cbef18837d04b9af9143bfbe2c2ee2d351f6ba017620ce6902a2d88aa2ef1a81",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://cset.georgetown.edu/article/nvidias-china-partners-and-the-pla/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 1104 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "efd63340207f9cb1980c107cdf305013d2e6eca5eabc965af23dfe5863471b78",
+  "evidence_hash": "f49079b929a45797ef1f49bfeb28401af0fc08f715f6c0dcf55064984f8b29dd",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://ainowinstitute.org/publications/anatomy-of-an-ai-kill-chain": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 362 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "c4a5673f054f77023b761c0d1843971e755a907307c0b31213d11378213e6e73",
+  "evidence_hash": "f895e0187f74edeac748a8e979a1345affa58243168151534d2f6f911185717e",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://ainowinstitute.org/publications/double-agents": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 574 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "3672fbe147e6a216d5e1921fdd0958730c383ff37e76c660c36d1b3c926f81d3",
+  "evidence_hash": "73711d935390e928e939c7590bd36af641da3801f362daa5f923ea180cb72b4a",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://ainowinstitute.org/publications/friendly-fire-exploit-brief": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 32 figure-sentence(s); 0 of 32 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 32,
+   "total": 32
+  },
+  "label_schema_version": 2,
+  "content_hash": "1a0bbd2262b29f0c10ede1fc0f083b7bbc8425043e0ed610cc5f3bd867f9d7c9",
+  "evidence_hash": "a3ecddf1925c72303d08d0c417374fc4a2c92ca14490571078ad6632649d849e",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://ainowinstitute.org/publications/friendly-fire-policy-brief": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 4408 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "b087189b0797b57b97efa46db5be0ee253f3ef2b54a322f1d28e903243d24ee2",
+  "evidence_hash": "546245d08af04f360624418e3b8c0ac6fc4fca436e5676011ec87c91c0469f37",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://ainowinstitute.org/news/press/big-tech-is-spending-trillions-on-ai-investors-now-want-proof-it-will-pay-off": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 729 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "84ae13422986243ce79c22378e28fe1ec23c9d2a6af76e299e1607152e207763",
+  "evidence_hash": "cc8232bf5c7a9d9d63144844996223d6c20e0d6649b81580e97bc808a76dc9e8",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://ainowinstitute.org/news/press/gig-workers-are-endlessly-exploited-ai-could-make-more-of-us-share-their-fate": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "0e625e7ca6231a15cb669f69a8b9f84ecf39c93851b86b3f2b789412da81cd49",
+  "evidence_hash": "5c8a17a6585bd7c38d40c4f504004dbca1ed50d507b4eac63fa07d151573fa9c",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 25 figure-sentence(s); 2 of 25 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 25,
+   "total": 25
+  },
+  "label_schema_version": 2,
+  "content_hash": "c816a7212aa8b27488da7806ace22f547c8e0fd616bb584b78371194c0b360b3",
+  "evidence_hash": "4f817a6ea669410166971ef6c4032e25af19273b85d9f0cc9852c2ddf9ac335e",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "http://bair.berkeley.edu/blog/2026/07/26/abbel/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model read all 24 figure-sentence(s); 4 of 24 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 24,
+   "total": 24
+  },
+  "label_schema_version": 2,
+  "content_hash": "fed9abfcea74109137e6a5337372966defc3291549386bae08822788f7bda552",
+  "evidence_hash": "938d9554c34c84733715dad4099becc7332157abac4c11473d4ef3e7f0adbec6",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 4,
+   "total": 4
+  },
+  "label_schema_version": 2,
+  "content_hash": "5b03fb171c4e459fc34122cb02b6e587cdee5348d744433d555073a2db2c4354",
+  "evidence_hash": "f5ff0b41e2134a29599a3738beadc994002c618bedf57fbaa7df12d65dbb0204",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "http://bair.berkeley.edu/blog/2026/07/01/grads-2026/": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model returned an invalid denominator label",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "d35e89d68c1cd9866cb14686cc635005cc5ba3b44758d4df998694ea99a9df59",
+  "evidence_hash": "9acda6521d2ef9d70fa844cd3254cef4e8af146a5b19a48680aaf9f4639c0772",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 7 figure-sentence(s); 1 of 7 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 7,
+   "total": 7
+  },
+  "label_schema_version": 2,
+  "content_hash": "ace8147a5be72853a812a5b674e429002f14917b57c563133b64f4affffd001b",
+  "evidence_hash": "689aab7cd0126d8c790d2f6aaf95047393a30bac8af52c18304235ed9e8895a5",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "http://bair.berkeley.edu/blog/2026/04/20/grasp/": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model returned an invalid denominator label",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 24
+  },
+  "label_schema_version": 2,
+  "content_hash": "d780faa177c75f9b254931167b80d9e7aeae50c7fae21e90ac53169c96d9a257",
+  "evidence_hash": "16e805845ca1e1cf57c6dad1281fade6c662a95101f877dbac8693435ec6c881",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://news.mit.edu/2026/solving-solvent-problem-sodium-metal-batteries-0804": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 4,
+   "total": 4
+  },
+  "label_schema_version": 2,
+  "content_hash": "d809c95c1f9935b51ebda55278cfb6553be087b23fb8bd8bfa4b0ac1da948799",
+  "evidence_hash": "7fb5f630a9e9c65287a152876b3263f498ceda5af29402a49d978ad0a7d280e2",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://news.mit.edu/2026/medical-ai-assistance-benefits-vary-based-on-user-expertise-0804": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model returned an invalid denominator label",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "f22fd4243b54f1a8bde73cf93ec56d48da4b2f76cfa05f77d897f6c545137093",
+  "evidence_hash": "c7986fbd3a0e3b01b2249eb9036ff078dbeab7844e60cccf72901779c3b6c655",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://news.mit.edu/2026/alexander-rakhlin-named-director-mit-statistics-data-science-center-0803": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 3,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "c889680801ed67289ca223c0b0b282c590787a09d52d0e7c52315f1015135b95",
+  "evidence_hash": "9c2a111b8f7dde00ccc499e0f1531f93f118105aad512d22839c2679d46069d8",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://news.mit.edu/2026/daniela-rus-receives-bavarian-minister-presidents-high-tech-prize-0730": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "c4a25246fee114ec2ee39cf830dbd0edc7a43e7888321b3c3f026b14d7692644",
+  "evidence_hash": "effdd263bb0fa0fd7dd998dc4168aeadbbecdb8f85859c4d5c19c8e7ddf0f179",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://news.mit.edu/2026/connecting-research-to-policy-on-capitol-hill-0730": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 3,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "503797789220a665ee4f35b367281acffb23afbaec8b1eb30bad805768e35dc9",
+  "evidence_hash": "ba427b33f118206f62b66fa9662e968e56d53f2cbc461f91e732f82755620378",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://news.mit.edu/2026/how-an-mit-database-evolved-into-global-standard-data-sharing-0729": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model read all 7 figure-sentence(s); 0 of 7 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 7,
+   "total": 7
+  },
+  "label_schema_version": 2,
+  "content_hash": "79334f528e5ffa13f2e253e5fb06abe649849d87f4073039e67c48d3501bb251",
+  "evidence_hash": "ced113652f66342572e74eab1f7400a5a8539b200c21f254a5eb9ad9d44ae2d3",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.finops.org/insights/setting-ai-budget/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 12243 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "fe3ff3337a72504b90e6ce33a63c03e41a9d51f3c6ae276d5a2af5ae656c8d28",
+  "evidence_hash": "81e117a8df869053019e1c2525a3081495782d33ad2a41d032b96da26a79875d",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.finops.org/insights/finops-x-2026-day-1-keynote/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model read all 6 figure-sentence(s); 0 of 6 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 6,
+   "total": 6
+  },
+  "label_schema_version": 2,
+  "content_hash": "f964f2d7ce9306bdf4e3592b6aa014c81b2623da7e961434172c34de488864fd",
+  "evidence_hash": "db1f17b3bc057a7bce108708eee2de0a4628e4971906af73baeda30dfc1716b5",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://epochai.substack.com/p/the-epoch-brief-july-31-2026": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model read all 9 figure-sentence(s); 2 of 9 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 9,
+   "total": 9
+  },
+  "label_schema_version": 2,
+  "content_hash": "d99e19c91f3abacafe04d66b90b2f00004636f88be8f11e84fe264288ad1b74d",
+  "evidence_hash": "afca23683c2210247f24bc1f994e4b1be67872aed7940a1ab17fa4ed5bca45b1",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://epochai.substack.com/p/openai-accidentally-hacked-hugging": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model returned an invalid denominator label",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "02ae2fb26e2fb06525a7cad44d4611b90b079083bf41869dde93ed8f7009bfd4",
+  "evidence_hash": "f9b5e83201f2e9deaeba68ce493f11a1431531b809902436f7c5bbb37b1e7441",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://epochai.substack.com/p/the-epoch-brief-july-8-2026": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 3,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "11911a040bec7c871322a71f27209f7c4aab55026d1a7306d168296cde6e17f4",
+  "evidence_hash": "b812a7156853a69f20f32bf63b59fd13e628f0b1b777e2d7cbb8e91bcc4c4a7b",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://epochai.substack.com/p/the-missing-half-of-ai-futurism-debates": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model returned an invalid denominator label",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 14
+  },
+  "label_schema_version": 2,
+  "content_hash": "10878d720a0d8a3a0cebbe164923a81c42c9a77fb12919fe1102d39c2ccba9ef",
+  "evidence_hash": "a10533d444ea95d878c061e11523ac85156941b3d7ece521920a263f3a10f743",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://epochai.substack.com/p/the-epoch-brief-june-26-2026": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model read all 7 figure-sentence(s); 1 of 7 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 7,
+   "total": 7
+  },
+  "label_schema_version": 2,
+  "content_hash": "29c12ea893dbdb59be5c7e3fb374b0f6e7799f8d248d8ffc4d5fdc90a3114e41",
+  "evidence_hash": "d1de80431884c5fa4b36415463d0c9741034aaf9e89d62e380d1ce632cd93995",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://epochai.substack.com/p/what-we-learned-from-1604-chinese": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 30
+  },
+  "label_schema_version": 2,
+  "content_hash": "b518fff4bb1641534f68f7d097b4505e9f2557561fa312e4f87b49706b1cfcf3",
+  "evidence_hash": "bcc5809bdca66303c471d8b37e52d5f56d8c49f6ef474961398b952cc50324b9",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 15
+  },
+  "label_schema_version": 2,
+  "content_hash": "cae41427610db2ffc921b515ca33dfc839bf4a91805afd18961744c9cd531af7",
+  "evidence_hash": "c92f98887ae52d5e5bb7aaeeb45082139b958f1fb42fbf2b54413d522e966ac7",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.anthropic.com/news/tino-cuellar": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "a71ee0b364c59e45ff404b5d0bf46cae32e4945ae3a08b9d4be8ce3d6f462d75",
+  "evidence_hash": "f70e57d56c0cf6453ee8de08929006df9a482c82c5dddf5a270661f4892d5086",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 9
+  },
+  "label_schema_version": 2,
+  "content_hash": "7b7aed1679f237e3ce12426052a0a73769a8f39eb06c99788a1d5cc0387f0e7b",
+  "evidence_hash": "d14a0f0e3fd13bbd8eb6aa017e89bbe456917d7af128519039605a97066e9234",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://openai.com/index/chatgpt-for-academic-researchers/": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model read all 16 figure-sentence(s); 3 of 16 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 16,
+   "total": 16
+  },
+  "label_schema_version": 2,
+  "content_hash": "956086eecd03f0871f1360829a7739214625c6d21cf03bfff6fae111236431f2",
+  "evidence_hash": "71d4cdb676df0e2d1496df98a85ef7c7bb9697017310b337786e4adf802a5859",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores/": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model read all 23 figure-sentence(s); 2 of 23 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 23,
+   "total": 23
+  },
+  "label_schema_version": 2,
+  "content_hash": "855554997f88ec039a29a423fae4b0a1c00a4b04a2fb926cc0db7f9c8c02e0dd",
+  "evidence_hash": "a8bb389abaa4fd883b44ff2b6444d7fd0e929268a9a587714ea7c980b29eaa9e",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://openai.com/index/scientific-computing-agentic-ai/": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "auto_labelled_by": "qwen3.6:27b",
+  "label_evidence": "model returned an invalid denominator label",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "eb580500e4b0fc5dbefb50e009113cb182ef74ca1fbe4c3535066f46f3533ffc",
+  "evidence_hash": "5803ea3f3b724d679e806fee954d87574664354e119bbd5fe5d9d9a7bdf25024",
   "reviewed": false,
   "label_source": "machine"
  }

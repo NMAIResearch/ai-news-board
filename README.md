@@ -1,14 +1,12 @@
 # AI News Board
 
-A live board that applies a consistent method to AI news coverage. For each item it records
-the publisher's incentive in the claim being true, whether a quoted figure states the base it
-is measured against, and a link to a published base rate where one exists. Figures are quoted
-verbatim from the article text with their position recorded, and every label carries the
-method that produced it, so a reader can check any of it against the source.
+A live board that separates publisher class, resolved claim relationships, figure-base
+evidence, citation links and typed reality anchors. Figures are quoted verbatim from article
+text with their position recorded. Every machine label states its method, complete-span
+coverage, content hash and schema version.
 
-AI disclosure: parts of this text were artificially generated with AI assistance and reviewed
-by the author. The models, and the conflicts they create, are named in the Conflict of interest
-section.
+AI disclosure: AI models assisted with parts of this project. Machine and human evidence
+methods are identified separately. The models and their conflicts are named below.
 
 Live: https://nmairesearch.github.io/ai-news-board/
 Method changes and defects found, dated: [CHANGELOG.md](CHANGELOG.md)
@@ -18,10 +16,11 @@ Method changes and defects found, dated: [CHANGELOG.md](CHANGELOG.md)
 **One command does the whole thing.** Use this, not the list below:
 
     ./refresh.sh                  # every step in order, then builds index.html
-    ./refresh.sh --no-label       # same, skipping the local-model pass (fast)
+    ./refresh.sh --no-label       # same, deterministic labels only (fast)
 
-It runs the twelve steps in the required order, skips the label pass automatically if ollama
-is not answering on :11434, skips the market pull if `~/.config/nmai/keys.env` is absent, and
+It runs the thirteen steps in the required order. If Ollama is unavailable, it runs the
+deterministic label rules and leaves unresolved items unassessed. It skips the market pull if
+`~/.config/nmai/keys.env` is absent, and
 **aborts rather than leaving a stale `index.html`** if the build raises. It never runs
 `--plain`, never commits and never pushes.
 
@@ -36,6 +35,7 @@ from this list until 2026-08-07.
     python3 apply_ratings.py      # layer the a local ratings file trust ratings
     python3 extract_spans.py      # fetch each article, store verbatim figure-spans + offsets
     python3 label_items.py        # denominator from spans where they settle it, model for the rest
+    python3 carry_reviews.py      # persist current-schema labels by URL and content hash
     python3 resolve_entity.py     # decide who each claim is about, deterministically or blank
     python3 article_evidence.py   # per-article attribution, primary links, figure sourcing
     python3 fetch_scholar.py      # pull latest arXiv papers + HF datasets
@@ -52,9 +52,9 @@ Optional check, after `extract_spans.py`:
 All stdlib, no dependencies. Open `index.html` in any browser. A feed refresh costs nothing
 but time; the only optional cost in the pipeline is the local model in `label_items.py`.
 
-### `--plain` is a toggle, not a fourteenth step
+### `--plain` is a toggle, not a pipeline step
 
-    python3 build.py --plain      # same page, motive tiering OFF
+    python3 build.py --plain      # same page, source-class tiering off
 
 **`build.py` and `build.py --plain` write the same `index.html`.** There is one `OUT` path and
 no separate plain file. This block used to sit as the last line of the run list above, which
@@ -62,16 +62,12 @@ reads as a step to run after `build.py`; doing that leaves the tier-OFF page pub
 board. Caught 2026-08-07 by falling into it.
 
 Run one or the other. If you build `--plain` to look at it, **re-run plain `build.py` before
-committing.** To check which one is in the file:
+committing.** To check whether the current file is plain:
 
-    grep -c motivebar index.html    # 1 = plain, one per item + 1 = tiered (87 on 2026-08-07)
+    grep -c 'body class="plainmode"' index.html    # 1 = plain, 0 = source-tiered
 
-⚠️ It is **1 on a plain build, not 0**: the `.motivebar` CSS rule is emitted either way and only
-the per-item divs are dropped. Do not write a check that tests for zero.
-
-`--plain` turns the motive tier off entirely (no tier colours, per-item bar, motive key or
-tier map): sources are shown plain, for a reader who would rather judge them without the
-incentive layer. The other axes (denominator, track record, reality anchors) are unaffected.
+`--plain` removes source-tier colours, the source-class key and the tier registry. The other
+axes, including figure provenance, track record and reality anchors, are unaffected.
 
 ### Publishing, and the step that is not a script
 
@@ -95,27 +91,44 @@ locally and never reaches the board. On 2026-08-06 a full run sat unpushed at `a
 
 Stated here and on the page itself, not only in a hover tooltip.
 
-**Set from the domain, no model involved:** source type and a default motive tier.
+**Set from the domain, no model involved:** source type and source-class tier, using the
+executable `source_types` registry in `tier_map.json`.
 
 **Set deterministically:** the entity, by `resolve_entity.py` against `org_registry.json`,
 resolved from the headline, a product name, the publisher's own JSON-LD tags, or the
 publisher's site, in that order. Every result records which route reached it. Blank is a
 valid and common outcome: a piece about a labour market or a lawsuit trend has no subject
-organisation, and the motive tier correctly falls back to source type. Nothing is guessed.
+organisation. An unresolved publisher relationship has no numeric claim tier.
 
 **Set from article text:** `denominator_stated`. `extract_spans.py` fetches each article and
 stores the verbatim sentence around every figure with a character offset into the stored text.
 `--verify` re-asserts every span as an exact substring, so a label built on spans is auditable
 without reading the article or trusting the script. `label_items.py` then answers what the
-spans settle deterministically (tier 1) and asks a local model over Ollama only for the rest
-(tier 3).
+spans settle deterministically and asks a local model over Ollama only for the rest. The local
+model receives every extracted figure sentence. Batches are packed by prompt size, not by a
+fixed span count. An item above the prompt budget fails closed as unassessed rather than being
+sampled.
 
-**Every field carries `label_tier` and `label_evidence`, and the page renders them.** A
-denominator from a regex over quoted spans and one from a model are different evidence and
-must not look identical.
+The extractor prefers an `<article>` element over an outer `<main>`, trims known recommendation
+and comment tails from legacy cache records, removes repeated renders of the same sentence, and
+removes an exact figure sentence that appears under more than one article URL. Primary links are
+eligible only when they were extracted from an article element. Main-page and document-level
+link lists are withheld because they can contain recommendation or navigation links.
 
-**No machine pass ever sets `reviewed = true`.** That is why items keep the "auto-tagged,
-unreviewed" mark, and why a machine label is never overwritten onto a human one.
+**Every machine denominator carries `evidence_method`, `evidence_coverage`, `label_evidence`,
+`content_hash`, `evidence_hash` and `label_schema_version`.** The evidence hash covers the
+article version and complete extracted span set, so an extraction-rule change invalidates a
+label even when the cached article bytes are unchanged. A deterministic label and a local-model
+label do not look identical.
+
+The default local reader is `gemma4:12b` at a 32,768-token context. Override it with
+`LABEL_MODEL` and `LABEL_CTX`. The older `QWEN_MODEL` and `QWEN_CTX` names remain accepted for
+existing scripts. On 11 August 2026, Gemma 4 12B returned valid structured output for 6/6
+single-item requests, N=6, in 9-60 seconds each. This measures output compliance and speed,
+not label accuracy.
+
+**No machine pass ever sets `reviewed = true`.** Machine provenance is visible per card, and a
+machine label is never overwritten onto a human one.
 
 ### `claim_type` was retired, not fixed (2026-07-31)
 
@@ -126,7 +139,7 @@ stabilise is better deleted than caveated. `article_evidence.py` replaces the ju
 four countable properties: who the article's claims are attributed to and how many of those
 attributions are to a party to the claim, whether a piece describing a filing or a paper links
 to one, how many extracted figures name a source in the same sentence, and a claim-relative
-motive tier from `stake_map.json`.
+tier only where `stake_map.json` resolves the publisher relationship to the subject.
 
 ### The headline-only limit, and how it was closed
 
@@ -152,18 +165,20 @@ is worth keeping if it is ever rebuilt on spans.
 
 ## What each item shows
 
-- **Source chips and distribution bar** coloured by the tier scale below.
-- **denominator_stated**, Y / partial / N / n-a, with the tier and the evidence that produced
-  it, and the quoted span where one settles it.
+- **Source chips** labelled with publisher class and source tier. The aggregate source mix is
+  shown once under Method and limits.
+- **denominator_stated**, Y / partial / N / n-a / unassessed, with method and complete-span
+  coverage.
 - **Entity**, with the route that resolved it, or blank.
 - **Citation chain**, whether the article links to the primary document it describes. The
   label is "cites", never "restates": absence of a link is not evidence that reporting is
   second-hand.
-- **Reality anchor**, a link to a published base rate when the topic matches (a code-share
-  claim anchors to the AI Research-Automation Scorecard, energy to the Forecast Scorecard, GW
-  announcements to Contingent-Demand, water to the Water Tracker, cost to Cost Watch). The
-  card says whether the match came from the headline or from the article's figure sentences,
-  because those are different evidence.
+- **Reality anchors**, typed as portfolio syntheses or article-linked primaries. Topics may be
+  plural and require headline or publisher-tag evidence. Article spans can strengthen a topic
+  but cannot create one alone. An automatic portfolio anchor also requires headline evidence
+  and appears only when one topic clears its threshold without a tie. ArXiv, DOI and official
+  links found in a verified article element are shown as links to inspect, not as automatic
+  support for the headline.
 
 ## Model releases
 
@@ -257,46 +272,41 @@ The public board takes BROAD AI news (RSS), it does NOT run through the personal
 watchlist in `a local watchlist` (that watchlist is correct for private
 lead-hunting via `watch_routine.py`, but for a public page it would bias which AI news
 appears). What it DOES reuse is `sources.md`, which rates *who a source is*, not the topic, so
-it is neutral. That gives a two-axis board: motive tier (incentive) and track record (trusted
-or caution from `sources.md`), kept separate so past accuracy is not confused with incentive.
+it is neutral. Source class and track record (trusted or caution from `sources.md`) remain
+separate, so past accuracy is not confused with publisher type.
 `watch_routine.py` is left untouched; `apply_ratings.py` is a separate read-only adapter over
 `sources.md`.
 
 Feeds are mixed by source type on purpose. Primary and regulatory sources (Federal Register,
 FTC, SEC, CMA, Ofgem, NIST) sit alongside trade press and vendor newsrooms, because a board
-that tiers claims by incentive and then carries only tier-3 sources is grading a scale it does
-not span. Staleness cutoffs are per source type: 30 days for news, 120 for independent
+that classifies sources and then carries only trade press does not span its own registry.
+Staleness cutoffs are per source type: 30 days for news, 120 for independent
 sources, 180 for primary ones. A flat 30-day cutoff deletes the regulator feeds on day one.
 
-## Tier scale (canonical)
+## Tier registries
 
-**1 = least incentive to shade the claim** (primary record, regulator, adversarial process),
-2 = research institute or academia, 3 = analyst house or trade press, 4 = tool or data vendor,
-5 = the party selling the thing the claim is about. It is claim-relative and it allocates
-verification effort; it is not a trust or quality score. Green (low tier) to red (high tier) is
-a coverage bar keyed on motive rather than on a left or right axis.
+Source tier classifies the publisher domain: 1 primary record, 2 research or academic source,
+3 trade press, aggregator or unclassified publisher, 4 tool or data vendor, and 5 vendor
+publication or press office. It is not a trust score. A separate claim tier is emitted only
+when a recorded publisher or owner relationship to the subject resolves.
 
 `tier_map.json` records every tier with its basis, and every cell is contestable.
 
 ## What is decided by hand, and what is not
 
-Automatable: the feed pull, source type from the URL, motive tier by entity lookup, entity
-resolution against a registry, the denominator where quoted spans settle it, entity counting,
-the anchor topic to DOI map, archive capture and layout.
+Automatable: the feed pull, source type and source tier from the URL, entity resolution against
+a registry, the denominator where quoted spans settle it, topic candidates, unique automatic
+anchor selection, archive capture and layout.
 
 Not automatable, and not automated: whether an announcement was delivered, whether an item has
 been reviewed, and which private register rows may be published.
 
 ## Honest ceilings
 
-- The entity to motive map is curated and updatable. "Who benefits" is a judgement made once
-  per entity, transparently, not per item.
-- `stake_map.json` needs curating. An unlisted publisher keeps its source-type tier and is
-  marked as such, never guessed.
-- The anchor map covers seven topics, so an item outside them has no anchor. 23 of 76 items
-  carry one. That was 6 until the matcher stopped reading only headlines, so treat the
-  remaining blanks as two different things: topics the portfolio genuinely does not measure,
-  and matching this has not solved yet. Do not read a blank as the former by default.
+- `stake_map.json` needs curating. An unlisted publisher relationship has no numeric claim
+  tier. Source class remains available as a separate field.
+- Portfolio anchors cover only registered topics. Article-linked primaries widen the checkable
+  source set, but the presence of a link does not establish support for the headline.
 - Feed selection is editorial and disclosed. This is a curated digest, not a real-time
   firehose.
 - Span precision is unmeasured. Long documents dominate the span counts, and in those the
@@ -305,7 +315,8 @@ been reviewed, and which private register rows may be published.
 
 ## Conflict of interest
 
-The maker is an independent researcher. An Anthropic model helped build the method and tiers.
-An OpenAI model later assisted with feed-pipeline code and deployment checks, but did not assign
-the refreshed item labels or revise motive tiers. Anthropic and OpenAI appear here as subjects
-and are tiered on the same basis as other sources. Independent analysis, not investment advice.
+The maker is an independent researcher. An Anthropic model helped build the original method and
+tiers. An OpenAI model implemented the current source-class split, label provenance and anchor
+rules. OpenAI is a subject on the board, so this work is a direct conflict and is not an
+independent check of OpenAI-related output. Anthropic and OpenAI remain subjects under the same
+published registries. Independent analysis, not investment advice.

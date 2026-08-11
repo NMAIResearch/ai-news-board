@@ -2,6 +2,46 @@
 
 Dated, descriptive, newest first. Method changes and defects found, not every commit.
 
+## 2026-08-11
+
+**Source class is now separate from claim relationship.** Publisher class and its executable
+source tier come only from `tier_map.json`. A numeric claim tier is withheld unless
+`stake_map.json` resolves the publisher's relationship to the subject. The source rating now
+matches only publisher name or hostname. This removed 2 false path matches from 14 previously
+trusted feed items, leaving 12 trusted items out of 74, N=74.
+
+**Topics and anchors now fail closed.** `topic_registry.json` holds scored topic rules,
+exclusions and typed anchors. Article text can strengthen a topic but cannot create one without
+headline or publisher-tag evidence. Repeated weak phrases are capped, an automatic portfolio
+anchor requires unique headline evidence, and tied candidates abstain. The active feed now has
+12 automatic anchors across 74 items, N=74. False matches for Silicon Valley as chips, remote
+code execution as code automation and a watering can as water are regression tests.
+
+**URL identity, label coverage and cached evidence are executable invariants.** Semantic query
+parameters and distinct YouTube video IDs are retained while known tracking parameters are
+removed. Machine labels cover every extracted span or remain unassessed. They carry both the
+article-content hash and extracted-evidence hash, so an extraction-rule change invalidates a
+label even when the cached article bytes have not changed.
+
+**Page metadata no longer becomes quantitative evidence.** Publisher timestamps, video
+durations, reading times, comment totals, DOI-only lines and bare Figure, Table or Algorithm
+labels are excluded. In two measured passes, 39 of 439 candidate spans were removed as page or
+document structure, N=439, leaving 400 exact spans. All 400 remain exact substrings of the
+cached articles. One of 74 articles was not fetched, N=74, and stays unassessed.
+
+**Local-model output is provenance, not review.** The current 74-item feed has 20 rule labels,
+37 valid local-model labels and 17 unassessed labels, N=74. Gemma 4 12B returned valid
+structured output for 6 of 6 single-item repair requests, N=6, in 9-60 seconds each and is now
+the default local reader. This establishes speed and output compliance only, not label
+accuracy. The 10 August role description was accurate for that change and is now superseded:
+the OpenAI model implemented the source-class split, provenance hashes and anchor rules.
+
+**The board layout now separates the primary reading path from audit detail.** Cards show
+source class, evidence method, complete-span coverage, plural topics and typed anchors without
+the repeated universal badge. Method detail and secondary evidence remain available in
+collapsed sections. ArXiv, DOI and official links extracted from a verified article element
+are labelled as article-linked primaries, not as proof that they support the headline.
+
 ## 2026-08-10
 
 **Cross-lab assistance is now disclosed.** The first-exposure line, method panel, footer,

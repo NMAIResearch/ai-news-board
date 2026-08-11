@@ -1,22 +1,22 @@
 #!/usr/bin/env python3
-"""label_items.py - one pass that fills every machine-set field, with tier + evidence.
+"""label_items.py - denominator labels from complete verbatim figure-sentence sets.
 
 Replaces autolabel.py's headline-only guess. Reads feed_items.json and article_spans.json;
 answers what the spans settle deterministically and asks a model only for the rest.
 
-  denominator_stated  TIER 1 where the spans settle it, TIER 3 otherwise
+  denominator_stated  rule where every span settles it, local model otherwise
   entity              NOT set here; resolve_entity.py owns it
 
 ⛔ claim_type is RETIRED (2026-07-31) and is neither set here nor rendered by build.py.
 
-⭐ Every field written carries `label_tier` and `label_evidence`. A denominator from a regex
-and one from a model are different evidence and must not render identically.
+Every field carries `evidence_method`, `evidence_coverage`, `label_evidence`, the article
+content hash, the extracted-evidence hash and the label schema version.
 
 ⛔ Never overwrites an item whose label_source is "human". reviewed stays False throughout:
-the board keeps flagging these as auto-tagged.
+the board keeps their machine provenance visible.
 
   python3 label_items.py               # deterministic + model for the remainder
-  python3 label_items.py --tier1-only  # no model call at all
+  python3 label_items.py --rules-only  # no model call at all
   python3 label_items.py --dry-run     # decide and print, write nothing
   python3 label_items.py --report      # tier breakdown of the current labels
 
@@ -36,8 +36,11 @@ SPANS = os.path.join(HERE, "article_spans.json")
 
 BATCH = int(os.environ.get("LABEL_BATCH", "4"))
 LEAD_CHARS = 400          # opening of the article, for context on the figures
-MAX_SPANS = 4             # figure-sentences shown per item
-SPAN_CHARS = 240
+LABEL_SCHEMA_VERSION = 2
+# Reserve the configured generation allowance and 2,000 tokens for framing. Three
+# characters per token is conservative for this English and JSON task.
+PROMPT_CHAR_BUDGET = int(os.environ.get(
+    "LABEL_PROMPT_CHAR_BUDGET", str(max(12_000, (NUM_CTX - NUM_PREDICT - 2_000) * 3))))
 
 DENOM_VALUES = {"Y", "partial", "N", "n/a"}
 
@@ -72,30 +75,40 @@ def tier1_denominator(rec):
     based = [s for s in spans if s["base_cue"]]
     if len(based) == len(spans):
         return "Y", f"all {len(spans)} figure-sentence(s) state a base", True
-    if based:
-        return "partial", f"{len(based)} of {len(spans)} figure-sentence(s) state a base", True
-    # No cue anywhere. The cue list is a regex, so absence is weak evidence: escalate.
-    return None, f"{len(spans)} figure-sentence(s), no base cue matched", False
+    # Absence of a regex cue is weak evidence. Any unsettled span sends the complete set to
+    # the model, including spans where a cue was found, so the article-level aggregate is
+    # never inferred from a sample.
+    return None, f"{len(based)} of {len(spans)} figure-sentence(s) matched a base cue", False
 
 
 def item_block(n, it, rec, lead):
     out = [f"{n}. HEADLINE: {it.get('headline','')}"]
     if lead:
         out.append(f"   OPENING: {lead[:LEAD_CHARS]}")
-    spans = (rec or {}).get("spans", [])[:MAX_SPANS]
+    spans = (rec or {}).get("spans", [])
     for s in spans:
-        out.append(f"   FIGURE SENTENCE: {s['sentence'][:SPAN_CHARS]}")
+        out.append(f"   FIGURE SENTENCE: {s['sentence']}")
     if not spans:
         out.append("   FIGURE SENTENCE: (none found in the article)")
     return "\n".join(out)
 
 
+def current_machine_label(item, record):
+    """True only when the label schema and article evidence hash both still match."""
+    return bool(item.get("label_schema_version") == LABEL_SCHEMA_VERSION
+                and item.get("evidence_method")
+                and record and record.get("content_hash")
+                and record.get("evidence_hash")
+                and item.get("content_hash") == record.get("content_hash")
+                and item.get("evidence_hash") == record.get("evidence_hash"))
+
+
 def do_report(items):
-    tiers = collections.Counter(it.get("label_tier", "unset") for it in items)
+    methods = collections.Counter(it.get("evidence_method", "unset") for it in items)
     dens = collections.Counter(it.get("denominator_stated") for it in items)
 
     print(f"items: {len(items)}")
-    print(f"  label_tier:  {dict(sorted(tiers.items(), key=lambda t: str(t[0])))}")
+    print(f"  evidence method: {dict(sorted(methods.items(), key=lambda t: str(t[0])))}")
     print(f"  denominator: {dict(dens)}")
     ev = [it for it in items if it.get("label_evidence")]
     print(f"  with evidence recorded: {len(ev)}/{len(items)}")
@@ -103,7 +116,8 @@ def do_report(items):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--tier1-only", action="store_true", help="no model call")
+    ap.add_argument("--rules-only", "--tier1-only", dest="rules_only", action="store_true",
+                    help="no model call")
     ap.add_argument("--dry-run", action="store_true", help="decide and print, write nothing")
     ap.add_argument("--report", action="store_true", help="summarise current labels")
     ap.add_argument("--batch", type=int, default=BATCH)
@@ -127,41 +141,100 @@ def main():
                 return s["url"]
         return ""
 
-    todo, settled = [], 0
+    todo, settled, prompt_sizes = [], 0, {}
     for it in items:
         if it.get("label_source") == "human":
             continue
-        if it.get("label_tier") and not a.force:
-            continue
         rec = spans.get(url_of(it))
+        if current_machine_label(it, rec) and not a.force:
+            continue
+        it.pop("label_tier", None)
+        it.pop("auto_labelled_by", None)
+        it.pop("review_stale", None)
+        if rec is None or rec.get("fetch") != "ok":
+            why = "no stored article" if rec is None else f"article not fetched ({rec['fetch']})"
+            it["denominator_stated"] = "?"
+            it["evidence_method"] = "unassessed"
+            it["evidence_coverage"] = {"seen": 0, "total": 0}
+            it["label_evidence"] = why
+            it["content_hash"] = (rec or {}).get("content_hash", "")
+            it["evidence_hash"] = (rec or {}).get("evidence_hash", "")
+            it["label_schema_version"] = LABEL_SCHEMA_VERSION
+            it["auto_labelled"] = True
+            it["label_source"] = "deterministic"
+            continue
+        body = (text.get(url_of(it)) or {}).get("text", "")
+        block_chars = len(item_block(1, it, rec, body[:LEAD_CHARS])) + 20
+        if len(INSTRUCT) + block_chars > PROMPT_CHAR_BUDGET:
+            total = len(rec.get("spans", []))
+            it["denominator_stated"] = "?"
+            it["evidence_method"] = "unassessed"
+            it["evidence_coverage"] = {"seen": 0, "total": total}
+            it["label_evidence"] = (
+                f"complete figure evidence needs {len(INSTRUCT) + block_chars} prompt "
+                f"characters, above the {PROMPT_CHAR_BUDGET}-character review budget")
+            it["content_hash"] = rec.get("content_hash", "")
+            it["evidence_hash"] = rec.get("evidence_hash", "")
+            it["label_schema_version"] = LABEL_SCHEMA_VERSION
+            it["auto_labelled"] = True
+            it["label_source"] = "deterministic"
+            continue
         val, why, ok = tier1_denominator(rec)
         if ok:
             it["denominator_stated"] = val
-            it["label_tier"] = 1
+            it["evidence_method"] = "rule"
+            it["evidence_coverage"] = {"seen": len(rec["spans"]), "total": len(rec["spans"])}
             it["label_evidence"] = why
+            it["content_hash"] = rec.get("content_hash", "")
+            it["evidence_hash"] = rec.get("evidence_hash", "")
+            it["label_schema_version"] = LABEL_SCHEMA_VERSION
+            it["auto_labelled"] = True
             it["label_source"] = "deterministic"
             settled += 1
         else:
             it["_pending"] = why
+            prompt_sizes[id(it)] = block_chars
             # ⛔ Only unsettled items reach the model. Sending Tier 1 items too wasted 8 of
             # 20 calls on 2026-07-31 and stamped auto_labelled_by on 14 regex-derived
             # labels, so the record named a model the label never used.
             todo.append(it)
 
-    print(f"TIER 1 settled the denominator on {settled} item(s); "
+    print(f"rules settled the denominator on {settled} item(s); "
           f"{len(todo)} escalated to {MODEL}")
-    if a.tier1_only:
+    if a.rules_only:
         for it in todo:
             it.pop("_pending", None)
+            it["denominator_stated"] = "?"
+            it["evidence_method"] = "unassessed"
+            rec = spans.get(url_of(it)) or {}
+            total = len(rec.get("spans", []))
+            it["evidence_coverage"] = {"seen": 0, "total": total}
+            it["label_evidence"] = "model review skipped; regex did not settle every figure-sentence"
+            it["content_hash"] = rec.get("content_hash", "")
+            it["evidence_hash"] = rec.get("evidence_hash", "")
+            it["label_schema_version"] = LABEL_SCHEMA_VERSION
+            it["auto_labelled"] = True
+            it["label_source"] = "deterministic"
         if not a.dry_run:
             json.dump(data, open(FEED, "w"), indent=1)
-            print("written (TIER 1 denominators only; nothing escalated)")
+            print("written (rule-set denominators only; unresolved items remain unassessed)")
         return
 
-    nb = (len(todo) + a.batch - 1) // a.batch
+    if a.batch < 1:
+        ap.error("--batch must be at least 1")
+    batches, chunk, chunk_chars = [], [], len(INSTRUCT) + 20
+    for it in todo:
+        size = prompt_sizes[id(it)]
+        if chunk and (len(chunk) >= a.batch or chunk_chars + size > PROMPT_CHAR_BUDGET):
+            batches.append(chunk)
+            chunk, chunk_chars = [], len(INSTRUCT) + 20
+        chunk.append(it)
+        chunk_chars += size
+    if chunk:
+        batches.append(chunk)
+    nb = len(batches)
     changed = failed = 0
-    for b in range(nb):
-        chunk = todo[b * a.batch:(b + 1) * a.batch]
+    for b, chunk in enumerate(batches):
         blocks = []
         for k, it in enumerate(chunk):
             u = url_of(it)
@@ -189,16 +262,31 @@ def main():
             if pending:
                 dn = str(o.get("denominator", "")).strip()
                 dn = DENOM.get(dn.lower(), dn if dn in DENOM_VALUES else None)
+                rec = spans.get(url_of(it)) or {}
+                total = len(rec.get("spans", []))
+                if dn == "n/a" and total:
+                    dn = None
                 if dn:
                     n += 1
                     it["denominator_stated"] = dn
-                    it["label_tier"] = 3
-                    it["label_evidence"] = f"model read {pending}"
+                    it["evidence_method"] = "local-model"
+                    it["evidence_coverage"] = {"seen": total, "total": total}
+                    it["label_evidence"] = f"model read all {total} figure-sentence(s); {pending}"
+                    it["content_hash"] = rec.get("content_hash", "")
+                    it["evidence_hash"] = rec.get("evidence_hash", "")
+                    it["label_schema_version"] = LABEL_SCHEMA_VERSION
+                else:
+                    it["denominator_stated"] = "?"
+                    it["evidence_method"] = "unassessed"
+                    it["evidence_coverage"] = {"seen": 0, "total": total}
+                    it["label_evidence"] = "model returned an invalid denominator label"
+                    it["content_hash"] = rec.get("content_hash", "")
+                    it["evidence_hash"] = rec.get("evidence_hash", "")
+                    it["label_schema_version"] = LABEL_SCHEMA_VERSION
             # ⛔ Entity is NOT filled here. The model fabricated on 2026-07-31: 'None' x3,
             # 'Researchers', 'AI startups', 'x.com', 'Christian & Timbers' (a firm quoted in
             # the piece, not its subject). resolve_entity.py decides it deterministically or
             # leaves it blank.
-            it.setdefault("label_tier", 3)
             it["auto_labelled"] = True
             it["auto_labelled_by"] = MODEL
             it["label_source"] = "machine"
@@ -206,7 +294,19 @@ def main():
         print(f"  batch {b+1}/{nb}: {n}/{len(chunk)} in {time.time()-t0:.0f}s")
 
     for it in items:
-        it.pop("_pending", None)
+        pending = it.pop("_pending", None)
+        if pending:
+            rec = spans.get(url_of(it)) or {}
+            total = len(rec.get("spans", []))
+            it["denominator_stated"] = "?"
+            it["evidence_method"] = "unassessed"
+            it["evidence_coverage"] = {"seen": 0, "total": total}
+            it["label_evidence"] = "model review failed; denominator remains unassessed"
+            it["content_hash"] = rec.get("content_hash", "")
+            it["evidence_hash"] = rec.get("evidence_hash", "")
+            it["label_schema_version"] = LABEL_SCHEMA_VERSION
+            it["auto_labelled"] = True
+            it["label_source"] = "deterministic"
     print(f"\nlabelled {changed}, failed {failed}. reviewed stays False on all of them.")
     if a.dry_run:
         print("dry run: nothing written")

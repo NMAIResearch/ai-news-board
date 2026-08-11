@@ -7,13 +7,13 @@ the reader can check.
 
   attribution     who the article's claims are attributed to, and how many of those
                   attributions are to a party to the claim itself
-  primary_links   does an article describing a filing/paper/docket link to one
+  primary_links   does a verified article element link to a filing, paper or docket
   figure_source   of the extracted figures, how many name a source in the same sentence
-  motive_tier     claim-relative, from stake_map.json: the publisher's relationship to the
+  claim_tier      claim-relative, from stake_map.json: the publisher's relationship to the
                   ENTITY the claim is about, not its domain type alone
 
-⚠️ `motive_tier` needs `stake_map.json` to be curated. An unlisted publisher keeps its
-source-type tier and is marked `tier_basis: "source-type"`, never guessed.
+⚠️ `claim_tier` needs `stake_map.json` to be curated. An unresolved publisher
+relationship has no numeric claim tier.
 
   python3 article_evidence.py            # compute -> article_evidence.json
   python3 article_evidence.py --report   # summarise
@@ -26,6 +26,8 @@ import json
 import os
 import re
 import urllib.parse
+
+from url_identity import canonical_url
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 FEED = os.path.join(HERE, "feed_items.json")
@@ -67,7 +69,7 @@ def url_of(it):
 # Reuse the sentence splitter from extract_spans. Splitting on newlines here made every
 # "sentence" a whole paragraph, so "the subject is named in this sentence" silently became
 # "somewhere in this paragraph".
-from extract_spans import sentences as sentences_of  # noqa: E402
+from extract_spans import evidence_text, sentences as sentences_of  # noqa: E402
 
 
 # An entity value the tier and attribution logic must refuse to act on. Garbage in this
@@ -124,24 +126,23 @@ def link_kinds(links, entity, stakes):
 
 
 def claim_relative_tier(item, entity, stakes):
-    """(tier, basis). Falls back to the source-type tier when the publisher is unlisted."""
+    """(tier, relationship, basis). An unresolved relationship has no numeric tier."""
     src = (item.get("sources") or [{}])[0]
-    base = src.get("motive_tier", 3)
     net = urllib.parse.urlsplit(src.get("url", "")).netloc.replace("www.", "").lower()
     owners = stakes.get("publisher_owner", {})
     owner = next((o for d, o in owners.items() if net == d or net.endswith("." + d)), None)
     if owner is None:
-        return base, "source-type"
+        return None, "unresolved", "publisher relationship to subject not recorded"
     if entity and owner.lower() == entity.lower():
-        return 5, f"publisher is the subject ({owner})"
+        return 5, "publisher-is-subject", f"publisher is the subject ({owner})"
     held = stakes.get("stakes", {}).get(owner, [])
     if entity and any(entity.lower() == h.lower() for h in held):
-        return 4, f"publisher owner {owner} holds a stake in {entity}"
-    return base, f"publisher owner {owner}, no recorded stake in {entity or 'the subject'}"
+        return 4, "owner-holds-stake", f"publisher owner {owner} holds a recorded stake in {entity}"
+    return None, "unresolved", f"no recorded claim relationship between {owner} and {entity or 'the subject'}"
 
 
 def canon(u):
-    return u.rstrip("/").split("?")[0].replace("https://www.", "https://")
+    return canonical_url(u)
 
 
 def story_chains(items, texts):
@@ -162,19 +163,20 @@ def story_chains(items, texts):
             url_of_item[canon(u)] = it
     chains = {u: {"cites": [], "cited_by": []} for u in url_of_item}
     for u, it in url_of_item.items():
-        links = {canon(x) for x in (texts.get(
-            next(s["url"] for s in it["sources"] if s.get("url"))) or {}).get("links", [])}
+        text_record = texts.get(next(s["url"] for s in it["sources"] if s.get("url"))) or {}
+        verified_links = text_record.get("links", []) if text_record.get("links_scope") == "article" else []
+        links = {canon(x) for x in verified_links}
         for other in links & set(url_of_item):
             if other == u:
                 continue
             tgt = url_of_item[other]
             chains[u]["cites"].append({
                 "url": other, "name": tgt["sources"][0].get("name", ""),
-                "tier": int(tgt["sources"][0].get("motive_tier", 3)),
+                "tier": int(tgt["sources"][0]["source_tier"]),
                 "entity": tgt.get("entity", ""), "headline": tgt.get("headline", "")})
             chains[other]["cited_by"].append({
                 "url": u, "name": it["sources"][0].get("name", ""),
-                "tier": int(it["sources"][0].get("motive_tier", 3)),
+                "tier": int(it["sources"][0]["source_tier"]),
                 "entity": it.get("entity", ""), "headline": it.get("headline", "")})
     return chains
 
@@ -190,12 +192,15 @@ def compute():
         entity = it.get("entity", "")
         if not usable_entity(entity):
             entity = ""          # measures that need a subject report "unknown", not a guess
-        body = txt.get("text", "")
+        body = evidence_text(txt.get("text", ""), u)
         party, other, unnamed = attribution(body, entity, stakes)
-        kinds = link_kinds(txt.get("links", []), entity, stakes)
+        verified_links = txt.get("links", []) if txt.get("links_scope") == "article" else []
+        kinds = link_kinds(verified_links, entity, stakes)
         figs = rec.get("spans", [])
         attributed = [s for s in figs if ATTRIB.search(s["sentence"])]
-        tier, basis = claim_relative_tier(it, entity, stakes)
+        tier, relationship, basis = claim_relative_tier(it, entity, stakes)
+        src = (it.get("sources") or [{}])[0]
+        source_tier = int(src["source_tier"])
         out[u] = {
             "headline": it.get("headline", ""),
             "entity": entity,
@@ -210,7 +215,11 @@ def compute():
             "links": {k: len(v) for k, v in kinds.items()},
             "primary_link_examples": kinds["primary"][:4],
             "figures": {"total": len(figs), "with_named_source": len(attributed)},
-            "motive_tier": tier, "tier_basis": basis,
+            "source_type": src.get("source_type", "other"),
+            "source_tier": source_tier,
+            "claim_tier": tier,
+            "claim_relationship": relationship,
+            "tier_basis": basis,
             "chain": chains.get(canon(u), {"cites": [], "cited_by": []}),
         }
     json.dump(out, open(OUT, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
@@ -247,11 +256,11 @@ def report(ev):
           f"({100*att/tot:.0f}%)" if tot else "  no figures")
     ch = [v for v in ok if v.get("chain", {}).get("cites") or v.get("chain", {}).get("cited_by")]
     cross = [v for v in ok for c in v.get("chain", {}).get("cites", [])
-             if c["tier"] != v["motive_tier"]]
+             if c["tier"] != v["source_tier"]]
     print("\nSTORY CHAINS")
     print(f"  items in a citation chain:                        {len(ch)}/{len(ok)}")
     print(f"  citations that cross a tier:                      {len(cross)}")
-    print("\nMOTIVE TIER")
+    print("\nCLAIM RELATIONSHIP")
     bas = {}
     for v in ok:
         bas[v["tier_basis"].split("(")[0].strip()] = bas.get(
@@ -268,7 +277,9 @@ def main():
     ev = load(OUT) if (a.report or a.check >= 0) and os.path.exists(OUT) else compute()
     if a.check >= 0:
         v = list(ev.values())[a.check]
-        print(f"{v['headline']}\n  entity: {v['entity']}  tier {v['motive_tier']} "
+        tier = v.get("claim_tier")
+        tier_text = f"claim tier {tier}" if tier else "claim relationship unresolved"
+        print(f"{v['headline']}\n  entity: {v['entity']}  {tier_text} "
               f"({v['tier_basis']})")
         for k, sp in v["attribution"]["spans"].items():
             for s in sp:

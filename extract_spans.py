@@ -16,6 +16,7 @@ description, exactly 1 carried a figure its headline lacked (measured 2026-07-30
 
     python3 extract_spans.py              # fetch (cached) + extract
     python3 extract_spans.py --refetch    # ignore the cache
+    python3 extract_spans.py --cached-only # rebuild spans without network retries
     python3 extract_spans.py --verify     # check stored spans are exact substrings
     python3 extract_spans.py --report     # per-item span counts, fetch nothing
 
@@ -23,6 +24,7 @@ Writes article_text.json (cache) and article_spans.json. Touches neither feed_it
 nor index.html.
 """
 import argparse
+import hashlib
 import html
 import json
 import os
@@ -47,8 +49,10 @@ MAX_CHARS = 400_000
 
 DROP = re.compile(r"<(script|style|noscript|svg|form|nav|header|footer|aside)\b.*?</\1>",
                   re.S | re.I)
-# <article> and <main> when present; the fallback is the whole body and is noisier.
-MAIN = re.compile(r"<(?:article|main)\b[^>]*>(.*?)</(?:article|main)>", re.S | re.I)
+# Prefer a nested article element over its outer main element. Selecting the first of either
+# included publisher recommendation rails that sit beside or below the article.
+ARTICLE = re.compile(r"<article\b[^>]*>(.*?)</article>", re.S | re.I)
+MAIN = re.compile(r"<main\b[^>]*>(.*?)</main>", re.S | re.I)
 BLOCK = re.compile(r"</(p|div|li|h[1-6]|br|tr)\s*>|<br\s*/?>", re.I)
 TAG = re.compile(r"<[^>]+>")
 WS = re.compile(r"[ \t ]+")
@@ -83,25 +87,105 @@ FURNITURE = re.compile(
     r"securely on Signal|\bSignal at\b|\bWhatsApp\b|Telegram @|\+\d[\d\s\-]{8,}"
     r"|Save up to|Register (?:now|today)|Buy (?:your )?tickets?|tickets? on sale"
     r"|Sign up (?:for|to) (?:our|the)|newsletter|Subscribe|All rights reserved|©"
-    r"|Disrupt 20\d\d|Read more:|Related:|Image Credits", re.I)
+    r"|Disrupt 20\d\d|Read more:|Related:|Image Credits"
+    r"|covered the tech industry for over \d+ years"
+    r"|^DOI:\s*10\.\S+$"
+    r"|^See all comments\s*\(\d+\)$"
+    r"|^(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+"
+    r"\d{1,2}(?:st|nd|rd|th)?\s+(?:19|20)\d{2}\s*\|\s*\d+\s+min read$"
+    r"|^(?:Figure|Algorithm|Table)\s+\d+\s*:[^\d$£€%]*$", re.I)
+
+# Publisher timestamps and embedded-video durations are metadata, not figures in the
+# article's claim. The patterns are anchored so a substantive sentence that happens to
+# mention a time is retained.
+TIME_FURNITURE = re.compile(
+    r"^\s*(?:"
+    r"\d{1,2}:\d{2}\s*(?:AM|PM)\s*[A-Z]{2,5}\s*[·|,\-]\s*"
+    r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2},\s+(?:19|20)\d{2}"
+    r"|(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2},\s+"
+    r"(?:19|20)\d{2},\s*\d{1,2}:\d{2}\s*(?:AM|PM)\s*[A-Z]{2,5}"
+    r"|(?:Posted|Updated)\s+(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\b.*\bat\s+"
+    r"\d{1,2}:\d{2}(?:am|pm)\b.*"
+    r"|VIDEO(?:\s+\d{1,2}:\d{2})+"
+    r")\s*$", re.I)
 
 SENT_END = re.compile(r"(?<=[.!?])[\s\n]+")
 ABBREV = re.compile(r"\b(?:Mr|Mrs|Ms|Dr|Prof|Inc|Ltd|Corp|Co|St|vs|approx|e\.g|i\.e|U\.S|U\.K)\.$",
                     re.I)
 
 
+def content_region(raw_html):
+    """Return the narrowest available article HTML and its provenance class."""
+    article = ARTICLE.search(raw_html)
+    if article and len(article.group(1)) > 400:
+        return article.group(1), "article"
+    main = MAIN.search(raw_html)
+    if main and len(main.group(1)) > 400:
+        return main.group(1), "main"
+    return raw_html, "document"
+
+
 def readable(raw_html):
     """HTML to plain text. Paragraph structure kept as newlines; everything else dropped."""
-    s = DROP.sub(" ", raw_html)
-    m = MAIN.search(s)
-    if m and len(m.group(1)) > 400:
-        s = m.group(1)
+    s, _ = content_region(raw_html)
+    s = DROP.sub(" ", s)
     s = BLOCK.sub("\n", s)
     s = TAG.sub(" ", s)
     s = html.unescape(s)
     s = WS.sub(" ", s)
     s = NL.sub("\n", s)
     return "\n".join(ln.strip() for ln in s.split("\n")).strip()[:MAX_CHARS]
+
+
+def evidence_text(text, url):
+    """Trim known publisher recommendation rails from legacy cached readable text."""
+    host = (urllib.parse.urlsplit(url).hostname or "").lower().removeprefix("www.")
+    markers = []
+    if host == "techcrunch.com":
+        markers = ["\nRelated\n", "\nLatest in AI\n", "\nMost Popular\n"]
+    elif host == "cset.georgetown.edu":
+        markers = ["\nRelated Content\n"]
+    positions = [text.find(marker, 400) for marker in markers]
+    comments = re.search(r"\n\d+\s+Comments\n", text[400:], re.I)
+    if comments:
+        positions.append(400 + comments.start())
+    positions = [position for position in positions if position >= 0]
+    return text[:min(positions)].rstrip() if positions else text
+
+
+def related_headline(sentence, current_headline, headlines):
+    """True when a figure sentence is exactly another current card's headline."""
+    normal = lambda value: " ".join(html.unescape(value or "").split()).casefold()
+    value = normal(sentence)
+    return value != normal(current_headline) and value in headlines
+
+
+def sentence_key(sentence):
+    """Stable key for duplicate rendered copies of one evidence sentence."""
+    return " ".join(html.unescape(sentence or "").split()).casefold()
+
+
+def evidence_hash(content_hash, spans):
+    """Hash the article version and the complete extracted evidence set."""
+    payload = {"version": 1, "content_hash": content_hash, "spans": spans}
+    encoded = json.dumps(payload, sort_keys=True, separators=(",", ":"),
+                         ensure_ascii=False).encode("utf-8")
+    return hashlib.sha256(encoded).hexdigest()
+
+
+def drop_cross_article_duplicates(records):
+    """Remove identical figure sentences rendered on more than one article URL."""
+    owners = {}
+    for url, record in records.items():
+        for span in record.get("spans", []):
+            owners.setdefault(sentence_key(span["sentence"]), set()).add(url)
+    repeated = {key for key, urls in owners.items() if len(urls) > 1}
+    for record in records.values():
+        before = len(record.get("spans", []))
+        record["spans"] = [span for span in record.get("spans", [])
+                           if sentence_key(span["sentence"]) not in repeated]
+        record["cross_article_duplicates_dropped"] = before - len(record["spans"])
+    return sum(len(owners[key]) for key in repeated)
 
 
 LINK = re.compile(r'<a\b[^>]*\bhref\s*=\s*["\']([^"\'#][^"\']*)["\']', re.I)
@@ -162,10 +246,8 @@ def outbound(raw_html, page_url):
     Kept separate from readable(): the text pass strips tags, so a link check run on the
     stored text can only ever return zero.
     """
-    s = DROP.sub(" ", raw_html)
-    m = MAIN.search(s)
-    if m and len(m.group(1)) > 400:
-        s = m.group(1)
+    s, _ = content_region(raw_html)
+    s = DROP.sub(" ", s)
     here = urllib.parse.urlsplit(page_url).netloc.replace("www.", "")
     out, seen = [], set()
     for href in LINK.findall(s):
@@ -318,6 +400,8 @@ def do_report():
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--refetch", action="store_true", help="ignore the cache")
+    ap.add_argument("--cached-only", action="store_true",
+                    help="rebuild from cached records without fetching missing articles")
     ap.add_argument("--verify", action="store_true", help="check spans against cached text")
     ap.add_argument("--report", action="store_true", help="summarise, fetch nothing")
     ap.add_argument("--limit", type=int, default=0, help="stop after N articles")
@@ -330,6 +414,8 @@ def main():
 
     cache, spans, robots, last = load(CACHE), {}, {}, {}
     urls = board_urls()
+    known_headlines = {" ".join(html.unescape(headline).split()).casefold()
+                       for _, headline, _ in urls}
     if a.limit:
         urls = urls[:a.limit]
     print(f"{len(urls)} article(s); cache holds {len(cache)}")
@@ -337,9 +423,16 @@ def main():
     fetched = reused = skipped = 0
     for url, headline, src in urls:
         rec = cache.get(url)
-        # Reuse successes only. A cached failure survives the fix that would clear it.
-        if rec and rec.get("status") == "ok" and not a.refetch:
-            reused += 1
+        # Normal refreshes retry cached failures. Cached-only mode preserves their status.
+        if a.cached_only and rec is None:
+            rec = {"text": "", "status": "not-cached", "links": [],
+                   "publisher_tags": [], "site_name": ""}
+            skipped += 1
+        elif rec and not a.refetch and (rec.get("status") == "ok" or a.cached_only):
+            if rec.get("status") == "ok":
+                reused += 1
+            else:
+                skipped += 1
         else:
             if not robots_ok(url, robots):
                 cache[url] = {"text": "", "status": "robots-disallowed",
@@ -353,8 +446,10 @@ def main():
                 try:
                     raw_html = fetch(url)
                     tags, site = publisher_tags(raw_html)
+                    _, link_scope = content_region(raw_html)
                     cache[url] = {"text": readable(raw_html), "status": "ok",
                                   "links": outbound(raw_html, url),
+                                  "links_scope": link_scope,
                                   "publisher_tags": tags, "site_name": site,
                                   "fetched": datetime.now(timezone.utc).isoformat()}
                     fetched += 1
@@ -370,7 +465,8 @@ def main():
             rec = cache[url]
             json.dump(cache, open(CACHE, "w"), indent=1)   # durable per article
 
-        body, got, furniture = rec["text"], [], 0
+        body, got, furniture, related = evidence_text(rec["text"], url), [], 0, 0
+        duplicate, seen_sentences = 0, set()
         if rec["status"] == "ok":
             for sent, off in sentences(body):
                 figs = figures(sent)
@@ -379,6 +475,17 @@ def main():
                 if FURNITURE.search(sent):
                     furniture += 1
                     continue
+                if TIME_FURNITURE.fullmatch(sent):
+                    furniture += 1
+                    continue
+                if related_headline(sent, headline, known_headlines):
+                    related += 1
+                    continue
+                key = sentence_key(sent)
+                if key in seen_sentences:
+                    duplicate += 1
+                    continue
+                seen_sentences.add(key)
                 got.append({
                     "sentence": sent,
                     "offset": off,
@@ -391,16 +498,24 @@ def main():
         # clone. resolve_entity.py reads the cache directly and is fine; build.py reads THIS
         # file and could not see the tags at all, which silently cost the topic matcher its
         # best signal. Tags are a short keyword list, not article text, so they commit.
+        body_hash = hashlib.sha256(body.encode("utf-8")).hexdigest()
         spans[url] = {"headline": headline, "source": src, "fetch": rec["status"],
                       "n_chars": len(body), "tier": 1, "furniture_dropped": furniture,
+                      "related_headlines_dropped": related,
+                      "duplicate_spans_dropped": duplicate,
+                      "links_scope": rec.get("links_scope", "unverified-legacy"),
+                      "content_hash": body_hash,
+                      "evidence_hash": evidence_hash(body_hash, got),
                       "publisher_tags": rec.get("publisher_tags") or [],
                       "site_name": rec.get("site_name", ""),
                       "spans": got}
         mark = "ok" if rec["status"] == "ok" else rec["status"]
         print(f"  {mark:18s} {len(got):3d} span(s)  {headline[:56]}")
 
+    cross_article_dropped = drop_cross_article_duplicates(spans)
     json.dump(spans, open(SPANS, "w"), indent=1)
     print(f"\nfetched {fetched}, cached {reused}, not fetched {skipped}")
+    print(f"cross-article duplicate spans dropped: {cross_article_dropped}")
     print(f"written: {SPANS}")
     print("run --verify to confirm every span is an exact substring of the stored article")
 

@@ -3,18 +3,15 @@
 AI News Board - build.py (stdlib only, no dependencies).
 NM AI Research.
 
-Reads items.json and renders a static index.html that sorts AI-news claims by
-incentive rather than by political lean. The axis is MOTIVE: who is telling you
-this and what they gain if you believe it. Each item shows a source distribution bar by
-motive tier, a denominator flag with the tier and evidence that produced it, a citation
-chain, and a "reality anchor" linking the claim to a published base rate. FLAG, do not
-NARRATE: the tags speak.
+Reads items.json and renders a static index.html. Source class, a resolved claim
+relationship, figure-base evidence, citation links and typed reality anchors are separate
+fields. An automatic anchor is withheld when the topic evidence ties.
 
 ⛔ claim_type is RETIRED (2026-07-31). Not rendered. Do not revive it: see line ~373.
 
 Run:  python3 build.py   ->   writes index.html next to items.json
 """
-import json, os, html
+import json, os, html, re, urllib.parse
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(HERE, "items.json")
@@ -46,118 +43,15 @@ DENOM = {"y": ("#2f7d4f", "Figures: base stated"),
          "n": ("#b23b2e", "Figures: no base stated"),
          "n/a": ("#64748b", "No figures in this article"),
          "?": ("#94a3b8", "Figures not assessed")}
-# Short names for the motive scale. The long strings in TIER stay as the hover text.
-TIER_SHORT = {1: "primary record", 2: "research institute", 3: "trade press",
-              4: "tool or data vendor", 5: "party selling the thing"}
-CLAIM = {"measurement": "#2f7d4f", "assertion": "#5b7fa6",
-         "target": "#cc7a33", "prediction": "#cc7a33",
-         "study": "#2f7d4f", "opinion": "#6b7280", "lawsuit": "#8a5a3b"}
-
-# topic -> keywords, to auto-suggest a reality anchor for an unreviewed feed item.
-# Order is priority: the first topic whose keyword matches the headline wins. This
-# is plumbing (a keyword match), not the call: an auto-matched anchor is flagged as
-# a machine suggestion, never asserted, and a human review can override the topic.
-import re
-TOPIC_KEYWORDS = [
-    ("water", ["water", "cooling", "aquifer", "wastewater", "gallons", "hydro"]),
-    ("self_improvement", ["self-improv", "self improv", "recursive", "superintelligence",
-                          "automate ai research", "ai r&d", "ai r and d"]),
-    ("code_automation", ["code", "coding", "programmer", "software engineer",
-                         "developer", "copilot", "pull request"]),
-    ("work_automation", ["layoff", "layoffs", "laying off", "lay off", "headcount",
-                         "workforce", "job cuts", "job losses", "redundanc",
-                         "replace workers", "automate the work"]),
-    ("power_demand", ["gigawatt", "megawatt", "gw", "mw", "data center", "data centre",
-                      "datacenter", "grid", "nuclear", "power plant", "capacity buildout",
-                      "electricity", "substation", "turbine"]),
-    ("energy_forecast", ["energy demand", "electricity demand", "power consumption",
-                         "terawatt", "twh", "energy forecast", "power forecast"]),
-    ("cost", ["capex", "billion", "spend", "spending", "investment", "funding round",
-              "valuation", "revenue"]),
-    # ↻ [2026-07-30] Descriptive topics added below. The seven above are ANCHOR topics: the
-    # portfolio holds a published base rate for each, so an item tagged with one gets a
-    # reality anchor. These do not anchor, they only make the filter usable.
-    # ⚠️ Keep them BELOW the anchor topics. tag_topic returns the FIRST match, so putting a
-    # descriptive topic above an anchor topic would strip the anchor off an anchorable item.
-    ("chips", ["chip", "semiconductor", "gpu", "tpu", "wafer", "foundry", "nvidia",
-               "tsmc", "asml", "lithograph", "hbm", "accelerator", "silicon"]),
-    ("regulation", ["regulat", "lawsuit", "sued", "sues", "antitrust", "court",
-                    "settlement", "copyright", "ftc", "sec", "eu ai act", "compliance",
-                    "subpoena", "investigation", "ruling", "legislat", "policy statement"]),
-    ("safety", ["safety", "alignment", "jailbreak", "guardrail", "red team", "misuse",
-                "hallucinat", "breach", "vulnerab", "exploit", "deepfake", "csam",
-                "privacy", "surveillance"]),
-    ("models", ["model release", "launches", "unveil", "releases", "benchmark",
-                "open-weight", "open weights", "fine-tun", "context window",
-                "multimodal", "reasoning model"]),
-    ("agents", ["agent", "agentic", "tool use", "autonomous", "assistant", "chatbot",
-                "copilot mode", "orchestrat"]),
-]
-
-
-TOPIC_LABELS = {
-    "code_automation": "Code automation", "work_automation": "Work automation",
-    "self_improvement": "Self-improvement", "water": "Water",
-    "power_demand": "Power demand", "energy_forecast": "Energy forecast",
-    "cost": "Cost / spend", "governance": "Politics / governance",
-    # Descriptive only, no reality anchor behind them.
-    "chips": "Chips / hardware", "regulation": "Regulation / legal",
-    "safety": "Safety / security", "models": "Model releases", "agents": "Agents",
-    "": "Untagged",
+SOURCE_TIER = {
+    1: "primary record",
+    2: "research or academic source",
+    3: "trade press, aggregator or unclassified publisher",
+    4: "tool or data vendor",
+    5: "vendor publication or press office",
 }
-
-
-# Suffix tolerance. "code" failed to match "coders" and "layoff" failed to match
-# "laying off", so real matches were missed on a morphology technicality. Deliberately
-# narrow: common English inflections only, never a prefix match, because loosening this
-# further starts anchoring items the portfolio has no base rate for, and a wrong anchor
-# is worse than a blank one.
-_SUFFIX = r"(?:s|es|ed|ing|er|ers)?"
-
-
-def tag_topic(text):
-    """Return the first topic whose keyword matches the text, else '' (no anchor).
-
-    A blank is a legitimate outcome. But it was ALSO covering a matching failure: measured
-    2026-07-31, 53 of 76 items matched no topic at all and only 6 got an anchor, because this
-    read the headline and nothing else. That is the same defect the labeller had, in the one
-    component that never got upgraded. See topic_of.
-    """
-    hay = " " + (text or "").lower() + " "
-    for topic, kws in TOPIC_KEYWORDS:
-        for kw in kws:
-            if re.search(r"(?<![a-z0-9])" + re.escape(kw) + _SUFFIX + r"(?![a-z0-9])", hay):
-                return topic
-    return ""
-
-
-def topic_of(it, spans):
-    """Topic plus how it was reached: the headline, or the article's figure sentences.
-
-    ⛔ Falls back to SPANS, not to the article body. A span is a sentence carrying a figure,
-    so a keyword hit there is near the claim rather than in a nav menu or a related-links
-    rail. Matching the whole body would anchor an item on a passing mention, and a wrong
-    anchor is worse than a blank one.
-
-    Measured 2026-07-31 over 76 items: headline only gave 6 anchored and 53 untagged; adding
-    the first 6 spans gives 23 anchored and 29 untagged.
-
-    ⭐ publisher_tags is tried SECOND, ahead of the spans, because it is the publisher's own
-    subject tagging rather than our keyword guess. It was invisible here until 2026-07-31:
-    extract_spans.py harvested it into article_text.json, which is gitignored, and never
-    copied it into the spans file this reads. The harvest was working the whole time.
-    """
-    t = tag_topic(it.get("headline", ""))
-    if t:
-        return t, "headline"
-    url = (it.get("sources") or [{}])[0].get("url", "")
-    rec = spans.get(url) or {}
-    t = tag_topic(" ".join(rec.get("publisher_tags") or []))
-    if t:
-        return t, "publisher's own tags"
-    body = " ".join(sp["sentence"] for sp in (rec.get("spans") or [])[:6])
-    t = tag_topic(body)
-    return (t, "article spans") if t else ("", "")
+from topic_matcher import load_registry, match_item
+from board_checks import validate_board
 
 
 esc = lambda s: html.escape(str(s), quote=True)
@@ -175,40 +69,12 @@ def bar(counts):
         if counts[t] == 0:
             continue
         pct = 100.0 * counts[t] / total
-        segs.append(f'<span title="tier {t}: {esc(TIER[t][1])} ({counts[t]})" '
+        segs.append(f'<span title="source-class tier {t}: {esc(SOURCE_TIER[t])} '
+                    f'({counts[t]})" '
                     f'style="display:inline-block;height:12px;width:{pct:.1f}%;'
                     f'background:{TIER[t][0]}"></span>')
     return ('<span style="display:inline-block;width:100%;border-radius:3px;'
             'overflow:hidden;line-height:0">' + "".join(segs) + "</span>")
-
-
-def tier_scale(tiers):
-    """The five-point scale with this item's tier(s) filled.
-
-    ⛔ Replaces a stacked distribution bar. Almost every item has exactly one source, so the
-    distribution rendered as a single block at 100% width: it showed the reader nothing and
-    read as a rendering fault. The scale shows WHERE the source sits and what the other
-    points are, which is information on every item including single-source ones.
-    """
-    active = sorted(int(t) for t in tiers)
-    steps = []
-    for t in (1, 2, 3, 4, 5):
-        on = t in active
-        col = TIER[t][0] if on else "#e2e8f0"
-        steps.append(
-            f'<span title="tier {t}: {esc(TIER[t][1])}" style="display:inline-block;'
-            f'width:26px;height:8px;border-radius:2px;background:{col};margin-right:3px"></span>')
-    if len(active) == 1:
-        t = active[0]
-        label = f'tier {t} &middot; {esc(TIER_SHORT[t])}'
-    else:
-        label = " &middot; ".join(f"tier {t}" for t in active)
-    return (f'<div style="display:flex;align-items:center;gap:10px;margin:12px 0 8px">'
-            f'<span style="font-size:11px;color:{SLATE};letter-spacing:.04em;'
-            f'text-transform:uppercase">Motive</span>'
-            f'<span style="line-height:0">{"".join(steps)}</span>'
-            f'<span style="font-size:12px;color:{BODY}">{label}</span></div>')
-
 
 def load_market():
     """data/market.json + ticker_map.json, or ({}, {}) if fetch_market.py has not run.
@@ -413,21 +279,48 @@ def chain_block(chain):
     return "".join(rows)
 
 
-def item_card(it, anchors, plain=False, mk=None, tmap=None, ev=None):
+def primary_kind(url):
+    net = urllib.parse.urlsplit(url).netloc.lower().removeprefix("www.")
+    if net == "arxiv.org":
+        return "arXiv paper"
+    if net == "doi.org":
+        return "DOI record"
+    if net.endswith(".gov") or net.endswith(".gov.uk") or "europa.eu" in net:
+        return "official record"
+    return "primary source"
+
+
+def primary_label(url):
+    parts = urllib.parse.urlsplit(url)
+    host = parts.netloc.lower().removeprefix("www.")
+    path = parts.path.strip("/")
+    if host == "arxiv.org":
+        identifier = re.sub(r"^(?:abs|html|pdf)/", "", path).removesuffix(".pdf")
+        return f"arXiv {identifier}"
+    if host == "doi.org":
+        return f"DOI {path}"
+    shown = f"{host}/{path}".rstrip("/")
+    return shown if len(shown) <= 78 else shown[:75] + "..."
+
+
+def item_card(it, registry, plain=False, mk=None, tmap=None, ev=None):
     tiers = {}
     chips = []
     for s in it["sources"]:
-        t = int(s["motive_tier"])
+        t = int(s["source_tier"])
         tiers[t] = tiers.get(t, 0) + 1
-        if plain:  # motive tiering off: neutral chip, no tier colour or tooltip
+        source_type = s.get("source_type", "other").replace("-", " ")
+        if plain:
             chips.append(f'<span class="tierchip" style="display:inline-block;font-size:12px;'
                          f'padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:{BODY};'
-                         f'background:#edf2f7;border:1px solid {LINE}">{esc(s["name"])}</span>')
+                         f'background:#edf2f7;border:1px solid {LINE}">{esc(s["name"])} · '
+                         f'{esc(source_type)}</span>')
             continue
         col = TIER[t][0]
         chips.append(f'<span class="tierchip" style="display:inline-block;font-size:12px;'
                      f'padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:#fff;background:{col}" '
-                     f'title="tier {t}: {esc(TIER[t][1])}">{esc(s["name"])}</span>')
+                     f'title="source-class tier {t}: {esc(SOURCE_TIER[t])}">{esc(s["name"])} · '
+                     f'{esc(source_type)}</span>')
     # link the headline to its primary source when one exists (curated items have
     # no url, so they stay plain text rather than becoming a dead link)
     src_url = next((s.get("url", "") for s in it["sources"] if s.get("url")), "")
@@ -442,23 +335,22 @@ def item_card(it, anchors, plain=False, mk=None, tmap=None, ev=None):
     # figure spans. Article context did not fix it, and there is no ground truth to score
     # against, so the board cannot publish it as a label. The stored values and the
     # crosscheck fields are kept as the record of why.
-    unreviewed = it.get("reviewed", True) is False
-    # Hover carries the provenance: which model set this label, and on how much text. Named
-    # from the item's own auto_labelled_by so it cannot drift from what actually ran.
-    by = it.get("auto_labelled_by")
-    tier, why = it.get("label_tier"), it.get("label_evidence", "")
-    if tier == 1:
-        ftip = (f'Denominator derived from the article itself, no model involved: {why}. '
-                f'Every figure sentence behind this is stored verbatim with its position in '
-                f'the article and can be checked against the source.')
-    elif tier == 3:
-        ftip = (f'Denominator set by {by or "a local model"} reading the figure sentences '
-                f'quoted from the article ({why}). Not a human check.')
+    method = it.get("evidence_method", "unassessed")
+    coverage = it.get("evidence_coverage") or {}
+    why = it.get("label_evidence", "")
+    if it.get("label_source") == "human":
+        method_label, method_col = "human checked", TIER[2][0]
+    elif it.get("review_stale"):
+        method_label, method_col = "review stale", TIER[4][0]
+    elif method == "rule":
+        method_label, method_col = "figures: rule", SLATE
+    elif method == "local-model":
+        method_label, method_col = "figures: local model", SLATE
     else:
-        ftip = 'no denominator has been derived for this item'
-    flag = (f'<span title="{esc(ftip)}" style="display:inline-block;padding:2px 8px;'
-            f'margin-left:6px;border-radius:4px;font-size:11px;color:{SLATE};background:#edf2f7;'
-            f'border:1px dashed {SLATE}">auto-tagged, unreviewed</span>' if unreviewed else "")
+        method_label, method_col = "figures: unassessed", SLATE
+    flag = (f'<span style="display:inline-block;padding:2px 8px;margin-left:6px;'
+            f'border-radius:4px;font-size:11px;color:#fff;background:{method_col}">'
+            f'{esc(method_label)}</span>')
     # reliability mark (second axis, from sources.md via apply_ratings.py)
     rating = it.get("rating", "")
     rmark = ""
@@ -473,8 +365,8 @@ def item_card(it, anchors, plain=False, mk=None, tmap=None, ev=None):
                  f'background:{TIER[4][0]}">track record: caution</span>')
     # ⛔ The reader cross-check chip was removed 2026-07-31 with the tooling (see archive/).
     # It reported disagreement between local models reading a HEADLINE, over claim_type,
-    # which is retired. Provenance now travels on the label itself: label_tier and
-    # label_evidence say whether a quoted span settled the field or a model judged it.
+    # which is retired. Provenance now travels on the label itself: evidence_method,
+    # evidence_coverage and label_evidence identify what settled the field.
     # Do not reinstate reader agreement as a quality signal. A shared error between readers
     # of one model family is indistinguishable from agreement.
     xchip = ""
@@ -488,32 +380,47 @@ def item_card(it, anchors, plain=False, mk=None, tmap=None, ev=None):
         subject_html = (f'<span title="the publisher\'s own tag, not an assessment">'
                         f'{esc(it["publisher_topic"])}</span>')
     else:
-        subject_html = "&mdash;"
+        subject_html = ""
+    date_html = esc(fmt_date(it.get("date", "")))
+    heading_meta = " &middot; ".join(x for x in (subject_html, date_html) if x)
     ments = [m["name"] for m in (it.get("mentions") or [])][:4]
     mentions_html = ("" if not ments or it.get("entity") else
                      f'<div style="font-size:12px;color:{SLATE};margin-top:6px">'
                      f'Mentions {esc(" &middot; ".join(ments))}</div>'.replace("&amp;middot;", "&middot;"))
-    chain_html = "" if (plain or not src_url) else chain_block(
-        ((ev or {}).get(src_url) or {}).get("chain", {}))
+    evrec = (ev or {}).get(src_url) or {}
+    chain_html = "" if (plain or not src_url) else chain_block(evrec.get("chain", {}))
     mchip = market_chip(it.get("entity", ""), mk or {}, tmap or {})
-    a = anchors.get(it.get("topic", ""), {})
-    anchor_html = ""
-    if a:
-        auto = it.get("_auto_topic", False)
-        # An anchor matched on the headline and one matched on the article's figure
-        # sentences are different evidence, so the page says which. Same rule as
-        # label_tier: never render two provenances identically.
-        basis = it.get("_topic_basis", "")
-        head = (f"Possible anchor (auto-matched on the {basis}, unreviewed)." if auto and basis
-                else "Possible anchor (auto-matched, unreviewed)." if auto
-                else "Reality anchor.")
-        border = SLATE if auto else NAVY
-        anchor_html = (
-            f'<div style="margin-top:10px;padding:10px 12px;background:{ALT};'
-            f'border-left:3px solid {border};font-size:13px;color:{BODY}">'
-            f'<strong style="color:{NAVY}">{head}</strong> {esc(a["label"])} '
-            f'<a href="{esc(a["url"])}" style="color:{NAVY}">'
-            f'{esc(a.get("source",""))} (DOI)</a></div>')
+    anchor_rows = []
+    anchor_match = it.get("_anchor_match")
+    if anchor_match:
+        evidence = anchor_match.get("evidence", [{}])[0]
+        for a in anchor_match.get("anchors", []):
+            anchor_rows.append(
+                f'<div style="margin:4px 0"><strong>Possible reality anchor, '
+                f'{esc(a.get("kind", "source"))}.</strong> '
+                f'<a href="{esc(a["url"])}" target="_blank" rel="noopener noreferrer" '
+                f'style="color:{NAVY}">{esc(a["label"])}</a> '
+                f'{esc(a.get("note", ""))}<div style="font-size:11px;color:{SLATE}">'
+                f'Matched {esc(evidence.get("match", ""))} in {esc(evidence.get("basis", ""))}.'
+                f'</div></div>')
+    elif it.get("topic") in registry and it.get("reviewed", True):
+        for a in registry[it["topic"]].get("anchors", []):
+            anchor_rows.append(
+                f'<div style="margin:4px 0"><strong>Reality anchor, '
+                f'{esc(a.get("kind", "source"))}.</strong> '
+                f'<a href="{esc(a["url"])}" target="_blank" rel="noopener noreferrer" '
+                f'style="color:{NAVY}">{esc(a["label"])}</a> '
+                f'{esc(a.get("note", ""))}</div>')
+    for u in evrec.get("primary_link_examples", [])[:3]:
+        anchor_rows.append(
+            f'<div style="margin:4px 0"><strong>Article-linked {esc(primary_kind(u))}.</strong> '
+            f'<a href="{esc(u)}" target="_blank" rel="noopener noreferrer" '
+            f'style="color:{NAVY}">{esc(primary_label(u))}</a> '
+            f'<span style="color:{SLATE}">The link is checkable; its presence alone does not '
+            f'establish that it supports the headline.</span></div>')
+    anchor_html = (f'<div style="margin-top:10px;padding:10px 12px;background:{ALT};'
+                   f'border-left:3px solid {NAVY};font-size:12px;color:{BODY}">'
+                   + "".join(anchor_rows) + '</div>') if anchor_rows else ""
     # disclosed-conflict flag: an INDEPENDENT facet from the tier. It marks a
     # checkable structural stake (a source that regulates, buys from, or owns the
     # subject of the claim), never an imputation of motive from party. Per-source
@@ -536,17 +443,33 @@ def item_card(it, anchors, plain=False, mk=None, tmap=None, ev=None):
     blob = f'{it["entity"]} {it["headline"]} {srcnames} {" ".join(cnotes)}'.lower()
     tierlist = " ".join(str(x) for x in sorted(tiers))
     conflict_attr = ' data-conflict="1"' if cnotes else ""
-    data = (f'class="card" data-search="{esc(blob)}" data-topic="{esc(it.get("topic",""))}" '
+    topics = it.get("topics") or ([it["topic"]] if it.get("topic") else [])
+    data = (f'class="card" data-search="{esc(blob)}" data-topics="{esc(" ".join(topics))}" '
             f'data-tiers="{esc(tierlist)}"{conflict_attr}')
+    claim_tier = evrec.get("claim_tier")
+    relationship = (f'claim tier {claim_tier}: {evrec.get("tier_basis", "")}' if claim_tier
+                    else f'claim relationship unresolved: {evrec.get("tier_basis", "not assessed")}' )
+    topic_evidence = []
+    for cand in it.get("_topic_candidates", []):
+        hits = ", ".join(f'{e.get("match")} ({e.get("basis")})' for e in cand.get("evidence", [])[:3])
+        topic_evidence.append(f'{cand.get("label")}: {hits}')
+    provenance = (
+        f'<details style="font-size:11px;color:{SLATE};margin-top:9px">'
+        f'<summary style="cursor:pointer;color:{NAVY}">Evidence and provenance</summary>'
+        f'<div style="margin-top:5px"><strong>Figures.</strong> {esc(why or "not assessed")}. '
+        f'Coverage {esc(coverage.get("seen", 0))}/{esc(coverage.get("total", 0))} figure-sentences.'
+        f'</div><div><strong>Source relationship.</strong> {esc(relationship)}.</div>'
+        + (f'<div><strong>Topics.</strong> {esc("; ".join(topic_evidence))}</div>' if topic_evidence else "")
+        + (f'<div><strong>Anchor.</strong> Withheld because multiple candidates tied.</div>'
+           if it.get("_anchor_ambiguous") else "")
+        + chain_html + '</details>')
     return f"""
     <article {data} style="border:1px solid {LINE};border-radius:8px;padding:14px 16px;
       margin:0 0 14px;background:{PAPER};box-shadow:{SHADOW}">
       <div style="font-size:12px;color:{SLATE};margin-bottom:4px">
-        {subject_html} &middot; {esc(fmt_date(it.get("date", "")))}
+        {heading_meta}
       </div>
       <div style="font-size:16px;font-weight:600;color:{NAVY};line-height:1.35">{headline_html}</div>
-      {chain_html}
-      {'' if plain else f'<div class="motivebar">{tier_scale(tiers)}</div>'}
       <div style="margin:10px 0 6px">{''.join(chips)}</div>{mentions_html}
       <div style="font-size:12px">
         <span style="display:inline-block;padding:2px 8px;border-radius:4px;
@@ -554,6 +477,7 @@ def item_card(it, anchors, plain=False, mk=None, tmap=None, ev=None):
       </div>
       {conflict_html}
       {anchor_html}
+      {provenance}
     </article>"""
 
 
@@ -637,7 +561,7 @@ def deflation_panel(reg):
         tier = r.get("tier")
         dot = ""
         if tier and int(tier) in TIER:
-            dot = (f'<span title="motive tier {esc(tier)}: {esc(TIER[int(tier)][1])}" '
+            dot = (f'<span title="register tier {esc(tier)}: {esc(TIER[int(tier)][1])}" '
                    f'style="display:inline-block;width:9px;height:9px;border-radius:2px;'
                    f'background:{TIER[int(tier)][0]};margin-right:5px"></span>')
         mult = esc(r.get("multiple", ""))
@@ -645,11 +569,11 @@ def deflation_panel(reg):
             f'<div style="padding:9px 0;border-bottom:1px solid {LINE}">'
             f'<div style="font-size:13px;color:{BODY}">{dot}<strong>{esc(r.get("claim",""))}</strong></div>'
             f'<div style="font-size:12px;color:{SLATE};margin-top:2px" '
-            f'title="Where the figure circulates, described by genre and motive tier. '
+            f'title="Where the figure circulates, described by genre and register tier. '
             f'Not an attribution to a named person.">'
             f'circulating via {esc(r.get("source",""))}</div>'
             f'<div style="font-size:12.5px;color:{BODY};margin-top:4px">'
-            f'&rarr; {esc(r.get("corrected",""))}'
+            f'<strong>Correction:</strong> {esc(r.get("corrected",""))}'
             f'{f" <span style=\'color:{TIER[5][0]};font-weight:600\'>({mult})</span>" if mult else ""}</div>'
             f'<div style="font-size:12px;color:{SLATE};margin-top:2px">{esc(r.get("error",""))}</div>'
             f'</div>')
@@ -661,10 +585,10 @@ def deflation_panel(reg):
         f'<div style="font-size:12px;color:{SLATE};margin:6px 0">'
         f'Claims where the checkable figure came back different, with the correction and '
         f'where it came from. <strong>This register grades the number, not the person.</strong> '
-        f'A figure taken from video or press is described by genre and motive tier rather '
+        f'A figure taken from video or press is described by genre and register tier rather '
         f'than named, so the claim line says where it circulates and is not an attribution; '
         f'the checkable weight sits on the corrected line, which is what a reader should '
-        f'test. The dot is the motive tier of the source that carried the original claim. '
+        f'test. The dot is the tier carried by the public register row. '
         f'Being wrong once is not a verdict on a source.</div>'
         f'{"".join(trs)}</details>')
 
@@ -673,14 +597,14 @@ def legend():
     rows = "".join(
         f'<div style="display:flex;align-items:center;font-size:12px;color:{BODY};margin:2px 0">'
         f'<span style="display:inline-block;width:14px;height:14px;border-radius:3px;'
-        f'background:{c};margin-right:8px"></span>Tier {t}: {esc(lbl)}</div>'
-        for t, (c, lbl) in TIER.items())
-    caveat = (f'<div style="font-size:11px;color:{SLATE};margin-top:8px">Colour is incentive '
-              f'distance, not trust. A tier-5 source can be entirely correct; the tier says only '
-              f'where an independent second source is worth the effort.</div>')
+        f'background:{TIER[t][0]};margin-right:8px"></span>Tier {t}: '
+        f'{esc(lbl)}</div>' for t, lbl in SOURCE_TIER.items())
+    caveat = (f'<div style="font-size:11px;color:{SLATE};margin-top:8px">This is a publisher '
+              f'class, not a trust score or a claim-relative relationship. Claim tiers are '
+              f'withheld unless the publisher relationship to the subject resolves.</div>')
     return (f'<div style="border:1px solid {LINE};border-radius:8px;padding:12px 14px;'
             f'margin:0 0 18px;background:#fff"><div style="font-weight:600;color:{NAVY};'
-            f'margin-bottom:6px">Motive key (who benefits if the claim is true)</div>{rows}{caveat}</div>')
+            f'margin-bottom:6px">Source-class key</div>{rows}{caveat}</div>')
 
 
 def gov_conflict_panel(gc):
@@ -820,7 +744,7 @@ def day_heading(d, today):
     return "Older"
 
 
-def group_by_day(items, anchors, plain, mk, tmap, ev=None):
+def group_by_day(items, registry, plain, mk, tmap, ev=None):
     """Render items under day headings. Items are already sorted newest first.
 
     Undated items render under "Date not stated" at the end rather than being dropped or
@@ -839,7 +763,7 @@ def group_by_day(items, anchors, plain, mk, tmap, ev=None):
                 f'text-transform:uppercase;letter-spacing:.04em;margin:18px 0 8px;'
                 f'padding-bottom:4px;border-bottom:1px solid {LINE}">{esc(head)}</div>')
             current = head
-        out.append(item_card(it, anchors, plain, mk, tmap, ev))
+        out.append(item_card(it, registry, plain, mk, tmap, ev))
     return f'<div class="feedgrid">{"".join(out)}</div>'
 
 
@@ -847,7 +771,7 @@ def main():
     import argparse
     ap = argparse.ArgumentParser(description="Render the AI News Board.")
     ap.add_argument("--plain", action="store_true",
-                    help="turn the motive tier OFF entirely: no tier colours, bars, key or "
+                    help="turn source-class tiers OFF: no tier colours, bars, key or "
                          "tier map. Sources shown plain. The other axes (denominator, track "
                          "record, citation chain, anchors) are unaffected.")
     plain = ap.parse_args().plain
@@ -860,20 +784,22 @@ def main():
         mk["strip_equities"] = json.load(
             open(os.path.join(HERE, "ticker_map.json"), encoding="utf-8")
         )["strip"]["equities"]
-    anchors = data.get("anchors", {})
+    registry = load_registry()
     reviewed = [dict(it, reviewed=it.get("reviewed", True)) for it in data["items"]]
+    for it in reviewed:
+        it["topics"] = [it["topic"]] if it.get("topic") else []
 
-    # neutrality disclosures + the contestable tier registry (tier_map.json)
+    # Method disclosures and the contestable tier registry.
     neutrality_html = tiermap_html = ""
     tm_path = os.path.join(HERE, "tier_map.json")
-    if os.path.isfile(tm_path) and not plain:
-        tm = json.load(open(tm_path, encoding="utf-8"))
+    tm = json.load(open(tm_path, encoding="utf-8")) if os.path.isfile(tm_path) else {}
+    if tm and not plain:
         contest = tm.get("contest", {})
         disclosures = [
-            "Tier is claim-relative and based on an observable fact (what an entity sells or is), not a truth or quality verdict.",
-            "Colour is incentive distance, not trust: a tier-5 source can be entirely correct. The tier only says where an independent second source is worth the effort.",
-            "One curator sets these tiers (assisted by an AI model), unlike aggregators that average several rater organisations. So every cell is published with its basis and is open to challenge.",
-            "The reality anchor only covers topics this portfolio addresses, so claims near that work get more scrutiny than others. Most items carry no anchor, which is honest.",
+            "Source-class tier is set from the publisher domain. It is not a truth or quality verdict.",
+            "A numeric claim tier appears only where a recorded owner or publisher relationship to the subject resolves. Otherwise the relationship remains unresolved.",
+            "Automatic topics may be plural. A portfolio anchor appears only when one candidate clears its threshold without a tie.",
+            "ArXiv, DOI and official links found in an article are typed as article-linked primaries. A link is not treated as proof that the document supports the headline.",
         ]
         dl = "".join(f'<li style="margin:3px 0">{esc(x)}</li>' for x in disclosures)
         neutrality_html = (
@@ -881,40 +807,54 @@ def main():
             f'margin:0 0 18px;background:{PAPER};box-shadow:{SHADOW}"><div style="font-weight:600;color:{NAVY};'
             f'margin-bottom:4px">Method and limits</div>'
             f'<ul style="margin:4px 0 0 18px;padding:0;font-size:13px;color:{BODY}">{dl}</ul>'
-            f'<div style="font-size:12px;color:{SLATE};margin-top:8px">Conflict of interest: an '
-            f'Anthropic model helped build the method and tiers, including tiers applied to '
-            f'Anthropic and its competitors. An OpenAI model later assisted with feed-pipeline '
-            f'code and deployment checks, but did not assign the refreshed item labels or revise '
-            f'motive tiers. Both companies are tiered in the map on the same basis as other '
-            f'sources.</div></section>')
-        trows = "".join(
+            f'<div style="font-size:12px;color:{SLATE};margin-top:8px">Conflict of interest: '
+            f'an Anthropic model helped build the original method and tiers. An OpenAI model '
+            f'implemented the current source-class split, label provenance and anchor rules. '
+            f'OpenAI and Anthropic are subjects on the board. Neither model is an independent '
+            f'auditor of work from its own lab.</div></section>')
+        erows = "".join(
             f'<tr><td style="padding:4px 10px;border-bottom:1px solid {LINE};vertical-align:top">'
             f'<span style="display:inline-block;width:12px;height:12px;border-radius:2px;'
             f'background:{TIER[int(e["tier"])][0]};margin-right:6px"></span>{esc(e["entity"])}'
-            f'{" &#9888;" if e.get("coi") else ""}</td>'
+            f'{" (conflict disclosed)" if e.get("coi") else ""}</td>'
             f'<td style="padding:4px 10px;border-bottom:1px solid {LINE};text-align:center">{esc(e["tier"])}</td>'
             f'<td style="padding:4px 10px;border-bottom:1px solid {LINE};font-size:12px;color:{SLATE}">{esc(e["basis"])}</td></tr>'
             for e in tm.get("entities", []))
+        srows = "".join(
+            f'<tr><td style="padding:4px 10px;border-bottom:1px solid {LINE}">'
+            f'{esc(spec["label"])}</td><td style="padding:4px 10px;border-bottom:1px solid '
+            f'{LINE};text-align:center">{esc(spec["tier"])}</td><td style="padding:4px 10px;'
+            f'border-bottom:1px solid {LINE};font-size:12px;color:{SLATE}">'
+            f'{esc(spec["basis"])}</td></tr>'
+            for spec in tm.get("source_types", {}).values())
         contest_line = (f'Contest any cell: email <a href="mailto:{esc(contest.get("email",""))}" '
                         f'style="color:{NAVY}">{esc(contest.get("email",""))}</a> or fork '
                         f'<code>tier_map.json</code>. {esc(contest.get("how",""))}')
         tiermap_html = (
             f'<details style="border:1px solid {LINE};border-radius:8px;padding:10px 14px;'
             f'margin:0 0 18px;background:#fff"><summary style="font-weight:600;color:{NAVY};'
-            f'cursor:pointer">Tier map: every tier with its basis (contest any cell)</summary>'
+            f'cursor:pointer">Tier registries: every class with its basis</summary>'
             f'<div style="font-size:12px;color:{SLATE};margin:6px 0 8px">{contest_line}</div>'
+            f'<div style="font-size:13px;font-weight:600;color:{NAVY};margin:8px 0 4px">'
+            f'Source classes</div>'
+            f'<table style="border-collapse:collapse;width:100%;font-size:13px">'
+            f'<thead><tr><th style="text-align:left;padding:4px 10px;color:{SLATE}">Class</th>'
+            f'<th style="padding:4px 10px;color:{SLATE}">Tier</th>'
+            f'<th style="text-align:left;padding:4px 10px;color:{SLATE}">Observable basis</th></tr></thead>'
+            f'<tbody>{srows}</tbody></table>'
+            f'<div style="font-size:13px;font-weight:600;color:{NAVY};margin:12px 0 4px">'
+            f'Claim-relationship examples</div>'
             f'<table style="border-collapse:collapse;width:100%;font-size:13px">'
             f'<thead><tr><th style="text-align:left;padding:4px 10px;color:{SLATE}">Entity</th>'
             f'<th style="padding:4px 10px;color:{SLATE}">Tier</th>'
             f'<th style="text-align:left;padding:4px 10px;color:{SLATE}">Observable basis</th></tr></thead>'
-            f'<tbody>{trows}</tbody></table></details>')
+            f'<tbody>{erows}</tbody></table></details>')
 
     # merge the live feed if fetch_feeds.py has produced it
     # Citation chains and the per-article evidence counts.
     ev_path = os.path.join(HERE, "article_evidence.json")
     ev = json.load(open(ev_path, encoding="utf-8")) if os.path.isfile(ev_path) else {}
-    # Figure sentences, used as the topic matcher's second look. Absent is fine: topic_of
-    # then behaves exactly as the old headline-only matcher did.
+    # Figure sentences and publisher tags are the checkable evidence for topic candidates.
     sp_path = os.path.join(HERE, "article_spans.json")
     _spans = json.load(open(sp_path, encoding="utf-8")) if os.path.isfile(sp_path) else {}
     feed_path = os.path.join(HERE, "feed_items.json")
@@ -924,22 +864,22 @@ def main():
         feed = json.load(open(feed_path, encoding="utf-8"))
         fetched = feed.get("fetched", "")
         incoming = [dict(it, reviewed=it.get("reviewed", False)) for it in feed.get("items", [])]
-        # auto-suggest a reality anchor for feed items with no topic yet (plumbing,
-        # flagged as unreviewed so it is a suggestion, not an assertion)
         for it in incoming:
-            # only suggest an anchor for items NOT yet human-reviewed; a reviewed
-            # item with an empty topic means "reviewed, no honest anchor" and is left as-is
-            if not it.get("topic") and not it.get("reviewed"):
-                t, basis = topic_of(it, _spans)
-                if t:
-                    it["topic"], it["_auto_topic"] = t, True
-                    it["_topic_basis"] = basis
+            if it.get("reviewed") and it.get("topic"):
+                it["topics"] = [it["topic"]]
+                continue
+            match = match_item(it, _spans, registry)
+            it["topics"] = [c["topic"] for c in match["topics"]]
+            it["_topic_candidates"] = match["topics"]
+            it["_anchor_match"] = match["anchor"]
+            it["_anchor_ambiguous"] = match["ambiguous"]
 
         # freshest first: order the live feed by parsed date, newest at the top
         incoming.sort(key=lambda it: parse_date(it.get("date", "")), reverse=True)
 
     reviewed.sort(key=lambda it: parse_date(it.get("date", "")), reverse=True)
     items = reviewed + incoming
+    validate_board(items, _spans, ev, registry, tm.get("source_types", {}))
 
     # scholarship nudge: latest primary papers + datasets (fetch_scholar.py)
     scholar_path = os.path.join(HERE, "scholar_items.json")
@@ -1028,7 +968,7 @@ def main():
         if it.get("entity"):
             entity_counts[it["entity"]] = entity_counts.get(it["entity"], 0) + 1
         for s in it["sources"]:
-            t = int(s["motive_tier"])
+            t = int(s["source_tier"])
             all_tiers[t] = all_tiers.get(t, 0) + 1
 
     movers = "".join(
@@ -1042,12 +982,12 @@ def main():
         feed_block = (
             f'<h2 style="color:{NAVY};font-size:18px;margin:0 0 4px">Latest</h2>'
             f'<div style="color:{SLATE};font-size:13px;margin-bottom:12px">'
-            f'Live pull, newest first. Motive tier is set from the source domain. The figures '
-            f'flag is derived from quoted sentences in the article; where a rule settles it, '
-            f'no model is involved. Citation links are between items on this board. '
-            f'Claim type was retired on 31 Jul 2026 at inter-reader agreement of &kappa;&nbsp;0.56. '
+            f'Live pull, newest first. Source class comes from the publisher domain; a numeric '
+            f'claim tier appears only where the publisher relationship to the subject resolves. '
+            f'Figure labels record complete-span coverage and method. Automatic anchors abstain '
+            f'on tied candidates. Article-linked primaries are links, not implied endorsements. '
             f'</div>'
-            + group_by_day(incoming, anchors, plain, mk, tmap, ev))
+            + group_by_day(incoming, registry, plain, mk, tmap, ev))
     # Collapsed: reference material sitting in a news position. It is nine static cards
     # under a live feed, so it opens on demand rather than lengthening every scroll.
     seed_block = (
@@ -1061,16 +1001,16 @@ def main():
         f'so they sit outside the staleness cutoffs that drop old items from the feed. '
         f'Read them as dated claims rather than current ones.</div>'
         f'<div class="feedgrid">'
-        + "".join(item_card(it, anchors, plain, mk, tmap, ev) for it in reviewed)
+        + "".join(item_card(it, registry, plain, mk, tmap, ev) for it in reviewed)
         + '</div></details>')
     cards = feed_block + seed_block
 
-    # motive-tier UI is optional: --plain drops the key, the tier map and both bars
+    # Source-tier UI is optional: --plain drops the key, registry and source bar.
     legend_html = "" if plain else legend()
     plain_note = ("" if not plain else
         f'<div style="border:1px solid {LINE};border-radius:8px;padding:10px 14px;'
         f'margin:0 0 18px;background:#fff;font-size:13px;color:{BODY}">'
-        f'<strong style="color:{NAVY}">Motive tiering is off.</strong> Sources are shown '
+        f'<strong style="color:{NAVY}">Source-class tiering is off.</strong> Sources are shown '
         f'without incentive colouring. Figures, track-record and anchor flags are '
         f'unchanged.</div>')
     sourcemix_html = ("" if plain else
@@ -1088,12 +1028,12 @@ def main():
         f'<details class="tierui" style="border:1px solid {LINE};border-radius:8px;'
         f'padding:10px 14px;margin:0 0 18px;background:#fff">'
         f'<summary style="font-weight:600;color:{NAVY};cursor:pointer">'
-        f'Method &middot; motive key, limits, tier map and source mix</summary>'
+        f'Method &middot; source classes, claim relationships and anchor rules</summary>'
         f'<div style="margin-top:12px">{legend_html}{neutrality_html}{tiermap_html}{sourcemix_html}</div>'
         f'</details>')
 
     # disclosed-conflict panel: the US government's three hats on AI (gov_conflict.json).
-    # Shown in both modes: it is a conflict-disclosure axis, independent of motive tiering.
+    # Shown in both modes: conflict disclosure is independent of source classification.
     gc_path = os.path.join(HERE, "gov_conflict.json")
     govconflict_html = ""
     if os.path.isfile(gc_path):
@@ -1110,21 +1050,25 @@ def main():
     # ---- sidebar controls: search + topic/tier filters + live tier toggle ----
     topic_counts, tiers_present = {}, set()
     for it in items:
-        tp = it.get("topic", "")
-        topic_counts[tp] = topic_counts.get(tp, 0) + 1
+        topics = it.get("topics") or []
+        if not topics:
+            topic_counts[""] = topic_counts.get("", 0) + 1
+        for tp in topics:
+            topic_counts[tp] = topic_counts.get(tp, 0) + 1
         for s in it["sources"]:
-            tiers_present.add(int(s["motive_tier"]))
+            tiers_present.add(int(s["source_tier"]))
+    topic_labels = {k: v["label"] for k, v in registry.items()} | {"": "Untagged"}
     topic_boxes = "".join(
         f'<label><input type="checkbox" class="f-topic" value="{esc(k)}" checked> '
-        f'{esc(TOPIC_LABELS.get(k, k or "Untagged"))} '
+        f'{esc(topic_labels.get(k, k or "Untagged"))} '
         f'<span style="color:{SLATE}">({topic_counts[k]})</span></label>'
-        for k in TOPIC_LABELS if k in topic_counts)
+        for k in topic_labels if k in topic_counts)
     tier_boxes = "".join(
         f'<label><input type="checkbox" class="f-tier" value="{t}" checked> '
         f'<span style="display:inline-block;width:10px;height:10px;border-radius:2px;'
         f'background:{TIER[t][0]};margin-right:4px"></span>Tier {t}</label>'
         for t in sorted(tiers_present))
-    btn_label = "Show motive tiers" if plain else "Hide motive tiers"
+    btn_label = "Show source tiers" if plain else "Hide source tiers"
     # Controls run horizontally above the feed. They were a 210px left column, which spent
     # a whole column of a wide screen on six checkboxes and pushed the reference panels into
     # one over-long rail. The freed column now carries Model releases and Primary sources.
@@ -1137,7 +1081,7 @@ def main():
     sidebar_html = (
         f'<input id="q" class="search" type="search" placeholder="Search feed and papers...">'
         f'<div class="fgroup"><h4>Topics</h4>{topic_boxes}</div>'
-        f'<div class="fgroup tierui"><h4>Motive tier</h4>{tier_boxes}</div>'
+        f'<div class="fgroup tierui"><h4>Source-class tier</h4>{tier_boxes}</div>'
         f'<div class="fgroup"><label><input type="checkbox" id="conflictonly"> '
         f'Disclosed conflict only</label></div>'
         f'<button id="tiertoggle" class="tierbtn">{btn_label}</button>'
@@ -1145,7 +1089,7 @@ def main():
 
     style_block = f"""<style>
   body{{margin:0;background:{ALT};color:{BODY};font-family:Arial,Helvetica,sans-serif;line-height:1.5}}
-  .wrap{{max-width:2200px;margin:0 auto;padding:28px 20px 60px}}
+  .wrap{{max-width:1500px;margin:0 auto;padding:28px 20px 60px}}
   .layout{{display:flex;gap:24px;align-items:flex-start}}
   /* Left column: controls, then the deflation register under them. Own scroll so a long
      register never lengthens the page. */
@@ -1167,13 +1111,7 @@ def main():
   .dayhead{{margin-top:26px}}
   /* A day heading labels every card under it, so it must span the whole grid. */
   .dayhead{{grid-column:1/-1}}
-  /* Four columns: controls+register | feed | releases | reference.
-     The feed is narrowed so the releases column sits beside it rather than the feed
-     running the full width and the rail carrying everything. */
-  .relcol{{flex:0 0 320px;position:sticky;top:16px;max-height:calc(100vh - 32px);overflow-y:auto}}
-  .rail{{flex:0 0 340px;position:sticky;top:16px;max-height:calc(100vh - 32px);overflow-y:auto}}
-  .relcol h2,.rail h2{{font-size:15px;margin:0 0 8px}}
-  .rail h2{{font-size:15px;margin:0 0 8px}}
+  .secondary{{margin-top:28px;border-top:1px solid {LINE};padding-top:14px}}
   .railcard{{border:1px solid #e2e8f0;border-radius:8px;padding:12px 14px;margin:0 0 14px;background:{PAPER};box-shadow:{SHADOW}}}
   .search{{width:100%;padding:8px 10px;border:1px solid {LINE};border-radius:6px;font-size:14px;margin-bottom:16px}}
   .fgroup{{margin-bottom:16px;font-size:13px}}
@@ -1183,17 +1121,8 @@ def main():
   .tierbtn:hover{{background:{ALT}}}
   .count{{font-size:12px;color:{SLATE};margin-top:12px}}
   body.plainmode .tierui{{display:none!important}}
-  body.plainmode .motivebar{{display:none!important}}
   body.plainmode .tierchip{{background:#edf2f7!important;color:{BODY}!important;border:1px solid {LINE}!important}}
-  /* Rail folds below the feed before the sidebar does: it is reference material,
-     so it is the first thing that should stop competing for width. */
-  /* Reference columns fold below the feed before the controls do: they are reference
-     material, so they are the first thing that should stop competing for width. */
-  @media(max-width:1600px){{.relcol{{position:static;flex:1 1 320px;max-height:none;overflow:visible}}
-    .layout{{flex-wrap:wrap}}}}
-  @media(max-width:1200px){{.rail,.relcol{{position:static;flex:1 1 auto;width:100%;max-height:none;overflow:visible}}
-    .layout{{flex-wrap:wrap}}.main{{max-width:none}}}}
-  /* One column below 1100px: two cards plus a rail no longer fit. */
+  /* One column below 1100px. */
   @media(max-width:1100px){{.feedgrid{{grid-template-columns:1fr}}}}
   @media(max-width:720px){{.layout{{flex-direction:column}}.side{{position:static;flex:1 1 auto;width:100%}}}}
 </style>"""
@@ -1214,7 +1143,9 @@ def main():
     var conly=cf&&cf.checked;
     cards.forEach(function(c){
       var okS=!term||(c.getAttribute('data-search')||'').indexOf(term)>-1;
-      var okT=tp.indexOf(c.getAttribute('data-topic')||'')>-1;
+      var ctp=(c.getAttribute('data-topics')||'').split(' ').filter(Boolean);
+      if(!ctp.length)ctp=[''];
+      var okT=ctp.some(function(x){return tp.indexOf(x)>-1});
       var cts=(c.getAttribute('data-tiers')||'').split(' ').filter(Boolean);
       var okTi=cts.some(function(x){return ti.indexOf(x)>-1});
       var okC=!conly||c.getAttribute('data-conflict')==='1';
@@ -1233,7 +1164,7 @@ def main():
   var tt=document.getElementById('tiertoggle');
   tt.addEventListener('click',function(){
     var off=document.body.classList.toggle('plainmode');
-    tt.textContent=off?'Show motive tiers':'Hide motive tiers';
+    tt.textContent=off?'Show source tiers':'Hide source tiers';
   });
   apply();
 })();
@@ -1340,19 +1271,15 @@ def main():
 <div class="wrap">
   <h1 style="color:{NAVY};margin:0 0 4px;font-size:26px">AI News Board</h1>
   <div style="color:{SLATE};font-size:14px;margin-bottom:20px;max-width:760px">
-    AI news coverage assessed on four axes: the publisher's incentive in the claim, whether
-    quoted figures state the base they are measured against, which items cite which, and a
-    link to a published base rate where one exists. Figures and citations are taken verbatim
-    from the article text and stored with their position. Each label records the method that
-    produced it.
+    AI news coverage separated into source class, a claim-relative relationship where one can
+    be established, figure-base evidence, citation links and typed reality anchors. Article-linked
+    primaries are shown as links to inspect, not as automatic support for the headline.
   </div>
   <div style="font-size:12px;color:{SLATE};margin:0 0 14px;max-width:900px">
-    AI disclosure: parts of this page were artificially generated with AI assistance and reviewed
-    by the author. The models, and the conflicts they create, are named in the Conflict of interest
-    note under Method and limits.
+    AI disclosure: AI models assisted with parts of this page. Machine and human evidence methods
+    are identified per card. The models and their conflicts are named under Method and limits.
   </div>
   {freshness(built, fetched, mk, _reg if os.path.isfile(reg_path) else {})}
-  {market_strip(mk)}
   <div class="layout">
     <aside class="side">
       {sidebar_html}
@@ -1362,35 +1289,35 @@ def main():
       {plain_note}
       {about_html}
       {cards}
+      <details class="secondary">
+        <summary style="color:{NAVY};font-weight:600;cursor:pointer">Markets, primary sources,
+        releases and reference panels</summary>
+        <div style="margin-top:12px">{market_strip(mk)}{ai_watch_html}{scholar_html}
+        {releases_html}{govconflict_html}</div>
+      </details>
       <div style="font-size:12px;color:{SLATE};margin-top:24px;border-top:1px solid {LINE};padding-top:14px">
-        Method: source type and motive tier are assigned from a curated entity map; denominator
-        and claim type are the announced-vs-delivered lens; the reality anchor links to a published
-        base rate when the topic matches. Feed selection is editorial and disclosed. This surfaces
-        the structural weakness of a claim; it does not adjudicate truth.<br><br>
+        Method: source class comes from the executable public registry. A numeric claim tier is
+        withheld unless the publisher relationship to the subject resolves. Figure labels state
+        their method and complete-span coverage. Reality anchors require one winning topic rule;
+        tied candidates abstain. Feed selection is editorial and disclosed. This surfaces a
+        structural weakness of a claim; it does not adjudicate truth.<br><br>
         Conflict of interest: the maker is an independent researcher. An Anthropic model helped
-        build the method and tiers. An OpenAI model later assisted with feed-pipeline code and
-        deployment checks, but did not assign the refreshed item labels or revise motive tiers.
-        Anthropic and OpenAI appear here as subjects and are tiered on the same basis as other
-        sources. Independent analysis, not investment advice.<br><br>
+        build the original method and tiers. An OpenAI model later changed the matching, tier and
+        provenance infrastructure. OpenAI is a subject on this board, so that work is a direct
+        conflict and is disclosed rather than treated as an independent check. Anthropic and
+        OpenAI remain subjects under the same published rules. Independent analysis, not
+        investment advice.<br><br>
         Corrections welcome on any judgement here, and they are marked in place with their reason:
         <a href="mailto:NMAIResearch@proton.me" style="color:{NAVY}">NMAIResearch@proton.me</a>
       </div>
     </main>
-    <aside class="relcol">
-      {ai_watch_html}
-      {scholar_html}
-    </aside>
-    <aside class="rail">
-      {releases_html}
-      {govconflict_html}
-    </aside>
   </div>
 </div>
 {script_block}
 </body></html>"""
     doc = "\n".join(line.rstrip() for line in doc.splitlines())
     open(OUT, "w", encoding="utf-8").write(doc)
-    mode = "plain (motive tier OFF)" if plain else "motive-tiered"
+    mode = "plain (source tier OFF)" if plain else "source-tiered"
     print(f"written: {OUT}  ({len(items)} items, {len(entity_counts)} entities, {mode})")
 
 

@@ -3,7 +3,7 @@
 AI News Board - fetch_feeds.py (stdlib only).
 
 Pulls AI-news RSS/Atom feeds and auto-tags ONLY the automatable fields: source_type
-from the domain, a default motive_tier from that type, and the entity if a known
+and source_tier from the domain, and the entity if a known
 vendor is named in the headline. It deliberately does NOT set denominator_stated: that is
 the call, left to label_items.py over the article spans, or to a human. Every fetched item
 is written with reviewed=false and denominator "?" until then. That is "automate the
@@ -38,6 +38,7 @@ MAX_AGE_BY_TYPE = {"primary-record": 180, "independent": 120,
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "feed_items.json")
+TIER_MAP = os.path.join(HERE, "tier_map.json")
 
 # (url, needs_ai_filter). Trade-press feeds are already AI-scoped by the publisher's own
 # category, so they pass through. Regulator and agency feeds are general-purpose and must be
@@ -118,15 +119,14 @@ DOMAIN_TYPE = [
     # a project publishing its own policy is a vendor-own claim, not trade press
     ("openjdk.org", "vendor-own"),
 ]
-# canonical distance tier: 1 = least incentive ... 5 = sells the thing
-# ⚠️ Every tier on the published scale must be reachable from this map. Until 2026-07-31
-# no key mapped to 4, so "tool or data vendor" could never be assigned however the domain
-# table grew, and the board showed a five-point scale with a permanently empty point.
-# press-office sits at 5 deliberately: a university or lab press release about its own
-# research is the party publicising the thing, whatever the research itself is worth.
-TYPE_TIER = {"primary-record": 1, "independent": 2, "trade-press": 3,
-             "aggregator": 3, "tool-vendor": 4, "vendor-own": 5,
-             "press-office": 5, "other": 3}
+def load_type_tiers(path=TIER_MAP):
+    """Source-class defaults from the public, contestable registry."""
+    with open(path, encoding="utf-8") as f:
+        source_types = json.load(f)["source_types"]
+    return {name: int(spec["tier"]) for name, spec in source_types.items()}
+
+
+TYPE_TIER = load_type_tiers()
 VENDORS = ["OpenAI", "Anthropic", "Google DeepMind", "DeepMind", "Google",
            "Microsoft", "Meta", "Nvidia", "Amazon", "Salesforce", "Snap",
            "xAI", "Apple", "Mistral", "Cohere", "Perplexity"]
@@ -411,7 +411,7 @@ def main():
                 "denominator_stated": "?",
                 "reviewed": False,
                 "sources": [{"name": domain(link or f), "url": link,
-                             "source_type": st, "motive_tier": TYPE_TIER.get(st, 4)}],
+                             "source_type": st, "source_tier": TYPE_TIER.get(st, 3)}],
             })
     json.dump({"fetched": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
                "items": collected}, open(OUT, "w", encoding="utf-8"), indent=1)
