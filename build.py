@@ -1276,7 +1276,7 @@ def main():
     primaries are shown as links to inspect, not as automatic support for the headline.
   </div>
   <div style="font-size:12px;color:{SLATE};margin:0 0 14px;max-width:900px">
-    AI disclosure: AI models assisted with parts of this page. Machine and human evidence methods
+    AI disclosure: the research is the author's; this text was drafted with AI assistance and reviewed by the author. The model, and the conflict it creates, are named in the Conflict of interest note below. Machine and human evidence methods
     are identified per card. The models and their conflicts are named under Method and limits.
   </div>
   {freshness(built, fetched, mk, _reg if os.path.isfile(reg_path) else {})}
