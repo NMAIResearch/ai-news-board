@@ -70,7 +70,7 @@ from this list until 2026-08-07.
     python3 fetch_feeds.py        # pull BROAD AI news into feed_items.json (neutral intake)
     python3 fetch_vendor_news.py  # append vendor newsroom posts that publish no RSS
     python3 carry_reviews.py      # re-apply prior labels by URL; only NEW items stay unreviewed
-    python3 apply_ratings.py      # layer the a local ratings file trust ratings
+    python3 apply_ratings.py      # layer local source trust ratings (optional, see RATINGS_PATH)
     python3 extract_spans.py      # fetch each article, store verbatim figure-spans + offsets
     python3 label_items.py        # denominator from spans where they settle it, model for the rest
     python3 carry_reviews.py      # persist current-schema labels by URL and content hash
@@ -306,11 +306,10 @@ so no API key reaches the browser.
 
 ## Neutrality (why the intake is broad, not watchlist-filtered)
 
-The public board takes BROAD AI news (RSS), it does NOT run through the personal interest
-watchlist in `a local watchlist` (that watchlist is correct for private
-lead-hunting via `watch_routine.py`, but for a public page it would bias which AI news
-appears). What it DOES reuse is `sources.md`, which rates *who a source is*, not the topic, so
-it is neutral. Source class and track record (trusted or caution from `sources.md`) remain
+The public board takes BROAD AI news (RSS). It does not run through any personal interest
+watchlist: a topic watchlist is the right tool for private lead-hunting, but on a public page
+it would bias which AI news appears. What it does reuse is a local source-ratings file, which
+rates *who a source is* rather than the topic, so it is neutral. Source class and track record (trusted or caution from `sources.md`) remain
 separate, so past accuracy is not confused with publisher type.
 `watch_routine.py` is left untouched; `apply_ratings.py` is a separate read-only adapter over
 `sources.md`.

@@ -2,11 +2,13 @@
 """
 AnchorAI - apply_ratings.py (stdlib only). SEPARATE adapter.
 
-Reads the canonical source ratings (a local ratings file, the same file
-watch_routine.py uses) and annotates feed_items.json with a reliability mark. It
-reuses his TRUSTED / CAUTION / BLOCKED judgements WITHOUT touching watch_routine.py
-and WITHOUT importing his interest watchlist, so the board's topic intake stays
-neutral (broad AI news in) while gaining his source-quality axis.
+Reads a local, hand-maintained source-ratings file and annotates feed_items.json
+with a reliability mark. It reuses the TRUSTED / CAUTION / BLOCKED judgements in
+that file without importing any topic watchlist, so the board's intake stays
+neutral (broad AI news in) while gaining a source-quality axis.
+
+The ratings file is local and is not published with this repo. Set its path with
+RATINGS_PATH; the adapter is a no-op when the file is absent.
 
 Reliability (track record) is a SECOND axis, orthogonal to source class and any resolved
 claim relationship:
@@ -25,7 +27,10 @@ from url_identity import hostname
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 FEED = os.path.join(HERE, "feed_items.json")
-SOURCES = Path.home() / "Desktop" / "Scripts" / "sources.md"
+# Local, unpublished ratings file. Override with RATINGS_PATH.
+# ⛔ Never write this path into published output: it contains the home directory.
+SOURCES = Path(os.environ.get("RATINGS_PATH",
+                              Path.home() / "Desktop" / "Scripts" / "sources.md"))
 TIER_MAP = os.path.join(HERE, "tier_map.json")
 
 
@@ -96,7 +101,7 @@ def main():
             it["rating_note"] = note
         kept.append(it)
     d["items"] = kept
-    d["rated_against"] = str(SOURCES)
+    d["rated_against"] = SOURCES.name   # ⛔ filename only, never the full path
     json.dump(d, open(FEED, "w", encoding="utf-8"), indent=1)
     star = sum(1 for i in kept if i.get("rating") == "trusted")
     caut = sum(1 for i in kept if i.get("rating") == "caution")

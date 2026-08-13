@@ -9,14 +9,14 @@ The rule that keeps them coherent: **each store owns one thing, and neither writ
 other.**
 
     a private tracker   owns JUDGEMENTS   which numbers were deflated, which questions
-    (private)                             have a dated resolution, what the reading was
+    (local, not here)                     have a dated resolution, what the reading was
 
     the board           owns INTAKE       what was published, when, by whom, with which
     (public)                              figures, quoted verbatim with offsets
 
 ## Direction 1: tracker to board (built, 2026-07-25)
 
-`a local generator script` reads §RC and §DR rows marked `🌐` and writes
+A local generator script reads the tracker rows marked `🌐` and writes
 `registers.json`. Fail-closed: unmarked rows never publish. The §RC parser slices each row to
 its first two columns at read time, so the private columns are never bound to a variable.
 
