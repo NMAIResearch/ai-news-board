@@ -11,6 +11,44 @@ methods are identified separately. The models and their conflicts are named belo
 Live: https://nmairesearch.github.io/ai-news-board/
 Method changes and defects found, dated: [CHANGELOG.md](CHANGELOG.md)
 
+## Deploy, start to finish
+
+Four commands, in this order.
+
+    git pull --rebase origin main    # 1. take CI's market commits FIRST
+    ./refresh.sh                     # 2. fetch, label, build
+    git add -A && git commit         # 3. hook blocks a stale or failing build
+    git push origin main             # 4. live in about a minute
+
+⚠️ **Step 1 comes first, always.** A CI job pushes market data to origin twice a day. Refreshing
+before pulling is what strands a good run: the data is right locally and never reaches the board.
+
+**If step 2 fails**, nothing is committed and `index.html` is untouched. Fix and re-run step 2.
+
+**If step 1 conflicts on `data/market.json`**, you pulled after refreshing. Take your side and let
+step 2 rewrite it, rather than reasoning about which side is which:
+
+    git checkout --theirs data/market.json data/market_history.json
+    git add data/market.json data/market_history.json
+    git rebase --continue
+
+⚠️ During a rebase `--theirs` means **your** commit and `--ours` means the upstream. The labels
+read backwards. That is why the line above is written out rather than left to judgement.
+
+⛔ **Never `git push --force`.** It deletes CI's market commits.
+
+**Check it went live:**
+
+    curl -s https://nmairesearch.github.io/ai-news-board/ | grep -o 'Page built[^<]*<[^>]*>[^<]*'
+
+### The pre-commit hook
+
+`.git/hooks/pre-commit` refuses a commit whose board data fails the integrity check, whose
+`index.html` is older than `feed_items.json`, or which stages an editor lock file.
+
+⚠️ **Git does not track hooks.** It protects this working copy only; a fresh clone has no gate.
+Bypass with `git commit --no-verify` if you ever need to.
+
 ## Run
 
 **One command does the whole thing.** Use this, not the list below:
