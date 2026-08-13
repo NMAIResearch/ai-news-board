@@ -185,6 +185,13 @@ def drop_cross_article_duplicates(records):
         record["spans"] = [span for span in record.get("spans", [])
                            if sentence_key(span["sentence"]) not in repeated]
         record["cross_article_duplicates_dropped"] = before - len(record["spans"])
+        # evidence_hash covers the span set, so dropping a span invalidates it. Without
+        # this, the record keeps a hash describing spans it no longer holds: label_items
+        # then reads the hash as current and never re-reads, while board_checks compares
+        # coverage against the real span count and fails the build. Nothing breaks the
+        # deadlock except --force, which relabels everything.
+        if before != len(record["spans"]) and record.get("content_hash"):
+            record["evidence_hash"] = evidence_hash(record["content_hash"], record["spans"])
     return sum(len(owners[key]) for key in repeated)
 
 

@@ -19,3 +19,9 @@ slow_*.log
 
 # Candidate files are working notes, regenerable from the board.
 register_candidates_*.md
+
+# LibreOffice lock files, created when a doc is open in the GUI
+.~lock.*#
+
+# Dated local backups, never committed
+*.bak-*
