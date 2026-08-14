@@ -2,6 +2,46 @@
 
 Dated, descriptive, newest first. Method changes and defects found, not every commit.
 
+## 2026-08-14
+
+**Model releases and primary sources moved to a right rail, level with the top of the feed.** The
+page is now three columns: filters and the deflation register left, feed centre, reference right.
+Both panels render open, so neither needs a click. Method stays collapsed in the centre column; it
+is reference, not news. The collapsed panel at the foot now holds markets and reference material
+only.
+
+This is a correction to a stated position rather than a preference. The board's method note says
+source class outranks coverage volume and that article-linked primaries are shown to be inspected.
+A layout that buried the release list and the primary sources under 45 feed cards contradicted the
+claim the page makes about itself.
+
+**Two wrong arrangements were tried first and both are recorded so neither gets retried.** (a)
+Folded into the collapsed panel below the entire feed: behind a click and past a full scroll, so
+nobody reached them. (b) Stacked full-width above the feed cards: readable without a click, but it
+pushed the first news card about 2,400px down, roughly two and a half screens on a 1080p display.
+That is the same fault as (a) in the other direction. A rail is visible without a click, level with
+the first card, and costs the feed no vertical space.
+
+⛔ Do not move either panel back into the main column, in either direction.
+
+**The release list in the rail shows 10 rows, not 16.** Sixteen was tall enough to push Primary
+sources below the fold of the rail's own scroll, which re-buried the panel the change exists to
+surface. The heading still states the true total.
+
+**Defect found in the same pass, recorded because it cost a deploy.** The first version of this
+layout change was made locally on 14 August and built into `index.html`, but never committed, so
+the live board served the old order for a day while the working copy looked correct. A local build
+is not a deploy.
+
+**Defect found by looking at the rendered page, which the integrity checks cannot catch.** Of the
+16 rows in Primary sources, the 8 arXiv papers all carry the same date, so the pull is taking a
+slice rather than making a selection, and at least two are unrelated to anything the board covers.
+Of the 8 datasets, `huggingface/documentation-images` is documentation images, `ayuo/hd_tmp` is a
+temporary dump, and `Salesforce/wikitext` is dated 2024-01-04, with two more from 2025, in a panel
+labelled recent. Five of eight cannot check any claim on this board. The panel is now the second
+thing a reader sees, so its selection rule needs writing. **Not fixed in this pass; recorded as
+open.**
+
 ## 2026-08-11
 
 **Source class is now separate from claim relationship.** Publisher class and its executable

@@ -927,7 +927,10 @@ def main():
     if os.path.isfile(rel_path):
         rd = json.load(open(rel_path, encoding="utf-8"))
         rrows = []
-        for r in rd.get("releases", [])[:16]:
+        # 10, not 16. In the right rail a 16-row list is tall enough to push Primary
+        # sources below the fold of the rail's own scroll, which re-buries the panel this
+        # layout exists to surface. The count in the heading still states the true total.
+        for r in rd.get("releases", [])[:10]:
             closed = r.get("evidence") == "closed"
             # ⛔ Keep this badge neutral. Motive-tier colours here read as a grade.
             badge_col = SLATE
@@ -1069,9 +1072,17 @@ def main():
         f'background:{TIER[t][0]};margin-right:4px"></span>Tier {t}</label>'
         for t in sorted(tiers_present))
     btn_label = "Show source tiers" if plain else "Hide source tiers"
-    # Controls run horizontally above the feed. They were a 210px left column, which spent
-    # a whole column of a wide screen on six checkboxes and pushed the reference panels into
-    # one over-long rail. The freed column now carries Model releases and Primary sources.
+    # Model releases and the primary-paper panel live in the RIGHT RAIL (.rail), level with
+    # the top of the feed, his call 2026-08-14. Two prior arrangements were both wrong and
+    # both are recorded so neither gets retried:
+    #   (a) folded into the collapsed panel BELOW the whole feed. Behind a click and past a
+    #       full scroll of cards, so nobody reached them.
+    #   (b) stacked full-width ABOVE {cards}. Read without a click, but pushed the first news
+    #       card ~2,400px down, about two and a half screens on a 1080p display.
+    # A rail fixes both: visible without a click, level with the first card, costs the feed
+    # no vertical space. Both render as <details open>. Method stays collapsed in the main
+    # column because it is reference, not news.
+    # ⛔ Do not move either panel back into the main column in either direction.
     # ⚠️ The ids and classes below are the JS contract (#q, .f-topic, .f-tier, #conflictonly,
     # #tiertoggle, #count). Renaming any of them silently breaks filtering.
     # Controls live in the left column. The template wraps this and the deflation register
@@ -1090,13 +1101,23 @@ def main():
     style_block = f"""<style>
   body{{margin:0;background:{ALT};color:{BODY};font-family:Arial,Helvetica,sans-serif;line-height:1.5}}
   .wrap{{max-width:1500px;margin:0 auto;padding:28px 20px 60px}}
-  .layout{{display:flex;gap:24px;align-items:flex-start}}
+  /* Three columns, the standard news shape: controls left, feed centre, reference right.
+     wrap is on so the right rail drops to its own row on a narrow screen instead of
+     squeezing the feed. */
+  .layout{{display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap}}
   /* Left column: controls, then the deflation register under them. Own scroll so a long
      register never lengthens the page. */
   .side{{flex:0 0 290px;position:sticky;top:16px;max-height:calc(100vh - 32px);overflow-y:auto}}
-  /* The rail takes the space a wide screen would otherwise waste, and gets the
-     reference panels out from under a 45-item feed where nobody scrolls to them. */
-  .main{{flex:1 1 auto;min-width:0}}
+  /* flex-basis, not auto: it is what forces the rail to wrap rather than crush the feed. */
+  .main{{flex:1 1 520px;min-width:0}}
+  /* Right rail: model releases and primary sources. They sit BESIDE the feed, not above it.
+     ⛔ Do not stack these full-width above {{cards}} again. That was tried on 2026-08-14 and
+     put the first news card about 2,400px down, roughly two and a half screens on a 1080p
+     display, which is not a fix for burying them, it is the same fault in the other
+     direction. A rail keeps them level with the top of the feed and costs the feed nothing.
+     Sticky with its own scroll for the same reason .side is: 81 releases must not be able
+     to lengthen the page. */
+  .rail{{flex:0 0 300px;position:sticky;top:16px;max-height:calc(100vh - 32px);overflow-y:auto}}
   /* Two columns, fixed. Auto-fill gave three or four on a wide screen and the cards read
      as a wall; two keeps a headline and its chips on one or two lines. */
   /* align-items defaults to stretch, and that is deliberate: it was `start` until
@@ -1122,8 +1143,12 @@ def main():
   .count{{font-size:12px;color:{SLATE};margin-top:12px}}
   body.plainmode .tierui{{display:none!important}}
   body.plainmode .tierchip{{background:#edf2f7!important;color:{BODY}!important;border:1px solid {LINE}!important}}
+  /* Rail drops below the feed before the feed gets narrow enough to hurt the cards. */
+  @media(max-width:1240px){{.rail{{flex:1 1 100%;position:static;max-height:none;overflow:visible;
+    display:grid;grid-template-columns:repeat(2,1fr);gap:0 16px;margin-top:20px}}}}
   /* One column below 1100px. */
   @media(max-width:1100px){{.feedgrid{{grid-template-columns:1fr}}}}
+  @media(max-width:860px){{.rail{{grid-template-columns:1fr}}}}
   @media(max-width:720px){{.layout{{flex-direction:column}}.side{{position:static;flex:1 1 auto;width:100%}}}}
 </style>"""
 
@@ -1285,15 +1310,15 @@ def main():
       {sidebar_html}
       {deflation_html}
     </aside>
-    <main class="main narrow">
+    <main class="main">
       {plain_note}
       {about_html}
       {cards}
       <details class="secondary">
-        <summary style="color:{NAVY};font-weight:600;cursor:pointer">Markets, primary sources,
-        releases and reference panels</summary>
-        <div style="margin-top:12px">{market_strip(mk)}{ai_watch_html}{scholar_html}
-        {releases_html}{govconflict_html}</div>
+        <summary style="color:{NAVY};font-weight:600;cursor:pointer">Markets and reference
+        panels</summary>
+        <div style="margin-top:12px">{market_strip(mk)}{ai_watch_html}
+        {govconflict_html}</div>
       </details>
       <div style="font-size:12px;color:{SLATE};margin-top:24px;border-top:1px solid {LINE};padding-top:14px">
         Method: source class comes from the executable public registry. A numeric claim tier is
@@ -1311,6 +1336,9 @@ def main():
         <a href="mailto:NMAIResearch@proton.me" style="color:{NAVY}">NMAIResearch@proton.me</a>
       </div>
     </main>
+    <aside class="rail">
+      {releases_html}{scholar_html}
+    </aside>
   </div>
 </div>
 {script_block}
