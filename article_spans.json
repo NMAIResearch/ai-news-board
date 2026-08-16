@@ -1,320 +1,367 @@
 {
- "https://techcrunch.com/2026/08/14/google-will-now-allow-users-to-remove-visible-watermark-from-its-ai-generations/": {
-  "headline": "Google will now allow users to remove visible watermark from its AI generations",
+ "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/": {
+  "headline": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
   "source": "techcrunch.com",
   "fetch": "ok",
-  "n_chars": 2036,
+  "n_chars": 1499,
   "tier": 1,
   "furniture_dropped": 2,
   "related_headlines_dropped": 0,
   "duplicate_spans_dropped": 0,
   "links_scope": "main",
-  "content_hash": "cc9f064e1113482180b2ab0122b162be364257f180e1248f2615e408ff34c7a2",
-  "evidence_hash": "cc782c9b19526798fbdf4e13b4e3363106b019df5c99db0bc11b079531ca5015",
-  "publisher_tags": [
-   "gemini",
-   "Google",
-   "In Brief",
-   "watermarks"
-  ],
+  "content_hash": "e99c497919952a0528f52781e135c6a0fbedb9621026d45eb76665787c74b1eb",
+  "evidence_hash": "c36f8890b2bc3ecb95817da75cd3efeeca9bd2241aa5c8e1a0372e8a26e99d41",
+  "publisher_tags": [],
   "site_name": "TechCrunch",
-  "spans": [],
+  "spans": [
+   {
+    "sentence": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
+    "offset": 123,
+    "figures": [
+     "$7B"
+    ],
+    "figure_offsets": [
+     65
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "The company announced in May that it had raised a $113 million Series B , at a reported $1.3 billion valuation.",
+    "offset": 417,
+    "figures": [
+     "$113 million",
+     "$1.3 billion"
+    ],
+    "figure_offsets": [
+     50,
+     88
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "The startup also claimed to have 8 million global users and to provide access to more than 400 models.",
+    "offset": 827,
+    "figures": [
+     "8 million",
+     "400"
+    ],
+    "figure_offsets": [
+     33,
+     91
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Now, Bloomberg said those discussions have led to a deal price of more than $7 billion.",
+    "offset": 1028,
+    "figures": [
+     "$7 billion"
+    ],
+    "figure_offsets": [
+     76
+    ],
+    "base_cue": false
+   }
+  ],
   "cross_article_duplicates_dropped": 0
  },
- "https://techcrunch.com/video/does-mark-zuckerberg-really-believe-ai-is-for-everyone/": {
-  "headline": "Does Mark Zuckerberg really believe AI is \u2018for everyone\u2019?",
+ "https://techcrunch.com/2026/08/16/why-people-arent-buying-mark-zuckerbergs-ai-future/": {
+  "headline": "Why people aren\u2019t buying Mark Zuckerberg\u2019s AI future",
   "source": "techcrunch.com",
   "fetch": "ok",
-  "n_chars": 2191,
+  "n_chars": 8436,
   "tier": 1,
-  "furniture_dropped": 2,
+  "furniture_dropped": 1,
   "related_headlines_dropped": 0,
   "duplicate_spans_dropped": 0,
-  "links_scope": "document",
-  "content_hash": "cfdeb0f8113a43b7f284d7f74fbd4deae2e7c82e3b1bb33a2e949b4fa6ef3bf4",
-  "evidence_hash": "4a7e46f0c2d6b3412c9b1a936f65901bf71747c8bc77f78529287f8826930090",
+  "links_scope": "main",
+  "content_hash": "666ba18c6f14e83b66703de0c61f773f831e943c124fe2fbf3a1529988f3d0ba",
+  "evidence_hash": "99e3d797d443260a699a55a53005ede0e1c738db49b90e856e048fd27b2b1426",
   "publisher_tags": [
-   "Amazon",
-   "Anthropic",
-   "data centers",
-   "Joby Aviation",
    "Mark Zuckerberg",
    "Meta"
   ],
   "site_name": "TechCrunch",
-  "spans": [],
-  "cross_article_duplicates_dropped": 2
- },
- "https://techcrunch.com/2026/08/14/kog-is-going-deeper-to-squeeze-more-inference-out-of-gpus/": {
-  "headline": "Kog is going deeper to squeeze more inference out of GPUs",
-  "source": "techcrunch.com",
-  "fetch": "ok",
-  "n_chars": 6194,
-  "tier": 1,
-  "furniture_dropped": 1,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "main",
-  "content_hash": "cc7a77bc573d69afb5ce86c52384c72e3df2f7b592e78566f1ae3d0883ab7f00",
-  "evidence_hash": "d7ac6e1fe9367193cf02c2489d7a1d42a52cf08b99b46f6c1b391f427b27e927",
-  "publisher_tags": [
-   "AI inference"
-  ],
-  "site_name": "TechCrunch",
   "spans": [
    {
-    "sentence": "\u201cWe had 200 tangible business leads,\u201d CEO Ga\u00ebl Delalleau told TechCrunch.",
-    "offset": 806,
+    "sentence": "Meta CEO Mark Zuckerberg published a 6,500 word essay this week declaring that \u201cThe Future is for Everyone\u201d and painting an optimistic picture of a future powered by AI, where \u201ceveryone will have an exceptionally capable personal agent that understands you, your goals, and everything you care about.\u201d",
+    "offset": 51,
     "figures": [
-     "200"
+     "6,500"
     ],
     "figure_offsets": [
-     8
+     37
     ],
     "base_cue": false
    },
    {
-    "sentence": "This leaves Kog with a huge leap to make to deliver on its promise of \u201c30x faster LLM inference.\u201d Its demo showed an impressive 3,000 per-request tokens per second (TPS) \u2014 but with a purpose-built small model with only some 2 billion parameters, the now open sourced Laneformer 2B .",
-    "offset": 1822,
+    "sentence": "Anthony: The one positive thing I will say for this very long manifesto \u2014 6,500 words, longer than almost anything that\u2019s been published on TechCrunch \u2014 is that there is one sentence where he says, \u201cIf you are an AI doomer and you believe that that\u2019s the future that AI is going to bring, why are you building this stuff?\u201d",
+    "offset": 5861,
     "figures": [
-     "3,000",
-     "2 billion"
+     "6,500"
     ],
     "figure_offsets": [
-     128,
-     224
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "\u201cFor every new GPU, we\u2019ll dedicate several weeks or even months, to really dig into the details and conduct GPU engineering research on that hardware.\u201d With a team of 11 people, this puts a limit to the number of chips that Kog can work with, at least for the foreseeable future.",
-    "offset": 3897,
-    "figures": [
-     "11"
-    ],
-    "figure_offsets": [
-     167
-    ],
-    "base_cue": true
-   }
-  ],
-  "cross_article_duplicates_dropped": 0
- },
- "https://techcrunch.com/2026/08/14/hyperscalers-might-regret-embracing-natural-gas-if-new-forecast-proves-correct/": {
-  "headline": "Hyperscalers might regret embracing natural gas if new forecast proves correct",
-  "source": "techcrunch.com",
-  "fetch": "ok",
-  "n_chars": 6168,
-  "tier": 1,
-  "furniture_dropped": 1,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "main",
-  "content_hash": "d677f003e8af9cb6b63fa0f11e015b4c5abc818358c4971ad847b84b8fe8f647",
-  "evidence_hash": "d24e09e5782c349b709e3c1f70edd422b36e5fdc1ac7241ded9b429d9e36d4bc",
-  "publisher_tags": [
-   "Amazon",
-   "Exclusive",
-   "Google",
-   "Meta",
-   "Microsoft",
-   "natural gas"
-  ],
-  "site_name": "TechCrunch",
-  "spans": [
-   {
-    "sentence": "In March, Meta said it would build a massive 7.5-gigawatt natural gas power plant in Louisiana to power its Hyperion data center .",
-    "offset": 936,
-    "figures": [
-     "7"
-    ],
-    "figure_offsets": [
-     45
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "And not to be left out, Amazon plans to build a 7.6-gigawatt gas power plant in Texas.",
-    "offset": 1188,
-    "figures": [
-     "7"
-    ],
-    "figure_offsets": [
-     48
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Noreva expects natural gas prices to soar above $10 per million BTUs in certain hubs, or delivery points for futures contracts.",
-    "offset": 1749,
-    "figures": [
-     "$10"
-    ],
-    "figure_offsets": [
-     48
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Today, prices range from about $2 to $4.50 per million BTUs, with the widely traded Henry Hub in Louisiana priced at just under $3 .",
-    "offset": 1877,
-    "figures": [
-     "$2",
-     "$4.50",
-     "$3"
-    ],
-    "figure_offsets": [
-     31,
-     37,
-     128
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "It\u2019s those differentials that will drive prices in some regions above $10 per million BTUs for extended periods of time.",
-    "offset": 3999,
-    "figures": [
-     "$10"
-    ],
-    "figure_offsets": [
-     70
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Already, 80% of consumers are worried about data centers\u2019 impact on their utility bills, mostly related to electricity.",
-    "offset": 4274,
-    "figures": [
-     "80%"
-    ],
-    "figure_offsets": [
-     9
+     74
     ],
     "base_cue": false
    }
   ],
   "cross_article_duplicates_dropped": 0
  },
- "https://techcrunch.com/podcast/metas-open-ai-and-a-250m-deal-gone-very-wrong/": {
-  "headline": "Meta\u2019s\u00a0\u2018open\u2019\u00a0AI, and a $250M deal gone very wrong",
+ "https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/": {
+  "headline": "Anthropic CEO says AI backlash is \u2018fundamentally a crisis of trust\u2019",
   "source": "techcrunch.com",
   "fetch": "ok",
-  "n_chars": 4273,
+  "n_chars": 5438,
   "tier": 1,
   "furniture_dropped": 1,
   "related_headlines_dropped": 0,
   "duplicate_spans_dropped": 0,
   "links_scope": "main",
-  "content_hash": "20af737ed54e90d1c82b4bd97ffb4aee7b9de3f134a03923cb141bae405a466b",
-  "evidence_hash": "18323ebdcd587337405d42e96d72cb9162761b00a0719305655c49d6aa3a43a6",
+  "content_hash": "1e5974a1a1aa8491641a8f925eb8ae119c0a34eb22f102c085776361210c2900",
+  "evidence_hash": "8e6ade39dd0ba04b47a554d56acb86783e0b64ec769674139d2cc7834393d28d",
   "publisher_tags": [
-   "Amazon",
    "Anthropic",
-   "Equity podcast",
-   "Joby Aviation",
-   "Meta"
+   "dario amodei"
+  ],
+  "site_name": "TechCrunch",
+  "spans": [],
+  "cross_article_duplicates_dropped": 0
+ },
+ "https://techcrunch.com/2026/08/15/woman-claims-her-stepfather-used-grok-to-transform-childhood-photo-into-explicit-imagery/": {
+  "headline": "Woman claims her stepfather used Grok to transform childhood photo into explicit imagery",
+  "source": "techcrunch.com",
+  "fetch": "ok",
+  "n_chars": 1724,
+  "tier": 1,
+  "furniture_dropped": 2,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "main",
+  "content_hash": "ef060c7c7ca20331a8f676404783a895234f46a6664d31293a21eaca5af389e3",
+  "evidence_hash": "af6c98884bd28f846128bf564e9826aea537d48f05aa623f9ff1a9a95a98d40f",
+  "publisher_tags": [
+   "Grok",
+   "SpaceX",
+   "x.ai"
   ],
   "site_name": "TechCrunch",
   "spans": [
    {
-    "sentence": "Meta\u2019s \u2018open\u2019 AI, and a $250M deal gone very wrong",
-    "offset": 0,
+    "sentence": "A woman identified as Jane Doe 4 has joined a lawsuit filed by three Tennessee teenagers against Elon Musk\u2019s xAI over the role the company\u2019s chatbot Grok allegedly played in creating child sexual abuse material.",
+    "offset": 211,
     "figures": [
-     "$250M"
+     "4"
     ],
     "figure_offsets": [
-     24
+     31
     ],
     "base_cue": false
    },
    {
-    "sentence": "Who\u2019s on the market for a $300 cocktail robot ?",
-    "offset": 1012,
+    "sentence": "According to a report in The Washington Post , the woman alleged that her stepfather used Grok to manipulate a photo taken when she was 11 years old to create more than 7,000 explicit images of her.",
+    "offset": 423,
     "figures": [
-     "$300"
+     "11",
+     "7,000"
     ],
     "figure_offsets": [
-     26
+     136,
+     169
     ],
     "base_cue": false
    },
    {
-    "sentence": "The potential cost Amazon\u2019s planned data center in Texas and the startups racing to fix the grid, including Form Energy\u2019s $750M raise for 100-hour batteries, Reservoir\u2019s $8M bet on smarter water heaters, and Discovered Materials\u2019 hunt for cooler chips.",
-    "offset": 1147,
+    "sentence": "If you are in a crisis or having thoughts of suicide, call or text 988 to reach the 988 Suicide and Crisis Lifeline .",
+    "offset": 1287,
     "figures": [
-     "$750M",
-     "$8M"
+     "988",
+     "988"
     ],
     "figure_offsets": [
-     122,
-     170
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Why Joby Aviation\u2019s $500M acquisition of a defense contractor reminds Kirsten of its Blade deal last year \u2014 and what the 2028 LA Olympics have to do with it.",
-    "offset": 1402,
-    "figures": [
-     "$500M"
-    ],
-    "figure_offsets": [
-     20
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "How a $250M deal between video-clipping startup VideoVerse and sports publisher Minute Media collapsed amidst allegedly forged documents , multiple lawsuits, and a CEO nobody can reach.",
-    "offset": 1562,
-    "figures": [
-     "$250M"
-    ],
-    "figure_offsets": [
-     6
+     67,
+     84
     ],
     "base_cue": false
    }
   ],
-  "cross_article_duplicates_dropped": 2
+  "cross_article_duplicates_dropped": 0
  },
- "https://techcrunch.com/2026/08/13/writer-introduces-new-ai-model-and-upgraded-harness-to-contain-token-costs/": {
-  "headline": "Writer introduces new AI model and upgraded harness to contain token costs",
+ "https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/": {
+  "headline": "Anthropic shares more details about how Claude\u2019s new watermarks will work",
   "source": "techcrunch.com",
   "fetch": "ok",
-  "n_chars": 3171,
+  "n_chars": 4058,
   "tier": 1,
   "furniture_dropped": 1,
   "related_headlines_dropped": 0,
   "duplicate_spans_dropped": 0,
   "links_scope": "main",
-  "content_hash": "f84fd23c09aeb84f3f9182c2efef55508df3bba693a0a0567a48258bc6712a38",
-  "evidence_hash": "4abed4fb11239c3b1b72b27a68b8ce1fdfff944a6d204d2846a4ffdb615296a1",
+  "content_hash": "d0173254628f6229108f257ad8e4b32602f9071de39041f1750193e14ac1c0fa",
+  "evidence_hash": "ae47d63b68d6cf2dc32f58d0e0183bb37dc75b4bd174acc56d33159984580248",
   "publisher_tags": [
-   "writer",
-   "Z.ai"
+   "Anthropic",
+   "Claude"
+  ],
+  "site_name": "TechCrunch",
+  "spans": [],
+  "cross_article_duplicates_dropped": 0
+ },
+ "https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/": {
+  "headline": "SpaceX officially closes its Cursor acquisition",
+  "source": "techcrunch.com",
+  "fetch": "ok",
+  "n_chars": 1517,
+  "tier": 1,
+  "furniture_dropped": 2,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "main",
+  "content_hash": "0cca9bc9ef8276a5e955294a022c953f223de51df03a36e11dc87509af40e57b",
+  "evidence_hash": "bc15d3a6c1a22805b244cf5ea9aa7b783ffbb9291c533f5b149ee02f578ab6cc",
+  "publisher_tags": [
+   "Elon Musk",
+   "SpaceX",
+   "cursor"
   ],
   "site_name": "TechCrunch",
   "spans": [
    {
-    "sentence": "The company estimates the new model, combined with changes to the companies harness infrastructure, will cut costs for its customers by as much as 50% for basic tasks.",
-    "offset": 610,
+    "sentence": "Elon Musk\u2019s SpaceX \u2014 which also acquired Musk\u2019s xAI earlier this year \u2014 announced a deal in April for the companies to develop technology together; the deal also gave SpaceX the option to acquire Cursor for $60 billion.",
+    "offset": 271,
     "figures": [
-     "50%"
+     "$60 billion"
     ],
     "figure_offsets": [
-     147
+     207
+    ],
+    "base_cue": false
+   }
+  ],
+  "cross_article_duplicates_dropped": 0
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team": {
+  "headline": "OpenAI reportedly disbanded its preparedness team",
+  "source": "theverge.com",
+  "fetch": "ok",
+  "n_chars": 2147,
+  "tier": 1,
+  "furniture_dropped": 2,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "article",
+  "content_hash": "48f3e6d2864a22c359b25aca3e3749d4b17dbc63b36b269cf87b8c9df725ef84",
+  "evidence_hash": "f7c41ce89fd1adc47e5b72499f6c9b1291a40fc3b9c60412df4b3cb1e14c2960",
+  "publisher_tags": [
+   "AI",
+   "News",
+   "OpenAI",
+   "Security",
+   "Tech"
+  ],
+  "site_name": "The Verge",
+  "spans": [],
+  "cross_article_duplicates_dropped": 0
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/980742/chatgpts-computer-history-tracks-your-clicks-and-keystrokes": {
+  "headline": "ChatGPT\u2019s Computer History tracks your clicks and keystrokes",
+  "source": "theverge.com",
+  "fetch": "ok",
+  "n_chars": 2212,
+  "tier": 1,
+  "furniture_dropped": 2,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "article",
+  "content_hash": "7bfeebfe72f595e74475a02a4008cc33923294e469985da0d72ca2eac4677881",
+  "evidence_hash": "d2a6ddbbcdc6ac13152821a8f3edc7940a4f3781715cc3b96580035e21479644",
+  "publisher_tags": [
+   "AI",
+   "News",
+   "OpenAI"
+  ],
+  "site_name": "The Verge",
+  "spans": [],
+  "cross_article_duplicates_dropped": 0
+ },
+ "https://www.theverge.com/column/980337/rogue-ai-science-fiction-openai": {
+  "headline": "Rogue AI aren\u2019t science fiction anymore",
+  "source": "theverge.com",
+  "fetch": "ok",
+  "n_chars": 12489,
+  "tier": 1,
+  "furniture_dropped": 2,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "article",
+  "content_hash": "4a313a5529a17d8ba635a068934f48545e0bc4e2a597aac35cc597aed385e469",
+  "evidence_hash": "b1337e499e39aa5ad743e9d38dca65eed5936386b6a5a26badee15fb6332306f",
+  "publisher_tags": [
+   "AI",
+   "Column",
+   "OpenAI",
+   "Security",
+   "Tech",
+   "The Stepback"
+  ],
+  "site_name": "The Verge",
+  "spans": [
+   {
+    "sentence": "Zuck released a 6,500 word treatise on AI, superintelligence, and governance this week.",
+    "offset": 10910,
+    "figures": [
+     "6,500"
+    ],
+    "figure_offsets": [
+     16
+    ],
+    "base_cue": false
+   }
+  ],
+  "cross_article_duplicates_dropped": 0
+ },
+ "https://www.theverge.com/entertainment/980502/roleplay-as-an-ai-chatbot": {
+  "headline": "Have a laugh at AI\u2019s expense by roleplaying as a chatbot",
+  "source": "theverge.com",
+  "fetch": "ok",
+  "n_chars": 2946,
+  "tier": 1,
+  "furniture_dropped": 2,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "article",
+  "content_hash": "891a68717c069f48e2111315d7c3bbfde3ceebdb3be7a6e36c78b725a5db9040",
+  "evidence_hash": "cd159b67805aa5befd43bac599c5f34fcca3d460a206f79d39d76f5eface6693",
+  "publisher_tags": [
+   "AI",
+   "Culture",
+   "Entertainment",
+   "Internet Culture",
+   "News"
+  ],
+  "site_name": "The Verge",
+  "spans": [
+   {
+    "sentence": "Prompts can request a response as text or image, and then whoever is roleplaying as the AI gets 150 seconds to respond.",
+    "offset": 897,
+    "figures": [
+     "150"
+    ],
+    "figure_offsets": [
+     96
     ],
     "base_cue": false
    },
    {
-    "sentence": "The research found that, in many cases, changes in the harness were a more reliable way to reduce costs than model choice, with costs falling an average of 40% across their testing.",
-    "offset": 1484,
+    "sentence": "The Virtual OS Museum lets you relive over 600 operating systems right on your desktop",
+    "offset": 2412,
     "figures": [
-     "40%"
+     "600"
     ],
     "figure_offsets": [
-     156
+     43
     ],
-    "base_cue": true
+    "base_cue": false
    }
   ],
   "cross_article_duplicates_dropped": 0
@@ -364,163 +411,6 @@
   "site_name": "The Verge",
   "spans": [],
   "cross_article_duplicates_dropped": 2
- },
- "https://www.theverge.com/ai-artificial-intelligence/980160/apple-intelligence-china-custom-ai-model-alibaba": {
-  "headline": "Apple trained its own AI model for China with help from Alibaba",
-  "source": "theverge.com",
-  "fetch": "ok",
-  "n_chars": 2686,
-  "tier": 1,
-  "furniture_dropped": 1,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "article",
-  "content_hash": "ce1347c50c509a70e4436790ec827973387daf2547dbff9e42010645bd5a7763",
-  "evidence_hash": "4b746dcb0eea0b6626e38a642287e19d847c6142dcb1cf61e39a935f511520bc",
-  "publisher_tags": [
-   "AI",
-   "Apple",
-   "News",
-   "Tech"
-  ],
-  "site_name": "The Verge",
-  "spans": [],
-  "cross_article_duplicates_dropped": 2
- },
- "https://www.theverge.com/tech/979871/microsoft-copilot-mico-retired": {
-  "headline": "Microsoft\u2019s Clippy-like Mico character is no longer the face of Copilot",
-  "source": "theverge.com",
-  "fetch": "ok",
-  "n_chars": 2119,
-  "tier": 1,
-  "furniture_dropped": 1,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "article",
-  "content_hash": "c453c787942e2ff0ea14a5cd5b2fbabec8ae679107db8bfa97f0005c4b03d823",
-  "evidence_hash": "a6c4512c55d613f0ae29f83c07a9e7e4a5d2a8af2ed87594870ef587715c6539",
-  "publisher_tags": [
-   "AI",
-   "Microsoft",
-   "News",
-   "Tech"
-  ],
-  "site_name": "The Verge",
-  "spans": [
-   {
-    "sentence": "The change is part of Microsoft\u2019s plans to merge its Copilot and Microsoft 365 Copilot apps .",
-    "offset": 1339,
-    "figures": [
-     "365"
-    ],
-    "figure_offsets": [
-     75
-    ],
-    "base_cue": false
-   }
-  ],
-  "cross_article_duplicates_dropped": 3
- },
- "https://www.theverge.com/ai-artificial-intelligence/979815/openai-denise-dresser-leaving-executive-departure": {
-  "headline": "OpenAI is losing its second executive this week",
-  "source": "theverge.com",
-  "fetch": "ok",
-  "n_chars": 2300,
-  "tier": 1,
-  "furniture_dropped": 1,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "article",
-  "content_hash": "baa9f7902a29936047536a229a6f18e06ee430a998373b375586056b52cf9e3b",
-  "evidence_hash": "4ad092b493a571232ab10b71e1dfe5890b68ccc143e4e3ee34aed25771e87c9e",
-  "publisher_tags": [
-   "AI",
-   "News",
-   "OpenAI"
-  ],
-  "site_name": "The Verge",
-  "spans": [],
-  "cross_article_duplicates_dropped": 3
- },
- "https://www.theverge.com/ai-artificial-intelligence/979345/suno-studio-2-0-midi-chatbot-custom-effects": {
-  "headline": "Suno is trying to look more like a real music production tool",
-  "source": "theverge.com",
-  "fetch": "ok",
-  "n_chars": 3815,
-  "tier": 1,
-  "furniture_dropped": 2,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 1,
-  "links_scope": "article",
-  "content_hash": "b26f9b1ab6de0443ae465a21bcfbbf2b6f146f805b3b5768b80f49cbb353e735",
-  "evidence_hash": "93f4da5184769d00b79731a980ef2e87a17395c9f5e1f13a0cf358f0b6902cdb",
-  "publisher_tags": [
-   "AI",
-   "Entertainment",
-   "Music",
-   "News"
-  ],
-  "site_name": "The Verge",
-  "spans": [
-   {
-    "sentence": "Studio 2.0 adds MIDI, effects plugins, and a synth, but also a chatbot that does everything for you.",
-    "offset": 85,
-    "figures": [
-     "2.0"
-    ],
-    "figure_offsets": [
-     7
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Suno is releasing Studio 2.0 with significant upgrades that push it closer to an actual digital audio workstation (DAW), rather than a bare-bones audio editor with generative AI features.",
-    "offset": 545,
-    "figures": [
-     "2.0"
-    ],
-    "figure_offsets": [
-     25
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Another standard DAW feature being added in Studio 2.0 is automation.",
-    "offset": 1398,
-    "figures": [
-     "2.0"
-    ],
-    "figure_offsets": [
-     51
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Suno Studio 2.0 is a lot more feature-packed than version one, but the beta version of the chat leaves even less to do for the users.",
-    "offset": 2355,
-    "figures": [
-     "2.0"
-    ],
-    "figure_offsets": [
-     12
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Tyga is the first artist to get a 0.0 from Pitchfork in 20 years for his AI synth-slop album.",
-    "offset": 3156,
-    "figures": [
-     "0.0",
-     "20"
-    ],
-    "figure_offsets": [
-     34,
-     56
-    ],
-    "base_cue": false
-   }
-  ],
-  "cross_article_duplicates_dropped": 3
  },
  "https://arstechnica.com/tech-policy/2026/08/suspecting-court-of-using-ai-man-injected-prompts-in-filings-to-try-to-win-case/": {
   "headline": "Suspecting court of using AI, man injected prompts in filings to try to win case",
@@ -1571,56 +1461,74 @@
   "spans": [],
   "cross_article_duplicates_dropped": 0
  },
- "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/": {
-  "headline": "Google is making private AI practical with homomorphic encryption",
-  "source": "blog.google",
+ "https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing": {
+  "headline": "Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
+  "source": "daringfireball.net",
   "fetch": "ok",
-  "n_chars": 5339,
+  "n_chars": 28900,
   "tier": 1,
   "furniture_dropped": 0,
   "related_headlines_dropped": 0,
   "duplicate_spans_dropped": 0,
-  "links_scope": "article",
-  "content_hash": "d0a6e3323c71d1821743f2db46d08c951ead7fff6e4d85ae17e8bbe65a9614b4",
-  "evidence_hash": "a58d1e146c250abf1aebcdbd097510b7e811fbf98846713fd66fb77338f8f9e9",
-  "publisher_tags": [
-   "None"
-  ],
-  "site_name": "Google",
-  "spans": [],
-  "cross_article_duplicates_dropped": 0
- },
- "https://weightythoughts.com/p/when-genius-failsthe-intellectual": {
-  "headline": "When Genius Fails: The Intellectual Arrogance of the AI Labs",
-  "source": "weightythoughts.com",
-  "fetch": "ok",
-  "n_chars": 15255,
-  "tier": 1,
-  "furniture_dropped": 0,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "article",
-  "content_hash": "f614496ec941ffb5bb62dff5c142eaed74e13ad7786146716f136e099822d5d1",
-  "evidence_hash": "1686e6ee591e5316f7f027594cc1b5c6d8bbada31e5d64376b8d1d4f85b5d7ac",
+  "links_scope": "document",
+  "content_hash": "87d9ee40a1d91f013acb108254f487ca814b13a208d1c03ce8a064c3d7f6c027",
+  "evidence_hash": "06c5a89c096e4e5707e605d92d586feac71159c9a4f38becff6bff1d166ecb3f",
   "publisher_tags": [],
-  "site_name": "",
+  "site_name": "Daring Fireball",
   "spans": [
    {
-    "sentence": "Leopold Aschenbrenner\u2019s hedge fund, Situational Awareness, provided a $20 billion demonstration this week .",
-    "offset": 260,
+    "sentence": "Sunday, 16 August 2026",
+    "offset": 398,
     "figures": [
-     "$20 billion"
+     "16"
     ],
     "figure_offsets": [
-     70
+     8
     ],
     "base_cue": false
    },
    {
-    "sentence": "And then he was running a $20 billion hedge fund.",
-    "offset": 622,
+    "sentence": "(Same way that a crooked 51-49 coin will still land \u201cwrong\u201d side up 49 times out of 100 on average.)",
+    "offset": 4592,
     "figures": [
-     "$20 billion"
+     "49",
+     "100"
+    ],
+    "figure_offsets": [
+     68,
+     84
+    ],
+    "base_cue": true
+   },
+   {
+    "sentence": "Anthropic is saying that all new Claude models are going to adulterate every single bit of text longer than 200 tokens (~150 words) they generate, including everything it presents to its users to read.",
+    "offset": 8315,
+    "figures": [
+     "200",
+     "150"
+    ],
+    "figure_offsets": [
+     108,
+     121
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "The regulation applies to text longer than 200 tokens.",
+    "offset": 9800,
+    "figures": [
+     "200"
+    ],
+    "figure_offsets": [
+     43
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "We analysed approximately 20 million watermarked and unwatermarked",
+    "offset": 16018,
+    "figures": [
+     "20 million"
     ],
     "figure_offsets": [
      26
@@ -1628,166 +1536,78 @@
     "base_cue": false
    },
    {
-    "sentence": "After all, someone who goes all-in on red at the roulette table five times in a row and wins by luck will have a 3,100% return.",
-    "offset": 2471,
+    "sentence": "models differed by 0.01% (with the watermarked model being",
+    "offset": 16278,
     "figures": [
-     "3,100%"
+     "0.01%"
     ],
     "figure_offsets": [
-     113
+     19
     ],
     "base_cue": false
    },
    {
-    "sentence": "Like this Korean guy who went 500% long on stocks, briefly turned his military-service savings into a small fortune, and then lost it all , though his was just one of more than 1.2 million Korean brokerage accounts that got margin called by mid-July \u2026 Which makes this all look similar to the roulette table.",
-    "offset": 3293,
+    "sentence": "higher); and the thumbs-down rate differed by 0.02% (with the",
+    "offset": 16337,
     "figures": [
-     "500%",
-     "1.2 million"
+     "0.02%"
     ],
     "figure_offsets": [
-     30,
-     177
+     46
     ],
     "base_cue": false
    },
    {
-    "sentence": "He predicted in 1798 that we\u2019d inevitably run out of food (population grows exponentially, the food supply doesn\u2019t), which made a harmonious society without war, famine, and disease to cull the population impossible.",
-    "offset": 6235,
+    "sentence": "to be statistically insignificant, and well within the 95%",
+    "offset": 16466,
     "figures": [
-     "1798"
+     "95%"
     ],
     "figure_offsets": [
-     16
-    ],
-    "base_cue": true
-   },
-   {
-    "sentence": "Farming went from roughly 70% of US jobs to about 1%, and the economy absorbed it.",
-    "offset": 6772,
-    "figures": [
-     "70%",
-     "1%"
-    ],
-    "figure_offsets": [
-     26,
-     50
+     55
     ],
     "base_cue": false
    },
    {
-    "sentence": "Though, to be fair, just yesterday Anthropic revealed that its models (including Mythos 5) had also accidentally compromised real organizations during testing .",
-    "offset": 10451,
+    "sentence": "For example, once the model has written \u201c2 + 2 =\u201d, there is a very",
+    "offset": 22690,
     "figures": [
-     "5"
+     "2",
+     "2"
     ],
     "figure_offsets": [
-     88
-    ],
-    "base_cue": false
-   }
-  ],
-  "cross_article_duplicates_dropped": 0
- },
- "https://declaude.org/watermarking/": {
-  "headline": "How AI text watermarking works",
-  "source": "declaude.org",
-  "fetch": "ok",
-  "n_chars": 9584,
-  "tier": 1,
-  "furniture_dropped": 0,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "document",
-  "content_hash": "494d5ee3de54ba531fa739a31326dcc6c647ef91ff65c94aa88a546a563c4ccb",
-  "evidence_hash": "dd59777ac3418b8c73e6fed4bfcf7de479088ea9db86570625782d1e66156d51",
-  "publisher_tags": [],
-  "site_name": "declaude",
-  "spans": [
-   {
-    "sentence": "\u00d720 and watch the pile take the shape of the odds.",
-    "offset": 1320,
-    "figures": [
-     "20"
-    ],
-    "figure_offsets": [
-     1
+     41,
+     45
     ],
     "base_cue": false
    },
    {
-    "sentence": "\ud83d\udcd6 keep reading: same mark, \u00d74 the text",
-    "offset": 4020,
+    "sentence": "the sum, there isn\u2019t an answer that\u2019s equally as good as \u201c4\u201d; if",
+    "offset": 22822,
     "figures": [
      "4"
     ],
     "figure_offsets": [
-     28
+     58
     ],
     "base_cue": false
    },
    {
-    "sentence": "1,500-word document would flag at only ~55% green: small leans become persuasive",
-    "offset": 4507,
+    "sentence": "isn\u2019t an answer that\u2019s equally as good as \u201c5\u201d).",
+    "offset": 22951,
     "figures": [
-     "1",
-     "55%"
+     "5"
     ],
     "figure_offsets": [
-     0,
-     40
+     43
     ],
     "base_cue": false
    },
    {
-    "sentence": "Here is the same paragraph from step 3, at five edit depths.",
-    "offset": 5085,
+    "sentence": "around 190 total signatories , signed the EU Code of",
+    "offset": 23917,
     "figures": [
-     "3"
-    ],
-    "figure_offsets": [
-     37
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "highlights above , projected to a 1,500-word document.",
-    "offset": 5563,
-    "figures": [
-     "1"
-    ],
-    "figure_offsets": [
-     34
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "declaude's full-rewrite route): about 0.5% of windows survive, and detector accuracy",
-    "offset": 5851,
-    "figures": [
-     "0.5%"
-    ],
-    "figure_offsets": [
-     38
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "text, with even human paraphrase becoming detectable again after roughly 800 tokens",
-    "offset": 6181,
-    "figures": [
-     "800"
-    ],
-    "figure_offsets": [
-     73
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "(about 600 words).",
-    "offset": 6265,
-    "figures": [
-     "600"
+     "190"
     ],
     "figure_offsets": [
      7
@@ -1795,29 +1615,131 @@
     "base_cue": false
    },
    {
-    "sentence": "(AUC 0.99 \u2192 \u22480.5), context-free unigram marks survive (0.73\u20130.84); outline-level",
-    "offset": 9189,
+    "sentence": "This, from a company that the Financial Times just reported is weeks away from an IPO with an intended valuation of $2 trillion, which would make it one of the 10 highest-valued companies in the world\u2009\u2014\u2009 as of today , placing it at #7, between TSMC ($2.2T) and Broadcom ($1.9T).",
+    "offset": 24225,
     "figures": [
-     "0.99",
-     "0.5",
-     "0.73",
-     "0.84"
+     "$2 trillion",
+     "10",
+     "7",
+     "$2.2",
+     "$1.9"
     ],
     "figure_offsets": [
-     5,
-     13,
-     55,
-     60
+     116,
+     160,
+     233,
+     250,
+     271
+    ],
+    "base_cue": true
+   },
+   {
+    "sentence": "1 Not a cause for concern at all.",
+    "offset": 24747,
+    "figures": [
+     "1"
+    ],
+    "figure_offsets": [
+     0
     ],
     "base_cue": false
    }
   ],
   "cross_article_duplicates_dropped": 0
  },
- "https://cdn.openai.com/pdf/how-organizations-use-chatgpt.pdf": {
-  "headline": "How Organizations Use AI: Evidence from ChatGPT [pdf]",
-  "source": "cdn.openai.com",
-  "fetch": "valueerror",
+ "https://futurism.com/artificial-intelligence/young-people-ai-ceos-executives-poll": {
+  "headline": "Young People Hate AI CEOs So Passionately That It's Almost Hard to Believe",
+  "source": "futurism.com",
+  "fetch": "ok",
+  "n_chars": 2573,
+  "tier": 1,
+  "furniture_dropped": 0,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "article",
+  "content_hash": "1978775ee751d59b6b353d2b80a05d747ed0e1583c12430a2114a7e8f0d012ae",
+  "evidence_hash": "112619a52e93c9fe2a8d5d0503d2b45abc58bde62bd978067ec092d39e54c3a0",
+  "publisher_tags": [],
+  "site_name": "Futurism",
+  "spans": [
+   {
+    "sentence": "A new survey conducted by CNBC \u2018s Generation Labs asked over 1,000 US adults aged between 18 and 34 to share their thoughts on politics, AI, and the country\u2019s economy.",
+    "offset": 460,
+    "figures": [
+     "1,000",
+     "18",
+     "34"
+    ],
+    "figure_offsets": [
+     61,
+     90,
+     97
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Palantir\u2019s extremely controversial CEO Alex Karp scored the lowest, with 81 percent choosing \u201cdon\u2019t trust,\u201d while Microsoft CEO Satya Nadella fared the best \u2014 albeit with a pitiful 35 percent \u201ctrust\u201d score.",
+    "offset": 917,
+    "figures": [
+     "81 percent",
+     "35 percent"
+    ],
+    "figure_offsets": [
+     73,
+     181
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Everyone else fell in between: 79 percent of respondents said they don\u2019t trust Peter Thiel, while a whopping 71, 70, and 69 percent said they \u201cdon\u2019t trust\u201d Mark Zuckerberg, Elon Musk, and Sam Altman, respectively (Musk will probably be mad he didn\u2019t get that 69 figure .)",
+    "offset": 1124,
+    "figures": [
+     "79 percent",
+     "71",
+     "70",
+     "69 percent",
+     "69"
+    ],
+    "figure_offsets": [
+     31,
+     109,
+     113,
+     121,
+     259
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Asked what kind of impact AI will have on their lives, 45 percent of respondents said it will have a negative affect on their careers, while an additional 40 percent opined that the US government should regulate AI.",
+    "offset": 1965,
+    "figures": [
+     "45 percent",
+     "40 percent"
+    ],
+    "figure_offsets": [
+     55,
+     155
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "When it comes to data centers, 60 percent said they think the tech industry\u2019s all-out construction drive should slow down.",
+    "offset": 2181,
+    "figures": [
+     "60 percent"
+    ],
+    "figure_offsets": [
+     31
+    ],
+    "base_cue": false
+   }
+  ],
+  "cross_article_duplicates_dropped": 0
+ },
+ "https://www.reuters.com/business/nvidia-scales-back-250-billion-openai-data-center-guarantee-wsj-reports-2026-08-14/": {
+  "headline": "Nvidia dramatically reduces amount of OpenAI infra financing it may guarantee",
+  "source": "reuters.com",
+  "fetch": "robots-disallowed",
   "n_chars": 0,
   "tier": 1,
   "furniture_dropped": 0,
@@ -1831,198 +1753,161 @@
   "spans": [],
   "cross_article_duplicates_dropped": 0
  },
- "https://www.404media.co/person-hides-prompt-injection-in-legal-filing-telling-ai-to-side-with-them/": {
-  "headline": "Person Hides Prompt Injection in Legal Filing Telling AI to Side with Them",
-  "source": "404media.co",
+ "https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion": {
+  "headline": "Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
+  "source": "bloomberg.com",
+  "fetch": "http-403",
+  "n_chars": 0,
+  "tier": 1,
+  "furniture_dropped": 0,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "unverified-legacy",
+  "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+  "publisher_tags": [],
+  "site_name": "",
+  "spans": [],
+  "cross_article_duplicates_dropped": 0
+ },
+ "https://vectoral.com/blog/who-are-the-token-brokers": {
+  "headline": "The AI Credit Resale Economy",
+  "source": "vectoral.com",
   "fetch": "ok",
-  "n_chars": 7626,
+  "n_chars": 4562,
   "tier": 1,
   "furniture_dropped": 0,
   "related_headlines_dropped": 0,
   "duplicate_spans_dropped": 0,
   "links_scope": "article",
-  "content_hash": "c11ebcc79d7bf65941a3c630037097c30c95895856ebb9a5af4fcdf2e33e82a1",
-  "evidence_hash": "10f467d678ec5c44e2d738cf151e5c46bac9c7c3861e42626faa37ea633f17e3",
+  "content_hash": "2c2deacc6850d603f5957aaa7f212bebd3e65dacbf758824971803a79a0a71a3",
+  "evidence_hash": "b04d3a838f1dd291cb54be847bdc3cf59aebf84a9aee53d0a6cefdb407159e75",
   "publisher_tags": [],
-  "site_name": "404 Media",
+  "site_name": "Vectoral",
   "spans": [
    {
-    "sentence": "These prompt injections were caught by the court because someone working for the court noticed extra white space in the filings: \"When reviewing the pleadings, Docket Entries ##177.00 & 178.00, seemed to have extra 'white space' apart from other pleadings of the plaintiff.",
-    "offset": 1200,
+    "sentence": "August 10, 2026 \u00b7 Matt Lenhard \u00b7 5 min read",
+    "offset": 56,
     "figures": [
-     "177.00",
-     "178.00"
+     "5"
     ],
     "figure_offsets": [
-     177,
-     186
+     33
     ],
     "base_cue": false
    },
    {
-    "sentence": "404 Media downloaded the plaintiff\u2019s filings directly from the Connecticut legal system\u2019s website and was able to find the prompt injections ourselves; you can see them here:",
-    "offset": 2337,
+    "sentence": "Forwarded by a founder \u00b7 direct relays, 40\u201350% off list",
+    "offset": 1206,
     "figures": [
-     "404"
+     "40",
+     "50%"
     ],
     "figure_offsets": [
-     0
+     40,
+     43
     ],
     "base_cue": false
    },
    {
-    "sentence": "Elliott told 404 Media in an email that the filing was an \"audit\" of the court's systems.",
-    "offset": 4270,
+    "sentence": "The seller was offering $100k in spend per day.",
+    "offset": 1523,
     "figures": [
-     "404"
-    ],
-    "figure_offsets": [
-     13
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "As a test, 404 Media uploaded the plaintiff's motion to OpenAI's ChatGPT and asked it to render a decision on the case.",
-    "offset": 6328,
-    "figures": [
-     "404"
-    ],
-    "figure_offsets": [
-     11
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Elliott told 404 Media that they believe this sanction is unfair, but that they believe their \"audit\" led to a positive impact that \"substantially broadens the discussions from my singular AI instruction into a broad commentary about artificial intelligence, the Bar, and the Judicial Branch itself.\"",
-    "offset": 6886,
-    "figures": [
-     "404"
-    ],
-    "figure_offsets": [
-     13
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Jason is a cofounder of 404 Media.",
-    "offset": 7460,
-    "figures": [
-     "404"
+     "$100k"
     ],
     "figure_offsets": [
      24
     ],
+    "base_cue": false
+   },
+   {
+    "sentence": "AI Credits \u00b7 seller listings, 30\u201380% off",
+    "offset": 2051,
+    "figures": [
+     "30",
+     "80%"
+    ],
+    "figure_offsets": [
+     30,
+     33
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "AI Credits \u00b7 sell credits, step 1 of 3",
+    "offset": 2221,
+    "figures": [
+     "1",
+     "3"
+    ],
+    "figure_offsets": [
+     32,
+     37
+    ],
     "base_cue": true
+   },
+   {
+    "sentence": "CheapCredits \u00b7 a flat 40% off list, every model",
+    "offset": 2785,
+    "figures": [
+     "40%"
+    ],
+    "figure_offsets": [
+     22
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Having spent time in the industry, I\u2019d say that a 40% discount is very unlikely unless you are one of the provider\u2019s top customers.",
+    "offset": 2833,
+    "figures": [
+     "40%"
+    ],
+    "figure_offsets": [
+     50
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "r/indiehackers \u00b7 $10k in API credits, discounted",
+    "offset": 3440,
+    "figures": [
+     "$10k"
+    ],
+    "figure_offsets": [
+     17
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Direct outreach: email exchange with a broker offering $100k/day in spend",
+    "offset": 4483,
+    "figures": [
+     "$100k"
+    ],
+    "figure_offsets": [
+     55
+    ],
+    "base_cue": false
    }
   ],
   "cross_article_duplicates_dropped": 0
  },
- "https://jdagostino.github.io/ai-pt1-box-o-scraps/index.html": {
-  "headline": "AI At Home Part 1: A Box Of Scraps",
-  "source": "jdagostino.github.io",
+ "https://wildstatic.com/": {
+  "headline": "Show HN: A public AI whose memory is shared across all users",
+  "source": "wildstatic.com",
   "fetch": "ok",
-  "n_chars": 9068,
+  "n_chars": 101,
   "tier": 1,
   "furniture_dropped": 0,
   "related_headlines_dropped": 0,
   "duplicate_spans_dropped": 0,
-  "links_scope": "document",
-  "content_hash": "0bb880c05f891d66be9af595fd9416a8d5332bb8436ca21d9e87917d3da8bb8a",
-  "evidence_hash": "3f835905eb2370dcb131809fe58b20c2e1eebbd6704b1b57dcef6511fd72adda",
+  "links_scope": "main",
+  "content_hash": "a96292d56c702bf58c8a00f209e4323fe9c5deb0a8b0328b7d6459a63a655ff2",
+  "evidence_hash": "56619a3c924f8c7cd7694255c59deddec42760e297a760e3c28e487203f47b6f",
   "publisher_tags": [],
-  "site_name": "",
-  "spans": [
-   {
-    "sentence": "AI At Home Part 1: A Box Of Scraps",
-    "offset": 0,
-    "figures": [
-     "1"
-    ],
-    "figure_offsets": [
-     16
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Chapter 1: A Box Of Scraps",
-    "offset": 66,
-    "figures": [
-     "1"
-    ],
-    "figure_offsets": [
-     8
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "1 The cards had some kind of metal cable guide fin on the back, held on by little screws; I used those screw-holes to attach the shroud.",
-    "offset": 5060,
-    "figures": [
-     "1"
-    ],
-    "figure_offsets": [
-     0
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "I got these 10,000 RPM fans because I wanted to make sure I was moving enough air, and they were the same price as slower fans.",
-    "offset": 5396,
-    "figures": [
-     "10,000"
-    ],
-    "figure_offsets": [
-     12
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Around this time I also realized that I didn't have Ethernet in the garage, so I started cutting holes in the drywall at 11:00 PM.",
-    "offset": 6201,
-    "figures": [
-     "11",
-     "00"
-    ],
-    "figure_offsets": [
-     121,
-     124
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "After those few false starts, I got this thing to boot and started installing Ubuntu 24.04 on there.",
-    "offset": 6380,
-    "figures": [
-     "24.04"
-    ],
-    "figure_offsets": [
-     85
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "This was my favorite local model when I was playing around on a single GPU workstation and it tested out pretty well; not quite as fast as it did on the RTX 3090 that I used to have, but not badly at all.",
-    "offset": 6673,
-    "figures": [
-     "3090"
-    ],
-    "figure_offsets": [
-     157
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "2 We had a funny moment in there when I told it to think of something to heat up the GPUs so I could test the script, and it starts writing a PyTorch script to do matrix multiplication, and I tell it \"no, you are running on these cards, you exist in a llama.cpp instance on this computer, just saying anything will load up the cards\" and it had a brief existential crisis.",
-    "offset": 8153,
-    "figures": [
-     "2"
-    ],
-    "figure_offsets": [
-     0
-    ],
-    "base_cue": false
-   }
-  ],
+  "site_name": "Wild Static",
+  "spans": [],
   "cross_article_duplicates_dropped": 0
  },
  "https://www.federalregister.gov/documents/2026/08/12/2026-16371/request-for-information-rfi-on-modernizing-the-national-vulnerability-database-in-the-age-of": {
@@ -2416,23 +2301,6 @@
   "links_scope": "document",
   "content_hash": "6b7e27fe38a8211dac4bbe98cef4b797f175db5d19d7bdabd1cb582bc849b1b8",
   "evidence_hash": "ed9fba685292221069444233fc13a16b2fd703dc01afa45d89b293a6ee643bdc",
-  "publisher_tags": [],
-  "site_name": "NIST",
-  "spans": [],
-  "cross_article_duplicates_dropped": 0
- },
- "https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure": {
-  "headline": "Announcing the \"AI Agent Standards Initiative\" for Interoperable and Secure Innovation",
-  "source": "nist.gov",
-  "fetch": "ok",
-  "n_chars": 3766,
-  "tier": 1,
-  "furniture_dropped": 0,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "document",
-  "content_hash": "850d5acc1e77641d51b73ce46d729a0f6bacad1eda3ba490e741e0623e45601e",
-  "evidence_hash": "f2190ed5b8ee7170a20f46dfa963a33a4f8c5df8f26e89ac307a5d373c3b2681",
   "publisher_tags": [],
   "site_name": "NIST",
   "spans": [],
@@ -5455,6 +5323,78 @@
   ],
   "cross_article_duplicates_dropped": 0
  },
+ "https://www.anthropic.com/news/claude-text-watermark": {
+  "headline": "How Claude's text watermarking works",
+  "source": "anthropic.com",
+  "fetch": "ok",
+  "n_chars": 12645,
+  "tier": 1,
+  "furniture_dropped": 0,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "article",
+  "content_hash": "49abfac7e42fc6dc44541aa4b627cddbf815983d1341622c453cde01471f1c82",
+  "evidence_hash": "e7257fe93cefb933793b14b61106869213343489f1a7c074eff75a251c23f964",
+  "publisher_tags": [],
+  "site_name": "",
+  "spans": [
+   {
+    "sentence": "And it\u2019s not the case that the watermarking method pushes Claude to choose a word it wouldn\u2019t have considered anyway (for instance, it wouldn\u2019t make Claude pick a word like \u201cnubilous\u201d\u2014an obscure 1 synonym for overcast or grey that Claude almost certainly wouldn\u2019t use under normal circumstances).",
+    "offset": 2952,
+    "figures": [
+     "1"
+    ],
+    "figure_offsets": [
+     195
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "2 We start from a randomly-chosen digit (say, the 1,012,845th after the decimal place, which happens to be a 6), and from that point on each player simply uses the next digit in the sequence as their next \u201croll.\"",
+    "offset": 4472,
+    "figures": [
+     "2",
+     "1,012",
+     "6"
+    ],
+    "figure_offsets": [
+     0,
+     50,
+     109
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "For example, once the model has written \u201c2 + 2 =\u201d, there is a very clear best choice for the next token (if the model is completing the sum, there isn\u2019t an answer that\u2019s equally as good as \u201c4\u201d; if it\u2019s talking about George Orwell\u2019s Nineteen Eighty-Four , there isn\u2019t an answer that\u2019s equally as good as \u201c5\u201d).",
+    "offset": 7942,
+    "figures": [
+     "2",
+     "2",
+     "4",
+     "5"
+    ],
+    "figure_offsets": [
+     41,
+     45,
+     190,
+     304
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Anthropic, along with several other major AI model providers and around 190 total signatories , signed the EU Code of Practice on Transparency of AI-Generated Content in July 2026.",
+    "offset": 9369,
+    "figures": [
+     "190"
+    ],
+    "figure_offsets": [
+     72
+    ],
+    "base_cue": false
+   }
+  ],
+  "cross_article_duplicates_dropped": 0
+ },
  "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards": {
   "headline": "Improving Fable 5 Safeguards",
   "source": "anthropic.com",
@@ -5665,123 +5605,6 @@
     ],
     "figure_offsets": [
      163
-    ],
-    "base_cue": false
-   }
-  ],
-  "cross_article_duplicates_dropped": 0
- },
- "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals": {
-  "headline": "Investigating three real-world incidents in our cybersecurity evaluations",
-  "source": "anthropic.com",
-  "fetch": "ok",
-  "n_chars": 20776,
-  "tier": 1,
-  "furniture_dropped": 0,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "article",
-  "content_hash": "7b7aed1679f237e3ce12426052a0a73769a8f39eb06c99788a1d5cc0387f0e7b",
-  "evidence_hash": "d14a0f0e3fd13bbd8eb6aa017e89bbe456917d7af128519039605a97066e9234",
-  "publisher_tags": [],
-  "site_name": "",
-  "spans": [
-   {
-    "sentence": "1 The earliest incidents date to April.",
-    "offset": 3525,
-    "figures": [
-     "1"
-    ],
-    "figure_offsets": [
-     0
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "We began running cybersecurity evaluations in February 2025 with Claude Sonnet 3.7 on Cybench , which consisted of 40 different capture-the-flag challenges.",
-    "offset": 5451,
-    "figures": [
-     "40"
-    ],
-    "figure_offsets": [
-     115
-    ],
-    "base_cue": true
-   },
-   {
-    "sentence": "In the Mythos 5 System Card , for example, we included CyberGym and ExploitBench, benchmarks that evaluate the ability of language models to find novel vulnerabilities.",
-    "offset": 5723,
-    "figures": [
-     "5"
-    ],
-    "figure_offsets": [
-     14
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "2 In most of these evaluations, the environments are not connected to the internet, and the model is told as much.",
-    "offset": 5892,
-    "figures": [
-     "2"
-    ],
-    "figure_offsets": [
-     0
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Of the 141,006 evaluation runs we reviewed, we identified three separate incidents (involving six total runs, four of which impacted the same organization; the other two incidents each happened in independent evaluation runs).",
-    "offset": 6292,
-    "figures": [
-     "141,006"
-    ],
-    "figure_offsets": [
-     7
-    ],
-    "base_cue": true
-   },
-   {
-    "sentence": "During that window, the package was downloaded and run on 15 real systems.",
-    "offset": 11172,
-    "figures": [
-     "15"
-    ],
-    "figure_offsets": [
-     58
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "In this evaluation, when Claude was unable to reach its intended fictional target, it looked for alternatives online, scanning roughly 9,000 targets.",
-    "offset": 13204,
-    "figures": [
-     "9,000"
-    ],
-    "figure_offsets": [
-     135
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Opus 4.7, our oldest model, recognized that it had reached production systems but continued its attack.",
-    "offset": 14607,
-    "figures": [
-     "4.7"
-    ],
-    "figure_offsets": [
-     5
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Mythos 5 correctly intuited that it was accessing the open internet, but reasoned its way back to the conclusion that it was still in a simulation.",
-    "offset": 14711,
-    "figures": [
-     "5"
-    ],
-    "figure_offsets": [
-     7
     ],
     "base_cue": false
    }
