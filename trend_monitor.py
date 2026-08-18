@@ -1,19 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""trend_monitor.py - Search & Market Trend Monitor (stdlib only).
+"""trend_monitor.py - Multi-Tier Search & Market Trend Monitor (stdlib only).
 
 Monitors:
-1. Real-time search query spikes from Google Trends (US, UK, and Global feeds).
-2. Symmetrical market anomalies: breakout rallies (>= +10%), surges (>= +5%),
-   warning drops (-3% to -5%), and critical drops (<= -5%) from data/market.json.
-3. Structured keyword matching across 7 project-aligned research domains:
-   - AI Labour Market & Employment
-   - Forward-Looking Architectures & Research Automation
-   - AI IPOs, Private Marks & Public Listings
-   - Consumer Sentiment & Dark Patterns
-   - Physical Buildout, Grid & Hardware Chokepoints
-   - Sovereign Regulation & Antitrust
-   - Macro & Market Volatility
+1. Real-time mass-market spikes via Google Trends RSS (US and UK national feeds).
+2. Domain-targeted search feeds across 7 project research categories via Google News Search RSS.
+3. Symmetrical market anomalies from data/market.json:
+   - Breakout rallies (>= +10.0%)
+   - Sharp surges (+5.0% to +10.0%)
+   - Warning drops (-3.0% to -5.0%)
+   - Critical drops (<= -5.0%)
+   - Macro and volatility shifts (>= 3.0%)
 
 Usage:
     python3 trend_monitor.py --show       # Print formatted report to terminal
@@ -28,6 +25,7 @@ import os
 import pathlib
 import re
 import subprocess
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from typing import Any, Dict, List, Optional, Tuple
@@ -44,6 +42,7 @@ WATCH_TOPICS: Dict[str, Dict[str, Any]] = {
     "AI Labour Market & Employment": {
         "color": "#0284c7",
         "description": "Hiring freezes, entry-level contraction, ATS screening, and workforce displacement.",
+        "search_query": '"ai layoffs" OR "junior developer hiring" OR "replaced by ai" OR "ai resume filter" OR "applicant tracking system" OR "hirevue ai" OR "ai restructuring"',
         "keywords": [
             "junior developer", "entry level tech", "hiring freeze", "ai layoffs",
             "replaced by ai", "ai resume filter", "applicant tracking system",
@@ -54,6 +53,7 @@ WATCH_TOPICS: Dict[str, Dict[str, Any]] = {
     "Forward-Looking Architectures & Research Automation": {
         "color": "#7c3aed",
         "description": "Reasoning scaling, test-time compute, agentic RAG, autonomous science, and synthetic data.",
+        "search_query": '"test-time compute" OR "process reward model" OR "mcts reasoning" OR "agentic rag" OR "graphrag" OR "the ai scientist" OR "synthetic data collapse"',
         "keywords": [
             "test-time compute", "process reward model", "mcts reasoning", "self-correction",
             "speculative decoding", "graphrag", "agentic rag", "kv cache", "context caching",
@@ -64,6 +64,7 @@ WATCH_TOPICS: Dict[str, Dict[str, Any]] = {
     "AI IPOs, Private Marks & Public Listings": {
         "color": "#059669",
         "description": "S-1 registrations, private secondary marks, lock-up unlocks, and public float dilution.",
+        "search_query": '"openai ipo" OR "openai s-1" OR "anthropic ipo" OR "cerebras ipo" OR "coreweave ipo" OR "spacex share unlock" OR "secondary share discount"',
         "keywords": [
             "openai s-1", "openai ipo", "anthropic ipo", "cerebras ipo", "coreweave ipo",
             "databricks ipo", "forge global", "hiive", "secondary mark", "down round",
@@ -73,6 +74,7 @@ WATCH_TOPICS: Dict[str, Dict[str, Any]] = {
     "Consumer Sentiment & Dark Patterns": {
         "color": "#dc2626",
         "description": "Public backlash against AI slop, subscription cancellation traps, and deceptive patterns.",
+        "search_query": '"ai slop" OR "turn off ai overview" OR "remove ai search" OR "cancel chatgpt plus" OR "cancel claude pro" OR "ai subscription refund"',
         "keywords": [
             "ai slop", "ai garbage", "turn off ai", "disable ai overview", "remove ai search",
             "ai ruined", "opt out ai", "cancel chatgpt", "cancel claude", "cancel copilot",
@@ -82,6 +84,7 @@ WATCH_TOPICS: Dict[str, Dict[str, Any]] = {
     "Physical Buildout, Grid & Hardware Chokepoints": {
         "color": "#d97706",
         "description": "Data-centre power demand, grid queues, nuclear SMRs, water permits, and memory pass-through.",
+        "search_query": '"datacenter blackout" OR "ai grid queue" OR "pjm datacenter" OR "nuclear datacenter" OR "smr datacenter" OR "ai water usage" OR "blackwell delay" OR "hbm shortage"',
         "keywords": [
             "datacenter blackout", "ai grid queue", "pjm power", "ercot datacenter",
             "nuclear datacenter", "smr datacenter", "ai electricity bill", "ai water usage",
@@ -92,6 +95,7 @@ WATCH_TOPICS: Dict[str, Dict[str, Any]] = {
     "Sovereign Regulation & Antitrust": {
         "color": "#475569",
         "description": "EU AI Act enforcement, Article 50 transparency, FTC/DOJ probes, and surveillance restrictions.",
+        "search_query": '"eu ai act enforcement" OR "article 50 transparency" OR "ai watermarking" OR "ftc ai probe" OR "doj nvidia subpoena" OR "flock safety ban"',
         "keywords": [
             "eu ai act", "article 50 transparency", "ai watermarking", "ai office guidelines",
             "ftc ai probe", "doj nvidia", "cma ai investigation", "cloud antitrust",
@@ -101,6 +105,7 @@ WATCH_TOPICS: Dict[str, Dict[str, Any]] = {
     "Macro & Market Volatility": {
         "color": "#991b1b",
         "description": "Market sell-offs, rate policy, liquidity shifts, and volatility index spikes.",
+        "search_query": '"ai stock selloff" OR "vix spike" OR "semiconductor stock drop" OR "tech stock rotation" OR "ai margin call"',
         "keywords": [
             "stock crash", "market selloff", "vix spike", "rate cut", "recession",
             "liquidity crunch", "margin call", "circuit breaker", "tech rotation"
@@ -117,7 +122,7 @@ MACRO_MOVE_THRESHOLD = 3.0       # Index percentage move
 
 
 def fetch_google_trends(geo: str = "US") -> List[Dict[str, Any]]:
-    """Fetch and parse Google Trends RSS feed for a specific region."""
+    """Fetch and parse Google Trends mass-market RSS feed for a specific region."""
     url = f"https://trends.google.com/trending/rss?geo={geo}"
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     items = []
@@ -153,6 +158,52 @@ def fetch_google_trends(geo: str = "US") -> List[Dict[str, Any]]:
         items.append({"error": f"Failed fetching {geo} trends: {str(e)[:60]}"})
 
     return items
+
+
+def fetch_targeted_domain_news(max_per_topic: int = 3) -> List[Dict[str, Any]]:
+    """Fetch real-time targeted news clusters for each of the 7 research categories."""
+    results = []
+
+    for cat_name, cat_info in WATCH_TOPICS.items():
+        query = cat_info.get("search_query", "")
+        if not query:
+            continue
+
+        encoded_q = urllib.parse.quote(f"allintitle:{query}")
+        url = f"https://news.google.com/rss/search?q={encoded_q}&hl=en-US&gl=US&ceid=US:en"
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+
+        try:
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                xml_content = resp.read()
+            root = ET.fromstring(xml_content)
+            items = root.findall(".//item")
+
+            cat_articles = []
+            for it in items[:max_per_topic]:
+                title = it.find("title").text if it.find("title") is not None else ""
+                pub = it.find("pubDate").text if it.find("pubDate") is not None else ""
+                link = it.find("link").text if it.find("link") is not None else ""
+                source_el = it.find("source")
+                source_name = source_el.text if source_el is not None else "Google News"
+
+                cat_articles.append({
+                    "title": title,
+                    "url": link,
+                    "source": source_name,
+                    "pub_date": pub[:16] if len(pub) >= 16 else pub
+                })
+
+            if cat_articles:
+                results.append({
+                    "category": cat_name,
+                    "color": cat_info.get("color", "#1a365d"),
+                    "articles": cat_articles
+                })
+        except Exception:
+            continue
+
+    return results
 
 
 def scan_search_trends(geos: Optional[List[str]] = None) -> List[Dict[str, Any]]:
@@ -276,11 +327,13 @@ def send_desktop_notification(title: str, message: str, urgency: str = "normal")
 def run_monitor(notify: bool = False, write: bool = False) -> Dict[str, Any]:
     """Execute complete search and market trend monitor run."""
     search_matches = scan_search_trends()
+    targeted_news = fetch_targeted_domain_news()
     market_signals = scan_market_anomalies()
 
     result = {
         "timestamp": dt.datetime.now(dt.timezone.utc).isoformat(),
         "search_trend_matches": search_matches,
+        "targeted_domain_signals": targeted_news,
         "market_signals": market_signals,
         "watch_taxonomy_count": len(WATCH_TOPICS)
     }
@@ -357,9 +410,23 @@ def print_report(res: Dict[str, Any]) -> None:
         for mc in macro:
             print(f"    * {mc['label']:<15}  {mc['change_pct']:+6.2f}%  (Value: {mc['value']})")
 
-    # 2. Search Trends Section
+    # 2. Targeted Domain News Clusters
+    target_news = res.get("targeted_domain_signals", [])
+    print("\n[2] TARGETED PROJECT DOMAIN SIGNALS (Google News Active Clusters)")
+    print("-" * 75)
+    if target_news:
+        for t in target_news:
+            print(f"  [{t['category'].upper()}]")
+            for art in t.get("articles", []):
+                print(f"    * {art['title']}")
+                print(f"      Source: {art['source']} ({art['pub_date']}) -> {art['url'][:70]}...")
+            print()
+    else:
+        print("  No targeted domain articles retrieved.")
+
+    # 3. Mass-Market Search Trends Section
     s_matches = res.get("search_trend_matches", [])
-    print("\n[2] PROJECT-ALIGNED SEARCH TREND SPIKES (Google Trends US/UK)")
+    print("[3] MASS-MARKET SEARCH SPIKES (Google Trends US/UK Top 20)")
     print("-" * 75)
     if s_matches:
         for it in s_matches:
@@ -371,8 +438,7 @@ def print_report(res: Dict[str, Any]) -> None:
                 print(f"    - {n['title']}")
             print()
     else:
-        print("  No direct keyword matches in current Google Trends top 20 RSS window.")
-        print("  (7 research domains active: Labour, Architectures, IPOs, Sentiment, Hardware, Regulation, Macro)")
+        print("  No mass-market AI spikes in national general top 20 window.")
 
     print("=" * 75)
 

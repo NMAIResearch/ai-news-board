@@ -1074,6 +1074,52 @@ def main():
                 f'<div style="margin-top:6px;line-height:1.5">'
                 f'{esc(up_data.get("disclosure",""))}</div></details></details>')
 
+    # Search & Market Trend Radar: real-time category signals & symmetrical equity moves
+    trend_path = os.path.join(HERE, "data", "trend_alerts.json")
+    trend_html = ""
+    if os.path.isfile(trend_path):
+        td_data = json.load(open(trend_path, encoding="utf-8"))
+        t_rows = []
+        msig = td_data.get("market_signals", {})
+        crit_drops = msig.get("critical_drops", [])
+        surges = msig.get("breakouts", []) + msig.get("surges", [])
+        for d in crit_drops[:3]:
+            t_rows.append(
+                f'<div class="scholarrow" style="padding:6px 0;border-bottom:1px solid {LINE}">'
+                f'<span style="display:inline-block;font-size:10px;padding:1px 6px;border-radius:4px;color:#fff;background:#b91c1c;margin-right:6px">Drop {d["change_pct"]:+.1f}%</span>'
+                f'<strong style="color:{NAVY};font-size:13px">{esc(d["ticker"])}</strong> '
+                f'<span style="color:{SLATE};font-size:11px">(${d.get("price",0):.2f})</span>'
+                f'</div>')
+        for s in surges[:3]:
+            t_rows.append(
+                f'<div class="scholarrow" style="padding:6px 0;border-bottom:1px solid {LINE}">'
+                f'<span style="display:inline-block;font-size:10px;padding:1px 6px;border-radius:4px;color:#fff;background:#15803d;margin-right:6px">Rally {s["change_pct"]:+.1f}%</span>'
+                f'<strong style="color:{NAVY};font-size:13px">{esc(s["ticker"])}</strong> '
+                f'<span style="color:{SLATE};font-size:11px">(${s.get("price",0):.2f})</span>'
+                f'</div>')
+        for dom in td_data.get("targeted_domain_signals", []):
+            cat_name = dom.get("category", "")
+            cat_col = dom.get("color", NAVY)
+            for art in dom.get("articles", [])[:1]:
+                t_rows.append(
+                    f'<div class="scholarrow" data-search="{esc(cat_name.lower())}" style="padding:7px 0;border-bottom:1px solid {LINE}">'
+                    f'<div style="font-size:11px;color:{SLATE}"><span style="display:inline-block;font-size:10px;padding:1px 6px;border-radius:4px;color:#fff;background:{cat_col};margin-right:4px">{esc(cat_name)}</span> {esc(art.get("pub_date",""))}</div>'
+                    f'<a href="{esc(art.get("url",""))}" target="_blank" rel="noopener" style="color:{NAVY};font-weight:600;font-size:12px;text-decoration:none;display:block;margin-top:2px">{esc(art.get("title",""))}</a>'
+                    f'<div style="font-size:11px;color:{SLATE}">{esc(art.get("source",""))}</div>'
+                    f'</div>')
+        if t_rows:
+            trend_html = (
+                f'<details style="border:1px solid {LINE};border-left:4px solid #7c3aed;'
+                f'border-radius:8px;padding:12px 16px;margin:0 0 12px;background:#fff">'
+                f'<summary style="color:{NAVY};font-size:15px;font-weight:600;cursor:pointer">'
+                f'Search &amp; Market Trends <span style="font-weight:400;color:{SLATE};font-size:12px">({len(t_rows)})</span></summary>'
+                f'<div style="font-size:13px;color:{SLATE};margin:6px 0 8px">Live domain signals across 7 project research areas and equity moves.</div>'
+                + "".join(t_rows)
+                + f'<details style="font-size:11px;color:{SLATE};margin-top:8px">'
+                f'<summary style="cursor:pointer;color:{NAVY}">Data streams and methodology</summary>'
+                f'<div style="margin-top:6px;line-height:1.5">Monitors real-time Google News topic clusters, national Google Trends search volume spikes, and equity movements exceeding +/- 3.0%.</div>'
+                f'</details></details>')
+
     # board-level aggregates (over everything)
     all_tiers, entity_counts = {}, {}
     for it in items:
@@ -1431,7 +1477,7 @@ def main():
         </div>
       </main>
       <aside class="rail">
-        {releases_html}{upcoming_html}{scholar_html}
+        {releases_html}{upcoming_html}{trend_html}{scholar_html}
       </aside>
     </div>
   </div>
