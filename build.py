@@ -1031,6 +1031,49 @@ def main():
                 f'list cannot show</summary><div style="margin-top:6px;line-height:1.5">'
                 f'{esc(rd.get("disclosure",""))}</div></details></details>')
 
+    # Upcoming & announced models: pre-release milestones, restricted previews and target dates
+    up_path = os.path.join(HERE, "upcoming_models.json")
+    upcoming_html = ""
+    if os.path.isfile(up_path):
+        up_data = json.load(open(up_path, encoding="utf-8"))
+        up_rows = []
+        for u in up_data.get("upcoming", []):
+            st = u.get("status", "announced")
+            if st == "target_delayed":
+                badge_bg = "#b91c1c"
+            elif st == "access_restricted":
+                badge_bg = "#d97706"
+            elif st == "in_training":
+                badge_bg = "#4b5563"
+            else:
+                badge_bg = SLATE
+            up_rows.append(
+                f'<div class="scholarrow" data-search="{esc((u.get("model","") + " " + u.get("lab","")).lower())}" '
+                f'style="padding:7px 0;border-bottom:1px solid {LINE}">'
+                f'<div style="font-size:11px;color:{SLATE}">{esc(u.get("announced_date",""))} '
+                f'&middot; {esc(u.get("lab",""))}'
+                f'<span title="{esc(u.get("notes",""))}" style="display:inline-block;'
+                f'font-size:10px;padding:1px 6px;margin-left:6px;border-radius:4px;color:#fff;'
+                f'background:{badge_bg}">{esc(u.get("status_label", st))}</span></div>'
+                f'<a href="{esc(u.get("url",""))}" target="_blank" rel="noopener" style="color:{NAVY};font-weight:600;'
+                f'font-size:13px;text-decoration:none">{esc(u.get("model",""))}</a>'
+                f'<div style="font-size:11px;color:{SLATE};margin-top:2px">Target: {esc(u.get("target_window",""))}</div>'
+                f'</div>')
+        if up_rows:
+            upcoming_html = (
+                f'<details style="border:1px solid {LINE};border-left:4px solid {TIER[3][0]};'
+                f'border-radius:8px;padding:12px 16px;margin:0 0 12px;background:#fff">'
+                f'<summary style="color:{NAVY};font-size:15px;font-weight:600;cursor:pointer">'
+                f'Upcoming &amp; Announced <span style="font-weight:400;color:{SLATE};font-size:12px">'
+                f'({len(up_rows)})</span></summary>'
+                f'<div style="font-size:13px;color:{SLATE};margin:6px 0 8px">'
+                f'Pre-release commitments and unserved milestones.</div>'
+                + "".join(up_rows)
+                + f'<details style="font-size:11px;color:{SLATE};margin-top:8px">'
+                f'<summary style="cursor:pointer;color:{NAVY}">Tracking announced vs delivered</summary>'
+                f'<div style="margin-top:6px;line-height:1.5">'
+                f'{esc(up_data.get("disclosure",""))}</div></details></details>')
+
     # board-level aggregates (over everything)
     all_tiers, entity_counts = {}, {}
     for it in items:
@@ -1388,7 +1431,7 @@ def main():
         </div>
       </main>
       <aside class="rail">
-        {releases_html}{scholar_html}
+        {releases_html}{upcoming_html}{scholar_html}
       </aside>
     </div>
   </div>
