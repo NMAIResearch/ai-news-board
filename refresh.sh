@@ -88,6 +88,7 @@ step "  + candidates";        python3 suggest_register_rows.py --write >/dev/nul
 step "13/13 fetch market"
 if [ -f ~/.config/nmai/keys.env ]; then python3 fetch_market.py || echo "  ! market fetch failed"
 else echo "  skipped: no ~/.config/nmai/keys.env"; fi
+step "  + trend monitor";       python3 trend_monitor.py --write >/dev/null || echo "  ! trend monitor scan failed"
 
 step "build"
 # ⛔ Never pipe build.py into tail/head when chaining with &&. The pipeline's exit status is
