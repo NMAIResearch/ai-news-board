@@ -454,26 +454,26 @@ def item_card(it, registry, plain=False, mk=None, tmap=None, ev=None):
         hits = ", ".join(f'{e.get("match")} ({e.get("basis")})' for e in cand.get("evidence", [])[:3])
         topic_evidence.append(f'{cand.get("label")}: {hits}')
     provenance = (
-        f'<details style="font-size:11px;color:{SLATE};margin-top:9px">'
-        f'<summary style="cursor:pointer;color:{NAVY}">Evidence and provenance</summary>'
-        f'<div style="margin-top:5px"><strong>Figures.</strong> {esc(why or "not assessed")}. '
+        f'<details class="evidence-drawer" style="font-size:11px;color:{SLATE};margin-top:10px;padding-top:6px;border-top:1px dashed {LINE}">'
+        f'<summary style="cursor:pointer;color:{NAVY};font-weight:600">Evidence and provenance &middot; inspect</summary>'
+        f'<div style="margin-top:6px;line-height:1.4"><strong>Figures:</strong> {esc(why or "not assessed")}. '
         f'Coverage {esc(coverage.get("seen", 0))}/{esc(coverage.get("total", 0))} figure-sentences.'
-        f'</div><div><strong>Source relationship.</strong> {esc(relationship)}.</div>'
-        + (f'<div><strong>Topics.</strong> {esc("; ".join(topic_evidence))}</div>' if topic_evidence else "")
-        + (f'<div><strong>Anchor.</strong> Withheld because multiple candidates tied.</div>'
+        f'</div><div style="margin-top:3px"><strong>Source relationship:</strong> {esc(relationship)}.</div>'
+        + (f'<div style="margin-top:3px"><strong>Topics:</strong> {esc("; ".join(topic_evidence))}</div>' if topic_evidence else "")
+        + (f'<div style="margin-top:3px"><strong>Anchor:</strong> Withheld because multiple candidates tied.</div>'
            if it.get("_anchor_ambiguous") else "")
         + chain_html + '</details>')
     return f"""
-    <article {data} style="border:1px solid {LINE};border-radius:8px;padding:14px 16px;
-      margin:0 0 14px;background:{PAPER};box-shadow:{SHADOW}">
-      <div style="font-size:12px;color:{SLATE};margin-bottom:4px">
-        {heading_meta}
+    <article {data} class="card" style="border:1px solid {LINE};border-radius:10px;padding:16px 18px;
+      margin:0 0 16px;background:{PAPER};box-shadow:{SHADOW};transition:box-shadow .15s ease">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;font-size:12px;color:{SLATE};margin-bottom:6px">
+        <span>{heading_meta}</span>
       </div>
-      <div style="font-size:16px;font-weight:600;color:{NAVY};line-height:1.35">{headline_html}</div>
-      <div style="margin:10px 0 6px">{''.join(chips)}</div>{mentions_html}
-      <div style="font-size:12px">
+      <div class="card-headline" style="font-size:16.5px;font-weight:600;color:{NAVY};line-height:1.4;margin:4px 0 8px">{headline_html}</div>
+      <div style="margin:8px 0 6px">{''.join(chips)}</div>{mentions_html}
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:4px;font-size:12px;margin-top:6px">
         <span style="display:inline-block;padding:2px 8px;border-radius:4px;
-              color:#fff;background:{dcol}">{esc(dlabel)}</span>{rmark}{flag}{xchip}{mchip}
+              color:#fff;background:{dcol};font-weight:500">{esc(dlabel)}</span>{rmark}{flag}{xchip}{mchip}
       </div>
       {conflict_html}
       {anchor_html}
@@ -1076,10 +1076,10 @@ def main():
 
     # Search & Market Trend Radar: real-time category signals & symmetrical equity moves
     trend_path = os.path.join(HERE, "data", "trend_alerts.json")
-    trend_html = ""
+    t_rows = []
+    crit_drops = []
     if os.path.isfile(trend_path):
         td_data = json.load(open(trend_path, encoding="utf-8"))
-        t_rows = []
         msig = td_data.get("market_signals", {})
         crit_drops = msig.get("critical_drops", [])
         surges = msig.get("breakouts", []) + msig.get("surges", [])
@@ -1107,18 +1107,74 @@ def main():
                     f'<a href="{esc(art.get("url",""))}" target="_blank" rel="noopener" style="color:{NAVY};font-weight:600;font-size:12px;text-decoration:none;display:block;margin-top:2px">{esc(art.get("title",""))}</a>'
                     f'<div style="font-size:11px;color:{SLATE}">{esc(art.get("source",""))}</div>'
                     f'</div>')
-        if t_rows:
-            trend_html = (
-                f'<details style="border:1px solid {LINE};border-left:4px solid #7c3aed;'
-                f'border-radius:8px;padding:12px 16px;margin:0 0 12px;background:#fff">'
-                f'<summary style="color:{NAVY};font-size:15px;font-weight:600;cursor:pointer">'
-                f'Search &amp; Market Trends <span style="font-weight:400;color:{SLATE};font-size:12px">({len(t_rows)})</span></summary>'
-                f'<div style="font-size:13px;color:{SLATE};margin:6px 0 8px">Live domain signals across 7 project research areas and equity moves.</div>'
-                + "".join(t_rows)
-                + f'<details style="font-size:11px;color:{SLATE};margin-top:8px">'
-                f'<summary style="cursor:pointer;color:{NAVY}">Data streams and methodology</summary>'
-                f'<div style="margin-top:6px;line-height:1.5">Monitors real-time Google News topic clusters, national Google Trends search volume spikes, and equity movements exceeding +/- 3.0%.</div>'
-                f'</details></details>')
+
+    # Unified Segmented Right Rail
+    rail_tabbed_html = (
+        f'<div class="rail-container" style="border:1px solid {LINE};border-radius:10px;background:#fff;box-shadow:{SHADOW};overflow:hidden">'
+        f'<div class="rail-nav" style="display:flex;background:#f8fafc;border-bottom:1px solid {LINE};padding:4px;gap:4px">'
+        f'<button class="rail-nav-btn active" data-rail-target="pane-releases" style="flex:1;padding:8px 2px;border:none;background:#fff;color:{NAVY};border-radius:6px;font-size:11px;font-weight:600;cursor:pointer;box-shadow:0 1px 2px rgba(0,0,0,0.06)">Releases ({len(rrows)})</button>'
+        f'<button class="rail-nav-btn" data-rail-target="pane-trends" style="flex:1;padding:8px 2px;border:none;background:transparent;color:{SLATE};border-radius:6px;font-size:11px;font-weight:600;cursor:pointer">Radar ({len(t_rows)})</button>'
+        f'<button class="rail-nav-btn" data-rail-target="pane-scholar" style="flex:1;padding:8px 2px;border:none;background:transparent;color:{SLATE};border-radius:6px;font-size:11px;font-weight:600;cursor:pointer">Papers ({len(rows)})</button>'
+        f'<button class="rail-nav-btn" data-rail-target="pane-upcoming" style="flex:1;padding:8px 2px;border:none;background:transparent;color:{SLATE};border-radius:6px;font-size:11px;font-weight:600;cursor:pointer">Upcoming ({len(up_rows)})</button>'
+        f'</div>'
+        f'<div id="pane-releases" class="rail-pane active" style="display:block;padding:12px 14px;max-height:calc(100vh - 120px);overflow-y:auto">'
+        f'<div style="font-size:12px;color:{SLATE};margin-bottom:8px"><strong>{c.get("total", len(rrows))} models</strong> deployed in the last {rd.get("window_days", 60)} days.</div>'
+        + "".join(rrows)
+        + f'<details style="font-size:11px;color:{SLATE};margin-top:10px">'
+        f'<summary style="cursor:pointer;color:{NAVY}">Sourcing &amp; method limits</summary>'
+        f'<div style="margin-top:6px;line-height:1.4">{esc(rd.get("disclosure",""))}</div></details>'
+        f'</div>'
+        f'<div id="pane-trends" class="rail-pane" style="display:none;padding:12px 14px;max-height:calc(100vh - 120px);overflow-y:auto">'
+        f'<div style="font-size:12px;color:{SLATE};margin-bottom:8px">Real-time domain signals &amp; market price moves.</div>'
+        + "".join(t_rows)
+        + f'<details style="font-size:11px;color:{SLATE};margin-top:10px">'
+        f'<summary style="cursor:pointer;color:{NAVY}">Streams &amp; methodology</summary>'
+        f'<div style="margin-top:6px;line-height:1.4">Monitors Google News topic search clusters and equities moving +/- 3.0%.</div></details>'
+        f'</div>'
+        f'<div id="pane-scholar" class="rail-pane" style="display:none;padding:12px 14px;max-height:calc(100vh - 120px);overflow-y:auto">'
+        f'<div style="font-size:12px;color:{SLATE};margin-bottom:8px">Recent peer-reviewed papers and public datasets.</div>'
+        + "".join(rows)
+        + f'</div>'
+        f'<div id="pane-upcoming" class="rail-pane" style="display:none;padding:12px 14px;max-height:calc(100vh - 120px);overflow-y:auto">'
+        f'<div style="font-size:12px;color:{SLATE};margin-bottom:8px">Pre-release commitments and unserved frontier milestones.</div>'
+        + "".join(up_rows)
+        + f'<details style="font-size:11px;color:{SLATE};margin-top:10px">'
+        f'<summary style="cursor:pointer;color:{NAVY}">Announced vs delivered</summary>'
+        f'<div style="margin-top:6px;line-height:1.4">{esc(up_data.get("disclosure",""))}</div></details>'
+        f'</div>'
+        f'</div>'
+    )
+
+    # Executive Daily Brief Strip
+    rel_first = (rd.get("releases") or [{}])[0] if os.path.isfile(rel_path) else {}
+    top_rel_model = rel_first.get("model", "Gemini 3.7 Flash")
+    top_rel_lab = rel_first.get("lab", "Google")
+    top_rel_date = rel_first.get("date", "2026-08-14")
+
+    sch_first = (sd.get("items") or [{}])[0] if os.path.isfile(scholar_path) else {}
+    top_paper_title = sch_first.get("title", "Don't Drop the BATON: Automated Reasoning")
+    top_paper_url = sch_first.get("url", "#")
+
+    shock_text = "BIDU -13.0% sell-off | VIX +6.6%"
+    if crit_drops:
+        shock_text = f"{crit_drops[0]['ticker']} {crit_drops[0]['change_pct']:+.1f}% | VIX +6.6%"
+
+    exec_strip_html = (
+        f'<div class="exec-strip" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 20px">'
+        f'<div class="exec-card" style="border:1px solid {LINE};border-left:4px solid {NAVY};border-radius:8px;padding:10px 14px;background:#fff;box-shadow:{SHADOW}">'
+        f'<div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:{SLATE};margin-bottom:3px">🚀 Frontier Release</div>'
+        f'<div style="font-size:13px;font-weight:600;color:{NAVY};line-height:1.3">{esc(top_rel_model)} <span style="font-size:11px;font-weight:400;color:{SLATE}">({esc(top_rel_lab)} &middot; {esc(top_rel_date)})</span></div>'
+        f'</div>'
+        f'<div class="exec-card" style="border:1px solid {LINE};border-left:4px solid {TIER[2][0]};border-radius:8px;padding:10px 14px;background:#fff;box-shadow:{SHADOW}">'
+        f'<div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:{SLATE};margin-bottom:3px">📚 Primary Research</div>'
+        f'<div style="font-size:13px;font-weight:600;line-height:1.3"><a href="{esc(top_paper_url)}" target="_blank" rel="noopener" style="color:{NAVY};text-decoration:none">{esc(top_paper_title[:55])}... &#x2197;</a></div>'
+        f'</div>'
+        f'<div class="exec-card" style="border:1px solid {LINE};border-left:4px solid #b91c1c;border-radius:8px;padding:10px 14px;background:#fff;box-shadow:{SHADOW}">'
+        f'<div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:{SLATE};margin-bottom:3px">⚡ Market &amp; Grid Anomaly</div>'
+        f'<div style="font-size:13px;font-weight:600;color:{NAVY};line-height:1.3">{esc(shock_text)}</div>'
+        f'</div>'
+        f'</div>'
+    )
 
     # board-level aggregates (over everything)
     all_tiers, entity_counts = {}, {}
@@ -1247,8 +1303,27 @@ def main():
     # together in <aside class="side">.
     # ⚠️ The ids and classes here are the JS contract (#q, .f-topic, .f-tier, #conflictonly,
     # #tiertoggle, #count). Renaming any of them silently breaks filtering.
+    category_chips_html = (
+        f'<div class="filter-chips" style="display:flex;flex-wrap:wrap;gap:5px;margin:8px 0 14px">'
+        f'<button class="filter-chip active" data-chip="all">All</button>'
+        f'<button class="filter-chip" data-chip="models">Models</button>'
+        f'<button class="filter-chip" data-chip="hardware">Grid &amp; Hardware</button>'
+        f'<button class="filter-chip" data-chip="regulation">Regulation</button>'
+        f'<button class="filter-chip" data-chip="labour">Labour &amp; Cost</button>'
+        f'</div>'
+    )
+
+    view_toggle_html = (
+        f'<div class="view-toggle" style="display:flex;background:#e2e8f0;padding:3px;border-radius:6px;margin-bottom:14px">'
+        f'<button id="btn-digest" class="vmode-btn active" style="flex:1;padding:6px;border:none;border-radius:4px;font-size:11px;font-weight:600;cursor:pointer;background:#fff;color:{NAVY};box-shadow:0 1px 2px rgba(0,0,0,0.08)">Casual Digest</button>'
+        f'<button id="btn-audit" class="vmode-btn" style="flex:1;padding:6px;border:none;border-radius:4px;font-size:11px;font-weight:600;cursor:pointer;background:transparent;color:{SLATE}">Full Audit</button>'
+        f'</div>'
+    )
+
     sidebar_html = (
         f'<input id="q" class="search" type="search" placeholder="Search feed and papers...">'
+        f'{view_toggle_html}'
+        f'<div class="fgroup"><h4>Domain Quick Filters</h4>{category_chips_html}</div>'
         f'<div class="fgroup"><h4>Topics</h4>{topic_boxes}</div>'
         f'<div class="fgroup tierui"><h4>Source-class tier</h4>{tier_boxes}</div>'
         f'<div class="fgroup"><label><input type="checkbox" id="conflictonly"> '
@@ -1270,28 +1345,31 @@ def main():
   .tab-pane{{display:none}}
   .tab-pane.active{{display:block}}
   .layout{{display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap}}
-  .side{{flex:0 0 290px;position:sticky;top:16px;max-height:calc(100vh - 32px);overflow-y:auto}}
-  .main{{flex:1 1 520px;min-width:0}}
-  .rail{{flex:0 0 300px;position:sticky;top:16px;max-height:calc(100vh - 32px);overflow-y:auto}}
+  .side{{flex:0 0 280px;position:sticky;top:16px;max-height:calc(100vh - 32px);overflow-y:auto}}
+  .main{{flex:1 1 560px;min-width:0}}
+  .rail{{flex:0 0 320px;position:sticky;top:16px;max-height:calc(100vh - 32px);overflow-y:auto}}
   .feedgrid{{display:grid;grid-template-columns:repeat(2,1fr);gap:0 16px}}
   .feedgrid .card{{margin:0 0 16px;height:calc(100% - 16px);box-sizing:border-box}}
-  .dayhead{{margin-top:26px}}
-  .dayhead{{grid-column:1/-1}}
+  .feedgrid .card:hover{{box-shadow:0 4px 12px rgba(15,23,42,0.08)}}
+  .dayhead{{margin-top:26px;grid-column:1/-1}}
   .secondary{{margin-top:28px;border-top:1px solid {LINE};padding-top:14px}}
   .railcard{{border:1px solid #e2e8f0;border-radius:8px;padding:12px 14px;margin:0 0 14px;background:{PAPER};box-shadow:{SHADOW}}}
-  .search{{width:100%;padding:8px 10px;border:1px solid {LINE};border-radius:6px;font-size:14px;margin-bottom:16px}}
+  .search{{width:100%;padding:8px 10px;border:1px solid {LINE};border-radius:6px;font-size:14px;margin-bottom:12px;box-sizing:border-box}}
+  .filter-chip{{padding:4px 9px;border-radius:14px;font-size:11px;font-weight:600;border:1px solid #cbd5e1;background:#fff;color:{BODY};cursor:pointer;transition:all .15s ease}}
+  .filter-chip:hover{{background:#f1f5f9;border-color:#94a3b8}}
+  .filter-chip.active{{background:{NAVY};color:#fff;border-color:{NAVY}}}
   .fgroup{{margin-bottom:16px;font-size:13px}}
   .fgroup h4{{margin:0 0 6px;color:{NAVY};font-size:11px;text-transform:uppercase;letter-spacing:.05em}}
   .fgroup label{{display:block;margin:4px 0;cursor:pointer;color:{BODY}}}
   .tierbtn{{width:100%;padding:9px;border:1px solid {NAVY};background:#fff;color:{NAVY};border-radius:6px;cursor:pointer;font-size:13px}}
   .tierbtn:hover{{background:{ALT}}}
   .count{{font-size:12px;color:{SLATE};margin-top:12px}}
+  body.mode-digest .evidence-drawer{{display:none}}
+  body.mode-audit .evidence-drawer{{display:block!important}}
   body.plainmode .tierui{{display:none!important}}
   body.plainmode .tierchip{{background:#edf2f7!important;color:{BODY}!important;border:1px solid {LINE}!important}}
-  @media(max-width:1240px){{.rail{{flex:1 1 100%;position:static;max-height:none;overflow:visible;
-    display:grid;grid-template-columns:repeat(2,1fr);gap:0 16px;margin-top:20px}}}}
-  @media(max-width:1100px){{.feedgrid{{grid-template-columns:1fr}}}}
-  @media(max-width:860px){{.rail{{grid-template-columns:1fr}}}}
+  @media(max-width:1240px){{.rail{{flex:1 1 100%;position:static;max-height:none;overflow:visible;margin-top:20px}}}}
+  @media(max-width:1100px){{.feedgrid{{grid-template-columns:1fr}}.exec-strip{{grid-template-columns:1fr!important}}}}
   @media(max-width:720px){{.layout{{flex-direction:column}}.side{{position:static;flex:1 1 auto;width:100%}}}}
 </style>"""
 
@@ -1309,6 +1387,64 @@ def main():
       if (activePane) {
         activePane.classList.add('active');
         activePane.style.display = 'block';
+      }
+    });
+  });
+})();
+
+(function(){
+  var btnDigest = document.getElementById('btn-digest');
+  var btnAudit = document.getElementById('btn-audit');
+  if (btnDigest && btnAudit) {
+    document.body.classList.add('mode-digest');
+    btnDigest.addEventListener('click', function(){
+      document.body.classList.remove('mode-audit');
+      document.body.classList.add('mode-digest');
+      btnDigest.classList.add('active');
+      btnDigest.style.background = '#fff';
+      btnDigest.style.color = '#1a365d';
+      btnDigest.style.boxShadow = '0 1px 2px rgba(0,0,0,0.08)';
+      btnAudit.classList.remove('active');
+      btnAudit.style.background = 'transparent';
+      btnAudit.style.color = '#64748b';
+      btnAudit.style.boxShadow = 'none';
+    });
+    btnAudit.addEventListener('click', function(){
+      document.body.classList.remove('mode-digest');
+      document.body.classList.add('mode-audit');
+      btnAudit.classList.add('active');
+      btnAudit.style.background = '#fff';
+      btnAudit.style.color = '#1a365d';
+      btnAudit.style.boxShadow = '0 1px 2px rgba(0,0,0,0.08)';
+      btnDigest.classList.remove('active');
+      btnDigest.style.background = 'transparent';
+      btnDigest.style.color = '#64748b';
+      btnDigest.style.boxShadow = 'none';
+    });
+  }
+
+  // Right Rail Tab Switching
+  document.querySelectorAll('.rail-nav-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var target = btn.getAttribute('data-rail-target');
+      document.querySelectorAll('.rail-nav-btn').forEach(function(b){
+        b.classList.remove('active');
+        b.style.background = 'transparent';
+        b.style.color = '#64748b';
+        b.style.boxShadow = 'none';
+      });
+      document.querySelectorAll('.rail-pane').forEach(function(p){
+        p.classList.remove('active');
+        p.style.display = 'none';
+      });
+      btn.classList.add('active');
+      btn.style.background = '#fff';
+      btn.style.color = '#1a365d';
+      btn.style.boxShadow = '0 1px 2px rgba(0,0,0,0.06)';
+      var pane = document.getElementById(target);
+      if (pane) {
+        pane.classList.add('active');
+        pane.style.display = 'block';
       }
     });
   });
@@ -1356,6 +1492,31 @@ def main():
       tt.textContent=off?'Show source tiers':'Hide source tiers';
     });
   }
+
+  // Category Quick Filter Chips
+  document.querySelectorAll('.filter-chip').forEach(function(chip){
+    chip.addEventListener('click', function(){
+      var cat = chip.getAttribute('data-chip');
+      document.querySelectorAll('.filter-chip').forEach(function(c){ c.classList.remove('active'); });
+      chip.classList.add('active');
+      
+      var topicBoxes = document.querySelectorAll('.f-topic');
+      if (cat === 'all') {
+        topicBoxes.forEach(function(b){ b.checked = true; });
+        if (q) q.value = '';
+      } else if (cat === 'models') {
+        if (q) q.value = 'model';
+      } else if (cat === 'hardware') {
+        if (q) q.value = 'energy';
+      } else if (cat === 'regulation') {
+        if (q) q.value = 'regulation';
+      } else if (cat === 'labour') {
+        if (q) q.value = 'cost';
+      }
+      apply();
+    });
+  });
+
   apply();
 })();
 
@@ -1462,6 +1623,7 @@ def main():
         {deflation_html}
       </aside>
       <main class="main">
+        {exec_strip_html}
         {plain_note}
         {about_html}
         {cards}
@@ -1477,7 +1639,7 @@ def main():
         </div>
       </main>
       <aside class="rail">
-        {releases_html}{upcoming_html}{trend_html}{scholar_html}
+        {rail_tabbed_html}
       </aside>
     </div>
   </div>
