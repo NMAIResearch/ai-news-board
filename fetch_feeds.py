@@ -19,6 +19,8 @@ import html, json, os, re, sys, urllib.request, xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 
+from url_identity import canonical_url
+
 # ↻ [2026-07-30, his call] Drop feed items older than this at intake. Low-volume feeds
 # return posts from months back, so the board was carrying items dated January and May 2026
 # among the current ones; day grouping made them visible.
@@ -348,7 +350,8 @@ def parse(xmlbytes):
 
 
 def main():
-    per_feed, collected, dropped_old = 6, [], 0
+    per_feed, collected, dropped_old, dropped_dup = 6, [], 0, 0
+    seen_urls = set()
     now = datetime.now(timezone.utc)
     for f, needs_filter in FEEDS:
         try:
@@ -371,6 +374,9 @@ def main():
             if "hnrss.org" in f:
                 dated = []
                 for title, link, feed_date in fresh:
+                    if link and canonical_url(link) in seen_urls:
+                        dropped_dup += 1
+                        continue
                     page_date = ""
                     if link:
                         page_date = publication_date_from_url(link)
@@ -387,13 +393,27 @@ def main():
                         break
                 rows = dated
             else:
-                rows = fresh[:per_feed]
+                selected = []
+                for r in fresh:
+                    if r[1] and canonical_url(r[1]) in seen_urls:
+                        dropped_dup += 1
+                        continue
+                    selected.append(r)
+                    if len(selected) == per_feed:
+                        break
+                rows = selected
         except Exception as e:
             print(f"skip {domain(f)}: {e}", file=sys.stderr)
             continue
         for title, link, date in rows:
             if not title:
                 continue
+            if link:
+                c_url = canonical_url(link)
+                if c_url in seen_urls:
+                    dropped_dup += 1
+                    continue
+                seen_urls.add(c_url)
             st = source_type(link or f)
             collected.append({
                 # ⛔ Do NOT fall back to the domain. The entity answers "who is the claim
@@ -413,10 +433,12 @@ def main():
                 "sources": [{"name": domain(link or f), "url": link,
                              "source_type": st, "source_tier": TYPE_TIER.get(st, 3)}],
             })
-    json.dump({"fetched": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
-               "items": collected}, open(OUT, "w", encoding="utf-8"), indent=1)
+    with open(OUT, "w", encoding="utf-8") as fh:
+        json.dump({"fetched": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
+                   "items": collected}, fh, indent=1)
     print(f"written: {OUT}  ({len(collected)} items"
           + (f", {dropped_old} dropped older than {MAX_AGE_DAYS}d" if dropped_old else "")
+          + (f", {dropped_dup} duplicate URLs dropped" if dropped_dup else "")
           + "). Now run: python3 build.py")
 
 

@@ -31,6 +31,7 @@ from datetime import datetime, timezone
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from fetch_feeds import (TYPE_TIER, domain, entity_of, publication_date_from_html,
                          source_type, too_old)
+from url_identity import canonical_url
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 FEED = os.path.join(HERE, "feed_items.json")
@@ -115,7 +116,7 @@ def main():
             data = json.load(handle)
     else:
         data = {"items": []}
-    known = {s["url"] for it in data["items"] for s in it.get("sources", []) if s.get("url")}
+    known = {canonical_url(s["url"]) for it in data["items"] for s in it.get("sources", []) if s.get("url")}
     cache = load_cache()
     now = datetime.now(timezone.utc)
 
@@ -137,9 +138,10 @@ def main():
         posts = sorted(posts_map.items(), key=lambda t: t[1], reverse=True)
         candidates = []
         for url, lastmod in posts:
-            if url in known or url in seen:
+            canon = canonical_url(url)
+            if canon in known or canon in seen:
                 continue
-            seen.add(url)
+            seen.add(canon)
             meta = cache.get(url, {})
             if not meta.get("published"):
                 # A page cannot have been published after its own modification timestamp.
