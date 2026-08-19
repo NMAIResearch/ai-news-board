@@ -117,12 +117,12 @@ def market_chip(entity, mk, tmap):
         if ent.get("uncovered"):
             return (f'<span title="{esc(ent["uncovered"])}" style="display:inline-block;'
                     f'padding:2px 8px;margin-left:6px;border-radius:4px;font-size:11px;'
-                    f'color:{SLATE};background:#edf2f7;border:1px dashed {TIER[3][0]}">'
+                    f'color:{SLATE};background:var(--bg-card);border:1px dashed {TIER[3][0]}">'
                     f'listed, not covered here</span>')
         why = esc(ent.get("private", "no listed security"))
         return (f'<span title="{why}" style="display:inline-block;padding:2px 8px;'
                 f'margin-left:6px;border-radius:4px;font-size:11px;color:{SLATE};'
-                f'background:#edf2f7;border:1px dashed {SLATE}">no listed security</span>')
+                f'background:var(--bg-card);border:1px dashed {SLATE}">no listed security</span>')
     sym = ent["ticker"]
     q = (mk.get("equities") or {}).get(sym)
     if not q:
@@ -314,7 +314,7 @@ def item_card(it, registry, plain=False, mk=None, tmap=None, ev=None):
         if plain:
             chips.append(f'<span class="tierchip" style="display:inline-block;font-size:12px;'
                          f'padding:2px 8px;margin:2px 4px 2px 0;border-radius:10px;color:{BODY};'
-                         f'background:#edf2f7;border:1px solid {LINE}">{esc(s["name"])} · '
+                         f'background:var(--bg-card);border:1px solid {LINE}">{esc(s["name"])} · '
                          f'{esc(source_type)}</span>')
             continue
         col = TIER[t][0]
@@ -795,7 +795,7 @@ def sovereign_radar_tab():
         else:
             badge_bg, badge_lbl = "#64748b", "⚪ P5 Administrative"
 
-        duty_badge = '<span style="display:inline-block;padding:2px 7px;border-radius:4px;font-size:11px;font-weight:600;color:#fff;background:#2f7d4f;margin-left:6px">Active Duty Shift</span>' if a.get("is_operator_duty_shift") else '<span style="display:inline-block;padding:2px 7px;border-radius:4px;font-size:11px;color:#64748b;background:#edf2f7;margin-left:6px">Procedural</span>'
+        duty_badge = '<span style="display:inline-block;padding:2px 7px;border-radius:4px;font-size:11px;font-weight:600;color:#fff;background:#2f7d4f;margin-left:6px">Active Duty Shift</span>' if a.get("is_operator_duty_shift") else '<span style="display:inline-block;padding:2px 7px;border-radius:4px;font-size:11px;color:#64748b;background:var(--bg-card);margin-left:6px">Procedural</span>'
 
         stat_ref = a.get("statutory_reference")
         stat_ref_html = f'<div style="font-size:12px;margin:6px 0;font-family:monospace;background:{ALT};padding:3px 8px;border-radius:4px;border:1px solid {LINE};color:{NAVY}"><strong>Statutory Basis:</strong> {esc(stat_ref)}</div>' if stat_ref else ""
@@ -1315,7 +1315,7 @@ def main():
     )
 
     view_toggle_html = (
-        f'<div class="view-toggle" style="display:flex;background:#e2e8f0;padding:3px;border-radius:6px;margin-bottom:14px">'
+        f'<div class="view-toggle" style="display:flex;background:var(--bg-card);padding:3px;border-radius:6px;margin-bottom:14px">'
         f'<button id="btn-digest" class="vmode-btn active" style="flex:1;padding:6px;border:none;border-radius:4px;font-size:11px;font-weight:600;cursor:pointer;background:{PAPER};color:{NAVY};box-shadow:0 1px 2px rgba(0,0,0,0.08)">Casual Digest</button>'
         f'<button id="btn-audit" class="vmode-btn" style="flex:1;padding:6px;border:none;border-radius:4px;font-size:11px;font-weight:600;cursor:pointer;background:transparent;color:{SLATE}">Full Audit</button>'
         f'</div>'
@@ -1402,7 +1402,7 @@ def main():
   body.mode-digest .evidence-drawer{{display:none}}
   body.mode-audit .evidence-drawer{{display:block!important}}
   body.plainmode .tierui{{display:none!important}}
-  body.plainmode .tierchip{{background:#edf2f7!important;color:{BODY}!important;border:1px solid {LINE}!important}}
+  body.plainmode .tierchip{{background:var(--bg-card)!important;color:{BODY}!important;border:1px solid {LINE}!important}}
   @media(max-width:1240px){{.rail{{flex:1 1 100%;position:static;max-height:none;overflow:visible;margin-top:20px}}}}
   @media(max-width:1100px){{.feedgrid{{grid-template-columns:1fr}}.exec-strip{{grid-template-columns:1fr!important}}}}
   @media(max-width:720px){{.layout{{flex-direction:column}}.side{{position:static;flex:1 1 auto;width:100%}}}}
