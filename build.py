@@ -1637,18 +1637,18 @@ def main():
   var ico = document.getElementById('themeIcon');
   function apply(theme){
     html.setAttribute('data-theme', theme);
-    localStorage.setItem('nmai-theme', theme);
+    try { localStorage.setItem('nmai-theme', theme); } catch(e){}
     if(lbl && ico){
       if(theme === 'dark'){ lbl.textContent = 'THEME: DARK'; ico.textContent = '◐'; }
       else { lbl.textContent = 'THEME: LIGHT'; ico.textContent = '◑'; }
     }
   }
-  var saved = localStorage.getItem('nmai-theme') || 'light';
-  apply(saved);
+  var curr = html.getAttribute('data-theme') || 'light';
+  apply(curr);
   if(btn){
     btn.addEventListener('click', function(){
-      var curr = html.getAttribute('data-theme') || 'light';
-      apply(curr === 'dark' ? 'light' : 'dark');
+      var now = html.getAttribute('data-theme') || 'light';
+      apply(now === 'dark' ? 'light' : 'dark');
     });
   }
 })();
@@ -1656,7 +1656,15 @@ def main():
 
     doc = f"""<!doctype html><html lang="en" data-theme="light"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AI News Board & Sovereign Watch</title>{style_block}</head>
+<title>AI News Board & Sovereign Watch</title>
+<script>
+(function(){{
+  try {{
+    var t = localStorage.getItem('nmai-theme');
+    if (t) {{ document.documentElement.setAttribute('data-theme', t); }}
+  }} catch(e){{}}
+}})();
+</script>{style_block}</head>
 <body class="{'plainmode' if plain else ''}">
 <div class="wrap">
   <div class="header-bar">
