@@ -17,13 +17,14 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(HERE, "items.json")
 OUT = os.path.join(HERE, "index.html")
 
-# house palette
-NAVY, SLATE, BODY, ALT, LINE = "#1a365d", "#4a5568", "#2d3748", "#f7fafc", "#e2e8f0"
-# Surfaces. The page sits on ALT and every panel and card sits on PAPER above it.
-# Cards previously set no background, so they inherited ALT and separated from the
-# page by a 1px border alone, while the side panels were already white.
-PAPER = "#ffffff"
-SHADOW = "0 1px 2px rgba(26,54,93,.06), 0 1px 8px rgba(26,54,93,.04)"
+# house palette (bound to CSS variables for dynamic Dark/Light switching)
+NAVY = "var(--heading)"
+SLATE = "var(--text-muted)"
+BODY = "var(--text)"
+ALT = "var(--bg)"
+LINE = "var(--border)"
+PAPER = "var(--bg-card)"
+SHADOW = "var(--shadow)"
 
 # distance tier (canonical house scale, from the Source Incentive Map + working
 # tracker): 1 = LEAST incentive to shade the claim ... 5 = the party selling the
@@ -208,7 +209,7 @@ def market_strip(mk):
     asof = esc(ref)
     return (
         f'<section id="mktstrip" style="border:1px solid {LINE};border-radius:8px;'
-        f'padding:9px 14px;margin:0 0 14px;background:#fff;overflow-x:auto;font-size:13px">'
+        f'padding:9px 14px;margin:0 0 14px;background:{PAPER};overflow-x:auto;font-size:13px">'
         f'<div style="margin-bottom:3px">{"".join(cells)}</div>'
         f'<div style="font-size:11px;color:{SLATE}">'
         f'Freshest data <span id="mktidxasof">{asof}</span>. A small date after a cell means '
@@ -533,7 +534,7 @@ def freshness(built, fetched, mk, reg):
     if not parts:
         return ""
     return (f'<div style="font-size:12px;margin:0 0 14px;padding:7px 12px;border:1px solid '
-            f'{LINE};border-radius:6px;background:#fff">'
+            f'{LINE};border-radius:6px;background:{PAPER}">'
             f'<span style="color:{NAVY};font-weight:600;margin-right:10px">Freshness</span>'
             f'{"".join(parts)}</div>')
 
@@ -603,7 +604,7 @@ def legend():
               f'class, not a trust score or a claim-relative relationship. Claim tiers are '
               f'withheld unless the publisher relationship to the subject resolves.</div>')
     return (f'<div style="border:1px solid {LINE};border-radius:8px;padding:12px 14px;'
-            f'margin:0 0 18px;background:#fff"><div style="font-weight:600;color:{NAVY};'
+            f'margin:0 0 18px;background:{PAPER}"><div style="font-weight:600;color:{NAVY};'
             f'margin-bottom:6px">Source-class key</div>{rows}{caveat}</div>')
 
 
@@ -624,7 +625,7 @@ def gov_conflict_panel(gc):
     sep = "".join(f'<li style="margin:2px 0">{esc(s)}</li>' for s in gc.get("separate", []))
     return (
         f'<details class="govconflict" style="border:1px solid {LINE};'
-        f'border-radius:8px;padding:12px 16px;margin:0 0 18px;background:#fff">'
+        f'border-radius:8px;padding:12px 16px;margin:0 0 18px;background:{PAPER}">'
         f'<summary style="font-weight:600;color:{NAVY};cursor:pointer">{esc(gc.get("title",""))}</summary>'
         f'<div style="font-size:13px;color:{BODY};margin-top:10px">{esc(gc.get("intro",""))}</div>'
         f'<div style="font-size:13px;margin:10px 0">{hats}</div>'
@@ -673,7 +674,7 @@ def ai_watch_panel(reg):
                    f'Live gauges</div>{gauges}') if gauges else ""
     return (
         f'<details class="aiwatch" style="border:1px solid {LINE};border-radius:8px;'
-        f'padding:12px 16px;margin:0 0 18px;background:#fff">'
+        f'padding:12px 16px;margin:0 0 18px;background:{PAPER}">'
         f'<summary style="font-weight:600;color:{NAVY};cursor:pointer">{esc(reg.get("title","AI Watch"))}</summary>'
         f'<div style="font-size:13px;color:{BODY};margin:10px 0">{esc(reg.get("intro",""))}</div>'
         f'<div style="font-weight:600;color:{NAVY};font-size:13px;margin:8px 0 4px">Resolution calendar</div>'
@@ -778,7 +779,7 @@ def sovereign_radar_tab():
         alerts = json.load(open(reg_alerts_path, encoding="utf-8"))
 
     if not alerts:
-        return f'<div style="padding:20px;background:#fff;border-radius:8px;border:1px solid {LINE}">No active sovereign radar alerts banked.</div>'
+        return f'<div style="padding:20px;background:{PAPER};border-radius:8px;border:1px solid {LINE}">No active sovereign radar alerts banked.</div>'
 
     cards = []
     for a in alerts:
@@ -797,7 +798,7 @@ def sovereign_radar_tab():
         duty_badge = '<span style="display:inline-block;padding:2px 7px;border-radius:4px;font-size:11px;font-weight:600;color:#fff;background:#2f7d4f;margin-left:6px">Active Duty Shift</span>' if a.get("is_operator_duty_shift") else '<span style="display:inline-block;padding:2px 7px;border-radius:4px;font-size:11px;color:#64748b;background:#edf2f7;margin-left:6px">Procedural</span>'
 
         stat_ref = a.get("statutory_reference")
-        stat_ref_html = f'<div style="font-size:12px;margin:6px 0;font-family:monospace;background:#f8fafc;padding:3px 8px;border-radius:4px;border:1px solid {LINE};color:{NAVY}"><strong>Statutory Basis:</strong> {esc(stat_ref)}</div>' if stat_ref else ""
+        stat_ref_html = f'<div style="font-size:12px;margin:6px 0;font-family:monospace;background:{ALT};padding:3px 8px;border-radius:4px;border:1px solid {LINE};color:{NAVY}"><strong>Statutory Basis:</strong> {esc(stat_ref)}</div>' if stat_ref else ""
 
         action_trigger = a.get("actionable_trigger")
         trigger_html = f'<div style="font-size:12px;color:{SLATE};margin-top:6px;padding-top:6px;border-top:1px dashed {LINE}"><strong>Actionable Trigger:</strong> {esc(action_trigger)}</div>' if action_trigger else ""
@@ -901,7 +902,7 @@ def main():
                         f'<code>tier_map.json</code>. {esc(contest.get("how",""))}')
         tiermap_html = (
             f'<details style="border:1px solid {LINE};border-radius:8px;padding:10px 14px;'
-            f'margin:0 0 18px;background:#fff"><summary style="font-weight:600;color:{NAVY};'
+            f'margin:0 0 18px;background:{PAPER}"><summary style="font-weight:600;color:{NAVY};'
             f'cursor:pointer">Tier registries: every class with its basis</summary>'
             f'<div style="font-size:12px;color:{SLATE};margin:6px 0 8px">{contest_line}</div>'
             f'<div style="font-size:13px;font-weight:600;color:{NAVY};margin:8px 0 4px">'
@@ -974,7 +975,7 @@ def main():
             # the last one, so reference material opens on demand.
             scholar_html = (
                 f'<details open style="border:1px solid {LINE};border-left:4px solid {TIER[2][0]};'
-                f'border-radius:8px;padding:12px 16px;margin:0 0 12px;background:#fff">'
+                f'border-radius:8px;padding:12px 16px;margin:0 0 12px;background:{PAPER}">'
                 f'<summary style="color:{NAVY};font-size:15px;font-weight:600;cursor:pointer">'
                 f'Primary sources <span style="font-weight:400;color:{SLATE};font-size:12px">'
                 f'({len(rows)})</span></summary>'
@@ -1018,7 +1019,7 @@ def main():
         if rrows:
             releases_html = (
                 f'<details open style="border:1px solid {LINE};border-left:4px solid {NAVY};'
-                f'border-radius:8px;padding:12px 16px;margin:0 0 12px;background:#fff">'
+                f'border-radius:8px;padding:12px 16px;margin:0 0 12px;background:{PAPER}">'
                 f'<summary style="color:{NAVY};font-size:15px;font-weight:600;cursor:pointer">'
                 f'Model releases <span style="font-weight:400;color:{SLATE};font-size:12px">'
                 f'({c.get("total", len(rrows))})</span></summary>'
@@ -1062,7 +1063,7 @@ def main():
         if up_rows:
             upcoming_html = (
                 f'<details style="border:1px solid {LINE};border-left:4px solid {TIER[3][0]};'
-                f'border-radius:8px;padding:12px 16px;margin:0 0 12px;background:#fff">'
+                f'border-radius:8px;padding:12px 16px;margin:0 0 12px;background:{PAPER}">'
                 f'<summary style="color:{NAVY};font-size:15px;font-weight:600;cursor:pointer">'
                 f'Upcoming &amp; Announced <span style="font-weight:400;color:{SLATE};font-size:12px">'
                 f'({len(up_rows)})</span></summary>'
@@ -1110,9 +1111,9 @@ def main():
 
     # Unified Segmented Right Rail
     rail_tabbed_html = (
-        f'<div class="rail-container" style="border:1px solid {LINE};border-radius:10px;background:#fff;box-shadow:{SHADOW};overflow:hidden">'
-        f'<div class="rail-nav" style="display:flex;background:#f8fafc;border-bottom:1px solid {LINE};padding:4px;gap:4px">'
-        f'<button class="rail-nav-btn active" data-rail-target="pane-releases" style="flex:1;padding:8px 2px;border:none;background:#fff;color:{NAVY};border-radius:6px;font-size:11px;font-weight:600;cursor:pointer;box-shadow:0 1px 2px rgba(0,0,0,0.06)">Releases ({len(rrows)})</button>'
+        f'<div class="rail-container" style="border:1px solid {LINE};border-radius:10px;background:{PAPER};box-shadow:{SHADOW};overflow:hidden">'
+        f'<div class="rail-nav" style="display:flex;background:{ALT};border-bottom:1px solid {LINE};padding:4px;gap:4px">'
+        f'<button class="rail-nav-btn active" data-rail-target="pane-releases" style="flex:1;padding:8px 2px;border:none;background:{PAPER};color:{NAVY};border-radius:6px;font-size:11px;font-weight:600;cursor:pointer;box-shadow:0 1px 2px rgba(0,0,0,0.06)">Releases ({len(rrows)})</button>'
         f'<button class="rail-nav-btn" data-rail-target="pane-trends" style="flex:1;padding:8px 2px;border:none;background:transparent;color:{SLATE};border-radius:6px;font-size:11px;font-weight:600;cursor:pointer">Radar ({len(t_rows)})</button>'
         f'<button class="rail-nav-btn" data-rail-target="pane-scholar" style="flex:1;padding:8px 2px;border:none;background:transparent;color:{SLATE};border-radius:6px;font-size:11px;font-weight:600;cursor:pointer">Papers ({len(rows)})</button>'
         f'<button class="rail-nav-btn" data-rail-target="pane-upcoming" style="flex:1;padding:8px 2px;border:none;background:transparent;color:{SLATE};border-radius:6px;font-size:11px;font-weight:600;cursor:pointer">Upcoming ({len(up_rows)})</button>'
@@ -1161,15 +1162,15 @@ def main():
 
     exec_strip_html = (
         f'<div class="exec-strip" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 20px">'
-        f'<div class="exec-card" style="border:1px solid {LINE};border-left:4px solid {NAVY};border-radius:8px;padding:10px 14px;background:#fff;box-shadow:{SHADOW}">'
+        f'<div class="exec-card" style="border:1px solid {LINE};border-left:4px solid {NAVY};border-radius:8px;padding:10px 14px;background:{PAPER};box-shadow:{SHADOW}">'
         f'<div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:{SLATE};margin-bottom:3px">🚀 Frontier Release</div>'
         f'<div style="font-size:13px;font-weight:600;color:{NAVY};line-height:1.3">{esc(top_rel_model)} <span style="font-size:11px;font-weight:400;color:{SLATE}">({esc(top_rel_lab)} &middot; {esc(top_rel_date)})</span></div>'
         f'</div>'
-        f'<div class="exec-card" style="border:1px solid {LINE};border-left:4px solid {TIER[2][0]};border-radius:8px;padding:10px 14px;background:#fff;box-shadow:{SHADOW}">'
+        f'<div class="exec-card" style="border:1px solid {LINE};border-left:4px solid {TIER[2][0]};border-radius:8px;padding:10px 14px;background:{PAPER};box-shadow:{SHADOW}">'
         f'<div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:{SLATE};margin-bottom:3px">📚 Primary Research</div>'
         f'<div style="font-size:13px;font-weight:600;line-height:1.3"><a href="{esc(top_paper_url)}" target="_blank" rel="noopener" style="color:{NAVY};text-decoration:none">{esc(top_paper_title[:55])}... &#x2197;</a></div>'
         f'</div>'
-        f'<div class="exec-card" style="border:1px solid {LINE};border-left:4px solid #b91c1c;border-radius:8px;padding:10px 14px;background:#fff;box-shadow:{SHADOW}">'
+        f'<div class="exec-card" style="border:1px solid {LINE};border-left:4px solid #b91c1c;border-radius:8px;padding:10px 14px;background:{PAPER};box-shadow:{SHADOW}">'
         f'<div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:{SLATE};margin-bottom:3px">⚡ Market &amp; Grid Anomaly</div>'
         f'<div style="font-size:13px;font-weight:600;color:{NAVY};line-height:1.3">{esc(shock_text)}</div>'
         f'</div>'
@@ -1226,12 +1227,12 @@ def main():
     legend_html = "" if plain else legend()
     plain_note = ("" if not plain else
         f'<div style="border:1px solid {LINE};border-radius:8px;padding:10px 14px;'
-        f'margin:0 0 18px;background:#fff;font-size:13px;color:{BODY}">'
+        f'margin:0 0 18px;background:{PAPER};font-size:13px;color:{BODY}">'
         f'<strong style="color:{NAVY}">Source-class tiering is off.</strong> Sources are shown '
         f'without incentive colouring. Figures, track-record and anchor flags are '
         f'unchanged.</div>')
     sourcemix_html = ("" if plain else
-        f'<div style="border:1px solid {LINE};border-radius:8px;padding:12px 14px;margin:0 0 18px;background:#fff;box-shadow:{SHADOW}">'
+        f'<div style="border:1px solid {LINE};border-radius:8px;padding:12px 14px;margin:0 0 18px;background:{PAPER};box-shadow:{SHADOW}">'
         f'<div style="font-weight:600;color:{NAVY};margin-bottom:6px">Source mix across all items</div>'
         f'{bar(all_tiers)}'
         f'<table style="border-collapse:collapse;font-size:13px;margin-top:12px;width:100%">'
@@ -1243,7 +1244,7 @@ def main():
     # reaches the news cards immediately (they were stacked open and congested the top)
     about_html = ("" if plain else
         f'<details class="tierui" style="border:1px solid {LINE};border-radius:8px;'
-        f'padding:10px 14px;margin:0 0 18px;background:#fff">'
+        f'padding:10px 14px;margin:0 0 18px;background:{PAPER}">'
         f'<summary style="font-weight:600;color:{NAVY};cursor:pointer">'
         f'Method &middot; source classes, claim relationships and anchor rules</summary>'
         f'<div style="margin-top:12px">{legend_html}{neutrality_html}{tiermap_html}{sourcemix_html}</div>'
@@ -1315,7 +1316,7 @@ def main():
 
     view_toggle_html = (
         f'<div class="view-toggle" style="display:flex;background:#e2e8f0;padding:3px;border-radius:6px;margin-bottom:14px">'
-        f'<button id="btn-digest" class="vmode-btn active" style="flex:1;padding:6px;border:none;border-radius:4px;font-size:11px;font-weight:600;cursor:pointer;background:#fff;color:{NAVY};box-shadow:0 1px 2px rgba(0,0,0,0.08)">Casual Digest</button>'
+        f'<button id="btn-digest" class="vmode-btn active" style="flex:1;padding:6px;border:none;border-radius:4px;font-size:11px;font-weight:600;cursor:pointer;background:{PAPER};color:{NAVY};box-shadow:0 1px 2px rgba(0,0,0,0.08)">Casual Digest</button>'
         f'<button id="btn-audit" class="vmode-btn" style="flex:1;padding:6px;border:none;border-radius:4px;font-size:11px;font-weight:600;cursor:pointer;background:transparent;color:{SLATE}">Full Audit</button>'
         f'</div>'
     )
@@ -1332,13 +1333,45 @@ def main():
         f'<div id="count" class="count"></div>')
 
     style_block = f"""<style>
-  body{{margin:0;background:{ALT};color:{BODY};font-family:Arial,Helvetica,sans-serif;line-height:1.5}}
+  :root {{
+    --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }}
+  html[data-theme="light"] {{
+    --bg: #f8fafc;
+    --bg-card: #ffffff;
+    --bg-hover: #f1f5f9;
+    --border: #e2e8f0;
+    --border-bright: #cbd5e1;
+    --heading: #1a365d;
+    --text: #2d3748;
+    --text-muted: #4a5568;
+    --text-dim: #64748b;
+    --accent: #2563eb;
+    --shadow: 0 1px 2px rgba(26,54,93,.06), 0 1px 8px rgba(26,54,93,.04);
+  }}
+  html[data-theme="dark"] {{
+    --bg: #0b0f19;
+    --bg-card: #111827;
+    --bg-hover: #162032;
+    --border: #1e293b;
+    --border-bright: #334155;
+    --heading: #ffffff;
+    --text: #f1f5f9;
+    --text-muted: #94a3b8;
+    --text-dim: #64748b;
+    --accent: #38bdf8;
+    --shadow: 0 1px 3px rgba(0,0,0,0.5);
+  }}
+  body{{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.5;transition:background .15s, color .15s}}
   .wrap{{max-width:1500px;margin:0 auto;padding:28px 20px 60px}}
-  .nav-tab-bar{{display:flex;gap:10px;margin:20px 0 24px;border-bottom:2px solid {LINE};padding-bottom:10px}}
-  .nav-tab-btn{{display:inline-flex;align-items:center;gap:8px;padding:9px 18px;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer;border:1px solid #cbd5e1;background:#fff;color:{NAVY};transition:all .15s ease}}
-  .nav-tab-btn:hover{{background:#f1f5f9;border-color:#94a3b8}}
-  .nav-tab-btn.active{{background:{NAVY};color:#fff;border-color:{NAVY};box-shadow:0 2px 4px rgba(26,54,93,.15)}}
-  .tab-badge{{display:inline-block;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:700;background:#e2e8f0;color:{NAVY}}}
+  .header-bar{{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:12px;margin-bottom:6px}}
+  .theme-toggle-btn{{font-family:var(--mono);font-size:11px;padding:4px 10px;border-radius:4px;border:1px solid var(--border-bright);background:var(--bg-card);color:var(--text);cursor:pointer;display:inline-flex;align-items:center;gap:5px}}
+  .theme-toggle-btn:hover{{border-color:var(--accent);color:var(--accent)}}
+  .nav-tab-bar{{display:flex;gap:10px;margin:20px 0 24px;border-bottom:2px solid var(--border);padding-bottom:10px}}
+  .nav-tab-btn{{display:inline-flex;align-items:center;gap:8px;padding:9px 18px;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer;border:1px solid var(--border-bright);background:var(--bg-card);color:var(--heading);transition:all .15s ease}}
+  .nav-tab-btn:hover{{background:var(--bg-hover);border-color:var(--border-bright)}}
+  .nav-tab-btn.active{{background:var(--heading);color:var(--bg);border-color:var(--heading);box-shadow:0 2px 4px rgba(0,0,0,.15)}}
+  .tab-badge{{display:inline-block;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:700;background:var(--border);color:var(--heading)}}
   .nav-tab-btn.active .tab-badge{{background:rgba(255,255,255,.25);color:#fff}}
   .radar-badge{{background:#fee2e2;color:#991b1b}}
   .nav-tab-btn.active .radar-badge{{background:#dc2626;color:#fff}}
@@ -1349,21 +1382,23 @@ def main():
   .main{{flex:1 1 560px;min-width:0}}
   .rail{{flex:0 0 320px;position:sticky;top:16px;max-height:calc(100vh - 32px);overflow-y:auto}}
   .feedgrid{{display:grid;grid-template-columns:repeat(2,1fr);gap:0 16px}}
-  .feedgrid .card{{margin:0 0 16px;height:calc(100% - 16px);box-sizing:border-box}}
-  .feedgrid .card:hover{{box-shadow:0 4px 12px rgba(15,23,42,0.08)}}
-  .dayhead{{margin-top:26px;grid-column:1/-1}}
-  .secondary{{margin-top:28px;border-top:1px solid {LINE};padding-top:14px}}
-  .railcard{{border:1px solid #e2e8f0;border-radius:8px;padding:12px 14px;margin:0 0 14px;background:{PAPER};box-shadow:{SHADOW}}}
-  .search{{width:100%;padding:8px 10px;border:1px solid {LINE};border-radius:6px;font-size:14px;margin-bottom:12px;box-sizing:border-box}}
-  .filter-chip{{padding:4px 9px;border-radius:14px;font-size:11px;font-weight:600;border:1px solid #cbd5e1;background:#fff;color:{BODY};cursor:pointer;transition:all .15s ease}}
-  .filter-chip:hover{{background:#f1f5f9;border-color:#94a3b8}}
-  .filter-chip.active{{background:{NAVY};color:#fff;border-color:{NAVY}}}
+  .feedgrid .card{{margin:0 0 16px;height:calc(100% - 16px);box-sizing:border-box;background:var(--bg-card)!important;border:1px solid var(--border)!important;color:var(--text)!important;box-shadow:var(--shadow)!important}}
+  .feedgrid .card:hover{{box-shadow:0 4px 12px rgba(0,0,0,0.15)!important}}
+  .card-headline a{{color:var(--heading)!important}}
+  .card-headline a:hover{{color:var(--accent)!important}}
+  .dayhead{{margin-top:26px;grid-column:1/-1;color:var(--heading)}}
+  .secondary{{margin-top:28px;border-top:1px solid var(--border);padding-top:14px}}
+  .railcard{{border:1px solid var(--border)!important;border-radius:8px;padding:12px 14px;margin:0 0 14px;background:var(--bg-card)!important;box-shadow:var(--shadow)!important;color:var(--text)!important}}
+  .search{{width:100%;padding:8px 10px;border:1px solid var(--border);background:var(--bg-card);color:var(--text);border-radius:6px;font-size:14px;margin-bottom:12px;box-sizing:border-box}}
+  .filter-chip{{padding:4px 9px;border-radius:14px;font-size:11px;font-weight:600;border:1px solid var(--border-bright);background:var(--bg-card);color:var(--text);cursor:pointer;transition:all .15s ease}}
+  .filter-chip:hover{{background:var(--bg-hover);border-color:var(--border-bright)}}
+  .filter-chip.active{{background:var(--heading);color:var(--bg);border-color:var(--heading)}}
   .fgroup{{margin-bottom:16px;font-size:13px}}
-  .fgroup h4{{margin:0 0 6px;color:{NAVY};font-size:11px;text-transform:uppercase;letter-spacing:.05em}}
-  .fgroup label{{display:block;margin:4px 0;cursor:pointer;color:{BODY}}}
-  .tierbtn{{width:100%;padding:9px;border:1px solid {NAVY};background:#fff;color:{NAVY};border-radius:6px;cursor:pointer;font-size:13px}}
-  .tierbtn:hover{{background:{ALT}}}
-  .count{{font-size:12px;color:{SLATE};margin-top:12px}}
+  .fgroup h4{{margin:0 0 6px;color:var(--heading);font-size:11px;text-transform:uppercase;letter-spacing:.05em}}
+  .fgroup label{{display:block;margin:4px 0;cursor:pointer;color:var(--text)}}
+  .tierbtn{{width:100%;padding:9px;border:1px solid var(--border-bright);background:var(--bg-card);color:var(--heading);border-radius:6px;cursor:pointer;font-size:13px}}
+  .tierbtn:hover{{background:var(--bg-hover)}}
+  .count{{font-size:12px;color:var(--text-muted);margin-top:12px}}
   body.mode-digest .evidence-drawer{{display:none}}
   body.mode-audit .evidence-drawer{{display:block!important}}
   body.plainmode .tierui{{display:none!important}}
@@ -1593,20 +1628,50 @@ def main():
   setInterval(paintAges, 60000);
 })();
 </script>"""
-    script_block = (script_block.replace("__NEG__", TIER[5][0])
-                                .replace("__POS__", DENOM["y"][0])
-                                .replace("__MUTED__", SLATE))
+    script_block += """
+<script>
+(function(){
+  var html = document.documentElement;
+  var btn = document.getElementById('themeToggle');
+  var lbl = document.getElementById('themeLabel');
+  var ico = document.getElementById('themeIcon');
+  function apply(theme){
+    html.setAttribute('data-theme', theme);
+    localStorage.setItem('nmai-theme', theme);
+    if(lbl && ico){
+      if(theme === 'dark'){ lbl.textContent = 'THEME: DARK'; ico.textContent = '◐'; }
+      else { lbl.textContent = 'THEME: LIGHT'; ico.textContent = '◑'; }
+    }
+  }
+  var saved = localStorage.getItem('nmai-theme') || 'light';
+  apply(saved);
+  if(btn){
+    btn.addEventListener('click', function(){
+      var curr = html.getAttribute('data-theme') || 'light';
+      apply(curr === 'dark' ? 'light' : 'dark');
+    });
+  }
+})();
+</script>"""
 
-    doc = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
+    doc = f"""<!doctype html><html lang="en" data-theme="light"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>AI News Board & Sovereign Watch</title>{style_block}</head>
 <body class="{'plainmode' if plain else ''}">
 <div class="wrap">
-  <h1 style="color:{NAVY};margin:0 0 4px;font-size:26px">AI News Board & Sovereign Watch</h1>
-  <div style="color:{SLATE};font-size:14px;margin-bottom:14px;max-width:850px">
-    AI news coverage separated into source class, claim-relative relationships, figure evidence, citation links, and reality anchors, paired with autonomous 24/7 sovereign gazette regulatory radar.
+  <div class="header-bar">
+    <div>
+      <h1 style="color:var(--heading);margin:0 0 4px;font-size:26px">AI News Board & Sovereign Watch</h1>
+      <div style="color:var(--text-muted);font-size:14px;margin-bottom:8px;max-width:850px">
+        AI news coverage separated into source class, claim-relative relationships, figure evidence, citation links, and reality anchors, paired with autonomous 24/7 sovereign gazette regulatory radar.
+      </div>
+    </div>
+    <button id="themeToggle" class="theme-toggle-btn" title="Toggle Light/Dark Theme">
+      <span id="themeIcon">◑</span>
+      <span id="themeLabel">THEME: LIGHT</span>
+    </button>
   </div>
-  <div style="font-size:12px;color:{SLATE};margin:0 0 14px;max-width:900px">
+  <div style="font-size:12px;color:var(--text-dim);margin:0 0 14px;max-width:900px">
     AI disclosure: the research is the author's; this text was drafted with AI assistance and reviewed by the author. Machine and human evidence methods are identified per card.
   </div>
   {freshness(built, fetched, mk, _reg if os.path.isfile(reg_path) else {})}
