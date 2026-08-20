@@ -1,10 +1,10 @@
 {
- "fetched": "2026-08-18 16:55 UTC",
+ "fetched": "2026-08-20 05:12 UTC",
  "items": [
   {
-   "entity": "Apple",
-   "headline": "Why Apple’s camera-equipped AirPods may not be the ‘pervert pods’ consumers fear",
-   "date": "Tue, 18 Aug 2026",
+   "entity": "",
+   "headline": "Stripe didn’t really buy OpenRouter because of the ‘singularity’",
+   "date": "Wed, 19 Aug 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "?",
@@ -12,7 +12,52 @@
    "sources": [
     {
      "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/08/18/why-apples-camera-equipped-airpods-may-not-be-the-pervert-pods-consumers-fear/",
+     "url": "https://techcrunch.com/2026/08/19/stripe-didnt-really-buy-openrouter-because-of-the-singularity/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 5
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "5fb51be9020934db85fc7de92c2c3c68f6c7ddd5d64365554659989f0d59b235",
+   "evidence_hash": "ba535b232855cd03518741dda1f156cbbfa91511eb9f86edc832654671aaf7bb",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Anthropic",
+     "count": 2
+    },
+    {
+     "name": "Apple",
+     "count": 2
+    },
+    {
+     "name": "OpenAI",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "stripe",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "OpenAI",
+   "headline": "OpenAI seeks to one-up Anthropic with new customer privacy protections",
+   "date": "Wed, 19 Aug 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/08/19/openai-seeks-to-one-up-anthropic-with-new-customer-privacy-protections/",
      "source_type": "trade-press",
      "source_tier": 3
     }
@@ -23,125 +68,162 @@
     "seen": 0,
     "total": 3
    },
-   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
-   "content_hash": "2144f901c6e9a36bce79bef8661ce7ccd382b03317ce72fe6959689d1dca688e",
-   "evidence_hash": "5677a63c83484421019b89312ea4fc93e03b0d3f95ddf63e4daced5cb2e92c0a",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Apple",
-     "count": 16
-    },
-    {
-     "name": "Meta",
-     "count": 3
-    },
-    {
-     "name": "Google",
-     "count": 2
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    },
-    {
-     "name": "Snap",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Apple",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "Warp’s new system is an out-of-the-box software factory for AI development",
-   "date": "Tue, 18 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/08/18/warps-new-system-is-an-out-of-the-box-software-factory-for-ai-development/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 1
-   },
-   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
-   "content_hash": "312b3fc9c6e500ebf4e38fe97cee4cb8996a0d9b1f5e0355b4f69afed591526b",
-   "evidence_hash": "0e8911bc2266aec93b92baed37b93a8f284527edaea4057e772e8533951ae31c",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Apple",
-     "count": 2
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Google",
-     "count": 1
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "AI coding tools",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "OpenAI launches a safer ChatGPT for teens — years after teens started using it",
-   "date": "Tue, 18 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/08/18/openai-launches-a-safer-chatgpt-for-teens-years-after-teens-started-using-it/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 1
-   },
-   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
-   "content_hash": "91189ac95eb95fd8a3528fbf9dcf742b3544bde7ee63d74d948ecef8cdb89699",
-   "evidence_hash": "7e0f24ea1b168d5a7a731fd93adfe9a533733af2104e68a8cd95297b48f10d35",
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "01e6b7fe658143838bf3c9ee680322a8e64879873293718e272319bfaa2d8aa1",
+   "evidence_hash": "1cad84c7a9534ff3b249912ae0d69aabcdae602df8a8e5548d2c2c182fa2e541",
    "label_schema_version": 2,
    "auto_labelled": true,
    "label_source": "machine",
    "mentions": [
     {
      "name": "OpenAI",
+     "count": 13
+    },
+    {
+     "name": "Anthropic",
+     "count": 10
+    },
+    {
+     "name": "Apple",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "Anthropic",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "Cognition CEO denies report that SpaceX tried to acquire the startup",
+   "date": "Wed, 19 Aug 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/08/19/cognition-ceo-denies-report-that-spacex-tried-to-acquire-the-startup/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 8
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "8604387672c4ebdeee8474c987a2f0f38bae4a6f6f5ede5a64a4c08b48d1f30a",
+   "evidence_hash": "4ef14279caa3e8871ff104353cea70dbca18917511eba016585675debe390901",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "xAI",
+     "count": 7
+    },
+    {
+     "name": "Anthropic",
+     "count": 4
+    },
+    {
+     "name": "Google DeepMind",
+     "count": 2
+    },
+    {
+     "name": "Google",
+     "count": 2
+    },
+    {
+     "name": "Apple",
+     "count": 2
+    },
+    {
+     "name": "OpenAI",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "ai coding",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "AI was supposed to win people over by now — it hasn’t",
+   "date": "Wed, 19 Aug 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/08/19/ai-was-supposed-to-win-people-over-by-now-it-hasnt/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 3
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "d2fca374174e1f56d6169d9218f00fb167db80741006c0c44badc8b1c77af3a4",
+   "evidence_hash": "569c2ef51c7c3a4d62b5fdac4bd57392fe66eb5fe0a0fa10100a0104e402c6a6",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Anthropic",
+     "count": 5
+    },
+    {
+     "name": "Apple",
+     "count": 2
+    },
+    {
+     "name": "Google",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "Google",
+   "headline": "Google packs Search and Gemini with new AI study tools",
+   "date": "Wed, 19 Aug 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/08/19/google-launches-new-study-tools-for-students-across-search-and-gemini/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 3916 chars of article text",
+   "content_hash": "f7404745a3db636e6a1838f6f4940c3e97b79c8849fe83183f0ae474df0fa0c5",
+   "evidence_hash": "8e5ab79874bda51754794fac3d9f9bf50e63422795ed52f1e179580c2be9472a",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Google",
      "count": 8
     },
     {
@@ -149,29 +231,21 @@
      "count": 2
     },
     {
+     "name": "OpenAI",
+     "count": 1
+    },
+    {
      "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Google",
-     "count": 1
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    },
-    {
-     "name": "Meta",
      "count": 1
     }
    ],
-   "publisher_topic": "OpenAI",
+   "publisher_topic": "Google",
    "entity_basis": "headline"
   },
   {
-   "entity": "Perplexity",
-   "headline": "Perplexity’s free AI offer left it with millions more users in India",
-   "date": "Tue, 18 Aug 2026",
+   "entity": "OpenAI",
+   "headline": "Researchers say OpenAI revoked their access to limited cyber program",
+   "date": "Wed, 19 Aug 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "?",
@@ -179,7 +253,7 @@
    "sources": [
     {
      "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/08/18/perplexitys-free-ai-offer-left-it-with-millions-more-users-in-india/",
+     "url": "https://techcrunch.com/2026/08/19/researchers-complain-that-openai-revoked-their-access-to-limited-cyber-program/",
      "source_type": "trade-press",
      "source_tier": 3
     }
@@ -188,26 +262,18 @@
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
-    "total": 15
+    "total": 1
    },
-   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
-   "content_hash": "8483ff4667fd9d8051c272fb387786273122e7ac8e00912bce688bda676b5ff4",
-   "evidence_hash": "4f80e468b62461f3cf6c86db4bec88719e97e09b78e45fa1fe5bf8233622c244",
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "5c9ae1786ff76bfa380cd86693b7538417dc5136f2aa487aa750374f2eaa12ed",
+   "evidence_hash": "323c601c42f35468aafff6e9c6a060d6902763f2eccbebc2583e297f2d944f3e",
    "label_schema_version": 2,
    "auto_labelled": true,
    "label_source": "machine",
    "mentions": [
     {
-     "name": "Perplexity",
-     "count": 29
-    },
-    {
      "name": "OpenAI",
-     "count": 4
-    },
-    {
-     "name": "Google",
-     "count": 4
+     "count": 12
     },
     {
      "name": "Anthropic",
@@ -216,51 +282,312 @@
     {
      "name": "Apple",
      "count": 2
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
     }
    ],
-   "publisher_topic": "Airtel",
+   "publisher_topic": "cybersecurity",
    "entity_basis": "headline"
   },
   {
-   "entity": "Anthropic",
-   "headline": "Anthropic’s annualized revenue surges to $65B",
-   "date": "Mon, 17 Aug 2026",
+   "entity": "Google",
+   "headline": "Google Gemini is getting a dedicated student hub",
+   "date": "2026-08-19T14:52",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/982425/google-gemini-student-hub",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 2374 chars of article text",
+   "content_hash": "770e1bbda3df4ecf9ce4213dc753e7e11223a3a7df687318c7fb0cd8d7f5823e",
+   "evidence_hash": "b392ae8aaec5b22d14822001e39ab98788c29bc6da2f8acccde06a7893c2a9af",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Google",
+     "count": 15
+    },
+    {
+     "name": "Amazon",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Google",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "OpenAI",
+   "headline": "OpenAI hit the brakes. Now what?",
+   "date": "2026-08-19T13:10",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/982323/openai-hit-brakes-voluntary-pacing-ai",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 8250 chars of article text",
+   "content_hash": "813dd8bfb8a2c642543df2597e0a80bcab963ca1e147d31352645037c877a9f4",
+   "evidence_hash": "b2226d79f44b799920545666a8f638cc6426efcd75e0d4a94ab350b20eadcc88",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 23
+    },
+    {
+     "name": "Anthropic",
+     "count": 3
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    },
+    {
+     "name": "Amazon",
+     "count": 1
+    },
+    {
+     "name": "Hugging Face",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "OpenAI",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Meta",
+   "headline": "Meta AI is getting a Mac app",
+   "date": "2026-08-19T12:14",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/tech/982270/meta-ai-mac-app",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 2558 chars of article text",
+   "content_hash": "265472aaa61ff4dbf90047d81560a26e943596466bb6f05fc02bc728cea1d20c",
+   "evidence_hash": "400415aec0486581af36b3db3c4e501eee3b76f4066536830ceea4caab808ee4",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 18
+    },
+    {
+     "name": "Google",
+     "count": 5
+    },
+    {
+     "name": "OpenAI",
+     "count": 1
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    },
+    {
+     "name": "Amazon",
+     "count": 1
+    },
+    {
+     "name": "Apple",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Apple",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Nvidia",
+   "headline": "Nvidia’s new financial strategy does not compute",
+   "date": "2026-08-19T09:30",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "?",
    "reviewed": false,
    "sources": [
     {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/08/17/anthropics-annualized-revenue-surges-to-65b/",
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/981668/nvidias-goldman-blackrock-gpu-compute-asset",
      "source_type": "trade-press",
      "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+   "rating": "ok",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
-    "total": 6
+    "total": 24
    },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "13dc7d1835b1a923bdf6da4aedfdde8f5b52b6c7d198b373dd178c65f9e961de",
+   "evidence_hash": "9a88d032f72211eb0c05a7ab5d45c326f65ec168dadc7dce7aaf9a7fc67762eb",
    "label_schema_version": 2,
-   "content_hash": "de2342554569c1803f091e188eb99dd6faefab8a99ef9e8167fb17292c45e7ff",
-   "evidence_hash": "e1d4f01c013b3c4454510ac006c213ff39f46410a63eb28f42af873cd3d5a4b0",
+   "auto_labelled": true,
    "label_source": "machine",
-   "rating": "ok",
    "mentions": [
     {
-     "name": "Anthropic",
-     "count": 10
+     "name": "Nvidia",
+     "count": 73
     },
     {
      "name": "OpenAI",
      "count": 3
+    },
+    {
+     "name": "Amazon",
+     "count": 3
+    },
+    {
+     "name": "Google",
+     "count": 2
+    },
+    {
+     "name": "Microsoft",
+     "count": 2
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Anthropic",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Meta",
+   "headline": "Robin Williams’ Instagram account brought back to fight ‘AI abuse’",
+   "date": "2026-08-18T15:48",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/entertainment/981644/robin-williams-instagram-account-ai",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 3415 chars of article text",
+   "content_hash": "2b726ead295b5c8d1f61b3a531c3162733cf74a834d9528360fa4f20ca9aed86",
+   "evidence_hash": "8fd602e18c623c84830b8c4e74edd4d5b6c214fbdef2b8c3803410e0bf0b8c45",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 10
+    },
+    {
+     "name": "OpenAI",
+     "count": 1
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Amazon",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Film",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "OpenAI",
+   "headline": "OpenAI lays out new security changes after its AI hacked Hugging Face",
+   "date": "2026-08-18T15:28",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 2
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "1b068b66b2ee9028ec711535ec0310dc3906739cba493874f4bac3fc86ed8ddd",
+   "evidence_hash": "4c979b849c6a8a51def98cd4aac47d77a91f4adfc51d4905d125d510262321b1",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 9
+    },
+    {
+     "name": "Hugging Face",
+     "count": 3
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
     },
     {
      "name": "Google",
@@ -275,313 +602,86 @@
      "count": 1
     }
    ],
-   "publisher_topic": "Anthropic",
+   "publisher_topic": "OpenAI",
    "entity_basis": "headline"
   },
   {
    "entity": "Google",
-   "headline": "AI automation startup Relay shuts down, staff joins Google’s Chrome team",
-   "date": "Mon, 17 Aug 2026",
+   "headline": "Flight attendants freaked out that Google is buying tons of Spirit employee data",
+   "date": "Wed, 19 Aug 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "?",
    "reviewed": false,
    "sources": [
     {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/08/17/ai-automation-startup-relay-shuts-down-staff-joins-googles-chrome-team/",
+     "name": "arstechnica.com",
+     "url": "https://arstechnica.com/tech-policy/2026/08/flight-attendants-freaked-out-that-google-to-buy-tons-of-spirit-employee-data/",
      "source_type": "trade-press",
      "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+   "rating": "ok",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
-    "total": 1
+    "total": 5
    },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "ac5fd99aa213e6fe282f105820ed8d43427f988f2b613bcb3120a5f016686a11",
+   "evidence_hash": "5d9a27c4dbd24a95f605ed8191076c75f6b590620b223b655fd952512769e63f",
    "label_schema_version": 2,
-   "content_hash": "f72da606c5cae49830c68b3b891cade3cee5f325e5910e09888abff238eee74f",
-   "evidence_hash": "c71efd4c1ce65d3b63f33ddf6373e65f6c2153c6af1dbdb18f734176c6dc05e6",
+   "auto_labelled": true,
    "label_source": "machine",
-   "rating": "ok",
    "mentions": [
     {
      "name": "Google",
-     "count": 13
-    },
+     "count": 46
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Meta",
+   "headline": "Meta ran ads for an app promising to nudify female politicians",
+   "date": "Wed, 19 Aug 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
     {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    },
+     "name": "arstechnica.com",
+     "url": "https://arstechnica.com/ai/2026/08/meta-ran-ads-for-an-app-promising-to-nudify-female-politicians/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 7
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "00d560ff39335ada4bdd65d90d5a463a83c56fca859a3019f0c67277c590ce93",
+   "evidence_hash": "075ba0d2d80f23bc50571502e99a6f6b4f68876a6f2a252cb2c93183892bc486",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
     {
      "name": "Meta",
-     "count": 1
+     "count": 21
     },
     {
      "name": "Apple",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Chrome",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "Whisker’s AI-powered litter robot thinks my cats swapped bodies",
-   "date": "2026-08-17T19:40",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/tech/978323/whisker-litter-robot-5-pro-review",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 43
-   },
-   "label_schema_version": 2,
-   "content_hash": "d2b554f75b0ea6c093a3032a1ce7845f5434b9351842e6f6a85485d0d672c8fc",
-   "evidence_hash": "44ea3a365ee6f027cc44f5fb920cad82defd77e83549324fabeb090567f9b0ac",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "Robot",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Anthropic",
-   "headline": "Anthropic explains how Claude’s invisible text watermarks will work",
-   "date": "2026-08-17T07:40",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/980869/anthropic-claude-watermarks-synthid-text-system",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 3309 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "02bb083f88d249fd1623a7b6c62ea2ee00a7fae8045b33ab52855a880b9e5728",
-   "evidence_hash": "0860e245ab2c99a8f9c50ff90308956ba0f0735672fc8d3b12e3bc589219d270",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Anthropic",
-     "count": 8
-    },
-    {
-     "name": "Google",
      "count": 4
-    },
-    {
-     "name": "OpenAI",
-     "count": 2
-    },
-    {
-     "name": "Google DeepMind",
-     "count": 2
     }
    ],
-   "publisher_topic": "Anthropic",
+   "publisher_topic": "",
    "entity_basis": "headline"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "OpenAI reportedly disbanded its preparedness team",
-   "date": "2026-08-17T05:21",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 2147 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "48f3e6d2864a22c359b25aca3e3749d4b17dbc63b36b269cf87b8c9df725ef84",
-   "evidence_hash": "f7c41ce89fd1adc47e5b72499f6c9b1291a40fc3b9c60412df4b3cb1e14c2960",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 4
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "OpenAI",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "ChatGPT’s Computer History tracks your clicks and keystrokes",
-   "date": "2026-08-17T05:48",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/980742/chatgpts-computer-history-tracks-your-clicks-and-keystrokes",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 2212 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "7bfeebfe72f595e74475a02a4008cc33923294e469985da0d72ca2eac4677881",
-   "evidence_hash": "d2a6ddbbcdc6ac13152821a8f3edc7940a4f3781715cc3b96580035e21479644",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 5
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "OpenAI",
-   "entity_basis": "product:ChatGPT"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "Rogue AI aren’t science fiction anymore",
-   "date": "2026-08-14T11:16",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/column/980337/rogue-ai-science-fiction-openai",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 1
-   },
-   "label_schema_version": 2,
-   "content_hash": "4a313a5529a17d8ba635a068934f48545e0bc4e2a597aac35cc597aed385e469",
-   "evidence_hash": "b1337e499e39aa5ad743e9d38dca65eed5936386b6a5a26badee15fb6332306f",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 9
-    },
-    {
-     "name": "Anthropic",
-     "count": 6
-    },
-    {
-     "name": "Hugging Face",
-     "count": 5
-    },
-    {
-     "name": "Google DeepMind",
-     "count": 2
-    },
-    {
-     "name": "Meta",
-     "count": 2
-    },
-    {
-     "name": "Google",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Column",
-   "entity_basis": "tag"
-  },
-  {
-   "entity": "",
-   "headline": "Have a laugh at AI’s expense by roleplaying as a chatbot",
-   "date": "2026-08-17T06:02",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/entertainment/980502/roleplay-as-an-ai-chatbot",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 2
-   },
-   "label_schema_version": 2,
-   "content_hash": "891a68717c069f48e2111315d7c3bbfde3ceebdb3be7a6e36c78b725a5db9040",
-   "evidence_hash": "cd159b67805aa5befd43bac599c5f34fcca3d460a206f79d39d76f5eface6693",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "Internet Culture",
-   "entity_basis": "unresolved"
   },
   {
    "entity": "Microsoft",
@@ -599,18 +699,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 5
    },
-   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+   "label_schema_version": 2,
    "content_hash": "5033577bd33a3ff17f38c649b3867628b584d72839b37e748d7f2ca3e64d5500",
    "evidence_hash": "11fb0777408f80b9438d49e01dbe90c7ec91dc1ff4da2986b1936bbc7113cbd9",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Microsoft",
@@ -736,84 +836,6 @@
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "unresolved"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "OpenAI and Anthropic in price war as Chinese AI rivals gain ground",
-   "date": "Fri, 14 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "arstechnica.com",
-     "url": "https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 7
-   },
-   "label_schema_version": 2,
-   "content_hash": "01376ed4021ab7b267e84ed6f15727876c677e5b8214205cc2bc1b29a3791283",
-   "evidence_hash": "663c4a830bf7fc95ed0ff39b6e758da3519a022a77e28fa3f37030fbad7729e9",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Anthropic",
-     "count": 9
-    },
-    {
-     "name": "OpenAI",
-     "count": 8
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Meta",
-   "headline": "The new Instagram logo is the perfect embodiment of AI slop",
-   "date": "Thu, 13 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "arstechnica.com",
-     "url": "https://arstechnica.com/ai/2026/08/the-new-instagram-logo-is-the-perfect-embodiment-of-ai-slop/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 1
-   },
-   "label_schema_version": 2,
-   "content_hash": "5698a14eb3a36e8454ade01ac28f60732384796f4afcc77fc1de62321fbe9876",
-   "evidence_hash": "2174ef49b8314bfbe417a166dbef8a402b77b721e34c66814bdc2e7244cc480b",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 5
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "headline"
   },
   {
    "entity": "Google DeepMind",
@@ -1030,6 +1052,136 @@
   },
   {
    "entity": "",
+   "headline": "Mathematics in the age of AI",
+   "date": "Wed, 19 Aug 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "arxiv.org",
+     "url": "https://arxiv.org/abs/2608.16753",
+     "source_type": "independent",
+     "source_tier": 2
+    }
+   ],
+   "rating": "trusted",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 6
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "0a9ee1619ee73718311e82f92222c22b88f7d267c9811b8e66666e50774b855d",
+   "evidence_hash": "56e9e1d9084dde11f9e7b104f85edbd6a388fd48d19a344598ac8d5e7915b43f",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Hugging Face",
+     "count": 4
+    },
+    {
+     "name": "Google",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "AI usage patterns in software teams",
+   "date": "Tue, 18 Aug 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "linear.app",
+     "url": "https://linear.app/data",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 197
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "de4235c22953110b76348547a9bff0c218ac6ce4c8ce160bb001701b3b8f3e5e",
+   "evidence_hash": "cd1da552bd5fc36ab609b1e062e7913777aab3fb0a2de137782d33def6910759",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "OpenAI",
+   "headline": "What Happens If OpenAI Dies?",
+   "date": "2026-08-18",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "wheresyoured.at",
+     "url": "https://www.wheresyoured.at/what-happens-if-openai-dies/",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 98
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "f94c7dc24a96280ab285c55db5df6d56f04ae93045b99ac089960e2d6f97cdd4",
+   "evidence_hash": "c9d7733384222ffdbac8817fc4aed59ef9611a5707cee40a79f555b039c362fd",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 69
+    },
+    {
+     "name": "Anthropic",
+     "count": 22
+    },
+    {
+     "name": "Google",
+     "count": 11
+    },
+    {
+     "name": "Microsoft",
+     "count": 7
+    },
+    {
+     "name": "Nvidia",
+     "count": 7
+    },
+    {
+     "name": "Amazon",
+     "count": 6
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
    "headline": "My friends all hate AI; I just joined an AI startup",
    "date": "2026-08-18",
    "topic": "",
@@ -1044,18 +1196,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 2
    },
-   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+   "label_schema_version": 2,
    "content_hash": "f0a4c3ea6c44762e6be785d0d5f5db25780abd31bf6453afec513253430af398",
    "evidence_hash": "1e6a0250204cb7a6cf0da11c3a51a9fad54e9da6f8acc1504bb174f59de4564c",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Anthropic",
@@ -1139,128 +1291,6 @@
    "rating": "ok",
    "mentions": [],
    "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Amazon",
-   "headline": "Amazon, which started off selling books, is destroying rare texts to train AI",
-   "date": "2026-08-17",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/08/17/amazon-once-an-online-bookseller-is-destroying-rare-books-to-train-ai-models/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 2
-   },
-   "label_schema_version": 2,
-   "content_hash": "96c743a3a612a7c06eaeeed514984071275d3073f60d71c3d09adc4668dd8bfc",
-   "evidence_hash": "cc0a7a55951bf93282b6fec5be3ced8fc8edddd2cf79336f9fe2e2ac2235c6a6",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Amazon",
-     "count": 7
-    },
-    {
-     "name": "Anthropic",
-     "count": 2
-    },
-    {
-     "name": "Google",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "AI training",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "Launch HN: Speko (YC S26) – OpenRouter for Voice AI",
-   "date": "Mon, 17 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "speko.ai",
-     "url": "https://speko.ai/",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 18
-   },
-   "label_schema_version": 2,
-   "content_hash": "628ffb1b8ef17a0384215af391cf22f39253368fb1deacbfde2feb341ef7099f",
-   "evidence_hash": "9c23ddcbb89a0c6d226485ce029f560749b1268f05fa3837cebd8f0008814de3",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 10
-    },
-    {
-     "name": "Google",
-     "count": 1
-    },
-    {
-     "name": "xAI",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Judge relying wholly on AI in order is covered by judicial immunity, court rules",
-   "date": "2026-08-17",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "reason.com",
-     "url": "https://reason.com/volokh/2026/08/17/judges-allegedly-relying-wholly-on-ai-in-order-is-covered-by-judicial-immunity-court-rules/",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "all 2 figure-sentence(s) state a base",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 2,
-    "total": 2
-   },
-   "label_schema_version": 2,
-   "content_hash": "60cae0e89ef83d959ad339d97a15fc72735ca02f8e237f6e137748a2f6dfe0ab",
-   "evidence_hash": "8d00bd11f5ee0169ee5703a04c9a50d95d20e010295305363f6e3688a956ec71",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "Judicial immunity",
    "entity_basis": "unresolved"
   },
   {
@@ -1493,6 +1523,119 @@
   },
   {
    "entity": "",
+   "headline": "The A.I.s Are Already Out of Control",
+   "date": "Tue, 18 Aug 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "cset.georgetown.edu",
+     "url": "https://cset.georgetown.edu/article/the-a-i-s-are-already-out-of-control/",
+     "source_type": "independent",
+     "source_tier": 2
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 1411 chars of article text",
+   "content_hash": "fcdb025e1bf03a6e9229cdc615ffa44338152ab417af59cc90f5bcac7aa5808a",
+   "evidence_hash": "7a986248e32a6e29b524d7057726352b762fb88c2d767a8a718ee1f5dd92f4f3",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Hugging Face",
+     "count": 2
+    },
+    {
+     "name": "OpenAI",
+     "count": 1
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Cybersecurity",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "Trump crypto firm backs venture offering AI from restricted Chinese companies",
+   "date": "Mon, 17 Aug 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "cset.georgetown.edu",
+     "url": "https://cset.georgetown.edu/article/trump-crypto-firm-backs-venture-offering-ai-from-restricted-chinese-companies/",
+     "source_type": "independent",
+     "source_tier": 2
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 1396 chars of article text",
+   "content_hash": "fb770dcf30122b2c5115d2b38beada1fb0dbccba49bb82a3584744cd86f10acc",
+   "evidence_hash": "2c06ef178424bea50188a135099667de54eb2634e12d64c646dea87ac5afd805",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "China",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "AI & Tech Brief: AI viruses",
+   "date": "Tue, 11 Aug 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "cset.georgetown.edu",
+     "url": "https://cset.georgetown.edu/article/ai-tech-brief-ai-viruses/",
+     "source_type": "independent",
+     "source_tier": 2
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 1236 chars of article text",
+   "content_hash": "6174bbed53b27c293d9fa822a63d39d40e5aafa195a3a9cb517ccf8166bead5c",
+   "evidence_hash": "c487bf228efbc253f5414eb491f627dadbbdc5c5f6d71ec0851b88a2dbc4be35",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "Biotechnology",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
    "headline": "They said they would build AI safely. Then it went rogue.",
    "date": "Mon, 10 Aug 2026",
    "topic": "",
@@ -1599,112 +1742,6 @@
    "label_schema_version": 2,
    "content_hash": "e8aa564ad04cc0fccbf3526bb76cb783053bdbef4e99144fb20c646e3630d0bf",
    "evidence_hash": "3c7cd75eac7647fa21de280d14c077d70613ea9fa82c1c2d5c443564752d7c6b",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "China",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Expanded Collaboration to Boost Critical AI Governance Data and Tracking Tool",
-   "date": "Thu, 06 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "cset.georgetown.edu",
-     "url": "https://cset.georgetown.edu/article/expanded-collaboration-to-boost-critical-ai-governance-data-and-tracking-tool/",
-     "source_type": "independent",
-     "source_tier": 2
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "all 2 figure-sentence(s) state a base",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 2,
-    "total": 2
-   },
-   "label_schema_version": 2,
-   "content_hash": "29549aa22946dad03f2ef9c58b19c3c91aa5d8862a091025687931e9b3daec93",
-   "evidence_hash": "3db81d01be4dcc4316b44e78ae0ff538c2ea9a6501d369d68d3c5cc7d9903d20",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "AI models engage in ‘harmful activity directed at real people’, sparking fears safeguards not keeping up",
-   "date": "Wed, 05 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "cset.georgetown.edu",
-     "url": "https://cset.georgetown.edu/article/ai-models-engage-in-harmful-activity-directed-at-real-people-sparking-fears-safeguards-not-keeping-up/",
-     "source_type": "independent",
-     "source_tier": 2
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen3.6:27b",
-   "label_evidence": "model returned an invalid denominator label",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 3
-   },
-   "label_schema_version": 2,
-   "content_hash": "0a0dc73c81f2fcc8679deb9543b6f4d65790d1981b86f0de3324ae46adf6ef28",
-   "evidence_hash": "44c82ff7f076eec043e556014a0fba7683bc80dcd41022d39e113bfc3e7615aa",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Anthropic",
-     "count": 4
-    },
-    {
-     "name": "Hugging Face",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "AI Governance",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Trump meets AI giants, Senate Dems decry ‘unpredictable’ governance—and cheap Chinese AI looms as giant security risk",
-   "date": "Tue, 04 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "cset.georgetown.edu",
-     "url": "https://cset.georgetown.edu/article/trump-meets-ai-giants-senate-dems-decry-unpredictable-governance-and-cheap-chinese-ai-looms-as-giant-security-risk/",
-     "source_type": "independent",
-     "source_tier": 2
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 1699 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "d7f8381f9f73f9bab55ac474622cb9b2675536ce2fa34d6862a2d561d568194b",
-   "evidence_hash": "06bf5aaf896b0baff5ab27a92fd60e78f3dab10c8256c363a49d27c21289fdad",
    "label_source": "machine",
    "rating": "ok",
    "mentions": [],
@@ -2174,18 +2211,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 6
    },
-   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+   "label_schema_version": 2,
    "content_hash": "833bd0058bcc635e1d99492ca9c53d47cb9b2a6f8bb4c7fccdf56a9eca746184",
    "evidence_hash": "9e5845c92359ef968cc6b1a43cce38c1ab816328883a247b73b5e6f691d55064",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Meta",
@@ -2211,18 +2248,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "all 1 figure-sentence(s) state a base",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 1,
     "total": 1
    },
-   "label_evidence": "all 1 figure-sentence(s) state a base",
+   "label_schema_version": 2,
    "content_hash": "772a45528f2db55bee582d830c16b6b461186d5ac821964247774ec99d2135d7",
    "evidence_hash": "be7af65f3afb07c15aaf2e6ef8ecb0296ffd558e460080f17ae22e8b896feedb",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Meta",
@@ -2846,6 +2883,38 @@
   },
   {
    "entity": "OpenAI",
+   "headline": "Offering Zero Data Retention for frontier models",
+   "date": "2026-08-19",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "openai.com",
+     "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 2
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "bea78232a0d6ccce9e08cb8b52dc0bffb60d56eaa0ba0e1a2313d5e165207304",
+   "evidence_hash": "fab28e6caa9786123231fef84549d4245e1041c66608bb414ceb160e45a3b112",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "site"
+  },
+  {
+   "entity": "OpenAI",
    "headline": "Introducing ChatGPT for Teens: Built for learning, backed by protections",
    "date": "2026-08-18",
    "topic": "",
@@ -2860,18 +2929,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 5
    },
-   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+   "label_schema_version": 2,
    "content_hash": "193fc3590d4b4e985e3b27b519fd565cb2683657d9c1b1f804df389e5b8ae6a6",
    "evidence_hash": "5eb60fa4d8a5933e0eb7734cb5cd5101d9b12d21c9bb41c9e9b5d141b538f6f3",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Amazon",
@@ -2921,39 +2990,6 @@
    ],
    "publisher_topic": "",
    "entity_basis": "site"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "Accelerating scientific discovery with ChatGPT for Academic Researchers",
-   "date": "2026-07-29",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "partial",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "openai.com",
-     "url": "https://openai.com/index/chatgpt-for-academic-researchers/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "qwen3.6:27b",
-   "label_evidence": "model read all 16 figure-sentence(s); 3 of 16 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 16,
-    "total": 16
-   },
-   "label_schema_version": 2,
-   "content_hash": "956086eecd03f0871f1360829a7739214625c6d21cf03bfff6fae111236431f2",
-   "evidence_hash": "71d4cdb676df0e2d1496df98a85ef7c7bb9697017310b337786e4adf802a5859",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "product:ChatGPT"
   }
  ],
  "rated_against": "sources.md"

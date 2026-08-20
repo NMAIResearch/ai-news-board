@@ -1,100 +1,194 @@
 {
- "generated": "2026-08-19T14:05:44+00:00",
- "indices": {},
+ "generated": "2026-08-20T05:21:07+00:00",
+ "indices": {
+  "spx": {
+   "value": 7707.98,
+   "asof": "2026-08-19",
+   "change_pct": 0.21087501430101518,
+   "label": "S&P 500",
+   "dp": 2,
+   "prefix": "",
+   "source": "FRED SP500"
+  },
+  "nasdaq": {
+   "value": 26331.09,
+   "asof": "2026-08-19",
+   "change_pct": 0.15739998653465648,
+   "label": "Nasdaq",
+   "dp": 2,
+   "prefix": "",
+   "source": "FRED NASDAQCOM"
+  },
+  "ust10y": {
+   "value": 4.71,
+   "asof": "2026-08-18",
+   "change_pct": -0.21186440677966045,
+   "label": "US 10Y",
+   "dp": 2,
+   "prefix": "",
+   "source": "FRED DGS10"
+  },
+  "vix": {
+   "value": 15.84,
+   "asof": "2026-08-18",
+   "change_pct": 4.279131007241599,
+   "label": "VIX",
+   "dp": 2,
+   "prefix": "",
+   "source": "FRED VIXCLS"
+  },
+  "brent": {
+   "value": 95.29,
+   "asof": "2026-08-18",
+   "change_pct": 3.0942334739803012,
+   "label": "Brent",
+   "dp": 2,
+   "prefix": "$",
+   "source": "FRED DCOILBRENTEU"
+  },
+  "btc": {
+   "value": 69487.6,
+   "asof": "2026-08-19",
+   "change_pct": 7.523667164922787,
+   "label": "Bitcoin",
+   "dp": 0,
+   "prefix": "$",
+   "source": "FRED CBBTCUSD"
+  },
+  "nikkei": {
+   "value": 65326.42,
+   "asof": "2026-08-19",
+   "change_pct": -3.163781358428819,
+   "label": "Nikkei",
+   "dp": 2,
+   "prefix": "",
+   "source": "FRED NIKKEI225"
+  }
+ },
  "equities": {
+  "AAPL": {
+   "value": 316.83,
+   "change_pct": 2.1933,
+   "asof": "2026-08-19"
+  },
+  "AMD": {
+   "value": 466.42,
+   "change_pct": -3.7098,
+   "asof": "2026-08-19"
+  },
+  "AMZN": {
+   "value": 265.84,
+   "change_pct": 2.4629,
+   "asof": "2026-08-19"
+  },
+  "ARM": {
+   "value": 249.34,
+   "change_pct": -1.5711,
+   "asof": "2026-08-19"
+  },
+  "ASML": {
+   "value": 1751.73,
+   "change_pct": -2.8425,
+   "asof": "2026-08-19"
+  },
+  "AVGO": {
+   "value": 362.48,
+   "change_pct": -4.6105,
+   "asof": "2026-08-19"
+  },
   "BABA": {
-   "value": 128.19,
-   "change_pct": 0.0312,
+   "value": 128.9,
+   "change_pct": 0.5853,
    "asof": "2026-08-19"
   },
   "BIDU": {
-   "value": 91.1,
-   "change_pct": 0.2531,
+   "value": 92.87,
+   "change_pct": 2.2009,
    "asof": "2026-08-19"
   },
   "CRM": {
-   "value": 202.03,
-   "change_pct": 3.003,
+   "value": 206.09,
+   "change_pct": 5.0729,
    "asof": "2026-08-19"
   },
   "CRWV": {
-   "value": 90.15,
-   "change_pct": -3.2414,
+   "value": 90.87,
+   "change_pct": -2.4686,
    "asof": "2026-08-19"
   },
   "DELL": {
-   "value": 433.94,
-   "change_pct": -7.4064,
+   "value": 437.55,
+   "change_pct": -6.6361,
    "asof": "2026-08-19"
   },
   "GOOGL": {
-   "value": 342.41,
-   "change_pct": -0.52,
+   "value": 344.72,
+   "change_pct": 0.1511,
    "asof": "2026-08-19"
   },
   "IBM": {
-   "value": 234.98,
-   "change_pct": 0.9928,
+   "value": 237.16,
+   "change_pct": 1.9298,
    "asof": "2026-08-19"
   },
   "IFNNY": {
-   "value": 66.66,
-   "change_pct": -6.8214,
-   "asof": "2026-08-18"
+   "value": 63.85,
+   "change_pct": -4.2154,
+   "asof": "2026-08-19"
   },
   "INTC": {
-   "value": 92.07,
-   "change_pct": -4.7732,
+   "value": 92.8,
+   "change_pct": -4.0182,
    "asof": "2026-08-19"
   },
   "KC": {
-   "value": 11.81,
-   "change_pct": 8.9483,
+   "value": 12.37,
+   "change_pct": 14.1144,
    "asof": "2026-08-19"
   },
   "META": {
-   "value": 545.45,
-   "change_pct": 0.3274,
+   "value": 546.03,
+   "change_pct": 0.4341,
    "asof": "2026-08-19"
   },
   "MSFT": {
-   "value": 483.27,
-   "change_pct": 0.3405,
+   "value": 484.31,
+   "change_pct": 0.5564,
    "asof": "2026-08-19"
   },
   "MU": {
-   "value": 926.95,
-   "change_pct": -1.468,
+   "value": 937.105,
+   "change_pct": -0.3885,
    "asof": "2026-08-19"
   },
   "NBIS": {
-   "value": 217.25,
-   "change_pct": -12.5508,
+   "value": 223.9,
+   "change_pct": -9.874,
    "asof": "2026-08-19"
   },
   "NVDA": {
-   "value": 218.47,
-   "change_pct": -0.578,
+   "value": 217.56,
+   "change_pct": -0.9921,
    "asof": "2026-08-19"
   },
   "ORCL": {
-   "value": 139.19,
-   "change_pct": -2.5212,
+   "value": 143.81,
+   "change_pct": 0.7143,
    "asof": "2026-08-19"
   },
   "PLTR": {
-   "value": 170.61,
-   "change_pct": -0.5421,
+   "value": 175.19,
+   "change_pct": 2.1278,
    "asof": "2026-08-19"
   },
   "QCOM": {
-   "value": 161.63,
-   "change_pct": 0.8989,
+   "value": 161.91,
+   "change_pct": 1.0737,
    "asof": "2026-08-19"
   },
   "SAP": {
-   "value": 214.65,
-   "change_pct": 1.986,
+   "value": 215.6,
+   "change_pct": 2.4374,
    "asof": "2026-08-19"
   },
   "SBGSY": {
@@ -108,23 +202,23 @@
    "asof": "2026-08-18"
   },
   "SMCI": {
-   "value": 36.23,
-   "change_pct": -3.1542,
+   "value": 36.58,
+   "change_pct": -2.2187,
    "asof": "2026-08-19"
   },
   "SMH": {
-   "value": 561.11,
-   "change_pct": -1.5199,
+   "value": 560.92,
+   "change_pct": -1.5533,
    "asof": "2026-08-19"
   },
   "SPCX": {
-   "value": 138.36,
-   "change_pct": -3.4743,
+   "value": 139.65,
+   "change_pct": -2.5743,
    "asof": "2026-08-19"
   },
   "STM": {
-   "value": 51.57,
-   "change_pct": -1.3392,
+   "value": 50.41,
+   "change_pct": -3.5584,
    "asof": "2026-08-19"
   },
   "TCEHY": {
@@ -133,71 +227,21 @@
    "asof": "2026-08-18"
   },
   "TSLA": {
-   "value": 339.33,
-   "change_pct": 0.7303,
+   "value": 351.12,
+   "change_pct": 4.2301,
    "asof": "2026-08-19"
   },
   "TSM": {
-   "value": 410.32,
-   "change_pct": -0.7474,
+   "value": 412.09,
+   "change_pct": -0.3193,
    "asof": "2026-08-19"
   },
   "XIACY": {
    "value": 16.19,
    "change_pct": -1.5805,
    "asof": "2026-08-18"
-  },
-  "AAPL": {
-   "value": 310.46,
-   "change_pct": 1.5936,
-   "asof": "2026-08-18",
-   "stale": true
-  },
-  "AMD": {
-   "value": 479.94,
-   "change_pct": -5.1502,
-   "asof": "2026-08-18",
-   "stale": true
-  },
-  "AMZN": {
-   "value": 262.1,
-   "change_pct": 0.3023,
-   "asof": "2026-08-18",
-   "stale": true
-  },
-  "ARM": {
-   "value": 250.9,
-   "change_pct": -7.5636,
-   "asof": "2026-08-18",
-   "stale": true
-  },
-  "ASML": {
-   "value": 1796.61,
-   "change_pct": -4.594,
-   "asof": "2026-08-18",
-   "stale": true
-  },
-  "AVGO": {
-   "value": 381.1,
-   "change_pct": -2.8871,
-   "asof": "2026-08-18",
-   "stale": true
   }
  },
- "errors": {
-  "spx": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>",
-  "nasdaq": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>",
-  "ust10y": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>",
-  "vix": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>",
-  "brent": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>",
-  "btc": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>",
-  "nikkei": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>",
-  "AAPL": "finnhub: <urlopen error [Errno -3] Temporary failure in name resolution>; twelvedata: <urlopen error [Errno -3] Temporary failure in name resolution> (carried forward from the previous run)",
-  "AMD": "finnhub: <urlopen error [Errno -3] Temporary failure in name resolution>; twelvedata: <urlopen error [Errno -3] Temporary failure in name resolution> (carried forward from the previous run)",
-  "AMZN": "finnhub: <urlopen error [Errno -3] Temporary failure in name resolution>; twelvedata: <urlopen error [Errno -3] Temporary failure in name resolution> (carried forward from the previous run)",
-  "ARM": "finnhub: <urlopen error [Errno -3] Temporary failure in name resolution>; twelvedata: <urlopen error [Errno -3] Temporary failure in name resolution> (carried forward from the previous run)",
-  "ASML": "finnhub: <urlopen error [Errno -3] Temporary failure in name resolution>; twelvedata: <urlopen error [Errno -3] Temporary failure in name resolution> (carried forward from the previous run)",
-  "AVGO": "finnhub: <urlopen error [Errno -3] Temporary failure in name resolution>; twelvedata: <urlopen error [Errno -3] Temporary failure in name resolution> (carried forward from the previous run)"
- },
+ "errors": {},
  "disclosure": "Indices are one trading day behind (FRED, which redistributes the exchange and CBOE prints). Equity quotes are from Finnhub. Prices are shown as context for an announced-vs-delivered claim. No causal link to any item is asserted, and nothing here is investment advice."
 }

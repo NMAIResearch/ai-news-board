@@ -434,7 +434,7 @@ def item_card(it, registry, plain=False, mk=None, tmap=None, ev=None):
     if cnotes:
         lines = "".join(f'<div style="margin:2px 0">{esc(n)}</div>' for n in cnotes)
         conflict_html = (
-            f'<div style="margin-top:8px;padding:8px 12px;background:#fffaf0;'
+            f'<div style="margin-top:8px;padding:8px 12px;background:var(--warn-bg);'
             f'border-left:3px solid {TIER[5][0]};font-size:12px;color:{BODY}">'
             f'<strong style="color:{TIER[5][0]}">Disclosed conflict.</strong> Structural stake, '
             f'not an accusation. {lines}</div>')
@@ -823,14 +823,14 @@ def sovereign_radar_tab():
         cards.append(card)
 
     summary_banner = (
-        f'<div style="border:1px solid #cbd5e1;border-left:4px solid {NAVY};border-radius:8px;padding:14px 18px;margin-bottom:20px;background:{PAPER};box-shadow:{SHADOW}">'
+        f'<div style="border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:8px;padding:14px 18px;margin-bottom:20px;background:{PAPER};box-shadow:{SHADOW}">'
         f'<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px">'
         f'<div><h3 style="margin:0 0 4px;font-size:17px;color:{NAVY}">Sovereign Watch: Global AI Regulatory Radar</h3>'
         f'<div style="font-size:13px;color:{SLATE}">Sovereign gazette surveillance across US Federal Register, EU AI Office, UK Ofgem/CMA, and 29 jurisdiction monitor packs. Deep statutory evaluations powered by local <strong>Qwen 3.8 (27B)</strong>.</div></div>'
         f'<div style="display:flex;gap:8px;font-size:12px">'
-        f'<span style="padding:4px 8px;background:#f1f5f9;border-radius:4px;color:{NAVY}"><strong>{len(alerts)}</strong> Notices Tracked</span>'
-        f'<span style="padding:4px 8px;background:#f1f5f9;border-radius:4px;color:{NAVY}"><strong>95.0%</strong> Precision</span>'
-        f'<span style="padding:4px 8px;background:#ecfdf5;border-radius:4px;color:#065f46"><strong>06:00 AM</strong> Daily Pass</span>'
+        f'<span style="padding:4px 8px;background:var(--pill-bg);border-radius:4px;color:var(--pill-fg)"><strong>{len(alerts)}</strong> Notices Tracked</span>'
+        f'<span style="padding:4px 8px;background:var(--pill-bg);border-radius:4px;color:var(--pill-fg)"><strong>95.0%</strong> Precision</span>'
+        f'<span style="padding:4px 8px;background:var(--ok-bg);border-radius:4px;color:var(--ok-fg)"><strong>06:00 AM</strong> Daily Pass</span>'
         f'</div></div></div>'
     )
 
@@ -1348,6 +1348,13 @@ def main():
     --text-dim: #64748b;
     --accent: #2563eb;
     --shadow: 0 1px 2px rgba(26,54,93,.06), 0 1px 8px rgba(26,54,93,.04);
+    --pill-bg: #f1f5f9;
+    --pill-fg: #1a365d;
+    --warn-bg: #fffaf0;
+    --alert-bg: #fee2e2;
+    --alert-fg: #991b1b;
+    --ok-bg: #ecfdf5;
+    --ok-fg: #065f46;
   }}
   html[data-theme="dark"] {{
     --bg: #0b0f19;
@@ -1361,6 +1368,13 @@ def main():
     --text-dim: #64748b;
     --accent: #38bdf8;
     --shadow: 0 1px 3px rgba(0,0,0,0.5);
+    --pill-bg: #1e293b;
+    --pill-fg: #e2e8f0;
+    --warn-bg: rgba(245,158,11,0.12);
+    --alert-bg: rgba(220,38,38,0.18);
+    --alert-fg: #fca5a5;
+    --ok-bg: rgba(52,211,153,0.15);
+    --ok-fg: #6ee7b7;
   }}
   body{{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.5;transition:background .15s, color .15s}}
   .wrap{{max-width:1500px;margin:0 auto;padding:28px 20px 60px}}
@@ -1373,7 +1387,7 @@ def main():
   .nav-tab-btn.active{{background:var(--heading);color:var(--bg);border-color:var(--heading);box-shadow:0 2px 4px rgba(0,0,0,.15)}}
   .tab-badge{{display:inline-block;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:700;background:var(--border);color:var(--heading)}}
   .nav-tab-btn.active .tab-badge{{background:rgba(255,255,255,.25);color:#fff}}
-  .radar-badge{{background:#fee2e2;color:#991b1b}}
+  .radar-badge{{background:var(--alert-bg);color:var(--alert-fg)}}
   .nav-tab-btn.active .radar-badge{{background:#dc2626;color:#fff}}
   .tab-pane{{display:none}}
   .tab-pane.active{{display:block}}
