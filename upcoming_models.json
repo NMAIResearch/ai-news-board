@@ -1,56 +1,61 @@
 {
-  "updated_at": "2026-08-18",
-  "disclosure": "Tracks publicly announced frontier model milestones, restricted access previews and forward commitments against delivery. Unlike the active release feed which tracks models serving traffic, this panel monitors the gap between executive announcements and deliverable public access.",
+  "updated_at": "2026-08-20",
+  "disclosure": "Pre-release commitments and unserved milestones. announced_date is when the commitment was made. last_verified is when the status was last checked against a primary or named source, and the two are different objects: an old announcement carried forward unchecked is not a live target. Entries not verified within 90 days are marked STALE and should be rechecked or dropped rather than displayed as pending.",
   "upcoming": [
     {
-      "lab": "Google DeepMind",
-      "model": "Project Astra",
-      "announced_date": "2024-05-14",
-      "target_window": "Late 2026",
-      "status": "announced_unshipped",
-      "status_label": "In Development",
-      "url": "https://deepmind.google/technologies/gemini/project-astra/",
-      "notes": "Universal AI assistant for real-time multimodal audio, vision and screen reasoning."
+      "lab": "OpenAI",
+      "model": "Astra",
+      "announced_date": "2026-08-01",
+      "last_verified": "2026-08-20",
+      "target_window": "No announced date; Polymarket leans 31 Oct 2026 or later",
+      "status": "target_delayed",
+      "status_label": "Safety Paused",
+      "url": "https://openai.com/index/ten-advances-in-mathematics/",
+      "notes": "Named as OpenAI's next major model family on 1 Aug 2026 alongside ten claimed open-problem results with Lean 4 certificates (github.com/openai/ten-proofs), at roughly $2,000 in tokens at GPT-5.6 Sol rates. On 7 Aug 2026 OpenAI disclosed it had paused select internal Astra work to expand cybersecurity safeguards after preliminary evaluations could not rule out a Critical agentic capability threshold under its Preparedness Framework. Naming undecided: may ship as GPT-6, as a GPT-5 point release, or as Astra. Not to be confused with Google DeepMind's Project Astra, a separate and unrelated product. Verified via Noam Brown and Greg Brockman (OpenAI), Techmeme and Simon Willison; openai.com returns 403 to automated fetch, so the announcement page itself was not read directly."
     },
     {
       "lab": "Anthropic",
       "model": "Claude Mythos",
       "announced_date": "2026-06-15",
-      "target_window": "Restricted Preview",
+      "last_verified": "2026-08-20",
+      "target_window": "Restricted preview, no general availability date",
       "status": "access_restricted",
       "status_label": "Restricted Preview",
       "url": "https://www.anthropic.com",
-      "notes": "Next-generation frontier family under safety evaluations and restricted partner access."
+      "notes": "Frontier family under safety evaluation with restricted partner access. Corroborated in passing by third-party reporting that Anthropic announced cryptographic weakness discoveries using Claude with Mythos Preview at a reported $100,000 in token spend. Preview status confirmed; no primary Anthropic page read for this entry."
     },
     {
-      "lab": "OpenAI",
-      "model": "GPT Next / Orion",
-      "announced_date": "2024-09-04",
-      "target_window": "Late 2026",
+      "lab": "Meta",
+      "model": "Llama 4 Behemoth",
+      "announced_date": "2025-04-05",
+      "last_verified": "2026-08-20",
+      "target_window": "No announced date",
+      "status": "in_training",
+      "status_label": "In Training",
+      "url": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/",
+      "notes": "Corrects a prior entry that listed Llama 4 as unshipped. Llama 4 Scout and Maverick SHIPPED on 5 April 2025 and are on Llama.com and Hugging Face; only Behemoth (288B active parameters, 16 experts, nearly 2T total) remained in training as of Meta's October 2025 update and has not been released. Verified via ai.meta.com and TechCrunch."
+    },
+    {
+      "lab": "Google DeepMind",
+      "model": "Project Astra glasses",
+      "announced_date": "2024-05-14",
+      "last_verified": "2026-08-20",
+      "target_window": "No set launch date",
       "status": "announced_unshipped",
-      "status_label": "Announced",
-      "url": "https://openai.com",
-      "notes": "Successor flagship frontier model class following o-series reasoning milestones."
+      "status_label": "No Launch Date",
+      "url": "https://deepmind.google/models/project-astra/",
+      "notes": "Narrowed from a prior entry that tracked Project Astra as an unshipped model. The assistant capabilities (real-time video, screen sharing, memory) HAVE shipped, progressively folded into Gemini Live and available to all Gemini app users. What remains unshipped is the hardware: Astra glasses being built with Samsung and Warby Parker, with no set launch date. Verified via deepmind.google and TechCrunch."
     },
     {
       "lab": "Google",
       "model": "Gemini 3.5 Pro",
       "announced_date": "2026-02-15",
+      "last_verified": "2026-02-15",
       "target_window": "Target delayed (was Q2 2026)",
       "status": "target_delayed",
       "status_label": "Target Delayed",
       "url": "https://blog.google/technology/ai/",
-      "notes": "Keynote milestone; target release dates deferred while Flash variants iterate."
-    },
-    {
-      "lab": "Meta",
-      "model": "Llama 4",
-      "announced_date": "2024-07-23",
-      "target_window": "2026–2027",
-      "status": "in_training",
-      "status_label": "In Training",
-      "url": "https://ai.meta.com",
-      "notes": "Next-generation open-weights architecture confirmed training on 100k+ H100 cluster."
+      "notes": "Keynote milestone with release target deferred while Flash variants iterate. NOT rechecked in the 20 Aug 2026 pass; last_verified is deliberately left at the announcement date so the staleness marker fires rather than implying a check that did not happen."
     }
   ]
 }

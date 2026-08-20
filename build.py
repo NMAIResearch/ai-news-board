@@ -1038,8 +1038,19 @@ def main():
     if os.path.isfile(up_path):
         up_data = json.load(open(up_path, encoding="utf-8"))
         up_rows = []
+        import datetime as _dt
+        _today = _dt.date.today()
         for u in up_data.get("upcoming", []):
             st = u.get("status", "announced")
+            # Lens 7: date the data, not the upload. An announcement carried forward
+            # unchecked is not a live target, so make the decay visible.
+            _lv = u.get("last_verified") or u.get("announced_date") or ""
+            _stale_days = None
+            try:
+                _stale_days = (_today - _dt.date.fromisoformat(_lv)).days
+            except Exception:
+                pass
+            _stale = _stale_days is not None and _stale_days > 90
             if st == "target_delayed":
                 badge_bg = "#b91c1c"
             elif st == "access_restricted":
@@ -1055,10 +1066,16 @@ def main():
                 f'&middot; {esc(u.get("lab",""))}'
                 f'<span title="{esc(u.get("notes",""))}" style="display:inline-block;'
                 f'font-size:10px;padding:1px 6px;margin-left:6px;border-radius:4px;color:#fff;'
-                f'background:{badge_bg}">{esc(u.get("status_label", st))}</span></div>'
+                f'background:{badge_bg}">{esc(u.get("status_label", st))}</span>'
+                + (f'<span title="last verified {esc(_lv)}, {_stale_days} days ago" '
+                   f'style="display:inline-block;font-size:10px;padding:1px 6px;margin-left:4px;'
+                   f'border-radius:4px;color:#fff;background:#7c2d12">STALE {_stale_days}d</span>'
+                   if _stale else "")
+                + '</div>'
                 f'<a href="{esc(u.get("url",""))}" target="_blank" rel="noopener" style="color:{NAVY};font-weight:600;'
                 f'font-size:13px;text-decoration:none">{esc(u.get("model",""))}</a>'
-                f'<div style="font-size:11px;color:{SLATE};margin-top:2px">Target: {esc(u.get("target_window",""))}</div>'
+                f'<div style="font-size:11px;color:{SLATE};margin-top:2px">Target: {esc(u.get("target_window",""))}'
+                f'<span style="color:{SLATE};opacity:.75"> &middot; verified {esc(_lv)}</span></div>'
                 f'</div>')
         if up_rows:
             upcoming_html = (

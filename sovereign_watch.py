@@ -387,7 +387,12 @@ def sweep_sovereign_gazettes(store: Dict[str, Any], model: str = DEFAULT_MODEL) 
 
         for title, summary, link, p_base in items_to_evaluate:
             analysis = analyze_item_with_model(title, summary, t_name, link, model=model)
-            priority = min(p_base, analysis.get("priority_score", p_base))
+            # The evaluated score governs; priority_base is only a fallback when the
+            # model returned nothing. It was previously combined with min(), and since
+            # lower means higher priority, a feed with priority_base 1 (the US Federal
+            # Register) forced every item to P1 regardless of what the model read,
+            # including airworthiness directives and office relocations. Fixed 2026-08-20.
+            priority = analysis.get("priority_score") or p_base
 
             alert = {
                 "id": f"alert_{int(time.time())}_{hashlib.md5(title.encode()).hexdigest()[:6]}",
@@ -429,7 +434,10 @@ def write_alert_bulletin(alerts: List[Dict[str, Any]]) -> pathlib.Path:
     ]
 
     for a in alerts[:50]:
-        pri_badge = "🔴 P1" if a["priority"] == 1 else ("🟠 P2" if a["priority"] == 2 else ("🟡 P3" if a["priority"] == 3 else "⚪ P4"))
+        # P5 was missing from this chain, so every routine notice rendered as P4.
+        # Fixed 2026-08-20, same pass as the priority_base inflation fix.
+        _p = a.get("priority", 4)
+        pri_badge = {1: "🔴 P1", 2: "🟠 P2", 3: "🟡 P3", 4: "⚪ P4"}.get(_p, "⚪ P5")
         ref_text = f"[{a.get('statutory_reference') or 'Link'}]({a['url']})" if a.get('url') else (a.get('statutory_reference') or "Primary")
         clean_summary = a["summary"].replace("|", "/")
         lines.append(f"| {a['timestamp'][:16]} | {pri_badge} | **{a['jurisdiction']}** | {a['source']} | {clean_summary} | {ref_text} |")
