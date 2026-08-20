@@ -445,7 +445,7 @@ def item_card(it, registry, plain=False, mk=None, tmap=None, ev=None):
     tierlist = " ".join(str(x) for x in sorted(tiers))
     conflict_attr = ' data-conflict="1"' if cnotes else ""
     topics = it.get("topics") or ([it["topic"]] if it.get("topic") else [])
-    data = (f'class="card" data-search="{esc(blob)}" data-topics="{esc(" ".join(topics))}" '
+    data = (f'data-search="{esc(blob)}" data-topics="{esc(" ".join(topics))}" '
             f'data-tiers="{esc(tierlist)}"{conflict_attr}')
     claim_tier = evrec.get("claim_tier")
     relationship = (f'claim tier {claim_tier}: {evrec.get("tier_basis", "")}' if claim_tier
@@ -465,7 +465,7 @@ def item_card(it, registry, plain=False, mk=None, tmap=None, ev=None):
            if it.get("_anchor_ambiguous") else "")
         + chain_html + '</details>')
     return f"""
-    <article {data} class="card" style="border:1px solid {LINE};border-radius:10px;padding:16px 18px;
+    <article class="card" {data} style="border:1px solid {LINE};border-radius:10px;padding:16px 18px;
       margin:0 0 16px;background:{PAPER};box-shadow:{SHADOW};transition:box-shadow .15s ease">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;font-size:12px;color:{SLATE};margin-bottom:6px">
         <span>{heading_meta}</span>
@@ -533,7 +533,7 @@ def freshness(built, fetched, mk, reg):
                      f'<strong style="color:{BODY}">{esc(shown)}</strong>{age}</span>')
     if not parts:
         return ""
-    return (f'<div style="font-size:12px;margin:0 0 14px;padding:7px 12px;border:1px solid '
+    return (f'<div class="freshness-strip" style="font-size:12px;margin:0 0 14px;padding:7px 12px;border:1px solid '
             f'{LINE};border-radius:6px;background:{PAPER}">'
             f'<span style="color:{NAVY};font-weight:600;margin-right:10px">Freshness</span>'
             f'{"".join(parts)}</div>')
@@ -1394,49 +1394,55 @@ def main():
     --ok-fg: #6ee7b7;
   }}
   body{{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.5;transition:background .15s, color .15s}}
-  .wrap{{max-width:1500px;margin:0 auto;padding:28px 20px 60px}}
-  .header-bar{{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:12px;margin-bottom:6px}}
-  .theme-toggle-btn{{font-family:var(--mono);font-size:11px;padding:4px 10px;border-radius:4px;border:1px solid var(--border-bright);background:var(--bg-card);color:var(--text);cursor:pointer;display:inline-flex;align-items:center;gap:5px}}
+  .wrap{{max-width:1680px;margin:0 auto;padding:0 20px 60px}}
+  .header-bar{{position:sticky;top:0;z-index:50;display:grid;grid-template-columns:minmax(280px,1fr) auto;align-items:center;gap:20px;margin:0 -20px 14px;padding:11px 20px;border-bottom:1px solid var(--border);background:color-mix(in srgb,var(--bg) 94%,transparent);backdrop-filter:blur(14px)}}
+  .header-kicker{{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.09em;color:var(--accent);text-transform:uppercase}}
+  .header-title{{color:var(--heading);margin:2px 0 0;font-size:20px;line-height:1.15}}
+  .header-copy{{color:var(--text-muted);font-size:12px;max-width:780px;margin-top:4px}}
+  .header-actions{{display:flex;align-items:center;gap:8px}}
+  .freshness-strip{{display:flex;flex-wrap:wrap;gap:4px 0}}
+  .theme-toggle-btn{{font-family:var(--mono);font-size:10px;padding:6px 9px;border-radius:2px;border:1px solid var(--border-bright);background:var(--bg-card);color:var(--text);cursor:pointer;display:inline-flex;align-items:center;gap:5px}}
   .theme-toggle-btn:hover{{border-color:var(--accent);color:var(--accent)}}
-  .nav-tab-bar{{display:flex;gap:10px;margin:20px 0 24px;border-bottom:2px solid var(--border);padding-bottom:10px}}
-  .nav-tab-btn{{display:inline-flex;align-items:center;gap:8px;padding:9px 18px;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer;border:1px solid var(--border-bright);background:var(--bg-card);color:var(--heading);transition:all .15s ease}}
+  .nav-tab-bar{{display:flex;gap:2px;margin:14px 0 24px;padding:3px;width:max-content;border:1px solid var(--border);background:var(--bg-card)}}
+  .nav-tab-btn{{display:inline-flex;align-items:center;gap:7px;padding:7px 11px;border-radius:2px;font-family:var(--mono);font-size:10.5px;font-weight:650;letter-spacing:.03em;text-transform:uppercase;cursor:pointer;border:0;background:transparent;color:var(--text-muted);transition:all .15s ease}}
   .nav-tab-btn:hover{{background:var(--bg-hover);border-color:var(--border-bright)}}
-  .nav-tab-btn.active{{background:var(--heading);color:var(--bg);border-color:var(--heading);box-shadow:0 2px 4px rgba(0,0,0,.15)}}
-  .tab-badge{{display:inline-block;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:700;background:var(--border);color:var(--heading)}}
+  .nav-tab-btn.active{{background:var(--heading);color:var(--bg);box-shadow:none}}
+  .tab-badge{{display:inline-block;padding:1px 5px;border-radius:2px;font-size:9.5px;font-weight:700;background:var(--border);color:var(--heading)}}
   .nav-tab-btn.active .tab-badge{{background:rgba(255,255,255,.25);color:#fff}}
   .radar-badge{{background:var(--alert-bg);color:var(--alert-fg)}}
   .nav-tab-btn.active .radar-badge{{background:#dc2626;color:#fff}}
   .tab-pane{{display:none}}
   .tab-pane.active{{display:block}}
-  .layout{{display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap}}
-  .side{{flex:0 0 280px;position:sticky;top:16px;max-height:calc(100vh - 32px);overflow-y:auto}}
-  .main{{flex:1 1 560px;min-width:0}}
-  .rail{{flex:0 0 320px;position:sticky;top:16px;max-height:calc(100vh - 32px);overflow-y:auto}}
-  .feedgrid{{display:grid;grid-template-columns:repeat(2,1fr);gap:0 16px}}
-  .feedgrid .card{{margin:0 0 16px;height:calc(100% - 16px);box-sizing:border-box;background:var(--bg-card)!important;border:1px solid var(--border)!important;color:var(--text)!important;box-shadow:var(--shadow)!important}}
-  .feedgrid .card:hover{{box-shadow:0 4px 12px rgba(0,0,0,0.15)!important}}
+  .layout{{display:grid;grid-template-columns:260px minmax(0,1fr) 300px;gap:22px;align-items:start}}
+  .side,.rail{{position:sticky;top:72px;max-height:calc(100vh - 88px);overflow-y:auto}}
+  .main{{min-width:0}}
+  .feedgrid{{display:block;border-top:2px solid var(--heading)}}
+  .feedgrid .card{{margin:0!important;height:auto!important;box-sizing:border-box;background:transparent!important;border:0!important;border-bottom:1px solid var(--border)!important;border-radius:0!important;padding:18px 0!important;color:var(--text)!important;box-shadow:none!important}}
+  .feedgrid .card:hover{{background:linear-gradient(90deg,transparent,var(--bg-hover),transparent)!important;box-shadow:none!important}}
   .card-headline a{{color:var(--heading)!important}}
   .card-headline a:hover{{color:var(--accent)!important}}
-  .dayhead{{margin-top:26px;grid-column:1/-1;color:var(--heading)}}
+  .dayhead{{margin:26px 0 0;padding:0 0 8px;border-bottom:2px solid var(--heading);color:var(--heading);font-family:var(--mono);font-size:12px;text-transform:uppercase}}
   .secondary{{margin-top:28px;border-top:1px solid var(--border);padding-top:14px}}
-  .railcard{{border:1px solid var(--border)!important;border-radius:8px;padding:12px 14px;margin:0 0 14px;background:var(--bg-card)!important;box-shadow:var(--shadow)!important;color:var(--text)!important}}
-  .search{{width:100%;padding:8px 10px;border:1px solid var(--border);background:var(--bg-card);color:var(--text);border-radius:6px;font-size:14px;margin-bottom:12px;box-sizing:border-box}}
-  .filter-chip{{padding:4px 9px;border-radius:14px;font-size:11px;font-weight:600;border:1px solid var(--border-bright);background:var(--bg-card);color:var(--text);cursor:pointer;transition:all .15s ease}}
+  .railcard{{border:1px solid var(--border)!important;border-radius:2px!important;padding:12px 14px;margin:0 0 14px;background:var(--bg-card)!important;box-shadow:none!important;color:var(--text)!important}}
+  .rail details{{border-radius:2px!important;box-shadow:none!important}}
+  .search{{width:100%;padding:8px 10px;border:1px solid var(--border);background:var(--bg-card);color:var(--text);border-radius:2px;font-family:var(--mono);font-size:11px;margin-bottom:12px;box-sizing:border-box}}
+  .filter-chip{{padding:4px 8px;border-radius:2px;font-family:var(--mono);font-size:10px;font-weight:600;border:1px solid var(--border-bright);background:var(--bg-card);color:var(--text-muted);cursor:pointer;transition:all .15s ease}}
   .filter-chip:hover{{background:var(--bg-hover);border-color:var(--border-bright)}}
   .filter-chip.active{{background:var(--heading);color:var(--bg);border-color:var(--heading)}}
   .fgroup{{margin-bottom:16px;font-size:13px}}
   .fgroup h4{{margin:0 0 6px;color:var(--heading);font-size:11px;text-transform:uppercase;letter-spacing:.05em}}
   .fgroup label{{display:block;margin:4px 0;cursor:pointer;color:var(--text)}}
-  .tierbtn{{width:100%;padding:9px;border:1px solid var(--border-bright);background:var(--bg-card);color:var(--heading);border-radius:6px;cursor:pointer;font-size:13px}}
+  .tierbtn{{width:100%;padding:8px;border:1px solid var(--border-bright);background:var(--bg-card);color:var(--heading);border-radius:2px;cursor:pointer;font-family:var(--mono);font-size:10.5px}}
   .tierbtn:hover{{background:var(--bg-hover)}}
   .count{{font-size:12px;color:var(--text-muted);margin-top:12px}}
   body.mode-digest .evidence-drawer{{display:none}}
   body.mode-audit .evidence-drawer{{display:block!important}}
   body.plainmode .tierui{{display:none!important}}
   body.plainmode .tierchip{{background:var(--bg-card)!important;color:{BODY}!important;border:1px solid {LINE}!important}}
-  @media(max-width:1240px){{.rail{{flex:1 1 100%;position:static;max-height:none;overflow:visible;margin-top:20px}}}}
-  @media(max-width:1100px){{.feedgrid{{grid-template-columns:1fr}}.exec-strip{{grid-template-columns:1fr!important}}}}
-  @media(max-width:720px){{.layout{{flex-direction:column}}.side{{position:static;flex:1 1 auto;width:100%}}}}
+  .view-toggle,.vmode-btn{{border-radius:2px!important}}
+  @media(max-width:1240px){{.layout{{grid-template-columns:240px minmax(0,1fr)}}.rail{{position:static;grid-column:1/-1;max-height:none;overflow:visible;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}}}
+  @media(max-width:900px){{.layout{{grid-template-columns:1fr}}.side,.rail{{position:static;max-height:none;overflow:visible}}.side{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}.side .search,.side .view-toggle,.side .railcard{{grid-column:1/-1}}.exec-strip{{grid-template-columns:1fr!important}}}}
+  @media(max-width:620px){{.header-bar{{grid-template-columns:1fr}}.header-actions{{justify-content:flex-start}}.rail{{display:block}}.nav-tab-bar{{width:100%}}.nav-tab-btn{{flex:1;justify-content:center}}}}
 </style>"""
 
     script_block = """<script>
@@ -1685,7 +1691,7 @@ def main():
 })();
 </script>"""
 
-    doc = f"""<!doctype html><html lang="en" data-theme="light"><head><meta charset="utf-8">
+    doc = f"""<!doctype html><html lang="en-GB" data-theme="light"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>AI News Board & Sovereign Watch</title>
 <script>
@@ -1700,15 +1706,19 @@ def main():
 <div class="wrap">
   <div class="header-bar">
     <div>
-      <h1 style="color:var(--heading);margin:0 0 4px;font-size:26px">AI News Board & Sovereign Watch</h1>
-      <div style="color:var(--text-muted);font-size:14px;margin-bottom:8px;max-width:850px">
+      <div class="header-kicker">Live evidence monitor</div>
+      <h1 class="header-title">AI News Board &amp; Sovereign Watch</h1>
+      <div class="header-copy">
         AI news coverage separated into source class, claim-relative relationships, figure evidence, citation links, and reality anchors, paired with autonomous 24/7 sovereign gazette regulatory radar.
       </div>
     </div>
-    <button id="themeToggle" class="theme-toggle-btn" title="Toggle Light/Dark Theme">
-      <span id="themeIcon">◑</span>
-      <span id="themeLabel">THEME: LIGHT</span>
-    </button>
+    <div class="header-actions">
+      <a class="theme-toggle-btn" href="https://nmairesearch.github.io/">Portfolio</a>
+      <button id="themeToggle" class="theme-toggle-btn" title="Toggle Light/Dark Theme">
+        <span id="themeIcon">◑</span>
+        <span id="themeLabel">THEME: LIGHT</span>
+      </button>
+    </div>
   </div>
   <div style="font-size:12px;color:var(--text-dim);margin:0 0 14px;max-width:900px">
     AI disclosure: the research is the author's; this text was drafted with AI assistance and reviewed by the author. Machine and human evidence methods are identified per card.
@@ -1716,8 +1726,8 @@ def main():
   {freshness(built, fetched, mk, _reg if os.path.isfile(reg_path) else {})}
 
   <div class="nav-tab-bar">
-    <button class="nav-tab-btn active" data-target="tab-news">📰 News & Motive Tiers <span class="tab-badge">{len(items)}</span></button>
-    <button class="nav-tab-btn" data-target="tab-radar">🏛️ Sovereign Regulatory Radar <span class="tab-badge radar-badge">20</span></button>
+    <button class="nav-tab-btn active" data-target="tab-news">News evidence <span class="tab-badge">{len(items)}</span></button>
+    <button class="nav-tab-btn" data-target="tab-radar">Sovereign radar <span class="tab-badge radar-badge">20</span></button>
   </div>
 
   <div id="tab-news" class="tab-pane active" style="display:block">
@@ -1762,4 +1772,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
