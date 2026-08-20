@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Deterministic topic candidates and fail-closed reality-anchor selection."""
+"""Deterministic topic candidates and fail-closed research-context selection."""
 
 import json
 import os

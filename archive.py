@@ -26,7 +26,7 @@ RANKING SIGNALS, all computable, no judgement:
     stated figure or date in the headline   a claim with a number is checkable later
     claim_type == target                    carries its own deadline
     source_tier == 5                        a vendor or press office published it
-    has a reality anchor                    the portfolio already holds a base rate
+    has a research-context link             the portfolio already holds a base rate
 
 OUTCOME VOCABULARY (set by hand, in archive.json):
     delivered | partial | not_delivered | abandoned | unresolvable

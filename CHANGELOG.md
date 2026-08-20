@@ -225,7 +225,7 @@ claims, while the board's thesis is that incentive concentrates at tier 5, the p
 the thing. Resolution calendar 5 rows to 7: the ASML lithography controls expiring 10 November
 and the PJM 2030/31 capacity auction in December.
 
-**Reality anchors: 6 of 76 to 32 of 76, and two mistakes made getting there.**
+**Research-context links: 6 of 76 to 32 of 76, and two mistakes made getting there.**
 `publisher_tags` was never broken. `extract_spans.py` harvested it into `article_text.json`,
 which is gitignored, and never copied it to `article_spans.json`. Anything living only in a
 gitignored file is invisible to a clean clone. Backfilled from the local cache, no refetch.
@@ -334,6 +334,6 @@ unreviewed.
 
 ## 2026-07-12
 
-First deploy. Live feed, contestable `tier_map.json`, reality anchors generalised beyond code,
+First deploy. Live feed, contestable `tier_map.json`, research-context links generalised beyond code,
 `--plain` build flag, scholarship section. Tier scale reconciled to the canonical direction:
 1 = least incentive to shade the claim, 5 = the party selling the thing.

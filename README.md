@@ -1,7 +1,7 @@
 # AI News Board
 
 A live board that separates publisher class, resolved claim relationships, figure-base
-evidence, citation links and typed reality anchors. Figures are quoted verbatim from article
+evidence, citation links and typed research-context links. Figures are quoted verbatim from article
 text with their position recorded. Every machine label states its method, complete-span
 coverage, content hash and schema version.
 
@@ -105,7 +105,7 @@ committing.** To check whether the current file is plain:
     grep -c 'body class="plainmode"' index.html    # 1 = plain, 0 = source-tiered
 
 `--plain` removes source-tier colours, the source-class key and the tier registry. The other
-axes, including figure provenance, track record and reality anchors, are unaffected.
+axes, including figure provenance, track record and research-context links, are unaffected.
 
 ### Publishing, and the step that is not a script
 
@@ -211,7 +211,7 @@ is worth keeping if it is ever rebuilt on spans.
 - **Citation chain**, whether the article links to the primary document it describes. The
   label is "cites", never "restates": absence of a link is not evidence that reporting is
   second-hand.
-- **Reality anchors**, typed as portfolio syntheses or article-linked primaries. Topics may be
+- **Research-context links**, typed as portfolio syntheses or article-linked primaries. Topics may be
   plural and require headline or publisher-tag evidence. Article spans can strengthen a topic
   but cannot create one alone. An automatic portfolio anchor also requires headline evidence
   and appears only when one topic clears its threshold without a tie. ArXiv, DOI and official

@@ -4,7 +4,7 @@ AI News Board - build.py (stdlib only, no dependencies).
 NM AI Research.
 
 Reads items.json and renders a static index.html. Source class, a resolved claim
-relationship, figure-base evidence, citation links and typed reality anchors are separate
+relationship, figure-base evidence, citation links and typed research-context links are separate
 fields. An automatic anchor is withheld when the topic evidence ties.
 
 ⛔ claim_type is RETIRED (2026-07-31). Not rendered. Do not revive it: see line ~373.
@@ -397,7 +397,7 @@ def item_card(it, registry, plain=False, mk=None, tmap=None, ev=None):
         evidence = anchor_match.get("evidence", [{}])[0]
         for a in anchor_match.get("anchors", []):
             anchor_rows.append(
-                f'<div style="margin:4px 0"><strong>Possible reality anchor, '
+                f'<div style="margin:4px 0"><strong>Possible research context, '
                 f'{esc(a.get("kind", "source"))}.</strong> '
                 f'<a href="{esc(a["url"])}" target="_blank" rel="noopener noreferrer" '
                 f'style="color:{NAVY}">{esc(a["label"])}</a> '
@@ -407,7 +407,7 @@ def item_card(it, registry, plain=False, mk=None, tmap=None, ev=None):
     elif it.get("topic") in registry and it.get("reviewed", True):
         for a in registry[it["topic"]].get("anchors", []):
             anchor_rows.append(
-                f'<div style="margin:4px 0"><strong>Reality anchor, '
+                f'<div style="margin:4px 0"><strong>Research context, '
                 f'{esc(a.get("kind", "source"))}.</strong> '
                 f'<a href="{esc(a["url"])}" target="_blank" rel="noopener noreferrer" '
                 f'style="color:{NAVY}">{esc(a["label"])}</a> '
@@ -653,7 +653,7 @@ def ai_watch_panel(reg):
         if not a:
             return ""
         return (f'<div style="font-size:11px;margin-top:3px"><a href="https://doi.org/{esc(a["doi"])}" '
-                f'style="color:{NAVY}">Reality anchor: {esc(a["label"])} (DOI)</a></div>')
+                f'style="color:{NAVY}">Related research: {esc(a["label"])} (DOI)</a></div>')
     rows = "".join(
         f'<tr><td style="padding:6px 10px;border-bottom:1px solid {LINE};white-space:nowrap;'
         f'vertical-align:top;font-weight:600;color:{NAVY}">{esc(r["label"])}</td>'
@@ -1709,7 +1709,7 @@ def main():
       <div class="header-kicker">Live evidence monitor</div>
       <h1 class="header-title">AI News Board &amp; Sovereign Watch</h1>
       <div class="header-copy">
-        AI news coverage separated into source class, claim-relative relationships, figure evidence, citation links, and reality anchors, paired with autonomous 24/7 sovereign gazette regulatory radar.
+        AI news coverage separated into source class, claim-relative relationships, figure evidence, citation links, and research-context links, paired with autonomous 24/7 sovereign gazette regulatory radar.
       </div>
     </div>
     <div class="header-actions">
@@ -1746,7 +1746,7 @@ def main():
           <div style="margin-top:12px">{market_strip(mk)}{ai_watch_html}{govconflict_html}</div>
         </details>
         <div style="font-size:12px;color:{SLATE};margin-top:24px;border-top:1px solid {LINE};padding-top:14px">
-          Method: source class comes from the executable public registry. A numeric claim tier is withheld unless the publisher relationship to the subject resolves. Figure labels state their method and complete-span coverage. Reality anchors require one winning topic rule; tied candidates abstain. Feed selection is editorial and disclosed. This surfaces a structural weakness of a claim; it does not adjudicate truth.<br><br>
+          Method: source class comes from the executable public registry. A numeric claim tier is withheld unless the publisher relationship to the subject resolves. Figure labels state their method and complete-span coverage. Research-context links require one winning topic rule; tied candidates abstain. Feed selection is editorial and disclosed. This surfaces a structural weakness of a claim; it does not adjudicate truth.<br><br>
           Conflict of interest: the maker is an independent researcher. An Anthropic model helped build the original method and tiers. An OpenAI model later changed the matching, tier and provenance infrastructure. OpenAI is a subject on this board, so that work is a direct conflict and is disclosed rather than treated as an independent check. Anthropic and OpenAI remain subjects under the same published rules. Independent analysis, not investment advice.<br><br>
           Corrections welcome on any judgement here, and they are marked in place with their reason:
           <a href="mailto:NMAIResearch@proton.me" style="color:{NAVY}">NMAIResearch@proton.me</a>

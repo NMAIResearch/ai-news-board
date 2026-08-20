@@ -90,7 +90,7 @@ def print_report(reconciled: list, filter_status: str = None):
         counts[r["status"]] = counts.get(r["status"], 0) + 1
 
     print("=" * 80)
-    print("AI NEWS REALITY BOARD: PRIMARY SOURCE RECONCILIATION REPORT")
+    print("AI NEWS BOARD: PRIMARY SOURCE RECONCILIATION REPORT")
     print(f"Total News Items Evaluated: N = {total}")
     print("=" * 80)
     
