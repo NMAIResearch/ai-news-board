@@ -756,15 +756,15 @@
  "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/": {
   "denominator_stated": "?",
   "auto_labelled": true,
-  "label_evidence": "model review failed; denominator remains unassessed",
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
   "evidence_method": "unassessed",
   "evidence_coverage": {
    "seen": 0,
    "total": 6
   },
   "label_schema_version": 2,
-  "content_hash": "f97124eac2abeafcd86578686ed756416197ef077520f82924c989273582ffde",
-  "evidence_hash": "bf2275b7a8600d5a6d3806e63254c69136325b8fdac63d9c2d98397830cbfd35",
+  "content_hash": "fd2da10105fa1b690340dbf3df4a4479aa041083bb47c5fd675f2aea4c7d8e08",
+  "evidence_hash": "c83e01365459df37406c73866cfe5fd1f63a5bbb1496e20e40f0f33d328342cc",
   "reviewed": false,
   "label_source": "machine"
  },
@@ -1685,13 +1685,12 @@
   "label_source": "machine"
  },
  "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/": {
-  "denominator_stated": "partial",
+  "denominator_stated": "?",
   "auto_labelled": true,
-  "auto_labelled_by": "gemma4:12b",
-  "label_evidence": "model read all 25 figure-sentence(s); 2 of 25 figure-sentence(s) matched a base cue",
-  "evidence_method": "local-model",
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
   "evidence_coverage": {
-   "seen": 25,
+   "seen": 0,
    "total": 25
   },
   "label_schema_version": 2,
@@ -1701,13 +1700,12 @@
   "label_source": "machine"
  },
  "http://bair.berkeley.edu/blog/2026/07/26/abbel/": {
-  "denominator_stated": "N",
+  "denominator_stated": "?",
   "auto_labelled": true,
-  "auto_labelled_by": "qwen3.6:27b",
-  "label_evidence": "model read all 24 figure-sentence(s); 4 of 24 figure-sentence(s) matched a base cue",
-  "evidence_method": "local-model",
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
   "evidence_coverage": {
-   "seen": 24,
+   "seen": 0,
    "total": 24
   },
   "label_schema_version": 2,
@@ -1717,13 +1715,12 @@
   "label_source": "machine"
  },
  "http://bair.berkeley.edu/blog/2026/07/07/intelligence-is-free-now-what/": {
-  "denominator_stated": "partial",
+  "denominator_stated": "?",
   "auto_labelled": true,
-  "auto_labelled_by": "qwen3.6:27b",
-  "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
-  "evidence_method": "local-model",
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
   "evidence_coverage": {
-   "seen": 4,
+   "seen": 0,
    "total": 4
   },
   "label_schema_version": 2,
@@ -1735,8 +1732,7 @@
  "http://bair.berkeley.edu/blog/2026/07/01/grads-2026/": {
   "denominator_stated": "?",
   "auto_labelled": true,
-  "auto_labelled_by": "qwen3.6:27b",
-  "label_evidence": "model returned an invalid denominator label",
+  "label_evidence": "model review failed; denominator remains unassessed",
   "evidence_method": "unassessed",
   "evidence_coverage": {
    "seen": 0,
@@ -1749,13 +1745,12 @@
   "label_source": "machine"
  },
  "http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning/": {
-  "denominator_stated": "partial",
+  "denominator_stated": "?",
   "auto_labelled": true,
-  "auto_labelled_by": "gemma4:12b",
-  "label_evidence": "model read all 7 figure-sentence(s); 1 of 7 figure-sentence(s) matched a base cue",
-  "evidence_method": "local-model",
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
   "evidence_coverage": {
-   "seen": 7,
+   "seen": 0,
    "total": 7
   },
   "label_schema_version": 2,
@@ -1894,45 +1889,45 @@
  "https://www.finops.org/insights/finops-x-2026-day-1-keynote/": {
   "denominator_stated": "?",
   "auto_labelled": true,
-  "label_evidence": "model review failed; denominator remains unassessed",
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
   "evidence_method": "unassessed",
   "evidence_coverage": {
    "seen": 0,
    "total": 6
   },
   "label_schema_version": 2,
-  "content_hash": "1701c3bb56c74a24a93529def5c336dcc15c87d954a1bc619c52d9b66b38eec4",
-  "evidence_hash": "90617ab3f87769cc1dcac8e6ed28854398530bc6aa70b8e3cc25d49a6ab1357c",
+  "content_hash": "f964f2d7ce9306bdf4e3592b6aa014c81b2623da7e961434172c34de488864fd",
+  "evidence_hash": "db1f17b3bc057a7bce108708eee2de0a4628e4971906af73baeda30dfc1716b5",
   "reviewed": false,
   "label_source": "machine"
  },
  "https://epochai.substack.com/p/the-epoch-brief-july-31-2026": {
   "denominator_stated": "?",
   "auto_labelled": true,
-  "label_evidence": "model review failed; denominator remains unassessed",
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
   "evidence_method": "unassessed",
   "evidence_coverage": {
    "seen": 0,
    "total": 9
   },
   "label_schema_version": 2,
-  "content_hash": "b84efe63e9cab039c87f8a1ce52e58a70e045190712d507f9849a4e3707ffa57",
-  "evidence_hash": "a8713cfdc47578335f18fe485c67f3450c492506432fcf33cc4107bb52e8b83d",
+  "content_hash": "d99e19c91f3abacafe04d66b90b2f00004636f88be8f11e84fe264288ad1b74d",
+  "evidence_hash": "afca23683c2210247f24bc1f994e4b1be67872aed7940a1ab17fa4ed5bca45b1",
   "reviewed": false,
   "label_source": "machine"
  },
  "https://epochai.substack.com/p/openai-accidentally-hacked-hugging": {
   "denominator_stated": "?",
   "auto_labelled": true,
-  "label_evidence": "model review failed; denominator remains unassessed",
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
   "evidence_method": "unassessed",
   "evidence_coverage": {
    "seen": 0,
    "total": 2
   },
   "label_schema_version": 2,
-  "content_hash": "6742d9f37c662c1e0cc03ab3713ac7ac1ea24cf8a505a7bd409f0b8a25932d58",
-  "evidence_hash": "9589aa41a05fd619b4a41d15a02303a16865e2928befb64dd2400f0ea9da8dd0",
+  "content_hash": "02ae2fb26e2fb06525a7cad44d4611b90b079083bf41869dde93ed8f7009bfd4",
+  "evidence_hash": "f9b5e83201f2e9deaeba68ce493f11a1431531b809902436f7c5bbb37b1e7441",
   "reviewed": false,
   "label_source": "machine"
  },
@@ -1955,15 +1950,15 @@
  "https://epochai.substack.com/p/the-missing-half-of-ai-futurism-debates": {
   "denominator_stated": "?",
   "auto_labelled": true,
-  "label_evidence": "model review failed; denominator remains unassessed",
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
   "evidence_method": "unassessed",
   "evidence_coverage": {
    "seen": 0,
    "total": 14
   },
   "label_schema_version": 2,
-  "content_hash": "da1ba016c34eeaffce7cad729d626dec9056755bdd1b41076d8640970791f8c9",
-  "evidence_hash": "ab9329b2c76ba518712e8eb3e56ee09fa25c93fd188b4c65816f806f76f423f6",
+  "content_hash": "10878d720a0d8a3a0cebbe164923a81c42c9a77fb12919fe1102d39c2ccba9ef",
+  "evidence_hash": "a10533d444ea95d878c061e11523ac85156941b3d7ece521920a263f3a10f743",
   "reviewed": false,
   "label_source": "machine"
  },
@@ -2438,30 +2433,30 @@
  "https://news.mit.edu/2026/ai-models-simulate-wider-range-of-real-world-scenarios-0810": {
   "denominator_stated": "?",
   "auto_labelled": true,
-  "label_evidence": "model review failed; denominator remains unassessed",
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
   "evidence_method": "unassessed",
   "evidence_coverage": {
    "seen": 0,
    "total": 4
   },
   "label_schema_version": 2,
-  "content_hash": "758e55e82fc0e318cfc5ef3f4667498444b31abcef09b4b632fd6410007b1610",
-  "evidence_hash": "48578a8ae1c7d4af2fe756aaa8bb73d0e3e314b7e8446e1fbd795902b1018574",
+  "content_hash": "3d94372636d9c2abe1e11fcbaee480c85a27efdfdfed8ee3b4223ed649f8b8fd",
+  "evidence_hash": "bd2611219b1e3d9f778204b5da61f20910723982edbd4e9db3d28a44b857d4ff",
   "reviewed": false,
   "label_source": "machine"
  },
  "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/": {
   "denominator_stated": "?",
   "auto_labelled": true,
-  "label_evidence": "model review failed; denominator remains unassessed",
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
   "evidence_method": "unassessed",
   "evidence_coverage": {
    "seen": 0,
    "total": 42
   },
   "label_schema_version": 2,
-  "content_hash": "f7386cd9f5ae919ca0d8076342e676b90e9d5705e4a6a37a84a4fa8e5e432084",
-  "evidence_hash": "68e99d6ffd874d9143a946477b042a75e43f3a36ec98550a483753d8d6edcc94",
+  "content_hash": "11f85fb09f808e8746c209fabbda35c8f87f720a8e9e87d32f4e6e039b6d3c18",
+  "evidence_hash": "061257cd72b7102ae03e7d5b1c3b106955d1672c6abd5c5ecce6bca9bce6e072",
   "reviewed": false,
   "label_source": "machine"
  },
@@ -2753,15 +2748,15 @@
  "https://www.federalregister.gov/documents/2026/08/12/2026-16371/request-for-information-rfi-on-modernizing-the-national-vulnerability-database-in-the-age-of": {
   "denominator_stated": "?",
   "auto_labelled": true,
-  "label_evidence": "model review failed; denominator remains unassessed",
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
   "evidence_method": "unassessed",
   "evidence_coverage": {
    "seen": 0,
-   "total": 3
+   "total": 19
   },
   "label_schema_version": 2,
-  "content_hash": "55275304030920902c746cec9bc83d8e68d64f06d3b77e552bb805a4502e5bd3",
-  "evidence_hash": "bc91fa226300454740ec38b7d40e34578c57c14dd5076c33e7fe15cb356fc9c3",
+  "content_hash": "71ad59ed0f196d38921b0acb9895d63c6f70b12bd86b95c745615f6ba2ef483c",
+  "evidence_hash": "660a1cc5f0786e779aa79b0b77988a8db58dc3ad82f0ec1a9953155daf4c553b",
   "reviewed": false,
   "label_source": "machine"
  },
@@ -3327,15 +3322,15 @@
  "https://deepmind.google/blog/introducing-gemini-3-7-flash/": {
   "denominator_stated": "?",
   "auto_labelled": true,
-  "label_evidence": "model review failed; denominator remains unassessed",
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
   "evidence_method": "unassessed",
   "evidence_coverage": {
    "seen": 0,
    "total": 14
   },
   "label_schema_version": 2,
-  "content_hash": "5dad3e551185d192f51e26d842670b9ea6f875d6d692d4da2935155bf46b5b9f",
-  "evidence_hash": "d63e5fba90a72ac1dd30bdda9c99d6da1cea90e3e9dec4b75808cb86e765d129",
+  "content_hash": "d4ca391cdba433c39a8212ba1afafe55ba6a2733f0f6c6f931c493d3b823c065",
+  "evidence_hash": "f45dd25d5b6f280a7ed9dfdd75c0f72d1bcbeedc4c7c3235ec7c31121cb078e4",
   "reviewed": false,
   "label_source": "machine"
  },
@@ -3417,15 +3412,15 @@
  "https://epochai.substack.com/p/will-financing-bottleneck-ai-compute": {
   "denominator_stated": "?",
   "auto_labelled": true,
-  "label_evidence": "model review failed; denominator remains unassessed",
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
   "evidence_method": "unassessed",
   "evidence_coverage": {
    "seen": 0,
    "total": 20
   },
   "label_schema_version": 2,
-  "content_hash": "f483a819244e48bc95cf6c7c70e2910550c57697bd8f8b7bb29124421c9ab668",
-  "evidence_hash": "f0223e5b2e991e0d27cfbdb6bdbc2d083230ab33b38a73373f6ef765811f1425",
+  "content_hash": "4a9874bd09f6f4e4749c05b705c2b1783b2cbfe88def51434fb7a4f49a4df490",
+  "evidence_hash": "cf881ee0c2770b187b16e38ede5452328188143fdfcd9034507c5d429be7597b",
   "reviewed": false,
   "label_source": "machine"
  },
@@ -3627,15 +3622,15 @@
  "https://epochai.substack.com/p/9-big-questions-benchmarks-can-help": {
   "denominator_stated": "?",
   "auto_labelled": true,
-  "label_evidence": "model review failed; denominator remains unassessed",
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
   "evidence_method": "unassessed",
   "evidence_coverage": {
    "seen": 0,
    "total": 1
   },
   "label_schema_version": 2,
-  "content_hash": "787efa4926d33443f1d8f172b9aa0737f76aa017600afa953d02dc90570866c5",
-  "evidence_hash": "f2146aad7d529ac2fa742f52d4b3543dae031c64dab5ea318068ccb0b578adf8",
+  "content_hash": "e58f5e33ed1625da233609703d278eb11ec0f8de670b5db181e0b87af49ff01f",
+  "evidence_hash": "712b4a1e219a7e47fcaab127ce5893c76608221cb28e8bbf0a0f3e4263802580",
   "reviewed": false,
   "label_source": "machine"
  },
@@ -4167,15 +4162,15 @@
  "https://arstechnica.com/ai/2026/08/former-spacex-engineers-are-building-a-robotic-factory-for-making-steel-parts/": {
   "denominator_stated": "?",
   "auto_labelled": true,
-  "label_evidence": "model review failed; denominator remains unassessed",
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
   "evidence_method": "unassessed",
   "evidence_coverage": {
    "seen": 0,
-   "total": 16
+   "total": 17
   },
   "label_schema_version": 2,
-  "content_hash": "3a94966d56e8f9f8d6a3705582daf58f71c8b1e97f813fc94c991a296f8bed19",
-  "evidence_hash": "1ba94d956627d3346a9092bc7b508a5cdb0313639f13900f56b90458675398e1",
+  "content_hash": "767a25744da7c2625b01325cf3c8a850fd6280b79534f9b743c0f2a6a43c8f97",
+  "evidence_hash": "69c1015fb45818e121351e3ef7d3644a0ba8632cebd29fe7323abe9d4ce8326c",
   "reviewed": false,
   "label_source": "machine"
  },
@@ -4332,15 +4327,15 @@
  "https://arstechnica.com/security/2026/08/microsoft-copilot-reveals-secret-input-that-allowed-it-to-be-hacked/": {
   "denominator_stated": "?",
   "auto_labelled": true,
-  "label_evidence": "model review failed; denominator remains unassessed",
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
   "evidence_method": "unassessed",
   "evidence_coverage": {
    "seen": 0,
    "total": 5
   },
   "label_schema_version": 2,
-  "content_hash": "d29ef1773f8a9573c2a585af74947efc8f9c87f2e6e586c35da76df797cb7c0b",
-  "evidence_hash": "912576a950b55b5dbc93e665b66b03719d7c63188a9eea99e072d80aacdaf743",
+  "content_hash": "5033577bd33a3ff17f38c649b3867628b584d72839b37e748d7f2ca3e64d5500",
+  "evidence_hash": "11fb0777408f80b9438d49e01dbe90c7ec91dc1ff4da2986b1936bbc7113cbd9",
   "reviewed": false,
   "label_source": "machine"
  },
@@ -4392,15 +4387,15 @@
  "https://openai.com/index/chatgpt-for-teens/": {
   "denominator_stated": "?",
   "auto_labelled": true,
-  "label_evidence": "model review failed; denominator remains unassessed",
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
   "evidence_method": "unassessed",
   "evidence_coverage": {
    "seen": 0,
    "total": 5
   },
   "label_schema_version": 2,
-  "content_hash": "e9878c3d9453904c1b34b17b20cd7d17f7dcf4c007eb872dc809f54e71ef28bb",
-  "evidence_hash": "b8d04e3efbc21aff1b66e3ef532bece09a314034b73ddb70634511c933a530d5",
+  "content_hash": "193fc3590d4b4e985e3b27b519fd565cb2683657d9c1b1f804df389e5b8ae6a6",
+  "evidence_hash": "5eb60fa4d8a5933e0eb7734cb5cd5101d9b12d21c9bb41c9e9b5d141b538f6f3",
   "reviewed": false,
   "label_source": "machine"
  },
@@ -4587,30 +4582,30 @@
  "https://arstechnica.com/tech-policy/2026/08/flight-attendants-freaked-out-that-google-to-buy-tons-of-spirit-employee-data/": {
   "denominator_stated": "?",
   "auto_labelled": true,
-  "label_evidence": "model review failed; denominator remains unassessed",
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
   "evidence_method": "unassessed",
   "evidence_coverage": {
    "seen": 0,
    "total": 5
   },
   "label_schema_version": 2,
-  "content_hash": "56f0be07a54e44f38d417395f02b1808bc83d43832cf973c9c1f92040b9adbd0",
-  "evidence_hash": "8af675d714c49b7ca3606098e7db5072d7beff52e7a59239e1b22b3019467c85",
+  "content_hash": "ac5fd99aa213e6fe282f105820ed8d43427f988f2b613bcb3120a5f016686a11",
+  "evidence_hash": "5d9a27c4dbd24a95f605ed8191076c75f6b590620b223b655fd952512769e63f",
   "reviewed": false,
   "label_source": "machine"
  },
  "https://arstechnica.com/ai/2026/08/meta-ran-ads-for-an-app-promising-to-nudify-female-politicians/": {
   "denominator_stated": "?",
   "auto_labelled": true,
-  "label_evidence": "model review failed; denominator remains unassessed",
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
   "evidence_method": "unassessed",
   "evidence_coverage": {
    "seen": 0,
    "total": 7
   },
   "label_schema_version": 2,
-  "content_hash": "84ce38727809bd6371152dbe0f8ebf0dd2e336dd9ebe42c63252d2a1033695f9",
-  "evidence_hash": "48d940eade70e2433e07d3b2f8b00fcd0acf6774941a548bbae885d79859d25b",
+  "content_hash": "00d560ff39335ada4bdd65d90d5a463a83c56fca859a3019f0c67277c590ce93",
+  "evidence_hash": "075ba0d2d80f23bc50571502e99a6f6b4f68876a6f2a252cb2c93183892bc486",
   "reviewed": false,
   "label_source": "machine"
  },
@@ -4812,30 +4807,30 @@
  "https://www.theverge.com/tech/983088/google-discover-ai-chatbot-feed": {
   "denominator_stated": "n/a",
   "auto_labelled": true,
-  "label_evidence": "no figure in 2664 chars of article text",
+  "label_evidence": "no figure in 2643 chars of article text",
   "evidence_method": "rule",
   "evidence_coverage": {
    "seen": 0,
    "total": 0
   },
   "label_schema_version": 2,
-  "content_hash": "e60238dc2890febe70a0a3989087a60578b75b2cf5e6707ae8647e83a1e7ba3c",
-  "evidence_hash": "ff0e66e435a054f27b95ab3cde980e76bb040bf9748a1cf4f5e624f7c584e5d4",
+  "content_hash": "4529ec4bd7617746f98dbad945ffe925ea97a94d5b9b461beae762dd353ab0b5",
+  "evidence_hash": "b03e0cbdf8bd683d466b273e74141565aee2c27ba3e97b315c4e051d63a67b4b",
   "reviewed": false,
   "label_source": "machine"
  },
  "https://www.theverge.com/ai-artificial-intelligence/982774/greg-brockman-openai-role-expansion": {
   "denominator_stated": "?",
   "auto_labelled": true,
-  "label_evidence": "model review failed; denominator remains unassessed",
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
   "evidence_method": "unassessed",
   "evidence_coverage": {
    "seen": 0,
    "total": 1
   },
   "label_schema_version": 2,
-  "content_hash": "f286cb76a5455d76da7c50d714fb80a9b60381594b9faa16b2d1362bd0620a8f",
-  "evidence_hash": "5c688b70d558fc44c261e69143005554656dceb3a5f1ce40fa56c63884b2621b",
+  "content_hash": "294ee0453ae74b756c3f2e8e79a35b63408f10a0fcc87d94acec92f645715f09",
+  "evidence_hash": "45f64f8732bd2d97c6b244e0f8710e4db6c50fecc5a6a1109a4d12cef318fea9",
   "reviewed": false,
   "label_source": "machine"
  },
@@ -4864,8 +4859,8 @@
    "total": 0
   },
   "label_schema_version": 2,
-  "content_hash": "121f78fa2ee44ad6d8b0df04130f8a158622fe9a70eaa6bfccb1096eb31d1a2a",
-  "evidence_hash": "a8da685a01c26c1d5a6b35a89a356ebc81aafba1d51f6a14b1595fee826e5154",
+  "content_hash": "eaf6288d4beb2d659089af2a37ad2cb6d5be2b36b39e39d20e801100b1e080da",
+  "evidence_hash": "090c0719517fe4e8f194a5954703542269dc31c16d16e2ce8ecd1c549b80f405",
   "reviewed": false,
   "label_source": "machine"
  },
@@ -5022,15 +5017,225 @@
  "https://news.mit.edu/2026/paving-way-for-greener-ammonia-production-0820": {
   "denominator_stated": "?",
   "auto_labelled": true,
-  "label_evidence": "model review failed; denominator remains unassessed",
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
   "evidence_method": "unassessed",
   "evidence_coverage": {
    "seen": 0,
    "total": 4
   },
   "label_schema_version": 2,
-  "content_hash": "675c30f0fbefb11d070b0cfed7688e90b17afb5e7d1d57312d580304240fafb2",
-  "evidence_hash": "0e96115337fe22313b777d777f7d7338c38847f898d087099d5e2a0cfbcb8f36",
+  "content_hash": "b31f3e49a3a68d3a786589089b640f613724670eaf6b86b20f206a199df2cfbc",
+  "evidence_hash": "cbf0fc47aec83851a83086a097ebd0ec0829d8cb849f9fc6a4ee96c1a9546b57",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/08/21/anthropics-opus-4-6-is-a-smut-machine/": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 11
+  },
+  "label_schema_version": 2,
+  "content_hash": "786bc314aa756785fc44457a355611f0c7a1e19f94b1e04fecdd54b7048dbe44",
+  "evidence_hash": "99b52bf19458ffcee3f53545c385fc8defa533b2209bd9c8f7e5f6855d8c5707",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/08/21/nvidia-partners-with-data-center-developer-cloverleaf/": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "8430970fbdc4728b5ee9d94e450f4ce22855c41c36432f40a8e0075f9a4ddf45",
+  "evidence_hash": "e8a4e42d5768080e33dd70d9bdba656be0b0328e516ff3082de229e443d44c3e",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 6
+  },
+  "label_schema_version": 2,
+  "content_hash": "34080fea51ebd174add013f2b445ae274578d1152bbd8526079d675b0a5dcb32",
+  "evidence_hash": "2ae041ea47affb7ff108904581907bc9a55896844693b1aea1717005c2a592c6",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up/": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 9
+  },
+  "label_schema_version": 2,
+  "content_hash": "63d2a89aeeb3bb01cc39ceb89eaddd4da48d383d8c24dd74875f6087557543d2",
+  "evidence_hash": "4b9e5c66d4a0fdc4765085e41c84275cba6a60c1b332b86e1cb6fcb4461009e0",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/podcast/the-doj-is-investigating-a16z-what-does-this-mean-for-venture-capital/": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 4
+  },
+  "label_schema_version": 2,
+  "content_hash": "ebd18c39149680d36677c50382838d2f5037d6480d5b6023fff5249939c86863",
+  "evidence_hash": "1aeb0f6d9be960bcb85479b93fdb45ef7936af2b4a4f41223dce88908e7a9fcc",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/983502/linkedin-ai-slop-button-one-million-people-message": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "955ba7229eba7cdd12b751acdb52239065554084453e7164416161fdd4161c61",
+  "evidence_hash": "f05b3b13b34c323608addcd70bab3d0e49782d56f43381efec4ed0c55d47241e",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/983181/matti-haapoja-sam-kold-kolder-higgsfield-seedance-backlash": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 5
+  },
+  "label_schema_version": 2,
+  "content_hash": "4bd84f00e8208121f6e9bdf0112e0695bb33cd9fbccf7e88c95c035216553ecd",
+  "evidence_hash": "343c4253d842ceb0ae64ef55b2e6dd384542b85591d8050b69facda69ba2f555",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/tech-policy/2026/08/meta-ai-glasses-may-get-creepier-and-apps-that-detect-them-arent-perfect/": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 11
+  },
+  "label_schema_version": 2,
+  "content_hash": "50812962b1b1e0c5e5953e09f90e01ca8cc4e21d5a16b66c60dadeb4300c0774",
+  "evidence_hash": "6364cf99d75afed094f5807aef3da3c80bb45bf33b269b76148b99faa842463e",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "92f5edbca5c1d83c7e659c188400866f576b77879c08352b4377dba697965346",
+  "evidence_hash": "4c1539a921ff8620439a516f640c700da279dcba210057340bd3544f3d223a55",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://canews24.online/?p=71": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 7
+  },
+  "label_schema_version": 2,
+  "content_hash": "3e6b1800203cd7bc8c118d9fe93292a184ee7456c3f1fb4a175e29517478de0f",
+  "evidence_hash": "5692d975f73fce81bb8e7fec4e16505c18981c0af88127e8136e96816d51adb7",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://cymerys.com/w/im-becoming-ai-blind": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "1164fa1894cd0964bc49ec10a7ec8195b0675169a040a14d7efb7f45e09e6a5d",
+  "evidence_hash": "22562c21668dcf4b462818ba02ff1a5c3602c348efe4ce5936bddb39e4125377",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://annas-archive.pk/blog/physical-destruction.html": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "article not fetched (http-403)",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.federalregister.gov/documents/2026/08/21/2026-17163/request-for-comment-on-the-listing-of-compute-derivatives-contracts": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 86
+  },
+  "label_schema_version": 2,
+  "content_hash": "2da6eed0b497d0b4fff5de380a9b957d83053e249d99ad0a45514a160744fe33",
+  "evidence_hash": "2d55ee370cdacb77edfa5f6117761c58db15498f290f69eedac8e0f9519cb9fb",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://cset.georgetown.edu/article/tracking-ai-chips-what-does-it-cost/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 0 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
   "reviewed": false,
   "label_source": "machine"
  }
