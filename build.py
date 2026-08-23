@@ -769,13 +769,10 @@ def group_by_day(items, registry, plain, mk, tmap, ev=None):
 
 
 def sovereign_radar_tab():
-    qwen_path = os.path.join(HERE, "data", "qwen38_regulatory_alerts.json")
     reg_alerts_path = os.path.join(HERE, "data", "regulatory_alerts.json")
 
     alerts = []
-    if os.path.isfile(qwen_path):
-        alerts = json.load(open(qwen_path, encoding="utf-8"))
-    elif os.path.isfile(reg_alerts_path):
+    if os.path.isfile(reg_alerts_path):
         alerts = json.load(open(reg_alerts_path, encoding="utf-8"))
 
     if not alerts:
@@ -785,17 +782,23 @@ def sovereign_radar_tab():
     for a in alerts:
         pri = a.get("priority_score", a.get("priority", 4))
         if pri == 1:
-            badge_bg, badge_lbl = "#b23b2e", "🔴 P1 Binding Statute"
+            badge_bg, badge_lbl = "#b23b2e", "P1 machine candidate"
         elif pri == 2:
-            badge_bg, badge_lbl = "#cc7a33", "🟠 P2 Proposed Rule / Guidance"
+            badge_bg, badge_lbl = "#cc7a33", "P2 machine candidate"
         elif pri == 3:
-            badge_bg, badge_lbl = "#c7a53b", "🟡 P3 Major Notice"
+            badge_bg, badge_lbl = "#c7a53b", "P3 machine candidate"
         elif pri == 4:
-            badge_bg, badge_lbl = "#4a5568", "⚪ P4 Standard Notice"
+            badge_bg, badge_lbl = "#4a5568", "P4 machine candidate"
         else:
-            badge_bg, badge_lbl = "#64748b", "⚪ P5 Administrative"
+            badge_bg, badge_lbl = "#64748b", "P5 or unassessed"
 
-        duty_badge = '<span style="display:inline-block;padding:2px 7px;border-radius:4px;font-size:11px;font-weight:600;color:#fff;background:#2f7d4f;margin-left:6px">Active Duty Shift</span>' if a.get("is_operator_duty_shift") else '<span style="display:inline-block;padding:2px 7px;border-radius:4px;font-size:11px;color:#64748b;background:var(--bg-card);margin-left:6px">Procedural</span>'
+        duty_badge = '<span style="display:inline-block;padding:2px 7px;border-radius:4px;font-size:11px;font-weight:600;color:#fff;background:#2f7d4f;margin-left:6px">Possible duty shift, unverified</span>' if a.get("is_operator_duty_shift") else '<span style="display:inline-block;padding:2px 7px;border-radius:4px;font-size:11px;color:#64748b;background:var(--bg-card);margin-left:6px">No machine duty flag</span>'
+
+        method = a.get("evaluation_method", "legacy method not recorded")
+        model = a.get("model")
+        method_text = f"{method}: {model}" if model else method
+        review_text = "reviewed" if a.get("reviewed") else "not human-reviewed"
+        method_html = f'<div style="font-size:11px;color:{SLATE};margin-top:7px">Method: {esc(method_text)}. Status: {esc(review_text)}.</div>'
 
         stat_ref = a.get("statutory_reference")
         stat_ref_html = f'<div style="font-size:12px;margin:6px 0;font-family:monospace;background:{ALT};padding:3px 8px;border-radius:4px;border:1px solid {LINE};color:{NAVY}"><strong>Statutory Basis:</strong> {esc(stat_ref)}</div>' if stat_ref else ""
@@ -817,6 +820,7 @@ def sovereign_radar_tab():
             f'<a href="{esc(a.get("url","#"))}" target="_blank" rel="noopener" style="font-size:15px;font-weight:600;color:{NAVY};text-decoration:none;display:block;margin-bottom:6px">{esc(a.get("title",""))} &#x2197;</a>'
             f'{stat_ref_html}'
             f'<div style="font-size:13px;color:{BODY};line-height:1.5">{esc(a.get("summary_finding", a.get("summary","")))}</div>'
+            f'{method_html}'
             f'{trigger_html}'
             f'</div>'
         )
@@ -826,10 +830,10 @@ def sovereign_radar_tab():
         f'<div style="border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:8px;padding:14px 18px;margin-bottom:20px;background:{PAPER};box-shadow:{SHADOW}">'
         f'<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px">'
         f'<div><h3 style="margin:0 0 4px;font-size:17px;color:{NAVY}">Sovereign Watch: Global AI Regulatory Radar</h3>'
-        f'<div style="font-size:13px;color:{SLATE}">Sovereign gazette surveillance across US Federal Register, EU AI Office, UK Ofgem/CMA, and 29 jurisdiction monitor packs. Deep statutory evaluations powered by local <strong>Qwen 3.8 (27B)</strong>.</div></div>'
+        f'<div style="font-size:13px;color:{SLATE}">Sovereign gazette surveillance across US Federal Register, EU AI Office, UK Ofgem/CMA, and 29 jurisdiction monitor packs. Local Qwen triage is displayed as unverified machine output, not as a legal finding.</div></div>'
         f'<div style="display:flex;gap:8px;font-size:12px">'
         f'<span style="padding:4px 8px;background:var(--pill-bg);border-radius:4px;color:var(--pill-fg)"><strong>{len(alerts)}</strong> Notices Tracked</span>'
-        f'<span style="padding:4px 8px;background:var(--pill-bg);border-radius:4px;color:var(--pill-fg)"><strong>95.0%</strong> Precision</span>'
+        f'<span style="padding:4px 8px;background:var(--pill-bg);border-radius:4px;color:var(--pill-fg)"><strong>19/20</strong> stored-set agreement, equal to always-no baseline; positive recall 0/1</span>'
         f'<span style="padding:4px 8px;background:var(--ok-bg);border-radius:4px;color:var(--ok-fg)"><strong>06:00 AM</strong> Daily Pass</span>'
         f'</div></div></div>'
     )

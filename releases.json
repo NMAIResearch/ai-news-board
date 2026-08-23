@@ -1,9 +1,9 @@
 {
- "generated": "2026-08-22 07:13 UTC",
+ "generated": "2026-08-23 06:31 UTC",
  "window_days": 60,
  "counts": {
-  "total": 84,
-  "closed": 33,
+  "total": 83,
+  "closed": 32,
   "open_weights": 51
  },
  "releases": [
@@ -65,6 +65,18 @@
    "evidence": "open-weights",
    "evidence_note": "weights published at huggingface.co/tencent/Hy-MT2-30B-A3B; downloadable and hashable",
    "hf_id": "tencent/Hy-MT2-30B-A3B",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Tencent",
+   "model": "Tencent: Hy-MT2-7B",
+   "id": "tencent/hy-mt2-7b",
+   "date": "2026-08-19",
+   "url": "https://openrouter.ai/tencent/hy-mt2-7b",
+   "context_length": 8192,
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/tencent/Hy-MT2-7B; downloadable and hashable",
+   "hf_id": "tencent/Hy-MT2-7B",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
@@ -990,30 +1002,6 @@
    "evidence_note": "weights published at huggingface.co/nex-agi/Nex-N2-Mini; downloadable and hashable",
    "hf_id": "nex-agi/Nex-N2-Mini",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Sakana",
-   "model": "Sakana: Fugu Ultra",
-   "id": "sakana/fugu-ultra",
-   "date": "2026-06-24",
-   "url": "https://openrouter.ai/sakana/fugu-ultra",
-   "context_length": 1000000,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Ai2",
-   "model": "OlmoEarth-v1_2-Nano",
-   "id": "allenai/OlmoEarth-v1_2-Nano",
-   "date": "2026-06-24",
-   "url": "https://huggingface.co/allenai/OlmoEarth-v1_2-Nano",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "allenai/OlmoEarth-v1_2-Nano",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
   }
  ],
  "errors": [],

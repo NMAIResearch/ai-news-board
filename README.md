@@ -41,6 +41,23 @@ read backwards. That is why the line above is written out rather than left to ju
 
     curl -s https://nmairesearch.github.io/ai-news-board/ | grep -o 'Page built[^<]*<[^>]*>[^<]*'
 
+### Daily fail-closed publication
+
+`daily_publish.py` is the unattended route. The user timer runs it at 06:20, after the 06:00
+Sovereign Watch sweep. It publishes broad intake and machine labels as visibly unreviewed
+records. It does not publish a human judgement, write to the private tracker, set
+`reviewed = true`, merge branches, rebase, force-push or bypass a hook.
+
+Before any commit it requires local `main` to equal its upstream, permits only generated
+board paths, parses every changed JSON or JSONL file, rejects machine-labelled records that
+claim human review, runs the unit suite and runs both unstaged and staged diff checks. It
+stops if any refresh stage reports failure. After a normal push it compares the live Pages
+bytes with the committed `index.html`.
+
+The timer must remain disabled while the repository has an inherited dirty tree. A failed
+run leaves its evidence in the systemd journal and requires the tree or upstream divergence
+to be resolved before publication can resume.
+
 ### The pre-commit hook
 
 `.git/hooks/pre-commit` refuses a commit whose board data fails the integrity check, whose
@@ -107,7 +124,7 @@ committing.** To check whether the current file is plain:
 `--plain` removes source-tier colours, the source-class key and the tier registry. The other
 axes, including figure provenance, track record and research-context links, are unaffected.
 
-### Publishing, and the step that is not a script
+### Manual publishing and upstream reconciliation
 
 The board deploys from `origin/main`, and a CI job commits market-data refreshes to origin on
 its own schedule. A local pipeline run therefore **diverges from origin most days**: local is
@@ -298,9 +315,9 @@ tested on 2026-07-25 and are unusable: Yahoo returns 429 and blocks browser CORS
 runs a JavaScript proof-of-work wall.
 
 Refreshed by `.github/workflows/market.yml` (weekdays, twice) which writes **only**
-`data/market.json`. It deliberately does not run the feed pipeline or rebuild `index.html`,
-because the review pass is a human call and a timer-driven rebuild would publish unreviewed
-items. The page renders real numbers at build time and works with JavaScript off; the
+`data/market.json`. The separate local daily publisher may publish unreviewed feed intake,
+but only with machine provenance and review status visible. It cannot publish a human
+judgement. The page renders real numbers at build time and works with JavaScript off; the
 client-side refresh only keeps an open tab current, via a same-origin fetch of a static file,
 so no API key reaches the browser.
 

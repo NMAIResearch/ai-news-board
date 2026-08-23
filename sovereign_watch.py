@@ -139,6 +139,17 @@ AI_KEYWORDS = re.compile(
     re.IGNORECASE
 )
 
+DUTY_TYPES = {
+    "transparency",
+    "labelling_watermark",
+    "adm_explanation",
+    "risk_assessment",
+    "merger_control",
+    "technical_release",
+    "none",
+}
+DENOMINATOR_LABELS = {"yes", "no", "partial", "n/a"}
+
 
 def load_store() -> Dict[str, Any]:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
@@ -244,6 +255,47 @@ def is_administrative_noise(title: str, summary: str) -> bool:
     return False
 
 
+def validate_model_analysis(value: Any, model: str) -> Optional[Dict[str, Any]]:
+    """Return a bounded model result or None when the response is incomplete."""
+    if not isinstance(value, dict):
+        return None
+    priority = value.get("priority_score")
+    duty_type = value.get("duty_type")
+    statutory_reference = value.get("statutory_reference")
+    required_strings = ("summary_finding", "actionable_trigger")
+    if isinstance(priority, bool) or not isinstance(priority, int) or not 1 <= priority <= 5:
+        return None
+    if not isinstance(value.get("is_operator_duty_shift"), bool):
+        return None
+    if duty_type not in DUTY_TYPES:
+        return None
+    if statutory_reference is not None and not isinstance(statutory_reference, str):
+        return None
+    if not isinstance(value.get("quantitative_claim_present"), bool):
+        return None
+    if value.get("denominator_disclosed") not in DENOMINATOR_LABELS:
+        return None
+    if any(not isinstance(value.get(key), str) or not value[key].strip()
+           for key in required_strings):
+        return None
+    bounded = {key: value.get(key) for key in (
+        "is_operator_duty_shift",
+        "duty_type",
+        "statutory_reference",
+        "summary_finding",
+        "quantitative_claim_present",
+        "denominator_disclosed",
+        "priority_score",
+        "actionable_trigger",
+    )}
+    bounded.update({
+        "evaluation_method": "local-model",
+        "model": model,
+        "reviewed": False,
+    })
+    return bounded
+
+
 def analyze_item_with_model(title: str, summary: str, source_name: str, url: str, model: str = DEFAULT_MODEL) -> Dict[str, Any]:
     """Evaluates document against statutory operator duty criteria."""
     # Fast path for known administrative noise
@@ -256,7 +308,10 @@ def analyze_item_with_model(title: str, summary: str, source_name: str, url: str
             "quantitative_claim_present": False,
             "denominator_disclosed": "n/a",
             "priority_score": 5,
-            "actionable_trigger": "Archive as non-substantive administrative notice."
+            "actionable_trigger": "Archive as non-substantive administrative notice.",
+            "evaluation_method": "administrative-noise-rule",
+            "model": None,
+            "reviewed": False,
         }
 
     prompt = f"""You are the NM AI Research Sovereign Regulatory Evaluator.
@@ -279,21 +334,23 @@ Evaluate and return ONLY a valid JSON object with these exact keys:
   "actionable_trigger": "specific next step or monitoring milestone"
 }}
 """
-    parsed = call_local_model(prompt, model=model)
-    if parsed:
+    parsed = validate_model_analysis(call_local_model(prompt, model=model), model)
+    if parsed is not None:
         return parsed
 
-    # Deterministic fallback
-    is_duty = bool(re.search(r"\b(rule|order|decree|enforce|duty|mandate|article|regulation|clause|transparency|watermark)\b", title + summary, re.I))
+    # A failed or malformed model response cannot establish a legal classification.
     return {
-        "is_operator_duty_shift": is_duty,
-        "duty_type": "transparency" if is_duty else "none",
+        "is_operator_duty_shift": False,
+        "duty_type": "none",
         "statutory_reference": None,
-        "summary_finding": f"Automated capture from {source_name}: {title}",
+        "summary_finding": f"Unassessed automated capture from {source_name}: {title}",
         "quantitative_claim_present": bool(re.search(r"\b\d+(?:\.\d+)?%|\$\d+", summary)),
-        "denominator_disclosed": "partial",
-        "priority_score": 2 if is_duty else 4,
-        "actionable_trigger": "Review primary source for binding operator duties."
+        "denominator_disclosed": "unassessed",
+        "priority_score": 5,
+        "actionable_trigger": "Review the primary source before assigning a duty or priority.",
+        "evaluation_method": "unassessed",
+        "model": model,
+        "reviewed": False,
     }
 
 
@@ -407,12 +464,19 @@ def sweep_sovereign_gazettes(store: Dict[str, Any], model: str = DEFAULT_MODEL) 
                 "statutory_reference": analysis.get("statutory_reference"),
                 "summary": analysis.get("summary_finding", summary[:200]),
                 "denominator_disclosed": analysis.get("denominator_disclosed", "n/a"),
-                "actionable_trigger": analysis.get("actionable_trigger", "Review source document.")
+                "actionable_trigger": analysis.get("actionable_trigger", "Review source document."),
+                "evaluation_method": analysis.get("evaluation_method", "unassessed"),
+                "model": analysis.get("model"),
+                "reviewed": False,
             }
             new_alerts.append(alert)
 
             if priority in (1, 2) and alert["is_operator_duty_shift"]:
-                send_desktop_notification(f"🚨 Sovereign Alert [{target.get('jurisdiction')}]: {title[:40]}...", alert["summary"], urgency="critical")
+                send_desktop_notification(
+                    f"Sovereign Watch candidate [{target.get('jurisdiction')}]: {title[:40]}...",
+                    f"Unverified machine classification. {alert['summary']}",
+                    urgency="critical",
+                )
 
     return new_alerts
 

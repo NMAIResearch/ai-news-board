@@ -93,3 +93,19 @@ a market closed on a day has no later price. Reporting the spread is correct.
 - Month-precision dates default to the 1st. `late-` and `end-` map to the last day, `mid-` to
   the 15th. A bare "Dec 2026" therefore reads as 1 December, which is early for anything that
   happens later in the month.
+
+## Unattended public refresh boundary
+
+`daily_publish.py` may automate intake, extraction, deterministic labels, local-model labels,
+entity resolution, source relationships, market data, model releases, scholarship records,
+the archive and the static build. Each machine output remains visibly unreviewed.
+
+It may also publish Sovereign Watch classifications as unverified machine candidates. A P1
+or P2 candidate is a queue position, not a legal finding. The stored N=20 benchmark recorded
+19/20 agreement for Qwen, equal to an always-no baseline, with positive recall 0/1. It does
+not support a precision claim or autonomous legal review.
+
+The unattended route must stop on a dirty non-generated path, stale inherited output,
+upstream divergence, a failed refresh stage, malformed data, a failed unit test, a diff-check
+failure, a rejected commit or a rejected push. It never writes a tracker row, changes a
+review status, resolves a legal call, merges, rebases or force-pushes.
