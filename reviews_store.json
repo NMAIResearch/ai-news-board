@@ -5765,12 +5765,13 @@
   "label_source": "machine"
  },
  "https://www.theverge.com/ai-artificial-intelligence/984239/alabama-attorney-general-subpoena-openai-hugging-face-hack": {
-  "denominator_stated": "?",
+  "denominator_stated": "N",
   "auto_labelled": true,
-  "label_evidence": "model review failed; denominator remains unassessed",
-  "evidence_method": "unassessed",
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
   "evidence_coverage": {
-   "seen": 0,
+   "seen": 1,
    "total": 1
   },
   "label_schema_version": 2,
@@ -6362,6 +6363,98 @@
   "label_schema_version": 2,
   "content_hash": "625eb91fc71e83e71a0e7626e0e0f1045fa819c522f0c4875a3a44be9ff69f50",
   "evidence_hash": "7a69ac3356b8cddeff7154bcb8bd090c732cd70002d4534ca1fbfb30ace9bd16",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/985385/openais-rogue-ai-model-hugging-face-cybersecurity-incident-reports-metr": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 7
+  },
+  "label_schema_version": 2,
+  "content_hash": "636b11f780b2d08782c30877b4fe174f65e4b85ba081fcb97dc1474447e0e607",
+  "evidence_hash": "ac3f9f07a64d7006a8dec5e8d229bea1dbc19fa21c34dc6d3549b87c2e7f4e9b",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/tech/985186/google-gemini-3-5-transcribe-audio-ai": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 6
+  },
+  "label_schema_version": 2,
+  "content_hash": "d971edfe91e89c24479cb4a584a06aaccc90e96645e7092db53c7404c9f5baaf",
+  "evidence_hash": "42f43be0edb57d0739086a38ac29f2309196fd56bbc8bb1d583117a5c9dc2e1a",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/984923/bill-gates-is-deeply-worried-about-ai-and-hes-no-longer-staying-quiet": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "63869308a451d24ebd5fae2ff73654b4b95d418f3cc68f28a9b41747f7070dd8",
+  "evidence_hash": "62edc0558a567772061d72e5890785bb672e4ef79440ff2208cd13f34cb582be",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.ftc.gov/news-events/news/press-releases/2026/08/ftc-finalizes-orders-cox-media-group-two-other-firms-settling-charges-they-deceived-customers-about": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "article not fetched (http-403)",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://news.mit.edu/2026/looking-beyond-natural-sequences-0827": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "ab332d446271d3303da374f04d9edfeb6630e2f2a7b84b1679265ac0f338f396",
+  "evidence_hash": "a74e8cef0ed3ae95fb63f49f00daffe12939fd4d647e7c3e2967855c350a991e",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.anthropic.com/news/expanding-support-for-scientists": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 4,
+   "total": 4
+  },
+  "label_schema_version": 2,
+  "content_hash": "11fcf4e04e720d618436fb7f44ce97d6ce82c197d19277ff9ea837b44382b2c3",
+  "evidence_hash": "ea640becf3d9a409902a8446bc8a2f7232ed78d7a336e2199d9ce4f44896483a",
   "reviewed": false,
   "label_source": "machine"
  }
