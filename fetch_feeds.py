@@ -42,6 +42,34 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "feed_items.json")
 TIER_MAP = os.path.join(HERE, "tier_map.json")
 
+# ⚠️ The per-feed cap in main() is POSITIONAL: the first `per_feed` survivors in feed order,
+# and feed order is recency, not materiality. A publisher posting more than `per_feed` AI items
+# a day loses everything below the top of the file whatever it is, and cap drops are silent:
+# they reach neither the board nor archive.py.
+# `prioritise` reorders WITHIN the cap so headlines naming a materially significant event are
+# taken before the rest. The cap itself is unchanged, so downstream cost is unchanged.
+# ⛔ This is topic-agnostic event matching, not motive selection and not a quality judgement.
+# It changes WHICH items survive a cap, never how any item is labelled, rated or tiered.
+PRIORITY_TERMS = re.compile(
+    r"\b(acquir\w*|acquisition|merger|takeover|buyout|buys?|"
+    r"lawsuit|sues?|sued|subpoena\w*|indict\w*|injunction|antitrust|settlement|"
+    r"fine[sd]?|penalt\w+|sanction\w*|bans?|banned|recall\w*|"
+    r"breach\w*|hacked?|exploit\w*|vulnerabilit\w+|outage|"
+    r"valuation|ipo|layoffs?|shutdown|shuts?|discontinu\w+|deprecat\w+)\b",
+    re.I)
+
+
+def prioritise(rows):
+    """Stable reorder so materially significant headlines survive the per-feed cap.
+
+    Preserves relative order within each group, so a priority item never jumps ahead of an
+    earlier priority item and non-matching items keep their feed order behind them.
+    """
+    hits, rest = [], []
+    for r in rows:
+        (hits if PRIORITY_TERMS.search(r[0] or "") else rest).append(r)
+    return hits + rest
+
 # (url, needs_ai_filter). Trade-press feeds are already AI-scoped by the publisher's own
 # category, so they pass through. Regulator and agency feeds are general-purpose and must be
 # filtered, or the board fills with advisory-committee notices. The filter does for a primary
@@ -350,7 +378,11 @@ def parse(xmlbytes):
 
 
 def main():
-    per_feed, collected, dropped_old, dropped_dup = 6, [], 0, 0
+    # ↻ [2026-08-27] 6 → 9. A single trade-press feed can carry more than 6 fresh AI items in a
+    # day, so at 6 the priority reordering displaced material items rather than adding them.
+    # At 9 both fit. Cost is downstream and roughly linear: extract_spans fetches every selected
+    # article and label_items runs the local model per item.
+    per_feed, collected, dropped_old, dropped_dup = 9, [], 0, 0
     seen_urls = set()
     now = datetime.now(timezone.utc)
     for f, needs_filter in FEEDS:
@@ -366,6 +398,8 @@ def main():
             fresh = [r for r in rows
                      if not too_old(r[2], now, source_type(r[1] or f))]
             dropped_old += len(rows) - len(fresh)
+            # Reorder before either branch truncates at per_feed. See PRIORITY_TERMS above.
+            fresh = prioritise(fresh)
 
             # HN's RSS pubDate is when somebody submitted the link, not when the linked
             # article was published. Prefer the article's own date before applying the
