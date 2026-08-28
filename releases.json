@@ -1,10 +1,10 @@
 {
- "generated": "2026-08-27 19:37 UTC",
+ "generated": "2026-08-28 05:32 UTC",
  "window_days": 60,
  "counts": {
   "total": 82,
-  "closed": 33,
-  "open_weights": 49
+  "closed": 32,
+  "open_weights": 50
  },
  "releases": [
   {
@@ -101,6 +101,30 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "Qwen/Qwen3.8-Flash-Next",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Google",
+   "model": "timesfm-3.0-pytorch",
+   "id": "google/timesfm-3.0-pytorch",
+   "date": "2026-08-24",
+   "url": "https://huggingface.co/google/timesfm-3.0-pytorch",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "google/timesfm-3.0-pytorch",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "Nemotron-3-Diarization-preview",
+   "id": "nvidia/Nemotron-3-Diarization-preview",
+   "date": "2026-08-24",
+   "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization-preview",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/Nemotron-3-Diarization-preview",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
@@ -212,27 +236,15 @@
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
-   "lab": "Google",
-   "model": "tipsv1-b14",
-   "id": "google/tipsv1-b14",
-   "date": "2026-08-19",
-   "url": "https://huggingface.co/google/tipsv1-b14",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "google/tipsv1-b14",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
    "lab": "Z Ai",
    "model": "Z.ai: GLM 5.3",
    "id": "z-ai/glm-5.3",
    "date": "2026-08-18",
    "url": "https://openrouter.ai/z-ai/glm-5.3",
    "context_length": 1048576,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/zai-org/GLM-5.3; downloadable and hashable",
+   "hf_id": "zai-org/GLM-5.3",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
@@ -305,18 +317,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Instruction-Following",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "NVIDIA-Nemotron-Labs-Teacher-General-Reasoning",
-   "id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-General-Reasoning",
-   "date": "2026-08-14",
-   "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Teacher-General-Reasoning",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-General-Reasoning",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
@@ -817,7 +817,7 @@
    "id": "kwaipilot/kat-coder-pro-v2.5",
    "date": "2026-07-10",
    "url": "https://openrouter.ai/kwaipilot/kat-coder-pro-v2.5",
-   "context_length": 256000,
+   "context_length": 262144,
    "evidence": "closed",
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",

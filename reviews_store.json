@@ -521,8 +521,7 @@
  "https://deepmind.google/blog/were-launching-lyria-35-in-google-flow-music-with-advances-across-musicality-lyrics-vocals-and-creative-control/": {
   "denominator_stated": "?",
   "auto_labelled": true,
-  "auto_labelled_by": "qwen3.6:27b",
-  "label_evidence": "model returned an invalid denominator label",
+  "label_evidence": "model review failed; denominator remains unassessed",
   "evidence_method": "unassessed",
   "evidence_coverage": {
    "seen": 0,
@@ -756,7 +755,7 @@
  "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/": {
   "denominator_stated": "?",
   "auto_labelled": true,
-  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+  "label_evidence": "model review failed; denominator remains unassessed",
   "evidence_method": "unassessed",
   "evidence_coverage": {
    "seen": 0,
@@ -1776,13 +1775,12 @@
   "label_source": "machine"
  },
  "https://news.mit.edu/2026/solving-solvent-problem-sodium-metal-batteries-0804": {
-  "denominator_stated": "N",
+  "denominator_stated": "?",
   "auto_labelled": true,
-  "auto_labelled_by": "qwen3.6:27b",
-  "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
-  "evidence_method": "local-model",
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
   "evidence_coverage": {
-   "seen": 4,
+   "seen": 0,
    "total": 4
   },
   "label_schema_version": 2,
@@ -1794,8 +1792,7 @@
  "https://news.mit.edu/2026/medical-ai-assistance-benefits-vary-based-on-user-expertise-0804": {
   "denominator_stated": "?",
   "auto_labelled": true,
-  "auto_labelled_by": "qwen3.6:27b",
-  "label_evidence": "model returned an invalid denominator label",
+  "label_evidence": "model review failed; denominator remains unassessed",
   "evidence_method": "unassessed",
   "evidence_coverage": {
    "seen": 0,
@@ -1950,7 +1947,7 @@
  "https://epochai.substack.com/p/the-missing-half-of-ai-futurism-debates": {
   "denominator_stated": "?",
   "auto_labelled": true,
-  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+  "label_evidence": "model review failed; denominator remains unassessed",
   "evidence_method": "unassessed",
   "evidence_coverage": {
    "seen": 0,
@@ -1965,7 +1962,7 @@
  "https://epochai.substack.com/p/the-epoch-brief-june-26-2026": {
   "denominator_stated": "?",
   "auto_labelled": true,
-  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+  "label_evidence": "model review failed; denominator remains unassessed",
   "evidence_method": "unassessed",
   "evidence_coverage": {
    "seen": 0,
@@ -2433,7 +2430,7 @@
  "https://news.mit.edu/2026/ai-models-simulate-wider-range-of-real-world-scenarios-0810": {
   "denominator_stated": "?",
   "auto_labelled": true,
-  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+  "label_evidence": "model review failed; denominator remains unassessed",
   "evidence_method": "unassessed",
   "evidence_coverage": {
    "seen": 0,
@@ -4327,7 +4324,7 @@
  "https://arstechnica.com/security/2026/08/microsoft-copilot-reveals-secret-input-that-allowed-it-to-be-hacked/": {
   "denominator_stated": "?",
   "auto_labelled": true,
-  "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+  "label_evidence": "model review failed; denominator remains unassessed",
   "evidence_method": "unassessed",
   "evidence_coverage": {
    "seen": 0,
@@ -6088,11 +6085,11 @@
   "evidence_method": "unassessed",
   "evidence_coverage": {
    "seen": 0,
-   "total": 5
+   "total": 4
   },
   "label_schema_version": 2,
   "content_hash": "42dc98ca8250f655ab876b07c6c7d2d7f8ff63cf9b4b1b4fdfa075963fc96dc5",
-  "evidence_hash": "4b58c4a9139f6b61ae9b509d6735c738bce16fe6e9cf1ea1fcba033e54b5e5a3",
+  "evidence_hash": "d58c8090748b1a45eeaf6079d467a643666860448a47ddcd3a6a05044209a97e",
   "reviewed": false,
   "label_source": "machine"
  },
@@ -6455,6 +6452,291 @@
   "label_schema_version": 2,
   "content_hash": "11fcf4e04e720d618436fb7f44ce97d6ce82c197d19277ff9ea837b44382b2c3",
   "evidence_hash": "ea640becf3d9a409902a8446bc8a2f7232ed78d7a336e2199d9ce4f44896483a",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/08/26/nvidia-closes-in-on-hugging-face-acquisition/": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 9
+  },
+  "label_schema_version": 2,
+  "content_hash": "c99edba8186c8dc4767976d8298845dd0378acc441d85b0213dbd2cdf11f1d5d",
+  "evidence_hash": "bbbe2af9d5b586b1ee2e924659e541cf26c4a810c300dc94b953e8a08ef63d68",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation/": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "2f47fac0ef401d28c44f3e03da65f1e39dcb2e2da44ee97b87b5343c33e218af",
+  "evidence_hash": "3a536cff19a33052e16924733789d384b9f266d3913e4c844d8c6480c30c00a5",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/08/26/openai-releases-its-official-report-on-the-hugging-face-breach/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 4269 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "489c77f9187bb6a18a495b4f53ee61942b04014360b8060f6252edcf9169f6a8",
+  "evidence_hash": "05018efd2db1954d8e6477e4c0764e2222240ba6a67675657020a454a1b7b31a",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/08/27/anthropic-and-openai-are-joining-the-ai-stage-at-techcrunch-disrupt-2026/": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "bf5ca324989f9a618236b035e7a866470e586b36ab720871df20d148d031194c",
+  "evidence_hash": "f306f76af005e9774f278d003ad22af311144feb55b6600adcc67f7ff763282d",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/08/27/barret-zoph-the-thinking-machines-co-founder-who-defected-to-openai-is-now-at-google/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 2265 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "6362c3a22e7b2a1645cfa1c8ba0c9e34b50a7f524c04899f6192d5331773191f",
+  "evidence_hash": "54c05748dd146e1db14455129f0b1fab30dfb7a16729b096036eff93fa31730e",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/985947/anthropic-supply-chain-risk-lawsuit-judge-ruling": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "9fa9f8d1f37e7034354f24831507ec63536faa75d1558c00b4179c5d59576bda",
+  "evidence_hash": "fe92ae4e28c3c9e37112d71fbaa32dfe7577e0124a7de73cb31085ddee4e03b8",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/tech/985567/google-gemini-notebook-expert-sources-books": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "bd13a0d9fae4d228f93b7f92a24f65f76f3df86f4d01f4cfdb426d7405cc19d6",
+  "evidence_hash": "c5021cc1186c18a4f890ea45953f5d6dcdcc50579ae062433b8da6d9c4874867",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/tech-policy/2026/08/elon-musks-xai-used-child-porn-to-train-grok-models-lawsuit-says/": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "0c225332b55962448f17b90bc888bd8cc18b6d895ddd8cdbc18eab6169a854c2",
+  "evidence_hash": "646d5857aa9de80ddfce2eba31fb3f4cb605610d6268e73ab2bfdbc115ff0e39",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/ai/2026/08/report-nvidia-to-acquire-ai-model-repository-hugging-face-for-13-billion/": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "b2cf3a190f244f5c115c02c69ba88bae15c51ae2b6d2776ffe21b3143605cf2c",
+  "evidence_hash": "a9a2cfadd4d43fff26e39b633208076d83b66d4a8264ee94db800d45889dd8f7",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/ai/2026/08/anthropics-new-hardware-standard-lets-ai-agents-control-the-physical-world/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 5471 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "af4e76658ef26050ac2aba0db1798fc598d501c76e11fbf32a0beba345b5297c",
+  "evidence_hash": "bf1c871a177482ce4e2b1f23c8552cc428965c4f30e72552afe37ee340a34b35",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.nytimes.com/2026/08/27/technology/anthropic-government-blacklisting-ruling.html": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "article not fetched (http-403)",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.terminal-bench-science.ai/announcement": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 32
+  },
+  "label_schema_version": 2,
+  "content_hash": "2bea1118bb99a0dbf44098f6cd2cda4d07cf5d7ac8d3a29df9a0e64c1d025d38",
+  "evidence_hash": "b6c148673daaf38215ff91bc2b1ca42d2eb3208e919bdc67fc0598373aad07e6",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://github.com/calmrocks/ai-engineer-notebooks": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 12
+  },
+  "label_schema_version": 2,
+  "content_hash": "c5bc5486cbbad8479b946b03dca21745ff7118eeacdf24afd674378a6c3f1429",
+  "evidence_hash": "fb8941d406f314c746e75d865d3e1df62d48bcf944d26267384f9e18638d3590",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://news.bgov.com/bloomberg-government-news/nvidia-starts-a-pac-as-ai-chip-maker-buids-influence-force-in-dc": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "6f3f815be666e208bd416eabfafc4e8aa59e1368dcf44a3805a17d1ac8b2daa8",
+  "evidence_hash": "f6b8a26b2f9ba82c3046b62244f2d90a384e6945591493511784ff63be67b1ba",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://economist.com/by-invitation/2026/08/20/humanity-has-the-debate-about-ai-consciousness-backwards": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "article not fetched (http-403)",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://ainowinstitute.org/general/ai-now-co-executive-director-sarah-myers-west-testifies-before-senate-banking-committee": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "0d424c997e437129822f4fb785d454d2ecab5fe8a53a1158b99b611561e8dc98",
+  "evidence_hash": "6587ca100b6363660180c3659bd483bd6aa66aecead73c9a90f2a8bf8a69a5a1",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://ainowinstitute.org/news/announcement/wells-house-subcommittee-testimony": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "7cf01cdeca01b3e70ed097f5374bda239f39ddf28958a0e5f7575402534c5cc3",
+  "evidence_hash": "75a2a17ec8666847335f6e4e0a61f9b83f65226192a5441c1d8ea8e82894cb4c",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://ainowinstitute.org/general/data-center-industry-mapping-working-draft": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 3575 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "4d813f9d084e4c46b79a6d1757195ebf86ce752fe9f08a8db09d688a46704476",
+  "evidence_hash": "11895c50c8e4b54aa0a56d91dbf84fa42af1846753fda078df32aae87dcd2612",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://epochai.substack.com/p/an-update-on-ais-most-important-number": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 34
+  },
+  "label_schema_version": 2,
+  "content_hash": "51ff302a61e5594ad94492eeffa1a67c58f5699407510a6bd4013da31b0078cf",
+  "evidence_hash": "2f7b1ab479af6c48e4a2aa2edc7b2d2fdf1907ae93e12c8edb3483773906aa8c",
   "reviewed": false,
   "label_source": "machine"
  }
