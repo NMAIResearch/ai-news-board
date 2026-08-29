@@ -1,12 +1,24 @@
 {
- "generated": "2026-08-28 05:32 UTC",
+ "generated": "2026-08-29 06:32 UTC",
  "window_days": 60,
  "counts": {
-  "total": 82,
-  "closed": 32,
-  "open_weights": 50
+  "total": 84,
+  "closed": 33,
+  "open_weights": 51
  },
  "releases": [
+  {
+   "lab": "Tencent",
+   "model": "Tencent: Hy4 preview",
+   "id": "tencent/hy4-preview",
+   "date": "2026-08-28",
+   "url": "https://openrouter.ai/tencent/hy4-preview",
+   "context_length": 1048576,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
   {
    "lab": "Inclusionai",
    "model": "Ling 3.0 Flash Fin (free)",
@@ -29,6 +41,18 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "microsoft/SQuadGen",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "DeepSeek-V4-Pro-0813-NVFP4",
+   "id": "nvidia/DeepSeek-V4-Pro-0813-NVFP4",
+   "date": "2026-08-27",
+   "url": "https://huggingface.co/nvidia/DeepSeek-V4-Pro-0813-NVFP4",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/DeepSeek-V4-Pro-0813-NVFP4",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
@@ -65,6 +89,18 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "zai-org/GLM-5.3-Flash-BF16",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Z.ai",
+   "model": "GLM-5.3-BF16",
+   "id": "zai-org/GLM-5.3-BF16",
+   "date": "2026-08-25",
+   "url": "https://huggingface.co/zai-org/GLM-5.3-BF16",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "zai-org/GLM-5.3-BF16",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
@@ -241,7 +277,7 @@
    "id": "z-ai/glm-5.3",
    "date": "2026-08-18",
    "url": "https://openrouter.ai/z-ai/glm-5.3",
-   "context_length": 1048576,
+   "context_length": 1310720,
    "evidence": "open-weights",
    "evidence_note": "weights published at huggingface.co/zai-org/GLM-5.3; downloadable and hashable",
    "hf_id": "zai-org/GLM-5.3",
@@ -305,18 +341,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Competition-Coding",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "NVIDIA-Nemotron-Labs-Teacher-Instruction-Following",
-   "id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Instruction-Following",
-   "date": "2026-08-14",
-   "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Teacher-Instruction-Following",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Instruction-Following",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
