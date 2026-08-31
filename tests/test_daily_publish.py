@@ -41,6 +41,22 @@ class DailyPublishTests(unittest.TestCase):
                 ["build.py"], daily_publish.PUBLISH_PATTERNS, "test"
             )
 
+    def test_pre_sweep_allowlist_accepts_scheduled_sovereign_outputs(self):
+        paths = [
+            "alerts/sovereign_bulletin_2026-09-01.md",
+            "data/live_alerts.jsonl",
+            "data/regulatory_alerts.json",
+            "data/surveillance_store.json",
+            "index.html",
+            "logs/schedule.log",
+        ]
+        self.assertEqual(
+            daily_publish.require_allowed(
+                paths, daily_publish.PRE_SWEEP_PATTERNS, "test"
+            ),
+            paths,
+        )
+
     def test_require_today_rejects_old_change(self):
         with tempfile.TemporaryDirectory() as temporary:
             root = pathlib.Path(temporary)
@@ -58,7 +74,7 @@ class DailyPublishTests(unittest.TestCase):
                 "A regulation title", "A duty and an article are mentioned.", "Test source", "https://example.test"
             )
         self.assertEqual(result["evaluation_method"], "unassessed")
-        self.assertEqual(result["priority_score"], 5)
+        self.assertIsNone(result["priority_score"])
         self.assertFalse(result["is_operator_duty_shift"])
         self.assertFalse(result["reviewed"])
 

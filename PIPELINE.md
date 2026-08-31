@@ -100,10 +100,19 @@ a market closed on a day has no later price. Reporting the spread is correct.
 entity resolution, source relationships, market data, model releases, scholarship records,
 the archive and the static build. Each machine output remains visibly unreviewed.
 
-It may also publish Sovereign Watch classifications as unverified machine candidates. A P1
-or P2 candidate is a queue position, not a legal finding. The stored N=20 benchmark recorded
-19/20 agreement for Qwen, equal to an always-no baseline, with positive recall 0/1. It does
-not support a precision claim or autonomous legal review.
+It may also publish Sovereign Watch classifications as unverified machine candidates. Source
+queue priority controls processing order only. Evaluated substantive priority, evaluation method,
+model identity, human review state and legacy raw priority are separate schema-versioned fields.
+A failed or malformed evaluation is explicit unassessed data and cannot inherit P1 or P2 from the
+source queue. Notifications require an evaluated local-model P1 or P2, a named model and the
+duty-shift predicate. Legacy rows with missing provenance remain unassessed while preserving their
+raw historical priority.
+
+The stored N = 20 model comparison recorded Qwen agreement on 19 of 20 records, equal to the
+always-no baseline of 19 of 20, N = 20. Positive recall was 0 accepted positives out of 1
+comparator-positive record, N = 1 positive. The held files contain model outputs but no
+independently reviewed gold labels. These figures do not support a precision claim or autonomous
+legal review.
 
 The unattended route must stop on a dirty non-generated path, stale inherited output,
 upstream divergence, a failed refresh stage, malformed data, a failed unit test, a diff-check

@@ -17,6 +17,8 @@ import time
 import urllib.request
 from typing import Iterable
 
+from board_checks import BoardIntegrityError, validate_regulatory_alerts as validate_regulatory_alert_records
+
 
 REPO = pathlib.Path(__file__).resolve().parent
 LOCK_PATH = pathlib.Path("/tmp/nmai-news-board-daily.lock")
@@ -150,12 +152,10 @@ def validate_regulatory_alerts() -> None:
     if not path.exists():
         return
     alerts = json.loads(path.read_text(encoding="utf-8"))
-    for index, alert in enumerate(alerts):
-        priority = alert.get("priority_score", alert.get("priority"))
-        if isinstance(priority, bool) or not isinstance(priority, int) or not 1 <= priority <= 5:
-            raise PublishError(f"regulatory alert {index} has invalid priority")
-        if alert.get("reviewed") is True and alert.get("evaluation_method") != "human":
-            raise PublishError(f"regulatory alert {index} claims review without a human method")
+    try:
+        validate_regulatory_alert_records(alerts)
+    except BoardIntegrityError as exc:
+        raise PublishError(str(exc)) from exc
 
 
 def verify_pages(local_path: pathlib.Path, attempts: int = 18, delay: int = 10) -> None:

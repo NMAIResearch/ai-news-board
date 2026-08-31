@@ -22,11 +22,19 @@ import pathlib
 import re
 import subprocess
 import sys
+import tempfile
 import time
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
 from typing import Any, Dict, List, Optional, Tuple
+
+from board_checks import (
+    ALERT_SCHEMA_VERSION,
+    evaluated_alert_priority,
+    regulatory_notification_eligible,
+    validate_regulatory_alerts,
+)
 
 HERE = pathlib.Path(__file__).resolve().parent
 WORKSPACE_ROOT = HERE.parent
@@ -170,15 +178,36 @@ def load_alerts() -> List[Dict[str, Any]]:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     if ALERTS_FILE.exists():
         try:
-            return json.loads(ALERTS_FILE.read_text(encoding="utf-8"))
-        except Exception:
-            pass
+            alerts = json.loads(ALERTS_FILE.read_text(encoding="utf-8"))
+            validate_regulatory_alerts(alerts)
+            return alerts
+        except Exception as exc:
+            raise RuntimeError(f"cannot read validated regulatory alerts: {exc}") from exc
     return []
 
 
 def save_alerts(alerts: List[Dict[str, Any]]) -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    ALERTS_FILE.write_text(json.dumps(alerts, indent=2), encoding="utf-8")
+    validate_regulatory_alerts(alerts)
+    encoded = (json.dumps(alerts, indent=2, ensure_ascii=False) + "\n").encode("utf-8")
+    temporary_path = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="wb", dir=DATA_DIR, prefix=".regulatory_alerts.", delete=False
+        ) as temporary:
+            temporary_path = pathlib.Path(temporary.name)
+            temporary.write(encoded)
+            temporary.flush()
+            os.fsync(temporary.fileno())
+        observed = temporary_path.read_bytes()
+        if observed != encoded:
+            raise RuntimeError("temporary regulatory alert output does not match expected bytes")
+        validate_regulatory_alerts(json.loads(observed.decode("utf-8")))
+        os.replace(temporary_path, ALERTS_FILE)
+        temporary_path = None
+    finally:
+        if temporary_path is not None:
+            temporary_path.unlink(missing_ok=True)
 
 
 def fetch_url_text(url: str, timeout: int = 25) -> Optional[str]:
@@ -338,7 +367,7 @@ Evaluate and return ONLY a valid JSON object with these exact keys:
     if parsed is not None:
         return parsed
 
-    # A failed or malformed model response cannot establish a legal classification.
+    # A failed or malformed model response cannot establish a substantive priority.
     return {
         "is_operator_duty_shift": False,
         "duty_type": "none",
@@ -346,7 +375,7 @@ Evaluate and return ONLY a valid JSON object with these exact keys:
         "summary_finding": f"Unassessed automated capture from {source_name}: {title}",
         "quantitative_claim_present": bool(re.search(r"\b\d+(?:\.\d+)?%|\$\d+", summary)),
         "denominator_disclosed": "unassessed",
-        "priority_score": 5,
+        "priority_score": None,
         "actionable_trigger": "Review the primary source before assigning a duty or priority.",
         "evaluation_method": "unassessed",
         "model": model,
@@ -444,21 +473,18 @@ def sweep_sovereign_gazettes(store: Dict[str, Any], model: str = DEFAULT_MODEL) 
 
         for title, summary, link, p_base in items_to_evaluate:
             analysis = analyze_item_with_model(title, summary, t_name, link, model=model)
-            # The evaluated score governs; priority_base is only a fallback when the
-            # model returned nothing. It was previously combined with min(), and since
-            # lower means higher priority, a feed with priority_base 1 (the US Federal
-            # Register) forced every item to P1 regardless of what the model read,
-            # including airworthiness directives and office relocations. Fixed 2026-08-20.
-            priority = analysis.get("priority_score") or p_base
+            substantive_priority = analysis.get("priority_score")
 
             alert = {
                 "id": f"alert_{int(time.time())}_{hashlib.md5(title.encode()).hexdigest()[:6]}",
                 "timestamp": dt.datetime.now(dt.timezone.utc).isoformat(),
+                "alert_schema_version": ALERT_SCHEMA_VERSION,
                 "source": t_name,
                 "jurisdiction": target.get("jurisdiction", "Global"),
                 "title": title,
                 "url": link,
-                "priority": priority,
+                "source_queue_priority": p_base,
+                "substantive_priority": substantive_priority,
                 "is_operator_duty_shift": analysis.get("is_operator_duty_shift", False),
                 "duty_type": analysis.get("duty_type", "none"),
                 "statutory_reference": analysis.get("statutory_reference"),
@@ -471,7 +497,7 @@ def sweep_sovereign_gazettes(store: Dict[str, Any], model: str = DEFAULT_MODEL) 
             }
             new_alerts.append(alert)
 
-            if priority in (1, 2) and alert["is_operator_duty_shift"]:
+            if regulatory_notification_eligible(alert):
                 send_desktop_notification(
                     f"Sovereign Watch candidate [{target.get('jurisdiction')}]: {title[:40]}...",
                     f"Unverified machine classification. {alert['summary']}",
@@ -482,6 +508,7 @@ def sweep_sovereign_gazettes(store: Dict[str, Any], model: str = DEFAULT_MODEL) 
 
 
 def write_alert_bulletin(alerts: List[Dict[str, Any]]) -> pathlib.Path:
+    validate_regulatory_alerts(alerts)
     ALERTS_DIR.mkdir(parents=True, exist_ok=True)
     today_str = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d")
     bulletin_path = ALERTS_DIR / f"sovereign_bulletin_{today_str}.md"
@@ -493,21 +520,40 @@ def write_alert_bulletin(alerts: List[Dict[str, Any]]) -> pathlib.Path:
         "",
         f"Total Active Alerts Banked: {len(alerts)}",
         "",
-        "| Time (UTC) | Priority | Jurisdiction | Source | Finding & Duty | Statutory Ref |",
-        "|---|---|---|---|---|---|"
+        "| Time (UTC) | Evaluated priority | Source queue | Method | Jurisdiction | Source | Finding and duty | Statutory ref |",
+        "|---|---|---|---|---|---|---|---|"
     ]
 
     for a in alerts[:50]:
-        # P5 was missing from this chain, so every routine notice rendered as P4.
-        # Fixed 2026-08-20, same pass as the priority_base inflation fix.
-        _p = a.get("priority", 4)
-        pri_badge = {1: "🔴 P1", 2: "🟠 P2", 3: "🟡 P3", 4: "⚪ P4"}.get(_p, "⚪ P5")
+        priority = evaluated_alert_priority(a)
+        method = a.get("evaluation_method")
+        if method == "legacy-unassessed":
+            pri_badge = f"Legacy unassessed (raw P{a.get('legacy_raw_priority')})"
+        elif priority is None:
+            pri_badge = "Unassessed"
+        else:
+            pri_badge = f"P{priority} evaluated"
+        queue_badge = f"Queue {a.get('source_queue_priority')}"
         ref_text = f"[{a.get('statutory_reference') or 'Link'}]({a['url']})" if a.get('url') else (a.get('statutory_reference') or "Primary")
-        clean_summary = a["summary"].replace("|", "/")
-        lines.append(f"| {a['timestamp'][:16]} | {pri_badge} | **{a['jurisdiction']}** | {a['source']} | {clean_summary} | {ref_text} |")
+        clean_summary = a.get("summary", "").replace("|", "/")
+        lines.append(
+            f"| {a['timestamp'][:16]} | {pri_badge} | {queue_badge} | {method} | "
+            f"**{a['jurisdiction']}** | {a['source']} | {clean_summary} | {ref_text} |"
+        )
 
     bulletin_path.write_text("\n".join(lines), encoding="utf-8")
     return bulletin_path
+
+
+def run_rebuilds() -> None:
+    """Run each configured local rebuild and propagate any failure."""
+    build_py = HERE / "build.py"
+    if build_py.exists():
+        subprocess.run([sys.executable, str(build_py)], cwd=HERE, check=True)
+
+    deck_py = WORKSPACE_ROOT / "Scripts" / "build_command_deck.py"
+    if deck_py.exists():
+        subprocess.run([sys.executable, str(deck_py)], cwd=deck_py.parent, check=True)
 
 
 def run_surveillance_pass(model: str = DEFAULT_MODEL, trigger_rebuild: bool = True) -> Tuple[int, int]:
@@ -539,13 +585,7 @@ def run_surveillance_pass(model: str = DEFAULT_MODEL, trigger_rebuild: bool = Tr
         print(f"[{dt.datetime.now().strftime('%H:%M:%S')}] ✓ Sovereign Watch pass clean in {elapsed:.1f}s. All gazettes steady.")
 
     if trigger_rebuild:
-        build_py = HERE / "build.py"
-        if build_py.exists():
-            subprocess.run([sys.executable, str(build_py)], cwd=HERE, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-
-        deck_py = WORKSPACE_ROOT / "Scripts" / "build_command_deck.py"
-        if deck_py.exists():
-            subprocess.run([sys.executable, str(deck_py)], cwd=deck_py.parent, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        run_rebuilds()
 
     send_desktop_notification("✓ Sovereign Watch Complete", f"Daily regulatory sweep finished in {elapsed:.1f}s. GPU VRAM released.", urgency="normal")
     return len(new_alerts), len(existing_alerts) + len(new_alerts)
@@ -567,12 +607,16 @@ def main():
     if args.status:
         store = load_store()
         alerts = load_alerts()
-        p1_cnt = len([a for a in alerts if a.get("priority") == 1])
-        p2_cnt = len([a for a in alerts if a.get("priority") == 2])
+        p1_cnt = len([a for a in alerts if evaluated_alert_priority(a) == 1])
+        p2_cnt = len([a for a in alerts if evaluated_alert_priority(a) == 2])
+        unassessed_cnt = len([a for a in alerts if evaluated_alert_priority(a) is None])
         print("=== Sovereign Watch: Status & Health ===")
         print(f"Last pass timestamp: {store.get('last_run', 'Never')}")
         print(f"Tracked Document Hashes: {len(store.get('seen_hashes', {}))}")
-        print(f"Total Banked Alerts: {len(alerts)} (Critical P1: {p1_cnt}, High P2: {p2_cnt})")
+        print(
+            f"Total Banked Alerts: {len(alerts)} "
+            f"(Evaluated P1: {p1_cnt}, Evaluated P2: {p2_cnt}, Unassessed: {unassessed_cnt})"
+        )
         print(f"Default Model Target: {DEFAULT_MODEL} ({OLLAMA_HOST})")
         return
 
@@ -580,7 +624,13 @@ def main():
         alerts = load_alerts()
         print(f"=== Recent Sovereign Alerts (Top 15 of {len(alerts)}) ===")
         for a in alerts[:15]:
-            pri = "🔴 P1" if a["priority"] == 1 else ("🟠 P2" if a["priority"] == 2 else "⚪ P3")
+            evaluated = evaluated_alert_priority(a)
+            if a.get("evaluation_method") == "legacy-unassessed":
+                pri = f"Legacy unassessed (raw P{a.get('legacy_raw_priority')})"
+            elif evaluated is None:
+                pri = "Unassessed"
+            else:
+                pri = f"Evaluated P{evaluated}"
             print(f"[{a['timestamp'][:16]}] {pri} [{a['jurisdiction']}] {a['source']}: {a['title']}")
             print(f"   Duty: {a.get('duty_type')} | Ref: {a.get('statutory_reference')}")
             print(f"   Summary: {a.get('summary')}\n")

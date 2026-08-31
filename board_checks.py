@@ -4,6 +4,11 @@
 from url_identity import canonical_url
 
 
+ALERT_SCHEMA_VERSION = 2
+EVALUATED_ALERT_METHODS = {"local-model", "administrative-noise-rule", "human"}
+UNASSESSED_ALERT_METHODS = {"unassessed", "legacy-unassessed"}
+
+
 class BoardIntegrityError(ValueError):
     """Raised when generated board data makes an unsupported provenance claim."""
 
@@ -94,3 +99,128 @@ def validate_board(items, spans, evidence, registry, source_types):
         extra = f"\n  - and {len(errors) - 20} more" if len(errors) > 20 else ""
         raise BoardIntegrityError(f"board integrity check failed:\n  - {preview}{extra}")
     return len(items)
+
+
+def _valid_alert_priority(value):
+    return not isinstance(value, bool) and isinstance(value, int) and 1 <= value <= 5
+
+
+def has_valid_alert_evaluation(alert):
+    """Return whether an alert carries a complete assessed-priority provenance chain."""
+    if alert.get("alert_schema_version") != ALERT_SCHEMA_VERSION:
+        return False
+    method = alert.get("evaluation_method")
+    priority = alert.get("substantive_priority")
+    if method not in EVALUATED_ALERT_METHODS or not _valid_alert_priority(priority):
+        return False
+    if method == "local-model":
+        return isinstance(alert.get("model"), str) and bool(alert["model"].strip())
+    if method == "administrative-noise-rule":
+        return alert.get("model") is None
+    return alert.get("reviewed") is True
+
+
+def evaluated_alert_priority(alert):
+    """Return the substantive priority only when its provenance is valid."""
+    if has_valid_alert_evaluation(alert):
+        return alert["substantive_priority"]
+    return None
+
+
+def regulatory_notification_eligible(alert):
+    """Require an evaluated local-model P1 or P2 and the existing duty-shift predicate."""
+    return (
+        alert.get("evaluation_method") == "local-model"
+        and has_valid_alert_evaluation(alert)
+        and evaluated_alert_priority(alert) in (1, 2)
+        and alert.get("is_operator_duty_shift") is True
+    )
+
+
+def validate_regulatory_alerts(alerts):
+    """Reject ambiguous, incomplete or unsupported Sovereign Watch provenance."""
+    if not isinstance(alerts, list) or not alerts:
+        raise BoardIntegrityError("regulatory alerts must be a non-empty list")
+
+    errors = []
+    allowed_methods = EVALUATED_ALERT_METHODS | UNASSESSED_ALERT_METHODS
+    for index, alert in enumerate(alerts):
+        label = f"regulatory alert {index}"
+        if not isinstance(alert, dict):
+            errors.append(f"{label} is not an object")
+            continue
+        if alert.get("alert_schema_version") != ALERT_SCHEMA_VERSION:
+            errors.append(f"{label} has unsupported or missing alert schema version")
+
+        queue_priority = alert.get("source_queue_priority")
+        if not _valid_alert_priority(queue_priority):
+            errors.append(f"{label} has invalid source queue priority")
+
+        method = alert.get("evaluation_method")
+        if method not in allowed_methods:
+            errors.append(f"{label} has invalid or missing evaluation method")
+            continue
+
+        substantive = alert.get("substantive_priority")
+        reviewed = alert.get("reviewed")
+        model = alert.get("model")
+        legacy_raw = alert.get("legacy_raw_priority")
+        deprecated_raw = alert.get("priority")
+
+        if not isinstance(alert.get("is_operator_duty_shift"), bool):
+            errors.append(f"{label} has invalid duty-shift state")
+        if reviewed is True and method != "human":
+            errors.append(f"{label} claims human review without a human method")
+
+        if method == "legacy-unassessed":
+            if substantive is not None:
+                errors.append(f"{label} gives legacy unassessed data a substantive priority")
+            if not _valid_alert_priority(legacy_raw):
+                errors.append(f"{label} has invalid or missing legacy raw priority")
+            if deprecated_raw is not None and deprecated_raw != legacy_raw:
+                errors.append(f"{label} legacy raw priority disagrees with retained priority")
+            if model is not None:
+                errors.append(f"{label} assigns a model identity to missing legacy provenance")
+        elif method == "unassessed":
+            if substantive is not None:
+                errors.append(f"{label} gives an unassessed record a substantive priority")
+            if reviewed is not False:
+                errors.append(f"{label} unassessed record lacks explicit reviewed false")
+            if legacy_raw is not None:
+                errors.append(f"{label} unassessed record carries a legacy raw priority")
+        elif method == "local-model":
+            if not _valid_alert_priority(substantive):
+                errors.append(f"{label} has invalid evaluated priority")
+            if not isinstance(model, str) or not model.strip():
+                errors.append(f"{label} local-model evaluation lacks model identity")
+            if reviewed is not False:
+                errors.append(f"{label} local-model record lacks explicit reviewed false")
+            if legacy_raw is not None:
+                errors.append(f"{label} evaluated record carries a legacy raw priority")
+        elif method == "administrative-noise-rule":
+            if not _valid_alert_priority(substantive):
+                errors.append(f"{label} has invalid rule-evaluated priority")
+            if model is not None:
+                errors.append(f"{label} rule evaluation has a model identity")
+            if reviewed is not False:
+                errors.append(f"{label} rule-evaluated record lacks explicit reviewed false")
+            if legacy_raw is not None:
+                errors.append(f"{label} rule-evaluated record carries a legacy raw priority")
+        elif method == "human":
+            if not _valid_alert_priority(substantive):
+                errors.append(f"{label} has invalid human-evaluated priority")
+            if reviewed is not True:
+                errors.append(f"{label} human method lacks reviewed true")
+            if legacy_raw is not None:
+                errors.append(f"{label} human-evaluated record carries a legacy raw priority")
+
+        if method in EVALUATED_ALERT_METHODS and deprecated_raw is not None:
+            if deprecated_raw != substantive:
+                errors.append(f"{label} retained priority disagrees with substantive priority")
+
+    if errors:
+        preview = "\n  - ".join(errors[:20])
+        extra = f"\n  - and {len(errors) - 20} more" if len(errors) > 20 else ""
+        raise BoardIntegrityError(
+            f"regulatory alert integrity check failed:\n  - {preview}{extra}")
+    return len(alerts)

@@ -15,7 +15,10 @@
     "actionable_trigger": "Monitor for any subsequent executive orders, FERC directives, or sector-specific regulations issued under the emergency authority that may extend to AI-assisted grid management systems, critical-infrastructure cybersecurity obligations, or technology-sector supply-chain controls intersecting with AI deployment in energy infrastructure.",
     "evaluation_method": "local-model",
     "model": "qwen3.8:latest",
-    "reviewed": false
+    "reviewed": false,
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "substantive_priority": 1
   },
   {
     "id": "alert_1787984882_20642a",
@@ -33,7 +36,10 @@
     "actionable_trigger": "No immediate AI-specific action required; file under routine telecommunications regulatory monitoring and revisit only if subsequent FCC rulemaking extends USF administration obligations to digital service or AI infrastructure providers.",
     "evaluation_method": "local-model",
     "model": "qwen3.8:latest",
-    "reviewed": false
+    "reviewed": false,
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "substantive_priority": 5
   },
   {
     "id": "alert_1787984930_056399",
@@ -51,7 +57,10 @@
     "actionable_trigger": "Re-query the Federal Register API (e.g., /documents?conditions[document_number]=X26-20831) or the issuing agency's docket to confirm whether a substantive text has been published; if the entry remains a placeholder, log as a data-integrity anomaly and close the monitoring thread.",
     "evaluation_method": "local-model",
     "model": "qwen3.8:latest",
-    "reviewed": false
+    "reviewed": false,
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "substantive_priority": 5
   },
   {
     "id": "alert_1787985002_23fc3c",
@@ -69,7 +78,10 @@
     "actionable_trigger": "No AI-specific action required. Log as out-of-scope agricultural policy; re-screen only if subsequent implementing regulations introduce mandatory product-labelling or supply-chain data-disclosure duties that could intersect with AI-driven pricing or recommendation systems in food retail.",
     "evaluation_method": "local-model",
     "model": "qwen3.8:latest",
-    "reviewed": false
+    "reviewed": false,
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "substantive_priority": 1
   },
   {
     "id": "alert_1787985057_056399",
@@ -87,7 +99,10 @@
     "actionable_trigger": "Re-query the Federal Register API (https://www.federalregister.gov/api/v1/documents/2026-17842.json) within 48 hours to retrieve the full abstract, body text, and any cited statutory authority before assigning a substantive compliance classification.",
     "evaluation_method": "local-model",
     "model": "qwen3.8:latest",
-    "reviewed": false
+    "reviewed": false,
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "substantive_priority": 5
   },
   {
     "id": "alert_1787985091_c63cd1",
@@ -105,7 +120,10 @@
     "actionable_trigger": "No action required; no monitoring milestone applicable. File as non-regulatory commemorative notice and exclude from compliance tracking.",
     "evaluation_method": "local-model",
     "model": "qwen3.8:latest",
-    "reviewed": false
+    "reviewed": false,
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "substantive_priority": 5
   },
   {
     "id": "alert_1787979640_2e1b0f",
@@ -123,7 +141,10 @@
     "actionable_trigger": "No monitoring milestone or operational action is warranted; the document may be logged and archived as a non-regulatory ceremonial notice with no follow-up required.",
     "evaluation_method": "local-model",
     "model": "qwen3.8:latest",
-    "reviewed": false
+    "reviewed": false,
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "substantive_priority": 5
   },
   {
     "id": "alert_1787859135_8f0a80",
@@ -141,7 +162,10 @@
     "actionable_trigger": "No immediate action required; monitor OMB approval status of the FHWA information collection only if it intersects with highway-infrastructure reporting obligations relevant to the operator's portfolio.",
     "evaluation_method": "local-model",
     "model": "qwen3.8:latest",
-    "reviewed": false
+    "reviewed": false,
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "substantive_priority": 5
   },
   {
     "id": "alert_1787859185_253ac2",
@@ -159,7 +183,10 @@
     "actionable_trigger": "No AI-specific monitoring or compliance action required; classify as out-of-scope personnel regulation and archive without further review.",
     "evaluation_method": "local-model",
     "model": "qwen3.8:latest",
-    "reviewed": false
+    "reviewed": false,
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "substantive_priority": 5
   },
   {
     "id": "alert_1787859244_3adedc",
@@ -177,7 +204,10 @@
     "actionable_trigger": "No immediate operator action required. Monitor only if downstream export-control or technology-transfer annexes are subsequently published that reference dual-use AI or computational infrastructure.",
     "evaluation_method": "local-model",
     "model": "qwen3.8:latest",
-    "reviewed": false
+    "reviewed": false,
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "substantive_priority": 5
   },
   {
     "id": "alert_1787639127_3e72b6",
@@ -189,13 +219,16 @@
     "priority": 5,
     "is_operator_duty_shift": false,
     "duty_type": "none",
-    "statutory_reference": "Trading with the Enemy Act, 50 U.S.C. \u00a7\u00a7 4301\u20134401",
+    "statutory_reference": "Trading with the Enemy Act, 50 U.S.C. §§ 4301–4401",
     "summary": "This is a routine executive continuation of pre-existing presidential authorities under TWEA, imposing no new operational obligations, transparency duties, or sector-specific mandates on AI operators or any particular industry.",
     "denominator_disclosed": "n/a",
     "actionable_trigger": "Monitor subsequent OFAC or State Department guidance for any new entity designations or trade restrictions issued under the continued TWEA authorities that may intersect with AI/technology export-control obligations.",
     "evaluation_method": "local-model",
     "model": "qwen3.8:latest",
-    "reviewed": false
+    "reviewed": false,
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "substantive_priority": 5
   },
   {
     "id": "alert_1787639292_78834f",
@@ -213,7 +246,10 @@
     "actionable_trigger": "No AI-specific action required. Log as non-applicable in the regulatory monitoring register; revisit only if a subsequent implementing rule introduces cross-sector data-sharing or safety-assessment obligations that intersect with AI-assisted autonomous systems in space operations.",
     "evaluation_method": "local-model",
     "model": "qwen3.8:latest",
-    "reviewed": false
+    "reviewed": false,
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "substantive_priority": 1
   },
   {
     "id": "alert_1787382579_e2b4bb",
@@ -228,7 +264,13 @@
     "statutory_reference": null,
     "summary": "This executive order temporarily suspends additional retaliatory duties on Canadian alcoholic beverages, dairy products, and motor vehicles; it imposes no transparency, labelling, ADM-explanation, or risk-assessment obligation on AI operators or model developers.",
     "denominator_disclosed": "n/a",
-    "actionable_trigger": "No AI-specific compliance action required; monitor only if downstream tariff changes affect supply-chain inputs for connected-vehicle or industrial AI hardware procurement."
+    "actionable_trigger": "No AI-specific compliance action required; monitor only if downstream tariff changes affect supply-chain inputs for connected-vehicle or industrial AI hardware procurement.",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 1
   },
   {
     "id": "alert_1787374949_42598e",
@@ -243,7 +285,13 @@
     "statutory_reference": "Section 5, Securities Act of 1933; definitions of 'security' in the Securities Act of 1933 and the Securities Exchange Act of 1934",
     "summary": "The SEC has proposed a two-tier exemption regime (up to $5 million over four years; up to $75 million per 12-month period) for crypto-asset investment-contract offerings, attaching principles-based narrative disclosure, financial-statement, and ongoing-reporting obligations to issuers who elect to rely on the exemptions, alongside a conditional safe harbour removing certain crypto assets from the 'investment contract' definition. As a proposal, no binding duty is yet in force, but the disclosure architecture signals the Commission's intended compliance baseline.",
     "denominator_disclosed": "n/a",
-    "actionable_trigger": "Monitor the Federal Register docket 2026-17183 for the close of the public comment period and any subsequent final-rule publication; assess whether the $5M/$75M thresholds and the conditional safe-harbor conditions materially affect the firm's crypto-asset offering pipeline or existing token-issuance structures before the proposed rule, if adopted, takes effect."
+    "actionable_trigger": "Monitor the Federal Register docket 2026-17183 for the close of the public comment period and any subsequent final-rule publication; assess whether the $5M/$75M thresholds and the conditional safe-harbor conditions materially affect the firm's crypto-asset offering pipeline or existing token-issuance structures before the proposed rule, if adopted, takes effect.",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 2
   },
   {
     "id": "alert_1787375009_e39d0c",
@@ -258,7 +306,13 @@
     "statutory_reference": null,
     "summary": "The CFTC is soliciting public comment on the potential listing of compute derivatives contracts; no binding operator duty, transparency obligation, or labelling mandate is created, amended, or enforced at this pre-rulemaking stage.",
     "denominator_disclosed": "n/a",
-    "actionable_trigger": "Monitor the Federal Register and CFTC docket for any subsequent Notice of Proposed Rulemaking (NPRM) or final rule on compute derivatives listing; if a proposed rule emerges, assess whether it imposes reporting, margin, or disclosure obligations on entities trading or clearing compute-linked instruments."
+    "actionable_trigger": "Monitor the Federal Register and CFTC docket for any subsequent Notice of Proposed Rulemaking (NPRM) or final rule on compute derivatives listing; if a proposed rule emerges, assess whether it imposes reporting, margin, or disclosure obligations on entities trading or clearing compute-linked instruments.",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 5
   },
   {
     "id": "alert_1787288497_4d0c3a",
@@ -273,7 +327,13 @@
     "statutory_reference": "34 CFR part 602; Higher Education Act of 1965, as Amended; Executive Order 14279",
     "summary": "This is a proposed rule revising the Secretary's recognition of higher-education accrediting agencies to implement Executive Order 14279 and reduce regulatory burden; it imposes no direct transparency, labelling, or ADM-explanation obligation on AI operators or model developers.",
     "denominator_disclosed": "n/a",
-    "actionable_trigger": "Monitor the Federal Register docket 2026-17001 for the final rule and any conforming amendments to 34 CFR 602 that could affect eligibility criteria for institutions offering AI/CS programmes; no immediate operator action required."
+    "actionable_trigger": "Monitor the Federal Register docket 2026-17001 for the final rule and any conforming amendments to 34 CFR 602 that could affect eligibility criteria for institutions offering AI/CS programmes; no immediate operator action required.",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 5
   },
   {
     "id": "alert_1787288564_dbd346",
@@ -285,10 +345,16 @@
     "priority": 5,
     "is_operator_duty_shift": false,
     "duty_type": "none",
-    "statutory_reference": "Wagner-Peyser Act (29 U.S.C. \u00a7 49 et seq.); 2026-16982, Federal Register, 20 Aug 2026",
+    "statutory_reference": "Wagner-Peyser Act (29 U.S.C. § 49 et seq.); 2026-16982, Federal Register, 20 Aug 2026",
     "summary": "The DOL final rule removes the obligation for States to employ State merit staff in delivering Wagner-Peyser Employment Service functions, permitting each State to adopt the staffing model it deems most efficient and cost-effective. No AI-specific transparency, labelling, or ADM-explanation duty is created, amended, or enforced by this instrument.",
     "denominator_disclosed": "n/a",
-    "actionable_trigger": "No AI-regulatory action required. Log as non-applicable in the AI duty register; revisit only if subsequent DOL guidance ties Employment Service delivery to AI-assisted workforce-matching tools subject to UK or EU transparency obligations."
+    "actionable_trigger": "No AI-regulatory action required. Log as non-applicable in the AI duty register; revisit only if subsequent DOL guidance ties Employment Service delivery to AI-assisted workforce-matching tools subject to UK or EU transparency obligations.",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 5
   },
   {
     "id": "alert_1787288639_c721ab",
@@ -301,9 +367,15 @@
     "is_operator_duty_shift": false,
     "duty_type": "none",
     "statutory_reference": null,
-    "summary": "This Federal Register entry concerns DOJ criteria for granting relief from federal firearms disabilities under 18 U.S.C. \u00a7 921(a)(20) and bears no operational, compliance, or transparency obligation on AI operators, model developers, or automated decision-making systems.",
+    "summary": "This Federal Register entry concerns DOJ criteria for granting relief from federal firearms disabilities under 18 U.S.C. § 921(a)(20) and bears no operational, compliance, or transparency obligation on AI operators, model developers, or automated decision-making systems.",
     "denominator_disclosed": "n/a",
-    "actionable_trigger": "No AI-specific monitoring milestone required; classify as non-AI regulatory content and exclude from AI compliance tracking registers. Revisit only if cross-referenced in a future AI-governance or automated-eligibility-determination framework."
+    "actionable_trigger": "No AI-specific monitoring milestone required; classify as non-AI regulatory content and exclude from AI compliance tracking registers. Revisit only if cross-referenced in a future AI-governance or automated-eligibility-determination framework.",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 5
   },
   {
     "id": "alert_1787202068_f5969f",
@@ -318,7 +390,13 @@
     "statutory_reference": null,
     "summary": "This is a routine administrative solicitation for nominations to the NOAA Science Advisory Board, a Federal Advisory Committee under the Federal Advisory Committee Act. It imposes no binding obligation, transparency duty, labelling mandate, or ADM explanation requirement on AI operators, developers, or any regulated entity.",
     "denominator_disclosed": "n/a",
-    "actionable_trigger": "No immediate action required. Monitor only if subsequent SAB working-group outputs or NOAA policy guidance intersect with AI governance, environmental modelling disclosure, or data-provenance obligations relevant to the operator's jurisdiction."
+    "actionable_trigger": "No immediate action required. Monitor only if subsequent SAB working-group outputs or NOAA policy guidance intersect with AI governance, environmental modelling disclosure, or data-provenance obligations relevant to the operator's jurisdiction.",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 1
   },
   {
     "id": "alert_1787202129_732880",
@@ -333,7 +411,13 @@
     "statutory_reference": "Paperwork Reduction Act of 1995",
     "summary": "This is a routine Department of Labor notice soliciting public comments on a proposed information collection for a registered apprenticeship public awareness campaign. It bears no operational, compliance, or regulatory impact on AI operators, AI research institutions, or AI governance frameworks.",
     "denominator_disclosed": "n/a",
-    "actionable_trigger": "No action required; log as non-relevant to AI regulatory compliance and exclude from AI-specific monitoring dashboards."
+    "actionable_trigger": "No action required; log as non-relevant to AI regulatory compliance and exclude from AI-specific monitoring dashboards.",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 1
   },
   {
     "id": "alert_1787202189_f5969f",
@@ -348,7 +432,13 @@
     "statutory_reference": null,
     "summary": "This is a routine administrative solicitation for nominations to a Federal Advisory Committee; the reference to artificial intelligence and machine learning pertains solely to the desired expertise of prospective board members and imposes no binding obligation, transparency duty, or operational requirement on any AI operator or developer.",
     "denominator_disclosed": "n/a",
-    "actionable_trigger": "No immediate action required. Monitor subsequent SAB meeting minutes or published recommendations for any AI-specific advisory guidance that may inform future NOAA policy positions on AI/ML in oceanographic and atmospheric research contexts."
+    "actionable_trigger": "No immediate action required. Monitor subsequent SAB meeting minutes or published recommendations for any AI-specific advisory guidance that may inform future NOAA policy positions on AI/ML in oceanographic and atmospheric research contexts.",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 1
   },
   {
     "id": "alert_1787202315_c75073",
@@ -363,7 +453,13 @@
     "statutory_reference": null,
     "summary": "This Executive Order imposes binding import-adjustment conditions on Unmanned Aircraft Systems and their components entering the United States, thereby creating new compliance obligations for importers, distributors, and end-user operators reliant on UAS supply chains. The operational impact is a direct restriction or conditional gate on the lawful entry of UAS hardware and components, requiring affected parties to verify eligibility, licensing, and origin before procurement.",
     "denominator_disclosed": "n/a",
-    "actionable_trigger": "Immediately review the full Federal Register text (FR Doc. 2026-16979) for specific tariff rates, excluded-component lists, and effective dates; cross-reference with Commerce Department BIS and USTR implementing guidance; and assess whether existing UAS procurement contracts, spare-parts pipelines, and component sourcing (e.g., flight controllers, propulsion, sensors) fall within the adjusted-import scope before the stated compliance deadline."
+    "actionable_trigger": "Immediately review the full Federal Register text (FR Doc. 2026-16979) for specific tariff rates, excluded-component lists, and effective dates; cross-reference with Commerce Department BIS and USTR implementing guidance; and assess whether existing UAS procurement contracts, spare-parts pipelines, and component sourcing (e.g., flight controllers, propulsion, sensors) fall within the adjusted-import scope before the stated compliance deadline.",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 1
   },
   {
     "id": "alert_1787115653_b71729",
@@ -378,7 +474,13 @@
     "statutory_reference": "Federal Advisory Committee Act",
     "summary": "This is a routine Federal Advisory Committee Act renewal notice for the Secretary of Energy Advisory Board, effective 26 August 2026, and imposes no new obligations, transparency duties, or operational constraints on AI operators, developers, or deployers.",
     "denominator_disclosed": "n/a",
-    "actionable_trigger": "No immediate compliance action required; optionally monitor the SEAB public agenda and meeting minutes for any future advisory recommendations intersecting with AI governance in the energy sector."
+    "actionable_trigger": "No immediate compliance action required; optionally monitor the SEAB public agenda and meeting minutes for any future advisory recommendations intersecting with AI governance in the energy sector.",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 1
   },
   {
     "id": "alert_1787115699_a28a6e",
@@ -393,7 +495,13 @@
     "statutory_reference": "Federal Advisory Committee Act (procedural basis for meeting); U.S. Commission on Civil Rights rules and regulations",
     "summary": "This is a routine administrative notice convening a state advisory committee to brief on AI applications in voting administration; it creates no binding obligation, transparency duty, or operational requirement for AI developers or deployers.",
     "denominator_disclosed": "n/a",
-    "actionable_trigger": "Monitor the Maryland Advisory Committee's subsequent public outputs (reports, recommendations, or testimony) for any proposed state-level AI governance measures in election administration; no immediate operator action required."
+    "actionable_trigger": "Monitor the Maryland Advisory Committee's subsequent public outputs (reports, recommendations, or testimony) for any proposed state-level AI governance measures in election administration; no immediate operator action required.",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 1
   },
   {
     "id": "alert_1786938841_f1324a",
@@ -408,7 +516,13 @@
     "statutory_reference": null,
     "summary": "The notice concerns the physical location of government outreach offices and does not impose any new legal obligations, transparency mandates, or technical requirements on AI operators.",
     "denominator_disclosed": "n/a",
-    "actionable_trigger": "none"
+    "actionable_trigger": "none",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 1
   },
   {
     "id": "alert_1786938857_f30ca0",
@@ -423,7 +537,13 @@
     "statutory_reference": null,
     "summary": "The FDA is reclassifying specific in situ hybridization (ISH) test systems from Class III to Class II, streamlining the regulatory pathway for these oncology-related diagnostic devices.",
     "denominator_disclosed": "n/a",
-    "actionable_trigger": "Monitor the adoption of new special controls for Class II compliance for ISH systems."
+    "actionable_trigger": "Monitor the adoption of new special controls for Class II compliance for ISH systems.",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 1
   },
   {
     "id": "alert_1786938876_9fb3f7",
@@ -438,7 +558,13 @@
     "statutory_reference": null,
     "summary": "Automated capture from US Federal Register (AI Rules & Notices): Unified Agenda of Federal Regulatory and Deregulatory Actions-2026",
     "denominator_disclosed": "partial",
-    "actionable_trigger": "Review primary source for binding operator duties."
+    "actionable_trigger": "Review primary source for binding operator duties.",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 1
   },
   {
     "id": "alert_1786938894_af9d57",
@@ -453,7 +579,13 @@
     "statutory_reference": null,
     "summary": "Automated capture from US Federal Register (AI Rules & Notices): Introduction to the Unified Agenda of Federal Regulatory and Deregulatory Actions-2026",
     "denominator_disclosed": "partial",
-    "actionable_trigger": "Review primary source for binding operator duties."
+    "actionable_trigger": "Review primary source for binding operator duties.",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 1
   },
   {
     "id": "alert_1786938913_3e8a63",
@@ -468,7 +600,13 @@
     "statutory_reference": null,
     "summary": "Automated capture from US Federal Register (AI Rules & Notices): FCC To Review E-Rate Program To Ensure Congress's Vision",
     "denominator_disclosed": "partial",
-    "actionable_trigger": "Review primary source for binding operator duties."
+    "actionable_trigger": "Review primary source for binding operator duties.",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 1
   },
   {
     "id": "alert_1786938931_3a3a04",
@@ -483,7 +621,13 @@
     "statutory_reference": null,
     "summary": "Automated capture from US Federal Register (AI Rules & Notices): Airworthiness Directives; The Boeing Company Airplanes",
     "denominator_disclosed": "partial",
-    "actionable_trigger": "Review primary source for binding operator duties."
+    "actionable_trigger": "Review primary source for binding operator duties.",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 1
   },
   {
     "id": "alert_1786938942_a2c711",
@@ -498,7 +642,13 @@
     "statutory_reference": null,
     "summary": "The notice confirms the renewal of an internal advisory committee for the CFTC; it does not impose any new legal obligations, transparency requirements, or technical mandates on AI operators.",
     "denominator_disclosed": "n/a",
-    "actionable_trigger": "Monitor for future policy recommendations or guidance issued by the IAC."
+    "actionable_trigger": "Monitor for future policy recommendations or guidance issued by the IAC.",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 1
   },
   {
     "id": "alert_1786938961_d00e2a",
@@ -513,7 +663,13 @@
     "statutory_reference": null,
     "summary": "Automated capture from US Federal Register (AI Rules & Notices): Request for Information (RFI) on Modernizing the National Vulnerability Database in the Age of Artificial Intelligence",
     "denominator_disclosed": "partial",
-    "actionable_trigger": "Review primary source for binding operator duties."
+    "actionable_trigger": "Review primary source for binding operator duties.",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 1
   },
   {
     "id": "alert_1786938978_2fc880",
@@ -528,7 +684,13 @@
     "statutory_reference": null,
     "summary": "The regulation pertains to trade restrictions and import adjustments for polysilicon and its derivatives. It does not impose any new obligations, transparency requirements, or mandates regarding AI systems or data processing.",
     "denominator_disclosed": "n/a",
-    "actionable_trigger": "none"
+    "actionable_trigger": "none",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 1
   },
   {
     "id": "alert_1786938990_db0138",
@@ -543,7 +705,13 @@
     "statutory_reference": null,
     "summary": "The notice announces a meeting to discuss AI and crypto assets but does not impose any immediate legal obligations, transparency requirements, or technical mandates on AI operators.",
     "denominator_disclosed": "n/a",
-    "actionable_trigger": "Monitor the minutes and outcomes of the August 2026 meeting for potential regulatory signals."
+    "actionable_trigger": "Monitor the minutes and outcomes of the August 2026 meeting for potential regulatory signals.",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 1
   },
   {
     "id": "alert_1786939001_6e9762",
@@ -558,7 +726,13 @@
     "statutory_reference": null,
     "summary": "The proclamation establishes a period for public awareness regarding substance use prevention and does not impose any binding legal duties or operational requirements on private entities.",
     "denominator_disclosed": "n/a",
-    "actionable_trigger": "None"
+    "actionable_trigger": "None",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 1
   },
   {
     "id": "alert_1786939020_61ffda",
@@ -573,7 +747,13 @@
     "statutory_reference": null,
     "summary": "Automated capture from US Federal Register (Executive Orders): Continuation of the National Emergency With Respect to Export Control Regulations",
     "denominator_disclosed": "partial",
-    "actionable_trigger": "Review primary source for binding operator duties."
+    "actionable_trigger": "Review primary source for binding operator duties.",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 1
   },
   {
     "id": "alert_1786939037_12a8c3",
@@ -588,7 +768,13 @@
     "statutory_reference": null,
     "summary": "The executive order establishes federal policy regarding childhood vaccine recommendations and does not impose any specific legal duties, transparency requirements, or technical mandates for AI systems.",
     "denominator_disclosed": "n/a",
-    "actionable_trigger": "None"
+    "actionable_trigger": "None",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 1
   },
   {
     "id": "alert_1786939051_c6d78d",
@@ -603,7 +789,13 @@
     "statutory_reference": null,
     "summary": "The regulation pertains to healthcare and immigration policy regarding birth tourism and does not impose any obligations or requirements on AI systems or operators.",
     "denominator_disclosed": "n/a",
-    "actionable_trigger": "None"
+    "actionable_trigger": "None",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 1
   },
   {
     "id": "alert_1786939063_ac9819",
@@ -618,7 +810,13 @@
     "statutory_reference": null,
     "summary": "The document pertains to national identity and citizenship policy and contains no mandates regarding AI transparency, automated decision-making, or technical labelling.",
     "denominator_disclosed": "n/a",
-    "actionable_trigger": "none"
+    "actionable_trigger": "none",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 1
   },
   {
     "id": "alert_1786939075_c3db57",
@@ -633,7 +831,13 @@
     "statutory_reference": null,
     "summary": "The document is a ceremonial proclamation for National Purple Heart Day and imposes no operational requirements, transparency obligations, or technical mandates regarding AI systems.",
     "denominator_disclosed": "n/a",
-    "actionable_trigger": "None"
+    "actionable_trigger": "None",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 1
   },
   {
     "id": "alert_1786939086_7266b8",
@@ -648,7 +852,13 @@
     "statutory_reference": null,
     "summary": "The update concerns international drug interdiction cooperation and does not impose any new legal duties, transparency requirements, or technical mandates on AI operators.",
     "denominator_disclosed": "n/a",
-    "actionable_trigger": "none"
+    "actionable_trigger": "none",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 1
   },
   {
     "id": "alert_1786939104_539bb1",
@@ -663,7 +873,13 @@
     "statutory_reference": null,
     "summary": "The executive order establishes a commission to support military spouses and contains no provisions regarding AI systems, automated decision-making, or transparency requirements.",
     "denominator_disclosed": "n/a",
-    "actionable_trigger": "None"
+    "actionable_trigger": "None",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 1
   },
   {
     "id": "alert_1786939122_bdbae8",
@@ -678,7 +894,13 @@
     "statutory_reference": null,
     "summary": "Automated capture from US Federal Register (Executive Orders): Continuation of the National Emergency With Respect to the Advancement by Countries of Concern in Sensitive Technologies and Products Critical for the Military, Intelligence, Surveillance, or Cyber-Enabled Capabilities of Such Countries",
     "denominator_disclosed": "partial",
-    "actionable_trigger": "Review primary source for binding operator duties."
+    "actionable_trigger": "Review primary source for binding operator duties.",
+    "alert_schema_version": 2,
+    "source_queue_priority": 1,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 1
   },
   {
     "id": "alert_1786939142_4121ad",
@@ -693,6 +915,12 @@
     "statutory_reference": null,
     "summary": "Automated capture from UK Ofgem (Grid Queue & Regulatory Reform): Request for regulators to publish an update on their strategic approach to AI: Secretary of State letters",
     "denominator_disclosed": "partial",
-    "actionable_trigger": "Review primary source for binding operator duties."
+    "actionable_trigger": "Review primary source for binding operator duties.",
+    "alert_schema_version": 2,
+    "source_queue_priority": 2,
+    "evaluation_method": "legacy-unassessed",
+    "model": null,
+    "substantive_priority": null,
+    "legacy_raw_priority": 2
   }
 ]

@@ -1,5 +1,5 @@
 {
- "fetched": "2026-08-30 05:20 UTC",
+ "fetched": "2026-08-31 06:31 UTC",
  "items": [
   {
    "entity": "Anthropic",
@@ -17,18 +17,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 1
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "2c5edca3bbc78476198d7218d6ad9c30d1a3bfbb831b9d9ba3c606f659b98705",
    "evidence_hash": "2603137b02fe89cd48109225ee455c3355e4fba3d157de43109d9a7ebc6a6fbf",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Anthropic",
@@ -206,9 +206,9 @@
    "entity_basis": "tags-name-4-orgs"
   },
   {
-   "entity": "Nvidia",
-   "headline": "Nvidia closes in on Hugging Face acquisition",
-   "date": "Thu, 27 Aug 2026",
+   "entity": "FCC",
+   "headline": "The U.S. is building barriers around drones and robots, but China has scale to get around them",
+   "date": "Mon, 31 Aug 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "?",
@@ -216,46 +216,103 @@
    "sources": [
     {
      "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/08/26/nvidia-closes-in-on-hugging-face-acquisition/",
+     "url": "https://techcrunch.com/2026/08/30/the-u-s-is-building-barriers-around-drones-and-robots-china-still-has-scale/",
      "source_type": "trade-press",
      "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "rating": "ok",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
-    "total": 9
+    "total": 2
    },
+   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+   "content_hash": "c07b636669eb9b9a7370e07b94755fe004fc816fc23d139a765e2c4bdb0d0e9b",
+   "evidence_hash": "4697cb34c73998ef975bdaa747b3e1fa5558370196118b9fe53c1c34a2475fe2",
    "label_schema_version": 2,
-   "content_hash": "c99edba8186c8dc4767976d8298845dd0378acc441d85b0213dbd2cdf11f1d5d",
-   "evidence_hash": "bbbe2af9d5b586b1ee2e924659e541cf26c4a810c300dc94b953e8a08ef63d68",
+   "auto_labelled": true,
    "label_source": "machine",
-   "rating": "ok",
    "mentions": [
     {
+     "name": "FCC",
+     "count": 3
+    },
+    {
      "name": "Nvidia",
-     "count": 23
+     "count": 2
     },
     {
      "name": "Hugging Face",
-     "count": 17
+     "count": 2
     },
     {
      "name": "OpenAI",
-     "count": 4
+     "count": 1
     },
     {
      "name": "Anthropic",
+     "count": 1
+    },
+    {
+     "name": "Google",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "China",
+   "entity_basis": "tag"
+  },
+  {
+   "entity": "xAI",
+   "headline": "Musk’s faster path to more gas turbines comes with pollution problem",
+   "date": "Sun, 30 Aug 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/08/30/musks-faster-path-to-more-gas-turbines-comes-with-pollution-problem/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 4
+   },
+   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+   "content_hash": "0b0ecd712f67c81ad085b39b509f0ac2dd11d355e18ffa3531330068a8fcac3b",
+   "evidence_hash": "9c57772114251a0b67192a27c4ec5bdc9e19f639d0b0de359f3c1b0f989a61ef",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "xAI",
      "count": 4
+    },
+    {
+     "name": "Nvidia",
+     "count": 3
+    },
+    {
+     "name": "OpenAI",
+     "count": 2
     },
     {
      "name": "Google",
      "count": 2
     },
     {
-     "name": "Google DeepMind",
+     "name": "Hugging Face",
+     "count": 2
+    },
+    {
+     "name": "Anthropic",
      "count": 1
     }
    ],
@@ -264,8 +321,8 @@
   },
   {
    "entity": "",
-   "headline": "Viral AI startup Instinct has raised $350M at a $2.5B valuation",
-   "date": "Thu, 27 Aug 2026",
+   "headline": "Caterpillar is bringing to AI deployment what it learned from automating mining",
+   "date": "Sun, 30 Aug 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "?",
@@ -273,24 +330,32 @@
    "sources": [
     {
      "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation/",
+     "url": "https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining/",
      "source_type": "trade-press",
      "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "rating": "ok",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
-    "total": 3
+    "total": 5
    },
+   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+   "content_hash": "bcc1adb5a9a5faa676ff81f942772359c6c1b7c01d2a3dfe1f1d35453a3f8640",
+   "evidence_hash": "c7b99e2f53568e9c3c14eec5083ddd51b44418e9acfe6c5b6876cf9b044271f9",
    "label_schema_version": 2,
-   "content_hash": "2f47fac0ef401d28c44f3e03da65f1e39dcb2e2da44ee97b87b5343c33e218af",
-   "evidence_hash": "3a536cff19a33052e16924733789d384b9f266d3913e4c844d8c6480c30c00a5",
+   "auto_labelled": true,
    "label_source": "machine",
-   "rating": "ok",
    "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 2
+    },
+    {
+     "name": "Hugging Face",
+     "count": 2
+    },
     {
      "name": "OpenAI",
      "count": 1
@@ -300,15 +365,11 @@
      "count": 1
     },
     {
-     "name": "Meta",
-     "count": 1
-    },
-    {
-     "name": "Nscale",
+     "name": "Google",
      "count": 1
     }
    ],
-   "publisher_topic": "Funding",
+   "publisher_topic": "caterpillar",
    "entity_basis": "unresolved"
   },
   {
@@ -327,18 +388,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 9
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "9e384b1c68f56107d2022dd68c5a449ebbb2bd45d27316538c4b983ac0a24452",
    "evidence_hash": "64f201ea0b68ca7e66c91b93efd979d78b44847bb388f8b13ace0b3ca139e4a3",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Hugging Face",
@@ -372,18 +433,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 1
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "0874588f2bb333c2dc98a2329b8c7a8e3f4af57fc8b85980deac1d5514800830",
    "evidence_hash": "e7e624d3b325913a8bd85a2a9b24461544f5e5c20e3d99e0d30d48ced2a443fa",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Nvidia",
@@ -410,17 +471,58 @@
    "entity_basis": "headline"
   },
   {
-   "entity": "Anthropic",
-   "headline": "An Anthropic researcher just gave us a peek at self-improving AI",
-   "date": "Fri, 28 Aug 2026",
+   "entity": "",
+   "headline": "Texas Governor Abbott blocks funding for more Flock cameras",
+   "date": "2026-08-30T12:14",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "?",
    "reviewed": false,
    "sources": [
     {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/",
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/986541/texas-governor-abbott-flock-cameras",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 3
+   },
+   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+   "content_hash": "6bd0736ed3321cf95b5c3da8b5f7bf88e4e0e3a700f427733649804fd7798de2",
+   "evidence_hash": "09ea39405d807ca3d1ca4f9d6b8feeea8412495abcec13b6ae5e8b612f280468",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 1
+    },
+    {
+     "name": "Nvidia",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Politics",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "Anthropic",
+   "headline": "Sony Music Publishing and Warner Chappell are suing Anthropic",
+   "date": "2026-08-30T09:00",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/986438/sony-music-warner-chappell-anthropic-lawsuit-copyright",
      "source_type": "trade-press",
      "source_tier": 3
     }
@@ -430,29 +532,17 @@
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
-    "total": 3
+    "total": 2
    },
    "label_schema_version": 2,
-   "content_hash": "14c068f903eb9896ab6def1c3e84c1dc22a30327fcbf4e559880dc15d68a87b4",
-   "evidence_hash": "c2438a06f36df1bb31076709d47e1259a8cc1d8922ea0a9e9c981926f88efe68",
+   "content_hash": "760644c3ebf7c2c30e3153acac05f7c42eb50b0b5c90e46faa94a233ea772ef8",
+   "evidence_hash": "3ccbed6df63f8f41f1855ee2750838a6de32ccd46cb9830c75b1ebd290297beb",
    "label_source": "machine",
    "rating": "ok",
    "mentions": [
     {
      "name": "Anthropic",
-     "count": 5
-    },
-    {
-     "name": "Hugging Face",
-     "count": 2
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Google DeepMind",
-     "count": 1
+     "count": 11
     },
     {
      "name": "Nvidia",
@@ -478,18 +568,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
-    "total": 7
+    "total": 6
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "1e089b90f434e9d72065ea6bde59fd2fe4989f32f4202138e7ee72721f2c6a2f",
-   "evidence_hash": "5d9d2ee79354deeec9b33fcdafaa035e2c079d223f5bd054fde5ad0c426cc9e0",
    "label_schema_version": 2,
-   "auto_labelled": true,
+   "content_hash": "1e089b90f434e9d72065ea6bde59fd2fe4989f32f4202138e7ee72721f2c6a2f",
+   "evidence_hash": "f05e9da040673183cd803eb5e61e785de770ba1cd87c5fc5169c5e228c9e0ced",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Nvidia",
@@ -806,92 +896,6 @@
    "entity_basis": "headline"
   },
   {
-   "entity": "",
-   "headline": "Plaud is launching AI earbuds",
-   "date": "2026-08-28T05:09",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/985500/plaud-one-earbuds-ai-recorder-price-availability",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 3
-   },
-   "label_schema_version": 2,
-   "content_hash": "736ebd791bae20842b71dfde5cd6af9e265d06dbbe726991382f58340d963625",
-   "evidence_hash": "fa3e3e4a993861573e82f10fa0e8aa285ee0b49e0de6abdf3cbfceee5934cc32",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Google",
-     "count": 1
-    },
-    {
-     "name": "Apple",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Adobe is adding more AI to Photoshop",
-   "date": "2026-08-27T09:08",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/tech/985491/adobe-photoshop-ai-assisted-editor-markup",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 1
-   },
-   "label_schema_version": 2,
-   "content_hash": "4f3bdebca5696b84f811515b6727f84f91cb0c0cea2407a7a302bc395dcdf4e8",
-   "evidence_hash": "a0cec7cdb0db0ced5999e31cbd86e40c7af497a1ed481aca58820fd03973331c",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Apple",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Adobe",
-   "entity_basis": "unresolved"
-  },
-  {
    "entity": "xAI",
    "headline": "Elon Musk’s xAI used child porn to train Grok models, lawsuit says",
    "date": "Thu, 27 Aug 2026",
@@ -979,6 +983,59 @@
     },
     {
      "name": "Microsoft",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Meta",
+   "headline": "Inside Meta’s push to put robots to work in data centers",
+   "date": "Sun, 30 Aug 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "arstechnica.com",
+     "url": "https://arstechnica.com/ai/2026/08/inside-metas-push-to-put-robots-to-work-in-data-centers/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 1
+   },
+   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+   "content_hash": "aaba8158008844a32e26906d00d3af0446707c681c84e5174c118eb4b3f57d89",
+   "evidence_hash": "6219f722da41ae981fa6d47dce40ae10040d76bd09101ea555da8d94cf186d66",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 26
+    },
+    {
+     "name": "Microsoft",
+     "count": 2
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Nvidia",
+     "count": 1
+    },
+    {
+     "name": "Amazon",
      "count": 1
     }
    ],
@@ -1248,47 +1305,6 @@
    "entity_basis": "unresolved"
   },
   {
-   "entity": "OpenAI",
-   "headline": "How OpenAI let a mob of LLM agents game a test and ransack Hugging Face",
-   "date": "Thu, 27 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "arstechnica.com",
-     "url": "https://arstechnica.com/security/2026/08/how-openai-let-a-mob-of-llm-agents-game-a-test-and-ransack-hugging-face/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 3
-   },
-   "label_schema_version": 2,
-   "content_hash": "8d3ef5787e1f5a878cd387111e25a82c9382333943d78d162fc9d6f0938bc361",
-   "evidence_hash": "7f1f62dfa97fdc2e8441430cb2407b2f6b206cd2230f015bd795a17dff8f0adb",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Hugging Face",
-     "count": 13
-    },
-    {
-     "name": "OpenAI",
-     "count": 8
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
    "entity": "Google DeepMind",
    "headline": "Gemini Omni 1.1 Flash lets you build with more control",
    "date": "Thu, 27 Aug 2026",
@@ -1539,437 +1555,6 @@
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "site"
-  },
-  {
-   "entity": "",
-   "headline": "Good Culture Is the Biggest Productivity Hack, Not AI",
-   "date": "2026-08-24",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "newsletter.eng-leadership.com",
-     "url": "https://newsletter.eng-leadership.com/p/good-culture-is-the-biggest-productivity",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 1
-   },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "924fd4025d882a458ebfcdb0c34ae04d2d23b9c3d258b6a738f2f3234ae6ee34",
-   "evidence_hash": "68d0b7c3280917ea35a43b848b4a0876c10dcedd6577b7c30d5c69d8b3846d02",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "The growing divide between AI hype and software engineering reality",
-   "date": "2026-08-28",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "optimizedbyotto.com",
-     "url": "https://optimizedbyotto.com/post/why-open-source-projects-ban-ai/",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 5
-   },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "838518c0cf14b3344817617cb59042a7d8fab2e12ab1b9456476c6ac08fd4427",
-   "evidence_hash": "1caac96b22519b33b06530ce67f88fa9f760508c64acb164d58f6bb88144e122",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "GCC",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "[\"artificial intelligence\"",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Debian votes to allow \"responsible use of generative AI\"",
-   "date": "2026-08-29",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "lwn.net",
-     "url": "https://lwn.net/Articles/1091231/",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 52
-   },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "5feb4f2eb5ac43f223a59f69c394277cb20e95920a8b8a26dd18a407d6ea247e",
-   "evidence_hash": "dd6224282f3affdb359c068effd48187022a3807a79b1b6936699eda5299040c",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "StemDeck, a free, open-source and local AI stem separator",
-   "date": "Sat, 29 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "github.com",
-     "url": "https://github.com/stemdeckapp/stemdeck",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 26
-   },
-   "label_schema_version": 2,
-   "content_hash": "8c5a5006ad539922c5f74be339a785521234f4ae822052131bbb18ee212bb51b",
-   "evidence_hash": "90d54671f40cc407e3b16b48711b657aedef4312bf1c93da984ada8fb5ea4974",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Nvidia",
-     "count": 9
-    },
-    {
-     "name": "Apple",
-     "count": 9
-    },
-    {
-     "name": "Meta",
-     "count": 3
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "I accidentally turned LLM memory into program analysis",
-   "date": "Fri, 28 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "pwning.systems",
-     "url": "https://pwning.systems/posts/llm-memory-program-analysis/",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 34
-   },
-   "label_schema_version": 2,
-   "content_hash": "573f4404ed43e913fec451903ad95ffcb8fe3e435462947b09ad13799a27d31b",
-   "evidence_hash": "e133293df3eb8539f088df6081293edecbf423146e7290ba37a1ec386c758174",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "llm",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Identifying fake cosmetics using AI",
-   "date": "2026-08-26",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "groverlab.org",
-     "url": "https://groverlab.org/hnbfpr/2026-08-26-ai-counterfeit-cosmetics.html",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 11,
-    "total": 11
-   },
-   "label_evidence": "model read all 11 figure-sentence(s); 0 of 11 figure-sentence(s) matched a base cue",
-   "content_hash": "e5feb503d6f4c17a3ab226bd389123c5ae0a5f96bd70a4e9930d2a00a5c4d4d6",
-   "evidence_hash": "d20465b4db3701266ba4fe113421b3ff78fbef76f6dab32a6e1d91cb12c41318",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 5
-    },
-    {
-     "name": "Snap",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Anthropic",
-   "headline": "Pentagon's blacklisting of Anthropic was unlawful, US judge rules",
-   "date": "Fri, 28 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "reuters.com",
-     "url": "https://www.reuters.com/legal/government/us-judge-blocks-pentagons-anthropic-blacklisting-2026-08-28/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "article not fetched (robots-disallowed)",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
-   "label_source": "machine",
-   "rating": "trusted",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Google",
-   "headline": "Luanti removed from Google Play due to baseless AI copyright notice",
-   "date": "2026-08-27",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "blog.luanti.org",
-     "url": "https://blog.luanti.org/2026/08/27/luanti-dmca-tracer-ai/",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 9
-   },
-   "label_schema_version": 2,
-   "content_hash": "67d54e7a840ef78f93473ec78bdc06b5180294a75273e464ceefbda284209c2f",
-   "evidence_hash": "3ad970cadba1d862d186f2a98515c2ef9a71d24eb9b7c6ed4731d4e4bf755851",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 7
-    },
-    {
-     "name": "Microsoft",
-     "count": 5
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Anthropic",
-   "headline": "Judge rules Trump administration’s blacklisting of Anthropic was illegal",
-   "date": "2026-08-27",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "nytimes.com",
-     "url": "https://www.nytimes.com/2026/08/27/technology/anthropic-government-blacklisting-ruling.html",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "article not fetched (http-403)",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "Request for Information (RFI) on Modernizing the National Vulnerability Database in the Age of Artificial Intelligence",
-   "date": "Wed, 12 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "federalregister.gov",
-     "url": "https://www.federalregister.gov/documents/2026/08/12/2026-16371/request-for-information-rfi-on-modernizing-the-national-vulnerability-database-in-the-age-of",
-     "source_type": "primary-record",
-     "source_tier": 1
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 19
-   },
-   "label_schema_version": 2,
-   "content_hash": "71ad59ed0f196d38921b0acb9895d63c6f70b12bd86b95c745615f6ba2ef483c",
-   "evidence_hash": "660a1cc5f0786e779aa79b0b77988a8db58dc3ad82f0ec1a9953155daf4c553b",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "NIST",
-     "count": 29
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "site:no-subject"
-  },
-  {
-   "entity": "",
-   "headline": "Request for Comment on the Listing of Compute Derivatives Contracts",
-   "date": "Fri, 21 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "federalregister.gov",
-     "url": "https://www.federalregister.gov/documents/2026/08/21/2026-17163/request-for-comment-on-the-listing-of-compute-derivatives-contracts",
-     "source_type": "primary-record",
-     "source_tier": 1
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 86
-   },
-   "label_schema_version": 2,
-   "content_hash": "2da6eed0b497d0b4fff5de380a9b957d83053e249d99ad0a45514a160744fe33",
-   "evidence_hash": "2d55ee370cdacb77edfa5f6117761c58db15498f290f69eedac8e0f9519cb9fb",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "site:no-subject"
-  },
-  {
-   "entity": "FTC",
-   "headline": "FTC Finalizes Orders with Cox Media Group, Two Other Firms Settling Charges They Deceived Customers About “Active Listening” AI-Powered Marketing Service",
-   "date": "Thu, 27 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "ftc.gov",
-     "url": "https://www.ftc.gov/news-events/news/press-releases/2026/08/ftc-finalizes-orders-cox-media-group-two-other-firms-settling-charges-they-deceived-customers-about",
-     "source_type": "primary-record",
-     "source_tier": 1
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "article not fetched (http-403)",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "headline"
   },
   {
    "entity": "NIST",
@@ -2786,6 +2371,43 @@
   },
   {
    "entity": "",
+   "headline": "How an MIT research project became a global programming language",
+   "date": "Mon, 31 Aug 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "news.mit.edu",
+     "url": "https://news.mit.edu/2026/how-mit-research-project-became-global-programming-language-0831",
+     "source_type": "press-office",
+     "source_tier": 5
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 7
+   },
+   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+   "content_hash": "7493b662787020e572a635c6218f8af35717de6bb692360d56052941e6324947",
+   "evidence_hash": "e29ed15d88696e7f5419f0aa042550b47c0548cd90085c4b2d1c5c31dc5e8c4c",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "Viral Shah",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
    "headline": "Looking beyond natural sequences",
    "date": "Thu, 27 Aug 2026",
    "topic": "",
@@ -3087,43 +2709,6 @@
     }
    ],
    "publisher_topic": "MIT NSE",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "The benefits of medical AI assistance vary based on user expertise",
-   "date": "Tue, 04 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "news.mit.edu",
-     "url": "https://news.mit.edu/2026/medical-ai-assistance-benefits-vary-based-on-user-expertise-0804",
-     "source_type": "press-office",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 1
-   },
-   "label_schema_version": 2,
-   "content_hash": "f22fd4243b54f1a8bde73cf93ec56d48da4b2f76cfa05f77d897f6c545137093",
-   "evidence_hash": "c7986fbd3a0e3b01b2249eb9036ff078dbeab7844e60cccf72901779c3b6c655",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Marzyeh Ghassemi",
    "entity_basis": "unresolved"
   },
   {

@@ -45,18 +45,43 @@ read backwards. That is why the line above is written out rather than left to ju
 
 `daily_publish.py` is the unattended route. The user timer runs it at 06:20, after the 06:00
 Sovereign Watch sweep. It publishes broad intake and machine labels as visibly unreviewed
-records. It does not publish a human judgement, write to the private tracker, set
+records. Sovereign Watch stores source queue order separately from evaluated substantive
+priority. A failed or malformed evaluation is stored as unassessed and cannot inherit P1 or P2
+from its source. The route does not publish a human judgement, write to the private tracker, set
 `reviewed = true`, merge branches, rebase, force-push or bypass a hook.
 
 Before any commit it requires local `main` to equal its upstream, permits only generated
 board paths, parses every changed JSON or JSONL file, rejects machine-labelled records that
-claim human review, runs the unit suite and runs both unstaged and staged diff checks. It
+claim human review, rejects regulatory priorities without schema-versioned evaluation
+provenance, runs the unit suite and runs both unstaged and staged diff checks. It
 stops if any refresh stage reports failure. After a normal push it compares the live Pages
 bytes with the committed `index.html`.
 
 The timer must remain disabled while the repository has an inherited dirty tree. A failed
 run leaves its evidence in the systemd journal and requires the tree or upstream divergence
 to be resolved before publication can resume.
+
+### Sovereign Watch provenance states
+
+Schema-versioned Sovereign Watch records keep these fields separate:
+
+- `source_queue_priority`: processing order only. It is not a legal or substantive finding.
+- `substantive_priority`: P1 to P5 only when a complete evaluation provenance chain exists.
+- `evaluation_method` and `model`: how the evaluation was produced and which model ran.
+- `reviewed`: the human review state. Automated paths set it only to `false`.
+- `legacy_raw_priority`: the retained historical value where evaluation provenance was absent.
+
+Legacy records with no stored method render as `Legacy unassessed`. Their raw priority remains
+visible but does not control the evaluated-priority badge, bulletin treatment or notification
+eligibility. A missing historical `reviewed` field is labelled as not recorded rather than being
+converted to a human decision. Notifications require an evaluated local-model P1 or P2, an
+explicit model identity and the duty-shift predicate.
+
+The stored 20-record model comparison is historical calibration evidence, not an independent
+legal standard. Qwen agreement was 19 of 20, N = 20. The always-no baseline was also 19 of 20,
+N = 20, and positive recall was 0 accepted positives out of 1 comparator-positive record,
+N = 1 positive. The held result files contain model outputs but no independently reviewed gold
+labels.
 
 ### The pre-commit hook
 
