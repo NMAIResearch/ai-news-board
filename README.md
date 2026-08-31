@@ -1,9 +1,10 @@
 # AI News Board
 
-A live board that separates publisher class, resolved claim relationships, figure-base
-evidence, citation links and typed research-context links. Figures are quoted verbatim from article
-text with their position recorded. Every machine label states its method, complete-span
-coverage, content hash and schema version.
+A live board for AI news evidence, daily sovereign regulatory intake, search and market signals,
+and source-bound client-harness compatibility. Publisher class, resolved claim relationships,
+figure-base evidence, citation links and typed research-context links remain separate. Figures
+are quoted verbatim from article text with their position recorded. Every machine label states
+its method, complete-span coverage, content hash and schema version.
 
 AI disclosure: AI models assisted with parts of this project. Machine and human evidence
 methods are identified separately. The models and their conflicts are named below.
@@ -57,9 +58,10 @@ provenance, runs the unit suite and runs both unstaged and staged diff checks. I
 stops if any refresh stage reports failure. After a normal push it compares the live Pages
 bytes with the committed `index.html`.
 
-The timer must remain disabled while the repository has an inherited dirty tree. A failed
-run leaves its evidence in the systemd journal and requires the tree or upstream divergence
-to be resolved before publication can resume.
+A dirty tree is a fail-closed condition. A failed run leaves its evidence in the systemd journal
+and requires the tree or upstream divergence to be resolved before publication can resume.
+Runtime bulletins, the event stream and the schedule log are local operational evidence. They are
+ignored by Git and are not published as board content.
 
 ### Sovereign Watch provenance states
 
@@ -77,11 +79,11 @@ eligibility. A missing historical `reviewed` field is labelled as not recorded r
 converted to a human decision. Notifications require an evaluated local-model P1 or P2, an
 explicit model identity and the duty-shift predicate.
 
-The stored 20-record model comparison is historical calibration evidence, not an independent
+The retired 20-record model comparison is historical calibration evidence, not an independent
 legal standard. Qwen agreement was 19 of 20, N = 20. The always-no baseline was also 19 of 20,
 N = 20, and positive recall was 0 accepted positives out of 1 comparator-positive record,
-N = 1 positive. The held result files contain model outputs but no independently reviewed gold
-labels.
+N = 1 positive. The result files, recoverable from Git history, contain model outputs but no
+independently reviewed gold labels.
 
 ### The pre-commit hook
 
@@ -98,11 +100,17 @@ Bypass with `git commit --no-verify` if you ever need to.
     ./refresh.sh                  # every step in order, then builds index.html
     ./refresh.sh --no-label       # same, deterministic labels only (fast)
 
-It runs the thirteen steps in the required order. If Ollama is unavailable, it runs the
+It runs the complete intake, evidence, archive, signal and build sequence in the required order.
+If Ollama is unavailable, it runs the
 deterministic label rules and leaves unresolved items unassessed. It skips the market pull if
 `~/.config/nmai/keys.env` is absent, and
 **aborts rather than leaving a stale `index.html`** if the build raises. It never runs
 `--plain`, never commits and never pushes.
+
+The right-rail Sources panel is generated from primary links extracted from current article
+elements in `article_evidence.json`. It does not run a separate general paper or dataset search.
+Each row retains the originating article headline, and the panel states that link presence alone
+does not establish support for that headline.
 
 The step list below is what `refresh.sh` runs. Keep it for reading a single step in isolation
 or for re-running one after a failure. ⚠️ Running these by hand is how you end up publishing a
@@ -118,7 +126,6 @@ from this list until 2026-08-07.
     python3 carry_reviews.py      # persist current-schema labels by URL and content hash
     python3 resolve_entity.py     # decide who each claim is about, deterministically or blank
     python3 article_evidence.py   # per-article attribution, primary links, figure sourcing
-    python3 fetch_scholar.py      # pull latest arXiv papers + HF datasets
     python3 fetch_releases.py     # models released in the last 60 days
     python3 archive.py            # permanent record + revisit queue
     python3 suggest_register_rows.py --write   # nominate candidate tracker rows, gitignored
@@ -240,8 +247,8 @@ checkable by nothing.
 Several local models used to read the same headline and their disagreement was rendered as a
 chip. Two of its three fields are now gone: `claim_type` is retired, and the denominator comes
 from quoted spans, which is checkable rather than voted on. Provenance travels on the label
-itself instead. The tooling is in [`archive/`](archive/), which explains what it did and what
-is worth keeping if it is ever rebuilt on spans.
+itself instead. The retired implementation was removed from the working tree and remains
+recoverable from Git history.
 
 ## What each item shows
 
@@ -283,6 +290,26 @@ made, and each duplicates a versioned row already in the list. No benchmark scor
 that is a leaderboard, and a percentage with no stated denominator is the defect this board
 flags elsewhere. A model announced but never shipped cannot appear in any release list,
 including this one.
+
+## Harness compatibility
+
+The Harnesses tab is a narrow client-compatibility order, not a model or product leaderboard.
+`harnesses.json` pins the comparison to one public PLAG IN commit, one evidence date, one declared
+status order and the observed boundary for every client entry. Entries with the same recorded
+status share a competition rank.
+
+The current source records five client rows, N = 5. No installed client completed a verified
+end-to-end integration in that evidence. The order therefore does not establish model quality,
+client quality, latency, throughput, memory use or safety. A schema gate rejects a missing source
+commit, an unsupported status or a rank that disagrees with the declared tie method.
+
+## Search and market signals
+
+The right-rail `Search & market` panel combines three streams from `trend_monitor.py`: Google
+Trends RSS search spikes for US and GB, Google News Search RSS clusters across the seven published
+research topics, and symmetrical market anomalies from `data/market.json`. Search or price
+movement is a lead for inspection, not evidence that a claim is true or that a news item caused a
+market move.
 
 ## Archive and revisit queue
 
@@ -371,6 +398,14 @@ when a recorded publisher or owner relationship to the subject resolves.
 
 `tier_map.json` records every tier with its basis, and every cell is contestable.
 
+### Research Protocol intake contract
+
+The Research Protocol may ingest `source_class_tier` as routing metadata only. It must read the
+executable `source_types` registry, not the narrative entity examples. Source class cannot become
+a truth score, quality score, automatic exclusion, automatic claim acceptance or research
+priority. Claim relationship, private reliability rating, evidence coverage, primary-link status
+and review status remain separate axes.
+
 ## What is decided by hand, and what is not
 
 Automatable: the feed pull, source type and source tier from the URL, entity resolution against
@@ -395,7 +430,8 @@ been reviewed, and which private register rows may be published.
 ## Conflict of interest
 
 The maker is an independent researcher. An Anthropic model helped build the original method and
-tiers. An OpenAI model implemented the current source-class split, label provenance and anchor
-rules. OpenAI is a subject on the board, so this work is a direct conflict and is not an
-independent check of OpenAI-related output. Anthropic and OpenAI remain subjects under the same
-published registries. Independent analysis, not investment advice.
+tiers. An OpenAI model implemented the current source-class split, label provenance, anchor rules,
+harness presentation and related integrity gates. OpenAI is a subject on the board and Codex CLI
+is a row in the harness comparison, so this work is a direct conflict and is not an independent
+check of OpenAI-related output. Anthropic and OpenAI remain subjects under the same published
+registries. Independent analysis, not investment advice.

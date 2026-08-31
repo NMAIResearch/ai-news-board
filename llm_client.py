@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """llm_client.py - shared local-model (Ollama) client for the labelling pipeline.
 
-The call / retry / parse helpers and their tuned constants, extracted from the retired
-autolabel.py (now in archive/) so label_items.py is self-contained and nothing in the live
-pipeline depends on an archived file. autolabel.py's headline-only labelling is NOT carried
-over; only its model-call plumbing, which label_items.py still reuses.
+The call / retry / parse helpers and their tuned constants were extracted from the retired
+autolabel.py, which remains available in Git history. label_items.py is self-contained and
+does not depend on a retired file. autolabel.py's headline-only labelling is not carried over;
+only its model-call plumbing remains.
 
 Constants are overridable by environment variable. The comments record hard-won tuning
 (VRAM limits, timeout behaviour, output caps); do not lower them casually.

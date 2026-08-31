@@ -15,7 +15,6 @@ if str(REPO) not in sys.path:
     sys.path.insert(0, str(REPO))
 
 import board_checks
-import ai_surveillance_daemon
 import build
 import migrate_regulatory_alerts
 import sovereign_watch
@@ -225,40 +224,44 @@ class SovereignProvenanceTests(unittest.TestCase):
                     root / "missing.json", root / "backup.json"
                 )
 
-    def test_13_legacy_daemon_uses_validated_writer(self):
+    def test_13_invalid_alert_is_rejected_by_shared_writer_gate(self):
         invalid = [{"priority": 1, "is_operator_duty_shift": True}]
-        with mock.patch.object(
-            sovereign_watch,
-            "save_alerts",
-            side_effect=board_checks.BoardIntegrityError("invalid fixture"),
-        ) as shared_writer:
-            with self.assertRaises(board_checks.BoardIntegrityError):
-                ai_surveillance_daemon.save_alerts(invalid)
-        shared_writer.assert_called_once_with(invalid)
+        with self.assertRaises(board_checks.BoardIntegrityError):
+            board_checks.validate_regulatory_alerts(invalid)
 
-    def test_14_local_pack_diff_is_unassessed(self):
+    def test_14_local_pack_diff_stays_out_of_public_alerts(self):
         with tempfile.TemporaryDirectory() as temporary:
             root = pathlib.Path(temporary)
             manifest = root / "pipeline_manifest.csv"
             manifest.write_text("first", encoding="utf-8")
             store = {}
-            with mock.patch.object(ai_surveillance_daemon, "REGULATIONS_DIR", root):
+            with mock.patch.object(sovereign_watch, "REGULATIONS_DIR", root):
                 self.assertEqual(
-                    ai_surveillance_daemon.sweep_local_regulations_packs(store), []
+                    sovereign_watch.sweep_local_regulations_packs(store), []
                 )
                 manifest.write_text("second", encoding="utf-8")
-                alerts = ai_surveillance_daemon.sweep_local_regulations_packs(store)
-        self.assertEqual(len(alerts), 1)
-        self.assertEqual(alerts[0]["source_queue_priority"], 1)
-        self.assertIsNone(alerts[0]["substantive_priority"])
-        self.assertEqual(alerts[0]["evaluation_method"], "unassessed")
-        self.assertFalse(board_checks.regulatory_notification_eligible(alerts[0]))
+                changes = sovereign_watch.sweep_local_regulations_packs(store)
+        self.assertEqual(changes, ["pipeline_manifest.csv"])
+        self.assertNotIn("substantive_priority", store)
+        self.assertNotIn("pipeline_manifest.csv", json.dumps(store))
+        self.assertTrue(all(
+            key.startswith("local_input:")
+            for key in store["jurisdiction_hashes"]
+        ))
 
     def test_15_rebuild_failure_propagates(self):
         failure = subprocess.CalledProcessError(1, ["python3", "build.py"])
         with mock.patch.object(sovereign_watch.subprocess, "run", side_effect=failure):
             with self.assertRaises(subprocess.CalledProcessError):
                 sovereign_watch.run_rebuilds()
+
+    def test_16_administrative_rule_has_distinct_public_badge(self):
+        alert = evaluated_record(5)
+        alert["evaluation_method"] = "administrative-noise-rule"
+        alert["model"] = None
+        html = build.sovereign_radar_tab([alert])
+        self.assertIn("P5 deterministic rule", html)
+        self.assertNotIn("P5 evaluated candidate", html)
 
 
 def run_reverse_mutation_probes():

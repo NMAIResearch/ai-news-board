@@ -16,8 +16,8 @@ evidence hash still match.
 
 Run order:  fetch_feeds.py -> fetch_vendor_news.py -> carry_reviews.py -> apply_ratings.py
             -> extract_spans.py -> label_items.py -> carry_reviews.py -> resolve_entity.py
-            -> article_evidence.py -> fetch_scholar.py -> fetch_releases.py -> archive.py
-            -> build.py
+            -> article_evidence.py -> fetch_releases.py -> archive.py
+            -> suggest_register_rows.py -> fetch_market.py -> trend_monitor.py -> build.py
 Also safe to run after any manual review so the new labels are remembered.
 """
 import json, os

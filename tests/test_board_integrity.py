@@ -4,7 +4,7 @@ import unittest
 
 from apply_ratings import rate, source_identity
 from article_evidence import claim_relative_tier
-from board_checks import BoardIntegrityError, validate_board
+from board_checks import BoardIntegrityError, validate_board, validate_tier_contract
 from label_items import (LABEL_SCHEMA_VERSION, PROMPT_CHAR_BUDGET, current_machine_label,
                          item_block, tier1_denominator)
 from extract_spans import (FURNITURE, TIME_FURNITURE, content_region,
@@ -230,6 +230,37 @@ class ClaimTierTests(unittest.TestCase):
 
 
 class IntegrityGateTests(unittest.TestCase):
+    def test_research_protocol_tier_is_metadata_only(self):
+        tier_map = {
+            "source_types": {"primary-record": {"tier": 1}},
+            "research_protocol_contract": {
+                "field": "source_class_tier",
+                "use": "intake-routing-metadata-only",
+                "executable_registry": "source_types",
+                "prohibited_uses": [
+                    "truth score",
+                    "quality score",
+                    "automatic source exclusion",
+                    "automatic claim acceptance",
+                    "research priority",
+                ],
+            },
+        }
+        self.assertEqual(validate_tier_contract(tier_map), 1)
+
+    def test_research_protocol_tier_cannot_become_quality_score(self):
+        tier_map = {
+            "source_types": {"primary-record": {"tier": 1}},
+            "research_protocol_contract": {
+                "field": "source_class_tier",
+                "use": "quality-score",
+                "executable_registry": "source_types",
+                "prohibited_uses": [],
+            },
+        }
+        with self.assertRaises(BoardIntegrityError):
+            validate_tier_contract(tier_map)
+
     def test_n_a_with_spans_fails(self):
         item = {
             "headline": "Example", "denominator_stated": "n/a",

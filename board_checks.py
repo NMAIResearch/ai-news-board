@@ -1,12 +1,21 @@
 #!/usr/bin/env python3
 """Fail-closed integrity checks for data consumed by the static board build."""
 
+import json
+import pathlib
+
 from url_identity import canonical_url
 
 
 ALERT_SCHEMA_VERSION = 2
 EVALUATED_ALERT_METHODS = {"local-model", "administrative-noise-rule", "human"}
 UNASSESSED_ALERT_METHODS = {"unassessed", "legacy-unassessed"}
+HARNESS_SCHEMA_VERSION = 1
+HARNESS_STATUSES = (
+    "protocol_compatible_unverified",
+    "adapter_required",
+    "trial_failed",
+)
 
 
 class BoardIntegrityError(ValueError):
@@ -224,3 +233,138 @@ def validate_regulatory_alerts(alerts):
         raise BoardIntegrityError(
             f"regulatory alert integrity check failed:\n  - {preview}{extra}")
     return len(alerts)
+
+
+def validate_tier_contract(tier_map):
+    """Require the public Research Protocol boundary to remain metadata-only."""
+    contract = tier_map.get("research_protocol_contract")
+    if not isinstance(contract, dict):
+        raise BoardIntegrityError("tier map lacks a Research Protocol intake contract")
+    if contract.get("field") != "source_class_tier":
+        raise BoardIntegrityError("Research Protocol contract uses an ambiguous tier field")
+    if contract.get("use") != "intake-routing-metadata-only":
+        raise BoardIntegrityError("source class is not restricted to intake metadata")
+    if contract.get("executable_registry") != "source_types":
+        raise BoardIntegrityError("Research Protocol contract does not bind source_types")
+    required_prohibitions = {
+        "truth score",
+        "quality score",
+        "automatic source exclusion",
+        "automatic claim acceptance",
+        "research priority",
+    }
+    if not required_prohibitions.issubset(set(contract.get("prohibited_uses", []))):
+        raise BoardIntegrityError("Research Protocol contract omits a prohibited tier use")
+    return len(tier_map.get("source_types", {}))
+
+
+def validate_harnesses(data):
+    """Validate the bounded harness comparison and its source provenance."""
+    if not isinstance(data, dict) or data.get("schema_version") != HARNESS_SCHEMA_VERSION:
+        raise BoardIntegrityError("harness data has an unsupported schema version")
+    source = data.get("source")
+    if not isinstance(source, dict):
+        raise BoardIntegrityError("harness data lacks source provenance")
+    commit = source.get("commit")
+    if not isinstance(commit, str) or len(commit) != 40 or any(
+        character not in "0123456789abcdef" for character in commit
+    ):
+        raise BoardIntegrityError("harness source commit is not a full Git identity")
+    for field in ("repository", "url", "evidence_date", "retrieved_date"):
+        if not isinstance(source.get(field), str) or not source[field].strip():
+            raise BoardIntegrityError(f"harness source lacks {field}")
+    if f"/blob/{commit}/" not in source["url"]:
+        raise BoardIntegrityError("harness evidence URL is not pinned to its source commit")
+
+    method = data.get("ranking_method")
+    if not isinstance(method, dict):
+        raise BoardIntegrityError("harness data lacks a ranking method")
+    if method.get("status_order") != list(HARNESS_STATUSES):
+        raise BoardIntegrityError("harness status order changed without a schema change")
+    if not isinstance(method.get("limits"), str) or not method["limits"].strip():
+        raise BoardIntegrityError("harness comparison lacks method limits")
+
+    entries = data.get("entries")
+    if not isinstance(entries, list) or not entries:
+        raise BoardIntegrityError("harness comparison must contain at least one entry")
+    names = set()
+    status_counts = {status: 0 for status in HARNESS_STATUSES}
+    for index, entry in enumerate(entries):
+        label = f"harness entry {index}"
+        if not isinstance(entry, dict):
+            raise BoardIntegrityError(f"{label} is not an object")
+        name = entry.get("name")
+        if not isinstance(name, str) or not name.strip() or name in names:
+            raise BoardIntegrityError(f"{label} has a missing or duplicate name")
+        names.add(name)
+        status = entry.get("status")
+        if status not in HARNESS_STATUSES:
+            raise BoardIntegrityError(f"{label} has an unsupported status")
+        if not isinstance(entry.get("status_label"), str) or not entry["status_label"].strip():
+            raise BoardIntegrityError(f"{label} lacks a status label")
+        if not isinstance(entry.get("observed_boundary"), str) or not entry["observed_boundary"].strip():
+            raise BoardIntegrityError(f"{label} lacks an observed boundary")
+        status_counts[status] += 1
+
+    prior = 0
+    for status in HARNESS_STATUSES:
+        expected_rank = prior + 1
+        for entry in entries:
+            if entry["status"] == status and entry.get("rank") != expected_rank:
+                raise BoardIntegrityError(
+                    f"{entry['name']}: rank disagrees with the declared tie method"
+                )
+        prior += status_counts[status]
+    return len(entries)
+
+
+def main():
+    """Run the public data gates without writing generated output."""
+    root = pathlib.Path(__file__).resolve().parent
+    tier_map = json.loads((root / "tier_map.json").read_text(encoding="utf-8"))
+    tier_count = validate_tier_contract(tier_map)
+
+    harnesses = json.loads((root / "harnesses.json").read_text(encoding="utf-8"))
+    harness_count = validate_harnesses(harnesses)
+
+    alert_count = 0
+    alert_path = root / "data" / "regulatory_alerts.json"
+    if alert_path.exists():
+        alert_count = validate_regulatory_alerts(
+            json.loads(alert_path.read_text(encoding="utf-8"))
+        )
+
+    from topic_matcher import load_registry, match_item
+
+    registry = load_registry()
+    spans = json.loads((root / "article_spans.json").read_text(encoding="utf-8"))
+    evidence = json.loads((root / "article_evidence.json").read_text(encoding="utf-8"))
+    seed = json.loads((root / "items.json").read_text(encoding="utf-8"))
+    feed = json.loads((root / "feed_items.json").read_text(encoding="utf-8"))
+    reviewed = [dict(item, reviewed=item.get("reviewed", True)) for item in seed["items"]]
+    for item in reviewed:
+        item["topics"] = [item["topic"]] if item.get("topic") else []
+    incoming = [dict(item, reviewed=item.get("reviewed", False)) for item in feed.get("items", [])]
+    for item in incoming:
+        if item.get("reviewed") and item.get("topic"):
+            item["topics"] = [item["topic"]]
+            continue
+        match = match_item(item, spans, registry)
+        item["topics"] = [candidate["topic"] for candidate in match["topics"]]
+        item["_anchor_match"] = match["anchor"]
+        item["_anchor_ambiguous"] = match["ambiguous"]
+    item_count = validate_board(
+        reviewed + incoming,
+        spans,
+        evidence,
+        registry,
+        tier_map.get("source_types", {}),
+    )
+    print(
+        f"board checks passed: {item_count} items, {alert_count} regulatory alerts, "
+        f"{harness_count} harness entries, {tier_count} source classes"
+    )
+
+
+if __name__ == "__main__":
+    main()

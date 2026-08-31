@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""sovereign_watch.py - Sovereign Watch: Global AI Regulatory Radar (L8 Pipeline).
+"""sovereign_watch.py - Sovereign Watch: scheduled AI regulatory intake.
 
-Continuous regulatory intelligence engine:
-1. Ingests sovereign gazettes (US Federal Register, EU AI Office, UK CMA/Ofgem, 29 jurisdiction packs).
+Daily regulatory intake:
+1. Ingests public sovereign gazettes from the registered network targets.
 2. Performs hash-diffing against surveillance_store.json.
 3. Filters administrative noise (Unified Agenda forward plans, voluntary RFIs, procedural meeting notices).
 4. Routes new/substantive items to local Qwen 3.8 (27B) via Ollama chat API for deep legal evaluation.
-5. Emits real-time alerts to data/regulatory_alerts.json, alerts/bulletin_YYYY-MM-DD.md, and desktop notifications.
-6. Rebuilds AI News Board and Mission Control command deck.
+5. Monitors local jurisdiction-pack changes without publishing local paths or private contents.
+6. Writes public alert records, local runtime logs and desktop notifications.
+7. Rebuilds the AI News Board and Mission Control command deck.
 """
 
 from __future__ import annotations
@@ -172,6 +173,36 @@ def load_store() -> Dict[str, Any]:
 def save_store(store: Dict[str, Any]) -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     STORE_FILE.write_text(json.dumps(store, indent=2), encoding="utf-8")
+
+
+def sweep_local_regulations_packs(store: Dict[str, Any]) -> List[str]:
+    """Return changed local regulatory inputs without creating public alerts."""
+    changed: List[str] = []
+    if not REGULATIONS_DIR.exists():
+        return changed
+
+    jurisdiction_hashes = store.setdefault("jurisdiction_hashes", {})
+    for legacy_key in list(jurisdiction_hashes):
+        if not legacy_key.startswith("local_input:"):
+            jurisdiction_hashes.pop(legacy_key)
+    candidates = []
+    manifest = REGULATIONS_DIR / "pipeline_manifest.csv"
+    if manifest.exists():
+        candidates.append(("pipeline_manifest.csv", manifest))
+    for pack_dir in sorted(REGULATIONS_DIR.glob("*_monitor")):
+        for filename in ("clauses.csv", "sources.csv", "findings.md"):
+            path = pack_dir / filename
+            if path.exists():
+                candidates.append((f"{pack_dir.name}/{filename}", path))
+
+    for key, path in candidates:
+        digest = hashlib.sha256(path.read_bytes()).hexdigest()
+        identifier = "local_input:" + hashlib.sha256(key.encode("utf-8")).hexdigest()
+        previous = jurisdiction_hashes.get(identifier)
+        if previous and previous != digest:
+            changed.append(key)
+        jurisdiction_hashes[identifier] = digest
+    return changed
 
 
 def load_alerts() -> List[Dict[str, Any]]:
@@ -516,7 +547,7 @@ def write_alert_bulletin(alerts: List[Dict[str, Any]]) -> pathlib.Path:
     lines = [
         f"# Sovereign Watch: AI Regulatory Bulletin ({today_str})",
         "",
-        "**Global AI Regulatory Radar (L8 Continuous Stream)**",
+        "**Daily scheduled public regulatory intake**",
         "",
         f"Total Active Alerts Banked: {len(alerts)}",
         "",
@@ -563,6 +594,7 @@ def run_surveillance_pass(model: str = DEFAULT_MODEL, trigger_rebuild: bool = Tr
     print(f"[{dt.datetime.now().strftime('%H:%M:%S')}] Executing Sovereign Watch pass with {model}...")
     t0 = time.time()
     gazette_alerts = sweep_sovereign_gazettes(store, model=model)
+    pack_changes = sweep_local_regulations_packs(store)
     new_alerts = gazette_alerts
 
     store["last_run"] = dt.datetime.now(dt.timezone.utc).isoformat()
@@ -583,6 +615,17 @@ def run_surveillance_pass(model: str = DEFAULT_MODEL, trigger_rebuild: bool = Tr
         print(f"[{dt.datetime.now().strftime('%H:%M:%S')}] 🚨 Discovered {len(new_alerts)} new surveillance items in {elapsed:.1f}s")
     else:
         print(f"[{dt.datetime.now().strftime('%H:%M:%S')}] ✓ Sovereign Watch pass clean in {elapsed:.1f}s. All gazettes steady.")
+
+    if pack_changes:
+        print(
+            f"[{dt.datetime.now().strftime('%H:%M:%S')}] "
+            f"Local jurisdiction inputs changed: {len(pack_changes)}"
+        )
+        send_desktop_notification(
+            "Sovereign Watch: local inputs changed",
+            f"{len(pack_changes)} local regulatory inputs changed. Review them before assigning a substantive priority.",
+            urgency="normal",
+        )
 
     if trigger_rebuild:
         run_rebuilds()
@@ -613,6 +656,7 @@ def main():
         print("=== Sovereign Watch: Status & Health ===")
         print(f"Last pass timestamp: {store.get('last_run', 'Never')}")
         print(f"Tracked Document Hashes: {len(store.get('seen_hashes', {}))}")
+        print(f"Tracked Local Inputs: {len(store.get('jurisdiction_hashes', {}))}")
         print(
             f"Total Banked Alerts: {len(alerts)} "
             f"(Evaluated P1: {p1_cnt}, Evaluated P2: {p2_cnt}, Unassessed: {unassessed_cnt})"

@@ -56,8 +56,10 @@ from board_checks import (
     evaluated_alert_priority,
     has_valid_alert_evaluation,
     validate_board,
+    validate_harnesses,
     validate_regulatory_alerts,
 )
+from url_identity import canonical_url
 
 
 esc = lambda s: html.escape(str(s), quote=True)
@@ -309,6 +311,41 @@ def primary_label(url):
     return shown if len(shown) <= 78 else shown[:75] + "..."
 
 
+def article_primary_sources(items, evidence, limit=16):
+    """Return deduplicated primary links extracted from current board articles."""
+    by_identity = {
+        canonical_url(article_url): record
+        for article_url, record in (evidence or {}).items()
+        if isinstance(record, dict)
+    }
+    rows = []
+    seen = set()
+    for item in items:
+        article_url = next(
+            (source.get("url", "") for source in item.get("sources", []) if source.get("url")),
+            "",
+        )
+        record = (evidence or {}).get(article_url) or by_identity.get(canonical_url(article_url), {})
+        if not article_url or not record.get("fetched"):
+            continue
+        for source_url in record.get("primary_link_examples", []):
+            parsed = urllib.parse.urlsplit(source_url)
+            identity = canonical_url(source_url)
+            if parsed.scheme not in {"http", "https"} or not parsed.netloc or identity in seen:
+                continue
+            seen.add(identity)
+            rows.append({
+                "url": source_url,
+                "label": primary_label(source_url),
+                "kind": primary_kind(source_url),
+                "article_url": article_url,
+                "article_headline": record.get("headline") or item.get("headline", ""),
+            })
+            if len(rows) >= limit:
+                return rows
+    return rows
+
+
 def item_card(it, registry, plain=False, mk=None, tmap=None, ev=None):
     tiers = {}
     chips = []
@@ -369,7 +406,7 @@ def item_card(it, registry, plain=False, mk=None, tmap=None, ev=None):
         rmark = (f'<span title="{esc(note)}" style="display:inline-block;padding:2px 8px;'
                  f'margin-left:6px;border-radius:4px;font-size:11px;color:#fff;'
                  f'background:{TIER[4][0]}">track record: caution</span>')
-    # ⛔ The reader cross-check chip was removed 2026-07-31 with the tooling (see archive/).
+    # ⛔ The reader cross-check chip was removed 2026-07-31 with the headline-reader tooling.
     # It reported disagreement between local models reading a HEADLINE, over claim_type,
     # which is retired. Provenance now travels on the label itself: evidence_method,
     # evidence_coverage and label_evidence identify what settled the field.
@@ -797,7 +834,12 @@ def sovereign_radar_tab(alerts=None):
             priority_key = "unassessed"
         else:
             badge_bg = {1: "#b23b2e", 2: "#cc7a33", 3: "#c7a53b", 4: "#4a5568"}.get(priority, "#64748b")
-            suffix = "human-reviewed" if method == "human" else "evaluated candidate"
+            if method == "human":
+                suffix = "human-reviewed"
+            elif method == "administrative-noise-rule":
+                suffix = "deterministic rule"
+            else:
+                suffix = "evaluated candidate"
             badge_lbl = f"P{priority} {suffix}"
             priority_key = priority
 
@@ -870,15 +912,67 @@ def sovereign_radar_tab(alerts=None):
         f'<div style="border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:8px;padding:14px 18px;margin-bottom:20px;background:{PAPER};box-shadow:{SHADOW}">'
         f'<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px">'
         f'<div><h3 style="margin:0 0 4px;font-size:17px;color:{NAVY}">Sovereign Watch: Global AI Regulatory Radar</h3>'
-        f'<div style="font-size:13px;color:{SLATE}">Sovereign gazette surveillance across US Federal Register, EU AI Office, UK Ofgem/CMA, and 29 jurisdiction monitor packs. Source queue order, evaluated priority and human review are displayed separately. Machine output is not a legal finding.</div></div>'
+        f'<div style="font-size:13px;color:{SLATE}">Daily public sovereign gazette records. Local jurisdiction-pack changes are monitored privately and do not enter this public bank. Source queue order, evaluated priority and human review are displayed separately. Machine output is not a legal finding.</div></div>'
         f'<div style="display:flex;gap:8px;font-size:12px">'
-        f'<span style="padding:4px 8px;background:var(--pill-bg);border-radius:4px;color:var(--pill-fg)"><strong>{len(alerts)}</strong> Notices Tracked</span>'
-        f'<span style="padding:4px 8px;background:var(--pill-bg);border-radius:4px;color:var(--pill-fg)"><strong>19/20</strong> stored model-comparison agreement, equal to always-no baseline; positive recall 0/1; no independent gold labels in the held files</span>'
-        f'<span style="padding:4px 8px;background:var(--ok-bg);border-radius:4px;color:var(--ok-fg)"><strong>06:00 AM</strong> Daily Pass</span>'
+        f'<span style="padding:4px 8px;background:var(--pill-bg);border-radius:4px;color:var(--pill-fg)"><strong>{len(alerts)}</strong> records</span>'
+        f'<span style="padding:4px 8px;background:var(--ok-bg);border-radius:4px;color:var(--ok-fg)"><strong>06:00</strong> daily pass</span>'
         f'</div></div></div>'
     )
 
     return summary_banner + f'<div class="radar-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(480px,1fr));gap:16px">{"".join(cards)}</div>'
+
+
+def harnesses_tab(data=None):
+    """Render a source-bound compatibility order without implying general quality."""
+    path = os.path.join(HERE, "harnesses.json")
+    if data is None:
+        data = json.load(open(path, encoding="utf-8")) if os.path.isfile(path) else {}
+    if not data:
+        return (
+            f'<div style="padding:20px;background:{PAPER};border-radius:8px;'
+            f'border:1px solid {LINE}">No harness compatibility evidence banked.</div>'
+        )
+    validate_harnesses(data)
+    source = data["source"]
+    colours = {
+        "protocol_compatible_unverified": "#2f7d4f",
+        "adapter_required": "#cc7a33",
+        "trial_failed": "#64748b",
+    }
+    cards = []
+    for entry in data["entries"]:
+        colour = colours[entry["status"]]
+        cards.append(
+            f'<div style="border:1px solid {LINE};border-left:4px solid {colour};'
+            f'border-radius:8px;padding:15px 17px;background:{PAPER};box-shadow:{SHADOW}">'
+            f'<div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap">'
+            f'<span style="font-family:var(--mono);font-size:18px;font-weight:700;'
+            f'color:{NAVY}">#{entry["rank"]}</span>'
+            f'<strong style="font-size:15px;color:{NAVY}">{esc(entry["name"])}</strong>'
+            f'<span style="font-size:10px;padding:2px 7px;border-radius:4px;color:#fff;'
+            f'background:{colour}">{esc(entry["status_label"])}</span></div>'
+            f'<div style="font-size:13px;color:{BODY};margin-top:8px;line-height:1.5">'
+            f'{esc(entry["observed_boundary"])}</div></div>'
+        )
+    return (
+        f'<section style="max-width:1080px">'
+        f'<div style="border:1px solid {LINE};border-left:4px solid var(--accent);'
+        f'border-radius:8px;padding:15px 18px;margin-bottom:18px;background:{PAPER};'
+        f'box-shadow:{SHADOW}"><h2 style="margin:0 0 5px;color:{NAVY};font-size:19px">'
+        f'{esc(data["title"])}</h2><div style="font-size:13px;color:{BODY};line-height:1.55">'
+        f'{esc(data["scope"])}</div><div style="font-size:12px;color:{SLATE};margin-top:8px">'
+        f'Order: {esc(data["ranking_method"]["axis"])}. '
+        f'{esc(data["ranking_method"]["tie_rule"])}</div>'
+        f'<div style="font-size:12px;color:{SLATE};margin-top:5px">'
+        f'{esc(data["ranking_method"]["limits"])}</div>'
+        f'<div style="font-size:12px;color:{SLATE};margin-top:8px">'
+        f'<a href="{esc(source["url"])}" target="_blank" rel="noopener" '
+        f'style="color:{NAVY}">Evidence at PLAG IN commit {esc(source["commit"][:12])}</a>'
+        f' &middot; evidence dated {esc(source["evidence_date"])} &middot; '
+        f'{len(data["entries"])} client entries</div></div>'
+        f'<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));'
+        f'gap:14px">{"".join(cards)}</div></section>'
+    )
 
 
 def main():
@@ -911,6 +1005,7 @@ def main():
         contest = tm.get("contest", {})
         disclosures = [
             "Source-class tier is set from the publisher domain. It is not a truth or quality verdict.",
+            "Research Protocol intake may carry source_class_tier as routing metadata only. It cannot accept, reject or prioritise a claim.",
             "A numeric claim tier appears only where a recorded owner or publisher relationship to the subject resolves. Otherwise the relationship remains unresolved.",
             "Automatic topics may be plural. A portfolio anchor appears only when one candidate clears its threshold without a tie.",
             "ArXiv, DOI and official links found in an article are typed as article-linked primaries. A link is not treated as proof that the document supports the headline.",
@@ -995,38 +1090,26 @@ def main():
     items = reviewed + incoming
     validate_board(items, _spans, ev, registry, tm.get("source_types", {}))
 
-    # scholarship nudge: latest primary papers + datasets (fetch_scholar.py)
-    scholar_path = os.path.join(HERE, "scholar_items.json")
-    scholar_html = ""
-    if os.path.isfile(scholar_path):
-        sd = json.load(open(scholar_path, encoding="utf-8"))
-        rows = []
-        for s in sd.get("items", []):
-            kind = "Dataset" if s.get("kind") == "dataset" else "Paper"
-            meta = " &middot; ".join(x for x in [esc(s.get("venue","")), esc(s.get("authors","")),
-                                                 esc(s.get("date",""))] if x)
-            sblob = f'{s.get("title","")} {s.get("authors","")} {s.get("venue","")}'.lower()
-            rows.append(
-                f'<div class="scholarrow" data-search="{esc(sblob)}" '
-                f'style="padding:8px 0;border-bottom:1px solid {LINE}">'
-                f'<span style="display:inline-block;font-size:11px;padding:1px 7px;border-radius:4px;'
-                f'color:#fff;background:{TIER[2][0]};margin-right:6px">{kind}</span>'
-                f'<a href="{esc(s.get("url",""))}" style="color:{NAVY};font-weight:600;'
-                f'font-size:14px;text-decoration:none">{esc(s.get("title",""))}</a>'
-                f'<div style="font-size:12px;color:{SLATE};margin-top:2px">{meta}</div></div>')
-        if rows:
-            # Collapsed. Five stacked rail panels meant scrolling inside the rail to reach
-            # the last one, so reference material opens on demand.
-            scholar_html = (
-                f'<details open style="border:1px solid {LINE};border-left:4px solid {TIER[2][0]};'
-                f'border-radius:8px;padding:12px 16px;margin:0 0 12px;background:{PAPER}">'
-                f'<summary style="color:{NAVY};font-size:15px;font-weight:600;cursor:pointer">'
-                f'Primary sources <span style="font-weight:400;color:{SLATE};font-size:12px">'
-                f'({len(rows)})</span></summary>'
-                f'<div style="font-size:13px;color:{SLATE};margin:6px 0 8px">Recent papers and '
-                f'public datasets on AI, so a claim can be checked against the underlying research '
-                f'rather than the coverage of it.</div>'
-                + "".join(rows) + "</details>")
+    primary_sources = article_primary_sources(items, ev)
+    source_rows = []
+    for source in primary_sources:
+        search_blob = (
+            f'{source["label"]} {source["kind"]} {source["article_headline"]}'.lower()
+        )
+        source_rows.append(
+            f'<div class="scholarrow" data-search="{esc(search_blob)}" '
+            f'style="padding:8px 0;border-bottom:1px solid {LINE}">'
+            f'<span style="display:inline-block;font-size:10px;padding:1px 7px;border-radius:4px;'
+            f'color:#fff;background:{TIER[2][0]};margin-right:6px">'
+            f'{esc(source["kind"])}</span>'
+            f'<a href="{esc(source["url"])}" target="_blank" rel="noopener noreferrer" '
+            f'style="color:{NAVY};font-weight:600;font-size:13px;text-decoration:none">'
+            f'{esc(source["label"])} &#x2197;</a>'
+            f'<div style="font-size:11px;color:{SLATE};margin-top:3px">Linked from: '
+            f'<a href="{esc(source["article_url"])}" target="_blank" '
+            f'rel="noopener noreferrer" style="color:{SLATE}">'
+            f'{esc(source["article_headline"])}</a></div></div>'
+        )
 
     # Model releases: models that reached OpenRouter or the Hugging Face API in the last 60 days.
     # ⛔ Do not make the open vs API-only split the headline. The two sides are not collected
@@ -1038,9 +1121,11 @@ def main():
     # stated denominator is the defect this board flags elsewhere.
     rel_path = os.path.join(HERE, "releases.json")
     releases_html = ""
+    rd = {"releases": [], "counts": {}, "window_days": 60, "disclosure": ""}
+    rrows = []
+    c = {}
     if os.path.isfile(rel_path):
         rd = json.load(open(rel_path, encoding="utf-8"))
-        rrows = []
         # 10, not 16. In the right rail a 16-row list is tall enough to push Primary
         # sources below the fold of the rail's own scroll, which re-buries the panel this
         # layout exists to surface. The count in the heading still states the true total.
@@ -1079,9 +1164,10 @@ def main():
     # Upcoming & announced models: pre-release milestones, restricted previews and target dates
     up_path = os.path.join(HERE, "upcoming_models.json")
     upcoming_html = ""
+    up_data = {"upcoming": [], "disclosure": ""}
+    up_rows = []
     if os.path.isfile(up_path):
         up_data = json.load(open(up_path, encoding="utf-8"))
-        up_rows = []
         import datetime as _dt
         _today = _dt.date.today()
         for u in up_data.get("upcoming", []):
@@ -1136,7 +1222,7 @@ def main():
                 f'<div style="margin-top:6px;line-height:1.5">'
                 f'{esc(up_data.get("disclosure",""))}</div></details></details>')
 
-    # Search & Market Trend Radar: real-time category signals & symmetrical equity moves
+    # Search and market signals: Google Trends, Google News clusters and market anomalies.
     trend_path = os.path.join(HERE, "data", "trend_alerts.json")
     t_rows = []
     crit_drops = []
@@ -1159,6 +1245,21 @@ def main():
                 f'<strong style="color:{NAVY};font-size:13px">{esc(s["ticker"])}</strong> '
                 f'<span style="color:{SLATE};font-size:11px">(${s.get("price",0):.2f})</span>'
                 f'</div>')
+        for signal in td_data.get("search_trend_matches", [])[:3]:
+            categories = ", ".join(signal.get("categories", []))
+            t_rows.append(
+                f'<div class="scholarrow" data-search="{esc(categories.lower())}" '
+                f'style="padding:7px 0;border-bottom:1px solid {LINE}">'
+                f'<div style="font-size:11px;color:{SLATE}">'
+                f'<span style="display:inline-block;font-size:10px;padding:1px 6px;'
+                f'border-radius:4px;color:#fff;background:#2563eb;margin-right:4px">'
+                f'Google Trends {esc(signal.get("geo", ""))}</span>'
+                f'{esc(signal.get("traffic", "traffic not stated"))}</div>'
+                f'<div style="font-size:12px;font-weight:600;color:{NAVY};margin-top:3px">'
+                f'{esc(signal.get("query", ""))}</div>'
+                f'<div style="font-size:11px;color:{SLATE};margin-top:2px">'
+                f'{esc(categories)}</div></div>'
+            )
         for dom in td_data.get("targeted_domain_signals", []):
             cat_name = dom.get("category", "")
             cat_col = dom.get("color", NAVY)
@@ -1175,8 +1276,8 @@ def main():
         f'<div class="rail-container" style="border:1px solid {LINE};border-radius:10px;background:{PAPER};box-shadow:{SHADOW};overflow:hidden">'
         f'<div class="rail-nav" style="display:flex;background:{ALT};border-bottom:1px solid {LINE};padding:4px;gap:4px">'
         f'<button class="rail-nav-btn active" data-rail-target="pane-releases" style="flex:1;padding:8px 2px;border:none;background:{PAPER};color:{NAVY};border-radius:6px;font-size:11px;font-weight:600;cursor:pointer;box-shadow:0 1px 2px rgba(0,0,0,0.06)">Releases ({len(rrows)})</button>'
-        f'<button class="rail-nav-btn" data-rail-target="pane-trends" style="flex:1;padding:8px 2px;border:none;background:transparent;color:{SLATE};border-radius:6px;font-size:11px;font-weight:600;cursor:pointer">Radar ({len(t_rows)})</button>'
-        f'<button class="rail-nav-btn" data-rail-target="pane-scholar" style="flex:1;padding:8px 2px;border:none;background:transparent;color:{SLATE};border-radius:6px;font-size:11px;font-weight:600;cursor:pointer">Papers ({len(rows)})</button>'
+        f'<button class="rail-nav-btn" data-rail-target="pane-trends" style="flex:1;padding:8px 2px;border:none;background:transparent;color:{SLATE};border-radius:6px;font-size:11px;font-weight:600;cursor:pointer">Search &amp; market ({len(t_rows)})</button>'
+        f'<button class="rail-nav-btn" data-rail-target="pane-sources" style="flex:1;padding:8px 2px;border:none;background:transparent;color:{SLATE};border-radius:6px;font-size:11px;font-weight:600;cursor:pointer">Sources ({len(primary_sources)})</button>'
         f'<button class="rail-nav-btn" data-rail-target="pane-upcoming" style="flex:1;padding:8px 2px;border:none;background:transparent;color:{SLATE};border-radius:6px;font-size:11px;font-weight:600;cursor:pointer">Upcoming ({len(up_rows)})</button>'
         f'</div>'
         f'<div id="pane-releases" class="rail-pane active" style="display:block;padding:12px 14px;max-height:calc(100vh - 120px);overflow-y:auto">'
@@ -1187,15 +1288,15 @@ def main():
         f'<div style="margin-top:6px;line-height:1.4">{esc(rd.get("disclosure",""))}</div></details>'
         f'</div>'
         f'<div id="pane-trends" class="rail-pane" style="display:none;padding:12px 14px;max-height:calc(100vh - 120px);overflow-y:auto">'
-        f'<div style="font-size:12px;color:{SLATE};margin-bottom:8px">Real-time domain signals &amp; market price moves.</div>'
+        f'<div style="font-size:12px;color:{SLATE};margin-bottom:8px">Google Trends search spikes, Google News research-topic clusters and symmetrical market anomalies.</div>'
         + "".join(t_rows)
         + f'<details style="font-size:11px;color:{SLATE};margin-top:10px">'
         f'<summary style="cursor:pointer;color:{NAVY}">Streams &amp; methodology</summary>'
-        f'<div style="margin-top:6px;line-height:1.4">Monitors Google News topic search clusters and equities moving +/- 3.0%.</div></details>'
+        f'<div style="margin-top:6px;line-height:1.4">Google Trends RSS is checked for US and GB mass-market searches against the published seven-topic taxonomy. Google News Search RSS supplies topic clusters. Market rows use the thresholds recorded in trend_monitor.py. A signal is a lead, not evidence that a claim is true.</div></details>'
         f'</div>'
-        f'<div id="pane-scholar" class="rail-pane" style="display:none;padding:12px 14px;max-height:calc(100vh - 120px);overflow-y:auto">'
-        f'<div style="font-size:12px;color:{SLATE};margin-bottom:8px">Recent peer-reviewed papers and public datasets.</div>'
-        + "".join(rows)
+        f'<div id="pane-sources" class="rail-pane" style="display:none;padding:12px 14px;max-height:calc(100vh - 120px);overflow-y:auto">'
+        f'<div style="font-size:12px;color:{SLATE};margin-bottom:8px">Primary documents extracted from current article links. A link is checkable, but its presence does not establish that it supports the article headline.</div>'
+        + "".join(source_rows)
         + f'</div>'
         f'<div id="pane-upcoming" class="rail-pane" style="display:none;padding:12px 14px;max-height:calc(100vh - 120px);overflow-y:auto">'
         f'<div style="font-size:12px;color:{SLATE};margin-bottom:8px">Pre-release commitments and unserved frontier milestones.</div>'
@@ -1207,35 +1308,39 @@ def main():
         f'</div>'
     )
 
-    # Executive Daily Brief Strip
-    rel_first = (rd.get("releases") or [{}])[0] if os.path.isfile(rel_path) else {}
-    top_rel_model = rel_first.get("model", "Gemini 3.7 Flash")
-    top_rel_lab = rel_first.get("lab", "Google")
-    top_rel_date = rel_first.get("date", "2026-08-14")
-
-    sch_first = (sd.get("items") or [{}])[0] if os.path.isfile(scholar_path) else {}
-    top_paper_title = sch_first.get("title", "Don't Drop the BATON: Automated Reasoning")
-    top_paper_url = sch_first.get("url", "#")
-
-    shock_text = "BIDU -13.0% sell-off | VIX +6.6%"
+    # Executive strip contains observed rows only. Missing inputs omit a card.
+    exec_cards = []
+    rel_first = (rd.get("releases") or [None])[0]
+    if rel_first:
+        exec_cards.append(
+            f'<div class="exec-card" style="border:1px solid {LINE};border-left:4px solid {NAVY};border-radius:8px;padding:10px 14px;background:{PAPER};box-shadow:{SHADOW}">'
+            f'<div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:{SLATE};margin-bottom:3px">Frontier release</div>'
+            f'<div style="font-size:13px;font-weight:600;color:{NAVY};line-height:1.3">'
+            f'{esc(rel_first.get("model", ""))} <span style="font-size:11px;font-weight:400;color:{SLATE}">'
+            f'({esc(rel_first.get("lab", ""))} &middot; {esc(rel_first.get("date", ""))})'
+            f'</span></div></div>'
+        )
+    primary_first = primary_sources[0] if primary_sources else None
+    if primary_first:
+        shown_title = primary_first["label"]
+        exec_cards.append(
+            f'<div class="exec-card" style="border:1px solid {LINE};border-left:4px solid {TIER[2][0]};border-radius:8px;padding:10px 14px;background:{PAPER};box-shadow:{SHADOW}">'
+            f'<div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:{SLATE};margin-bottom:3px">Article-linked primary</div>'
+            f'<div style="font-size:13px;font-weight:600;line-height:1.3"><a href="{esc(primary_first["url"])}" target="_blank" rel="noopener" style="color:{NAVY};text-decoration:none">{esc(shown_title)} &#x2197;</a></div></div>'
+        )
     if crit_drops:
-        shock_text = f"{crit_drops[0]['ticker']} {crit_drops[0]['change_pct']:+.1f}% | VIX +6.6%"
-
+        drop = crit_drops[0]
+        exec_cards.append(
+            f'<div class="exec-card" style="border:1px solid {LINE};border-left:4px solid #b91c1c;border-radius:8px;padding:10px 14px;background:{PAPER};box-shadow:{SHADOW}">'
+            f'<div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:{SLATE};margin-bottom:3px">Market anomaly</div>'
+            f'<div style="font-size:13px;font-weight:600;color:{NAVY};line-height:1.3">'
+            f'{esc(drop.get("ticker", ""))} {drop.get("change_pct", 0):+.1f}% as of '
+            f'{esc(drop.get("asof", "date not stated"))}</div></div>'
+        )
     exec_strip_html = (
-        f'<div class="exec-strip" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 20px">'
-        f'<div class="exec-card" style="border:1px solid {LINE};border-left:4px solid {NAVY};border-radius:8px;padding:10px 14px;background:{PAPER};box-shadow:{SHADOW}">'
-        f'<div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:{SLATE};margin-bottom:3px">🚀 Frontier Release</div>'
-        f'<div style="font-size:13px;font-weight:600;color:{NAVY};line-height:1.3">{esc(top_rel_model)} <span style="font-size:11px;font-weight:400;color:{SLATE}">({esc(top_rel_lab)} &middot; {esc(top_rel_date)})</span></div>'
-        f'</div>'
-        f'<div class="exec-card" style="border:1px solid {LINE};border-left:4px solid {TIER[2][0]};border-radius:8px;padding:10px 14px;background:{PAPER};box-shadow:{SHADOW}">'
-        f'<div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:{SLATE};margin-bottom:3px">📚 Primary Research</div>'
-        f'<div style="font-size:13px;font-weight:600;line-height:1.3"><a href="{esc(top_paper_url)}" target="_blank" rel="noopener" style="color:{NAVY};text-decoration:none">{esc(top_paper_title[:55])}... &#x2197;</a></div>'
-        f'</div>'
-        f'<div class="exec-card" style="border:1px solid {LINE};border-left:4px solid #b91c1c;border-radius:8px;padding:10px 14px;background:{PAPER};box-shadow:{SHADOW}">'
-        f'<div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:{SLATE};margin-bottom:3px">⚡ Market &amp; Grid Anomaly</div>'
-        f'<div style="font-size:13px;font-weight:600;color:{NAVY};line-height:1.3">{esc(shock_text)}</div>'
-        f'</div>'
-        f'</div>'
+        f'<div class="exec-strip" style="display:grid;grid-template-columns:'
+        f'repeat({max(1, len(exec_cards))},1fr);gap:12px;margin:0 0 20px">'
+        f'{"".join(exec_cards)}</div>' if exec_cards else ""
     )
 
     # board-level aggregates (over everything)
@@ -1383,7 +1488,7 @@ def main():
     )
 
     sidebar_html = (
-        f'<input id="q" class="search" type="search" placeholder="Search feed and papers...">'
+        f'<input id="q" class="search" type="search" placeholder="Search feed and sources...">'
         f'{view_toggle_html}'
         f'<div class="fgroup"><h4>Domain Quick Filters</h4>{category_chips_html}</div>'
         f'<div class="fgroup"><h4>Topics</h4>{topic_boxes}</div>'
@@ -1735,9 +1840,18 @@ def main():
 })();
 </script>"""
 
+    regulatory_path = os.path.join(HERE, "data", "regulatory_alerts.json")
+    regulatory_alerts = []
+    if os.path.isfile(regulatory_path):
+        regulatory_alerts = json.load(open(regulatory_path, encoding="utf-8"))
+        validate_regulatory_alerts(regulatory_alerts)
+    harness_path = os.path.join(HERE, "harnesses.json")
+    harness_data = json.load(open(harness_path, encoding="utf-8"))
+    validate_harnesses(harness_data)
+
     doc = f"""<!doctype html><html lang="en-GB" data-theme="light"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AI News Board & Sovereign Watch</title>
+<title>AI News Board, Sovereign Watch and Harness Compatibility</title>
 <script>
 (function(){{
   try {{
@@ -1753,7 +1867,7 @@ def main():
       <div class="header-kicker">Live evidence monitor</div>
       <h1 class="header-title">AI News Board &amp; Sovereign Watch</h1>
       <div class="header-copy">
-        AI news coverage separated into source class, claim-relative relationships, figure evidence, citation links, and research-context links, paired with autonomous 24/7 sovereign gazette regulatory radar.
+        AI news evidence, daily sovereign regulatory intake, search and market signals, and source-bound client-harness compatibility. Each panel states the limits of what its evidence can establish.
       </div>
     </div>
     <div class="header-actions">
@@ -1771,7 +1885,8 @@ def main():
 
   <div class="nav-tab-bar">
     <button class="nav-tab-btn active" data-target="tab-news">News evidence <span class="tab-badge">{len(items)}</span></button>
-    <button class="nav-tab-btn" data-target="tab-radar">Sovereign radar <span class="tab-badge radar-badge">20</span></button>
+    <button class="nav-tab-btn" data-target="tab-radar">Sovereign radar <span class="tab-badge radar-badge">{len(regulatory_alerts)}</span></button>
+    <button class="nav-tab-btn" data-target="tab-harnesses">Harnesses <span class="tab-badge">{len(harness_data["entries"])}</span></button>
   </div>
 
   <div id="tab-news" class="tab-pane active" style="display:block">
@@ -1803,7 +1918,11 @@ def main():
   </div>
 
   <div id="tab-radar" class="tab-pane" style="display:none">
-    {sovereign_radar_tab()}
+    {sovereign_radar_tab(regulatory_alerts)}
+  </div>
+
+  <div id="tab-harnesses" class="tab-pane" style="display:none">
+    {harnesses_tab(harness_data)}
   </div>
 </div>
 {script_block}

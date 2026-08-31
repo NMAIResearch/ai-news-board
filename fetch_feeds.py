@@ -96,8 +96,8 @@ FEEDS = [
     ("https://www.gov.uk/search/news-and-communications.atom?organisations%5B%5D=competition-and-markets-authority", True),
     ("https://www.gov.uk/search/news-and-communications.atom?organisations%5B%5D=ofgem", True),
     ("https://www.nist.gov/news-events/news/rss.xml", True),
-    # ↻ [2026-07-31] tier 2 (research institute / academia). The tier read ZERO before this:
-    # `independent` mapped only to arxiv.org, which fetch_scholar.py sends to its own panel.
+    # ↻ [2026-07-31] tier 2 (research institute / academia). The feed list contained no
+    # source classified in that tier before these entries were added.
     ("https://cset.georgetown.edu/feed/", True),
     ("https://ainowinstitute.org/feed", False),
     ("https://bair.berkeley.edu/blog/feed.xml", False),

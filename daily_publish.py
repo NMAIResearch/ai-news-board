@@ -25,27 +25,20 @@ LOCK_PATH = pathlib.Path("/tmp/nmai-news-board-daily.lock")
 PAGES_URL = "https://nmairesearch.github.io/ai-news-board/index.html"
 
 PRE_SWEEP_PATTERNS = (
-    "alerts/sovereign_bulletin_*.md",
-    "data/live_alerts.jsonl",
     "data/regulatory_alerts.json",
     "data/surveillance_store.json",
     "index.html",
-    "logs/schedule.log",
 )
 
 PUBLISH_PATTERNS = (
-    "alerts/sovereign_bulletin_*.md",
     "archive.json",
     "article_evidence.json",
     "article_spans.json",
     "data/*.json",
-    "data/*.jsonl",
     "feed_items.json",
     "index.html",
-    "logs/schedule.log",
     "releases.json",
     "reviews_store.json",
-    "scholar_items.json",
     "upcoming_models.json",
     "vendor_titles.json",
 )
@@ -191,6 +184,7 @@ def run_gates(paths: list[str]) -> None:
     validate_json_files(paths)
     validate_machine_review_flags()
     validate_regulatory_alerts()
+    run([sys.executable, "board_checks.py"])
     run([sys.executable, "-m", "unittest", "discover", "-s", "tests", "-p", "test_*.py"])
     run(["git", "diff", "--check"])
 

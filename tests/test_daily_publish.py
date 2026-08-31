@@ -18,10 +18,10 @@ class DailyPublishTests(unittest.TestCase):
             self.assertEqual(daily_publish.git("status"), " M PIPELINE.md")
 
     def test_status_paths_extracts_modified_and_untracked(self):
-        raw = " M data/market.json\n?? alerts/sovereign_bulletin_2026-08-23.md\n"
+        raw = " M data/market.json\n?? feed_items.json\n"
         self.assertEqual(
             daily_publish.status_paths(raw),
-            ["data/market.json", "alerts/sovereign_bulletin_2026-08-23.md"],
+            ["data/market.json", "feed_items.json"],
         )
 
     def test_status_paths_rejects_rename(self):
@@ -41,14 +41,11 @@ class DailyPublishTests(unittest.TestCase):
                 ["build.py"], daily_publish.PUBLISH_PATTERNS, "test"
             )
 
-    def test_pre_sweep_allowlist_accepts_scheduled_sovereign_outputs(self):
+    def test_pre_sweep_allowlist_accepts_public_sovereign_state(self):
         paths = [
-            "alerts/sovereign_bulletin_2026-09-01.md",
-            "data/live_alerts.jsonl",
             "data/regulatory_alerts.json",
             "data/surveillance_store.json",
             "index.html",
-            "logs/schedule.log",
         ]
         self.assertEqual(
             daily_publish.require_allowed(
@@ -56,6 +53,19 @@ class DailyPublishTests(unittest.TestCase):
             ),
             paths,
         )
+
+    def test_runtime_logs_are_not_publishable(self):
+        for path in (
+            "alerts/sovereign_bulletin_2026-09-01.md",
+            "data/live_alerts.jsonl",
+            "logs/schedule.log",
+            "scholar_items.json",
+        ):
+            with self.subTest(path=path):
+                with self.assertRaises(daily_publish.PublishError):
+                    daily_publish.require_allowed(
+                        [path], daily_publish.PUBLISH_PATTERNS, "test"
+                    )
 
     def test_require_today_rejects_old_change(self):
         with tempfile.TemporaryDirectory() as temporary:

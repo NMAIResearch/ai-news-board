@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "title": "PLAG IN client-harness compatibility",
+  "scope": "Compatibility with the bounded text protocols implemented by PLAG IN 0.1.0a2. This is not a ranking of model quality, safety, speed or general client capability.",
+  "source": {
+    "repository": "https://github.com/NMAIResearch/plag-in",
+    "commit": "c5e989fa78655375cd585833e15dd3f5b24592bd",
+    "url": "https://github.com/NMAIResearch/plag-in/blob/c5e989fa78655375cd585833e15dd3f5b24592bd/docs/VERIFICATION.md",
+    "evidence_date": "2026-08-29",
+    "retrieved_date": "2026-08-31"
+  },
+  "ranking_method": {
+    "axis": "Recorded progress towards an installed client exchange with PLAG IN 0.1.0a2",
+    "status_order": [
+      "protocol_compatible_unverified",
+      "adapter_required",
+      "trial_failed"
+    ],
+    "tie_rule": "Entries with the same recorded status share a competition rank.",
+    "limits": "No installed client completed a verified end-to-end integration in the cited evidence. The order does not compare model quality, client quality, latency, throughput, memory use or safety."
+  },
+  "entries": [
+    {
+      "rank": 1,
+      "name": "Odysseus fixture",
+      "status": "protocol_compatible_unverified",
+      "status_label": "Protocol-compatible, unverified",
+      "observed_boundary": "Discovery and path logic were exercised, but urllib rather than the Odysseus HTTP client issued the request."
+    },
+    {
+      "rank": 2,
+      "name": "Codex CLI",
+      "status": "adapter_required",
+      "status_label": "Adapter required",
+      "observed_boundary": "The client sent tools and the bounded Responses subset returned typed HTTP 501."
+    },
+    {
+      "rank": 2,
+      "name": "Claude Code",
+      "status": "adapter_required",
+      "status_label": "Adapter required",
+      "observed_boundary": "The client requested the unimplemented Anthropic Messages route."
+    },
+    {
+      "rank": 4,
+      "name": "Gemini CLI, legacy",
+      "status": "trial_failed",
+      "status_label": "Trial failed",
+      "observed_boundary": "The client refused its authentication configuration before issuing a request."
+    },
+    {
+      "rank": 4,
+      "name": "Antigravity CLI",
+      "status": "trial_failed",
+      "status_label": "Trial failed",
+      "observed_boundary": "No route or HTTP status was reported. Whether a request reached PLAG IN is unassessed."
+    }
+  ]
+}

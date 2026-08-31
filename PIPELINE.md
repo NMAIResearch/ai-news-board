@@ -14,6 +14,19 @@ other.**
     the board           owns INTAKE       what was published, when, by whom, with which
     (public)                              figures, quoted verbatim with offsets
 
+Source class can cross into a Research Protocol intake record only as `source_class_tier` metadata.
+It cannot accept, reject or prioritise a claim. The executable source is `tier_map.json` under
+`source_types`; claim relationship, reliability rating, evidence coverage, primary-link status
+and review status remain separate.
+
+## Public harness snapshot
+
+`harnesses.json` is a versioned public snapshot, not a read from a private working tree. It binds
+every row to a public repository, full commit identity, evidence date, retrieval date, recorded
+status and observed boundary. The current order measures only progress towards a client exchange
+with the named PLAG IN version. It does not compare model quality, client quality, performance or
+safety. Equal statuses share a competition rank, and `board_checks.py` rejects rank drift.
+
 ## Direction 1: tracker to board (built, 2026-07-25)
 
 A local generator script reads the tracker rows marked `🌐` and writes
@@ -97,8 +110,9 @@ a market closed on a day has no later price. Reporting the spread is correct.
 ## Unattended public refresh boundary
 
 `daily_publish.py` may automate intake, extraction, deterministic labels, local-model labels,
-entity resolution, source relationships, market data, model releases, scholarship records,
-the archive and the static build. Each machine output remains visibly unreviewed.
+entity resolution, source relationships, article-linked primary-source extraction, market data,
+model releases, the archive and the static build. It does not run a general paper or dataset
+search. Each machine output remains visibly unreviewed.
 
 It may also publish Sovereign Watch classifications as unverified machine candidates. Source
 queue priority controls processing order only. Evaluated substantive priority, evaluation method,
@@ -108,13 +122,18 @@ source queue. Notifications require an evaluated local-model P1 or P2, a named m
 duty-shift predicate. Legacy rows with missing provenance remain unassessed while preserving their
 raw historical priority.
 
-The stored N = 20 model comparison recorded Qwen agreement on 19 of 20 records, equal to the
+The retired N = 20 model comparison recorded Qwen agreement on 19 of 20 records, equal to the
 always-no baseline of 19 of 20, N = 20. Positive recall was 0 accepted positives out of 1
-comparator-positive record, N = 1 positive. The held files contain model outputs but no
-independently reviewed gold labels. These figures do not support a precision claim or autonomous
-legal review.
+comparator-positive record, N = 1 positive. The files remain recoverable from Git history and
+contain model outputs but no independently reviewed gold labels. These figures do not support a
+precision claim or autonomous legal review.
 
 The unattended route must stop on a dirty non-generated path, stale inherited output,
 upstream divergence, a failed refresh stage, malformed data, a failed unit test, a diff-check
 failure, a rejected commit or a rejected push. It never writes a tracker row, changes a
 review status, resolves a legal call, merges, rebases or force-pushes.
+
+Sovereign bulletins, the JSONL event stream and the schedule log are local runtime evidence. They
+are ignored by Git and cannot enter the unattended publication allowlist. Local jurisdiction-pack
+changes are hashed and notified locally, but their paths and contents do not enter the public
+regulatory alert bank.

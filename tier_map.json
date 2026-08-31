@@ -1,5 +1,24 @@
 {
   "_about": "The executable tier registry. Source-class defaults come from source_types. A claim-relative tier is shown only when article_evidence.py resolves a publisher relationship to the subject. Unresolved relationships remain visibly unresolved rather than inheriting a source-class number under a claim-relative label.",
+  "research_protocol_contract": {
+    "field": "source_class_tier",
+    "use": "intake-routing-metadata-only",
+    "executable_registry": "source_types",
+    "prohibited_uses": [
+      "truth score",
+      "quality score",
+      "automatic source exclusion",
+      "automatic claim acceptance",
+      "research priority"
+    ],
+    "separate_axes": [
+      "claim_relationship",
+      "source_reliability_rating",
+      "evidence_coverage",
+      "primary_link_status",
+      "review_status"
+    ]
+  },
   "contest": {
     "email": "NMAIResearch@proton.me",
     "how": "Email a cell you dispute with the observable fact you think is wrong, or fork this file. Tiers change on evidence, not on disagreement with the conclusion."

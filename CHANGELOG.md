@@ -2,6 +2,56 @@
 
 Dated, descriptive, newest first. Method changes and defects found, not every commit.
 
+## 2026-08-31
+
+**The public board now separates three surfaces at the top level.** News evidence and Sovereign
+radar remain. Harnesses adds a source-bound client-compatibility order. The right-rail `Radar`
+label is now `Search & market`, which identifies its actual inputs: Google Trends RSS, Google News
+Search RSS and symmetrical market anomalies.
+
+**Harness order is bounded to one compatibility question.** `harnesses.json` records five client
+rows, N = 5, from the public PLAG IN verification boundary at a full Git identity. Equal recorded
+statuses share a competition rank. No installed client completed a verified end-to-end integration
+in the cited evidence. The order does not claim model quality, client quality, performance or
+safety. `board_checks.py` rejects missing source provenance, unsupported statuses and rank drift.
+
+**The five source-tier levels now have an explicit Research Protocol contract.** The only permitted
+field is `source_class_tier`, used as intake-routing metadata. It cannot operate as a truth score,
+quality score, automatic exclusion, automatic acceptance or research priority. Claim relationship,
+private reliability rating, evidence coverage, primary-link status and review status remain
+separate axes.
+
+**Hard-coded public state was removed.** The Sovereign tab count now comes from the validated alert
+bank instead of the number 20. The executive strip omits a card when its input is absent instead
+of inventing a release, paper or market fallback. The header now describes a scheduled daily
+Sovereign pass rather than continuous 24-hour operation.
+
+**The Primary sources rail now follows board evidence rather than a general feed.** It deduplicates
+primary URLs extracted from current, successfully fetched article elements and retains the
+originating article headline. The separate broad arXiv and Hugging Face fetch, and its generated
+payload, were removed. The panel states that a link is checkable but does not by itself establish
+support for the article headline.
+
+**Sovereign Watch has one scheduled implementation.** Local jurisdiction-pack hashing moved into
+`sovereign_watch.py`; local changes produce a local notification but no public alert, path or pack
+content. The compatibility daemon and detached runner were removed. Runtime bulletins, the JSONL
+event stream and the schedule log remain locally generated but are ignored by Git and excluded
+from the daily publication allowlist.
+
+**Thirty-one stale or misleading tracked paths were removed, N = 31.** These comprised the six
+retired headline-reader files, two obsolete daemon files, two one-off benchmark runners, six held
+benchmark outputs and reports, nine old bulletins, one bulletin generator, one cross-check script
+that did not perform the filing comparison its description claimed, two runtime logs, and the
+unrelated scholar fetch plus its generated payload. Git history remains the recovery path. The
+stored 20-record Sovereign comparison had matched its
+always-no baseline on 19 of 20 records, N = 20, with a margin of 0 records and positive recall of
+0 accepted positives out of 1 comparator-positive record, N = 1 positive. It was not a calibrated
+ranking source.
+
+**The standalone integrity command is now a real gate.** `python3 board_checks.py` validates board
+items, source classes, the Research Protocol contract, regulatory-alert provenance and the harness
+registry. The unattended publisher runs it before the unit suite.
+
 ## 2026-08-14
 
 **Model releases and primary sources moved to a right rail, level with the top of the feed.** The
@@ -40,7 +90,8 @@ Of the 8 datasets, `huggingface/documentation-images` is documentation images, `
 temporary dump, and `Salesforce/wikitext` is dated 2024-01-04, with two more from 2025, in a panel
 labelled recent. Five of eight cannot check any claim on this board. The panel is now the second
 thing a reader sees, so its selection rule needs writing. **Not fixed in this pass; recorded as
-open.**
+open.** ⛔ WITHDRAWN 2026-08-31: the unrelated feed and payload were removed. The rail now contains
+only deduplicated primary links extracted from current, successfully fetched article elements.
 
 ## 2026-08-11
 

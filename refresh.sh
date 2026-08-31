@@ -17,7 +17,6 @@
 #   carry_reviews     persists the labels before the next feed pull can replace the feed.
 #   resolve_entity    who the claim is about, from the registry, or blank
 #   article_evidence  attribution, primary links, figure sourcing, claim-relative tier
-#   fetch_scholar     broad arXiv + HF pull for the scholarship panel
 #   fetch_releases    models that reached OpenRouter or Hugging Face in the window
 #   archive           permanent record + revisit queue; run before the build
 #   suggest_register_rows  nominates candidate tracker rows into a dated, gitignored file.
@@ -28,7 +27,7 @@
 # ⛔ It does NOT commit or push. Review the page first: a feed pull brings in unreviewed
 # items, and whether those go public is a judgement call, not a step in a script.
 #
-# ⛔ The cross-check readers are retired (archive/). Do not add them back here.
+# ⛔ The cross-check readers are retired and remain available in Git history. Do not add them back here.
 #
 # Usage:  ./refresh.sh            full refresh
 #         ./refresh.sh --no-label run deterministic labels only (fast)
@@ -45,7 +44,7 @@ LABEL=1
 # `ahead 2, behind 4` and the board showed the 4 August feed for two days.
 # This warns and does not act: `git fetch` writes no working-tree file, and merging is a
 # judgement about which side wins for data/market.json, which is not a script's call.
-step "0/13 pre-flight: origin divergence"
+step "0/15 pre-flight: origin divergence"
 if git rev-parse --git-dir >/dev/null 2>&1; then
   git fetch -q origin 2>/dev/null || echo "  ! could not reach origin, continuing offline"
   behind=$(git rev-list --count HEAD..@{u} 2>/dev/null || echo 0)
@@ -60,13 +59,13 @@ else
   echo "  not a git repo, skipping"
 fi
 
-step "1/13 fetch feeds";      python3 fetch_feeds.py       || echo "  ! feed fetch failed, continuing with the existing feed"
-step "2/13 vendor newsrooms"; python3 fetch_vendor_news.py || echo "  ! vendor news failed"
-step "3/13 carry reviews";    python3 carry_reviews.py     || echo "  ! carry_reviews failed - CHECK BEFORE BUILDING, prior labels may be lost"
-step "4/13 apply ratings";    python3 apply_ratings.py     || echo "  ! apply_ratings failed"
-step "5/13 extract spans";    python3 extract_spans.py     || echo "  ! span extraction failed - affected labels remain unassessed"
+step "1/15 fetch feeds";      python3 fetch_feeds.py       || echo "  ! feed fetch failed, continuing with the existing feed"
+step "2/15 vendor newsrooms"; python3 fetch_vendor_news.py || echo "  ! vendor news failed"
+step "3/15 carry reviews";    python3 carry_reviews.py     || echo "  ! carry_reviews failed - CHECK BEFORE BUILDING, prior labels may be lost"
+step "4/15 apply ratings";    python3 apply_ratings.py     || echo "  ! apply_ratings failed"
+step "5/15 extract spans";    python3 extract_spans.py     || echo "  ! span extraction failed - affected labels remain unassessed"
 
-step "6/13 label items"
+step "6/15 label items"
 if [ "$LABEL" = "0" ]; then
   python3 label_items.py --rules-only || echo "  ! deterministic label pass failed"
 elif ! curl -sf --max-time 3 http://localhost:11434/api/tags >/dev/null 2>&1; then
@@ -76,21 +75,20 @@ else
   python3 label_items.py || echo "  ! label pass failed"
 fi
 
-step "7/13 persist labels";   python3 carry_reviews.py     || echo "  ! labels were not persisted"
-step "8/13 resolve entity";   python3 resolve_entity.py    || echo "  ! entity resolution failed"
-step "9/13 article evidence"; python3 article_evidence.py  || echo "  ! article evidence failed"
-step "10/13 fetch scholar";   python3 fetch_scholar.py     || echo "  ! scholar fetch failed"
-step "11/13 fetch releases";  python3 fetch_releases.py    || echo "  ! release fetch failed"
-step "12/13 archive";         python3 archive.py           || echo "  ! archive failed"
-step "  + candidates";        python3 suggest_register_rows.py --write >/dev/null \
+step "7/15 persist labels";   python3 carry_reviews.py     || echo "  ! labels were not persisted"
+step "8/15 resolve entity";   python3 resolve_entity.py    || echo "  ! entity resolution failed"
+step "9/15 article evidence"; python3 article_evidence.py  || echo "  ! article evidence failed"
+step "10/15 fetch releases";  python3 fetch_releases.py    || echo "  ! release fetch failed"
+step "11/15 archive";         python3 archive.py           || echo "  ! archive failed"
+step "12/15 candidates";      python3 suggest_register_rows.py --write >/dev/null \
                               || echo "  ! candidate scan failed"
 
-step "13/13 fetch market"
+step "13/15 fetch market"
 if [ -f ~/.config/nmai/keys.env ]; then python3 fetch_market.py || echo "  ! market fetch failed"
 else echo "  skipped: no ~/.config/nmai/keys.env"; fi
-step "  + trend monitor";       python3 trend_monitor.py --write >/dev/null || echo "  ! trend monitor scan failed"
+step "14/15 trend monitor";    python3 trend_monitor.py --write >/dev/null || echo "  ! trend monitor scan failed"
 
-step "build"
+step "15/15 build"
 # ⛔ Never pipe build.py into tail/head when chaining with &&. The pipeline's exit status is
 # the LAST command's, so a build that raises still reports success and a stale index.html
 # gets committed. Cost that mistake once, 2026-07-31.
