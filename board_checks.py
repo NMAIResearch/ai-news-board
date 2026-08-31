@@ -10,12 +10,20 @@ from url_identity import canonical_url
 ALERT_SCHEMA_VERSION = 2
 EVALUATED_ALERT_METHODS = {"local-model", "administrative-noise-rule", "human"}
 UNASSESSED_ALERT_METHODS = {"unassessed", "legacy-unassessed"}
-HARNESS_SCHEMA_VERSION = 1
-HARNESS_STATUSES = (
-    "protocol_compatible_unverified",
-    "adapter_required",
-    "trial_failed",
-)
+HARNESS_SCHEMA_VERSION = 2
+HARNESS_SOURCE_KINDS = {
+    "usage-ranking",
+    "multi-source-catalogue",
+    "curated-catalogue",
+    "controlled-benchmark",
+}
+HARNESS_SOURCE_IDS = {
+    "openlabor",
+    "harnessmatch",
+    "best-of-agent-harnesses",
+    "harnessrank",
+}
+HARNESS_REFERENCE_IDS = {"harness-bench", "harbor"}
 
 
 class BoardIntegrityError(ValueError):
@@ -259,63 +267,89 @@ def validate_tier_contract(tier_map):
 
 
 def validate_harnesses(data):
-    """Validate the bounded harness comparison and its source provenance."""
+    """Validate the source-separated harness landscape and its provenance."""
     if not isinstance(data, dict) or data.get("schema_version") != HARNESS_SCHEMA_VERSION:
         raise BoardIntegrityError("harness data has an unsupported schema version")
-    source = data.get("source")
+    for field in ("title", "scope", "checked_date"):
+        if not isinstance(data.get(field), str) or not data[field].strip():
+            raise BoardIntegrityError(f"harness landscape lacks {field}")
+
+    method = data.get("method")
+    if not isinstance(method, dict):
+        raise BoardIntegrityError("harness landscape lacks a method")
+    for field in ("order", "limits"):
+        if not isinstance(method.get(field), str) or not method[field].strip():
+            raise BoardIntegrityError(f"harness method lacks {field}")
+    if "No composite rank" not in method["order"]:
+        raise BoardIntegrityError("harness method permits an unsupported composite rank")
+
+    sources = data.get("sources")
+    if not isinstance(sources, list) or not sources:
+        raise BoardIntegrityError("harness landscape must contain public sources")
+    ids = set()
+    kinds = set()
+    for index, entry in enumerate(sources):
+        label = f"harness source {index}"
+        if not isinstance(entry, dict):
+            raise BoardIntegrityError(f"{label} is not an object")
+        entry_id = entry.get("id")
+        if not isinstance(entry_id, str) or not entry_id or entry_id in ids:
+            raise BoardIntegrityError(f"{label} has a missing or duplicate id")
+        ids.add(entry_id)
+        kind = entry.get("source_kind")
+        if kind not in HARNESS_SOURCE_KINDS or kind in kinds:
+            raise BoardIntegrityError(f"{label} has a missing or duplicate source kind")
+        kinds.add(kind)
+        for field in ("name", "status_label", "observed_signal", "boundary"):
+            if not isinstance(entry.get(field), str) or not entry[field].strip():
+                raise BoardIntegrityError(f"{label} lacks {field}")
+        if not isinstance(entry.get("url"), str) or not entry["url"].startswith("https://"):
+            raise BoardIntegrityError(f"{label} lacks an HTTPS source URL")
+        if "rank" in entry or "score" in entry:
+            raise BoardIntegrityError(f"{label} contains an unsupported board-authored ranking")
+    if ids != HARNESS_SOURCE_IDS or kinds != HARNESS_SOURCE_KINDS:
+        raise BoardIntegrityError("harness landscape source coverage changed without review")
+
+    references = data.get("method_references")
+    if not isinstance(references, list) or len(references) != len(HARNESS_REFERENCE_IDS):
+        raise BoardIntegrityError("harness landscape lacks its method references")
+    reference_ids = set()
+    for index, reference in enumerate(references):
+        label = f"harness method reference {index}"
+        if not isinstance(reference, dict):
+            raise BoardIntegrityError(f"{label} is not an object")
+        reference_id = reference.get("id")
+        if reference_id in reference_ids:
+            raise BoardIntegrityError(f"{label} has a duplicate id")
+        reference_ids.add(reference_id)
+        for field in ("name", "role", "boundary"):
+            if not isinstance(reference.get(field), str) or not reference[field].strip():
+                raise BoardIntegrityError(f"{label} lacks {field}")
+        if not isinstance(reference.get("url"), str) or not reference["url"].startswith("https://"):
+            raise BoardIntegrityError(f"{label} lacks an HTTPS source URL")
+    if reference_ids != HARNESS_REFERENCE_IDS:
+        raise BoardIntegrityError("harness method references changed without review")
+
+    project = data.get("project_status")
+    if not isinstance(project, dict):
+        raise BoardIntegrityError("harness landscape lacks the PLAG IN project note")
+    for field in ("title", "summary", "boundary"):
+        if not isinstance(project.get(field), str) or not project[field].strip():
+            raise BoardIntegrityError(f"harness project note lacks {field}")
+    source = project.get("source")
     if not isinstance(source, dict):
-        raise BoardIntegrityError("harness data lacks source provenance")
+        raise BoardIntegrityError("harness project note lacks source provenance")
     commit = source.get("commit")
     if not isinstance(commit, str) or len(commit) != 40 or any(
         character not in "0123456789abcdef" for character in commit
     ):
-        raise BoardIntegrityError("harness source commit is not a full Git identity")
-    for field in ("repository", "url", "evidence_date", "retrieved_date"):
+        raise BoardIntegrityError("harness project source commit is not a full Git identity")
+    for field in ("repository", "url", "evidence_date"):
         if not isinstance(source.get(field), str) or not source[field].strip():
-            raise BoardIntegrityError(f"harness source lacks {field}")
+            raise BoardIntegrityError(f"harness project source lacks {field}")
     if f"/blob/{commit}/" not in source["url"]:
-        raise BoardIntegrityError("harness evidence URL is not pinned to its source commit")
-
-    method = data.get("ranking_method")
-    if not isinstance(method, dict):
-        raise BoardIntegrityError("harness data lacks a ranking method")
-    if method.get("status_order") != list(HARNESS_STATUSES):
-        raise BoardIntegrityError("harness status order changed without a schema change")
-    if not isinstance(method.get("limits"), str) or not method["limits"].strip():
-        raise BoardIntegrityError("harness comparison lacks method limits")
-
-    entries = data.get("entries")
-    if not isinstance(entries, list) or not entries:
-        raise BoardIntegrityError("harness comparison must contain at least one entry")
-    names = set()
-    status_counts = {status: 0 for status in HARNESS_STATUSES}
-    for index, entry in enumerate(entries):
-        label = f"harness entry {index}"
-        if not isinstance(entry, dict):
-            raise BoardIntegrityError(f"{label} is not an object")
-        name = entry.get("name")
-        if not isinstance(name, str) or not name.strip() or name in names:
-            raise BoardIntegrityError(f"{label} has a missing or duplicate name")
-        names.add(name)
-        status = entry.get("status")
-        if status not in HARNESS_STATUSES:
-            raise BoardIntegrityError(f"{label} has an unsupported status")
-        if not isinstance(entry.get("status_label"), str) or not entry["status_label"].strip():
-            raise BoardIntegrityError(f"{label} lacks a status label")
-        if not isinstance(entry.get("observed_boundary"), str) or not entry["observed_boundary"].strip():
-            raise BoardIntegrityError(f"{label} lacks an observed boundary")
-        status_counts[status] += 1
-
-    prior = 0
-    for status in HARNESS_STATUSES:
-        expected_rank = prior + 1
-        for entry in entries:
-            if entry["status"] == status and entry.get("rank") != expected_rank:
-                raise BoardIntegrityError(
-                    f"{entry['name']}: rank disagrees with the declared tie method"
-                )
-        prior += status_counts[status]
-    return len(entries)
+        raise BoardIntegrityError("harness project URL is not pinned to its source commit")
+    return len(sources)
 
 
 def main():

@@ -4,12 +4,25 @@ Dated, descriptive, newest first. Method changes and defects found, not every co
 
 ## 2026-08-31
 
-**The public board now separates three surfaces at the top level.** News evidence and Sovereign
+**The Harnesses surface now covers the independent public landscape.** Four sources, N = 4, stay
+separate by question: OpenLabor for attributed OpenRouter usage, HarnessMatch for source-separated
+usage and documented capabilities, Best of Agent Harnesses for curated discovery, and HarnessRank
+for a controlled-comparison method. HarnessRank published no full result rows at the checked date.
+The board calculates no composite rank. Qihoo360 Harness-Bench and Harbor appear as method
+references, and the older PLAG IN comparison is now a compact, dated project note.
+
+**The README now includes a non-coder AI setup prompt.** It permits explanation and non-writing
+checks first. Network refreshes, local-model work, credentials, generated-page writes, deletion,
+commits and publication remain explicit approval points.
+
+⛔ WITHDRAWN 2026-08-31: the Harnesses surface no longer presents the PLAG IN client order as a
+top-level comparison. **The public board now separates three surfaces at the top level.** News evidence and Sovereign
 radar remain. Harnesses adds a source-bound client-compatibility order. The right-rail `Radar`
 label is now `Search & market`, which identifies its actual inputs: Google Trends RSS, Google News
 Search RSS and symmetrical market anomalies.
 
-**Harness order is bounded to one compatibility question.** `harnesses.json` records five client
+⛔ WITHDRAWN 2026-08-31: this five-client order remains only as a dated project note. **Harness
+order is bounded to one compatibility question.** `harnesses.json` records five client
 rows, N = 5, from the public PLAG IN verification boundary at a full Git identity. Equal recorded
 statuses share a competition rank. No installed client completed a verified end-to-end integration
 in the cited evidence. The order does not claim model quality, client quality, performance or

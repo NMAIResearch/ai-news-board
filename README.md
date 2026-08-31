@@ -1,7 +1,7 @@
 # AI News Board
 
 A live board for AI news evidence, daily sovereign regulatory intake, search and market signals,
-and source-bound client-harness compatibility. Publisher class, resolved claim relationships,
+and a source-separated coding-harness landscape. Publisher class, resolved claim relationships,
 figure-base evidence, citation links and typed research-context links remain separate. Figures
 are quoted verbatim from article text with their position recorded. Every machine label states
 its method, complete-span coverage, content hash and schema version.
@@ -138,6 +138,22 @@ Optional check, after `extract_spans.py`:
 
 All stdlib, no dependencies. Open `index.html` in any browser. A feed refresh costs nothing
 but time; the only optional cost in the pipeline is the local model in `label_items.py`.
+
+### Not a coder? Ask an AI coding agent to set it up
+
+The live board needs no installation. To inspect or modify a local copy, install a coding agent
+and give it the prompt below. The prompt keeps network refreshes, local-model work, credentials
+and publication behind separate decisions.
+
+```text
+Clone https://github.com/NMAIResearch/ai-news-board into its own project directory and explain
+the board to me in plain language. Run python3 board_checks.py and python3 -m unittest discover
+-s tests before changing anything. The project uses the Python standard library and does not
+need package installation. Do not run ./refresh.sh, use Ollama, read or create API keys, rebuild
+index.html, delete files, commit, push or publish until you have shown me what each action would
+change and I approve that action. Never print a secret. If I only want to view the project, open
+the live board instead of running its data pipeline.
+```
 
 ### `--plain` is a toggle, not a pipeline step
 
@@ -291,17 +307,26 @@ that is a leaderboard, and a percentage with no stated denominator is the defect
 flags elsewhere. A model announced but never shipped cannot appear in any release list,
 including this one.
 
-## Harness compatibility
+## Harness landscape
 
-The Harnesses tab is a narrow client-compatibility order, not a model or product leaderboard.
-`harnesses.json` pins the comparison to one public PLAG IN commit, one evidence date, one declared
-status order and the observed boundary for every client entry. Entries with the same recorded
-status share a competition rank.
+The Harness landscape tab points to four public sources, N = 4, and keeps their questions
+separate:
 
-The current source records five client rows, N = 5. No installed client completed a verified
-end-to-end integration in that evidence. The order therefore does not establish model quality,
-client quality, latency, throughput, memory use or safety. A schema gate rejects a missing source
-commit, an unsupported status or a rank that disagrees with the declared tie method.
+- OpenLabor records attributed OpenRouter token, request and model-share activity.
+- HarnessMatch separates eight public usage channels from documented capabilities and evidence.
+- Best of Agent Harnesses is a curated discovery catalogue with machine-readable data.
+- HarnessRank publishes a controlled same-model comparison method. No full result rows were
+  available on the checked date.
+
+`harnesses.json` does not copy a moving league table or calculate a winner. Usage, popularity,
+documented capability and controlled task performance retain their own denominators and limits.
+Qihoo360 Harness-Bench and Harbor are listed separately as method and implementation references,
+not ranking authorities.
+
+The old five-client PLAG IN compatibility order remains only as a compact, dated project note
+pinned to its public evidence commit. It does not occupy the independent landscape and is not
+presented as a quality ranking. The schema gate rejects missing source coverage, duplicate source
+types, missing evidence boundaries, a board-authored rank and an unpinned PLAG IN project note.
 
 ## Search and market signals
 
@@ -431,7 +456,7 @@ been reviewed, and which private register rows may be published.
 
 The maker is an independent researcher. An Anthropic model helped build the original method and
 tiers. An OpenAI model implemented the current source-class split, label provenance, anchor rules,
-harness presentation and related integrity gates. OpenAI is a subject on the board and Codex CLI
-is a row in the harness comparison, so this work is a direct conflict and is not an independent
+harness presentation and related integrity gates. OpenAI is a subject on the board and Codex is
+covered by the named harness sources, so this work is a direct conflict and is not an independent
 check of OpenAI-related output. Anthropic and OpenAI remain subjects under the same published
 registries. Independent analysis, not investment advice.

@@ -923,37 +923,52 @@ def sovereign_radar_tab(alerts=None):
 
 
 def harnesses_tab(data=None):
-    """Render a source-bound compatibility order without implying general quality."""
+    """Render source-separated harness references without inventing one ranking."""
     path = os.path.join(HERE, "harnesses.json")
     if data is None:
         data = json.load(open(path, encoding="utf-8")) if os.path.isfile(path) else {}
     if not data:
         return (
             f'<div style="padding:20px;background:{PAPER};border-radius:8px;'
-            f'border:1px solid {LINE}">No harness compatibility evidence banked.</div>'
+            f'border:1px solid {LINE}">No harness landscape sources banked.</div>'
         )
     validate_harnesses(data)
-    source = data["source"]
     colours = {
-        "protocol_compatible_unverified": "#2f7d4f",
-        "adapter_required": "#cc7a33",
-        "trial_failed": "#64748b",
+        "usage-ranking": "#2563eb",
+        "multi-source-catalogue": "#15803d",
+        "curated-catalogue": "#7c3aed",
+        "controlled-benchmark": "#b45309",
     }
     cards = []
-    for entry in data["entries"]:
-        colour = colours[entry["status"]]
+    for entry in data["sources"]:
+        colour = colours[entry["source_kind"]]
         cards.append(
             f'<div style="border:1px solid {LINE};border-left:4px solid {colour};'
             f'border-radius:8px;padding:15px 17px;background:{PAPER};box-shadow:{SHADOW}">'
             f'<div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap">'
-            f'<span style="font-family:var(--mono);font-size:18px;font-weight:700;'
-            f'color:{NAVY}">#{entry["rank"]}</span>'
-            f'<strong style="font-size:15px;color:{NAVY}">{esc(entry["name"])}</strong>'
+            f'<a href="{esc(entry["url"])}" target="_blank" rel="noopener" '
+            f'style="font-size:15px;font-weight:700;color:{NAVY};text-decoration:none">'
+            f'{esc(entry["name"])} &#x2197;</a>'
             f'<span style="font-size:10px;padding:2px 7px;border-radius:4px;color:#fff;'
             f'background:{colour}">{esc(entry["status_label"])}</span></div>'
             f'<div style="font-size:13px;color:{BODY};margin-top:8px;line-height:1.5">'
-            f'{esc(entry["observed_boundary"])}</div></div>'
+            f'{esc(entry["observed_signal"])}</div>'
+            f'<div style="font-size:12px;color:{SLATE};margin-top:7px;line-height:1.5">'
+            f'Limit: {esc(entry["boundary"])}</div></div>'
         )
+    references = "".join(
+        f'<div style="padding:9px 0;border-bottom:1px solid {LINE}">'
+        f'<a href="{esc(reference["url"])}" target="_blank" rel="noopener" '
+        f'style="font-size:13px;font-weight:700;color:{NAVY};text-decoration:none">'
+        f'{esc(reference["name"])} &#x2197;</a>'
+        f'<span style="font-size:10px;color:{SLATE};margin-left:7px">'
+        f'{esc(reference["role"])}</span>'
+        f'<div style="font-size:12px;color:{BODY};margin-top:4px;line-height:1.45">'
+        f'{esc(reference["boundary"])}</div></div>'
+        for reference in data["method_references"]
+    )
+    project = data["project_status"]
+    project_source = project["source"]
     return (
         f'<section style="max-width:1080px">'
         f'<div style="border:1px solid {LINE};border-left:4px solid var(--accent);'
@@ -961,17 +976,34 @@ def harnesses_tab(data=None):
         f'box-shadow:{SHADOW}"><h2 style="margin:0 0 5px;color:{NAVY};font-size:19px">'
         f'{esc(data["title"])}</h2><div style="font-size:13px;color:{BODY};line-height:1.55">'
         f'{esc(data["scope"])}</div><div style="font-size:12px;color:{SLATE};margin-top:8px">'
-        f'Order: {esc(data["ranking_method"]["axis"])}. '
-        f'{esc(data["ranking_method"]["tie_rule"])}</div>'
+        f'{esc(data["method"]["order"])}</div>'
         f'<div style="font-size:12px;color:{SLATE};margin-top:5px">'
-        f'{esc(data["ranking_method"]["limits"])}</div>'
+        f'{esc(data["method"]["limits"])}</div>'
         f'<div style="font-size:12px;color:{SLATE};margin-top:8px">'
-        f'<a href="{esc(source["url"])}" target="_blank" rel="noopener" '
-        f'style="color:{NAVY}">Evidence at PLAG IN commit {esc(source["commit"][:12])}</a>'
-        f' &middot; evidence dated {esc(source["evidence_date"])} &middot; '
-        f'{len(data["entries"])} client entries</div></div>'
+        f'Sources checked {esc(data["checked_date"])} &middot; '
+        f'{len(data["sources"])} public source types</div></div>'
         f'<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));'
-        f'gap:14px">{"".join(cards)}</div></section>'
+        f'gap:14px">{"".join(cards)}</div>'
+        f'<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));'
+        f'gap:14px;margin-top:18px">'
+        f'<div style="border:1px solid {LINE};border-radius:8px;padding:13px 16px;'
+        f'background:{PAPER}"><div style="font-size:14px;font-weight:700;color:{NAVY}">'
+        f'Benchmark method references</div>{references}</div>'
+        f'<details style="border:1px solid {LINE};border-radius:8px;padding:13px 16px;'
+        f'background:{PAPER}"><summary style="font-size:14px;font-weight:700;color:{NAVY};'
+        f'cursor:pointer">{esc(project["title"])}</summary>'
+        f'<div style="font-size:12px;color:{BODY};margin-top:9px;line-height:1.5">'
+        f'{esc(project["summary"])}</div>'
+        f'<div style="font-size:12px;color:{SLATE};margin-top:7px;line-height:1.5">'
+        f'{esc(project["boundary"])}</div>'
+        f'<div style="font-size:11px;color:{SLATE};margin-top:8px">'
+        f'<a href="{esc(project_source["url"])}" target="_blank" rel="noopener" '
+        f'style="color:{NAVY}">Snapshot evidence at {esc(project_source["commit"][:12])}</a>'
+        f' &middot; {esc(project_source["evidence_date"])}</div></details></div>'
+        f'<div style="font-size:12px;color:{SLATE};margin-top:14px;border-top:1px solid '
+        f'{LINE};padding-top:10px">Conflict of interest: an OpenAI model implemented this '
+        f'presentation, and Codex appears in the covered harness sources. The board therefore '
+        f'displays each source and limit without supplying an OpenAI-authored winner.</div></section>'
     )
 
 
@@ -1851,7 +1883,7 @@ def main():
 
     doc = f"""<!doctype html><html lang="en-GB" data-theme="light"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AI News Board, Sovereign Watch and Harness Compatibility</title>
+<title>AI News Board, Sovereign Watch and Harness Landscape</title>
 <script>
 (function(){{
   try {{
@@ -1867,7 +1899,7 @@ def main():
       <div class="header-kicker">Live evidence monitor</div>
       <h1 class="header-title">AI News Board &amp; Sovereign Watch</h1>
       <div class="header-copy">
-        AI news evidence, daily sovereign regulatory intake, search and market signals, and source-bound client-harness compatibility. Each panel states the limits of what its evidence can establish.
+        AI news evidence, daily sovereign regulatory intake, search and market signals, and a source-separated coding-harness landscape. Each panel states the limits of what its evidence can establish.
       </div>
     </div>
     <div class="header-actions">
@@ -1886,7 +1918,7 @@ def main():
   <div class="nav-tab-bar">
     <button class="nav-tab-btn active" data-target="tab-news">News evidence <span class="tab-badge">{len(items)}</span></button>
     <button class="nav-tab-btn" data-target="tab-radar">Sovereign radar <span class="tab-badge radar-badge">{len(regulatory_alerts)}</span></button>
-    <button class="nav-tab-btn" data-target="tab-harnesses">Harnesses <span class="tab-badge">{len(harness_data["entries"])}</span></button>
+    <button class="nav-tab-btn" data-target="tab-harnesses">Harness landscape <span class="tab-badge">{len(harness_data["sources"])}</span></button>
   </div>
 
   <div id="tab-news" class="tab-pane active" style="display:block">

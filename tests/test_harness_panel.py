@@ -1,4 +1,4 @@
-"""Regression tests for the source-bound harness compatibility panel."""
+"""Regression tests for the source-separated harness landscape."""
 
 import copy
 import json
@@ -18,33 +18,49 @@ class HarnessPanelTests(unittest.TestCase):
         cls.data = json.loads((ROOT / "harnesses.json").read_text(encoding="utf-8"))
 
     def test_current_registry_is_valid(self):
-        self.assertEqual(validate_harnesses(self.data), 5)
+        self.assertEqual(validate_harnesses(self.data), 4)
 
-    def test_missing_source_commit_fails_closed(self):
+    def test_duplicate_public_source_fails_closed(self):
         changed = copy.deepcopy(self.data)
-        changed["source"]["commit"] = "short"
+        changed["sources"][1]["id"] = changed["sources"][0]["id"]
         with self.assertRaises(BoardIntegrityError):
             validate_harnesses(changed)
 
-    def test_source_url_must_be_pinned_to_commit(self):
+    def test_public_source_requires_its_evidence_boundary(self):
         changed = copy.deepcopy(self.data)
-        changed["source"]["url"] = "https://github.com/NMAIResearch/plag-in/blob/main/docs/VERIFICATION.md"
+        changed["sources"][0]["boundary"] = ""
         with self.assertRaises(BoardIntegrityError):
             validate_harnesses(changed)
 
-    def test_rank_must_follow_declared_status_order(self):
+    def test_board_authored_rank_fails_closed(self):
         changed = copy.deepcopy(self.data)
-        changed["entries"][1]["rank"] = 1
+        changed["sources"][0]["rank"] = 1
+        with self.assertRaises(BoardIntegrityError):
+            validate_harnesses(changed)
+
+    def test_project_snapshot_url_must_be_pinned_to_commit(self):
+        changed = copy.deepcopy(self.data)
+        changed["project_status"]["source"]["url"] = (
+            "https://github.com/NMAIResearch/plag-in/blob/main/docs/VERIFICATION.md"
+        )
         with self.assertRaises(BoardIntegrityError):
             validate_harnesses(changed)
 
     def test_panel_states_scope_and_evidence_boundary(self):
         rendered = build.harnesses_tab(self.data)
-        self.assertIn("not a ranking of model quality", rendered)
-        self.assertIn("No installed client completed", rendered)
-        self.assertIn("Evidence at PLAG IN commit", rendered)
-        self.assertIn("#1", rendered)
-        self.assertIn("#4", rendered)
+        self.assertIn("No composite rank", rendered)
+        self.assertIn("OpenLabor Harness Ranking", rendered)
+        self.assertIn("HarnessMatch", rendered)
+        self.assertIn("Best of Agent Harnesses", rendered)
+        self.assertIn("HarnessRank", rendered)
+        self.assertIn("PLAG IN prototype compatibility snapshot", rendered)
+        self.assertNotIn(">#1</span>", rendered)
+
+    def test_required_method_references_are_rendered(self):
+        rendered = build.harnesses_tab(self.data)
+        self.assertIn("Qihoo360 Harness-Bench", rendered)
+        self.assertIn("Harbor", rendered)
+        self.assertIn("not a ranking authority", rendered)
 
     def test_obsolete_executive_fallbacks_are_absent(self):
         source = (ROOT / "build.py").read_text(encoding="utf-8")

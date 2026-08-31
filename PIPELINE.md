@@ -19,13 +19,19 @@ It cannot accept, reject or prioritise a claim. The executable source is `tier_m
 `source_types`; claim relationship, reliability rating, evidence coverage, primary-link status
 and review status remain separate.
 
-## Public harness snapshot
+## Public harness landscape
 
-`harnesses.json` is a versioned public snapshot, not a read from a private working tree. It binds
-every row to a public repository, full commit identity, evidence date, retrieval date, recorded
-status and observed boundary. The current order measures only progress towards a client exchange
-with the named PLAG IN version. It does not compare model quality, client quality, performance or
-safety. Equal statuses share a competition rank, and `board_checks.py` rejects rank drift.
+`harnesses.json` is a versioned directory of source types, not a copied league table and not a
+read from a private working tree. OpenLabor carries a channel-specific usage ranking. HarnessMatch
+keeps eight usage channels, documented capabilities and evidence separate. Best of Agent
+Harnesses is a curated discovery catalogue. HarnessRank supplies a controlled-comparison method
+but had no full result rows on the checked date.
+
+The board does not add usage, popularity, capability and benchmark results into one score.
+Qihoo360 Harness-Bench and Harbor remain method references rather than ranking authorities. The
+earlier PLAG IN client order is a compact project note pinned to its public evidence commit.
+`board_checks.py` rejects missing source coverage, duplicate source types, missing boundaries,
+board-authored ranks and an unpinned project note.
 
 ## Direction 1: tracker to board (built, 2026-07-25)
 

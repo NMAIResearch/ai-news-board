@@ -1,59 +1,75 @@
 {
-  "schema_version": 1,
-  "title": "PLAG IN client-harness compatibility",
-  "scope": "Compatibility with the bounded text protocols implemented by PLAG IN 0.1.0a2. This is not a ranking of model quality, safety, speed or general client capability.",
-  "source": {
-    "repository": "https://github.com/NMAIResearch/plag-in",
-    "commit": "c5e989fa78655375cd585833e15dd3f5b24592bd",
-    "url": "https://github.com/NMAIResearch/plag-in/blob/c5e989fa78655375cd585833e15dd3f5b24592bd/docs/VERIFICATION.md",
-    "evidence_date": "2026-08-29",
-    "retrieved_date": "2026-08-31"
+  "schema_version": 2,
+  "title": "Coding-harness landscape",
+  "scope": "A source-separated guide to public harness usage signals, catalogues and controlled benchmark methods. It does not combine unlike measures or select one best harness.",
+  "checked_date": "2026-08-31",
+  "method": {
+    "order": "Sources are grouped by the question they can answer. No composite rank is calculated.",
+    "limits": "Usage, popularity, documented capability and controlled task performance describe different populations and denominators. A missing measure remains unassessed and no source is treated as proof of general quality."
   },
-  "ranking_method": {
-    "axis": "Recorded progress towards an installed client exchange with PLAG IN 0.1.0a2",
-    "status_order": [
-      "protocol_compatible_unverified",
-      "adapter_required",
-      "trial_failed"
-    ],
-    "tie_rule": "Entries with the same recorded status share a competition rank.",
-    "limits": "No installed client completed a verified end-to-end integration in the cited evidence. The order does not compare model quality, client quality, latency, throughput, memory use or safety."
-  },
-  "entries": [
+  "sources": [
     {
-      "rank": 1,
-      "name": "Odysseus fixture",
-      "status": "protocol_compatible_unverified",
-      "status_label": "Protocol-compatible, unverified",
-      "observed_boundary": "Discovery and path logic were exercised, but urllib rather than the Odysseus HTTP client issued the request."
+      "id": "openlabor",
+      "name": "OpenLabor Harness Ranking",
+      "source_kind": "usage-ranking",
+      "status_label": "OpenRouter usage",
+      "url": "https://openlabor.ai/ranking/harness/",
+      "observed_signal": "Attributed OpenRouter tokens, requests and model share over selectable time windows.",
+      "boundary": "This observes one routing channel. It does not establish active users, total adoption, privacy, safety or harness quality."
     },
     {
-      "rank": 2,
-      "name": "Codex CLI",
-      "status": "adapter_required",
-      "status_label": "Adapter required",
-      "observed_boundary": "The client sent tools and the bounded Responses subset returned typed HTTP 501."
+      "id": "harnessmatch",
+      "name": "HarnessMatch",
+      "source_kind": "multi-source-catalogue",
+      "status_label": "Source-separated comparison",
+      "url": "https://harnessmatch.dev/",
+      "observed_signal": "Documented capabilities, operating models, evidence coverage and eight separate public usage views.",
+      "boundary": "Its usage channels retain their native denominators. Popularity, capability and benchmark evidence are not added into one score."
     },
     {
-      "rank": 2,
-      "name": "Claude Code",
-      "status": "adapter_required",
-      "status_label": "Adapter required",
-      "observed_boundary": "The client requested the unimplemented Anthropic Messages route."
+      "id": "best-of-agent-harnesses",
+      "name": "Best of Agent Harnesses",
+      "source_kind": "curated-catalogue",
+      "status_label": "Discovery catalogue",
+      "url": "https://github.com/RyanAlberts/best-of-Agent-Harnesses",
+      "observed_signal": "A curated project catalogue with categories, editorial attributes, activity signals and machine-readable data.",
+      "boundary": "Its ordering uses editorial relevance and GitHub signals. It is useful for discovery, not a controlled adoption or performance benchmark."
     },
     {
-      "rank": 4,
-      "name": "Gemini CLI, legacy",
-      "status": "trial_failed",
-      "status_label": "Trial failed",
-      "observed_boundary": "The client refused its authentication configuration before issuing a request."
-    },
-    {
-      "rank": 4,
-      "name": "Antigravity CLI",
-      "status": "trial_failed",
-      "status_label": "Trial failed",
-      "observed_boundary": "No route or HTTP status was reported. Whether a request reached PLAG IN is unassessed."
+      "id": "harnessrank",
+      "name": "HarnessRank",
+      "source_kind": "controlled-benchmark",
+      "status_label": "Method published, results pending",
+      "url": "https://harnessrank.net/",
+      "observed_signal": "A same-benchmark, same-model and same-effort repeated-run comparison method.",
+      "boundary": "No full benchmark rows were published at the checked date. The method is visible, but there is no result table to reproduce or rank."
     }
-  ]
+  ],
+  "method_references": [
+    {
+      "id": "harness-bench",
+      "name": "Qihoo360 Harness-Bench",
+      "role": "Method reference",
+      "url": "https://github.com/Qihoo360/harness-bench/tree/1025086a446653702b80cfb48babbeec35db6b2c",
+      "boundary": "Reference for deterministic outcomes, process measures, robustness, security and efficiency. Reuse requires a fresh licence check."
+    },
+    {
+      "id": "harbor",
+      "name": "Harbor",
+      "role": "Implementation substrate",
+      "url": "https://github.com/harbor-framework/harbor/tree/389bd4f8ce796ef4a97de4b62675021e262c8e76",
+      "boundary": "A benchmark orchestration substrate, not a ranking authority. Telemetry, network behaviour and isolation require separate verification."
+    }
+  ],
+  "project_status": {
+    "title": "PLAG IN prototype compatibility snapshot",
+    "summary": "The earlier five-client compatibility order is retained only as a dated project note. It is not part of the independent harness landscape and does not rank harness quality.",
+    "source": {
+      "repository": "https://github.com/NMAIResearch/plag-in",
+      "commit": "c5e989fa78655375cd585833e15dd3f5b24592bd",
+      "url": "https://github.com/NMAIResearch/plag-in/blob/c5e989fa78655375cd585833e15dd3f5b24592bd/docs/VERIFICATION.md",
+      "evidence_date": "2026-08-29"
+    },
+    "boundary": "No installed client completed a verified end-to-end integration in that snapshot. Later benchmark work requires its own evidence and approval."
+  }
 }
