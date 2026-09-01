@@ -1,12 +1,24 @@
 {
- "generated": "2026-08-31 06:32 UTC",
+ "generated": "2026-09-01 05:31 UTC",
  "window_days": 60,
  "counts": {
-  "total": 81,
-  "closed": 31,
-  "open_weights": 50
+  "total": 79,
+  "closed": 28,
+  "open_weights": 51
  },
  "releases": [
+  {
+   "lab": "IBM",
+   "model": "IBM: Granite 4.2 8B",
+   "id": "ibm-granite/granite-4.2-8b",
+   "date": "2026-08-31",
+   "url": "https://openrouter.ai/ibm-granite/granite-4.2-8b",
+   "context_length": 131072,
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/ibm-granite/granite-4.2-8b; downloadable and hashable",
+   "hf_id": "ibm-granite/granite-4.2-8b",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
   {
    "lab": "Tencent",
    "model": "Tencent: Hy4 preview",
@@ -62,9 +74,9 @@
    "date": "2026-08-26",
    "url": "https://openrouter.ai/qwen/qwen3.8-flash",
    "context_length": 1000000,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/Qwen/Qwen3.8-Flash-Next; downloadable and hashable",
+   "hf_id": "Qwen/Qwen3.8-Flash-Next",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
@@ -128,18 +140,6 @@
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
-   "lab": "Alibaba (Qwen)",
-   "model": "Qwen3.8-Flash-Next",
-   "id": "Qwen/Qwen3.8-Flash-Next",
-   "date": "2026-08-24",
-   "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "Qwen/Qwen3.8-Flash-Next",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
    "lab": "Google",
    "model": "timesfm-3.0-pytorch",
    "id": "google/timesfm-3.0-pytorch",
@@ -182,9 +182,9 @@
    "date": "2026-08-21",
    "url": "https://openrouter.ai/deepseek/deepseek-v4-flash-vision-exp",
    "context_length": 1048576,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp; downloadable and hashable",
+   "hf_id": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
@@ -272,6 +272,18 @@
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
+   "lab": "Nvidia",
+   "model": "DeepSeek-V4-Flash-0731-NVFP4",
+   "id": "nvidia/DeepSeek-V4-Flash-0731-NVFP4",
+   "date": "2026-08-19",
+   "url": "https://huggingface.co/nvidia/DeepSeek-V4-Flash-0731-NVFP4",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/DeepSeek-V4-Flash-0731-NVFP4",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
    "lab": "Z Ai",
    "model": "Z.ai: GLM 5.3",
    "id": "z-ai/glm-5.3",
@@ -329,18 +341,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Chat",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "NVIDIA-Nemotron-Labs-Teacher-Competition-Coding",
-   "id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Competition-Coding",
-   "date": "2026-08-14",
-   "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Teacher-Competition-Coding",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Competition-Coding",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
@@ -825,18 +825,6 @@
   },
   {
    "lab": "Kwaipilot",
-   "model": "Kwaipilot: KAT-Coder-Air V2.5",
-   "id": "kwaipilot/kat-coder-air-v2.5",
-   "date": "2026-07-10",
-   "url": "https://openrouter.ai/kwaipilot/kat-coder-air-v2.5",
-   "context_length": 256000,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Kwaipilot",
    "model": "Kwaipilot: KAT-Coder-Pro V2.5",
    "id": "kwaipilot/kat-coder-pro-v2.5",
    "date": "2026-07-10",
@@ -965,18 +953,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights published at huggingface.co/tencent/Hy3; downloadable and hashable",
    "hf_id": "tencent/Hy3",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Poolside",
-   "model": "Poolside: Laguna XS 2.1",
-   "id": "poolside/laguna-xs-2.1",
-   "date": "2026-07-02",
-   "url": "https://openrouter.ai/poolside/laguna-xs-2.1",
-   "context_length": 262144,
-   "evidence": "open-weights",
-   "evidence_note": "weights published at huggingface.co/poolside/Laguna-XS-2.1; downloadable and hashable",
-   "hf_id": "poolside/Laguna-XS-2.1",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   }
  ],

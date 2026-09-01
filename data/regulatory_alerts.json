@@ -1,5 +1,25 @@
 [
   {
+    "id": "alert_1788238871_23fc3c",
+    "timestamp": "2026-09-01T05:01:11.946872+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (Executive Orders)",
+    "jurisdiction": "United States",
+    "title": "Further Ensuring Affordable Beef for the American Consumer",
+    "url": "https://www.federalregister.gov/documents/2026/08/31/2026-17842/further-ensuring-affordable-beef-for-the-american-consumer",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": "FR Doc. 2026-17842 (Executive Order, 31 Aug 2026)",
+    "summary": "This Executive Order addresses domestic beef pricing and consumer affordability; it imposes no transparency, labelling, ADM-explanation, or risk-assessment obligation on AI operators or model developers, and carries no operational impact on AI regulatory compliance.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "No AI-specific action required; log as non-relevant to AI operator duties and archive. Re-assess only if subsequent implementing guidance extends to agricultural data-systems disclosure or algorithmic pricing transparency.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false
+  },
+  {
     "id": "alert_1787984831_d32dad",
     "timestamp": "2026-08-29T06:27:11.709847+00:00",
     "source": "US Federal Register (AI Rules & Notices)",
