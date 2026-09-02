@@ -1,12 +1,48 @@
 {
- "generated": "2026-09-01 05:31 UTC",
+ "generated": "2026-09-02 05:29 UTC",
  "window_days": 60,
  "counts": {
-  "total": 79,
-  "closed": 28,
-  "open_weights": 51
+  "total": 81,
+  "closed": 29,
+  "open_weights": 52
  },
  "releases": [
+  {
+   "lab": "Anthropic",
+   "model": "Anthropic: Claude Fable 5.1",
+   "id": "anthropic/claude-fable-5.1",
+   "date": "2026-09-01",
+   "url": "https://openrouter.ai/anthropic/claude-fable-5.1",
+   "context_length": 1000000,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Ai2",
+   "model": "ACE2S-SHiELD-plus-supplemental-checkpoints",
+   "id": "allenai/ACE2S-SHiELD-plus-supplemental-checkpoints",
+   "date": "2026-09-01",
+   "url": "https://huggingface.co/allenai/ACE2S-SHiELD-plus-supplemental-checkpoints",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "allenai/ACE2S-SHiELD-plus-supplemental-checkpoints",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Inception",
+   "model": "Inception: Mercury 2.5 Preview",
+   "id": "inception/mercury-2.5-preview",
+   "date": "2026-08-31",
+   "url": "https://openrouter.ai/inception/mercury-2.5-preview",
+   "context_length": 260000,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
   {
    "lab": "IBM",
    "model": "IBM: Granite 4.2 8B",
@@ -53,6 +89,18 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "microsoft/SQuadGen",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "Muse-Glimmer-30B-NVFP4",
+   "id": "nvidia/Muse-Glimmer-30B-NVFP4",
+   "date": "2026-08-27",
+   "url": "https://huggingface.co/nvidia/Muse-Glimmer-30B-NVFP4",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/Muse-Glimmer-30B-NVFP4",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
@@ -330,18 +378,6 @@
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "NVIDIA-Nemotron-Labs-Teacher-Chat",
-   "id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Chat",
-   "date": "2026-08-14",
-   "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Teacher-Chat",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Chat",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "Google",
@@ -654,18 +690,6 @@
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "microsoft/Mage-VL",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Anthropic",
-   "model": "Claude Opus 5 (Fast)",
-   "id": "anthropic/claude-opus-5-fast",
-   "date": "2026-07-24",
-   "url": "https://openrouter.ai/anthropic/claude-opus-5-fast",
-   "context_length": 1000000,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
    "lab": "Anthropic",
