@@ -1,12 +1,72 @@
 {
- "generated": "2026-09-02 05:29 UTC",
+ "generated": "2026-09-03 07:51 UTC",
  "window_days": 60,
  "counts": {
-  "total": 81,
-  "closed": 29,
+  "total": 84,
+  "closed": 32,
   "open_weights": 52
  },
  "releases": [
+  {
+   "lab": "Meta",
+   "model": "Meta: Muse Spark 1.3 Contributor",
+   "id": "meta/muse-spark-1.3-contributor",
+   "date": "2026-09-02",
+   "url": "https://openrouter.ai/meta/muse-spark-1.3-contributor",
+   "context_length": 1048576,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Meta",
+   "model": "Meta: Muse Spark 1.3",
+   "id": "meta/muse-spark-1.3",
+   "date": "2026-09-02",
+   "url": "https://openrouter.ai/meta/muse-spark-1.3",
+   "context_length": 1048576,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Google",
+   "model": "Google: Gemini 3.8 Flash",
+   "id": "google/gemini-3.8-flash",
+   "date": "2026-09-02",
+   "url": "https://openrouter.ai/google/gemini-3.8-flash",
+   "context_length": 1048576,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Microsoft",
+   "model": "VibeVoice-ASR-Streaming-1.5B",
+   "id": "microsoft/VibeVoice-ASR-Streaming-1.5B",
+   "date": "2026-09-02",
+   "url": "https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-1.5B",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "microsoft/VibeVoice-ASR-Streaming-1.5B",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Microsoft",
+   "model": "VibeVoice-ASR-Streaming-7B",
+   "id": "microsoft/VibeVoice-ASR-Streaming-7B",
+   "date": "2026-09-02",
+   "url": "https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-7B",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "microsoft/VibeVoice-ASR-Streaming-7B",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
   {
    "lab": "Anthropic",
    "model": "Anthropic: Claude Fable 5.1",
@@ -78,6 +138,18 @@
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Alibaba (Qwen)",
+   "model": "Qwen-Drive-1.0-4B",
+   "id": "Qwen/Qwen-Drive-1.0-4B",
+   "date": "2026-08-27",
+   "url": "https://huggingface.co/Qwen/Qwen-Drive-1.0-4B",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "Qwen/Qwen-Drive-1.0-4B",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "Microsoft",
@@ -584,18 +656,6 @@
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
-   "lab": "Alibaba (Qwen)",
-   "model": "Qwen3.8-2.4T-A95B-FP8",
-   "id": "Qwen/Qwen3.8-2.4T-A95B-FP8",
-   "date": "2026-08-08",
-   "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B-FP8",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "Qwen/Qwen3.8-2.4T-A95B-FP8",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
    "lab": "Meta",
    "model": "Meta: Muse Spark 1.2",
    "id": "meta/muse-spark-1.2",
@@ -704,18 +764,6 @@
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
-   "lab": "Microsoft",
-   "model": "VibeVoice-ASR-BitNet",
-   "id": "microsoft/VibeVoice-ASR-BitNet",
-   "date": "2026-07-24",
-   "url": "https://huggingface.co/microsoft/VibeVoice-ASR-BitNet",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "microsoft/VibeVoice-ASR-BitNet",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
    "lab": "Cohere",
    "model": "North-Mini-Code-1.0-eagle",
    "id": "CohereLabs/North-Mini-Code-1.0-eagle",
@@ -798,18 +846,6 @@
    "evidence_note": "weights published at huggingface.co/thinkingmachines/Inkling; downloadable and hashable",
    "hf_id": "thinkingmachines/Inkling",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Microsoft",
-   "model": "Fara1.5-27B",
-   "id": "microsoft/Fara1.5-27B",
-   "date": "2026-07-17",
-   "url": "https://huggingface.co/microsoft/Fara1.5-27B",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "microsoft/Fara1.5-27B",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "Moonshot",
