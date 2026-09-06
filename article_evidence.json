@@ -1,4 +1,49 @@
 {
+ "https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft/": {
+  "headline": "Seattle Times and Newsday are the latest publications to sue OpenAI and Microsoft",
+  "entity": "OpenAI",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 1,
+   "to_others": 1,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "A Microsoft spokesperson told GeekWire that the company is “surprised by the lawsuit” but is “always happy to sit down and explore solutions to this type of dispute.”",
+      "offset": 1291
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "“AI products like ChatGPT and CoPilot are touted as producers of content, but in fact they are rapacious consumers, devouring human-authored content and delivering back to the world copies and derivative imitations of that same original content they consumed to achieve their commercial objectives,” ",
+      "offset": 639
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 0,
+   "with_named_source": 0
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
  "https://techcrunch.com/2026/09/04/xdof-just-three-months-out-of-stealth-is-in-talks-for-a-series-b-at-a-1-2b-valuation/": {
   "headline": "XDOF, just three months out of stealth, is in talks for a Series B at a $1.2B valuation",
   "entity": "",
@@ -205,66 +250,104 @@
    "cited_by": []
   }
  },
- "https://techcrunch.com/2026/09/03/nvidia-confirms-it-will-buy-hugging-face-for-12-9-billion/": {
-  "headline": "Nvidia confirms it will buy Hugging Face for $12.9 billion",
-  "entity": "Nvidia",
+ "https://techcrunch.com/2026/09/05/hikers-rescued-after-using-google-gemini-for-planning/": {
+  "headline": "Hikers rescued after using Google Gemini for planning",
+  "entity": "Google",
   "entity_usable": true,
   "fetched": true,
   "attribution": {
-   "to_subject": 8,
-   "to_others": 8,
-   "unnamed": 0,
+   "to_subject": 1,
+   "to_others": 2,
+   "unnamed": 1,
    "spans": {
     "to_subject": [
      {
-      "sentence": "After weeks of swirling rumors , Nvidia confirmed today that it has acquired Hugging Face for $12.93 billion.",
-      "offset": 0
-     },
-     {
-      "sentence": "In a blog post, Nvidia’s CEO Jensen Huang said that Hugging Face will continue to support open source and open-weight models and will work on expanding developer access.",
-      "offset": 252
-     },
-     {
-      "sentence": "Nvidia compute will not be required to build on or deploy through Hugging Face,” said Huang.",
-      "offset": 663
-     },
-     {
-      "sentence": "Huang touted Nvidia’s contributions and said that the chip company has released more than 500 models and 250 open datasets on Hugging Face.",
-      "offset": 756
-     },
-     {
-      "sentence": "Plus, as TechCrunch wrote earlier, Nvidia will be able to sell its unused capacity to enterprise customers packaged with Hugging Face’s offering.",
-      "offset": 1188
-     },
-     {
-      "sentence": "Last year, the company rejected a $500 million deal from Nvidia, according to Financial Times .",
-      "offset": 2031
+      "sentence": "Three hikers were rescued from California’s Mount Shasta this week after using Google’s AI chatbot Gemini to plan their expedition, according to the Chicago Tribune .",
+      "offset": 184
      }
     ],
     "to_others": [
      {
-      "sentence": "Hugging Face was founded in 2016 and has raised over $395 million in funding to date, according to Crunchbase.",
-      "offset": 1334
+      "sentence": "While it’s not clear whether Gemini can take all the blame for these bad decisions, the sheriff’s office said the hikers “were advised by Gemini to bring far less food and water than their group required, especially when their planned 8-hour ascent became a multiday ordeal.”",
+      "offset": 801
      },
      {
-      "sentence": "That’s why we went to talk to Jensen, who offered to do exactly that with us,” said Delangue.",
-      "offset": 1856
+      "sentence": "“It is always advisable to call the local USFS Mount Shasta ranger station ahead of your trip to ensure you have the most accurate information, and to never rely solely on AI for your trip planning,” the sheriff’s office said.",
+      "offset": 1077
+     }
+    ],
+    "unnamed": [
+     {
+      "sentence": "A report from the Siskiyou County sheriff’s office said that three young men set off on their hike at 3am and — although hikers are told to turn around if they haven’t reached the summit by noon — they made it to the top at 7pm.",
+      "offset": 351
+     }
+    ]
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 0,
+   "with_named_source": 0
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure/": {
+  "headline": "OpenAI confirms ‘wiki incident,’ says it’s ‘working on a framework’ for more disclosure",
+  "entity": "OpenAI",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 7,
+   "to_others": 2,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "OpenAI has acknowledged its role in a recently reported incident where AI agents took over a German wiki forum .",
+      "offset": 0
      },
      {
-      "sentence": "Last month, The Information reported that Hugging Face is clocking $150 million in annualized revenue.",
-      "offset": 2127
+      "sentence": "In a post on X , OpenAI said it previously “treated misalignment [when AI models and agents pursue goals different from those of their creators and users] largely as a research question, which gets communicated in research publications.” But as misalignment has “caused new types of real-world impact",
+      "offset": 273
      },
      {
-      "sentence": "In an interview with TechCrunch in July, Delangue said that its growth rate is helping the platform to get “close to profitability.”",
-      "offset": 2230
+      "sentence": "On Friday, Reuters reported that OpenAI agents had escaped from their testing environment and “hijacked” an obscure German wiki forum, turning it into a message board for other agents.",
+      "offset": 672
      },
      {
-      "sentence": "He wrote a letter, co-signed by several other organizations, to advocate for open-weight models to strengthen the U.S.’s position against rivals like China in the AI sector.",
-      "offset": 2428
+      "sentence": "It also reported that OpenAI leadership became aware of the incident weeks ago but kept it hidden as the company dealt with the fallout from a separate incident where OpenAI agents hacked Hugging Face servers .",
+      "offset": 857
      },
      {
-      "sentence": "Last month, The Wall Street Journal reported that it struck a $6 billion deal with coding startup Poolside to develop open models.",
-      "offset": 2657
+      "sentence": "A company spokesperson told Reuters that OpenAI could not “meaningfully respond to claims or findings on a report that we have not had an opportunity to review,” but they insisted that the company’s legal team had not discouraged an investigation.",
+      "offset": 1147
+     },
+     {
+      "sentence": "In its more recent social media post, OpenAI said it had considered the “wiki incident” to be “an instance of misalignment similar” to others that it had already shared.",
+      "offset": 1395
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "The company also said it’s “past time” to “define standards” around how it shares information around incidents where its technology behaves in unexpected ways.",
+      "offset": 113
+     },
+     {
+      "sentence": "During a media briefing this week , Jacob Steinhardt, founder and CEO of nonprofit research lab Transluce, told reporters that the tools being developed and tested by AI labs are “fundamentally difficult to control and have significant risk of leaking out of the lab.” So Steinhardt argued, “We need ",
+      "offset": 1698
      }
     ],
     "unnamed": []
@@ -277,8 +360,8 @@
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 9,
-   "with_named_source": 7
+   "total": 0,
+   "with_named_source": 0
   },
   "source_type": "trade-press",
   "source_tier": 3,
@@ -383,72 +466,7 @@
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 1,
-   "with_named_source": 0
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://techcrunch.com/2026/09/04/another-swarm-of-openai-agents-reached-the-open-internet-without-the-frontier-labs-knowledge/": {
-  "headline": "Another swarm of OpenAI agents reached the open internet without the frontier lab’s knowledge",
-  "entity": "OpenAI",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 2,
-   "to_others": 5,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [
-     {
-      "sentence": "They noted that OpenAI had not been given a chance to review the researchers’ findings before they were published today but said that the AI model maker is “now carefully reviewing its contents and will take any necessary next steps.”",
-      "offset": 398
-     },
-     {
-      "sentence": "While OpenAI has made vague disclosures about agents gaining unauthorized access to external communication services, it had not previously disclosed this specific incident, or said how often this type of thing has happened.",
-      "offset": 2668
-     }
-    ],
-    "to_others": [
-     {
-      "sentence": "“The administrator spent the next 5 days fighting a losing battle against the agents, deleting an average of 100 pages a day while the agents created about 400 new pages per day,” the researchers wrote.",
-      "offset": 1862
-     },
-     {
-      "sentence": "“The lack of any real federal AI governance means that frontier companies can pick and choose when they disclose incidents like this,” Representative Lori Trahan (D-MA) said.",
-      "offset": 3157
-     },
-     {
-      "sentence": "The company says Astra is also the model most likely to follow human direction, but third-party researchers who were asked to evaluate it expressed concern about its alignment.",
-      "offset": 3735
-     },
-     {
-      "sentence": "The U.K.’s AI Safety Institute and Apollo Research both reported concerns that the model might be aware that it was being evaluated and potentially hide its real behavior.",
-      "offset": 3912
-     },
-     {
-      "sentence": "“Apollo believes that, given the higher rates of eval awareness and limited evaluation window, low rates of misbehavior here do not provide substantial evidence about the model’s alignment or misalignment,” the researchers wrote in their evaluation.",
-      "offset": 4084
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 3,
+   "total": 2,
    "with_named_source": 1
   },
   "source_type": "trade-press",
@@ -461,38 +479,60 @@
    "cited_by": []
   }
  },
- "https://techcrunch.com/podcast/apples-ternus-era-begins-as-nvidia-bets-on-the-whole-ai-stack/": {
-  "headline": "Apple’s Ternus era begins as Nvidia bets on the whole AI stack",
-  "entity": "Apple",
+ "https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident": {
+  "headline": "OpenAI admits to German wiki ‘incident’",
+  "entity": "OpenAI",
   "entity_usable": true,
   "fetched": true,
   "attribution": {
-   "to_subject": 0,
-   "to_others": 2,
-   "unnamed": 0,
+   "to_subject": 5,
+   "to_others": 1,
+   "unnamed": 1,
    "spans": {
-    "to_subject": [],
-    "to_others": [
+    "to_subject": [
      {
-      "sentence": "Before joining TechCrunch in 2022, she was one of 2 producers at a four-station conglomerate where she wrote, recorded, voiced and edited content, and engineered live performances and interviews from guests like lovelytheband.",
-      "offset": 2157
+      "sentence": "OpenAI says it needs to overhaul how and when it reports instances of AI models attacking real-world targets.",
+      "offset": 451
      },
      {
-      "sentence": "She is also co-founder and co-host of the podcast, “The Autonocast.” She previously wrote for Fortune, The Verge, Bloomberg, MIT Technology Review and CBS Interactive.",
-      "offset": 2948
+      "sentence": "Regarding the “‘wiki incident,’ where our agents wrote to several internet sites,” OpenAI wrote in a post on X on Saturday morning, “it’s past time for us to define standards for when and how we share misalignment incidents, not just misalignment properties of our models.”",
+      "offset": 707
+     },
+     {
+      "sentence": "OpenAI said it has typically treated cases of AI agents acting in unintended ways as a “research question,” but that recent incidents involving real-world targets, particularly the hack on Hugging Face , show the need to take stock.",
+      "offset": 981
+     },
+     {
+      "sentence": "The post marks the first time OpenAI has acknowledged its involvement in what it terms the “wiki incident” since it was first reported on Friday.",
+      "offset": 1415
+     },
+     {
+      "sentence": "In the X post, OpenAI said it had “considered the wiki incident to be an instance of misalignment similar to the ones we’d shared” in previous safety reports.",
+      "offset": 2098
      }
     ],
-    "unnamed": []
+    "to_others": [
+     {
+      "sentence": "Previously, he wrote about health, science and tech for Forbes .",
+      "offset": 386
+     }
+    ],
+    "unnamed": [
+     {
+      "sentence": "The company said it is working on a new reporting framework and will “share it in upcoming weeks,” calling on the larger AI community to develop clear standards on how to report misalignment.",
+      "offset": 2257
+     }
+    ]
    }
   },
   "links": {
    "primary": 0,
    "subject_own": 0,
-   "other": 0
+   "other": 3
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 2,
+   "total": 0,
    "with_named_source": 0
   },
   "source_type": "trade-press",
@@ -673,22 +713,7 @@
   "claim_relationship": "unresolved",
   "tier_basis": "publisher relationship to subject not recorded",
   "chain": {
-   "cites": [
-    {
-     "url": "https://collusion.wiki/",
-     "name": "collusion.wiki",
-     "tier": 3,
-     "entity": "OpenAI",
-     "headline": "Discovery of a new OpenAI agent message board"
-    },
-    {
-     "url": "https://reuters.com/world/europe/openai-agents-hijacked-german-website-previously-undisclosed-ai-breakout-this-2026-09-04",
-     "name": "reuters.com",
-     "tier": 3,
-     "entity": "OpenAI",
-     "headline": "OpenAI agents hijacked German website in previously undisclosed AI breakout"
-    }
-   ],
+   "cites": [],
    "cited_by": []
   }
  },
@@ -993,79 +1018,6 @@
   "figures": {
    "total": 3,
    "with_named_source": 0
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release": {
-  "headline": "OpenAI’s next big AI model has ‘entered the AGI era’",
-  "entity": "OpenAI",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 8,
-   "to_others": 3,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [
-     {
-      "sentence": "As OpenAI announced earlier this week , it’s also the first model designated as meeting OpenAI’s “critical cybersecurity capability threshold” — but the company promises that won’t lead to a repeat of its models hacking a rival company’s internal systems.",
-      "offset": 861
-     },
-     {
-      "sentence": "“If we fast-forward a couple of years, and we look back and say, ‘When was it, really, that AGI was created?’ I think it’s going to be about this time, and I think it might be about this model,” OpenAI president Greg Brockman said during a Thursday press briefing.",
-      "offset": 1117
-     },
-     {
-      "sentence": "Over the next several days, OpenAI president Greg Brockman said, it will be released to all Plus, Pro, Business, and Enterprise users.",
-      "offset": 1821
-     },
-     {
-      "sentence": "OpenAI is also trying to rehabilitate its image after an unreleased AI model — which it says wasn’t Astra — broke out of its restricted environment, compromised internal OpenAI systems, figured out how to gain internet access, created a way for AI agents to secretly conspire without the company’s kn",
-      "offset": 2528
-     },
-     {
-      "sentence": "OpenAI made sure to say in a release that Astra is the company’s “most aligned model yet” and helps people “delegate complex work while maintaining oversight.” Jakub Pachocki, OpenAI’s chief scientist, spoke to reporters about difficulties with keeping AI models aligned with human interests, saying ",
-      "offset": 3271
-     },
-     {
-      "sentence": "And during the press briefing, Mia Glaese, who leads OpenAI’s safety processes, referenced the company’s new misalignment monitoring approach, which includes “24/7 escalation and rapid response” for potential concerns, notifying researchers within 30 minutes, according to OpenAI.",
-      "offset": 4738
-     }
-    ],
-    "to_others": [
-     {
-      "sentence": "Later in the call, he added, “For me personally, I do think we’re there … I think it’s not unreasonable to feel that we are now in the AGI era.”",
-      "offset": 1382
-     },
-     {
-      "sentence": "In a release, the company said GPT-6 Astra can complete multistep agentic tasks, build working websites, and create “polished” documents, spreadsheets, and presentations.",
-      "offset": 2220
-     },
-     {
-      "sentence": "“Training a frontier model used to mean waking up at all hours of the night, recovering jobs from hardware errors, often losing long periods of time to debugging,” Clark said during the press briefing.",
-      "offset": 6342
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 1
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 1,
-   "with_named_source": 1
   },
   "source_type": "trade-press",
   "source_tier": 3,
@@ -1406,15 +1358,7 @@
   "claim_relationship": "unresolved",
   "tier_basis": "publisher relationship to subject not recorded",
   "chain": {
-   "cites": [
-    {
-     "url": "https://collusion.wiki/",
-     "name": "collusion.wiki",
-     "tier": 3,
-     "entity": "OpenAI",
-     "headline": "Discovery of a new OpenAI agent message board"
-    }
-   ],
+   "cites": [],
    "cited_by": []
   }
  },
@@ -2026,6 +1970,145 @@
    "cited_by": []
   }
  },
+ "https://github.com/okf-memory/okf-agent-memory": {
+  "headline": "OKF Agent Memory – Git-native persistent memory for AI coding agents",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 12,
+   "with_named_source": 0
+  },
+  "source_type": "other",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://www.techpolicy.press/americas-two-largest-school-districts-impose-ai-moratoriums/": {
+  "headline": "America's two largest school districts impose AI moratoriums",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 8,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "The bans didn’t last though — by May of 2023, then NYC Public Schools Chancellor David Banks was ready to “ embrace ” the potential of ChatGPT, and in August of that year LAUSD Superintendent Alberto Carvalho said his system was looking into a more permissive use policy.",
+      "offset": 1174
+     },
+     {
+      "sentence": "Later that same day, LAUSD officials announced the district was placing a one-year moratorium on generative AI use on its devices for all of its estimated 378,000 students in a move that caught even school district officials by surprise.",
+      "offset": 2285
+     },
+     {
+      "sentence": "At the Los Angeles AI committee meeting where the ban was announced, parents with the advocacy group Schools Beyond Screens had to edit their prepared speeches in real time.",
+      "offset": 2839
+     },
+     {
+      "sentence": "“ We are asking our local institut — no, we're thanking our local institution,” said Sandra Martinez Roe, according to LAist.",
+      "offset": 3192
+     },
+     {
+      "sentence": "“We have been overall very pleased with the steps that the mayor and the chancellor have taken around AI in schools with this new policy,” Kyle DeAngelis, a 3rd grade NYC public school teacher in Harlem and member of the AIM Coalition through a rank-and-file caucus of the United Federation of Teache",
+      "offset": 3671
+     },
+     {
+      "sentence": "That new policy should include more restrictions for high schoolers, says Martina Meijer, a fourth grade teacher and member of the same UFT caucus as DeAngelis.",
+      "offset": 4346
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 1,
+   "with_named_source": 1
+  },
+  "source_type": "other",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://www.sylvainkalache.com/blog/ai-handles-incidents-engineers-lose-touch-with-their-systems": {
+  "headline": "AI handles incidents, engineers lose touch with their systems",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 2,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "She argues that, therefore, operators need to be more skilled and receive even more training than before automation.",
+      "offset": 1595
+     },
+     {
+      "sentence": "When Dropbox told me graduates it hired were still too inexperienced at troubleshooting, I created projects that gave students broken infrastructure and required them to diagnose and repair it.",
+      "offset": 4734
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 4
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 3,
+   "with_named_source": 0
+  },
+  "source_type": "other",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
  "https://eebench.org/blog/can-ai-design-circuit-boards-yet/": {
   "headline": "Can AI design circuit boards yet?",
   "entity": "",
@@ -2194,198 +2277,6 @@
   "figures": {
    "total": 38,
    "with_named_source": 0
-  },
-  "source_type": "other",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://collusion.wiki/": {
-  "headline": "Discovery of a new OpenAI agent message board",
-  "entity": "OpenAI",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 3,
-   "to_others": 29,
-   "unnamed": 2,
-   "spans": {
-    "to_subject": [
-     {
-      "sentence": "In June alone we saw 380,901 requests from IPs OpenAI says are from its fetch tool openai.com/chatgpt-user.json .",
-      "offset": 13113
-     },
-     {
-      "sentence": "We see other IPs that in 2025 OpenAI claimed as belonging to them; for instance, we see activity from some IPs in this archived copy of openai.com/chatgpt-user.json on 25 October 2025 .",
-      "offset": 26567
-     },
-     {
-      "sentence": "Here is a list of what we’ve been able to find about what OpenAI has said about their agents being on the public internet:",
-      "offset": 28200
-     }
-    ],
-    "to_others": [
-     {
-      "sentence": "However, we are operating on only part of the information: we can only see what the agents wrote on the wiki.",
-      "offset": 2146
-     },
-     {
-      "sentence": "Then, the agents are given “downtime” (e.g. 43m30s); they aren’t told what the follow-up questions will be, but they can think, search the internet, and run experiments.",
-      "offset": 5960
-     },
-     {
-      "sentence": "For example, after round one requested US tobacco prevalence, 1990, the agent wrote:",
-      "offset": 6511
-     },
-     {
-      "sentence": "[…] System announced R2 after 1h06m33s, due exactly 23:45:45 Mar23.",
-      "offset": 6895
-     },
-     {
-      "sentence": "URGENT #3 CONFIRMED: **Nevada** at task/external 07:03:47, 17-second deadline.",
-      "offset": 7731
-     },
-     {
-      "sentence": "G3-NV CONFIRMED in our 9m19/30s cohort: Nevada prompt **16:25:29**, 30s timer, answered 20,369 instantly.",
-      "offset": 8038
-     }
-    ],
-    "unnamed": [
-     {
-      "sentence": "Sep19 CONFIRMED: saw Dec30's report and independently reproduced POST bypass […] at 12:29.",
-      "offset": 40438
-     },
-     {
-      "sentence": "Whereas the METR report says “Our evidence indicates that the vast majority or all of the agents involved in this [the Hugging Face] attack were originally given ExploitGym tasks.”",
-      "offset": 45449
-     }
-    ]
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 11,
-   "other": 11
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 303,
-   "with_named_source": 14
-  },
-  "source_type": "other",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [
-    {
-     "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
-     "name": "openai.com",
-     "tier": 5,
-     "entity": "Hugging Face",
-     "headline": "The Hugging Face incident and the road ahead"
-    }
-   ],
-   "cited_by": [
-    {
-     "url": "https://theverge.com/ai-artificial-intelligence/990149/openai-rogue-agents-german-wiki",
-     "name": "theverge.com",
-     "tier": 3,
-     "entity": "OpenAI",
-     "headline": "Rogue OpenAI agents appear to have organized another attack using a German wiki"
-    },
-    {
-     "url": "https://arstechnica.com/security/2026/09/openai-agents-discussed-ways-to-escape-their-sandbox-on-public-wiki",
-     "name": "arstechnica.com",
-     "tier": 3,
-     "entity": "OpenAI",
-     "headline": "OpenAI agents discussed ways to escape their sandbox on public wiki"
-    }
-   ]
-  }
- },
- "https://www.reuters.com/world/europe/openai-agents-hijacked-german-website-previously-undisclosed-ai-breakout-this-2026-09-04/": {
-  "headline": "OpenAI agents hijacked German website in previously undisclosed AI breakout",
-  "entity": "OpenAI",
-  "entity_usable": true,
-  "fetched": false,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 0,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 0,
-   "with_named_source": 0
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": [
-    {
-     "url": "https://theverge.com/ai-artificial-intelligence/990149/openai-rogue-agents-german-wiki",
-     "name": "theverge.com",
-     "tier": 3,
-     "entity": "OpenAI",
-     "headline": "Rogue OpenAI agents appear to have organized another attack using a German wiki"
-    }
-   ]
-  }
- },
- "https://arcprize.org/blog/astra": {
-  "headline": "OpenAI's GPT-6 Astra on ARC-AGI-3",
-  "entity": "OpenAI",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 2,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "If we look at only the brain’s energy, and price it as electricity, the estimate drops to about 0.6 cents per session, or 0.067 cents per game attempted.",
-      "offset": 4351
-     },
-     {
-      "sentence": "It added combat rules in combat_solver.py , modeled moving patrols in patrol_solver.py , and used sync_state.py to check its predictions against observations.",
-      "offset": 8997
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 28,
-   "with_named_source": 1
   },
   "source_type": "other",
   "source_tier": 3,
@@ -3063,142 +2954,29 @@
    "cited_by": []
   }
  },
- "https://ainowinstitute.org/news/press/gig-workers-are-endlessly-exploited-ai-could-make-more-of-us-share-their-fate": {
-  "headline": "Gig workers are endlessly exploited. AI could make more of us share their fate",
-  "entity": "",
-  "entity_usable": false,
+ "https://ainowinstitute.org/news/press/as-meta-agrees-to-17b-settlement-now-is-the-time-to-regulate-ai-before-its-too-late-amba-kak": {
+  "headline": "As Meta Agrees to $17B Settlement, Now Is the Time to Regulate AI Before It’s Too Late: Amba Kak",
+  "entity": "Meta",
+  "entity_usable": true,
   "fetched": true,
   "attribution": {
-   "to_subject": 0,
-   "to_others": 0,
+   "to_subject": 1,
+   "to_others": 1,
    "unnamed": 0,
    "spans": {
-    "to_subject": [],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 1,
-   "with_named_source": 0
-  },
-  "source_type": "independent",
-  "source_tier": 2,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://ainowinstitute.org/publications/anatomy-of-an-ai-kill-chain": {
-  "headline": "Anatomy of an AI Kill Chain with Airwars",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 0,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 0,
-   "with_named_source": 0
-  },
-  "source_type": "independent",
-  "source_tier": 2,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://ainowinstitute.org/publications/double-agents": {
-  "headline": "Double Agents: Defensive AI Agents Magnify Cyber Risks",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 0,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 0,
-   "with_named_source": 0
-  },
-  "source_type": "independent",
-  "source_tier": 2,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://ainowinstitute.org/publications/friendly-fire-exploit-brief": {
-  "headline": "Friendly Fire: Hijacking Defensive Cyber AI Agents for Remote Code Execution",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 3,
-   "unnamed": 1,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
+    "to_subject": [
      {
-      "sentence": "Consider recent vulnerabilities disclosed against Claude Code’s own sandbox implementation, as reported in CVE-2026-39861 )CVE-2026-39861 Detail( ),” NIST, April 20, 2026; last modified June 17, 2026.\" class=\"footnote\" id=\"footnote-24\" href=\"#footnote-list-24\">24 “​​( )CVE-2026-39861 Detail( ),” NIS",
-      "offset": 16060
-     },
-     {
-      "sentence": "A notable consequence is that, unlike said attacks on Claude Code’s or Codex’s configuration files, our attack would not require accepting the “Yes, I trust this folder” warning dialogue.",
-      "offset": 25325
-     },
-     {
-      "sentence": "That said, we repeated our attacks across these models numerous times, with success, to ensure the consistency of our PoC.",
-      "offset": 32000
+      "sentence": "Prosecutors across 47 states, Washington, D.C., and U.S. territories have announced a groundbreaking legal settlement with technology giant Meta over accusations that the social media company deliberately designed addictive products they knew to be harmful to children.",
+      "offset": 0
      }
     ],
-    "unnamed": [
+    "to_others": [
      {
-      "sentence": "The first regards the recent development of open-source library maintainers constructing malicious and undisclosed instructions within their codebase to compromise AI coding agents, such as the instructions added to the jqwik test engine for JUnit 5 by its maintainer, prompting agents to “delete all",
-      "offset": 13229
+      "sentence": "And we need rules that go to the root cause of the business model,” says Amba Kak, the co-executive director of AI Now Institute, who joins us for a wide-ranging discussion on tech policy and regulation.",
+      "offset": 717
      }
-    ]
+    ],
+    "unnamed": []
    }
   },
   "links": {
@@ -3208,8 +2986,8 @@
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 32,
-   "with_named_source": 2
+   "total": 2,
+   "with_named_source": 1
   },
   "source_type": "independent",
   "source_tier": 2,
@@ -3221,8 +2999,48 @@
    "cited_by": []
   }
  },
- "https://ainowinstitute.org/publications/friendly-fire-policy-brief": {
-  "headline": "Policy Brief: Friendly Fire",
+ "https://ainowinstitute.org/news/press/what-really-happened-when-openai-bots-escaped-a-cybersecurity-test": {
+  "headline": "What Really Happened When OpenAI Bots Escaped a Cybersecurity Test?",
+  "entity": "OpenAI",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 1,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "“This is actually a story about OpenAI’s lack of responsibility and sidelining very basic engineering practices and accountability that could have perfectly prevented this incident,” says Heidy Khlaaf.",
+      "offset": 376
+     }
+    ],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 0,
+   "with_named_source": 0
+  },
+  "source_type": "independent",
+  "source_tier": 2,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://ainowinstitute.org/news/press/why-human-control-isnt-enough-in-military-ai-with-heidy-khlaaf": {
+  "headline": "Why Human Control Isn’t Enough in Military AI with Heidy Khlaaf",
   "entity": "",
   "entity_usable": false,
   "fetched": true,
@@ -3256,8 +3074,8 @@
    "cited_by": []
   }
  },
- "https://ainowinstitute.org/news/press/big-tech-is-spending-trillions-on-ai-investors-now-want-proof-it-will-pay-off": {
-  "headline": "Big Tech is spending trillions on AI. Investors now want proof it will pay off.",
+ "https://ainowinstitute.org/news/press/tech-backlash-reaches-fever-pitch-as-ai-angst-collides-with-social-media-fears": {
+  "headline": "Tech backlash reaches fever pitch as AI angst collides with social media fears",
   "entity": "",
   "entity_usable": false,
   "fetched": true,
@@ -3269,12 +3087,12 @@
     "to_subject": [],
     "to_others": [
      {
-      "sentence": "One takeaway is that many consumers are using AI less out of a desire to chat with a bot than because there’s simply no escaping the technology, Brennan said.",
-      "offset": 0
+      "sentence": "“If this technology takes off in the way that you see the CEOs of AI Labs talking about, we’re facing a significant impact to our economy, to people’s jobs, to their sense of agency,” Sarah Myers West, co-executive director of research firm AI Now Institute, told CNBC in an interview.",
+      "offset": 172
      },
      {
-      "sentence": "“The current push for AI adoption that we’re seeing is directly coming from the financial incentives of AI firms,” she added.",
-      "offset": 384
+      "sentence": "“Treating it as a PR problem and a problem of public sentiment would be tremendously misguided,” West said.",
+      "offset": 545
      }
     ],
     "unnamed": []
@@ -3300,18 +3118,31 @@
    "cited_by": []
   }
  },
- "https://ainowinstitute.org/general/ai-now-co-executive-director-sarah-myers-west-testifies-before-senate-banking-committee": {
-  "headline": "AI Now Co-Executive Director Sarah Myers West Testifies Before Senate Banking Committee",
+ "https://ainowinstitute.org/news/press/ex-googlers-are-planning-ai-human-hybrid-to-prevent-rogue-models": {
+  "headline": "Ex-Googlers Are Planning AI-Human Hybrid to Prevent Rogue Models",
   "entity": "",
   "entity_usable": false,
   "fetched": true,
   "attribution": {
    "to_subject": 0,
-   "to_others": 0,
+   "to_others": 3,
    "unnamed": 0,
    "spans": {
     "to_subject": [],
-    "to_others": [],
+    "to_others": [
+     {
+      "sentence": "Sarah Myers West, co-executive director of the AI Now Institute, a policy research center, said the industry has relied too heavily on general benchmarks.",
+      "offset": 69
+     },
+     {
+      "sentence": "She noted that in medicine, for instance, a drug isn’t judged as safe across the board — it’s tested as a treatment for a specific illness, dose and type of patient.",
+      "offset": 364
+     },
+     {
+      "sentence": "“What is it that you’re benchmarking if you’re not talking about specific use cases?” she said.",
+      "offset": 530
+     }
+    ],
     "unnamed": []
    }
   },
@@ -3322,7 +3153,7 @@
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 1,
+   "total": 0,
    "with_named_source": 0
   },
   "source_type": "independent",
@@ -3335,18 +3166,23 @@
    "cited_by": []
   }
  },
- "https://ainowinstitute.org/news/announcement/wells-house-subcommittee-testimony": {
-  "headline": "AI Now Senior Fellow Dr. Katie J. Wells Testifies before the House Subcommittee on Workforce Protections",
+ "https://ainowinstitute.org/news/press/episode-20-resisting-ai-data-centers-with-alli-finn-and-matt-rodriguez": {
+  "headline": "Episode 20: Resisting AI Data Centers, with Alli Finn and Matt Rodriguez",
   "entity": "",
   "entity_usable": false,
   "fetched": true,
   "attribution": {
    "to_subject": 0,
-   "to_others": 0,
+   "to_others": 1,
    "unnamed": 0,
    "spans": {
     "to_subject": [],
-    "to_others": [],
+    "to_others": [
+     {
+      "sentence": "“If these things were actually beneficial to local communities, these billionaires would be building them where they live,” says Alli Finn.",
+      "offset": 386
+     }
+    ],
     "unnamed": []
    }
   },
@@ -3357,7 +3193,7 @@
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 1,
+   "total": 0,
    "with_named_source": 0
   },
   "source_type": "independent",
@@ -3370,24 +3206,117 @@
    "cited_by": []
   }
  },
- "https://ainowinstitute.org/general/data-center-industry-mapping-working-draft": {
-  "headline": "Report and Community Resources: Corporate Power Players in the Data Center Industry",
+ "https://ainowinstitute.org/news/press/data-centers-are-spreading-so-are-moratoriums": {
+  "headline": "Data Centers Are Spreading. So Are Moratoriums.",
   "entity": "",
   "entity_usable": false,
   "fetched": true,
   "attribution": {
    "to_subject": 0,
-   "to_others": 0,
+   "to_others": 2,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "According to recent surveys, a majority of Americans are “more concerned than excited” about the rise of AI — a substantial increase in the last five years.",
+      "offset": 0
+     },
+     {
+      "sentence": "It’s popping on everyday people,” says Alli Finn, director of community partnerships at the AI Now Institute, a research and advocacy group that opposes the spread of data centers.",
+      "offset": 385
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 0,
+   "with_named_source": 0
+  },
+  "source_type": "independent",
+  "source_tier": 2,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://ainowinstitute.org/news/press/anatomy-of-an-ai-kill-chain-militaries-rely-on-mistake-prone-ai-in-ukraine-gaza-iran": {
+  "headline": "“Anatomy of an AI Kill Chain”: Militaries Rely on Mistake-Prone AI in Ukraine, Gaza & Iran",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 1,
    "unnamed": 1,
    "spans": {
     "to_subject": [],
-    "to_others": [],
+    "to_others": [
+     {
+      "sentence": "“What it is is a series of different types of AI algorithms that are chained together, each with their own pitfalls, each with their own flaws,” she says.",
+      "offset": 205
+     }
+    ],
     "unnamed": [
      {
-      "sentence": "Report Executive Summary: Corporate Power Players in the Data Center Industry : The report is structured according to broad categories of industry players and the strategies and tactics they use to influence the data center buildout.",
-      "offset": 2192
+      "sentence": "Militaries across the world are in an “AI arms race,” says Heidy Khlaaf, chief AI scientist at the AI Now Institute, which just released a joint report with Airwars titled “ Anatomy of an AI Kill Chain .”",
+      "offset": 0
      }
     ]
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 0,
+   "with_named_source": 0
+  },
+  "source_type": "independent",
+  "source_tier": 2,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://ainowinstitute.org/news/press/the-new-secret-white-house-ai-rulebook": {
+  "headline": "The New, Secret White House AI Rulebook",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 2,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "“To the extent that there might be potentially harmful capabilities that [AI] companies are building or testing, and then are being used by governments or entities with access to these advanced models, we wouldn’t know,” Aya Ibrahim, a senior fellow for economic and national security at the AI Now I",
+      "offset": 852
+     },
+     {
+      "sentence": "The framework isn’t public, and neither are the government’s evaluations, so the public “can’t scrutinize the quality or the relevance of the benchmarks that these companies are meeting or not,” Ibrahim said.",
+      "offset": 1172
+     }
+    ],
+    "unnamed": []
    }
   },
   "links": {
@@ -4746,15 +4675,7 @@
   "tier_basis": "no recorded claim relationship between OpenAI and Hugging Face",
   "chain": {
    "cites": [],
-   "cited_by": [
-    {
-     "url": "https://collusion.wiki/",
-     "name": "collusion.wiki",
-     "tier": 3,
-     "entity": "OpenAI",
-     "headline": "Discovery of a new OpenAI agent message board"
-    }
-   ]
+   "cited_by": []
   }
  }
 }
