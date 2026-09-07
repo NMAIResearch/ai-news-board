@@ -1,6 +1,47 @@
 {
- "fetched": "2026-09-06 05:20 UTC",
+ "fetched": "2026-09-07 05:20 UTC",
  "items": [
+  {
+   "entity": "Anthropic",
+   "headline": "Authors push back as publishers and agents make claims on Anthropic settlement",
+   "date": "Sun, 06 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 5
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "96acf90c2e3252b0d4bbb4b7369964b450ddb14ebf074def512cbd03a83672ad",
+   "evidence_hash": "0cccf63835464e6a1234f6d4601a8c7576d475e6080485029ed5b7710977b9af",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Anthropic",
+     "count": 5
+    },
+    {
+     "name": "Google",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
   {
    "entity": "OpenAI",
    "headline": "Seattle Times and Newsday are the latest publications to sue OpenAI and Microsoft",
@@ -17,18 +58,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 1781 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 1781 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "a69fc0304423433642684de2af867cb51df2dd46b14fd9bf495c0b3d57ef8abd",
    "evidence_hash": "6efbcb417894219c15b260e77d5baf33b8f9dce0561ac3a9908e137b34df301d",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -227,6 +268,43 @@
    "entity_basis": "unresolved"
   },
   {
+   "entity": "",
+   "headline": "Travis Kalanick’s Atoms might be getting into the robotaxi business",
+   "date": "Sun, 06 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/09/06/travis-kalanicks-atoms-might-be-getting-into-the-robotaxi-business/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 3
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "7596c3fc16bf392e489d7e38738eba13d6edb28301b687847685c4881e2a6bc3",
+   "evidence_hash": "d6589d6e20fb35c823c739011593f08e8b1d3f4be42a06cfa619b2b62ab76031",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Anthropic",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Travis Kalanick",
+   "entity_basis": "unresolved"
+  },
+  {
    "entity": "Google",
    "headline": "Hikers rescued after using Google Gemini for planning",
    "date": "Sat, 05 Sep 2026",
@@ -242,18 +320,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 1590 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 1590 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "567fef74c83c8b7496c76a567e33bceffee829a4bd77b89ce7c420948ce33728",
    "evidence_hash": "ce47093bc58a92d7961ec417475ffd3bfd783abe3760b1c6eecbeff0cdb411c3",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Google",
@@ -287,18 +365,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 3629 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 3629 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "a5de1f972b5b2ff5efe8af2f2300f0892d87569b76c795c35f2d1e95f9c9d86a",
    "evidence_hash": "94a254c84f1a51c5883b35bdddd3788cc1ea8ecb7ece12c58b3bb04584c0e765",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -326,112 +404,51 @@
   },
   {
    "entity": "OpenAI",
-   "headline": "OpenAI’s rogue agents keep escaping, with no formal process to investigate them",
-   "date": "Fri, 04 Sep 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/09/04/openais-rogue-agents-keep-escaping-with-no-formal-process-to-investigate-them/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 5964 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "9ff7ad6467d66babd04c24c30200313db4ae986490169e2d3c4f64088c7e2b3c",
-   "evidence_hash": "bc233f5f3b888a6a84b09180db22c1baeb728e94dd8db01fc9b17884e5059736",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 15
-    },
-    {
-     "name": "Hugging Face",
-     "count": 6
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "breach",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Apple",
-   "headline": "What will Apple’s John Ternus era look like?",
-   "date": "Fri, 04 Sep 2026",
+   "headline": "Seattle Times and Newsday sue OpenAI and Microsoft for infringement",
+   "date": "2026-09-06T19:43",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "?",
    "reviewed": false,
    "sources": [
     {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/video/what-will-apples-john-ternus-era-look-like/",
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/990932/seattle-times-newsday-lawsuit-openai-microsoft",
      "source_type": "trade-press",
      "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "rating": "ok",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
-    "total": 2
+    "total": 1
    },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "13571cd4231cf98cdb5a48e5a64ec8e721eaba28ca54ea104d8626ef019b7b13",
+   "evidence_hash": "12f39489bc9d964c7ca2c5110a705651fb7ebb0bcc49fcc228ae1dbfe6b7ded6",
    "label_schema_version": 2,
-   "content_hash": "c543f458e10dbd31c080d494e826f2043b754423a0b0b274c786d60a4543ec9b",
-   "evidence_hash": "d5cc9131b31e6e374e8fe98c7c627470e48166df79576fd88dd4a14c5e941fa5",
+   "auto_labelled": true,
    "label_source": "machine",
-   "rating": "ok",
    "mentions": [
     {
-     "name": "Apple",
-     "count": 11
-    },
-    {
      "name": "OpenAI",
-     "count": 2
-    },
-    {
-     "name": "Nvidia",
-     "count": 2
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
+     "count": 8
     },
     {
      "name": "Microsoft",
+     "count": 4
+    },
+    {
+     "name": "Amazon",
      "count": 1
     },
     {
-     "name": "Hugging Face",
+     "name": "Apple",
      "count": 1
     }
    ],
-   "publisher_topic": "Apple",
+   "publisher_topic": "Microsoft",
    "entity_basis": "headline"
   },
   {
@@ -450,18 +467,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 2951 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 2951 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "93993f37e64c7d1279fcbb18daca1696c454d39fac1b32a37b50378ae6f804fe",
    "evidence_hash": "4372c9ef5df3134521bac67df57c0542a1460944dd248906ed6941d798ed9b27",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -833,59 +850,6 @@
    ],
    "publisher_topic": "OpenAI",
    "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "This NAS company wants to run your local smart home",
-   "date": "2026-09-04T06:38",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/tech/990006/this-nas-company-wants-to-run-your-local-smart-home",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 3
-   },
-   "label_schema_version": 2,
-   "content_hash": "836b40a4740994903447e47a1319d4bb13fbe34604e75ec5003d57c84442fe4b",
-   "evidence_hash": "19202209ecd058c30613d917973f06f0269a34319fb0562c96c05dc76b7fb113",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Nvidia",
-     "count": 6
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Google",
-     "count": 1
-    },
-    {
-     "name": "Amazon",
-     "count": 1
-    },
-    {
-     "name": "Apple",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "IFA 2026",
-   "entity_basis": "unresolved"
   },
   {
    "entity": "Anthropic",
@@ -1656,34 +1620,121 @@
    "entity_basis": "unresolved"
   },
   {
-   "entity": "",
-   "headline": "Mamdani bans AI in NYC schools",
-   "date": "2026-09-01",
+   "entity": "OpenAI",
+   "headline": "Research acceleration: The view inside OpenAI",
+   "date": "2026-09-06",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "?",
    "reviewed": false,
    "sources": [
     {
-     "name": "nytimes.com",
-     "url": "https://www.nytimes.com/2026/09/01/nyregion/ai-ban-schools-nyc.html",
+     "name": "openai.com",
+     "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 8
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "4078b402b149a6f15e986a8204fd175903bebcf3fb62059f61a3f8354f90ac02",
+   "evidence_hash": "49d34cd8809aa7a09e39d31767c1175ef2e626fb45d7f4512ebc64e19ef26f29",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Hugging Face",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "How I feel about AI",
+   "date": "Sun, 06 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "beza1e1.tuxen.de",
+     "url": "https://beza1e1.tuxen.de/ai_feelings.html",
      "source_type": "other",
      "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "label_evidence": "article not fetched (http-403)",
-   "evidence_method": "unassessed",
+   "rating": "ok",
+   "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
+   "label_evidence": "no figure in 1963 chars of article text",
+   "content_hash": "afe365c1d200a735609358df94542222e5dfc847d74e730a93b1c762ba14293f",
+   "evidence_hash": "5f0b5be999178ec49eee87156fb5ae6c5f5bfd2dd69ea76cf5276a3af6a402cb",
    "label_schema_version": 2,
-   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+   "auto_labelled": true,
    "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Mistral",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "AI, Tools and Transformation",
+   "date": "2026-09-03",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "ben-evans.com",
+     "url": "https://www.ben-evans.com/benedictevans/2026/9/3/ai-tools-and-transformation",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
    "rating": "ok",
-   "mentions": [],
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 9
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "fdf94f85e8572ac87ee9bca958f020d96706df26979141da57dc1f2513516850",
+   "evidence_hash": "1c4340e8ba7b616a7867cb1db44906e843f81e31febafa195111abbaad0d1f46",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Google",
+     "count": 5
+    },
+    {
+     "name": "OpenAI",
+     "count": 1
+    },
+    {
+     "name": "Microsoft",
+     "count": 1
+    }
+   ],
    "publisher_topic": "",
    "entity_basis": "unresolved"
   },
@@ -1703,18 +1754,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 12
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "27682698071c6cdd51d884db3131bb7651798d26d90e786bf716e6e7049069b3",
    "evidence_hash": "63e9b64de402cac0233243d16fb25b8d4c74a658b601f3ce8ba54798c4a0caf7",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Google",
@@ -1740,18 +1791,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 1
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "a855a699e85ff08e10253918dc86b0ed97e69d9a3449fbc8bdb88e42a272dd6b",
    "evidence_hash": "7e620e7b0173f18c5ba0e73a02af8ccfd391855e0d1895f5cdc90186569f6939",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -1777,21 +1828,62 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 3
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "84b0f8e29816ff5fd4dae92b5fa115431cf8c2908db4a335ffbe5db195ab0995",
    "evidence_hash": "12807876ca719f2ae9532faf339f556ed58af2be624862cb33f7a5f82ad39446",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [],
    "publisher_topic": "AI Engineering",
    "entity_basis": "unresolved"
+  },
+  {
+   "entity": "Anthropic",
+   "headline": "Anthropic & friends caught paying religious NGO's 3.3M for propaganda",
+   "date": "2026-09-04",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "effort.news",
+     "url": "https://www.effort.news/revelation",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 175
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "af2f6ea1d221d4e06f3f094e1d929096efd116752ab2489b1797180932127d92",
+   "evidence_hash": "1e30e66f986a1a30b8e037e953b99a550ce3799d6f120441dd6d293143c4d871",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Anthropic",
+     "count": 8
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Future of Life Institute",
+   "entity_basis": "headline"
   },
   {
    "entity": "",
@@ -1837,132 +1929,6 @@
    ],
    "publisher_topic": "",
    "entity_basis": "unresolved"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "Nobody is saying why OpenAI and Anthropic had outages",
-   "date": "2026-09-03",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "wired.com",
-     "url": "https://www.wired.com/story/nobody-is-saying-why-openai-and-anthropic-had-outages-today/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 6
-   },
-   "label_schema_version": 2,
-   "content_hash": "e2196422e83de84598b0b01937a4baad17dc8767c3b0c5e71d2e3ee886c2ba96",
-   "evidence_hash": "5640d1bc35880aeee78959227f4cfa08399bd32b03dc66c738cf6004b4124628",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Anthropic",
-     "count": 5
-    },
-    {
-     "name": "xAI",
-     "count": 5
-    },
-    {
-     "name": "OpenAI",
-     "count": 4
-    },
-    {
-     "name": "Google",
-     "count": 2
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    },
-    {
-     "name": "Amazon",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "security news",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "Corporate America is getting hooked on open-source AI",
-   "date": "2026-09-04",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "nytimes.com",
-     "url": "https://www.nytimes.com/2026/09/04/technology/open-source-ai-anthropic-openai.html",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "article not fetched (http-403)",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Google",
-   "headline": "Google AI Mode shows same products 21.6% more expensive than traditional search",
-   "date": "2026-09-01",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "productrise.app",
-     "url": "https://productrise.app/blog/google-ai-mode-prefers-more-expensive-products",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 38
-   },
-   "label_schema_version": 2,
-   "content_hash": "20ad6f036a27fccd1a46d0897b6adf8ebedb4204ce811e05f3d2e6949379bcf9",
-   "evidence_hash": "34cebad838ca88e7f79a3cc3dcb72dcb9b7d078b4763184850ddf5d259d8dd8f",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 14
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "headline"
   },
   {
    "entity": "",
@@ -2568,19 +2534,19 @@
      "source_tier": 2
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 2,
     "total": 2
    },
-   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "1d77a0bda8a8239f904633831b4d72a84df487209f5c4f0853a50bfb8919eec7",
    "evidence_hash": "d3f14b517897aad8abd8496a7491c920c42783dd59fa78a0d0905b82a5d5bb12",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Meta",
@@ -2606,18 +2572,18 @@
      "source_tier": 2
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 920 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 920 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "ca3ca2580465f61fa77d707fd93e3016dfafe45414fda5941a0bc4a886f7f881",
    "evidence_hash": "ab3598e82a39933acb7bcac16ba3b2feb0c02a33ae820687af75afb334be15f3",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -2647,18 +2613,18 @@
      "source_tier": 2
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 1037 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 1037 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "94b0b6aec7a5f3a04447d222ddbad648888475c001c67c8a31c4d9896b96a29c",
    "evidence_hash": "a3dcddfd79416b18e92d26e68a6d541b1cdc5e9daa417c0dc5ff9c9d6b65cdc8",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "unresolved"
@@ -2679,18 +2645,18 @@
      "source_tier": 2
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 929 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 929 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "bc376dbbbc43e1637016e463588ce197254952065787e98ba505cd510c407c32",
    "evidence_hash": "f13d188f37091d12a3c3d5dc656ef95080bb09d64da40b0206788e87b431bb6f",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "unresolved"
@@ -2711,18 +2677,18 @@
      "source_tier": 2
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 694 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 694 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "110041e4e1dfa3a646b10034230241cd72ada82912d5c17333b77913ecd78551",
    "evidence_hash": "5b9a362150fedc66c20615ffa35bb82774483e332059e6df5281eb4405cfb8f8",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "unresolved"
@@ -2743,18 +2709,18 @@
      "source_tier": 2
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 640 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 640 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "5a4f93eda41bd1591f76eac452ebcfd71a62c47c31e494d5f2266cb824c1809e",
    "evidence_hash": "4317438fe9e18aa291d9662afcdbb836ae06838e41fe5d840c1b9eab4a31eb2f",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "unresolved"
@@ -2775,18 +2741,18 @@
      "source_tier": 2
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 719 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 719 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "d8bc45d32c5e7fdad0d12362889be6ca1adcc547e29cb9a01b123891584379bb",
    "evidence_hash": "d10c48ee89b6bd90e9ee3204b58df1b9eb2e54de4cc2d1a78062ed8805727a8b",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "unresolved"
@@ -2807,18 +2773,18 @@
      "source_tier": 2
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 723 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 723 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "078e3617bbf5342a2a64a91ad21d94eba287470c807d7aa70e2121e53de8ae18",
    "evidence_hash": "b5310f81b4e3ac12184e86f0c61c7671881d1ceb86064f580e493d9c4f40be86",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "unresolved"
@@ -2839,18 +2805,18 @@
      "source_tier": 2
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 1617 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 1617 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "d214b2c90a03e6bea6ca76d8723e7f3a3ea4dd9710437ca8234f2502b3415dad",
    "evidence_hash": "e61cbb4246b26bd5c964e381fbbc783640bc75c50f5381d4eb7703acefb18925",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -3829,6 +3795,43 @@
   },
   {
    "entity": "OpenAI",
+   "headline": "An Alien Mind",
+   "date": "2026-09-06",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "openai.com",
+     "url": "https://openai.com/index/an-alien-mind/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 5
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "a09711041b52d649a8e929eef475ad7ee61fca6b0130c1c872ed3345c4855506",
+   "evidence_hash": "aa7b852a61a7c0e720d237f69b01b9e76389071f6d516a4e8b211b54987d001e",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Hugging Face",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "site"
+  },
+  {
+   "entity": "OpenAI",
    "headline": "Safety overview: GPT-6 Astra",
    "date": "2026-09-03",
    "topic": "",
@@ -3900,43 +3903,6 @@
    ],
    "publisher_topic": "",
    "entity_basis": "site"
-  },
-  {
-   "entity": "Hugging Face",
-   "headline": "The Hugging Face incident and the road ahead",
-   "date": "2026-08-26",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "openai.com",
-     "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 29
-   },
-   "label_schema_version": 2,
-   "content_hash": "625eb91fc71e83e71a0e7626e0e0f1045fa819c522f0c4875a3a44be9ff69f50",
-   "evidence_hash": "7a69ac3356b8cddeff7154bcb8bd090c732cd70002d4534ca1fbfb30ace9bd16",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Hugging Face",
-     "count": 31
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "headline"
   }
  ],
  "rated_against": "sources.md"
