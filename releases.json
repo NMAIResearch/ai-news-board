@@ -1,10 +1,10 @@
 {
- "generated": "2026-09-07 05:24 UTC",
+ "generated": "2026-09-08 05:22 UTC",
  "window_days": 60,
  "counts": {
-  "total": 83,
-  "closed": 32,
-  "open_weights": 51
+  "total": 77,
+  "closed": 25,
+  "open_weights": 52
  },
  "releases": [
   {
@@ -242,9 +242,9 @@
    "date": "2026-08-28",
    "url": "https://openrouter.ai/tencent/hy4-preview",
    "context_length": 1048576,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/tencent/Hy4-preview; downloadable and hashable",
+   "hf_id": "tencent/Hy4-preview",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
@@ -926,78 +926,6 @@
    "date": "2026-07-10",
    "url": "https://openrouter.ai/kwaipilot/kat-coder-pro-v2.5",
    "context_length": 262144,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "OpenAI",
-   "model": "OpenAI: GPT-5.6 Luna Pro",
-   "id": "openai/gpt-5.6-luna-pro",
-   "date": "2026-07-09",
-   "url": "https://openrouter.ai/openai/gpt-5.6-luna-pro",
-   "context_length": 1050000,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "OpenAI",
-   "model": "OpenAI: GPT-5.6 Luna",
-   "id": "openai/gpt-5.6-luna",
-   "date": "2026-07-09",
-   "url": "https://openrouter.ai/openai/gpt-5.6-luna",
-   "context_length": 1050000,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "OpenAI",
-   "model": "OpenAI: GPT-5.6 Terra Pro",
-   "id": "openai/gpt-5.6-terra-pro",
-   "date": "2026-07-09",
-   "url": "https://openrouter.ai/openai/gpt-5.6-terra-pro",
-   "context_length": 1050000,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "OpenAI",
-   "model": "OpenAI: GPT-5.6 Terra",
-   "id": "openai/gpt-5.6-terra",
-   "date": "2026-07-09",
-   "url": "https://openrouter.ai/openai/gpt-5.6-terra",
-   "context_length": 1050000,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "OpenAI",
-   "model": "OpenAI: GPT-5.6 Sol Pro",
-   "id": "openai/gpt-5.6-sol-pro",
-   "date": "2026-07-09",
-   "url": "https://openrouter.ai/openai/gpt-5.6-sol-pro",
-   "context_length": 1050000,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "OpenAI",
-   "model": "OpenAI: GPT-5.6 Sol",
-   "id": "openai/gpt-5.6-sol",
-   "date": "2026-07-09",
-   "url": "https://openrouter.ai/openai/gpt-5.6-sol",
-   "context_length": 1050000,
    "evidence": "closed",
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",

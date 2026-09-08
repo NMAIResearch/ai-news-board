@@ -1,5 +1,5 @@
 {
- "fetched": "2026-09-07 05:20 UTC",
+ "fetched": "2026-09-08 05:20 UTC",
  "items": [
   {
    "entity": "Anthropic",
@@ -17,18 +17,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 5
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "96acf90c2e3252b0d4bbb4b7369964b450ddb14ebf074def512cbd03a83672ad",
    "evidence_hash": "0cccf63835464e6a1234f6d4601a8c7576d475e6080485029ed5b7710977b9af",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Anthropic",
@@ -89,7 +89,7 @@
   },
   {
    "entity": "",
-   "headline": "XDOF, just three months out of stealth, is in talks for a Series B at a $1.2B valuation",
+   "headline": "XDOF, just 3 months out of stealth, is in talks for a Series B at a $1.2B valuation",
    "date": "Fri, 04 Sep 2026",
    "topic": "",
    "claim_type": "unclassified",
@@ -269,6 +269,63 @@
   },
   {
    "entity": "",
+   "headline": "Opaque recurrence, and other AI terms that you should probably know",
+   "date": "Mon, 07 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/09/07/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 5
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "5cb77275c7f59599d6fd8694dafeee32063b68ba6a68914f54e5ffec35aa9621",
+   "evidence_hash": "a36c8ba2f123bc9b71b70332e6fc13d5430d280178df9096b7996f27d070f27c",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 9
+    },
+    {
+     "name": "Google",
+     "count": 4
+    },
+    {
+     "name": "Google DeepMind",
+     "count": 2
+    },
+    {
+     "name": "Microsoft",
+     "count": 2
+    },
+    {
+     "name": "Meta",
+     "count": 2
+    },
+    {
+     "name": "Mistral",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "evergreens",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
    "headline": "Travis Kalanick’s Atoms might be getting into the robotaxi business",
    "date": "Sun, 06 Sep 2026",
    "topic": "",
@@ -283,18 +340,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 3
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "7596c3fc16bf392e489d7e38738eba13d6edb28301b687847685c4881e2a6bc3",
    "evidence_hash": "d6589d6e20fb35c823c739011593f08e8b1d3f4be42a06cfa619b2b62ab76031",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Anthropic",
@@ -351,59 +408,6 @@
   },
   {
    "entity": "OpenAI",
-   "headline": "OpenAI confirms ‘wiki incident,’ says it’s ‘working on a framework’ for more disclosure",
-   "date": "Sat, 05 Sep 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 3629 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "a5de1f972b5b2ff5efe8af2f2300f0892d87569b76c795c35f2d1e95f9c9d86a",
-   "evidence_hash": "94a254c84f1a51c5883b35bdddd3788cc1ea8ecb7ece12c58b3bb04584c0e765",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 12
-    },
-    {
-     "name": "Hugging Face",
-     "count": 2
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "OpenAI",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "OpenAI",
    "headline": "Seattle Times and Newsday sue OpenAI and Microsoft for infringement",
    "date": "2026-09-06T19:43",
    "topic": "",
@@ -418,18 +422,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 1
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "13571cd4231cf98cdb5a48e5a64ec8e721eaba28ca54ea104d8626ef019b7b13",
    "evidence_hash": "12f39489bc9d964c7ca2c5110a705651fb7ebb0bcc49fcc228ae1dbfe6b7ded6",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -970,11 +974,11 @@
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
-    "total": 1
+    "total": 2
    },
    "label_schema_version": 2,
    "content_hash": "0c225332b55962448f17b90bc888bd8cc18b6d895ddd8cdbc18eab6169a854c2",
-   "evidence_hash": "646d5857aa9de80ddfce2eba31fb3f4cb605610d6268e73ab2bfdbc115ff0e39",
+   "evidence_hash": "f60cf64d681a39d33822eb9623a3b22eb1e792861f02b137f03f7bbc4b66c457",
    "label_source": "machine",
    "rating": "ok",
    "mentions": [
@@ -1042,6 +1046,47 @@
    ],
    "publisher_topic": "",
    "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "The complex corporate web behind a $3.2 billion AI data center",
+   "date": "Mon, 07 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "arstechnica.com",
+     "url": "https://arstechnica.com/features/2026/09/the-ai-data-center-boom-is-causing-new-accountability-problems/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 16
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "984d66f66749238b571d288481164f13a11233758e585dc2162d542bd9748b20",
+   "evidence_hash": "c98c59c35c84555a3408757167aa56e0f4d1c998a757c9d5575e76f000e234f5",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Anthropic",
+     "count": 11
+    },
+    {
+     "name": "Google",
+     "count": 6
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
   },
   {
    "entity": "OpenAI",
@@ -1214,51 +1259,6 @@
    ],
    "publisher_topic": "",
    "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "Trump may be forced to reveal secret rules feds use for AI safety testing",
-   "date": "Wed, 02 Sep 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "arstechnica.com",
-     "url": "https://arstechnica.com/tech-policy/2026/09/trump-may-be-forced-to-reveal-secret-rules-feds-use-for-ai-safety-testing/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 3
-   },
-   "label_schema_version": 2,
-   "content_hash": "e5a4e86bae8707b169ad1ce82cd1f63ad4ae7c8e3cfa77431879d00fc0cb8db4",
-   "evidence_hash": "f657e24636c06ee2cccdc7f594bd50837a09178a31ea241b778007e3f29247c1",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Anthropic",
-     "count": 3
-    },
-    {
-     "name": "OpenAI",
-     "count": 2
-    },
-    {
-     "name": "Hugging Face",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
   },
   {
    "entity": "Google DeepMind",
@@ -1586,349 +1586,6 @@
    ],
    "publisher_topic": "None",
    "entity_basis": "product:Gemini"
-  },
-  {
-   "entity": "",
-   "headline": "Sanders introduces bill to ban artificial superintelligence and pause AI",
-   "date": "Thu, 03 Sep 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "sanders.senate.gov",
-     "url": "https://www.sanders.senate.gov/press-releases/news-sanders-casar-introduce-legislation-to-ban-artificial-superintelligence-and-temporarily-pause-advanced-ai-development/",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "article not fetched (http-403)",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "Research acceleration: The view inside OpenAI",
-   "date": "2026-09-06",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "openai.com",
-     "url": "https://openai.com/index/research-acceleration-view-inside-openai",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 8
-   },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "4078b402b149a6f15e986a8204fd175903bebcf3fb62059f61a3f8354f90ac02",
-   "evidence_hash": "49d34cd8809aa7a09e39d31767c1175ef2e626fb45d7f4512ebc64e19ef26f29",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Hugging Face",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "How I feel about AI",
-   "date": "Sun, 06 Sep 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "beza1e1.tuxen.de",
-     "url": "https://beza1e1.tuxen.de/ai_feelings.html",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_evidence": "no figure in 1963 chars of article text",
-   "content_hash": "afe365c1d200a735609358df94542222e5dfc847d74e730a93b1c762ba14293f",
-   "evidence_hash": "5f0b5be999178ec49eee87156fb5ae6c5f5bfd2dd69ea76cf5276a3af6a402cb",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Mistral",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "AI, Tools and Transformation",
-   "date": "2026-09-03",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "ben-evans.com",
-     "url": "https://www.ben-evans.com/benedictevans/2026/9/3/ai-tools-and-transformation",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 9
-   },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "fdf94f85e8572ac87ee9bca958f020d96706df26979141da57dc1f2513516850",
-   "evidence_hash": "1c4340e8ba7b616a7867cb1db44906e843f81e31febafa195111abbaad0d1f46",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 5
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "OKF Agent Memory – Git-native persistent memory for AI coding agents",
-   "date": "Sat, 05 Sep 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "github.com",
-     "url": "https://github.com/okf-memory/okf-agent-memory",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 12
-   },
-   "label_schema_version": 2,
-   "content_hash": "27682698071c6cdd51d884db3131bb7651798d26d90e786bf716e6e7049069b3",
-   "evidence_hash": "63e9b64de402cac0233243d16fb25b8d4c74a658b601f3ce8ba54798c4a0caf7",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "America's two largest school districts impose AI moratoriums",
-   "date": "2026-09-05",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techpolicy.press",
-     "url": "https://www.techpolicy.press/americas-two-largest-school-districts-impose-ai-moratoriums/",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 1
-   },
-   "label_schema_version": 2,
-   "content_hash": "a855a699e85ff08e10253918dc86b0ed97e69d9a3449fbc8bdb88e42a272dd6b",
-   "evidence_hash": "7e620e7b0173f18c5ba0e73a02af8ccfd391855e0d1895f5cdc90186569f6939",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "AI handles incidents, engineers lose touch with their systems",
-   "date": "2026-09-04",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "sylvainkalache.com",
-     "url": "https://www.sylvainkalache.com/blog/ai-handles-incidents-engineers-lose-touch-with-their-systems",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 3
-   },
-   "label_schema_version": 2,
-   "content_hash": "84b0f8e29816ff5fd4dae92b5fa115431cf8c2908db4a335ffbe5db195ab0995",
-   "evidence_hash": "12807876ca719f2ae9532faf339f556ed58af2be624862cb33f7a5f82ad39446",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "AI Engineering",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Anthropic",
-   "headline": "Anthropic & friends caught paying religious NGO's 3.3M for propaganda",
-   "date": "2026-09-04",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "effort.news",
-     "url": "https://www.effort.news/revelation",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 175
-   },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "af2f6ea1d221d4e06f3f094e1d929096efd116752ab2489b1797180932127d92",
-   "evidence_hash": "1e30e66f986a1a30b8e037e953b99a550ce3799d6f120441dd6d293143c4d871",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Anthropic",
-     "count": 8
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Future of Life Institute",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "Can AI design circuit boards yet?",
-   "date": "2026-09-04",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "eebench.org",
-     "url": "https://eebench.org/blog/can-ai-design-circuit-boards-yet/",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 18
-   },
-   "label_schema_version": 2,
-   "content_hash": "c8c2f5a9f30d2532047bf8bd4460c09074faead86ecf7ec1fe94859bf596895a",
-   "evidence_hash": "f433ef991d53ed9ddc15d8a6c9a047e0f86e96f89eddb20966218b58739451a6",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "xAI",
-     "count": 4
-    },
-    {
-     "name": "OpenAI",
-     "count": 3
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -3217,55 +2874,6 @@
    "entity_basis": "unresolved"
   },
   {
-   "entity": "",
-   "headline": "FinOps X 2026 Day 1 Keynote: The Wild West of AI, Token Economics and the Evolving Role of FinOps",
-   "date": "Tue, 09 Jun 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "finops.org",
-     "url": "https://www.finops.org/insights/finops-x-2026-day-1-keynote/",
-     "source_type": "tool-vendor",
-     "source_tier": 4
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 6
-   },
-   "label_schema_version": 2,
-   "content_hash": "f964f2d7ce9306bdf4e3592b6aa014c81b2623da7e961434172c34de488864fd",
-   "evidence_hash": "db1f17b3bc057a7bce108708eee2de0a4628e4971906af73baeda30dfc1716b5",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Microsoft",
-     "count": 7
-    },
-    {
-     "name": "Amazon",
-     "count": 6
-    },
-    {
-     "name": "Google",
-     "count": 1
-    },
-    {
-     "name": "Salesforce",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
    "entity": "OpenAI",
    "headline": "OpenAI accidentally hacked Hugging Face — should we have seen it coming?",
    "date": "Thu, 23 Jul 2026",
@@ -3809,15 +3417,52 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 5
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "a09711041b52d649a8e929eef475ad7ee61fca6b0130c1c872ed3345c4855506",
    "evidence_hash": "aa7b852a61a7c0e720d237f69b01b9e76389071f6d516a4e8b211b54987d001e",
+   "label_source": "machine",
+   "rating": "ok",
+   "mentions": [
+    {
+     "name": "Hugging Face",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "site"
+  },
+  {
+   "entity": "OpenAI",
+   "headline": "Research acceleration: The view inside OpenAI",
+   "date": "2026-09-06",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "openai.com",
+     "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 8
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "4078b402b149a6f15e986a8204fd175903bebcf3fb62059f61a3f8354f90ac02",
+   "evidence_hash": "49d34cd8809aa7a09e39d31767c1175ef2e626fb45d7f4512ebc64e19ef26f29",
    "label_schema_version": 2,
    "auto_labelled": true,
    "label_source": "machine",
@@ -3828,7 +3473,7 @@
     }
    ],
    "publisher_topic": "",
-   "entity_basis": "site"
+   "entity_basis": "headline"
   },
   {
    "entity": "OpenAI",
@@ -3862,43 +3507,6 @@
     {
      "name": "Hugging Face",
      "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "site"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "Path to Astra: critical capabilities and frontier safeguards",
-   "date": "2026-09-01",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "openai.com",
-     "url": "https://openai.com/index/path-to-astra/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 9
-   },
-   "label_schema_version": 2,
-   "content_hash": "db884d617ac56a29e3cf5f99101071a8b78cb1d79651aa2d68c35561c2486b2f",
-   "evidence_hash": "0cc38990740defccc18cfeb13cae9925123c979080e0cf3828a2aa2716c3eaa0",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Hugging Face",
-     "count": 5
     }
    ],
    "publisher_topic": "",
