@@ -1,4 +1,64 @@
 {
+ "https://techcrunch.com/2026/09/08/cognition-hits-48b-valuation-signaling-investors-believe-ai-coding-is-far-from-a-winner-take-all-market/": {
+  "headline": "Cognition hits $48B valuation, signaling investors believe AI coding is far from a winner-take-all market",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 7,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "Cognition, the startup developing coding assistant Devin, announced it raised $2 billion at a $48 billion valuation.",
+      "offset": 0
+     },
+     {
+      "sentence": "Cognition said that since announcing its last fundraise in May, its annualized run-rate revenue has grown from $492 million to $900 million.",
+      "offset": 502
+     },
+     {
+      "sentence": "Cursor ultimately sold to SpaceX largely because it was severely compute-constrained, according to investors familiar with its financials.",
+      "offset": 1154
+     },
+     {
+      "sentence": "Cognition leases an Nvidia server cluster that costs hundreds of millions of dollars annually, which could push its total cash burn to $800 million this year, The Information reported .",
+      "offset": 1362
+     },
+     {
+      "sentence": "Cognition is expected to reach $4 billion to $5 billion in annualized revenue by the end of 2026, according to The Information.",
+      "offset": 1812
+     },
+     {
+      "sentence": "By comparison, TechCrunch reported in the spring that Cursor was on track to surpass $6 billion by year-end.",
+      "offset": 1940
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 9,
+   "with_named_source": 5
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
  "https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement/": {
   "headline": "Authors push back as publishers and agents make claims on Anthropic settlement",
   "entity": "Anthropic",
@@ -219,32 +279,62 @@
    "cited_by": []
   }
  },
- "https://techcrunch.com/2026/09/03/crusoe-reportedly-raises-3b-at-a-30b-valuation/": {
-  "headline": "Crusoe reportedly raises $3B at a  $30B valuation",
-  "entity": "",
-  "entity_usable": false,
+ "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/": {
+  "headline": "Hackers are stealing Claude tokens from subscribers",
+  "entity": "Anthropic",
+  "entity_usable": true,
   "fetched": true,
   "attribution": {
-   "to_subject": 0,
-   "to_others": 3,
-   "unnamed": 0,
+   "to_subject": 3,
+   "to_others": 7,
+   "unnamed": 1,
    "spans": {
-    "to_subject": [],
-    "to_others": [
+    "to_subject": [
      {
-      "sentence": "Data center developer Crusoe, which counts Meta, Microsoft, and OpenAI as its customers, has raised a new $3 billion round at a $30 billion valuation, Bloomberg reported .",
-      "offset": 163
+      "sentence": "After investigating, Anthropic told De Swardt it found the culprit: A compromised Claude session key was used to mint unauthorized Claude Code OAuth tokens.",
+      "offset": 1459
      },
      {
-      "sentence": "The company recently signed a massive $13 billion , five-year cloud contract to supply quantitative trading firm Jane Street with GPUs and AI infrastructure, Bloomberg reported.",
-      "offset": 545
+      "sentence": "“It’s not that much different or better,” he said, adding that he can’t see going back “without [Anthropic] actually having resolved the issue in any way.”",
+      "offset": 4387
      },
      {
-      "sentence": "The company recently met with investment bankers, including Goldman Sachs and Morgan Stanley, to discuss a potential near-term IPO, Axios reported last month.",
-      "offset": 1096
+      "sentence": "He says Anthropic still lacks tools that allow users to see what’s consuming their tokens.",
+      "offset": 4543
      }
     ],
-    "unnamed": []
+    "to_others": [
+     {
+      "sentence": "“In the clearest controlled interval, it increased from 45% to 55% while I performed no work, scheduled Cowork tasks were paused or completed, Dispatch/cloud execution was disabled, and there was no corresponding active local Claude Code task,” De Swardt told TechCrunch.",
+      "offset": 340
+     },
+     {
+      "sentence": "The suspension wreaked havok on his business, he told TechCrunch.",
+      "offset": 995
+     },
+     {
+      "sentence": "“Like everything is just running through AI these days,” he said.",
+      "offset": 1393
+     },
+     {
+      "sentence": "The company told him the account “appeared to have been used by an unauthorized-looking third-party service to handle activity for other people, but they could not determine how it obtained access,” he told TechCrunch.",
+      "offset": 1616
+     },
+     {
+      "sentence": "One person claimed that their account “was auto-upgraded without my consent, my credit card got charged, and the usage shot from 0% to 100% automatically without me even touching it.” Another saw usage go from 0 to 49% in 12 minutes, when all they had used it for was a couple of prompts and a web se",
+      "offset": 2367
+     },
+     {
+      "sentence": "The company also said the malware didn’t come from using Claude itself.",
+      "offset": 3625
+     }
+    ],
+    "unnamed": [
+     {
+      "sentence": "One Claude user said their account burned through its max tokens every day for three days without them using it at all; this person then created a GitHub report about it.",
+      "offset": 2673
+     }
+    ]
    }
   },
   "links": {
@@ -267,74 +357,42 @@
    "cited_by": []
   }
  },
- "https://techcrunch.com/2026/09/03/accel-reportedly-in-talks-to-lead-1b-round-for-thinking-machines-at-40b-valuation/": {
-  "headline": "Accel reportedly in talks to lead $1B round for Thinking Machines at $40B valuation",
-  "entity": "",
-  "entity_usable": false,
+ "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/": {
+  "headline": "Meta debuts its Muse AI agent. Will consumers trust it?",
+  "entity": "Meta",
+  "entity_usable": true,
   "fetched": true,
   "attribution": {
-   "to_subject": 0,
-   "to_others": 1,
-   "unnamed": 2,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "Thinking Machines, the AI lab founded early last year by former OpenAI CTO Mira Murati, is in discussions to raise $1 billion at a valuation of at least $40 billion, The Information reported Thursday.",
-      "offset": 218
-     }
-    ],
-    "unnamed": [
-     {
-      "sentence": "Existing backer Accel is in talks to lead the fundraise, according to our source and The Information’s reporting.",
-      "offset": 419
-     },
-     {
-      "sentence": "Thinking Machines’ annual revenue run rate stands at over $100 million, according to a source with knowledge of the company’s financials.",
-      "offset": 697
-     }
-    ]
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 6,
-   "with_named_source": 2
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://techcrunch.com/2026/09/07/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/": {
-  "headline": "Opaque recurrence, and other AI terms that you should probably know",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 2,
+   "to_subject": 3,
+   "to_others": 3,
    "unnamed": 0,
    "spans": {
-    "to_subject": [],
-    "to_others": [
+    "to_subject": [
      {
-      "sentence": "Mistral AI’s Mixtral model is a well-known example; OpenAI’s newer GPT models are also widely believed to use some version of this approach, though the company has never officially confirmed it.",
-      "offset": 12983
+      "sentence": "Less than two weeks after Meta agreed to a massive $18 billion multistate settlement in a lawsuit over social media’s consumer harms, the company announced its biggest bet on consumer AI to date — and one that requires significantly more trust than social media ever did.",
+      "offset": 0
      },
      {
-      "sentence": "No shipped model does this today — OpenAI has said its Astra model (released in September 2026 and notable for its early use of the “opaque recurrence” reasoning technique) keeps its chain of thought legible, and has pushed back on comparisons to neuralese.",
-      "offset": 14294
+      "sentence": "It will soon also make its way to Meta’s AI glasses, the company says.",
+      "offset": 2192
+     },
+     {
+      "sentence": "It will also improve over time by learning from the user’s conversations what’s important to them to make suggestions unprompted, Meta noted.",
+      "offset": 2921
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "The company says the agent can do things like sending emails, booking travel, lowering bills, filling out forms, creating plans, turning recipe reels into grocery lists, sending party invitations, and making purchases, leveraging Link by Stripe for checkout.",
+      "offset": 1062
+     },
+     {
+      "sentence": "(The company says the app includes a usage meter that shows users what percentage of their usage they have left.",
+      "offset": 2635
+     },
+     {
+      "sentence": "The company says a separate Sentinel agent runs on that same virtual machine, but is kept apart from Muse at the system level.",
+      "offset": 4302
      }
     ],
     "unnamed": []
@@ -347,8 +405,8 @@
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 5,
-   "with_named_source": 0
+   "total": 4,
+   "with_named_source": 1
   },
   "source_type": "trade-press",
   "source_tier": 3,
@@ -360,33 +418,53 @@
    "cited_by": []
   }
  },
- "https://techcrunch.com/2026/09/06/travis-kalanicks-atoms-might-be-getting-into-the-robotaxi-business/": {
-  "headline": "Travis Kalanick’s Atoms might be getting into the robotaxi business",
-  "entity": "",
-  "entity_usable": false,
+ "https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician/": {
+  "headline": "OpenAI fought dirty on career-making math problem, says NYU mathematician",
+  "entity": "OpenAI",
+  "entity_usable": true,
   "fetched": true,
   "attribution": {
-   "to_subject": 0,
-   "to_others": 2,
-   "unnamed": 1,
+   "to_subject": 3,
+   "to_others": 5,
+   "unnamed": 0,
    "spans": {
-    "to_subject": [],
-    "to_others": [
+    "to_subject": [
      {
-      "sentence": "Earlier this summer, Travis Kalanick’s Atoms announced a $1.7 billion funding round led by Andreessen Horowitz .",
-      "offset": 192
+      "sentence": "“There is another part of this story,” Buckmaster wrote in his statement announcing the proofs, “and one that, honestly, I very much wish I did not have to be concerned with.” According to the statement, a parallel effort by OpenAI built on their work before it became public, leading to a tangle of ",
+      "offset": 438
      },
      {
-      "sentence": "In fact, the FT said Atoms has talked to Uber about how the ride-hailing company could use the startup’s robotaxi technology.",
-      "offset": 656
+      "sentence": "According to OpenAI, the proof was discovered by an unreleased next-generation model, which has tackled a range of different unsolved problems over the past week.",
+      "offset": 968
+     },
+     {
+      "sentence": "While Buckmaster and Alpöge were finalizing their own results, they learned that “information about our progress had been passed to OpenAI.” When they contacted OpenAI, they were told that OpenAI had already achieved a full proof of the central problem.",
+      "offset": 1737
      }
     ],
-    "unnamed": [
+    "to_others": [
      {
-      "sentence": "(Uber has already partnered with a long list of autonomous vehicle companies .) The report also noted that Uber has invested $100 million in Atoms — a figure previously confirmed by TechCrunch .",
-      "offset": 782
+      "sentence": "NYU mathematics professor Tristan Buckmaster announced three proofs on Tuesday with a preliminary finding on one of the major unsolved problems in theoretical mathematics.",
+      "offset": 0
+     },
+     {
+      "sentence": "All told, the week-long effort consumed 300 billion output tokens — $22.5 million worth of compute, if charged at current Astra rates .",
+      "offset": 1131
+     },
+     {
+      "sentence": "“It emerged that an entire team had been working on the problem,” Buckmaster said, “and that an insane amount of compute had been used….",
+      "offset": 2161
+     },
+     {
+      "sentence": "“The route to the Clay problem through a smooth force, options c and d in Fefferman’s statement of the problem, is the route Luis and Diego opened and the one Levent and I had quietly chosen to attack,” Buckmaster wrote.",
+      "offset": 3177
+     },
+     {
+      "sentence": "When Buckmaster pushed to make the dispute public, he says that Bubeck replied: “Why would you ruin your career?” Buckmaster says that when he pushed back, Bubeck followed up with: “If you don’t want me to be nice, then I don’t have to be nice.”",
+      "offset": 3954
      }
-    ]
+    ],
+    "unnamed": []
    }
   },
   "links": {
@@ -397,7 +475,7 @@
   "primary_link_examples": [],
   "figures": {
    "total": 3,
-   "with_named_source": 2
+   "with_named_source": 1
   },
   "source_type": "trade-press",
   "source_tier": 3,
@@ -409,38 +487,32 @@
    "cited_by": []
   }
  },
- "https://techcrunch.com/2026/09/05/hikers-rescued-after-using-google-gemini-for-planning/": {
-  "headline": "Hikers rescued after using Google Gemini for planning",
+ "https://techcrunch.com/2026/09/08/google-cloud-races-to-catch-up-in-the-ai-deployment-wars-with-accenture-deal/": {
+  "headline": "Google Cloud races to catch up in the AI deployment wars with Accenture deal",
   "entity": "Google",
   "entity_usable": true,
   "fetched": true,
   "attribution": {
-   "to_subject": 1,
-   "to_others": 2,
-   "unnamed": 1,
+   "to_subject": 3,
+   "to_others": 0,
+   "unnamed": 0,
    "spans": {
     "to_subject": [
      {
-      "sentence": "Three hikers were rescued from California’s Mount Shasta this week after using Google’s AI chatbot Gemini to plan their expedition, according to the Chicago Tribune .",
-      "offset": 184
-     }
-    ],
-    "to_others": [
-     {
-      "sentence": "While it’s not clear whether Gemini can take all the blame for these bad decisions, the sheriff’s office said the hikers “were advised by Gemini to bring far less food and water than their group required, especially when their planned 8-hour ascent became a multiday ordeal.”",
-      "offset": 801
+      "sentence": "The organization will live under Accenture, according to a Google spokesperson.",
+      "offset": 2071
      },
      {
-      "sentence": "“It is always advisable to call the local USFS Mount Shasta ranger station ahead of your trip to ensure you have the most accurate information, and to never rely solely on AI for your trip planning,” the sheriff’s office said.",
-      "offset": 1077
+      "sentence": "According to August data from Ramp , Google accounts for roughly 6% of enterprise AI spending among Ramp’s U.S. customers, compared to Anthropic’s 43.5% and OpenAI’s 39.7%.",
+      "offset": 2155
+     },
+     {
+      "sentence": "(A Google spokesperson pointed out that many of Ramp’s customers exclude the types of major enterprises that are signing large, strategic AI deals with Google Cloud, which go beyond just model API usage — like Oracle , Meta , Anthropic , and ServiceNow .) Google’s new unit with Accenture, which The ",
+      "offset": 2328
      }
     ],
-    "unnamed": [
-     {
-      "sentence": "A report from the Siskiyou County sheriff’s office said that three young men set off on their hike at 3am and — although hikers are told to turn around if they haven’t reached the summit by noon — they made it to the top at 7pm.",
-      "offset": 351
-     }
-    ]
+    "to_others": [],
+    "unnamed": []
    }
   },
   "links": {
@@ -450,8 +522,8 @@
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 0,
-   "with_named_source": 0
+   "total": 5,
+   "with_named_source": 1
   },
   "source_type": "trade-press",
   "source_tier": 3,
@@ -475,6 +547,412 @@
    "spans": {
     "to_subject": [],
     "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 1
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 1,
+   "with_named_source": 0
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/991710/openai-navier-stokes-solution": {
+  "headline": "Drama swirls around OpenAI’s legendary mathematical milestone",
+  "entity": "OpenAI",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 5,
+   "to_others": 2,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "OpenAI says it found a solution to a major math problem that has remained unsolved for around 90 years, as reported earlier by The New York Times and Wired .",
+      "offset": 563
+     },
+     {
+      "sentence": "In a blog post on Tuesday , OpenAI announced that it discovered a solution to the Navier-Stokes problem — which relates to the flow of liquid and gas — using an internal AI model more powerful than the newly released GPT-6 Astra alongside 10,000 concurrent agents.",
+      "offset": 721
+     },
+     {
+      "sentence": "OpenAI says it started training the internal AI model on August 28th, which has “exhibited unprecedented performance in our benchmarks, including mathematics.” The solution is a big breakthrough for the mathematics community, but it doesn’t come without controversy.",
+      "offset": 1114
+     },
+     {
+      "sentence": "Sebastien Bubeck, a member of technical staff at OpenAI, similarly said : “We did not see any of their [Buckmaster and Alpöge’s] work until they released it publicly last night.",
+      "offset": 2791
+     },
+     {
+      "sentence": "OpenAI says it doesn’t plan on taking the $1 million prize.",
+      "offset": 3254
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "“I was told the model did not look up user data.",
+      "offset": 2226
+     },
+     {
+      "sentence": "Apple says ‘Fold’ and competitors ask ‘How wide?’",
+      "offset": 3551
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 1,
+   "other": 7
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 3,
+   "with_named_source": 2
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [
+    {
+     "url": "https://openai.com/index/navier-stokes-solution",
+     "name": "openai.com",
+     "tier": 5,
+     "entity": "OpenAI",
+     "headline": "On the Navier–Stokes Millennium Prize Problem"
+    }
+   ],
+   "cited_by": []
+  }
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch": {
+  "headline": "ChatGPT Sketch turns your bad drawings into detailed AI images",
+  "entity": "OpenAI",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 2,
+   "to_others": 1,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "OpenAI announced ChatGPT Images 2.5 on Tuesday and is adding a new way to tell ChatGPT what you want it to make an image of: by drawing a doodle.",
+      "offset": 573
+     },
+     {
+      "sentence": "As for ChatGPT Images 2.5, OpenAI says that it makes images with “more natural lighting and richer textures,” is better at following your editing instructions “across multiple turns,” and that image generation latency has been reduced by “up to 50% compared with Images 2.0.” ChatGPT Images 2.5 is ou",
+      "offset": 1459
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "Apple says ‘Fold’ and competitors ask ‘How wide?’",
+      "offset": 2097
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 1,
+   "other": 1
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 2,
+   "with_named_source": 2
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race": {
+  "headline": "Meta bets on AI agent Muse to catch up in AI race",
+  "entity": "Meta",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 9,
+   "to_others": 3,
+   "unnamed": 1,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "Meta is making another push to bring artificial intelligence to the masses with Muse, a personal assistant it says can put AI in the hands of virtually anyone.",
+      "offset": 510
+     },
+     {
+      "sentence": "Once given a goal, Meta says Muse can work on its own, opening a browser, filling out forms, and even negotiating on users’ behalf.",
+      "offset": 1024
+     },
+     {
+      "sentence": "For lengthy tasks, Meta says Muse will continue working in the background after users close the app, returning to users if something changes or if it requires approval for something, such as making a purchase.",
+      "offset": 1156
+     },
+     {
+      "sentence": "Muse will roll out in the US on iOS, Android, and muse.ai , with AI glasses “coming soon.” The assistant will be free for most users, though Meta said there will be paid subscriptions “for people who want to do more.” The company did not specify the nature and costs of these paid plans, nor outline ",
+      "offset": 1366
+     },
+     {
+      "sentence": "“Muse is a first step: an agent that takes on more of the work so people can focus on what matters to them,” Meta said.",
+      "offset": 1704
+     },
+     {
+      "sentence": "It will also readily remember details users share, even if only mentioned once, Meta says, enabling it to make better and unprompted suggestions.",
+      "offset": 2808
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "Previously, he wrote about health, science and tech for Forbes .",
+      "offset": 445
+     },
+     {
+      "sentence": "1Password and Shop Pay support are also on the way, the company said, adding that Muse can already checkout securely with Stripe’s Link.",
+      "offset": 4255
+     },
+     {
+      "sentence": "Apple says ‘Fold’ and competitors ask ‘How wide?’",
+      "offset": 5664
+     }
+    ],
+    "unnamed": [
+     {
+      "sentence": "Most tools are indeed aimed at businesses or technically-minded individuals — notably OpenAI’s ChatGPT Work , Anthropic’s Claude Cowork , Microsoft’s Copilot Tasks , SpaceXAI’s Grok Bot , and the viral open-source agent Moltbot — though Google does appear to be targeting a similar audience with its ",
+      "offset": 2138
+     }
+    ]
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 6
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 3,
+   "with_named_source": 0
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans": {
+  "headline": "AI power users claim Anthropic duped them with subscriptions, and they’re taking it to court",
+  "entity": "Anthropic",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 6,
+   "to_others": 9,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "Anthropic says power users are key to its business — it’s prioritized them even when it means cutting off other popular applications, like OpenClaw.",
+      "offset": 754
+     },
+     {
+      "sentence": "Anthropic actually says you’ll get 20x or 5x the usage that the Pro plan offers, but it’s only promised for five-hour chunks of time that are subject to a weekly limit — which the complaint alleges adds up to a much smaller total increase in usage capacity.",
+      "offset": 1786
+     },
+     {
+      "sentence": "Although Anthropic announced the Max plan in April 2025, it didn’t impose the allegedly deceptive weekly limits until a few months later in August, as the company pushed to compete with OpenAI.",
+      "offset": 3205
+     },
+     {
+      "sentence": "In a motion to dismiss the earlier case, Anthropic argued that it didn’t necessarily omit the session limits from its marketing; rather, it says it’s technically available to the consumer if they know where to look.",
+      "offset": 3717
+     },
+     {
+      "sentence": "“Accessing this clarifying information … required nothing more than clicking hyperlinks available in the purchase process—the digital equivalent of flipping a product over to read the back label,” Anthropic wrote in the motion to dismiss.",
+      "offset": 3933
+     },
+     {
+      "sentence": "Even if Anthropic has the stipulations somewhere on its website, Vaca said, it shouldn’t be up to the consumer to have to seek that out.",
+      "offset": 5247
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "To understand this, “you’ve got to dive deep,” Vaca said.",
+      "offset": 2044
+     },
+     {
+      "sentence": "One Reddit user wrote , “The weekly allowance is what the pricing page makes you think you’re buying.",
+      "offset": 2346
+     },
+     {
+      "sentence": "Vaca said in an interview that Claude users often will upgrade on the fly if they encounter limits while working on a project, then are often frustrated after they pay.",
+      "offset": 2635
+     },
+     {
+      "sentence": "“This is hard for consumers — they don’t know what’s in that black box,” she said.",
+      "offset": 4284
+     },
+     {
+      "sentence": "She added that another reason the case was “compelling” for her is that she and Daffan started hearing from people who felt they needed to pay high-priced subscription costs for AI services in order to avoid becoming irrelevant in the job market.",
+      "offset": 4616
+     },
+     {
+      "sentence": "But oftentimes, she said, they felt they weren’t getting what they paid for, which was frustrating for a service that costs between $100 and $200 per month.",
+      "offset": 4863
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 1
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 5,
+   "with_named_source": 2
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/991180/google-launches-alpha-genome-atlas": {
+  "headline": "Google’s Atlas of the human genome could pave the way for new treatments",
+  "entity": "Google",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 3,
+   "to_others": 6,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "The researchers call it “the most comprehensive catalogue of how genetic mutations affect molecular biology.” Google says scientists can explore these predictions through a web portal, as a skill in its agentic development platform Antigravity, and through its AlphaGenome interface.",
+      "offset": 1702
+     },
+     {
+      "sentence": "Applying those predictions to billions of possible variants produced a massive dataset that Google says is roughly 1 petabyte in size.",
+      "offset": 3312
+     },
+     {
+      "sentence": "The company says it is making Atlas available to researchers for noncommercial use through its website starting today, and for commercial use on Google Cloud “soon.”",
+      "offset": 3447
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "Previously, he wrote about health, science and tech for Forbes .",
+      "offset": 432
+     },
+     {
+      "sentence": "The platform, called AlphaGenome Atlas, contains a “predictive map of every possible DNA letter change in the human genome,” the researchers said in a blog post published on Tuesday.",
+      "offset": 756
+     },
+     {
+      "sentence": "“Now, researchers can rapidly rank variants and interpret their molecular effects at the same time,” the company’s blog said.",
+      "offset": 2260
+     },
+     {
+      "sentence": "In a press briefing, Ziga Avsec, DeepMind’s genomics lead, acknowledged that the underlying model — AlphaGenome — had already been released, but said turning its capabilities into a genome-wide catalog took time.",
+      "offset": 2820
+     },
+     {
+      "sentence": "“Basically it took us some time to really precompute and also analyze this many variants because the space is so big,” he said.",
+      "offset": 3033
+     },
+     {
+      "sentence": "Apple says ‘Fold’ and competitors ask ‘How wide?’",
+      "offset": 4534
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 4,
+   "other": 1
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 1,
+   "with_named_source": 1
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [
+    {
+     "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome",
+     "name": "deepmind.google",
+     "tier": 5,
+     "entity": "Google DeepMind",
+     "headline": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome"
+    }
+   ],
+   "cited_by": []
+  }
+ },
+ "https://www.theverge.com/tech/991133/adobe-is-trying-to-make-its-ai-generators-idiot-proof-in-premiere": {
+  "headline": "Adobe is trying to make its AI generators idiot-proof in Premiere",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 1,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "Apple says ‘Fold’ and competitors ask ‘How wide?’",
+      "offset": 2023
+     }
+    ],
     "unnamed": []
    }
   },
@@ -586,412 +1064,7 @@
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 2,
-   "with_named_source": 0
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://www.theverge.com/policy/990267/microsoft-openai-new-york-times-authors-lawsuit": {
-  "headline": "Microsoft says virtually nobody was grabbing NYT articles through its chatbot",
-  "entity": "Microsoft",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 6,
-   "to_others": 2,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [
-     {
-      "sentence": "Microsoft says virtually nobody was grabbing NYT articles through its chatbot",
-      "offset": 16
-     },
-     {
-      "sentence": "Microsoft’s Copilot rarely reproduces even full sentences from news articles and books, let alone substantive chunks that could substitute for the original, the company says in new legal filings as it fights copyright claims from publishers including The New York Times and book authors .",
-      "offset": 566
-     },
-     {
-      "sentence": "An expert for the Center for Investigative Reporting found 51 instances of “substantial overlap” with CIR work in the dataset, Microsoft says.",
-      "offset": 1310
-     },
-     {
-      "sentence": "“The documents and testimony uncovered during discovery lead to only one conclusion: Microsoft and OpenAI stole from The New York Times to make commercial products that substitute for its journalism, threaten its business, and undermine its industry,” the Times ’ lead counsel Ian Crosby said in a st",
-      "offset": 1735
-     },
-     {
-      "sentence": "Microsoft argues that the numbers bolster its case that using copyrighted content for AI training datasets should be considered fair use.",
-      "offset": 2202
-     },
-     {
-      "sentence": "Microsoft submitted its filing on Friday as it argues for the judge to issue a summary judgement, which would end the case at an early stage.",
-      "offset": 3045
-     }
-    ],
-    "to_others": [
-     {
-      "sentence": "The logs, it claims, were specifically chosen “because they hit on keywords implicating use of News Plaintiffs’ websites, and therefore the most likely to contain News Plaintiffs’ works.” It says the resulting analysis shows that 59,545 of these contained at least 16 words in common with news conten",
-      "offset": 979
-     },
-     {
-      "sentence": "While systems like Copilot rely on using copyrighted material, it says, the resulting systems are used for significantly different purposes than the original.",
-      "offset": 2340
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 1,
-   "subject_own": 0,
-   "other": 1
-  },
-  "primary_link_examples": [
-   "https://www.courtlistener.com/docket/67810584/1211/authors-guild-v-openai-inc/"
-  ],
-  "figures": {
-   "total": 7,
-   "with_named_source": 2
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://www.theverge.com/ai-artificial-intelligence/990149/openai-rogue-agents-german-wiki": {
-  "headline": "Rogue OpenAI agents appear to have organized another attack using a German wiki",
-  "entity": "OpenAI",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 3,
-   "to_others": 3,
-   "unnamed": 1,
-   "spans": {
-    "to_subject": [
-     {
-      "sentence": "The group said the AI agents found a way to communicate on an obscure German-language wiki, DseWiki, using it to share tips on how to skirt OpenAI’s safety restrictions, cheat on tasks, and hide their behavior.",
-      "offset": 1033
-     },
-     {
-      "sentence": "They said there are strong signs that the agents originated from inside OpenAI.",
-      "offset": 1503
-     },
-     {
-      "sentence": "“Claims that our Legal team discouraged investigation of the incident are false,” OpenAI spokesperson Oscar Haines said in a statement to The Verge .",
-      "offset": 2527
-     }
-    ],
-    "to_others": [
-     {
-      "sentence": "Previously, he wrote about health, science and tech for Forbes .",
-      "offset": 443
-     },
-     {
-      "sentence": "The incident, first reported by Reuters , is outlined in new research published by four AI safety researchers on Friday.",
-      "offset": 912
-     },
-     {
-      "sentence": "The swarm — a term the agents themselves used — appears to be distinct from the one that hacked Hugging Face earlier this year, the researchers said.",
-      "offset": 1353
-     }
-    ],
-    "unnamed": [
-     {
-      "sentence": "Reuters , citing four unnamed people familiar with the matter, said efforts to probe the event further were resisted by some company insiders, including its legal team.",
-      "offset": 2358
-     }
-    ]
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 3
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 1,
-   "with_named_source": 0
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://www.theverge.com/ai-artificial-intelligence/989617/instagram-ai-content-label-confusion": {
-  "headline": "Instagram’s AI detection is a mess (again)",
-  "entity": "Meta",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 4,
-   "to_others": 8,
-   "unnamed": 1,
-   "spans": {
-    "to_subject": [
-     {
-      "sentence": "One user on Threads said Instagram was applying the label “every time there is bg remover involved,” and another user said it appeared after they used Canva to remove “a speckle” from their photo, resulting in the entire image being flagged on Instagram as AI.",
-      "offset": 1509
-     },
-     {
-      "sentence": "That February, Meta announced it would scan images for IPTC and C2PA metadata , which can prove with reasonable certainty whether generative AI was used to create or manipulate them.",
-      "offset": 2013
-     },
-     {
-      "sentence": "Meta then promised to tweak its labeling approach to better reflect “the amount of AI used in an image.” It also said it uses “industry standard indicators that other companies include in content from their tools,” but there isn’t any recent information available about what they are, or how and when",
-      "offset": 2474
-     },
-     {
-      "sentence": "Yet even after Meta announced crackdowns on AI accounts last week, it wasn’t tagged as an AI-generated profile, nor were the pictures labeled then.",
-      "offset": 8031
-     }
-    ],
-    "to_others": [
-     {
-      "sentence": "Many people said the label appeared on images that were edited using tools like Canva’s Background Remover or with negligible use of blemish-fixing tools.",
-      "offset": 1354
-     },
-     {
-      "sentence": "The recently reported erroneous labels don’t have a clear link to generative AI usage.",
-      "offset": 2971
-     },
-     {
-      "sentence": "A message on Canva’s background removal help page also says that using the tool “doesn’t add Canva’s AI-generated content metadata to your design,” though it’s unclear if that note is new, and Canva didn’t respond to a request for comment.",
-      "offset": 3729
-     },
-     {
-      "sentence": "There are also reported cases of AI tagging where Canva’s Background Remover was reportedly never used at all .",
-      "offset": 4727
-     },
-     {
-      "sentence": "When a commenter inquired about the AI tag , the brand’s unnamed social manager said that no AI was used to create the images.",
-      "offset": 5258
-     },
-     {
-      "sentence": "That said, only a handful should add generative AI metadata to photographs: Spatial Reframing, Extend, and updated Clean Up added in iOS 27 .",
-      "offset": 5861
-     }
-    ],
-    "unnamed": [
-     {
-      "sentence": "After flagging the Background Remover tagging concerns, content strategist Jess Bruno reports that Canva came back to her with an explanation: Some of the design platform’s assistive AI tools “were being tagged as generative.” The design platform told Bruno that its tools are now tagging correctly.",
-      "offset": 3429
-     }
-    ]
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 16
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 1,
-   "with_named_source": 1
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://www.theverge.com/ai-artificial-intelligence/989376/ai-generated-food-why-does-it-look-like-that": {
-  "headline": "Why AI food looks like that",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 14,
-   "unnamed": 1,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "Previously, he wrote about health, science and tech for Forbes .",
-      "offset": 326
-     },
-     {
-      "sentence": "I don’t even know how to begin describing this monstrous attempt of a burger , and the less said about the trypophobic burrito from hell , grubs and all, the better.",
-      "offset": 824
-     },
-     {
-      "sentence": "Russell said that in many of these unsettling food images things have already gone wrong by the time those finer details are added.",
-      "offset": 2160
-     },
-     {
-      "sentence": "Even when the underlying structure is solid, finer details can go awry in their own ways, said Giovanbattista Califano, a behavioral scientist who studies responses to AI-generated imagery at the University of Naples Federico II in Italy.",
-      "offset": 2733
-     },
-     {
-      "sentence": "“Diffusion models are notoriously weak at generating thin, continuous, terminating structures,” he said.",
-      "offset": 2972
-     },
-     {
-      "sentence": "Other repeating textures like bubbles and seeds are similarly hard for diffusion models to contain within sensible boundaries, he added, meaning they often spill into areas they should not be in.",
-      "offset": 3411
-     }
-    ],
-    "unnamed": [
-     {
-      "sentence": "“This is the same kind of failure as you see when a person is generated with six fingers instead of five,” Russell said.",
-      "offset": 2430
-     }
-    ]
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 15
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 0,
-   "with_named_source": 0
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://www.theverge.com/news/990051/microsoft-project-zenith-windows-developers": {
-  "headline": "Microsoft’s Project Zenith is a ‘distraction-free Windows experience’ for developers",
-  "entity": "Microsoft",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 3,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "While the software maker originally announced a similar developer-optimized Windows effort at Build earlier this year, Project Zenith is designed for new developer-focused devices with 64GB or more of unified memory.",
-      "offset": 524
-     },
-     {
-      "sentence": "AMD announced the first Project Zenith device on stage at IFA earlier today , a miniature PC powered by Ryzen AI Halo chips.",
-      "offset": 1129
-     },
-     {
-      "sentence": "“Project Zenith is the result of listening to developers about what they need from Windows today, and where they want the platform to go next,” says Iyer.",
-      "offset": 2257
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 3
-  },
-  "primary_link_examples": [],
-  "figures": {
    "total": 3,
-   "with_named_source": 0
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout": {
-  "headline": "Sam Altman apologizes for ‘messy’ GPT-6 Astra rollout that’s locked out paying users",
-  "entity": "OpenAI",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 4,
-   "to_others": 5,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [
-     {
-      "sentence": "“We are working towards getting Astra in everyone’s hands as quickly as we can,” Altman said in an X post acknowledging the disappointment.",
-      "offset": 1638
-     },
-     {
-      "sentence": "Altman said there was “a little snag getting the blog post deployed.” OpenAI has also faced intense criticism from safety advocates after it said Astra’s reasoning was harder to monitor than its other models.",
-      "offset": 2775
-     },
-     {
-      "sentence": "OpenAI said it delayed Astra’s release by a number of weeks to bolster safety features in the wake of the hack.",
-      "offset": 3218
-     },
-     {
-      "sentence": "“I think we totally screwed up some things on the rollout,” Altman said last year when reflecting on the company’s last major release, GPT-5.",
-      "offset": 3407
-     }
-    ],
-    "to_others": [
-     {
-      "sentence": "Previously, he wrote about health, science and tech for Forbes .",
-      "offset": 473
-     },
-     {
-      "sentence": "It said Astra would roll out to some enterprise customers — specifically those with access to its Daybreak cybersecurity platform — that day.",
-      "offset": 980
-     },
-     {
-      "sentence": "Jensen Huang says Nvidia achieved AGI, again — not that it matters",
-      "offset": 1864
-     },
-     {
-      "sentence": "but can’t promise yet,” he wrote.",
-      "offset": 2306
-     },
-     {
-      "sentence": "“We will give one banked reset for every day you don’t have access to Astra on your paid ChatGPT plan, starting today,” said Codex engineering lead Thibault Sottiaux in a bid to calm concerns.",
-      "offset": 2340
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 2,
-   "other": 9
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 0,
    "with_named_source": 0
   },
   "source_type": "trade-press",
@@ -1207,7 +1280,7 @@
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 2,
+   "total": 1,
    "with_named_source": 0
   },
   "source_type": "trade-press",
@@ -1252,6 +1325,199 @@
   "primary_link_examples": [],
   "figures": {
    "total": 1,
+   "with_named_source": 0
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://arstechnica.com/security/2026/09/microsoft-patches-a-record-972-vulnerabilities-112-of-them-critical/": {
+  "headline": "Why this month's Microsoft patch release is a doozy",
+  "entity": "Microsoft",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 1,
+   "to_others": 3,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "“On the one hand, congrats to the security gnomes at Microsoft for being able to patch bugs at this rate,” Childs wrote Tuesday .",
+      "offset": 1225
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "“This is the worst type of privilege escalation as it uses a bug in the authentication system itself,” Childs said.",
+      "offset": 2904
+     },
+     {
+      "sentence": "The researcher said he found so many of Tuesday’s vulnerabilities that were wormable that he stopped counting at 20.",
+      "offset": 3409
+     },
+     {
+      "sentence": "Mozilla, for instance, said in May that its researchers using Mythos found a record 271 vulnerabilities, with almost none of them being false positives.",
+      "offset": 4197
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 2,
+   "other": 5
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 12,
+   "with_named_source": 2
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://arstechnica.com/tech-policy/2026/09/real-photos-of-young-girls-were-in-nudify-app-ads-on-facebook-instagram/": {
+  "headline": "“This is the AI men actually use”: Meta ads pushed apps nudifying real teens",
+  "entity": "Meta",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 14,
+   "to_others": 7,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "In an investigation published Tuesday, the Tech Transparency Project (TTP) reported that Meta failed to detect 332 ads containing CSAM this year.",
+      "offset": 502
+     },
+     {
+      "sentence": "Other ads animated a photo of a 14-year-old Instagram influencer “showing off her new sports club uniform” into “a video of her performing oral sex.” A third “preteen” victim “posing in a pink athletic outfit with pigtails” in a series of stock photos was morphed into a video where she looks frighte",
+      "offset": 1162
+     },
+     {
+      "sentence": "At that time, Meta claimed that it had “recently rolled out new systems to better detect child exploitation.” But TTP “found hundreds of new CSAM ads ran after Meta boasted about its new technology.” And a Wired analysis published Tuesday “found hundreds of ads including explicit content that contai",
+      "offset": 2166
+     },
+     {
+      "sentence": "Michelle Kuppersmith, executive director of Campaign for Accountability, which runs TTP, noted that the report comes after a historic $18 billion settlement forced Meta to agree to make changes to platforms to enhance child safety.",
+      "offset": 2731
+     },
+     {
+      "sentence": "“If Meta’s ad approval process can’t detect and reject such obviously horrific content before it is shown to Facebook and Instagram users, then Meta’s whole ad review system should be called into question,” Kuppersmith said.",
+      "offset": 3039
+     },
+     {
+      "sentence": "But many of the ads were curiously not marked as violating Meta’s policy on child exploitation until TTP noted the discrepancy and Meta updated its records.",
+      "offset": 3599
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "Some kids depicted in CSAM ads could not be matched, but ads overwhelmingly depicted preteen girls, TTP reported.",
+      "offset": 1516
+     },
+     {
+      "sentence": "The young European royal was among real kids whose images continued to run, TTP noted.",
+      "offset": 3999
+     },
+     {
+      "sentence": "TTP reported the ad on the day it started running.",
+      "offset": 4244
+     },
+     {
+      "sentence": "Now lawmakers and regulators are swirling, Wired reported.",
+      "offset": 7236
+     },
+     {
+      "sentence": "Attorneys general in Michigan and Florida have said they’re looking into the CSAM ads.",
+      "offset": 7295
+     },
+     {
+      "sentence": "Emma Hardy, director of communications at the Internet Watch Foundation, told Wired that “AI apps are making it far too easy to create realistic criminal imagery of child sexual abuse, creating the new risk of everyday photos of children being taken and transformed into sexual content.”",
+      "offset": 7899
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 3
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 8,
+   "with_named_source": 5
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://arstechnica.com/science/2026/09/googles-ai-weather-model-now-uses-more-raw-satellite-data/": {
+  "headline": "Update to Google’s AI weather model improves forecast accuracy",
+  "entity": "Google",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 4,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "That requires that they provide estimates for conditions over locations without real-world measurements, because weather forecast models need to work with a global picture.",
+      "offset": 1056
+     },
+     {
+      "sentence": "They also added a separate machine-learning model trained on satellite-based precipitation estimates , meaning there are multiple precipitation forecasts available.",
+      "offset": 2187
+     },
+     {
+      "sentence": "By training on past weather station data tagged with that information, the team says they get better forecast predictions.",
+      "offset": 2838
+     },
+     {
+      "sentence": "Overall, the team says their new model “represents a major step forward for AI-based weather predictions by going beyond relying purely on analysis and utilizing information-dense, low-latency observation data.”",
+      "offset": 4343
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 2,
+   "subject_own": 1,
+   "other": 1
+  },
+  "primary_link_examples": [
+   "https://arxiv.org/abs/2609.03582",
+   "https://gpm.nasa.gov/data/imerg"
+  ],
+  "figures": {
+   "total": 7,
    "with_named_source": 0
   },
   "source_type": "trade-press",
@@ -1416,144 +1682,47 @@
    "cited_by": []
   }
  },
- "https://arstechnica.com/security/2026/09/once-popular-for-attacking-ai-ascii-smuggling-is-embraced-by-spammers/": {
-  "headline": "Once popular for attacking AI, ASCII smuggling is embraced by spammers",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 0,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 11
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 3,
-   "with_named_source": 0
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://arstechnica.com/ai/2026/09/four-major-ai-models-suffer-rare-overlapping-downtime/": {
-  "headline": "Four major AI models suffer rare overlapping downtime",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 5,
-   "unnamed": 2,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "Anthropic first reported a “partial outage” related to “elevated errors on requests to Claude Mythos 5.1, Claude Fable 5.1, and Claude Opus 5” at 9:23 am (all times Eastern).",
-      "offset": 370
-     },
-     {
-      "sentence": "The company reported that it had “identified the cause” of the error roughly 15 minutes later, before reporting that “a fix has been deployed” and the issue was resolved by 12:16 pm.",
-      "offset": 545
-     },
-     {
-      "sentence": "OpenAI, meanwhile, reported “elevated errors across ChatGPT and Codex” were resulting in “degraded performance” as of 10:43 am Thursday morning.",
-      "offset": 850
-     },
-     {
-      "sentence": "ChatGPT’s so-called “Work Mode” reported an hours-long period of “elevated latency” on August 31 .",
-      "offset": 2507
-     },
-     {
-      "sentence": "He once wrote a whole book about Minesweeper .",
-      "offset": 2918
-     }
-    ],
-    "unnamed": [
-     {
-      "sentence": "Other major Internet services, including Amazon Web Services , Microsoft Azure , and Cloudflare, have not reported any major issues as of press time Thursday, though issue reports on DownDetector did spike somewhat for all three this morning.",
-      "offset": 1860
-     },
-     {
-      "sentence": "Claude reports 99.4 percent uptime for its services over the last 90 days and last reported a similar three-hour “partial outage” on August 24 .",
-      "offset": 2253
-     }
-    ]
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 14
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 7,
-   "with_named_source": 3
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://arstechnica.com/ai/2026/09/google-releases-gemini-3-8-flash-its-third-flash-model-in-six-weeks/": {
-  "headline": "Google releases Gemini 3.8 Flash, its third Flash model in six weeks",
-  "entity": "Google",
+ "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/": {
+  "headline": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
+  "entity": "Google DeepMind",
   "entity_usable": true,
   "fetched": true,
   "attribution": {
-   "to_subject": 1,
+   "to_subject": 0,
    "to_others": 0,
    "unnamed": 0,
    "spans": {
-    "to_subject": [
-     {
-      "sentence": "But no matter, says Google, because Gemini 3.8 Flash is its best reasoning and coding model yet.",
-      "offset": 472
-     }
-    ],
+    "to_subject": [],
     "to_others": [],
     "unnamed": []
    }
   },
   "links": {
    "primary": 0,
-   "subject_own": 1,
-   "other": 3
+   "subject_own": 0,
+   "other": 0
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 6,
+   "total": 0,
    "with_named_source": 0
   },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
+  "source_type": "vendor-own",
+  "source_tier": 5,
+  "claim_tier": 5,
+  "claim_relationship": "publisher-is-subject",
+  "tier_basis": "publisher is the subject (Google DeepMind)",
   "chain": {
    "cites": [],
-   "cited_by": []
+   "cited_by": [
+    {
+     "url": "https://theverge.com/ai-artificial-intelligence/991180/google-launches-alpha-genome-atlas",
+     "name": "theverge.com",
+     "tier": 3,
+     "entity": "Google",
+     "headline": "Google’s Atlas of the human genome could pave the way for new treatments"
+    }
+   ]
   }
  },
  "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/": {
@@ -1859,9 +2028,84 @@
    "cited_by": []
   }
  },
- "https://deepmind.google/blog/introducing-gemini-3-7-flash/": {
-  "headline": "Introducing Gemini 3.7 Flash",
-  "entity": "Google DeepMind",
+ "https://twitter.com/hilbertspaess/status/2097476196791709843": {
+  "headline": "AI Responsibility – OpenAI and Anthropic",
+  "entity": "OpenAI",
+  "entity_usable": true,
+  "fetched": false,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 0,
+   "with_named_source": 0
+  },
+  "source_type": "other",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://mathstodon.xyz/@tao/117237320796901560": {
+  "headline": "Tao: Open math problems being non-renewably mined by AI",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 1,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "Terence Tao: \"I wrote recently about how the collection of good…\" - Mathstodon",
+      "offset": 0
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 0,
+   "with_named_source": 0
+  },
+  "source_type": "other",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://ai.meta.com/muse/": {
+  "headline": "Muse – Meta’s personal AI agent",
+  "entity": "Meta",
   "entity_usable": true,
   "fetched": true,
   "attribution": {
@@ -1876,19 +2120,212 @@
   },
   "links": {
    "primary": 0,
-   "subject_own": 4,
-   "other": 13
+   "subject_own": 0,
+   "other": 0
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 14,
+   "total": 0,
    "with_named_source": 0
   },
   "source_type": "vendor-own",
   "source_tier": 5,
   "claim_tier": 5,
   "claim_relationship": "publisher-is-subject",
-  "tier_basis": "publisher is the subject (Google DeepMind)",
+  "tier_basis": "publisher is the subject (Meta)",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://ishamf.dev/p/llm-attention-visualizer/": {
+  "headline": "Show HN: LLM Attention Visualization",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 6
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 2,
+   "with_named_source": 0
+  },
+  "source_type": "other",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://manualdousuario.net/en/libreoffice-download-record-no-ai/": {
+  "headline": "LibreOffice breaks download records after declaring it has no AI features",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 1,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "The article, signed by Italo Vignoli, says TDF “does not reject artificial intelligence out of hand,” but that the technology doesn’t yet meet an exhaustive list of principles to be included by default.",
+      "offset": 833
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 3
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 4,
+   "with_named_source": 0
+  },
+  "source_type": "other",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://www.mcsweeneys.net/articles/why-we-must-return-to-the-office-to-use-ai-in-person": {
+  "headline": "We Must Return to the Office to Use AI in Person",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 1,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "When I said how much I loved RTO ,",
+      "offset": 5731
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 8
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 0,
+   "with_named_source": 0
+  },
+  "source_type": "other",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://github.com/TauricResearch/TradingAgents": {
+  "headline": "Multi-Agents LLM Financial Trading Framework",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 2,
+   "subject_own": 0,
+   "other": 12
+  },
+  "primary_link_examples": [
+   "https://arxiv.org/abs/2412.20138",
+   "https://arxiv.org/abs/2509.11420"
+  ],
+  "figures": {
+   "total": 6,
+   "with_named_source": 0
+  },
+  "source_type": "other",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://newsroom.arm.com/blog/arm-mali-g2-ultra-nx-ai-native-mobile-graphics": {
+  "headline": "Arm Mali G2-Ultra NX GPU: desktop-class mobile gameplay with AI-native graphics",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 1,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "As Keli Zhou, Engine Lead for Where Winds Meet, says, “Through our collaboration with Arm, we are integrating Arm Neural Technology into the Messiah Engine and bringing it into real-world game development.",
+      "offset": 8841
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 46,
+   "with_named_source": 0
+  },
+  "source_type": "other",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
   "chain": {
    "cites": [],
    "cited_by": []
@@ -2605,6 +3042,94 @@
    "cited_by": []
   }
  },
+ "https://ainowinstitute.org/news/press/life-under-the-algorithm": {
+  "headline": "Life Under the Algorithm",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 6,
+   "with_named_source": 0
+  },
+  "source_type": "independent",
+  "source_tier": 2,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://ainowinstitute.org/news/press/ai-giants-work-hand-in-hand-with-the-pentagon-contracts-reveal": {
+  "headline": "AI Giants Work Hand-in-Hand With the Pentagon, Contracts Reveal",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 3,
+   "unnamed": 1,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "Heidy Khlaaf, chief scientist at the AI Now Institute and former safety engineer at OpenAI, told The Intercept this is a dubious claim with dangerous implications.",
+      "offset": 577
+     },
+     {
+      "sentence": "“This is a very concerning development,” she said.",
+      "offset": 986
+     },
+     {
+      "sentence": "The public would be better served, she said, with a reliance on independent assessment of the risks these companies present, not the word of the companies themselves.",
+      "offset": 1037
+     }
+    ],
+    "unnamed": [
+     {
+      "sentence": "Trusting companies to self-report the risks of their own products constitutes both a conflict of interest, Khlaaf added, and a “subversion of democratic processes when AI labs are allowed to take over the arbitration of risk determinations with life-or-death consequences.”",
+      "offset": 1204
+     }
+    ]
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 0,
+   "with_named_source": 0
+  },
+  "source_type": "independent",
+  "source_tier": 2,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
  "https://ainowinstitute.org/news/press/what-really-happened-when-openai-bots-escaped-a-cybersecurity-test": {
   "headline": "What Really Happened When OpenAI Bots Escaped a Cybersecurity Test?",
   "entity": "OpenAI",
@@ -2831,95 +3356,6 @@
      {
       "sentence": "It’s popping on everyday people,” says Alli Finn, director of community partnerships at the AI Now Institute, a research and advocacy group that opposes the spread of data centers.",
       "offset": 385
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 0,
-   "with_named_source": 0
-  },
-  "source_type": "independent",
-  "source_tier": 2,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://ainowinstitute.org/news/press/anatomy-of-an-ai-kill-chain-militaries-rely-on-mistake-prone-ai-in-ukraine-gaza-iran": {
-  "headline": "“Anatomy of an AI Kill Chain”: Militaries Rely on Mistake-Prone AI in Ukraine, Gaza & Iran",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 1,
-   "unnamed": 1,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "“What it is is a series of different types of AI algorithms that are chained together, each with their own pitfalls, each with their own flaws,” she says.",
-      "offset": 205
-     }
-    ],
-    "unnamed": [
-     {
-      "sentence": "Militaries across the world are in an “AI arms race,” says Heidy Khlaaf, chief AI scientist at the AI Now Institute, which just released a joint report with Airwars titled “ Anatomy of an AI Kill Chain .”",
-      "offset": 0
-     }
-    ]
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 0,
-   "with_named_source": 0
-  },
-  "source_type": "independent",
-  "source_tier": 2,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://ainowinstitute.org/news/press/the-new-secret-white-house-ai-rulebook": {
-  "headline": "The New, Secret White House AI Rulebook",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 2,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "“To the extent that there might be potentially harmful capabilities that [AI] companies are building or testing, and then are being used by governments or entities with access to these advanced models, we wouldn’t know,” Aya Ibrahim, a senior fellow for economic and national security at the AI Now I",
-      "offset": 852
-     },
-     {
-      "sentence": "The framework isn’t public, and neither are the government’s evaluations, so the public “can’t scrutinize the quality or the relevance of the benchmarks that these companies are meeting or not,” Ibrahim said.",
-      "offset": 1172
      }
     ],
     "unnamed": []
@@ -4098,6 +4534,84 @@
    "cited_by": []
   }
  },
+ "https://openai.com/index/teen-development-research-grants/": {
+  "headline": "Funding grants for new research into AI and teen development",
+  "entity": "OpenAI",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 1
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 3,
+   "with_named_source": 0
+  },
+  "source_type": "vendor-own",
+  "source_tier": 5,
+  "claim_tier": 5,
+  "claim_relationship": "publisher-is-subject",
+  "tier_basis": "publisher is the subject (OpenAI)",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://openai.com/index/navier-stokes-solution/": {
+  "headline": "On the Navier–Stokes Millennium Prize Problem",
+  "entity": "OpenAI",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 2,
+   "other": 3
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 9,
+   "with_named_source": 0
+  },
+  "source_type": "vendor-own",
+  "source_tier": 5,
+  "claim_tier": 5,
+  "claim_relationship": "publisher-is-subject",
+  "tier_basis": "publisher is the subject (OpenAI)",
+  "chain": {
+   "cites": [],
+   "cited_by": [
+    {
+     "url": "https://theverge.com/ai-artificial-intelligence/991710/openai-navier-stokes-solution",
+     "name": "theverge.com",
+     "tier": 3,
+     "entity": "OpenAI",
+     "headline": "Drama swirls around OpenAI’s legendary mathematical milestone"
+    }
+   ]
+  }
+ },
  "https://openai.com/index/an-alien-mind/": {
   "headline": "An Alien Mind",
   "entity": "OpenAI",
@@ -4126,98 +4640,6 @@
   ],
   "figures": {
    "total": 5,
-   "with_named_source": 0
-  },
-  "source_type": "vendor-own",
-  "source_tier": 5,
-  "claim_tier": 5,
-  "claim_relationship": "publisher-is-subject",
-  "tier_basis": "publisher is the subject (OpenAI)",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://openai.com/index/research-acceleration-view-inside-openai/": {
-  "headline": "Research acceleration: The view inside OpenAI",
-  "entity": "OpenAI",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 4,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "According to our measurements, we have now reached the goal, announced ⁠ (opens in a new window) last fall, of having an automated research intern by September of this year.",
-      "offset": 888
-     },
-     {
-      "sentence": "Ultimately, as we wrote in our frontier policy blueprint ⁠ , we believe that we and other companies should be required to publicly track our progress toward RSI.",
-      "offset": 4820
-     },
-     {
-      "sentence": "Multiple teams which previously held office hours to help researchers troubleshoot their experiments have noted declining attendance in 2026, and one has stopped holding sessions entirely, to focus on making other system improvements instead.",
-      "offset": 9561
-     },
-     {
-      "sentence": "Across these analyses, unless otherwise noted:",
-      "offset": 14541
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 1,
-   "other": 2
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 8,
-   "with_named_source": 0
-  },
-  "source_type": "vendor-own",
-  "source_tier": 5,
-  "claim_tier": 5,
-  "claim_relationship": "publisher-is-subject",
-  "tier_basis": "publisher is the subject (OpenAI)",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://openai.com/index/safety-overview-gpt-6-astra/": {
-  "headline": "Safety overview: GPT-6 Astra",
-  "entity": "OpenAI",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 1,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "For these reasons, we have additionally added misalignment monitoring to all tool-using inference involved in our external deployment of Astra, with significant compute cost.",
-      "offset": 2973
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 7,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 18,
    "with_named_source": 0
   },
   "source_type": "vendor-own",

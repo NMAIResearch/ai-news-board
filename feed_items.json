@@ -1,6 +1,55 @@
 {
- "fetched": "2026-09-08 05:20 UTC",
+ "fetched": "2026-09-09 05:20 UTC",
  "items": [
+  {
+   "entity": "",
+   "headline": "Cognition hits $48B valuation, signaling investors believe AI coding is far from a winner-take-all market",
+   "date": "Tue, 08 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/09/08/cognition-hits-48b-valuation-signaling-investors-believe-ai-coding-is-far-from-a-winner-take-all-market/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 9
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "e514155b22c81ee79a8d765c128eaf087e9164ac3a859de19b7297ce86648b74",
+   "evidence_hash": "4a8de102bb2434bd54fd415e126ce8e55d1913d12d144a9cdc79378dc5decd74",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 2
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Nvidia",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Valuations",
+   "entity_basis": "unresolved"
+  },
   {
    "entity": "Anthropic",
    "headline": "Authors push back as publishers and agents make claims on Anthropic settlement",
@@ -182,9 +231,9 @@
    "entity_basis": "headline"
   },
   {
-   "entity": "",
-   "headline": "Crusoe reportedly raises $3B at a  $30B valuation",
-   "date": "Fri, 04 Sep 2026",
+   "entity": "Anthropic",
+   "headline": "Hackers are stealing Claude tokens from subscribers",
+   "date": "Tue, 08 Sep 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "?",
@@ -192,44 +241,44 @@
    "sources": [
     {
      "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/09/03/crusoe-reportedly-raises-3b-at-a-30b-valuation/",
+     "url": "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/",
      "source_type": "trade-press",
      "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "rating": "ok",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 4
    },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "4e3271f9b751be975f0215174123e1e67984e759c599b26fc92f6fe7749b2b4c",
+   "evidence_hash": "92a3339529db3813dba54c782c0c9bb94c38aae1ff5790e79ed6cde27349854b",
    "label_schema_version": 2,
-   "content_hash": "0cb9af5e2314e703961f025dd78bb0ac3740fa0bf27c203d978fc02a1192c117",
-   "evidence_hash": "c199d156457571c5c141adafc9620a6df8f1ab569efccd80162b8d6d71f35e15",
+   "auto_labelled": true,
    "label_source": "machine",
-   "rating": "ok",
    "mentions": [
     {
-     "name": "OpenAI",
-     "count": 3
+     "name": "Anthropic",
+     "count": 10
     },
     {
-     "name": "Microsoft",
+     "name": "OpenAI",
      "count": 1
     },
     {
-     "name": "Meta",
+     "name": "Google",
      "count": 1
     }
    ],
-   "publisher_topic": "crusoe",
-   "entity_basis": "unresolved"
+   "publisher_topic": "Anthropic",
+   "entity_basis": "product:Claude"
   },
   {
-   "entity": "",
-   "headline": "Accel reportedly in talks to lead $1B round for Thinking Machines at $40B valuation",
-   "date": "Thu, 03 Sep 2026",
+   "entity": "Meta",
+   "headline": "Meta debuts its Muse AI agent. Will consumers trust it?",
+   "date": "Tue, 08 Sep 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "?",
@@ -237,40 +286,52 @@
    "sources": [
     {
      "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/09/03/accel-reportedly-in-talks-to-lead-1b-round-for-thinking-machines-at-40b-valuation/",
+     "url": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/",
      "source_type": "trade-press",
      "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "rating": "ok",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
-    "total": 6
+    "total": 4
    },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "75ae767d9a8ae70b66c965e4005c72f2afebf238a49fd3e9154e7f0c7cdf7fbd",
+   "evidence_hash": "56f94c01943e3bfd532f86da1bb9227fcfcacb67f71c399b1cf15898eaf3ace4",
    "label_schema_version": 2,
-   "content_hash": "cec94182a31c8d27e58b45ba76777925eae9062af6656f6a3736532b389de2c6",
-   "evidence_hash": "3f736d04cd85087e5d403f7db6a5231e3164f9447945e3ab417f01e716fd6c9c",
+   "auto_labelled": true,
    "label_source": "machine",
-   "rating": "ok",
    "mentions": [
     {
-     "name": "OpenAI",
-     "count": 4
+     "name": "Meta",
+     "count": 34
     },
     {
-     "name": "Nvidia",
+     "name": "FTC",
+     "count": 3
+    },
+    {
+     "name": "OpenAI",
+     "count": 1
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Apple",
      "count": 1
     }
    ],
-   "publisher_topic": "Accel",
-   "entity_basis": "unresolved"
+   "publisher_topic": "Meta",
+   "entity_basis": "headline"
   },
   {
-   "entity": "",
-   "headline": "Opaque recurrence, and other AI terms that you should probably know",
-   "date": "Mon, 07 Sep 2026",
+   "entity": "OpenAI",
+   "headline": "OpenAI fought dirty on career-making math problem, says NYU mathematician",
+   "date": "Tue, 08 Sep 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "?",
@@ -278,7 +339,52 @@
    "sources": [
     {
      "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/09/07/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/",
+     "url": "https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 3
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "6431e8f417c2dd1315b129f60e27419f6621dfe8d2d60cc2f09915550a29e95c",
+   "evidence_hash": "c00341561c3d335152184186dc7a38faace7d3781ad7603d333f9c4554a7ce36",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 21
+    },
+    {
+     "name": "Anthropic",
+     "count": 2
+    },
+    {
+     "name": "Google",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "mathematics",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Google",
+   "headline": "Google Cloud races to catch up in the AI deployment wars with Accenture deal",
+   "date": "Tue, 08 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/09/08/google-cloud-races-to-catch-up-in-the-ai-deployment-wars-with-accenture-deal/",
      "source_type": "trade-press",
      "source_tier": 3
     }
@@ -290,23 +396,23 @@
     "total": 5
    },
    "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "5cb77275c7f59599d6fd8694dafeee32063b68ba6a68914f54e5ffec35aa9621",
-   "evidence_hash": "a36c8ba2f123bc9b71b70332e6fc13d5430d280178df9096b7996f27d070f27c",
+   "content_hash": "655b27776b4a101af6e9d7b0765905deabf225cec47fa15ad1ee1384a86951d9",
+   "evidence_hash": "2fc4b9e7259bfd4d62ed9e99024fbc2df3f7a427942e46d2f4ff4ac32b43f96b",
    "label_schema_version": 2,
    "auto_labelled": true,
    "label_source": "machine",
    "mentions": [
     {
-     "name": "OpenAI",
-     "count": 9
+     "name": "Google",
+     "count": 20
     },
     {
-     "name": "Google",
+     "name": "OpenAI",
      "count": 4
     },
     {
-     "name": "Google DeepMind",
-     "count": 2
+     "name": "Anthropic",
+     "count": 4
     },
     {
      "name": "Microsoft",
@@ -314,96 +420,14 @@
     },
     {
      "name": "Meta",
-     "count": 2
+     "count": 1
     },
     {
-     "name": "Mistral",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "evergreens",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Travis Kalanick’s Atoms might be getting into the robotaxi business",
-   "date": "Sun, 06 Sep 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/09/06/travis-kalanicks-atoms-might-be-getting-into-the-robotaxi-business/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 3
-   },
-   "label_schema_version": 2,
-   "content_hash": "7596c3fc16bf392e489d7e38738eba13d6edb28301b687847685c4881e2a6bc3",
-   "evidence_hash": "d6589d6e20fb35c823c739011593f08e8b1d3f4be42a06cfa619b2b62ab76031",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Anthropic",
+     "name": "Amazon",
      "count": 1
     }
    ],
-   "publisher_topic": "Travis Kalanick",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Google",
-   "headline": "Hikers rescued after using Google Gemini for planning",
-   "date": "Sat, 05 Sep 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/09/05/hikers-rescued-after-using-google-gemini-for-planning/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 1590 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "567fef74c83c8b7496c76a567e33bceffee829a4bd77b89ce7c420948ce33728",
-   "evidence_hash": "ce47093bc58a92d7961ec417475ffd3bfd783abe3760b1c6eecbeff0cdb411c3",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 6
-    },
-    {
-     "name": "OpenAI",
-     "count": 3
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "gemini",
+   "publisher_topic": "Accenture",
    "entity_basis": "headline"
   },
   {
@@ -454,6 +478,304 @@
    ],
    "publisher_topic": "Microsoft",
    "entity_basis": "headline"
+  },
+  {
+   "entity": "OpenAI",
+   "headline": "Drama swirls around OpenAI’s legendary mathematical milestone",
+   "date": "2026-09-08T16:53",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/991710/openai-navier-stokes-solution",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 3
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "abd63acac3d4e7e581861103b11da0708a290e7c8ff52faba714f2b3be639f75",
+   "evidence_hash": "e414cc2cd8918ac042247b12c7d391655dffb6332d3eaec75630f1ddfd1d9f7c",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 18
+    },
+    {
+     "name": "Anthropic",
+     "count": 2
+    },
+    {
+     "name": "Microsoft",
+     "count": 1
+    },
+    {
+     "name": "Apple",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "OpenAI",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "OpenAI",
+   "headline": "ChatGPT Sketch turns your bad drawings into detailed AI images",
+   "date": "2026-09-08T16:16",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 2
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "411699095cc89e0d1aa2ba674feaf2245bed66e00fd75e1b05da28491b56cdfd",
+   "evidence_hash": "42cf12888ff0a9b94138c83769788c2d0b1491eac9a0e9bc1ab63bdacdcf3072",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 8
+    },
+    {
+     "name": "Microsoft",
+     "count": 1
+    },
+    {
+     "name": "Apple",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "OpenAI",
+   "entity_basis": "product:ChatGPT"
+  },
+  {
+   "entity": "Meta",
+   "headline": "Meta bets on AI agent Muse to catch up in AI race",
+   "date": "2026-09-08T16:06",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 3
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "cec95a6d41102c6725e3e58b45cc5b123cbf84aa4fd6bb636e26b9956dd987a1",
+   "evidence_hash": "93666470c069ea15d66154ced3decd82c0d6902454d773ea80a7b46033da6401",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 27
+    },
+    {
+     "name": "OpenAI",
+     "count": 2
+    },
+    {
+     "name": "Anthropic",
+     "count": 2
+    },
+    {
+     "name": "Google",
+     "count": 2
+    },
+    {
+     "name": "Microsoft",
+     "count": 2
+    },
+    {
+     "name": "Apple",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Meta",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Anthropic",
+   "headline": "AI power users claim Anthropic duped them with subscriptions, and they’re taking it to court",
+   "date": "2026-09-08T15:32",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 5
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "d703b8a2ee1236bf0e9849587be0d2dd3750c369e2123f598402acde66af4316",
+   "evidence_hash": "b71743bbbd616fca7e5440f1807a7150214257a5319a2fb2cc97dda69eb1dc75",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Anthropic",
+     "count": 16
+    },
+    {
+     "name": "FTC",
+     "count": 2
+    },
+    {
+     "name": "OpenAI",
+     "count": 1
+    },
+    {
+     "name": "Microsoft",
+     "count": 1
+    },
+    {
+     "name": "Apple",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Anthropic",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Google",
+   "headline": "Google’s Atlas of the human genome could pave the way for new treatments",
+   "date": "2026-09-08T10:19",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/991180/google-launches-alpha-genome-atlas",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 1
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "f525269a39a4fc8c1b0bcc044c602cc9359e5390a4b70240001ef0709001504f",
+   "evidence_hash": "7c8d89b07c9ecd0f1d56e51af8e9d8026d661661cb04bc6722d08808d1f6c208",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Google",
+     "count": 10
+    },
+    {
+     "name": "Google DeepMind",
+     "count": 9
+    },
+    {
+     "name": "Microsoft",
+     "count": 1
+    },
+    {
+     "name": "Apple",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Google",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "Adobe is trying to make its AI generators idiot-proof in Premiere",
+   "date": "2026-09-08T05:07",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/tech/991133/adobe-is-trying-to-make-its-ai-generators-idiot-proof-in-premiere",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 1
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "6f6babbbda5c1b6c2e0aa9e075697276d6cd5ee299e371fc73240d70d6d1fe52",
+   "evidence_hash": "e567655155446fa19f61eaf863d58e676f94ffd598424e8637b0f2f6365ddfe2",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Microsoft",
+     "count": 1
+    },
+    {
+     "name": "Apple",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Adobe",
+   "entity_basis": "unresolved"
   },
   {
    "entity": "OpenAI",
@@ -521,11 +843,11 @@
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
-    "total": 2
+    "total": 3
    },
    "label_schema_version": 2,
    "content_hash": "d56eee89ae1643826fae1bfe1dd7eee068af6f014101324566818a1f2c75002b",
-   "evidence_hash": "ce7041ba688c998049694961ce63bd91545bdb5c385e8a47bcc9825f7621d36c",
+   "evidence_hash": "59dbd3e6ff7cb3dac1f963694af4886b1fbf508a62c436666e5715cc47389e04",
    "label_source": "machine",
    "rating": "ok",
    "mentions": [
@@ -544,316 +866,6 @@
    ],
    "publisher_topic": "Apps",
    "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Microsoft",
-   "headline": "Microsoft says virtually nobody was grabbing NYT articles through its chatbot",
-   "date": "2026-09-04T13:10",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/policy/990267/microsoft-openai-new-york-times-authors-lawsuit",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 7
-   },
-   "label_schema_version": 2,
-   "content_hash": "93f202b4ded162f88d7335e4d92f2bc8ecdf4c7016c754f61d3b516dd23c173a",
-   "evidence_hash": "179c77a5b24da79a5dd5e559da7b1494a9c68db7d54f4bfa3ac0fc2c9c0c8b77",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Microsoft",
-     "count": 12
-    },
-    {
-     "name": "OpenAI",
-     "count": 6
-    },
-    {
-     "name": "Nvidia",
-     "count": 1
-    },
-    {
-     "name": "Apple",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Copyright",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "Rogue OpenAI agents appear to have organized another attack using a German wiki",
-   "date": "2026-09-04T10:46",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/990149/openai-rogue-agents-german-wiki",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 1
-   },
-   "label_schema_version": 2,
-   "content_hash": "d914e22f46d0955b64b1d3a90b3b8dfcd5fe407a3d3921f2adeb00814c251a5d",
-   "evidence_hash": "ee7405d576b2bcb46e6081056f17c56eed5a957405af5c3b5dc7dbbe525adc04",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 19
-    },
-    {
-     "name": "Hugging Face",
-     "count": 3
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    },
-    {
-     "name": "Nvidia",
-     "count": 1
-    },
-    {
-     "name": "Apple",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "OpenAI",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Meta",
-   "headline": "Instagram’s AI detection is a mess (again)",
-   "date": "2026-09-03T14:37",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/989617/instagram-ai-content-label-confusion",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 1
-   },
-   "label_schema_version": 2,
-   "content_hash": "ca410bc78b3a32c4c8154a36691fb4c50d178d6e71546453a63fad17876d9dda",
-   "evidence_hash": "714bc6184155e732109d22af94bed87efd47bdcf8867156a4c63a0aecdc7e9c5",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 36
-    },
-    {
-     "name": "Google",
-     "count": 4
-    },
-    {
-     "name": "Apple",
-     "count": 4
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Nvidia",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Instagram",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "Why AI food looks like that",
-   "date": "2026-09-03T10:08",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/989376/ai-generated-food-why-does-it-look-like-that",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 9135 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "bba5ea5c71f26d4839ea7517cdc054e7e35ae78ec24413e40712e95fcb156df9",
-   "evidence_hash": "1287b8aa5be8bed1ae9d5dc718892614974c8b4b705e4c7dc6909e4620cf15f1",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Apple",
-     "count": 7
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Nvidia",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Design",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Microsoft",
-   "headline": "Microsoft’s Project Zenith is a ‘distraction-free Windows experience’ for developers",
-   "date": "2026-09-04T07:22",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/news/990051/microsoft-project-zenith-windows-developers",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 3
-   },
-   "label_schema_version": 2,
-   "content_hash": "534970c33877ca3997953fc7514a490b457ae147ba22756535d9c6a13c0a3168",
-   "evidence_hash": "62a2007c833fed5340fc32b3bab2d24dd02fbbfc118de7d0274edc265530d99c",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Microsoft",
-     "count": 7
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Nvidia",
-     "count": 1
-    },
-    {
-     "name": "Apple",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "AMD",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "Sam Altman apologizes for ‘messy’ GPT-6 Astra rollout that’s locked out paying users",
-   "date": "2026-09-04T07:33",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 4235 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "5fec78a717f2344e16db1e0bd1138e3a0b65ae049f3bd21678c6c4c4c0f145f7",
-   "evidence_hash": "7fa47295eae8a903c17d31e2a5a81cfafc92dc2df6625f178eda028ccae1464b",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 23
-    },
-    {
-     "name": "Nvidia",
-     "count": 3
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    },
-    {
-     "name": "Amazon",
-     "count": 1
-    },
-    {
-     "name": "Apple",
-     "count": 1
-    },
-    {
-     "name": "Hugging Face",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "OpenAI",
-   "entity_basis": "headline"
   },
   {
    "entity": "Anthropic",
@@ -974,11 +986,11 @@
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
-    "total": 2
+    "total": 1
    },
    "label_schema_version": 2,
    "content_hash": "0c225332b55962448f17b90bc888bd8cc18b6d895ddd8cdbc18eab6169a854c2",
-   "evidence_hash": "f60cf64d681a39d33822eb9623a3b22eb1e792861f02b137f03f7bbc4b66c457",
+   "evidence_hash": "646d5857aa9de80ddfce2eba31fb3f4cb605610d6268e73ab2bfdbc115ff0e39",
    "label_source": "machine",
    "rating": "ok",
    "mentions": [
@@ -1048,6 +1060,133 @@
    "entity_basis": "headline"
   },
   {
+   "entity": "Microsoft",
+   "headline": "Why this month's Microsoft patch release is a doozy",
+   "date": "Tue, 08 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "arstechnica.com",
+     "url": "https://arstechnica.com/security/2026/09/microsoft-patches-a-record-972-vulnerabilities-112-of-them-critical/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 12
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "bd137583664eb3e863f626d1f0c46dc1d14edd3568d06c151dcafab85e15232b",
+   "evidence_hash": "3b3fe62984f4fc9f446d7b687536064b949622b148261603ecc43b92c509c80f",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Microsoft",
+     "count": 13
+    },
+    {
+     "name": "Google",
+     "count": 2
+    },
+    {
+     "name": "OpenAI",
+     "count": 1
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    },
+    {
+     "name": "Amazon",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Meta",
+   "headline": "“This is the AI men actually use”: Meta ads pushed apps nudifying real teens",
+   "date": "Tue, 08 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "arstechnica.com",
+     "url": "https://arstechnica.com/tech-policy/2026/09/real-photos-of-young-girls-were-in-nudify-app-ads-on-facebook-instagram/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 8
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "cf87cfc460d1873329a74ae97f813478156938b7e35b3f0951f24aeb396eda03",
+   "evidence_hash": "60b106cc49a0fd56a30e7f5fabdd30c64e876b908a27fe3ff3e37995fe3f62e5",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 49
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Google",
+   "headline": "Update to Google’s AI weather model improves forecast accuracy",
+   "date": "Tue, 08 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "arstechnica.com",
+     "url": "https://arstechnica.com/science/2026/09/googles-ai-weather-model-now-uses-more-raw-satellite-data/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 7
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "49db078bb4a4130d00bd4e7cfc7ebc2769a09fe9d86181aea509d3e0d31f7d66",
+   "evidence_hash": "ec83b13a3dee395694595dd8fbecb32106b7412a0287ad1570698142482dc4df",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Google",
+     "count": 3
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
    "entity": "",
    "headline": "The complex corporate web behind a $3.2 billion AI data center",
    "date": "Mon, 07 Sep 2026",
@@ -1063,18 +1202,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 16
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "984d66f66749238b571d288481164f13a11233758e585dc2162d542bd9748b20",
    "evidence_hash": "c98c59c35c84555a3408757167aa56e0f4d1c998a757c9d5575e76f000e234f5",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Anthropic",
@@ -1130,135 +1269,36 @@
    "entity_basis": "headline"
   },
   {
-   "entity": "",
-   "headline": "Once popular for attacking AI, ASCII smuggling is embraced by spammers",
-   "date": "Fri, 04 Sep 2026",
+   "entity": "Google DeepMind",
+   "headline": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
+   "date": "Tue, 08 Sep 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "?",
+   "denominator_stated": "n/a",
    "reviewed": false,
    "sources": [
     {
-     "name": "arstechnica.com",
-     "url": "https://arstechnica.com/security/2026/09/once-popular-for-attacking-ai-ascii-smuggling-is-embraced-by-spammers/",
-     "source_type": "trade-press",
-     "source_tier": 3
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+     "source_type": "vendor-own",
+     "source_tier": 5
     }
    ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
+   "rating": "trusted",
+   "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
-    "total": 3
+    "total": 0
    },
+   "label_evidence": "no figure in 23 chars of article text",
+   "content_hash": "4ad241451f7bcdd9758ec989bfd25ca90b11179f8401fe38876cbf455b678c15",
+   "evidence_hash": "335f3c0ff85d278689e95678fe8c6f0edcce35c228af69b78ffe4395572be820",
    "label_schema_version": 2,
-   "content_hash": "cde921b7c96ea7bb01d969cc5c8145de5591f439a67bd356c49071ef01220dd1",
-   "evidence_hash": "a3df40961c471f8b7c625cfe0a11a3558c3aafa016d4e328941da768412b9331",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Microsoft",
-     "count": 10
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Four major AI models suffer rare overlapping downtime",
-   "date": "Thu, 03 Sep 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "arstechnica.com",
-     "url": "https://arstechnica.com/ai/2026/09/four-major-ai-models-suffer-rare-overlapping-downtime/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
    "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 7
-   },
-   "label_schema_version": 2,
-   "content_hash": "dd8f018971d058cf2c5fbc942a808cbb55c979c7cd73c319bb8c4d09d9428c1b",
-   "evidence_hash": "5bf2fc86a32a69d2617d9348ff88b970ccd20c1eb0e16ca10f4f891d55029ca2",
    "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 3
-    },
-    {
-     "name": "Anthropic",
-     "count": 2
-    },
-    {
-     "name": "Google",
-     "count": 2
-    },
-    {
-     "name": "xAI",
-     "count": 2
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    },
-    {
-     "name": "Amazon",
-     "count": 1
-    }
-   ],
+   "mentions": [],
    "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Google",
-   "headline": "Google releases Gemini 3.8 Flash, its third Flash model in six weeks",
-   "date": "Wed, 02 Sep 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "arstechnica.com",
-     "url": "https://arstechnica.com/ai/2026/09/google-releases-gemini-3-8-flash-its-third-flash-model-in-six-weeks/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 6
-   },
-   "label_schema_version": 2,
-   "content_hash": "5c193ec76fd4446774001d6b3e74a9735dc7fa855f42223264011b559fb00e82",
-   "evidence_hash": "39ff7ba516352e58b8c30e5e8a86691300ee73e259f3b516c0d128cfec7289a7",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 18
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "headline"
+   "entity_basis": "site"
   },
   {
    "entity": "Google DeepMind",
@@ -1551,41 +1591,299 @@
    "entity_basis": "site"
   },
   {
-   "entity": "Google DeepMind",
-   "headline": "Introducing Gemini 3.7 Flash",
-   "date": "Thu, 13 Aug 2026",
+   "entity": "OpenAI",
+   "headline": "AI Responsibility – OpenAI and Anthropic",
+   "date": "2026-09-09",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "?",
    "reviewed": false,
    "sources": [
     {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/introducing-gemini-3-7-flash/",
+     "name": "twitter.com",
+     "url": "https://twitter.com/hilbertspaess/status/2097476196791709843",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "article not fetched (robots-disallowed)",
+   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "Tao: Open math problems being non-renewably mined by AI",
+   "date": "2026-09-08",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "mathstodon.xyz",
+     "url": "https://mathstodon.xyz/@tao/117237320796901560",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 78 chars of article text",
+   "content_hash": "9c9d996bd2590a72959b0af835d4c51392e4d1ec6c7164ad73610ee9faef2e5f",
+   "evidence_hash": "a57cf7859059d7a97ea32c3219b294ef33d17b88b2f3054371b67250bdc3f9cb",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "Meta",
+   "headline": "Muse – Meta’s personal AI agent",
+   "date": "Tue, 08 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "ai.meta.com",
+     "url": "https://ai.meta.com/muse/",
      "source_type": "vendor-own",
      "source_tier": 5
     }
    ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 180 chars of article text",
+   "content_hash": "eccd0a028c744a9f6733c7f937a8b4fd9beeeafe88f1b0ea1e94020bf368a9e8",
+   "evidence_hash": "5a1d98a5c62f2f4ca9ebaa6f28eb5300d4fe020d2ca5f1e0cb335de54a6d14da",
+   "label_schema_version": 2,
    "auto_labelled": true,
-   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "Show HN: LLM Attention Visualization",
+   "date": "2026-09-07",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "ishamf.dev",
+     "url": "https://ishamf.dev/p/llm-attention-visualizer/",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
-    "total": 14
+    "total": 2
    },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "ce5ff277ca7644b3c0878b1564db4d1f3c622f0aa40cac4ff738f69399e05918",
+   "evidence_hash": "41e13e113b9230f4e329f9aacb5ef3d4342ce7f9ecc6e86d305bb2b6714874d3",
    "label_schema_version": 2,
-   "content_hash": "d4ca391cdba433c39a8212ba1afafe55ba6a2733f0f6c6f931c493d3b823c065",
-   "evidence_hash": "f45dd25d5b6f280a7ed9dfdd75c0f72d1bcbeedc4c7c3235ec7c31121cb078e4",
+   "auto_labelled": true,
    "label_source": "machine",
-   "rating": "trusted",
    "mentions": [
     {
      "name": "Meta",
-     "count": 2
+     "count": 1
+    },
+    {
+     "name": "Hugging Face",
+     "count": 1
     }
    ],
-   "publisher_topic": "None",
-   "entity_basis": "product:Gemini"
+   "publisher_topic": "Experiments",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "LibreOffice breaks download records after declaring it has no AI features",
+   "date": "2026-09-08",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "manualdousuario.net",
+     "url": "https://manualdousuario.net/en/libreoffice-download-record-no-ai/",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 4
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "46247d611582b7966ad5ccf3ec55518d9c16a945aee5e8eaca79699907fd848d",
+   "evidence_hash": "c1e068f7ccce1f7888963790e905cf992154b0f982edcc4d6c8c4dd044950a08",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Microsoft",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "We Must Return to the Office to Use AI in Person",
+   "date": "2026-09-04",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "mcsweeneys.net",
+     "url": "https://www.mcsweeneys.net/articles/why-we-must-return-to-the-office-to-use-ai-in-person",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 6930 chars of article text",
+   "content_hash": "a1ed24492246cbcdb2308b8af387a183aec5d86c4cb0a33d748d76f24438113b",
+   "evidence_hash": "520701c39404751a3278672833d3340a06ba21ffa80a767a41b2a788af15ab66",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "Multi-Agents LLM Financial Trading Framework",
+   "date": "Tue, 08 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "github.com",
+     "url": "https://github.com/TauricResearch/TradingAgents",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 6
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "e30713cc80c0208737ce54d861e147cbfdc9b0669c307b5fd2f5ae5fd2855f31",
+   "evidence_hash": "c29c0b9bc7c81472f322d5f049be31c254fa7d150bf2d4c8a29de258b4cfd10d",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 11
+    },
+    {
+     "name": "Anthropic",
+     "count": 5
+    },
+    {
+     "name": "Google",
+     "count": 3
+    },
+    {
+     "name": "Amazon",
+     "count": 3
+    },
+    {
+     "name": "xAI",
+     "count": 2
+    },
+    {
+     "name": "Nvidia",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "Arm Mali G2-Ultra NX GPU: desktop-class mobile gameplay with AI-native graphics",
+   "date": "2026-09-08",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "newsroom.arm.com",
+     "url": "https://newsroom.arm.com/blog/arm-mali-g2-ultra-nx-ai-native-mobile-graphics",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 46
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "7c65e96bd15d3658c224e4f5b7bdd0b7ffa5b387e6b1096c6942990394d1ffbc",
+   "evidence_hash": "e4387cff984723dbda4d77d610569fe375ea1a97357599205ee3083bad48f302",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -2214,6 +2512,79 @@
    "entity_basis": "headline"
   },
   {
+   "entity": "",
+   "headline": "Life Under the Algorithm",
+   "date": "Tue, 08 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "ainowinstitute.org",
+     "url": "https://ainowinstitute.org/news/press/life-under-the-algorithm",
+     "source_type": "independent",
+     "source_tier": 2
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 6
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "feae9f6221c62b636d06cb35499f0b5bc21c0377f8a5e0aa69da6f627331a7cb",
+   "evidence_hash": "78b0cb47e3f8e609abed884881b45818eeac18b7302629b014546dd05f18f546",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "AI Giants Work Hand-in-Hand With the Pentagon, Contracts Reveal",
+   "date": "Tue, 08 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "ainowinstitute.org",
+     "url": "https://ainowinstitute.org/news/press/ai-giants-work-hand-in-hand-with-the-pentagon-contracts-reveal",
+     "source_type": "independent",
+     "source_tier": 2
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 1555 chars of article text",
+   "content_hash": "85930fd778d6e2a71116c090a8e2cbeef2d1325652fd59092f81653d99bce570",
+   "evidence_hash": "a8bcc7b802c91e454de4d18737bb271ab359ef0e3add1d1a1dbf031ca4e8def9",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 2
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
    "entity": "OpenAI",
    "headline": "What Really Happened When OpenAI Bots Escaped a Cybersecurity Test?",
    "date": "Thu, 03 Sep 2026",
@@ -2411,95 +2782,6 @@
    "label_source": "machine",
    "rating": "ok",
    "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "“Anatomy of an AI Kill Chain”: Militaries Rely on Mistake-Prone AI in Ukraine, Gaza & Iran",
-   "date": "Thu, 13 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "ainowinstitute.org",
-     "url": "https://ainowinstitute.org/news/press/anatomy-of-an-ai-kill-chain-militaries-rely-on-mistake-prone-ai-in-ukraine-gaza-iran",
-     "source_type": "independent",
-     "source_tier": 2
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 723 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "078e3617bbf5342a2a64a91ad21d94eba287470c807d7aa70e2121e53de8ae18",
-   "evidence_hash": "b5310f81b4e3ac12184e86f0c61c7671881d1ceb86064f580e493d9c4f40be86",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "The New, Secret White House AI Rulebook",
-   "date": "Fri, 07 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "ainowinstitute.org",
-     "url": "https://ainowinstitute.org/news/press/the-new-secret-white-house-ai-rulebook",
-     "source_type": "independent",
-     "source_tier": 2
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 1617 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "d214b2c90a03e6bea6ca76d8723e7f3a3ea4dd9710437ca8234f2502b3415dad",
-   "evidence_hash": "e61cbb4246b26bd5c964e381fbbc783640bc75c50f5381d4eb7703acefb18925",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Google",
-     "count": 1
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    },
-    {
-     "name": "Nvidia",
-     "count": 1
-    }
-   ],
    "publisher_topic": "",
    "entity_basis": "unresolved"
   },
@@ -3403,6 +3685,80 @@
   },
   {
    "entity": "OpenAI",
+   "headline": "Funding grants for new research into AI and teen development",
+   "date": "2026-09-08",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "openai.com",
+     "url": "https://openai.com/index/teen-development-research-grants/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 3
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "23c56a2345be5936eee0f3e58642be37ab6a9ecef438ae6540d2c80260f994ca",
+   "evidence_hash": "140b1066679b4b0135377861157d700f52fc410969413738c05828577e1ae4f3",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Google",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "site"
+  },
+  {
+   "entity": "OpenAI",
+   "headline": "On the Navier–Stokes Millennium Prize Problem",
+   "date": "2026-09-08",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "openai.com",
+     "url": "https://openai.com/index/navier-stokes-solution/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 9
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "14656718c9a2a82a3677493a6cf2de0836eadf98141ccd64ccadb081be4bf297",
+   "evidence_hash": "4498989ec4462ff9537fc58c8a25064150651f96f20d1f43ba67ed5c782d8fc2",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Anthropic",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "site"
+  },
+  {
+   "entity": "OpenAI",
    "headline": "An Alien Mind",
    "date": "2026-09-06",
    "topic": "",
@@ -3427,80 +3783,6 @@
    "label_schema_version": 2,
    "content_hash": "a09711041b52d649a8e929eef475ad7ee61fca6b0130c1c872ed3345c4855506",
    "evidence_hash": "aa7b852a61a7c0e720d237f69b01b9e76389071f6d516a4e8b211b54987d001e",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Hugging Face",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "site"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "Research acceleration: The view inside OpenAI",
-   "date": "2026-09-06",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "openai.com",
-     "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 8
-   },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "4078b402b149a6f15e986a8204fd175903bebcf3fb62059f61a3f8354f90ac02",
-   "evidence_hash": "49d34cd8809aa7a09e39d31767c1175ef2e626fb45d7f4512ebc64e19ef26f29",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Hugging Face",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "Safety overview: GPT-6 Astra",
-   "date": "2026-09-03",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "openai.com",
-     "url": "https://openai.com/index/safety-overview-gpt-6-astra/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 18
-   },
-   "label_schema_version": 2,
-   "content_hash": "d5a106404aee19c80ddb923f7f07cd7269491c300cfbf680a02c3060513c1990",
-   "evidence_hash": "8dfa967000d51335c28f31db8a9140d5556e5665e8898c0d848b4d74f25da22e",
    "label_source": "machine",
    "rating": "ok",
    "mentions": [

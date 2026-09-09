@@ -1,12 +1,48 @@
 {
- "generated": "2026-09-08 05:22 UTC",
+ "generated": "2026-09-09 05:31 UTC",
  "window_days": 60,
  "counts": {
-  "total": 77,
-  "closed": 25,
-  "open_weights": 52
+  "total": 78,
+  "closed": 24,
+  "open_weights": 54
  },
  "releases": [
+  {
+   "lab": "Inception",
+   "model": "Inception: Mercury 2.5",
+   "id": "inception/mercury-2.5",
+   "date": "2026-09-08",
+   "url": "https://openrouter.ai/inception/mercury-2.5",
+   "context_length": 260000,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Nex Agi",
+   "model": "Nex AGI: Nex-N2.5-Mini (free)",
+   "id": "nex-agi/nex-n2.5-mini",
+   "date": "2026-09-08",
+   "url": "https://openrouter.ai/nex-agi/nex-n2.5-mini",
+   "context_length": 262144,
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/nex-agi/Nex-N2.5-mini; downloadable and hashable",
+   "hf_id": "nex-agi/Nex-N2.5-mini",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Nex Agi",
+   "model": "Nex AGI: Nex-N2.5-Pro (free)",
+   "id": "nex-agi/nex-n2.5-pro",
+   "date": "2026-09-08",
+   "url": "https://openrouter.ai/nex-agi/nex-n2.5-pro",
+   "context_length": 262144,
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/nex-agi/Nex-N2.5-Pro; downloadable and hashable",
+   "hf_id": "nex-agi/Nex-N2.5-Pro",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
   {
    "lab": "OpenAI",
    "model": "OpenAI: GPT-6 Astra",
@@ -42,6 +78,18 @@
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "Qwen3.8-27B-NVFP4",
+   "id": "nvidia/Qwen3.8-27B-NVFP4",
+   "date": "2026-09-04",
+   "url": "https://huggingface.co/nvidia/Qwen3.8-27B-NVFP4",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/Qwen3.8-27B-NVFP4",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "Alibaba (Qwen)",
@@ -113,6 +161,30 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "microsoft/VibeVoice-ASR-Streaming-7B",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "Nemotron-3-Labs-Ultra-Math-RL",
+   "id": "nvidia/Nemotron-3-Labs-Ultra-Math-RL",
+   "date": "2026-09-02",
+   "url": "https://huggingface.co/nvidia/Nemotron-3-Labs-Ultra-Math-RL",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/Nemotron-3-Labs-Ultra-Math-RL",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "Nemotron-3-Labs-Ultra-Math-SFT",
+   "id": "nvidia/Nemotron-3-Labs-Ultra-Math-SFT",
+   "date": "2026-09-02",
+   "url": "https://huggingface.co/nvidia/Nemotron-3-Labs-Ultra-Math-SFT",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/Nemotron-3-Labs-Ultra-Math-SFT",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
@@ -212,18 +284,6 @@
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
-   "lab": "Inception",
-   "model": "Inception: Mercury 2.5 Preview",
-   "id": "inception/mercury-2.5-preview",
-   "date": "2026-08-31",
-   "url": "https://openrouter.ai/inception/mercury-2.5-preview",
-   "context_length": 260000,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
    "lab": "IBM",
    "model": "IBM: Granite 4.2 8B",
    "id": "ibm-granite/granite-4.2-8b",
@@ -296,18 +356,6 @@
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
-   "lab": "Nvidia",
-   "model": "DeepSeek-V4-Pro-0813-NVFP4",
-   "id": "nvidia/DeepSeek-V4-Pro-0813-NVFP4",
-   "date": "2026-08-27",
-   "url": "https://huggingface.co/nvidia/DeepSeek-V4-Pro-0813-NVFP4",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/DeepSeek-V4-Pro-0813-NVFP4",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
    "lab": "Alibaba (Qwen)",
    "model": "Qwen: Qwen3.8 Flash",
    "id": "qwen/qwen3.8-flash",
@@ -356,18 +404,6 @@
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
-   "lab": "Nvidia",
-   "model": "Qwen3.8-2.4T-A95B-NVFP4",
-   "id": "nvidia/Qwen3.8-2.4T-A95B-NVFP4",
-   "date": "2026-08-25",
-   "url": "https://huggingface.co/nvidia/Qwen3.8-2.4T-A95B-NVFP4",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/Qwen3.8-2.4T-A95B-NVFP4",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
    "lab": "Alibaba (Qwen)",
    "model": "Qwen3.8-Flash-Next-FP8",
    "id": "Qwen/Qwen3.8-Flash-Next-FP8",
@@ -389,18 +425,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "google/timesfm-3.0-pytorch",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "Nemotron-3-Diarization-preview",
-   "id": "nvidia/Nemotron-3-Diarization-preview",
-   "date": "2026-08-24",
-   "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization-preview",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/Nemotron-3-Diarization-preview",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
@@ -918,18 +942,6 @@
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "mistralai/Shieldstral-1.0-3B",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Kwaipilot",
-   "model": "Kwaipilot: KAT-Coder-Pro V2.5",
-   "id": "kwaipilot/kat-coder-pro-v2.5",
-   "date": "2026-07-10",
-   "url": "https://openrouter.ai/kwaipilot/kat-coder-pro-v2.5",
-   "context_length": 262144,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   }
  ],
  "errors": [],
