@@ -1,10 +1,10 @@
 {
- "generated": "2026-09-09 05:31 UTC",
+ "generated": "2026-09-10 05:32 UTC",
  "window_days": 60,
  "counts": {
-  "total": 78,
+  "total": 80,
   "closed": 24,
-  "open_weights": 54
+  "open_weights": 56
  },
  "releases": [
   {
@@ -165,6 +165,18 @@
   },
   {
    "lab": "Nvidia",
+   "model": "GLM-5.3-Flash-NVFP4",
+   "id": "nvidia/GLM-5.3-Flash-NVFP4",
+   "date": "2026-09-02",
+   "url": "https://huggingface.co/nvidia/GLM-5.3-Flash-NVFP4",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/GLM-5.3-Flash-NVFP4",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Nvidia",
    "model": "Nemotron-3-Labs-Ultra-Math-RL",
    "id": "nvidia/Nemotron-3-Labs-Ultra-Math-RL",
    "date": "2026-09-02",
@@ -197,6 +209,30 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "nvidia/Qwen3.8-Flash-Next-NVFP4",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Cohere",
+   "model": "tiny-aya-en-thinker",
+   "id": "CohereLabs/tiny-aya-en-thinker",
+   "date": "2026-09-02",
+   "url": "https://huggingface.co/CohereLabs/tiny-aya-en-thinker",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "CohereLabs/tiny-aya-en-thinker",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Cohere",
+   "model": "tiny-aya-l2-thinker",
+   "id": "CohereLabs/tiny-aya-l2-thinker",
+   "date": "2026-09-02",
+   "url": "https://huggingface.co/CohereLabs/tiny-aya-l2-thinker",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "CohereLabs/tiny-aya-l2-thinker",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
@@ -341,18 +377,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "microsoft/SQuadGen",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "Muse-Glimmer-30B-NVFP4",
-   "id": "nvidia/Muse-Glimmer-30B-NVFP4",
-   "date": "2026-08-27",
-   "url": "https://huggingface.co/nvidia/Muse-Glimmer-30B-NVFP4",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/Muse-Glimmer-30B-NVFP4",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
@@ -553,7 +577,7 @@
    "id": "qwen/qwen3.8-27b",
    "date": "2026-08-14",
    "url": "https://openrouter.ai/qwen/qwen3.8-27b",
-   "context_length": 1000000,
+   "context_length": 1048576,
    "evidence": "open-weights",
    "evidence_note": "weights published at huggingface.co/Qwen/Qwen3.8-27B; downloadable and hashable",
    "hf_id": "Qwen/Qwen3.8-27B",
