@@ -1,12 +1,96 @@
 {
- "generated": "2026-09-10 05:32 UTC",
+ "generated": "2026-09-12 05:30 UTC",
  "window_days": 60,
  "counts": {
-  "total": 80,
-  "closed": 24,
-  "open_weights": 56
+  "total": 87,
+  "closed": 26,
+  "open_weights": 61
  },
  "releases": [
+  {
+   "lab": "Inference Net",
+   "model": "Inference.net: Schematron V2 Turbo",
+   "id": "inference-net/schematron-v2-turbo",
+   "date": "2026-09-12",
+   "url": "https://openrouter.ai/inference-net/schematron-v2-turbo",
+   "context_length": 128000,
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/inference-net/schematron-v2-granite-4.0-h-micro; downloadable and hashable",
+   "hf_id": "inference-net/schematron-v2-granite-4.0-h-micro",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Inference Net",
+   "model": "Inference.net: Schematron V2 Small",
+   "id": "inference-net/schematron-v2-small",
+   "date": "2026-09-12",
+   "url": "https://openrouter.ai/inference-net/schematron-v2-small",
+   "context_length": 128000,
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/inference-net/schematron-v2-llama-3.2-3b; downloadable and hashable",
+   "hf_id": "inference-net/schematron-v2-llama-3.2-3b",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Sakana",
+   "model": "Sakana: Fugu Ultra v2",
+   "id": "sakana/fugu-ultra-v2",
+   "date": "2026-09-11",
+   "url": "https://openrouter.ai/sakana/fugu-ultra-v2",
+   "context_length": 1000000,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Sakana",
+   "model": "Sakana: Fugu Max",
+   "id": "sakana/fugu-max",
+   "date": "2026-09-11",
+   "url": "https://openrouter.ai/sakana/fugu-max",
+   "context_length": 1000000,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Inclusionai",
+   "model": "inclusionAI: Ling 3.0 Flash VL",
+   "id": "inclusionai/ling-3.0-flash-vl",
+   "date": "2026-09-10",
+   "url": "https://openrouter.ai/inclusionai/ling-3.0-flash-vl",
+   "context_length": 131072,
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/inclusionAI/Ling-3.0-flash-VL; downloadable and hashable",
+   "hf_id": "inclusionAI/Ling-3.0-flash-VL",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "DeepSeek",
+   "model": "DeepSeek: DeepSeek V4.1 Flash",
+   "id": "deepseek/deepseek-v4.1-flash",
+   "date": "2026-09-10",
+   "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
+   "context_length": 1048576,
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash; downloadable and hashable",
+   "hf_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "DeepSeek-V4-Pro-0813-nvfp4-DSpark",
+   "id": "nvidia/DeepSeek-V4-Pro-0813-nvfp4-DSpark",
+   "date": "2026-09-09",
+   "url": "https://huggingface.co/nvidia/DeepSeek-V4-Pro-0813-nvfp4-DSpark",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/DeepSeek-V4-Pro-0813-nvfp4-DSpark",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
   {
    "lab": "Inception",
    "model": "Inception: Mercury 2.5",
@@ -42,6 +126,18 @@
    "evidence_note": "weights published at huggingface.co/nex-agi/Nex-N2.5-Pro; downloadable and hashable",
    "hf_id": "nex-agi/Nex-N2.5-Pro",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Cohere",
+   "model": "tiny-aya-base-32K",
+   "id": "CohereLabs/tiny-aya-base-32K",
+   "date": "2026-09-08",
+   "url": "https://huggingface.co/CohereLabs/tiny-aya-base-32K",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "CohereLabs/tiny-aya-base-32K",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "OpenAI",
@@ -200,18 +296,6 @@
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
-   "lab": "Nvidia",
-   "model": "Qwen3.8-Flash-Next-NVFP4",
-   "id": "nvidia/Qwen3.8-Flash-Next-NVFP4",
-   "date": "2026-09-02",
-   "url": "https://huggingface.co/nvidia/Qwen3.8-Flash-Next-NVFP4",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/Qwen3.8-Flash-Next-NVFP4",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
    "lab": "Cohere",
    "model": "tiny-aya-en-thinker",
    "id": "CohereLabs/tiny-aya-en-thinker",
@@ -246,6 +330,18 @@
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Google",
+   "model": "gnm-v3",
+   "id": "google/gnm-v3",
+   "date": "2026-09-01",
+   "url": "https://huggingface.co/google/gnm-v3",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "google/gnm-v3",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "Ai2",
@@ -548,18 +644,6 @@
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
-   "lab": "Google",
-   "model": "tipsv1-l14",
-   "id": "google/tipsv1-l14",
-   "date": "2026-08-19",
-   "url": "https://huggingface.co/google/tipsv1-l14",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "google/tipsv1-l14",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
    "lab": "Z Ai",
    "model": "Z.ai: GLM 5.3",
    "id": "z-ai/glm-5.3",
@@ -577,7 +661,7 @@
    "id": "qwen/qwen3.8-27b",
    "date": "2026-08-14",
    "url": "https://openrouter.ai/qwen/qwen3.8-27b",
-   "context_length": 1048576,
+   "context_length": 1000000,
    "evidence": "open-weights",
    "evidence_note": "weights published at huggingface.co/Qwen/Qwen3.8-27B; downloadable and hashable",
    "hf_id": "Qwen/Qwen3.8-27B",
@@ -594,6 +678,30 @@
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Cohere",
+   "model": "North-Small-Translate-1.0-w4a16",
+   "id": "CohereLabs/North-Small-Translate-1.0-w4a16",
+   "date": "2026-08-14",
+   "url": "https://huggingface.co/CohereLabs/North-Small-Translate-1.0-w4a16",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "CohereLabs/North-Small-Translate-1.0-w4a16",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Cohere",
+   "model": "North-Small-Translate-1.0",
+   "id": "CohereLabs/North-Small-Translate-1.0",
+   "date": "2026-08-14",
+   "url": "https://huggingface.co/CohereLabs/North-Small-Translate-1.0",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "CohereLabs/North-Small-Translate-1.0",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "Google",
@@ -728,18 +836,6 @@
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
-   "lab": "Cohere",
-   "model": "North-Micro-Vision-Instruct",
-   "id": "CohereLabs/North-Micro-Vision-Instruct",
-   "date": "2026-08-10",
-   "url": "https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "CohereLabs/North-Micro-Vision-Instruct",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
    "lab": "Meta",
    "model": "Meta: Muse Glimmer 30B",
    "id": "meta/muse-glimmer-30b",
@@ -846,18 +942,6 @@
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Cohere",
-   "model": "North-Mini-Code-1.0-eagle",
-   "id": "CohereLabs/North-Mini-Code-1.0-eagle",
-   "date": "2026-07-24",
-   "url": "https://huggingface.co/CohereLabs/North-Mini-Code-1.0-eagle",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "CohereLabs/North-Mini-Code-1.0-eagle",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "Inclusionai",
