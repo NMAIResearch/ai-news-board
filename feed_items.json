@@ -1,5 +1,5 @@
 {
- "fetched": "2026-09-13 05:20 UTC",
+ "fetched": "2026-09-14 05:20 UTC",
  "items": [
   {
    "entity": "",
@@ -88,6 +88,104 @@
    "entity_basis": "headline"
   },
   {
+   "entity": "",
+   "headline": "What’s behind the AI industry’s latest warnings of doom?",
+   "date": "Sun, 13 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/09/13/whats-behind-the-ai-industrys-latest-warnings-of-doom/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 5
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "c5d3cc3b4fe26cfa11289215d3a35fad219440da8dac40f11bae91822c0be88d",
+   "evidence_hash": "dd2927973728493a45f6fd6d45f65f62157865d67a34de7631930fa52701418f",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Anthropic",
+     "count": 12
+    },
+    {
+     "name": "OpenAI",
+     "count": 9
+    },
+    {
+     "name": "Apple",
+     "count": 2
+    },
+    {
+     "name": "Hugging Face",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "OpenAI",
+   "entity_basis": "tags-name-2-orgs"
+  },
+  {
+   "entity": "",
+   "headline": "Obama urges Democrats to have a ‘clear plan’ for AI safeguards",
+   "date": "Sun, 13 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/09/13/obama-urges-democrats-to-have-a-clear-plan-for-ai-safeguards/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 3588 chars of article text",
+   "content_hash": "9ec56461cd8dec509056309c1f35119a93d519d5c4ad9f7bfa050384541c3691",
+   "evidence_hash": "4594e94500f5f957a0d6d310859346b6b2db77cab5d4e8e6fc8cc024c6509e13",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 7
+    },
+    {
+     "name": "Anthropic",
+     "count": 5
+    },
+    {
+     "name": "Apple",
+     "count": 1
+    },
+    {
+     "name": "xAI",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Barack Obama",
+   "entity_basis": "unresolved"
+  },
+  {
    "entity": "OpenAI",
    "headline": "OpenAI’s Sam Altman says it would be ‘ill-advised’ to go public in 2026",
    "date": "Sat, 12 Sep 2026",
@@ -103,18 +201,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 1697 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 1697 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "4ae6d8d77bbc8d8adca0f00f19e423723c4c18955915c37e6099154bd7da5fe8",
    "evidence_hash": "27ab2efff7a6bdf59b560d9c87f190909f9675c9ebafb7dd01d38ecfb83f3a85",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -148,18 +246,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 1
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "2044c4ce3fe3684458263cf4ab8e4a9993e70e9e360d6eecbb83a1ef432563d3",
    "evidence_hash": "5b07243d3d4b00631f7e085c16b5a3acac026687b965a5e636beff9d4a7a0955",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Anthropic",
@@ -321,92 +419,6 @@
    "entity_basis": "headline"
   },
   {
-   "entity": "TechCrunch",
-   "headline": "Final, final, final call for TechCrunch Disrupt 2026 Side Events",
-   "date": "Fri, 11 Sep 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/09/11/final-final-final-call-for-techcrunch-disrupt-2026-side-events/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 2
-   },
-   "label_schema_version": 2,
-   "content_hash": "ee2605cad89b62ca94eba7a891f458b7bb47eb20077f1ea23c9963216040991a",
-   "evidence_hash": "04c6d6edb42e04c0c1bf955337a36c78fd6c526133935869167ddd481c84d267",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 2
-    },
-    {
-     "name": "Apple",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "TechCrunch Disrupt",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "Kimi-maker Moonshot AI targets $2B in annual revenue",
-   "date": "Fri, 11 Sep 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 5
-   },
-   "label_schema_version": 2,
-   "content_hash": "93d061cd38b919f43ab8833595429aa394e14da39322bbbc35bde35048c79c6d",
-   "evidence_hash": "1117d384f6aecf7c5c416048ae55bd9d2291605c3366464ec06362794f3f6cb7",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Anthropic",
-     "count": 5
-    },
-    {
-     "name": "OpenAI",
-     "count": 2
-    },
-    {
-     "name": "Nvidia",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "In Brief",
-   "entity_basis": "unresolved"
-  },
-  {
    "entity": "OpenAI",
    "headline": "Lawyer fined $5K over AI-hallucinated witnesses in a murder case",
    "date": "2026-09-11T16:44",
@@ -422,18 +434,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 2
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "c5955cd7275b5e1e28e0fe424a38c0e65c30023d80922913d9f370bc9c2c58e8",
    "evidence_hash": "87e58272aca88759e621c842652560ba89e5fcadaab6844fa6b906f5d85876e6",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Apple",
@@ -446,6 +458,202 @@
    ],
    "publisher_topic": "OpenAI",
    "entity_basis": "tag"
+  },
+  {
+   "entity": "",
+   "headline": "Trump and Mike Johnson think the AI industry is overreacting",
+   "date": "2026-09-13T15:41",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/994441/trump-mike-johnson-ai-industry-overreacting",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 1917 chars of article text",
+   "content_hash": "c82ff93cb109cdc46fcbb663b115796bd614e3aac5f4bbcceb1898c0bcdfffa8",
+   "evidence_hash": "f822f8fbc1f0f35d3ddd7ed45a4434a5333836ad4526e68e6657972df6c6ea69",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Anthropic",
+     "count": 4
+    },
+    {
+     "name": "OpenAI",
+     "count": 3
+    },
+    {
+     "name": "xAI",
+     "count": 2
+    },
+    {
+     "name": "Google DeepMind",
+     "count": 1
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Apple",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Anthropic",
+   "entity_basis": "tags-name-3-orgs"
+  },
+  {
+   "entity": "OpenAI",
+   "headline": "OpenAI’s rogue AI tried to hack another company in May",
+   "date": "2026-09-13T16:54",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/994383/openais-rogue-ai-rubygems-hack",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 2438 chars of article text",
+   "content_hash": "b3d045b66ebe97bf7bd08acfcda47f8b4a2c7ca0345646aca7d2a82959f9d7b1",
+   "evidence_hash": "c5754dc50bfe66a7f7a17125ed93564e228ba80af002d6bba2149c1ab19b9fb5",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 8
+    },
+    {
+     "name": "Hugging Face",
+     "count": 2
+    },
+    {
+     "name": "Apple",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "OpenAI",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "OpenAI",
+   "headline": "Sam Altman says OpenAI going public in 2026 would be ‘ill-advised’",
+   "date": "2026-09-12T17:16",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "Y",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/994384/sam-altman-no-openai-ipo-ill-advised",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 1,
+    "total": 1
+   },
+   "label_evidence": "all 1 figure-sentence(s) state a base",
+   "content_hash": "b8d9debff2610e25d2a09a522fdb7d4b320c093e25a9270bc3b27db50110b5ab",
+   "evidence_hash": "5d5f7a99068a75414c5bcdea78d11fe2113dbc0ee04a3d4ed31ea1a4519782e2",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 8
+    },
+    {
+     "name": "Apple",
+     "count": 1
+    },
+    {
+     "name": "Hugging Face",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "OpenAI",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Anthropic",
+   "headline": "Anthropic CEO says it’s time to pump the brakes on AI",
+   "date": "2026-09-12T12:23",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 3339 chars of article text",
+   "content_hash": "f3fcb9e9a65f5c65ad1c5362127f06df8f635cb8f2714747bbff562ad8d073e0",
+   "evidence_hash": "defb73506f78346c4a210630395b59c54ba1f6c54d5595dfda00903982d1bfb4",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Anthropic",
+     "count": 11
+    },
+    {
+     "name": "OpenAI",
+     "count": 1
+    },
+    {
+     "name": "Apple",
+     "count": 1
+    },
+    {
+     "name": "Hugging Face",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Anthropic",
+   "entity_basis": "headline"
   },
   {
    "entity": "",
@@ -463,18 +671,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 3
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "4225f6f1c3c53f7922d1f5220bcd33add799551d593fbe65326a7ba2c015f3cf",
    "evidence_hash": "6875ea29684624bb0304523ab778fee0d018d756502fee07b00d9efbd2c29854",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Apple",
@@ -500,18 +708,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 3
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "688f6920615214009b5dda689fc9cb240a6a2afcf3d4a41836cac93ecccf447a",
    "evidence_hash": "8b8797bbb39304bc5e2b05f940733cab662d606faa266a60f2682e852bb34b7f",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -553,18 +761,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 1
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "4340dafab4cc78e2979e5bae287fea85b77fd64e48a55d3a3e78c07d2fbef758",
    "evidence_hash": "8908da9967e8c88719ebc77af8c2e0fe608b3995062fb829191f205aa8d23c5c",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Anthropic",
@@ -602,18 +810,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 3224 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 3224 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "ccf524b9cb4d5bd4bbfa7883dadb58c033a38c06c6df70d31238293e545b9b39",
    "evidence_hash": "184c402d9351e871e77a25501a9a14c718c3d291419c68d85f24693ab7d63a3f",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Meta",
@@ -622,214 +830,6 @@
     {
      "name": "Apple",
      "count": 2
-    }
-   ],
-   "publisher_topic": "Meta",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "Slack can now vibe-code interactive charts and reports inside chats",
-   "date": "2026-09-10T17:29",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/tech/989853/slackforce-surfaces-launch",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 2857 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "c190089613c422b419cd43ed7904a6c7095236902c793b9981bec4b0c649f594",
-   "evidence_hash": "2c6c13533bba35ae6593937980ed0fc13193e45cac5c7a603709c0775dcb9bd1",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Apple",
-     "count": 2
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Google",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    },
-    {
-     "name": "Salesforce",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Apps",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Schools are catching on to Big Tech’s playbook",
-   "date": "2026-09-10T15:49",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/policy/993308/computer-science-ai-education-coding-kids",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 2
-   },
-   "label_schema_version": 2,
-   "content_hash": "6364dda2969a3c7066f3b30e888d9eb0b8fcd4395016e28cac612b4b7de2f0c3",
-   "evidence_hash": "0ca638420c07e111b8cefb7b80a81f2350f8af5e718ffe3cc8537411f02b8e7a",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 4
-    },
-    {
-     "name": "Apple",
-     "count": 4
-    },
-    {
-     "name": "Microsoft",
-     "count": 3
-    },
-    {
-     "name": "Meta",
-     "count": 3
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Podcasts",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Universal Music is launching an AI music platform with ElevenLabs",
-   "date": "2026-09-10T12:06",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/993465/universal-music-elevenlabs-ai",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 2574 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "9a82f5342506bd24313061c4720e04ddbb4bba78ba2b7a30ab96a9892bbfbe98",
-   "evidence_hash": "3d5812b1275bfe0d04e3c9c149c3a7af53bae8a58264073eed8c3f1669e3ddac",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Apple",
-     "count": 2
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    },
-    {
-     "name": "Nvidia",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Meta",
-   "headline": "Meta’s Muse AI works and creeps me out",
-   "date": "2026-09-11T12:08",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/tech/993391/meta-muse-ai-hands-on",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 7067 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "ea37117b32c3c150de93c70e8f7ba4c940377197ea6d9ca891bbd23d34b45ad9",
-   "evidence_hash": "10f07a9f8ddda49469904d7c222d92bb84a83fc4573b93f555eb008fcd98a649",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 18
-    },
-    {
-     "name": "Apple",
-     "count": 10
-    },
-    {
-     "name": "Google",
-     "count": 2
-    },
-    {
-     "name": "Amazon",
-     "count": 2
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
     }
    ],
    "publisher_topic": "Meta",
@@ -949,18 +949,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 27
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "bf8a5512d87639204928b91b130c7f9081b6a60dbba4706d0d0c6e3450ddd935",
    "evidence_hash": "8a16de68d2d5c21e5d2276bdf8dd8402ff58ab4be5ee107a5068e2fec3ede12e",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Microsoft",
@@ -1556,6 +1556,223 @@
   },
   {
    "entity": "",
+   "headline": "Open-Source AI and Open Models Reading List",
+   "date": "2026-09-11",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "interconnects.ai",
+     "url": "https://www.interconnects.ai/p/open-source-ai-reading-list",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 8
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "073ca67eaec54196fc48d73ba92c83b374130e95bd48bf033099a5a3ad893cb3",
+   "evidence_hash": "e06fb28679b7eb614996e36218aacb525453001e8991b078b96386bc4b0efcc4",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Anthropic",
+     "count": 3
+    },
+    {
+     "name": "Meta",
+     "count": 3
+    },
+    {
+     "name": "OpenAI",
+     "count": 2
+    },
+    {
+     "name": "Apple",
+     "count": 1
+    },
+    {
+     "name": "Perplexity",
+     "count": 1
+    },
+    {
+     "name": "Hugging Face",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "AI recursive self-improvement might not come so quickly after all",
+   "date": "2026-08-18",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "technologyreview.com",
+     "url": "https://www.technologyreview.com/2026/08/18/1142188/ai-recursive-self-improvement/",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 1
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "49a0ae5a4895f02db002c6cadd4514bdf06d6c105cd0fe8d1459ba7913d83fab",
+   "evidence_hash": "9b0ebff410765217dc433a306624409272fb2543b1a7a9276a76d7fd76d3b855",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Anthropic",
+     "count": 7
+    },
+    {
+     "name": "OpenAI",
+     "count": 2
+    },
+    {
+     "name": "Apple",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "OpenAI",
+   "headline": "David Sacks: OpenAI and Anthropic Don't Need Regulations to Pace Frontier Models",
+   "date": "2026-09-13",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "twitter.com",
+     "url": "https://twitter.com/DavidSacks/status/2098973625252708460",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "article not fetched (robots-disallowed)",
+   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Anthropic",
+   "headline": "Houthis used Claude Code to develop missile guidance software: Anthropic",
+   "date": "2026-09-11",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "clashreport.com",
+     "url": "https://clashreport.com/world/articles/houthis-used-claude-code-to-develop-missile-guidance-software-anthropic-s52mnx4pwpo",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 2
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "be3b98e8d56ea8079a50edeff60d852c8b0435349064cf13432d3336c90515d5",
+   "evidence_hash": "be2d8e4d8bf41197a4802754e12fca1b871533b2f859f0e7e11539b653fc5cf4",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Anthropic",
+     "count": 11
+    },
+    {
+     "name": "Google",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "Anthropic",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "Why are AI agents lying, cheating and coordinating?",
+   "date": "2026-09-11",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "yoshuabengio.org",
+     "url": "https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 16,
+    "total": 16
+   },
+   "label_evidence": "model read all 16 figure-sentence(s); 0 of 16 figure-sentence(s) matched a base cue",
+   "content_hash": "a6adfdc19d887d18cfbc500fb43101a3ed3676959125fcaedcfaeb1b86d43600",
+   "evidence_hash": "e9a3c4f878771bf5aed7721ede4c0621eb44c1f44114fe25d4082510290f922f",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 5
+    },
+    {
+     "name": "Hugging Face",
+     "count": 4
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
    "headline": "Everyone should slow down AI development except for me",
    "date": "Sun, 13 Sep 2026",
    "topic": "",
@@ -1570,17 +1787,50 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 110 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 110 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "30965a9726dccb2b2900902c2c84280687f912ba3aa79f5a035dd4ed13cf3b74",
    "evidence_hash": "2a26ed0a22f6f81499c5d0525e1265960cb0d211dedc373f16613eb5b06e2e67",
+   "label_source": "machine",
+   "rating": "ok",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "AgentsDock: An IDE designed for agentic AI research",
+   "date": "Sat, 12 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "agentsdock.net",
+     "url": "https://agentsdock.net/",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 9,
+    "total": 9
+   },
+   "label_evidence": "model read all 9 figure-sentence(s); 0 of 9 figure-sentence(s) matched a base cue",
+   "content_hash": "e4306c29d8a372ba9673fbaec8db081c8405e231fe78b264f611b9f28bb935db",
+   "evidence_hash": "89d1bc749ca1a2054a3fed9f23cb2d6af9c2150a400405a4e6dd05412179b540",
    "label_schema_version": 2,
    "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
    "mentions": [],
    "publisher_topic": "",
@@ -1602,18 +1852,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 127
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "0302a09fb9bf6e2896a22a045fbce4f01f3794f654ae89a924b12c1df612a511",
    "evidence_hash": "8ed516321deb738cda7595bd0ca4675bf0b64b12324d94357799d1189eb09398",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Google",
@@ -1643,18 +1893,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 3
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "dd0bfa6020cd7c6c0eaf3cbd236c479c9f54f5ac98133384719cbe9b78557adc",
    "evidence_hash": "54511835e77cf7b1a53d612dae6bedad895eafb442576b41b24048eb5b00e9e8",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Anthropic",
@@ -1677,245 +1927,6 @@
      "count": 1
     }
    ],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Nvidia",
-   "headline": "Nvidia is the central bank of AI",
-   "date": "2026-09-03",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "economist.com",
-     "url": "https://www.economist.com/interactive/briefing/2026/09/03/nvidia-is-the-central-bank-of-ai",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_evidence": "article not fetched (http-403)",
-   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "LLMs are real, AI is fake",
-   "date": "2026-09-12",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "pluralistic.net",
-     "url": "https://pluralistic.net/2026/09/12/god-in-the-box/",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 12
-   },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "5a2d5a636c1194ad8bd65657aeb80fae122e339907bfac557c7133bc4504ca80",
-   "evidence_hash": "e1e8092dc1d250be01a36d6a9955560c89a798e15184f447dfe6c83b6401dd77",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 9
-    },
-    {
-     "name": "Hugging Face",
-     "count": 6
-    },
-    {
-     "name": "Microsoft",
-     "count": 3
-    },
-    {
-     "name": "Amazon",
-     "count": 2
-    },
-    {
-     "name": "Apple",
-     "count": 1
-    },
-    {
-     "name": "Snap",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "The worst spam emails: iLands AI agent hustle",
-   "date": "2026-09-11",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "tedium.co",
-     "url": "https://tedium.co/2026/09/11/ilands-agents-email-spam-kaixin-tang/",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 3
-   },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "48267160b93ba4cf2f20e1f66dc4f1388038c809296e7e9f7750f07f5b779a70",
-   "evidence_hash": "69170372ec57834827423ae71abb2efdbf095350431d1c44dbb5f429d8b5f980",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Amazon",
-     "count": 2
-    },
-    {
-     "name": "FTC",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Bernie's AI bill proposes to sentence AI developers to 20 years in prison",
-   "date": "2026-09-11",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "twitter.com",
-     "url": "https://twitter.com/venturetwins/status/2098456905526211026",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_evidence": "article not fetched (robots-disallowed)",
-   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "OpenAI agents carried out an undisclosed attack on RubyGems",
-   "date": "2026-09-11",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "rubyhack.ai",
-     "url": "https://www.rubyhack.ai/",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 57
-   },
-   "label_schema_version": 2,
-   "content_hash": "b6e3ad353e15c126c1160da5665920ac978b674428ad48e4dafc92bc958fca2f",
-   "evidence_hash": "71bcc45b57e78a28a81cd79c610ea737286d4ef1614decc3fcfa2c54adcc265b",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 11
-    },
-    {
-     "name": "SEC",
-     "count": 3
-    },
-    {
-     "name": "Hugging Face",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Anthropic",
-   "headline": "Houthis used Anthropic to develop guided weapons",
-   "date": "2026-09-11",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "washingtonpost.com",
-     "url": "https://www.washingtonpost.com/technology/2026/09/11/rebels-used-anthropics-ai-bot-develop-guided-weapons-report-says/",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_evidence": "article not fetched (timeouterror)",
-   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [],
    "publisher_topic": "",
    "entity_basis": "headline"
   },
@@ -2789,6 +2800,81 @@
   },
   {
    "entity": "",
+   "headline": "New method enables AI for safety-critical situations",
+   "date": "Mon, 14 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "news.mit.edu",
+     "url": "https://news.mit.edu/2026/new-method-enables-ai-safety-critical-situations-0914",
+     "source_type": "press-office",
+     "source_tier": 5
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 8514 chars of article text",
+   "content_hash": "d7e002c7971efc32726d652d3d9cac8ca1e09e0107e2bb7a83ac8bc0679b6a74",
+   "evidence_hash": "b6f49b233d1074b0ac524f28664c91f8ef6e6f931d78fd0a665708c79e453661",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "HardFlow",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "MIT spinout turns plastic waste into resilient building materials",
+   "date": "Mon, 14 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "news.mit.edu",
+     "url": "https://news.mit.edu/2026/mit-spinout-turns-plastic-waste-into-resilient-building-materials-0914",
+     "source_type": "press-office",
+     "source_tier": 5
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 6,
+    "total": 6
+   },
+   "label_evidence": "model read all 6 figure-sentence(s); 1 of 6 figure-sentence(s) matched a base cue",
+   "content_hash": "44eddb8c53f64e74f19a1c513006ebbda1c57032addbe5035042928bac640565",
+   "evidence_hash": "7f3678b29aea4d2297be84147ab4146095f53b2df9224fcad3b3d32c4dc7937f",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "AJ Perez",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
    "headline": "Lifesaving Lincoln Laboratory device wins 2026 Excellence in Technology Transfer Award",
    "date": "Fri, 11 Sep 2026",
    "topic": "",
@@ -3052,81 +3138,6 @@
   },
   {
    "entity": "",
-   "headline": "How an MIT research project became a global programming language",
-   "date": "Mon, 31 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "news.mit.edu",
-     "url": "https://news.mit.edu/2026/how-mit-research-project-became-global-programming-language-0831",
-     "source_type": "press-office",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 7
-   },
-   "label_schema_version": 2,
-   "content_hash": "7493b662787020e572a635c6218f8af35717de6bb692360d56052941e6324947",
-   "evidence_hash": "e29ed15d88696e7f5419f0aa042550b47c0548cd90085c4b2d1c5c31dc5e8c4c",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "Viral Shah",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Looking beyond natural sequences",
-   "date": "Thu, 27 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "news.mit.edu",
-     "url": "https://news.mit.edu/2026/looking-beyond-natural-sequences-0827",
-     "source_type": "press-office",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 1,
-    "total": 1
-   },
-   "label_schema_version": 2,
-   "content_hash": "ab332d446271d3303da374f04d9edfeb6630e2f2a7b84b1679265ac0f338f396",
-   "evidence_hash": "a74e8cef0ed3ae95fb63f49f00daffe12939fd4d647e7c3e2967855c350a991e",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "MIT Department of Biology",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
    "headline": "Who sets the AI budget?",
    "date": "Wed, 05 Aug 2026",
    "topic": "",
@@ -3218,18 +3229,18 @@
      "source_tier": 4
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 16
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "650ad930c08787f905d5451e597756916cc6da9751a0ca26b54ae1725c684e63",
    "evidence_hash": "dd7eda6f12a2a2dc2af5fb044df18755e11a29e6ad15a41ebf53964e7b533ddf",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [
     {
      "name": "Nvidia",

@@ -1,10 +1,10 @@
 {
- "generated": "2026-09-13 05:26 UTC",
+ "generated": "2026-09-14 05:23 UTC",
  "window_days": 60,
  "counts": {
-  "total": 87,
+  "total": 86,
   "closed": 26,
-  "open_weights": 61
+  "open_weights": 60
  },
  "releases": [
   {
@@ -1038,18 +1038,6 @@
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Mistral",
-   "model": "Shieldstral-1.0-3B",
-   "id": "mistralai/Shieldstral-1.0-3B",
-   "date": "2026-07-16",
-   "url": "https://huggingface.co/mistralai/Shieldstral-1.0-3B",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "mistralai/Shieldstral-1.0-3B",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
   }
  ],
  "errors": [],
