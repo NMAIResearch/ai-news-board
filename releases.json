@@ -1,10 +1,10 @@
 {
- "generated": "2026-09-14 05:23 UTC",
+ "generated": "2026-09-15 05:30 UTC",
  "window_days": 60,
  "counts": {
-  "total": 86,
-  "closed": 26,
-  "open_weights": 60
+  "total": 84,
+  "closed": 25,
+  "open_weights": 59
  },
  "releases": [
   {
@@ -1013,30 +1013,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights published at huggingface.co/thinkingmachines/Inkling; downloadable and hashable",
    "hf_id": "thinkingmachines/Inkling",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Moonshot",
-   "model": "MoonshotAI: Kimi K3",
-   "id": "moonshotai/kimi-k3",
-   "date": "2026-07-16",
-   "url": "https://openrouter.ai/moonshotai/kimi-k3",
-   "context_length": 1048576,
-   "evidence": "open-weights",
-   "evidence_note": "weights published at huggingface.co/moonshotai/Kimi-K3; downloadable and hashable",
-   "hf_id": "moonshotai/Kimi-K3",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Meta",
-   "model": "Meta: Muse Spark 1.1",
-   "id": "meta/muse-spark-1.1",
-   "date": "2026-07-16",
-   "url": "https://openrouter.ai/meta/muse-spark-1.1",
-   "context_length": 1048576,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   }
  ],
