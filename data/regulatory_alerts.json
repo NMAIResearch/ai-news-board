@@ -277,7 +277,12 @@
     "actionable_trigger": "Monitor the public comment docket (FCC-26-XXX) for the closing date; assess whether the entity's existing RMD filings satisfy the proposed accuracy, completeness, and public-disclosure criteria; prepare internal compliance mapping for the proposed screening and expedited-removal procedures ahead of any final rule adoption.",
     "evaluation_method": "local-model",
     "model": "qwen3.8:latest",
-    "reviewed": false
+    "reviewed": false,
+    "assessment_withdrawal": {
+      "date": "2026-09-15",
+      "reason": "Withdrawn pending reassessment: the actionable trigger contains FCC-26-XXX despite an available source identifier; the original assessment is retained.",
+      "review_type": "diagnostic correction; not human legal acceptance"
+    }
   },
   {
     "id": "alert_1789016631_eb589b",
@@ -337,7 +342,12 @@
     "actionable_trigger": "Monitor the SEC comment period and final approval timeline for proposed FINRA Rule 2166 and the amendments to Rules 2165 and 4512; assess whether any downstream compliance obligations intersect with AI-assisted fraud-detection or customer-data-handling systems within the organisation's operational scope.",
     "evaluation_method": "local-model",
     "model": "qwen3.8:latest",
-    "reviewed": false
+    "reviewed": false,
+    "assessment_withdrawal": {
+      "date": "2026-09-15",
+      "reason": "Withdrawn pending reassessment: a proposed permissive FINRA measure was flagged as a current binding duty; the original assessment is retained.",
+      "review_type": "diagnostic correction; not human legal acceptance"
+    }
   },
   {
     "id": "alert_1788670850_e435ec",

@@ -65,6 +65,34 @@ ignored by Git and are not published as board content.
 
 ### Sovereign Watch provenance states
 
+The September intake repair records per-source fetch and parse status. An unavailable feed,
+malformed response, capped pagination, pending assessment or undelivered duty notification makes
+the sweep incomplete and exits non-zero. The board shows the last recorded sweep state; a timer
+alone is not evidence of coverage. The FTC RSS endpoint currently denies some direct requests.
+That failure remains visible rather than being interpreted as no regulatory changes.
+
+RSS and Atom intake examines every returned entry. Federal Register pagination covers a declared
+30-day window, capped at five pages; reaching that cap is incomplete coverage. The persisted queue
+survives feed rollover and failed evaluations. Each pass checks at most 60 documents and attempts
+at most six model evaluations within a nine-minute document-processing budget. The source-fetch
+stage has its own request timeouts. This is bounded monitoring, not a complete historical archive.
+
+Assessments use captured document text. Raw captures and extracted text stay in the ignored local
+`data/sovereign_sources/` cache; public records carry source hashes, an evidence quote, document
+status and AI relevance. An inaccessible or over-limit document stays pending. Quote presence is
+a mechanical support check and does not establish the legal interpretation. Older assessments
+are labelled as historical snippet assessments. Withdrawn assessments retain their original fields
+and reason; their actionable trigger and priority are suppressed.
+
+The local watcher hashes the actual `clause_map.csv` and `source_register.csv` pack files. Local
+pack watching detects local edits; it does not itself poll every jurisdiction's legislation.
+
+Alerts are saved before the processing checkpoint. Stable version IDs make interrupted writes
+retryable without duplicate alert rows. A persisted notification outbox retries failed delivery.
+Delivery is at least once: a crash after notification delivery but before its receipt is saved may
+repeat that notification. The sweep and daily publisher share one writer lock. Full quality
+benchmarking and live model validation remain separate from these engineering checks.
+
 Schema-versioned Sovereign Watch records keep these fields separate:
 
 - `source_queue_priority`: processing order only. It is not a legal or substantive finding.

@@ -48,6 +48,9 @@ VALID_MODEL_RESULT = {
     "denominator_disclosed": "n/a",
     "priority_score": 5,
     "actionable_trigger": "Review the fixture.",
+    "document_status": "other",
+    "ai_relevance": "relevant",
+    "evidence_quote": "Fixture source text for the captured document.",
 }
 
 
@@ -56,6 +59,8 @@ def sweep_with_model_result(result):
     with mock.patch.object(sovereign_watch, "REGULATORY_TARGETS", [TARGET]), \
          mock.patch.object(sovereign_watch, "fetch_url_text", return_value=FEED), \
          mock.patch.object(sovereign_watch, "call_local_model", return_value=result), \
+         mock.patch.object(sovereign_watch, "capture_source", return_value=(
+             "Fixture source text for the captured document.", "a" * 64, "b" * 64)), \
          mock.patch.object(
              sovereign_watch,
              "send_desktop_notification",
@@ -129,21 +134,22 @@ class SovereignProvenanceTests(unittest.TestCase):
         self.assertEqual(alert["evaluation_method"], "unassessed")
         self.assertEqual(notifications, [])
 
-    def test_04_evaluated_p1_with_duty_notifies(self):
+    def test_04_evaluated_p1_with_duty_waits_for_durable_commit(self):
         result = dict(
             VALID_MODEL_RESULT,
             priority_score=1,
             is_operator_duty_shift=True,
             duty_type="transparency",
+            document_status="binding",
         )
         alert, notifications = sweep_with_model_result(result)
         self.assertTrue(board_checks.regulatory_notification_eligible(alert))
-        self.assertEqual(len(notifications), 1)
+        self.assertEqual(notifications, [])
 
     def test_05_evaluated_p1_without_duty_does_not_notify(self):
         result = dict(VALID_MODEL_RESULT, priority_score=1)
         alert, notifications = sweep_with_model_result(result)
-        self.assertEqual(board_checks.evaluated_alert_priority(alert), 1)
+        self.assertIsNone(board_checks.evaluated_alert_priority(alert))
         self.assertFalse(board_checks.regulatory_notification_eligible(alert))
         self.assertEqual(notifications, [])
 

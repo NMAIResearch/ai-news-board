@@ -3,6 +3,7 @@
 
 import json
 import pathlib
+import re
 
 from url_identity import canonical_url
 
@@ -126,6 +127,10 @@ def has_valid_alert_evaluation(alert):
     """Return whether an alert carries a complete assessed-priority provenance chain."""
     if alert.get("alert_schema_version") != ALERT_SCHEMA_VERSION:
         return False
+    if alert.get("assessment_withdrawal"):
+        return False
+    if alert.get("assessment_version") == 3 and not valid_source_assessment(alert):
+        return False
     method = alert.get("evaluation_method")
     priority = alert.get("substantive_priority")
     if method not in EVALUATED_ALERT_METHODS or not _valid_alert_priority(priority):
@@ -135,6 +140,31 @@ def has_valid_alert_evaluation(alert):
     if method == "administrative-noise-rule":
         return alert.get("model") is None
     return alert.get("reviewed") is True
+
+
+def valid_source_assessment(alert):
+    """Check the new assessment contract; source support remains a separate review."""
+    if not _valid_alert_priority(alert.get("substantive_priority")):
+        return False
+    if any(not isinstance(alert.get(k), str) or not re.fullmatch(r"[0-9a-f]{64}", alert[k])
+           for k in ("source_sha256", "source_text_sha256")):
+        return False
+    if alert.get("document_status") not in {"binding", "proposed", "consultation", "other"}:
+        return False
+    relevance = alert.get("ai_relevance")
+    if relevance not in {"relevant", "not_relevant", "uncertain"}:
+        return False
+    quote = alert.get("evidence_quote")
+    if not isinstance(quote, str) or len(quote.strip()) < 20:
+        return False
+    duty = alert.get("is_operator_duty_shift")
+    if duty and (alert.get("document_status") != "binding" or relevance != "relevant"):
+        return False
+    if alert.get("substantive_priority") == 1 and not duty:
+        return False
+    if relevance != "relevant" and alert.get("substantive_priority", 5) < 4:
+        return False
+    return True
 
 
 def evaluated_alert_priority(alert):
@@ -177,6 +207,11 @@ def validate_regulatory_alerts(alerts):
         if method not in allowed_methods:
             errors.append(f"{label} has invalid or missing evaluation method")
             continue
+        if alert.get("assessment_version") == 3 and method == "local-model" and not valid_source_assessment(alert):
+            errors.append(f"{label} has invalid captured-source assessment metadata")
+        withdrawal = alert.get("assessment_withdrawal")
+        if withdrawal is not None and (not isinstance(withdrawal, dict) or not withdrawal.get("reason") or not withdrawal.get("date")):
+            errors.append(f"{label} has invalid assessment withdrawal")
 
         substantive = alert.get("substantive_priority")
         reviewed = alert.get("reviewed")

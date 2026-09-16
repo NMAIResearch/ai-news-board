@@ -18,6 +18,7 @@ import urllib.request
 from typing import Iterable
 
 from board_checks import BoardIntegrityError, validate_regulatory_alerts as validate_regulatory_alert_records
+from sovereign_intake import writer_lock
 
 
 REPO = pathlib.Path(__file__).resolve().parent
@@ -238,7 +239,8 @@ def main() -> int:
         if args.check_only:
             check_only()
         else:
-            publish()
+            with writer_lock(REPO / "logs" / "board-writer.lock"):
+                publish()
     return 0
 
 

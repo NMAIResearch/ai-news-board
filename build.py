@@ -810,7 +810,7 @@ def group_by_day(items, registry, plain, mk, tmap, ev=None):
     return f'<div class="feedgrid">{"".join(out)}</div>'
 
 
-def sovereign_radar_tab(alerts=None):
+def sovereign_radar_tab(alerts=None, health=None):
     reg_alerts_path = os.path.join(HERE, "data", "regulatory_alerts.json")
 
     if alerts is None:
@@ -826,7 +826,11 @@ def sovereign_radar_tab(alerts=None):
     for a in alerts:
         method = a.get("evaluation_method")
         priority = evaluated_alert_priority(a)
-        if method == "legacy-unassessed":
+        withdrawal = a.get("assessment_withdrawal")
+        if withdrawal:
+            badge_bg, badge_lbl = "#64748b", "Assessment withdrawn"
+            priority_key = "unassessed"
+        elif method == "legacy-unassessed":
             badge_bg, badge_lbl = "#64748b", "Legacy unassessed"
             priority_key = "unassessed"
         elif priority is None:
@@ -862,6 +866,8 @@ def sovereign_radar_tab(alerts=None):
 
         model = a.get("model")
         method_text = f"{method}: {model}" if model else method
+        if method == "local-model" and a.get("assessment_version") != 3:
+            method_text += "; historical snippet assessment, full source not captured"
         if a.get("reviewed") is True:
             review_text = "human-reviewed"
         elif a.get("reviewed") is False:
@@ -876,16 +882,17 @@ def sovereign_radar_tab(alerts=None):
                 f'Legacy raw priority: P{esc(a.get("legacy_raw_priority"))}. '
                 f'Evaluation provenance was not stored.</div>'
             )
+        withdrawal_html = (f'<div style="margin-top:6px"><strong>Withdrawn:</strong> {esc(withdrawal["reason"])}</div>' if withdrawal else "")
         method_html = (
             f'<div style="font-size:11px;color:{SLATE};margin-top:7px">'
             f'Method: {esc(method_text)}. Status: {esc(review_text)}. {esc(queue_text)}.</div>'
-            f'{legacy_text}'
+            f'{legacy_text}{withdrawal_html}'
         )
 
         stat_ref = a.get("statutory_reference")
         stat_ref_html = f'<div style="font-size:12px;margin:6px 0;font-family:monospace;background:{ALT};padding:3px 8px;border-radius:4px;border:1px solid {LINE};color:{NAVY}"><strong>Statutory basis:</strong> {esc(stat_ref)}</div>' if stat_ref else ""
 
-        action_trigger = a.get("actionable_trigger")
+        action_trigger = a.get("actionable_trigger") if not withdrawal else None
         trigger_html = f'<div style="font-size:12px;color:{SLATE};margin-top:6px;padding-top:6px;border-top:1px dashed {LINE}"><strong>Actionable trigger:</strong> {esc(action_trigger)}</div>' if action_trigger else ""
 
         dur_html = f'<span style="font-size:11px;color:#94a3b8;margin-left:auto">{a.get("eval_duration_sec", 0)}s</span>' if a.get("eval_duration_sec") else ""
@@ -901,21 +908,37 @@ def sovereign_radar_tab(alerts=None):
             f'</div>'
             f'<a href="{esc(a.get("url","#"))}" target="_blank" rel="noopener" style="font-size:15px;font-weight:600;color:{NAVY};text-decoration:none;display:block;margin-bottom:6px">{esc(a.get("title",""))} &#x2197;</a>'
             f'{stat_ref_html}'
-            f'<div style="font-size:13px;color:{BODY};line-height:1.5">{esc(a.get("summary_finding", a.get("summary","")))}</div>'
+            f'<div style="font-size:13px;color:{BODY};line-height:1.5">{"Preserved withdrawn assessment: " if withdrawal else ""}{esc(a.get("summary_finding", a.get("summary","")))}</div>'
             f'{method_html}'
             f'{trigger_html}'
             f'</div>'
         )
         cards.append(card)
 
+    if health is None:
+        state_path = os.path.join(HERE, "data", "surveillance_store.json")
+        if os.path.isfile(state_path):
+            with open(state_path, encoding="utf-8") as handle:
+                health = json.load(handle)
+        else:
+            health = {}
+    health_state = health.get("last_run_status", "unverified legacy run")
+    progress = health.get("last_pass", {})
+    health_text = (
+        f"Last sweep: {health.get('last_run') or 'not recorded'}; status: {health_state}. "
+        f"Failed or limited sources: {len(progress.get('unhealthy_sources', [])) if 'last_pass' in health else 'unverified'}; "
+        f"pending evaluations: {progress.get('pending_evaluations', 'unverified')}; "
+        f"deferred document checks: {progress.get('documents_deferred', 'unverified')}; "
+        f"pending notifications: {progress.get('pending_notifications', 'unverified')}."
+    )
     summary_banner = (
         f'<div style="border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:8px;padding:14px 18px;margin-bottom:20px;background:{PAPER};box-shadow:{SHADOW}">'
         f'<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px">'
         f'<div><h3 style="margin:0 0 4px;font-size:17px;color:{NAVY}">Sovereign Watch: Global AI Regulatory Radar</h3>'
-        f'<div style="font-size:13px;color:{SLATE}">Daily public sovereign gazette records. Local jurisdiction-pack changes are monitored privately and do not enter this public bank. Source queue order, evaluated priority and human review are displayed separately. Machine output is not a legal finding.</div></div>'
+        f'<div style="font-size:13px;color:{SLATE}">Daily public sovereign gazette records. Local jurisdiction-pack changes are monitored privately and do not enter this public bank. Source queue order, evaluated priority and human review are displayed separately. Machine output is not a legal finding. Older assessment priorities classify instrument type; version 3 priorities also require AI relevance.</div><div style="margin-top:8px;font-size:13px">{esc(health_text)}</div></div>'
         f'<div style="display:flex;gap:8px;font-size:12px">'
         f'<span style="padding:4px 8px;background:var(--pill-bg);border-radius:4px;color:var(--pill-fg)"><strong>{len(alerts)}</strong> records</span>'
-        f'<span style="padding:4px 8px;background:var(--ok-bg);border-radius:4px;color:var(--ok-fg)"><strong>06:00</strong> daily pass</span>'
+        f'<span style="padding:4px 8px;background:var(--ok-bg);border-radius:4px;color:var(--ok-fg)"><strong>06:00</strong> scheduled pass</span>'
         f'</div></div></div>'
     )
 
@@ -1210,8 +1233,8 @@ def main():
             _stale_days = None
             try:
                 _stale_days = (_today - _dt.date.fromisoformat(_lv)).days
-            except Exception:
-                pass
+            except (TypeError, ValueError):
+                _stale_days = None
             _stale = _stale_days is not None and _stale_days > 90
             if st == "target_delayed":
                 badge_bg = "#b91c1c"

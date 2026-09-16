@@ -115,6 +115,12 @@ a market closed on a day has no later price. Reporting the spread is correct.
 
 ## Unattended public refresh boundary
 
+Sovereign Watch records incomplete source coverage explicitly. Its captured-source assessments,
+pending work and notification outbox are committed through recoverable state transitions. The
+sweep and publisher share `logs/board-writer.lock`. A publisher that encounters an active sweep
+stops; it does not race a writer or alter the timer. The full source cache remains local and ignored
+by Git. The declared lookback and per-pass limits are documented in README.md.
+
 `daily_publish.py` may automate intake, extraction, deterministic labels, local-model labels,
 entity resolution, source relationships, article-linked primary-source extraction, market data,
 model releases, the archive and the static build. It does not run a general paper or dataset

@@ -2,6 +2,19 @@
 
 Dated, descriptive, newest first. Method changes and defects found, not every commit.
 
+## 2026-09-15
+
+Sovereign Watch records source failures and incomplete coverage, watches the actual jurisdiction
+pack filenames, and retains pending work across failed evaluations and storage interruptions.
+Document versions use captured text rather than title-only identity. Source text capture, quoted
+support, document status and AI relevance are required for new machine assessments. The EU feed
+uses the working RSS endpoint. FTC access failures remain explicit.
+
+The sweep and publisher share a writer lock. Stable alert IDs and a notification outbox support
+recovery; notification delivery is at least once. The board displays sweep health, labels older
+snippet assessments, and preserves two withdrawn assessments with reasons. These changes do not
+establish legal accuracy or complete historical coverage.
+
 ## 2026-08-31
 
 **The Harnesses surface now covers the independent public landscape.** Four sources, N = 4, stay
