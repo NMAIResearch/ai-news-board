@@ -1,12 +1,36 @@
 {
- "generated": "2026-09-15 05:30 UTC",
+ "generated": "2026-09-16 05:29 UTC",
  "window_days": 60,
  "counts": {
-  "total": 84,
+  "total": 83,
   "closed": 25,
-  "open_weights": 59
+  "open_weights": 58
  },
  "releases": [
+  {
+   "lab": "Nvidia",
+   "model": "c-foundationstereo-s",
+   "id": "nvidia/c-foundationstereo-s",
+   "date": "2026-09-15",
+   "url": "https://huggingface.co/nvidia/c-foundationstereo-s",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/c-foundationstereo-s",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "foundationpose",
+   "id": "nvidia/foundationpose",
+   "date": "2026-09-15",
+   "url": "https://huggingface.co/nvidia/foundationpose",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/foundationpose",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
   {
    "lab": "Inference Net",
    "model": "Inference.net: Schematron V2 Turbo",
@@ -269,30 +293,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "nvidia/GLM-5.3-Flash-NVFP4",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "Nemotron-3-Labs-Ultra-Math-RL",
-   "id": "nvidia/Nemotron-3-Labs-Ultra-Math-RL",
-   "date": "2026-09-02",
-   "url": "https://huggingface.co/nvidia/Nemotron-3-Labs-Ultra-Math-RL",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/Nemotron-3-Labs-Ultra-Math-RL",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "Nemotron-3-Labs-Ultra-Math-SFT",
-   "id": "nvidia/Nemotron-3-Labs-Ultra-Math-SFT",
-   "date": "2026-09-02",
-   "url": "https://huggingface.co/nvidia/Nemotron-3-Labs-Ultra-Math-SFT",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/Nemotron-3-Labs-Ultra-Math-SFT",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
@@ -933,7 +933,7 @@
   },
   {
    "lab": "Anthropic",
-   "model": "Claude Opus 5",
+   "model": "Anthropic: Claude Opus 5",
    "id": "anthropic/claude-opus-5",
    "date": "2026-07-24",
    "url": "https://openrouter.ai/anthropic/claude-opus-5",
@@ -1001,18 +1001,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights published at huggingface.co/meituan-longcat/LongCat-2.0; downloadable and hashable",
    "hf_id": "meituan-longcat/LongCat-2.0",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Thinking Machines",
-   "model": "Thinking Machines: Inkling",
-   "id": "thinkingmachines/inkling",
-   "date": "2026-07-17",
-   "url": "https://openrouter.ai/thinkingmachines/inkling",
-   "context_length": 1048576,
-   "evidence": "open-weights",
-   "evidence_note": "weights published at huggingface.co/thinkingmachines/Inkling; downloadable and hashable",
-   "hf_id": "thinkingmachines/Inkling",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   }
  ],

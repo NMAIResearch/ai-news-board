@@ -73,9 +73,1801 @@
     "54b1b80026c38a18cbc27a2657d9270dca2fb517e6a904f2bf2aee3960aebc45": "2026-09-13T05:01:31.276246+00:00",
     "3f5b18c5361a116e8cda95268bda629c953202b3169b944325053a2129c242c3": "2026-09-13T05:01:31.276250+00:00"
   },
-  "last_run": "2026-09-15T05:00:04.778582+00:00",
-  "source_states": {},
+  "last_run": "2026-09-16T05:06:24.436295+00:00",
+  "source_states": {
+    "us_fed_reg_ai": {
+      "checked_at": "2026-09-16T05:00:02.102175+00:00",
+      "status": "ok",
+      "entries": 40,
+      "queued": 29,
+      "window_days": 30,
+      "last_success": "2026-09-16T05:00:02.102175+00:00"
+    },
+    "us_fed_reg_eo": {
+      "checked_at": "2026-09-16T05:00:03.117160+00:00",
+      "status": "ok",
+      "entries": 40,
+      "queued": 25,
+      "window_days": 30,
+      "last_success": "2026-09-16T05:00:03.117160+00:00"
+    },
+    "eu_ai_office": {
+      "checked_at": "2026-09-16T05:00:03.759604+00:00",
+      "status": "ok",
+      "entries": 10,
+      "queued": 8,
+      "window_days": null,
+      "last_success": "2026-09-16T05:00:03.759604+00:00"
+    },
+    "uk_cma_news": {
+      "checked_at": "2026-09-16T05:00:03.846904+00:00",
+      "status": "ok",
+      "entries": 20,
+      "queued": 0,
+      "window_days": null,
+      "last_success": "2026-09-16T05:00:03.846904+00:00"
+    },
+    "uk_ofgem_queue": {
+      "checked_at": "2026-09-16T05:00:03.993862+00:00",
+      "status": "ok",
+      "entries": 20,
+      "queued": 1,
+      "window_days": null,
+      "last_success": "2026-09-16T05:00:03.993862+00:00"
+    },
+    "nist_ai_notices": {
+      "checked_at": "2026-09-16T05:00:04.183512+00:00",
+      "status": "ok",
+      "entries": 40,
+      "queued": 10,
+      "window_days": null,
+      "last_success": "2026-09-16T05:00:04.183512+00:00"
+    },
+    "sec_press_releases": {
+      "checked_at": "2026-09-16T05:00:04.468144+00:00",
+      "status": "ok",
+      "entries": 25,
+      "queued": 1,
+      "window_days": null,
+      "last_success": "2026-09-16T05:00:04.468144+00:00"
+    },
+    "ftc_press_releases": {
+      "checked_at": "2026-09-16T05:00:04.557881+00:00",
+      "status": "failed",
+      "entries": 0,
+      "queued": 0,
+      "window_days": null,
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    }
+  },
   "jurisdiction_hashes": {
-    "local_input:f7075271d52fac100aa3e03e6e107cefd723bdcb25b3575086fa6c36bb059b2b": "8db18a0bb720f59d51050a05150f1db9750fa8a677fc68a397b5e0b963bbf62b"
-  }
+    "local_input:f7075271d52fac100aa3e03e6e107cefd723bdcb25b3575086fa6c36bb059b2b": "8db18a0bb720f59d51050a05150f1db9750fa8a677fc68a397b5e0b963bbf62b",
+    "local_input:4677747df04968908f992d17bd2cb755c3961c28fc47f3fcc69dcd6899efc792": "fc0fc82b3381975dcc6a3b87341ca7473f68c34694949ed414c35fb8161b9752",
+    "local_input:504aaf1f221d6b4fe504cca2261958e2374f9fe0b35c6dfccb2610a8e143aeb7": "dd7f5c8555ec5f5ce22a3f5dba4d32f78e43591ce6cd464e1b02076e579f593c",
+    "local_input:25f6c8d3843431cae29653493f264522346dc51a83ca41df0d6e2186a803a43a": "b853c2439663f211b18aa419fd69a6c0a32f2a1794868b272fa4751ea9b7172a",
+    "local_input:d1514bcf6f0b2bbe00dd0a1fb53c4918d9f174834cbf55deba34c351304ca508": "22457105a13498716b296a8e3a3b137a25ddcc963893a905ad464cda9d8f1ba3",
+    "local_input:6c797c778af1e8a0f29364d2bbeddab6b3399dc94e7d4772ea62cd8cc2e42009": "16912f15352ecd819d518b3e61f6c4821b43bfd6fb9713eb888948f4d7c36d3b",
+    "local_input:8eaed87c2592b7c41d9711f11bb7d29dcc33e08e8bcfb48b44ce13872958d2e9": "90226f025cea4f7f2c118678d61573c7d750308cf19fd6fe04045fc75c30b817",
+    "local_input:5004087468224cb0863be7a755ddb891fa28fa84415cf9a209aa9112d3a02dfe": "8f003884c09addfa82cc1280a16b1679a7972d8cd07525368f6aad132e00c274",
+    "local_input:a69d12cd2f6b216103918ca2185c821aa1bb160287526c8d1412c7ed15c3dfb8": "80a35871e61019e160743a725cdc345b174e057cd0b5978da6ee992fce90e367",
+    "local_input:91062672daa6558759bc97eae96ac8e9d3870ec78a416619e881d8c960d350bb": "29e15464fc14556b52e5fefae9073fec1ac0e4286bdd6281e09888f5a2bb8a7c",
+    "local_input:ed6d6f56918a2e6765f939ed018d96f8b4ec8915191ed83ea0408b682b766e73": "f50a89de2451bb927b589dfb3578f3c68c24bce0fea1d69be2821e9f8f8389af",
+    "local_input:5ec20371bfe0fd4ba77f34eed79ed8a099008706f96e5ab824f5c41877df8dba": "8dabdb1e92c266fc7c0da8806d6ffe9ccc74e0ce4e5e4ee944d9e4d51c530304",
+    "local_input:e9b4bf1db990abe241e783c6c7f4017872ed1825c650102b9a1276874f59e40d": "007e10d24024095d5838a9fed09027c253773e5e9c1896b59026fd910c233ccd",
+    "local_input:f3616109dc90ca3136ed3fecb628652d8c3beb90af2346909525fa1eaf9303a1": "80a4f1556eb5cc20ea0d976e81118755f5384b037a4daf5ed89698f00a2194ea",
+    "local_input:4f99bc15898009b36c1babcf43c9eaa3779ec6aad591653bf38b71c7a686d7d3": "8345c396f5189bad9ab92dcc760ed5449e4cbf6a7e1a0bd74fa740ca033dc16b",
+    "local_input:9019b404c4d7c7224608d92ec95c7dff10f7cff17d827d8270cd928e33090809": "5086ae9068a5c258fe6416c67aee05b3cfe0f86ece7005ebf96ba64fe5652cec",
+    "local_input:aad59a93a3d8488b83108187cee9d38473f02124ca972e6cbb8be4795a7a5a8e": "cb4b03d9a2621ea2fff2aa7b2cc875f294784df7b8e5c0fd45efe1bf93c73fa2",
+    "local_input:9f0c833da7089a8335c03931159caaafa43f9809417203699edf0efafed9b148": "a6b011c3f183f9373de12bc90e218d3af99612a15353b2bc729ea8a727e9f1e2",
+    "local_input:72b2fad4a3257f4926ca87fe60bbe7d2020457cfa88ec396d13f3b547a2f3d49": "1a9c6e8b13f68eb0ff888bec9a8ef1ce6588a2fe89bbac84534b80fe2b3cc4b8",
+    "local_input:79dbd1de0669c32ae94cccf7b79a9035e461c30d7c520c62f8650e8f8a43399d": "5ffde97292620b2d4cae01162f12dc81303c86c91429d1455809762968628e04",
+    "local_input:f4582e8b97bd6766a1a2117d15c7f5a4ba7320bfb58a60e7f94668ccb8574a84": "c2c8351fc9a1c90358070442c75a0655b5fc470cf24004de3a4d92610dbc6ee5",
+    "local_input:eac44dbb84f3d3149e10c5b52606f3f903e8940200de28d898382b119a0e24b3": "b5b11d2d6507bb1241dae79a3a6007117f921386aca1222ded3672cff98446f2",
+    "local_input:10f988624e2f44c51e8a14e4700363646e281c16d77ea56c74b8863f63670324": "a79b7cd9a8163a38603c36621eb8a5b6d11722131c58dd6f1576ee77a64ef0a3",
+    "local_input:205b04ec720c98c4fc4d95458906b42adee299b463265032a73e0d2af33afeb8": "76c5e715bcdaf621fa80b943aace3d1c4cbd1a644c4c4c016d4ed181b47195bf",
+    "local_input:60e6469e1ca7408b4a80b5079bcd90068daa5cc11e3b892295d3a391e7124a5b": "a536cec17bafd37fb4ec68ed7862844d0ed7e9238e839837b56991779dd2cc78",
+    "local_input:6c1712ebde7f5183d3a4a2f06c45e840be89f496c15afeccb0a1e58565e007a9": "ef821c91f60067deaa9dfa0f1483daf5614da7a6287a055d0e7b46306c1b8f42",
+    "local_input:7c5607247d5e516d8d9b31e5d8c621c9dbc59f22377ceab84552ad3242333c83": "99a04548beb8e02e91d5298520a72e59ec1b1fa8314c77759e3202cba25e06d4",
+    "local_input:6861916cd3047620b96f7edf8bdba1208e7adea2001b6952a581816475294477": "e6b40c10eb51fab8c5aeaafaf2c80f3137915f40c0839885dfd275f32fabc5e8",
+    "local_input:b4d33e9eb4e9819ad461d5da8599a43bc0cbb7f9be1b10b404af6f081a04032a": "2b65cc22c29fb51d38c3ad1027ffd33d662998a816c1815bc9d98c4c4f0ea1b8",
+    "local_input:78009178dda5bb56634545f3ca12f4a81c7270583a5c24b2ba5ab096b542fd8a": "275a1eab61b81ba93452ba4ab705966799a64103bf8cd2e963a9402b481c46a3",
+    "local_input:848e711e93e2da6add7f3af92ea9986433f184511ff44050db4cdf4766e9ad2b": "09397c67748bf06dd53456287b87064aea2bd4bea85a3a80149dbe99a7466f31",
+    "local_input:7cdfddd404ac4ddce7e89820ee12dacadaaebe212d27b53b5e046839feb2cd6e": "095d108df956f10a2a287afb78cb055f6142bd018fa3eb2dbaa702b906e5bc38",
+    "local_input:659c0475ec4082fd3ddaf30287996a263513add8e708439c9fa580d8ce3a50e4": "a09235c968c5ab634188da3a73e6128171f350b85fbfbcb4ceccd6d7e8dc725d",
+    "local_input:9f312f87db62e0bfda35959d792d347fbbdd06e3bc3d622828c9267f9bd190a4": "a56e1e4a7df7caa4ec7747f402529f17060fa33305b659b672f01e354aae0ba4",
+    "local_input:08034b680287bc247741ea2f30db4aaca226aa0a94d5e69ad80d4bb49b029041": "f46fc51d3719ea8e15fdcf804f33deed1249b8e8ed26aed22a868b42dbe7b276",
+    "local_input:35e55fd3d840e68e52903a0441ea47ce6682a67bc6b89f95696756831f65982b": "aaaeb077d1febc186f003b435a799c6e2055515774e2a5d2e7903c17278e68b1",
+    "local_input:bead9a00f0d445f6141535b1bcb4ec432b0ff32a2f83a63a56f4ccf224a3dbce": "15d18b27809ca9eb1f6bae236dd37c282b5a83f13051ea5f25696d80c31daca4",
+    "local_input:1ae8ddf5285da12325fb877ad6b2fa419495ba5968c2e083c631c7b29055d383": "8a193dcd6d8a60f420b60988ee23412631e72c37c2eed219eb2615787a281eb8",
+    "local_input:2f0d403e1463486039fd68716d177490c7e3f29c36f52ce0bc82f4ec797b1f37": "52ac76883abaa3ca17b63d22c2a9348028847a717f845f26fe818aababee33b5",
+    "local_input:4d1fa74248d45292197dbf1c4a5b400a4e45f8b7043efd601013ae284148c3ec": "aa21ad31fba577d276da9206b2fd3a5e97f969dab9a35c1284886c05f68cfd9d",
+    "local_input:ecd4795a69f6a9725c504801fab69b9a690a7104f30c313aae5e9763236fee44": "b92f4685e551352c640ed4109209ae374ebcc7d37fb89429817fa3e87afa515e",
+    "local_input:a86120e2a731d88db3c8e868f885e383830cdcfccf813e33a61b7434a7e99f19": "3f2cbb94ed7aef34e18f6eaf503d3501a3dfb305b0d3db09937828cd999a2167",
+    "local_input:c6159dca982127742f885420727b261bd3ee047aeba25bf8d8c19845252d98b7": "1193686f5b7f4ac991db63473bd052cc7ca70cbc66a6fe5d46cd7282cd3a8fef",
+    "local_input:dfcaeb92c4487d40c486b5b6f67207153dc7fe252ca6cd3a7f8731e4c0573dae": "0788c8e81c852f4c668cc21a082d202980fdc122494b9e9a47f4d70bf9c9b110",
+    "local_input:8fdab108a5cf042ae41fbdeb594e33412d39e5f37ad3d916bee4bc28acce1b0f": "7d1241574b78088f640c511c4115bb7a6e8300fc6a33e590650d1763716b0a93",
+    "local_input:3bafaa950bd4991e83645873450b3b875b0a12587f1fb40abcb3411aee5a7ff2": "a706aa1b36eacd2f0c0daaac2c04dba3e418cc0b76da9d3badfea30c5df37b79",
+    "local_input:c64c4b89e5e323d3df4cbdc0614fb058a2138afc3e40f2e7c00a6bf09cee211c": "058cca685d89fa14fc4e222c9ddde2bec2138b4c590b92d12976005485b141ca",
+    "local_input:ea47999ccdff3d03063e9370bdf01c21e609d445488c9d319d066f1c05252140": "edfbdd2d638a787c6d9c0508cbc2ecee74d0451c7a26967292b16c266e65a355",
+    "local_input:0ef614988f7ed2a060f257420aff17e630acf9cabaf16435e4f6ef54111c0a4f": "2c85dd60ebd50de89d46fe57e4fcf1571b66418728da8410ac1a3e2dd36884bd",
+    "local_input:b17ce975f7e13750cbf349fe25ee4dfa3226e31c2869890b8f993930cc97362f": "faa9a3efb30bb28e39cd12f910b49c5fe80fff7c101d10483d585b3a17b64517",
+    "local_input:4ab76367075d0ad05b462813f9687f558071e7fe61cd326263faf39457a32902": "9a410b8e619f36c15b429795333f607ae34d3f6141d05b08f8230217d366ac3e",
+    "local_input:7321def7219e90be62e037bff296f4c24538c293ce911a2d62337a8eb2a69917": "12af22efd6fe40b83d600da39c85da8e38c9712ad8fb73d19e290566abe8c83e",
+    "local_input:32e22378dc5ef53b61c0208a0903e679d837cdaa64f624699bc80f4e23d044ac": "93a6c88350dc287c79e5e22e0706d89384d6b813d63383118eb6bd8f18af9423",
+    "local_input:93aa5d5f558a505e6f5c44ac7c6167f1ad2d185841d757f096ad71959b66d488": "848db13f0a6287daf753abbf64f8ecb3db1143b6d5202790c360b06e7cf4791a",
+    "local_input:872d5a3508dbb2df37f881898181812981d6079590f262a3ab57538fcbdae6f0": "30f356574cd409b17e9b2ac7288b0e8e53a21b35f9c440f097fdf38652a4fab5",
+    "local_input:bb6fd63c102977c46f61fd0eee3c574d16dc29e9f75b343eb54e3d6983b4a7ff": "4dfc53526e312c5e3218623abfdeae4c44ef8c7ea9b6a6087a9a3f48e0f9f94f",
+    "local_input:226d46c968c237e5a5d6d6bf8ce0d2ff325b0b8b17068f0e6877e93d1dc36a93": "c7cd682a646a52d2cb96996aabb5493da73fb35eafd9eb74d7945bd0ecb35b28",
+    "local_input:0ffb8d96a2df9b4bf12948d218233ac6c2cc761e1beaf1bbf9a9b9f3715f3934": "12deb79287255f977e37cc068adae37f65d2345c452d68e065f73f45a578cfd6",
+    "local_input:215c09b83fcfad190d3628c22fdb1acc31f1d7a02ffe08b50a64e5dd4613f756": "4d59e54f1026242a9a174c38ffc53d4abeb6778ecd634df3020a5817d0e94c22",
+    "local_input:306337126af4f7afbd2cee0f408b25a1ea659500d693f25b0e5542c1ec3fce9c": "860576b227b30d11e2edcde1c1fdff673da3ce31eba5977998b4853bd7f5753e",
+    "local_input:609415d5407ce2c59710a882d7469ad473cda7e387927e41ebefac8276654c22": "9e5b1448c098115a625a098d25cf8d5c26462000b77e476da74234153e55b0f9",
+    "local_input:51c604ada4370b9c94260786b0f7b468a9fc086829bdc1aedf67c57c67209c25": "89386ddc9e0539208d60ebef7d7c039fad9d49257354c25cc1d5dd9a820d79d5",
+    "local_input:2d16b944107745f4de2298d164daf286b038c3387aa084eeff881262104985a5": "fda398fe6ed78178c2ae06ca2882e0ee305d048a8729e0f2bf2d472b4cd3ddf2",
+    "local_input:133b8c504ddd3b131646164d4293912b68a80422b86a18e8d3a8d3d4f4b33a5e": "8baf1af464d6e23cb0ef8a104f77af0440592e5d7ec3899a04b9433a54e9f612",
+    "local_input:d9859409100ac22bb7ffef938d26067cdd91a6235e18883c1d8162eab6f28b98": "e1b154c1088f15d20cec2b0ca7bbade02f6f43200113fb81ca69ccb9ec09e385",
+    "local_input:a928cff9bd60defbd591d1dc8c6d68dbbb8ddf73a44858710374dd0fc3a7107e": "9c2a2478abc88fe25a55bfe23fd2e41f8fc2330c285537104417f837e1593d94",
+    "local_input:cb0710d4b8d08b20e88b38d5067b60abfbb06d746da5bc10681017e271fac9df": "4336b1b0c1b22a72013eaf1f3e50098acdfc0795050d812602f674e3ce89748e",
+    "local_input:a94dae068e625eea7f6dc796c553c20831875eb75934acaa942bce6bb57afa3c": "4749d00139cce102d3a11abb7fc711df08e90c7a4097654bc5bb21e3b6d39855",
+    "local_input:ae2e1e54d35474254b25d55e10335bb026df422b1320cb235daf62ecd2260ac4": "a30e710afdbacbd20c7a80810020df19cf2aa9c6dc26f849394b0efe43580d09",
+    "local_input:5b112ff6afd48f03160ebe83cd335ff9c6122d510d03bec670ab01ff572e6c45": "2e5330a99b4bc4e7a6d92821cf53222373617e0b4cdabc75f1c1256416513e0d",
+    "local_input:fe1978bd20ae4387f61d5708c803b9cdcc012b4ae7aaa61dbede1abf44dbcacd": "86bc1099de058f851834834ca5d6eab2d360055b17ca47752243a96d2195b774",
+    "local_input:0314115ba88078a1f0e77ecc921e4ab352d48403e59bba79af36a21446570274": "04d810a958f25d828db1d4d417c7fd8c3c656fda2cbcfaa662aae874e0b65f42",
+    "local_input:05ffc8422e5aa6d070cb18613b8a890342efaa810b8dd86a1fb2ac1325461ba0": "f316c8566ed53ef0f9ff204ce47dfa939b38b4b87e1991abb02bf557bd088715"
+  },
+  "document_states": {
+    "29b2690afa1577d6b03ec5330abc5de39720758f1140edc915dbc774d728f6c7": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Draft NIH Biosafety Policy for Research Involving Biohazards",
+        "summary": "As the world's largest public funder of biomedical research, the National Institutes of Health (NIH) is committed to ensuring that gold-standard science is conducted under gold-standard biosafety conditions. To achieve this goal, NIH is proposing a new policy that modernizes and strengthens biosafety practices to ensure that oversight keeps pace with evolving risks. NIH is requesting public input on a new, comprehensive biosafety policy proposal that, when finalized, will replace the current NIH Guidelines for Research Involving Recombinant or Synthetic Nucleic Acid Molecules (https://osp.od.nih.gov/wp-content/ uploads/NIH_Guidelines.pdf).",
+        "url": "https://www.federalregister.gov/documents/2026/09/14/2026-18646/draft-nih-biosafety-policy-for-research-involving-biohazards",
+        "publication_date": "2026-09-14"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:08.471354+00:00",
+      "source_sha256": "eb1eddaf773a3253e5f7f035c9c1317b0010f83259a9b4caca539bf2e75879ea",
+      "source_text_sha256": "89ffa63e83499655219e9053b4f4de919e4f5b0aaa8adfdcebfc4f3ba9b10b53"
+    },
+    "ad969d1c9b9131669e8eef1b8743b23754fc4f608762963165d9ffcc3e77fc16": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Accelerating Access to Veterans' Benefits and Employment Opportunities",
+        "summary": "Accelerating Access to Veterans' Benefits and Employment Opportunities",
+        "url": "https://www.federalregister.gov/documents/2026/09/11/2026-18738/accelerating-access-to-veterans-benefits-and-employment-opportunities",
+        "publication_date": "2026-09-11"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:19.486758+00:00",
+      "source_sha256": "592fd494146781d8ec578574638da6cd8a41c75648bc7c5d8ff577e84be04899",
+      "source_text_sha256": "c86961446a9f009dd79704185cb312be43e4946d7cf12556666bd9bd946c3391"
+    },
+    "1713135e0fda898e3cb4faead667e3f651a2029f3f3b17978249bae1e06f4c35": {
+      "status": "pending",
+      "attempts": 1,
+      "item": {
+        "title": "Securing the United States Bulk-Power System",
+        "summary": "Consistent with the Executive order of August 26, 2026, Declaring a National Emergency to Secure the United States Bulk-Power System, the Department of Energy (DOE or the Department) is seeking information from industry and other stakeholders to inform DOE actions to implement the Executive order. Specifically, DOE seeks information regarding the scope of covered equipment and transactions; risks associated with Covered Foreign Entities and foreign-produced bulk- power system electric equipment; supply chain, software, firmware, digital service, maintenance service, and remote-access practices; existing equipment and potential mitigation; licensing and prequalification; domestic manufacturing and secure replacement capacity; Federal procurement; and potential economic, reliability, safety, and small-entity impacts.",
+        "url": "https://www.federalregister.gov/documents/2026/09/09/2026-18370/securing-the-united-states-bulk-power-system",
+        "publication_date": "2026-09-09"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:03:06.724447+00:00",
+      "source_sha256": "3ee83a15aa02e1f35f809f0eb4ddfe2adb601346b89901f0accc629880b5d2cb",
+      "source_text_sha256": "a53929654bdac68bbd0f084a443518c66e0dc0bad70789d508a29d5079ca0add",
+      "error": "invalid model schema"
+    },
+    "2da32ad55827506c9903040af0780919a59f8ae45bba9096c078bec0eb221228": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Improving the Effectiveness of the Robocall Mitigation Database; Call Authentication Trust Anchor; Advanced Methods To Target and Eliminate Unlawful Robocalls",
+        "summary": "In this document, the Federal Communications Commission (Commission) proposes steps to strengthen the reliability, integrity, and effectiveness of the Robocall Mitigation Database (RMD or Database) as a core component of its illegal-call prevention framework. The Commission proposed measures aim to ensure that RMD filings are accurate, complete, and current, and to safeguard the Database so that only legitimate, transparent, and accountable providers may enter or remain listed. Specifically, the Commission proposes and seeks comment on measures to clarify which entities are required to file in the RMD, enhance the accuracy and completeness of submitted information, and specify which portions of filings may be publicly disclosed. Additionally, the Commission proposes and seeks comment on new tools to prevent bad actors and noncompliant providers from accessing or remaining in the RMD, including strengthened screening procedures for new filers, improved mechanisms for identifying noncompliant providers, expedited removal processes, and safeguards to prevent unauthorized re- entry into the Database.",
+        "url": "https://www.federalregister.gov/documents/2026/09/09/2026-18366/improving-the-effectiveness-of-the-robocall-mitigation-database-call-authentication-trust-anchor",
+        "publication_date": "2026-09-09"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:09.070419+00:00",
+      "error": "source capture failed: ValueError"
+    },
+    "4f3a608c15f8f04e29feca1b6c63058027b545c03e0fbb2baa316c3d697267f8": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Agency Information Collection Activities; Submission to the Office of Management and Budget (OMB) for Review and Approval; Comment Request; Business Trends and Outlook Survey",
+        "summary": "Agency Information Collection Activities; Submission to the Office of Management and Budget (OMB) for Review and Approval; Comment Request; Business Trends and Outlook Survey",
+        "url": "https://www.federalregister.gov/documents/2026/09/09/2026-18304/agency-information-collection-activities-submission-to-the-office-of-management-and-budget-omb-for",
+        "publication_date": "2026-09-09"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:11.557909+00:00",
+      "source_sha256": "115c1f051f5500de7183958a59c12ba9bfb4f54d0c9c55af40b4f67ca80f86f8",
+      "source_text_sha256": "efb0c31c89d156a5c14f5294b8969b148c828a8cdc99a8825da4fb5d53582221"
+    },
+    "57e6e75c8f90df4c17ec825eb19dc053934a938e7f420097ec5d67fe1ec9132c": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Agency Information Collection Activities; Submission to the Office of Management and Budget (OMB) for Review and Approval; Comment Request; NTIA Internet Use Survey",
+        "summary": "The Department of Commerce, in accordance with the Paperwork Reduction Act of 1995 (PRA), invites the general public and other Federal agencies to comment on proposed, and continuing information collections, which helps us assess the impact of our information collection requirements and minimize the public's reporting burden. The purpose of this notice is to allow for 60 days of public comment preceding submission of the collection to OMB.",
+        "url": "https://www.federalregister.gov/documents/2026/09/09/2026-18303/agency-information-collection-activities-submission-to-the-office-of-management-and-budget-omb-for",
+        "publication_date": "2026-09-09"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:12.939429+00:00",
+      "source_sha256": "dd6a9ec03eb5f041ccf9f958901b9ea1ab37bdfddebd3e5a936378f83afea668",
+      "source_text_sha256": "a318ded85267210dca944e7aee51867e86a1d214444375d228ebb5e4dc26b1ad"
+    },
+    "2e04b993083bb93051d88e2e26bcf8838beb9e58765e080e2e0dd15c8d91acd5": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Self-Regulatory Organizations; Financial Industry Regulatory Authority, Inc.; Notice of Filing of a Proposed Rule Change To Amend FINRA Rules 0150 (Application of Rules to Exempted Securities Except Municipal Securities), 2165 (Financial Exploitation of Specified Adults) and 4512 (Customer Account Information) and To Adopt FINRA Rule 2166 (Temporary Delays for Suspected Fraud)",
+        "summary": "Self-Regulatory Organizations; Financial Industry Regulatory Authority, Inc.; Notice of Filing of a Proposed Rule Change To Amend FINRA Rules 0150 (Application of Rules to Exempted Securities Except Municipal Securities), 2165 (Financial Exploitation of Specified Adults) and 4512 (Customer Account Information) and To Adopt FINRA Rule 2166 (Temporary Delays for Suspected Fraud)",
+        "url": "https://www.federalregister.gov/documents/2026/09/09/2026-18293/self-regulatory-organizations-financial-industry-regulatory-authority-inc-notice-of-filing-of-a",
+        "publication_date": "2026-09-09"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:09.497698+00:00",
+      "source_sha256": "711f43edaa8cd4d1f261877323c360e5dc822a4483fe5051a63d0989523b13a4",
+      "source_text_sha256": "ca1b3cf0f0f3c78ddf801e6598dc6e376367ab163f90e1e2702947cca856e63c"
+    },
+    "962399e7043923f23e35fdd177700056c9c6e8aec0d29e2076d96a7822c6f6ed": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Sunshine Act Meetings",
+        "summary": "Sunshine Act Meetings",
+        "url": "https://www.federalregister.gov/documents/2026/09/08/2026-18262/sunshine-act-meetings",
+        "publication_date": "2026-09-08"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:16.868900+00:00",
+      "source_sha256": "1a4b2b57093f0e4dccec5d872df00a8242859cf944ed625959cb1bd906f17a55",
+      "source_text_sha256": "1a908936beb7673a9555336ed5de1bb5820ed2590031436cfa134cd21b7e53c4"
+    },
+    "d10aea1ead01534b50c6895725407dcb6d5cedc1b941552e0a9b612845ff4727": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Federal Advisory Committee Act; Technological Advisory Council",
+        "summary": "In accordance with the Federal Advisory Committee Act, this notice advises interested persons that the Federal Communications Commission's (FCC) Technological Advisory Council will hold a meeting on Thursday, October 1, 2026 in the Commission Meeting Room and available to the public via the internet at http://www.fcc.gov/live, from 10:00 a.m. to 12:30 p.m.",
+        "url": "https://www.federalregister.gov/documents/2026/09/08/2026-18196/federal-advisory-committee-act-technological-advisory-council",
+        "publication_date": "2026-09-08"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:21.474228+00:00",
+      "source_sha256": "338320dd121f5e72788b1c3920b90305e72247e66fb2bd33b1139d3c49b21591",
+      "source_text_sha256": "f116b0f1bdee2cee509c8f40aad46d978a5d2907ca5de5a9d0fbfe704a1ac66f"
+    },
+    "d118a2b0958ac6b5e95f5cc6530be2066b9aaf154a623a1f72b3b60af1e2c8e1": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Transfer Agent Rules",
+        "summary": "The U.S. Securities and Exchange Commission (\"SEC\" or \"Commission\") is proposing to adopt new rules, amend existing rules, amend the existing form for registration with the Commission as a transfer agent (Form TA-1) and the existing form for reporting activities of transfer agents (Form TA-2), and rescind an existing rule governing registered transfer agents. The proposals are designed to modernize the rules governing registered transfer agents.",
+        "url": "https://www.federalregister.gov/documents/2026/09/04/2026-18190/transfer-agent-rules",
+        "publication_date": "2026-09-04"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:21.744146+00:00",
+      "error": "source capture failed: ValueError"
+    },
+    "f3227389324f7137d15bbb2f3d3a07cc2a3d2d1f69b73d682b660348775bec51": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Agency Information Collection Revision",
+        "summary": "The Department of Energy (DOE) invites public comment on a proposed revision to an approved information collection that DOE is submitting to the Office of Management and Budget (OMB) for review pursuant to the Paperwork Reduction Act of 1995. The information collection requests a revision of the approval for OMB Control Number 1910-5179, titled Energy and Jobs Survey.",
+        "url": "https://www.federalregister.gov/documents/2026/09/04/2026-18139/agency-information-collection-revision",
+        "publication_date": "2026-09-04"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true
+    },
+    "61ec96aa8984428f2e9f0a2e9434cd356cdacfe64d33218c5deae9d547ce4b6d": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Determining the Appropriate Penalty for Federal Employees Charged With Misconduct",
+        "summary": "The Merit Systems Protection Board (MSPB or Board) is issuing a final rule amending its regulations governing the Board's review of the reasonableness of an agency's chosen penalty in misconduct-based adverse actions appealed to the Board. Under the final rule, the Board will no longer require consideration of the 12 factors set forth in Douglas v. Veterans Administration, 5 M.S.P.R. 280 (1981), in every case. Instead, the Board will evaluate whether the agency's penalty is within the tolerable limits of reasonableness in light of the totality of the circumstances, determined on a case-by-case basis.",
+        "url": "https://www.federalregister.gov/documents/2026/09/03/2026-18061/determining-the-appropriate-penalty-for-federal-employees-charged-with-misconduct",
+        "publication_date": "2026-09-03"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:13.204674+00:00",
+      "error": "source capture failed: ValueError"
+    },
+    "9d988f6d9277029c3ac6d920018ac38aedd5ac984a6a25fb8d56a6e34f6b3ee2": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Heightened Import Disclosures for Supply Chain Visibility",
+        "summary": "U.S. Customs and Border Protection (CBP) is considering amending its regulations to give CBP greater visibility into the supply chains of goods imported into the United States. CBP is seeking comments on new requirements enhancing visibility into the parties involved in the importation of goods; integrating innovative technical solutions for the tracing of supply chains of those goods; and collecting foreign export documentation that foreign exporters are required to submit to the foreign customs authority prior to the exportation of those goods to the United States. With these proposals, CBP seeks to more effectively detect and interdict illicit importations, especially those that are illegally transshipped to evade compliance with U.S. customs and trade laws.",
+        "url": "https://www.federalregister.gov/documents/2026/09/02/2026-17926/heightened-import-disclosures-for-supply-chain-visibility",
+        "publication_date": "2026-09-02"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:17.906969+00:00",
+      "source_sha256": "a4511bae5da70c354f606c391d50f9ad41e568825f8e0109025f414111f90dc9",
+      "source_text_sha256": "fe91c974bf9b2405c6f653e0dda74d08d1a6265a6e628d156bffc7dc259f7bea"
+    },
+    "f69b594931e31618990e4ecb95b80a3f73dc6c51d236b3790bc6e4be8c07e952": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Declaring a National Emergency To Secure the United States Bulk-Power System",
+        "summary": "Declaring a National Emergency To Secure the United States Bulk-Power System",
+        "url": "https://www.federalregister.gov/documents/2026/08/31/2026-17843/declaring-a-national-emergency-to-secure-the-united-states-bulk-power-system",
+        "publication_date": "2026-08-31"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true
+    },
+    "c2a7ceeffc336c32f5290db049a682a888b1de2c080ec2560270b190308ee6f8": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Maximizing Efficiencies in Universal Service Administration",
+        "summary": "In this document, the Federal Communications Commission (Commission) seeks to improve the administration of the Universal Service Fund (USF or Fund) by seeking comment on four areas related to USF administration: current USF administration processes, i.e., the processes used by Universal Service Administrative Company (USAC) to administer the USF and the Commission's oversight of those processes; the structure of USF administration, that is, USAC's role and responsibilities related to USF administration; operating costs associated with USF administration; and the impact of USAC's Board of Directors on USF administration.",
+        "url": "https://www.federalregister.gov/documents/2026/08/31/2026-17761/maximizing-efficiencies-in-universal-service-administration",
+        "publication_date": "2026-08-31"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:20.222921+00:00",
+      "source_sha256": "978bf8bd7945d3beaa2ccf09e14aaa1bfabf6d600c6f472d9707aa1ce0b1110e",
+      "source_text_sha256": "640c895a637c3bfbf00d5f8ee04c5621bad85598d7ac09283fb5344a414143d8"
+    },
+    "68fef63f330c165c74868d438e70e8711e337b904d69a08001db4d953ce0c7c0": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Agency Information Collection Activities: Request for Comments for a New Information Collection",
+        "summary": "The FHWA has forwarded the information collection request described in this notice to the Office of Management and Budget (OMB) to approve a new information collection. We are required to publish this notice in the Federal Register by the Paperwork Reduction Act of 1995.",
+        "url": "https://www.federalregister.gov/documents/2026/08/27/2026-17530/agency-information-collection-activities-request-for-comments-for-a-new-information-collection",
+        "publication_date": "2026-08-27"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:14.543678+00:00",
+      "source_sha256": "c4b8faff0ead8f41ab4e95cc6d5d8c48670740ff2cd8ab7449667e925a0d7a17",
+      "source_text_sha256": "4caaa62b03a72ee595b877daac938985d46ef221ccbc11e842cba265c15c1d79"
+    },
+    "d5c20c7ea8d2f679a149dd27b239d188f2a491da9eb557e2a83c02c3d7adf622": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Critical Position Pay Authority",
+        "summary": "The Office of Personnel Management (OPM) is amending its regulations governing the critical position pay (CPP) authority to establish level I of the Executive Schedule as the default maximum critical pay rate, with higher rates subject to written approval by the Director of OPM. The final rule eliminates non-statutory caps and approval criteria; addresses the use of service agreements; clarifies that reductions or terminations of CPP are not adverse actions or subject to grievance or appeal rights; and clarifies the treatment of critical pay rates as basic pay. This final rule simplifies and better aligns OPM's regulations with governing law and delegated authority.",
+        "url": "https://www.federalregister.gov/documents/2026/08/26/2026-17442/critical-position-pay-authority",
+        "publication_date": "2026-08-26"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:22.640251+00:00",
+      "source_sha256": "78569acd9cc75cd417f395652dfbe9582a43cd92f0320fd9c0a4ac0f74e7c25f",
+      "source_text_sha256": "4a8447f5a0993387ea2590db8e8be6d50b8a8e431f1cee6debd1dc45640047b9"
+    },
+    "d6aeee587ebb756153f8ea68f33b344a9547e13eed6d53b712ccc14e5e4db82a": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Regulation Crypto Assets",
+        "summary": "The Securities and Exchange Commission (\"Commission\") is proposing new rules to create a tailored offering regime for certain investment contracts involving crypto assets. The proposed offering regime is intended to facilitate capital formation and accommodate innovation within the crypto asset markets while, at the same time, ensuring that investors are adequately protected and provided with the information they need to make informed investment decisions. The proposed rules would be set forth in a new regulation titled \"Regulation Crypto Assets\" and would include two exemptions from the registration requirements of section 5 of the Securities Act of 1933. The first exemption would permit offerings of up to $5 million during a four-year period. The second exemption would permit offerings of up to $75 million during each 12-month period. Under both exemptions, issuers would be required to make certain principles-based narrative disclosures available to their investors. In addition, issuers under the second exemption would be required to provide financial statements and would be subject to ongoing reporting requirements. Issuers that rely on these exemptions would remain subject to the antifraud and antimanipulation provisions of the Federal securities laws. The proposed rules also would include a conditional safe harbor from the term \"investment contract\" in the definitions of \"security\" in the Securities Act of 1933 and the Securities Exchange Act of 1934. If the conditions of that proposed safe harbor are satisfied, then a crypto asset would be deemed not to be subject to an investment contract for purposes of those definitions of \"security.\"",
+        "url": "https://www.federalregister.gov/documents/2026/08/21/2026-17183/regulation-crypto-assets",
+        "publication_date": "2026-08-21"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:23.790106+00:00",
+      "error": "source capture failed: ValueError"
+    },
+    "45cd6e241ef0f49a81f7569cdcbdf3b115d21f5515637f6ae5e8a6c269ed346a": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Request for Comment on the Listing of Compute Derivatives Contracts",
+        "summary": "The Commodity Futures Trading Commission (\"CFTC\" or \"Commission\") is seeking public responses to this Request for Comment to better inform its understanding and oversight of derivatives markets in compute.",
+        "url": "https://www.federalregister.gov/documents/2026/08/21/2026-17163/request-for-comment-on-the-listing-of-compute-derivatives-contracts",
+        "publication_date": "2026-08-21"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:10.677494+00:00",
+      "source_sha256": "7c4c37f6412dccc2795ca2beedfd141df2754c086e9e276c32e97aa99927555b",
+      "source_text_sha256": "404d25d32a5cb5fa721fb74ca6c16df48425c1abe2ae321164e0c4796bd520d3"
+    },
+    "109db0c160de79a3ccea4cb1386e9e515254e7ab904f41dfcc7397a32a4ec7c3": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Accreditation, Innovation, and Modernization: The Secretary's Recognition of Accrediting Agencies: Institutional Eligibility Under the Higher Education Act of 1965, as Amended, Student Assistance General Provisions",
+        "summary": "The Department proposes to revise the existing accrediting agency recognition regulations at 34 CFR part 602 to implement the directives set forth in Executive Order 14279, Reforming Accreditation to Strengthen Higher Education, and other Administration priorities, align the regulations more closely with statute, and reduce regulatory burden.",
+        "url": "https://www.federalregister.gov/documents/2026/08/20/2026-17001/accreditation-innovation-and-modernization-the-secretarys-recognition-of-accrediting-agencies",
+        "publication_date": "2026-08-20"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:02:06.019452+00:00",
+      "error": "source capture failed: ValueError"
+    },
+    "7ad21a2ea23e4e7cfeedf5675164bc4e41af56e08a54475090d6b47820b4a204": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Wagner-Peyser Act Employment Service Staffing",
+        "summary": "The U.S. Department of Labor (DOL or the Department) is removing the requirement that States use State merit staff to provide Wagner-Peyser Employment Service (ES) services. This final rule allows States to use the staffing model that provides the required services with the most efficient and cost-effective model for their State.",
+        "url": "https://www.federalregister.gov/documents/2026/08/20/2026-16982/wagner-peyser-act-employment-service-staffing",
+        "publication_date": "2026-08-20"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:14.875075+00:00",
+      "error": "source capture failed: ValueError"
+    },
+    "a7320c2f093222e04d723af25b0cbae8c48107c756a2ba5db909095c3850abb3": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Application for Relief From Disabilities Imposed by Federal Laws With Respect to the Acquisition, Receipt, Transfer, Shipment, Transportation, or Possession of Firearms",
+        "summary": "The Department of Justice (\"the Department\") is implementing criteria to guide determinations for granting relief from disabilities imposed by federal laws with respect to the acquisition, receipt, transfer, shipment, transportation, or possession of firearms. The criteria are designed to ensure that the fundamental right of the people to keep and bear arms is not unduly infringed, that those people granted relief are not likely to act in a manner dangerous to public safety, and that granting such relief would not be contrary to the public interest.",
+        "url": "https://www.federalregister.gov/documents/2026/08/20/2026-16981/application-for-relief-from-disabilities-imposed-by-federal-laws-with-respect-to-the-acquisition",
+        "publication_date": "2026-08-20"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:18.810774+00:00",
+      "error": "source capture failed: ValueError"
+    },
+    "6587eda003db0fc2cc6d344a8209cb6b5cd47c3dfcf52d7a6a31afdff94d507d": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Solicitation of Nominations for Membership on the NOAA Science Advisory Board (SAB)",
+        "summary": "The NOAA Science Advisory Board (SAB) is the only Federal Advisory Committee with responsibility to advise the Under Secretary of Commerce for Oceans and Atmosphere on long- and short-range strategies for research, education and the application of science to resource management and environmental assessment and prediction. The Science Advisory Board is called upon to provide advice to NOAA on a wide variety of topics important to the agency. Because of the breadth of subject matter that the group addresses, they frequently consult with additional experts on specific topics. Certain topics are deemed to be of long-term interest for NOAA and the standing working groups (WGs) were established under the SAB to consult on a regular basis. The SAB WGs consist of experts with whom the SAB consults on a regular basis to address NOAA scientific priorities.",
+        "url": "https://www.federalregister.gov/documents/2026/08/19/2026-16908/solicitation-of-nominations-for-membership-on-the-noaa-science-advisory-board-sab",
+        "publication_date": "2026-08-19"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:14.279733+00:00",
+      "source_sha256": "fe714f44d120b3c0cdd440804edb0ee6eb40201590f287d17486b3f53285c1ec",
+      "source_text_sha256": "009770b890c6aff8d4f0912994029ceeba99c32c814773db162e93c10ed0f8ad"
+    },
+    "99ad1c8bebe596d2619776e0aab77ed28ab81ea8bbcb3b8a483a5f5fc53dd84c": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Agency Information Collection Activities; Comment Request; Registered Apprenticeship National Public Awareness Campaign",
+        "summary": "The Department of Labor's (DOL) Employment and Training Administration (ETA) is soliciting comments concerning a proposed new information collection request (ICR) titled, \"Registered Apprenticeship National Public Awareness Campaign.\" This comment request is part of continuing Departmental efforts to reduce paperwork and respondent burden in accordance with the Paperwork Reduction Act of 1995 (PRA).",
+        "url": "https://www.federalregister.gov/documents/2026/08/19/2026-16885/agency-information-collection-activities-comment-request-registered-apprenticeship-national-public",
+        "publication_date": "2026-08-19"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:17.132446+00:00",
+      "source_sha256": "6b29ff1fc654b9235f30edb6786f388097213d6ab1be93565d7a0b3eb8b18c96",
+      "source_text_sha256": "89a8cfe73d7a99cb92e8de45976cb495b3e236295bc62ec51cf24ab047fd2f24"
+    },
+    "457c653d55c1ac550dee0951d8f270883796607f52210635ad18a4c30788b527": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Solicitation of Nominations for Membership on the NOAA Science Advisory Board (SAB)",
+        "summary": "The NOAA Science Advisory Board (SAB) is the only Federal Advisory Committee with responsibility to advise the Under Secretary of Commerce for Oceans and Atmosphere on long- and short-range strategies for research, education and the application of science to resource management and environmental assessment and prediction. NOAA seeks candidates with expertise in areas relevant to its mission, including Federal, State, and local government; social and behavioral sciences; artificial intelligence and machine learning; high performance computing; data management, including open access and accessibility; uncrewed systems; whale research and conservation; aircraft systems and modernization; and economic analysis, including cost-benefit evaluation of observing systems. NOAA also encourages nominations of qualified mid-career scientists and engineers.",
+        "url": "https://www.federalregister.gov/documents/2026/08/19/2026-16884/solicitation-of-nominations-for-membership-on-the-noaa-science-advisory-board-sab",
+        "publication_date": "2026-08-19"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:10.319893+00:00",
+      "source_sha256": "656735d0ee7d7750315060034c14e9f624ab461da66126af56caa4cabed3c791",
+      "source_text_sha256": "07e19a3c689d56e55e0059782063c84cd46e7680665bd6bb9199398a543c980e"
+    },
+    "174e133f0357316fc50e7a9beebd5847f4c67da10121e883464b912191f719fd": {
+      "status": "pending",
+      "attempts": 1,
+      "item": {
+        "title": "Secretary of Energy Advisory Board",
+        "summary": "Pursuant to the Federal Advisory Committee Act and following consultation with the Committee Management Secretariat, General Services Administration, notice is hereby given that the Secretary of Energy Advisory Board (SEAB) will be renewed for a two-year period beginning on August 26, 2026. The Committee provides advice and recommendations to the Secretary of Energy on energy policies; the Department's basic and applied research and developmental activities; economic and national security policy; and on any other activities and operations of the Department of Energy.",
+        "url": "https://www.federalregister.gov/documents/2026/08/18/2026-16801/secretary-of-energy-advisory-board",
+        "publication_date": "2026-08-18"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:04:07.059506+00:00",
+      "source_sha256": "13cf914800237d9630f7b40413753c7b7bca76a78e43174a24b8a42080278437",
+      "source_text_sha256": "f0d5daf2739e25dbbace6fc0bde94a834679098bfac126da19865f55bc1fd5f8",
+      "error": "invalid model schema"
+    },
+    "e2c7f0dd5a94865a708d9bbe5d09fa56346913874deeaa1fe0fac7cf6acdd7f9": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Notice of Public Meeting of the Maryland Advisory Committee to the U.S. Commission on Civil Rights",
+        "summary": "Notice is hereby given, pursuant to the provisions of the rules and regulations of the U.S. Commission on Civil Rights (Commission) and the Federal Advisory Committee Act, that the Maryland Advisory Committee (Committee) to the Commission will hold a public meeting via Zoom. The purpose is for the committee to continue The purpose is for the committee to continue briefing planning on the chosen topic of artificial intelligence and its application in voting administration.",
+        "url": "https://www.federalregister.gov/documents/2026/08/18/2026-16772/notice-of-public-meeting-of-the-maryland-advisory-committee-to-the-us-commission-on-civil-rights",
+        "publication_date": "2026-08-18"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true
+    },
+    "006e031d79c2af056e30158181271b033c81af6f0cd415cbb730b7a56d1370df": {
+      "status": "pending",
+      "attempts": 1,
+      "item": {
+        "title": "Request for Comments on Community Outreach Office Locations in the Southwest States",
+        "summary": "The United States Patent and Trademark Office (USPTO or Office) is seeking information to consider regarding the selection of locations for one or more community outreach offices (COOs) in the agency's Southwest Region, which comprises Arizona, Texas, New Mexico, Oklahoma, Kansas, and Missouri.",
+        "url": "https://www.federalregister.gov/documents/2026/08/17/2026-16744/request-for-comments-on-community-outreach-office-locations-in-the-southwest-states",
+        "publication_date": "2026-08-17"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:00:05.069677+00:00",
+      "source_sha256": "8a14638f5400a55f97bedd2442838ecf770e5a86ac259f9fcacf0c726082bbc2",
+      "source_text_sha256": "a073787cac3aa3f7c51d20d38ce5a9347371a2bd8c62af6bded88c031af9381a",
+      "error": "invalid model schema"
+    },
+    "27de633e1af69c76e5e423362c63c64a7852d6679c74a6a8ae432638fee610a3": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Hematology and Pathology Devices; Reclassification of In Situ Hybridization Test Systems for Use With a Corresponding Approved Oncology Therapeutic Product",
+        "summary": "The Food and Drug Administration (FDA, the Agency, or we) is issuing a final order reclassifying in situ hybridization (ISH) test systems indicated for use with a corresponding approved oncology therapeutic product (product codes NYQ, MVD, OWE, and PNK), all postamendments class III (premarket approval) devices, into class II (special controls), subject to premarket notification. FDA is also establishing a new device classification regulation, along with the special controls that are necessary to provide a reasonable assurance of safety and effectiveness of this device type.",
+        "url": "https://www.federalregister.gov/documents/2026/08/17/2026-16727/hematology-and-pathology-devices-reclassification-of-in-situ-hybridization-test-systems-for-use-with",
+        "publication_date": "2026-08-17"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:08.126860+00:00",
+      "source_sha256": "483cd8f9f46e29617e6ded47fd3d408d09a14ebb3c1b00b782e3435451ac73cf",
+      "source_text_sha256": "59d5cdb31d8e66c9fc37f498e934b7b64f352ff12c43dca835a8d697f632c169"
+    },
+    "d55f1bc83d8915f8c19f1ba47901f49148f38e326ae68fde2a107e541d428749": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Patriot Day 2026, the 25th Anniversary of the September 11 Terrorist Attacks",
+        "summary": "Patriot Day 2026, the 25th Anniversary of the September 11 Terrorist Attacks",
+        "url": "https://www.federalregister.gov/documents/2026/09/15/2026-18959/patriot-day-2026-the-25th-anniversary-of-the-september-11-terrorist-attacks",
+        "publication_date": "2026-09-15"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:22.382618+00:00",
+      "source_sha256": "6186f8bfff7f80b94af189271dc3e25c1982fc77641a692edbfdd34f6c7fcff0",
+      "source_text_sha256": "a50f35ae1078f4d01ad8d5d28d7621ab7b2bf595b9ee4ef8a6622fb984b27c03"
+    },
+    "4a7f7df32524bb2925444566bea44b67a955603008795de3b4043b0654e558f2": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Modifying the Scope of Products of Canada Subject to the Additional Duties Imposed To Offset Canadian Discrimination Against the Commerce of the United States With Respect to Motor Vehicles",
+        "summary": "Modifying the Scope of Products of Canada Subject to the Additional Duties Imposed To Offset Canadian Discrimination Against the Commerce of the United States With Respect to Motor Vehicles",
+        "url": "https://www.federalregister.gov/documents/2026/09/14/2026-18839/modifying-the-scope-of-products-of-canada-subject-to-the-additional-duties-imposed-to-offset",
+        "publication_date": "2026-09-14"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:11.285783+00:00",
+      "source_sha256": "389df6c48aaa19f229e2b0ab22038fde9384fecee0cf637f701e3f7d02747efa",
+      "source_text_sha256": "77af7a764b108a9a43847b5f4f78b0c76bbf9f39a504cbc2169985eb9cd8b916"
+    },
+    "fb44f5b6e7ff727d9c43963988d8154d1254b7138a6edee964cd0c68a3ae6d12": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Modifying the Scope of Products of Canada Subject to the Additional Duties Imposed To Offset Canadian Discrimination Against the Commerce of the United States With Respect to Alcoholic Beverages",
+        "summary": "Modifying the Scope of Products of Canada Subject to the Additional Duties Imposed To Offset Canadian Discrimination Against the Commerce of the United States With Respect to Alcoholic Beverages",
+        "url": "https://www.federalregister.gov/documents/2026/09/14/2026-18838/modifying-the-scope-of-products-of-canada-subject-to-the-additional-duties-imposed-to-offset",
+        "publication_date": "2026-09-14"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true
+    },
+    "9bb06be09eba997187521fbe08d49ccd63f3c7225852fcf7ae1392297d74ba5a": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Excluding Certain Canadian Products From Importation Into the United States in Response to Continued Discrimination Against the Commerce of the United States With Respect to Motor Vehicles",
+        "summary": "Excluding Certain Canadian Products From Importation Into the United States in Response to Continued Discrimination Against the Commerce of the United States With Respect to Motor Vehicles",
+        "url": "https://www.federalregister.gov/documents/2026/09/14/2026-18837/excluding-certain-canadian-products-from-importation-into-the-united-states-in-response-to-continued",
+        "publication_date": "2026-09-14"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:17.649461+00:00",
+      "source_sha256": "d8025ea9c1e503173a258122faaa2dee445e469aa8e504171ae6af27e1e8de0d",
+      "source_text_sha256": "edfd6391453f5aa257a8129814eee001fb1ed3ed3276aae2b78c3c7137aa46be"
+    },
+    "e321725a2ea787e963a74d0beceb661fd302f9dcb4373d342cb3d59570180db1": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Excluding Certain Canadian Products From Importation Into the United States in Response to Continued Discrimination Against the Commerce of the United States With Respect to Dairy",
+        "summary": "Excluding Certain Canadian Products From Importation Into the United States in Response to Continued Discrimination Against the Commerce of the United States With Respect to Dairy",
+        "url": "https://www.federalregister.gov/documents/2026/09/14/2026-18836/excluding-certain-canadian-products-from-importation-into-the-united-states-in-response-to-continued",
+        "publication_date": "2026-09-14"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true
+    },
+    "da8aa32d3046036ee6f669a815435e8d54983f8508b22667450dc4108534ef0e": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Excluding Certain Canadian Products From Importation Into the United States in Response to Continued Discrimination Against the Commerce of the United States With Respect to Alcoholic Beverages",
+        "summary": "Excluding Certain Canadian Products From Importation Into the United States in Response to Continued Discrimination Against the Commerce of the United States With Respect to Alcoholic Beverages",
+        "url": "https://www.federalregister.gov/documents/2026/09/14/2026-18835/excluding-certain-canadian-products-from-importation-into-the-united-states-in-response-to-continued",
+        "publication_date": "2026-09-14"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true
+    },
+    "2ceabf543ad79cffea147eb07b89fec19f5d90bada75b5dfdeae2f5d2f8a2fe4": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Adjusting Certain Delegations Under the Defense Production Act",
+        "summary": "Adjusting Certain Delegations Under the Defense Production Act",
+        "url": "https://www.federalregister.gov/documents/2026/09/11/2026-18739/adjusting-certain-delegations-under-the-defense-production-act",
+        "publication_date": "2026-09-11"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:08.813575+00:00",
+      "source_sha256": "ce59ce9a224919045775bd3ff08fd58f4999acf8c770a558e3817ef53ae16eb2",
+      "source_text_sha256": "55a971182ddb74e94f75c325e8cf02eb0fa8c2a686a33e0daae6b1245d85b46b"
+    },
+    "51eca7242399110dd39cbc8cb60104f4d1b9c56919496d270ed7fe00daa5e2c0": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Continuation of the National Emergency With Respect to Certain Terrorist Attacks",
+        "summary": "Continuation of the National Emergency With Respect to Certain Terrorist Attacks",
+        "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18589/continuation-of-the-national-emergency-with-respect-to-certain-terrorist-attacks",
+        "publication_date": "2026-09-10"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:11.892159+00:00",
+      "source_sha256": "c37c14803511a64bbc16bf30a4a8ead4029b70bfd0cc68787a9cd1efea5871fa",
+      "source_text_sha256": "cc968ccd7c158f2274c930e84285b96d16c84f6b9a5360a65aa54df9069d75d6"
+    },
+    "bce7d52de35abc0dda7e6112061cc20c82fe1a99670769f2947d0653a88a982e": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Labor Day, 2026",
+        "summary": "Labor Day, 2026",
+        "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18573/labor-day-2026",
+        "publication_date": "2026-09-10"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:19.974477+00:00",
+      "source_sha256": "2cba869c4cdafcbda7087b193da99a4d24bf1cad049f9f3d9b9aa2cbad91978c",
+      "source_text_sha256": "3198c045ce2494e4c5828b6005f4bc1a036757abd04654f07d6c9b720e904d1d"
+    },
+    "cd22f2d5af203e756c502791bcc33ffc4b0d8dfff805269b50818e89c88ed906": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Supporting America's Ranchers",
+        "summary": "Supporting America's Ranchers",
+        "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18571/supporting-americas-ranchers",
+        "publication_date": "2026-09-10"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:21.221013+00:00",
+      "source_sha256": "c32047c5ba559cc885602452a6eb5aa2d778b925873e7c8f826aca502dcd1915",
+      "source_text_sha256": "dac3cbe8c98f12609cc14191d458676cc69920e89aa813e517c4c1222358d895"
+    },
+    "b3944ef7895e5e38bb1e814d8f44f56369968ac5aad5a0b24b7f6455ec20eedb": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Promoting Fair Competition in Livestock Markets and Expanding Market Access for American Meat Producers",
+        "summary": "Promoting Fair Competition in Livestock Markets and Expanding Market Access for American Meat Producers",
+        "url": "https://www.federalregister.gov/documents/2026/09/10/2026-18567/promoting-fair-competition-in-livestock-markets-and-expanding-market-access-for-american-meat",
+        "publication_date": "2026-09-10"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:19.733242+00:00",
+      "source_sha256": "9eb4b23bb0fdc9fd69cfc0d878e2487463224f39a10d3c8b8bccf8a9ec3d848a",
+      "source_text_sha256": "4f549c2c315a4f5367ddffb06d4696242ead91c246825d278824c2506273da2b"
+    },
+    "e6ec74a664db54ecd787fec0526ad49a9987f6f596b1bc106ffbe4e7f292c94a": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Establishing the United States Space Academy",
+        "summary": "Establishing the United States Space Academy",
+        "url": "https://www.federalregister.gov/documents/2026/09/03/2026-18141/establishing-the-united-states-space-academy",
+        "publication_date": "2026-09-03"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true
+    },
+    "e8a459ee31c3fb499ea42b5f22ca66debddd1655dd046f34c3d6d62e22402b58": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Continuation of the National Emergency With Respect to Foreign Interference in or Undermining Public Confidence in United States Elections",
+        "summary": "Continuation of the National Emergency With Respect to Foreign Interference in or Undermining Public Confidence in United States Elections",
+        "url": "https://www.federalregister.gov/documents/2026/09/02/2026-18046/continuation-of-the-national-emergency-with-respect-to-foreign-interference-in-or-undermining-public",
+        "publication_date": "2026-09-02"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true
+    },
+    "7bbd46303dbc23a72f8b28a0390a1fd56a8b9fe7563450aa05937e1aa3cfb3f6": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Honoring the American History of the Great Lakes and Renaming Lake Ontario as Lake America",
+        "summary": "Honoring the American History of the Great Lakes and Renaming Lake Ontario as Lake America",
+        "url": "https://www.federalregister.gov/documents/2026/09/02/2026-18020/honoring-the-american-history-of-the-great-lakes-and-renaming-lake-ontario-as-lake-america",
+        "publication_date": "2026-09-02"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:15.307540+00:00",
+      "source_sha256": "78c090dc7a972d5a48d5559f89b5593c64ff4246805975b624a57e4a7902a164",
+      "source_text_sha256": "527b5b2c1b103cda94ed32736f04bf6196b6555a68bc5f3fa2985c9a4c19f05a"
+    },
+    "3ff65c3d3f7019672d213242d314246091dc2aa8f54bcaf50a7bd60f4bc2567d": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Further Ensuring Affordable Beef for the American Consumer",
+        "summary": "Further Ensuring Affordable Beef for the American Consumer",
+        "url": "https://www.federalregister.gov/documents/2026/08/31/2026-17842/further-ensuring-affordable-beef-for-the-american-consumer",
+        "publication_date": "2026-08-31"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:09.927490+00:00",
+      "source_sha256": "e20d483fbe5ecc0e8d54b85bc5b2658606a9dae340bc857e7b0f358609d11cec",
+      "source_text_sha256": "50bc21adb6c144150525aaf96d5e062b76aff2fe85788986bec9bcf507ae5934"
+    },
+    "9aa598222143f08f8349b808ca5f18e55864392991949caf43e568bb5ccfe4c2": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Fifth Anniversary of the Attack at Abbey Gate",
+        "summary": "Fifth Anniversary of the Attack at Abbey Gate",
+        "url": "https://www.federalregister.gov/documents/2026/08/31/2026-17841/fifth-anniversary-of-the-attack-at-abbey-gate",
+        "publication_date": "2026-08-31"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:17.389847+00:00",
+      "source_sha256": "65f7098dba384c6fbc3a7fa591497e23aeb728afdc656ecc85754edf15bd47ec",
+      "source_text_sha256": "9468356705a3f30938f7ca655b26f538a61b00087d92ad83c0da48f7a049323a"
+    },
+    "63309f9ad57cc72b4fb3a1fc30fa9ec53a01ab3527f748683ff9df2e8c81b4ed": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Honoring the Memory of Dolly Parton",
+        "summary": "Honoring the Memory of Dolly Parton",
+        "url": "https://www.federalregister.gov/documents/2026/08/28/2026-17716/honoring-the-memory-of-dolly-parton",
+        "publication_date": "2026-08-28"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:14.023371+00:00",
+      "source_sha256": "81e62fa067d1a725bbf52c2513305531755717f8d171b0150735737989b80230",
+      "source_text_sha256": "45c075e1d06d9abcf3cca8a2589f50ec5af651673e9c1ac3b22fe1d30575a14f"
+    },
+    "ea11e7e4c618b29a67f96b896d0da60389dd583d68dcfc89f8e9792df0fdddf2": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Presidential Determination on Provision of Atomic Information to Finland and Sweden",
+        "summary": "Presidential Determination on Provision of Atomic Information to Finland and Sweden",
+        "url": "https://www.federalregister.gov/documents/2026/08/26/2026-17477/presidential-determination-on-provision-of-atomic-information-to-finland-and-sweden",
+        "publication_date": "2026-08-26"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true
+    },
+    "a76ac5af6156e361ec75fed0ddde2cf9d5774a2fdac32bd399adae8aacd253fc": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Continuation of the Exercise of Certain Authorities Under the Trading With the Enemy Act",
+        "summary": "Continuation of the Exercise of Certain Authorities Under the Trading With the Enemy Act",
+        "url": "https://www.federalregister.gov/documents/2026/08/25/2026-17374/continuation-of-the-exercise-of-certain-authorities-under-the-trading-with-the-enemy-act",
+        "publication_date": "2026-08-25"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:19.245453+00:00",
+      "source_sha256": "fdc8da3eceb33e2f700f4d1eee6fea406e8c9fe7c7be73e53cf57c576a339edc",
+      "source_text_sha256": "ab41d7e75d7d7cc29a419e7813938af1e60228660465cd31323e03ee2e006d53"
+    },
+    "8a960c302ff1e66e66dd6da04db2f0bf7d7779451e9e1d86544a6106904be080": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "The National Space Transportation Policy",
+        "summary": "The National Space Transportation Policy",
+        "url": "https://www.federalregister.gov/documents/2026/08/25/2026-17372/the-national-space-transportation-policy",
+        "publication_date": "2026-08-25"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:15.734277+00:00",
+      "source_sha256": "0d3711dc18e19652f67b43bf0374043db6fa72ea1e19fceb3fc5129b5ced7f7b",
+      "source_text_sha256": "421e6c77bf86082a1e3359b64a83524532983e501f1463d9b02608fe4c0e94e2"
+    },
+    "19d7beb56a24dc6db7d38a9c09f698742a81d750f60693a5e702928ae99e5f01": {
+      "status": "pending",
+      "attempts": 1,
+      "item": {
+        "title": "Temporary Suspension of Additional Duties To Offset Canadian Discrimination Against the Commerce of the United States With Respect to Alcoholic Beverages, Dairy, and Motor Vehicles",
+        "summary": "Temporary Suspension of Additional Duties To Offset Canadian Discrimination Against the Commerce of the United States With Respect to Alcoholic Beverages, Dairy, and Motor Vehicles",
+        "url": "https://www.federalregister.gov/documents/2026/08/24/2026-17294/temporary-suspension-of-additional-duties-to-offset-canadian-discrimination-against-the-commerce-of",
+        "publication_date": "2026-08-24"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:05:07.386513+00:00",
+      "source_sha256": "47ec8f65b151afceb2eb0a341c0a129ec48d2059e1b9c8e8bd30db153b5730f8",
+      "source_text_sha256": "5492d0ccf756ee39dfcae4f097af0392e47270c90160aea7c843ec0e7aecdb21",
+      "error": "invalid model schema"
+    },
+    "cb5a5dc5e2a68bc3d8234abf6b81f5495076b73b43649537a7cfd54d5ad22994": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Adjusting Imports of Unmanned Aircraft Systems and Unmanned Aircraft Systems Components Into the United States",
+        "summary": "Adjusting Imports of Unmanned Aircraft Systems and Unmanned Aircraft Systems Components Into the United States",
+        "url": "https://www.federalregister.gov/documents/2026/08/19/2026-16979/adjusting-imports-of-unmanned-aircraft-systems-and-unmanned-aircraft-systems-components-into-the",
+        "publication_date": "2026-08-19"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:20.951768+00:00",
+      "source_sha256": "bb9c90378e11423ff231d1326880b038c8264c00eb6439e728cb26ff4bad5d25",
+      "source_text_sha256": "5b6fa7f6ca6e3a94d15e5866c7a635601cba12361d95ff84769438a18b52a904"
+    },
+    "478b8935eddf294db29946515787df62c11a0cb4fd0e64b63e9ae06ce4688d9a": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "National Substance Use Primary Prevention Month, 2026",
+        "summary": "National Substance Use Primary Prevention Month, 2026",
+        "url": "https://www.federalregister.gov/documents/2026/08/17/2026-16799/national-substance-use-primary-prevention-month-2026",
+        "publication_date": "2026-08-17"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:11.022104+00:00",
+      "source_sha256": "de1189b1e7719a080c7f85ca232008e70e80c8c368237f2bae75db24499b5f1e",
+      "source_text_sha256": "79e7e2924c0b34981d6a6f2a3fc4e6f8f951e064a838d8b84ae8800127eb9373"
+    },
+    "1570cc437e55c618c76e8411fe74f33765c8a45c3fa2df0280f5dea4f18e6894": {
+      "status": "pending",
+      "attempts": 1,
+      "item": {
+        "title": "Apply AI Summit",
+        "summary": "<span>Apply AI Summit</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-09-07T15:58:15+02:00\" title=\"Monday, September 7, 2026 - 15:58\">Mon, 09/07/2026 - 15:58</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                              <ul class=\"ecl-unordered-list ecl-unordered-list--no-bullet ecl-u-mb-xl\">\n      <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n      <span class=\"wt-icon--calendar ecl-icon ecl-icon--fluid ecl-icon--calendar\" aria-hidden=\"true\"></span>&nbsp;\n      17 November 2026\n  </li>\n  \n    <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n    <span class=\"wt-icon--location ecl-icon ecl-icon--fluid ecl-icon--location\" aria-hidden=\"true\"></span>&nbsp;\n        The EGG (Brussels)\n      </li>\n  </ul>\n\n                <p class=\"ecl-page-header-standardised__description\">The Apply AI Summit will gather high-level stakeholders – from industrial representatives, policymakers and startups – to accelerate AI implementation in strategic industries.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/Apply20AI_web20banner203x21_vEToDjTdEMy5LWcXsQNhBr9Npc_244913.png?itok=HZIOXAyE\" alt=\"Apply AI Summit - Purple text and icons for diverse industries above logos for the European Commission and AI Office.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          \n  <div>\n    <h4>Main link</h4>\n              <div><a href=\"https://digital-strategy.ec.europa.eu/en/policies/apply-ai-summit\">https://digital-strategy.ec.europa.eu/en/policies/apply-ai-summit</a></div>\n          </div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                                <p><a href=\"https://b2match.com/e/apply-ai-summit-2026/sign-up?invitation=X5XxRs-5WXdJi-CvVi1dG-Z0gxY=\" class=\"ecl-button ecl-button--call\">Register until 13 November</a></p>\n\n              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=137\" class=\"ecl-tag ecl-u-mb-xs\">Events</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=119\" class=\"ecl-tag ecl-u-mb-xs\">Artificial intelligence</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=260\" class=\"ecl-tag ecl-u-mb-xs\">Apply AI Summit</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div>\n  \n    \n        <div class=\"ecl-u-type-m\">\n    <section class=\"cnct-page-footer ecl-u-mv-2xl\">\n      \n          </section>\n  </div>\n\n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
+        "url": "https://digital-strategy.ec.europa.eu/en/events/apply-ai-summit",
+        "publication_date": "Mon, 07 Sep 2026 13:58:15 +0000"
+      },
+      "target": {
+        "id": "eu_ai_office",
+        "name": "EU AI Office & Digital Strategy",
+        "jurisdiction": "European Union",
+        "type": "regulator_feed",
+        "url": "https://digital-strategy.ec.europa.eu/en/rss.xml",
+        "format": "rss",
+        "filter_ai": true,
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:02:06.543455+00:00",
+      "source_sha256": "eefd8975d9b4b5e83f869e72393a250e15501209920749ba23ec995490bd2f64",
+      "source_text_sha256": "e617798d98f7cedb6cbbe9f4e396c43e7ea13c07e399893d8910dd9aebb7ff32",
+      "error": "invalid model schema"
+    },
+    "a441b84e65cb5e4cfc4c616337de3b09fcb887cb4091f101a16e47798c577710": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "State of the Union 2026",
+        "summary": "<span>State of the Union 2026</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-08-31T16:11:00+02:00\" title=\"Monday, August 31, 2026 - 16:11\">Mon, 08/31/2026 - 16:11</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                              <ul class=\"ecl-unordered-list ecl-unordered-list--no-bullet ecl-u-mb-xl\">\n      <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n      <span class=\"wt-icon--calendar ecl-icon ecl-icon--fluid ecl-icon--calendar\" aria-hidden=\"true\"></span>&nbsp;\n      16 September 2026\n  </li>\n  \n  </ul>\n\n                <p class=\"ecl-page-header-standardised__description\">The State of the Union (SOTEU) address is an annual speech by the President of the European Commission to the European Parliament, setting the priorities for the Union for the year ahead. It will be livestreamed.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/SOTEU2026_32_SgngGKGDk9ht5XlLEGCNHzh4Jo_243575.jpg?itok=2Z_XP898\" alt=\"State of the Union 2026\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          \n  <div>\n    <h4>Main link</h4>\n              <div><a href=\"https://commission.europa.eu/strategy-and-policy/state-union_en\">https://commission.europa.eu/strategy-and-policy/state-union_en</a></div>\n          </div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=131\" class=\"ecl-tag ecl-u-mb-xs\">Shaping the Digital Single Market</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=75\" class=\"ecl-tag ecl-u-mb-xs\">Creating a digital society</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=34\" class=\"ecl-tag ecl-u-mb-xs\">Research and Innovation</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=103\" class=\"ecl-tag ecl-u-mb-xs\">Digital connectivity</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=159\" class=\"ecl-tag ecl-u-mb-xs\">Media and democracy</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=165\" class=\"ecl-tag ecl-u-mb-xs\">Digital Cultural heritage</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=155\" class=\"ecl-tag ecl-u-mb-xs\">Cybersecurity</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=110\" class=\"ecl-tag ecl-u-mb-xs\">Electronic communications and Privacy</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=117\" class=\"ecl-tag ecl-u-mb-xs\">Advanced Digital Technologies</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=67\" class=\"ecl-tag ecl-u-mb-xs\">Startups</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=153\" class=\"ecl-tag ecl-u-mb-xs\">Strengthening trust and security</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=69\" class=\"ecl-tag ecl-u-mb-xs\">Data policy</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=50\" class=\"ecl-tag ecl-u-mb-xs\">Advanced and Cloud Computing</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=164\" class=\"ecl-tag ecl-u-mb-xs\">Copyright</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=49\" class=\"ecl-tag ecl-u-mb-xs\">Boosting European digital Industry</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=146\" class=\"ecl-tag ecl-u-mb-xs\">International relations</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=150\" class=\"ecl-tag ecl-u-mb-xs\">Online platforms and e-commerce</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=119\" class=\"ecl-tag ecl-u-mb-xs\">Artificial intelligence</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=98\" class=\"ecl-tag ecl-u-mb-xs\">Funding for Digital</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=184\" class=\"ecl-tag ecl-u-mb-xs\">Digital Decade</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=247\" class=\"ecl-tag ecl-u-mb-xs\">An agile rulebook</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=252\" class=\"ecl-tag ecl-u-mb-xs\">Tech sovereignty</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div>\n  \n    \n        <div class=\"ecl-u-type-m\">\n    <section class=\"cnct-page-footer ecl-u-mv-2xl\">\n      \n          </section>\n  </div>\n\n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
+        "url": "https://digital-strategy.ec.europa.eu/en/events/state-union-2026",
+        "publication_date": "Mon, 31 Aug 2026 14:11:00 +0000"
+      },
+      "target": {
+        "id": "eu_ai_office",
+        "name": "EU AI Office & Digital Strategy",
+        "jurisdiction": "European Union",
+        "type": "regulator_feed",
+        "url": "https://digital-strategy.ec.europa.eu/en/rss.xml",
+        "format": "rss",
+        "filter_ai": true,
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:18.586487+00:00",
+      "source_sha256": "f70385d89053eea2811120ebc86c3706c866ed175084a7ed9d93a9dc13903e40",
+      "source_text_sha256": "fe2bb15cc06de4df575702384a91d66788a0e1d1f52798fce3c244ab5cbe82c6"
+    },
+    "779f94f8a61593142916bc1263931b484102be77c65ab4eeb8d9473fbd0f8d00": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Commission designates ChatGPT, Reddit, Roblox under Digital Services Act",
+        "summary": "<span>Commission designates ChatGPT, Reddit, Roblox under Digital Services Act</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-08-31T11:10:00+02:00\" title=\"Monday, August 31, 2026 - 11:10\">Mon, 08/31/2026 - 11:10</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                                    <p class=\"ecl-page-header-standardised__description\">The Commission has designated ChatGPT as a Very Large Online Search Engine (VLOSE), as well as Reddit and Roblox as Very Large Online Platforms (VLOPs), under the Digital Services Act (DSA).</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/DSA_variation_v3_nuupXEj8CTCd8A4kLlXjt08qc_241791.png?itok=TIbAV9qE\" alt=\"Text &quot;Digital Services Act&quot; inside a white triangle inside a white triangle against a purple background.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>These services declared that they reach at least 45 million average monthly users in the EU and thus meet the threshold for designation.</p>\n<p>Following the notification of the designations, these services have four months, i.e. by January 2027, to comply with the additional DSA obligations for VLOPs and VLOSEs, such as assessing and mitigating the systemic risks stemming from their service and algorithmic systems related to the dissemination of illegal content, the negative effects on minors, users’ physical and mental well-being, fundamental rights, electoral processes and public security.&nbsp;</p>\n<p><a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1772\" class=\"ecl-link ecl-link--primary-highlight ecl-link--icon ecl-link--icon-after\">Read the full press release</a></p>\n<p>Find further information about:</p>\n<ul>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/list-designated-vlops-and-vloses\">Supervision of the designated very large online platforms and search engines under DSA</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/digital-services-act\">Digital Services Act</a> – main aspects of the regulation</li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/factpages/user-rights-under-digital-services-act\">User rights under the Digital Services Act</a> – an overview</li>\n</ul></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=150\" class=\"ecl-tag ecl-u-mb-xs\">Online platforms and e-commerce</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=193\" class=\"ecl-tag ecl-u-mb-xs\">DSA - Digital Services Act</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div>\n  \n    \n        <div class=\"ecl-u-type-m\">\n    <section class=\"cnct-page-footer ecl-u-mv-2xl\">\n      \n          </section>\n  </div>\n\n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
+        "url": "https://digital-strategy.ec.europa.eu/en/news/commission-designates-chatgpt-reddit-roblox-under-digital-services-act",
+        "publication_date": "Mon, 31 Aug 2026 09:10:00 +0000"
+      },
+      "target": {
+        "id": "eu_ai_office",
+        "name": "EU AI Office & Digital Strategy",
+        "jurisdiction": "European Union",
+        "type": "regulator_feed",
+        "url": "https://digital-strategy.ec.europa.eu/en/rss.xml",
+        "format": "rss",
+        "filter_ai": true,
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:14.816948+00:00",
+      "source_sha256": "75d9da0e5af839b969999c6818e49f5ba22b55edcca2d5fa87fc626bb868b558",
+      "source_text_sha256": "d023b484ea6402ff0c0090715c8540d8319e9710e114ca7da0d9447332cb30ee"
+    },
+    "50d54867be120025fe49a448e60284b9adf3c3c1d15bfd99770a94b7d6a3cc8c": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Pitching day: Finalists of the Apply AI Startup Award",
+        "summary": "<span>Pitching day: Finalists of the Apply AI Startup Award</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-08-24T10:19:46+02:00\" title=\"Monday, August 24, 2026 - 10:19\">Mon, 08/24/2026 - 10:19</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                              <ul class=\"ecl-unordered-list ecl-unordered-list--no-bullet ecl-u-mb-xl\">\n      <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n      <span class=\"wt-icon--calendar ecl-icon ecl-icon--fluid ecl-icon--calendar\" aria-hidden=\"true\"></span>&nbsp;\n      20 October 2026\n  </li>\n  \n  </ul>\n\n                <p class=\"ecl-page-header-standardised__description\">Watch the pitches of the top 10 finalists of the Apply AI Startup Award and learn more about the European AI innovation ecosystem.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/AI_Startup_Awards_NUxc8gs9ik6saElWEoEYJIGNbw_243257.png?itok=ptCYFy_H\" alt=\"AI Startup Awards logo featuring a purple trophy graphic framed by an arch of stars.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>The <a href=\"https://digital-strategy.ec.europa.eu/en/news/apply-ai-startup-award\">Apply AI Startup Award</a> recognises innovative European startups and scaleups developing AI solutions in the 11 strategic sectors covered by the <a href=\"https://digital-strategy.ec.europa.eu/en/policies/apply-ai\">Apply AI Strategy</a>.</p>\n<p>In July, national startup associations nominated 24 European AI startups and scaleups across 16 Member States. Independent experts are currently evaluating the nominations and will choose the top 10 finalists for the pitching event. Each startup will have 3 minutes to pitch their AI solution and convince the jury.</p>\n<p>After the pitching session the jury will select the 3 winners. Among other rewards, they will be invited to pitch their solution and receive a trophy and certificate on the main stage of the <a href=\"https://digital-strategy.ec.europa.eu/en/policies/apply-ai-summit\">Apply AI Summit</a>.</p>\n<h2>Registration</h2>\n<p>Click and fill the form to <a href=\"https://www.f6s.com/apply-ai-startup-award-top-10-online-pitching-event/about\">register</a></p>\n<h2>Agenda</h2>\n<p><strong>14:00-15:30 CET(to be confirmed)</strong></p>\n<ul>\n<li>Welcome and introduction</li>\n<li>Part I - Pitches&nbsp;</li>\n<li>Presentation from the AI Office</li>\n<li>Part II - Pitches</li>\n<li>Conclusion</li>\n</ul>\n<h2>Jury &amp; finalists</h2>\n<p>The jury members and the top 10 Finalists will be announced soon.</p></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                                <p><a href=\"https://www.f6s.com/apply-ai-startup-award-top-10-online-pitching-event/about\" class=\"ecl-button ecl-button--call\">Registration form</a></p>\n\n              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=137\" class=\"ecl-tag ecl-u-mb-xs\">Events</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=119\" class=\"ecl-tag ecl-u-mb-xs\">Artificial intelligence</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=260\" class=\"ecl-tag ecl-u-mb-xs\">Apply AI Summit</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div>\n  \n    \n        <div class=\"ecl-u-type-m\">\n    <section class=\"cnct-page-footer ecl-u-mv-2xl\">\n      \n          </section>\n  </div>\n\n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
+        "url": "https://digital-strategy.ec.europa.eu/en/events/pitching-day-finalists-apply-ai-startup-award",
+        "publication_date": "Mon, 24 Aug 2026 08:19:46 +0000"
+      },
+      "target": {
+        "id": "eu_ai_office",
+        "name": "EU AI Office & Digital Strategy",
+        "jurisdiction": "European Union",
+        "type": "regulator_feed",
+        "url": "https://digital-strategy.ec.europa.eu/en/rss.xml",
+        "format": "rss",
+        "filter_ai": true,
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:11.818463+00:00",
+      "source_sha256": "dea22c219dc3e05c981df418930f30c1f3831dc5af773345687dc177fc03036d",
+      "source_text_sha256": "0041bf2840fd49599edeee3f55aebfb8484c246f5e3f5fb7852e2c4b6eabda55"
+    },
+    "0ee46afeaae61fac6e1790c438289c845bb59297ddc3cb7bb4b8eba7f30348e8": {
+      "status": "pending",
+      "attempts": 1,
+      "item": {
+        "title": "Join the Inaugural D-TECT Forum",
+        "summary": "<span>Join the Inaugural D-TECT Forum</span>\n<span><span>lobacni</span></span>\n<span><time datetime=\"2026-08-10T14:07:00+02:00\" title=\"Monday, August 10, 2026 - 14:07\">Mon, 08/10/2026 - 14:07</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                              <ul class=\"ecl-unordered-list ecl-unordered-list--no-bullet ecl-u-mb-xl\">\n      <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n      <span class=\"wt-icon--calendar ecl-icon ecl-icon--fluid ecl-icon--calendar\" aria-hidden=\"true\"></span>&nbsp;\n      11 November 2026\n  </li>\n  \n  </ul>\n\n                <p class=\"ecl-page-header-standardised__description\">The Drone Tech for Countering Threats (D-TECT) Forum is the EU industrial coordination mechanism for drone and counter-drone technologies.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n    \n\n  \n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/AdobeStock_595109161Marcus_Jacobi_ratio32_GxWso1LMZ90qt7CNQ2icYLBmw_242796.jpg?itok=Quz5hy9l\" alt=\"Image of a flying drone.\"></picture><figcaption class=\"ecl-media-container__caption\">          © Marcus Jacobi\n          </figcaption></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>The European Commission invites interested organisations to join the inaugural <a href=\"https://digital-strategy.ec.europa.eu/en/policies/d-tect-forum\">D-Tect Forum</a> on <strong>11 November 2026</strong>. We are looking for companies, <span>research organisations, universities, industry associations, standardisation bodies and innovation networks active in the drones domain. </span>The inaugural Forum aims to gather 100+ high-level leaders to advance Europe’s ambitions in Drone and Counter-Drone technology.</p>\n<p>Participants will explore near-term cooperation across the full drone and counter-drone value chain, including detection, tracking and neutralisation systems, autonomy and AI-enabled navigation, sensing and electronic warfare, secure connectivity, and the enabling technologies that underpin them, such as semiconductors, cloud, cyber and data. The priorities and composition of the thematic Working Groups will be defined during the Forum.</p>\n<p>To participate in the event, please <a href=\"https://ec.europa.eu/eusurvey/runner/58219f54-fdb7-18a3-dd9f-12de23c64323\">submit your application</a>. This form is also a registration to the Call of Expression of Interest to join future events of the D-TECT forum.<em><strong></strong></em></p>\n<p>Please note that submitting an application does not by itself confirm your registration for the inaugural Forum. Further, results of membership applications will be communicated after the event.</p></div>\n\n              \n<h2>Downloads</h2>\n<div data-ecl-auto-init=\"FileDownload\" class=\"ecl-u-mt-m ecl-u-mt-lg-xl ecl-file\" data-ecl-file=\"true\" data-ecl-auto-initialized=\"true\">\n  <div class=\"ecl-file__container\">\n    <span class=\"wt-icon--file ecl-icon ecl-icon--2xl ecl-icon--file\" aria-hidden=\"true\"></span>    <div class=\"ecl-file__info\">\n      <div class=\"ecl-file__title\">Call for Expression of interest - ​​​Drone Tech for Countering Threats Forum​ </div>\n    </div>\n    <a download href=\"https://ec.europa.eu/newsroom/dae/redirection/document/131846\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">\n      <span class=\"ecl-link__label\">Download</span>&nbsp;\n      <span class=\"wt-icon--download ecl-icon ecl-icon--fluid ecl-icon--download\" aria-hidden=\"true\"></span>    </a>\n  </div>\n</div>\n<div data-ecl-auto-init=\"FileDownload\" class=\"ecl-u-mt-m ecl-u-mt-lg-xl ecl-file\" data-ecl-file=\"true\" data-ecl-auto-initialized=\"true\">\n  <div class=\"ecl-file__container\">\n    <span class=\"wt-icon--file ecl-icon ecl-icon--2xl ecl-icon--file\" aria-hidden=\"true\"></span>    <div class=\"ecl-file__info\">\n      <div class=\"ecl-file__title\">Privacy statement - Drone Tech for Countering Threats (D-TECT) Forum</div>\n    </div>\n    <a download href=\"https://ec.europa.eu/newsroom/dae/redirection/document/131845\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">\n      <span class=\"ecl-link__label\">Download</span>&nbsp;\n      <span class=\"wt-icon--download ecl-icon ecl-icon--fluid ecl-icon--download\" aria-hidden=\"true\"></span>    </a>\n  </div>\n</div>\n<div data-ecl-auto-init=\"FileDownload\" class=\"ecl-u-mt-m ecl-u-mt-lg-xl ecl-file\" data-ecl-file=\"true\" data-ecl-auto-initialized=\"true\">\n  <div class=\"ecl-file__container\">\n    <span class=\"wt-icon--file ecl-icon ecl-icon--2xl ecl-icon--file\" aria-hidden=\"true\"></span>    <div class=\"ecl-file__info\">\n      <div class=\"ecl-file__title\">Terms of reference - Drone Tech for Countering Threats Forum</div>\n    </div>\n    <a download href=\"https://ec.europa.eu/newsroom/dae/redirection/document/131847\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">\n      <span class=\"ecl-link__label\">Download</span>&nbsp;\n      <span class=\"wt-icon--download ecl-icon ecl-icon--fluid ecl-icon--download\" aria-hidden=\"true\"></span>    </a>\n  </div>\n</div>\n\n      \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=155\" class=\"ecl-tag ecl-u-mb-xs\">Cybersecurity</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=252\" class=\"ecl-tag ecl-u-mb-xs\">Tech sovereignty</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=257\" class=\"ecl-tag ecl-u-mb-xs\">Hybrid security threats</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div>\n  \n    \n        <div class=\"ecl-u-type-m\">\n    <section class=\"cnct-page-footer ecl-u-mv-2xl\">\n      \n          </section>\n  </div>\n\n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
+        "url": "https://digital-strategy.ec.europa.eu/en/events/join-inaugural-d-tect-forum",
+        "publication_date": "Mon, 10 Aug 2026 12:07:00 +0000"
+      },
+      "target": {
+        "id": "eu_ai_office",
+        "name": "EU AI Office & Digital Strategy",
+        "jurisdiction": "European Union",
+        "type": "regulator_feed",
+        "url": "https://digital-strategy.ec.europa.eu/en/rss.xml",
+        "format": "rss",
+        "filter_ai": true,
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:01:05.414542+00:00",
+      "source_sha256": "7756b935546313d8ae56695fe1a3f3ca2ef03c869116b4bb8bab29df74c21c18",
+      "source_text_sha256": "b287835e295c0060a33eacb8a6c61cea9c624be599edc42f15f0495d39504c3b",
+      "error": "invalid model schema"
+    },
+    "453dc28b057eae2838b32b0eeda96eb9cb07435a1c6b44b134c04acf43304d0d": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Commission starts enforcing AI Act rules and new transparency requirements on 2 August",
+        "summary": "<span>Commission starts enforcing AI Act rules and new transparency requirements on 2 August</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-07-31T09:00:00+02:00\" title=\"Friday, July 31, 2026 - 09:00\">Fri, 07/31/2026 - 09:00</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                                    <p class=\"ecl-page-header-standardised__description\">From 2 August 2026, the European Commission’s AI Office, together with national authorities, will begin enforcing the Artificial Intelligence (AI) Act.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/AI_card_AIActSD_kc8WnzKy4P5PUgeyvVCoxaS3pQ_242706.jpg?itok=qH_EK4bm\" alt=\"Graphic illustration of a person pointing to a document titled &quot;AI ACT&quot; next to a judge's gavel against a purple background.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>On the same date, new transparency rules will start to apply, requiring certain AI systems to tell users when they are interacting with AI and when content has been generated or altered by it.</p>\n<p>Under the new rules, chatbots and other interactive AI systems will have to tell users they are dealing with AI, not a human. Deepfakes (images, videos, or audio that have been edited or generated using AI) will have to be labelled. AI-generated or altered content will also have to carry machine-readable marks so it can be detected more easily.</p>\n<p><span>The measures are intended to reduce deception and manipulation and help people make informed choices. They also give businesses clearer obligations and a practical way to show compliance. The Commission published a </span><a href=\"https://digital-strategy.ec.europa.eu/en/news-redirect/950719\" target=\"_blank\" rel=\"noopener noreferrer\">first list</a> <span>of more than 180 organisations that have signed the </span><a href=\"https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content\">Code of Practice on transparency of AI-generated content</a> <span>that operationalises the rules on transparency of AI-generated content.</span></p>\n<p>Read the <a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1714\">full press release</a>.</p>\n<p>Read more about the <a href=\"https://digital-strategy.ec.europa.eu/en/policies/enforcement-ai-act\">Enforcement of the AI Act</a> and the:</p>\n<ul>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/ai-act-complaints-tool\">AI Act complaints tool</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/ai-act-whistleblower-tool\">AI Act Whistleblower Tool</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/miscellaneous/complaints-channel-downstream-providers-using-general-purpose-ai-models\">Complaints channel for downstream providers using general-purpose AI models</a></li>\n</ul>\n<p>Find more information about:</p>\n<ul>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/guidelines-transparency-ai-generated-content\">Guidelines on Transparency of AI-generated Content</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai\">General-Purpose AI (GPAI) Code of Practice</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/guidelines-gpai-providers\">Guidelines for providers of GPAI models</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act\">Guidelines on prohibited AI practices</a></li>\n</ul></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=119\" class=\"ecl-tag ecl-u-mb-xs\">Artificial intelligence</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div>\n  \n    \n        <div class=\"ecl-u-type-m\">\n    <section class=\"cnct-page-footer ecl-u-mv-2xl\">\n      \n          </section>\n  </div>\n\n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
+        "url": "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august",
+        "publication_date": "Fri, 31 Jul 2026 07:00:00 +0000"
+      },
+      "target": {
+        "id": "eu_ai_office",
+        "name": "EU AI Office & Digital Strategy",
+        "jurisdiction": "European Union",
+        "type": "regulator_feed",
+        "url": "https://digital-strategy.ec.europa.eu/en/rss.xml",
+        "format": "rss",
+        "filter_ai": true,
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:10.219414+00:00",
+      "source_sha256": "1420fcd040a742e3242426fc2c01f1eaf7e5bfcb0c34bed014ce627909cbfe45",
+      "source_text_sha256": "e7e4823f97bde16ef76626c6bb3ac0bcba8bcbaad8ae5d8ce05db22fea902b77"
+    },
+    "7d182fd7d781b460576c484dd6a7b0c76fd87f49a893443cd91540e939c82d09": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "EU launches AI Gigafactories call to boost Europe's computing capacity and unlock more than €30 billion in investment",
+        "summary": "<span>EU launches AI Gigafactories call to boost Europe's computing capacity and unlock more than €30 billion in investment</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-07-30T11:50:00+02:00\" title=\"Thursday, July 30, 2026 - 11:50\">Thu, 07/30/2026 - 11:50</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                                    <p class=\"ecl-page-header-standardised__description\">The EU has launched a call for tenders to establish up to seven AI Gigafactories across Europe, as part of its latest major push to accelerate Europe's technological sovereignty and ambition of becoming the AI Continent.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n    \n\n  \n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/AdobeStock_1770028153Tikka_MS_360x240px_iB4vg7qWky42iMdzaS6ge1vG4o_242595.jpg?itok=Ombw5qg4\" alt=\"A key unlocking the European continent\"></picture><figcaption class=\"ecl-media-container__caption\">          AdobeStock © Tikka MS\n          </figcaption></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>Led by industry and supported by up to <strong>€10 billion</strong> in EU and national funding, the initiative is expected to unlock at least €20 billion in private investment across the Union. It will expand Europe's AI computing capacity and give start-ups, scale-ups, small and medium-sized enterprises, industry, academia and public authorities access to infrastructure for training, inference and fine-tuning advanced frontier AI models.</p>\n<p>The AI Gigafactories will combine advanced AI processors, software and cloud technology stacks, high-speed connectivity and energy-efficient data centres. Together with Europe's network of 19 AI Factories, they will strengthen Europe's technological leadership, resilience and strategic autonomy.</p>\n<p>The initiative will ensure that Europe can develop advanced AI on its own infrastructure, in line with EU rules and values. AI technologies developed in the AI Gigafactories will follow EU standards on data protection, safety, security and ethics.</p>\n<p>Read the <a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1708\">full press release</a>.</p>\n<h2>Find more information:</h2>\n<ul>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/library/communication-european-tech-sovereignty-accompanied-eu-open-source-strategy\">Strengthening Europe's Tech Sovereignty</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/library/ai-continent-action-plan\">AI Continent Action Plan</a></li>\n<li><a href=\"https://www.eurohpc-ju.europa.eu/eurohpc-joint-undertaking-launches-ai-gigafactories-call-enhance-europes-technological-sovereignty-2026-07-27_en\">European High Performance Computing Joint Undertaking</a></li>\n<li><a href=\"https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/tender-details/bc712395-692d-41ab-aa25-8e254ae86eb2-CN\">Tender Documents</a></li>\n</ul></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=117\" class=\"ecl-tag ecl-u-mb-xs\">Advanced Digital Technologies</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=124\" class=\"ecl-tag ecl-u-mb-xs\">High Performance Computing - HPC</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=119\" class=\"ecl-tag ecl-u-mb-xs\">Artificial intelligence</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=98\" class=\"ecl-tag ecl-u-mb-xs\">Funding for Digital</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=252\" class=\"ecl-tag ecl-u-mb-xs\">Tech sovereignty</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                              <h2>Related content</h2>\n\n      \n  <article class=\"ecl-content-item ecl-content-item--divider ecl-u-mb-xl\"><div class=\"ecl-content-block ecl-content-item__content-block\" data-ecl-auto-init=\"ContentBlock\" data-ecl-content-block><ul class=\"ecl-content-block__primary-meta-container\"><li class=\"ecl-content-block__primary-meta-item\">Call document</li><li class=\"ecl-content-block__primary-meta-item\">01 July 2026</li></ul><div class=\"ecl-content-block__title\"><a href=\"https://digital-strategy.ec.europa.eu/en/library/presentations-info-session-ai-gigafactories-initiative\" class=\"ecl-link ecl-link--standalone\" data-ecl-title-link>Presentations from Info Session on AI Gigafactories Initiative</a></div><div class=\"ecl-content-block__description\">On 16 June, the EuroHPC Joint Undertaking organised a dedicated online information session on the upcoming AI Gigafactories initiative. The presentations are now available.</div></div></article>  \n\n  \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div>\n  \n    \n        <div class=\"ecl-u-type-m\">\n    <section class=\"cnct-page-footer ecl-u-mv-2xl\">\n      \n          </section>\n  </div>\n\n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
+        "url": "https://digital-strategy.ec.europa.eu/en/news/eu-launches-ai-gigafactories-call-boost-europes-computing-capacity-and-unlock-more-eu30-billion",
+        "publication_date": "Thu, 30 Jul 2026 09:50:00 +0000"
+      },
+      "target": {
+        "id": "eu_ai_office",
+        "name": "EU AI Office & Digital Strategy",
+        "jurisdiction": "European Union",
+        "type": "regulator_feed",
+        "url": "https://digital-strategy.ec.europa.eu/en/rss.xml",
+        "format": "rss",
+        "filter_ai": true,
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:15.681150+00:00",
+      "source_sha256": "a9b8398dc135ec2060b2491e3a6d0debcf50bb8dceed3b0fbe41a2735431ccdd",
+      "source_text_sha256": "03f669693c544e0bd526d6acf5b7a018cd02be48ff16a00045feed4587ed5ed9"
+    },
+    "943a275b6244e55656cb7a12cad5f4dcdd9121436898f19c2faa6c2f4ad58c3f": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "AI-powered robotics in Europe: Live demonstrations and strategic debate",
+        "summary": "<span>AI-powered robotics in Europe: Live demonstrations and strategic debate</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-07-24T14:32:37+02:00\" title=\"Friday, July 24, 2026 - 14:32\">Fri, 07/24/2026 - 14:32</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                              <ul class=\"ecl-unordered-list ecl-unordered-list--no-bullet ecl-u-mb-xl\">\n      <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n      <span class=\"wt-icon--calendar ecl-icon ecl-icon--fluid ecl-icon--calendar\" aria-hidden=\"true\"></span>&nbsp;\n      02 September 2026\n  </li>\n  \n  </ul>\n\n                <p class=\"ecl-page-header-standardised__description\">The European Parliament will host a gathering of policymakers, industry leaders, researchers, alongside live demonstrations of cutting-edge robots, to set the course for the EU’s future in robotics.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/KIT010_2_aOkMeWLPSQwQ6nxyiGWFscM69U_241968.jpg?itok=uq9p36bE\" alt=\"AI-powered robotics in Europe: Live demonstrations and strategic debate\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>Europe is already a global leader in robotics research, development and innovation. As advances in artificial intelligence (AI) are accelerating the emergence of physical AI—robots capable of perceiving, reasoning and acting in the physical world—there is a growing opportunity for Europe to translate its scientific excellence into industrial leadership. Strengthening Europe’s position in AI powered robotics is essential to enhance its competitiveness, reinforce its technological sovereignty, and ensure that the next generation of AI powered robotics is developed and deployed in line with European values and strategic interests.</p>\n<p>This event will convene policymakers, industry representatives and academics to discuss how Europe can strengthen its leadership in AI-powered robotics and physical AI, including through a coordinated European initiative for AI-powered robotics that accelerates innovation, industrial deployment and investment. The discussion will build on existing European initiatives, including the <a href=\"https://digital-strategy.ec.europa.eu/en/factpages/ai-continent-action-plan\">AI Continent Action Plan</a> and the <a href=\"https://digital-strategy.ec.europa.eu/en/policies/apply-ai\">Apply AI Strategy</a>, and explore how these can help position Europe at the forefront of the next generation of AI-powered robotics. It will also feature live demonstrations by 20 to 30 of Europe’s most advanced AI-powered robots, showcasing how robotics can contribute to addressing key societal and economic needs.</p>\n<h2>Agenda</h2>\n<ul>\n<li>Robotics demo opening - including speeches by senior representatives of the European institutions, MEP Axel Voss and Prof. Alin Albu-Schäffer (euROBIN) (30 min)</li>\n<li>Live demonstration with 20-30 of Europe’s most advanced AI-powered robots (30 min)</li>\n<li>Round table discussion (1 hour and 30 min)</li>\n<li>Open demos, networking session (1 hour)</li>\n</ul>\n<p>This invitation-only event is organised by <a href=\"https://digital-strategy.ec.europa.eu/en/factpages/success-stories-eu-funded-ai-research-eurobin\">euROBIN</a>, the European Network of Excellence in Robotics, funded by Horizon Europe. euROBIN is building a shared European ecosystem for intelligent robotics, with a scientific focus on enabling AI-powered robots to transfer knowledge and skills across different robots, tasks and environments. Its core consortium brings together 31 partners from 14 countries and 26 European cities, with a further 39 partners supported through cascade funding.</p>\n<p><iframe src=\"https://webtools.europa.eu/crs/iframe/?oriurl=https%3A//www.youtube.com/embed/dy9yQUUc6lc&amp;lang=en\" width=\"560\" height=\"314\"></iframe></p></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                    <div>\n    <h4>Contact</h4>\n    \n<a href=\"mailto:EP-RoboticsEvent@eurobin-project.eu\">mailto:EP-RoboticsEvent@eurobin-project.eu</a>\n\n  </div>\n            <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=127\" class=\"ecl-tag ecl-u-mb-xs\">Robotics</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=119\" class=\"ecl-tag ecl-u-mb-xs\">Artificial intelligence</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div>\n  \n    \n        <div class=\"ecl-u-type-m\">\n    <section class=\"cnct-page-footer ecl-u-mv-2xl\">\n      \n          </section>\n  </div>\n\n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
+        "url": "https://digital-strategy.ec.europa.eu/en/events/ai-powered-robotics-europe-live-demonstrations-and-strategic-debate",
+        "publication_date": "Fri, 24 Jul 2026 12:32:37 +0000"
+      },
+      "target": {
+        "id": "eu_ai_office",
+        "name": "EU AI Office & Digital Strategy",
+        "jurisdiction": "European Union",
+        "type": "regulator_feed",
+        "url": "https://digital-strategy.ec.europa.eu/en/rss.xml",
+        "format": "rss",
+        "filter_ai": true,
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:16.406502+00:00",
+      "source_sha256": "f31c60dbdbed1778188027849a40b046b6299638c7ee03e5d3a5232bcaeb2fbb",
+      "source_text_sha256": "e095141f7bb9f7ab290ca8b09f62708a1bda2827b8c5b4eb0a31d5521f6572ce"
+    },
+    "7cbdfe2ae0d5f252946620b3fccc011b7e7a34191d6ea02643bb5bb20e0b42e7": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Request for regulators to publish an update on their strategic approach to AI: Secretary of State letters",
+        "summary": "Letters requesting a set of regulators to update their strategic approach to AI, with the intention of increasing the transparency around how they are implementing the AI Regulation White Paper proposals.",
+        "url": "https://www.gov.uk/government/publications/request-for-regulators-to-publish-an-update-on-their-strategic-approach-to-ai-secretary-of-state-letters",
+        "publication_date": "2024-02-15T00:00:00+00:00"
+      },
+      "target": {
+        "id": "uk_ofgem_queue",
+        "name": "UK Ofgem (Grid Queue & Regulatory Reform)",
+        "jurisdiction": "United Kingdom",
+        "type": "regulator_feed",
+        "url": "https://www.gov.uk/search/news-and-communications.atom?organisations%5B%5D=ofgem",
+        "format": "atom",
+        "filter_ai": true,
+        "priority_base": 2
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:15.566544+00:00",
+      "source_sha256": "863362e6ce3b7fa8a4d1652642afdb508721d354d8862c058651058b469439ed",
+      "source_text_sha256": "a1c8d7c0f3fe127647a8622f444dabbe386a16c352b4c8f70d46eaa0778edc23"
+    },
+    "62ee8f98b799c0827c80bfae8a016cdbfbaf4ae30d8d10c32f4e77e247ab9ea4": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "NIST Joins National Genesis Mission to Accelerate AI Innovation",
+        "summary": "  NIST will execute two of its efforts through its Centers for AI in Manufacturing and Critical Infrastructure.\n\n",
+        "url": "https://www.nist.gov/news-events/news/2026/08/nist-joins-national-genesis-mission-accelerate-ai-innovation",
+        "publication_date": "Tue, 04 Aug 2026 12:00:00 +0000"
+      },
+      "target": {
+        "id": "nist_ai_notices",
+        "name": "NIST AI Safety Institute & Risk Framework",
+        "jurisdiction": "United States",
+        "type": "standard_body",
+        "url": "https://www.nist.gov/news-events/news/rss.xml",
+        "format": "rss",
+        "filter_ai": true,
+        "priority_base": 2
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:13.617901+00:00",
+      "source_sha256": "cf1fa9d30f32a9e4316fa355f3cc0f59af7397fb4098170ebf81d1638a3110d1",
+      "source_text_sha256": "8a1ac53247518ef86f375550cd3b6cc4cdf7bb70c924f24850fd468a013ddfeb"
+    },
+    "c884fc912776c1d9883efc915fafd11b34b1d774c5ee15dcb4be4e3f6fdf9a7b": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "NIST Mathematical Proof Supports Transition to a Continuous-Monitor-and-Update Security Model for AI Systems",
+        "summary": "  The proof extends to AI the logic used by famed mathematician Kurt Gödel, whose incompleteness theorems have had a profound effect on math for nearly a century.\n\n",
+        "url": "https://www.nist.gov/news-events/news/2026/06/nist-mathematical-proof-supports-transition-continuous-monitor-and-update",
+        "publication_date": "Tue, 09 Jun 2026 12:00:00 +0000"
+      },
+      "target": {
+        "id": "nist_ai_notices",
+        "name": "NIST AI Safety Institute & Risk Framework",
+        "jurisdiction": "United States",
+        "type": "standard_body",
+        "url": "https://www.nist.gov/news-events/news/rss.xml",
+        "format": "rss",
+        "filter_ai": true,
+        "priority_base": 2
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:20.548614+00:00",
+      "source_sha256": "4244c120e276203bf6977b6d856032d2c19fb8773544f1ef1a64ae6c65ca9149",
+      "source_text_sha256": "652cf0eb4c587273e931532041076432abfb1588522b9bbbc27473cf96f578d9"
+    },
+    "913c4d9d555aac0c49e18a09e30d48b61033ebc36e16d424f0491ae9fee1e34e": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "New AI Model Shows How to Evacuate for Fires One Safe Step at a Time",
+        "summary": "  A NIST-led team has created a new AI model that can identify safe evacuation routes in a single-story floor plan during a fire, with a multilevel version in the works.\n\n",
+        "url": "https://www.nist.gov/news-events/news/2026/06/new-ai-model-shows-how-evacuate-fires-one-safe-step-time",
+        "publication_date": "Thu, 04 Jun 2026 12:00:00 +0000"
+      },
+      "target": {
+        "id": "nist_ai_notices",
+        "name": "NIST AI Safety Institute & Risk Framework",
+        "jurisdiction": "United States",
+        "type": "standard_body",
+        "url": "https://www.nist.gov/news-events/news/rss.xml",
+        "format": "rss",
+        "filter_ai": true,
+        "priority_base": 2
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:16.003431+00:00",
+      "source_sha256": "af25cf858c604bb1a1a3d05c725429d6197490c5297b8c036d1daf5acf63b308",
+      "source_text_sha256": "447b3fc69e1e1e5961e58ba1fe729f69790044c835b894d6451ccc3bf4352d5e"
+    },
+    "a1480047faf6483a8f0fb020d4fd2a7d4fb5c5073b6e91dd52c0dcc095c93d13": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "NIST Expands AI Consortium’s Scope, Calls for New Members",
+        "summary": "  The consortium will focus on AI innovation and adoption, with six task groups concentrating on different aspects of AI measurement science and evaluation.\n\n",
+        "url": "https://www.nist.gov/news-events/news/2026/05/nist-expands-ai-consortiums-scope-calls-new-members",
+        "publication_date": "Fri, 29 May 2026 12:00:00 +0000"
+      },
+      "target": {
+        "id": "nist_ai_notices",
+        "name": "NIST AI Safety Institute & Risk Framework",
+        "jurisdiction": "United States",
+        "type": "standard_body",
+        "url": "https://www.nist.gov/news-events/news/rss.xml",
+        "format": "rss",
+        "filter_ai": true,
+        "priority_base": 2
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:18.178384+00:00",
+      "source_sha256": "396572cfa59c70d15f19aa196818f3034650c1436f9d8437326cc916497566c7",
+      "source_text_sha256": "b008a43e9557f09dfa174b6e78d4179de3603c60b5e0220f7d07c8781a480b64"
+    },
+    "fc3754ca6900e8f446d02e23f5eccd7d0a4313a4c24ec275f14d4ec86155fb2f": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Announcing the &quot;AI Agent Standards Initiative&quot; for Interoperable and Secure Innovation",
+        "summary": "  The Initiative will ensure that the next generation of AI is widely adopted with confidence, can function securely on behalf of its users, and can interoperate smoothly across the digital ecosystem.\n\n",
+        "url": "https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure",
+        "publication_date": "Tue, 17 Feb 2026 12:00:00 +0000"
+      },
+      "target": {
+        "id": "nist_ai_notices",
+        "name": "NIST AI Safety Institute & Risk Framework",
+        "jurisdiction": "United States",
+        "type": "standard_body",
+        "url": "https://www.nist.gov/news-events/news/rss.xml",
+        "format": "rss",
+        "filter_ai": true,
+        "priority_base": 2
+      },
+      "active": true
+    },
+    "dee85ba4ff5dfae188f2107c358a82a196a59f67dbd4325e46f69f958c058998": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "NIST Allocates Over $3 Million to Small Businesses Advancing AI, Biotechnology, Semiconductors, Quantum and More",
+        "summary": "  NIST is allocating funding to eight small businesses in seven states under the Small Business Innovation Research (SBIR) program.\n\n",
+        "url": "https://www.nist.gov/news-events/news/2026/02/nist-allocates-over-3-million-small-businesses-advancing-ai-biotechnology",
+        "publication_date": "Tue, 10 Feb 2026 12:00:00 +0000"
+      },
+      "target": {
+        "id": "nist_ai_notices",
+        "name": "NIST AI Safety Institute & Risk Framework",
+        "jurisdiction": "United States",
+        "type": "standard_body",
+        "url": "https://www.nist.gov/news-events/news/rss.xml",
+        "format": "rss",
+        "filter_ai": true,
+        "priority_base": 2
+      },
+      "active": true
+    },
+    "208c2512eb49a6f348c96ff9785716e7f0305b798f4dceb46c2219c92893301e": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "CAISI Issues Request for Information About Securing AI Agent Systems",
+        "summary": "  The Center for AI Standards and Innovation (CAISI) at the U.S. Department of Commerce’s National Institute of Standards and Technology (NIST) has published a Request for Information (RFI) seeking insights from industry, academia, and the security\n\n",
+        "url": "https://www.nist.gov/news-events/news/2026/01/caisi-issues-request-information-about-securing-ai-agent-systems",
+        "publication_date": "Mon, 12 Jan 2026 12:00:00 +0000"
+      },
+      "target": {
+        "id": "nist_ai_notices",
+        "name": "NIST AI Safety Institute & Risk Framework",
+        "jurisdiction": "United States",
+        "type": "standard_body",
+        "url": "https://www.nist.gov/news-events/news/rss.xml",
+        "format": "rss",
+        "filter_ai": true,
+        "priority_base": 2
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:07.718505+00:00",
+      "source_sha256": "45e55a6ccdc10a928a7e8a53f233cfd7e9b802ca3b8ad5f29565d216e3abb0d7",
+      "source_text_sha256": "4cf7bc640f30def5da3b709ab1be8598aa570f971b2530c482f46e12a26db37e"
+    },
+    "563d1d66cd664c488444bb4eb92b7392fa5ecf3884ffa4e743e03228b3813e62": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "NIST Launches Centers for AI in Manufacturing and Critical Infrastructure",
+        "summary": "  NIST has expanded its collaboration with the nonprofit MITRE Corporation as part of its efforts to ensure U.S. leadership in artificial intelligence.\n\n",
+        "url": "https://www.nist.gov/news-events/news/2025/12/nist-launches-centers-ai-manufacturing-and-critical-infrastructure",
+        "publication_date": "Mon, 22 Dec 2025 12:00:00 +0000"
+      },
+      "target": {
+        "id": "nist_ai_notices",
+        "name": "NIST AI Safety Institute & Risk Framework",
+        "jurisdiction": "United States",
+        "type": "standard_body",
+        "url": "https://www.nist.gov/news-events/news/rss.xml",
+        "format": "rss",
+        "filter_ai": true,
+        "priority_base": 2
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:12.151071+00:00",
+      "source_sha256": "f7e72119e33400711272f3853893d5bb24f59232dbc5f9f8aea483578b5a292d",
+      "source_text_sha256": "bc429bce94c63e61cc7d7b8a97871d6f0737a2a4217b610250f4d09af43a13bc"
+    },
+    "579ec2c3e039a7a6b473553f671392756ab0f3a1e03dfdc7d906aedb10db531f": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "Draft NIST Guidelines Rethink Cybersecurity for the AI Era",
+        "summary": "  New guidelines can help an organization determine ways to incorporate AI into its operations while mitigating cybersecurity risks.\n\n",
+        "url": "https://www.nist.gov/news-events/news/2025/12/draft-nist-guidelines-rethink-cybersecurity-ai-era",
+        "publication_date": "Tue, 16 Dec 2025 12:00:00 +0000"
+      },
+      "target": {
+        "id": "nist_ai_notices",
+        "name": "NIST AI Safety Institute & Risk Framework",
+        "jurisdiction": "United States",
+        "type": "standard_body",
+        "url": "https://www.nist.gov/news-events/news/rss.xml",
+        "format": "rss",
+        "filter_ai": true,
+        "priority_base": 2
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:12.548816+00:00",
+      "source_sha256": "aefefcae48630933841bd9d3c95d32780792626a86cce9f3d3d814f559f8707f",
+      "source_text_sha256": "e9ef16bd2411cfd525043b89db11c46a6655fbf737031a51d0b6108d8511ea84"
+    },
+    "ff1a185c3aa33003442eb0bde83b0db4cc5439faddd13476a01579f820c23ccd": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "CAISI Evaluation of DeepSeek AI Models Finds Shortcomings and Risks",
+        "summary": "  The Center for AI Standards and Innovation at NIST evaluated several leading models from DeepSeek, an AI company based in the People’s Republic of China.\n\n",
+        "url": "https://www.nist.gov/news-events/news/2025/09/caisi-evaluation-deepseek-ai-models-finds-shortcomings-and-risks",
+        "publication_date": "Tue, 30 Sep 2025 12:00:00 +0000"
+      },
+      "target": {
+        "id": "nist_ai_notices",
+        "name": "NIST AI Safety Institute & Risk Framework",
+        "jurisdiction": "United States",
+        "type": "standard_body",
+        "url": "https://www.nist.gov/news-events/news/rss.xml",
+        "format": "rss",
+        "filter_ai": true,
+        "priority_base": 2
+      },
+      "active": true
+    },
+    "39bb794b9982e6edc2bfbbf7f7c23c4fa3abf932f26fddfc01566f45505ed14b": {
+      "status": "pending",
+      "attempts": 0,
+      "item": {
+        "title": "  SEC Investor Advisory Committee to Host Sept. 10 Meeting\n",
+        "summary": "The Securities and Exchange Commission’s&nbsp;Investor Advisory Committee will host a public meeting at the SEC Headquarters in Washington D.C. on Sept. 10 at 10 a.m. ET to discuss artificial intelligence technologies in the public markets and the SEC’s…",
+        "url": "https://www.sec.gov/newsroom/press-releases/2026-84-sec-investor-advisory-committee-host-sept-10-meeting",
+        "publication_date": "Thu, 03 Sep 2026 10:27:49 -0400"
+      },
+      "target": {
+        "id": "sec_press_releases",
+        "name": "US SEC (Enforcement & Regulatory Actions)",
+        "jurisdiction": "United States",
+        "type": "regulator_feed",
+        "url": "https://www.sec.gov/news/pressreleases.rss",
+        "format": "rss",
+        "filter_ai": true,
+        "priority_base": 2
+      },
+      "active": true,
+      "checked_at": "2026-09-16T05:06:09.846076+00:00",
+      "error": "source capture failed: HTTPError"
+    }
+  },
+  "last_pass": {
+    "documents_checked": 60,
+    "documents_deferred": 12,
+    "model_attempts": 6,
+    "pending_evaluations": 72,
+    "unhealthy_sources": [
+      "ftc_press_releases"
+    ],
+    "pending_notifications": 0
+  },
+  "local_watch_version": 2,
+  "local_inputs_status": "ok",
+  "notification_receipts": {},
+  "pending_notifications": [],
+  "last_run_status": "incomplete"
 }
