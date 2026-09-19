@@ -488,3 +488,11 @@ harness presentation and related integrity gates. OpenAI is a subject on the boa
 covered by the named harness sources, so this work is a direct conflict and is not an independent
 check of OpenAI-related output. Anthropic and OpenAI remain subjects under the same published
 registries. Independent analysis, not investment advice.
+
+## Sovereign Watch execution and coverage
+
+The local model request disables thinking, requests the assessment schema, limits output to 1,024 tokens and uses a 16,384-token context. The request timeout is at most 90 seconds and is reduced to the remaining pass budget. An over-budget prompt is retained for manual review; the source text is never silently shortened. Transport errors, output limits and schema errors remain distinct.
+
+A pass remains incomplete when a source is unavailable, a document is unassessed, the declared work budget is exhausted or a notification is pending. The model-attempt cap remains six per pass. Fixing a timeout does not clear the existing queue or establish complete regulatory coverage. The status records identify manual-review work separately.
+
+A bounded local smoke test reproduced the original 60-second timeout and obtained a schema-valid, source-quoted response with the revised settings in 23.5 seconds for one cached document. This establishes one observed integration result, not alert accuracy or independent acceptance. No classification-quality baseline was run for this correction. OpenAI GPT-6 assisted the repair.

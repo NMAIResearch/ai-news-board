@@ -928,6 +928,7 @@ def sovereign_radar_tab(alerts=None, health=None):
         f"Last sweep: {health.get('last_run') or 'not recorded'}; status: {health_state}. "
         f"Failed or limited sources: {len(progress.get('unhealthy_sources', [])) if 'last_pass' in health else 'unverified'}; "
         f"pending evaluations: {progress.get('pending_evaluations', 'unverified')}; "
+        f"manual review required: {progress.get('manual_review_required', 'unverified')}; "
         f"deferred document checks: {progress.get('documents_deferred', 'unverified')}; "
         f"pending notifications: {progress.get('pending_notifications', 'unverified')}."
     )

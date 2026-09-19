@@ -1,12 +1,36 @@
 {
- "generated": "2026-09-16 05:29 UTC",
+ "generated": "2026-09-17 05:31 UTC",
  "window_days": 60,
  "counts": {
-  "total": 83,
-  "closed": 25,
+  "total": 84,
+  "closed": 26,
   "open_weights": 58
  },
  "releases": [
+  {
+   "lab": "Stealth",
+   "model": "Union Alpha",
+   "id": "stealth/union-alpha",
+   "date": "2026-09-16",
+   "url": "https://openrouter.ai/stealth/union-alpha",
+   "context_length": 262144,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "DeepSeek-V4.1-Flash-NVFP4",
+   "id": "nvidia/DeepSeek-V4.1-Flash-NVFP4",
+   "date": "2026-09-16",
+   "url": "https://huggingface.co/nvidia/DeepSeek-V4.1-Flash-NVFP4",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/DeepSeek-V4.1-Flash-NVFP4",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
   {
    "lab": "Nvidia",
    "model": "c-foundationstereo-s",
@@ -281,18 +305,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "microsoft/VibeVoice-ASR-Streaming-7B",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "GLM-5.3-Flash-NVFP4",
-   "id": "nvidia/GLM-5.3-Flash-NVFP4",
-   "date": "2026-09-02",
-   "url": "https://huggingface.co/nvidia/GLM-5.3-Flash-NVFP4",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/GLM-5.3-Flash-NVFP4",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {

@@ -171,7 +171,10 @@ class FeedDeduplicationTests(unittest.TestCase):
                 ]),
                 mock.patch.object(fetch_feeds.urllib.request, "urlopen", side_effect=fake_urlopen),
             )
-            with patches[0], patches[1], patches[2]:
+            # Keep these fixed-date feed fixtures inside the intake window.
+            with patches[0], patches[1], patches[2], \
+                 mock.patch.object(fetch_feeds, "datetime", wraps=datetime) as clock:
+                clock.now.return_value = datetime(2026, 8, 18, tzinfo=timezone.utc)
                 fetch_feeds.main()
 
             items = json.loads(feed_path.read_text(encoding="utf-8"))["items"]

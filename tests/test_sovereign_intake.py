@@ -130,6 +130,36 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(self.run_pass(), (1, 1))
         self.assertEqual(sw.load_alerts()[0]["evaluation_method"], "local-model")
 
+    def test_timeout_reason_is_stored_and_retryable(self):
+        self.model.side_effect = sw.ModelCallError("model timeout")
+        with self.assertRaisesRegex(RuntimeError, "incomplete"):
+            self.run_pass()
+        alert = sw.load_alerts()[0]
+        self.assertEqual(alert["assessment_error"], "model timeout")
+        self.assertIsNone(alert["substantive_priority"])
+        self.assertFalse(alert["reviewed"])
+        self.assertEqual(sum(args[0].endswith("duty candidate") for args, _ in self.notify.call_args_list), 0)
+        self.model.side_effect = None
+        self.assertEqual(self.run_pass(), (1, 1))
+        self.assertEqual(sw.load_alerts()[0]["evaluation_method"], "local-model")
+
+    def test_manual_review_does_not_consume_model_attempt_allowance(self):
+        self.fetch.return_value = feed(2)
+        self.model.side_effect = [sw.ModelCallError('document exceeds model input budget; manual review required'), dict(RESULT)]
+        with patch.object(sw, 'MAX_MODEL_ATTEMPTS', 1):
+            with self.assertRaisesRegex(RuntimeError, 'incomplete'):
+                self.run_pass()
+        state = sw.load_store()
+        self.assertEqual(state['last_pass']['model_attempts'], 1)
+        self.assertEqual(state['last_pass']['manual_review_required'], 1)
+        self.assertEqual(state['last_pass']['pending_evaluations'], 1)
+        self.assertEqual(sum(r['status'] == 'evaluated' for r in state['document_states'].values()), 1)
+
+    def test_model_timeout_respects_remaining_pass_budget(self):
+        with patch.object(sw.time, 'monotonic', side_effect=[0, 0, sw.PASS_SECONDS - 7]):
+            self.run_pass()
+        self.assertEqual(self.model.call_args.kwargs['timeout'], 7)
+
     def test_source_body_change_reassessed(self):
         self.run_pass()
         text = TEXT + " A later amendment changes the commencement date."

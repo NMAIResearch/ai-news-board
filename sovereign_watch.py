@@ -166,6 +166,30 @@ DUTY_TYPES = {
 }
 DENOMINATOR_LABELS = {"yes", "no", "partial", "n/a"}
 
+MODEL_RESPONSE_LIMIT = 256 * 1024
+MODEL_RESPONSE_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "is_operator_duty_shift": {"type": "boolean"},
+        "duty_type": {"type": "string", "enum": sorted(DUTY_TYPES)},
+        "statutory_reference": {"type": ["string", "null"]},
+        "summary_finding": {"type": "string", "minLength": 1},
+        "quantitative_claim_present": {"type": "boolean"},
+        "denominator_disclosed": {"type": "string", "enum": sorted(DENOMINATOR_LABELS)},
+        "priority_score": {"type": "integer", "minimum": 1, "maximum": 5},
+        "actionable_trigger": {"type": "string", "minLength": 1},
+        "document_status": {"type": "string", "enum": ["binding", "proposed", "consultation", "other"]},
+        "ai_relevance": {"type": "string", "enum": ["relevant", "not_relevant", "uncertain"]},
+        "evidence_quote": {"type": "string", "minLength": 20},
+    },
+    "additionalProperties": False,
+}
+MODEL_RESPONSE_SCHEMA["required"] = list(MODEL_RESPONSE_SCHEMA["properties"])
+
+
+class ModelCallError(ValueError):
+    """A bounded model failure category safe to retain in an alert."""
+
 
 def load_store() -> Dict[str, Any]:
     if not STORE_FILE.exists():
@@ -272,8 +296,12 @@ def capture_source(url):
     return text, raw_hash, text_hash
 
 
-def call_local_model(prompt: str, model: str = DEFAULT_MODEL, timeout: int = 60) -> Optional[Dict[str, Any]]:
-    """Queries local Ollama instance (Qwen 3.8 / Nemotron / Gemma) via chat API."""
+def call_local_model(prompt: str, model: str = DEFAULT_MODEL, timeout: int = 90) -> Optional[Dict[str, Any]]:
+    """Query Ollama with a schema; preserve transport and response failure categories."""
+    # Reserve generation and chat-template space using a conservative byte bound.
+    # Over-budget documents remain unassessed instead of being silently truncated.
+    if len(prompt.encode("utf-8")) > 16384 - 1024 - 512:
+        raise ModelCallError("document exceeds model input budget; manual review required")
     payload = {
         "model": model,
         "messages": [
@@ -287,8 +315,12 @@ def call_local_model(prompt: str, model: str = DEFAULT_MODEL, timeout: int = 60)
             }
         ],
         "stream": False,
+        "think": False,
+        "format": MODEL_RESPONSE_SCHEMA,
         "options": {
-            "temperature": 0.05
+            "temperature": 0.05,
+            "num_ctx": 16384,
+            "num_predict": 1024,
         }
     }
     req = urllib.request.Request(
@@ -298,16 +330,38 @@ def call_local_model(prompt: str, model: str = DEFAULT_MODEL, timeout: int = 60)
     )
     try:
         with urllib.request.urlopen(req, timeout=timeout) as response:
-            res_data = json.loads(response.read().decode("utf-8"))
-            content = res_data.get("message", {}).get("content", "")
-            return parse_llm_json_response(content)
-    except Exception as exc:
-        print(f"  [Model Warning] Ollama query failed: {exc}")
-        return None
+            raw = response.read(MODEL_RESPONSE_LIMIT + 1)
+    except TimeoutError as exc:
+        raise ModelCallError("model timeout") from exc
+    except urllib.error.HTTPError as exc:
+        exc.close()
+        raise ModelCallError(f"model HTTP status {exc.code}") from exc
+    except urllib.error.URLError as exc:
+        reason = "model timeout" if isinstance(exc.reason, TimeoutError) else "model connection failure"
+        raise ModelCallError(reason) from exc
+    except OSError as exc:
+        raise ModelCallError("model connection failure") from exc
+    if len(raw) > MODEL_RESPONSE_LIMIT:
+        raise ModelCallError("model response exceeds byte limit")
+    try:
+        res_data = json.loads(raw.decode("utf-8"))
+    except (UnicodeError, json.JSONDecodeError) as exc:
+        raise ModelCallError("model response is not valid JSON") from exc
+    if not isinstance(res_data, dict) or not isinstance(res_data.get("message"), dict):
+        raise ModelCallError("model response lacks a message object")
+    if res_data.get("done_reason") == "length":
+        raise ModelCallError("model output token limit reached")
+    content = res_data["message"].get("content")
+    if not isinstance(content, str) or not content.strip():
+        raise ModelCallError("model response lacks text content")
+    parsed = parse_llm_json_response(content)
+    if parsed is None:
+        raise ModelCallError("model content is not a JSON object")
+    return parsed
 
 
 def parse_llm_json_response(raw: str) -> Optional[Dict[str, Any]]:
-    if not raw:
+    if not isinstance(raw, str) or not raw:
         return None
     match = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", raw, re.DOTALL)
     if match:
@@ -320,8 +374,9 @@ def parse_llm_json_response(raw: str) -> Optional[Dict[str, Any]]:
         else:
             return None
     try:
-        return json.loads(raw_json)
-    except Exception:
+        value = json.loads(raw_json)
+        return value if isinstance(value, dict) else None
+    except json.JSONDecodeError:
         return None
 
 
@@ -337,6 +392,23 @@ def validate_model_analysis(value: Any, model: str) -> Optional[Dict[str, Any]]:
     """Return a bounded model result or None when the response is incomplete."""
     if not isinstance(value, dict):
         return None
+    if set(value) != set(MODEL_RESPONSE_SCHEMA["required"]):
+        return None
+    for key, spec in MODEL_RESPONSE_SCHEMA["properties"].items():
+        item = value[key]
+        expected = spec["type"]
+        if expected == "boolean" and not isinstance(item, bool):
+            return None
+        if expected == "integer" and (isinstance(item, bool) or not isinstance(item, int)):
+            return None
+        if expected == "string" and not isinstance(item, str):
+            return None
+        if expected == ["string", "null"] and item is not None and not isinstance(item, str):
+            return None
+        if "enum" in spec and item not in spec["enum"]:
+            return None
+        if "minLength" in spec and len(item.strip()) < spec["minLength"]:
+            return None
     priority = value.get("priority_score")
     duty_type = value.get("duty_type")
     statutory_reference = value.get("statutory_reference")
@@ -375,7 +447,8 @@ def validate_model_analysis(value: Any, model: str) -> Optional[Dict[str, Any]]:
 
 
 def analyze_item_with_model(title: str, summary: str, source_name: str, url: str,
-                            model: str = DEFAULT_MODEL, source_text: Optional[str] = None) -> Dict[str, Any]:
+                            model: str = DEFAULT_MODEL, source_text: Optional[str] = None,
+                            model_timeout: Optional[float] = None) -> Dict[str, Any]:
     """Evaluate captured document text; unsupported claims remain unassessed."""
     fallback = {
         "is_operator_duty_shift": False, "duty_type": "none", "statutory_reference": None,
@@ -407,7 +480,11 @@ and quote the operative obligation. Do not invent references, deadlines or place
 Priority is relevance to AI monitoring: 1 current binding AI duty, 2 relevant proposal,
 3 relevant operational development, 4 background, 5 outside the monitored AI scope.
 """
-    response = call_local_model(prompt, model=model)
+    try:
+        kwargs = {} if model_timeout is None else {"timeout": model_timeout}
+        response = call_local_model(prompt, model=model, **kwargs)
+    except ModelCallError as exc:
+        return dict(fallback, assessment_error=str(exc))
     result = validate_model_analysis(response, model)
     if result is None:
         return dict(fallback, assessment_error="invalid model schema")
@@ -415,7 +492,7 @@ Priority is relevance to AI monitoring: 1 current binding AI duty, 2 relevant pr
     relevance = response.get("ai_relevance")
     quote = response.get("evidence_quote")
     error = None
-    if status not in {"binding", "proposed", "consultation", "other"} or relevance not in {"relevant", "not_relevant", "uncertain"}:
+    if not isinstance(status, str) or status not in {"binding", "proposed", "consultation", "other"} or not isinstance(relevance, str) or relevance not in {"relevant", "not_relevant", "uncertain"}:
         error = "missing document status or relevance"
     elif not isinstance(quote, str) or len(quote.strip()) < 20 or quote not in source_text:
         error = "supporting quote is absent from the captured document"
@@ -481,7 +558,11 @@ def sweep_sovereign_gazettes(store: Dict[str, Any], model: str = DEFAULT_MODEL) 
             text, raw_hash, text_hash = capture_source(item["url"])
             record.update(source_sha256=raw_hash, source_text_sha256=text_hash)
         except (ValueError, OSError) as exc:
-            record.update(status="pending", error=f"source capture failed: {type(exc).__name__}")
+            manual = isinstance(exc, ValueError) and "manual review required" in str(exc)
+            reason = ("document exceeds evaluation text limit; manual review required" if manual
+                      else f"source HTTP status {exc.code}" if isinstance(exc, urllib.error.HTTPError)
+                      else f"source capture failed: {type(exc).__name__}")
+            record.update(status="manual_review" if manual else "pending", error=reason)
             print(f"Source capture failed for {item['url']}: {exc}", file=sys.stderr)
             continue
         if record.get("evaluated_text_sha256") == text_hash:
@@ -491,12 +572,20 @@ def sweep_sovereign_gazettes(store: Dict[str, Any], model: str = DEFAULT_MODEL) 
         if model_attempts >= MAX_MODEL_ATTEMPTS:
             record["status"] = "pending"
             continue
+        remaining = deadline - time.monotonic()
+        if remaining <= 0:
+            break
         model_attempts += 1
         record["attempts"] = record.get("attempts", 0) + 1
         analysis = analyze_item_with_model(item["title"], item["summary"], target["name"],
-                                           item["url"], model=model, source_text=text)
+                                           item["url"], model=model, source_text=text,
+                                           model_timeout=min(90, remaining))
         assessed = analysis["evaluation_method"] == "local-model"
         record["status"] = "evaluated" if assessed else "pending"
+        if "manual review required" in analysis.get("assessment_error", ""):
+            record["status"] = "manual_review"
+            model_attempts -= 1
+            record["attempts"] -= 1
         if assessed:
             record["evaluated_text_sha256"] = text_hash
             record.pop("error", None)
@@ -525,6 +614,7 @@ def sweep_sovereign_gazettes(store: Dict[str, Any], model: str = DEFAULT_MODEL) 
         "documents_checked": checked, "documents_deferred": len(candidates) - checked,
         "model_attempts": model_attempts,
         "pending_evaluations": sum(r.get("status") != "evaluated" for r in records.values()),
+        "manual_review_required": sum(r.get("status") == "manual_review" for r in records.values()),
         "unhealthy_sources": [k for k, v in store["source_states"].items() if v.get("status") != "ok"],
     }
     return alerts
@@ -638,6 +728,7 @@ def run_surveillance_pass(model: str = DEFAULT_MODEL, trigger_rebuild: bool = Tr
     status = store["last_run_status"]
     message = (f"Sources failed/limited: {len(progress['unhealthy_sources'])}; "
                f"pending evaluations: {progress['pending_evaluations']}; "
+               f"manual review required: {progress.get('manual_review_required', 0)}; "
                f"deferred document checks: {progress['documents_deferred']}; "
                f"pending notifications: {len(pending_notifications)}; "
                f"local inputs: {store['local_inputs_status']}.")

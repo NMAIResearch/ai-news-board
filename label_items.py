@@ -64,10 +64,18 @@ INSTRUCT = (
 )
 
 
+def has_readable_article(rec):
+    """HTTP success alone does not establish that article text was captured."""
+    return bool(rec and rec.get("fetch") == "ok"
+                and isinstance(rec.get("n_chars"), int)
+                and not isinstance(rec.get("n_chars"), bool)
+                and rec["n_chars"] > 0)
+
+
 def tier1_denominator(rec):
     """(value, evidence, settled) from spans alone. settled=False means ask a model."""
-    if rec is None or rec.get("fetch") != "ok":
-        why = "no article" if rec is None else rec["fetch"]
+    if not has_readable_article(rec):
+        why = "no article" if rec is None else (rec.get("fetch") if rec.get("fetch") != "ok" else "empty article text")
         return None, f"article not fetched ({why})", False
     spans = rec["spans"]
     if not spans:
@@ -124,16 +132,21 @@ def main():
     ap.add_argument("--force", action="store_true", help="relabel machine-labelled items too")
     a = ap.parse_args()
 
-    data = json.load(open(FEED))
+    with open(FEED) as handle:
+        data = json.load(handle)
     items = data["items"]
     if a.report:
         return do_report(items)
 
-    spans = json.load(open(SPANS)) if os.path.exists(SPANS) else {}
+    spans = {}
+    if os.path.exists(SPANS):
+        with open(SPANS) as handle:
+            spans = json.load(handle)
     text = {}
     cache_path = os.path.join(HERE, "article_text.json")
     if os.path.exists(cache_path):
-        text = json.load(open(cache_path))
+        with open(cache_path) as handle:
+            text = json.load(handle)
 
     def url_of(it):
         for s in it.get("sources", []):
@@ -146,13 +159,15 @@ def main():
         if it.get("label_source") == "human":
             continue
         rec = spans.get(url_of(it))
-        if current_machine_label(it, rec) and not a.force:
+        if current_machine_label(it, rec) and has_readable_article(rec) and not a.force:
             continue
         it.pop("label_tier", None)
         it.pop("auto_labelled_by", None)
         it.pop("review_stale", None)
-        if rec is None or rec.get("fetch") != "ok":
-            why = "no stored article" if rec is None else f"article not fetched ({rec['fetch']})"
+        if not has_readable_article(rec):
+            why = "no stored article" if rec is None else (
+                f"article not fetched ({rec.get('fetch')})"
+                if rec.get("fetch") != "ok" else "empty article text; assessment unavailable")
             it["denominator_stated"] = "?"
             it["evidence_method"] = "unassessed"
             it["evidence_coverage"] = {"seen": 0, "total": 0}
@@ -216,7 +231,8 @@ def main():
             it["auto_labelled"] = True
             it["label_source"] = "deterministic"
         if not a.dry_run:
-            json.dump(data, open(FEED, "w"), indent=1)
+            with open(FEED, "w") as handle:
+                json.dump(data, handle, indent=1)
             print("written (rule-set denominators only; unresolved items remain unassessed)")
         return
 
@@ -311,7 +327,8 @@ def main():
     if a.dry_run:
         print("dry run: nothing written")
         return
-    json.dump(data, open(FEED, "w"), indent=1)
+    with open(FEED, "w") as handle:
+        json.dump(data, handle, indent=1)
     print(f"written: {FEED}\nnow run build.py")
 
 

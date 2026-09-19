@@ -414,3 +414,7 @@ unreviewed.
 First deploy. Live feed, contestable `tier_map.json`, research-context links generalised beyond code,
 `--plain` build flag, scholarship section. Tier scale reconciled to the canonical direction:
 1 = least incentive to shade the claim, 5 = the party selling the thing.
+
+## Local runtime repair, 2026-09-19
+
+Structured model responses, explicit non-thinking execution, bounded context and output, separate transport errors, remaining-pass timeout and a manual-review count. Historical alert and state records are preserved. The correction does not claim a cleared queue, reachable blocked sources or independently validated classifications.

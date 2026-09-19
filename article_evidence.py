@@ -56,7 +56,10 @@ SPOKES = re.compile(r"\b(?:a )?spokes(?:person|man|woman)\b", re.I)
 
 
 def load(p, default=None):
-    return json.load(open(p, encoding="utf-8")) if os.path.exists(p) else (default or {})
+    if not os.path.exists(p):
+        return default or {}
+    with open(p, encoding="utf-8") as handle:
+        return json.load(handle)
 
 
 def url_of(it):
@@ -205,7 +208,7 @@ def compute():
             "headline": it.get("headline", ""),
             "entity": entity,
             "entity_usable": bool(entity),
-            "fetched": txt.get("status") == "ok",
+            "fetched": txt.get("status") == "ok" and bool(body.strip()),
             "attribution": {
                 "to_subject": len(party), "to_others": len(other),
                 "unnamed": len(unnamed),
@@ -222,7 +225,8 @@ def compute():
             "tier_basis": basis,
             "chain": chains.get(canon(u), {"cites": [], "cited_by": []}),
         }
-    json.dump(out, open(OUT, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
+    with open(OUT, "w", encoding="utf-8") as handle:
+        json.dump(out, handle, indent=1, ensure_ascii=False)
     return out
 
 
