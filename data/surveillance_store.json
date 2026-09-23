@@ -73,66 +73,66 @@
     "54b1b80026c38a18cbc27a2657d9270dca2fb517e6a904f2bf2aee3960aebc45": "2026-09-13T05:01:31.276246+00:00",
     "3f5b18c5361a116e8cda95268bda629c953202b3169b944325053a2129c242c3": "2026-09-13T05:01:31.276250+00:00"
   },
-  "last_run": "2026-09-18T05:06:24.604701+00:00",
+  "last_run": "2026-09-23T05:02:12.264731+00:00",
   "source_states": {
     "us_fed_reg_ai": {
-      "checked_at": "2026-09-18T05:00:03.375367+00:00",
+      "checked_at": "2026-09-23T05:00:00.872983+00:00",
       "status": "ok",
       "entries": 40,
-      "queued": 27,
+      "queued": 26,
       "window_days": 30,
-      "last_success": "2026-09-18T05:00:03.375367+00:00"
+      "last_success": "2026-09-23T05:00:00.872983+00:00"
     },
     "us_fed_reg_eo": {
-      "checked_at": "2026-09-18T05:00:04.127040+00:00",
+      "checked_at": "2026-09-23T05:00:01.552893+00:00",
       "status": "ok",
       "entries": 40,
-      "queued": 25,
+      "queued": 31,
       "window_days": 30,
-      "last_success": "2026-09-18T05:00:04.127040+00:00"
+      "last_success": "2026-09-23T05:00:01.552893+00:00"
     },
     "eu_ai_office": {
-      "checked_at": "2026-09-18T05:00:04.713043+00:00",
+      "checked_at": "2026-09-23T05:00:02.159966+00:00",
       "status": "ok",
       "entries": 10,
       "queued": 8,
       "window_days": null,
-      "last_success": "2026-09-18T05:00:04.713043+00:00"
+      "last_success": "2026-09-23T05:00:02.159966+00:00"
     },
     "uk_cma_news": {
-      "checked_at": "2026-09-18T05:00:04.847394+00:00",
+      "checked_at": "2026-09-23T05:00:02.232180+00:00",
       "status": "ok",
       "entries": 20,
       "queued": 0,
       "window_days": null,
-      "last_success": "2026-09-18T05:00:04.847394+00:00"
+      "last_success": "2026-09-23T05:00:02.232180+00:00"
     },
     "uk_ofgem_queue": {
-      "checked_at": "2026-09-18T05:00:05.079105+00:00",
+      "checked_at": "2026-09-23T05:00:02.272503+00:00",
       "status": "ok",
       "entries": 20,
       "queued": 1,
       "window_days": null,
-      "last_success": "2026-09-18T05:00:05.079105+00:00"
+      "last_success": "2026-09-23T05:00:02.272503+00:00"
     },
     "nist_ai_notices": {
-      "checked_at": "2026-09-18T05:00:05.252707+00:00",
+      "checked_at": "2026-09-23T05:00:02.487390+00:00",
       "status": "ok",
       "entries": 40,
-      "queued": 10,
+      "queued": 9,
       "window_days": null,
-      "last_success": "2026-09-18T05:00:05.252707+00:00"
+      "last_success": "2026-09-23T05:00:02.487390+00:00"
     },
     "sec_press_releases": {
-      "checked_at": "2026-09-18T05:00:05.548221+00:00",
+      "checked_at": "2026-09-23T05:00:02.781232+00:00",
       "status": "ok",
       "entries": 25,
       "queued": 1,
       "window_days": null,
-      "last_success": "2026-09-18T05:00:05.548221+00:00"
+      "last_success": "2026-09-23T05:00:02.781232+00:00"
     },
     "ftc_press_releases": {
-      "checked_at": "2026-09-18T05:00:05.619637+00:00",
+      "checked_at": "2026-09-23T05:00:02.848199+00:00",
       "status": "failed",
       "entries": 0,
       "queued": 0,
@@ -217,7 +217,7 @@
   },
   "document_states": {
     "29b2690afa1577d6b03ec5330abc5de39720758f1140edc915dbc774d728f6c7": {
-      "status": "pending",
+      "status": "manual_review",
       "attempts": 0,
       "item": {
         "title": "Draft NIH Biosafety Policy for Research Involving Biohazards",
@@ -235,13 +235,14 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:14.329722+00:00",
+      "checked_at": "2026-09-23T05:00:52.376247+00:00",
       "source_sha256": "eb1eddaf773a3253e5f7f035c9c1317b0010f83259a9b4caca539bf2e75879ea",
-      "source_text_sha256": "89ffa63e83499655219e9053b4f4de919e4f5b0aaa8adfdcebfc4f3ba9b10b53"
+      "source_text_sha256": "89ffa63e83499655219e9053b4f4de919e4f5b0aaa8adfdcebfc4f3ba9b10b53",
+      "error": "document exceeds model input budget; manual review required"
     },
     "ad969d1c9b9131669e8eef1b8743b23754fc4f608762963165d9ffcc3e77fc16": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "Accelerating Access to Veterans' Benefits and Employment Opportunities",
         "summary": "Accelerating Access to Veterans' Benefits and Employment Opportunities",
@@ -258,9 +259,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-17T05:06:20.785388+00:00",
+      "checked_at": "2026-09-19T05:00:52.793498+00:00",
       "source_sha256": "592fd494146781d8ec578574638da6cd8a41c75648bc7c5d8ff577e84be04899",
-      "source_text_sha256": "c86961446a9f009dd79704185cb312be43e4946d7cf12556666bd9bd946c3391"
+      "source_text_sha256": "c86961446a9f009dd79704185cb312be43e4946d7cf12556666bd9bd946c3391",
+      "evaluated_text_sha256": "c86961446a9f009dd79704185cb312be43e4946d7cf12556666bd9bd946c3391"
     },
     "1713135e0fda898e3cb4faead667e3f651a2029f3f3b17978249bae1e06f4c35": {
       "status": "pending",
@@ -281,13 +283,13 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-16T05:03:06.724447+00:00",
+      "checked_at": "2026-09-22T05:02:18.492165+00:00",
       "source_sha256": "3ee83a15aa02e1f35f809f0eb4ddfe2adb601346b89901f0accc629880b5d2cb",
       "source_text_sha256": "a53929654bdac68bbd0f084a443518c66e0dc0bad70789d508a29d5079ca0add",
       "error": "invalid model schema"
     },
     "2da32ad55827506c9903040af0780919a59f8ae45bba9096c078bec0eb221228": {
-      "status": "pending",
+      "status": "manual_review",
       "attempts": 0,
       "item": {
         "title": "Improving the Effectiveness of the Robocall Mitigation Database; Call Authentication Trust Anchor; Advanced Methods To Target and Eliminate Unlawful Robocalls",
@@ -305,8 +307,8 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:14.894362+00:00",
-      "error": "source capture failed: ValueError"
+      "checked_at": "2026-09-23T05:01:09.437322+00:00",
+      "error": "document exceeds evaluation text limit; manual review required"
     },
     "4f3a608c15f8f04e29feca1b6c63058027b545c03e0fbb2baa316c3d697267f8": {
       "status": "pending",
@@ -327,7 +329,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:17.194570+00:00",
+      "checked_at": "2026-09-23T05:02:04.248268+00:00",
       "source_sha256": "115c1f051f5500de7183958a59c12ba9bfb4f54d0c9c55af40b4f67ca80f86f8",
       "source_text_sha256": "efb0c31c89d156a5c14f5294b8969b148c828a8cdc99a8825da4fb5d53582221"
     },
@@ -350,12 +352,12 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:18.546192+00:00",
+      "checked_at": "2026-09-23T05:02:05.839789+00:00",
       "source_sha256": "dd6a9ec03eb5f041ccf9f958901b9ea1ab37bdfddebd3e5a936378f83afea668",
       "source_text_sha256": "a318ded85267210dca944e7aee51867e86a1d214444375d228ebb5e4dc26b1ad"
     },
     "2e04b993083bb93051d88e2e26bcf8838beb9e58765e080e2e0dd15c8d91acd5": {
-      "status": "pending",
+      "status": "manual_review",
       "attempts": 0,
       "item": {
         "title": "Self-Regulatory Organizations; Financial Industry Regulatory Authority, Inc.; Notice of Filing of a Proposed Rule Change To Amend FINRA Rules 0150 (Application of Rules to Exempted Securities Except Municipal Securities), 2165 (Financial Exploitation of Specified Adults) and 4512 (Customer Account Information) and To Adopt FINRA Rule 2166 (Temporary Delays for Suspected Fraud)",
@@ -373,13 +375,14 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:15.334184+00:00",
+      "checked_at": "2026-09-23T05:01:09.851680+00:00",
       "source_sha256": "711f43edaa8cd4d1f261877323c360e5dc822a4483fe5051a63d0989523b13a4",
-      "source_text_sha256": "ca1b3cf0f0f3c78ddf801e6598dc6e376367ab163f90e1e2702947cca856e63c"
+      "source_text_sha256": "ca1b3cf0f0f3c78ddf801e6598dc6e376367ab163f90e1e2702947cca856e63c",
+      "error": "document exceeds model input budget; manual review required"
     },
     "962399e7043923f23e35fdd177700056c9c6e8aec0d29e2076d96a7822c6f6ed": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "Sunshine Act Meetings",
         "summary": "Sunshine Act Meetings",
@@ -396,9 +399,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:22.285795+00:00",
+      "checked_at": "2026-09-21T05:01:16.196877+00:00",
       "source_sha256": "1a4b2b57093f0e4dccec5d872df00a8242859cf944ed625959cb1bd906f17a55",
-      "source_text_sha256": "1a908936beb7673a9555336ed5de1bb5820ed2590031436cfa134cd21b7e53c4"
+      "source_text_sha256": "1a908936beb7673a9555336ed5de1bb5820ed2590031436cfa134cd21b7e53c4",
+      "evaluated_text_sha256": "1a908936beb7673a9555336ed5de1bb5820ed2590031436cfa134cd21b7e53c4"
     },
     "d10aea1ead01534b50c6895725407dcb6d5cedc1b941552e0a9b612845ff4727": {
       "status": "pending",
@@ -425,7 +429,7 @@
       "error": "invalid model schema"
     },
     "d118a2b0958ac6b5e95f5cc6530be2066b9aaf154a623a1f72b3b60af1e2c8e1": {
-      "status": "pending",
+      "status": "manual_review",
       "attempts": 0,
       "item": {
         "title": "Transfer Agent Rules",
@@ -443,12 +447,12 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:09.311315+00:00",
-      "error": "source capture failed: ValueError"
+      "checked_at": "2026-09-23T05:00:34.131438+00:00",
+      "error": "document exceeds evaluation text limit; manual review required"
     },
     "f3227389324f7137d15bbb2f3d3a07cc2a3d2d1f69b73d682b660348775bec51": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "Agency Information Collection Revision",
         "summary": "The Department of Energy (DOE) invites public comment on a proposed revision to an approved information collection that DOE is submitting to the Office of Management and Budget (OMB) for review pursuant to the Paperwork Reduction Act of 1995. The information collection requests a revision of the approval for OMB Control Number 1910-5179, titled Energy and Jobs Survey.",
@@ -465,12 +469,13 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:11.610052+00:00",
+      "checked_at": "2026-09-22T05:01:02.454572+00:00",
       "source_sha256": "2d442a3d4980372dc0dc9fed99ba30f9bdfaae91ac7b5207143266946f2fb5c9",
-      "source_text_sha256": "e664382b6d95ace4eb8cce076c6f453a36ef1aa0f524d30139b7bcce73d88615"
+      "source_text_sha256": "e664382b6d95ace4eb8cce076c6f453a36ef1aa0f524d30139b7bcce73d88615",
+      "evaluated_text_sha256": "e664382b6d95ace4eb8cce076c6f453a36ef1aa0f524d30139b7bcce73d88615"
     },
     "61ec96aa8984428f2e9f0a2e9434cd356cdacfe64d33218c5deae9d547ce4b6d": {
-      "status": "pending",
+      "status": "manual_review",
       "attempts": 0,
       "item": {
         "title": "Determining the Appropriate Penalty for Federal Employees Charged With Misconduct",
@@ -488,11 +493,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:18.799939+00:00",
-      "error": "source capture failed: ValueError"
+      "checked_at": "2026-09-23T05:02:06.100153+00:00",
+      "error": "document exceeds evaluation text limit; manual review required"
     },
     "9d988f6d9277029c3ac6d920018ac38aedd5ac984a6a25fb8d56a6e34f6b3ee2": {
-      "status": "pending",
+      "status": "manual_review",
       "attempts": 0,
       "item": {
         "title": "Heightened Import Disclosures for Supply Chain Visibility",
@@ -510,12 +515,13 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:23.313314+00:00",
+      "checked_at": "2026-09-23T05:00:30.056973+00:00",
       "source_sha256": "a4511bae5da70c354f606c391d50f9ad41e568825f8e0109025f414111f90dc9",
-      "source_text_sha256": "fe91c974bf9b2405c6f653e0dda74d08d1a6265a6e628d156bffc7dc259f7bea"
+      "source_text_sha256": "fe91c974bf9b2405c6f653e0dda74d08d1a6265a6e628d156bffc7dc259f7bea",
+      "error": "document exceeds model input budget; manual review required"
     },
     "f69b594931e31618990e4ecb95b80a3f73dc6c51d236b3790bc6e4be8c07e952": {
-      "status": "pending",
+      "status": "manual_review",
       "attempts": 0,
       "item": {
         "title": "Declaring a National Emergency To Secure the United States Bulk-Power System",
@@ -533,12 +539,13 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:11.867247+00:00",
+      "checked_at": "2026-09-23T05:00:35.692334+00:00",
       "source_sha256": "fbd5fff4fe0699288f0b65021446cc8dd9d08a94c376413b9a19b6fb6d2da372",
-      "source_text_sha256": "2cd3f0dc0045694d0b680943b47d08f04239f7aa6f94aa7136a5fff482fd728e"
+      "source_text_sha256": "2cd3f0dc0045694d0b680943b47d08f04239f7aa6f94aa7136a5fff482fd728e",
+      "error": "document exceeds model input budget; manual review required"
     },
     "c2a7ceeffc336c32f5290db049a682a888b1de2c080ec2560270b190308ee6f8": {
-      "status": "pending",
+      "status": "manual_review",
       "attempts": 0,
       "item": {
         "title": "Maximizing Efficiencies in Universal Service Administration",
@@ -556,9 +563,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-17T05:06:21.529355+00:00",
+      "checked_at": "2026-09-23T05:00:32.769792+00:00",
       "source_sha256": "978bf8bd7945d3beaa2ccf09e14aaa1bfabf6d600c6f472d9707aa1ce0b1110e",
-      "source_text_sha256": "640c895a637c3bfbf00d5f8ee04c5621bad85598d7ac09283fb5344a414143d8"
+      "source_text_sha256": "640c895a637c3bfbf00d5f8ee04c5621bad85598d7ac09283fb5344a414143d8",
+      "error": "document exceeds model input budget; manual review required"
     },
     "68fef63f330c165c74868d438e70e8711e337b904d69a08001db4d953ce0c7c0": {
       "status": "pending",
@@ -579,12 +587,12 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:20.107341+00:00",
+      "checked_at": "2026-09-23T05:02:07.417918+00:00",
       "source_sha256": "c4b8faff0ead8f41ab4e95cc6d5d8c48670740ff2cd8ab7449667e925a0d7a17",
       "source_text_sha256": "4caaa62b03a72ee595b877daac938985d46ef221ccbc11e842cba265c15c1d79"
     },
     "d5c20c7ea8d2f679a149dd27b239d188f2a491da9eb557e2a83c02c3d7adf622": {
-      "status": "pending",
+      "status": "manual_review",
       "attempts": 0,
       "item": {
         "title": "Critical Position Pay Authority",
@@ -602,12 +610,13 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:10.217113+00:00",
+      "checked_at": "2026-09-23T05:00:34.792911+00:00",
       "source_sha256": "78569acd9cc75cd417f395652dfbe9582a43cd92f0320fd9c0a4ac0f74e7c25f",
-      "source_text_sha256": "4a8447f5a0993387ea2590db8e8be6d50b8a8e431f1cee6debd1dc45640047b9"
+      "source_text_sha256": "4a8447f5a0993387ea2590db8e8be6d50b8a8e431f1cee6debd1dc45640047b9",
+      "error": "document exceeds model input budget; manual review required"
     },
     "d6aeee587ebb756153f8ea68f33b344a9547e13eed6d53b712ccc14e5e4db82a": {
-      "status": "pending",
+      "status": "manual_review",
       "attempts": 0,
       "item": {
         "title": "Regulation Crypto Assets",
@@ -624,9 +633,9 @@
         "format": "json_fedreg",
         "priority_base": 1
       },
-      "active": true,
-      "checked_at": "2026-09-18T05:06:10.486004+00:00",
-      "error": "source capture failed: ValueError"
+      "active": false,
+      "checked_at": "2026-09-23T05:00:35.068335+00:00",
+      "error": "document exceeds evaluation text limit; manual review required"
     },
     "45cd6e241ef0f49a81f7569cdcbdf3b115d21f5515637f6ae5e8a6c269ed346a": {
       "status": "pending",
@@ -646,13 +655,13 @@
         "format": "json_fedreg",
         "priority_base": 1
       },
-      "active": true,
-      "checked_at": "2026-09-18T05:06:16.417259+00:00",
+      "active": false,
+      "checked_at": "2026-09-23T05:02:03.442540+00:00",
       "source_sha256": "7c4c37f6412dccc2795ca2beedfd141df2754c086e9e276c32e97aa99927555b",
       "source_text_sha256": "404d25d32a5cb5fa721fb74ca6c16df48425c1abe2ae321164e0c4796bd520d3"
     },
     "109db0c160de79a3ccea4cb1386e9e515254e7ab904f41dfcc7397a32a4ec7c3": {
-      "status": "pending",
+      "status": "manual_review",
       "attempts": 0,
       "item": {
         "title": "Accreditation, Innovation, and Modernization: The Secretary's Recognition of Accrediting Agencies: Institutional Eligibility Under the Higher Education Act of 1965, as Amended, Student Assistance General Provisions",
@@ -669,12 +678,12 @@
         "format": "json_fedreg",
         "priority_base": 1
       },
-      "active": true,
-      "checked_at": "2026-09-18T05:06:13.109082+00:00",
-      "error": "source capture failed: ValueError"
+      "active": false,
+      "checked_at": "2026-09-23T05:00:35.955979+00:00",
+      "error": "document exceeds evaluation text limit; manual review required"
     },
     "7ad21a2ea23e4e7cfeedf5675164bc4e41af56e08a54475090d6b47820b4a204": {
-      "status": "pending",
+      "status": "manual_review",
       "attempts": 0,
       "item": {
         "title": "Wagner-Peyser Act Employment Service Staffing",
@@ -691,12 +700,12 @@
         "format": "json_fedreg",
         "priority_base": 1
       },
-      "active": true,
-      "checked_at": "2026-09-18T05:06:20.427881+00:00",
-      "error": "source capture failed: ValueError"
+      "active": false,
+      "checked_at": "2026-09-23T05:02:07.747375+00:00",
+      "error": "document exceeds evaluation text limit; manual review required"
     },
     "a7320c2f093222e04d723af25b0cbae8c48107c756a2ba5db909095c3850abb3": {
-      "status": "pending",
+      "status": "manual_review",
       "attempts": 0,
       "item": {
         "title": "Application for Relief From Disabilities Imposed by Federal Laws With Respect to the Acquisition, Receipt, Transfer, Shipment, Transportation, or Possession of Firearms",
@@ -713,9 +722,9 @@
         "format": "json_fedreg",
         "priority_base": 1
       },
-      "active": true,
-      "checked_at": "2026-09-18T05:06:24.132330+00:00",
-      "error": "source capture failed: ValueError"
+      "active": false,
+      "checked_at": "2026-09-23T05:00:30.400250+00:00",
+      "error": "document exceeds evaluation text limit; manual review required"
     },
     "6587eda003db0fc2cc6d344a8209cb6b5cd47c3dfcf52d7a6a31afdff94d507d": {
       "status": "pending",
@@ -735,14 +744,14 @@
         "format": "json_fedreg",
         "priority_base": 1
       },
-      "active": true,
-      "checked_at": "2026-09-18T05:06:19.836210+00:00",
+      "active": false,
+      "checked_at": "2026-09-23T05:02:07.157463+00:00",
       "source_sha256": "fe714f44d120b3c0cdd440804edb0ee6eb40201590f287d17486b3f53285c1ec",
       "source_text_sha256": "009770b890c6aff8d4f0912994029ceeba99c32c814773db162e93c10ed0f8ad"
     },
     "99ad1c8bebe596d2619776e0aab77ed28ab81ea8bbcb3b8a483a5f5fc53dd84c": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "Agency Information Collection Activities; Comment Request; Registered Apprenticeship National Public Awareness Campaign",
         "summary": "The Department of Labor's (DOL) Employment and Training Administration (ETA) is soliciting comments concerning a proposed new information collection request (ICR) titled, \"Registered Apprenticeship National Public Awareness Campaign.\" This comment request is part of continuing Departmental efforts to reduce paperwork and respondent burden in accordance with the Paperwork Reduction Act of 1995 (PRA).",
@@ -758,14 +767,15 @@
         "format": "json_fedreg",
         "priority_base": 1
       },
-      "active": true,
-      "checked_at": "2026-09-18T05:06:22.540115+00:00",
+      "active": false,
+      "checked_at": "2026-09-20T05:00:05.217498+00:00",
       "source_sha256": "6b29ff1fc654b9235f30edb6786f388097213d6ab1be93565d7a0b3eb8b18c96",
-      "source_text_sha256": "89a8cfe73d7a99cb92e8de45976cb495b3e236295bc62ec51cf24ab047fd2f24"
+      "source_text_sha256": "89a8cfe73d7a99cb92e8de45976cb495b3e236295bc62ec51cf24ab047fd2f24",
+      "evaluated_text_sha256": "89a8cfe73d7a99cb92e8de45976cb495b3e236295bc62ec51cf24ab047fd2f24"
     },
     "457c653d55c1ac550dee0951d8f270883796607f52210635ad18a4c30788b527": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "Solicitation of Nominations for Membership on the NOAA Science Advisory Board (SAB)",
         "summary": "The NOAA Science Advisory Board (SAB) is the only Federal Advisory Committee with responsibility to advise the Under Secretary of Commerce for Oceans and Atmosphere on long- and short-range strategies for research, education and the application of science to resource management and environmental assessment and prediction. NOAA seeks candidates with expertise in areas relevant to its mission, including Federal, State, and local government; social and behavioral sciences; artificial intelligence and machine learning; high performance computing; data management, including open access and accessibility; uncrewed systems; whale research and conservation; aircraft systems and modernization; and economic analysis, including cost-benefit evaluation of observing systems. NOAA also encourages nominations of qualified mid-career scientists and engineers.",
@@ -781,10 +791,11 @@
         "format": "json_fedreg",
         "priority_base": 1
       },
-      "active": true,
-      "checked_at": "2026-09-18T05:06:16.163257+00:00",
+      "active": false,
+      "checked_at": "2026-09-23T05:01:45.697027+00:00",
       "source_sha256": "656735d0ee7d7750315060034c14e9f624ab461da66126af56caa4cabed3c791",
-      "source_text_sha256": "07e19a3c689d56e55e0059782063c84cd46e7680665bd6bb9199398a543c980e"
+      "source_text_sha256": "07e19a3c689d56e55e0059782063c84cd46e7680665bd6bb9199398a543c980e",
+      "evaluated_text_sha256": "07e19a3c689d56e55e0059782063c84cd46e7680665bd6bb9199398a543c980e"
     },
     "174e133f0357316fc50e7a9beebd5847f4c67da10121e883464b912191f719fd": {
       "status": "pending",
@@ -805,7 +816,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-16T05:04:07.059506+00:00",
+      "checked_at": "2026-09-22T05:02:18.764665+00:00",
       "source_sha256": "13cf914800237d9630f7b40413753c7b7bca76a78e43174a24b8a42080278437",
       "source_text_sha256": "f0d5daf2739e25dbbace6fc0bde94a834679098bfac126da19865f55bc1fd5f8",
       "error": "invalid model schema"
@@ -829,7 +840,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-17T05:03:06.051436+00:00",
+      "checked_at": "2026-09-23T05:02:11.095728+00:00",
       "source_sha256": "3e148391a6406db2e2953c1e1f0e12c8794ed19b406578311fecfea9c0c2b0f9",
       "source_text_sha256": "dee5c6164fc233666fc846408101959fa60487eb272e3c451c2855cf09226be4",
       "error": "invalid model schema"
@@ -853,13 +864,13 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-16T05:00:05.069677+00:00",
+      "checked_at": "2026-09-22T05:02:17.368523+00:00",
       "source_sha256": "8a14638f5400a55f97bedd2442838ecf770e5a86ac259f9fcacf0c726082bbc2",
       "source_text_sha256": "a073787cac3aa3f7c51d20d38ce5a9347371a2bd8c62af6bded88c031af9381a",
       "error": "invalid model schema"
     },
     "27de633e1af69c76e5e423362c63c64a7852d6679c74a6a8ae432638fee610a3": {
-      "status": "pending",
+      "status": "manual_review",
       "attempts": 0,
       "item": {
         "title": "Hematology and Pathology Devices; Reclassification of In Situ Hybridization Test Systems for Use With a Corresponding Approved Oncology Therapeutic Product",
@@ -877,13 +888,14 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-18T05:06:13.995766+00:00",
+      "checked_at": "2026-09-23T05:00:51.967066+00:00",
       "source_sha256": "483cd8f9f46e29617e6ded47fd3d408d09a14ebb3c1b00b782e3435451ac73cf",
-      "source_text_sha256": "59d5cdb31d8e66c9fc37f498e934b7b64f352ff12c43dca835a8d697f632c169"
+      "source_text_sha256": "59d5cdb31d8e66c9fc37f498e934b7b64f352ff12c43dca835a8d697f632c169",
+      "error": "document exceeds model input budget; manual review required"
     },
     "d55f1bc83d8915f8c19f1ba47901f49148f38e326ae68fde2a107e541d428749": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "Patriot Day 2026, the 25th Anniversary of the September 11 Terrorist Attacks",
         "summary": "Patriot Day 2026, the 25th Anniversary of the September 11 Terrorist Attacks",
@@ -900,9 +912,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:09.960511+00:00",
+      "checked_at": "2026-09-21T05:01:35.639416+00:00",
       "source_sha256": "6186f8bfff7f80b94af189271dc3e25c1982fc77641a692edbfdd34f6c7fcff0",
-      "source_text_sha256": "a50f35ae1078f4d01ad8d5d28d7621ab7b2bf595b9ee4ef8a6622fb984b27c03"
+      "source_text_sha256": "a50f35ae1078f4d01ad8d5d28d7621ab7b2bf595b9ee4ef8a6622fb984b27c03",
+      "evaluated_text_sha256": "a50f35ae1078f4d01ad8d5d28d7621ab7b2bf595b9ee4ef8a6622fb984b27c03"
     },
     "4a7f7df32524bb2925444566bea44b67a955603008795de3b4043b0654e558f2": {
       "status": "pending",
@@ -923,13 +936,13 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:16.932852+00:00",
+      "checked_at": "2026-09-23T05:02:03.987883+00:00",
       "source_sha256": "389df6c48aaa19f229e2b0ab22038fde9384fecee0cf637f701e3f7d02747efa",
       "source_text_sha256": "77af7a764b108a9a43847b5f4f78b0c76bbf9f39a504cbc2169985eb9cd8b916"
     },
     "fb44f5b6e7ff727d9c43963988d8154d1254b7138a6edee964cd0c68a3ae6d12": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "Modifying the Scope of Products of Canada Subject to the Additional Duties Imposed To Offset Canadian Discrimination Against the Commerce of the United States With Respect to Alcoholic Beverages",
         "summary": "Modifying the Scope of Products of Canada Subject to the Additional Duties Imposed To Offset Canadian Discrimination Against the Commerce of the United States With Respect to Alcoholic Beverages",
@@ -946,13 +959,14 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:12.129103+00:00",
+      "checked_at": "2026-09-22T05:01:20.326414+00:00",
       "source_sha256": "6c3ef288cfaa857a44bfcc08f8baaa2fa71d52d98d56433364332bfb45ec392d",
-      "source_text_sha256": "712900da35e374cbb52fb0bc52b05b22774925753e134e5a9f2da77fe29803d1"
+      "source_text_sha256": "712900da35e374cbb52fb0bc52b05b22774925753e134e5a9f2da77fe29803d1",
+      "evaluated_text_sha256": "712900da35e374cbb52fb0bc52b05b22774925753e134e5a9f2da77fe29803d1"
     },
     "9bb06be09eba997187521fbe08d49ccd63f3c7225852fcf7ae1392297d74ba5a": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "Excluding Certain Canadian Products From Importation Into the United States in Response to Continued Discrimination Against the Commerce of the United States With Respect to Motor Vehicles",
         "summary": "Excluding Certain Canadian Products From Importation Into the United States in Response to Continued Discrimination Against the Commerce of the United States With Respect to Motor Vehicles",
@@ -969,9 +983,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:23.055379+00:00",
+      "checked_at": "2026-09-20T05:00:46.169722+00:00",
       "source_sha256": "d8025ea9c1e503173a258122faaa2dee445e469aa8e504171ae6af27e1e8de0d",
-      "source_text_sha256": "edfd6391453f5aa257a8129814eee001fb1ed3ed3276aae2b78c3c7137aa46be"
+      "source_text_sha256": "edfd6391453f5aa257a8129814eee001fb1ed3ed3276aae2b78c3c7137aa46be",
+      "evaluated_text_sha256": "edfd6391453f5aa257a8129814eee001fb1ed3ed3276aae2b78c3c7137aa46be"
     },
     "e321725a2ea787e963a74d0beceb661fd302f9dcb4373d342cb3d59570180db1": {
       "status": "pending",
@@ -992,7 +1007,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-17T05:04:06.372382+00:00",
+      "checked_at": "2026-09-23T05:02:11.358835+00:00",
       "source_sha256": "e61c3fc4f43fee3a4ad8e42839756f10a581c3697b08e89e37937195f3b27d4d",
       "source_text_sha256": "1da7981f0fcd988f3edb824107714ec2981545117befa23eee62dfb297a56507",
       "error": "invalid model schema"
@@ -1016,14 +1031,14 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-17T05:01:05.276509+00:00",
+      "checked_at": "2026-09-23T05:02:10.436430+00:00",
       "source_sha256": "46bfcfbc1931ef115e34b5566922edc015dd774a54f7d8c30dcac0e7e3afcec7",
       "source_text_sha256": "dc557721b43862bc301d28c9115137667446ff18e3cd9d2c4550f0895d4004f0",
       "error": "invalid model schema"
     },
     "2ceabf543ad79cffea147eb07b89fec19f5d90bada75b5dfdeae2f5d2f8a2fe4": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "Adjusting Certain Delegations Under the Defense Production Act",
         "summary": "Adjusting Certain Delegations Under the Defense Production Act",
@@ -1040,9 +1055,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:14.651366+00:00",
+      "checked_at": "2026-09-23T05:00:52.787394+00:00",
       "source_sha256": "ce59ce9a224919045775bd3ff08fd58f4999acf8c770a558e3817ef53ae16eb2",
-      "source_text_sha256": "55a971182ddb74e94f75c325e8cf02eb0fa8c2a686a33e0daae6b1245d85b46b"
+      "source_text_sha256": "55a971182ddb74e94f75c325e8cf02eb0fa8c2a686a33e0daae6b1245d85b46b",
+      "evaluated_text_sha256": "55a971182ddb74e94f75c325e8cf02eb0fa8c2a686a33e0daae6b1245d85b46b"
     },
     "51eca7242399110dd39cbc8cb60104f4d1b9c56919496d270ed7fe00daa5e2c0": {
       "status": "pending",
@@ -1063,13 +1079,13 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:17.520593+00:00",
+      "checked_at": "2026-09-23T05:02:04.852609+00:00",
       "source_sha256": "c37c14803511a64bbc16bf30a4a8ead4029b70bfd0cc68787a9cd1efea5871fa",
       "source_text_sha256": "cc968ccd7c158f2274c930e84285b96d16c84f6b9a5360a65aa54df9069d75d6"
     },
     "bce7d52de35abc0dda7e6112061cc20c82fe1a99670769f2947d0653a88a982e": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "Labor Day, 2026",
         "summary": "Labor Day, 2026",
@@ -1086,9 +1102,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-17T05:06:21.276230+00:00",
+      "checked_at": "2026-09-19T05:01:19.813762+00:00",
       "source_sha256": "2cba869c4cdafcbda7087b193da99a4d24bf1cad049f9f3d9b9aa2cbad91978c",
-      "source_text_sha256": "3198c045ce2494e4c5828b6005f4bc1a036757abd04654f07d6c9b720e904d1d"
+      "source_text_sha256": "3198c045ce2494e4c5828b6005f4bc1a036757abd04654f07d6c9b720e904d1d",
+      "evaluated_text_sha256": "3198c045ce2494e4c5828b6005f4bc1a036757abd04654f07d6c9b720e904d1d"
     },
     "cd22f2d5af203e756c502791bcc33ffc4b0d8dfff805269b50818e89c88ed906": {
       "status": "pending",
@@ -1115,8 +1132,8 @@
       "error": "invalid model schema"
     },
     "b3944ef7895e5e38bb1e814d8f44f56369968ac5aad5a0b24b7f6455ec20eedb": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "Promoting Fair Competition in Livestock Markets and Expanding Market Access for American Meat Producers",
         "summary": "Promoting Fair Competition in Livestock Markets and Expanding Market Access for American Meat Producers",
@@ -1133,9 +1150,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-17T05:06:21.027700+00:00",
+      "checked_at": "2026-09-19T05:01:06.859689+00:00",
       "source_sha256": "9eb4b23bb0fdc9fd69cfc0d878e2487463224f39a10d3c8b8bccf8a9ec3d848a",
-      "source_text_sha256": "4f549c2c315a4f5367ddffb06d4696242ead91c246825d278824c2506273da2b"
+      "source_text_sha256": "4f549c2c315a4f5367ddffb06d4696242ead91c246825d278824c2506273da2b",
+      "evaluated_text_sha256": "4f549c2c315a4f5367ddffb06d4696242ead91c246825d278824c2506273da2b"
     },
     "e6ec74a664db54ecd787fec0526ad49a9987f6f596b1bc106ffbe4e7f292c94a": {
       "status": "pending",
@@ -1156,14 +1174,14 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-17T05:05:06.697481+00:00",
+      "checked_at": "2026-09-23T05:02:11.615448+00:00",
       "source_sha256": "5dd6419fb209fe145fd2d00a1674655d10d7e719e1f2da2b153975259e468b2b",
       "source_text_sha256": "97948d5ec27ab2694ba258104d45aad587eeb9fc80d05445e0f445d524bcdf70",
       "error": "invalid model schema"
     },
     "e8a459ee31c3fb499ea42b5f22ca66debddd1655dd046f34c3d6d62e22402b58": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "Continuation of the National Emergency With Respect to Foreign Interference in or Undermining Public Confidence in United States Elections",
         "summary": "Continuation of the National Emergency With Respect to Foreign Interference in or Undermining Public Confidence in United States Elections",
@@ -1180,9 +1198,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:11.109023+00:00",
+      "checked_at": "2026-09-22T05:00:24.196238+00:00",
       "source_sha256": "553e75c1e97ade0c8816b5da8a430ecf5249f8a64dbb4e1f61913df60177aa00",
-      "source_text_sha256": "01e32c8fa5cba7ca80b9f14d73f30a4a8d713f5014dc74c8cfd0eeb24147a51b"
+      "source_text_sha256": "01e32c8fa5cba7ca80b9f14d73f30a4a8d713f5014dc74c8cfd0eeb24147a51b",
+      "evaluated_text_sha256": "01e32c8fa5cba7ca80b9f14d73f30a4a8d713f5014dc74c8cfd0eeb24147a51b"
     },
     "7bbd46303dbc23a72f8b28a0390a1fd56a8b9fe7563450aa05937e1aa3cfb3f6": {
       "status": "pending",
@@ -1203,13 +1222,13 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:20.836602+00:00",
+      "checked_at": "2026-09-23T05:02:08.163125+00:00",
       "source_sha256": "78c090dc7a972d5a48d5559f89b5593c64ff4246805975b624a57e4a7902a164",
       "source_text_sha256": "527b5b2c1b103cda94ed32736f04bf6196b6555a68bc5f3fa2985c9a4c19f05a"
     },
     "3ff65c3d3f7019672d213242d314246091dc2aa8f54bcaf50a7bd60f4bc2567d": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "Further Ensuring Affordable Beef for the American Consumer",
         "summary": "Further Ensuring Affordable Beef for the American Consumer",
@@ -1226,13 +1245,14 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:15.834498+00:00",
+      "checked_at": "2026-09-23T05:01:10.318205+00:00",
       "source_sha256": "e20d483fbe5ecc0e8d54b85bc5b2658606a9dae340bc857e7b0f358609d11cec",
-      "source_text_sha256": "50bc21adb6c144150525aaf96d5e062b76aff2fe85788986bec9bcf507ae5934"
+      "source_text_sha256": "50bc21adb6c144150525aaf96d5e062b76aff2fe85788986bec9bcf507ae5934",
+      "evaluated_text_sha256": "50bc21adb6c144150525aaf96d5e062b76aff2fe85788986bec9bcf507ae5934"
     },
     "9aa598222143f08f8349b808ca5f18e55864392991949caf43e568bb5ccfe4c2": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "Fifth Anniversary of the Attack at Abbey Gate",
         "summary": "Fifth Anniversary of the Attack at Abbey Gate",
@@ -1249,9 +1269,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:22.800825+00:00",
+      "checked_at": "2026-09-20T05:00:29.977952+00:00",
       "source_sha256": "65f7098dba384c6fbc3a7fa591497e23aeb728afdc656ecc85754edf15bd47ec",
-      "source_text_sha256": "9468356705a3f30938f7ca655b26f538a61b00087d92ad83c0da48f7a049323a"
+      "source_text_sha256": "9468356705a3f30938f7ca655b26f538a61b00087d92ad83c0da48f7a049323a",
+      "evaluated_text_sha256": "9468356705a3f30938f7ca655b26f538a61b00087d92ad83c0da48f7a049323a"
     },
     "63309f9ad57cc72b4fb3a1fc30fa9ec53a01ab3527f748683ff9df2e8c81b4ed": {
       "status": "pending",
@@ -1272,13 +1293,13 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:19.582489+00:00",
+      "checked_at": "2026-09-23T05:02:06.900426+00:00",
       "source_sha256": "81e62fa067d1a725bbf52c2513305531755717f8d171b0150735737989b80230",
       "source_text_sha256": "45c075e1d06d9abcf3cca8a2589f50ec5af651673e9c1ac3b22fe1d30575a14f"
     },
     "ea11e7e4c618b29a67f96b896d0da60389dd583d68dcfc89f8e9792df0fdddf2": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "Presidential Determination on Provision of Atomic Information to Finland and Sweden",
         "summary": "Presidential Determination on Provision of Atomic Information to Finland and Sweden",
@@ -1295,13 +1316,14 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:11.358247+00:00",
+      "checked_at": "2026-09-22T05:00:49.269545+00:00",
       "source_sha256": "9104ea4bf9d1352c737513223aed27466043a0eea1cb48631206616b0db35049",
-      "source_text_sha256": "5a55dbb227b05d6de013a4376216654b488150b76eaac5de963d0b3e60e4ba40"
+      "source_text_sha256": "5a55dbb227b05d6de013a4376216654b488150b76eaac5de963d0b3e60e4ba40",
+      "evaluated_text_sha256": "5a55dbb227b05d6de013a4376216654b488150b76eaac5de963d0b3e60e4ba40"
     },
     "a76ac5af6156e361ec75fed0ddde2cf9d5774a2fdac32bd399adae8aacd253fc": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "Continuation of the Exercise of Certain Authorities Under the Trading With the Enemy Act",
         "summary": "Continuation of the Exercise of Certain Authorities Under the Trading With the Enemy Act",
@@ -1318,9 +1340,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-17T05:06:20.536266+00:00",
+      "checked_at": "2026-09-19T05:00:41.492532+00:00",
       "source_sha256": "fdc8da3eceb33e2f700f4d1eee6fea406e8c9fe7c7be73e53cf57c576a339edc",
-      "source_text_sha256": "ab41d7e75d7d7cc29a419e7813938af1e60228660465cd31323e03ee2e006d53"
+      "source_text_sha256": "ab41d7e75d7d7cc29a419e7813938af1e60228660465cd31323e03ee2e006d53",
+      "evaluated_text_sha256": "ab41d7e75d7d7cc29a419e7813938af1e60228660465cd31323e03ee2e006d53"
     },
     "8a960c302ff1e66e66dd6da04db2f0bf7d7779451e9e1d86544a6106904be080": {
       "status": "pending",
@@ -1341,7 +1364,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:21.288429+00:00",
+      "checked_at": "2026-09-23T05:02:09.037482+00:00",
       "source_sha256": "0d3711dc18e19652f67b43bf0374043db6fa72ea1e19fceb3fc5129b5ced7f7b",
       "source_text_sha256": "421e6c77bf86082a1e3359b64a83524532983e501f1463d9b02608fe4c0e94e2"
     },
@@ -1364,7 +1387,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-16T05:05:07.386513+00:00",
+      "checked_at": "2026-09-22T05:02:19.034441+00:00",
       "source_sha256": "47ec8f65b151afceb2eb0a341c0a129ec48d2059e1b9c8e8bd30db153b5730f8",
       "source_text_sha256": "5492d0ccf756ee39dfcae4f097af0392e47270c90160aea7c843ec0e7aecdb21",
       "error": "invalid model schema"
@@ -1387,7 +1410,7 @@
         "format": "json_fedreg",
         "priority_base": 1
       },
-      "active": true,
+      "active": false,
       "checked_at": "2026-09-18T05:03:08.353921+00:00",
       "source_sha256": "bb9c90378e11423ff231d1326880b038c8264c00eb6439e728cb26ff4bad5d25",
       "source_text_sha256": "5b6fa7f6ca6e3a94d15e5866c7a635601cba12361d95ff84769438a18b52a904",
@@ -1412,7 +1435,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-18T05:06:16.682615+00:00",
+      "checked_at": "2026-09-23T05:02:03.723105+00:00",
       "source_sha256": "de1189b1e7719a080c7f85ca232008e70e80c8c368237f2bae75db24499b5f1e",
       "source_text_sha256": "79e7e2924c0b34981d6a6f2a3fc4e6f8f951e064a838d8b84ae8800127eb9373"
     },
@@ -1436,14 +1459,14 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-16T05:02:06.543455+00:00",
-      "source_sha256": "eefd8975d9b4b5e83f869e72393a250e15501209920749ba23ec995490bd2f64",
-      "source_text_sha256": "e617798d98f7cedb6cbbe9f4e396c43e7ea13c07e399893d8910dd9aebb7ff32",
+      "checked_at": "2026-09-22T05:02:17.968762+00:00",
+      "source_sha256": "ac4645938f00a9454d8e5ff85201b39f68ea0ed1f7e96535d0f32bdfb38a6808",
+      "source_text_sha256": "66ec733cf03fbb88971e1315bc4993e8e4c7ead179ac7b8a9bb2e11a06fdf424",
       "error": "invalid model schema"
     },
     "a441b84e65cb5e4cfc4c616337de3b09fcb887cb4091f101a16e47798c577710": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "State of the Union 2026",
         "summary": "<span>State of the Union 2026</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-08-31T16:11:00+02:00\" title=\"Monday, August 31, 2026 - 16:11\">Mon, 08/31/2026 - 16:11</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                              <ul class=\"ecl-unordered-list ecl-unordered-list--no-bullet ecl-u-mb-xl\">\n      <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n      <span class=\"wt-icon--calendar ecl-icon ecl-icon--fluid ecl-icon--calendar\" aria-hidden=\"true\"></span>&nbsp;\n      16 September 2026\n  </li>\n  \n  </ul>\n\n                <p class=\"ecl-page-header-standardised__description\">The State of the Union (SOTEU) address is an annual speech by the President of the European Commission to the European Parliament, setting the priorities for the Union for the year ahead. It will be livestreamed.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/SOTEU2026_32_SgngGKGDk9ht5XlLEGCNHzh4Jo_243575.jpg?itok=2Z_XP898\" alt=\"State of the Union 2026\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          \n  <div>\n    <h4>Main link</h4>\n              <div><a href=\"https://commission.europa.eu/strategy-and-policy/state-union_en\">https://commission.europa.eu/strategy-and-policy/state-union_en</a></div>\n          </div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=131\" class=\"ecl-tag ecl-u-mb-xs\">Shaping the Digital Single Market</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=75\" class=\"ecl-tag ecl-u-mb-xs\">Creating a digital society</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=34\" class=\"ecl-tag ecl-u-mb-xs\">Research and Innovation</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=103\" class=\"ecl-tag ecl-u-mb-xs\">Digital connectivity</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=159\" class=\"ecl-tag ecl-u-mb-xs\">Media and democracy</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=165\" class=\"ecl-tag ecl-u-mb-xs\">Digital Cultural heritage</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=155\" class=\"ecl-tag ecl-u-mb-xs\">Cybersecurity</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=110\" class=\"ecl-tag ecl-u-mb-xs\">Electronic communications and Privacy</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=117\" class=\"ecl-tag ecl-u-mb-xs\">Advanced Digital Technologies</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=67\" class=\"ecl-tag ecl-u-mb-xs\">Startups</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=153\" class=\"ecl-tag ecl-u-mb-xs\">Strengthening trust and security</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=69\" class=\"ecl-tag ecl-u-mb-xs\">Data policy</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=50\" class=\"ecl-tag ecl-u-mb-xs\">Advanced and Cloud Computing</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=164\" class=\"ecl-tag ecl-u-mb-xs\">Copyright</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=49\" class=\"ecl-tag ecl-u-mb-xs\">Boosting European digital Industry</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=146\" class=\"ecl-tag ecl-u-mb-xs\">International relations</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=150\" class=\"ecl-tag ecl-u-mb-xs\">Online platforms and e-commerce</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=119\" class=\"ecl-tag ecl-u-mb-xs\">Artificial intelligence</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=98\" class=\"ecl-tag ecl-u-mb-xs\">Funding for Digital</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=184\" class=\"ecl-tag ecl-u-mb-xs\">Digital Decade</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=247\" class=\"ecl-tag ecl-u-mb-xs\">An agile rulebook</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=252\" class=\"ecl-tag ecl-u-mb-xs\">Tech sovereignty</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div>\n  \n    \n        <div class=\"ecl-u-type-m\">\n    <section class=\"cnct-page-footer ecl-u-mv-2xl\">\n      \n          </section>\n  </div>\n\n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
@@ -1461,9 +1484,10 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-18T05:06:23.938827+00:00",
-      "source_sha256": "b271195ffdb5451e2e094fd48cd67b1cf213a2f71328e1bf6fc6bea143b48042",
-      "source_text_sha256": "2c340a5a06042ec0331b062c0ee193873031fa4a85a457499b78203163aedc5b"
+      "checked_at": "2026-09-20T05:01:20.251637+00:00",
+      "source_sha256": "164ae69ceb57ddcd7506a32a809a4f42e7df6618617b80e03686a5761cf88b3b",
+      "source_text_sha256": "2c340a5a06042ec0331b062c0ee193873031fa4a85a457499b78203163aedc5b",
+      "evaluated_text_sha256": "2c340a5a06042ec0331b062c0ee193873031fa4a85a457499b78203163aedc5b"
     },
     "779f94f8a61593142916bc1263931b484102be77c65ab4eeb8d9473fbd0f8d00": {
       "status": "pending",
@@ -1485,8 +1509,8 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:20.369530+00:00",
-      "source_sha256": "786c40b289c6c249a522ae28185f2ef103a11f35384ae0067aadb52e27ff3042",
+      "checked_at": "2026-09-23T05:02:07.674390+00:00",
+      "source_sha256": "fd13eaf1854d832cf1472e8ac43150eb59d91a069310e7cabb96dd97fd87b6fe",
       "source_text_sha256": "d023b484ea6402ff0c0090715c8540d8319e9710e114ca7da0d9447332cb30ee"
     },
     "50d54867be120025fe49a448e60284b9adf3c3c1d15bfd99770a94b7d6a3cc8c": {
@@ -1509,8 +1533,8 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:17.447742+00:00",
-      "source_sha256": "dea22c219dc3e05c981df418930f30c1f3831dc5af773345687dc177fc03036d",
+      "checked_at": "2026-09-23T05:02:04.505383+00:00",
+      "source_sha256": "0ca3d25cb0f680b95f95b824d7481cbe1e76a82dc5c156cec3d3933864302b24",
       "source_text_sha256": "0041bf2840fd49599edeee3f55aebfb8484c246f5e3f5fb7852e2c4b6eabda55"
     },
     "0ee46afeaae61fac6e1790c438289c845bb59297ddc3cb7bb4b8eba7f30348e8": {
@@ -1533,14 +1557,14 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-16T05:01:05.414542+00:00",
-      "source_sha256": "7756b935546313d8ae56695fe1a3f3ca2ef03c869116b4bb8bab29df74c21c18",
+      "checked_at": "2026-09-22T05:02:17.646589+00:00",
+      "source_sha256": "52e26a935e5d99582a5aa2dc82c380829b5e042762c6c8fd16b9f54a0077eae5",
       "source_text_sha256": "b287835e295c0060a33eacb8a6c61cea9c624be599edc42f15f0495d39504c3b",
       "error": "invalid model schema"
     },
     "453dc28b057eae2838b32b0eeda96eb9cb07435a1c6b44b134c04acf43304d0d": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "Commission starts enforcing AI Act rules and new transparency requirements on 2 August",
         "summary": "<span>Commission starts enforcing AI Act rules and new transparency requirements on 2 August</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-07-31T09:00:00+02:00\" title=\"Friday, July 31, 2026 - 09:00\">Fri, 07/31/2026 - 09:00</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                                    <p class=\"ecl-page-header-standardised__description\">From 2 August 2026, the European Commission’s AI Office, together with national authorities, will begin enforcing the Artificial Intelligence (AI) Act.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/AI_card_AIActSD_kc8WnzKy4P5PUgeyvVCoxaS3pQ_242706.jpg?itok=qH_EK4bm\" alt=\"Graphic illustration of a person pointing to a document titled &quot;AI ACT&quot; next to a judge's gavel against a purple background.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>On the same date, new transparency rules will start to apply, requiring certain AI systems to tell users when they are interacting with AI and when content has been generated or altered by it.</p>\n<p>Under the new rules, chatbots and other interactive AI systems will have to tell users they are dealing with AI, not a human. Deepfakes (images, videos, or audio that have been edited or generated using AI) will have to be labelled. AI-generated or altered content will also have to carry machine-readable marks so it can be detected more easily.</p>\n<p><span>The measures are intended to reduce deception and manipulation and help people make informed choices. They also give businesses clearer obligations and a practical way to show compliance. The Commission published a </span><a href=\"https://digital-strategy.ec.europa.eu/en/news-redirect/950719\" target=\"_blank\" rel=\"noopener noreferrer\">first list</a> <span>of more than 180 organisations that have signed the </span><a href=\"https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content\">Code of Practice on transparency of AI-generated content</a> <span>that operationalises the rules on transparency of AI-generated content.</span></p>\n<p>Read the <a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1714\">full press release</a>.</p>\n<p>Read more about the <a href=\"https://digital-strategy.ec.europa.eu/en/policies/enforcement-ai-act\">Enforcement of the AI Act</a> and the:</p>\n<ul>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/ai-act-complaints-tool\">AI Act complaints tool</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/ai-act-whistleblower-tool\">AI Act Whistleblower Tool</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/miscellaneous/complaints-channel-downstream-providers-using-general-purpose-ai-models\">Complaints channel for downstream providers using general-purpose AI models</a></li>\n</ul>\n<p>Find more information about:</p>\n<ul>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/guidelines-transparency-ai-generated-content\">Guidelines on Transparency of AI-generated Content</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai\">General-Purpose AI (GPAI) Code of Practice</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/guidelines-gpai-providers\">Guidelines for providers of GPAI models</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act\">Guidelines on prohibited AI practices</a></li>\n</ul></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=119\" class=\"ecl-tag ecl-u-mb-xs\">Artificial intelligence</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div>\n  \n    \n        <div class=\"ecl-u-type-m\">\n    <section class=\"cnct-page-footer ecl-u-mv-2xl\">\n      \n          </section>\n  </div>\n\n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
@@ -1558,9 +1582,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:16.083553+00:00",
-      "source_sha256": "1420fcd040a742e3242426fc2c01f1eaf7e5bfcb0c34bed014ce627909cbfe45",
-      "source_text_sha256": "e7e4823f97bde16ef76626c6bb3ac0bcba8bcbaad8ae5d8ce05db22fea902b77"
+      "checked_at": "2026-09-23T05:01:28.193081+00:00",
+      "source_sha256": "498ed715f87c49fd02576ee733ec8b522b562e9018c623638060f6dc1e6d835d",
+      "source_text_sha256": "e7e4823f97bde16ef76626c6bb3ac0bcba8bcbaad8ae5d8ce05db22fea902b77",
+      "evaluated_text_sha256": "e7e4823f97bde16ef76626c6bb3ac0bcba8bcbaad8ae5d8ce05db22fea902b77"
     },
     "7d182fd7d781b460576c484dd6a7b0c76fd87f49a893443cd91540e939c82d09": {
       "status": "pending",
@@ -1581,9 +1606,9 @@
         "filter_ai": true,
         "priority_base": 1
       },
-      "active": true,
-      "checked_at": "2026-09-18T05:06:21.228583+00:00",
-      "source_sha256": "a9b8398dc135ec2060b2491e3a6d0debcf50bb8dceed3b0fbe41a2735431ccdd",
+      "active": false,
+      "checked_at": "2026-09-23T05:02:08.636032+00:00",
+      "source_sha256": "3f681ffd575ad28586f668991c32f929d567132c68ad35e777bd59e505fa62af",
       "source_text_sha256": "03f669693c544e0bd526d6acf5b7a018cd02be48ff16a00045feed4587ed5ed9"
     },
     "943a275b6244e55656cb7a12cad5f4dcdd9121436898f19c2faa6c2f4ad58c3f": {
@@ -1606,8 +1631,8 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-18T05:06:21.918006+00:00",
-      "source_sha256": "f31c60dbdbed1778188027849a40b046b6299638c7ee03e5d3a5232bcaeb2fbb",
+      "checked_at": "2026-09-23T05:02:09.684888+00:00",
+      "source_sha256": "d268e862fb0a8674be96c800634f94fe3451af29de1f5e7268106729515e5104",
       "source_text_sha256": "e095141f7bb9f7ab290ca8b09f62708a1bda2827b8c5b4eb0a31d5521f6572ce"
     },
     "7cbdfe2ae0d5f252946620b3fccc011b7e7a34191d6ea02643bb5bb20e0b42e7": {
@@ -1630,8 +1655,8 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:21.090229+00:00",
-      "source_sha256": "2ff25266c896972a77e1a89805f1aaa460684acbe7afb455f789af5194105bca",
+      "checked_at": "2026-09-23T05:02:08.414532+00:00",
+      "source_sha256": "d8cdef5f995c649eb54301a8e2807435c702952e903fef05ca7adcbf295d3ae4",
       "source_text_sha256": "a1c8d7c0f3fe127647a8622f444dabbe386a16c352b4c8f70d46eaa0778edc23"
     },
     "62ee8f98b799c0827c80bfae8a016cdbfbaf4ae30d8d10c32f4e77e247ab9ea4": {
@@ -1654,13 +1679,13 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:19.209773+00:00",
-      "source_sha256": "bf436163929d146fb77d3dcf3c9222e574d9c5f32120779002d73e5d01878aa4",
+      "checked_at": "2026-09-23T05:02:06.524992+00:00",
+      "source_sha256": "03cde2b738b585052683d094ddc257ba737728274576fb252e2d3a7325980df9",
       "source_text_sha256": "8a1ac53247518ef86f375550cd3b6cc4cdf7bb70c924f24850fd468a013ddfeb"
     },
     "c884fc912776c1d9883efc915fafd11b34b1d774c5ee15dcb4be4e3f6fdf9a7b": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "NIST Mathematical Proof Supports Transition to a Continuous-Monitor-and-Update Security Model for AI Systems",
         "summary": "  The proof extends to AI the logic used by famed mathematician Kurt Gödel, whose incompleteness theorems have had a profound effect on math for nearly a century.\n\n",
@@ -1678,9 +1703,10 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-17T05:06:23.187932+00:00",
-      "source_sha256": "682f11be351ed02f423528c0c31fe54d12a65b82695506c800a3501393d188a4",
-      "source_text_sha256": "652cf0eb4c587273e931532041076432abfb1588522b9bbbc27473cf96f578d9"
+      "checked_at": "2026-09-20T05:01:38.403371+00:00",
+      "source_sha256": "e3252bafa37201979c20570547ed543e8803f1a01cc4efaba2c2d1093bec1761",
+      "source_text_sha256": "652cf0eb4c587273e931532041076432abfb1588522b9bbbc27473cf96f578d9",
+      "evaluated_text_sha256": "652cf0eb4c587273e931532041076432abfb1588522b9bbbc27473cf96f578d9"
     },
     "913c4d9d555aac0c49e18a09e30d48b61033ebc36e16d424f0491ae9fee1e34e": {
       "status": "pending",
@@ -1702,13 +1728,13 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:21.549189+00:00",
-      "source_sha256": "42a7f90dc09ec130deccaebac9996eb8afa6c8fce4fdf8d824c7de9925c0b2e2",
+      "checked_at": "2026-09-23T05:02:09.291506+00:00",
+      "source_sha256": "34772987f9d9a65287b43869cab5957742277bed5f9b3856e4bb152ff6a333c2",
       "source_text_sha256": "447b3fc69e1e1e5961e58ba1fe729f69790044c835b894d6451ccc3bf4352d5e"
     },
     "a1480047faf6483a8f0fb020d4fd2a7d4fb5c5073b6e91dd52c0dcc095c93d13": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "NIST Expands AI Consortium’s Scope, Calls for New Members",
         "summary": "  The consortium will focus on AI innovation and adoption, with six task groups concentrating on different aspects of AI measurement science and evaluation.\n\n",
@@ -1726,13 +1752,14 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:23.581170+00:00",
-      "source_sha256": "15fc16e14186683b7c706be8f32bbcaccccaa4a9ee8c7ae21ab37513b2836af3",
-      "source_text_sha256": "b008a43e9557f09dfa174b6e78d4179de3603c60b5e0220f7d07c8781a480b64"
+      "checked_at": "2026-09-20T05:01:03.422275+00:00",
+      "source_sha256": "eab6b16437dfaef194592d81fc2e1fe7442d935dc1294078322588fe0d6936a8",
+      "source_text_sha256": "b008a43e9557f09dfa174b6e78d4179de3603c60b5e0220f7d07c8781a480b64",
+      "evaluated_text_sha256": "b008a43e9557f09dfa174b6e78d4179de3603c60b5e0220f7d07c8781a480b64"
     },
     "fc3754ca6900e8f446d02e23f5eccd7d0a4313a4c24ec275f14d4ec86155fb2f": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "Announcing the &quot;AI Agent Standards Initiative&quot; for Interoperable and Secure Innovation",
         "summary": "  The Initiative will ensure that the next generation of AI is widely adopted with confidence, can function securely on behalf of its users, and can interoperate smoothly across the digital ecosystem.\n\n",
@@ -1750,9 +1777,10 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:12.384321+00:00",
-      "source_sha256": "e230a442e3500eee7b4e57e4619ed69b1a2ae4c50f71f413fe0b97eff9ade611",
-      "source_text_sha256": "7eb3ccfc7b2e4b444124aadea753b79c52bd370bab933737829cd376489bff19"
+      "checked_at": "2026-09-22T05:01:35.959862+00:00",
+      "source_sha256": "92785e7cb18e0565a8acf6b36912fa08ee963b8d45463d65e58db6ef7d100b34",
+      "source_text_sha256": "7eb3ccfc7b2e4b444124aadea753b79c52bd370bab933737829cd376489bff19",
+      "evaluated_text_sha256": "7eb3ccfc7b2e4b444124aadea753b79c52bd370bab933737829cd376489bff19"
     },
     "dee85ba4ff5dfae188f2107c358a82a196a59f67dbd4325e46f69f958c058998": {
       "status": "pending",
@@ -1774,14 +1802,14 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-17T05:02:05.610385+00:00",
-      "source_sha256": "7ba4e421b154a5084e34b99f5640770f553cdcfce4804dd2839556aacb5f59f0",
+      "checked_at": "2026-09-23T05:02:10.691399+00:00",
+      "source_sha256": "809bb8a375bbab37e255458de849cdf62de0c1627338cf1b74ff8a055db9e5eb",
       "source_text_sha256": "83aeb0a11559e0f0a4f3af95309539ccd6899be98dd92fc50c2f99f60f7e10e9",
       "error": "invalid model schema"
     },
     "208c2512eb49a6f348c96ff9785716e7f0305b798f4dceb46c2219c92893301e": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "CAISI Issues Request for Information About Securing AI Agent Systems",
         "summary": "  The Center for AI Standards and Innovation (CAISI) at the U.S. Department of Commerce’s National Institute of Standards and Technology (NIST) has published a Request for Information (RFI) seeking insights from industry, academia, and the security\n\n",
@@ -1799,9 +1827,10 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:13.625666+00:00",
-      "source_sha256": "1187cbd0885cee32f8392b1f34a0ad3666079b5ae98071a92a291313d7c4c790",
-      "source_text_sha256": "4cf7bc640f30def5da3b709ab1be8598aa570f971b2530c482f46e12a26db37e"
+      "checked_at": "2026-09-23T05:00:36.493112+00:00",
+      "source_sha256": "dacda01a56efed0d0a5fb0fe6e4ad7ed1d0bac3f66995df2beafaf120799b019",
+      "source_text_sha256": "4cf7bc640f30def5da3b709ab1be8598aa570f971b2530c482f46e12a26db37e",
+      "evaluated_text_sha256": "4cf7bc640f30def5da3b709ab1be8598aa570f971b2530c482f46e12a26db37e"
     },
     "563d1d66cd664c488444bb4eb92b7392fa5ecf3884ffa4e743e03228b3813e62": {
       "status": "pending",
@@ -1823,8 +1852,8 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:17.770289+00:00",
-      "source_sha256": "e1aac6a2ffad4b36356e87cf0b12cc45825330ebb7e4f1a26e6c69a34fd6969a",
+      "checked_at": "2026-09-23T05:02:05.108878+00:00",
+      "source_sha256": "68116f8a9559e6db93cedc3d7e60e558668eb2fd8a7129c58f05a1b5e4b9d215",
       "source_text_sha256": "bc429bce94c63e61cc7d7b8a97871d6f0737a2a4217b610250f4d09af43a13bc"
     },
     "579ec2c3e039a7a6b473553f671392756ab0f3a1e03dfdc7d906aedb10db531f": {
@@ -1847,13 +1876,13 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:18.151853+00:00",
-      "source_sha256": "b2bb56af84894927710b458df0745f493212c2a6495c0807c1bbb713e2aeae28",
+      "checked_at": "2026-09-23T05:02:05.476154+00:00",
+      "source_sha256": "99f45207758e61c35917f15b8cf271b85e3473995c4d24a2b621102981933025",
       "source_text_sha256": "e9ef16bd2411cfd525043b89db11c46a6655fbf737031a51d0b6108d8511ea84"
     },
     "ff1a185c3aa33003442eb0bde83b0db4cc5439faddd13476a01579f820c23ccd": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "CAISI Evaluation of DeepSeek AI Models Finds Shortcomings and Risks",
         "summary": "  The Center for AI Standards and Innovation at NIST evaluated several leading models from DeepSeek, an AI company based in the People’s Republic of China.\n\n",
@@ -1870,10 +1899,11 @@
         "filter_ai": true,
         "priority_base": 2
       },
-      "active": true,
-      "checked_at": "2026-09-18T05:06:12.759833+00:00",
-      "source_sha256": "70fc4c242592fc28eddc8ddf38d0d26d84e0d0dfe9d9aac1d2577201f5304698",
-      "source_text_sha256": "fc2cd7a342dfcdceca41cb310e64671038cd29acca616107fa9e9e540c35c706"
+      "active": false,
+      "checked_at": "2026-09-22T05:01:51.560745+00:00",
+      "source_sha256": "7ae5e232227cf1047af58080d75cdfecc8c764bcc85e17dcdf39d500febf4ea7",
+      "source_text_sha256": "fc2cd7a342dfcdceca41cb310e64671038cd29acca616107fa9e9e540c35c706",
+      "evaluated_text_sha256": "fc2cd7a342dfcdceca41cb310e64671038cd29acca616107fa9e9e540c35c706"
     },
     "39bb794b9982e6edc2bfbbf7f7c23c4fa3abf932f26fddfc01566f45505ed14b": {
       "status": "pending",
@@ -1895,8 +1925,8 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-18T05:06:15.660019+00:00",
-      "error": "source capture failed: HTTPError"
+      "checked_at": "2026-09-23T05:01:10.219600+00:00",
+      "error": "source HTTP status 403"
     },
     "00cc6142a1a6b1f6fa6e64da6688ffe5d560d7950cb671e860069f6e0e9948b9": {
       "status": "pending",
@@ -1918,13 +1948,13 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-17T05:00:05.136259+00:00",
-      "source_sha256": "b892540382ff4ac1d57e01f328343f629234f2eb06cc8dd0e52836287222f8e9",
-      "source_text_sha256": "7bae9da71f86c8232d8cea59a24210442a3127e917f09fa7c3b5dddf085f9abc",
+      "checked_at": "2026-09-23T05:02:10.091319+00:00",
+      "source_sha256": "31c6a254bb692ee8f8dd2b0dc3c9d01c15dbb1330b938f5facb552003a7c0cbc",
+      "source_text_sha256": "616b86c0ee1d88d597c2fcf6f719645897d088caf2452ddd56f37ff1252f8089",
       "error": "invalid model schema"
     },
     "57802728c75064e9f68588b60fe2c2bf09f101b79b66a45341e62957e183f068": {
-      "status": "pending",
+      "status": "manual_review",
       "attempts": 0,
       "item": {
         "title": "Rescission of the Greenhouse Gas Findings for Fossil Fuel-Fired Power Plants and Repeal of Regulations for Power Plant Greenhouse Gas Emissions Under Clean Air Act Section 111",
@@ -1942,11 +1972,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:01:06.532405+00:00",
-      "error": "source capture failed: ValueError"
+      "checked_at": "2026-09-23T05:00:33.106310+00:00",
+      "error": "document exceeds evaluation text limit; manual review required"
     },
     "acd125fdfd75db95c599f5f3bba2c1c547a48442d5bec1e39fdbbd161c614437": {
-      "status": "pending",
+      "status": "manual_review",
       "attempts": 0,
       "item": {
         "title": "Partial Repeal of the Carbon Pollution Standards for Fossil Fuel-Fired Electric Generating Units",
@@ -1964,8 +1994,8 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:02:07.185854+00:00",
-      "error": "source capture failed: ValueError"
+      "checked_at": "2026-09-23T05:00:33.615975+00:00",
+      "error": "document exceeds evaluation text limit; manual review required"
     },
     "2aaa70ffc70ff726df8dbcb1d82079ae56f516d5591fa97f4adff95047795251": {
       "status": "pending",
@@ -1986,7 +2016,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:00:06.178579+00:00",
+      "checked_at": "2026-09-23T05:02:11.869414+00:00",
       "source_sha256": "4fc9ba50e11347281b65465e54533bd30baff4ff9f4e2f716a669469eaa817aa",
       "source_text_sha256": "9b1ef6de47a9cda1effc530f5fb6c8298d2cd397db656f44c92cd2c08c60b1c3",
       "error": "invalid model schema"
@@ -1996,7 +2026,7 @@
       "attempts": 1,
       "item": {
         "title": "EU KIDS Act to restrict social media platforms’ access to children in the EU",
-        "summary": "<span>EU KIDS Act to restrict social media platforms’ access to children in the EU</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-09-17T09:36:00+02:00\" title=\"Thursday, September 17, 2026 - 09:36\">Thu, 09/17/2026 - 09:36</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                                    <p class=\"ecl-page-header-standardised__description\">Today, the European Commission has adopted the EU KIDS Act to enhance the online safety of children throughout the Union.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/ProtectingYoungPeopleOnline_600x400_colours_EU_kids_act1_0TxsCqWMP7pJ8MQXjiH0Q2Som4_245425.jpg?itok=l503SGq3\" alt=\"illustration of a browser window surrounded by small people, displaying icons for video, location, likes, and a shield protecting children.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>The proposal prohibits social media platforms from accessing children under the age of 13 and sets an EU-wide minimum age for minors to open an account of their own at the age of 15, thereby ensuring a gradual approach. The KIDS Act also reverses the burden of proof. Now, service providers will have to show that their services are age-appropriate and safe by design.</p>\n<blockquote>\n<p>Commission President, Ursula <strong>von der Leyen</strong>, said: “Today, our children are engaging with the most sophisticated technologies ever created. Technology that was never created with their wellbeing in mind. Our KIDS Act is reversing the burden of proof - it is for platforms to show they are safe by design. And we put parents back in the driving seat, giving them the tools to help their children navigate a safer online world.”</p>\n</blockquote>\n<p>Read the <a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1890\">full press release</a> and <a href=\"https://ec.europa.eu/commission/presscorner/detail/en/fs_26_1891\">factsheet</a>.</p>\n<p>Find further information:</p>\n<ul>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/library/proposal-eu-kids-act-eu-keeping-internet-digital-spaces-accountable-and-trustworthy\">Kids Act - Proposal and supporting documents</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/kids-act\">KIDS Act - an overview</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/faqs/kids-act-explained\">KIDS Act - questions and answers</a></li>\n</ul></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=154\" class=\"ecl-tag ecl-u-mb-xs\">   Better Internet for Children</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=153\" class=\"ecl-tag ecl-u-mb-xs\">Strengthening trust and security</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=150\" class=\"ecl-tag ecl-u-mb-xs\">Online platforms and e-commerce</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                              <h2>Related content</h2>\n\n      \n  <article class=\"ecl-content-item ecl-content-item--divider ecl-u-mb-xl\"><div class=\"ecl-content-block ecl-content-item__content-block\" data-ecl-auto-init=\"ContentBlock\" data-ecl-content-block><ul class=\"ecl-content-block__primary-meta-container\"><li class=\"ecl-content-block__primary-meta-item\">Policy and legislation</li><li class=\"ecl-content-block__primary-meta-item\">17 September 2026</li></ul><div class=\"ecl-content-block__title\"><a href=\"https://digital-strategy.ec.europa.eu/en/library/proposal-eu-kids-act-eu-keeping-internet-digital-spaces-accountable-and-trustworthy\" class=\"ecl-link ecl-link--standalone\" data-ecl-title-link>Proposal for EU KIDS Act - 'EU Keeping Internet Digital Spaces Accountable and Trustworthy'</a></div><div class=\"ecl-content-block__description\">This proposal seeks to protect minors from risky digital services and AI systems, uphold the digital single market and maintain a coherent regulatory framework and enforcement structure for the protection of minors online.</div></div></article>  \n\n  \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div>\n  \n    \n        <div class=\"ecl-u-type-m\">\n    <section class=\"cnct-page-footer ecl-u-mv-2xl\">\n      \n          </section>\n  </div>\n\n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
+        "summary": "<span>EU KIDS Act to restrict social media platforms’ access to children in the EU</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-09-17T09:36:00+02:00\" title=\"Thursday, September 17, 2026 - 09:36\">Thu, 09/17/2026 - 09:36</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                                    <p class=\"ecl-page-header-standardised__description\">The European Commission has adopted the EU KIDS Act to enhance the online safety of children throughout the Union.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/ProtectingYoungPeopleOnline_600x400_colours_EU_kids_act1_0TxsCqWMP7pJ8MQXjiH0Q2Som4_245425.jpg?itok=l503SGq3\" alt=\"illustration of a browser window surrounded by small people, displaying icons for video, location, likes, and a shield protecting children.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>The proposal prohibits social media platforms from accessing children under the age of 13 and sets an EU-wide minimum age for minors to open an account of their own at the age of 15, thereby ensuring a gradual approach. The KIDS Act also reverses the burden of proof. Now, service providers will have to show that their services are age-appropriate and safe by design.</p>\n<blockquote>\n<p>Commission President, Ursula <strong>von der Leyen</strong>, said: “Today, our children are engaging with the most sophisticated technologies ever created. Technology that was never created with their wellbeing in mind. Our KIDS Act is reversing the burden of proof - it is for platforms to show they are safe by design. And we put parents back in the driving seat, giving them the tools to help their children navigate a safer online world.”</p>\n</blockquote>\n<p>Read the <a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1890\">full press release</a> and <a href=\"https://ec.europa.eu/commission/presscorner/detail/en/fs_26_1891\">factsheet</a>.</p>\n<p>Find further information:</p>\n<ul>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/library/proposal-eu-kids-act-eu-keeping-internet-digital-spaces-accountable-and-trustworthy\">Kids Act - Proposal and supporting documents</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/faqs/kids-act-explained\">KIDS Act - questions and answers</a></li>\n</ul></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=154\" class=\"ecl-tag ecl-u-mb-xs\">   Better Internet for Children</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=153\" class=\"ecl-tag ecl-u-mb-xs\">Strengthening trust and security</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=150\" class=\"ecl-tag ecl-u-mb-xs\">Online platforms and e-commerce</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                              <h2>Related content</h2>\n\n      \n  <article class=\"ecl-content-item ecl-content-item--divider ecl-u-mb-xl\"><div class=\"ecl-content-block ecl-content-item__content-block\" data-ecl-auto-init=\"ContentBlock\" data-ecl-content-block><ul class=\"ecl-content-block__primary-meta-container\"><li class=\"ecl-content-block__primary-meta-item\">Policy and legislation</li><li class=\"ecl-content-block__primary-meta-item\">17 September 2026</li></ul><div class=\"ecl-content-block__title\"><a href=\"https://digital-strategy.ec.europa.eu/en/library/proposal-eu-kids-act-eu-keeping-internet-digital-spaces-accountable-and-trustworthy\" class=\"ecl-link ecl-link--standalone\" data-ecl-title-link>Proposal for EU KIDS Act - 'EU Keeping Internet Digital Spaces Accountable and Trustworthy'</a></div><div class=\"ecl-content-block__description\">This proposal seeks to protect minors from risky digital services and AI systems, uphold the digital single market and maintain a coherent regulatory framework and enforcement structure for the protection of minors online.</div></div></article>  \n\n  \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div>\n  \n    \n        <div class=\"ecl-u-type-m\">\n    <section class=\"cnct-page-footer ecl-u-mv-2xl\">\n      \n          </section>\n  </div>\n\n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
         "url": "https://digital-strategy.ec.europa.eu/en/news/eu-kids-act-restrict-social-media-platforms-access-children-eu",
         "publication_date": "Thu, 17 Sep 2026 07:36:00 +0000"
       },
@@ -2011,9 +2041,9 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:02:07.695728+00:00",
-      "source_sha256": "c24e6a7b0d758010ef994c310ff93fab2b42687f73d5b4129ea3982aa67a99c9",
-      "source_text_sha256": "4d3ede6c48260f535a6d57a1c738eb8a7afb1f12a9dc04b6942483de5b5d20f6",
+      "checked_at": "2026-09-23T05:02:12.178273+00:00",
+      "source_sha256": "e0d1f44c7c071605312f4400a88cde4e3d29a11597464e83991852111aaf4f57",
+      "source_text_sha256": "04a8b417a34255524efe6473bee7e0ad9c8be85a7f08a8caee4b24a6296c4b5f",
       "error": "invalid model schema"
     },
     "89895447064d59b61e0c4d843d2b4abe1f42d3dab7a351565a28831df19675ae": {
@@ -2021,7 +2051,7 @@
       "attempts": 1,
       "item": {
         "title": "Proposal for EU KIDS Act - 'EU Keeping Internet Digital Spaces Accountable and Trustworthy'",
-        "summary": "<span>Proposal for EU KIDS Act - 'EU Keeping Internet Digital Spaces Accountable and Trustworthy'</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-09-17T09:21:00+02:00\" title=\"Thursday, September 17, 2026 - 09:21\">Thu, 09/17/2026 - 09:21</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                                    <p class=\"ecl-page-header-standardised__description\">This proposal seeks to protect minors from risky digital services and AI systems, uphold the digital single market and maintain a coherent regulatory framework and enforcement structure for the protection of minors online.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/ProtectingYoungPeopleOnline_600x400_colours_EU_kids_act1_7mj5sARJ3eWJAazOTfaI81Qdp8_245426.jpg?itok=qa7fllkz\" alt=\"illustration of a browser window surrounded by small people, displaying icons for video, location, likes, and a shield protecting children.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>The proposal recognises the risks that minors face on certain online social networking services and video-sharing platforms and therefore limits autonomous account creation on those specific platforms and systems by children below the age of 15 years. By providing one age across the European Union, it harmonises diverging national rules removing obstacles to the implementation of the Digital Single Market, ensuring legal certainty and a similar level of protection for all children in the European Union.</p>\n<p>Below you can download the proposal for EU KIDS Act - 'EU Keeping Internet Digital Spaces Accountable and Trustworthy', together with the Communication and the Staff Working Document (SWD) accompanying it. <a href=\"https://ec.europa.eu/newsroom/repository/document/2026-38/Proposal_for_EU_KIDS_Act__EU_Keeping_Internet_Digital_Spaces_Accountable_and_Trustworthy_wh7RxWPSibRG6UlfmCMgsZvcEgc_132530.pdf\" class=\"ecl-link\"></a></p>\n<p>Find further information:</p>\n<ul>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/news/eu-kids-act-restrict-social-media-platforms-access-children-eu\">Press release</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/kids-act\">KIDS Act - an overview</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/faqs/kids-act-explained\">KIDS Act - questions and answers</a></li>\n</ul></div>\n\n              \n<h2>Downloads</h2>\n<div data-ecl-auto-init=\"FileDownload\" class=\"ecl-u-mt-m ecl-u-mt-lg-xl ecl-file\" data-ecl-file=\"true\" data-ecl-auto-initialized=\"true\">\n  <div class=\"ecl-file__container\">\n    <span class=\"wt-icon--file ecl-icon ecl-icon--2xl ecl-icon--file\" aria-hidden=\"true\"></span>    <div class=\"ecl-file__info\">\n      <div class=\"ecl-file__title\">1 - Proposal for EU KIDS Act - 'EU Keeping Internet Digital Spaces Accountable and Trustworthy'</div>\n    </div>\n    <a download href=\"https://ec.europa.eu/newsroom/dae/redirection/document/132530\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">\n      <span class=\"ecl-link__label\">Download</span>&nbsp;\n      <span class=\"wt-icon--download ecl-icon ecl-icon--fluid ecl-icon--download\" aria-hidden=\"true\"></span>    </a>\n  </div>\n</div>\n<div data-ecl-auto-init=\"FileDownload\" class=\"ecl-u-mt-m ecl-u-mt-lg-xl ecl-file\" data-ecl-file=\"true\" data-ecl-auto-initialized=\"true\">\n  <div class=\"ecl-file__container\">\n    <span class=\"wt-icon--file ecl-icon ecl-icon--2xl ecl-icon--file\" aria-hidden=\"true\"></span>    <div class=\"ecl-file__info\">\n      <div class=\"ecl-file__title\">2 - Communication accompanying the KIDS Act - An EU approach to online child safety</div>\n    </div>\n    <a download href=\"https://ec.europa.eu/newsroom/dae/redirection/document/132528\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">\n      <span class=\"ecl-link__label\">Download</span>&nbsp;\n      <span class=\"wt-icon--download ecl-icon ecl-icon--fluid ecl-icon--download\" aria-hidden=\"true\"></span>    </a>\n  </div>\n</div>\n<div data-ecl-auto-init=\"FileDownload\" class=\"ecl-u-mt-m ecl-u-mt-lg-xl ecl-file\" data-ecl-file=\"true\" data-ecl-auto-initialized=\"true\">\n  <div class=\"ecl-file__container\">\n    <span class=\"wt-icon--file ecl-icon ecl-icon--2xl ecl-icon--file\" aria-hidden=\"true\"></span>    <div class=\"ecl-file__info\">\n      <div class=\"ecl-file__title\">3 - Staff Working Document (SWD) - Analysis of Impacts accompanying the proposal for EU kids Act</div>\n    </div>\n    <a download href=\"https://ec.europa.eu/newsroom/dae/redirection/document/132529\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">\n      <span class=\"ecl-link__label\">Download</span>&nbsp;\n      <span class=\"wt-icon--download ecl-icon ecl-icon--fluid ecl-icon--download\" aria-hidden=\"true\"></span>    </a>\n  </div>\n</div>\n\n      \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=154\" class=\"ecl-tag ecl-u-mb-xs\">   Better Internet for Children</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=153\" class=\"ecl-tag ecl-u-mb-xs\">Strengthening trust and security</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=150\" class=\"ecl-tag ecl-u-mb-xs\">Online platforms and e-commerce</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                              <h2>Related content</h2>\n\n      \n  <article class=\"ecl-content-item ecl-content-item--divider ecl-u-mb-xl\"><div class=\"ecl-content-block ecl-content-item__content-block\" data-ecl-auto-init=\"ContentBlock\" data-ecl-content-block><ul class=\"ecl-content-block__primary-meta-container\"><li class=\"ecl-content-block__primary-meta-item\">Press release</li><li class=\"ecl-content-block__primary-meta-item\">17 September 2026</li></ul><div class=\"ecl-content-block__title\"><a href=\"https://digital-strategy.ec.europa.eu/en/news/eu-kids-act-restrict-social-media-platforms-access-children-eu\" class=\"ecl-link ecl-link--standalone\" data-ecl-title-link>EU KIDS Act to restrict social media platforms’ access to children in the EU</a></div><div class=\"ecl-content-block__description\">Today, the European Commission has adopted the EU KIDS Act to enhance the online safety of children throughout the Union.</div></div></article>  \n\n  \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div>\n  \n    \n        <div class=\"ecl-u-type-m\">\n    <section class=\"cnct-page-footer ecl-u-mv-2xl\">\n      \n          </section>\n  </div>\n\n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
+        "summary": "<span>Proposal for EU KIDS Act - 'EU Keeping Internet Digital Spaces Accountable and Trustworthy'</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-09-17T09:21:00+02:00\" title=\"Thursday, September 17, 2026 - 09:21\">Thu, 09/17/2026 - 09:21</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                                    <p class=\"ecl-page-header-standardised__description\">This proposal seeks to protect minors from risky digital services and AI systems, uphold the digital single market and maintain a coherent regulatory framework and enforcement structure for the protection of minors online.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/ProtectingYoungPeopleOnline_600x400_colours_EU_kids_act1_7mj5sARJ3eWJAazOTfaI81Qdp8_245426.jpg?itok=qa7fllkz\" alt=\"illustration of a browser window surrounded by small people, displaying icons for video, location, likes, and a shield protecting children.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>The proposal recognises the risks that minors face on certain online social networking services and video-sharing platforms and therefore limits autonomous account creation on those specific platforms and systems by children below the age of 15 years. By providing one age across the European Union, it harmonises diverging national rules removing obstacles to the implementation of the Digital Single Market, ensuring legal certainty and a similar level of protection for all children in the European Union.</p>\n<div class=\"attachment-container unknown\">\n<div class=\"text-box-container ng-star-inserted\">\n<div class=\"text-box-content\">\n<div class=\"text-box-text gds-body-l\">The <strong>proposal </strong>and its <strong>supporting documents</strong> are available on EUR-Lex and will soon be accessible in <strong>all official EU languages</strong>:</div>\n</div>\n</div>\n</div>\n<ul>\n<li><a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026PC0681\">Proposal for EU KIDS Act - 'EU Keeping Internet Digital Spaces Accountable and Trustworthy'</a></li>\n<li><a href=\"https://eur-lex.europa.eu/legal-content/en/TXT/?uri=COM%3A2026%3A680%3AFIN&amp;qid=1789647397373\">Communication accompanying the KIDS Act - An EU approach to online child safety</a></li>\n<li><a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026SC0681\">Staff Working Document (SWD) - Analysis of Impacts accompanying the proposal for EU kids Act</a></li>\n</ul>\n<p>Find further information:</p>\n<ul>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/news/eu-kids-act-restrict-social-media-platforms-access-children-eu\">Press release</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/faqs/kids-act-explained\">KIDS Act - questions and answers</a></li>\n</ul></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=154\" class=\"ecl-tag ecl-u-mb-xs\">   Better Internet for Children</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=153\" class=\"ecl-tag ecl-u-mb-xs\">Strengthening trust and security</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=150\" class=\"ecl-tag ecl-u-mb-xs\">Online platforms and e-commerce</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                              <h2>Related content</h2>\n\n      \n  <article class=\"ecl-content-item ecl-content-item--divider ecl-u-mb-xl\"><div class=\"ecl-content-block ecl-content-item__content-block\" data-ecl-auto-init=\"ContentBlock\" data-ecl-content-block><ul class=\"ecl-content-block__primary-meta-container\"><li class=\"ecl-content-block__primary-meta-item\">Press release</li><li class=\"ecl-content-block__primary-meta-item\">17 September 2026</li></ul><div class=\"ecl-content-block__title\"><a href=\"https://digital-strategy.ec.europa.eu/en/news/eu-kids-act-restrict-social-media-platforms-access-children-eu\" class=\"ecl-link ecl-link--standalone\" data-ecl-title-link>EU KIDS Act to restrict social media platforms’ access to children in the EU</a></div><div class=\"ecl-content-block__description\">The European Commission has adopted the EU KIDS Act to enhance the online safety of children throughout the Union.</div></div></article>  \n\n  \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div>\n  \n    \n        <div class=\"ecl-u-type-m\">\n    <section class=\"cnct-page-footer ecl-u-mv-2xl\">\n      \n          </section>\n  </div>\n\n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
         "url": "https://digital-strategy.ec.europa.eu/en/library/proposal-eu-kids-act-eu-keeping-internet-digital-spaces-accountable-and-trustworthy",
         "publication_date": "Thu, 17 Sep 2026 07:21:00 +0000"
       },
@@ -2036,17 +2066,369 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:01:07.036961+00:00",
-      "source_sha256": "ad48ee88a88bf882939ea50b284a0fa8c7bdc1bef24d28a9ee4ff6a9c86c74ae",
-      "source_text_sha256": "f7c873e8b194413aff7275b51648cace1cdd0d5b70a1589492de5f6e17f86dd7",
+      "checked_at": "2026-09-23T05:02:12.118934+00:00",
+      "source_sha256": "7c45b2476d3047879905be9b8eb1122e162c56abb787f5a02d862e247d6bf11e",
+      "source_text_sha256": "f500c7015de8af7faf6db3d30792e8c6704cfb3327f59a4e284433169479bc34",
       "error": "invalid model schema"
+    },
+    "2f30120e49a3130cba77b23b5b5febde7a57055f13f1de7c1fd7c0921cd8d396": {
+      "status": "manual_review",
+      "attempts": 0,
+      "item": {
+        "title": "Public Company Accounting Oversight Board; Notice of Filing of Proposed Rules on Amendments to QC 1000, A Firm's System of Quality Control, and Related Rule and Forms",
+        "summary": "Public Company Accounting Oversight Board; Notice of Filing of Proposed Rules on Amendments to QC 1000, A Firm's System of Quality Control, and Related Rule and Forms",
+        "url": "https://www.federalregister.gov/documents/2026/09/18/2026-19148/public-company-accounting-oversight-board-notice-of-filing-of-proposed-rules-on-amendments-to-qc",
+        "publication_date": "2026-09-18"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-23T05:00:31.094166+00:00",
+      "error": "document exceeds evaluation text limit; manual review required"
+    },
+    "24b91e42ca39f96250ff8396e2ab4365319553e9a5e9361ad8778925105bc9a5": {
+      "status": "manual_review",
+      "attempts": 0,
+      "item": {
+        "title": "Request for Information (RFI) on Future Needs for Medical Metrology and Standards for Medical Imaging, Devices, Diagnostics and Therapy",
+        "summary": "The National Institute of Standards and Technology (NIST) and the National Institute of Biomedical Imaging and Bioengineering (NIBIB), a part of the National Institutes of Health (NIH), are requesting input from stakeholders in order to gain a better understanding of the future needs for medical metrology and standards around medical imaging, devices, and diagnostics. This request for information is coordinated with a NIST/NIBIB Symposium on Medical Metrology and Standards for American Healthcare and Commerce Medical Imaging, Devices, Diagnostics at the joint NIST/University of Maryland Institute (UMD) for Bioscience and Biotechnology Research (IBBR). The input received will inform a joint NIST and NIBIB medical metrology and standards roadmap, a document that will identify future needs for medical metrology and standards, identify major stakeholders, and provide guidance for future government programs.",
+        "url": "https://www.federalregister.gov/documents/2026/09/18/2026-19147/request-for-information-rfi-on-future-needs-for-medical-metrology-and-standards-for-medical-imaging",
+        "publication_date": "2026-09-18"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-23T05:00:30.830664+00:00",
+      "source_sha256": "93d27862db1cfbe023f098d1d88ede786d36f184e9daf3b83286d5bcfbd54bf9",
+      "source_text_sha256": "7da5c4c5006d37ad7ce3930ab3ce921fa5934fc1651020c2729e94c830c82cda",
+      "error": "document exceeds model input budget; manual review required"
+    },
+    "6bc253ab68efb4f40650545eed4bda232e33980c4a7bc93f76b0c9227d5fbace": {
+      "status": "manual_review",
+      "attempts": 0,
+      "item": {
+        "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of a Proposed Rule Change To Permit the Listing of Binary KPI Options",
+        "summary": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of a Proposed Rule Change To Permit the Listing of Binary KPI Options",
+        "url": "https://www.federalregister.gov/documents/2026/09/18/2026-19139/self-regulatory-organizations-nyse-arca-inc-notice-of-filing-of-a-proposed-rule-change-to-permit-the",
+        "publication_date": "2026-09-18"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-23T05:00:31.628036+00:00",
+      "error": "document exceeds evaluation text limit; manual review required"
+    },
+    "920548c8df731e539da02bfa501604ca735b46e184d9ccac682ae4e34627e663": {
+      "status": "manual_review",
+      "attempts": 0,
+      "item": {
+        "title": "Self-Regulatory Organizations; NYSE American LLC; Notice of Filing of a Proposed Rule Change To Permit the Listing of Binary KPI Options",
+        "summary": "Self-Regulatory Organizations; NYSE American LLC; Notice of Filing of a Proposed Rule Change To Permit the Listing of Binary KPI Options",
+        "url": "https://www.federalregister.gov/documents/2026/09/18/2026-19132/self-regulatory-organizations-nyse-american-llc-notice-of-filing-of-a-proposed-rule-change-to-permit",
+        "publication_date": "2026-09-18"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-23T05:00:31.976791+00:00",
+      "error": "document exceeds evaluation text limit; manual review required"
+    },
+    "fc6caa9ca06598e4de6351640198c601779f0975d004e20968e90c2fac908e61": {
+      "status": "manual_review",
+      "attempts": 0,
+      "item": {
+        "title": "United States of America, et al. v. RealPage, Inc., et al.; Proposed Final Judgment and Competitive Impact Statement",
+        "summary": "United States of America, et al. v. RealPage, Inc., et al.; Proposed Final Judgment and Competitive Impact Statement",
+        "url": "https://www.federalregister.gov/documents/2026/09/18/2026-19100/united-states-of-america-et-al-v-realpage-inc-et-al-proposed-final-judgment-and-competitive-impact",
+        "publication_date": "2026-09-18"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-23T05:00:32.316168+00:00",
+      "error": "document exceeds evaluation text limit; manual review required"
+    },
+    "362f4388c4d9496ebf122603c35668888a236dcf2e4af58ad656a707b1c1aa63": {
+      "status": "evaluated",
+      "attempts": 1,
+      "item": {
+        "title": "Presidential Determination on Major Drug Transit or Major Illicit Drug Producing Countries for Fiscal Year 2027",
+        "summary": "Presidential Determination on Major Drug Transit or Major Illicit Drug Producing Countries for Fiscal Year 2027",
+        "url": "https://www.federalregister.gov/documents/2026/09/18/2026-19251/presidential-determination-on-major-drug-transit-or-major-illicit-drug-producing-countries-for",
+        "publication_date": "2026-09-18"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-19T05:00:07.254915+00:00",
+      "source_sha256": "fa8bad7527d85cd87bbadc4c25271e676c66e8d055bae1ea8e95e636f87d7287",
+      "source_text_sha256": "675dbf69310befe7195978a428ac06a41d847cdcd1a1f9a455efe15807d1aff4",
+      "evaluated_text_sha256": "675dbf69310befe7195978a428ac06a41d847cdcd1a1f9a455efe15807d1aff4"
+    },
+    "b4a851e8b19cc6331f0a348e0bb71ca51a6d37ed40a1a86352e9f9d53b97ac8b": {
+      "status": "evaluated",
+      "attempts": 1,
+      "item": {
+        "title": "Data Union Conference",
+        "summary": "<span>Data Union Conference</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-09-18T09:43:00+02:00\" title=\"Friday, September 18, 2026 - 09:43\">Fri, 09/18/2026 - 09:43</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                              <ul class=\"ecl-unordered-list ecl-unordered-list--no-bullet ecl-u-mb-xl\">\n      <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n      <span class=\"wt-icon--calendar ecl-icon ecl-icon--fluid ecl-icon--calendar\" aria-hidden=\"true\"></span>&nbsp;\n      12 January 2027\n  </li>\n  \n    <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n    <span class=\"wt-icon--location ecl-icon ecl-icon--fluid ecl-icon--location\" aria-hidden=\"true\"></span>&nbsp;\n        Charlemagne building, Brussels, Belgium\n      </li>\n  </ul>\n\n                <p class=\"ecl-page-header-standardised__description\">Bringing policymakers, businesses, experts and researchers together to turn Europe’s data policies into more data for AI, growth and competitiveness.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/DUC_visual_final_32_4vnOvc1RXIu5JOAoIVcTFipmS0_244932.jpg?itok=sK7CkSsw\" alt=\"Conference banner (12 January 2027) - blue digital network graphics, European Commission logo.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>This high-level conference will be hosted by the European Commission. It will contribute to a wider political debate on the future of the EU data Policy.</p>\n<h2>Main topics on the agenda</h2>\n<p>During the conference, discussions will focus on:</p>\n<div>\n<ul>\n<li>Digital Omnibus:<span> Simplifying the EU data rulebook, reducing administrative burden and supporting innovation</span></li>\n<li>Data for industrial AI: Improving access to high-quality data through the <a href=\"https://digital-strategy.ec.europa.eu/en/policies/data-act\" target=\"_blank\" rel=\"noopener noreferrer\"><span>Data Act</span></a></li>\n<li>International data flows: Promoting open and trusted data flows and securing fair treatment for EU companies abroad</li>\n</ul>\n</div>\n<p>The agenda will be published here.</p>\n<h2>Register</h2>\n<p>You can <a href=\"https://register.event-works.europa.eu/dgcnect/data_union_conference_27/e/lk/k/\">express your interest in participating</a><strong>.</strong> Admission is subject to approval.</p>\n<p>The event is going to be live streamed.</p>\n<h2>Background</h2>\n<p>European companies and researchers need better access to high-quality data to develop and deploy AI. The <a href=\"https://digital-strategy.ec.europa.eu/en/policies/data-union\" target=\"_blank\" rel=\"noopener noreferrer\"><span>Data Union Strategy</span></a> sets out practical measures to increase data availability and strengthen Europe’s data infrastructure.</p>\n<p>The Commission is also working to simplify the EU’s digital rules. Building on the Data Act and other existing legislation, the aim is to reduce unnecessary burdens and make it easier for companies to use and share data.</p>\n<p><span>Internationally, the Commission seeks to facilitate trusted cross-border data flows and address unfair restrictions faced by EU companies in other markets. Together, these efforts aim to support AI development and strengthen Europe’s competitiveness.</span></p></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              \n  <div>\n    <h4>Organiser</h4>\n              <div>European Commission</div>\n          </div>\n\n                <p><a href=\"https://register.event-works.europa.eu/dgcnect/data_union_conference_27/e/lk/k/\" class=\"ecl-button ecl-button--call\">Express your interest in participating</a></p>\n\n              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=70\" class=\"ecl-tag ecl-u-mb-xs\">Big data</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=69\" class=\"ecl-tag ecl-u-mb-xs\">Data policy</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=74\" class=\"ecl-tag ecl-u-mb-xs\">Open data</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=119\" class=\"ecl-tag ecl-u-mb-xs\">Artificial intelligence</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div>\n  \n    \n        <div class=\"ecl-u-type-m\">\n    <section class=\"cnct-page-footer ecl-u-mv-2xl\">\n      \n          </section>\n  </div>\n\n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
+        "url": "https://digital-strategy.ec.europa.eu/en/events/data-union-conference",
+        "publication_date": "Fri, 18 Sep 2026 07:43:00 +0000"
+      },
+      "target": {
+        "id": "eu_ai_office",
+        "name": "EU AI Office & Digital Strategy",
+        "jurisdiction": "European Union",
+        "type": "regulator_feed",
+        "url": "https://digital-strategy.ec.europa.eu/en/rss.xml",
+        "format": "rss",
+        "filter_ai": true,
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-19T05:00:28.466321+00:00",
+      "source_sha256": "43c09d07bee10b9bed0df97e8dfc34a3b8a013d1e36a48bfcb4aa636e60f4da1",
+      "source_text_sha256": "ca2a46e06c5ea66f8cfbff6c63af7820b2682b7c863dd7fcf10b0358e7659dc7",
+      "evaluated_text_sha256": "ca2a46e06c5ea66f8cfbff6c63af7820b2682b7c863dd7fcf10b0358e7659dc7"
+    },
+    "4fc8495db52da975ea9df3ace4c524fcabcb034b3d78b335cd7146efd26e471a": {
+      "status": "manual_review",
+      "attempts": 0,
+      "item": {
+        "title": "Data Intermediaries and Approaches To Strengthen Public Health Data Exchange",
+        "summary": "The Centers for Disease Control and Prevention (CDC) seeks broad public input on how data intermediaries can be used to support secure, scalable, standards-based public health data exchange. CDC invites public comment to inform the evaluation and to explore how data intermediaries can advance broader goals to prevent disease, detect emerging threats, drive state-of-the-art solutions that empower communities, and strengthen public health systems for a safer, healthier nation.",
+        "url": "https://www.federalregister.gov/documents/2026/09/21/2026-19271/data-intermediaries-and-approaches-to-strengthen-public-health-data-exchange",
+        "publication_date": "2026-09-21"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-23T05:00:29.795403+00:00",
+      "source_sha256": "5732141abd973d8993e6239e197486dbeef5fa07af70a1a8e9e5c0342d47b438",
+      "source_text_sha256": "057ae28ab694825203e41fddded2a58b524f530bd1cfef46c64e60da0d6efc8f",
+      "error": "document exceeds model input budget; manual review required"
+    },
+    "78db547fa8ea3e2152a12e466d19c9d446bf71a9edbc69e857e8eff2cef6e192": {
+      "status": "evaluated",
+      "attempts": 1,
+      "item": {
+        "title": "Restoring Reciprocity in Government Procurement",
+        "summary": "Restoring Reciprocity in Government Procurement",
+        "url": "https://www.federalregister.gov/documents/2026/09/21/2026-19336/restoring-reciprocity-in-government-procurement",
+        "publication_date": "2026-09-21"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-21T05:00:47.827652+00:00",
+      "source_sha256": "48f01a7fbb82d608f3f4f0ddd208e125eb8b80535bbc3a67edd11e5b8ca03e29",
+      "source_text_sha256": "af7d0f203f03ad2128a0dddc1462b0cb18a9c4be86031760d8da6638cf2f82e1",
+      "evaluated_text_sha256": "af7d0f203f03ad2128a0dddc1462b0cb18a9c4be86031760d8da6638cf2f82e1"
+    },
+    "68b467d298278053b5a3721e4c4733ecdd5a32196a261a94015b4dbbda1f6f73": {
+      "status": "evaluated",
+      "attempts": 1,
+      "item": {
+        "title": "Providing Meaningful Water Quality Improvements Through Collaboration and Oversight of Federal Support",
+        "summary": "Providing Meaningful Water Quality Improvements Through Collaboration and Oversight of Federal Support",
+        "url": "https://www.federalregister.gov/documents/2026/09/21/2026-19335/providing-meaningful-water-quality-improvements-through-collaboration-and-oversight-of-federal",
+        "publication_date": "2026-09-21"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-21T05:00:32.926234+00:00",
+      "source_sha256": "584808262478d094bd6aa4081fb3e9bddc01fcf9717fd31ab5a946edcd584cba",
+      "source_text_sha256": "831be24fa8c4a5438e14d7525d9e289148ff472c9091ed21dc666289295be13d",
+      "evaluated_text_sha256": "831be24fa8c4a5438e14d7525d9e289148ff472c9091ed21dc666289295be13d"
+    },
+    "4e93a468df4300e35fc6bf4fd2de4eb0ad0c3795a4fb4aa98b76ab8bb6fbbd01": {
+      "status": "evaluated",
+      "attempts": 1,
+      "item": {
+        "title": "National POW/MIA Recognition Day, 2026",
+        "summary": "National POW/MIA Recognition Day, 2026",
+        "url": "https://www.federalregister.gov/documents/2026/09/21/2026-19334/national-powmia-recognition-day-2026",
+        "publication_date": "2026-09-21"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-21T05:00:08.253160+00:00",
+      "source_sha256": "9942cbeb9b044db07964151690400a3d9de48378ab806870ad4870b66343fc4e",
+      "source_text_sha256": "dc9382559a4a7b55fcf4d9b45e735e5fe8ec7fa4d5f6c867899d028b32d04b70",
+      "evaluated_text_sha256": "dc9382559a4a7b55fcf4d9b45e735e5fe8ec7fa4d5f6c867899d028b32d04b70"
+    },
+    "b55789f8a1115d52d6d4bb123bc48b21a49d351d4c6911219335f8c76cc3e077": {
+      "status": "evaluated",
+      "attempts": 1,
+      "item": {
+        "title": "Constitution Day, Citizenship Day, and Constitution Week, 2026",
+        "summary": "Constitution Day, Citizenship Day, and Constitution Week, 2026",
+        "url": "https://www.federalregister.gov/documents/2026/09/21/2026-19333/constitution-day-citizenship-day-and-constitution-week-2026",
+        "publication_date": "2026-09-21"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-21T05:01:00.748600+00:00",
+      "source_sha256": "5301ed4cfd1cff5c6d520d3f50db4427783b303b6b8b7a3aacd5c906aebb7345",
+      "source_text_sha256": "10c00bb5a84a266e36fdad2dfe030a025124bd0403dc052bf489bba9b0e4d6a2",
+      "evaluated_text_sha256": "10c00bb5a84a266e36fdad2dfe030a025124bd0403dc052bf489bba9b0e4d6a2"
+    },
+    "58eefd9ea86cab3fcf1633c92d18a725d07d6a7b343c539e0d3a00f0060bd5a9": {
+      "status": "manual_review",
+      "attempts": 0,
+      "item": {
+        "title": "Order Granting Temporary Conditional Exemptive Relief, Pursuant to Section 36(a)(1) of the Securities Exchange Act of 1934, From the Definition of “Exchange” in Section 3(a)(1) of the Exchange Act for the Use of Certain Distributed Ledger Trading Venues for Tokenized NMS Stocks and From the Definition of “Dealer” in Section 3(a)(5) of the Exchange Act for Certain Liquidity Providers for Tokenized NMS Stocks, and Request for Comment",
+        "summary": "Order Granting Temporary Conditional Exemptive Relief, Pursuant to Section 36(a)(1) of the Securities Exchange Act of 1934, From the Definition of “Exchange” in Section 3(a)(1) of the Exchange Act for the Use of Certain Distributed Ledger Trading Venues for Tokenized NMS Stocks and From the Definition of “Dealer” in Section 3(a)(5) of the Exchange Act for Certain Liquidity Providers for Tokenized NMS Stocks, and Request for Comment",
+        "url": "https://www.federalregister.gov/documents/2026/09/22/2026-19388/order-granting-temporary-conditional-exemptive-relief-pursuant-to-section-36a1-of-the-securities",
+        "publication_date": "2026-09-22"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-23T05:00:29.183814+00:00",
+      "error": "document exceeds evaluation text limit; manual review required"
+    },
+    "99b981b199350cd18d9dffb46c33f69f183df547fbe49512e2f937371d7cc3ac": {
+      "status": "manual_review",
+      "attempts": 0,
+      "item": {
+        "title": "Restoring American Saltwater Angling and Recreation",
+        "summary": "Restoring American Saltwater Angling and Recreation",
+        "url": "https://www.federalregister.gov/documents/2026/09/22/2026-19417/restoring-american-saltwater-angling-and-recreation",
+        "publication_date": "2026-09-22"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-23T05:00:29.532560+00:00",
+      "source_sha256": "19d7414eb9185234aac641d5477a120f5b1bbd298866c740acef103e33a51f5f",
+      "source_text_sha256": "42b2a605ec6030eff66b91501bfafb930aded7c79002d3c37346d051858ab21a",
+      "error": "document exceeds model input budget; manual review required"
+    },
+    "16dbdea374f9d87939b0a89cf9ac68b92573f9916bc195bbdd7506eb09660b5b": {
+      "status": "evaluated",
+      "attempts": 1,
+      "item": {
+        "title": "Reinvigorating America's Hunting Heritage",
+        "summary": "Reinvigorating America's Hunting Heritage",
+        "url": "https://www.federalregister.gov/documents/2026/09/22/2026-19416/reinvigorating-americas-hunting-heritage",
+        "publication_date": "2026-09-22"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-23T05:00:03.583729+00:00",
+      "source_sha256": "dba8c963fa10705941a9fe37e8262639fe983e4032f077f89cafa236d39ba5a5",
+      "source_text_sha256": "776aaf1088d245abb82d05db1d599e5493590b09e98000248b1f3cf5366c0201",
+      "evaluated_text_sha256": "776aaf1088d245abb82d05db1d599e5493590b09e98000248b1f3cf5366c0201"
     }
   },
   "last_pass": {
     "documents_checked": 60,
-    "documents_deferred": 18,
+    "documents_deferred": 30,
     "model_attempts": 6,
-    "pending_evaluations": 78,
+    "pending_evaluations": 63,
+    "manual_review_required": 24,
     "unhealthy_sources": [
       "ftc_press_releases"
     ],
@@ -2054,7 +2436,9 @@
   },
   "local_watch_version": 2,
   "local_inputs_status": "ok",
-  "notification_receipts": {},
+  "notification_receipts": {
+    "alert_052250accfab771989a294da": "2026-09-23T05:02:12.606982+00:00"
+  },
   "pending_notifications": [],
   "last_run_status": "incomplete"
 }
