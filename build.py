@@ -65,6 +65,12 @@ from url_identity import canonical_url
 esc = lambda s: html.escape(str(s), quote=True)
 
 
+def load_json(path):
+    """Read one JSON input and close its file before rendering."""
+    with open(path, encoding="utf-8") as handle:
+        return json.load(handle)
+
+
 def bar(counts):
     """Stacked distribution across MANY sources. Page level only.
 
@@ -94,9 +100,9 @@ def load_market():
     mk_path = os.path.join(HERE, "data", "market.json")
     tm_path = os.path.join(HERE, "ticker_map.json")
     if os.path.isfile(mk_path):
-        mk = json.load(open(mk_path, encoding="utf-8"))
+        mk = load_json(mk_path)
     if os.path.isfile(tm_path):
-        tmap = json.load(open(tm_path, encoding="utf-8")).get("entities", {})
+        tmap = load_json(tm_path).get("entities", {})
     return mk, tmap
 
 
@@ -524,15 +530,11 @@ def item_card(it, registry, plain=False, mk=None, tmap=None, ev=None):
     </article>"""
 
 
-def freshness(built, fetched, mk, reg):
-    """One block naming every layer's age, because the page has four different clocks.
+def freshness(built, fetched, mk, reg, releases=None):
+    """Show daily input timestamps separately from the page build timestamp.
 
-    The market strip, the news feed, the registers and the build each update on their own
-    schedule, and they were each printing their own timestamp in a different place with no
-    indication of what it referred to. A reader seeing "Built 16:38", "Quotes captured
-    14:42" and "Fetched 06:32" cannot tell which one is the freshness of the thing they are
-    looking at. Layers that update at different rates need their ages stated together, or
-    the fastest one makes the others look broken.
+    The retained reg argument is for caller compatibility. Curated reference dates belong
+    to the historical panels and are never evidence that daily intake ran.
     """
     import datetime as _dt
     now = _dt.datetime.now(_dt.timezone.utc)
@@ -558,13 +560,19 @@ def freshness(built, fetched, mk, reg):
         return None
 
     parts = []
-    for label, ts in (("Market quotes", (mk or {}).get("generated", "")),
-                      ("News feed", fetched),
-                      ("Registers", (reg or {}).get("generated", "")),
+    for label, ts in (("News feed", fetched),
+                      ("Model releases", (releases or {}).get("generated", "")),
+                      ("Market quotes", (mk or {}).get("generated", "")),
                       ("Page built", built)):
         if not ts:
+            parts.append(f'<span style="margin-right:16px">{esc(label)}: '
+                         f'<strong>date unavailable</strong></span>')
             continue
         a = iso(ts)
+        if not a:
+            parts.append(f'<span style="margin-right:16px">{esc(label)}: '
+                         f'<strong>date unavailable</strong></span>')
+            continue
         # Only the ISO date/time separator, not every T: a blanket replace turns
         # "06:32 UTC" into "06:32 U C".
         shown = re.sub(r"(?<=\d)T(?=\d)", " ", ts).replace("+00:00", "")
@@ -579,6 +587,22 @@ def freshness(built, fetched, mk, reg):
             f'{LINE};border-radius:6px;background:{PAPER}">'
             f'<span style="color:{NAVY};font-weight:600;margin-right:10px">Freshness</span>'
             f'{"".join(parts)}</div>')
+
+
+def reference_notice(label, date):
+    """Label a manually maintained snapshot without asserting current verification."""
+    import datetime as _dt
+    date = str(date or "")
+    try:
+        _dt.date.fromisoformat(date)
+    except ValueError:
+        stamp = "date unavailable"
+    else:
+        stamp = (f'{esc(date)} <span class="age" '
+                 f'data-ts="{esc(date)}T00:00:00Z|dateonly"></span>')
+    return (f'<p class="reference-notice"><strong>{esc(label)}: historical snapshot.</strong> '
+            f'Recorded {stamp}. Not refreshed by the daily news pipeline; '
+            f'current status is unverified.</p>')
 
 
 def deflation_panel(reg):
@@ -621,7 +645,7 @@ def deflation_panel(reg):
             f'<div style="font-size:12px;color:{SLATE};margin-top:2px">{esc(r.get("error",""))}</div>'
             f'</div>')
     return (
-        f'<details open class="railcard"><summary style="color:{NAVY};font-weight:600;'
+        f'<details class="railcard"><summary style="color:{NAVY};font-weight:600;'
         f'font-size:15px;cursor:pointer">Deflation register '
         f'<span style="font-weight:400;color:{SLATE};font-size:12px">({len(trs)})</span>'
         f'</summary>'
@@ -686,9 +710,9 @@ def gov_conflict_panel(gc):
 
 
 def ai_watch_panel(reg):
-    """AI Watch: a dated resolution calendar plus live gauges (registers.json), curated
-    public rows extracted from the maintainer's working tracker. Static: values are as of
-    the last build, so each gauge carries its own as-of date."""
+    """AI Watch: a historical resolution calendar and gauge readings, curated
+    public rows extracted from the maintainer's working tracker. Each gauge carries its
+    recorded as-of date; rendering the page does not refresh its evidence."""
     if not reg:
         return ""
     def anchor_bit(a):
@@ -713,7 +737,7 @@ def ai_watch_panel(reg):
         + '</div>'
         for g in reg.get("gauges", []))
     gauge_block = (f'<div style="font-weight:600;color:{NAVY};font-size:13px;margin:12px 0 4px">'
-                   f'Live gauges</div>{gauges}') if gauges else ""
+                   f'Historical gauge readings</div>{gauges}') if gauges else ""
     return (
         f'<details class="aiwatch" style="border:1px solid {LINE};border-radius:8px;'
         f'padding:12px 16px;margin:0 0 18px;background:{PAPER}">'
@@ -816,7 +840,7 @@ def sovereign_radar_tab(alerts=None, health=None):
     if alerts is None:
         alerts = []
         if os.path.isfile(reg_alerts_path):
-            alerts = json.load(open(reg_alerts_path, encoding="utf-8"))
+            alerts = load_json(reg_alerts_path)
 
     if not alerts:
         return f'<div style="padding:20px;background:{PAPER};border-radius:8px;border:1px solid {LINE}">No active sovereign radar alerts banked.</div>'
@@ -950,7 +974,7 @@ def harnesses_tab(data=None):
     """Render source-separated harness references without inventing one ranking."""
     path = os.path.join(HERE, "harnesses.json")
     if data is None:
-        data = json.load(open(path, encoding="utf-8")) if os.path.isfile(path) else {}
+        data = load_json(path) if os.path.isfile(path) else {}
     if not data:
         return (
             f'<div style="padding:20px;background:{PAPER};border-radius:8px;'
@@ -1042,12 +1066,10 @@ def main():
 
     import datetime as _dt
     built = _dt.datetime.now(_dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    data = json.load(open(SRC, encoding="utf-8"))
+    data = load_json(SRC)
     mk, tmap = load_market()
     if mk:
-        mk["strip_equities"] = json.load(
-            open(os.path.join(HERE, "ticker_map.json"), encoding="utf-8")
-        )["strip"]["equities"]
+        mk["strip_equities"] = load_json(os.path.join(HERE, "ticker_map.json"))["strip"]["equities"]
     registry = load_registry()
     reviewed = [dict(it, reviewed=it.get("reviewed", True)) for it in data["items"]]
     for it in reviewed:
@@ -1056,7 +1078,7 @@ def main():
     # Method disclosures and the contestable tier registry.
     neutrality_html = tiermap_html = ""
     tm_path = os.path.join(HERE, "tier_map.json")
-    tm = json.load(open(tm_path, encoding="utf-8")) if os.path.isfile(tm_path) else {}
+    tm = load_json(tm_path) if os.path.isfile(tm_path) else {}
     if tm and not plain:
         contest = tm.get("contest", {})
         disclosures = [
@@ -1118,15 +1140,15 @@ def main():
     # merge the live feed if fetch_feeds.py has produced it
     # Citation chains and the per-article evidence counts.
     ev_path = os.path.join(HERE, "article_evidence.json")
-    ev = json.load(open(ev_path, encoding="utf-8")) if os.path.isfile(ev_path) else {}
+    ev = load_json(ev_path) if os.path.isfile(ev_path) else {}
     # Figure sentences and publisher tags are the checkable evidence for topic candidates.
     sp_path = os.path.join(HERE, "article_spans.json")
-    _spans = json.load(open(sp_path, encoding="utf-8")) if os.path.isfile(sp_path) else {}
+    _spans = load_json(sp_path) if os.path.isfile(sp_path) else {}
     feed_path = os.path.join(HERE, "feed_items.json")
     incoming = []
     fetched = ""
     if os.path.isfile(feed_path):
-        feed = json.load(open(feed_path, encoding="utf-8"))
+        feed = load_json(feed_path)
         fetched = feed.get("fetched", "")
         incoming = [dict(it, reviewed=it.get("reviewed", False)) for it in feed.get("items", [])]
         for it in incoming:
@@ -1181,7 +1203,7 @@ def main():
     rrows = []
     c = {}
     if os.path.isfile(rel_path):
-        rd = json.load(open(rel_path, encoding="utf-8"))
+        rd = load_json(rel_path)
         # 10, not 16. In the right rail a 16-row list is tall enough to push Primary
         # sources below the fold of the rail's own scroll, which re-buries the panel this
         # layout exists to surface. The count in the heading still states the true total.
@@ -1223,7 +1245,7 @@ def main():
     up_data = {"upcoming": [], "disclosure": ""}
     up_rows = []
     if os.path.isfile(up_path):
-        up_data = json.load(open(up_path, encoding="utf-8"))
+        up_data = load_json(up_path)
         import datetime as _dt
         _today = _dt.date.today()
         for u in up_data.get("upcoming", []):
@@ -1271,7 +1293,8 @@ def main():
                 f'Upcoming &amp; Announced <span style="font-weight:400;color:{SLATE};font-size:12px">'
                 f'({len(up_rows)})</span></summary>'
                 f'<div style="font-size:13px;color:{SLATE};margin:6px 0 8px">'
-                f'Pre-release commitments and unserved milestones.</div>'
+                f'Historical pre-release commitments. These records are not part of the daily '
+                f'release refresh; their current status has not been rechecked.</div>'
                 + "".join(up_rows)
                 + f'<details style="font-size:11px;color:{SLATE};margin-top:8px">'
                 f'<summary style="cursor:pointer;color:{NAVY}">Tracking announced vs delivered</summary>'
@@ -1283,7 +1306,7 @@ def main():
     t_rows = []
     crit_drops = []
     if os.path.isfile(trend_path):
-        td_data = json.load(open(trend_path, encoding="utf-8"))
+        td_data = load_json(trend_path)
         msig = td_data.get("market_signals", {})
         crit_drops = msig.get("critical_drops", [])
         surges = msig.get("breakouts", []) + msig.get("surges", [])
@@ -1334,7 +1357,6 @@ def main():
         f'<button class="rail-nav-btn active" data-rail-target="pane-releases" style="flex:1;padding:8px 2px;border:none;background:{PAPER};color:{NAVY};border-radius:6px;font-size:11px;font-weight:600;cursor:pointer;box-shadow:0 1px 2px rgba(0,0,0,0.06)">Releases ({len(rrows)})</button>'
         f'<button class="rail-nav-btn" data-rail-target="pane-trends" style="flex:1;padding:8px 2px;border:none;background:transparent;color:{SLATE};border-radius:6px;font-size:11px;font-weight:600;cursor:pointer">Search &amp; market ({len(t_rows)})</button>'
         f'<button class="rail-nav-btn" data-rail-target="pane-sources" style="flex:1;padding:8px 2px;border:none;background:transparent;color:{SLATE};border-radius:6px;font-size:11px;font-weight:600;cursor:pointer">Sources ({len(primary_sources)})</button>'
-        f'<button class="rail-nav-btn" data-rail-target="pane-upcoming" style="flex:1;padding:8px 2px;border:none;background:transparent;color:{SLATE};border-radius:6px;font-size:11px;font-weight:600;cursor:pointer">Upcoming ({len(up_rows)})</button>'
         f'</div>'
         f'<div id="pane-releases" class="rail-pane active" style="display:block;padding:12px 14px;max-height:calc(100vh - 120px);overflow-y:auto">'
         f'<div style="font-size:12px;color:{SLATE};margin-bottom:8px"><strong>{c.get("total", len(rrows))} models</strong> deployed in the last {rd.get("window_days", 60)} days.</div>'
@@ -1354,13 +1376,6 @@ def main():
         f'<div style="font-size:12px;color:{SLATE};margin-bottom:8px">Primary documents extracted from current article links. A link is checkable, but its presence does not establish that it supports the article headline.</div>'
         + "".join(source_rows)
         + f'</div>'
-        f'<div id="pane-upcoming" class="rail-pane" style="display:none;padding:12px 14px;max-height:calc(100vh - 120px);overflow-y:auto">'
-        f'<div style="font-size:12px;color:{SLATE};margin-bottom:8px">Pre-release commitments and unserved frontier milestones.</div>'
-        + "".join(up_rows)
-        + f'<details style="font-size:11px;color:{SLATE};margin-top:10px">'
-        f'<summary style="cursor:pointer;color:{NAVY}">Announced vs delivered</summary>'
-        f'<div style="margin-top:6px;line-height:1.4">{esc(up_data.get("disclosure",""))}</div></details>'
-        f'</div>'
         f'</div>'
     )
 
@@ -1476,14 +1491,19 @@ def main():
     # Shown in both modes: conflict disclosure is independent of source classification.
     gc_path = os.path.join(HERE, "gov_conflict.json")
     govconflict_html = ""
+    gc_data = {}
+    gc_date = None
     if os.path.isfile(gc_path):
-        govconflict_html = gov_conflict_panel(json.load(open(gc_path, encoding="utf-8")))
+        gc_data = load_json(gc_path)
+        gc_match = re.search(r"\bVerified (\d{4}-\d{2}-\d{2})\.", str(gc_data.get("sources", "")))
+        gc_date = gc_match.group(1) if gc_match else None
+        govconflict_html = gov_conflict_panel(gc_data)
 
-    # AI Watch dashboard: dated resolution calendar + live gauges (registers.json)
+    # Historical resolution calendar and gauge readings (registers.json)
     reg_path = os.path.join(HERE, "registers.json")
     ai_watch_html = deflation_html = ""
     if os.path.isfile(reg_path):
-        _reg = json.load(open(reg_path, encoding="utf-8"))
+        _reg = load_json(reg_path)
         ai_watch_html = ai_watch_panel(_reg)
         deflation_html = deflation_panel(_reg)
 
@@ -1559,18 +1579,18 @@ def main():
     --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   }}
   html[data-theme="light"] {{
-    --bg: #f8fafc;
-    --bg-card: #ffffff;
-    --bg-hover: #f1f5f9;
+    --bg: #fff;
+    --bg-card: #fff;
+    --bg-hover: #f7fafc;
     --border: #e2e8f0;
-    --border-bright: #cbd5e1;
+    --border-bright: #a0aec0;
     --heading: #1a365d;
     --text: #2d3748;
     --text-muted: #4a5568;
-    --text-dim: #64748b;
-    --accent: #2563eb;
+    --text-dim: #4a5568;
+    --accent: #2b6cb0;
     --shadow: 0 1px 2px rgba(26,54,93,.06), 0 1px 8px rgba(26,54,93,.04);
-    --pill-bg: #f1f5f9;
+    --pill-bg: #f7fafc;
     --pill-fg: #1a365d;
     --warn-bg: #fffaf0;
     --alert-bg: #fee2e2;
@@ -1579,19 +1599,19 @@ def main():
     --ok-fg: #065f46;
   }}
   html[data-theme="dark"] {{
-    --bg: #0b0f19;
-    --bg-card: #111827;
-    --bg-hover: #162032;
-    --border: #1e293b;
-    --border-bright: #334155;
-    --heading: #ffffff;
-    --text: #f1f5f9;
-    --text-muted: #94a3b8;
-    --text-dim: #64748b;
-    --accent: #38bdf8;
+    --bg: #0f141d;
+    --bg-card: #161d2b;
+    --bg-hover: #1e293b;
+    --border: #2a3444;
+    --border-bright: #4a5568;
+    --heading: #e2e8f0;
+    --text: #e8edf4;
+    --text-muted: #a0aec0;
+    --text-dim: #a0aec0;
+    --accent: #63b3ed;
     --shadow: 0 1px 3px rgba(0,0,0,0.5);
     --pill-bg: #1e293b;
-    --pill-fg: #e2e8f0;
+    --pill-fg: #f1f5f9;
     --warn-bg: rgba(245,158,11,0.12);
     --alert-bg: rgba(220,38,38,0.18);
     --alert-fg: #fca5a5;
@@ -1606,9 +1626,12 @@ def main():
   .header-copy{{color:var(--text-muted);font-size:12px;max-width:780px;margin-top:4px}}
   .header-actions{{display:flex;align-items:center;gap:8px}}
   .freshness-strip{{display:flex;flex-wrap:wrap;gap:4px 0}}
+  .freshness-strip > span{{white-space:normal!important}}
+  .reference-notice{{padding:12px 16px;border-left:3px solid var(--accent);background:var(--bg-card);color:var(--text-muted);font-size:13px}}
+  .layout > *, .card, .rail-container{{min-width:0;overflow-wrap:anywhere}}
   .theme-toggle-btn{{font-family:var(--mono);font-size:10px;padding:6px 9px;border-radius:2px;border:1px solid var(--border-bright);background:var(--bg-card);color:var(--text);cursor:pointer;display:inline-flex;align-items:center;gap:5px}}
   .theme-toggle-btn:hover{{border-color:var(--accent);color:var(--accent)}}
-  .nav-tab-bar{{display:flex;gap:2px;margin:14px 0 24px;padding:3px;width:max-content;border:1px solid var(--border);background:var(--bg-card)}}
+  .nav-tab-bar{{display:flex;flex-wrap:wrap;gap:2px;margin:14px 0 24px;padding:3px;width:fit-content;max-width:100%;border:1px solid var(--border);background:var(--bg-card)}}
   .nav-tab-btn{{display:inline-flex;align-items:center;gap:7px;padding:7px 11px;border-radius:2px;font-family:var(--mono);font-size:10.5px;font-weight:650;letter-spacing:.03em;text-transform:uppercase;cursor:pointer;border:0;background:transparent;color:var(--text-muted);transition:all .15s ease}}
   .nav-tab-btn:hover{{background:var(--bg-hover);border-color:var(--border-bright)}}
   .nav-tab-btn.active{{background:var(--heading);color:var(--bg);box-shadow:none}}
@@ -1707,7 +1730,7 @@ def main():
       document.querySelectorAll('.rail-nav-btn').forEach(function(b){
         b.classList.remove('active');
         b.style.background = 'transparent';
-        b.style.color = '#64748b';
+        b.style.color = 'var(--text-muted)';
         b.style.boxShadow = 'none';
       });
       document.querySelectorAll('.rail-pane').forEach(function(p){
@@ -1715,8 +1738,8 @@ def main():
         p.style.display = 'none';
       });
       btn.classList.add('active');
-      btn.style.background = '#fff';
-      btn.style.color = '#1a365d';
+      btn.style.background = 'var(--bg-card)';
+      btn.style.color = 'var(--heading)';
       btn.style.boxShadow = '0 1px 2px rgba(0,0,0,0.06)';
       var pane = document.getElementById(target);
       if (pane) {
@@ -1899,10 +1922,10 @@ def main():
     regulatory_path = os.path.join(HERE, "data", "regulatory_alerts.json")
     regulatory_alerts = []
     if os.path.isfile(regulatory_path):
-        regulatory_alerts = json.load(open(regulatory_path, encoding="utf-8"))
+        regulatory_alerts = load_json(regulatory_path)
         validate_regulatory_alerts(regulatory_alerts)
     harness_path = os.path.join(HERE, "harnesses.json")
-    harness_data = json.load(open(harness_path, encoding="utf-8"))
+    harness_data = load_json(harness_path)
     validate_harnesses(harness_data)
 
     doc = f"""<!doctype html><html lang="en-GB" data-theme="light"><head><meta charset="utf-8">
@@ -1937,19 +1960,19 @@ def main():
   <div style="font-size:12px;color:var(--text-dim);margin:0 0 14px;max-width:900px">
     AI disclosure: the research is the author's; this text was drafted with AI assistance and reviewed by the author. Machine and human evidence methods are identified per card.
   </div>
-  {freshness(built, fetched, mk, _reg if os.path.isfile(reg_path) else {})}
+  {freshness(built, fetched, mk, _reg if os.path.isfile(reg_path) else {}, rd)}
 
   <div class="nav-tab-bar">
     <button class="nav-tab-btn active" data-target="tab-news">News evidence <span class="tab-badge">{len(items)}</span></button>
     <button class="nav-tab-btn" data-target="tab-radar">Sovereign radar <span class="tab-badge radar-badge">{len(regulatory_alerts)}</span></button>
     <button class="nav-tab-btn" data-target="tab-harnesses">Harness landscape <span class="tab-badge">{len(harness_data["sources"])}</span></button>
+    <button class="nav-tab-btn" data-target="tab-reference">Historical reference</button>
   </div>
 
   <div id="tab-news" class="tab-pane active" style="display:block">
     <div class="layout">
       <aside class="side">
         {sidebar_html}
-        {deflation_html}
       </aside>
       <main class="main">
         {exec_strip_html}
@@ -1957,8 +1980,8 @@ def main():
         {about_html}
         {cards}
         <details class="secondary">
-          <summary style="color:{NAVY};font-weight:600;cursor:pointer">Markets and reference panels</summary>
-          <div style="margin-top:12px">{market_strip(mk)}{ai_watch_html}{govconflict_html}</div>
+          <summary style="color:{NAVY};font-weight:600;cursor:pointer">Market quotes</summary>
+          <div style="margin-top:12px">{market_strip(mk)}</div>
         </details>
         <div style="font-size:12px;color:{SLATE};margin-top:24px;border-top:1px solid {LINE};padding-top:14px">
           Method: source class comes from the executable public registry. A numeric claim tier is withheld unless the publisher relationship to the subject resolves. Figure labels state their method and complete-span coverage. Research-context links require one winning topic rule; tied candidates abstain. Feed selection is editorial and disclosed. This surfaces a structural weakness of a claim; it does not adjudicate truth.<br><br>
@@ -1978,13 +2001,26 @@ def main():
   </div>
 
   <div id="tab-harnesses" class="tab-pane" style="display:none">
+    {reference_notice("Harness sources", harness_data.get("checked_date"))}
     {harnesses_tab(harness_data)}
+  </div>
+  <div id="tab-reference" class="tab-pane" style="display:none">
+    <h2 style="color:{NAVY}">Historical reference</h2>
+    <p>Retained observations and announced milestones. Read each source date before reusing a claim. These panels are separate from daily news coverage.</p>
+    {reference_notice("Registers", _reg.get("generated") if os.path.isfile(reg_path) else None)}
+    {deflation_html}
+    {ai_watch_html}
+    {reference_notice("Announced models", up_data.get("updated_at"))}
+    {upcoming_html}
+    {reference_notice("Government relationships", gc_date)}
+    {govconflict_html}
   </div>
 </div>
 {script_block}
 </body></html>"""
     doc = "\n".join(line.rstrip() for line in doc.splitlines())
-    open(OUT, "w", encoding="utf-8").write(doc)
+    with open(OUT, "w", encoding="utf-8") as handle:
+        handle.write(doc)
     mode = "plain (source tier OFF)" if plain else "source-tiered"
     print(f"written: {OUT}  ({len(items)} items, {len(entity_counts)} entities, {mode})")
 
