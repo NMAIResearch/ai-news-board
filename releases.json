@@ -1,12 +1,84 @@
 {
- "generated": "2026-09-23 06:28 UTC",
+ "generated": "2026-09-24 05:31 UTC",
  "window_days": 60,
  "counts": {
-  "total": 93,
-  "closed": 33,
+  "total": 99,
+  "closed": 39,
   "open_weights": 60
  },
  "releases": [
+  {
+   "lab": "Z Ai",
+   "model": "Z.ai: GLM 5.3 Prime",
+   "id": "z-ai/glm-5.3-prime",
+   "date": "2026-09-23",
+   "url": "https://openrouter.ai/z-ai/glm-5.3-prime",
+   "context_length": 1000000,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Alibaba (Qwen)",
+   "model": "Qwen: Qwen3.8 Max Prime",
+   "id": "qwen/qwen3.8-max-prime",
+   "date": "2026-09-23",
+   "url": "https://openrouter.ai/qwen/qwen3.8-max-prime",
+   "context_length": 1000000,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Stealth",
+   "model": "Space Bunny Alpha",
+   "id": "stealth/space-bunny-alpha",
+   "date": "2026-09-23",
+   "url": "https://openrouter.ai/stealth/space-bunny-alpha",
+   "context_length": 1000000,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Aion Labs",
+   "model": "AionLabs: Aion 3.5 Mini",
+   "id": "aion-labs/aion-3.5-mini",
+   "date": "2026-09-23",
+   "url": "https://openrouter.ai/aion-labs/aion-3.5-mini",
+   "context_length": 262144,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Aion Labs",
+   "model": "AionLabs: Aion 3.5",
+   "id": "aion-labs/aion-3.5",
+   "date": "2026-09-23",
+   "url": "https://openrouter.ai/aion-labs/aion-3.5",
+   "context_length": 262144,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Upstage",
+   "model": "Upstage: Solar Mini 4",
+   "id": "upstage/solar-mini4",
+   "date": "2026-09-23",
+   "url": "https://openrouter.ai/upstage/solar-mini4",
+   "context_length": 524288,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
   {
    "lab": "Cohere",
    "model": "Cohere: Command A+",
@@ -337,7 +409,7 @@
    "id": "inclusionai/ling-3.0-flash-vl",
    "date": "2026-09-10",
    "url": "https://openrouter.ai/inclusionai/ling-3.0-flash-vl",
-   "context_length": 131072,
+   "context_length": 262144,
    "evidence": "open-weights",
    "evidence_note": "weights published at huggingface.co/inclusionAI/Ling-3.0-flash-VL; downloadable and hashable",
    "hf_id": "inclusionAI/Ling-3.0-flash-VL",
@@ -369,7 +441,7 @@
   },
   {
    "lab": "Nex Agi",
-   "model": "Nex AGI: Nex-N2.5-Mini",
+   "model": "Nex AGI: Nex-N2.5-Mini (free)",
    "id": "nex-agi/nex-n2.5-mini",
    "date": "2026-09-08",
    "url": "https://openrouter.ai/nex-agi/nex-n2.5-mini",
@@ -381,7 +453,7 @@
   },
   {
    "lab": "Nex Agi",
-   "model": "Nex AGI: Nex-N2.5-Pro",
+   "model": "Nex AGI: Nex-N2.5-Pro (free)",
    "id": "nex-agi/nex-n2.5-pro",
    "date": "2026-09-08",
    "url": "https://openrouter.ai/nex-agi/nex-n2.5-pro",
@@ -817,7 +889,7 @@
    "id": "tencent/hy-mt2-30b-a3b",
    "date": "2026-08-20",
    "url": "https://openrouter.ai/tencent/hy-mt2-30b-a3b",
-   "context_length": 8192,
+   "context_length": 32768,
    "evidence": "open-weights",
    "evidence_note": "weights published at huggingface.co/tencent/Hy-MT2-30B-A3B; downloadable and hashable",
    "hf_id": "tencent/Hy-MT2-30B-A3B",

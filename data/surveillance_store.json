@@ -73,66 +73,66 @@
     "54b1b80026c38a18cbc27a2657d9270dca2fb517e6a904f2bf2aee3960aebc45": "2026-09-13T05:01:31.276246+00:00",
     "3f5b18c5361a116e8cda95268bda629c953202b3169b944325053a2129c242c3": "2026-09-13T05:01:31.276250+00:00"
   },
-  "last_run": "2026-09-23T05:02:12.264731+00:00",
+  "last_run": "2026-09-24T05:02:06.617642+00:00",
   "source_states": {
     "us_fed_reg_ai": {
-      "checked_at": "2026-09-23T05:00:00.872983+00:00",
+      "checked_at": "2026-09-24T05:00:00.372189+00:00",
       "status": "ok",
       "entries": 40,
       "queued": 26,
       "window_days": 30,
-      "last_success": "2026-09-23T05:00:00.872983+00:00"
+      "last_success": "2026-09-24T05:00:00.372189+00:00"
     },
     "us_fed_reg_eo": {
-      "checked_at": "2026-09-23T05:00:01.552893+00:00",
+      "checked_at": "2026-09-24T05:00:01.018952+00:00",
       "status": "ok",
       "entries": 40,
-      "queued": 31,
+      "queued": 32,
       "window_days": 30,
-      "last_success": "2026-09-23T05:00:01.552893+00:00"
+      "last_success": "2026-09-24T05:00:01.018952+00:00"
     },
     "eu_ai_office": {
-      "checked_at": "2026-09-23T05:00:02.159966+00:00",
+      "checked_at": "2026-09-24T05:00:01.576605+00:00",
       "status": "ok",
       "entries": 10,
       "queued": 8,
       "window_days": null,
-      "last_success": "2026-09-23T05:00:02.159966+00:00"
+      "last_success": "2026-09-24T05:00:01.576605+00:00"
     },
     "uk_cma_news": {
-      "checked_at": "2026-09-23T05:00:02.232180+00:00",
+      "checked_at": "2026-09-24T05:00:01.651836+00:00",
       "status": "ok",
       "entries": 20,
       "queued": 0,
       "window_days": null,
-      "last_success": "2026-09-23T05:00:02.232180+00:00"
+      "last_success": "2026-09-24T05:00:01.651836+00:00"
     },
     "uk_ofgem_queue": {
-      "checked_at": "2026-09-23T05:00:02.272503+00:00",
+      "checked_at": "2026-09-24T05:00:01.694140+00:00",
       "status": "ok",
       "entries": 20,
       "queued": 1,
       "window_days": null,
-      "last_success": "2026-09-23T05:00:02.272503+00:00"
+      "last_success": "2026-09-24T05:00:01.694140+00:00"
     },
     "nist_ai_notices": {
-      "checked_at": "2026-09-23T05:00:02.487390+00:00",
+      "checked_at": "2026-09-24T05:00:01.829434+00:00",
       "status": "ok",
       "entries": 40,
       "queued": 9,
       "window_days": null,
-      "last_success": "2026-09-23T05:00:02.487390+00:00"
+      "last_success": "2026-09-24T05:00:01.829434+00:00"
     },
     "sec_press_releases": {
-      "checked_at": "2026-09-23T05:00:02.781232+00:00",
+      "checked_at": "2026-09-24T05:00:02.125908+00:00",
       "status": "ok",
       "entries": 25,
       "queued": 1,
       "window_days": null,
-      "last_success": "2026-09-23T05:00:02.781232+00:00"
+      "last_success": "2026-09-24T05:00:02.125908+00:00"
     },
     "ftc_press_releases": {
-      "checked_at": "2026-09-23T05:00:02.848199+00:00",
+      "checked_at": "2026-09-24T05:00:02.251790+00:00",
       "status": "failed",
       "entries": 0,
       "queued": 0,
@@ -235,7 +235,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:00:52.376247+00:00",
+      "checked_at": "2026-09-24T05:00:55.537386+00:00",
       "source_sha256": "eb1eddaf773a3253e5f7f035c9c1317b0010f83259a9b4caca539bf2e75879ea",
       "source_text_sha256": "89ffa63e83499655219e9053b4f4de919e4f5b0aaa8adfdcebfc4f3ba9b10b53",
       "error": "document exceeds model input budget; manual review required"
@@ -283,7 +283,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-22T05:02:18.492165+00:00",
+      "checked_at": "2026-09-24T05:02:04.355827+00:00",
       "source_sha256": "3ee83a15aa02e1f35f809f0eb4ddfe2adb601346b89901f0accc629880b5d2cb",
       "source_text_sha256": "a53929654bdac68bbd0f084a443518c66e0dc0bad70789d508a29d5079ca0add",
       "error": "invalid model schema"
@@ -307,12 +307,12 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:01:09.437322+00:00",
+      "checked_at": "2026-09-24T05:00:55.806751+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "4f3a608c15f8f04e29feca1b6c63058027b545c03e0fbb2baa316c3d697267f8": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "Agency Information Collection Activities; Submission to the Office of Management and Budget (OMB) for Review and Approval; Comment Request; Business Trends and Outlook Survey",
         "summary": "Agency Information Collection Activities; Submission to the Office of Management and Budget (OMB) for Review and Approval; Comment Request; Business Trends and Outlook Survey",
@@ -329,9 +329,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:02:04.248268+00:00",
+      "checked_at": "2026-09-24T05:01:26.060494+00:00",
       "source_sha256": "115c1f051f5500de7183958a59c12ba9bfb4f54d0c9c55af40b4f67ca80f86f8",
-      "source_text_sha256": "efb0c31c89d156a5c14f5294b8969b148c828a8cdc99a8825da4fb5d53582221"
+      "source_text_sha256": "efb0c31c89d156a5c14f5294b8969b148c828a8cdc99a8825da4fb5d53582221",
+      "evaluated_text_sha256": "efb0c31c89d156a5c14f5294b8969b148c828a8cdc99a8825da4fb5d53582221"
     },
     "57e6e75c8f90df4c17ec825eb19dc053934a938e7f420097ec5d67fe1ec9132c": {
       "status": "pending",
@@ -352,7 +353,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:02:05.839789+00:00",
+      "checked_at": "2026-09-24T05:01:57.654860+00:00",
       "source_sha256": "dd6a9ec03eb5f041ccf9f958901b9ea1ab37bdfddebd3e5a936378f83afea668",
       "source_text_sha256": "a318ded85267210dca944e7aee51867e86a1d214444375d228ebb5e4dc26b1ad"
     },
@@ -375,7 +376,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:01:09.851680+00:00",
+      "checked_at": "2026-09-24T05:00:56.223895+00:00",
       "source_sha256": "711f43edaa8cd4d1f261877323c360e5dc822a4483fe5051a63d0989523b13a4",
       "source_text_sha256": "ca1b3cf0f0f3c78ddf801e6598dc6e376367ab163f90e1e2702947cca856e63c",
       "error": "document exceeds model input budget; manual review required"
@@ -423,7 +424,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:05:08.988737+00:00",
+      "checked_at": "2026-09-24T05:02:02.360848+00:00",
       "source_sha256": "338320dd121f5e72788b1c3920b90305e72247e66fb2bd33b1139d3c49b21591",
       "source_text_sha256": "f116b0f1bdee2cee509c8f40aad46d978a5d2907ca5de5a9d0fbfe704a1ac66f",
       "error": "invalid model schema"
@@ -447,7 +448,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:00:34.131438+00:00",
+      "checked_at": "2026-09-24T05:00:52.934320+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "f3227389324f7137d15bbb2f3d3a07cc2a3d2d1f69b73d682b660348775bec51": {
@@ -493,7 +494,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:02:06.100153+00:00",
+      "checked_at": "2026-09-24T05:01:57.918615+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "9d988f6d9277029c3ac6d920018ac38aedd5ac984a6a25fb8d56a6e34f6b3ee2": {
@@ -515,7 +516,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:00:30.056973+00:00",
+      "checked_at": "2026-09-24T05:00:48.892012+00:00",
       "source_sha256": "a4511bae5da70c354f606c391d50f9ad41e568825f8e0109025f414111f90dc9",
       "source_text_sha256": "fe91c974bf9b2405c6f653e0dda74d08d1a6265a6e628d156bffc7dc259f7bea",
       "error": "document exceeds model input budget; manual review required"
@@ -539,7 +540,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:00:35.692334+00:00",
+      "checked_at": "2026-09-24T05:00:54.483830+00:00",
       "source_sha256": "fbd5fff4fe0699288f0b65021446cc8dd9d08a94c376413b9a19b6fb6d2da372",
       "source_text_sha256": "2cd3f0dc0045694d0b680943b47d08f04239f7aa6f94aa7136a5fff482fd728e",
       "error": "document exceeds model input budget; manual review required"
@@ -563,7 +564,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:00:32.769792+00:00",
+      "checked_at": "2026-09-24T05:00:51.559345+00:00",
       "source_sha256": "978bf8bd7945d3beaa2ccf09e14aaa1bfabf6d600c6f472d9707aa1ce0b1110e",
       "source_text_sha256": "640c895a637c3bfbf00d5f8ee04c5621bad85598d7ac09283fb5344a414143d8",
       "error": "document exceeds model input budget; manual review required"
@@ -587,7 +588,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:02:07.417918+00:00",
+      "checked_at": "2026-09-24T05:01:59.232619+00:00",
       "source_sha256": "c4b8faff0ead8f41ab4e95cc6d5d8c48670740ff2cd8ab7449667e925a0d7a17",
       "source_text_sha256": "4caaa62b03a72ee595b877daac938985d46ef221ccbc11e842cba265c15c1d79"
     },
@@ -610,7 +611,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:00:34.792911+00:00",
+      "checked_at": "2026-09-24T05:00:53.574595+00:00",
       "source_sha256": "78569acd9cc75cd417f395652dfbe9582a43cd92f0320fd9c0a4ac0f74e7c25f",
       "source_text_sha256": "4a8447f5a0993387ea2590db8e8be6d50b8a8e431f1cee6debd1dc45640047b9",
       "error": "document exceeds model input budget; manual review required"
@@ -634,11 +635,11 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-23T05:00:35.068335+00:00",
+      "checked_at": "2026-09-24T05:00:53.868454+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "45cd6e241ef0f49a81f7569cdcbdf3b115d21f5515637f6ae5e8a6c269ed346a": {
-      "status": "pending",
+      "status": "manual_review",
       "attempts": 0,
       "item": {
         "title": "Request for Comment on the Listing of Compute Derivatives Contracts",
@@ -656,9 +657,10 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-23T05:02:03.442540+00:00",
+      "checked_at": "2026-09-24T05:00:56.648626+00:00",
       "source_sha256": "7c4c37f6412dccc2795ca2beedfd141df2754c086e9e276c32e97aa99927555b",
-      "source_text_sha256": "404d25d32a5cb5fa721fb74ca6c16df48425c1abe2ae321164e0c4796bd520d3"
+      "source_text_sha256": "404d25d32a5cb5fa721fb74ca6c16df48425c1abe2ae321164e0c4796bd520d3",
+      "error": "document exceeds model input budget; manual review required"
     },
     "109db0c160de79a3ccea4cb1386e9e515254e7ab904f41dfcc7397a32a4ec7c3": {
       "status": "manual_review",
@@ -679,7 +681,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-23T05:00:35.955979+00:00",
+      "checked_at": "2026-09-24T05:00:54.735331+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "7ad21a2ea23e4e7cfeedf5675164bc4e41af56e08a54475090d6b47820b4a204": {
@@ -701,7 +703,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-23T05:02:07.747375+00:00",
+      "checked_at": "2026-09-24T05:01:59.550972+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "a7320c2f093222e04d723af25b0cbae8c48107c756a2ba5db909095c3850abb3": {
@@ -723,7 +725,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-23T05:00:30.400250+00:00",
+      "checked_at": "2026-09-24T05:00:49.165347+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "6587eda003db0fc2cc6d344a8209cb6b5cd47c3dfcf52d7a6a31afdff94d507d": {
@@ -745,7 +747,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-23T05:02:07.157463+00:00",
+      "checked_at": "2026-09-24T05:01:58.969250+00:00",
       "source_sha256": "fe714f44d120b3c0cdd440804edb0ee6eb40201590f287d17486b3f53285c1ec",
       "source_text_sha256": "009770b890c6aff8d4f0912994029ceeba99c32c814773db162e93c10ed0f8ad"
     },
@@ -816,7 +818,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-22T05:02:18.764665+00:00",
+      "checked_at": "2026-09-24T05:02:04.628259+00:00",
       "source_sha256": "13cf914800237d9630f7b40413753c7b7bca76a78e43174a24b8a42080278437",
       "source_text_sha256": "f0d5daf2739e25dbbace6fc0bde94a834679098bfac126da19865f55bc1fd5f8",
       "error": "invalid model schema"
@@ -840,7 +842,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-23T05:02:11.095728+00:00",
+      "checked_at": "2026-09-24T05:02:06.332047+00:00",
       "source_sha256": "3e148391a6406db2e2953c1e1f0e12c8794ed19b406578311fecfea9c0c2b0f9",
       "source_text_sha256": "dee5c6164fc233666fc846408101959fa60487eb272e3c451c2855cf09226be4",
       "error": "invalid model schema"
@@ -864,7 +866,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-22T05:02:17.368523+00:00",
+      "checked_at": "2026-09-24T05:02:02.621006+00:00",
       "source_sha256": "8a14638f5400a55f97bedd2442838ecf770e5a86ac259f9fcacf0c726082bbc2",
       "source_text_sha256": "a073787cac3aa3f7c51d20d38ce5a9347371a2bd8c62af6bded88c031af9381a",
       "error": "invalid model schema"
@@ -888,7 +890,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-23T05:00:51.967066+00:00",
+      "checked_at": "2026-09-24T05:00:55.255422+00:00",
       "source_sha256": "483cd8f9f46e29617e6ded47fd3d408d09a14ebb3c1b00b782e3435451ac73cf",
       "source_text_sha256": "59d5cdb31d8e66c9fc37f498e934b7b64f352ff12c43dca835a8d697f632c169",
       "error": "document exceeds model input budget; manual review required"
@@ -918,8 +920,8 @@
       "evaluated_text_sha256": "a50f35ae1078f4d01ad8d5d28d7621ab7b2bf595b9ee4ef8a6622fb984b27c03"
     },
     "4a7f7df32524bb2925444566bea44b67a955603008795de3b4043b0654e558f2": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "Modifying the Scope of Products of Canada Subject to the Additional Duties Imposed To Offset Canadian Discrimination Against the Commerce of the United States With Respect to Motor Vehicles",
         "summary": "Modifying the Scope of Products of Canada Subject to the Additional Duties Imposed To Offset Canadian Discrimination Against the Commerce of the United States With Respect to Motor Vehicles",
@@ -936,9 +938,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:02:03.987883+00:00",
+      "checked_at": "2026-09-24T05:01:10.684866+00:00",
       "source_sha256": "389df6c48aaa19f229e2b0ab22038fde9384fecee0cf637f701e3f7d02747efa",
-      "source_text_sha256": "77af7a764b108a9a43847b5f4f78b0c76bbf9f39a504cbc2169985eb9cd8b916"
+      "source_text_sha256": "77af7a764b108a9a43847b5f4f78b0c76bbf9f39a504cbc2169985eb9cd8b916",
+      "evaluated_text_sha256": "77af7a764b108a9a43847b5f4f78b0c76bbf9f39a504cbc2169985eb9cd8b916"
     },
     "fb44f5b6e7ff727d9c43963988d8154d1254b7138a6edee964cd0c68a3ae6d12": {
       "status": "evaluated",
@@ -1031,7 +1034,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:02:10.436430+00:00",
+      "checked_at": "2026-09-24T05:02:05.694853+00:00",
       "source_sha256": "46bfcfbc1931ef115e34b5566922edc015dd774a54f7d8c30dcac0e7e3afcec7",
       "source_text_sha256": "dc557721b43862bc301d28c9115137667446ff18e3cd9d2c4550f0895d4004f0",
       "error": "invalid model schema"
@@ -1079,7 +1082,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:02:04.852609+00:00",
+      "checked_at": "2026-09-24T05:01:56.636428+00:00",
       "source_sha256": "c37c14803511a64bbc16bf30a4a8ead4029b70bfd0cc68787a9cd1efea5871fa",
       "source_text_sha256": "cc968ccd7c158f2274c930e84285b96d16c84f6b9a5360a65aa54df9069d75d6"
     },
@@ -1126,7 +1129,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-18T05:04:08.715333+00:00",
+      "checked_at": "2026-09-24T05:02:02.099615+00:00",
       "source_sha256": "c32047c5ba559cc885602452a6eb5aa2d778b925873e7c8f826aca502dcd1915",
       "source_text_sha256": "dac3cbe8c98f12609cc14191d458676cc69920e89aa813e517c4c1222358d895",
       "error": "invalid model schema"
@@ -1222,7 +1225,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:02:08.163125+00:00",
+      "checked_at": "2026-09-24T05:01:59.976610+00:00",
       "source_sha256": "78c090dc7a972d5a48d5559f89b5593c64ff4246805975b624a57e4a7902a164",
       "source_text_sha256": "527b5b2c1b103cda94ed32736f04bf6196b6555a68bc5f3fa2985c9a4c19f05a"
     },
@@ -1293,7 +1296,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:02:06.900426+00:00",
+      "checked_at": "2026-09-24T05:01:58.712813+00:00",
       "source_sha256": "81e62fa067d1a725bbf52c2513305531755717f8d171b0150735737989b80230",
       "source_text_sha256": "45c075e1d06d9abcf3cca8a2589f50ec5af651673e9c1ac3b22fe1d30575a14f"
     },
@@ -1364,7 +1367,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:02:09.037482+00:00",
+      "checked_at": "2026-09-24T05:02:00.709983+00:00",
       "source_sha256": "0d3711dc18e19652f67b43bf0374043db6fa72ea1e19fceb3fc5129b5ced7f7b",
       "source_text_sha256": "421e6c77bf86082a1e3359b64a83524532983e501f1463d9b02608fe4c0e94e2"
     },
@@ -1386,8 +1389,8 @@
         "format": "json_fedreg",
         "priority_base": 1
       },
-      "active": true,
-      "checked_at": "2026-09-22T05:02:19.034441+00:00",
+      "active": false,
+      "checked_at": "2026-09-24T05:02:04.895336+00:00",
       "source_sha256": "47ec8f65b151afceb2eb0a341c0a129ec48d2059e1b9c8e8bd30db153b5730f8",
       "source_text_sha256": "5492d0ccf756ee39dfcae4f097af0392e47270c90160aea7c843ec0e7aecdb21",
       "error": "invalid model schema"
@@ -1411,14 +1414,14 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-18T05:03:08.353921+00:00",
+      "checked_at": "2026-09-24T05:02:01.812276+00:00",
       "source_sha256": "bb9c90378e11423ff231d1326880b038c8264c00eb6439e728cb26ff4bad5d25",
       "source_text_sha256": "5b6fa7f6ca6e3a94d15e5866c7a635601cba12361d95ff84769438a18b52a904",
       "error": "invalid model schema"
     },
     "478b8935eddf294db29946515787df62c11a0cb4fd0e64b63e9ae06ce4688d9a": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "National Substance Use Primary Prevention Month, 2026",
         "summary": "National Substance Use Primary Prevention Month, 2026",
@@ -1435,9 +1438,10 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-23T05:02:03.723105+00:00",
+      "checked_at": "2026-09-24T05:00:56.990644+00:00",
       "source_sha256": "de1189b1e7719a080c7f85ca232008e70e80c8c368237f2bae75db24499b5f1e",
-      "source_text_sha256": "79e7e2924c0b34981d6a6f2a3fc4e6f8f951e064a838d8b84ae8800127eb9373"
+      "source_text_sha256": "79e7e2924c0b34981d6a6f2a3fc4e6f8f951e064a838d8b84ae8800127eb9373",
+      "evaluated_text_sha256": "79e7e2924c0b34981d6a6f2a3fc4e6f8f951e064a838d8b84ae8800127eb9373"
     },
     "1570cc437e55c618c76e8411fe74f33765c8a45c3fa2df0280f5dea4f18e6894": {
       "status": "pending",
@@ -1459,9 +1463,9 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-22T05:02:17.968762+00:00",
-      "source_sha256": "ac4645938f00a9454d8e5ff85201b39f68ea0ed1f7e96535d0f32bdfb38a6808",
-      "source_text_sha256": "66ec733cf03fbb88971e1315bc4993e8e4c7ead179ac7b8a9bb2e11a06fdf424",
+      "checked_at": "2026-09-24T05:02:03.315958+00:00",
+      "source_sha256": "9e2f4a06ee7ef5cae98ec067c8e3e7ae71de977b124909e14cf8fb58a7a4bc6b",
+      "source_text_sha256": "5d5491f1f1c9d79de005b11fe605e7f1f582dec1b4a50ad012ed2767d8909d6c",
       "error": "invalid model schema"
     },
     "a441b84e65cb5e4cfc4c616337de3b09fcb887cb4091f101a16e47798c577710": {
@@ -1509,13 +1513,13 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:02:07.674390+00:00",
+      "checked_at": "2026-09-24T05:01:59.494675+00:00",
       "source_sha256": "fd13eaf1854d832cf1472e8ac43150eb59d91a069310e7cabb96dd97fd87b6fe",
       "source_text_sha256": "d023b484ea6402ff0c0090715c8540d8319e9710e114ca7da0d9447332cb30ee"
     },
     "50d54867be120025fe49a448e60284b9adf3c3c1d15bfd99770a94b7d6a3cc8c": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "Pitching day: Finalists of the Apply AI Startup Award",
         "summary": "<span>Pitching day: Finalists of the Apply AI Startup Award</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-08-24T10:19:46+02:00\" title=\"Monday, August 24, 2026 - 10:19\">Mon, 08/24/2026 - 10:19</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                              <ul class=\"ecl-unordered-list ecl-unordered-list--no-bullet ecl-u-mb-xl\">\n      <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n      <span class=\"wt-icon--calendar ecl-icon ecl-icon--fluid ecl-icon--calendar\" aria-hidden=\"true\"></span>&nbsp;\n      20 October 2026\n  </li>\n  \n  </ul>\n\n                <p class=\"ecl-page-header-standardised__description\">Watch the pitches of the top 10 finalists of the Apply AI Startup Award and learn more about the European AI innovation ecosystem.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/AI_Startup_Awards_NUxc8gs9ik6saElWEoEYJIGNbw_243257.png?itok=ptCYFy_H\" alt=\"AI Startup Awards logo featuring a purple trophy graphic framed by an arch of stars.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>The <a href=\"https://digital-strategy.ec.europa.eu/en/news/apply-ai-startup-award\">Apply AI Startup Award</a> recognises innovative European startups and scaleups developing AI solutions in the 11 strategic sectors covered by the <a href=\"https://digital-strategy.ec.europa.eu/en/policies/apply-ai\">Apply AI Strategy</a>.</p>\n<p>In July, national startup associations nominated 24 European AI startups and scaleups across 16 Member States. Independent experts are currently evaluating the nominations and will choose the top 10 finalists for the pitching event. Each startup will have 3 minutes to pitch their AI solution and convince the jury.</p>\n<p>After the pitching session the jury will select the 3 winners. Among other rewards, they will be invited to pitch their solution and receive a trophy and certificate on the main stage of the <a href=\"https://digital-strategy.ec.europa.eu/en/policies/apply-ai-summit\">Apply AI Summit</a>.</p>\n<h2>Registration</h2>\n<p>Click and fill the form to <a href=\"https://www.f6s.com/apply-ai-startup-award-top-10-online-pitching-event/about\">register</a></p>\n<h2>Agenda</h2>\n<p><strong>14:00-15:30 CET(to be confirmed)</strong></p>\n<ul>\n<li>Welcome and introduction</li>\n<li>Part I - Pitches&nbsp;</li>\n<li>Presentation from the AI Office</li>\n<li>Part II - Pitches</li>\n<li>Conclusion</li>\n</ul>\n<h2>Jury &amp; finalists</h2>\n<p>The jury members and the top 10 Finalists will be announced soon.</p></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                                <p><a href=\"https://www.f6s.com/apply-ai-startup-award-top-10-online-pitching-event/about\" class=\"ecl-button ecl-button--call\">Registration form</a></p>\n\n              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=137\" class=\"ecl-tag ecl-u-mb-xs\">Events</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=119\" class=\"ecl-tag ecl-u-mb-xs\">Artificial intelligence</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=260\" class=\"ecl-tag ecl-u-mb-xs\">Apply AI Summit</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div>\n  \n    \n        <div class=\"ecl-u-type-m\">\n    <section class=\"cnct-page-footer ecl-u-mv-2xl\">\n      \n          </section>\n  </div>\n\n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
@@ -1533,9 +1537,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:02:04.505383+00:00",
+      "checked_at": "2026-09-24T05:01:44.849769+00:00",
       "source_sha256": "0ca3d25cb0f680b95f95b824d7481cbe1e76a82dc5c156cec3d3933864302b24",
-      "source_text_sha256": "0041bf2840fd49599edeee3f55aebfb8484c246f5e3f5fb7852e2c4b6eabda55"
+      "source_text_sha256": "0041bf2840fd49599edeee3f55aebfb8484c246f5e3f5fb7852e2c4b6eabda55",
+      "evaluated_text_sha256": "0041bf2840fd49599edeee3f55aebfb8484c246f5e3f5fb7852e2c4b6eabda55"
     },
     "0ee46afeaae61fac6e1790c438289c845bb59297ddc3cb7bb4b8eba7f30348e8": {
       "status": "pending",
@@ -1557,7 +1562,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-22T05:02:17.646589+00:00",
+      "checked_at": "2026-09-24T05:02:02.866942+00:00",
       "source_sha256": "52e26a935e5d99582a5aa2dc82c380829b5e042762c6c8fd16b9f54a0077eae5",
       "source_text_sha256": "b287835e295c0060a33eacb8a6c61cea9c624be599edc42f15f0495d39504c3b",
       "error": "invalid model schema"
@@ -1607,7 +1612,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-23T05:02:08.636032+00:00",
+      "checked_at": "2026-09-24T05:02:00.374021+00:00",
       "source_sha256": "3f681ffd575ad28586f668991c32f929d567132c68ad35e777bd59e505fa62af",
       "source_text_sha256": "03f669693c544e0bd526d6acf5b7a018cd02be48ff16a00045feed4587ed5ed9"
     },
@@ -1631,7 +1636,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-23T05:02:09.684888+00:00",
+      "checked_at": "2026-09-24T05:02:01.352220+00:00",
       "source_sha256": "d268e862fb0a8674be96c800634f94fe3451af29de1f5e7268106729515e5104",
       "source_text_sha256": "e095141f7bb9f7ab290ca8b09f62708a1bda2827b8c5b4eb0a31d5521f6572ce"
     },
@@ -1655,8 +1660,8 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-23T05:02:08.414532+00:00",
-      "source_sha256": "d8cdef5f995c649eb54301a8e2807435c702952e903fef05ca7adcbf295d3ae4",
+      "checked_at": "2026-09-24T05:02:00.235970+00:00",
+      "source_sha256": "7e2e19a11c84d9ba70c90d8b5c46afa25f4449d4d40c6f4bef2f478e22e813d2",
       "source_text_sha256": "a1c8d7c0f3fe127647a8622f444dabbe386a16c352b4c8f70d46eaa0778edc23"
     },
     "62ee8f98b799c0827c80bfae8a016cdbfbaf4ae30d8d10c32f4e77e247ab9ea4": {
@@ -1679,8 +1684,8 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-23T05:02:06.524992+00:00",
-      "source_sha256": "03cde2b738b585052683d094ddc257ba737728274576fb252e2d3a7325980df9",
+      "checked_at": "2026-09-24T05:01:58.346856+00:00",
+      "source_sha256": "726287c169f94c7bb39c7055e3a0dbb4486d96af09fcc3088dfe2d48d2446138",
       "source_text_sha256": "8a1ac53247518ef86f375550cd3b6cc4cdf7bb70c924f24850fd468a013ddfeb"
     },
     "c884fc912776c1d9883efc915fafd11b34b1d774c5ee15dcb4be4e3f6fdf9a7b": {
@@ -1728,8 +1733,8 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-23T05:02:09.291506+00:00",
-      "source_sha256": "34772987f9d9a65287b43869cab5957742277bed5f9b3856e4bb152ff6a333c2",
+      "checked_at": "2026-09-24T05:02:00.973150+00:00",
+      "source_sha256": "94750a722de63f7ce6df8d1b26a731334fb89393342845dad32e5ca6395b5aca",
       "source_text_sha256": "447b3fc69e1e1e5961e58ba1fe729f69790044c835b894d6451ccc3bf4352d5e"
     },
     "a1480047faf6483a8f0fb020d4fd2a7d4fb5c5073b6e91dd52c0dcc095c93d13": {
@@ -1802,8 +1807,8 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-23T05:02:10.691399+00:00",
-      "source_sha256": "809bb8a375bbab37e255458de849cdf62de0c1627338cf1b74ff8a055db9e5eb",
+      "checked_at": "2026-09-24T05:02:05.946252+00:00",
+      "source_sha256": "632323fce11158dc17e2f70bd0c6d38caaed67b2c73a88b210ee6951914ce49f",
       "source_text_sha256": "83aeb0a11559e0f0a4f3af95309539ccd6899be98dd92fc50c2f99f60f7e10e9",
       "error": "invalid model schema"
     },
@@ -1852,8 +1857,8 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-23T05:02:05.108878+00:00",
-      "source_sha256": "68116f8a9559e6db93cedc3d7e60e558668eb2fd8a7129c58f05a1b5e4b9d215",
+      "checked_at": "2026-09-24T05:01:56.893429+00:00",
+      "source_sha256": "7b9682fcf5f3c41dfb40b73be969dd71b2ef778aeffe8d68c2c097b4c5f20490",
       "source_text_sha256": "bc429bce94c63e61cc7d7b8a97871d6f0737a2a4217b610250f4d09af43a13bc"
     },
     "579ec2c3e039a7a6b473553f671392756ab0f3a1e03dfdc7d906aedb10db531f": {
@@ -1876,8 +1881,8 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-23T05:02:05.476154+00:00",
-      "source_sha256": "99f45207758e61c35917f15b8cf271b85e3473995c4d24a2b621102981933025",
+      "checked_at": "2026-09-24T05:01:57.290255+00:00",
+      "source_sha256": "4de57f635b27130e651aff8fb27f8583ea69c6257a6889292bd67530a77a98bc",
       "source_text_sha256": "e9ef16bd2411cfd525043b89db11c46a6655fbf737031a51d0b6108d8511ea84"
     },
     "ff1a185c3aa33003442eb0bde83b0db4cc5439faddd13476a01579f820c23ccd": {
@@ -1925,7 +1930,7 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-23T05:01:10.219600+00:00",
+      "checked_at": "2026-09-24T05:00:56.575033+00:00",
       "error": "source HTTP status 403"
     },
     "00cc6142a1a6b1f6fa6e64da6688ffe5d560d7950cb671e860069f6e0e9948b9": {
@@ -1948,7 +1953,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-23T05:02:10.091319+00:00",
+      "checked_at": "2026-09-24T05:02:05.160090+00:00",
       "source_sha256": "31c6a254bb692ee8f8dd2b0dc3c9d01c15dbb1330b938f5facb552003a7c0cbc",
       "source_text_sha256": "616b86c0ee1d88d597c2fcf6f719645897d088caf2452ddd56f37ff1252f8089",
       "error": "invalid model schema"
@@ -1972,7 +1977,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:00:33.106310+00:00",
+      "checked_at": "2026-09-24T05:00:51.903120+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "acd125fdfd75db95c599f5f3bba2c1c547a48442d5bec1e39fdbbd161c614437": {
@@ -1994,7 +1999,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:00:33.615975+00:00",
+      "checked_at": "2026-09-24T05:00:52.410994+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "2aaa70ffc70ff726df8dbcb1d82079ae56f516d5591fa97f4adff95047795251": {
@@ -2090,7 +2095,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:00:31.094166+00:00",
+      "checked_at": "2026-09-24T05:00:49.859237+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "24b91e42ca39f96250ff8396e2ab4365319553e9a5e9361ad8778925105bc9a5": {
@@ -2112,7 +2117,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:00:30.830664+00:00",
+      "checked_at": "2026-09-24T05:00:49.596659+00:00",
       "source_sha256": "93d27862db1cfbe023f098d1d88ede786d36f184e9daf3b83286d5bcfbd54bf9",
       "source_text_sha256": "7da5c4c5006d37ad7ce3930ab3ce921fa5934fc1651020c2729e94c830c82cda",
       "error": "document exceeds model input budget; manual review required"
@@ -2136,7 +2141,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:00:31.628036+00:00",
+      "checked_at": "2026-09-24T05:00:50.376143+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "920548c8df731e539da02bfa501604ca735b46e184d9ccac682ae4e34627e663": {
@@ -2158,7 +2163,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:00:31.976791+00:00",
+      "checked_at": "2026-09-24T05:00:50.712726+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "fc6caa9ca06598e4de6351640198c601779f0975d004e20968e90c2fac908e61": {
@@ -2180,7 +2185,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:00:32.316168+00:00",
+      "checked_at": "2026-09-24T05:00:51.111380+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "362f4388c4d9496ebf122603c35668888a236dcf2e4af58ad656a707b1c1aa63": {
@@ -2251,7 +2256,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:00:29.795403+00:00",
+      "checked_at": "2026-09-24T05:00:48.629185+00:00",
       "source_sha256": "5732141abd973d8993e6239e197486dbeef5fa07af70a1a8e9e5c0342d47b438",
       "source_text_sha256": "057ae28ab694825203e41fddded2a58b524f530bd1cfef46c64e60da0d6efc8f",
       "error": "document exceeds model input budget; manual review required"
@@ -2371,7 +2376,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:00:29.183814+00:00",
+      "checked_at": "2026-09-24T05:00:48.018587+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "99b981b199350cd18d9dffb46c33f69f183df547fbe49512e2f937371d7cc3ac": {
@@ -2393,7 +2398,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-23T05:00:29.532560+00:00",
+      "checked_at": "2026-09-24T05:00:48.361178+00:00",
       "source_sha256": "19d7414eb9185234aac641d5477a120f5b1bbd298866c740acef103e33a51f5f",
       "source_text_sha256": "42b2a605ec6030eff66b91501bfafb930aded7c79002d3c37346d051858ab21a",
       "error": "document exceeds model input budget; manual review required"
@@ -2421,14 +2426,62 @@
       "source_sha256": "dba8c963fa10705941a9fe37e8262639fe983e4032f077f89cafa236d39ba5a5",
       "source_text_sha256": "776aaf1088d245abb82d05db1d599e5493590b09e98000248b1f3cf5366c0201",
       "evaluated_text_sha256": "776aaf1088d245abb82d05db1d599e5493590b09e98000248b1f3cf5366c0201"
+    },
+    "8a7e163c91ddeb811f4fb0474ebacff6ee1d6f3e7df68a93c20aee3109786f92": {
+      "status": "evaluated",
+      "attempts": 1,
+      "item": {
+        "title": "Enhancing Program Integrity and Interagency Coordination in the Administration of the H-1B Nonimmigrant Visa Program",
+        "summary": "Enhancing Program Integrity and Interagency Coordination in the Administration of the H-1B Nonimmigrant Visa Program",
+        "url": "https://www.federalregister.gov/documents/2026/09/23/2026-19555/enhancing-program-integrity-and-interagency-coordination-in-the-administration-of-the-h-1b",
+        "publication_date": "2026-09-23"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-24T05:00:33.789827+00:00",
+      "source_sha256": "590b9fdc015ab3eb40a3b4909e0a9f196d48cfdaf55da41964e0695ab0e99c81",
+      "source_text_sha256": "9e528ba75d11593f96c701117beffacdab26d4b013d13c278ba97a0e3cac206b",
+      "evaluated_text_sha256": "9e528ba75d11593f96c701117beffacdab26d4b013d13c278ba97a0e3cac206b"
+    },
+    "71b3efa4354d14f9484154170172ac438bdf0f6b8264077aac1a6c02c5f5f4df": {
+      "status": "evaluated",
+      "attempts": 1,
+      "item": {
+        "title": "Restriction on Entry of Certain Nonimmigrant Workers",
+        "summary": "Restriction on Entry of Certain Nonimmigrant Workers",
+        "url": "https://www.federalregister.gov/documents/2026/09/23/2026-19554/restriction-on-entry-of-certain-nonimmigrant-workers",
+        "publication_date": "2026-09-23"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-09-24T05:00:02.966727+00:00",
+      "source_sha256": "ba91ef2f4c7bfb80c5c3bf770c5788ce135714511aec39d8b2ac841f670a6452",
+      "source_text_sha256": "e82f6dc2064c6d3f909e28c4acc0aad1a8f4f40a0a530e5d79089859e8041490",
+      "evaluated_text_sha256": "e82f6dc2064c6d3f909e28c4acc0aad1a8f4f40a0a530e5d79089859e8041490"
     }
   },
   "last_pass": {
     "documents_checked": 60,
-    "documents_deferred": 30,
+    "documents_deferred": 31,
     "model_attempts": 6,
-    "pending_evaluations": 63,
-    "manual_review_required": 24,
+    "pending_evaluations": 59,
+    "manual_review_required": 25,
     "unhealthy_sources": [
       "ftc_press_releases"
     ],
