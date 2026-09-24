@@ -12,6 +12,7 @@ fields. An automatic anchor is withheld when the topic evidence ties.
 Run:  python3 build.py   ->   writes index.html next to items.json
 """
 import json, os, html, re, urllib.parse
+from watch_panel import load_watch, watch_fragment, calendar_ics
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(HERE, "items.json")
@@ -1056,6 +1057,9 @@ def harnesses_tab(data=None):
 
 
 def main():
+    watch_data = load_watch(os.path.join(HERE, "watch_calendar.json"))
+    watch_html = watch_fragment(watch_data)
+    watch_ics = calendar_ics(watch_data)
     import argparse
     ap = argparse.ArgumentParser(description="Render the AI News Board.")
     ap.add_argument("--plain", action="store_true",
@@ -1673,10 +1677,18 @@ def main():
   @media(max-width:620px){{.header-bar{{grid-template-columns:1fr}}.header-actions{{justify-content:flex-start}}.rail{{display:block}}.nav-tab-bar{{width:100%}}.nav-tab-btn{{flex:1;justify-content:center}}}}
 </style>"""
 
+    style_block += "<style>" + '\n.watch-view{max-width:960px;margin:0 auto;font-size:15px;line-height:1.6}\n.watch-view h2,.watch-view h3,.watch-record h4{color:var(--heading)}\n.watch-view a,.watch-archive a{color:var(--heading);text-underline-offset:3px}\n.watch-government{border-left:3px solid var(--heading);padding:1px 20px;margin:20px 0 30px;background:var(--bg-card)}\n.watch-record{border-top:1px solid var(--border);padding:4px 0}\n.watch-record p{margin:6px 0}\n.watch-meta,.watch-date,.watch-status{font-size:12px;color:var(--text-muted)}\n.watch-row{border:1px solid var(--border);border-radius:5px;margin:10px 0;padding:12px 16px;background:var(--bg-card)}\n.watch-row summary{cursor:pointer;display:grid;grid-template-columns:1fr auto;gap:2px 12px}\n.watch-row summary strong{color:var(--heading);font-size:15px;grid-column:1}\n.watch-date{grid-column:1/-1}\n.watch-status{grid-column:2;grid-row:2}\n.watch-row dt{font-weight:650;margin-top:10px}\n.watch-row dd{margin:2px 0 0}\n.watch-sources{font-size:12px;padding-left:18px;overflow-wrap:anywhere}\n.watch-jump{background:none;border:0;padding:0;color:var(--heading);font:inherit;text-align:left;text-decoration:underline;cursor:pointer}\n.watch-jump:focus-visible,.watch-row summary:focus-visible,.watch-archive summary:focus-visible{outline:2px solid var(--heading);outline-offset:4px}\n.watch-archive{max-width:960px;margin:36px auto 0;padding-top:18px;border-top:1px solid var(--border)}\n.watch-archive>summary{font-weight:600;color:var(--heading);cursor:pointer}\n.watch-archive table{display:block;overflow-x:auto;max-width:100%}\n@media(max-width:620px){.watch-government{padding:1px 12px}.watch-row summary{grid-template-columns:1fr}.watch-status{grid-column:1;grid-row:3}.watch-row{padding:10px 12px}}\n' + "</style>"
+
     script_block = """<script>
 (function(){
   var tabBtns = document.querySelectorAll('.nav-tab-btn');
   var tabPanes = document.querySelectorAll('.tab-pane');
+  document.querySelectorAll('[data-watch-jump]').forEach(function(link){
+    link.addEventListener('click', function(){
+      var button = document.querySelector('.nav-tab-btn[data-target="tab-reference"]');
+      if(button){ button.click(); button.focus(); }
+    });
+  });
   tabBtns.forEach(function(btn){
     btn.addEventListener('click', function(){
       var targetId = btn.getAttribute('data-target');
@@ -1966,7 +1978,7 @@ def main():
     <button class="nav-tab-btn active" data-target="tab-news">News evidence <span class="tab-badge">{len(items)}</span></button>
     <button class="nav-tab-btn" data-target="tab-radar">Sovereign radar <span class="tab-badge radar-badge">{len(regulatory_alerts)}</span></button>
     <button class="nav-tab-btn" data-target="tab-harnesses">Harness landscape <span class="tab-badge">{len(harness_data["sources"])}</span></button>
-    <button class="nav-tab-btn" data-target="tab-reference">Historical reference</button>
+    <button class="nav-tab-btn" data-target="tab-reference">Watch</button>
   </div>
 
   <div id="tab-news" class="tab-pane active" style="display:block">
@@ -1977,6 +1989,7 @@ def main():
       <main class="main">
         {exec_strip_html}
         {plain_note}
+        <p><button class="watch-jump" data-watch-jump>Watch: upcoming evidence, financing and government interests</button></p>
         {about_html}
         {cards}
         <details class="secondary">
@@ -2005,8 +2018,9 @@ def main():
     {harnesses_tab(harness_data)}
   </div>
   <div id="tab-reference" class="tab-pane" style="display:none">
-    <h2 style="color:{NAVY}">Historical reference</h2>
-    <p>Retained observations and announced milestones. Read each source date before reusing a claim. These panels are separate from daily news coverage.</p>
+    {watch_html}
+    <details class="watch-archive"><summary>Dated archive: earlier roster, gauges and announced models</summary>
+    <p>The original evidence is retained here. These entries have not been reverified as current; archived wording is not a present conclusion. The active monitoring questions above remain open.</p>
     {reference_notice("Registers", _reg.get("generated") if os.path.isfile(reg_path) else None)}
     {deflation_html}
     {ai_watch_html}
@@ -2014,11 +2028,14 @@ def main():
     {upcoming_html}
     {reference_notice("Government relationships", gc_date)}
     {govconflict_html}
+    </details>
   </div>
 </div>
 {script_block}
 </body></html>"""
     doc = "\n".join(line.rstrip() for line in doc.splitlines())
+    from pathlib import Path
+    Path(OUT).with_name("AI_OUTLOOK.ics").write_bytes(watch_ics)
     with open(OUT, "w", encoding="utf-8") as handle:
         handle.write(doc)
     mode = "plain (source tier OFF)" if plain else "source-tiered"

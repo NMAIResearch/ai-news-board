@@ -1,0 +1,635 @@
+{
+  "purpose": "A manually maintained, source-linked calendar of AI financing, delivery, demand and governance questions.",
+  "checked_at": "2026-09-24",
+  "interpretation": "Priority is editorial relevance, not a numerical risk score. A date becoming past does not resolve a question. Record evidence, outcome and next review; unresolved remains unresolved.",
+  "sources": {
+    "BEA": {
+      "url": "https://www.bea.gov/news/schedule/full",
+      "locator": "September 30, October 29 and November 25 rows",
+      "kind": "primary calendar"
+    },
+    "BLS": {
+      "url": "https://www.bls.gov/schedule/2026/",
+      "locator": "October and November 2026 release rows",
+      "kind": "primary calendar"
+    },
+    "FED": {
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "locator": "2026 FOMC meetings, October and December",
+      "kind": "primary calendar"
+    },
+    "ECB": {
+      "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
+      "locator": "2026 monetary-policy meeting days",
+      "kind": "primary calendar"
+    },
+    "EIA": {
+      "url": "https://www.eia.gov/outlooks/steo/release_schedule.php",
+      "locator": "October to December 2026 release schedule",
+      "kind": "primary calendar"
+    },
+    "IEA": {
+      "url": "https://www.iea.org/events/oil-market-report-october-2026",
+      "locator": "14 Oct 2026 event date",
+      "kind": "primary calendar"
+    },
+    "MICRON": {
+      "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-to-Report-Fiscal-Fourth-Quarter-Results-on-September-30-2026/default.aspx",
+      "locator": "Opening paragraph, fiscal fourth-quarter earnings call",
+      "kind": "issuer calendar"
+    },
+    "ASML": {
+      "url": "https://www.sec.gov/Archives/edgar/data/937966/000162828026048235/statutoryinterimreport20.htm",
+      "locator": "Financial calendar and investor relations, October 14 2026",
+      "kind": "issuer filing"
+    },
+    "TSMC": {
+      "url": "https://investor.cld.tsmc.com/english",
+      "locator": "3Q26 earnings conference, October 15 2026",
+      "kind": "issuer calendar"
+    },
+    "EUROHPC": {
+      "url": "https://www.eurohpc-ju.europa.eu/eurohpc-joint-undertaking-launches-ai-gigafactories-call-2026-07-30_en",
+      "locator": "Submission deadline paragraph, 12 November 2026",
+      "kind": "procurement announcement"
+    },
+    "CFR": {
+      "url": "https://www.cfr.org/articles/washingtons-growing-portfolio-tracking-u-s-government-investments",
+      "locator": "Opening investment total and tracker scope",
+      "kind": "secondary deal tracker; primary for its own compilation"
+    },
+    "ANTHROPIC_CASE": {
+      "url": "https://docs.justia.com/cases/federal/district-courts/california/candce/3:2026cv01996/465515/250",
+      "locator": "Order dated 27 August 2026, sections V.F and VI, printed pages 54-59",
+      "kind": "court order reproduced by Justia; latest appellate state not established"
+    },
+    "COREWEAVE_LOAN": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000357/crwv-20260807.htm",
+      "locator": "Item 1.01, DDTL 5.5 pricing, maturity and draw period",
+      "kind": "issuer filing, web passages inspected"
+    },
+    "COREWEAVE_NOTES": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000432/ex991pricing.htm",
+      "locator": "18 September pricing announcement, coupon, conversion and capped calls",
+      "kind": "issuer filing; pricing is not closing confirmation"
+    },
+    "COREWEAVE_Q2": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+      "locator": "Debt facilities and Interest Expense, Net discussion",
+      "kind": "issuer filing, selected passages inspected"
+    },
+    "OPENAI_CASE": {
+      "url": "https://www.nysd.uscourts.gov/cases/rulings-of-special-interest?page=2",
+      "locator": "OpenAI Cases, 25-md-3143",
+      "kind": "court case index; latest docket not established"
+    },
+    "DPC": {
+      "url": "https://www.dataprotection.ie/en/news-media/press-releases/data-protection-commission-opens-investigation-x-xiuc",
+      "locator": "17 February 2026 opening of XIUC/Grok inquiry",
+      "kind": "regulator announcement; later disposition not established"
+    },
+    "PJM": {
+      "url": "https://www.pjm.com/-/media/DotCom/documents/ferc/filings/2026/20260910-er26-3380-000.pdf",
+      "locator": "Proposed ER26-3380 filing link; verify the docket identity and subsequent operative orders before relying on it",
+      "kind": "investigation lead; primary passage not verified in this update"
+    },
+    "INTEL": {
+      "url": "https://www.intel.com/content/www/us/en/newsroom/news/corporate/intel-and-trump-administration-reach-historic-agreement.html",
+      "locator": "22 August 2025 agreement terms; current holding not reconciled",
+      "kind": "issuer announcement"
+    },
+    "MP": {
+      "url": "https://investors.mpmaterials.com/investor-news/news-details/2025/MP-Materials-Announces-Transformational-Public-Private-Partnership-with-the-Department-of-Defense-to-Accelerate-U-S--Rare-Earth-Magnet-Independence/",
+      "locator": "10 July 2025 convertible preferred equity and warrant paragraphs; as-converted/as-exercised denominator",
+      "kind": "issuer announcement"
+    },
+    "BPEA": {
+      "url": "https://www.brookings.edu/events/bpea-fall-2026-conference/",
+      "locator": "25 September, Panel on AI and Policy, including Financing the AI Buildout",
+      "kind": "conference organiser schedule"
+    },
+    "BLS_OCT": {
+      "url": "https://www.bls.gov/schedule/2026/10_sched.htm",
+      "locator": "October 2026, Employment Situation on 2 October and CPI/Real Earnings on 14 October",
+      "kind": "primary calendar"
+    },
+    "BLS_NOV": {
+      "url": "https://www.bls.gov/schedule/2026/11_sched.htm",
+      "locator": "November 2026, Productivity and Costs (P), third quarter, on 5 November",
+      "kind": "primary calendar"
+    },
+    "OPENAI_CAPTION": {
+      "url": "https://www.nysd.uscourts.gov/sites/default/files/2026-01/25md3143%20-%2011.24.25%20Order%20re%20ECF%20Nos.%20413%2C%20428%2C%20479%2C%20504%2C%20615.pdf",
+      "locator": "Court-hosted order, page 1 caption: 25-md-3143 and copyright infringement litigation",
+      "kind": "primary court order; caption only, latest disposition not established"
+    }
+  },
+  "events": [
+    {
+      "id": "bea-q2",
+      "date": "2026-09-30",
+      "date_kind": "published_schedule",
+      "status": "not_observed",
+      "title": "US Q2 GDP revision, industry data and August household income",
+      "source_ids": [
+        "BEA"
+      ],
+      "priority": "first",
+      "question": "Is growth broadening, and can households sustain demand?",
+      "inspect": "Industry contributions, revisions, real disposable income, real consumption and saving. Adjust investment interpretation for imports.",
+      "improves": "Broader domestic demand and improving real household income.",
+      "worsens": "Growth concentrated in investment alongside weakening real income or consumption.",
+      "limit": "A revision describes an earlier quarter; it is not a September activity reading or a clean AI counterfactual."
+    },
+    {
+      "id": "micron-q4",
+      "date": "2026-09-30",
+      "date_kind": "published_schedule",
+      "status": "not_observed",
+      "title": "Micron fiscal Q4 results",
+      "source_ids": [
+        "MICRON"
+      ],
+      "priority": "first",
+      "question": "Do reported orders and any customer prepayments lead to delivered supply and collected cash?",
+      "inspect": "Cash flow, any disclosed customer deposits and their repayment or financing terms, delivered memory and revised capacity plans.",
+      "improves": "Disclosed cash receipts and delivery consistent with contractual milestones.",
+      "worsens": "Deposit reversals, delivery slippage or financing needs growing faster than operating receipts.",
+      "limit": "An earnings call does not independently confirm customer acceptance; management forecasts remain forecasts."
+    },
+    {
+      "id": "jobs-sep",
+      "date": "2026-10-02",
+      "date_kind": "published_schedule",
+      "status": "not_observed",
+      "title": "US September employment report",
+      "source_ids": [
+        "BLS_OCT"
+      ],
+      "priority": "first",
+      "question": "Are hiring conditions improving beyond a few sectors?",
+      "inspect": "Payroll revisions, unemployment, participation, hours and industry detail.",
+      "improves": "Hiring and hours improve across industries without falling participation concealing weakness.",
+      "worsens": "Downward revisions and weaker hiring or hours across several sectors.",
+      "limit": "US aggregate employment does not measure EU AI operations vacancies."
+    },
+    {
+      "id": "eia-oct",
+      "date": "2026-10-06",
+      "date_kind": "published_schedule",
+      "status": "not_observed",
+      "title": "EIA energy outlook and Winter Fuels Outlook",
+      "source_ids": [
+        "EIA"
+      ],
+      "priority": "first",
+      "question": "How do observed physical supply conditions compare with the latest price forecast?",
+      "inspect": "Changes in production, inventories, export-route assumptions, refining and household fuel costs.",
+      "improves": "Observed supply, inventories and household costs support a less constrained outlook.",
+      "worsens": "Supply constraints or inventory declines undermine the forecast.",
+      "limit": "An official forecast remains a forecast. Falling oil prices can also reflect weaker demand."
+    },
+    {
+      "id": "asml-q3",
+      "date": "2026-10-14",
+      "date_kind": "published_schedule",
+      "status": "not_observed",
+      "title": "ASML Q3 results",
+      "source_ids": [
+        "ASML"
+      ],
+      "priority": "supporting",
+      "question": "Are equipment orders converting into recognised sales and installations?",
+      "inspect": "Bookings, cancellations, shipments, customer acceptance, receivables and export restrictions.",
+      "improves": "Delivered equipment and cash collection support earlier orders.",
+      "worsens": "Cancellations, acceptance delays or restrictive permissions affect delivery.",
+      "limit": "Bookings are not cash or installed productive capacity; product and regional mix matter."
+    },
+    {
+      "id": "iea-oct",
+      "date": "2026-10-14",
+      "date_kind": "published_schedule",
+      "status": "not_observed",
+      "title": "IEA October Oil Market Report",
+      "source_ids": [
+        "IEA"
+      ],
+      "priority": "supporting",
+      "question": "Do the IEA and EIA readings agree on the direction of physical energy conditions?",
+      "inspect": "Observed stocks, production, refining and trade alongside revisions to forecasts.",
+      "improves": "Physical indicators agree on improving supply conditions across sources.",
+      "worsens": "Stock draws or route disruption persist despite a more optimistic forecast.",
+      "limit": "The detailed report may require a subscription; record unavailable tables rather than infer them from highlights."
+    },
+    {
+      "id": "inflation-sep",
+      "date": "2026-10-14",
+      "date_kind": "published_schedule",
+      "status": "not_observed",
+      "title": "US September CPI and real earnings",
+      "source_ids": [
+        "BLS_OCT"
+      ],
+      "priority": "first",
+      "question": "How are energy prices affecting underlying costs and household purchasing power?",
+      "inspect": "Headline and underlying components, real earnings and prior-period comparisons.",
+      "improves": "Energy pressure eases without broadening to other components, alongside firmer real earnings.",
+      "worsens": "Energy pressure persists and broadens while real earnings weaken.",
+      "limit": "One monthly print does not establish a trend or determine the next interest-rate decision."
+    },
+    {
+      "id": "tsmc-q3",
+      "date": "2026-10-15",
+      "date_kind": "published_schedule",
+      "status": "not_observed",
+      "title": "TSMC Q3 results",
+      "source_ids": [
+        "TSMC"
+      ],
+      "priority": "supporting",
+      "question": "Is chip demand supported by delivered output rather than orders alone?",
+      "inspect": "Reported revenue, capacity utilisation where disclosed, capital spending, cash generation and next-period outlook.",
+      "improves": "Delivered demand and cash generation remain consistent with capacity additions.",
+      "worsens": "Customer concentration, postponed orders or utilisation weakness emerge.",
+      "limit": "Supplier strength does not establish profitability for the AI customers buying its output."
+    },
+    {
+      "id": "fed-oct",
+      "date": "2026-10-28",
+      "date_kind": "published_schedule",
+      "status": "not_observed",
+      "title": "FOMC decision after 27-28 October meeting",
+      "source_ids": [
+        "FED"
+      ],
+      "priority": "first",
+      "question": "How does policy alter financing exposure?",
+      "inspect": "Decision and rationale; then compare borrower floating-rate terms, credit margins and hedges.",
+      "improves": "Financing costs or risk premiums ease without severe demand deterioration.",
+      "worsens": "Benchmark rates or lender margins rise for exposed borrowers.",
+      "limit": "The policy rate is not each borrower's all-in cost. Fixed-rate debt does not instantly reprice."
+    },
+    {
+      "id": "bea-q3",
+      "date": "2026-10-29",
+      "date_kind": "published_schedule",
+      "status": "not_observed",
+      "title": "US Q3 advance GDP and September income/outlays",
+      "source_ids": [
+        "BEA"
+      ],
+      "priority": "first",
+      "question": "Is investment-led growth translating into broader demand?",
+      "inspect": "Real final domestic demand, investment components, imports and real income.",
+      "improves": "Growth broadens and households retain purchasing power.",
+      "worsens": "Investment slows while household demand weakens.",
+      "limit": "Advance estimates are revised; no dedicated national-accounts AI category isolates the causal effect."
+    },
+    {
+      "id": "ecb-oct",
+      "date": "2026-10-29",
+      "date_kind": "published_schedule",
+      "status": "not_observed",
+      "title": "ECB monetary-policy decision",
+      "source_ids": [
+        "ECB"
+      ],
+      "priority": "supporting",
+      "question": "How are euro-area financing and demand conditions changing?",
+      "inspect": "Decision, financing discussion and later bank lending data.",
+      "improves": "Credit availability and real demand improve.",
+      "worsens": "Tighter financing coincides with weaker demand.",
+      "limit": "Euro-area conditions do not substitute for monetary conditions outside the euro area or for a specific employer's finances."
+    },
+    {
+      "id": "productivity-q3",
+      "date": "2026-11-05",
+      "date_kind": "published_schedule",
+      "status": "not_observed",
+      "title": "US Q3 preliminary productivity and costs",
+      "source_ids": [
+        "BLS_NOV"
+      ],
+      "priority": "supporting",
+      "question": "Are gains visible beyond task-level AI demonstrations?",
+      "inspect": "Output, hours, productivity and unit labour costs; compare later revisions.",
+      "improves": "Output per hour improves alongside firm-level evidence of delivered value.",
+      "worsens": "Firm claims lack supporting output gains or costs absorb the benefit.",
+      "limit": "Aggregate productivity cannot by itself identify AI's contribution."
+    },
+    {
+      "id": "eia-nov",
+      "date": "2026-11-10",
+      "date_kind": "published_schedule",
+      "status": "not_observed",
+      "title": "EIA November energy outlook",
+      "source_ids": [
+        "EIA"
+      ],
+      "priority": "supporting",
+      "question": "How do the October forecast assumptions compare with the next observations?",
+      "inspect": "Same physical supply, inventory and household-cost measures as October.",
+      "improves": "Observed supply and inventory conditions improve across releases.",
+      "worsens": "Forecasts repeatedly postpone improvements or depend on new unsupported assumptions.",
+      "limit": "Keep observation periods distinct from publication dates."
+    },
+    {
+      "id": "eurohpc-tender",
+      "date": "2026-11-12",
+      "date_kind": "published_schedule",
+      "status": "not_observed",
+      "title": "EuroHPC AI Gigafactories tender deadline",
+      "source_ids": [
+        "EUROHPC"
+      ],
+      "priority": "first",
+      "question": "Which European delivery organisations progress towards funded work?",
+      "inspect": "Subsequent evaluated awards, signed funding, hosting partners, access terms and employer vacancies.",
+      "improves": "Executed awards and operating access produce identifiable work and hiring.",
+      "worsens": "Awards slip, financing remains conditional or announced jobs do not appear.",
+      "limit": "This is a consortium procurement deadline, not an individual job or research-grant application deadline."
+    },
+    {
+      "id": "bea-q3-profits",
+      "date": "2026-11-25",
+      "date_kind": "published_schedule",
+      "status": "not_observed",
+      "title": "US Q3 second GDP estimate and corporate profits",
+      "source_ids": [
+        "BEA"
+      ],
+      "priority": "supporting",
+      "question": "Do profits and revised output support earlier growth claims?",
+      "inspect": "Revisions, sectoral profit detail and consistency with company cash flows.",
+      "improves": "Broader profits and cash generation accompany growth.",
+      "worsens": "Profit weakness or downward revisions accompany financing strain.",
+      "limit": "National corporate profits do not establish standalone profitability of private frontier labs."
+    },
+    {
+      "id": "eia-dec",
+      "date": "2026-12-08",
+      "date_kind": "published_schedule",
+      "status": "not_observed",
+      "title": "EIA December energy outlook",
+      "source_ids": [
+        "EIA"
+      ],
+      "priority": "supporting",
+      "question": "What changed in the medium-term energy outlook?",
+      "inspect": "Compare successive supply and demand assumptions with observed delivery.",
+      "improves": "Repeated physical improvement supports the forward path.",
+      "worsens": "Repeated postponement leaves the forward path dependent on unresolved disruption.",
+      "limit": "Retain each vintage rather than replacing an earlier forecast silently."
+    },
+    {
+      "id": "fed-dec",
+      "date": "2026-12-09",
+      "date_kind": "published_schedule",
+      "status": "not_observed",
+      "title": "FOMC decision and projections after 8-9 December meeting",
+      "source_ids": [
+        "FED"
+      ],
+      "priority": "first",
+      "question": "Has the balance of inflation, employment and financing risk changed?",
+      "inspect": "Decision, projections and subsequent borrowing terms.",
+      "improves": "Inflation pressure eases with resilient demand and financing access.",
+      "worsens": "Persistent inflation combines with weaker activity or credit tightening.",
+      "limit": "Committee projections are conditional views, not promises."
+    },
+    {
+      "id": "ecb-dec",
+      "date": "2026-12-17",
+      "date_kind": "published_schedule",
+      "status": "not_observed",
+      "title": "ECB monetary-policy decision",
+      "source_ids": [
+        "ECB"
+      ],
+      "priority": "supporting",
+      "question": "What do financing and demand conditions imply for European employers?",
+      "inspect": "Decision and financing outlook; examine individual employers' finances and vacancies separately.",
+      "improves": "Financing and demand improve across relevant employer markets.",
+      "worsens": "Tighter credit or weaker demand affects the employers being assessed.",
+      "limit": "A macroeconomic release cannot establish an individual employer's finances, vacancies or hiring timetable."
+    },
+    {
+      "id": "bpea-financing",
+      "date": "2026-09-25",
+      "date_kind": "published_schedule",
+      "status": "not_observed",
+      "title": "Brookings discussion of AI financing and policy",
+      "source_ids": [
+        "BPEA"
+      ],
+      "priority": "first",
+      "question": "Which assumptions and exposure gaps survive the research discussion?",
+      "inspect": "Conference draft, presentation and responses concerning investment scenarios, financing structures and the visibility of creditor exposures.",
+      "improves": "Better measurements and explicit sensitivity checks narrow uncertainty.",
+      "worsens": "Material exposure gaps persist or assumptions are contradicted by disclosed contracts and cash flows.",
+      "limit": "A research presentation is not a financial outcome or a forecast of collapse."
+    }
+  ],
+  "watches": [
+    {
+      "id": "credit",
+      "title": "Financing and refinancing",
+      "next_review": "2026-10-02",
+      "cadence": "weekly and on new debt filings",
+      "question": "Does cash generation cover operations and debt service without increasingly restrictive finance?",
+      "inspect": "For CoreWeave, Oracle and selected infrastructure counterparties: debt actually drawn, fixed/floating mix, benchmark plus credit margin, cash interest, maturities, covenants, collateral, hedges, capitalised interest, equity dilution and customer prepayments.",
+      "improves": "Operating receipts and contract renewals support repayments; like-for-like financing terms improve.",
+      "worsens": "Cash interest rises faster than operating receipts; waivers, failed refinancing, contract loss or supplier payment delays appear.",
+      "limit": "The September convertible-note announcement verifies pricing, not completion. A low convertible coupon is not the total economic financing cost. Backlog is not cash.",
+      "source_ids": [
+        "COREWEAVE_LOAN",
+        "COREWEAVE_NOTES",
+        "COREWEAVE_Q2"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "id": "earnings",
+      "title": "Customer economics and cloud commitments",
+      "next_review": "2026-10-23",
+      "cadence": "during the next issuer reporting round; individual dates require confirmation",
+      "question": "Are buyers renewing because they receive measurable value?",
+      "inspect": "Microsoft, Alphabet, Amazon, Meta, Oracle and CoreWeave filings plus customer-side accounts. Separate revenue, remaining obligations, recognised revenue and cash; identify customer/vendor financing links.",
+      "improves": "Renewals at sustainable pricing, net customer savings after review and integration, and improving operating cash generation.",
+      "worsens": "Discount-dependent retention, rising error or review costs, cancellations, or cash increasingly dependent on new funding.",
+      "limit": "The review date is an editorial checkpoint, not an announced earnings date. No comparable public renewal series for private frontier labs has been established.",
+      "source_ids": [],
+      "status": "unresolved"
+    },
+    {
+      "id": "deployments",
+      "title": "Deployment, service acceptance and grid access",
+      "next_review": "2026-09-29",
+      "cadence": "weekly while decisions are pending",
+      "question": "Does funded capacity become available to paying users on the contracted timetable?",
+      "inspect": "PJM ER26-3380 and ER26-3515 (unverified investigation leads in this update), utility energisation, customer acceptance, usable capacity, contracted versus actual power, and project-specific service start dates.",
+      "improves": "Operative approvals, power and customer acceptance align with contractual start dates.",
+      "worsens": "Power or acceptance delays postpone revenue while financing and lease costs continue.",
+      "limit": "This is an editorial checkpoint, not a promised FERC decision. Read the operative docket before treating a requested date or proposed rule as effective. Neither PJM docket identifier has a reviewed primary passage in this update.",
+      "source_ids": [
+        "PJM"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "id": "anthropic-litigation",
+      "title": "Anthropic government-contract litigation",
+      "next_review": "2026-10-02",
+      "cadence": "weekly and on an operative order",
+      "question": "Which procurement restrictions are actually operative for which agencies and customers?",
+      "inspect": "N.D. California 3:26-cv-01996, subsequent relief and appeals. D.C. Circuit 26-1049 and 26-1162 are unverified investigation leads here; obtain their docket records before relying on them. Identify statute, addressee, stay and effective date.",
+      "improves": "Clear operative decisions reduce uncertainty over lawful procurement and customer access.",
+      "worsens": "New enforceable restrictions materially exclude products or customers.",
+      "limit": "The 27 August merits order is inspected. The latest full appellate docket and separate relief order are not verified. No court decision date is invented.",
+      "source_ids": [
+        "ANTHROPIC_CASE"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "id": "copyright",
+      "title": "OpenAI copyright litigation",
+      "next_review": "2026-10-02",
+      "cadence": "weekly docket check, only material orders promoted",
+      "question": "Do operative decisions change training permissions, licensing costs, data retention or distribution?",
+      "inspect": "SDNY OpenAI Cases 25-md-3143: scheduling and substantive orders, settlements and actual duties rather than a complaint alone.",
+      "improves": "Clear rulings or workable licences reduce uncertainty over deployment and data handling.",
+      "worsens": "Enforceable restrictions or liabilities materially change supply costs or customer terms.",
+      "limit": "Case identity and copyright subject are verified from the court index and the caption of a court-hosted order. The latest docket, merits disposition and next hearing date remain unverified.",
+      "source_ids": [
+        "OPENAI_CASE",
+        "OPENAI_CAPTION"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "id": "privacy",
+      "title": "EU privacy and deployment restrictions",
+      "next_review": "2026-10-02",
+      "cadence": "monthly and on an official decision",
+      "question": "Do privacy decisions change which AI services employers can deploy?",
+      "inspect": "DPC XIUC/Grok inquiry: published findings, operative remedies, processing restrictions and appeals. Add other cases only when a specific deployment or employer is affected.",
+      "improves": "Implemented safeguards and clear processing terms permit accountable deployment.",
+      "worsens": "Binding restrictions, material breaches or unresolved processing obligations affect customers.",
+      "limit": "The February opening of the inquiry is verified. A later final disposition was not established; an investigation is not a finding of breach.",
+      "source_ids": [
+        "DPC"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "id": "government-roles",
+      "title": "Government regulation, procurement and investment",
+      "next_review": "2026-10-01",
+      "cadence": "monthly and on an executed transaction or policy decision",
+      "question": "Do specific public interests or powers affect a claim, contract or market-access decision?",
+      "inspect": "Agency and legal entity; held shares versus warrants or preferred conversion rights; loans, guarantees and procurement; proposed versus closed deals; independent judicial or audit findings.",
+      "improves": "Clear instrument-level disclosure and independently checkable decisions.",
+      "worsens": "Undisclosed interests, discriminatory operative restrictions or public support whose terms cannot be inspected.",
+      "limit": "Do not assign one interest to every agency. The original roster is a dated snapshot, not a verified current holdings register.",
+      "source_ids": [
+        "CFR",
+        "INTEL",
+        "MP",
+        "ANTHROPIC_CASE"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "id": "substitution",
+      "title": "Cheaper models and operational reliability",
+      "next_review": "2026-10-16",
+      "cadence": "monthly or after a material model/pricing release",
+      "question": "Can a cheaper provider or ordinary code deliver the same accepted work?",
+      "inspect": "A bounded fixed task set: total cost per accepted result, failures, human review time, data handling, portability and exit cost. Include code-only and cheaper-model baselines where appropriate.",
+      "improves": "Equal accepted quality at lower complete cost with acceptable data handling.",
+      "worsens": "Review or error costs consume savings, or vendor changes impair the workflow.",
+      "limit": "A model release or token-price cut alone does not resolve the question. A bounded trial requires its own evaluation plan and permission.",
+      "source_ids": [],
+      "status": "unresolved"
+    },
+    {
+      "id": "eu-employment",
+      "title": "European employer and funding opportunities",
+      "next_review": "2026-09-28",
+      "cadence": "weekly",
+      "question": "Where are paid roles with progression supported by real operating budgets?",
+      "inspect": "Current vacancies, paid employment terms, legal employer, language and relocation conditions, customer demand, runway where disclosed, grant disbursements and hiring after awards.",
+      "improves": "Verified paid openings and employers with identifiable customers or executed funding.",
+      "worsens": "Unpaid trials, grant-dependent posts before award, repeated hiring freezes or unclear employing entities.",
+      "limit": "Funding announcements do not establish cash receipt or a vacancy.",
+      "source_ids": [
+        "EUROHPC"
+      ],
+      "status": "unresolved"
+    },
+    {
+      "id": "medium-term",
+      "title": "Medium-term returns and access checkpoint",
+      "next_review": "2027-03-31",
+      "cadence": "quarterly after the first checkpoint",
+      "question": "Are observed revenues, repayments and delivered capacity matching the assumptions recorded now?",
+      "inspect": "Retain the original financing, renewal, delivery and adoption assumptions; compare realised outcomes and explanation changes.",
+      "improves": "Cash performance and operating delivery improve without repeated financing extensions.",
+      "worsens": "Assumptions repeatedly roll forward while debt or delivery gaps widen.",
+      "limit": "This is an editorial review date, not a company promise, maturity date or prediction of crisis.",
+      "source_ids": [],
+      "status": "unresolved"
+    },
+    {
+      "id": "long-term",
+      "title": "Long-term productivity and career resilience checkpoint",
+      "next_review": "2027-09-30",
+      "cadence": "annual",
+      "question": "Have benefits spread beyond infrastructure spending, and do operations skills transfer across employers?",
+      "inspect": "Revised productivity, firm-level net benefits, capital replacement, default outcomes and employment paths. Continue later reviews into 2028-2031 when operating and maturity evidence becomes available.",
+      "improves": "Sustained useful output, affordable services and paid roles across a broader customer base.",
+      "worsens": "Benefits remain narrow while losses, replacement costs or weak hiring persist.",
+      "limit": "A useful technology and poor returns for some investors can coexist. This is a review horizon, not a forecast date.",
+      "source_ids": [],
+      "status": "unresolved"
+    }
+  ],
+  "schema_version": 1,
+  "government": {
+    "title": "US government roles in AI: regulation, procurement and investment",
+    "intro": "An active subject for scrutiny: identify the public body, its powers and any financial or procurement relationship relevant to each AI claim. Dated evidence does not mean that the underlying issue has ended.",
+    "method": "Assess statistical releases, forecasts, procurement decisions and investment announcements separately. A government interest can warrant scrutiny; it does not by itself establish that a statement is false or that every agency shares the same interest. No automatic source-tier change follows from this panel.",
+    "limit": "The records below establish what their dated sources report. They are not a complete current holdings register. Shares, preferred conversion rights, warrants, loans, guarantees, revenue sharing and proposals must remain distinct. The original roster is preserved in the dated archive below; its current status remains unverified.",
+    "coi": "An Anthropic model assisted the original panel. An OpenAI model prepared this update. A Google model reviewed an earlier draft; an Anthropic model reviewed the repairs. OpenAI, Anthropic and Alphabet are subjects of the calendar. AI review does not remove these relationships or establish complete coverage.",
+    "records": [
+      {
+        "title": "Intel: announced common-stock investment",
+        "claim": "Intel announced an agreement for the US government to purchase common stock. The announcement also specifies a conditional warrant and describes passive ownership.",
+        "source_date": "2025-08-22",
+        "source_ids": [
+          "INTEL"
+        ],
+        "current_status": "These are announcement terms. Current ownership, closing and later changes are not established by this record."
+      },
+      {
+        "title": "MP Materials: preferred equity and warrant",
+        "claim": "MP Materials announced a Department of Defense investment through convertible preferred stock and a warrant.",
+        "source_date": "2025-07-10",
+        "source_ids": [
+          "MP"
+        ],
+        "current_status": "Closing, current conversion, exercise and ownership balances are unverified here. Conversion and exercise rights must not be reported as an already-held common-share percentage."
+      },
+      {
+        "title": "Anthropic: procurement litigation",
+        "claim": "The California court order grants and denies different claims and provides for relief in a separate order.",
+        "source_date": "2026-08-27",
+        "source_ids": [
+          "ANTHROPIC_CASE"
+        ],
+        "current_status": "This order alone cannot establish the present scope of federal procurement restrictions. Check operative relief and any stay or appeal. The D.C. case identifiers in the litigation watch remain unverified leads; current exclusions remain unresolved here."
+      }
+    ]
+  }
+}

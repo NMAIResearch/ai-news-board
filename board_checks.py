@@ -390,6 +390,9 @@ def validate_harnesses(data):
 def main():
     """Run the public data gates without writing generated output."""
     root = pathlib.Path(__file__).resolve().parent
+    from watch_panel import load_watch, validate_watch_outputs
+    watch = load_watch(root / "watch_calendar.json")
+    validate_watch_outputs(watch, root)
     tier_map = json.loads((root / "tier_map.json").read_text(encoding="utf-8"))
     tier_count = validate_tier_contract(tier_map)
 

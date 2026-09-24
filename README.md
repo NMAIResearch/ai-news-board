@@ -21,7 +21,7 @@ Four commands, in this order.
     git add -A && git commit         # 3. hook blocks a stale or failing build
     git push origin main             # 4. live in about a minute
 
-⚠️ **Step 1 comes first, always.** A CI job pushes market data to origin twice a day. Refreshing
+Warning: **Step 1 comes first, always.** A CI job pushes market data to origin twice a day. Refreshing
 before pulling is what strands a good run: the data is right locally and never reaches the board.
 
 **If step 2 fails**, nothing is committed and `index.html` is untouched. Fix and re-run step 2.
@@ -33,10 +33,10 @@ step 2 rewrite it, rather than reasoning about which side is which:
     git add data/market.json data/market_history.json
     git rebase --continue
 
-⚠️ During a rebase `--theirs` means **your** commit and `--ours` means the upstream. The labels
+Warning: During a rebase `--theirs` means **your** commit and `--ours` means the upstream. The labels
 read backwards. That is why the line above is written out rather than left to judgement.
 
-⛔ **Never `git push --force`.** It deletes CI's market commits.
+Warning: **Never `git push --force`.** It deletes CI's market commits.
 
 **Check it went live:**
 
@@ -115,10 +115,13 @@ independently reviewed gold labels.
 
 ### The pre-commit hook
 
-`.git/hooks/pre-commit` refuses a commit whose board data fails the integrity check, whose
-`index.html` is older than `feed_items.json`, or which stages an editor lock file.
+The installed `.git/hooks/pre-commit` runs for staged changes to `feed_items.json`,
+`article_spans.json`, `article_evidence.json`, `archive.json` or `index.html`. It rejects
+editor lock files in that change set, calls `validate_board()` on working-tree data, and
+checks whether `index.html` is older than `feed_items.json`. It does not read staged file
+contents or run the full `board_checks.py` command.
 
-⚠️ **Git does not track hooks.** It protects this working copy only; a fresh clone has no gate.
+Warning: **Git does not track hooks.** It protects this working copy only; a fresh clone has no gate.
 Bypass with `git commit --no-verify` if you ever need to.
 
 ## Run
@@ -141,7 +144,7 @@ Each row retains the originating article headline, and the panel states that lin
 does not establish support for that headline.
 
 The step list below is what `refresh.sh` runs. Keep it for reading a single step in isolation
-or for re-running one after a failure. ⚠️ Running these by hand is how you end up publishing a
+or for re-running one after a failure. Warning: Running these by hand is how you end up publishing a
 `--plain` page or skipping `suggest_register_rows.py`, which is in the script but was missing
 from this list until 2026-08-07.
 
@@ -214,7 +217,7 @@ The pattern that works, and the reason `bd4ef19` and `aadda8b` exist:
     git merge origin/main                  # CI touches only data/, so this merges clean
     # then run the pipeline, so fetch_market.py rewrites data/market.json over the merge
 
-⚠️ Running the pipeline **before** merging is what strands a good refresh: the data is correct
+Warning: Running the pipeline **before** merging is what strands a good refresh: the data is correct
 locally and never reaches the board. On 2026-08-06 a full run sat unpushed at `ahead 2, behind
 4` while the live board served the 4 August feed.
 
@@ -326,7 +329,7 @@ four of which sat on that cap on 2026-07-31. OpenRouter rows are deduped to a ba
 Hugging Face rows are not. Such a ratio would move with the org list rather than with the
 world.
 
-⚠️ **The two dates differ in kind.** An OpenRouter date is a listing observed by a third party.
+Warning: **The two dates differ in kind.** An OpenRouter date is a listing observed by a third party.
 A Hugging Face `createdAt` is repo creation, which can sit either side of a public release.
 
 Moving pointers such as `~x-ai/grok-latest` are excluded: their date is when the alias was
@@ -496,3 +499,15 @@ The local model request disables thinking, requests the assessment schema, limit
 A pass remains incomplete when a source is unavailable, a document is unassessed, the declared work budget is exhausted or a notification is pending. The model-attempt cap remains six per pass. Fixing a timeout does not clear the existing queue or establish complete regulatory coverage. The status records identify manual-review work separately.
 
 A bounded local smoke test reproduced the original 60-second timeout and obtained a schema-valid, source-quoted response with the revised settings in 23.5 seconds for one cached document. This establishes one observed integration result, not alert accuracy or independent acceptance. No classification-quality baseline was run for this correction. OpenAI GPT-6 assisted the repair.
+
+## Watch calendar
+
+The Watch tab separates active questions from the retained dated archive. `watch_calendar.json` is the manually maintained source of published schedules, editorial checkpoints, source links and recorded outcomes. A daily news build does not update the check date or resolve an event. Missing or invalid watch data stops both the integrity check and the build.
+
+`python3 build.py` renders the page and deterministically regenerates `AI_OUTLOOK.ics` from that JSON. The export contains published dates only, as all-day events without alarms. It is a download, not a live calendar subscription. Editorial court checks and longer-term review dates are excluded. Inspect the linked source before relying on a schedule.
+
+Government records identify source dates and current-status limits separately. The earlier roster remains unchanged in the archive, with current verification withheld. No source-tier changes follow automatically from a government relationship.
+
+After rebuilding, run `python3 board_checks.py`. It compares both `AI_OUTLOOK.ics` and the complete marked Watch HTML with the current JSON and rejects missing, stale or duplicated output. The daily publisher runs this check after its build. Watch source changes and both generated outputs require a reviewed manual release; the daily publisher's feed-only allowlist is unchanged. The local Git hook does not enforce Watch parity, so an arbitrary manual commit is not covered by this check.
+
+`AI_OUTLOOK.ics -text` in `.gitattributes` preserves the generated calendar's exact bytes through Git. After an approved manual release, compare the live page and calendar bytes with the approved payload.
