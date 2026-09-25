@@ -27,6 +27,36 @@ LINE = "var(--border)"
 PAPER = "var(--bg-card)"
 SHADOW = "var(--shadow)"
 
+# Shared portfolio typography and header, matching the landing page (portfolio.css).
+# Colours stay in the theme variables above; this block changes type, header and corners only.
+LANDING_ALIGNMENT_CSS = """<style id="landing-alignment">
+:root{--sans:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--mono:var(--sans)}
+body{font-family:var(--sans);font-size:17px;line-height:1.65}
+.site-header{max-width:none;margin:0 20px;padding:24px 0;display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid var(--border)}
+.brand{color:var(--heading);font-size:1rem;font-weight:750;text-decoration:none;letter-spacing:.025em}
+.brand-subtitle{font-size:.8rem;color:var(--text-muted);margin-top:2px}
+.site-nav{display:flex;gap:25px;flex-wrap:wrap}
+.site-nav a{font-size:.9rem;color:var(--text-muted);text-decoration:none;padding:7px 0}
+.site-nav a[aria-current]{color:var(--accent);border-bottom:2px solid var(--accent)}
+.header-bar{position:static!important;margin-top:18px!important;border-bottom:0!important}
+.header-kicker{font-family:var(--sans)!important;font-size:.78rem!important;font-weight:700!important;letter-spacing:.12em!important;text-transform:uppercase;color:var(--accent)!important}
+.header-title{font-size:clamp(1.9rem,3.6vw,2.8rem)!important;line-height:1.12!important;letter-spacing:-.04em!important;font-weight:660!important;margin:6px 0 12px!important;color:var(--heading)!important}
+.header-copy{font-size:1.05rem!important;line-height:1.7!important;color:var(--text-muted)!important;max-width:66ch}
+.header-actions a.theme-toggle-btn[href]{display:none}
+.filter-chip,.nav-tab-btn,.theme-toggle-btn{border-radius:6px!important;font-family:var(--sans)!important}
+@media (max-width:640px){.site-header{flex-wrap:wrap;margin:0 16px;padding:18px 0}}
+</style>"""
+
+SITE_HEADER_HTML = """<header class="site-header"><div><a class="brand" href="https://nmairesearch.github.io/index.html">NM AI Research</a>
+<div class="brand-subtitle">Public evidence index</div></div>
+<nav aria-label="Main navigation" class="site-nav"><a href="https://nmairesearch.github.io/index.html#work">Research</a><a href="https://nmairesearch.github.io/sovereign-watch-case-study.html">SW case study</a><a href="https://nmairesearch.github.io/portfolio-map.html">Portfolio map</a></nav></header>
+"""
+
+# Follow the system colour scheme when no theme has been chosen, as the landing page does.
+THEME_INIT_NEW = ("if (t) { document.documentElement.setAttribute('data-theme', t); } "
+                  "else if (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) "
+                  "{ document.documentElement.setAttribute('data-theme', 'dark'); }")
+
 # distance tier (canonical house scale, from the Source Incentive Map + working
 # tracker): 1 = LEAST incentive to shade the claim ... 5 = the party selling the
 # thing the claim is about. Claim-relative. It allocates verification effort; it is
@@ -1947,12 +1977,11 @@ def main():
 (function(){{
   try {{
     var t = localStorage.getItem('nmai-theme');
-    if (t) {{ document.documentElement.setAttribute('data-theme', t); }}
+    {THEME_INIT_NEW}
   }} catch(e){{}}
 }})();
-</script>{style_block}</head>
-<body class="{'plainmode' if plain else ''}">
-<div class="wrap">
+</script>{style_block}{LANDING_ALIGNMENT_CSS}</head>
+<body class="{'plainmode' if plain else ''}">{SITE_HEADER_HTML}<div class="wrap">
   <div class="header-bar">
     <div>
       <div class="header-kicker">Live evidence monitor</div>
