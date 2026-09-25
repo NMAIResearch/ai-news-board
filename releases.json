@@ -1,12 +1,24 @@
 {
- "generated": "2026-09-24 05:31 UTC",
+ "generated": "2026-09-25 05:30 UTC",
  "window_days": 60,
  "counts": {
-  "total": 99,
-  "closed": 39,
+  "total": 100,
+  "closed": 40,
   "open_weights": 60
  },
  "releases": [
+  {
+   "lab": "Fireworks",
+   "model": "Fireworks: Ember-1",
+   "id": "fireworks/ember-1",
+   "date": "2026-09-24",
+   "url": "https://openrouter.ai/fireworks/ember-1",
+   "context_length": 1048576,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
   {
    "lab": "Z Ai",
    "model": "Z.ai: GLM 5.3 Prime",
@@ -889,7 +901,7 @@
    "id": "tencent/hy-mt2-30b-a3b",
    "date": "2026-08-20",
    "url": "https://openrouter.ai/tencent/hy-mt2-30b-a3b",
-   "context_length": 32768,
+   "context_length": 8192,
    "evidence": "open-weights",
    "evidence_note": "weights published at huggingface.co/tencent/Hy-MT2-30B-A3B; downloadable and hashable",
    "hf_id": "tencent/Hy-MT2-30B-A3B",
