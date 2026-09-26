@@ -1,12 +1,36 @@
 {
- "generated": "2026-09-25 05:30 UTC",
+ "generated": "2026-09-26 05:29 UTC",
  "window_days": 60,
  "counts": {
-  "total": 100,
-  "closed": 40,
-  "open_weights": 60
+  "total": 99,
+  "closed": 41,
+  "open_weights": 58
  },
  "releases": [
+  {
+   "lab": "Typesafe",
+   "model": "TypeSafe: Jev Router",
+   "id": "typesafe/jev-router",
+   "date": "2026-09-25",
+   "url": "https://openrouter.ai/typesafe/jev-router",
+   "context_length": 1000000,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Perceptron",
+   "model": "Perceptron: Perceptron Mk1.5",
+   "id": "perceptron/perceptron-mk1.5",
+   "date": "2026-09-25",
+   "url": "https://openrouter.ai/perceptron/perceptron-mk1.5",
+   "context_length": 36864,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
   {
    "lab": "Fireworks",
    "model": "Fireworks: Ember-1",
@@ -193,7 +217,7 @@
    "id": "xiaomi/mimo-v2.6-pro",
    "date": "2026-09-21",
    "url": "https://openrouter.ai/xiaomi/mimo-v2.6-pro",
-   "context_length": 1048576,
+   "context_length": 1050000,
    "evidence": "open-weights",
    "evidence_note": "weights published at huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL; downloadable and hashable",
    "hf_id": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
@@ -449,30 +473,6 @@
    "evidence": "closed",
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Nex Agi",
-   "model": "Nex AGI: Nex-N2.5-Mini (free)",
-   "id": "nex-agi/nex-n2.5-mini",
-   "date": "2026-09-08",
-   "url": "https://openrouter.ai/nex-agi/nex-n2.5-mini",
-   "context_length": 262144,
-   "evidence": "open-weights",
-   "evidence_note": "weights published at huggingface.co/nex-agi/Nex-N2.5-mini; downloadable and hashable",
-   "hf_id": "nex-agi/Nex-N2.5-mini",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Nex Agi",
-   "model": "Nex AGI: Nex-N2.5-Pro (free)",
-   "id": "nex-agi/nex-n2.5-pro",
-   "date": "2026-09-08",
-   "url": "https://openrouter.ai/nex-agi/nex-n2.5-pro",
-   "context_length": 262144,
-   "evidence": "open-weights",
-   "evidence_note": "weights published at huggingface.co/nex-agi/Nex-N2.5-Pro; downloadable and hashable",
-   "hf_id": "nex-agi/Nex-N2.5-Pro",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
@@ -1105,7 +1105,7 @@
    "id": "nvidia/nemotron-3.5-lightning",
    "date": "2026-08-11",
    "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning",
-   "context_length": 262144,
+   "context_length": 1000000,
    "evidence": "open-weights",
    "evidence_note": "weights published at huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16; downloadable and hashable",
    "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
@@ -1189,22 +1189,10 @@
    "id": "thinkingmachines/inkling-small",
    "date": "2026-07-30",
    "url": "https://openrouter.ai/thinkingmachines/inkling-small",
-   "context_length": 1048576,
+   "context_length": 524288,
    "evidence": "open-weights",
    "evidence_note": "weights published at huggingface.co/thinkingmachines/Inkling-Small; downloadable and hashable",
    "hf_id": "thinkingmachines/Inkling-Small",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Alibaba (Qwen)",
-   "model": "Qwen: Qwen3.7 Flash",
-   "id": "qwen/qwen3.7-flash",
-   "date": "2026-07-27",
-   "url": "https://openrouter.ai/qwen/qwen3.7-flash",
-   "context_length": 1000000,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   }
  ],
