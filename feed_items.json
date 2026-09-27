@@ -1,5 +1,5 @@
 {
- "fetched": "2026-09-26 05:20 UTC",
+ "fetched": "2026-09-27 05:20 UTC",
  "items": [
   {
    "entity": "Nscale",
@@ -17,18 +17,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 5
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "1c8737c6fa811f07c25706db18748471e2b6efa93b0d4bdf57d0008ab49f957e",
    "evidence_hash": "fdd698f7617642810364335a970364c4c933b015a65652eacca26c8fa0a5c4b7",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Nscale",
@@ -66,18 +66,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 4
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "232d81aa716e762fcf231e8ad01e33d3ccc7db86e3eb2f263b460276de9b7e09",
    "evidence_hash": "1c54a32cff16760db00afe03c9a067aae13a902588c3bf963e15113c566d8a94",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Anthropic",
@@ -115,18 +115,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 10
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "05c292f05b6d6493a110ca5f0dc0055c27454391ff2cd1b8a66b1f5196b025d0",
    "evidence_hash": "13b51923178ef214220363e0fbec8f5144e8680501e815e1031b409f73891773",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Meta",
@@ -145,6 +145,149 @@
    "entity_basis": "headline"
   },
   {
+   "entity": "Google",
+   "headline": "Google tests buying from Walmart-owned Flipkart through Gemini and AI Mode in India",
+   "date": "Sun, 27 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/09/26/google-tests-buying-from-walmart-owned-flipkart-through-gemini-and-ai-mode-in-india/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 1
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "c5374903b0c900c4bb190446ae57cb58800f5e68614b5dd292fd9ab3a1b923af",
+   "evidence_hash": "64ea10975ef41e4007fadb6e9672f7e5730efe9f53a8eea61dda83f514ed7788",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Google",
+     "count": 13
+    },
+    {
+     "name": "Anthropic",
+     "count": 2
+    },
+    {
+     "name": "Amazon",
+     "count": 2
+    },
+    {
+     "name": "OpenAI",
+     "count": 1
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Google",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "Insurers claim AI is already increasing healthcare costs",
+   "date": "Sat, 26 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 1
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "e5610d98d67fa89d6f40ab63d4d676c4754a92cd7e07a765abd3164115caaf34",
+   "evidence_hash": "102a6725f5425cf64c9a649c9cc7919f5929b4f6318fcc75f8fd3b6a1de8affd",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 1
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Blue Cross Blue Shield",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "I created an interactive digital avatar of myself — and you can talk to it",
+   "date": "Sat, 26 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/09/26/i-created-an-interactive-digital-avatar-of-myself-and-you-can-talk-to-it/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 1
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "8b4c8e05cbfc297ca0b4ac43ff5189f446dd805134db293d903b05e1abf38054",
+   "evidence_hash": "14160442291ad9ee93497f5edb9fd7ac649d6023d3a976851e1cdd6e51ace8a8",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 1
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Synthesia",
+   "entity_basis": "unresolved"
+  },
+  {
    "entity": "Meta",
    "headline": "At Meta Connect, the company’s smart glasses were everywhere",
    "date": "Sat, 26 Sep 2026",
@@ -160,18 +303,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 2
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "d063bb458b7e9d07814100cd419c912dfdc5311df6e891a373e9fa99dcb55b17",
    "evidence_hash": "ff3ad868be1757221c61e33e5238ee2fecd4b5b3fba2baec5f8c1f07d710f118",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Meta",
@@ -205,18 +348,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 7
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "f5dbaa77d5f738fd7e2c6cac02ec7e49dcee32b942d5c4cb10724e895b9367bb",
    "evidence_hash": "44e8ca73e3c5393a0aedd2017ab90941af586ae883d8e51dabdfba94a0ab2b7a",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -254,18 +397,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 3997 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 3997 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "3b4d885b97a539e108eb639c9e3ecddc1fa2c5a581d6596b3d15838ad86a247c",
    "evidence_hash": "a3aba9b6645bfe469219180ef65f740fec64fc3745959c1135e87f0a2242427b",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -292,17 +435,17 @@
    "entity_basis": "headline"
   },
   {
-   "entity": "Meta",
-   "headline": "Meta opens early access program for new Muse features",
-   "date": "Fri, 25 Sep 2026",
+   "entity": "OpenAI",
+   "headline": "OpenAI pauses training of its ‘most capable models’",
+   "date": "2026-09-26T12:34",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "n/a",
    "reviewed": false,
    "sources": [
     {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/09/25/meta-opens-early-access-program-for-new-muse-features/",
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
      "source_type": "trade-press",
      "source_tier": 3
     }
@@ -313,90 +456,53 @@
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 2262 chars of article text",
-   "content_hash": "8fda1cf18751ede09473a96ce89ce899427a959e1ead0637bfdb8a684833d73a",
-   "evidence_hash": "f7003097781b2f4e38fe09c427318ac2a7c23f773abe2f32ee65ed1e16e345f9",
+   "label_evidence": "no figure in 2999 chars of article text",
+   "content_hash": "b276af797581ba896f3a50fc212f3bc9b8d9f31192b8ced71dab0a2943e2abe4",
+   "evidence_hash": "72227fd1caba3370bb9b1dc5a82a92ef64aa00249dca7c5f9188f1ea93c47021",
    "label_schema_version": 2,
    "auto_labelled": true,
    "label_source": "machine",
    "mentions": [
     {
-     "name": "Meta",
-     "count": 14
-    }
-   ],
-   "publisher_topic": "Meta",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Anthropic",
-   "headline": "Anthropic to pay Akamai $11.6 billion over seven years in cloud deal",
-   "date": "Fri, 25 Sep 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 9
-   },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "25a98a9752c1ce14b15067e508d3bcc5df9af4f9c6ac3661d2d86edcdb29342b",
-   "evidence_hash": "630fefdba4ae81690d25f2c3386aed88cd6244bc3225fbb3a80532ddd7f907fe",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Anthropic",
-     "count": 13
+     "name": "OpenAI",
+     "count": 9
     },
     {
-     "name": "Meta",
+     "name": "Apple",
      "count": 3
     },
     {
-     "name": "OpenAI",
+     "name": "Google DeepMind",
      "count": 2
     },
     {
      "name": "Google",
-     "count": 1
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
+     "count": 2
     },
     {
      "name": "Amazon",
      "count": 1
+    },
+    {
+     "name": "Hugging Face",
+     "count": 1
     }
    ],
-   "publisher_topic": "Akamai",
+   "publisher_topic": "OpenAI",
    "entity_basis": "headline"
   },
   {
-   "entity": "TechCrunch",
-   "headline": "Mark Wahlberg is coming to TechCrunch Disrupt 2026, and he wants to talk about your work, not his",
-   "date": "Fri, 25 Sep 2026",
+   "entity": "",
+   "headline": "Can Cloudflare CEO Matthew Prince save the web from AI?",
+   "date": "2026-09-25T18:13",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "?",
    "reviewed": false,
    "sources": [
     {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/09/25/mark-wahlberg-is-coming-to-techcrunch-disrupt-2026/",
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/podcast/1000344/cloudflare-matthew-prince-google-zero-ai-web-advertising",
      "source_type": "trade-press",
      "source_tier": 3
     }
@@ -405,18 +511,18 @@
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
-    "total": 2
+    "total": 40
    },
    "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "588c4427383778c34c36f94580c2196e8bf186dcacdba77b6f49ab8b8806b9e2",
-   "evidence_hash": "6b4c4dd2f97af5d3ef9cc24d9f4d39a74de74e8150d171a000bc77e5ab6493b0",
+   "content_hash": "ce4c91e0b69dadb8e20c48856d5e159178c4138b20d613f9c466a15e696e8323",
+   "evidence_hash": "0b06f988bbb9b9ff93221ae64d8aaac3be78d082e7ff324e0fa59f644195b3f0",
    "label_schema_version": 2,
    "auto_labelled": true,
    "label_source": "machine",
    "mentions": [
     {
-     "name": "Meta",
-     "count": 3
+     "name": "Google",
+     "count": 4
     },
     {
      "name": "Anthropic",
@@ -425,10 +531,18 @@
     {
      "name": "OpenAI",
      "count": 1
+    },
+    {
+     "name": "Nvidia",
+     "count": 1
+    },
+    {
+     "name": "Apple",
+     "count": 1
     }
    ],
-   "publisher_topic": "TechCrunch Disrupt",
-   "entity_basis": "headline"
+   "publisher_topic": "Decoder",
+   "entity_basis": "unresolved"
   },
   {
    "entity": "Meta",
@@ -446,18 +560,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 3504 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 3504 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "2da1ae88cb27338ae284a13c21363d3030bfd610684ce7fcde7475198956ab57",
    "evidence_hash": "292aa5a143f2926574e1be7bf40a7a45fb3f35e0e0f4046c929a80262eef26f8",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Meta",
@@ -499,18 +613,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 3431 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 3431 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "6b62dd7f07a01e9280fde14755cdeb65b3245a2c9fc32a6375455286447b9599",
    "evidence_hash": "e87ba9c1275c9ebe84003369b73dd7a6f98998c75ad758ad0e8123308c343685",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Apple",
@@ -548,18 +662,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 7613 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 7613 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "617f2a1dd9c1182b2e3067f4427aee1e51db854d62eaf14aa5e89d5134ee4bf4",
    "evidence_hash": "2ba6d0f78f62169e7d3e24e69e1b07c4d7e8bf5c69fecf9197050a3421372d88",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -605,18 +719,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 19
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "334444b4a394775b2a407a86155fa67fea554adf1cb23846261a1daf4a83e8ca",
    "evidence_hash": "cf6dc0bb00d29a07ebf806afa40abb53f5ec50c61c985a5024762fa4efb0dae5",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Apple",
@@ -650,18 +764,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 1
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "a4740e598c7d5021585cdb230fbf8b5aca121d2f22d7b0edd8d4bfd740db27c0",
    "evidence_hash": "55517152c989a055b91c35458f698f80de30a392327c96ec6d2cace29a3cc5dc",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Microsoft",
@@ -792,104 +906,6 @@
    ],
    "publisher_topic": "Environment",
    "entity_basis": "headline"
-  },
-  {
-   "entity": "Meta",
-   "headline": "Meta is going to let you build games with AI right on your phone",
-   "date": "2026-09-24T13:52",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/games/999972/meta-horizon-create-studio-ai-games",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 4
-   },
-   "label_schema_version": 2,
-   "content_hash": "ca0679dd4b96ab815127a84fa1d75f79eab5df0e7522878faf7c29563529e0da",
-   "evidence_hash": "eff9cecb6d2ca17364a06139858e204e9bcf8f923a104436437b9ec558f608e4",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 24
-    },
-    {
-     "name": "Google DeepMind",
-     "count": 2
-    },
-    {
-     "name": "Google",
-     "count": 2
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Gaming",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Meta",
-   "headline": "Muse will apparently let you download its entire filesystem",
-   "date": "2026-09-24T18:06",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/1000222/meta-muse-ai-filesystem",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 5035 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "3893e91f1ebcf603a03b4b702e1ae27b77e61c9baa4cd422ae2b8da93d5637fc",
-   "evidence_hash": "ab5a0783f600cbb92478c9512c1a9777b6b9a3546eea96b71003002063e39a2b",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 18
-    },
-    {
-     "name": "Google DeepMind",
-     "count": 2
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Google",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Meta",
-   "entity_basis": "tag"
   },
   {
    "entity": "",
@@ -1061,7 +1077,7 @@
   },
   {
    "entity": "Anthropic",
-   "headline": "Court rules Trump can blacklist Anthropic for refusing to enable Claude features",
+   "headline": "Court rules Pentagon can blacklist Anthropic for refusing to enable Claude features",
    "date": "Fri, 25 Sep 2026",
    "topic": "",
    "claim_type": "unclassified",
@@ -1075,18 +1091,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 6
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "c841ed544a932e70625b3a01bc1cc063dd9f4cf575f95d227d4bce5c6372e117",
    "evidence_hash": "31e4aa70c4af18f4e9d4022f5ac969c89f342e6d009a0c60ed706b4f5d63f449",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Anthropic",
@@ -1116,18 +1132,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 3
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "a1affb1648585d99f6dfd567807ae8c00dc7be7988b0824052a96a75d49dd9a9",
    "evidence_hash": "ce60e85dfbbf1458031b8239c2a7888329be44d058cbd9856cfec016630fb252",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "xAI",
@@ -1157,18 +1173,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 4
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "0e87a12c04b0758f8ef164974d47ffd613080d3cd7089e75e7c1648f5c39d282",
    "evidence_hash": "43a6b8c95260792f8165547aaa36740a882a600e78e219c9aaa7053d2f098c65",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "unresolved"
@@ -1189,18 +1205,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 5
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "9cb06889cab1c1f67807910794877100cbffdb98cfa73d4b34fff5f8361c36a1",
    "evidence_hash": "1028c97667cebe5d3dd600c909653f8d3130b302d1c4137170a2aae2d1781dfd",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Microsoft",
@@ -1230,21 +1246,348 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 12
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "d42392539d97e174937f4f22f61e43ed06748aeee15d8bd03e92a6feef151dae",
    "evidence_hash": "bbd36c6bb1b3f76ff921e4f2cb46412613d88625cbfc78b5ecde86ecd36224fb",
+   "label_source": "machine",
+   "rating": "ok",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "Google DeepMind",
+   "headline": "Introducing Gemini 3.8 Live with Live Avatar",
+   "date": "Thu, 24 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "trusted",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 2
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "89b41e43ee8b2825a5fddf7ab47641c7204a7d59f26c97e96945280b0733cf42",
+   "evidence_hash": "68bd542bb91f032e7882a3dd697f4efcb287ce423bc7512eb98626859075705d",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "None",
+   "entity_basis": "product:Gemini"
+  },
+  {
+   "entity": "Google DeepMind",
+   "headline": "Advancing Private AI Compute with secure, server-side memory",
+   "date": "Wed, 23 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "trusted",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 53
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "6d9b6caf9312f2f32ce1d43df82e8b8ef276a1defcd0ac87ed04eeb950759ffc",
+   "evidence_hash": "105391b26c7e2842bd3b6784b1826356633e69945ed2363f7c38da6d818876e4",
    "label_schema_version": 2,
    "auto_labelled": true,
    "label_source": "machine",
    "mentions": [],
    "publisher_topic": "",
-   "entity_basis": "unresolved"
+   "entity_basis": "site"
+  },
+  {
+   "entity": "Google DeepMind",
+   "headline": "Gemini 3.8 text-to-speech says hello",
+   "date": "Wed, 23 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "trusted",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 9
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "e683c4c2ee619d2a4d2413696bfae1982901c13eb4a5e41371a8795003ba1a7b",
+   "evidence_hash": "c4bb3fa52c028e0f81446cc01b7c5faa475c1fe8dc2698361a89109a39fdb9ef",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "None",
+   "entity_basis": "product:Gemini"
+  },
+  {
+   "entity": "Google DeepMind",
+   "headline": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
+   "date": "Tue, 15 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "trusted",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 8
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "8666291071f0e0d5794a1a3dbf89bd0ef16fd1a7830d3ae40f195dfce2844cc0",
+   "evidence_hash": "db6b501c4ac7198424b5b42d8751115bde895a60cb48b9dc39ed90ef0bffd180",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 2
+    },
+    {
+     "name": "Salesforce",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "None",
+   "entity_basis": "product:Gemini"
+  },
+  {
+   "entity": "Google DeepMind",
+   "headline": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
+   "date": "Tue, 08 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "trusted",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 23 chars of article text",
+   "content_hash": "4ad241451f7bcdd9758ec989bfd25ca90b11179f8401fe38876cbf455b678c15",
+   "evidence_hash": "335f3c0ff85d278689e95678fe8c6f0edcce35c228af69b78ffe4395572be820",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "site"
+  },
+  {
+   "entity": "Google DeepMind",
+   "headline": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
+   "date": "Thu, 03 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "trusted",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 27
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "107716a93c4247921b351b51908b8f7b8853d3576130d6572f8565b4befde7ae",
+   "evidence_hash": "4e55574db1967bfbe64bfbdf562b9178917143876ae6a834cf6b014fc71a7b5c",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "None",
+   "entity_basis": "site"
+  },
+  {
+   "entity": "Google DeepMind",
+   "headline": "Proactive cyber defense for governments and enterprises",
+   "date": "Wed, 02 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "trusted",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 3
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "1781def81d3844306f403bdd707cefd8026b90d4800d110bf29ab6c68259df7f",
+   "evidence_hash": "757e8740f13a26906daecfc186f34ddbbb8b24419a3f43a8aacc4bb7663c1491",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "None",
+   "entity_basis": "site"
+  },
+  {
+   "entity": "Google DeepMind",
+   "headline": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber",
+   "date": "Wed, 02 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "trusted",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 19
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "470efbaafa0a90d1d9a5a78c756cf4f222eeb4b5bd2116a634996e6ac3afc310",
+   "evidence_hash": "326696566ccfe534b7d6b5f00642f3e201ad0c9d25251e19db7cfd5a8aec8aca",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "None",
+   "entity_basis": "product:Gemini"
+  },
+  {
+   "entity": "Google DeepMind",
+   "headline": "Introducing agentic video understanding with Gemini",
+   "date": "Tue, 01 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "trusted",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 8
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "80235352ca46c21efc8cea24eda38d3cb0d23d3ed9af2ff2f2c7d48be48c1bcb",
+   "evidence_hash": "6cc3bb2fbd5022c4493d3df4c928e6d7dcb71491d37b012570a005030456b92c",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "None",
+   "entity_basis": "product:Gemini"
   },
   {
    "entity": "OpenAI",
@@ -1262,18 +1605,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 77
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "a7d180ccf94dda2102085a41af8cae5b138347ae3f6bc12833aa6b87b49b3338",
    "evidence_hash": "bf995402ad7acd9601f7aec66034c8d21e3081770ba47d7863394f729e215b3f",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Hugging Face",
@@ -1293,7 +1636,146 @@
   },
   {
    "entity": "OpenAI",
-   "headline": "OpenAI agent hacked Australian government website, PM says",
+   "headline": "OpenAI Codex agents go rogue and consumes USD 78,000 without authorization",
+   "date": "Sat, 26 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "news.ycombinator.com",
+     "url": "https://news.ycombinator.com/item?id=49861047",
+     "source_type": "aggregator",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 43
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "dcb0307334148f71759cfdc3ba7cc59815649e19102dbd004d18f8a6aaf9c028",
+   "evidence_hash": "36bca5da880031d7cf5330649e592f93cc7c845545e9bffb53e7db4798604d33",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 14
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "OpenAI",
+   "headline": "OpenAI bots meddled with multiple US Government agency sites",
+   "date": "2026-09-25",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "bbc.com",
+     "url": "https://www.bbc.com/news/articles/cw62jje658dlo",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 2
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "7715403fa635f3f87e518718d1ed84bf5958d7448470758772265b0e30efefdd",
+   "evidence_hash": "b7daf6ee0018b7e0bf9f0c1ed724010a629b09c938af0eb6b44c4f0c29610d49",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 21
+    },
+    {
+     "name": "Hugging Face",
+     "count": 4
+    },
+    {
+     "name": "Anthropic",
+     "count": 3
+    },
+    {
+     "name": "SEC",
+     "count": 3
+    },
+    {
+     "name": "Google",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "Understanding the Impact of LLM Watermarking on AI Agent Behavior",
+   "date": "2026-09-17",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "lasso.security",
+     "url": "https://www.lasso.security/blog/the-provenance-tax-understanding-the-impact-of-llm-watermarking-on-ai-agent-behavior",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 58
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "d66ea8366888e0bd0f6cd469391572b1fa18c7ec90e00b851b51622cb5bc4ece",
+   "evidence_hash": "a067a1ba783c10b2a2dfc9fd86cc50c87bd1a09caf20bb42f4f47e8ec43d0354",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Anthropic",
+     "count": 5
+    },
+    {
+     "name": "Google DeepMind",
+     "count": 2
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Hugging Face",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "Mistral",
+   "headline": "CEO of Mistral: AI is software. It can be controlled",
    "date": "2026-09-24",
    "topic": "",
    "claim_type": "unclassified",
@@ -1301,90 +1783,101 @@
    "reviewed": false,
    "sources": [
     {
-     "name": "bbc.com",
-     "url": "https://www.bbc.com/news/live/cvgl73pxgndwt",
+     "name": "lemonde.fr",
+     "url": "https://www.lemonde.fr/en/economy/article/2026/09/24/arthur-mensch-ceo-of-french-start-up-mistral-ai-ai-is-software-it-can-be-controlled_6757890_19.html",
      "source_type": "other",
      "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 1565 chars of article text",
+   "rating": "ok",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
+   "label_evidence": "no figure in 231 chars of article text",
+   "content_hash": "ce27cfcd736c655f5342968289b6c1b09ae0da5c8e158ff3cde07b44c7676f90",
+   "evidence_hash": "932a61e3f4814fb1e05ada5791bbbd91a71ea68e24a2267e0aca852e10b2e8c5",
    "label_schema_version": 2,
-   "content_hash": "1da59c06c55f398049eda3ea954352fe017492f7db5b7b5e37f1a6e91edaea5e",
-   "evidence_hash": "1cc890042a6c9e85a9456e8c4c57606efd0d36a910c9c40a2ee7296540559c41",
+   "auto_labelled": true,
    "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 1
-    }
-   ],
+   "mentions": [],
    "publisher_topic": "",
    "entity_basis": "headline"
   },
   {
-   "entity": "OpenAI",
-   "headline": "Australia says OpenAI agent hacked into government website",
-   "date": "2026-09-24",
+   "entity": "",
+   "headline": "One Month Without AI",
+   "date": "2026-09-25",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "?",
    "reviewed": false,
    "sources": [
     {
-     "name": "channelnewsasia.com",
-     "url": "https://www.channelnewsasia.com/world/australia-openai-agent-breach-government-portal-6406411",
+     "name": "blog.bustikiller.com",
+     "url": "https://blog.bustikiller.com/2026/09/25/one-month-without-ai.html",
      "source_type": "other",
      "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "rating": "ok",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
-    "total": 2
+    "total": 12
    },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "079fd699cfef99a0345b9f701ce76aa712c5bb0adf1b1fbcca19b6eee1922945",
+   "evidence_hash": "92ee7d9391c1bc0c2b7d8c76cb6e3a302f1272fa0e80fdbc1260a074d6ef0642",
    "label_schema_version": 2,
-   "content_hash": "bdb819e54dea82e57238a8c6e203b362b1c236c735b8d05ccdb34f07858c0c3b",
-   "evidence_hash": "572fb9ddf8bf9d1598f680980351e66914dc3d2e05ae16a92afa330504109876",
+   "auto_labelled": true,
    "label_source": "machine",
-   "rating": "ok",
    "mentions": [
     {
-     "name": "OpenAI",
-     "count": 18
-    },
-    {
      "name": "Google",
-     "count": 3
-    },
-    {
-     "name": "Anthropic",
-     "count": 2
-    },
-    {
-     "name": "Meta",
-     "count": 2
-    },
-    {
-     "name": "Hugging Face",
      "count": 2
     }
    ],
-   "publisher_topic": "Australia",
-   "entity_basis": "headline"
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
   },
   {
    "entity": "OpenAI",
-   "headline": "OpenAI agents hacked Australian Medicare system",
-   "date": "Wed, 23 Sep 2026",
+   "headline": "OpenAI’s Systems Went Rogue and Meddled With U.S. Government Websites",
+   "date": "2026-09-25",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "nytimes.com",
+     "url": "https://www.nytimes.com/2026/09/25/technology/openais-ai-us-government-websites.html",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "article not fetched (http-403)",
+   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "FTC",
+   "headline": "FTC chair suggests AI developers should be liable for conduct of agents",
+   "date": "Fri, 25 Sep 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "?",
@@ -1392,62 +1885,25 @@
    "sources": [
     {
      "name": "reuters.com",
-     "url": "https://www.reuters.com/world/asia-pacific/australia-pm-albanese-says-openai-breached-medicare-sydney-morning-herald-2026-09-23/",
+     "url": "https://www.reuters.com/business/ftc-chair-pushes-back-treating-ai-agents-independent-actors-2026-09-25/",
      "source_type": "trade-press",
      "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "label_evidence": "article not fetched (robots-disallowed)",
+   "rating": "trusted",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_schema_version": 2,
+   "label_evidence": "article not fetched (robots-disallowed)",
    "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
    "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+   "label_schema_version": 2,
+   "auto_labelled": true,
    "label_source": "machine",
-   "rating": "trusted",
    "mentions": [],
    "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "OpenAI breaches Medicare, Albanese reveals",
-   "date": "2026-09-23",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "smh.com.au",
-     "url": "https://www.smh.com.au/politics/federal/openai-breaches-medicare-albanese-reveals-20260924-p6100u.html",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 3
-   },
-   "label_schema_version": 2,
-   "content_hash": "c53cce209c6916255aa03cb3992961a6cb7e1a4112e8ac86b7013958265f95d5",
-   "evidence_hash": "a064d1429688b8be25853e03b7e9ce1fd5ed43abd9575d454a5a726074999323",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 19
-    }
-   ],
-   "publisher_topic": "Anthony Albanese",
    "entity_basis": "headline"
   },
   {
@@ -1466,176 +1922,21 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 28 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 28 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "356a7d978db1d316b88da4b53464c3c2d349d9f6efdb1a437b5a21bfb5009200",
    "evidence_hash": "9dbf663cdbc39670a9b885603ec437e77f61b53ea35f546151214f0833f4e57b",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Meta",
-   "headline": "Meta's Muse appears to use an OpenAI model labeled muse-special",
-   "date": "2026-09-25",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "mouse.dev",
-     "url": "https://mouse.dev/blog/muse-special/",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 6
-   },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "3e34095548efd7171c2b23caa0f8ec10655c5e0b9b9a0f4bbd1c1f0a7f9af1ea",
-   "evidence_hash": "64bc0ffd98b4af48de52b4835befc1072c70b819ad27b5ca233dc1245843193c",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 12
-    },
-    {
-     "name": "Meta",
-     "count": 11
-    },
-    {
-     "name": "Anthropic",
-     "count": 9
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "Show HN: Doom or Bloom, map your AI worldview",
-   "date": "Fri, 25 Sep 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "doom-or-bloom.com",
-     "url": "https://www.doom-or-bloom.com",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_evidence": "no figure in 1306 chars of article text",
-   "content_hash": "2771156fbd91a5442752cb3328d484d99748a1983c5a2277a5af7aa98b5d485b",
-   "evidence_hash": "a7336debb518c7643ad5bf4341e89a59e3f6cd3ca76f2a8b4be528834288ec1e",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 4
-    },
-    {
-     "name": "OpenAI",
-     "count": 2
-    },
-    {
-     "name": "Nvidia",
-     "count": 2
-    },
-    {
-     "name": "xAI",
-     "count": 2
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Google DeepMind",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Anthropic",
-   "headline": "U.S. appeals court upholds designation of Anthropic as supply chain risk",
-   "date": "2026-09-25",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "cnbc.com",
-     "url": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 3
-   },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "fe0ccab31c32c8397826b0d26a14c9ed5fde34018f365520e1368289025400d4",
-   "evidence_hash": "393008c6d9eaf4c64779a4c3c28f470f53908ce5b34ff69ad14ee5ff0121a28e",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Anthropic",
-     "count": 27
-    },
-    {
-     "name": "OpenAI",
-     "count": 3
-    },
-    {
-     "name": "Meta",
-     "count": 2
-    },
-    {
-     "name": "Hugging Face",
-     "count": 2
-    },
-    {
-     "name": "Google",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "cnbc",
-   "entity_basis": "headline"
   },
   {
    "entity": "NIST",
@@ -1780,43 +2081,6 @@
    "label_schema_version": 2,
    "content_hash": "776f0d62c645952cba8092aef68c57ad4f3ba18f01f2a7940abdd5a41ae54640",
    "evidence_hash": "b86ad9305faafca1c2a8509a989f431c2d5a055a09603683c46cc57d2d653331",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "NIST",
-   "headline": "NIST Researchers Develop Photonic Chip Packaging That Can Withstand Extreme Environments",
-   "date": "Mon, 30 Mar 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "nist.gov",
-     "url": "https://www.nist.gov/news-events/news/2026/03/nist-researchers-develop-photonic-chip-packaging-can-withstand-extreme",
-     "source_type": "primary-record",
-     "source_tier": 1
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 6989 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "6b7e27fe38a8211dac4bbe98cef4b797f175db5d19d7bdabd1cb582bc849b1b8",
-   "evidence_hash": "ed9fba685292221069444233fc13a16b2fd703dc01afa45d89b293a6ee643bdc",
    "label_source": "machine",
    "rating": "ok",
    "mentions": [
@@ -2107,18 +2371,18 @@
      "source_tier": 2
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 1234 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 1234 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "26cd2d652590934e0cfe94cbda806295fee1253c6ba6aee9612e74c55fc2e263",
    "evidence_hash": "bad08f6f6da76e3e64d5fcd9eb9c786e023aff40aed4801b96bc25b031e4f8ce",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -2148,18 +2412,18 @@
      "source_tier": 2
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 990 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 990 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "e2a4afd6342e543f0cde5dc437ce5e5ef9a8dda45b0827f61f8ad3680deea344",
    "evidence_hash": "6e40f77293a2d726373e936bde50d27bf4ee9b2f01ee89aa289aa80eccb6591f",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "unresolved"
@@ -2594,18 +2858,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 4
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "82a474e2234be1c8373b085f937ec7e0313d51da0984d3a09d5749d7bb345164",
    "evidence_hash": "bf6186c3d7bfa3285b5e5b3014cca8e7bc6713eb6292713ad510edf375a38ba8",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Meta",
