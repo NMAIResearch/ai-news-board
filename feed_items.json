@@ -1,5 +1,5 @@
 {
- "fetched": "2026-09-27 05:20 UTC",
+ "fetched": "2026-09-28 05:20 UTC",
  "items": [
   {
    "entity": "Nscale",
@@ -100,9 +100,99 @@
    "entity_basis": "headline"
   },
   {
-   "entity": "TechCrunch",
-   "headline": "Affected by layoffs? Don’t miss this $75 deal for your TechCrunch Disrupt 2026 Expo+ Pass",
-   "date": "Fri, 25 Sep 2026",
+   "entity": "Anthropic",
+   "headline": "Anthropic’s CEO is about to have dinner with President Trump",
+   "date": "Sun, 27 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/09/27/anthropics-ceo-is-about-to-have-dinner-with-president-trump/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 1770 chars of article text",
+   "content_hash": "9f25d5bc1773f5029ed91c5902152b13456f9dccc18166680713346d853244bd",
+   "evidence_hash": "69246aa42b09daa75159cbc543fe8669619d1caceeff72e4d271739d97cd865d",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Anthropic",
+     "count": 14
+    },
+    {
+     "name": "Meta",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "Anthropic",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Meta",
+   "headline": "Can Muse overcome Meta’s trust issues?",
+   "date": "Sun, 27 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/09/27/can-muse-overcome-metas-trust-issues/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 8743 chars of article text",
+   "content_hash": "ac1725bccb80890173e08650149a7e03c6e46b889d311390216e3583fce78809",
+   "evidence_hash": "8dbffef9e6a75c7b31498942fb7f1525e6d8e08aa14b721b3ee7bb47efff644e",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 27
+    },
+    {
+     "name": "OpenAI",
+     "count": 4
+    },
+    {
+     "name": "Anthropic",
+     "count": 4
+    },
+    {
+     "name": "Apple",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "Equity podcast",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Anthropic",
+   "headline": "Anthropic’s Dario Amodei gets the SNL treatment",
+   "date": "Sun, 27 Sep 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "?",
@@ -110,38 +200,42 @@
    "sources": [
     {
      "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/09/25/disrupt-2026-layoff-expo-plus-passes-available-for-75-dollars/",
+     "url": "https://techcrunch.com/2026/09/27/anthropics-dario-amodei-gets-the-snl-treatment/",
      "source_type": "trade-press",
      "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "rating": "ok",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
-    "total": 10
+    "total": 1
    },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "f3b13cdbd5b8779b8c27061050d3aa4bf7f576cdc152181e9d61be5a7fe38de2",
+   "evidence_hash": "d85fd4ed37844e9cdc19fdb0db03b011d1c30c2fa13c424dfd9f379ed3a1ff78",
    "label_schema_version": 2,
-   "content_hash": "05c292f05b6d6493a110ca5f0dc0055c27454391ff2cd1b8a66b1f5196b025d0",
-   "evidence_hash": "13b51923178ef214220363e0fbec8f5144e8680501e815e1031b409f73891773",
+   "auto_labelled": true,
    "label_source": "machine",
-   "rating": "ok",
    "mentions": [
     {
-     "name": "Meta",
-     "count": 3
+     "name": "Anthropic",
+     "count": 12
     },
     {
-     "name": "Anthropic",
+     "name": "Meta",
      "count": 2
     },
     {
-     "name": "OpenAI",
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "xAI",
      "count": 1
     }
    ],
-   "publisher_topic": "Layoffs 2026",
+   "publisher_topic": "Anthropic",
    "entity_basis": "headline"
   },
   {
@@ -160,18 +254,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 1
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "c5374903b0c900c4bb190446ae57cb58800f5e68614b5dd292fd9ab3a1b923af",
    "evidence_hash": "64ea10975ef41e4007fadb6e9672f7e5730efe9f53a8eea61dda83f514ed7788",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Google",
@@ -213,18 +307,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 1
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "e5610d98d67fa89d6f40ab63d4d676c4754a92cd7e07a765abd3164115caaf34",
    "evidence_hash": "102a6725f5425cf64c9a649c9cc7919f5929b4f6318fcc75f8fd3b6a1de8affd",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -258,18 +352,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 1
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "8b4c8e05cbfc297ca0b4ac43ff5189f446dd805134db293d903b05e1abf38054",
    "evidence_hash": "14160442291ad9ee93497f5edb9fd7ac649d6023d3a976851e1cdd6e51ace8a8",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -334,96 +428,84 @@
   },
   {
    "entity": "",
-   "headline": "Crusoe abandons $1.25B plan to use Boom turbines at AI data centers",
-   "date": "Fri, 25 Sep 2026",
+   "headline": "Engram is a sampler that turns broken AI hallucinations into music",
+   "date": "2026-09-27T16:46",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "?",
    "reviewed": false,
    "sources": [
     {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/",
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1001193/engram-sampler-ai-hallucinations-music",
      "source_type": "trade-press",
      "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "rating": "ok",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
-    "total": 7
+    "total": 2
    },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "5277f5ace53c61a80912de20b1eeced42a41e0532c4a8f1dc009ff528b181f8a",
+   "evidence_hash": "56046f3a34c6774fd264f0366fa1e590ea5ed48d54000e909052bacb18fd9e3e",
    "label_schema_version": 2,
-   "content_hash": "f5dbaa77d5f738fd7e2c6cac02ec7e49dcee32b942d5c4cb10724e895b9367bb",
-   "evidence_hash": "44e8ca73e3c5393a0aedd2017ab90941af586ae883d8e51dabdfba94a0ab2b7a",
+   "auto_labelled": true,
    "label_source": "machine",
-   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
-     "count": 3
+     "count": 1
     },
     {
-     "name": "Meta",
-     "count": 3
-    },
-    {
-     "name": "Anthropic",
-     "count": 2
-    },
-    {
-     "name": "Microsoft",
+     "name": "Apple",
      "count": 1
     }
    ],
-   "publisher_topic": "boom supersonic",
+   "publisher_topic": "",
    "entity_basis": "unresolved"
   },
   {
    "entity": "OpenAI",
-   "headline": "Unsecured OpenAI agents posted 53 user images on the internet without the lab’s knowledge",
-   "date": "Fri, 25 Sep 2026",
+   "headline": "OpenAI agents tried to ‘bruteforce’ a UN website",
+   "date": "2026-09-27T13:21",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "n/a",
+   "denominator_stated": "?",
    "reviewed": false,
    "sources": [
     {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-on-the-internet-without-the-labs-knowledge/",
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1001178/openai-agents-bruteforce-un-website",
      "source_type": "trade-press",
      "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 3997 chars of article text",
-   "evidence_method": "rule",
+   "rating": "ok",
+   "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
-    "total": 0
+    "total": 1
    },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "10e921c0fbc593af17137dc32fc0653ebae2bd700ba8d857977422ac6517e951",
+   "evidence_hash": "0cbf78960fd09d784cc3de999670aecb7d3c2cfba12bdb0930264f4398667559",
    "label_schema_version": 2,
-   "content_hash": "3b4d885b97a539e108eb639c9e3ecddc1fa2c5a581d6596b3d15838ad86a247c",
-   "evidence_hash": "a3aba9b6645bfe469219180ef65f740fec64fc3745959c1135e87f0a2242427b",
+   "auto_labelled": true,
    "label_source": "machine",
-   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
-     "count": 12
+     "count": 8
     },
     {
-     "name": "Meta",
-     "count": 3
+     "name": "Google",
+     "count": 1
     },
     {
-     "name": "Anthropic",
-     "count": 2
-    },
-    {
-     "name": "xAI",
+     "name": "Apple",
      "count": 1
     },
     {
@@ -450,18 +532,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 2999 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 2999 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "b276af797581ba896f3a50fc212f3bc9b8d9f31192b8ced71dab0a2943e2abe4",
    "evidence_hash": "72227fd1caba3370bb9b1dc5a82a92ef64aa00249dca7c5f9188f1ea93c47021",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -507,18 +589,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 40
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "ce4c91e0b69dadb8e20c48856d5e159178c4138b20d613f9c466a15e696e8323",
    "evidence_hash": "0b06f988bbb9b9ff93221ae64d8aaac3be78d082e7ff324e0fa59f644195b3f0",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Google",
@@ -803,108 +885,6 @@
     }
    ],
    "publisher_topic": "Microsoft",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Google",
-   "headline": "Gemini 3.8 Live with Live Avatar gives Google’s AI a face",
-   "date": "2026-09-24T16:00",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 1
-   },
-   "label_schema_version": 2,
-   "content_hash": "44cb88e4ce17c9bf4b552c49222d96e199c57d152c363d902f91ed57000710ba",
-   "evidence_hash": "ac0459a0252fff8936d9f2bba0c0e5ce94b90386dbb8bd6cacdf24c99b4bcf2c",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 12
-    },
-    {
-     "name": "Google DeepMind",
-     "count": 2
-    },
-    {
-     "name": "Meta",
-     "count": 2
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Google",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Nvidia",
-   "headline": "Jensen Huang talks about AI and climate change like a supervillain",
-   "date": "2026-09-24T14:04",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/tech/1000140/jensen-huang-nvidia-ai-energy-climate-change-supervillain",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 6
-   },
-   "label_schema_version": 2,
-   "content_hash": "2d7ef828f10d3c35fa8ae53aeb8697b95753bef4d877ffa5ab23d70e6cff050e",
-   "evidence_hash": "4f9bd4b9bce38ac8f4d89a3637fdacd95c51ce2f66da17220660b9d3752ee64b",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Nvidia",
-     "count": 17
-    },
-    {
-     "name": "Google DeepMind",
-     "count": 2
-    },
-    {
-     "name": "Meta",
-     "count": 2
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Google",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Environment",
    "entity_basis": "headline"
   },
   {
@@ -1278,18 +1258,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 2
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "89b41e43ee8b2825a5fddf7ab47641c7204a7d59f26c97e96945280b0733cf42",
    "evidence_hash": "68bd542bb91f032e7882a3dd697f4efcb287ce423bc7512eb98626859075705d",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [
     {
      "name": "Meta",
@@ -1315,18 +1295,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 53
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "6d9b6caf9312f2f32ce1d43df82e8b8ef276a1defcd0ac87ed04eeb950759ffc",
    "evidence_hash": "105391b26c7e2842bd3b6784b1826356633e69945ed2363f7c38da6d818876e4",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "site"
@@ -1347,18 +1327,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 9
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "e683c4c2ee619d2a4d2413696bfae1982901c13eb4a5e41371a8795003ba1a7b",
    "evidence_hash": "c4bb3fa52c028e0f81446cc01b7c5faa475c1fe8dc2698361a89109a39fdb9ef",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [
     {
      "name": "Meta",
@@ -1384,18 +1364,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 8
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "8666291071f0e0d5794a1a3dbf89bd0ef16fd1a7830d3ae40f195dfce2844cc0",
    "evidence_hash": "db6b501c4ac7198424b5b42d8751115bde895a60cb48b9dc39ed90ef0bffd180",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [
     {
      "name": "Meta",
@@ -1425,18 +1405,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 23 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 23 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "4ad241451f7bcdd9758ec989bfd25ca90b11179f8401fe38876cbf455b678c15",
    "evidence_hash": "335f3c0ff85d278689e95678fe8c6f0edcce35c228af69b78ffe4395572be820",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "site"
@@ -1457,18 +1437,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 27
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "107716a93c4247921b351b51908b8f7b8853d3576130d6572f8565b4befde7ae",
    "evidence_hash": "4e55574db1967bfbe64bfbdf562b9178917143876ae6a834cf6b014fc71a7b5c",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [
     {
      "name": "Meta",
@@ -1494,18 +1474,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 3
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "1781def81d3844306f403bdd707cefd8026b90d4800d110bf29ab6c68259df7f",
    "evidence_hash": "757e8740f13a26906daecfc186f34ddbbb8b24419a3f43a8aacc4bb7663c1491",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [
     {
      "name": "Meta",
@@ -1531,18 +1511,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 19
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "470efbaafa0a90d1d9a5a78c756cf4f222eeb4b5bd2116a634996e6ac3afc310",
    "evidence_hash": "326696566ccfe534b7d6b5f00642f3e201ad0c9d25251e19db7cfd5a8aec8aca",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [
     {
      "name": "Meta",
@@ -1568,18 +1548,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 8
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "80235352ca46c21efc8cea24eda38d3cb0d23d3ed9af2ff2f2c7d48be48c1bcb",
    "evidence_hash": "6cc3bb2fbd5022c4493d3df4c928e6d7dcb71491d37b012570a005030456b92c",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [
     {
      "name": "Meta",
@@ -1635,6 +1615,312 @@
    "entity_basis": "headline"
   },
   {
+   "entity": "Anthropic",
+   "headline": "SNL Weekend Update: Anthropic CEO Dario Amodei on A.I.'S Threat to Humanity [video]",
+   "date": "2026-09-26",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "youtube.com",
+     "url": "https://www.youtube.com/watch?v=-Nvne3LzBls",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 286 chars of article text",
+   "content_hash": "a0c78fc7450d0950e034b51d4879886ddbe9d2ee6a6d12d9b13387394de20e8b",
+   "evidence_hash": "18fd461956c3f5682542f53b14334a4dc04fb8e4e5a0e7adb7be81c0ed2c0571",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Anthropic",
+     "count": 2
+    },
+    {
+     "name": "Google",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "snl",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "OpenAI",
+   "headline": "OpenAI halts training of latest models as reports mount of AI agents going rogue",
+   "date": "2026-09-27",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theguardian.com",
+     "url": "https://www.theguardian.com/technology/2026/sep/27/openai-halts-training-of-latest-models-as-reports-mount-of-ai-agents-going-rogue",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 5071 chars of article text",
+   "content_hash": "f009f2dd95b4262c54c8a9fdbf26d7bf87e87b4a68ca3990459fe467da1c90b0",
+   "evidence_hash": "be5204b25bf436a5dd91bf112517f75cc6b5bd312eb0500addc8ac5ad6d0d620",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 21
+    },
+    {
+     "name": "Hugging Face",
+     "count": 2
+    },
+    {
+     "name": "SEC",
+     "count": 2
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "OpenAI",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "There are no \"rogue\" AI agents",
+   "date": "2026-09-27",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "eoinhiggins.substack.com",
+     "url": "https://eoinhiggins.substack.com/p/there-are-no-rogue-ai-agents",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 7
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "8ea83fffa5524869b7c41e85d68ea65f0c599dcbdad734ee78f651932a578642",
+   "evidence_hash": "6ca8077830394e97645f3e7ba7062928a5928b59ef45a9967227c57d67e737ee",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 16
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    },
+    {
+     "name": "Hugging Face",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "Show HN: TinyAIArena watch AI agents battle it out",
+   "date": "Sun, 27 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "tinyaiarena.com",
+     "url": "https://tinyaiarena.com/",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 325 chars of article text",
+   "content_hash": "027470bffe24bf6ed9936c4fc6791dd56aa57e97a93e4d2fd50e697ccb06fd72",
+   "evidence_hash": "948b9caed9ce4b4a4c7d17c6ed5aeb273fb628121d19602197a86ef32b00c49e",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "\"As a Language Model\": Chat Template Switches LLM Self-Referential Voice",
+   "date": "Sun, 27 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "arxiv.org",
+     "url": "https://arxiv.org/abs/2609.25021",
+     "source_type": "independent",
+     "source_tier": 2
+    }
+   ],
+   "rating": "trusted",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 7
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "17338b302054eb0a063b975d9b0e14932629372122e09b1f0614007b1468fbe0",
+   "evidence_hash": "13cf64a743bc41b55d9dd952e5fa6cfa55d64cd8168574a98e40fd6c017bdc56",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Hugging Face",
+     "count": 4
+    },
+    {
+     "name": "Google",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "Microsoft",
+   "headline": "Unsealed Briefs in Authors’ Case v. Microsoft/OpenAI",
+   "date": "2026-09-21",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "authorsguild.org",
+     "url": "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal/",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 2
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "8443b613633c90193b90f8d283d13fb9fd85b80efeb5a2da574d1e5a04746447",
+   "evidence_hash": "59db048b57213b175852b9d372ee1937ed7bc1bf80ecdf1f363927891c2cd99b",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 22
+    },
+    {
+     "name": "Microsoft",
+     "count": 7
+    },
+    {
+     "name": "Anthropic",
+     "count": 2
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    },
+    {
+     "name": "Amazon",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "OpenAI",
+   "headline": "OpenAI agents tried to bruteforce a UN website's API fields",
+   "date": "Sun, 27 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "swarmcha.se",
+     "url": "https://swarmcha.se/posts/openai-unctad",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 60
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "a247df50b24242f90774a9abbcbc05da991e003bcf16bcb9c313c73d54b4a086",
+   "evidence_hash": "f7c509e9966eb8d07ff74c304d428620426693c1245cb2c599b02dac7fa7a927",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Google",
+     "count": 7
+    },
+    {
+     "name": "OpenAI",
+     "count": 5
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
    "entity": "OpenAI",
    "headline": "OpenAI Codex agents go rogue and consumes USD 78,000 without authorization",
    "date": "Sat, 26 Sep 2026",
@@ -1650,18 +1936,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 43
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "dcb0307334148f71759cfdc3ba7cc59815649e19102dbd004d18f8a6aaf9c028",
    "evidence_hash": "36bca5da880031d7cf5330649e592f93cc7c845545e9bffb53e7db4798604d33",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -1670,273 +1956,6 @@
    ],
    "publisher_topic": "",
    "entity_basis": "headline"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "OpenAI bots meddled with multiple US Government agency sites",
-   "date": "2026-09-25",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "bbc.com",
-     "url": "https://www.bbc.com/news/articles/cw62jje658dlo",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 2
-   },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "7715403fa635f3f87e518718d1ed84bf5958d7448470758772265b0e30efefdd",
-   "evidence_hash": "b7daf6ee0018b7e0bf9f0c1ed724010a629b09c938af0eb6b44c4f0c29610d49",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 21
-    },
-    {
-     "name": "Hugging Face",
-     "count": 4
-    },
-    {
-     "name": "Anthropic",
-     "count": 3
-    },
-    {
-     "name": "SEC",
-     "count": 3
-    },
-    {
-     "name": "Google",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "Understanding the Impact of LLM Watermarking on AI Agent Behavior",
-   "date": "2026-09-17",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "lasso.security",
-     "url": "https://www.lasso.security/blog/the-provenance-tax-understanding-the-impact-of-llm-watermarking-on-ai-agent-behavior",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 58
-   },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "d66ea8366888e0bd0f6cd469391572b1fa18c7ec90e00b851b51622cb5bc4ece",
-   "evidence_hash": "a067a1ba783c10b2a2dfc9fd86cc50c87bd1a09caf20bb42f4f47e8ec43d0354",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Anthropic",
-     "count": 5
-    },
-    {
-     "name": "Google DeepMind",
-     "count": 2
-    },
-    {
-     "name": "Google",
-     "count": 1
-    },
-    {
-     "name": "Hugging Face",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Mistral",
-   "headline": "CEO of Mistral: AI is software. It can be controlled",
-   "date": "2026-09-24",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "lemonde.fr",
-     "url": "https://www.lemonde.fr/en/economy/article/2026/09/24/arthur-mensch-ceo-of-french-start-up-mistral-ai-ai-is-software-it-can-be-controlled_6757890_19.html",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_evidence": "no figure in 231 chars of article text",
-   "content_hash": "ce27cfcd736c655f5342968289b6c1b09ae0da5c8e158ff3cde07b44c7676f90",
-   "evidence_hash": "932a61e3f4814fb1e05ada5791bbbd91a71ea68e24a2267e0aca852e10b2e8c5",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "One Month Without AI",
-   "date": "2026-09-25",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "blog.bustikiller.com",
-     "url": "https://blog.bustikiller.com/2026/09/25/one-month-without-ai.html",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 12
-   },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "079fd699cfef99a0345b9f701ce76aa712c5bb0adf1b1fbcca19b6eee1922945",
-   "evidence_hash": "92ee7d9391c1bc0c2b7d8c76cb6e3a302f1272fa0e80fdbc1260a074d6ef0642",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "OpenAI’s Systems Went Rogue and Meddled With U.S. Government Websites",
-   "date": "2026-09-25",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "nytimes.com",
-     "url": "https://www.nytimes.com/2026/09/25/technology/openais-ai-us-government-websites.html",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_evidence": "article not fetched (http-403)",
-   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "FTC",
-   "headline": "FTC chair suggests AI developers should be liable for conduct of agents",
-   "date": "Fri, 25 Sep 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "reuters.com",
-     "url": "https://www.reuters.com/business/ftc-chair-pushes-back-treating-ai-agents-independent-actors-2026-09-25/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "trusted",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_evidence": "article not fetched (robots-disallowed)",
-   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "Too AI; Didn't Read",
-   "date": "Fri, 25 Sep 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "tai-dr.com",
-     "url": "https://www.tai-dr.com/",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 28 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "356a7d978db1d316b88da4b53464c3c2d349d9f6efdb1a437b5a21bfb5009200",
-   "evidence_hash": "9dbf663cdbc39670a9b885603ec437e77f61b53ea35f546151214f0833f4e57b",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
   },
   {
    "entity": "NIST",
@@ -2094,6 +2113,115 @@
   },
   {
    "entity": "",
+   "headline": "Toner: There’s a Lot of Upside To AI if We Do It Right",
+   "date": "Thu, 24 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "cset.georgetown.edu",
+     "url": "https://cset.georgetown.edu/article/toner-theres-a-lot-of-upside-to-ai-if-we-do-it-right/",
+     "source_type": "independent",
+     "source_tier": 2
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 533 chars of article text",
+   "content_hash": "ac2d87771f670962354512ef4aa53b681a38211d5f2a5be204a3ffa588a1a969",
+   "evidence_hash": "bd433c3fe07d69ebc29401ff99f7d18a6129157e58f7bc0cc24370a1fa01e569",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 1
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "China",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "AI makes it “easier than ever” for adversaries to target U.S. military, experts say",
+   "date": "Thu, 17 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "cset.georgetown.edu",
+     "url": "https://cset.georgetown.edu/article/ai-makes-it-easier-than-ever-for-adversaries-to-target-u-s-military-experts-say/",
+     "source_type": "independent",
+     "source_tier": 2
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 1276 chars of article text",
+   "content_hash": "ed65e0d0c65a33b4e9241387ceab1da6f823f0ecf2c6c66962a5edefe2c68d8a",
+   "evidence_hash": "9528bdcdff973611ec73926730e3c58b462c68a92ff5e6c2d3f499a68f447efd",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "AI being used by ‘bad guys’ is ‘no surprise’: Bryan Stern",
+   "date": "Wed, 16 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "cset.georgetown.edu",
+     "url": "https://cset.georgetown.edu/article/ai-being-used-by-bad-guys-is-no-surprise-bryan-stern/",
+     "source_type": "independent",
+     "source_tier": 2
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 574 chars of article text",
+   "content_hash": "64f5fbf9ba7b989080e9daf9314d144ea0800ee399be6d71094c2f75f775ebee",
+   "evidence_hash": "fb1cc6218ba9569775a96c855fe48bfb805e2713b4e76ce6af801cf382089b18",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "China",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
    "headline": "Inside Beijing’s Chipmaking Offensive, One Year On",
    "date": "Tue, 15 Sep 2026",
    "topic": "",
@@ -2240,119 +2368,6 @@
    "rating": "ok",
    "mentions": [],
    "publisher_topic": "United States",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "The A.I.s Are Already Out of Control",
-   "date": "Tue, 18 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "cset.georgetown.edu",
-     "url": "https://cset.georgetown.edu/article/the-a-i-s-are-already-out-of-control/",
-     "source_type": "independent",
-     "source_tier": 2
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 1411 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "fcdb025e1bf03a6e9229cdc615ffa44338152ab417af59cc90f5bcac7aa5808a",
-   "evidence_hash": "7a986248e32a6e29b524d7057726352b762fb88c2d767a8a718ee1f5dd92f4f3",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Hugging Face",
-     "count": 2
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Cybersecurity",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Trump crypto firm backs venture offering AI from restricted Chinese companies",
-   "date": "Mon, 17 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "cset.georgetown.edu",
-     "url": "https://cset.georgetown.edu/article/trump-crypto-firm-backs-venture-offering-ai-from-restricted-chinese-companies/",
-     "source_type": "independent",
-     "source_tier": 2
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 1396 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "fb770dcf30122b2c5115d2b38beada1fb0dbccba49bb82a3584744cd86f10acc",
-   "evidence_hash": "2c06ef178424bea50188a135099667de54eb2634e12d64c646dea87ac5afd805",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "China",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "AI & Tech Brief: AI viruses",
-   "date": "Tue, 11 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "cset.georgetown.edu",
-     "url": "https://cset.georgetown.edu/article/ai-tech-brief-ai-viruses/",
-     "source_type": "independent",
-     "source_tier": 2
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 1236 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "6174bbed53b27c293d9fa822a63d39d40e5aafa195a3a9cb517ccf8166bead5c",
-   "evidence_hash": "c487bf228efbc253f5414eb491f627dadbbdc5c5f6d71ec0851b88a2dbc4be35",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "Biotechnology",
    "entity_basis": "unresolved"
   },
   {
