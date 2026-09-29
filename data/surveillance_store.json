@@ -73,66 +73,66 @@
     "54b1b80026c38a18cbc27a2657d9270dca2fb517e6a904f2bf2aee3960aebc45": "2026-09-13T05:01:31.276246+00:00",
     "3f5b18c5361a116e8cda95268bda629c953202b3169b944325053a2129c242c3": "2026-09-13T05:01:31.276250+00:00"
   },
-  "last_run": "2026-09-28T05:01:57.066100+00:00",
+  "last_run": "2026-09-29T05:01:58.919271+00:00",
   "source_states": {
     "us_fed_reg_ai": {
-      "checked_at": "2026-09-28T05:00:01.299839+00:00",
+      "checked_at": "2026-09-29T05:00:00.126148+00:00",
       "status": "ok",
       "entries": 40,
       "queued": 26,
       "window_days": 30,
-      "last_success": "2026-09-28T05:00:01.299839+00:00"
+      "last_success": "2026-09-29T05:00:00.126148+00:00"
     },
     "us_fed_reg_eo": {
-      "checked_at": "2026-09-28T05:00:02.366583+00:00",
+      "checked_at": "2026-09-29T05:00:00.921441+00:00",
       "status": "ok",
       "entries": 40,
       "queued": 28,
       "window_days": 30,
-      "last_success": "2026-09-28T05:00:02.366583+00:00"
+      "last_success": "2026-09-29T05:00:00.921441+00:00"
     },
     "eu_ai_office": {
-      "checked_at": "2026-09-28T05:00:03.055463+00:00",
+      "checked_at": "2026-09-29T05:00:01.655121+00:00",
       "status": "ok",
       "entries": 10,
       "queued": 8,
       "window_days": null,
-      "last_success": "2026-09-28T05:00:03.055463+00:00"
+      "last_success": "2026-09-29T05:00:01.655121+00:00"
     },
     "uk_cma_news": {
-      "checked_at": "2026-09-28T05:00:03.192112+00:00",
+      "checked_at": "2026-09-29T05:00:01.989223+00:00",
       "status": "ok",
       "entries": 20,
       "queued": 0,
       "window_days": null,
-      "last_success": "2026-09-28T05:00:03.192112+00:00"
+      "last_success": "2026-09-29T05:00:01.989223+00:00"
     },
     "uk_ofgem_queue": {
-      "checked_at": "2026-09-28T05:00:03.319058+00:00",
+      "checked_at": "2026-09-29T05:00:02.319742+00:00",
       "status": "ok",
       "entries": 20,
       "queued": 1,
       "window_days": null,
-      "last_success": "2026-09-28T05:00:03.319058+00:00"
+      "last_success": "2026-09-29T05:00:02.319742+00:00"
     },
     "nist_ai_notices": {
-      "checked_at": "2026-09-28T05:00:03.459790+00:00",
+      "checked_at": "2026-09-29T05:00:02.499997+00:00",
       "status": "ok",
       "entries": 40,
       "queued": 9,
       "window_days": null,
-      "last_success": "2026-09-28T05:00:03.459790+00:00"
+      "last_success": "2026-09-29T05:00:02.499997+00:00"
     },
     "sec_press_releases": {
-      "checked_at": "2026-09-28T05:00:03.765853+00:00",
+      "checked_at": "2026-09-29T05:00:02.813908+00:00",
       "status": "ok",
       "entries": 25,
       "queued": 1,
       "window_days": null,
-      "last_success": "2026-09-28T05:00:03.765853+00:00"
+      "last_success": "2026-09-29T05:00:02.813908+00:00"
     },
     "ftc_press_releases": {
-      "checked_at": "2026-09-28T05:00:03.854846+00:00",
+      "checked_at": "2026-09-29T05:00:03.004734+00:00",
       "status": "failed",
       "entries": 0,
       "queued": 0,
@@ -235,7 +235,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-28T05:00:12.705033+00:00",
+      "checked_at": "2026-09-29T05:00:11.957589+00:00",
       "source_sha256": "eb1eddaf773a3253e5f7f035c9c1317b0010f83259a9b4caca539bf2e75879ea",
       "source_text_sha256": "89ffa63e83499655219e9053b4f4de919e4f5b0aaa8adfdcebfc4f3ba9b10b53",
       "error": "document exceeds model input budget; manual review required"
@@ -259,13 +259,13 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-26T05:02:23.438551+00:00",
+      "checked_at": "2026-09-29T05:01:54.673499+00:00",
       "source_sha256": "592fd494146781d8ec578574638da6cd8a41c75648bc7c5d8ff577e84be04899",
       "source_text_sha256": "c86961446a9f009dd79704185cb312be43e4946d7cf12556666bd9bd946c3391",
       "evaluated_text_sha256": "c86961446a9f009dd79704185cb312be43e4946d7cf12556666bd9bd946c3391"
     },
     "1713135e0fda898e3cb4faead667e3f651a2029f3f3b17978249bae1e06f4c35": {
-      "status": "pending",
+      "status": "manual_review",
       "attempts": 1,
       "item": {
         "title": "Securing the United States Bulk-Power System",
@@ -283,10 +283,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-28T05:01:50.406895+00:00",
+      "checked_at": "2026-09-29T05:00:35.410659+00:00",
       "source_sha256": "3ee83a15aa02e1f35f809f0eb4ddfe2adb601346b89901f0accc629880b5d2cb",
       "source_text_sha256": "a53929654bdac68bbd0f084a443518c66e0dc0bad70789d508a29d5079ca0add",
-      "error": "invalid model schema"
+      "error": "document exceeds model input budget; manual review required"
     },
     "2da32ad55827506c9903040af0780919a59f8ae45bba9096c078bec0eb221228": {
       "status": "manual_review",
@@ -307,7 +307,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-28T05:00:13.003315+00:00",
+      "checked_at": "2026-09-29T05:00:12.290836+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "4f3a608c15f8f04e29feca1b6c63058027b545c03e0fbb2baa316c3d697267f8": {
@@ -377,7 +377,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-28T05:00:13.417817+00:00",
+      "checked_at": "2026-09-29T05:00:12.740343+00:00",
       "source_sha256": "711f43edaa8cd4d1f261877323c360e5dc822a4483fe5051a63d0989523b13a4",
       "source_text_sha256": "ca1b3cf0f0f3c78ddf801e6598dc6e376367ab163f90e1e2702947cca856e63c",
       "error": "document exceeds model input budget; manual review required"
@@ -401,7 +401,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-27T05:02:01.008001+00:00",
+      "checked_at": "2026-09-29T05:01:57.926387+00:00",
       "source_sha256": "1a4b2b57093f0e4dccec5d872df00a8242859cf944ed625959cb1bd906f17a55",
       "source_text_sha256": "1a908936beb7673a9555336ed5de1bb5820ed2590031436cfa134cd21b7e53c4",
       "evaluated_text_sha256": "1a908936beb7673a9555336ed5de1bb5820ed2590031436cfa134cd21b7e53c4"
@@ -449,7 +449,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-28T05:00:10.139106+00:00",
+      "checked_at": "2026-09-29T05:00:09.292726+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "f3227389324f7137d15bbb2f3d3a07cc2a3d2d1f69b73d682b660348775bec51": {
@@ -471,7 +471,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-28T05:01:52.308461+00:00",
+      "checked_at": "2026-09-29T05:01:58.649431+00:00",
       "source_sha256": "2d442a3d4980372dc0dc9fed99ba30f9bdfaae91ac7b5207143266946f2fb5c9",
       "source_text_sha256": "e664382b6d95ace4eb8cce076c6f453a36ef1aa0f524d30139b7bcce73d88615",
       "evaluated_text_sha256": "e664382b6d95ace4eb8cce076c6f453a36ef1aa0f524d30139b7bcce73d88615"
@@ -495,7 +495,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-28T05:00:14.469751+00:00",
+      "checked_at": "2026-09-29T05:00:13.497226+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "9d988f6d9277029c3ac6d920018ac38aedd5ac984a6a25fb8d56a6e34f6b3ee2": {
@@ -517,7 +517,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-28T05:00:06.148357+00:00",
+      "checked_at": "2026-09-29T05:00:05.287355+00:00",
       "source_sha256": "a4511bae5da70c354f606c391d50f9ad41e568825f8e0109025f414111f90dc9",
       "source_text_sha256": "fe91c974bf9b2405c6f653e0dda74d08d1a6265a6e628d156bffc7dc259f7bea",
       "error": "document exceeds model input budget; manual review required"
@@ -541,7 +541,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-28T05:00:11.659265+00:00",
+      "checked_at": "2026-09-29T05:00:10.806545+00:00",
       "source_sha256": "fbd5fff4fe0699288f0b65021446cc8dd9d08a94c376413b9a19b6fb6d2da372",
       "source_text_sha256": "2cd3f0dc0045694d0b680943b47d08f04239f7aa6f94aa7136a5fff482fd728e",
       "error": "document exceeds model input budget; manual review required"
@@ -565,7 +565,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-28T05:00:08.765062+00:00",
+      "checked_at": "2026-09-29T05:00:07.927991+00:00",
       "source_sha256": "978bf8bd7945d3beaa2ccf09e14aaa1bfabf6d600c6f472d9707aa1ce0b1110e",
       "source_text_sha256": "640c895a637c3bfbf00d5f8ee04c5621bad85598d7ac09283fb5344a414143d8",
       "error": "document exceeds model input budget; manual review required"
@@ -613,7 +613,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-28T05:00:10.762671+00:00",
+      "checked_at": "2026-09-29T05:00:09.917940+00:00",
       "source_sha256": "78569acd9cc75cd417f395652dfbe9582a43cd92f0320fd9c0a4ac0f74e7c25f",
       "source_text_sha256": "4a8447f5a0993387ea2590db8e8be6d50b8a8e431f1cee6debd1dc45640047b9",
       "error": "document exceeds model input budget; manual review required"
@@ -637,7 +637,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-28T05:00:11.040834+00:00",
+      "checked_at": "2026-09-29T05:00:10.186053+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "45cd6e241ef0f49a81f7569cdcbdf3b115d21f5515637f6ae5e8a6c269ed346a": {
@@ -659,7 +659,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-28T05:00:14.136727+00:00",
+      "checked_at": "2026-09-29T05:00:13.232192+00:00",
       "source_sha256": "7c4c37f6412dccc2795ca2beedfd141df2754c086e9e276c32e97aa99927555b",
       "source_text_sha256": "404d25d32a5cb5fa721fb74ca6c16df48425c1abe2ae321164e0c4796bd520d3",
       "error": "document exceeds model input budget; manual review required"
@@ -683,7 +683,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-28T05:00:11.916968+00:00",
+      "checked_at": "2026-09-29T05:00:11.076101+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "7ad21a2ea23e4e7cfeedf5675164bc4e41af56e08a54475090d6b47820b4a204": {
@@ -705,7 +705,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-28T05:00:14.873038+00:00",
+      "checked_at": "2026-09-29T05:00:13.937217+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "a7320c2f093222e04d723af25b0cbae8c48107c756a2ba5db909095c3850abb3": {
@@ -727,7 +727,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-28T05:00:06.420654+00:00",
+      "checked_at": "2026-09-29T05:00:05.552223+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "6587eda003db0fc2cc6d344a8209cb6b5cd47c3dfcf52d7a6a31afdff94d507d": {
@@ -803,8 +803,8 @@
       "evaluated_text_sha256": "07e19a3c689d56e55e0059782063c84cd46e7680665bd6bb9199398a543c980e"
     },
     "174e133f0357316fc50e7a9beebd5847f4c67da10121e883464b912191f719fd": {
-      "status": "pending",
-      "attempts": 1,
+      "status": "evaluated",
+      "attempts": 2,
       "item": {
         "title": "Secretary of Energy Advisory Board",
         "summary": "Pursuant to the Federal Advisory Committee Act and following consultation with the Committee Management Secretariat, General Services Administration, notice is hereby given that the Secretary of Energy Advisory Board (SEAB) will be renewed for a two-year period beginning on August 26, 2026. The Committee provides advice and recommendations to the Secretary of Energy on energy policies; the Department's basic and applied research and developmental activities; economic and national security policy; and on any other activities and operations of the Department of Energy.",
@@ -821,10 +821,10 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-28T05:01:50.678037+00:00",
+      "checked_at": "2026-09-29T05:00:35.662532+00:00",
       "source_sha256": "13cf914800237d9630f7b40413753c7b7bca76a78e43174a24b8a42080278437",
       "source_text_sha256": "f0d5daf2739e25dbbace6fc0bde94a834679098bfac126da19865f55bc1fd5f8",
-      "error": "invalid model schema"
+      "evaluated_text_sha256": "f0d5daf2739e25dbbace6fc0bde94a834679098bfac126da19865f55bc1fd5f8"
     },
     "e2c7f0dd5a94865a708d9bbe5d09fa56346913874deeaa1fe0fac7cf6acdd7f9": {
       "status": "evaluated",
@@ -869,7 +869,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-28T05:01:21.967323+00:00",
+      "checked_at": "2026-09-29T05:01:53.238007+00:00",
       "source_sha256": "8a14638f5400a55f97bedd2442838ecf770e5a86ac259f9fcacf0c726082bbc2",
       "source_text_sha256": "a073787cac3aa3f7c51d20d38ce5a9347371a2bd8c62af6bded88c031af9381a",
       "error": "supporting quote is absent from the captured document"
@@ -893,7 +893,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-28T05:00:12.430398+00:00",
+      "checked_at": "2026-09-29T05:00:11.607270+00:00",
       "source_sha256": "483cd8f9f46e29617e6ded47fd3d408d09a14ebb3c1b00b782e3435451ac73cf",
       "source_text_sha256": "59d5cdb31d8e66c9fc37f498e934b7b64f352ff12c43dca835a8d697f632c169",
       "error": "document exceeds model input budget; manual review required"
@@ -917,7 +917,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-27T05:02:01.260372+00:00",
+      "checked_at": "2026-09-29T05:01:58.166689+00:00",
       "source_sha256": "6186f8bfff7f80b94af189271dc3e25c1982fc77641a692edbfdd34f6c7fcff0",
       "source_text_sha256": "a50f35ae1078f4d01ad8d5d28d7621ab7b2bf595b9ee4ef8a6622fb984b27c03",
       "evaluated_text_sha256": "a50f35ae1078f4d01ad8d5d28d7621ab7b2bf595b9ee4ef8a6622fb984b27c03"
@@ -989,7 +989,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-27T05:01:58.977510+00:00",
+      "checked_at": "2026-09-29T05:01:56.025478+00:00",
       "source_sha256": "d8025ea9c1e503173a258122faaa2dee445e469aa8e504171ae6af27e1e8de0d",
       "source_text_sha256": "edfd6391453f5aa257a8129814eee001fb1ed3ed3276aae2b78c3c7137aa46be",
       "evaluated_text_sha256": "edfd6391453f5aa257a8129814eee001fb1ed3ed3276aae2b78c3c7137aa46be"
@@ -1019,8 +1019,8 @@
       "evaluated_text_sha256": "1da7981f0fcd988f3edb824107714ec2981545117befa23eee62dfb297a56507"
     },
     "da8aa32d3046036ee6f669a815435e8d54983f8508b22667450dc4108534ef0e": {
-      "status": "pending",
-      "attempts": 1,
+      "status": "evaluated",
+      "attempts": 2,
       "item": {
         "title": "Excluding Certain Canadian Products From Importation Into the United States in Response to Continued Discrimination Against the Commerce of the United States With Respect to Alcoholic Beverages",
         "summary": "Excluding Certain Canadian Products From Importation Into the United States in Response to Continued Discrimination Against the Commerce of the United States With Respect to Alcoholic Beverages",
@@ -1037,10 +1037,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-28T05:01:51.674169+00:00",
+      "checked_at": "2026-09-29T05:01:20.020095+00:00",
       "source_sha256": "46bfcfbc1931ef115e34b5566922edc015dd774a54f7d8c30dcac0e7e3afcec7",
       "source_text_sha256": "dc557721b43862bc301d28c9115137667446ff18e3cd9d2c4550f0895d4004f0",
-      "error": "invalid model schema"
+      "evaluated_text_sha256": "dc557721b43862bc301d28c9115137667446ff18e3cd9d2c4550f0895d4004f0"
     },
     "2ceabf543ad79cffea147eb07b89fec19f5d90bada75b5dfdeae2f5d2f8a2fe4": {
       "status": "evaluated",
@@ -1109,7 +1109,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-26T05:02:23.932811+00:00",
+      "checked_at": "2026-09-29T05:01:55.162081+00:00",
       "source_sha256": "2cba869c4cdafcbda7087b193da99a4d24bf1cad049f9f3d9b9aa2cbad91978c",
       "source_text_sha256": "3198c045ce2494e4c5828b6005f4bc1a036757abd04654f07d6c9b720e904d1d",
       "evaluated_text_sha256": "3198c045ce2494e4c5828b6005f4bc1a036757abd04654f07d6c9b720e904d1d"
@@ -1157,7 +1157,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-26T05:02:23.687972+00:00",
+      "checked_at": "2026-09-29T05:01:54.918997+00:00",
       "source_sha256": "9eb4b23bb0fdc9fd69cfc0d878e2487463224f39a10d3c8b8bccf8a9ec3d848a",
       "source_text_sha256": "4f549c2c315a4f5367ddffb06d4696242ead91c246825d278824c2506273da2b",
       "evaluated_text_sha256": "4f549c2c315a4f5367ddffb06d4696242ead91c246825d278824c2506273da2b"
@@ -1205,7 +1205,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-27T05:02:01.509224+00:00",
+      "checked_at": "2026-09-29T05:01:58.410644+00:00",
       "source_sha256": "553e75c1e97ade0c8816b5da8a430ecf5249f8a64dbb4e1f61913df60177aa00",
       "source_text_sha256": "01e32c8fa5cba7ca80b9f14d73f30a4a8d713f5014dc74c8cfd0eeb24147a51b",
       "evaluated_text_sha256": "01e32c8fa5cba7ca80b9f14d73f30a4a8d713f5014dc74c8cfd0eeb24147a51b"
@@ -1229,7 +1229,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-26T05:01:29.926361+00:00",
+      "checked_at": "2026-09-29T05:01:53.945854+00:00",
       "source_sha256": "78c090dc7a972d5a48d5559f89b5593c64ff4246805975b624a57e4a7902a164",
       "source_text_sha256": "527b5b2c1b103cda94ed32736f04bf6196b6555a68bc5f3fa2985c9a4c19f05a",
       "evaluated_text_sha256": "527b5b2c1b103cda94ed32736f04bf6196b6555a68bc5f3fa2985c9a4c19f05a"
@@ -1277,7 +1277,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-27T05:01:58.043419+00:00",
+      "checked_at": "2026-09-29T05:01:55.781296+00:00",
       "source_sha256": "65f7098dba384c6fbc3a7fa591497e23aeb728afdc656ecc85754edf15bd47ec",
       "source_text_sha256": "9468356705a3f30938f7ca655b26f538a61b00087d92ad83c0da48f7a049323a",
       "evaluated_text_sha256": "9468356705a3f30938f7ca655b26f538a61b00087d92ad83c0da48f7a049323a"
@@ -1373,14 +1373,14 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-28T05:00:15.306944+00:00",
+      "checked_at": "2026-09-29T05:00:14.645474+00:00",
       "source_sha256": "0d3711dc18e19652f67b43bf0374043db6fa72ea1e19fceb3fc5129b5ced7f7b",
       "source_text_sha256": "421e6c77bf86082a1e3359b64a83524532983e501f1463d9b02608fe4c0e94e2",
       "error": "document exceeds model input budget; manual review required"
     },
     "19d7beb56a24dc6db7d38a9c09f698742a81d750f60693a5e702928ae99e5f01": {
-      "status": "pending",
-      "attempts": 1,
+      "status": "evaluated",
+      "attempts": 2,
       "item": {
         "title": "Temporary Suspension of Additional Duties To Offset Canadian Discrimination Against the Commerce of the United States With Respect to Alcoholic Beverages, Dairy, and Motor Vehicles",
         "summary": "Temporary Suspension of Additional Duties To Offset Canadian Discrimination Against the Commerce of the United States With Respect to Alcoholic Beverages, Dairy, and Motor Vehicles",
@@ -1397,10 +1397,10 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-28T05:01:50.945702+00:00",
+      "checked_at": "2026-09-29T05:00:52.193203+00:00",
       "source_sha256": "47ec8f65b151afceb2eb0a341c0a129ec48d2059e1b9c8e8bd30db153b5730f8",
       "source_text_sha256": "5492d0ccf756ee39dfcae4f097af0392e47270c90160aea7c843ec0e7aecdb21",
-      "error": "invalid model schema"
+      "evaluated_text_sha256": "5492d0ccf756ee39dfcae4f097af0392e47270c90160aea7c843ec0e7aecdb21"
     },
     "cb5a5dc5e2a68bc3d8234abf6b81f5495076b73b43649537a7cfd54d5ad22994": {
       "status": "manual_review",
@@ -1421,7 +1421,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-28T05:00:54.368745+00:00",
+      "checked_at": "2026-09-29T05:00:14.903377+00:00",
       "source_sha256": "bb9c90378e11423ff231d1326880b038c8264c00eb6439e728cb26ff4bad5d25",
       "source_text_sha256": "5b6fa7f6ca6e3a94d15e5866c7a635601cba12361d95ff84769438a18b52a904",
       "error": "document exceeds model input budget; manual review required"
@@ -1451,11 +1451,11 @@
       "evaluated_text_sha256": "79e7e2924c0b34981d6a6f2a3fc4e6f8f951e064a838d8b84ae8800127eb9373"
     },
     "1570cc437e55c618c76e8411fe74f33765c8a45c3fa2df0280f5dea4f18e6894": {
-      "status": "pending",
-      "attempts": 1,
+      "status": "evaluated",
+      "attempts": 2,
       "item": {
         "title": "Apply AI Summit",
-        "summary": "<span>Apply AI Summit</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-09-07T15:58:15+02:00\" title=\"Monday, September 7, 2026 - 15:58\">Mon, 09/07/2026 - 15:58</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                              <ul class=\"ecl-unordered-list ecl-unordered-list--no-bullet ecl-u-mb-xl\">\n      <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n      <span class=\"wt-icon--calendar ecl-icon ecl-icon--fluid ecl-icon--calendar\" aria-hidden=\"true\"></span>&nbsp;\n      17 November 2026\n  </li>\n  \n    <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n    <span class=\"wt-icon--location ecl-icon ecl-icon--fluid ecl-icon--location\" aria-hidden=\"true\"></span>&nbsp;\n        The EGG (Brussels)\n      </li>\n  </ul>\n\n                <p class=\"ecl-page-header-standardised__description\">The Apply AI Summit will gather high-level stakeholders – from industrial representatives, policymakers and startups – to accelerate AI implementation in strategic industries.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/Apply20AI_web20banner203x21_vEToDjTdEMy5LWcXsQNhBr9Npc_244913.png?itok=HZIOXAyE\" alt=\"Apply AI Summit - Purple text and icons for diverse industries above logos for the European Commission and AI Office.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          \n  <div>\n    <h4>Main link</h4>\n              <div><a href=\"https://digital-strategy.ec.europa.eu/en/policies/apply-ai-summit\">https://digital-strategy.ec.europa.eu/en/policies/apply-ai-summit</a></div>\n          </div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                                <p><a href=\"https://b2match.com/e/apply-ai-summit-2026/sign-up?invitation=X5XxRs-5WXdJi-CvVi1dG-Z0gxY=\" class=\"ecl-button ecl-button--call\">Register until 13 November</a></p>\n\n              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=137\" class=\"ecl-tag ecl-u-mb-xs\">Events</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=119\" class=\"ecl-tag ecl-u-mb-xs\">Artificial intelligence</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=260\" class=\"ecl-tag ecl-u-mb-xs\">Apply AI Summit</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div>\n  \n    \n        <div class=\"ecl-u-type-m\">\n    <section class=\"cnct-page-footer ecl-u-mv-2xl\">\n      \n          </section>\n  </div>\n\n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
+        "summary": "<span>Apply AI Summit</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-09-07T15:58:15+02:00\" title=\"Monday, September 7, 2026 - 15:58\">Mon, 09/07/2026 - 15:58</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                              <ul class=\"ecl-unordered-list ecl-unordered-list--no-bullet ecl-u-mb-xl\">\n      <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n      <span class=\"wt-icon--calendar ecl-icon ecl-icon--fluid ecl-icon--calendar\" aria-hidden=\"true\"></span>&nbsp;\n      17 November 2026\n  </li>\n  \n    <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n    <span class=\"wt-icon--location ecl-icon ecl-icon--fluid ecl-icon--location\" aria-hidden=\"true\"></span>&nbsp;\n        The EGG (Brussels)\n      </li>\n  </ul>\n\n                <p class=\"ecl-page-header-standardised__description\">The Apply AI Summit will gather high-level stakeholders – from industrial representatives, policymakers and startups – to accelerate AI implementation in strategic industries.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/Apply20AI_web20banner203x21_vEToDjTdEMy5LWcXsQNhBr9Npc_244913.png?itok=HZIOXAyE\" alt=\"Apply AI Summit - Purple text and icons for diverse industries above logos for the European Commission and AI Office.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          \n  <div>\n    <h4>Main link</h4>\n              <div><a href=\"https://digital-strategy.ec.europa.eu/en/policies/apply-ai-summit\">https://digital-strategy.ec.europa.eu/en/policies/apply-ai-summit</a></div>\n          </div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                                <p><a href=\"https://b2match.com/e/apply-ai-summit-2026/sign-up?invitation=X5XxRs-5WXdJi-CvVi1dG-Z0gxY=\" class=\"ecl-button ecl-button--call\">Register until 13 November</a></p>\n\n              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=137\" class=\"ecl-tag ecl-u-mb-xs\">Events</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=119\" class=\"ecl-tag ecl-u-mb-xs\">Artificial intelligence</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=260\" class=\"ecl-tag ecl-u-mb-xs\">Apply AI Summit</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div class=\"cnt-last-update-block\">\n  \n    \n      \n\n  </div>\n<div class=\"cnt-print-pdf-block\">\n  \n    \n      \n  \n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
         "url": "https://digital-strategy.ec.europa.eu/en/events/apply-ai-summit",
         "publication_date": "Mon, 07 Sep 2026 13:58:15 +0000"
       },
@@ -1470,10 +1470,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-28T05:01:50.055668+00:00",
-      "source_sha256": "fbba06b26815a218bf27043117239073785a22c5e5cd37e63740cab02cf15655",
+      "checked_at": "2026-09-29T05:00:15.169146+00:00",
+      "source_sha256": "863819fb9dad8ee6d92453d485e2f2e80eaa8682099b8c9275db9e3774e95f12",
       "source_text_sha256": "5d5491f1f1c9d79de005b11fe605e7f1f582dec1b4a50ad012ed2767d8909d6c",
-      "error": "source capture failed: TimeoutError"
+      "evaluated_text_sha256": "5d5491f1f1c9d79de005b11fe605e7f1f582dec1b4a50ad012ed2767d8909d6c"
     },
     "a441b84e65cb5e4cfc4c616337de3b09fcb887cb4091f101a16e47798c577710": {
       "status": "evaluated",
@@ -1505,7 +1505,7 @@
       "attempts": 1,
       "item": {
         "title": "Commission designates ChatGPT, Reddit, Roblox under Digital Services Act",
-        "summary": "<span>Commission designates ChatGPT, Reddit, Roblox under Digital Services Act</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-08-31T11:10:00+02:00\" title=\"Monday, August 31, 2026 - 11:10\">Mon, 08/31/2026 - 11:10</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                                    <p class=\"ecl-page-header-standardised__description\">The Commission has designated ChatGPT as a Very Large Online Search Engine (VLOSE), as well as Reddit and Roblox as Very Large Online Platforms (VLOPs), under the Digital Services Act (DSA).</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/DSA_variation_v3_nuupXEj8CTCd8A4kLlXjt08qc_241791.png?itok=TIbAV9qE\" alt=\"Text &quot;Digital Services Act&quot; inside a white triangle inside a white triangle against a purple background.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>These services declared that they reach at least 45 million average monthly users in the EU and thus meet the threshold for designation.</p>\n<p>Following the notification of the designations, these services have four months, i.e. by January 2027, to comply with the additional DSA obligations for VLOPs and VLOSEs, such as assessing and mitigating the systemic risks stemming from their service and algorithmic systems related to the dissemination of illegal content, the negative effects on minors, users’ physical and mental well-being, fundamental rights, electoral processes and public security.&nbsp;</p>\n<p><a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1772\" class=\"ecl-link ecl-link--primary-highlight ecl-link--icon ecl-link--icon-after\">Read the full press release</a></p>\n<p>Find further information about:</p>\n<ul>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/list-designated-vlops-and-vloses\">Supervision of the designated very large online platforms and search engines under DSA</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/digital-services-act\">Digital Services Act</a> – main aspects of the regulation</li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/factpages/user-rights-under-digital-services-act\">User rights under the Digital Services Act</a> – an overview</li>\n</ul></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=150\" class=\"ecl-tag ecl-u-mb-xs\">Online platforms and e-commerce</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=193\" class=\"ecl-tag ecl-u-mb-xs\">DSA - Digital Services Act</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div>\n  \n    \n        <div class=\"ecl-u-type-m\">\n    <section class=\"cnct-page-footer ecl-u-mv-2xl\">\n      \n          </section>\n  </div>\n\n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
+        "summary": "<span>Commission designates ChatGPT, Reddit, Roblox under Digital Services Act</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-08-31T11:10:00+02:00\" title=\"Monday, August 31, 2026 - 11:10\">Mon, 08/31/2026 - 11:10</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                                    <p class=\"ecl-page-header-standardised__description\">The Commission has designated ChatGPT as a Very Large Online Search Engine (VLOSE), as well as Reddit and Roblox as Very Large Online Platforms (VLOPs), under the Digital Services Act (DSA).</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/DSA_variation_v3_nuupXEj8CTCd8A4kLlXjt08qc_241791.png?itok=TIbAV9qE\" alt=\"Text &quot;Digital Services Act&quot; inside a white triangle inside a white triangle against a purple background.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>These services declared that they reach at least 45 million average monthly users in the EU and thus meet the threshold for designation.</p>\n<p>Following the notification of the designations, these services have four months, i.e. by January 2027, to comply with the additional DSA obligations for VLOPs and VLOSEs, such as assessing and mitigating the systemic risks stemming from their service and algorithmic systems related to the dissemination of illegal content, the negative effects on minors, users’ physical and mental well-being, fundamental rights, electoral processes and public security.&nbsp;</p>\n<p><a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1772\" class=\"ecl-link ecl-link--primary-highlight ecl-link--icon ecl-link--icon-after\">Read the full press release</a></p>\n<p>Find further information about:</p>\n<ul>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/list-designated-vlops-and-vloses\">Supervision of the designated very large online platforms and search engines under DSA</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/digital-services-act\">Digital Services Act</a> – main aspects of the regulation</li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/factpages/user-rights-under-digital-services-act\">User rights under the Digital Services Act</a> – an overview</li>\n</ul></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=150\" class=\"ecl-tag ecl-u-mb-xs\">Online platforms and e-commerce</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=193\" class=\"ecl-tag ecl-u-mb-xs\">DSA - Digital Services Act</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div class=\"cnt-last-update-block\">\n  \n    \n      \n\n  </div>\n<div class=\"cnt-print-pdf-block\">\n  \n    \n      \n  \n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
         "url": "https://digital-strategy.ec.europa.eu/en/news/commission-designates-chatgpt-reddit-roblox-under-digital-services-act",
         "publication_date": "Mon, 31 Aug 2026 09:10:00 +0000"
       },
@@ -1520,8 +1520,8 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-26T05:01:06.104869+00:00",
-      "source_sha256": "fd13eaf1854d832cf1472e8ac43150eb59d91a069310e7cabb96dd97fd87b6fe",
+      "checked_at": "2026-09-29T05:01:53.868100+00:00",
+      "source_sha256": "197f35d73e54fc68351d4c6d647c136b142fab54b38a609df05c7a9f5b24b233",
       "source_text_sha256": "d023b484ea6402ff0c0090715c8540d8319e9710e114ca7da0d9447332cb30ee",
       "evaluated_text_sha256": "d023b484ea6402ff0c0090715c8540d8319e9710e114ca7da0d9447332cb30ee"
     },
@@ -1530,7 +1530,7 @@
       "attempts": 1,
       "item": {
         "title": "Pitching day: Finalists of the Apply AI Startup Award",
-        "summary": "<span>Pitching day: Finalists of the Apply AI Startup Award</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-08-24T10:19:46+02:00\" title=\"Monday, August 24, 2026 - 10:19\">Mon, 08/24/2026 - 10:19</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                              <ul class=\"ecl-unordered-list ecl-unordered-list--no-bullet ecl-u-mb-xl\">\n      <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n      <span class=\"wt-icon--calendar ecl-icon ecl-icon--fluid ecl-icon--calendar\" aria-hidden=\"true\"></span>&nbsp;\n      20 October 2026\n  </li>\n  \n  </ul>\n\n                <p class=\"ecl-page-header-standardised__description\">Watch the pitches of the top 10 finalists of the Apply AI Startup Award and learn more about the European AI innovation ecosystem.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/AI_Startup_Awards_NUxc8gs9ik6saElWEoEYJIGNbw_243257.png?itok=ptCYFy_H\" alt=\"AI Startup Awards logo featuring a purple trophy graphic framed by an arch of stars.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>The <a href=\"https://digital-strategy.ec.europa.eu/en/news/apply-ai-startup-award\">Apply AI Startup Award</a> recognises innovative European startups and scaleups developing AI solutions in the 11 strategic sectors covered by the <a href=\"https://digital-strategy.ec.europa.eu/en/policies/apply-ai\">Apply AI Strategy</a>.</p>\n<p>In July, national startup associations nominated 24 European AI startups and scaleups across 16 Member States. Independent experts are currently evaluating the nominations and will choose the top 10 finalists for the pitching event. Each startup will have 3 minutes to pitch their AI solution and convince the jury.</p>\n<p>After the pitching session the jury will select the 3 winners. Among other rewards, they will be invited to pitch their solution and receive a trophy and certificate on the main stage of the <a href=\"https://digital-strategy.ec.europa.eu/en/policies/apply-ai-summit\">Apply AI Summit</a>.</p>\n<h2>Registration</h2>\n<p>Click and fill the form to <a href=\"https://www.f6s.com/apply-ai-startup-award-top-10-online-pitching-event/about\">register</a></p>\n<h2>Agenda</h2>\n<p><strong>14:00-15:30 CET(to be confirmed)</strong></p>\n<ul>\n<li>Welcome and introduction</li>\n<li>Part I - Pitches&nbsp;</li>\n<li>Presentation from the AI Office</li>\n<li>Part II - Pitches</li>\n<li>Conclusion</li>\n</ul>\n<h2>Jury &amp; finalists</h2>\n<p>The jury members and the top 10 Finalists will be announced soon.</p></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                                <p><a href=\"https://www.f6s.com/apply-ai-startup-award-top-10-online-pitching-event/about\" class=\"ecl-button ecl-button--call\">Registration form</a></p>\n\n              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=137\" class=\"ecl-tag ecl-u-mb-xs\">Events</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=119\" class=\"ecl-tag ecl-u-mb-xs\">Artificial intelligence</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=260\" class=\"ecl-tag ecl-u-mb-xs\">Apply AI Summit</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div>\n  \n    \n        <div class=\"ecl-u-type-m\">\n    <section class=\"cnct-page-footer ecl-u-mv-2xl\">\n      \n          </section>\n  </div>\n\n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
+        "summary": "<span>Pitching day: Finalists of the Apply AI Startup Award</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-08-24T10:19:46+02:00\" title=\"Monday, August 24, 2026 - 10:19\">Mon, 08/24/2026 - 10:19</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                              <ul class=\"ecl-unordered-list ecl-unordered-list--no-bullet ecl-u-mb-xl\">\n      <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n      <span class=\"wt-icon--calendar ecl-icon ecl-icon--fluid ecl-icon--calendar\" aria-hidden=\"true\"></span>&nbsp;\n      20 October 2026\n  </li>\n  \n  </ul>\n\n                <p class=\"ecl-page-header-standardised__description\">Watch the pitches of the top 10 finalists of the Apply AI Startup Award and learn more about the European AI innovation ecosystem.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/AI_Startup_Awards_NUxc8gs9ik6saElWEoEYJIGNbw_243257.png?itok=ptCYFy_H\" alt=\"AI Startup Awards logo featuring a purple trophy graphic framed by an arch of stars.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>The <a href=\"https://digital-strategy.ec.europa.eu/en/news/apply-ai-startup-award\">Apply AI Startup Award</a> recognises innovative European startups and scaleups developing AI solutions in the 11 strategic sectors covered by the <a href=\"https://digital-strategy.ec.europa.eu/en/policies/apply-ai\">Apply AI Strategy</a>.</p>\n<p>In July, national startup associations nominated 24 European AI startups and scaleups across 16 Member States. Independent experts are currently evaluating the nominations and will choose the top 10 finalists for the pitching event. Each startup will have 3 minutes to pitch their AI solution and convince the jury.</p>\n<p>After the pitching session the jury will select the 3 winners. Among other rewards, they will be invited to pitch their solution and receive a trophy and certificate on the main stage of the <a href=\"https://digital-strategy.ec.europa.eu/en/policies/apply-ai-summit\">Apply AI Summit</a>.</p>\n<h2>Registration</h2>\n<p>Click and fill the form to <a href=\"https://www.f6s.com/apply-ai-startup-award-top-10-online-pitching-event/about\">register</a></p>\n<h2>Agenda</h2>\n<p><strong>14:00-15:30 CET(to be confirmed)</strong></p>\n<ul>\n<li>Welcome and introduction</li>\n<li>Part I - Pitches&nbsp;</li>\n<li>Presentation from the AI Office</li>\n<li>Part II - Pitches</li>\n<li>Conclusion</li>\n</ul>\n<h2>Jury &amp; finalists</h2>\n<p>The jury members and the top 10 Finalists will be announced soon.</p></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                                <p><a href=\"https://www.f6s.com/apply-ai-startup-award-top-10-online-pitching-event/about\" class=\"ecl-button ecl-button--call\">Registration form</a></p>\n\n              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=137\" class=\"ecl-tag ecl-u-mb-xs\">Events</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=119\" class=\"ecl-tag ecl-u-mb-xs\">Artificial intelligence</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=260\" class=\"ecl-tag ecl-u-mb-xs\">Apply AI Summit</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div class=\"cnt-last-update-block\">\n  \n    \n      \n\n  </div>\n<div class=\"cnt-print-pdf-block\">\n  \n    \n      \n  \n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
         "url": "https://digital-strategy.ec.europa.eu/en/events/pitching-day-finalists-apply-ai-startup-award",
         "publication_date": "Mon, 24 Aug 2026 08:19:46 +0000"
       },
@@ -1555,7 +1555,7 @@
       "attempts": 2,
       "item": {
         "title": "Join the Inaugural D-TECT Forum",
-        "summary": "<span>Join the Inaugural D-TECT Forum</span>\n<span><span>lobacni</span></span>\n<span><time datetime=\"2026-08-10T14:07:00+02:00\" title=\"Monday, August 10, 2026 - 14:07\">Mon, 08/10/2026 - 14:07</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                              <ul class=\"ecl-unordered-list ecl-unordered-list--no-bullet ecl-u-mb-xl\">\n      <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n      <span class=\"wt-icon--calendar ecl-icon ecl-icon--fluid ecl-icon--calendar\" aria-hidden=\"true\"></span>&nbsp;\n      11 November 2026\n  </li>\n  \n  </ul>\n\n                <p class=\"ecl-page-header-standardised__description\">The Drone Tech for Countering Threats (D-TECT) Forum is the EU industrial coordination mechanism for drone and counter-drone technologies.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n    \n\n  \n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/AdobeStock_595109161Marcus_Jacobi_ratio32_GxWso1LMZ90qt7CNQ2icYLBmw_242796.jpg?itok=Quz5hy9l\" alt=\"Image of a flying drone.\"></picture><figcaption class=\"ecl-media-container__caption\">          © Marcus Jacobi\n          </figcaption></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>The European Commission invites interested organisations to join the inaugural <a href=\"https://digital-strategy.ec.europa.eu/en/policies/d-tect-forum\">D-Tect Forum</a> on <strong>11 November 2026</strong>. We are looking for companies, <span>research organisations, universities, industry associations, standardisation bodies and innovation networks active in the drones domain. </span>The inaugural Forum aims to gather 100+ high-level leaders to advance Europe’s ambitions in Drone and Counter-Drone technology.</p>\n<p>Participants will explore near-term cooperation across the full drone and counter-drone value chain, including detection, tracking and neutralisation systems, autonomy and AI-enabled navigation, sensing and electronic warfare, secure connectivity, and the enabling technologies that underpin them, such as semiconductors, cloud, cyber and data. The priorities and composition of the thematic Working Groups will be defined during the Forum.</p>\n<p>To participate in the event, please <a href=\"https://ec.europa.eu/eusurvey/runner/58219f54-fdb7-18a3-dd9f-12de23c64323\">submit your application</a>. This form is also a registration to the Call of Expression of Interest to join future events of the D-TECT forum.<em><strong></strong></em></p>\n<p>Please note that submitting an application does not by itself confirm your registration for the inaugural Forum. Further, results of membership applications will be communicated after the event.</p></div>\n\n              \n<h2>Downloads</h2>\n<div data-ecl-auto-init=\"FileDownload\" class=\"ecl-u-mt-m ecl-u-mt-lg-xl ecl-file\" data-ecl-file=\"true\" data-ecl-auto-initialized=\"true\">\n  <div class=\"ecl-file__container\">\n    <span class=\"wt-icon--file ecl-icon ecl-icon--2xl ecl-icon--file\" aria-hidden=\"true\"></span>    <div class=\"ecl-file__info\">\n      <div class=\"ecl-file__title\">Call for Expression of interest - ​​​Drone Tech for Countering Threats Forum​ </div>\n    </div>\n    <a download href=\"https://ec.europa.eu/newsroom/dae/redirection/document/131846\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">\n      <span class=\"ecl-link__label\">Download</span>&nbsp;\n      <span class=\"wt-icon--download ecl-icon ecl-icon--fluid ecl-icon--download\" aria-hidden=\"true\"></span>    </a>\n  </div>\n</div>\n<div data-ecl-auto-init=\"FileDownload\" class=\"ecl-u-mt-m ecl-u-mt-lg-xl ecl-file\" data-ecl-file=\"true\" data-ecl-auto-initialized=\"true\">\n  <div class=\"ecl-file__container\">\n    <span class=\"wt-icon--file ecl-icon ecl-icon--2xl ecl-icon--file\" aria-hidden=\"true\"></span>    <div class=\"ecl-file__info\">\n      <div class=\"ecl-file__title\">Privacy statement - Drone Tech for Countering Threats (D-TECT) Forum</div>\n    </div>\n    <a download href=\"https://ec.europa.eu/newsroom/dae/redirection/document/131845\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">\n      <span class=\"ecl-link__label\">Download</span>&nbsp;\n      <span class=\"wt-icon--download ecl-icon ecl-icon--fluid ecl-icon--download\" aria-hidden=\"true\"></span>    </a>\n  </div>\n</div>\n<div data-ecl-auto-init=\"FileDownload\" class=\"ecl-u-mt-m ecl-u-mt-lg-xl ecl-file\" data-ecl-file=\"true\" data-ecl-auto-initialized=\"true\">\n  <div class=\"ecl-file__container\">\n    <span class=\"wt-icon--file ecl-icon ecl-icon--2xl ecl-icon--file\" aria-hidden=\"true\"></span>    <div class=\"ecl-file__info\">\n      <div class=\"ecl-file__title\">Terms of reference - Drone Tech for Countering Threats Forum</div>\n    </div>\n    <a download href=\"https://ec.europa.eu/newsroom/dae/redirection/document/131847\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">\n      <span class=\"ecl-link__label\">Download</span>&nbsp;\n      <span class=\"wt-icon--download ecl-icon ecl-icon--fluid ecl-icon--download\" aria-hidden=\"true\"></span>    </a>\n  </div>\n</div>\n\n      \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=155\" class=\"ecl-tag ecl-u-mb-xs\">Cybersecurity</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=252\" class=\"ecl-tag ecl-u-mb-xs\">Tech sovereignty</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=257\" class=\"ecl-tag ecl-u-mb-xs\">Hybrid security threats</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div>\n  \n    \n        <div class=\"ecl-u-type-m\">\n    <section class=\"cnct-page-footer ecl-u-mv-2xl\">\n      \n          </section>\n  </div>\n\n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
+        "summary": "<span>Join the Inaugural D-TECT Forum</span>\n<span><span>lobacni</span></span>\n<span><time datetime=\"2026-08-10T14:07:00+02:00\" title=\"Monday, August 10, 2026 - 14:07\">Mon, 08/10/2026 - 14:07</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                              <ul class=\"ecl-unordered-list ecl-unordered-list--no-bullet ecl-u-mb-xl\">\n      <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n      <span class=\"wt-icon--calendar ecl-icon ecl-icon--fluid ecl-icon--calendar\" aria-hidden=\"true\"></span>&nbsp;\n      11 November 2026\n  </li>\n  \n  </ul>\n\n                <p class=\"ecl-page-header-standardised__description\">The Drone Tech for Countering Threats (D-TECT) Forum is the EU industrial coordination mechanism for drone and counter-drone technologies.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n    \n\n  \n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/AdobeStock_595109161Marcus_Jacobi_ratio32_GxWso1LMZ90qt7CNQ2icYLBmw_242796.jpg?itok=Quz5hy9l\" alt=\"Image of a flying drone.\"></picture><figcaption class=\"ecl-media-container__caption\">          © Marcus Jacobi\n          </figcaption></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>The European Commission invites interested organisations to join the inaugural <a href=\"https://digital-strategy.ec.europa.eu/en/policies/d-tect-forum\">D-Tect Forum</a> on <strong>11 November 2026</strong>. We are looking for companies, <span>research organisations, universities, industry associations, standardisation bodies and innovation networks active in the drones domain. </span>The inaugural Forum aims to gather 100+ high-level leaders to advance Europe’s ambitions in Drone and Counter-Drone technology.</p>\n<p>Participants will explore near-term cooperation across the full drone and counter-drone value chain, including detection, tracking and neutralisation systems, autonomy and AI-enabled navigation, sensing and electronic warfare, secure connectivity, and the enabling technologies that underpin them, such as semiconductors, cloud, cyber and data. The priorities and composition of the thematic Working Groups will be defined during the Forum.</p>\n<p>To participate in the event, please <a href=\"https://ec.europa.eu/eusurvey/runner/58219f54-fdb7-18a3-dd9f-12de23c64323\">submit your application</a>. This form is also a registration to the Call of Expression of Interest to join future events of the D-TECT forum.<em><strong></strong></em></p>\n<p>Please note that submitting an application does not by itself confirm your registration for the inaugural Forum. Further, results of membership applications will be communicated after the event.</p></div>\n\n              \n<h2>Downloads</h2>\n<div data-ecl-auto-init=\"FileDownload\" class=\"ecl-u-mt-m ecl-u-mt-lg-xl ecl-file\" data-ecl-file=\"true\" data-ecl-auto-initialized=\"true\">\n  <div class=\"ecl-file__container\">\n    <span class=\"wt-icon--file ecl-icon ecl-icon--2xl ecl-icon--file\" aria-hidden=\"true\"></span>    <div class=\"ecl-file__info\">\n      <div class=\"ecl-file__title\">Call for Expression of interest - ​​​Drone Tech for Countering Threats Forum​ </div>\n    </div>\n    <a download href=\"https://ec.europa.eu/newsroom/dae/redirection/document/131846\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">\n      <span class=\"ecl-link__label\">Download</span>&nbsp;\n      <span class=\"wt-icon--download ecl-icon ecl-icon--fluid ecl-icon--download\" aria-hidden=\"true\"></span>    </a>\n  </div>\n</div>\n<div data-ecl-auto-init=\"FileDownload\" class=\"ecl-u-mt-m ecl-u-mt-lg-xl ecl-file\" data-ecl-file=\"true\" data-ecl-auto-initialized=\"true\">\n  <div class=\"ecl-file__container\">\n    <span class=\"wt-icon--file ecl-icon ecl-icon--2xl ecl-icon--file\" aria-hidden=\"true\"></span>    <div class=\"ecl-file__info\">\n      <div class=\"ecl-file__title\">Privacy statement - Drone Tech for Countering Threats (D-TECT) Forum</div>\n    </div>\n    <a download href=\"https://ec.europa.eu/newsroom/dae/redirection/document/131845\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">\n      <span class=\"ecl-link__label\">Download</span>&nbsp;\n      <span class=\"wt-icon--download ecl-icon ecl-icon--fluid ecl-icon--download\" aria-hidden=\"true\"></span>    </a>\n  </div>\n</div>\n<div data-ecl-auto-init=\"FileDownload\" class=\"ecl-u-mt-m ecl-u-mt-lg-xl ecl-file\" data-ecl-file=\"true\" data-ecl-auto-initialized=\"true\">\n  <div class=\"ecl-file__container\">\n    <span class=\"wt-icon--file ecl-icon ecl-icon--2xl ecl-icon--file\" aria-hidden=\"true\"></span>    <div class=\"ecl-file__info\">\n      <div class=\"ecl-file__title\">Terms of reference - Drone Tech for Countering Threats Forum</div>\n    </div>\n    <a download href=\"https://ec.europa.eu/newsroom/dae/redirection/document/131847\" class=\"ecl-u-mt-xl ecl-file__download ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-after\">\n      <span class=\"ecl-link__label\">Download</span>&nbsp;\n      <span class=\"wt-icon--download ecl-icon ecl-icon--fluid ecl-icon--download\" aria-hidden=\"true\"></span>    </a>\n  </div>\n</div>\n\n      \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=155\" class=\"ecl-tag ecl-u-mb-xs\">Cybersecurity</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=252\" class=\"ecl-tag ecl-u-mb-xs\">Tech sovereignty</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=257\" class=\"ecl-tag ecl-u-mb-xs\">Hybrid security threats</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div class=\"cnt-last-update-block\">\n  \n    \n      \n\n  </div>\n<div class=\"cnt-print-pdf-block\">\n  \n    \n      \n  \n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
         "url": "https://digital-strategy.ec.europa.eu/en/events/join-inaugural-d-tect-forum",
         "publication_date": "Mon, 10 Aug 2026 12:07:00 +0000"
       },
@@ -1580,7 +1580,7 @@
       "attempts": 1,
       "item": {
         "title": "Commission starts enforcing AI Act rules and new transparency requirements on 2 August",
-        "summary": "<span>Commission starts enforcing AI Act rules and new transparency requirements on 2 August</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-07-31T09:00:00+02:00\" title=\"Friday, July 31, 2026 - 09:00\">Fri, 07/31/2026 - 09:00</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                                    <p class=\"ecl-page-header-standardised__description\">From 2 August 2026, the European Commission’s AI Office, together with national authorities, will begin enforcing the Artificial Intelligence (AI) Act.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/AI_card_AIActSD_kc8WnzKy4P5PUgeyvVCoxaS3pQ_242706.jpg?itok=qH_EK4bm\" alt=\"Graphic illustration of a person pointing to a document titled &quot;AI ACT&quot; next to a judge's gavel against a purple background.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>On the same date, new transparency rules will start to apply, requiring certain AI systems to tell users when they are interacting with AI and when content has been generated or altered by it.</p>\n<p>Under the new rules, chatbots and other interactive AI systems will have to tell users they are dealing with AI, not a human. Deepfakes (images, videos, or audio that have been edited or generated using AI) will have to be labelled. AI-generated or altered content will also have to carry machine-readable marks so it can be detected more easily.</p>\n<p><span>The measures are intended to reduce deception and manipulation and help people make informed choices. They also give businesses clearer obligations and a practical way to show compliance. The Commission published a </span><a href=\"https://digital-strategy.ec.europa.eu/en/news-redirect/950719\" target=\"_blank\" rel=\"noopener noreferrer\">first list</a> <span>of more than 180 organisations that have signed the </span><a href=\"https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content\">Code of Practice on transparency of AI-generated content</a> <span>that operationalises the rules on transparency of AI-generated content.</span></p>\n<p>Read the <a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1714\">full press release</a>.</p>\n<p>Read more about the <a href=\"https://digital-strategy.ec.europa.eu/en/policies/enforcement-ai-act\">Enforcement of the AI Act</a> and the:</p>\n<ul>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/ai-act-complaints-tool\">AI Act complaints tool</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/ai-act-whistleblower-tool\">AI Act Whistleblower Tool</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/miscellaneous/complaints-channel-downstream-providers-using-general-purpose-ai-models\">Complaints channel for downstream providers using general-purpose AI models</a></li>\n</ul>\n<p>Find more information about:</p>\n<ul>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/guidelines-transparency-ai-generated-content\">Guidelines on Transparency of AI-generated Content</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai\">General-Purpose AI (GPAI) Code of Practice</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/guidelines-gpai-providers\">Guidelines for providers of GPAI models</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act\">Guidelines on prohibited AI practices</a></li>\n</ul></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=119\" class=\"ecl-tag ecl-u-mb-xs\">Artificial intelligence</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div>\n  \n    \n        <div class=\"ecl-u-type-m\">\n    <section class=\"cnct-page-footer ecl-u-mv-2xl\">\n      \n          </section>\n  </div>\n\n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
+        "summary": "<span>Commission starts enforcing AI Act rules and new transparency requirements on 2 August</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-07-31T09:00:00+02:00\" title=\"Friday, July 31, 2026 - 09:00\">Fri, 07/31/2026 - 09:00</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                                    <p class=\"ecl-page-header-standardised__description\">From 2 August 2026, the European Commission’s AI Office, together with national authorities, will begin enforcing the Artificial Intelligence (AI) Act.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/AI_card_AIActSD_kc8WnzKy4P5PUgeyvVCoxaS3pQ_242706.jpg?itok=qH_EK4bm\" alt=\"Graphic illustration of a person pointing to a document titled &quot;AI ACT&quot; next to a judge's gavel against a purple background.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>On the same date, new transparency rules will start to apply, requiring certain AI systems to tell users when they are interacting with AI and when content has been generated or altered by it.</p>\n<p>Under the new rules, chatbots and other interactive AI systems will have to tell users they are dealing with AI, not a human. Deepfakes (images, videos, or audio that have been edited or generated using AI) will have to be labelled. AI-generated or altered content will also have to carry machine-readable marks so it can be detected more easily.</p>\n<p><span>The measures are intended to reduce deception and manipulation and help people make informed choices. They also give businesses clearer obligations and a practical way to show compliance. The Commission published a </span><a href=\"https://digital-strategy.ec.europa.eu/en/news-redirect/950719\" target=\"_blank\" rel=\"noopener noreferrer\">first list</a> <span>of more than 180 organisations that have signed the </span><a href=\"https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content\">Code of Practice on transparency of AI-generated content</a> <span>that operationalises the rules on transparency of AI-generated content.</span></p>\n<p>Read the <a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1714\">full press release</a>.</p>\n<p>Read more about the <a href=\"https://digital-strategy.ec.europa.eu/en/policies/enforcement-ai-act\">Enforcement of the AI Act</a> and the:</p>\n<ul>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/ai-act-complaints-tool\">AI Act complaints tool</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/ai-act-whistleblower-tool\">AI Act Whistleblower Tool</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/miscellaneous/complaints-channel-downstream-providers-using-general-purpose-ai-models\">Complaints channel for downstream providers using general-purpose AI models</a></li>\n</ul>\n<p>Find more information about:</p>\n<ul>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/guidelines-transparency-ai-generated-content\">Guidelines on Transparency of AI-generated Content</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai\">General-Purpose AI (GPAI) Code of Practice</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/guidelines-gpai-providers\">Guidelines for providers of GPAI models</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act\">Guidelines on prohibited AI practices</a></li>\n</ul></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=119\" class=\"ecl-tag ecl-u-mb-xs\">Artificial intelligence</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div class=\"cnt-last-update-block\">\n  \n    \n      \n\n  </div>\n<div class=\"cnt-print-pdf-block\">\n  \n    \n      \n  \n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
         "url": "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august",
         "publication_date": "Fri, 31 Jul 2026 07:00:00 +0000"
       },
@@ -1670,8 +1670,8 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-26T05:01:43.264095+00:00",
-      "source_sha256": "e210d40c12f3fde1ade51cbd8b998cba27ec895c2b42019e61e02b50be62f08a",
+      "checked_at": "2026-09-29T05:01:54.189323+00:00",
+      "source_sha256": "9de5c2f1ff530249c4d328d67804c4cb4b42f04b60fcce611b5ec363b1a0d6ef",
       "source_text_sha256": "a1c8d7c0f3fe127647a8622f444dabbe386a16c352b4c8f70d46eaa0778edc23",
       "evaluated_text_sha256": "a1c8d7c0f3fe127647a8622f444dabbe386a16c352b4c8f70d46eaa0778edc23"
     },
@@ -1695,8 +1695,8 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-25T05:01:26.858647+00:00",
-      "source_sha256": "25c4705101bdf387dca3220042525c0cf9b97d2dcc3ea5288479b61868d61f18",
+      "checked_at": "2026-09-29T05:01:53.489358+00:00",
+      "source_sha256": "a4859eaf7d4715c86b3d0603b787b7ac238c9fb680f4a846d417c9893c12f955",
       "source_text_sha256": "8a1ac53247518ef86f375550cd3b6cc4cdf7bb70c924f24850fd468a013ddfeb",
       "evaluated_text_sha256": "8a1ac53247518ef86f375550cd3b6cc4cdf7bb70c924f24850fd468a013ddfeb"
     },
@@ -1720,8 +1720,8 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-27T05:01:59.632787+00:00",
-      "source_sha256": "b54bc5dd14a58ebcb56c5a66053999c347eb9bd6247be664240b10d0787ecdf7",
+      "checked_at": "2026-09-29T05:01:56.584729+00:00",
+      "source_sha256": "91d49c20c1a93c48a416173a78a07b1bc81d5502899ad5c849047278bbe0a5ec",
       "source_text_sha256": "652cf0eb4c587273e931532041076432abfb1588522b9bbbc27473cf96f578d9",
       "evaluated_text_sha256": "652cf0eb4c587273e931532041076432abfb1588522b9bbbc27473cf96f578d9"
     },
@@ -1745,8 +1745,8 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-27T05:00:18.218301+00:00",
-      "source_sha256": "e34973518664066ab622bba81898437af35f4d143865ff4f2f3ce4ea67ea8453",
+      "checked_at": "2026-09-29T05:01:55.405892+00:00",
+      "source_sha256": "fc36fee7c9e9dd20bac8aadb6bd51da3772c1f620f1109862e01af6d59477bc3",
       "source_text_sha256": "447b3fc69e1e1e5961e58ba1fe729f69790044c835b894d6451ccc3bf4352d5e",
       "evaluated_text_sha256": "447b3fc69e1e1e5961e58ba1fe729f69790044c835b894d6451ccc3bf4352d5e"
     },
@@ -1770,8 +1770,8 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-27T05:01:59.270816+00:00",
-      "source_sha256": "e4b8807b7e8527971b320fef6561a4bd85e899db0789266d08ab435e42ad04a3",
+      "checked_at": "2026-09-29T05:01:56.273523+00:00",
+      "source_sha256": "cc8e1987460fcb3c61c3536722f9e89a4c93f87e9e684b6585eda52e46108399",
       "source_text_sha256": "b008a43e9557f09dfa174b6e78d4179de3603c60b5e0220f7d07c8781a480b64",
       "evaluated_text_sha256": "b008a43e9557f09dfa174b6e78d4179de3603c60b5e0220f7d07c8781a480b64"
     },
@@ -1801,8 +1801,8 @@
       "evaluated_text_sha256": "7eb3ccfc7b2e4b444124aadea753b79c52bd370bab933737829cd376489bff19"
     },
     "dee85ba4ff5dfae188f2107c358a82a196a59f67dbd4325e46f69f958c058998": {
-      "status": "pending",
-      "attempts": 1,
+      "status": "evaluated",
+      "attempts": 2,
       "item": {
         "title": "NIST Allocates Over $3 Million to Small Businesses Advancing AI, Biotechnology, Semiconductors, Quantum and More",
         "summary": "  NIST is allocating funding to eight small businesses in seven states under the Small Business Innovation Research (SBIR) program.\n\n",
@@ -1820,10 +1820,10 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-28T05:01:51.936352+00:00",
-      "source_sha256": "48c8ec7451384e71883cc5329621b209fcc6dab868a317f7311457774896dc93",
+      "checked_at": "2026-09-29T05:01:35.889681+00:00",
+      "source_sha256": "d074e23a7672d594108b6a49dd1aeb1efd84a6dcb883821eb71ecb9a89e12ed2",
       "source_text_sha256": "83aeb0a11559e0f0a4f3af95309539ccd6899be98dd92fc50c2f99f60f7e10e9",
-      "error": "invalid model schema"
+      "evaluated_text_sha256": "83aeb0a11559e0f0a4f3af95309539ccd6899be98dd92fc50c2f99f60f7e10e9"
     },
     "208c2512eb49a6f348c96ff9785716e7f0305b798f4dceb46c2219c92893301e": {
       "status": "evaluated",
@@ -1945,12 +1945,12 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-28T05:00:13.780149+00:00",
+      "checked_at": "2026-09-29T05:00:13.081104+00:00",
       "error": "source HTTP status 403"
     },
     "00cc6142a1a6b1f6fa6e64da6688ffe5d560d7950cb671e860069f6e0e9948b9": {
-      "status": "pending",
-      "attempts": 1,
+      "status": "evaluated",
+      "attempts": 2,
       "item": {
         "title": "Digital Talent EU Days 2026 in Dublin",
         "summary": "<span>Digital Talent EU Days 2026 in Dublin</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-07-20T15:02:00+02:00\" title=\"Monday, July 20, 2026 - 15:02\">Mon, 07/20/2026 - 15:02</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                              <ul class=\"ecl-unordered-list ecl-unordered-list--no-bullet ecl-u-mb-xl\">\n      <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n      <span class=\"wt-icon--calendar ecl-icon ecl-icon--fluid ecl-icon--calendar\" aria-hidden=\"true\"></span>&nbsp;\n      15 October 2026 - 16 October 2026\n  </li>\n  \n    <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n    <span class=\"wt-icon--location ecl-icon ecl-icon--fluid ecl-icon--location\" aria-hidden=\"true\"></span>&nbsp;\n        Trinity Business School, Dublin, Ireland\n      </li>\n  </ul>\n\n                <p class=\"ecl-page-header-standardised__description\">The Digital Talent EU Days will host a debate on Europe’s digital skills challenges and drive action on talent, competitiveness and inclusion.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n    \n\n  \n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/1783592719908_YvsGvSUXKQNuNQrfHD9Fwgajk_241339.jpg?itok=nxRwjF4s\" alt=\"Promotional graphic for “Digital Talent EU Days,” taking place on 15 and 16 October 2026 at Trinity Business School in Dublin, Ireland. The design features blue, purple, orange and pink geometric gradients, with themes “Advanced Digital Skills” and “Women in Digital,” a “Register Now” banner, the Digital Talent EU Days logo and European Union funding acknowledgement.\"></picture><figcaption class=\"ecl-media-container__caption\">          Digital Talent EU Days\n          </figcaption></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>On 15 and 16 October, <a href=\"https://advancedskills.eu/\" target=\"_blank\" rel=\"noopener noreferrer\">LEADSx2030</a> and <a href=\"https://widigital.eu/\" target=\"_blank\" rel=\"noopener noreferrer\">Connecting Women in Digital</a>, in partnership with the European Commission, <a href=\"https://digital-strategy.ec.europa.eu/en/policies/national-coalitions\">National Coalitions</a>, agencies and local partners, will host the <a href=\"https://digitaltalentdays.eu/\" target=\"_blank\" rel=\"noopener noreferrer\">Digital Talent EU Days</a>.</p>\n<p>What does Europe do when the demand for digital talent keeps growing faster than the pipeline behind it?The Digital Talent EU Days 2026 will bring this question to Dublin, gathering stakeholders from all EU Member States to focus on talent development, talent attraction and talent retention.</p>\n<p>During this two-day event, the agenda will concentrate on the priorities of Europe's digital workforce, including:</p>\n<ul>\n<li>\n<p>Bridging Europe's digital skills gap, new ways for talent development, influence of GenAI, evolving cyber roles and <a href=\"https://employment-social-affairs.ec.europa.eu/policies-and-activities/skills-and-qualifications/skills-jobs/vocational-education-and-training-vet_en\">Vocational and Educational Training (VET)</a> pathways;</p>\n</li>\n</ul>\n<ul>\n<li>\n<p>Talent attraction, international mobility, upskilling and reskilling;</p>\n</li>\n</ul>\n<ul>\n<li>\n<p>Deep tech growth, innovation and Europe's digital competitiveness;</p>\n</li>\n</ul>\n<ul>\n<li>\n<p><a href=\"https://digital-strategy.ec.europa.eu/en/policies/women-digital\">Women in ICT</a> and the outcomes of the Women in Digital Forum Thematic Working Groups.</p>\n</li>\n</ul>\n<p>Aligned with the <a href=\"https://digital-strategy.ec.europa.eu/en/policies/digital-decade-policy-programme\" target=\"_blank\" rel=\"noopener noreferrer\">Digital Decade Policy Programme</a>, the <a href=\"https://commission.europa.eu/topics/competitiveness/union-skills_en\" target=\"_blank\" rel=\"noopener noreferrer\">Union of Skills</a> and the <a href=\"https://digital-strategy.ec.europa.eu/en/library/ai-continent-action-plan\" target=\"_blank\" rel=\"noopener noreferrer\">AI Continent Action Plan</a>, this year’s edition aims to demonstrate Europe’s collective leadership and Ireland’s role in developing and attracting digital specialists for globally competitive innovation.</p>\n<p><a href=\"https://whova.com/portal/registration/hFJ6NNCGr84FhBwTDywl/\" target=\"_blank\" rel=\"noopener noreferrer\">Registration</a> is now open on the Digital Talent EU Days webpage, where the detailed <a href=\"https://digitaltalentdays.eu/\" target=\"_blank\" rel=\"noopener noreferrer\">agenda</a> is also available.</p></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              \n  <div>\n    <h4>Organiser</h4>\n              <div>LEADSx2030 and Connecting Women in Digital</div>\n          </div>\n\n                <p><a href=\"https://whova.com/portal/registration/hFJ6NNCGr84FhBwTDywl/\" class=\"ecl-button ecl-button--call\">Registration form</a></p>\n\n              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=75\" class=\"ecl-tag ecl-u-mb-xs\">Creating a digital society</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=80\" class=\"ecl-tag ecl-u-mb-xs\">Digital learning &amp; ICT in education</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=78\" class=\"ecl-tag ecl-u-mb-xs\">   Digital Skills and Jobs</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=81\" class=\"ecl-tag ecl-u-mb-xs\">Women in ICT</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div>\n  \n    \n        <div class=\"ecl-u-type-m\">\n    <section class=\"cnct-page-footer ecl-u-mv-2xl\">\n      \n          </section>\n  </div>\n\n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
@@ -1968,10 +1968,10 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-09-28T05:01:51.207063+00:00",
-      "source_sha256": "31c6a254bb692ee8f8dd2b0dc3c9d01c15dbb1330b938f5facb552003a7c0cbc",
+      "checked_at": "2026-09-29T05:01:06.584840+00:00",
+      "source_sha256": "3243b058b25cdf3f3d55dd8e9ec64e059c175053450d4a1c16357daecbe07f50",
       "source_text_sha256": "616b86c0ee1d88d597c2fcf6f719645897d088caf2452ddd56f37ff1252f8089",
-      "error": "source capture failed: TimeoutError"
+      "evaluated_text_sha256": "616b86c0ee1d88d597c2fcf6f719645897d088caf2452ddd56f37ff1252f8089"
     },
     "57802728c75064e9f68588b60fe2c2bf09f101b79b66a45341e62957e183f068": {
       "status": "manual_review",
@@ -1992,7 +1992,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-28T05:00:09.107273+00:00",
+      "checked_at": "2026-09-29T05:00:08.263868+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "acd125fdfd75db95c599f5f3bba2c1c547a48442d5bec1e39fdbbd161c614437": {
@@ -2014,7 +2014,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-28T05:00:09.620518+00:00",
+      "checked_at": "2026-09-29T05:00:08.777887+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "2aaa70ffc70ff726df8dbcb1d82079ae56f516d5591fa97f4adff95047795251": {
@@ -2046,7 +2046,7 @@
       "attempts": 2,
       "item": {
         "title": "EU KIDS Act to restrict social media platforms’ access to children in the EU",
-        "summary": "<span>EU KIDS Act to restrict social media platforms’ access to children in the EU</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-09-17T09:36:00+02:00\" title=\"Thursday, September 17, 2026 - 09:36\">Thu, 09/17/2026 - 09:36</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                                    <p class=\"ecl-page-header-standardised__description\">The European Commission has adopted the EU KIDS Act to enhance the online safety of children throughout the Union.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/ProtectingYoungPeopleOnline_600x400_colours_EU_kids_act1_0TxsCqWMP7pJ8MQXjiH0Q2Som4_245425.jpg?itok=l503SGq3\" alt=\"illustration of a browser window surrounded by small people, displaying icons for video, location, likes, and a shield protecting children.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>The proposal prohibits social media platforms from accessing children under the age of 13 and sets an EU-wide minimum age for minors to open an account of their own at the age of 15, thereby ensuring a gradual approach. The KIDS Act also reverses the burden of proof. Now, service providers will have to show that their services are age-appropriate and safe by design.</p>\n<blockquote>\n<p>Commission President, Ursula <strong>von der Leyen</strong>, said: “Today, our children are engaging with the most sophisticated technologies ever created. Technology that was never created with their wellbeing in mind. Our KIDS Act is reversing the burden of proof - it is for platforms to show they are safe by design. And we put parents back in the driving seat, giving them the tools to help their children navigate a safer online world.”</p>\n</blockquote>\n<p>Read the <a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1890\">full press release</a> and <a href=\"https://ec.europa.eu/commission/presscorner/detail/en/fs_26_1891\">factsheet</a>.</p>\n<p>Find further information:</p>\n<ul>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/library/proposal-eu-kids-act-eu-keeping-internet-digital-spaces-accountable-and-trustworthy\">Kids Act - Proposal and supporting documents</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/faqs/kids-act-explained\">KIDS Act - questions and answers</a></li>\n</ul></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=154\" class=\"ecl-tag ecl-u-mb-xs\">   Better Internet for Children</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=153\" class=\"ecl-tag ecl-u-mb-xs\">Strengthening trust and security</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=150\" class=\"ecl-tag ecl-u-mb-xs\">Online platforms and e-commerce</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                              <h2>Related content</h2>\n\n      \n  <article class=\"ecl-content-item ecl-content-item--divider ecl-u-mb-xl\"><div class=\"ecl-content-block ecl-content-item__content-block\" data-ecl-auto-init=\"ContentBlock\" data-ecl-content-block><ul class=\"ecl-content-block__primary-meta-container\"><li class=\"ecl-content-block__primary-meta-item\">Policy and legislation</li><li class=\"ecl-content-block__primary-meta-item\">17 September 2026</li></ul><div class=\"ecl-content-block__title\"><a href=\"https://digital-strategy.ec.europa.eu/en/library/proposal-eu-kids-act-eu-keeping-internet-digital-spaces-accountable-and-trustworthy\" class=\"ecl-link ecl-link--standalone\" data-ecl-title-link>Proposal for EU KIDS Act - 'EU Keeping Internet Digital Spaces Accountable and Trustworthy'</a></div><div class=\"ecl-content-block__description\">This proposal seeks to protect minors from risky digital services and AI systems, uphold the digital single market and maintain a coherent regulatory framework and enforcement structure for the protection of minors online.</div></div></article>  \n\n  \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div>\n  \n    \n        <div class=\"ecl-u-type-m\">\n    <section class=\"cnct-page-footer ecl-u-mv-2xl\">\n      \n          </section>\n  </div>\n\n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
+        "summary": "<span>EU KIDS Act to restrict social media platforms’ access to children in the EU</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-09-17T09:36:00+02:00\" title=\"Thursday, September 17, 2026 - 09:36\">Thu, 09/17/2026 - 09:36</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                                    <p class=\"ecl-page-header-standardised__description\">The European Commission has adopted the EU KIDS Act to enhance the online safety of children throughout the Union.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/ProtectingYoungPeopleOnline_600x400_colours_EU_kids_act1_0TxsCqWMP7pJ8MQXjiH0Q2Som4_245425.jpg?itok=l503SGq3\" alt=\"illustration of a browser window surrounded by small people, displaying icons for video, location, likes, and a shield protecting children.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>The proposal prohibits social media platforms from accessing children under the age of 13 and sets an EU-wide minimum age for minors to open an account of their own at the age of 15, thereby ensuring a gradual approach. The KIDS Act also reverses the burden of proof. Now, service providers will have to show that their services are age-appropriate and safe by design.</p>\n<blockquote>\n<p>Commission President, Ursula <strong>von der Leyen</strong>, said: “Today, our children are engaging with the most sophisticated technologies ever created. Technology that was never created with their wellbeing in mind. Our KIDS Act is reversing the burden of proof - it is for platforms to show they are safe by design. And we put parents back in the driving seat, giving them the tools to help their children navigate a safer online world.”</p>\n</blockquote>\n<p>Read the <a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1890\">full press release</a> and <a href=\"https://ec.europa.eu/commission/presscorner/detail/en/fs_26_1891\">factsheet</a>.</p>\n<p>Find further information:</p>\n<ul>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/library/proposal-eu-kids-act-eu-keeping-internet-digital-spaces-accountable-and-trustworthy\">Kids Act - Proposal and supporting documents</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/faqs/kids-act-explained\">KIDS Act - questions and answers</a></li>\n</ul></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=154\" class=\"ecl-tag ecl-u-mb-xs\">   Better Internet for Children</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=153\" class=\"ecl-tag ecl-u-mb-xs\">Strengthening trust and security</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=150\" class=\"ecl-tag ecl-u-mb-xs\">Online platforms and e-commerce</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                              <h2>Related content</h2>\n\n      \n  <article class=\"ecl-content-item ecl-content-item--divider ecl-u-mb-xl\"><div class=\"ecl-content-block ecl-content-item__content-block\" data-ecl-auto-init=\"ContentBlock\" data-ecl-content-block><ul class=\"ecl-content-block__primary-meta-container\"><li class=\"ecl-content-block__primary-meta-item\">Policy and legislation</li><li class=\"ecl-content-block__primary-meta-item\">17 September 2026</li></ul><div class=\"ecl-content-block__title\"><a href=\"https://digital-strategy.ec.europa.eu/en/library/proposal-eu-kids-act-eu-keeping-internet-digital-spaces-accountable-and-trustworthy\" class=\"ecl-link ecl-link--standalone\" data-ecl-title-link>Proposal for EU KIDS Act - 'EU Keeping Internet Digital Spaces Accountable and Trustworthy'</a></div><div class=\"ecl-content-block__description\">This proposal seeks to protect minors from risky digital services and AI systems, uphold the digital single market and maintain a coherent regulatory framework and enforcement structure for the protection of minors online.</div></div></article>  \n\n  \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div class=\"cnt-last-update-block\">\n  \n    \n      \n\n  </div>\n<div class=\"cnt-print-pdf-block\">\n  \n    \n      \n  \n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
         "url": "https://digital-strategy.ec.europa.eu/en/news/eu-kids-act-restrict-social-media-platforms-access-children-eu",
         "publication_date": "Thu, 17 Sep 2026 07:36:00 +0000"
       },
@@ -2071,7 +2071,7 @@
       "attempts": 2,
       "item": {
         "title": "Proposal for EU KIDS Act - 'EU Keeping Internet Digital Spaces Accountable and Trustworthy'",
-        "summary": "<span>Proposal for EU KIDS Act - 'EU Keeping Internet Digital Spaces Accountable and Trustworthy'</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-09-17T09:21:00+02:00\" title=\"Thursday, September 17, 2026 - 09:21\">Thu, 09/17/2026 - 09:21</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                                    <p class=\"ecl-page-header-standardised__description\">This proposal seeks to protect minors from risky digital services and AI systems, uphold the digital single market and maintain a coherent regulatory framework and enforcement structure for the protection of minors online.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/ProtectingYoungPeopleOnline_600x400_colours_EU_kids_act1_7mj5sARJ3eWJAazOTfaI81Qdp8_245426.jpg?itok=qa7fllkz\" alt=\"illustration of a browser window surrounded by small people, displaying icons for video, location, likes, and a shield protecting children.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>The proposal recognises the risks that minors face on certain online social networking services and video-sharing platforms and therefore limits autonomous account creation on those specific platforms and systems by children below the age of 15 years. By providing one age across the European Union, it harmonises diverging national rules removing obstacles to the implementation of the Digital Single Market, ensuring legal certainty and a similar level of protection for all children in the European Union.</p>\n<div class=\"attachment-container unknown\">\n<div class=\"text-box-container ng-star-inserted\">\n<div class=\"text-box-content\">\n<div class=\"text-box-text gds-body-l\">The <strong>proposal </strong>and its <strong>supporting documents</strong> are available on EUR-Lex and will soon be accessible in <strong>all official EU languages</strong>:</div>\n</div>\n</div>\n</div>\n<ul>\n<li><a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026PC0681\">Proposal for EU KIDS Act - 'EU Keeping Internet Digital Spaces Accountable and Trustworthy'</a></li>\n<li><a href=\"https://eur-lex.europa.eu/legal-content/en/TXT/?uri=COM%3A2026%3A680%3AFIN&amp;qid=1789647397373\">Communication accompanying the KIDS Act - An EU approach to online child safety</a></li>\n<li><a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026SC0681\">Staff Working Document (SWD) - Analysis of Impacts accompanying the proposal for EU kids Act</a></li>\n</ul>\n<p>Find further information:</p>\n<ul>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/news/eu-kids-act-restrict-social-media-platforms-access-children-eu\">Press release</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/faqs/kids-act-explained\">KIDS Act - questions and answers</a></li>\n</ul></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=154\" class=\"ecl-tag ecl-u-mb-xs\">   Better Internet for Children</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=153\" class=\"ecl-tag ecl-u-mb-xs\">Strengthening trust and security</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=150\" class=\"ecl-tag ecl-u-mb-xs\">Online platforms and e-commerce</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                              <h2>Related content</h2>\n\n      \n  <article class=\"ecl-content-item ecl-content-item--divider ecl-u-mb-xl\"><div class=\"ecl-content-block ecl-content-item__content-block\" data-ecl-auto-init=\"ContentBlock\" data-ecl-content-block><ul class=\"ecl-content-block__primary-meta-container\"><li class=\"ecl-content-block__primary-meta-item\">Press release</li><li class=\"ecl-content-block__primary-meta-item\">17 September 2026</li></ul><div class=\"ecl-content-block__title\"><a href=\"https://digital-strategy.ec.europa.eu/en/news/eu-kids-act-restrict-social-media-platforms-access-children-eu\" class=\"ecl-link ecl-link--standalone\" data-ecl-title-link>EU KIDS Act to restrict social media platforms’ access to children in the EU</a></div><div class=\"ecl-content-block__description\">The European Commission has adopted the EU KIDS Act to enhance the online safety of children throughout the Union.</div></div></article>  \n\n  \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div>\n  \n    \n        <div class=\"ecl-u-type-m\">\n    <section class=\"cnct-page-footer ecl-u-mv-2xl\">\n      \n          </section>\n  </div>\n\n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
+        "summary": "<span>Proposal for EU KIDS Act - 'EU Keeping Internet Digital Spaces Accountable and Trustworthy'</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-09-17T09:21:00+02:00\" title=\"Thursday, September 17, 2026 - 09:21\">Thu, 09/17/2026 - 09:21</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                                    <p class=\"ecl-page-header-standardised__description\">This proposal seeks to protect minors from risky digital services and AI systems, uphold the digital single market and maintain a coherent regulatory framework and enforcement structure for the protection of minors online.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/ProtectingYoungPeopleOnline_600x400_colours_EU_kids_act1_7mj5sARJ3eWJAazOTfaI81Qdp8_245426.jpg?itok=qa7fllkz\" alt=\"illustration of a browser window surrounded by small people, displaying icons for video, location, likes, and a shield protecting children.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>The proposal recognises the risks that minors face on certain online social networking services and video-sharing platforms and therefore limits autonomous account creation on those specific platforms and systems by children below the age of 15 years. By providing one age across the European Union, it harmonises diverging national rules removing obstacles to the implementation of the Digital Single Market, ensuring legal certainty and a similar level of protection for all children in the European Union.</p>\n<div class=\"attachment-container unknown\">\n<div class=\"text-box-container ng-star-inserted\">\n<div class=\"text-box-content\">\n<div class=\"text-box-text gds-body-l\">The <strong>proposal </strong>and its <strong>supporting documents</strong> are available on EUR-Lex and will soon be accessible in <strong>all official EU languages</strong>:</div>\n</div>\n</div>\n</div>\n<ul>\n<li><a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026PC0681\">Proposal for EU KIDS Act - 'EU Keeping Internet Digital Spaces Accountable and Trustworthy'</a></li>\n<li><a href=\"https://eur-lex.europa.eu/legal-content/en/TXT/?uri=COM%3A2026%3A680%3AFIN&amp;qid=1789647397373\">Communication accompanying the KIDS Act - An EU approach to online child safety</a></li>\n<li><a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026SC0681\">Staff Working Document (SWD) - Analysis of Impacts accompanying the proposal for EU kids Act</a></li>\n</ul>\n<p>Find further information:</p>\n<ul>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/news/eu-kids-act-restrict-social-media-platforms-access-children-eu\">Press release</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/faqs/kids-act-explained\">KIDS Act - questions and answers</a></li>\n</ul></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=154\" class=\"ecl-tag ecl-u-mb-xs\">   Better Internet for Children</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=153\" class=\"ecl-tag ecl-u-mb-xs\">Strengthening trust and security</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=150\" class=\"ecl-tag ecl-u-mb-xs\">Online platforms and e-commerce</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                              <h2>Related content</h2>\n\n      \n  <article class=\"ecl-content-item ecl-content-item--divider ecl-u-mb-xl\"><div class=\"ecl-content-block ecl-content-item__content-block\" data-ecl-auto-init=\"ContentBlock\" data-ecl-content-block><ul class=\"ecl-content-block__primary-meta-container\"><li class=\"ecl-content-block__primary-meta-item\">Press release</li><li class=\"ecl-content-block__primary-meta-item\">17 September 2026</li></ul><div class=\"ecl-content-block__title\"><a href=\"https://digital-strategy.ec.europa.eu/en/news/eu-kids-act-restrict-social-media-platforms-access-children-eu\" class=\"ecl-link ecl-link--standalone\" data-ecl-title-link>EU KIDS Act to restrict social media platforms’ access to children in the EU</a></div><div class=\"ecl-content-block__description\">The European Commission has adopted the EU KIDS Act to enhance the online safety of children throughout the Union.</div></div></article>  \n\n  \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div class=\"cnt-last-update-block\">\n  \n    \n      \n\n  </div>\n<div class=\"cnt-print-pdf-block\">\n  \n    \n      \n  \n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
         "url": "https://digital-strategy.ec.europa.eu/en/library/proposal-eu-kids-act-eu-keeping-internet-digital-spaces-accountable-and-trustworthy",
         "publication_date": "Thu, 17 Sep 2026 07:21:00 +0000"
       },
@@ -2110,7 +2110,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-28T05:00:07.116645+00:00",
+      "checked_at": "2026-09-29T05:00:06.245224+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "24b91e42ca39f96250ff8396e2ab4365319553e9a5e9361ad8778925105bc9a5": {
@@ -2132,7 +2132,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-28T05:00:06.848101+00:00",
+      "checked_at": "2026-09-29T05:00:05.995036+00:00",
       "source_sha256": "93d27862db1cfbe023f098d1d88ede786d36f184e9daf3b83286d5bcfbd54bf9",
       "source_text_sha256": "7da5c4c5006d37ad7ce3930ab3ce921fa5934fc1651020c2729e94c830c82cda",
       "error": "document exceeds model input budget; manual review required"
@@ -2156,7 +2156,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-28T05:00:07.636341+00:00",
+      "checked_at": "2026-09-29T05:00:06.768631+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "920548c8df731e539da02bfa501604ca735b46e184d9ccac682ae4e34627e663": {
@@ -2178,7 +2178,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-28T05:00:07.974898+00:00",
+      "checked_at": "2026-09-29T05:00:07.104662+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "fc6caa9ca06598e4de6351640198c601779f0975d004e20968e90c2fac908e61": {
@@ -2200,7 +2200,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-28T05:00:08.314352+00:00",
+      "checked_at": "2026-09-29T05:00:07.466653+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "362f4388c4d9496ebf122603c35668888a236dcf2e4af58ad656a707b1c1aa63": {
@@ -2222,7 +2222,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-26T05:02:22.818876+00:00",
+      "checked_at": "2026-09-29T05:01:54.345324+00:00",
       "source_sha256": "fa8bad7527d85cd87bbadc4c25271e676c66e8d055bae1ea8e95e636f87d7287",
       "source_text_sha256": "675dbf69310befe7195978a428ac06a41d847cdcd1a1f9a455efe15807d1aff4",
       "evaluated_text_sha256": "675dbf69310befe7195978a428ac06a41d847cdcd1a1f9a455efe15807d1aff4"
@@ -2232,7 +2232,7 @@
       "attempts": 1,
       "item": {
         "title": "Data Union Conference",
-        "summary": "<span>Data Union Conference</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-09-18T09:43:00+02:00\" title=\"Friday, September 18, 2026 - 09:43\">Fri, 09/18/2026 - 09:43</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                              <ul class=\"ecl-unordered-list ecl-unordered-list--no-bullet ecl-u-mb-xl\">\n      <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n      <span class=\"wt-icon--calendar ecl-icon ecl-icon--fluid ecl-icon--calendar\" aria-hidden=\"true\"></span>&nbsp;\n      12 January 2027\n  </li>\n  \n    <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n    <span class=\"wt-icon--location ecl-icon ecl-icon--fluid ecl-icon--location\" aria-hidden=\"true\"></span>&nbsp;\n        Charlemagne building, Brussels, Belgium\n      </li>\n  </ul>\n\n                <p class=\"ecl-page-header-standardised__description\">Bringing policymakers, businesses, experts and researchers together to turn Europe’s data policies into more data for AI, growth and competitiveness.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/DUC_visual_final_32_4vnOvc1RXIu5JOAoIVcTFipmS0_244932.jpg?itok=sK7CkSsw\" alt=\"Conference banner (12 January 2027) - blue digital network graphics, European Commission logo.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>This high-level conference will be hosted by the European Commission. It will contribute to a wider political debate on the future of the EU data Policy.</p>\n<h2>Main topics on the agenda</h2>\n<p>During the conference, discussions will focus on:</p>\n<div>\n<ul>\n<li>Digital Omnibus:<span> Simplifying the EU data rulebook, reducing administrative burden and supporting innovation</span></li>\n<li>Data for industrial AI: Improving access to high-quality data through the <a href=\"https://digital-strategy.ec.europa.eu/en/policies/data-act\" target=\"_blank\" rel=\"noopener noreferrer\"><span>Data Act</span></a></li>\n<li>International data flows: Promoting open and trusted data flows and securing fair treatment for EU companies abroad</li>\n</ul>\n</div>\n<p>The agenda will be published here.</p>\n<h2>Register</h2>\n<p>You can <a href=\"https://register.event-works.europa.eu/dgcnect/data_union_conference_27/e/lk/k/\">express your interest in participating</a><strong>.</strong> Admission is subject to approval.</p>\n<p>The event is going to be live streamed.</p>\n<h2>Background</h2>\n<p>European companies and researchers need better access to high-quality data to develop and deploy AI. The <a href=\"https://digital-strategy.ec.europa.eu/en/policies/data-union\" target=\"_blank\" rel=\"noopener noreferrer\"><span>Data Union Strategy</span></a> sets out practical measures to increase data availability and strengthen Europe’s data infrastructure.</p>\n<p>The Commission is also working to simplify the EU’s digital rules. Building on the Data Act and other existing legislation, the aim is to reduce unnecessary burdens and make it easier for companies to use and share data.</p>\n<p><span>Internationally, the Commission seeks to facilitate trusted cross-border data flows and address unfair restrictions faced by EU companies in other markets. Together, these efforts aim to support AI development and strengthen Europe’s competitiveness.</span></p></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              \n  <div>\n    <h4>Organiser</h4>\n              <div>European Commission</div>\n          </div>\n\n                <p><a href=\"https://register.event-works.europa.eu/dgcnect/data_union_conference_27/e/lk/k/\" class=\"ecl-button ecl-button--call\">Express your interest in participating</a></p>\n\n              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=70\" class=\"ecl-tag ecl-u-mb-xs\">Big data</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=69\" class=\"ecl-tag ecl-u-mb-xs\">Data policy</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=74\" class=\"ecl-tag ecl-u-mb-xs\">Open data</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=119\" class=\"ecl-tag ecl-u-mb-xs\">Artificial intelligence</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div>\n  \n    \n        <div class=\"ecl-u-type-m\">\n    <section class=\"cnct-page-footer ecl-u-mv-2xl\">\n      \n          </section>\n  </div>\n\n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
+        "summary": "<span>Data Union Conference</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-09-18T09:43:00+02:00\" title=\"Friday, September 18, 2026 - 09:43\">Fri, 09/18/2026 - 09:43</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                              <ul class=\"ecl-unordered-list ecl-unordered-list--no-bullet ecl-u-mb-xl\">\n      <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n      <span class=\"wt-icon--calendar ecl-icon ecl-icon--fluid ecl-icon--calendar\" aria-hidden=\"true\"></span>&nbsp;\n      12 January 2027\n  </li>\n  \n    <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n    <span class=\"wt-icon--location ecl-icon ecl-icon--fluid ecl-icon--location\" aria-hidden=\"true\"></span>&nbsp;\n        Charlemagne building, Brussels, Belgium\n      </li>\n  </ul>\n\n                <p class=\"ecl-page-header-standardised__description\">Bringing policymakers, businesses, experts and researchers together to turn Europe’s data policies into more data for AI, growth and competitiveness.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/DUC_visual_final_32_4vnOvc1RXIu5JOAoIVcTFipmS0_244932.jpg?itok=sK7CkSsw\" alt=\"Conference banner (12 January 2027) - blue digital network graphics, European Commission logo.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>This high-level conference will be hosted by the European Commission. It will contribute to a wider political debate on the future of the EU data Policy.</p>\n<h2>Main topics on the agenda</h2>\n<p>During the conference, discussions will focus on:</p>\n<div>\n<ul>\n<li>Digital Omnibus:<span> Simplifying the EU data rulebook, reducing administrative burden and supporting innovation</span></li>\n<li>Data for industrial AI: Improving access to high-quality data through the <a href=\"https://digital-strategy.ec.europa.eu/en/policies/data-act\" target=\"_blank\" rel=\"noopener noreferrer\"><span>Data Act</span></a></li>\n<li>International data flows: Promoting open and trusted data flows and securing fair treatment for EU companies abroad</li>\n</ul>\n</div>\n<p>The agenda will be published here.</p>\n<h2>Register</h2>\n<p>You can <a href=\"https://register.event-works.europa.eu/dgcnect/data_union_conference_27/e/lk/k/\">express your interest in participating</a><strong>.</strong> Admission is subject to approval.</p>\n<p>The event is going to be live streamed.</p>\n<h2>Background</h2>\n<p>European companies and researchers need better access to high-quality data to develop and deploy AI. The <a href=\"https://digital-strategy.ec.europa.eu/en/policies/data-union\" target=\"_blank\" rel=\"noopener noreferrer\"><span>Data Union Strategy</span></a> sets out practical measures to increase data availability and strengthen Europe’s data infrastructure.</p>\n<p>The Commission is also working to simplify the EU’s digital rules. Building on the Data Act and other existing legislation, the aim is to reduce unnecessary burdens and make it easier for companies to use and share data.</p>\n<p><span>Internationally, the Commission seeks to facilitate trusted cross-border data flows and address unfair restrictions faced by EU companies in other markets. Together, these efforts aim to support AI development and strengthen Europe’s competitiveness.</span></p></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              \n  <div>\n    <h4>Organiser</h4>\n              <div>European Commission</div>\n          </div>\n\n                <p><a href=\"https://register.event-works.europa.eu/dgcnect/data_union_conference_27/e/lk/k/\" class=\"ecl-button ecl-button--call\">Express your interest in participating</a></p>\n\n              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=70\" class=\"ecl-tag ecl-u-mb-xs\">Big data</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=69\" class=\"ecl-tag ecl-u-mb-xs\">Data policy</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=74\" class=\"ecl-tag ecl-u-mb-xs\">Open data</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=119\" class=\"ecl-tag ecl-u-mb-xs\">Artificial intelligence</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div class=\"cnt-last-update-block\">\n  \n    \n      \n\n  </div>\n<div class=\"cnt-print-pdf-block\">\n  \n    \n      \n  \n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
         "url": "https://digital-strategy.ec.europa.eu/en/events/data-union-conference",
         "publication_date": "Fri, 18 Sep 2026 07:43:00 +0000"
       },
@@ -2247,8 +2247,8 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-26T05:02:23.062058+00:00",
-      "source_sha256": "083f60b543557e41099352cdb1eff438dd3ef711d0073ce43980cee3953631d7",
+      "checked_at": "2026-09-29T05:01:54.588553+00:00",
+      "source_sha256": "183a03333955d123f795e4868cb647fcffbac9974455c33c3ec4ec6d54d2ac38",
       "source_text_sha256": "ca2a46e06c5ea66f8cfbff6c63af7820b2682b7c863dd7fcf10b0358e7659dc7",
       "evaluated_text_sha256": "ca2a46e06c5ea66f8cfbff6c63af7820b2682b7c863dd7fcf10b0358e7659dc7"
     },
@@ -2271,7 +2271,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-28T05:00:05.887214+00:00",
+      "checked_at": "2026-09-29T05:00:05.032936+00:00",
       "source_sha256": "5732141abd973d8993e6239e197486dbeef5fa07af70a1a8e9e5c0342d47b438",
       "source_text_sha256": "057ae28ab694825203e41fddded2a58b524f530bd1cfef46c64e60da0d6efc8f",
       "error": "document exceeds model input budget; manual review required"
@@ -2295,7 +2295,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-27T05:02:00.519912+00:00",
+      "checked_at": "2026-09-29T05:01:57.434999+00:00",
       "source_sha256": "48f01a7fbb82d608f3f4f0ddd208e125eb8b80535bbc3a67edd11e5b8ca03e29",
       "source_text_sha256": "af7d0f203f03ad2128a0dddc1462b0cb18a9c4be86031760d8da6638cf2f82e1",
       "evaluated_text_sha256": "af7d0f203f03ad2128a0dddc1462b0cb18a9c4be86031760d8da6638cf2f82e1"
@@ -2319,7 +2319,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-27T05:02:00.275333+00:00",
+      "checked_at": "2026-09-29T05:01:57.191660+00:00",
       "source_sha256": "584808262478d094bd6aa4081fb3e9bddc01fcf9717fd31ab5a946edcd584cba",
       "source_text_sha256": "831be24fa8c4a5438e14d7525d9e289148ff472c9091ed21dc666289295be13d",
       "evaluated_text_sha256": "831be24fa8c4a5438e14d7525d9e289148ff472c9091ed21dc666289295be13d"
@@ -2343,7 +2343,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-27T05:02:00.025066+00:00",
+      "checked_at": "2026-09-29T05:01:56.948042+00:00",
       "source_sha256": "9942cbeb9b044db07964151690400a3d9de48378ab806870ad4870b66343fc4e",
       "source_text_sha256": "dc9382559a4a7b55fcf4d9b45e735e5fe8ec7fa4d5f6c867899d028b32d04b70",
       "evaluated_text_sha256": "dc9382559a4a7b55fcf4d9b45e735e5fe8ec7fa4d5f6c867899d028b32d04b70"
@@ -2367,7 +2367,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-27T05:02:00.761818+00:00",
+      "checked_at": "2026-09-29T05:01:57.679575+00:00",
       "source_sha256": "5301ed4cfd1cff5c6d520d3f50db4427783b303b6b8b7a3aacd5c906aebb7345",
       "source_text_sha256": "10c00bb5a84a266e36fdad2dfe030a025124bd0403dc052bf489bba9b0e4d6a2",
       "evaluated_text_sha256": "10c00bb5a84a266e36fdad2dfe030a025124bd0403dc052bf489bba9b0e4d6a2"
@@ -2391,7 +2391,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-28T05:00:05.289749+00:00",
+      "checked_at": "2026-09-29T05:00:04.403035+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "99b981b199350cd18d9dffb46c33f69f183df547fbe49512e2f937371d7cc3ac": {
@@ -2413,7 +2413,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-28T05:00:05.629941+00:00",
+      "checked_at": "2026-09-29T05:00:04.778444+00:00",
       "source_sha256": "19d7414eb9185234aac641d5477a120f5b1bbd298866c740acef103e33a51f5f",
       "source_text_sha256": "42b2a605ec6030eff66b91501bfafb930aded7c79002d3c37346d051858ab21a",
       "error": "document exceeds model input budget; manual review required"
@@ -2509,7 +2509,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-28T05:00:05.020559+00:00",
+      "checked_at": "2026-09-29T05:00:04.130091+00:00",
       "source_sha256": "387c58cf45fffaba490ed8c9e7eefb230da279108c6bf0afb7cfa14725bc0f69",
       "source_text_sha256": "960c0ef0cd21704f853ccbd3fcc20d9589a5749c1b89a4de1d24e8c161a9852c",
       "error": "document exceeds model input budget; manual review required"
@@ -2533,7 +2533,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-28T05:00:04.755446+00:00",
+      "checked_at": "2026-09-29T05:00:03.879226+00:00",
       "source_sha256": "823800fb40021b6741fdce7b49ed462ad4e8f5c599835080825d505a4223abcf",
       "source_text_sha256": "da0a678e19f9753a6699ade76b54b06b8b9bea17e71214e0c000f4a465ccbcfa",
       "error": "document exceeds model input budget; manual review required"
@@ -2543,8 +2543,8 @@
     "documents_checked": 60,
     "documents_deferred": 24,
     "model_attempts": 6,
-    "pending_evaluations": 38,
-    "manual_review_required": 29,
+    "pending_evaluations": 32,
+    "manual_review_required": 30,
     "unhealthy_sources": [
       "ftc_press_releases"
     ],
