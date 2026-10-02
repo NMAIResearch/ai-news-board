@@ -1,12 +1,72 @@
 {
- "generated": "2026-09-30 05:29 UTC",
+ "generated": "2026-10-02 05:32 UTC",
  "window_days": 60,
  "counts": {
-  "total": 102,
-  "closed": 44,
+  "total": 104,
+  "closed": 46,
   "open_weights": 58
  },
  "releases": [
+  {
+   "lab": "Apodex",
+   "model": "Apodex: Apodex 1.1 Mini (free)",
+   "id": "apodex/apodex-1.1-mini",
+   "date": "2026-10-01",
+   "url": "https://openrouter.ai/apodex/apodex-1.1-mini",
+   "context_length": 262144,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Unbiased",
+   "model": "Pareto 26.10 Preview",
+   "id": "unbiased/pareto-26.10-preview",
+   "date": "2026-10-01",
+   "url": "https://openrouter.ai/unbiased/pareto-26.10-preview",
+   "context_length": 1048576,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "PixelUMM",
+   "id": "nvidia/PixelUMM",
+   "date": "2026-10-01",
+   "url": "https://huggingface.co/nvidia/PixelUMM",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/PixelUMM",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "PixelDiT2-ImageNet",
+   "id": "nvidia/PixelDiT2-ImageNet",
+   "date": "2026-10-01",
+   "url": "https://huggingface.co/nvidia/PixelDiT2-ImageNet",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/PixelDiT2-ImageNet",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "IBM",
+   "model": "ensemble-forecasting-with-ibm-granite-time-series",
+   "id": "ibm-granite/ensemble-forecasting-with-ibm-granite-time-series",
+   "date": "2026-10-01",
+   "url": "https://huggingface.co/ibm-granite/ensemble-forecasting-with-ibm-granite-time-series",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "ibm-granite/ensemble-forecasting-with-ibm-granite-time-series",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
   {
    "lab": "OpenAI",
    "model": "OpenAI: GPT-6.1 Sol Pro",
@@ -241,7 +301,7 @@
    "id": "xiaomi/mimo-v2.6-flash",
    "date": "2026-09-21",
    "url": "https://openrouter.ai/xiaomi/mimo-v2.6-flash",
-   "context_length": 1048576,
+   "context_length": 1050000,
    "evidence": "open-weights",
    "evidence_note": "weights published at huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL; downloadable and hashable",
    "hf_id": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
@@ -392,18 +452,6 @@
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
-   "lab": "Nvidia",
-   "model": "foundationpose",
-   "id": "nvidia/foundationpose",
-   "date": "2026-09-15",
-   "url": "https://huggingface.co/nvidia/foundationpose",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/foundationpose",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
    "lab": "Alibaba (Qwen)",
    "model": "Qwen-Image-2.1",
    "id": "Qwen/Qwen-Image-2.1",
@@ -413,18 +461,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "Qwen/Qwen-Image-2.1",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "GLM-5.3-NVFP4",
-   "id": "nvidia/GLM-5.3-NVFP4",
-   "date": "2026-09-14",
-   "url": "https://huggingface.co/nvidia/GLM-5.3-NVFP4",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/GLM-5.3-NVFP4",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
@@ -761,18 +797,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "ibm-granite/granite-4.2-3b-bf16-mlx",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "IBM",
-   "model": "granite-4.2-30b-q4-mlx",
-   "id": "ibm-granite/granite-4.2-30b-q4-mlx",
-   "date": "2026-09-01",
-   "url": "https://huggingface.co/ibm-granite/granite-4.2-30b-q4-mlx",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "ibm-granite/granite-4.2-30b-q4-mlx",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
