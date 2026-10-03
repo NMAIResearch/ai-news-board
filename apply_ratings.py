@@ -30,7 +30,7 @@ FEED = os.path.join(HERE, "feed_items.json")
 # Local, unpublished ratings file. Override with RATINGS_PATH.
 # ⛔ Never write this path into published output: it contains the home directory.
 SOURCES = Path(os.environ.get("RATINGS_PATH",
-                              Path.home() / "Desktop" / "Scripts" / "sources.md"))
+                              Path.home() / "Desktop" / "Workflow" / "07_monitor" / "sources.md"))
 TIER_MAP = os.path.join(HERE, "tier_map.json")
 
 

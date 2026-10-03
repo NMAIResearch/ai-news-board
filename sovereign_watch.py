@@ -27,6 +27,7 @@ import sys
 import tempfile
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from typing import Any, Dict, List, Optional, Tuple
@@ -274,7 +275,10 @@ def save_alerts(alerts: List[Dict[str, Any]]) -> None:
 def fetch_url_text(url: str, timeout: int = 25) -> Optional[str]:
     if not intake.public_url(url):
         raise ValueError("source URL must be public HTTPS")
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "*/*"})
+    # Use a browser-compatible request header only for the official FTC host.
+    # Keep the source URL, public-HTTPS check and response limits unchanged.
+    agent = "Mozilla/5.0" if urllib.parse.urlparse(url).hostname == "www.ftc.gov" else USER_AGENT
+    req = urllib.request.Request(url, headers={"User-Agent": agent, "Accept": "*/*"})
     with urllib.request.urlopen(req, timeout=timeout) as response:
         data = response.read(intake.MAX_SOURCE_BYTES + 1)
         if len(data) > intake.MAX_SOURCE_BYTES:
@@ -664,7 +668,7 @@ def run_rebuilds() -> None:
     if build_py.exists():
         subprocess.run([sys.executable, str(build_py)], cwd=HERE, check=True)
 
-    deck_py = WORKSPACE_ROOT / "Scripts" / "build_command_deck.py"
+    deck_py = WORKSPACE_ROOT / "Workflow" / "records" / "build_command_deck.py"
     if deck_py.exists():
         subprocess.run([sys.executable, str(deck_py)], cwd=deck_py.parent, check=True)
 

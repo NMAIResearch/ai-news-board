@@ -73,66 +73,66 @@
     "54b1b80026c38a18cbc27a2657d9270dca2fb517e6a904f2bf2aee3960aebc45": "2026-09-13T05:01:31.276246+00:00",
     "3f5b18c5361a116e8cda95268bda629c953202b3169b944325053a2129c242c3": "2026-09-13T05:01:31.276250+00:00"
   },
-  "last_run": "2026-10-02T05:02:20.031854+00:00",
+  "last_run": "2026-10-03T05:02:08.166039+00:00",
   "source_states": {
     "us_fed_reg_ai": {
-      "checked_at": "2026-10-02T05:00:02.475170+00:00",
+      "checked_at": "2026-10-03T05:00:04.420723+00:00",
       "status": "ok",
       "entries": 40,
-      "queued": 30,
+      "queued": 31,
       "window_days": 30,
-      "last_success": "2026-10-02T05:00:02.475170+00:00"
+      "last_success": "2026-10-03T05:00:04.420723+00:00"
     },
     "us_fed_reg_eo": {
-      "checked_at": "2026-10-02T05:00:03.617297+00:00",
+      "checked_at": "2026-10-03T05:00:05.126396+00:00",
       "status": "ok",
       "entries": 40,
-      "queued": 26,
+      "queued": 29,
       "window_days": 30,
-      "last_success": "2026-10-02T05:00:03.617297+00:00"
+      "last_success": "2026-10-03T05:00:05.126396+00:00"
     },
     "eu_ai_office": {
-      "checked_at": "2026-10-02T05:00:04.224464+00:00",
+      "checked_at": "2026-10-03T05:00:05.653906+00:00",
       "status": "ok",
       "entries": 10,
       "queued": 9,
       "window_days": null,
-      "last_success": "2026-10-02T05:00:04.224464+00:00"
+      "last_success": "2026-10-03T05:00:05.653906+00:00"
     },
     "uk_cma_news": {
-      "checked_at": "2026-10-02T05:00:04.315093+00:00",
+      "checked_at": "2026-10-03T05:00:05.734831+00:00",
       "status": "ok",
       "entries": 20,
       "queued": 0,
       "window_days": null,
-      "last_success": "2026-10-02T05:00:04.315093+00:00"
+      "last_success": "2026-10-03T05:00:05.734831+00:00"
     },
     "uk_ofgem_queue": {
-      "checked_at": "2026-10-02T05:00:04.366335+00:00",
+      "checked_at": "2026-10-03T05:00:05.782778+00:00",
       "status": "ok",
       "entries": 20,
       "queued": 1,
       "window_days": null,
-      "last_success": "2026-10-02T05:00:04.366335+00:00"
+      "last_success": "2026-10-03T05:00:05.782778+00:00"
     },
     "nist_ai_notices": {
-      "checked_at": "2026-10-02T05:00:04.514040+00:00",
+      "checked_at": "2026-10-03T05:00:05.979943+00:00",
       "status": "ok",
       "entries": 40,
       "queued": 9,
       "window_days": null,
-      "last_success": "2026-10-02T05:00:04.514040+00:00"
+      "last_success": "2026-10-03T05:00:05.979943+00:00"
     },
     "sec_press_releases": {
-      "checked_at": "2026-10-02T05:00:04.801474+00:00",
+      "checked_at": "2026-10-03T05:00:06.279453+00:00",
       "status": "ok",
       "entries": 25,
       "queued": 1,
       "window_days": null,
-      "last_success": "2026-10-02T05:00:04.801474+00:00"
+      "last_success": "2026-10-03T05:00:06.279453+00:00"
     },
     "ftc_press_releases": {
-      "checked_at": "2026-10-02T05:00:04.983922+00:00",
+      "checked_at": "2026-10-03T05:00:06.447310+00:00",
       "status": "failed",
       "entries": 0,
       "queued": 0,
@@ -235,7 +235,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:01:05.125443+00:00",
+      "checked_at": "2026-10-03T05:01:46.157745+00:00",
       "source_sha256": "eb1eddaf773a3253e5f7f035c9c1317b0010f83259a9b4caca539bf2e75879ea",
       "source_text_sha256": "89ffa63e83499655219e9053b4f4de919e4f5b0aaa8adfdcebfc4f3ba9b10b53",
       "error": "document exceeds model input budget; manual review required"
@@ -259,13 +259,13 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-30T05:01:24.284533+00:00",
+      "checked_at": "2026-10-03T05:02:07.131672+00:00",
       "source_sha256": "592fd494146781d8ec578574638da6cd8a41c75648bc7c5d8ff577e84be04899",
       "source_text_sha256": "c86961446a9f009dd79704185cb312be43e4946d7cf12556666bd9bd946c3391",
       "evaluated_text_sha256": "c86961446a9f009dd79704185cb312be43e4946d7cf12556666bd9bd946c3391"
     },
     "1713135e0fda898e3cb4faead667e3f651a2029f3f3b17978249bae1e06f4c35": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 1,
       "item": {
         "title": "Securing the United States Bulk-Power System",
@@ -283,7 +283,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:01:08.039538+00:00",
+      "checked_at": "2026-10-03T05:02:03.947753+00:00",
       "source_sha256": "3ee83a15aa02e1f35f809f0eb4ddfe2adb601346b89901f0accc629880b5d2cb",
       "source_text_sha256": "a53929654bdac68bbd0f084a443518c66e0dc0bad70789d508a29d5079ca0add",
       "error": "document exceeds model input budget; manual review required"
@@ -307,11 +307,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:01:05.463217+00:00",
+      "checked_at": "2026-10-03T05:01:46.497936+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "4f3a608c15f8f04e29feca1b6c63058027b545c03e0fbb2baa316c3d697267f8": {
-      "status": "pending",
+      "status": "evaluated",
       "attempts": 1,
       "item": {
         "title": "Agency Information Collection Activities; Submission to the Office of Management and Budget (OMB) for Review and Approval; Comment Request; Business Trends and Outlook Survey",
@@ -329,11 +329,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-01T07:05:48.776923+00:00",
+      "checked_at": "2026-10-03T05:01:49.299764+00:00",
       "source_sha256": "115c1f051f5500de7183958a59c12ba9bfb4f54d0c9c55af40b4f67ca80f86f8",
       "source_text_sha256": "efb0c31c89d156a5c14f5294b8969b148c828a8cdc99a8825da4fb5d53582221",
-      "evaluated_text_sha256": "efb0c31c89d156a5c14f5294b8969b148c828a8cdc99a8825da4fb5d53582221",
-      "error": "source capture failed: URLError"
+      "evaluated_text_sha256": "efb0c31c89d156a5c14f5294b8969b148c828a8cdc99a8825da4fb5d53582221"
     },
     "57e6e75c8f90df4c17ec825eb19dc053934a938e7f420097ec5d67fe1ec9132c": {
       "status": "evaluated",
@@ -354,7 +353,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-30T05:01:22.734338+00:00",
+      "checked_at": "2026-10-03T05:02:05.316082+00:00",
       "source_sha256": "dd6a9ec03eb5f041ccf9f958901b9ea1ab37bdfddebd3e5a936378f83afea668",
       "source_text_sha256": "a318ded85267210dca944e7aee51867e86a1d214444375d228ebb5e4dc26b1ad",
       "evaluated_text_sha256": "a318ded85267210dca944e7aee51867e86a1d214444375d228ebb5e4dc26b1ad"
@@ -378,7 +377,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:01:05.902004+00:00",
+      "checked_at": "2026-10-03T05:01:46.912356+00:00",
       "source_sha256": "711f43edaa8cd4d1f261877323c360e5dc822a4483fe5051a63d0989523b13a4",
       "source_text_sha256": "ca1b3cf0f0f3c78ddf801e6598dc6e376367ab163f90e1e2702947cca856e63c",
       "error": "document exceeds model input budget; manual review required"
@@ -450,7 +449,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:01:02.467125+00:00",
+      "checked_at": "2026-10-03T05:01:43.508242+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "f3227389324f7137d15bbb2f3d3a07cc2a3d2d1f69b73d682b660348775bec51": {
@@ -496,7 +495,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:01:06.695160+00:00",
+      "checked_at": "2026-10-03T05:01:47.696076+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "9d988f6d9277029c3ac6d920018ac38aedd5ac984a6a25fb8d56a6e34f6b3ee2": {
@@ -517,8 +516,8 @@
         "format": "json_fedreg",
         "priority_base": 1
       },
-      "active": true,
-      "checked_at": "2026-10-02T05:00:58.501576+00:00",
+      "active": false,
+      "checked_at": "2026-10-03T05:01:39.521184+00:00",
       "source_sha256": "a4511bae5da70c354f606c391d50f9ad41e568825f8e0109025f414111f90dc9",
       "source_text_sha256": "fe91c974bf9b2405c6f653e0dda74d08d1a6265a6e628d156bffc7dc259f7bea",
       "error": "document exceeds model input budget; manual review required"
@@ -542,7 +541,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-02T05:01:04.006231+00:00",
+      "checked_at": "2026-10-03T05:01:45.036889+00:00",
       "source_sha256": "fbd5fff4fe0699288f0b65021446cc8dd9d08a94c376413b9a19b6fb6d2da372",
       "source_text_sha256": "2cd3f0dc0045694d0b680943b47d08f04239f7aa6f94aa7136a5fff482fd728e",
       "error": "document exceeds model input budget; manual review required"
@@ -566,7 +565,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-02T05:01:01.095689+00:00",
+      "checked_at": "2026-10-03T05:01:42.148720+00:00",
       "source_sha256": "978bf8bd7945d3beaa2ccf09e14aaa1bfabf6d600c6f472d9707aa1ce0b1110e",
       "source_text_sha256": "640c895a637c3bfbf00d5f8ee04c5621bad85598d7ac09283fb5344a414143d8",
       "error": "document exceeds model input budget; manual review required"
@@ -614,7 +613,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-02T05:01:03.112260+00:00",
+      "checked_at": "2026-10-03T05:01:44.141787+00:00",
       "source_sha256": "78569acd9cc75cd417f395652dfbe9582a43cd92f0320fd9c0a4ac0f74e7c25f",
       "source_text_sha256": "4a8447f5a0993387ea2590db8e8be6d50b8a8e431f1cee6debd1dc45640047b9",
       "error": "document exceeds model input budget; manual review required"
@@ -638,7 +637,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-02T05:01:03.391524+00:00",
+      "checked_at": "2026-10-03T05:01:44.409266+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "45cd6e241ef0f49a81f7569cdcbdf3b115d21f5515637f6ae5e8a6c269ed346a": {
@@ -660,7 +659,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-02T05:01:06.365208+00:00",
+      "checked_at": "2026-10-03T05:01:47.424250+00:00",
       "source_sha256": "7c4c37f6412dccc2795ca2beedfd141df2754c086e9e276c32e97aa99927555b",
       "source_text_sha256": "404d25d32a5cb5fa721fb74ca6c16df48425c1abe2ae321164e0c4796bd520d3",
       "error": "document exceeds model input budget; manual review required"
@@ -684,7 +683,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-02T05:01:04.268250+00:00",
+      "checked_at": "2026-10-03T05:01:45.299554+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "7ad21a2ea23e4e7cfeedf5675164bc4e41af56e08a54475090d6b47820b4a204": {
@@ -706,7 +705,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-02T05:01:07.105763+00:00",
+      "checked_at": "2026-10-03T05:01:48.119303+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "a7320c2f093222e04d723af25b0cbae8c48107c756a2ba5db909095c3850abb3": {
@@ -728,7 +727,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-02T05:00:58.776872+00:00",
+      "checked_at": "2026-10-03T05:01:39.788680+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "6587eda003db0fc2cc6d344a8209cb6b5cd47c3dfcf52d7a6a31afdff94d507d": {
@@ -894,7 +893,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-02T05:01:04.788394+00:00",
+      "checked_at": "2026-10-03T05:01:45.816378+00:00",
       "source_sha256": "483cd8f9f46e29617e6ded47fd3d408d09a14ebb3c1b00b782e3435451ac73cf",
       "source_text_sha256": "59d5cdb31d8e66c9fc37f498e934b7b64f352ff12c43dca835a8d697f632c169",
       "error": "document exceeds model input budget; manual review required"
@@ -924,7 +923,7 @@
       "evaluated_text_sha256": "a50f35ae1078f4d01ad8d5d28d7621ab7b2bf595b9ee4ef8a6622fb984b27c03"
     },
     "4a7f7df32524bb2925444566bea44b67a955603008795de3b4043b0654e558f2": {
-      "status": "pending",
+      "status": "evaluated",
       "attempts": 1,
       "item": {
         "title": "Modifying the Scope of Products of Canada Subject to the Additional Duties Imposed To Offset Canadian Discrimination Against the Commerce of the United States With Respect to Motor Vehicles",
@@ -942,11 +941,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-01T07:05:48.776840+00:00",
+      "checked_at": "2026-10-03T05:01:49.044634+00:00",
       "source_sha256": "389df6c48aaa19f229e2b0ab22038fde9384fecee0cf637f701e3f7d02747efa",
       "source_text_sha256": "77af7a764b108a9a43847b5f4f78b0c76bbf9f39a504cbc2169985eb9cd8b916",
-      "evaluated_text_sha256": "77af7a764b108a9a43847b5f4f78b0c76bbf9f39a504cbc2169985eb9cd8b916",
-      "error": "source capture failed: URLError"
+      "evaluated_text_sha256": "77af7a764b108a9a43847b5f4f78b0c76bbf9f39a504cbc2169985eb9cd8b916"
     },
     "fb44f5b6e7ff727d9c43963988d8154d1254b7138a6edee964cd0c68a3ae6d12": {
       "status": "evaluated",
@@ -1069,7 +1067,7 @@
       "evaluated_text_sha256": "55a971182ddb74e94f75c325e8cf02eb0fa8c2a686a33e0daae6b1245d85b46b"
     },
     "51eca7242399110dd39cbc8cb60104f4d1b9c56919496d270ed7fe00daa5e2c0": {
-      "status": "pending",
+      "status": "evaluated",
       "attempts": 1,
       "item": {
         "title": "Continuation of the National Emergency With Respect to Certain Terrorist Attacks",
@@ -1087,11 +1085,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-01T07:05:48.777093+00:00",
+      "checked_at": "2026-10-03T05:02:03.176459+00:00",
       "source_sha256": "c37c14803511a64bbc16bf30a4a8ead4029b70bfd0cc68787a9cd1efea5871fa",
       "source_text_sha256": "cc968ccd7c158f2274c930e84285b96d16c84f6b9a5360a65aa54df9069d75d6",
-      "evaluated_text_sha256": "cc968ccd7c158f2274c930e84285b96d16c84f6b9a5360a65aa54df9069d75d6",
-      "error": "source capture failed: URLError"
+      "evaluated_text_sha256": "cc968ccd7c158f2274c930e84285b96d16c84f6b9a5360a65aa54df9069d75d6"
     },
     "bce7d52de35abc0dda7e6112061cc20c82fe1a99670769f2947d0653a88a982e": {
       "status": "evaluated",
@@ -1112,7 +1109,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-30T05:01:25.027662+00:00",
+      "checked_at": "2026-10-03T05:02:07.640693+00:00",
       "source_sha256": "2cba869c4cdafcbda7087b193da99a4d24bf1cad049f9f3d9b9aa2cbad91978c",
       "source_text_sha256": "3198c045ce2494e4c5828b6005f4bc1a036757abd04654f07d6c9b720e904d1d",
       "evaluated_text_sha256": "3198c045ce2494e4c5828b6005f4bc1a036757abd04654f07d6c9b720e904d1d"
@@ -1160,7 +1157,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-30T05:01:24.540816+00:00",
+      "checked_at": "2026-10-03T05:02:07.385629+00:00",
       "source_sha256": "9eb4b23bb0fdc9fd69cfc0d878e2487463224f39a10d3c8b8bccf8a9ec3d848a",
       "source_text_sha256": "4f549c2c315a4f5367ddffb06d4696242ead91c246825d278824c2506273da2b",
       "evaluated_text_sha256": "4f549c2c315a4f5367ddffb06d4696242ead91c246825d278824c2506273da2b"
@@ -1207,7 +1204,7 @@
         "format": "json_fedreg",
         "priority_base": 1
       },
-      "active": true,
+      "active": false,
       "checked_at": "2026-10-02T05:02:00.118947+00:00",
       "source_sha256": "553e75c1e97ade0c8816b5da8a430ecf5249f8a64dbb4e1f61913df60177aa00",
       "source_text_sha256": "01e32c8fa5cba7ca80b9f14d73f30a4a8d713f5014dc74c8cfd0eeb24147a51b",
@@ -1231,7 +1228,7 @@
         "format": "json_fedreg",
         "priority_base": 1
       },
-      "active": true,
+      "active": false,
       "checked_at": "2026-09-30T05:01:23.490047+00:00",
       "source_sha256": "78c090dc7a972d5a48d5559f89b5593c64ff4246805975b624a57e4a7902a164",
       "source_text_sha256": "527b5b2c1b103cda94ed32736f04bf6196b6555a68bc5f3fa2985c9a4c19f05a",
@@ -1376,7 +1373,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-02T05:01:07.525133+00:00",
+      "checked_at": "2026-10-03T05:01:48.523064+00:00",
       "source_sha256": "0d3711dc18e19652f67b43bf0374043db6fa72ea1e19fceb3fc5129b5ced7f7b",
       "source_text_sha256": "421e6c77bf86082a1e3359b64a83524532983e501f1463d9b02608fe4c0e94e2",
       "error": "document exceeds model input budget; manual review required"
@@ -1406,7 +1403,7 @@
       "evaluated_text_sha256": "5492d0ccf756ee39dfcae4f097af0392e47270c90160aea7c843ec0e7aecdb21"
     },
     "cb5a5dc5e2a68bc3d8234abf6b81f5495076b73b43649537a7cfd54d5ad22994": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 1,
       "item": {
         "title": "Adjusting Imports of Unmanned Aircraft Systems and Unmanned Aircraft Systems Components Into the United States",
@@ -1424,7 +1421,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-02T05:01:07.782441+00:00",
+      "checked_at": "2026-10-03T05:02:03.680138+00:00",
       "source_sha256": "bb9c90378e11423ff231d1326880b038c8264c00eb6439e728cb26ff4bad5d25",
       "source_text_sha256": "5b6fa7f6ca6e3a94d15e5866c7a635601cba12361d95ff84769438a18b52a904",
       "error": "document exceeds model input budget; manual review required"
@@ -1523,17 +1520,17 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-30T05:01:23.401813+00:00",
-      "source_sha256": "fc80a38711309ad24fad249937a65978ae166556d52e2b27d736e72318b94e3c",
+      "checked_at": "2026-10-03T05:02:05.949228+00:00",
+      "source_sha256": "487d3da852e7cc0f4e9cc88f5813b1ce4efb5f9b7601182575b6ab0466ec45fe",
       "source_text_sha256": "d023b484ea6402ff0c0090715c8540d8319e9710e114ca7da0d9447332cb30ee",
       "evaluated_text_sha256": "d023b484ea6402ff0c0090715c8540d8319e9710e114ca7da0d9447332cb30ee"
     },
     "50d54867be120025fe49a448e60284b9adf3c3c1d15bfd99770a94b7d6a3cc8c": {
-      "status": "pending",
-      "attempts": 1,
+      "status": "evaluated",
+      "attempts": 2,
       "item": {
         "title": "Pitching day: Finalists of the Apply AI Startup Award",
-        "summary": "<span>Pitching day: Finalists of the Apply AI Startup Award</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-08-24T10:19:46+02:00\" title=\"Monday, August 24, 2026 - 10:19\">Mon, 08/24/2026 - 10:19</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                              <ul class=\"ecl-unordered-list ecl-unordered-list--no-bullet ecl-u-mb-xl\">\n      <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n      <span class=\"wt-icon--calendar ecl-icon ecl-icon--fluid ecl-icon--calendar\" aria-hidden=\"true\"></span>&nbsp;\n      20 October 2026\n  </li>\n  \n  </ul>\n\n                <p class=\"ecl-page-header-standardised__description\">Watch the pitches of the top 10 finalists of the Apply AI Startup Award and learn more about how the European Innovation Council (EIC) and the European Commission support AI startups.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/AI_Startup_Awards_NUxc8gs9ik6saElWEoEYJIGNbw_243257.png?itok=ptCYFy_H\" alt=\"AI Startup Awards logo featuring a purple trophy graphic framed by an arch of stars.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>The Appply AI Award, organised by <a href=\"https://aiboost-project.eu/\">AI BOOST</a>, recognises innovative European startups and scaleups developing AI solutions in the 11 strategic sectors covered by the <a href=\"https://digital-strategy.ec.europa.eu/en/policies/apply-ai\">Apply AI Strategy</a>.</p>\n<p>In July, national startup associations nominated 24 European AI startups and scaleups across 16 Member States. Independent experts are currently evaluating the nominations and will choose the top 10 finalists for the pitching event. Each startup will have 3 minutes to pitch their AI solution and convince the jury.</p>\n<p>After the pitching session the jury will select the 3 winners. Among other rewards, they will be invited to pitch their solution and receive a trophy and certificate on the main stage of the <a href=\"https://digital-strategy.ec.europa.eu/en/policies/apply-ai-summit\">Apply AI Summit</a>.</p>\n<h2>Registration</h2>\n<p>Click and fill the form to <a href=\"https://www.f6s.com/apply-ai-startup-award-top-10-online-pitching-event/about\">register</a></p>\n<h2>Top 10 finalists</h2>\n<ul>\n<li><a href=\"https://www.aidental.ai/\">AID, s.r.o.</a></li>\n<li><a href=\"https://www.bettermedicine.ai/\">Better Medicine</a></li>\n<li><a href=\"https://blueoasis.tech/\">blueOASIS</a></li>\n<li><a href=\"https://www.daitable.com/\">DAITABLE, s.r.o.</a></li>\n<li><a href=\"https://www.flinn.ai/\">Flinn</a></li>\n<li><a href=\"https://www.prewave.com/\">Prewave GmbH</a></li>\n<li><a href=\"https://www.reportaid.ai/\">ReportAId s.r.l.</a></li>\n<li><a href=\"https://seedsight.io/\">Seedsight</a></li>\n<li><a href=\"https://trollwall.ai/\">TrollWall AI</a></li>\n<li><a href=\"https://zortify.com\">Zortify S.A</a>.</li>\n</ul>\n<h2>Jury</h2>\n<p>The jury members are:</p>\n<h3>Dr. Panagiotis Kikiras</h3>\n<p>Deputy Head of Unit for Excellence in AI and Robotics, at the European AI Office, European Commission</p>\n<p>With over 20 years of experience in computer and network engineering, Dr Panagiotis Kikiras' expertise lies in IoT, wireless sensor systems, embedded technologies, wearables, cyber defence, security, privacy, and mission-critical C4ISR systems. Before joining the Commission, he held senior positions across industry, academia and public institutions, including the European Defence Agency. He also led major European and national security and defence projects.</p>\n<h3>Dr Hedi Karray</h3>\n<p>Programme Manager for AI at the European Innovation Council (EIC)</p>\n<p>Dr Hedi Karray is the EIC Programme Manager for AI, where he shapes innovation strategies to accelerate Europe’s next breakthroughs in frontier AI. He manages a broad portfolio of high-potential AI start-ups, scale-ups and exploratory deep-tech projects, supporting their journey from cutting-edge research to market-ready solutions and global growth. His work focuses on identifying emerging opportunities across frontier AI models, embodied intelligence and AI-enabled industrial systems, while fostering trustworthy, sovereign and competitive European AI capabilities.</p>\n<h3>Diva Tommei</h3>\n<p>Chief of Innovation and Investments at <a href=\"https://28digital.eu/\">28DIGITAL</a></p>\n<p>Diva leads activities spanning researcher entrepreneurship, technology transfer, venture incubation, startup acceleration, scaleup growth and access to finance across Europe. An entrepreneur and investor, she was previously Investment Director at Enea Tech and founded a Silicon Valley–backed technology company.</p>\n<h2>Agenda</h2>\n<p><strong>14:00-15:30 CET(to be confirmed)</strong></p>\n<ul>\n<li>Welcome and introduction</li>\n<li>Part I - Pitches</li>\n<li>Presentation from the Directorate-General for Defence Industry and Space (DG DEFIS): EUDIS &amp; AGILE - opportunities for AI Startups in defence</li>\n<li>Presentation from EIC</li>\n<li>Part II - Pitches</li>\n<li>Conclusion</li>\n</ul></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                                <p><a href=\"https://www.f6s.com/apply-ai-startup-award-top-10-online-pitching-event/about\" class=\"ecl-button ecl-button--call\">Registration form</a></p>\n\n              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=137\" class=\"ecl-tag ecl-u-mb-xs\">Events</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=119\" class=\"ecl-tag ecl-u-mb-xs\">Artificial intelligence</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=260\" class=\"ecl-tag ecl-u-mb-xs\">Apply AI Summit</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div class=\"cnt-last-update-block\">\n  \n    \n      \n\n  </div>\n<div class=\"cnt-print-pdf-block\">\n  \n    \n      \n  \n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
+        "summary": "<span>Pitching day: Finalists of the Apply AI Startup Award</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-08-24T10:19:46+02:00\" title=\"Monday, August 24, 2026 - 10:19\">Mon, 08/24/2026 - 10:19</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                              <ul class=\"ecl-unordered-list ecl-unordered-list--no-bullet ecl-u-mb-xl\">\n      <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n      <span class=\"wt-icon--calendar ecl-icon ecl-icon--fluid ecl-icon--calendar\" aria-hidden=\"true\"></span>&nbsp;\n      20 October 2026\n  </li>\n  \n  </ul>\n\n                <p class=\"ecl-page-header-standardised__description\">Watch the pitches of the top 10 finalists of the Apply AI Startup Award and learn more about how the European Innovation Council (EIC) and the European Commission support AI startups.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/AI_Startup_Awards_NUxc8gs9ik6saElWEoEYJIGNbw_243257.png?itok=ptCYFy_H\" alt=\"AI Startup Awards logo featuring a purple trophy graphic framed by an arch of stars.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>The Appply AI Award, organised by <a href=\"https://aiboost-project.eu/\">AI BOOST</a>, recognises innovative European startups and scaleups developing AI solutions in the 11 strategic sectors covered by the <a href=\"https://digital-strategy.ec.europa.eu/en/policies/apply-ai\">Apply AI Strategy</a>.</p>\n<p>In July, national startup associations nominated 24 European AI startups and scaleups across 16 Member States. Independent experts have evaluated the nominations and chose the top 10 finalists for the pitching event. Each startup will have 3 minutes to pitch their AI solution and convince the jury.</p>\n<p>After the pitching session the jury will select the 3 winners. Among other rewards, they will be invited to pitch their solution and receive a trophy and certificate on the main stage of the <a href=\"https://digital-strategy.ec.europa.eu/en/policies/apply-ai-summit\">Apply AI Summit</a>.</p>\n<h2>Registration</h2>\n<p>Click and fill the form to <a href=\"https://www.f6s.com/apply-ai-startup-award-top-10-online-pitching-event/about\">register</a></p>\n<h2>Top 10 finalists</h2>\n<ul>\n<li><a href=\"https://www.aidental.ai/\">AID, s.r.o.</a></li>\n<li><a href=\"https://www.bettermedicine.ai/\">Better Medicine</a></li>\n<li><a href=\"https://blueoasis.tech/\">blueOASIS</a></li>\n<li><a href=\"https://www.daitable.com/\">DAITABLE, s.r.o.</a></li>\n<li><a href=\"https://www.flinn.ai/\">Flinn</a></li>\n<li><a href=\"https://www.prewave.com/\">Prewave GmbH</a></li>\n<li><a href=\"https://www.reportaid.ai/\">ReportAId s.r.l.</a></li>\n<li><a href=\"https://seedsight.io/\">Seedsight</a></li>\n<li><a href=\"https://trollwall.ai/\">TrollWall AI</a></li>\n<li><a href=\"https://zortify.com\">Zortify S.A</a>.</li>\n</ul>\n<p>You can learn more about the <span>these <a href=\"https://digital-strategy.ec.europa.eu/en/news/meet-10-finalists-apply-ai-startup-award\">10 finalists of the Apply AI Startup Award</a>.</span></p>\n<h2>Jury</h2>\n<p>The jury members are:</p>\n<h3>Dr. Panagiotis Kikiras</h3>\n<p>Deputy Head of Unit for Excellence in AI and Robotics, at the European AI Office, European Commission</p>\n<p>With over 20 years of experience in computer and network engineering, Dr Panagiotis Kikiras' expertise lies in IoT, wireless sensor systems, embedded technologies, wearables, cyber defence, security, privacy, and mission-critical C4ISR systems. Before joining the Commission, he held senior positions across industry, academia and public institutions, including the European Defence Agency. He also led major European and national security and defence projects.</p>\n<h3>Dr Hedi Karray</h3>\n<p>Programme Manager for AI at the European Innovation Council (EIC)</p>\n<p>Dr Hedi Karray is the EIC Programme Manager for AI, where he shapes innovation strategies to accelerate Europe’s next breakthroughs in frontier AI. He manages a broad portfolio of high-potential AI start-ups, scale-ups and exploratory deep-tech projects, supporting their journey from cutting-edge research to market-ready solutions and global growth. His work focuses on identifying emerging opportunities across frontier AI models, embodied intelligence and AI-enabled industrial systems, while fostering trustworthy, sovereign and competitive European AI capabilities.</p>\n<h3>Diva Tommei</h3>\n<p>Chief of Innovation and Investments at <a href=\"https://28digital.eu/\">28DIGITAL</a></p>\n<p>Diva leads activities spanning researcher entrepreneurship, technology transfer, venture incubation, startup acceleration, scaleup growth and access to finance across Europe. An entrepreneur and investor, she was previously Investment Director at Enea Tech and founded a Silicon Valley–backed technology company.</p>\n<h2>Agenda</h2>\n<p><strong>14:00-15:30 CET(to be confirmed)</strong></p>\n<ul>\n<li>Welcome and introduction</li>\n<li>Part I - Pitches</li>\n<li>Presentation from the Directorate-General for Defence Industry and Space (DG DEFIS): EUDIS &amp; AGILE - opportunities for AI Startups in defence</li>\n<li>Presentation from EIC</li>\n<li>Part II - Pitches</li>\n<li>Conclusion</li>\n</ul></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                                <p><a href=\"https://www.f6s.com/apply-ai-startup-award-top-10-online-pitching-event/about\" class=\"ecl-button ecl-button--call\">Registration form</a></p>\n\n              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=137\" class=\"ecl-tag ecl-u-mb-xs\">Events</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=119\" class=\"ecl-tag ecl-u-mb-xs\">Artificial intelligence</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=260\" class=\"ecl-tag ecl-u-mb-xs\">Apply AI Summit</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div class=\"cnt-last-update-block\">\n  \n    \n      \n\n  </div>\n<div class=\"cnt-print-pdf-block\">\n  \n    \n      \n  \n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
         "url": "https://digital-strategy.ec.europa.eu/en/events/pitching-day-finalists-apply-ai-startup-award",
         "publication_date": "Mon, 24 Aug 2026 08:19:46 +0000"
       },
@@ -1548,11 +1545,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-01T07:05:48.777003+00:00",
-      "source_sha256": "c18031c1ee8533380ac25a8b224b51d2193f7a76df725c0d2cf7a689c6efc92d",
-      "source_text_sha256": "0041bf2840fd49599edeee3f55aebfb8484c246f5e3f5fb7852e2c4b6eabda55",
-      "evaluated_text_sha256": "0041bf2840fd49599edeee3f55aebfb8484c246f5e3f5fb7852e2c4b6eabda55",
-      "error": "source capture failed: URLError"
+      "checked_at": "2026-10-03T05:01:49.555768+00:00",
+      "source_sha256": "6a25a713eeaba8db33dcd2340899476cbcb1cd5acbfc95ab26a3d1ffabdbbbb9",
+      "source_text_sha256": "ea2569ab9756aa46a4427273bd3e1fa7148d03579593053dfbe8783752693a5f",
+      "evaluated_text_sha256": "ea2569ab9756aa46a4427273bd3e1fa7148d03579593053dfbe8783752693a5f"
     },
     "0ee46afeaae61fac6e1790c438289c845bb59297ddc3cb7bb4b8eba7f30348e8": {
       "status": "evaluated",
@@ -1674,13 +1670,13 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-30T05:01:23.745617+00:00",
-      "source_sha256": "d9ae437ee8be162c3dbc0ee02aef239b40a7ea155d9d014abc210a1f8813b5c1",
+      "checked_at": "2026-10-03T05:02:06.034386+00:00",
+      "source_sha256": "3976c21be331d469956088081f1f8801c71bebfc30424f9b1e0a92d74c00ce58",
       "source_text_sha256": "a1c8d7c0f3fe127647a8622f444dabbe386a16c352b4c8f70d46eaa0778edc23",
       "evaluated_text_sha256": "a1c8d7c0f3fe127647a8622f444dabbe386a16c352b4c8f70d46eaa0778edc23"
     },
     "62ee8f98b799c0827c80bfae8a016cdbfbaf4ae30d8d10c32f4e77e247ab9ea4": {
-      "status": "evaluated",
+      "status": "pending",
       "attempts": 1,
       "item": {
         "title": "NIST Joins National Genesis Mission to Accelerate AI Innovation",
@@ -1699,9 +1695,9 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-30T05:01:23.000826+00:00",
-      "source_sha256": "389ea2cc28872a1bc50b8ec71f2c512883ff5d9ff807bab02838042737e58a12",
-      "source_text_sha256": "8a1ac53247518ef86f375550cd3b6cc4cdf7bb70c924f24850fd468a013ddfeb",
+      "checked_at": "2026-10-03T05:02:05.581299+00:00",
+      "source_sha256": "6c5bd68c9c27ad7a7b5b0cbaf174e66b7454367f64a90c6a995457047d8413ca",
+      "source_text_sha256": "231b9c773ab9331b88f582b06973de1812b4000b9d6d04f07ee248673c6b20ef",
       "evaluated_text_sha256": "8a1ac53247518ef86f375550cd3b6cc4cdf7bb70c924f24850fd468a013ddfeb"
     },
     "c884fc912776c1d9883efc915fafd11b34b1d774c5ee15dcb4be4e3f6fdf9a7b": {
@@ -1849,14 +1845,14 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-10-02T05:02:18.787229+00:00",
-      "source_sha256": "7af611fa407044e75e07896964e8a2eed2830573d3a2d1835137722d48809b46",
+      "checked_at": "2026-10-03T05:02:04.213477+00:00",
+      "source_sha256": "69e8af97c48d77caae9c5952d341ca143b55061c03b87143cf44faddae2e13fa",
       "source_text_sha256": "990c0c45d7c55a9788163599314fe53bc599577c5ca6c0860f85f4091b4dd88c",
       "evaluated_text_sha256": "4cf7bc640f30def5da3b709ab1be8598aa570f971b2530c482f46e12a26db37e",
       "error": "source capture failed: URLError"
     },
     "563d1d66cd664c488444bb4eb92b7392fa5ecf3884ffa4e743e03228b3813e62": {
-      "status": "evaluated",
+      "status": "pending",
       "attempts": 1,
       "item": {
         "title": "NIST Launches Centers for AI in Manufacturing and Critical Infrastructure",
@@ -1875,13 +1871,13 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-30T05:01:21.966226+00:00",
-      "source_sha256": "5b6c22889af172df919ea3c71177dc85aba0a9c1b841380209770e39fd7343e4",
-      "source_text_sha256": "bc429bce94c63e61cc7d7b8a97871d6f0737a2a4217b610250f4d09af43a13bc",
+      "checked_at": "2026-10-03T05:02:04.566927+00:00",
+      "source_sha256": "2443765c4268b0a2cada31e40e97408bdd1e75d88b636854b03e55e803b4d25d",
+      "source_text_sha256": "4103bd010dad829691153bf82488e1dee2adb7d37fdff0a34de665c76cb826af",
       "evaluated_text_sha256": "bc429bce94c63e61cc7d7b8a97871d6f0737a2a4217b610250f4d09af43a13bc"
     },
     "579ec2c3e039a7a6b473553f671392756ab0f3a1e03dfdc7d906aedb10db531f": {
-      "status": "evaluated",
+      "status": "pending",
       "attempts": 1,
       "item": {
         "title": "Draft NIST Guidelines Rethink Cybersecurity for the AI Era",
@@ -1900,9 +1896,9 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-30T05:01:22.370017+00:00",
-      "source_sha256": "0690667492a8295baf93ab71fd7cb89db79672542e107bc65b4a87fb1441dc73",
-      "source_text_sha256": "e9ef16bd2411cfd525043b89db11c46a6655fbf737031a51d0b6108d8511ea84",
+      "checked_at": "2026-10-03T05:02:04.953129+00:00",
+      "source_sha256": "4d681e172b3ecf390edd0ab19560823caf92b5d3089c5168702bed472859f681",
+      "source_text_sha256": "3a7893a2ff19da7b26a8870d14a5adff934c4066272ea5f5086fb45c9746b322",
       "evaluated_text_sha256": "e9ef16bd2411cfd525043b89db11c46a6655fbf737031a51d0b6108d8511ea84"
     },
     "ff1a185c3aa33003442eb0bde83b0db4cc5439faddd13476a01579f820c23ccd": {
@@ -1950,7 +1946,7 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-10-02T05:01:06.254718+00:00",
+      "checked_at": "2026-10-03T05:01:47.261395+00:00",
       "error": "source HTTP status 403"
     },
     "00cc6142a1a6b1f6fa6e64da6688ffe5d560d7950cb671e860069f6e0e9948b9": {
@@ -1997,7 +1993,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:01:01.437636+00:00",
+      "checked_at": "2026-10-03T05:01:42.484830+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "acd125fdfd75db95c599f5f3bba2c1c547a48442d5bec1e39fdbbd161c614437": {
@@ -2019,7 +2015,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:01:01.952774+00:00",
+      "checked_at": "2026-10-03T05:01:42.986309+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "2aaa70ffc70ff726df8dbcb1d82079ae56f516d5591fa97f4adff95047795251": {
@@ -2076,7 +2072,7 @@
       "attempts": 2,
       "item": {
         "title": "Proposal for EU KIDS Act - 'EU Keeping Internet Digital Spaces Accountable and Trustworthy'",
-        "summary": "<span>Proposal for EU KIDS Act - 'EU Keeping Internet Digital Spaces Accountable and Trustworthy'</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-09-17T09:21:00+02:00\" title=\"Thursday, September 17, 2026 - 09:21\">Thu, 09/17/2026 - 09:21</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                                    <p class=\"ecl-page-header-standardised__description\">This proposal seeks to protect minors from risky digital services and AI systems, uphold the digital single market and maintain a coherent regulatory framework and enforcement structure for the protection of minors online.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/ProtectingYoungPeopleOnline_600x400_colours_EU_kids_act1_7mj5sARJ3eWJAazOTfaI81Qdp8_245426.jpg?itok=qa7fllkz\" alt=\"illustration of a browser window surrounded by small people, displaying icons for video, location, likes, and a shield protecting children.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>The proposal recognises the risks that minors face on certain online social networking services and video-sharing platforms and therefore limits autonomous account creation on those specific platforms and systems by children below the age of 15 years. By providing one age across the European Union, it harmonises diverging national rules removing obstacles to the implementation of the Digital Single Market, ensuring legal certainty and a similar level of protection for all children in the European Union.</p>\n<div class=\"attachment-container unknown\">\n<div class=\"text-box-container ng-star-inserted\">\n<div class=\"text-box-content\">\n<div class=\"text-box-text gds-body-l\">The <strong>proposal </strong>and its <strong>supporting documents</strong> are available on EUR-Lex and will soon be accessible in <strong>all official EU languages</strong>:</div>\n</div>\n</div>\n</div>\n<ul>\n<li><a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026PC0681\">Proposal for EU KIDS Act - 'EU Keeping Internet Digital Spaces Accountable and Trustworthy'</a></li>\n<li><a href=\"https://eur-lex.europa.eu/legal-content/en/TXT/?uri=COM%3A2026%3A680%3AFIN&amp;qid=1789647397373\">Communication accompanying the KIDS Act - An EU approach to online child safety</a></li>\n<li><a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026SC0681\">Staff Working Document (SWD) - Analysis of Impacts accompanying the proposal for EU kids Act</a></li>\n</ul>\n<p>Find further information:</p>\n<ul>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/news/eu-kids-act-restrict-social-media-platforms-access-children-eu\">Press release</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/faqs/kids-act-explained\">KIDS Act - questions and answers</a></li>\n</ul></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=154\" class=\"ecl-tag ecl-u-mb-xs\">   Better Internet for Children</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=153\" class=\"ecl-tag ecl-u-mb-xs\">Strengthening trust and security</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=150\" class=\"ecl-tag ecl-u-mb-xs\">Online platforms and e-commerce</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                              <h2>Related content</h2>\n\n      \n  <article class=\"ecl-content-item ecl-content-item--divider ecl-u-mb-xl\"><div class=\"ecl-content-block ecl-content-item__content-block\" data-ecl-auto-init=\"ContentBlock\" data-ecl-content-block><ul class=\"ecl-content-block__primary-meta-container\"><li class=\"ecl-content-block__primary-meta-item\">Press release</li><li class=\"ecl-content-block__primary-meta-item\">17 September 2026</li></ul><div class=\"ecl-content-block__title\"><a href=\"https://digital-strategy.ec.europa.eu/en/news/eu-kids-act-restrict-social-media-platforms-access-children-eu\" class=\"ecl-link ecl-link--standalone\" data-ecl-title-link>EU KIDS Act to restrict social media platforms’ access to children in the EU</a></div><div class=\"ecl-content-block__description\">The European Commission has adopted the EU KIDS Act to enhance the online safety of children throughout the Union.</div></div></article>  \n\n  \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div class=\"cnt-last-update-block\">\n  \n    \n      \n\n  </div>\n<div class=\"cnt-print-pdf-block\">\n  \n    \n      \n  \n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
+        "summary": "<span>Proposal for EU KIDS Act - 'EU Keeping Internet Digital Spaces Accountable and Trustworthy'</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-09-17T09:21:00+02:00\" title=\"Thursday, September 17, 2026 - 09:21\">Thu, 09/17/2026 - 09:21</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                                    <p class=\"ecl-page-header-standardised__description\">This proposal seeks to protect minors from risky digital services and AI systems, uphold the digital single market and maintain a coherent regulatory framework and enforcement structure for the protection of minors online.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/ProtectingYoungPeopleOnline_600x400_colours_EU_kids_act1_7mj5sARJ3eWJAazOTfaI81Qdp8_245426.jpg?itok=qa7fllkz\" alt=\"illustration of a browser window surrounded by small people, displaying icons for video, location, likes, and a shield protecting children.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>The proposal recognises the risks that minors face on certain online social networking services and video-sharing platforms and therefore limits autonomous account creation on those specific platforms and systems by children below the age of 15 years. By providing one age across the European Union, it harmonises diverging national rules removing obstacles to the implementation of the Digital Single Market, ensuring legal certainty and a similar level of protection for all children in the European Union.</p>\n<div class=\"attachment-container unknown\">\n<div class=\"text-box-container ng-star-inserted\">\n<div class=\"text-box-content\">\n<div class=\"text-box-text gds-body-l\">The <strong>proposal </strong>and its <strong>supporting documents</strong> are available on EUR-Lex and will soon be accessible in <strong>all official EU languages</strong>:</div>\n</div>\n</div>\n</div>\n<ul>\n<li><a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026PC0681\">Proposal for EU KIDS Act - 'EU Keeping Internet Digital Spaces Accountable and Trustworthy'</a></li>\n<li><a href=\"https://eur-lex.europa.eu/legal-content/en/TXT/?uri=COM%3A2026%3A680%3AFIN&amp;qid=1789647397373\">Communication accompanying the KIDS Act - An EU approach to online child safety</a></li>\n<li><a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026SC0681\">Staff Working Document (SWD) - Analysis of Impacts accompanying the proposal for EU kids Act</a></li>\n</ul>\n<p><a href=\"https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19418-Child-online-safety-keeping-digital-spaces-accountable-and-trustworthy-EU-Kids-Act-_en\">Provide your feedback</a><span> to the consultation on the EU KIDS ACT until 26 November 2026 (midnight Brussels time).</span></p>\n<p>Find further information:</p>\n<ul>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/news/eu-kids-act-restrict-social-media-platforms-access-children-eu\">Press release</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/faqs/kids-act-explained\">KIDS Act - questions and answers</a></li>\n</ul></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=154\" class=\"ecl-tag ecl-u-mb-xs\">   Better Internet for Children</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=153\" class=\"ecl-tag ecl-u-mb-xs\">Strengthening trust and security</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=150\" class=\"ecl-tag ecl-u-mb-xs\">Online platforms and e-commerce</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                              <h2>Related content</h2>\n\n      \n  <article class=\"ecl-content-item ecl-content-item--divider ecl-u-mb-xl\"><div class=\"ecl-content-block ecl-content-item__content-block\" data-ecl-auto-init=\"ContentBlock\" data-ecl-content-block><ul class=\"ecl-content-block__primary-meta-container\"><li class=\"ecl-content-block__primary-meta-item\">Press release</li><li class=\"ecl-content-block__primary-meta-item\">17 September 2026</li></ul><div class=\"ecl-content-block__title\"><a href=\"https://digital-strategy.ec.europa.eu/en/news/eu-kids-act-restrict-social-media-platforms-access-children-eu\" class=\"ecl-link ecl-link--standalone\" data-ecl-title-link>EU KIDS Act to restrict social media platforms’ access to children in the EU</a></div><div class=\"ecl-content-block__description\">The European Commission has adopted the EU KIDS Act to enhance the online safety of children throughout the Union.</div></div></article>  \n\n  \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div class=\"cnt-last-update-block\">\n  \n    \n      \n\n  </div>\n<div class=\"cnt-print-pdf-block\">\n  \n    \n      \n  \n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
         "url": "https://digital-strategy.ec.europa.eu/en/library/proposal-eu-kids-act-eu-keeping-internet-digital-spaces-accountable-and-trustworthy",
         "publication_date": "Thu, 17 Sep 2026 07:21:00 +0000"
       },
@@ -2115,7 +2111,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:00:59.468248+00:00",
+      "checked_at": "2026-10-03T05:01:40.477428+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "24b91e42ca39f96250ff8396e2ab4365319553e9a5e9361ad8778925105bc9a5": {
@@ -2137,7 +2133,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:00:59.212276+00:00",
+      "checked_at": "2026-10-03T05:01:40.220791+00:00",
       "source_sha256": "93d27862db1cfbe023f098d1d88ede786d36f184e9daf3b83286d5bcfbd54bf9",
       "source_text_sha256": "7da5c4c5006d37ad7ce3930ab3ce921fa5934fc1651020c2729e94c830c82cda",
       "error": "document exceeds model input budget; manual review required"
@@ -2161,7 +2157,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:00:59.975281+00:00",
+      "checked_at": "2026-10-03T05:01:40.997816+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "920548c8df731e539da02bfa501604ca735b46e184d9ccac682ae4e34627e663": {
@@ -2183,7 +2179,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:01:00.310146+00:00",
+      "checked_at": "2026-10-03T05:01:41.327009+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "fc6caa9ca06598e4de6351640198c601779f0975d004e20968e90c2fac908e61": {
@@ -2205,7 +2201,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:01:00.649900+00:00",
+      "checked_at": "2026-10-03T05:01:41.674551+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "362f4388c4d9496ebf122603c35668888a236dcf2e4af58ad656a707b1c1aa63": {
@@ -2227,7 +2223,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-30T05:01:23.890964+00:00",
+      "checked_at": "2026-10-03T05:02:06.169929+00:00",
       "source_sha256": "fa8bad7527d85cd87bbadc4c25271e676c66e8d055bae1ea8e95e636f87d7287",
       "source_text_sha256": "675dbf69310befe7195978a428ac06a41d847cdcd1a1f9a455efe15807d1aff4",
       "evaluated_text_sha256": "675dbf69310befe7195978a428ac06a41d847cdcd1a1f9a455efe15807d1aff4"
@@ -2252,8 +2248,8 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-09-30T05:01:24.198096+00:00",
-      "source_sha256": "d0aa2408c90976ad868d2529fc448965e9dcef388beaf199d1a457bfb871706b",
+      "checked_at": "2026-10-03T05:02:06.423049+00:00",
+      "source_sha256": "13a153d2cb5701f09bf3451c93db424e15857b971a3c05aff7d8378a39e6acb0",
       "source_text_sha256": "ca2a46e06c5ea66f8cfbff6c63af7820b2682b7c863dd7fcf10b0358e7659dc7",
       "evaluated_text_sha256": "ca2a46e06c5ea66f8cfbff6c63af7820b2682b7c863dd7fcf10b0358e7659dc7"
     },
@@ -2276,7 +2272,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:00:58.239577+00:00",
+      "checked_at": "2026-10-03T05:01:39.263507+00:00",
       "source_sha256": "5732141abd973d8993e6239e197486dbeef5fa07af70a1a8e9e5c0342d47b438",
       "source_text_sha256": "057ae28ab694825203e41fddded2a58b524f530bd1cfef46c64e60da0d6efc8f",
       "error": "document exceeds model input budget; manual review required"
@@ -2396,7 +2392,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:00:57.651526+00:00",
+      "checked_at": "2026-10-03T05:01:38.654557+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "99b981b199350cd18d9dffb46c33f69f183df547fbe49512e2f937371d7cc3ac": {
@@ -2418,7 +2414,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:00:57.985797+00:00",
+      "checked_at": "2026-10-03T05:01:39.003302+00:00",
       "source_sha256": "19d7414eb9185234aac641d5477a120f5b1bbd298866c740acef103e33a51f5f",
       "source_text_sha256": "42b2a605ec6030eff66b91501bfafb930aded7c79002d3c37346d051858ab21a",
       "error": "document exceeds model input budget; manual review required"
@@ -2448,7 +2444,7 @@
       "evaluated_text_sha256": "776aaf1088d245abb82d05db1d599e5493590b09e98000248b1f3cf5366c0201"
     },
     "8a7e163c91ddeb811f4fb0474ebacff6ee1d6f3e7df68a93c20aee3109786f92": {
-      "status": "pending",
+      "status": "evaluated",
       "attempts": 1,
       "item": {
         "title": "Enhancing Program Integrity and Interagency Coordination in the Administration of the H-1B Nonimmigrant Visa Program",
@@ -2466,11 +2462,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-01T07:05:48.776755+00:00",
+      "checked_at": "2026-10-03T05:01:48.790487+00:00",
       "source_sha256": "590b9fdc015ab3eb40a3b4909e0a9f196d48cfdaf55da41964e0695ab0e99c81",
       "source_text_sha256": "9e528ba75d11593f96c701117beffacdab26d4b013d13c278ba97a0e3cac206b",
-      "evaluated_text_sha256": "9e528ba75d11593f96c701117beffacdab26d4b013d13c278ba97a0e3cac206b",
-      "error": "source capture failed: URLError"
+      "evaluated_text_sha256": "9e528ba75d11593f96c701117beffacdab26d4b013d13c278ba97a0e3cac206b"
     },
     "71b3efa4354d14f9484154170172ac438bdf0f6b8264077aac1a6c02c5f5f4df": {
       "status": "evaluated",
@@ -2515,7 +2510,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:00:57.385961+00:00",
+      "checked_at": "2026-10-03T05:01:38.383808+00:00",
       "source_sha256": "387c58cf45fffaba490ed8c9e7eefb230da279108c6bf0afb7cfa14725bc0f69",
       "source_text_sha256": "960c0ef0cd21704f853ccbd3fcc20d9589a5749c1b89a4de1d24e8c161a9852c",
       "error": "document exceeds model input budget; manual review required"
@@ -2539,7 +2534,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:00:57.119719+00:00",
+      "checked_at": "2026-10-03T05:01:38.127957+00:00",
       "source_sha256": "823800fb40021b6741fdce7b49ed462ad4e8f5c599835080825d505a4223abcf",
       "source_text_sha256": "da0a678e19f9753a6699ade76b54b06b8b9bea17e71214e0c000f4a465ccbcfa",
       "error": "document exceeds model input budget; manual review required"
@@ -2563,7 +2558,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:00:56.516001+00:00",
+      "checked_at": "2026-10-03T05:01:37.521399+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "2b57378a8bc94b4efa5b6e972f31392c58c5b1be99e9b65ecb836b7114e97957": {
@@ -2634,7 +2629,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:00:05.770603+00:00",
+      "checked_at": "2026-10-03T05:01:36.151934+00:00",
       "source_sha256": "68d7f8ca29c0ae6e723f580027b3b0faa8c23c7f5ab43218cd6bf58c13fb87aa",
       "source_text_sha256": "953c220894733b7adea02631953ccf29889dc0303a0a497fbceb022db7c029cc",
       "error": "document exceeds model input budget; manual review required"
@@ -2658,7 +2653,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:00:56.243782+00:00",
+      "checked_at": "2026-10-03T05:01:37.260892+00:00",
       "source_sha256": "f3da990edb63a3acb300f049da3a8b29ef0e965d33c7866d89211a7feb9336bd",
       "source_text_sha256": "95dd79890aabe5b7267cc84c8bf1589877e121be502e261e6910157a221e0873",
       "error": "document exceeds model input budget; manual review required"
@@ -2682,7 +2677,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:00:06.137441+00:00",
+      "checked_at": "2026-10-03T05:02:07.891503+00:00",
       "source_sha256": "d914c725646149b78bb7155a006c80453d3c57ecd36d2325b8014a4703e5fd2e",
       "source_text_sha256": "0eaf785a7c36aaa5b593a1bca78c28426c1424008476f289d8876df35d6fb222",
       "evaluated_text_sha256": "0eaf785a7c36aaa5b593a1bca78c28426c1424008476f289d8876df35d6fb222"
@@ -2706,7 +2701,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:00:42.389939+00:00",
+      "checked_at": "2026-10-03T05:01:36.481791+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "c72344e306a273fbace5d183d055151cbfa8583ab5218120520fe7511e9c0258": {
@@ -2728,18 +2723,160 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:00:43.199412+00:00",
+      "checked_at": "2026-10-03T05:02:03.426139+00:00",
       "source_sha256": "b91ee562c08806a46e4955983fcb464a84730238dcb32abb93a163bcc2c0c025",
       "source_text_sha256": "4b2b76a284ed90f43697ca0d20e8f59e43d6a1292fa41b3b1cd772deb9dd3307",
       "error": "supporting quote is absent from the captured document"
+    },
+    "ad09a189b9514511ca2e4aa82ea993f705201c14cc2bc6a734a32a7a4b7f34be": {
+      "status": "evaluated",
+      "attempts": 1,
+      "item": {
+        "title": "Inaugurating the Era of Super Intelligence",
+        "summary": "Inaugurating the Era of Super Intelligence",
+        "url": "https://www.federalregister.gov/documents/2026/10/02/2026-20321/inaugurating-the-era-of-super-intelligence",
+        "publication_date": "2026-10-02"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-10-03T05:01:17.030614+00:00",
+      "source_sha256": "f227228ab6bfaa8b3b067454bdd9bac4eeca8b99b9ac3f5694bc8a71a9269904",
+      "source_text_sha256": "f792532c5676feb52c7477e53677e058a22e18616d8cd3abbbe69a0cbf1b8641",
+      "evaluated_text_sha256": "f792532c5676feb52c7477e53677e058a22e18616d8cd3abbbe69a0cbf1b8641"
+    },
+    "d06058bb78072c470b4e56256b83ff869ce8986828ba97e43fe021cd75232d29": {
+      "status": "manual_review",
+      "attempts": 0,
+      "item": {
+        "title": "Global Benchmark for Efficient Drug Pricing (GLOBE) Model",
+        "summary": "This final rule implements the Global Benchmark for Efficient Drug Pricing Model (GLOBE Model), a new mandatory Medicare payment model under section 1115A of the Social Security Act. The GLOBE Model will test whether a payment model that uses an alternative method for calculating Medicare Part B drug inflation rebate amounts for certain separately payable Medicare Part B drugs and biological products reduces costs for Original Medicare (OM) beneficiaries and the Medicare program while preserving quality of care. The term OM has the same meaning as Medicare fee-for-service and the traditional Medicare program.",
+        "url": "https://www.federalregister.gov/documents/2026/10/02/2026-20281/global-benchmark-for-efficient-drug-pricing-globe-model",
+        "publication_date": "2026-10-02"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-10-03T05:01:35.462903+00:00",
+      "error": "document exceeds evaluation text limit; manual review required"
+    },
+    "768c9228a9059c551cdfe041c9864df4b758e63f70dcd4e8ae7c587a9589f6dc": {
+      "status": "evaluated",
+      "attempts": 1,
+      "item": {
+        "title": "Continuation of the National Emergency With Respect to the Situation in and in Relation to Syria",
+        "summary": "Continuation of the National Emergency With Respect to the Situation in and in Relation to Syria",
+        "url": "https://www.federalregister.gov/documents/2026/10/02/2026-20322/continuation-of-the-national-emergency-with-respect-to-the-situation-in-and-in-relation-to-syria",
+        "publication_date": "2026-10-02"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-10-03T05:01:04.599841+00:00",
+      "source_sha256": "b7237c908eb128fb5e9c5fd2858343d42631a4c43924d49f84870637b5aa95ce",
+      "source_text_sha256": "49dbc0c7ca1f12c503c2ee77a2529cf3b2bf614d810e4e2a9b3d69df0073e4da",
+      "evaluated_text_sha256": "49dbc0c7ca1f12c503c2ee77a2529cf3b2bf614d810e4e2a9b3d69df0073e4da"
+    },
+    "1aa2d76b0a0df75791c33cdee0cde42fe9c59486a602101a88bd5d5a7f4f4605": {
+      "status": "evaluated",
+      "attempts": 1,
+      "item": {
+        "title": "Eliminating Disease-Carrying Pests and Restoring Enjoyment of the Great Outdoors",
+        "summary": "Eliminating Disease-Carrying Pests and Restoring Enjoyment of the Great Outdoors",
+        "url": "https://www.federalregister.gov/documents/2026/10/02/2026-20320/eliminating-disease-carrying-pests-and-restoring-enjoyment-of-the-great-outdoors",
+        "publication_date": "2026-10-02"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-10-03T05:00:35.614570+00:00",
+      "source_sha256": "5ccc956677f6160181ee5fe279e8ea266b73315ea5be4d8b5ff69a30662d6b4a",
+      "source_text_sha256": "ff803b23a6e220432ac11483edd183078670009b5fa6bd1cb558310002d5bfa3",
+      "evaluated_text_sha256": "ff803b23a6e220432ac11483edd183078670009b5fa6bd1cb558310002d5bfa3"
+    },
+    "0a81976819fb669b3a5d6ed1e49035edce15f100035aaba65fd4fe4ddb1df0fa": {
+      "status": "evaluated",
+      "attempts": 1,
+      "item": {
+        "title": "Streamlining Access to Government Services Through America.gov",
+        "summary": "Streamlining Access to Government Services Through America.gov",
+        "url": "https://www.federalregister.gov/documents/2026/10/02/2026-20319/streamlining-access-to-government-services-through-americagov",
+        "publication_date": "2026-10-02"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-10-03T05:00:07.139703+00:00",
+      "source_sha256": "3502d17ef3eb0434cdb8ff7322cd40d8dae525c906892b8cc7a57318220a8e25",
+      "source_text_sha256": "c03dc1c3ab36b119d9f1ccc4ecf78428389c6503abbb950f1b8d44fe04e188c7",
+      "evaluated_text_sha256": "c03dc1c3ab36b119d9f1ccc4ecf78428389c6503abbb950f1b8d44fe04e188c7"
+    },
+    "744531d1728b8277ebb9cc6934721d19a02e23087bb7d1c9d75ac0ee091d1de3": {
+      "status": "evaluated",
+      "attempts": 1,
+      "item": {
+        "title": "Presidential Determination on Refugee Admissions for Fiscal Year 2027",
+        "summary": "Presidential Determination on Refugee Admissions for Fiscal Year 2027",
+        "url": "https://www.federalregister.gov/documents/2026/10/02/2026-20318/presidential-determination-on-refugee-admissions-for-fiscal-year-2027",
+        "publication_date": "2026-10-02"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-10-03T05:00:51.224707+00:00",
+      "source_sha256": "af336c57703286122d1e11b0cf286e76ac0713470bdd0e3e2c0c1711c17fec08",
+      "source_text_sha256": "4e913e7c96ea6316c345962e04302786d7adda2670cd9b626a97240dcbe9f871",
+      "evaluated_text_sha256": "4e913e7c96ea6316c345962e04302786d7adda2670cd9b626a97240dcbe9f871"
     }
   },
   "last_pass": {
     "documents_checked": 60,
-    "documents_deferred": 28,
+    "documents_deferred": 30,
     "model_attempts": 6,
-    "pending_evaluations": 42,
-    "manual_review_required": 34,
+    "pending_evaluations": 41,
+    "manual_review_required": 33,
     "unhealthy_sources": [
       "ftc_press_releases"
     ],
