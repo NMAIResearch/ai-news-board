@@ -73,71 +73,71 @@
     "54b1b80026c38a18cbc27a2657d9270dca2fb517e6a904f2bf2aee3960aebc45": "2026-09-13T05:01:31.276246+00:00",
     "3f5b18c5361a116e8cda95268bda629c953202b3169b944325053a2129c242c3": "2026-09-13T05:01:31.276250+00:00"
   },
-  "last_run": "2026-10-03T05:02:08.166039+00:00",
+  "last_run": "2026-10-04T05:02:09.118025+00:00",
   "source_states": {
     "us_fed_reg_ai": {
-      "checked_at": "2026-10-03T05:00:04.420723+00:00",
+      "checked_at": "2026-10-04T05:00:00.107261+00:00",
       "status": "ok",
       "entries": 40,
       "queued": 31,
       "window_days": 30,
-      "last_success": "2026-10-03T05:00:04.420723+00:00"
+      "last_success": "2026-10-04T05:00:00.107261+00:00"
     },
     "us_fed_reg_eo": {
-      "checked_at": "2026-10-03T05:00:05.126396+00:00",
+      "checked_at": "2026-10-04T05:00:01.006180+00:00",
       "status": "ok",
       "entries": 40,
       "queued": 29,
       "window_days": 30,
-      "last_success": "2026-10-03T05:00:05.126396+00:00"
+      "last_success": "2026-10-04T05:00:01.006180+00:00"
     },
     "eu_ai_office": {
-      "checked_at": "2026-10-03T05:00:05.653906+00:00",
+      "checked_at": "2026-10-04T05:00:01.662616+00:00",
       "status": "ok",
       "entries": 10,
       "queued": 9,
       "window_days": null,
-      "last_success": "2026-10-03T05:00:05.653906+00:00"
+      "last_success": "2026-10-04T05:00:01.662616+00:00"
     },
     "uk_cma_news": {
-      "checked_at": "2026-10-03T05:00:05.734831+00:00",
+      "checked_at": "2026-10-04T05:00:01.746190+00:00",
       "status": "ok",
       "entries": 20,
       "queued": 0,
       "window_days": null,
-      "last_success": "2026-10-03T05:00:05.734831+00:00"
+      "last_success": "2026-10-04T05:00:01.746190+00:00"
     },
     "uk_ofgem_queue": {
-      "checked_at": "2026-10-03T05:00:05.782778+00:00",
+      "checked_at": "2026-10-04T05:00:01.902913+00:00",
       "status": "ok",
       "entries": 20,
       "queued": 1,
       "window_days": null,
-      "last_success": "2026-10-03T05:00:05.782778+00:00"
+      "last_success": "2026-10-04T05:00:01.902913+00:00"
     },
     "nist_ai_notices": {
-      "checked_at": "2026-10-03T05:00:05.979943+00:00",
+      "checked_at": "2026-10-04T05:00:02.049880+00:00",
       "status": "ok",
       "entries": 40,
       "queued": 9,
       "window_days": null,
-      "last_success": "2026-10-03T05:00:05.979943+00:00"
+      "last_success": "2026-10-04T05:00:02.049880+00:00"
     },
     "sec_press_releases": {
-      "checked_at": "2026-10-03T05:00:06.279453+00:00",
+      "checked_at": "2026-10-04T05:00:02.361331+00:00",
       "status": "ok",
       "entries": 25,
       "queued": 1,
       "window_days": null,
-      "last_success": "2026-10-03T05:00:06.279453+00:00"
+      "last_success": "2026-10-04T05:00:02.361331+00:00"
     },
     "ftc_press_releases": {
-      "checked_at": "2026-10-03T05:00:06.447310+00:00",
-      "status": "failed",
-      "entries": 0,
+      "checked_at": "2026-10-04T05:00:02.532259+00:00",
+      "status": "ok",
+      "entries": 10,
       "queued": 0,
       "window_days": null,
-      "error": "HTTPError: HTTP Error 403: Forbidden"
+      "last_success": "2026-10-04T05:00:02.532259+00:00"
     }
   },
   "jurisdiction_hashes": {
@@ -235,7 +235,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-03T05:01:46.157745+00:00",
+      "checked_at": "2026-10-04T05:00:42.706864+00:00",
       "source_sha256": "eb1eddaf773a3253e5f7f035c9c1317b0010f83259a9b4caca539bf2e75879ea",
       "source_text_sha256": "89ffa63e83499655219e9053b4f4de919e4f5b0aaa8adfdcebfc4f3ba9b10b53",
       "error": "document exceeds model input budget; manual review required"
@@ -265,7 +265,7 @@
       "evaluated_text_sha256": "c86961446a9f009dd79704185cb312be43e4946d7cf12556666bd9bd946c3391"
     },
     "1713135e0fda898e3cb4faead667e3f651a2029f3f3b17978249bae1e06f4c35": {
-      "status": "pending",
+      "status": "manual_review",
       "attempts": 1,
       "item": {
         "title": "Securing the United States Bulk-Power System",
@@ -283,7 +283,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-03T05:02:03.947753+00:00",
+      "checked_at": "2026-10-04T05:01:02.332987+00:00",
       "source_sha256": "3ee83a15aa02e1f35f809f0eb4ddfe2adb601346b89901f0accc629880b5d2cb",
       "source_text_sha256": "a53929654bdac68bbd0f084a443518c66e0dc0bad70789d508a29d5079ca0add",
       "error": "document exceeds model input budget; manual review required"
@@ -307,7 +307,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-03T05:01:46.497936+00:00",
+      "checked_at": "2026-10-04T05:00:42.987265+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "4f3a608c15f8f04e29feca1b6c63058027b545c03e0fbb2baa316c3d697267f8": {
@@ -377,7 +377,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-03T05:01:46.912356+00:00",
+      "checked_at": "2026-10-04T05:00:43.418888+00:00",
       "source_sha256": "711f43edaa8cd4d1f261877323c360e5dc822a4483fe5051a63d0989523b13a4",
       "source_text_sha256": "ca1b3cf0f0f3c78ddf801e6598dc6e376367ab163f90e1e2702947cca856e63c",
       "error": "document exceeds model input budget; manual review required"
@@ -401,7 +401,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:01:59.562200+00:00",
+      "checked_at": "2026-10-04T05:02:05.496677+00:00",
       "source_sha256": "1a4b2b57093f0e4dccec5d872df00a8242859cf944ed625959cb1bd906f17a55",
       "source_text_sha256": "1a908936beb7673a9555336ed5de1bb5820ed2590031436cfa134cd21b7e53c4",
       "evaluated_text_sha256": "1a908936beb7673a9555336ed5de1bb5820ed2590031436cfa134cd21b7e53c4"
@@ -449,7 +449,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-03T05:01:43.508242+00:00",
+      "checked_at": "2026-10-04T05:00:40.056795+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "f3227389324f7137d15bbb2f3d3a07cc2a3d2d1f69b73d682b660348775bec51": {
@@ -471,7 +471,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:02:00.372825+00:00",
+      "checked_at": "2026-10-04T05:02:06.006187+00:00",
       "source_sha256": "2d442a3d4980372dc0dc9fed99ba30f9bdfaae91ac7b5207143266946f2fb5c9",
       "source_text_sha256": "e664382b6d95ace4eb8cce076c6f453a36ef1aa0f524d30139b7bcce73d88615",
       "evaluated_text_sha256": "e664382b6d95ace4eb8cce076c6f453a36ef1aa0f524d30139b7bcce73d88615"
@@ -494,8 +494,8 @@
         "format": "json_fedreg",
         "priority_base": 1
       },
-      "active": true,
-      "checked_at": "2026-10-03T05:01:47.696076+00:00",
+      "active": false,
+      "checked_at": "2026-10-04T05:00:44.219238+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "9d988f6d9277029c3ac6d920018ac38aedd5ac984a6a25fb8d56a6e34f6b3ee2": {
@@ -517,7 +517,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-03T05:01:39.521184+00:00",
+      "checked_at": "2026-10-04T05:00:35.825291+00:00",
       "source_sha256": "a4511bae5da70c354f606c391d50f9ad41e568825f8e0109025f414111f90dc9",
       "source_text_sha256": "fe91c974bf9b2405c6f653e0dda74d08d1a6265a6e628d156bffc7dc259f7bea",
       "error": "document exceeds model input budget; manual review required"
@@ -541,7 +541,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-03T05:01:45.036889+00:00",
+      "checked_at": "2026-10-04T05:00:41.585126+00:00",
       "source_sha256": "fbd5fff4fe0699288f0b65021446cc8dd9d08a94c376413b9a19b6fb6d2da372",
       "source_text_sha256": "2cd3f0dc0045694d0b680943b47d08f04239f7aa6f94aa7136a5fff482fd728e",
       "error": "document exceeds model input budget; manual review required"
@@ -565,7 +565,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-03T05:01:42.148720+00:00",
+      "checked_at": "2026-10-04T05:00:38.709292+00:00",
       "source_sha256": "978bf8bd7945d3beaa2ccf09e14aaa1bfabf6d600c6f472d9707aa1ce0b1110e",
       "source_text_sha256": "640c895a637c3bfbf00d5f8ee04c5621bad85598d7ac09283fb5344a414143d8",
       "error": "document exceeds model input budget; manual review required"
@@ -613,7 +613,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-03T05:01:44.141787+00:00",
+      "checked_at": "2026-10-04T05:00:40.696079+00:00",
       "source_sha256": "78569acd9cc75cd417f395652dfbe9582a43cd92f0320fd9c0a4ac0f74e7c25f",
       "source_text_sha256": "4a8447f5a0993387ea2590db8e8be6d50b8a8e431f1cee6debd1dc45640047b9",
       "error": "document exceeds model input budget; manual review required"
@@ -637,7 +637,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-03T05:01:44.409266+00:00",
+      "checked_at": "2026-10-04T05:00:40.966720+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "45cd6e241ef0f49a81f7569cdcbdf3b115d21f5515637f6ae5e8a6c269ed346a": {
@@ -659,7 +659,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-03T05:01:47.424250+00:00",
+      "checked_at": "2026-10-04T05:00:43.947578+00:00",
       "source_sha256": "7c4c37f6412dccc2795ca2beedfd141df2754c086e9e276c32e97aa99927555b",
       "source_text_sha256": "404d25d32a5cb5fa721fb74ca6c16df48425c1abe2ae321164e0c4796bd520d3",
       "error": "document exceeds model input budget; manual review required"
@@ -683,7 +683,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-03T05:01:45.299554+00:00",
+      "checked_at": "2026-10-04T05:00:41.841984+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "7ad21a2ea23e4e7cfeedf5675164bc4e41af56e08a54475090d6b47820b4a204": {
@@ -705,7 +705,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-03T05:01:48.119303+00:00",
+      "checked_at": "2026-10-04T05:00:44.630221+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "a7320c2f093222e04d723af25b0cbae8c48107c756a2ba5db909095c3850abb3": {
@@ -727,7 +727,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-03T05:01:39.788680+00:00",
+      "checked_at": "2026-10-04T05:00:36.092373+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "6587eda003db0fc2cc6d344a8209cb6b5cd47c3dfcf52d7a6a31afdff94d507d": {
@@ -893,7 +893,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-03T05:01:45.816378+00:00",
+      "checked_at": "2026-10-04T05:00:42.358999+00:00",
       "source_sha256": "483cd8f9f46e29617e6ded47fd3d408d09a14ebb3c1b00b782e3435451ac73cf",
       "source_text_sha256": "59d5cdb31d8e66c9fc37f498e934b7b64f352ff12c43dca835a8d697f632c169",
       "error": "document exceeds model input budget; manual review required"
@@ -917,7 +917,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:01:59.822396+00:00",
+      "checked_at": "2026-10-04T05:02:05.747891+00:00",
       "source_sha256": "6186f8bfff7f80b94af189271dc3e25c1982fc77641a692edbfdd34f6c7fcff0",
       "source_text_sha256": "a50f35ae1078f4d01ad8d5d28d7621ab7b2bf595b9ee4ef8a6622fb984b27c03",
       "evaluated_text_sha256": "a50f35ae1078f4d01ad8d5d28d7621ab7b2bf595b9ee4ef8a6622fb984b27c03"
@@ -965,7 +965,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:02:02.102313+00:00",
+      "checked_at": "2026-10-04T05:02:07.516343+00:00",
       "source_sha256": "6c3ef288cfaa857a44bfcc08f8baaa2fa71d52d98d56433364332bfb45ec392d",
       "source_text_sha256": "712900da35e374cbb52fb0bc52b05b22774925753e134e5a9f2da77fe29803d1",
       "evaluated_text_sha256": "712900da35e374cbb52fb0bc52b05b22774925753e134e5a9f2da77fe29803d1"
@@ -989,7 +989,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:01:25.613744+00:00",
+      "checked_at": "2026-10-04T05:02:04.227198+00:00",
       "source_sha256": "d8025ea9c1e503173a258122faaa2dee445e469aa8e504171ae6af27e1e8de0d",
       "source_text_sha256": "edfd6391453f5aa257a8129814eee001fb1ed3ed3276aae2b78c3c7137aa46be",
       "evaluated_text_sha256": "edfd6391453f5aa257a8129814eee001fb1ed3ed3276aae2b78c3c7137aa46be"
@@ -1061,7 +1061,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:02:19.159701+00:00",
+      "checked_at": "2026-10-04T05:02:08.021817+00:00",
       "source_sha256": "ce59ce9a224919045775bd3ff08fd58f4999acf8c770a558e3817ef53ae16eb2",
       "source_text_sha256": "55a971182ddb74e94f75c325e8cf02eb0fa8c2a686a33e0daae6b1245d85b46b",
       "evaluated_text_sha256": "55a971182ddb74e94f75c325e8cf02eb0fa8c2a686a33e0daae6b1245d85b46b"
@@ -1180,7 +1180,7 @@
         "format": "json_fedreg",
         "priority_base": 1
       },
-      "active": true,
+      "active": false,
       "checked_at": "2026-09-27T05:01:25.072286+00:00",
       "source_sha256": "5dd6419fb209fe145fd2d00a1674655d10d7e719e1f2da2b153975259e468b2b",
       "source_text_sha256": "97948d5ec27ab2694ba258104d45aad587eeb9fc80d05445e0f445d524bcdf70",
@@ -1373,7 +1373,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-03T05:01:48.523064+00:00",
+      "checked_at": "2026-10-04T05:00:45.041147+00:00",
       "source_sha256": "0d3711dc18e19652f67b43bf0374043db6fa72ea1e19fceb3fc5129b5ced7f7b",
       "source_text_sha256": "421e6c77bf86082a1e3359b64a83524532983e501f1463d9b02608fe4c0e94e2",
       "error": "document exceeds model input budget; manual review required"
@@ -1403,7 +1403,7 @@
       "evaluated_text_sha256": "5492d0ccf756ee39dfcae4f097af0392e47270c90160aea7c843ec0e7aecdb21"
     },
     "cb5a5dc5e2a68bc3d8234abf6b81f5495076b73b43649537a7cfd54d5ad22994": {
-      "status": "pending",
+      "status": "manual_review",
       "attempts": 1,
       "item": {
         "title": "Adjusting Imports of Unmanned Aircraft Systems and Unmanned Aircraft Systems Components Into the United States",
@@ -1421,7 +1421,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-03T05:02:03.680138+00:00",
+      "checked_at": "2026-10-04T05:01:02.057582+00:00",
       "source_sha256": "bb9c90378e11423ff231d1326880b038c8264c00eb6439e728cb26ff4bad5d25",
       "source_text_sha256": "5b6fa7f6ca6e3a94d15e5866c7a635601cba12361d95ff84769438a18b52a904",
       "error": "document exceeds model input budget; manual review required"
@@ -1595,8 +1595,8 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:02:19.674377+00:00",
-      "source_sha256": "1795cb4624356f5711730274ce5b2a5c1a5092032da80cc890a9c865dbd9b2fc",
+      "checked_at": "2026-10-04T05:02:08.275536+00:00",
+      "source_sha256": "c8ff91ed8e9dd2c3033c51883bec4f1c7b524b03b84e769be24d18f5442d82c4",
       "source_text_sha256": "e7e4823f97bde16ef76626c6bb3ac0bcba8bcbaad8ae5d8ce05db22fea902b77",
       "evaluated_text_sha256": "e7e4823f97bde16ef76626c6bb3ac0bcba8bcbaad8ae5d8ce05db22fea902b77"
     },
@@ -1676,8 +1676,8 @@
       "evaluated_text_sha256": "a1c8d7c0f3fe127647a8622f444dabbe386a16c352b4c8f70d46eaa0778edc23"
     },
     "62ee8f98b799c0827c80bfae8a016cdbfbaf4ae30d8d10c32f4e77e247ab9ea4": {
-      "status": "pending",
-      "attempts": 1,
+      "status": "evaluated",
+      "attempts": 2,
       "item": {
         "title": "NIST Joins National Genesis Mission to Accelerate AI Innovation",
         "summary": "  NIST will execute two of its efforts through its Centers for AI in Manufacturing and Critical Infrastructure.\n\n",
@@ -1695,10 +1695,10 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-10-03T05:02:05.581299+00:00",
-      "source_sha256": "6c5bd68c9c27ad7a7b5b0cbaf174e66b7454367f64a90c6a995457047d8413ca",
+      "checked_at": "2026-10-04T05:01:45.897335+00:00",
+      "source_sha256": "8b7ff98d4f12d1229dee2898e0a6cd704c15354afc96da1736f6a161950ae26f",
       "source_text_sha256": "231b9c773ab9331b88f582b06973de1812b4000b9d6d04f07ee248673c6b20ef",
-      "evaluated_text_sha256": "8a1ac53247518ef86f375550cd3b6cc4cdf7bb70c924f24850fd468a013ddfeb"
+      "evaluated_text_sha256": "231b9c773ab9331b88f582b06973de1812b4000b9d6d04f07ee248673c6b20ef"
     },
     "c884fc912776c1d9883efc915fafd11b34b1d774c5ee15dcb4be4e3f6fdf9a7b": {
       "status": "evaluated",
@@ -1826,8 +1826,8 @@
       "evaluated_text_sha256": "83aeb0a11559e0f0a4f3af95309539ccd6899be98dd92fc50c2f99f60f7e10e9"
     },
     "208c2512eb49a6f348c96ff9785716e7f0305b798f4dceb46c2219c92893301e": {
-      "status": "pending",
-      "attempts": 1,
+      "status": "evaluated",
+      "attempts": 2,
       "item": {
         "title": "CAISI Issues Request for Information About Securing AI Agent Systems",
         "summary": "  The Center for AI Standards and Innovation (CAISI) at the U.S. Department of Commerce’s National Institute of Standards and Technology (NIST) has published a Request for Information (RFI) seeking insights from industry, academia, and the security\n\n",
@@ -1845,15 +1845,14 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-10-03T05:02:04.213477+00:00",
-      "source_sha256": "69e8af97c48d77caae9c5952d341ca143b55061c03b87143cf44faddae2e13fa",
+      "checked_at": "2026-10-04T05:01:02.606639+00:00",
+      "source_sha256": "aa6974489fb154b2564aedd5c6f9e47f90eab1ae47d322b485173bed22cee620",
       "source_text_sha256": "990c0c45d7c55a9788163599314fe53bc599577c5ca6c0860f85f4091b4dd88c",
-      "evaluated_text_sha256": "4cf7bc640f30def5da3b709ab1be8598aa570f971b2530c482f46e12a26db37e",
-      "error": "source capture failed: URLError"
+      "evaluated_text_sha256": "990c0c45d7c55a9788163599314fe53bc599577c5ca6c0860f85f4091b4dd88c"
     },
     "563d1d66cd664c488444bb4eb92b7392fa5ecf3884ffa4e743e03228b3813e62": {
-      "status": "pending",
-      "attempts": 1,
+      "status": "evaluated",
+      "attempts": 2,
       "item": {
         "title": "NIST Launches Centers for AI in Manufacturing and Critical Infrastructure",
         "summary": "  NIST has expanded its collaboration with the nonprofit MITRE Corporation as part of its efforts to ensure U.S. leadership in artificial intelligence.\n\n",
@@ -1871,14 +1870,14 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-10-03T05:02:04.566927+00:00",
-      "source_sha256": "2443765c4268b0a2cada31e40e97408bdd1e75d88b636854b03e55e803b4d25d",
+      "checked_at": "2026-10-04T05:01:16.540571+00:00",
+      "source_sha256": "8869abb3d03a618dc51fe6d555ec30904d021e0804dc6ace2f0b45cbe589a5fb",
       "source_text_sha256": "4103bd010dad829691153bf82488e1dee2adb7d37fdff0a34de665c76cb826af",
-      "evaluated_text_sha256": "bc429bce94c63e61cc7d7b8a97871d6f0737a2a4217b610250f4d09af43a13bc"
+      "evaluated_text_sha256": "4103bd010dad829691153bf82488e1dee2adb7d37fdff0a34de665c76cb826af"
     },
     "579ec2c3e039a7a6b473553f671392756ab0f3a1e03dfdc7d906aedb10db531f": {
-      "status": "pending",
-      "attempts": 1,
+      "status": "evaluated",
+      "attempts": 2,
       "item": {
         "title": "Draft NIST Guidelines Rethink Cybersecurity for the AI Era",
         "summary": "  New guidelines can help an organization determine ways to incorporate AI into its operations while mitigating cybersecurity risks.\n\n",
@@ -1896,10 +1895,10 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-10-03T05:02:04.953129+00:00",
-      "source_sha256": "4d681e172b3ecf390edd0ab19560823caf92b5d3089c5168702bed472859f681",
+      "checked_at": "2026-10-04T05:01:31.412912+00:00",
+      "source_sha256": "20988ddfced070231b64ddfb024873e36ac91dd917e42292d3992484c09456a7",
       "source_text_sha256": "3a7893a2ff19da7b26a8870d14a5adff934c4066272ea5f5086fb45c9746b322",
-      "evaluated_text_sha256": "e9ef16bd2411cfd525043b89db11c46a6655fbf737031a51d0b6108d8511ea84"
+      "evaluated_text_sha256": "3a7893a2ff19da7b26a8870d14a5adff934c4066272ea5f5086fb45c9746b322"
     },
     "ff1a185c3aa33003442eb0bde83b0db4cc5439faddd13476a01579f820c23ccd": {
       "status": "evaluated",
@@ -1946,7 +1945,7 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-10-03T05:01:47.261395+00:00",
+      "checked_at": "2026-10-04T05:00:43.757321+00:00",
       "error": "source HTTP status 403"
     },
     "00cc6142a1a6b1f6fa6e64da6688ffe5d560d7950cb671e860069f6e0e9948b9": {
@@ -1993,7 +1992,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-03T05:01:42.484830+00:00",
+      "checked_at": "2026-10-04T05:00:39.047613+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "acd125fdfd75db95c599f5f3bba2c1c547a48442d5bec1e39fdbbd161c614437": {
@@ -2015,7 +2014,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-03T05:01:42.986309+00:00",
+      "checked_at": "2026-10-04T05:00:39.548797+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "2aaa70ffc70ff726df8dbcb1d82079ae56f516d5591fa97f4adff95047795251": {
@@ -2111,7 +2110,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-03T05:01:40.477428+00:00",
+      "checked_at": "2026-10-04T05:00:37.045494+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "24b91e42ca39f96250ff8396e2ab4365319553e9a5e9361ad8778925105bc9a5": {
@@ -2133,7 +2132,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-03T05:01:40.220791+00:00",
+      "checked_at": "2026-10-04T05:00:36.524582+00:00",
       "source_sha256": "93d27862db1cfbe023f098d1d88ede786d36f184e9daf3b83286d5bcfbd54bf9",
       "source_text_sha256": "7da5c4c5006d37ad7ce3930ab3ce921fa5934fc1651020c2729e94c830c82cda",
       "error": "document exceeds model input budget; manual review required"
@@ -2157,7 +2156,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-03T05:01:40.997816+00:00",
+      "checked_at": "2026-10-04T05:00:37.574461+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "920548c8df731e539da02bfa501604ca735b46e184d9ccac682ae4e34627e663": {
@@ -2179,7 +2178,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-03T05:01:41.327009+00:00",
+      "checked_at": "2026-10-04T05:00:37.922476+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "fc6caa9ca06598e4de6351640198c601779f0975d004e20968e90c2fac908e61": {
@@ -2201,7 +2200,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-03T05:01:41.674551+00:00",
+      "checked_at": "2026-10-04T05:00:38.261237+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "362f4388c4d9496ebf122603c35668888a236dcf2e4af58ad656a707b1c1aa63": {
@@ -2272,7 +2271,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-03T05:01:39.263507+00:00",
+      "checked_at": "2026-10-04T05:00:35.560936+00:00",
       "source_sha256": "5732141abd973d8993e6239e197486dbeef5fa07af70a1a8e9e5c0342d47b438",
       "source_text_sha256": "057ae28ab694825203e41fddded2a58b524f530bd1cfef46c64e60da0d6efc8f",
       "error": "document exceeds model input budget; manual review required"
@@ -2296,7 +2295,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:01:59.043436+00:00",
+      "checked_at": "2026-10-04T05:02:04.991653+00:00",
       "source_sha256": "48f01a7fbb82d608f3f4f0ddd208e125eb8b80535bbc3a67edd11e5b8ca03e29",
       "source_text_sha256": "af7d0f203f03ad2128a0dddc1462b0cb18a9c4be86031760d8da6638cf2f82e1",
       "evaluated_text_sha256": "af7d0f203f03ad2128a0dddc1462b0cb18a9c4be86031760d8da6638cf2f82e1"
@@ -2320,7 +2319,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:01:58.791300+00:00",
+      "checked_at": "2026-10-04T05:02:04.738142+00:00",
       "source_sha256": "584808262478d094bd6aa4081fb3e9bddc01fcf9717fd31ab5a946edcd584cba",
       "source_text_sha256": "831be24fa8c4a5438e14d7525d9e289148ff472c9091ed21dc666289295be13d",
       "evaluated_text_sha256": "831be24fa8c4a5438e14d7525d9e289148ff472c9091ed21dc666289295be13d"
@@ -2344,7 +2343,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:01:58.533735+00:00",
+      "checked_at": "2026-10-04T05:02:04.481436+00:00",
       "source_sha256": "9942cbeb9b044db07964151690400a3d9de48378ab806870ad4870b66343fc4e",
       "source_text_sha256": "dc9382559a4a7b55fcf4d9b45e735e5fe8ec7fa4d5f6c867899d028b32d04b70",
       "evaluated_text_sha256": "dc9382559a4a7b55fcf4d9b45e735e5fe8ec7fa4d5f6c867899d028b32d04b70"
@@ -2368,7 +2367,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:01:59.302497+00:00",
+      "checked_at": "2026-10-04T05:02:05.244729+00:00",
       "source_sha256": "5301ed4cfd1cff5c6d520d3f50db4427783b303b6b8b7a3aacd5c906aebb7345",
       "source_text_sha256": "10c00bb5a84a266e36fdad2dfe030a025124bd0403dc052bf489bba9b0e4d6a2",
       "evaluated_text_sha256": "10c00bb5a84a266e36fdad2dfe030a025124bd0403dc052bf489bba9b0e4d6a2"
@@ -2392,7 +2391,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-03T05:01:38.654557+00:00",
+      "checked_at": "2026-10-04T05:00:34.950153+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "99b981b199350cd18d9dffb46c33f69f183df547fbe49512e2f937371d7cc3ac": {
@@ -2414,7 +2413,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-03T05:01:39.003302+00:00",
+      "checked_at": "2026-10-04T05:00:35.302857+00:00",
       "source_sha256": "19d7414eb9185234aac641d5477a120f5b1bbd298866c740acef103e33a51f5f",
       "source_text_sha256": "42b2a605ec6030eff66b91501bfafb930aded7c79002d3c37346d051858ab21a",
       "error": "document exceeds model input budget; manual review required"
@@ -2438,7 +2437,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:02:18.536739+00:00",
+      "checked_at": "2026-10-04T05:02:07.767511+00:00",
       "source_sha256": "dba8c963fa10705941a9fe37e8262639fe983e4032f077f89cafa236d39ba5a5",
       "source_text_sha256": "776aaf1088d245abb82d05db1d599e5493590b09e98000248b1f3cf5366c0201",
       "evaluated_text_sha256": "776aaf1088d245abb82d05db1d599e5493590b09e98000248b1f3cf5366c0201"
@@ -2486,7 +2485,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:02:19.752328+00:00",
+      "checked_at": "2026-10-04T05:02:08.318692+00:00",
       "source_sha256": "ba91ef2f4c7bfb80c5c3bf770c5788ce135714511aec39d8b2ac841f670a6452",
       "source_text_sha256": "e82f6dc2064c6d3f909e28c4acc0aad1a8f4f40a0a530e5d79089859e8041490",
       "evaluated_text_sha256": "e82f6dc2064c6d3f909e28c4acc0aad1a8f4f40a0a530e5d79089859e8041490"
@@ -2510,7 +2509,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-03T05:01:38.383808+00:00",
+      "checked_at": "2026-10-04T05:00:34.683657+00:00",
       "source_sha256": "387c58cf45fffaba490ed8c9e7eefb230da279108c6bf0afb7cfa14725bc0f69",
       "source_text_sha256": "960c0ef0cd21704f853ccbd3fcc20d9589a5749c1b89a4de1d24e8c161a9852c",
       "error": "document exceeds model input budget; manual review required"
@@ -2534,7 +2533,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-03T05:01:38.127957+00:00",
+      "checked_at": "2026-10-04T05:00:34.420864+00:00",
       "source_sha256": "823800fb40021b6741fdce7b49ed462ad4e8f5c599835080825d505a4223abcf",
       "source_text_sha256": "da0a678e19f9753a6699ade76b54b06b8b9bea17e71214e0c000f4a465ccbcfa",
       "error": "document exceeds model input budget; manual review required"
@@ -2558,7 +2557,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-03T05:01:37.521399+00:00",
+      "checked_at": "2026-10-04T05:00:33.813074+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "2b57378a8bc94b4efa5b6e972f31392c58c5b1be99e9b65ecb836b7114e97957": {
@@ -2580,7 +2579,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:02:00.633815+00:00",
+      "checked_at": "2026-10-04T05:02:06.266781+00:00",
       "source_sha256": "0c84479c52eceebdf9c114bc763a2a612cd9378abffd9a8817aa94a705e35522",
       "source_text_sha256": "9f36eb4346026d78e6b5991da32745a1284d2f6d56123f5c3977ceb6f009d7d9",
       "evaluated_text_sha256": "9f36eb4346026d78e6b5991da32745a1284d2f6d56123f5c3977ceb6f009d7d9"
@@ -2605,8 +2604,8 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-02T05:02:00.902915+00:00",
-      "source_sha256": "784d12c13e0fe92fad58d3633ab311694a161c161a0698e616b6a79afab3d058",
+      "checked_at": "2026-10-04T05:02:06.572958+00:00",
+      "source_sha256": "98fda624b48d79e36bac5ef50164edd87cc066d7602dd286a6cf74130377b9e3",
       "source_text_sha256": "0be60b8f77e64521ae01532921d7452576adf18cbd9d22bf90f586f726ac07ff",
       "evaluated_text_sha256": "0be60b8f77e64521ae01532921d7452576adf18cbd9d22bf90f586f726ac07ff"
     },
@@ -2629,7 +2628,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-03T05:01:36.151934+00:00",
+      "checked_at": "2026-10-04T05:00:32.399347+00:00",
       "source_sha256": "68d7f8ca29c0ae6e723f580027b3b0faa8c23c7f5ab43218cd6bf58c13fb87aa",
       "source_text_sha256": "953c220894733b7adea02631953ccf29889dc0303a0a497fbceb022db7c029cc",
       "error": "document exceeds model input budget; manual review required"
@@ -2653,7 +2652,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-03T05:01:37.260892+00:00",
+      "checked_at": "2026-10-04T05:00:33.552390+00:00",
       "source_sha256": "f3da990edb63a3acb300f049da3a8b29ef0e965d33c7866d89211a7feb9336bd",
       "source_text_sha256": "95dd79890aabe5b7267cc84c8bf1589877e121be502e261e6910157a221e0873",
       "error": "document exceeds model input budget; manual review required"
@@ -2701,12 +2700,12 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-03T05:01:36.481791+00:00",
+      "checked_at": "2026-10-04T05:00:32.761121+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "c72344e306a273fbace5d183d055151cbfa8583ab5218120520fe7511e9c0258": {
-      "status": "pending",
-      "attempts": 1,
+      "status": "evaluated",
+      "attempts": 2,
       "item": {
         "title": "Gold Star Mother's and Family's Day, 2026",
         "summary": "Gold Star Mother's and Family's Day, 2026",
@@ -2723,10 +2722,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-03T05:02:03.426139+00:00",
+      "checked_at": "2026-10-04T05:00:46.106504+00:00",
       "source_sha256": "b91ee562c08806a46e4955983fcb464a84730238dcb32abb93a163bcc2c0c025",
       "source_text_sha256": "4b2b76a284ed90f43697ca0d20e8f59e43d6a1292fa41b3b1cd772deb9dd3307",
-      "error": "supporting quote is absent from the captured document"
+      "evaluated_text_sha256": "4b2b76a284ed90f43697ca0d20e8f59e43d6a1292fa41b3b1cd772deb9dd3307"
     },
     "ad09a189b9514511ca2e4aa82ea993f705201c14cc2bc6a734a32a7a4b7f34be": {
       "status": "evaluated",
@@ -2771,7 +2770,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-03T05:01:35.462903+00:00",
+      "checked_at": "2026-10-04T05:00:31.706252+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "768c9228a9059c551cdfe041c9864df4b758e63f70dcd4e8ae7c587a9589f6dc": {
@@ -2817,7 +2816,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-03T05:00:35.614570+00:00",
+      "checked_at": "2026-10-04T05:02:08.844987+00:00",
       "source_sha256": "5ccc956677f6160181ee5fe279e8ea266b73315ea5be4d8b5ff69a30662d6b4a",
       "source_text_sha256": "ff803b23a6e220432ac11483edd183078670009b5fa6bd1cb558310002d5bfa3",
       "evaluated_text_sha256": "ff803b23a6e220432ac11483edd183078670009b5fa6bd1cb558310002d5bfa3"
@@ -2841,7 +2840,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-03T05:00:07.139703+00:00",
+      "checked_at": "2026-10-04T05:02:08.577544+00:00",
       "source_sha256": "3502d17ef3eb0434cdb8ff7322cd40d8dae525c906892b8cc7a57318220a8e25",
       "source_text_sha256": "c03dc1c3ab36b119d9f1ccc4ecf78428389c6503abbb950f1b8d44fe04e188c7",
       "evaluated_text_sha256": "c03dc1c3ab36b119d9f1ccc4ecf78428389c6503abbb950f1b8d44fe04e188c7"
@@ -2869,17 +2868,63 @@
       "source_sha256": "af336c57703286122d1e11b0cf286e76ac0713470bdd0e3e2c0c1711c17fec08",
       "source_text_sha256": "4e913e7c96ea6316c345962e04302786d7adda2670cd9b626a97240dcbe9f871",
       "evaluated_text_sha256": "4e913e7c96ea6316c345962e04302786d7adda2670cd9b626a97240dcbe9f871"
+    },
+    "7e3737813fbc0343ba69d47d200221098f049b5a49d861b495c7e446819945b3": {
+      "status": "manual_review",
+      "attempts": 0,
+      "item": {
+        "title": "Potential Designation of Chartered Financial Analyst Designation as Qualifying Natural Persons for Accredited Investor Status",
+        "summary": "Notice is given that the Securities and Exchange Commission (the \"Commission\") is considering whether to issue an order designating holding a charter as a Chartered Financial Analyst (\"CFA\") in good standing as qualifying natural persons for accredited investor status.",
+        "url": "https://www.federalregister.gov/documents/2026/10/05/2026-20311/potential-designation-of-chartered-financial-analyst-designation-as-qualifying-natural-persons-for",
+        "publication_date": "2026-10-05"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-10-04T05:00:02.772957+00:00",
+      "source_sha256": "27bb39938518b9764ede75e6fd4945a296c30caa5dda029d87b187f78806d9d0",
+      "source_text_sha256": "48fac10a019701a09739a4631b72ff1f238b8503052a35cd7fbac3c1c4a34728",
+      "error": "document exceeds model input budget; manual review required"
+    },
+    "d7d86f6b9c82d5c25880bf90e80660c4198c28ccf876a1c076d5d0975d69d22f": {
+      "status": "evaluated",
+      "attempts": 1,
+      "item": {
+        "title": "Presidential Determination on the Revocation of Presidential Determinations Related to Lebanon",
+        "summary": "Presidential Determination on the Revocation of Presidential Determinations Related to Lebanon",
+        "url": "https://www.federalregister.gov/documents/2026/10/05/2026-20439/presidential-determination-on-the-revocation-of-presidential-determinations-related-to-lebanon",
+        "publication_date": "2026-10-05"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-10-04T05:00:03.146774+00:00",
+      "source_sha256": "b517fb0a4c0d8f6f452cbe5a413fb722d0cc8d08bc45dbd12fcc1d450030cd10",
+      "source_text_sha256": "af85ed8779e895c8917336fbfbdb2f25cc3cc46f2220740072a61694ca5a82b4",
+      "evaluated_text_sha256": "af85ed8779e895c8917336fbfbdb2f25cc3cc46f2220740072a61694ca5a82b4"
     }
   },
   "last_pass": {
     "documents_checked": 60,
-    "documents_deferred": 30,
+    "documents_deferred": 31,
     "model_attempts": 6,
-    "pending_evaluations": 41,
-    "manual_review_required": 33,
-    "unhealthy_sources": [
-      "ftc_press_releases"
-    ],
+    "pending_evaluations": 37,
+    "manual_review_required": 36,
+    "unhealthy_sources": [],
     "pending_notifications": 0
   },
   "local_watch_version": 2,
