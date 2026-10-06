@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-05 05:22 UTC",
+ "generated": "2026-10-06 05:30 UTC",
  "window_days": 60,
  "counts": {
-  "total": 105,
-  "closed": 47,
+  "total": 104,
+  "closed": 46,
   "open_weights": 58
  },
  "releases": [
@@ -188,18 +188,6 @@
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
-   "lab": "Stealth",
-   "model": "Space Bunny Alpha",
-   "id": "stealth/space-bunny-alpha",
-   "date": "2026-09-23",
-   "url": "https://openrouter.ai/stealth/space-bunny-alpha",
-   "context_length": 1000000,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
    "lab": "Aion Labs",
    "model": "AionLabs: Aion 3.5 Mini",
    "id": "aion-labs/aion-3.5-mini",
@@ -234,6 +222,18 @@
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "IBM",
+   "model": "granite-timeseries-ensemble-r1",
+   "id": "ibm-granite/granite-timeseries-ensemble-r1",
+   "date": "2026-09-23",
+   "url": "https://huggingface.co/ibm-granite/granite-timeseries-ensemble-r1",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "ibm-granite/granite-timeseries-ensemble-r1",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "Cohere",
@@ -845,18 +845,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "ibm-granite/granite-4.2-8b-bf16-mlx",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "IBM",
-   "model": "granite-4.2-3b-bf16-mlx",
-   "id": "ibm-granite/granite-4.2-3b-bf16-mlx",
-   "date": "2026-09-01",
-   "url": "https://huggingface.co/ibm-granite/granite-4.2-3b-bf16-mlx",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "ibm-granite/granite-4.2-3b-bf16-mlx",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {

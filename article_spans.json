@@ -1,62 +1,116 @@
 {
- "https://techcrunch.com/2026/10/02/disrupt-2026-layoff-expo-plus-passes-available-for-75-dollars/": {
-  "headline": "Affected by layoffs? Don\u2019t miss this $75 deal for your TechCrunch Disrupt 2026 Expo+ Pass",
+ "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/": {
+  "headline": "OpenAI will start watermarking ChatGPT\u2019s text in the EU",
   "source": "techcrunch.com",
   "fetch": "ok",
-  "n_chars": 4336,
+  "n_chars": 3863,
   "tier": 1,
-  "furniture_dropped": 1,
+  "furniture_dropped": 0,
   "related_headlines_dropped": 0,
   "duplicate_spans_dropped": 0,
   "links_scope": "main",
-  "content_hash": "5252e34046f240bd700701c0cbb062c27045bd77a69853f5f1d7c2cbf64d055e",
-  "evidence_hash": "1157823a90fa7500073b966cd0c6a88027b8877b9a6fa3dd0f1ddc4a422afa14",
+  "content_hash": "eea5283e36ec0f5492650a9b0460e3dbef2eb425d39f2dfc8615a3223aa7c7d0",
+  "evidence_hash": "dc2eee0c805f6392caf438b900557c5e7b512fe7fd6ce4041422b681e6e56137",
   "publisher_tags": [
-   "Layoffs 2026",
-   "TechCrunch Disrupt"
+   "eu",
+   "OpenAI",
+   "EU AI Act",
+   "watermarking"
   ],
   "site_name": "TechCrunch",
   "spans": [
    {
-    "sentence": "The offer is limited to the first 100 qualifying people, or until Disrupt doors open on October 13 at 8 a.m.",
-    "offset": 89,
+    "sentence": "In one test, replacing 10% of words with synonyms dropped detection from about 92% to 66%.",
+    "offset": 1527,
     "figures": [
-     "100",
-     "8"
+     "10%",
+     "92%",
+     "66%"
     ],
     "figure_offsets": [
-     34,
-     102
+     23,
+     79,
+     86
+    ],
+    "base_cue": false
+   }
+  ],
+  "cross_article_duplicates_dropped": 2
+ },
+ "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/": {
+  "headline": "Reflection debuts Beam, an open-weight AI model to rival Chinese models at lower compute cost",
+  "source": "techcrunch.com",
+  "fetch": "ok",
+  "n_chars": 4531,
+  "tier": 1,
+  "furniture_dropped": 0,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "main",
+  "content_hash": "d544a010a3b6a0a346eec35c79302fb4ad26f1b0bc3088e1b610dd8adb7154df",
+  "evidence_hash": "95e9a04a978f3156c26c7f606b411eedc188d2cf964b2263692d055c2b127ac0",
+  "publisher_tags": [
+   "beam",
+   "nvidia",
+   "open source",
+   "open weight",
+   "reflection ai"
+  ],
+  "site_name": "TechCrunch",
+  "spans": [
+   {
+    "sentence": "Beam is a 501-billion-parameter model with 23 billion active parameters.",
+    "offset": 761,
+    "figures": [
+     "23 billion"
+    ],
+    "figure_offsets": [
+     43
     ],
     "base_cue": false
    },
    {
-    "sentence": "Once all 100 passes are claimed, the offer is no longer available.",
-    "offset": 202,
+    "sentence": "It was pretrained on 23.8 trillion tokens and has a 1 million token context window.",
+    "offset": 834,
     "figures": [
-     "100"
+     "23.8 trillion",
+     "1 million"
     ],
     "figure_offsets": [
-     9
+     21,
+     52
     ],
     "base_cue": false
    },
    {
-    "sentence": "Join 10,000+ founders, investors, operators, and tech leaders at San Francisco\u2019s Moscone West on October 13-15, and put yourself back in the room where new opportunities are taking shape.",
-    "offset": 269,
+    "sentence": "To compare, Z.ai\u2019s GLM-5.2 has roughly 744 billion total parameters with 40 billion active.",
+    "offset": 918,
     "figures": [
-     "10,000"
+     "744 billion",
+     "40 billion"
     ],
     "figure_offsets": [
-     5
+     39,
+     73
     ],
     "base_cue": false
    },
    {
-    "sentence": "Grab your Layoff Expo+ Pass before all 100 are claimed, or by the time Disrupt kicks off on October 13.",
-    "offset": 782,
+    "sentence": "Reflection was founded in 2024 by two former Google DeepMind researchers and has raised roughly $4.7 billion from backers, including Nvidia, Sequoia Capital, and Lightspeed Venture Partners, per PitchBook.",
+    "offset": 1839,
     "figures": [
-     "100"
+     "$4.7 billion"
+    ],
+    "figure_offsets": [
+     96
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Its last round valued the company at a $25 billion pre-money valuation .",
+    "offset": 2045,
+    "figures": [
+     "$25 billion"
     ],
     "figure_offsets": [
      39
@@ -64,310 +118,174 @@
     "base_cue": false
    },
    {
-    "sentence": "At the center of Disrupt is the Expo Hall, where all 10,000+ attendees converge \u2014 founders, investors, tech leaders, innovators, and builders.",
-    "offset": 1179,
+    "sentence": "This summer, Reflection signed deals collectively worth more than $7 billion with SpaceX and Nebius to secure access to Nvidia\u2019s GB300 chips through 2029.",
+    "offset": 2353,
     "figures": [
-     "10,000"
+     "$7 billion"
     ],
     "figure_offsets": [
-     53
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Explore 300+ exhibiting startups, connect directly with founders and tech leaders, learn about new companies, and put yourself in the room for your next career opportunity .",
-    "offset": 1322,
-    "figures": [
-     "300"
-    ],
-    "figure_offsets": [
-     8
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Then take those connections offline through 1:1 meetings, conversations in the Expo Hall, and events throughout Disrupt.",
-    "offset": 1783,
-    "figures": [
-     "1",
-     "1"
-    ],
-    "figure_offsets": [
-     44,
-     46
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "What your $75 Layoff Expo+ Pass includes",
-    "offset": 2540,
-    "figures": [
-     "$75"
-    ],
-    "figure_offsets": [
-     10
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Expo Hall \u2014 Explore potential career opportunities as you meet startups, companies, and innovators at the heart of Disrupt, where 10,000+ tech leaders converge to discover 300+ exhibiting startups .",
-    "offset": 2619,
-    "figures": [
-     "10,000",
-     "300"
-    ],
-    "figure_offsets": [
-     130,
-     172
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "AI-powered matchmaking and ad hoc meetings \u2014 Use the TechCrunch Events app to discover relevant people and connect with them through 1:1 meetings.",
-    "offset": 3099,
-    "figures": [
-     "1",
-     "1"
-    ],
-    "figure_offsets": [
-     133,
-     135
+     66
     ],
     "base_cue": false
    }
   ],
   "cross_article_duplicates_dropped": 2
  },
- "https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/": {
-  "headline": "Google froze its open source bug bounty program due to a \u2018significant rise\u2019 in AI submissions",
+ "https://techcrunch.com/2026/10/05/instinct-brings-its-ai-agent-to-group-chats-even-for-friends-without-an-account/": {
+  "headline": "Instinct brings its AI agent to group chats, even for friends without an account",
   "source": "techcrunch.com",
   "fetch": "ok",
-  "n_chars": 1605,
+  "n_chars": 3669,
+  "tier": 1,
+  "furniture_dropped": 0,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "main",
+  "content_hash": "d38fa32a15ec6c5fff019b416292649f1c70d3b7cc2a415b679af7b552f5caab",
+  "evidence_hash": "dcca5f9f9cef12c3d65a35f6cc3700f348e3af6451bdfe10e90fc55eb8e43e7e",
+  "publisher_tags": [
+   "instinct"
+  ],
+  "site_name": "TechCrunch",
+  "spans": [
+   {
+    "sentence": "Instinct, the AI agent now valued at $10 billion as of its latest funding round, is expanding into group chats.",
+    "offset": 0,
+    "figures": [
+     "$10 billion"
+    ],
+    "figure_offsets": [
+     37
+    ],
+    "base_cue": false
+   }
+  ],
+  "cross_article_duplicates_dropped": 2
+ },
+ "https://techcrunch.com/2026/10/05/tiktok-rolls-out-an-ai-shopping-assistant-and-one-click-checkout/": {
+  "headline": "TikTok rolls out an AI shopping assistant and one-click checkout",
+  "source": "techcrunch.com",
+  "fetch": "ok",
+  "n_chars": 3421,
+  "tier": 1,
+  "furniture_dropped": 0,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "main",
+  "content_hash": "74bb725fd0017c1029eda028823fe6fbc004df755e5e2032cb8d5094511c1443",
+  "evidence_hash": "3e6b05d364fcad81cb20dcf24e7a4cf8a02bd2f0ff7301830045e32a8cbafa82",
+  "publisher_tags": [
+   "TikTok"
+  ],
+  "site_name": "TechCrunch",
+  "spans": [
+   {
+    "sentence": "According to TikTok\u2019s Economic Impact Report that was released last week, activity on the platform helped generate $81 billion in GDP for U.S. businesses, while 54 million Americans said they had purchased a product after watching a TikTok video.",
+    "offset": 1973,
+    "figures": [
+     "$81 billion",
+     "54 million"
+    ],
+    "figure_offsets": [
+     115,
+     161
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "The market research firm eMarketer estimates it generated about $15.8 billion in U.S. sales in 2025, representing roughly 18% of all U.S. social commerce.",
+    "offset": 2272,
+    "figures": [
+     "$15.8 billion",
+     "18%"
+    ],
+    "figure_offsets": [
+     64,
+     122
+    ],
+    "base_cue": true
+   }
+  ],
+  "cross_article_duplicates_dropped": 2
+ },
+ "https://techcrunch.com/2026/10/05/hot-girl-hotline-is-like-dear-abby-for-the-ai-era/": {
+  "headline": "Hot Girl Hotline is like \u2018Dear Abby\u2019 for the AI era",
+  "source": "techcrunch.com",
+  "fetch": "ok",
+  "n_chars": 5427,
   "tier": 1,
   "furniture_dropped": 1,
   "related_headlines_dropped": 0,
   "duplicate_spans_dropped": 0,
   "links_scope": "main",
-  "content_hash": "b28b23990f337ad00b73169a89728ce9d9888e51dadcd2e8988d376151807f39",
-  "evidence_hash": "13d2e06a9056fd4ce828594524b2c39f3d81558ce4e5ab6aee1fe3b01cdf7289",
-  "publisher_tags": [],
-  "site_name": "TechCrunch",
-  "spans": [],
-  "cross_article_duplicates_dropped": 2
- },
- "https://techcrunch.com/2026/10/04/can-super-intelligence-and-a-non-binding-safety-pact-solve-ais-image-problem/": {
-  "headline": "Can \u2018super intelligence\u2019 and a non-binding safety pact solve AI\u2019s image problem?",
-  "source": "techcrunch.com",
-  "fetch": "ok",
-  "n_chars": 6981,
-  "tier": 1,
-  "furniture_dropped": 0,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "main",
-  "content_hash": "1dba1415746ab4121cc43339cbe657a5d11ff5d3065214e44c54460e36f40ba2",
-  "evidence_hash": "2b9d692afafa645e0171206365369de3d323b784dc0fcdc90eac74734332f61e",
+  "content_hash": "c03edece89b9617a63aec049cd34aadaa6b05264d70be47df924aa339775612b",
+  "evidence_hash": "cae6b6411ad9edde008e5b7a3dec32e40c4ece72d21c276af121c4ff7f99c39d",
   "publisher_tags": [
-   "dario amodei",
-   "Donald Trump",
-   "Equity podcast",
-   "jeff bezos",
-   "Mark Zuckerberg"
+   "Startup Battlefield 200",
+   "TechCrunch Disrupt"
   ],
   "site_name": "TechCrunch",
   "spans": [
    {
-    "sentence": "That all changed when [Anthropic CEO] Dario Amodei was invited to a 10 p.m.",
-    "offset": 2620,
+    "sentence": "If conversations raise flags, for instance, the user is referred to resources such as the crisis hotline 988.",
+    "offset": 2312,
     "figures": [
-     "10"
+     "988"
     ],
     "figure_offsets": [
-     68
+     105
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Hot Girl Hotline plans to monetize through a $9.99 per month subscription, which hundreds of its most active users are already paying for.",
+    "offset": 3816,
+    "figures": [
+     "$9.99"
+    ],
+    "figure_offsets": [
+     45
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "AI , Apps , Social , Startup Battlefield 200 , TechCrunch Disrupt",
+    "offset": 4393,
+    "figures": [
+     "200"
+    ],
+    "figure_offsets": [
+     41
     ],
     "base_cue": false
    }
   ],
   "cross_article_duplicates_dropped": 2
  },
- "https://techcrunch.com/2026/10/04/trump-unveils-his-new-super-intelligence-force/": {
-  "headline": "Trump unveils his new Super Intelligence Force",
+ "https://techcrunch.com/2026/10/05/hackerranks-ai-interviewer-offers-a-glimpse-into-what-job-interviews-could-become/": {
+  "headline": "HackerRank\u2019s AI interviewer offers a glimpse into what job interviews could become",
   "source": "techcrunch.com",
   "fetch": "ok",
-  "n_chars": 3072,
+  "n_chars": 6651,
   "tier": 1,
   "furniture_dropped": 0,
   "related_headlines_dropped": 0,
   "duplicate_spans_dropped": 0,
   "links_scope": "main",
-  "content_hash": "9e018582de6d3431dc2700ef4473b8f809a31fb2e2705837c31da745fb273edb",
-  "evidence_hash": "0ab09ecd6239677e7bbeda027046d9e36ce8bd4bbb118f76f4bf686d9c13d45a",
+  "content_hash": "979962a8d4c498512cde72ca9fca1f83822e2c19a583c83290e36495da32dcb7",
+  "evidence_hash": "9984688e5422f30e5e98948777dba78d2f0dd40c5d214a44f1d8b6557f40fc0e",
   "publisher_tags": [
-   "Donald Trump"
+   "Exclusive",
+   "HackerRank",
+   "ai agent"
   ],
   "site_name": "TechCrunch",
   "spans": [
    {
-    "sentence": "The task force will reportedly have 120 days to create a report on the risks and opportunities presented by AI.",
-    "offset": 1570,
+    "sentence": "The startup says the AI interviewer has already conducted more than 500,000 interviews during testing, with companies including Snowflake, Snorkel, and Capgemini among those that tried it, while HackerRank also tested the product internally.",
+    "offset": 485,
     "figures": [
-     "120"
-    ],
-    "figure_offsets": [
-     36
-    ],
-    "base_cue": false
-   }
-  ],
-  "cross_article_duplicates_dropped": 2
- },
- "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/": {
-  "headline": "Amazon responds to data center backlash, says it no longer uses NDAs",
-  "source": "techcrunch.com",
-  "fetch": "ok",
-  "n_chars": 5135,
-  "tier": 1,
-  "furniture_dropped": 0,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "main",
-  "content_hash": "f37db287e9f7839ea79a077df93d0c2d5b0266d212903e264d332a3abbf0d659",
-  "evidence_hash": "e0c266e790f3034516461b837c982af1543dfdc6a427cb597d91d88a3f0303f4",
-  "publisher_tags": [
-   "Amazon",
-   "Amazon Web Services",
-   "data centers",
-   "Matt Garman"
-  ],
-  "site_name": "TechCrunch",
-  "spans": [
-   {
-    "sentence": "As a result of that backlash, New York announced a one-year moratorium on permits for large data centers , and according to Garman, there are more than 100 data center moratoriums currently being considered across the United States.",
-    "offset": 840,
-    "figures": [
-     "100"
-    ],
-    "figure_offsets": [
-     152
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Pointing to an Amazon report about its own water usage , Garman said that \u201cdirect data center water consumption\u201d only accounts for 0.5% of all industrial water usage in the United States, \u201corders of magnitude less than golf courses, almond farming, and many other industries.\u201d",
-    "offset": 1567,
-    "figures": [
-     "0.5%"
-    ],
-    "figure_offsets": [
-     131
-    ],
-    "base_cue": true
-   },
-   {
-    "sentence": "On the other hand, an independent watchdog said recently data centers were the main culprit behind a 76% year-over-year price increase on America\u2019s largest electrical grid.",
-    "offset": 2627,
-    "figures": [
-     "76%"
-    ],
-    "figure_offsets": [
-     101
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "For example, a planned Amazon data center in Texas is permitted to release 33 million tons of carbon dioxide per year, which is more than any other power plant in the United States.",
-    "offset": 3015,
-    "figures": [
-     "33 million"
-    ],
-    "figure_offsets": [
-     75
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "\u201cThey\u2019re idle 99.9% of the time (they run roughly 10 hours per year, mostly for required maintenance testing).\u201d",
-    "offset": 3266,
-    "figures": [
-     "99.9%",
-     "10"
-    ],
-    "figure_offsets": [
-     14,
-     50
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "As for the community benefits, this is where Garman wrote, \u201cWe no longer use nondisclosure agreements with the government agencies we work with on our projects.\u201d Plus, he said, \u201cOver the past three years, Amazon has contributed more than $1 billion to communities across the U.S. in which we have a meaningful data center presence.\u201d",
-    "offset": 3378,
-    "figures": [
-     "$1 billion"
-    ],
-    "figure_offsets": [
-     238
-    ],
-    "base_cue": false
-   }
-  ],
-  "cross_article_duplicates_dropped": 2
- },
- "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/": {
-  "headline": "OpenAI safety employee resigns, claiming the company\u2019s \u2018culture is broken\u2019",
-  "source": "techcrunch.com",
-  "fetch": "ok",
-  "n_chars": 5154,
-  "tier": 1,
-  "furniture_dropped": 0,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "main",
-  "content_hash": "64eac8e3437d7c42ec0293af4f8b7738197c20c367223be24995c5f089d17ff0",
-  "evidence_hash": "827888bb1e7683faa8267596deca090a46cb87af70b05209bc25d1a78a92c8f2",
-  "publisher_tags": [
-   "OpenAI"
-  ],
-  "site_name": "TechCrunch",
-  "spans": [],
-  "cross_article_duplicates_dropped": 2
- },
- "https://techcrunch.com/2026/10/03/all-the-ai-agents-that-can-live-in-your-text-messages/": {
-  "headline": "All the AI agents that can live in your text messages",
-  "source": "techcrunch.com",
-  "fetch": "ok",
-  "n_chars": 13144,
-  "tier": 1,
-  "furniture_dropped": 0,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "main",
-  "content_hash": "9238c37042b84b19dfcfe2f83031b02076b225a758ce1ee8df560bdb8d14b087",
-  "evidence_hash": "151d5a86b9987f92dee57d77de429e840b8b4730b8370498e7572337e71e5605",
-  "publisher_tags": [
-   "AI",
-   "instinct",
-   "AI agents"
-  ],
-  "site_name": "TechCrunch",
-  "spans": [
-   {
-    "sentence": "While Instinct is one of the buzziest AI agents at present, thanks to its $10 billion valuation after its latest funding round of $1 billion, there are many others also making a play for this space.",
-    "offset": 439,
-    "figures": [
-     "$10 billion",
-     "$1 billion"
-    ],
-    "figure_offsets": [
-     74,
-     130
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "The company launched in beta in early September 2026 and has raised $3.5 million in pre-seed funding.",
-    "offset": 2407,
-    "figures": [
-     "$3.5 million"
+     "500,000"
     ],
     "figure_offsets": [
      68
@@ -375,136 +293,491 @@
     "base_cue": false
    },
    {
-    "sentence": "Folk launched its beta in May 2026, and it\u2019s available for free but also offers a Pro subscription for $8.33/month if you want unlimited tasks running in the background.",
-    "offset": 3100,
+    "sentence": "Suspicious-activity flags, Ravisankar said, were 70% to 80% lower in Chakra interviews than in comparable traditional HackerRank assessments, though the rate varied depending on factors such as geography and seniority.",
+    "offset": 2801,
     "figures": [
-     "$8.33"
+     "70%",
+     "80%"
     ],
     "figure_offsets": [
-     103
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Instinct first made headlines after raising $350 million at a $2.5 billion valuation.",
-    "offset": 3303,
-    "figures": [
-     "$350 million",
-     "$2.5 billion"
-    ],
-    "figure_offsets": [
-     44,
-     62
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "In September 2026, it raised $1 billion , valuing it at $10 billion.",
-    "offset": 3389,
-    "figures": [
-     "$1 billion",
-     "$10 billion"
-    ],
-    "figure_offsets": [
-     29,
+     49,
      56
     ],
     "base_cue": false
    },
    {
-    "sentence": "It\u2019s a bit on the pricier side, with subscriptions starting at $21 per month.",
-    "offset": 5220,
+    "sentence": "The Y Combinator-backed startup now has more than 3,000 business customers, including Amazon, Nvidia, Clay, and Replit, and a community of over 30 million developers worldwide.",
+    "offset": 3368,
     "figures": [
-     "$21"
+     "3,000",
+     "30 million"
     ],
     "figure_offsets": [
-     63
+     50,
+     144
+    ],
+    "base_cue": false
+   }
+  ],
+  "cross_article_duplicates_dropped": 2
+ },
+ "https://techcrunch.com/2026/10/05/openai-launches-visual-ads-that-appear-alongside-image-generation-results/": {
+  "headline": "OpenAI launches visual ads that appear alongside image generation results",
+  "source": "techcrunch.com",
+  "fetch": "ok",
+  "n_chars": 3174,
+  "tier": 1,
+  "furniture_dropped": 0,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "main",
+  "content_hash": "0af8a4e8a205fe7f5cd0cd4ebc00ce7f814a33a72e61f7e722a02a6a8952be85",
+  "evidence_hash": "de7eb4f161b5aa44bdb526eee8a94af1773d59974b922a650b84cf2fe0ad5efa",
+  "publisher_tags": [
+   "Adtech",
+   "advertising",
+   "OpenAI",
+   "ChatGPT"
+  ],
+  "site_name": "TechCrunch",
+  "spans": [
+   {
+    "sentence": "Eventually, those ads will allow them to target ChatGPT\u2019s 1.2 billion weekly users, once they roll out globally.",
+    "offset": 1011,
+    "figures": [
+     "1.2 billion"
+    ],
+    "figure_offsets": [
+     58
+    ],
+    "base_cue": false
+   }
+  ],
+  "cross_article_duplicates_dropped": 2
+ },
+ "https://techcrunch.com/2026/10/05/open-or-closed-ai-how-founders-are-choosing-what-to-build-on-at-techcrunch-disrupt-2026/": {
+  "headline": "Open or closed AI? How founders are choosing what to build on at TechCrunch Disrupt 2026",
+  "source": "techcrunch.com",
+  "fetch": "ok",
+  "n_chars": 6827,
+  "tier": 1,
+  "furniture_dropped": 4,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "main",
+  "content_hash": "4bd0b73ef443863f921847eb30f52f6614e1cae8ff1fa173ebb447af3db3d9d5",
+  "evidence_hash": "743e6c1ebc74d4510388ee5e2c6c9437e6d2b3f6b8c87540089bd0c955248e7b",
+  "publisher_tags": [
+   "TechCrunch Disrupt"
+  ],
+  "site_name": "TechCrunch",
+  "spans": [
+   {
+    "sentence": "Or for a limited time, get a $75 Expo+ Pass if you\u2019ve been affected by a layoff.",
+    "offset": 816,
+    "figures": [
+     "$75"
+    ],
+    "figure_offsets": [
+     29
     ],
     "base_cue": false
    },
    {
-    "sentence": "It includes a free basic option, but also offers different subscriptions based on family size, starting at $9.99 per month.",
-    "offset": 6164,
+    "sentence": "These conversations are part of 200+ sessions across six industry stages, roundtables, and breakouts at Disrupt, taking place October 13-15 at Moscone West in San Francisco .",
+    "offset": 5286,
     "figures": [
-     "$9.99"
+     "200"
     ],
     "figure_offsets": [
-     107
+     32
+    ],
+    "base_cue": true
+   },
+   {
+    "sentence": "More than 10,000 founders, investors, operators, and tech leaders are expected, along with 250+ speakers and 300+ exhibiting startups.",
+    "offset": 5461,
+    "figures": [
+     "10,000",
+     "250",
+     "300"
+    ],
+    "figure_offsets": [
+     10,
+     91,
+     109
     ],
     "base_cue": false
    },
    {
-    "sentence": "Its biggest differentiator from other agents is that Ollie is one of the first mainstream, family-focused AI assistants to achieve SOC 2 compliance, a widely used security standard.",
-    "offset": 6741,
+    "sentence": "Grab your Expo+ Pass at just $75.",
+    "offset": 6217,
     "figures": [
-     "2"
+     "$75"
     ],
     "figure_offsets": [
-     135
+     29
+    ],
+    "base_cue": false
+   }
+  ],
+  "cross_article_duplicates_dropped": 2
+ },
+ "https://techcrunch.com/2026/10/05/researchers-are-tracking-a-chinese-ai-agent-fleet/": {
+  "headline": "Researchers are tracking a Chinese AI \u2018agent fleet\u2019",
+  "source": "techcrunch.com",
+  "fetch": "ok",
+  "n_chars": 2240,
+  "tier": 1,
+  "furniture_dropped": 1,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "main",
+  "content_hash": "423ef300093b85aad62c3b4540cca441159b2c2ddbd2218880bcd025a192faeb",
+  "evidence_hash": "a90e2e014a76f69fa5c350030faabb7c3ab46e4faca2f349f3b6a6aadc4af800",
+  "publisher_tags": [
+   "AI agents",
+   "alibaba",
+   "In Brief",
+   "Tencent"
+  ],
+  "site_name": "TechCrunch",
+  "spans": [],
+  "cross_article_duplicates_dropped": 2
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1004933/ai-math-openai-breakthrough-solution": {
+  "headline": "All the drama around AI\u2019s takeover of mathematics",
+  "source": "theverge.com",
+  "fetch": "ok",
+  "n_chars": 9168,
+  "tier": 1,
+  "furniture_dropped": 0,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "article",
+  "content_hash": "475e0297c76469ada678c8f2c895eba5b19067534fb20dcd920c0cb636e9b389",
+  "evidence_hash": "a66dd19a98a5b1a210dc25e367dc23680dd6745cdc159c02782acd5a2f881182",
+  "publisher_tags": [
+   "AI"
+  ],
+  "site_name": "The Verge",
+  "spans": [
+   {
+    "sentence": "Updated Oct 5, 2026, 7:28 PM UTC",
+    "offset": 3,
+    "figures": [
+     "28"
+    ],
+    "figure_offsets": [
+     23
     ],
     "base_cue": false
    },
    {
-    "sentence": "Launched in June 2026, Ollie offers a free tier, as well as paid plans starting at $25 per month for 150 messages.",
-    "offset": 6923,
+    "sentence": "One of the 10 results OpenAI announced with great fanfare last month involved Thom\u2019s area of expertise, so-called non-sofic groups, and OpenAI acknowledged that their result built heavily on previous work by Thom and fellow mathematician G\u00e1bor Kun.",
+    "offset": 4828,
     "figures": [
-     "$25",
-     "150"
+     "10"
     ],
     "figure_offsets": [
-     83,
-     101
+     11
+    ],
+    "base_cue": true
+   },
+   {
+    "sentence": "OpenAI says it found a solution to a major math problem that has remained unsolved for around 90 years, as reported earlier by The New York Times and Wired .",
+    "offset": 6380,
+    "figures": [
+     "90"
+    ],
+    "figure_offsets": [
+     94
     ],
     "base_cue": false
    },
    {
-    "sentence": "A $100-per-month plan includes up to 1,000 messages.",
-    "offset": 7038,
+    "sentence": "The Navier-Stokes problem is one of seven Millennium Prize Problems , each of which comes with a $1 million reward for solving.",
+    "offset": 6803,
     "figures": [
-     "$100",
-     "1,000"
+     "$1 million"
     ],
     "figure_offsets": [
-     2,
-     37
+     97
     ],
     "base_cue": false
    },
    {
-    "sentence": "There\u2019s a free plan available, which offers features like 15 minutes of calls per month, or there are paid plans, including $25 per month for 30 minutes of calls and $100 per month for 60 minutes.",
-    "offset": 8089,
+    "sentence": "Days before we spoke, OpenAI revealed it had produced the solutions to 10 long-standing mathematics problems, some of which had confounded academics for decades.",
+    "offset": 8185,
     "figures": [
-     "15",
-     "$25",
-     "30",
-     "$100",
-     "60"
+     "10"
     ],
     "figure_offsets": [
-     58,
-     124,
-     142,
-     166,
-     185
+     71
+    ],
+    "base_cue": false
+   }
+  ],
+  "cross_article_duplicates_dropped": 1
+ },
+ "https://www.theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage": {
+  "headline": "Wikipedia operator says OpenAI\u2019s \u2018rogue\u2019 bots may be linked to a May outage",
+  "source": "theverge.com",
+  "fetch": "ok",
+  "n_chars": 4060,
+  "tier": 1,
+  "furniture_dropped": 1,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "article",
+  "content_hash": "66b5adeb7b4a65c40a3672902edc12ad2fd5b2900ad2fa680adfc27db3afcc55",
+  "evidence_hash": "3a867eaf0b6c3a0687f0aeb44877a69663a47b2f140a368e0a9e15d3809ffd67",
+  "publisher_tags": [
+   "AI",
+   "News",
+   "OpenAI"
+  ],
+  "site_name": "The Verge",
+  "spans": [],
+  "cross_article_duplicates_dropped": 1
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1005177/google-gemini-call-for-me-expansion-rumors": {
+  "headline": "Gemini Call for Me might tell your mom you\u2019re running late",
+  "source": "theverge.com",
+  "fetch": "ok",
+  "n_chars": 2191,
+  "tier": 1,
+  "furniture_dropped": 1,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "article",
+  "content_hash": "8907d6aac81d01dd7ba05c67572bac01cebba948a19cfc719f9c381f1a97961d",
+  "evidence_hash": "74d5ae0c54b548cb6a4172840e0b781b91b45a7c0a337ff28e877b9d208230de",
+  "publisher_tags": [
+   "AI",
+   "Google",
+   "News",
+   "Tech"
+  ],
+  "site_name": "The Verge",
+  "spans": [
+   {
+    "sentence": "Android Authority reports finding a \u201cGemini Calling\u201d introductory screen in an APK teardown with examples that include \u201cCall Mom and tell her I will be 15 minutes late\u201d and \u201cCall John and ask if he is coming for dinner.\u201d",
+    "offset": 604,
+    "figures": [
+     "15"
+    ],
+    "figure_offsets": [
+     152
+    ],
+    "base_cue": false
+   }
+  ],
+  "cross_article_duplicates_dropped": 1
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions": {
+  "headline": "This startup is issuing AI-generated acne prescriptions",
+  "source": "theverge.com",
+  "fetch": "ok",
+  "n_chars": 2643,
+  "tier": 1,
+  "furniture_dropped": 1,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "article",
+  "content_hash": "684526cc17f506b8c6d9582f21e0a72e78d895cd416658eb31e12b5c0f6f2acf",
+  "evidence_hash": "e20182975f0817bf304133a12e9478a6155be14695705299973a7e8c655ba925",
+  "publisher_tags": [
+   "AI",
+   "Health",
+   "News",
+   "Science"
+  ],
+  "site_name": "The Verge",
+  "spans": [
+   {
+    "sentence": "Two physicians will approve each AI-generated prescription before they\u2019re issued for the first 100 patients, but will start reviewing them only after they\u2019re prescribed for up to 500 patients.",
+    "offset": 916,
+    "figures": [
+     "100",
+     "500"
+    ],
+    "figure_offsets": [
+     95,
+     179
     ],
     "base_cue": false
    },
    {
-    "sentence": "The company, Signull Labs, raised about $3.6 million in seed funding in 2025.",
-    "offset": 9852,
+    "sentence": "\u201cAfter that, physicians review a sample of at least 10% of prescriptions every month, plus every case involving an escalation or side effect,\u201d Nolla Health says .",
+    "offset": 1109,
     "figures": [
-     "$3.6 million"
+     "10%"
     ],
     "figure_offsets": [
-     40
+     52
     ],
     "base_cue": false
    },
    {
-    "sentence": "The basic plan starts at $19.99 per month.",
-    "offset": 11259,
+    "sentence": "The program will cost $4.99 / month, and only applies to Utah residents who are 18 years of age or older and have mild-to-moderate acne.",
+    "offset": 1775,
     "figures": [
-     "$19.99"
+     "$4.99",
+     "18"
+    ],
+    "figure_offsets": [
+     22,
+     80
+    ],
+    "base_cue": false
+   }
+  ],
+  "cross_article_duplicates_dropped": 1
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1004880/openai-chatgpt-text-watermarks-eu-ai-act": {
+  "headline": "OpenAI is adding text watermarking in ChatGPT and Codex",
+  "source": "theverge.com",
+  "fetch": "ok",
+  "n_chars": 3154,
+  "tier": 1,
+  "furniture_dropped": 1,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "article",
+  "content_hash": "267776d5ca2ad36cf61a137f007a9cbd7557534158098144758b2335c2fcf7e5",
+  "evidence_hash": "72c64825a21bed936d92a2a4427af892b516cbcbfad298fb97197736be6d29df",
+  "publisher_tags": [
+   "AI",
+   "News",
+   "OpenAI",
+   "Policy",
+   "Politics",
+   "Regulation"
+  ],
+  "site_name": "The Verge",
+  "spans": [],
+  "cross_article_duplicates_dropped": 1
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1004827/openai-sam-altman-vanity-fair-interview-pr": {
+  "headline": "OpenAI PR tells journalist to \u2018move on\u2019 while asking Sam Altman about a ChatGPT user\u2019s suicide",
+  "source": "theverge.com",
+  "fetch": "ok",
+  "n_chars": 3761,
+  "tier": 1,
+  "furniture_dropped": 1,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "article",
+  "content_hash": "b8080a483a6774502b975dd0f87a186b78fd578165debd5f09f22f5946066780",
+  "evidence_hash": "a50c352083d20c42725c16fed7cd6191c85abee9385570c5bd65ec47714ea3b4",
+  "publisher_tags": [
+   "AI",
+   "News",
+   "OpenAI",
+   "Policy"
+  ],
+  "site_name": "The Verge",
+  "spans": [
+   {
+    "sentence": "988 Suicide & Crisis Lifeline : Call or text 988 (formerly known as the National Suicide Prevention Lifeline).",
+    "offset": 2700,
+    "figures": [
+     "988",
+     "988"
+    ],
+    "figure_offsets": [
+     0,
+     45
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "The original phone number, 1-800-273-TALK (8255), is available as well.",
+    "offset": 2811,
+    "figures": [
+     "8255"
+    ],
+    "figure_offsets": [
+     43
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Befrienders Worldwide has a network of crisis helplines active in 48 countries.",
+    "offset": 3136,
+    "figures": [
+     "48"
+    ],
+    "figure_offsets": [
+     66
+    ],
+    "base_cue": false
+   }
+  ],
+  "cross_article_duplicates_dropped": 1
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1004811/openai-altman-bad-things-ai-tradeoff": {
+  "headline": "Sam Altman says \u2018some bad things\u2019 will happen, but AI is totally worth it",
+  "source": "theverge.com",
+  "fetch": "ok",
+  "n_chars": 4909,
+  "tier": 1,
+  "furniture_dropped": 1,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "article",
+  "content_hash": "601aeb4a0671a2454baa2865fd2f1539db0e48045a1d1a87a3ad3b3c98bda961",
+  "evidence_hash": "6cbb2e2614b21652b689789b7cfc7a60c4db93b06b35b8efb237db8ee0f555bc",
+  "publisher_tags": [
+   "AI",
+   "News",
+   "OpenAI",
+   "Policy"
+  ],
+  "site_name": "The Verge",
+  "spans": [],
+  "cross_article_duplicates_dropped": 1
+ },
+ "https://www.theverge.com/podcast/1004286/senator-adam-schiff-ai-trump-regulation-corruption": {
+  "headline": "Sen. Adam Schiff on AI regulation, free speech, and impeaching Trump one more time",
+  "source": "theverge.com",
+  "fetch": "ok",
+  "n_chars": 52427,
+  "tier": 1,
+  "furniture_dropped": 1,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "article",
+  "content_hash": "ba1d31686c3fc39b810b2612692cb95b1054aa594046f3087b71b1abf86b0284",
+  "evidence_hash": "d75315db0ed561f11fcaa13cb8ebb614a57cf5fb074379830d1502808b21ccf8",
+  "publisher_tags": [
+   "AI",
+   "Decoder",
+   "Podcasts",
+   "Policy",
+   "Politics",
+   "Regulation",
+   "Tech"
+  ],
+  "site_name": "The Verge",
+  "spans": [
+   {
+    "sentence": "Are you saying that taking the 230 immunity away from the social platforms would somehow make them moderate lawful but awful speech?",
+    "offset": 14780,
+    "figures": [
+     "230"
+    ],
+    "figure_offsets": [
+     31
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "So we may want to narrow 230 instead of getting rid of it.",
+    "offset": 15949,
+    "figures": [
+     "230"
     ],
     "figure_offsets": [
      25
@@ -512,261 +785,75 @@
     "base_cue": false
    },
    {
-    "sentence": "In June 2026, the company raised a $55 million Series A led by Andreessen Horowitz and Forerunner.",
-    "offset": 11558,
+    "sentence": "But it might not be under 230.",
+    "offset": 17046,
     "figures": [
-     "$55 million"
+     "230"
     ],
     "figure_offsets": [
-     35
-    ],
-    "base_cue": false
-   }
-  ],
-  "cross_article_duplicates_dropped": 2
- },
- "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/": {
-  "headline": "Meta wants your next gadget to be Muse-infused",
-  "source": "techcrunch.com",
-  "fetch": "ok",
-  "n_chars": 3389,
-  "tier": 1,
-  "furniture_dropped": 1,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "main",
-  "content_hash": "2757c869f3e91401c86a21e1720b2c91e163df3e050e8deef2d0f5735e03ad38",
-  "evidence_hash": "3cc1f78931c8be64d14803bd69d37d3601e8fcb2a1cc92203f54df19acf44377",
-  "publisher_tags": [
-   "Meta"
-  ],
-  "site_name": "TechCrunch",
-  "spans": [
-   {
-    "sentence": "Considering Friedman\u2019s post about Home Link received nearly 30,000 views in a few hours, we\u2019re guessing those freebies have been claimed.",
-    "offset": 1467,
-    "figures": [
-     "30,000"
-    ],
-    "figure_offsets": [
-     60
-    ],
-    "base_cue": false
-   }
-  ],
-  "cross_article_duplicates_dropped": 2
- },
- "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/": {
-  "headline": "Sean Parker is rebuilding Stability AI around music",
-  "source": "techcrunch.com",
-  "fetch": "ok",
-  "n_chars": 1744,
-  "tier": 1,
-  "furniture_dropped": 1,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "main",
-  "content_hash": "f00ed871790427d19ccdd30ecae7383b1f26f7c932f75e27621283c7db2fabce",
-  "evidence_hash": "baf12400089f8f8266cd0d5328a8dfa7f18218fc073877e0f58dfe934f6ec098",
-  "publisher_tags": [
-   "In Brief",
-   "Sean Parker",
-   "Stability AI"
-  ],
-  "site_name": "TechCrunch",
-  "spans": [
-   {
-    "sentence": "Two years ago, he joined an $80 million rescue of Stability AI, the image-generator startup that nearly collapsed after overspending and internal turmoil led to founder Emad Mostaque\u2019s ouster.",
-    "offset": 436,
-    "figures": [
-     "$80 million"
-    ],
-    "figure_offsets": [
-     28
+     26
     ],
     "base_cue": false
    },
    {
-    "sentence": "Toward that end, in late August, the company announced $76 million in funding from, among others, Sony, Warner, and Universal, which also licensed their catalogs for training as part of the deal.",
-    "offset": 851,
+    "sentence": "But I think the broader question is: is 230 in its current form still meeting its purpose?",
+    "offset": 17840,
     "figures": [
-     "$76 million"
+     "230"
     ],
     "figure_offsets": [
-     55
+     40
     ],
     "base_cue": false
-   }
-  ],
-  "cross_article_duplicates_dropped": 2
- },
- "https://www.theverge.com/ai-artificial-intelligence/1004549/well-if-ai-said-it-it-must-be-true": {
-  "headline": "NJ\u2019s former Lt Gov is using AI to say he\u2019s innocent of sexual harassment",
-  "source": "theverge.com",
-  "fetch": "ok",
-  "n_chars": 2046,
-  "tier": 1,
-  "furniture_dropped": 2,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "article",
-  "content_hash": "0ceaab447d394e017de8bd12b049afecd8a65ace84896f70d91c241db36dc5a9",
-  "evidence_hash": "24cb78189813d2eec30ab57ea07c2fc02f0a8d642060f62758e5a14e39947f28",
-  "publisher_tags": [
-   "AI",
-   "News",
-   "Policy",
-   "Politics"
-  ],
-  "site_name": "The Verge",
-  "spans": [
+   },
    {
-    "sentence": "He told host Rob Nelson that he \u201cAIed\u201d the report on the investigation \u201cfrom multiple AI platforms.\u201d \u201cI put it through AI,\u201d he said, \u201cand it said 59 times, it [sic] said, \u2018What would your findings be?\u2019 There was no instance in any of the AIs that said there would be a finding of sexual harassment.\u201d",
-    "offset": 969,
+    "sentence": "It does seem to me like we\u2019re about to run a fairly large-scale A/B test on the value of the 230 immunity.",
+    "offset": 18846,
     "figures": [
-     "59"
+     "230"
     ],
     "figure_offsets": [
-     146
+     93
+    ],
+    "base_cue": true
+   },
+   {
+    "sentence": "I like to say that in the technology world, Moore\u2019s law is increasing productivity, doubling it every 18 months, and with AI, maybe that\u2019s quadrupling it every five months.",
+    "offset": 22654,
+    "figures": [
+     "18"
+    ],
+    "figure_offsets": [
+     102
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "I think the American people deserve to know: Is Amazon getting federal contracts now not because it\u2019s the best technology for cloud computing, not because it\u2019s offered the most competitive price, but because it paid off the First Family $40 million?",
+    "offset": 37378,
+    "figures": [
+     "$40 million"
+    ],
+    "figure_offsets": [
+     237
     ],
     "base_cue": false
    }
   ],
   "cross_article_duplicates_dropped": 1
  },
- "https://www.theverge.com/ai-artificial-intelligence/1004543/openai-gpt-cheat-starcraft": {
-  "headline": "An AI couldn\u2019t beat humans at StarCraft, so it decided to cheat",
+ "https://www.theverge.com/ai-artificial-intelligence/1004672/mac-delete-apple-intelligence-ai-tool": {
+  "headline": "An open-source tool lets you delete 12GB of Apple Intelligence data on macOS",
   "source": "theverge.com",
   "fetch": "ok",
-  "n_chars": 2216,
-  "tier": 1,
-  "furniture_dropped": 2,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "article",
-  "content_hash": "0b2800f417332e51099d139aa4f7210f4fa56eba221fb688bc148b170645714a",
-  "evidence_hash": "4afa3a116f10aa3bd21281ca2ff5b6e8be1656df71cd1ad6c6c3e900fda15f04",
-  "publisher_tags": [
-   "AI",
-   "Gaming",
-   "News",
-   "OpenAI"
-  ],
-  "site_name": "The Verge",
-  "spans": [],
-  "cross_article_duplicates_dropped": 1
- },
- "https://www.theverge.com/games/1004418/capcom-ai-game-development": {
-  "headline": "Capcom is preparing for a \u2018future where we create games together with AI\u2019",
-  "source": "theverge.com",
-  "fetch": "ok",
-  "n_chars": 2133,
-  "tier": 1,
-  "furniture_dropped": 2,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "article",
-  "content_hash": "863ba4238a4af0c04a3903c6e68f07a311e6a02aedcfe820be8eaa1845d24fe6",
-  "evidence_hash": "0e3c7676fc33764336d817356e2eb60a4bcb8282d0a932224afcec1747593030",
-  "publisher_tags": [
-   "AI",
-   "Gaming",
-   "News"
-  ],
-  "site_name": "The Verge",
-  "spans": [],
-  "cross_article_duplicates_dropped": 0
- },
- "https://www.theverge.com/entertainment/1004162/splice-ceo-kakul-srivastava-ai-interview": {
-  "headline": "Splice CEO Kakul Srivastava thinks AI emails are killing conversations",
-  "source": "theverge.com",
-  "fetch": "ok",
-  "n_chars": 7372,
-  "tier": 1,
-  "furniture_dropped": 3,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "article",
-  "content_hash": "ef0b1a20c9de64b0e94eb0ed9684a06619560e3d56cefe494b59db47120d1307",
-  "evidence_hash": "3305f2373c23356ebf77cbb78ee3f24524f67dfd28ddc14d24cf5808ac93447a",
-  "publisher_tags": [
-   "AI",
-   "Entertainment",
-   "Interview",
-   "Music",
-   "Report"
-  ],
-  "site_name": "The Verge",
-  "spans": [],
-  "cross_article_duplicates_dropped": 0
- },
- "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm": {
-  "headline": "An OpenAI safety employee has quit and is sounding the alarm",
-  "source": "theverge.com",
-  "fetch": "ok",
-  "n_chars": 3104,
-  "tier": 1,
-  "furniture_dropped": 2,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "article",
-  "content_hash": "e12ac4708f5894909bb23a08c2e72a5954a69feaafe3b03e74456507d5b929f0",
-  "evidence_hash": "f376f4115b4cb34238309a9c83959c44e9d0caf19d3734c771b8b9f3b5200c22",
-  "publisher_tags": [
-   "AI",
-   "News",
-   "OpenAI"
-  ],
-  "site_name": "The Verge",
-  "spans": [],
-  "cross_article_duplicates_dropped": 0
- },
- "https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link": {
-  "headline": "Meta open sources code to let you make Muse AI gadgets",
-  "source": "theverge.com",
-  "fetch": "ok",
-  "n_chars": 2616,
+  "n_chars": 2756,
   "tier": 1,
   "furniture_dropped": 1,
   "related_headlines_dropped": 0,
   "duplicate_spans_dropped": 0,
   "links_scope": "article",
-  "content_hash": "c6baead52840fc0b4ae814632502b45247d6983eaec895af098ad3d0497210ca",
-  "evidence_hash": "4e8f9acc375f489fabe901874105a9d9a1a05eec19af91b2e4f71bd856e26912",
-  "publisher_tags": [
-   "AI",
-   "Meta",
-   "News",
-   "Tech"
-  ],
-  "site_name": "The Verge",
-  "spans": [
-   {
-    "sentence": "It manufactured 5,000 of the gadgets, according to Meta Superintelligence Labs\u2019 Nat Friedman , and you can claim a waitlist spot for the Muse Home Link now ahead of shipping sometime this month.",
-    "offset": 1545,
-    "figures": [
-     "5,000"
-    ],
-    "figure_offsets": [
-     16
-    ],
-    "base_cue": false
-   }
-  ],
-  "cross_article_duplicates_dropped": 0
- },
- "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents": {
-  "headline": "Apple will limit Mac disk access as AI agents \u2018substantially\u2019 increase risk",
-  "source": "theverge.com",
-  "fetch": "ok",
-  "n_chars": 2672,
-  "tier": 1,
-  "furniture_dropped": 1,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "article",
-  "content_hash": "70b9a41c03aa1695ede1ef8f7bf3f9298ea4851fce4cb793b39eae4dff623c97",
-  "evidence_hash": "095a99dd9643d45007c3725b397c78f35f4e1eca0119b034aa001b1c8a04a61e",
+  "content_hash": "3b87217525ac5571dee7a9d250bd1eadbc269d280e22460675401ce3aba40fe0",
+  "evidence_hash": "36c31df8f520e8c786538a63f09d60774f61e59a69222c6264e1ca0e1c28157e",
   "publisher_tags": [
    "AI",
    "Apple",
@@ -775,167 +862,42 @@
    "Tech"
   ],
   "site_name": "The Verge",
-  "spans": [],
-  "cross_article_duplicates_dropped": 0
- },
- "https://www.theverge.com/ai-artificial-intelligence/1004096/openai-chatgpt-dots-hands-on-agent": {
-  "headline": "OpenAI\u2019s Dot agent is enterprise software that can also order your dinner",
-  "source": "theverge.com",
-  "fetch": "ok",
-  "n_chars": 9361,
-  "tier": 1,
-  "furniture_dropped": 2,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "article",
-  "content_hash": "1bdcda0ca69fb1c519a0de84505ef3112174e8c068241ad5ce460a0f6dc068aa",
-  "evidence_hash": "9d5675085199da280a87137baae672ed17b3e25e76aa0ff646e27a4ab7c9d5c3",
-  "publisher_tags": [
-   "AI",
-   "Hands-on",
-   "OpenAI",
-   "Reviews",
-   "Tech"
-  ],
-  "site_name": "The Verge",
   "spans": [
    {
-    "sentence": "And OpenAI is offering Dots first to users on its highest-tier accounts, including the $100- per-month Pro account I expensed to test it.",
-    "offset": 1722,
+    "sentence": "There used to be a single Settings toggle for disabling Apple Intelligence , but that was removed in macOS 27.",
+    "offset": 705,
     "figures": [
-     "$100"
+     "27"
     ],
     "figure_offsets": [
-     87
+     107
     ],
     "base_cue": false
    },
    {
-    "sentence": "It almost got there, and even found a $100 promotional discount in my email that I had mass deleted, but got stuck at a \u201chuman check.\u201d Which is problematic for a bot.",
-    "offset": 2841,
+    "sentence": "Even when everything is off, the foundation models stay on disk, and that\u2019s about 12 GB.",
+    "offset": 1198,
     "figures": [
-     "$100"
+     "12"
     ],
     "figure_offsets": [
-     38
+     82
     ],
     "base_cue": false
    },
    {
-    "sentence": "And in any case, the new provider needed my bank account to get a $5 discount on my bill every month.",
-    "offset": 3767,
+    "sentence": "On my MacBook Air, Apple Intelligence is listed as taking up 35.05GB of space, which I found by going to my storage in the Settings app and clicking the \u201ci\u201d icon beside \u201cmacOS.\u201d RemoveMacAI also has a \u201cremovemacai status\u201d command that can show the size of each individual AI model on your Mac.",
+    "offset": 1933,
     "figures": [
-     "$5"
+     "35"
     ],
     "figure_offsets": [
-     66
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "It couldn\u2019t find the option for a free tour and entry at a coworking space I\u2019ve been meaning to try out, and instead offered to sign me up for a $35 day pass.",
-    "offset": 4160,
-    "figures": [
-     "$35"
-    ],
-    "figure_offsets": [
-     145
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "I\u2019ll just give it a call.\u201d I hashed out the changes I wanted section by section over 10 minutes, walked away to do some dishes, and got a ping that the next iteration was ready for me to review.",
-    "offset": 5728,
-    "figures": [
-     "10"
-    ],
-    "figure_offsets": [
-     85
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Once again, AI proves most helpful when you give it a large dataset (me rambling for 10 minutes) it can turn into something useful.",
-    "offset": 5948,
-    "figures": [
-     "10"
-    ],
-    "figure_offsets": [
-     85
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "But I don\u2019t think it\u2019s $100-a-month handy, at least in my line of work.",
-    "offset": 8503,
-    "figures": [
-     "$100"
-    ],
-    "figure_offsets": [
-     23
+     61
     ],
     "base_cue": false
    }
   ],
-  "cross_article_duplicates_dropped": 0
- },
- "https://www.theverge.com/tech/1004177/elon-musk-unfollows-shivon-zilis": {
-  "headline": "Breaking up (with Elon Musk) is hard to do",
-  "source": "theverge.com",
-  "fetch": "ok",
-  "n_chars": 5236,
-  "tier": 1,
-  "furniture_dropped": 1,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "article",
-  "content_hash": "11d229fbdc241ade91fb9e51a3c90933f78e82f4679f3ac1780c408f9170cea9",
-  "evidence_hash": "c4944ed6bb327f15672891c55d29108c0c713c45d9a472657d9b53adb13572e0",
-  "publisher_tags": [
-   "AI",
-   "Elon Musk",
-   "News",
-   "OpenAI",
-   "Tech",
-   "xAI"
-  ],
-  "site_name": "The Verge",
-  "spans": [
-   {
-    "sentence": "Besides his first wife, Justine Musk, who wrote \u201c I Was a Starter Wife \u201d before going absolutely silent on the subject of her ex, another mother of his children, Ashley St. Clair, has said that she rejected a $40 million NDA from Musk .",
-    "offset": 1871,
-    "figures": [
-     "$40 million"
-    ],
-    "figure_offsets": [
-     209
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Musk has 14 known children.",
-    "offset": 2609,
-    "figures": [
-     "14"
-    ],
-    "figure_offsets": [
-     9
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "\u201cI\u2019ve loved him more than life itself and he\u2019s taught me 100 lifetimes of knowledge and made my cup overflow with life meaning, so there is a lot of loss, but luckily we created four beautiful little loves of my life,\u201d Zilis wrote.",
-    "offset": 4010,
-    "figures": [
-     "100"
-    ],
-    "figure_offsets": [
-     57
-    ],
-    "base_cue": false
-   }
-  ],
-  "cross_article_duplicates_dropped": 0
+  "cross_article_duplicates_dropped": 1
  },
  "https://arstechnica.com/google/2026/10/antitrust-lawsuits-targeting-google-ai-search-dismissed-by-federal-judge/": {
   "headline": "Judge dismisses Chegg and Penske antitrust lawsuits targeting Google AI search",
@@ -1095,97 +1057,146 @@
   ],
   "cross_article_duplicates_dropped": 0
  },
- "https://arstechnica.com/ai/2026/09/anthropics-ipo-pitch-includes-a-warning-about-human-extinction/": {
-  "headline": "Anthropic\u2019s IPO pitch includes a warning about human extinction",
+ "https://arstechnica.com/security/2026/10/vulnerability-in-agents-from-google-and-others-exposes-structural-flaw-in-mcp/": {
+  "headline": "MCP for agent-to-agent comms may be the riskiest protocol you've never heard of",
   "source": "arstechnica.com",
   "fetch": "ok",
-  "n_chars": 3878,
+  "n_chars": 6376,
   "tier": 1,
   "furniture_dropped": 0,
   "related_headlines_dropped": 0,
   "duplicate_spans_dropped": 0,
   "links_scope": "article",
-  "content_hash": "eafbc65f8b7d3fbc3fd8e71d7b045083ca539b33871048386e94e1c8ac12e459",
-  "evidence_hash": "9e12b1bf10be2789bb6b04aa397ed06b83b6987187a278113a97d28ea11edd31",
+  "content_hash": "79419fdf32d421112f949d23b8b019680ec004d22d37552591e114f269542fc0",
+  "evidence_hash": "a49de88eb19d180089f9192bece84f08ea36fd0c9db9e91e7a29f3cc6d0d455b",
   "publisher_tags": [],
   "site_name": "Ars Technica",
   "spans": [
    {
-    "sentence": "The nearly $1 trillion AI start-up led by Dario Amodei devoted almost a third of its lengthy S-1 filing to detailing \u201crisk factors,\u201d including the potential of increasingly advanced AI models to manipulate, blackmail, and exhibit other unpredictable behaviors.",
-    "offset": 399,
+    "sentence": "CVE-2026-97228, the vulnerability Syed found in Rapid7\u2019s network, carried a severity rating of only 2.7 out of 10.",
+    "offset": 2654,
+    "figures": [
+     "2.7",
+     "10"
+    ],
+    "figure_offsets": [
+     100,
+     111
+    ],
+    "base_cue": true
+   },
+   {
+    "sentence": "The vulnerability affecting Google was more severe, with a rating of 8.",
+    "offset": 2797,
+    "figures": [
+     "8"
+    ],
+    "figure_offsets": [
+     69
+    ],
+    "base_cue": true
+   },
+   {
+    "sentence": "The bugs underneath are old friends like injection and SSRF, and the fixes haven\u2019t changed in 20 years.",
+    "offset": 5651,
+    "figures": [
+     "20"
+    ],
+    "figure_offsets": [
+     94
+    ],
+    "base_cue": false
+   }
+  ],
+  "cross_article_duplicates_dropped": 0
+ },
+ "https://arstechnica.com/apple/2026/10/command-line-tool-quickly-removes-apple-intelligence-from-macos-27/": {
+  "headline": "Command-line tool quickly removes Apple Intelligence from macOS 27",
+  "source": "arstechnica.com",
+  "fetch": "ok",
+  "n_chars": 3202,
+  "tier": 1,
+  "furniture_dropped": 0,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "article",
+  "content_hash": "6b8782c2d8e680b94f859d43b69699061f7d9fc83f9836aa819c18d216f3b93f",
+  "evidence_hash": "ecbdcf7da90caa3b8426a3e06060b23a5254ccab7f5d0ab90e1c3d8cb16282b8",
+  "publisher_tags": [],
+  "site_name": "Ars Technica",
+  "spans": [
+   {
+    "sentence": "Unlike with previous versions of macOS, macOS 27 Golden Gate doesn\u2019t have a toggle for turning off Apple Intelligence.",
+    "offset": 323,
+    "figures": [
+     "27"
+    ],
+    "figure_offsets": [
+     46
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "In response, a developer known as Om Lahore on GitHub last week created RemoveMacAI, a command-line tool that allows macOS 27 users to \u201cturn off Apple Intelligence on macOS 27\u2033 in a way that is \u201cfully reversible,\u201d per the GitHub page .",
+    "offset": 733,
+    "figures": [
+     "27",
+     "27"
+    ],
+    "figure_offsets": [
+     123,
+     173
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Some users on Reddit have reported that the tool works, and it has 1,700 stars on GitHub as of this writing.",
+    "offset": 1940,
+    "figures": [
+     "1,700"
+    ],
+    "figure_offsets": [
+     67
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "She's been reporting on technology for over 10 years, with bylines at Tom\u2019s Hardware, Channelnomics, and CRN UK.",
+    "offset": 3072,
+    "figures": [
+     "10"
+    ],
+    "figure_offsets": [
+     44
+    ],
+    "base_cue": false
+   }
+  ],
+  "cross_article_duplicates_dropped": 0
+ },
+ "https://arstechnica.com/ai/2026/10/ai-glasses-face-their-first-major-government-crackdown/": {
+  "headline": "AI glasses face their first major government crackdown",
+  "source": "arstechnica.com",
+  "fetch": "ok",
+  "n_chars": 3078,
+  "tier": 1,
+  "furniture_dropped": 0,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "article",
+  "content_hash": "d6fdb87c23ddb55c3dbe0296746d6b7e4d622fc5e279ca7ba86d105994b8be8b",
+  "evidence_hash": "8fa58ae96368e22f60236d9e65a45d144b0537b0485c9b5b3fc442cdfec2fbe4",
+  "publisher_tags": [],
+  "site_name": "Ars Technica",
+  "spans": [
+   {
+    "sentence": "Analysts at Counterpoint Research estimate consumers will spend more than $1 trillion between 2026 and 2032 on wearable devices.",
+    "offset": 2597,
     "figures": [
      "$1 trillion"
     ],
     "figure_offsets": [
-     11
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Anthropic said it planned to spend $518 billion on cloud, computing, and infrastructure obligations in the coming years to support its rapid growth.",
-    "offset": 1288,
-    "figures": [
-     "$518 billion"
-    ],
-    "figure_offsets": [
-     35
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "The AI lab\u2019s backers are confident Anthropic can list at a valuation of more than $2 trillion, more than double the level achieved in its last funding round in May and beyond the $1.78 trillion achieved by Elon Musk\u2019s SpaceX in June.",
-    "offset": 1437,
-    "figures": [
-     "$2 trillion",
-     "$1.78 trillion"
-    ],
-    "figure_offsets": [
-     82,
-     179
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "The company recorded an operating loss of more than $8 billion last year as it increased spending on computing power, Anthropic told investors.",
-    "offset": 3003,
-    "figures": [
-     "$8 billion"
-    ],
-    "figure_offsets": [
-     52
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Its revenue jumped 12-fold to almost $4.6 billion last year.",
-    "offset": 3147,
-    "figures": [
-     "$4.6 billion"
-    ],
-    "figure_offsets": [
-     37
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "But mounting costs for computing resources to train and run its models pushed operating expenses to almost $13 billion.",
-    "offset": 3208,
-    "figures": [
-     "$13 billion"
-    ],
-    "figure_offsets": [
-     107
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Revenue in the second quarter of this year was $11.5 billion, and it is on course for its second consecutive quarter of operating profit, albeit on an adjusted basis.",
-    "offset": 3527,
-    "figures": [
-     "$11.5 billion"
-    ],
-    "figure_offsets": [
-     47
+     74
     ],
     "base_cue": false
    }
@@ -1411,265 +1422,6 @@
    }
   ],
   "cross_article_duplicates_dropped": 1
- },
- "https://arstechnica.com/gadgets/2026/10/the-7-year-old-nvidia-shield-tv-is-now-100-more-expensive-thanks-to-ai/": {
-  "headline": "The 7-year-old Nvidia Shield TV is now $100 more expensive due to AI",
-  "source": "arstechnica.com",
-  "fetch": "ok",
-  "n_chars": 3664,
-  "tier": 1,
-  "furniture_dropped": 0,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "article",
-  "content_hash": "89c1c1e53462c9618e50dc910c9e496c8f477f0e0e644417a9e6846b51013e52",
-  "evidence_hash": "5427c5a64128176129888b1d7aa5c5b2b3f5a2741cf35ea84c84b2785aa98752",
-  "publisher_tags": [],
-  "site_name": "Ars Technica",
-  "spans": [
-   {
-    "sentence": "Nvidia has just announced that the Shield TV Pro is getting $100 more expensive, effective immediately.",
-    "offset": 441,
-    "figures": [
-     "$100"
-    ],
-    "figure_offsets": [
-     60
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "The device launched at $199.99, with a non-Pro variant at $149.99.",
-    "offset": 800,
-    "figures": [
-     "$199.99",
-     "$149.99"
-    ],
-    "figure_offsets": [
-     23,
-     58
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "The non-Pro Shield has since been discontinued, but the Shield TV Pro lives on at the new $299.99 price.",
-    "offset": 867,
-    "figures": [
-     "$299.99"
-    ],
-    "figure_offsets": [
-     90
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "\u201cStarting October 2, SHIELD Pro will be priced at $299.",
-    "offset": 1049,
-    "figures": [
-     "$299"
-    ],
-    "figure_offsets": [
-     50
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "The PS5 Pro, for example, has gone from $699.99 at launch in 2024 to $899.99 today.",
-    "offset": 2262,
-    "figures": [
-     "$699.99",
-     "$899.99"
-    ],
-    "figure_offsets": [
-     40,
-     69
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "At $300, it will make sense for Nvidia to churn out more devices.",
-    "offset": 2708,
-    "figures": [
-     "$300,"
-    ],
-    "figure_offsets": [
-     3
-    ],
-    "base_cue": false
-   }
-  ],
-  "cross_article_duplicates_dropped": 0
- },
- "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/": {
-  "headline": "With most information hidden, the game Stratego had stumped AI\u2014until now",
-  "source": "arstechnica.com",
-  "fetch": "ok",
-  "n_chars": 8320,
-  "tier": 1,
-  "furniture_dropped": 1,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "article",
-  "content_hash": "bb09226b6d3902a9e9f49e8dbf5218dc4c9b97ac29f477f5c571bea02fb7f926",
-  "evidence_hash": "debcff98079ea4b360eba69f937a246c0ef1bae407767dba77ceda82ee29fe91",
-  "publisher_tags": [],
-  "site_name": "Ars Technica",
-  "spans": [
-   {
-    "sentence": "Their AI, called Ataraxos, beat Pim Niemeijer, arguably the best Stratego player of all time, 15 games to one, with four draws.",
-    "offset": 608,
-    "figures": [
-     "15"
-    ],
-    "figure_offsets": [
-     94
-    ],
-    "base_cue": true
-   },
-   {
-    "sentence": "And it took just 16 GPUs and a few thousand dollars to train it.",
-    "offset": 736,
-    "figures": [
-     "16"
-    ],
-    "figure_offsets": [
-     17
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "In Stratego , each player gets 40 pieces representing military ranks, from a marshal down to a spy, plus bombs and a flag.",
-    "offset": 815,
-    "figures": [
-     "40"
-    ],
-    "figure_offsets": [
-     31
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "That leaves just 1,326 possible hands, few enough for a machine to weigh them all.",
-    "offset": 1688,
-    "figures": [
-     "1,326"
-    ],
-    "figure_offsets": [
-     17
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "\u201cIn Stratego , there\u2019s 40 pieces on the board that could be in any order,\u201d Farina said.",
-    "offset": 1771,
-    "figures": [
-     "40"
-    ],
-    "figure_offsets": [
-     23
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "\u201cIn chess, usually the game lasts 40 moves, but in Stratego , a game can easily last 2,000 moves,\u201d Farina said.",
-    "offset": 1937,
-    "figures": [
-     "40",
-     "2,000"
-    ],
-    "figure_offsets": [
-     34,
-     85
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Just like DeepNash, Ataraxos learned by playing against itself\u2014163 million games in total.",
-    "offset": 2453,
-    "figures": [
-     "163 million"
-    ],
-    "figure_offsets": [
-     63
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Niemeijer, the human player Ataraxos pulled these miraculous comebacks against, has four world championships and more than 600 weeks as the world\u2019s top-ranked player.",
-    "offset": 4959,
-    "figures": [
-     "600"
-    ],
-    "figure_offsets": [
-     123
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Over three weeks, Niemeijer played 20 online games against Ataraxos, earning $100 for each win.",
-    "offset": 5136,
-    "figures": [
-     "20",
-     "$100"
-    ],
-    "figure_offsets": [
-     35,
-     77
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "The AI won 38 of 40 games.",
-    "offset": 5771,
-    "figures": [
-     "38",
-     "40"
-    ],
-    "figure_offsets": [
-     11,
-     17
-    ],
-    "base_cue": true
-   },
-   {
-    "sentence": "DeepNash was trained for two to three months on 1,024 of Google\u2019s specialized chips, a run the Ataraxos team estimates would cost $3 million to $4.5 million at 2025 prices.",
-    "offset": 6153,
-    "figures": [
-     "1,024",
-     "$3 million",
-     "$4.5 million"
-    ],
-    "figure_offsets": [
-     48,
-     130,
-     144
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Ataraxos, in contrast, needed 16 GPUs for a week, plus an additional four GPUs for four days to train the belief model.",
-    "offset": 6326,
-    "figures": [
-     "16"
-    ],
-    "figure_offsets": [
-     30
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "The algorithm also learned far faster\u2014it played about 34 times fewer games than DeepNash, and still ended up much stronger.",
-    "offset": 6698,
-    "figures": [
-     "34"
-    ],
-    "figure_offsets": [
-     54
-    ],
-    "base_cue": false
-   }
-  ],
-  "cross_article_duplicates_dropped": 0
  },
  "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/": {
   "headline": "Gemini 4 Argon: our next era of frontier intelligence",
@@ -3148,6 +2900,296 @@
   "spans": [],
   "cross_article_duplicates_dropped": 0
  },
+ "https://edworkingpapers.com/ai26-1551": {
+  "headline": "AI tutoring with Khanmigo in a two-year school experiment",
+  "source": "edworkingpapers.com",
+  "fetch": "ok",
+  "n_chars": 1808,
+  "tier": 1,
+  "furniture_dropped": 0,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "article",
+  "content_hash": "9b88f4a037d71a69098097a41c0a310c09385e4d785c74396480a0e71d356644",
+  "evidence_hash": "4d366bf454cfab3c4b3115f10866d5670919ac86d376538cdf9d380549cc1978",
+  "publisher_tags": [],
+  "site_name": "",
+  "spans": [
+   {
+    "sentence": "We provide some of the first large-scale experimental evidence, from a two-year cluster randomized trial in 18 Tennessee middle schools in which randomly assigned students used Khan Academy with its AI tutor, Khanmigo, configured to coach rather than give answers, during existing daily remedial mathematics sessions.",
+    "offset": 170,
+    "figures": [
+     "18"
+    ],
+    "figure_offsets": [
+     108
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Assignment raises math achievement by 1.3 national percentile ranks per term, or about 0.06 to 0.08 standard deviations over a school year; the implied effect of a full year of active participation reaches 0.14 standard deviations.",
+    "offset": 488,
+    "figures": [
+     "1.3",
+     "0.06",
+     "0.08",
+     "0.14"
+    ],
+    "figure_offsets": [
+     38,
+     87,
+     95,
+     206
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "One explanation is that students used the tutor infrequently and, when they did, rarely engaged it in substantive mathematical dialogue: 96 percent of students tried Khanmigo at least once, but the median student messaged it on only a third of the days they practiced, and in only 17 percent of the exercise sessions in which they made a mistake.",
+    "offset": 797,
+    "figures": [
+     "96 percent",
+     "17 percent"
+    ],
+    "figure_offsets": [
+     137,
+     281
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "10.26300/kner-hv33",
+    "offset": 1790,
+    "figures": [
+     "10"
+    ],
+    "figure_offsets": [
+     0
+    ],
+    "base_cue": false
+   }
+  ],
+  "cross_article_duplicates_dropped": 0
+ },
+ "https://www.coryd.dev/posts/2026/ai-companies-are-parasites": {
+  "headline": "AI Companies Are Parasites",
+  "source": "coryd.dev",
+  "fetch": "ok",
+  "n_chars": 1805,
+  "tier": 1,
+  "furniture_dropped": 0,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "article",
+  "content_hash": "d120273509a7d5ca4e264312e8288b75a8e10697d7cfa7179fa85a6064132c90",
+  "evidence_hash": "51d9d4af063fc220e7b3a5ae9149074944c3832151477d067866df88cd50a4d6",
+  "publisher_tags": [],
+  "site_name": "Cory Dransfeldt",
+  "spans": [
+   {
+    "sentence": "1 Yes, licensing deals exist.",
+    "offset": 745,
+    "figures": [
+     "1"
+    ],
+    "figure_offsets": [
+     0
+    ],
+    "base_cue": false
+   }
+  ],
+  "cross_article_duplicates_dropped": 0
+ },
+ "https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/": {
+  "headline": "OpenAI \"rogue\" agent activities found on Wikimedia projects",
+  "source": "diff.wikimedia.org",
+  "fetch": "ok",
+  "n_chars": 7136,
+  "tier": 1,
+  "furniture_dropped": 0,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "article",
+  "content_hash": "c484bc0c277fc2332ca743676371caf823aed26cc9a06b7d33f153f2658bb908",
+  "evidence_hash": "ddf29649f6d6b2035ac6a2fb8d280b54912eee90efc9593e6284e68ae6a79b63",
+  "publisher_tags": [],
+  "site_name": "Diff",
+  "spans": [
+   {
+    "sentence": "Over the past 25 years, Wikipedia has grown into one of the most popular and trusted websites in the world, with more than 67 million articles across over 300 languages, and up to 15 billion page views per month .",
+    "offset": 3887,
+    "figures": [
+     "25",
+     "67 million",
+     "300",
+     "15 billion"
+    ],
+    "figure_offsets": [
+     14,
+     123,
+     155,
+     180
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "In 2025, the Foundation reported that its bandwidth usage had increased by 50% due to the surge of bot activity on its websites since 2024.",
+    "offset": 4947,
+    "figures": [
+     "50%"
+    ],
+    "figure_offsets": [
+     75
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "At the same time, 65% of the most resource-consuming traffic on its projects was coming from bots.",
+    "offset": 5087,
+    "figures": [
+     "65%"
+    ],
+    "figure_offsets": [
+     18
+    ],
+    "base_cue": false
+   }
+  ],
+  "cross_article_duplicates_dropped": 0
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1004747/florida-woman-arrested-for-allegedly-making-threats-in-an-ai-chat": {
+  "headline": "Florida woman arrested for allegedly making threats in an AI chat",
+  "source": "theverge.com",
+  "fetch": "ok",
+  "n_chars": 1041,
+  "tier": 1,
+  "furniture_dropped": 0,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "article",
+  "content_hash": "b034866240501bc045addd77a7326ab13c700cc91bbc696811a96d657485488d",
+  "evidence_hash": "d9265da2cbc569275665bc1a71f4b70ad4ab035c45718d35d0117cbf80dbbbda",
+  "publisher_tags": [
+   "AI",
+   "Anthropic",
+   "News"
+  ],
+  "site_name": "The Verge",
+  "spans": [
+   {
+    "sentence": "Posted Oct 5, 2026 at 3:00 PM UTC",
+    "offset": 0,
+    "figures": [
+     "3",
+     "00"
+    ],
+    "figure_offsets": [
+     22,
+     24
+    ],
+    "base_cue": false
+   }
+  ],
+  "cross_article_duplicates_dropped": 1
+ },
+ "https://www.wsj.com/tech/personal-tech/ai-token-spending-businesses-431ee94a": {
+  "headline": "Spending on AI is becoming almost impossible for businesses to budget",
+  "source": "wsj.com",
+  "fetch": "robots-disallowed",
+  "n_chars": 0,
+  "tier": 1,
+  "furniture_dropped": 0,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "unverified-legacy",
+  "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+  "publisher_tags": [],
+  "site_name": "",
+  "spans": [],
+  "cross_article_duplicates_dropped": 0
+ },
+ "https://www.theguardian.com/technology/2026/oct/05/sam-altman-open-ai-chatgpt-benefits-risks": {
+  "headline": "Accept 'bad things' in return for benefits of AI, says Sam Altman",
+  "source": "theguardian.com",
+  "fetch": "ok",
+  "n_chars": 5473,
+  "tier": 1,
+  "furniture_dropped": 0,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "article",
+  "content_hash": "39e10c0a3f2b943db92beb6760036ecc8a90148f763c912ea8b5876272f623d6",
+  "evidence_hash": "81015e95fb13ba5bab06a8f72554f31ec58f5b572532eaf2b115c27951ab04f6",
+  "publisher_tags": [
+   "OpenAI",
+   "AI (artificial intelligence)",
+   "Computing",
+   "Technology",
+   "Anthropic",
+   "Dario Amodei",
+   "Donald Trump",
+   "US news",
+   "World news",
+   "Sam Altman"
+  ],
+  "site_name": "the Guardian",
+  "spans": [
+   {
+    "sentence": "\u201cThere\u2019s about a 50% chance we all die because of the development of smarter-than-human AI systems,\u201d he said, adding that actions taken over the next two to 10 years would be decisive.",
+    "offset": 4590,
+    "figures": [
+     "50%",
+     "10"
+    ],
+    "figure_offsets": [
+     17,
+     157
+    ],
+    "base_cue": false
+   }
+  ],
+  "cross_article_duplicates_dropped": 0
+ },
+ "https://www.techspot.com/news/114091-florida-woman-used-claude-diary-anthropic-reported-shoot.html": {
+  "headline": "Anthropic reported diary entry to police, woman faces felony charge",
+  "source": "techspot.com",
+  "fetch": "ok",
+  "n_chars": 3007,
+  "tier": 1,
+  "furniture_dropped": 0,
+  "related_headlines_dropped": 0,
+  "duplicate_spans_dropped": 0,
+  "links_scope": "article",
+  "content_hash": "1fe450ad38c455883667064d8deacf95365bd50690e96c1451355f740d6f0004",
+  "evidence_hash": "6db4e9c81e2167962cc838dba792907fc4301602ad6276ee04480b6bc21a96c2",
+  "publisher_tags": [],
+  "site_name": "TechSpot",
+  "spans": [
+   {
+    "sentence": "Serving tech enthusiasts for over 25 years.",
+    "offset": 0,
+    "figures": [
+     "25"
+    ],
+    "figure_offsets": [
+     34
+    ],
+    "base_cue": false
+   },
+   {
+    "sentence": "Florida Statute 836.10 makes it a second-degree felony to send, post, or transmit a written or electronic record threatening to kill or injure someone, carry out a mass shooting, or commit an act of terrorism.",
+    "offset": 1215,
+    "figures": [
+     "836.10"
+    ],
+    "figure_offsets": [
+     16
+    ],
+    "base_cue": false
+   }
+  ],
+  "cross_article_duplicates_dropped": 0
+ },
  "https://www.youtube.com/watch?v=eZ8WWZzoaR0": {
   "headline": "Homa: The end of TCP for AI clusters [video]",
   "source": "youtube.com",
@@ -3172,436 +3214,6 @@
   ],
   "site_name": "YouTube",
   "spans": [],
-  "cross_article_duplicates_dropped": 0
- },
- "https://github.com/allenv0/SCM": {
-  "headline": "Show HN: AI search for every photo and every frame of video on macOS",
-  "source": "github.com",
-  "fetch": "ok",
-  "n_chars": 12730,
-  "tier": 1,
-  "furniture_dropped": 0,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "article",
-  "content_hash": "d5e3b3f2b2a88c1df85beea5786ed500ee0de5eb087e3c6672243ab2623a1296",
-  "evidence_hash": "813c57139529cd8709bdcd83af647f3b2e56e209cfb133b13cc25a010bc46607",
-  "publisher_tags": [],
-  "site_name": "GitHub",
-  "spans": [
-   {
-    "sentence": "Text visible in images and frames, matched literally (Tesseract; eng + 35 language toggles)",
-    "offset": 1077,
-    "figures": [
-     "35"
-    ],
-    "figure_offsets": [
-     71
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "The easiest install is via Homebrew (Apple Silicon, macOS 12+).",
-    "offset": 1644,
-    "figures": [
-     "12"
-    ],
-    "figure_offsets": [
-     58
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Qwen3 1.7B (default)",
-    "offset": 5028,
-    "figures": [
-     "1"
-    ],
-    "figure_offsets": [
-     6
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "current prompt with its mode (Files/Scenes/OCR/Dialogue) \u2014 up to 20 tabs,",
-    "offset": 5403,
-    "figures": [
-     "20"
-    ],
-    "figure_offsets": [
-     65
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Five semantic views behind remappable shortcuts (\u23181\u2013\u23185 by default), plus",
-    "offset": 5521,
-    "figures": [
-     "1",
-     "5"
-    ],
-    "figure_offsets": [
-     50,
-     53
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "a manual override (right-click any tile) \u2192 filename vocabulary (30+",
-    "offset": 6460,
-    "figures": [
-     "30"
-    ],
-    "figure_offsets": [
-     64
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "localized OS screenshot names in 20+ languages) \u2192 a PNG/JPEG metadata probe",
-    "offset": 6528,
-    "figures": [
-     "20"
-    ],
-    "figure_offsets": [
-     33
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "CLIP ViT-L/14@336 (default)",
-    "offset": 6900,
-    "figures": [
-     "336"
-    ],
-    "figure_offsets": [
-     14
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "SigLIP-2-L/16@256",
-    "offset": 7042,
-    "figures": [
-     "256"
-    ],
-    "figure_offsets": [
-     14
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "SigLIP-B/16@384",
-    "offset": 7141,
-    "figures": [
-     "384"
-    ],
-    "figure_offsets": [
-     12
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "24\u20132048 (confirm required)",
-    "offset": 7832,
-    "figures": [
-     "24"
-    ],
-    "figure_offsets": [
-     0
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "frames (20/50/80%) averaged; GIFs embed an average of middle frames.",
-    "offset": 8177,
-    "figures": [
-     "80%"
-    ],
-    "figure_offsets": [
-     14
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "always on; 35 more languages are toggleable in Settings \u2192 Photo Search",
-    "offset": 8328,
-    "figures": [
-     "35"
-    ],
-    "figure_offsets": [
-     11
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "pack downloads once (~2.4\u20135MB; ~17MB for the default set), then everything",
-    "offset": 8476,
-    "figures": [
-     "2.4"
-    ],
-    "figure_offsets": [
-     22
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Problem files retry up to 3 times, then sit out watch-syncs until they",
-    "offset": 8896,
-    "figures": [
-     "3"
-    ],
-    "figure_offsets": [
-     26
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "effect for the lightbox, 6 alternate app icons, menu-bar-only mode, a",
-    "offset": 10374,
-    "figures": [
-     "6"
-    ],
-    "figure_offsets": [
-     25
-    ],
-    "base_cue": false
-   }
-  ],
-  "cross_article_duplicates_dropped": 0
- },
- "https://www.youtube.com/watch?v=GLvFTMtw4Jk": {
-  "headline": "How to scale intent, quality, and artistry with AI [video]",
-  "source": "youtube.com",
-  "fetch": "ok",
-  "n_chars": 281,
-  "tier": 1,
-  "furniture_dropped": 0,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "document",
-  "content_hash": "ee924a6a57f23bcd67cf8800e38e5b1b39a1e7e1f763c3fc1a96173684f21f11",
-  "evidence_hash": "88d6dca7dd8c00e1fbcfc01f095ec196f4cc63179f887852be71146bb1458e65",
-  "publisher_tags": [
-   "video",
-   "sharing",
-   "camera phone",
-   "video phone",
-   "free",
-   "upload"
-  ],
-  "site_name": "YouTube",
-  "spans": [],
-  "cross_article_duplicates_dropped": 0
- },
- "https://writings.stephenwolfram.com/2026/09/whats-the-future-for-pure-math-research-in-the-age-of-ai/": {
-  "headline": "What's the future for pure math research in the age of AI?",
-  "source": "writings.stephenwolfram.com",
-  "fetch": "ok",
-  "n_chars": 44347,
-  "tier": 1,
-  "furniture_dropped": 0,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "article",
-  "content_hash": "b03007317045862e15252ce8318416766a2474ad42a46c58d79a2f0c44c2b6f6",
-  "evidence_hash": "66ab98a06a0b332c46c3e74143f3ae6fa845e8b6f8f108d8baf401d1555f9410",
-  "publisher_tags": [],
-  "site_name": "",
-  "spans": [
-   {
-    "sentence": "And in the past 26 years it\u2019s never been possible \u2014with AI or otherwise\u2014to find any human-level version of it.",
-    "offset": 19267,
-    "figures": [
-     "26"
-    ],
-    "figure_offsets": [
-     16
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "10.31855/3c669ceb-f23",
-    "offset": 42979,
-    "figures": [
-     "10"
-    ],
-    "figure_offsets": [
-     0
-    ],
-    "base_cue": false
-   }
-  ],
-  "cross_article_duplicates_dropped": 0
- },
- "https://www.nytimes.com/2026/09/29/us/anthropic-claude-morals-ai.html": {
-  "headline": "Religious scholars met with Anthropic",
-  "source": "nytimes.com",
-  "fetch": "http-403",
-  "n_chars": 0,
-  "tier": 1,
-  "furniture_dropped": 0,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "unverified-legacy",
-  "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
-  "publisher_tags": [],
-  "site_name": "",
-  "spans": [],
-  "cross_article_duplicates_dropped": 0
- },
- "https://www.theguardian.com/technology/2026/oct/03/openai-safety-leader-quits-warning-ai-companys-culture-is-broken": {
-  "headline": "OpenAI safety leader quits, warning AI company's culture is 'broken'",
-  "source": "theguardian.com",
-  "fetch": "ok",
-  "n_chars": 4559,
-  "tier": 1,
-  "furniture_dropped": 0,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "article",
-  "content_hash": "c1eff77755924592a5c87af532a78cc60d647690b0912119fed49f96f834a5a4",
-  "evidence_hash": "f1f3497d1bb58605ab9d4b2d5c33d5f766f94169fcf86a189474a2e2889de81d",
-  "publisher_tags": [
-   "OpenAI",
-   "Technology",
-   "AI (artificial intelligence)",
-   "Computing",
-   "Data and computer security",
-   "Ethics",
-   "World news"
-  ],
-  "site_name": "the Guardian",
-  "spans": [
-   {
-    "sentence": "OpenAI has, however, shown signs of caution in recent weeks following the Hugging Face incident and the revelation that it has notified more than 100 organisations about rogue agent activity.",
-    "offset": 1627,
-    "figures": [
-     "100"
-    ],
-    "figure_offsets": [
-     146
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "\u201cI believe there\u2019s about a 50% chance we all die because of the development of smarter-than-human AI systems, and that our actions over the next two to 10 years will determine the outcome.\u201d",
-    "offset": 2307,
-    "figures": [
-     "50%",
-     "10"
-    ],
-    "figure_offsets": [
-     27,
-     152
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "He warned AI \u201ccould kill us all by the end of the decade\u201d \u2013 and was followed by Anthropic warning there was a more than 10% chance AI would wipe out humanity within the next decade.",
-    "offset": 2649,
-    "figures": [
-     "10%"
-    ],
-    "figure_offsets": [
-     120
-    ],
-    "base_cue": false
-   }
-  ],
-  "cross_article_duplicates_dropped": 0
- },
- "https://www.telegraph.co.uk/business/2026/10/02/anthropic-lobbied-pope-to-argue-ai-conscious-being/": {
-  "headline": "Anthropic tried to persuade Pope that AI could be conscious being",
-  "source": "telegraph.co.uk",
-  "fetch": "http-402",
-  "n_chars": 0,
-  "tier": 1,
-  "furniture_dropped": 0,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "unverified-legacy",
-  "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
-  "publisher_tags": [],
-  "site_name": "",
-  "spans": [],
-  "cross_article_duplicates_dropped": 0
- },
- "https://www.astralcodexten.com/p/our-ai-midwife": {
-  "headline": "Our AI Midwife",
-  "source": "astralcodexten.com",
-  "fetch": "ok",
-  "n_chars": 8812,
-  "tier": 1,
-  "furniture_dropped": 0,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "article",
-  "content_hash": "d98279b933e2a6581b7b8c82e2c577bf6daeeec27dee25be17cd4206218a20c3",
-  "evidence_hash": "0c400a83c6da95309f5e3f0a0819d9b62df6afb0f47b3a78adeb9eda7b00635c",
-  "publisher_tags": [],
-  "site_name": "",
-  "spans": [
-   {
-    "sentence": "Once you have unexplained infertility, the doctors start saying things like, \u201cHave you considered using a surrogate?\u201d and, \u201cSure, the last 5 embryo transfers failed, but what if we try a 6th and cross our fingers really hard?\u201d",
-    "offset": 796,
-    "figures": [
-     "5"
-    ],
-    "figure_offsets": [
-     139
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "No matter how Dr. Reid chose to respond, he was in line with the medical establishment, had equivalent diagnostic skill, and he never forced us to wait 3 days to get a one line response in our MyChart app.",
-    "offset": 3851,
-    "figures": [
-     "3"
-    ],
-    "figure_offsets": [
-     152
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Surely we would have had an MRI of my wife\u2019s uterus at some point over the course of our 6 year infertility struggle.",
-    "offset": 4409,
-    "figures": [
-     "6"
-    ],
-    "figure_offsets": [
-     89
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "The clinical notes said \u201ca 6 centimeter in diameter submucosal fibroid needs to be removed\u201d because that sounds better than \u201cyou have a tumor the size of a small peach located at a common implantation spot that we totally missed for 6 years.\u201d",
-    "offset": 5687,
-    "figures": [
-     "6",
-     "6"
-    ],
-    "figure_offsets": [
-     27,
-     233
-    ],
-    "base_cue": false
-   },
-   {
-    "sentence": "Can we somehow stop everything right here, where we get magical kid-producing tech for $20/month without the nanobots, hacking, and totalitarianism?",
-    "offset": 7988,
-    "figures": [
-     "$20"
-    ],
-    "figure_offsets": [
-     87
-    ],
-    "base_cue": false
-   }
-  ],
   "cross_article_duplicates_dropped": 0
  },
  "https://www.nist.gov/news-events/news/2026/08/nist-joins-national-genesis-mission-accelerate-ai-innovation": {
@@ -3853,25 +3465,6 @@
     "base_cue": false
    }
   ],
-  "cross_article_duplicates_dropped": 0
- },
- "https://cset.georgetown.edu/article/america-is-behind-on-memory-chips-and-tariffs-threaten-to-make-things-harder/": {
-  "headline": "America Is Behind on Memory Chips\u2014and Tariffs Threaten to Make Things Harder",
-  "source": "cset.georgetown.edu",
-  "fetch": "ok",
-  "n_chars": 1321,
-  "tier": 1,
-  "furniture_dropped": 0,
-  "related_headlines_dropped": 0,
-  "duplicate_spans_dropped": 0,
-  "links_scope": "main",
-  "content_hash": "e927c4e9976292ed29e3ce6b616a0e9db76ff025b0f0a68a638fc92afd24b197",
-  "evidence_hash": "a2fce3e17425a6c42f2704e331a8894fd7b7cce08096bf76c92899c634eb4ab4",
-  "publisher_tags": [
-   "Semiconductors"
-  ],
-  "site_name": "Center for Security and Emerging Technology",
-  "spans": [],
   "cross_article_duplicates_dropped": 0
  },
  "https://ainowinstitute.org/news/press/how-the-bad-science-of-ai-doomerism-is-good-for-big-business": {
