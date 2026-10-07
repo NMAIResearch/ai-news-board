@@ -1,23 +1,35 @@
 {
- "generated": "2026-10-06 05:30 UTC",
+ "generated": "2026-10-07 05:30 UTC",
  "window_days": 60,
  "counts": {
-  "total": 104,
-  "closed": 46,
+  "total": 106,
+  "closed": 48,
   "open_weights": 58
  },
  "releases": [
   {
    "lab": "Google",
-   "model": "DiarizationLM-Gemma-4-E4B-v1",
-   "id": "google/DiarizationLM-Gemma-4-E4B-v1",
-   "date": "2026-10-04",
-   "url": "https://huggingface.co/google/DiarizationLM-Gemma-4-E4B-v1",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "google/DiarizationLM-Gemma-4-E4B-v1",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
+   "model": "Google: Nano Banana 2.1",
+   "id": "google/gemini-nano-banana-2.1",
+   "date": "2026-10-06",
+   "url": "https://openrouter.ai/google/gemini-nano-banana-2.1",
+   "context_length": 65536,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Mistral",
+   "model": "Mistral: Mistral Large 4",
+   "id": "mistralai/mistral-large-4-0",
+   "date": "2026-10-06",
+   "url": "https://openrouter.ai/mistralai/mistral-large-4-0",
+   "context_length": 524288,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
    "lab": "Inclusionai",
@@ -509,6 +521,18 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "Qwen/Qwen-Image-2.1",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Google",
+   "model": "embeddinggemma-2",
+   "id": "google/embeddinggemma-2",
+   "date": "2026-09-14",
+   "url": "https://huggingface.co/google/embeddinggemma-2",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "google/embeddinggemma-2",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
