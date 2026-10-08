@@ -1,12 +1,24 @@
 {
- "generated": "2026-10-07 05:30 UTC",
+ "generated": "2026-10-08 05:32 UTC",
  "window_days": 60,
  "counts": {
-  "total": 106,
-  "closed": 48,
-  "open_weights": 58
+  "total": 110,
+  "closed": 49,
+  "open_weights": 61
  },
  "releases": [
+  {
+   "lab": "Anthropic",
+   "model": "Anthropic: Claude Haiku 5.5",
+   "id": "anthropic/claude-haiku-5.5",
+   "date": "2026-10-07",
+   "url": "https://openrouter.ai/anthropic/claude-haiku-5.5",
+   "context_length": 1000000,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
   {
    "lab": "Google",
    "model": "Google: Nano Banana 2.1",
@@ -954,6 +966,42 @@
    "evidence_note": "weights published at huggingface.co/zai-org/GLM-5.3-Flash; downloadable and hashable",
    "hf_id": "zai-org/GLM-5.3-Flash",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Ai2",
+   "model": "Llama-3-Blama-8B",
+   "id": "allenai/Llama-3-Blama-8B",
+   "date": "2026-08-26",
+   "url": "https://huggingface.co/allenai/Llama-3-Blama-8B",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "allenai/Llama-3-Blama-8B",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Ai2",
+   "model": "Llama-3-Blama-8B-Stage1",
+   "id": "allenai/Llama-3-Blama-8B-Stage1",
+   "date": "2026-08-26",
+   "url": "https://huggingface.co/allenai/Llama-3-Blama-8B-Stage1",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "allenai/Llama-3-Blama-8B-Stage1",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Ai2",
+   "model": "Bwen-8B",
+   "id": "allenai/Bwen-8B",
+   "date": "2026-08-26",
+   "url": "https://huggingface.co/allenai/Bwen-8B",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "allenai/Bwen-8B",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "Z.ai",

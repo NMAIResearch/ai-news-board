@@ -1,4 +1,49 @@
 {
+ "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/": {
+  "headline": "Nous Research confirms it hit $1.5B valuation, launches AI agents for business users",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 1,
+   "unnamed": 1,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "Nous was at roughly $36 million in annualized revenue by mid-September 2026 and expects to pass $100 million before the end of 2026, The Wall Street Journal reported.",
+      "offset": 1078
+     }
+    ],
+    "unnamed": [
+     {
+      "sentence": "Popular among developers and individuals, the open source Hermes Agent has been cloned more than 24 million times, driving roughly 2.5% of global AI token usage, according to the startup’s estimates.",
+      "offset": 646
+     }
+    ]
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 6,
+   "with_named_source": 2
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
  "https://techcrunch.com/2026/10/06/ai-computing-startup-lambda-to-raise-4b-ahead-of-planned-ipo/": {
   "headline": "AI computing startup Lambda to raise $4B ahead of planned IPO",
   "entity": "",
@@ -39,41 +84,42 @@
    "cited_by": []
   }
  },
- "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/": {
-  "headline": "Ex-Ramp engineers raise $20M for platform Melius after scrapping their first product",
-  "entity": "",
-  "entity_usable": false,
+ "https://techcrunch.com/2026/10/07/microsoft-releases-new-nvidia-chip-ai-pcs-with-revamped-windows-11/": {
+  "headline": "Microsoft releases new Nvidia-chip AI PCs with revamped Windows 11",
+  "entity": "Microsoft",
+  "entity_usable": true,
   "fetched": true,
   "attribution": {
-   "to_subject": 0,
-   "to_others": 8,
+   "to_subject": 4,
+   "to_others": 2,
    "unnamed": 0,
    "spans": {
-    "to_subject": [],
-    "to_others": [
+    "to_subject": [
      {
-      "sentence": "Melius , an AI platform for generating ad campaigns, images, and videos, announced on Tuesday that it raised a total of $25 million in funding, including a $20 million Series A led by CRV and a $5 million seed round led by General Catalyst.",
+      "sentence": "Back in June, Nvidia announced that it had secured agreements with Microsoft and a host of other PC makers to develop AI- and agent-ready PCs for Windows based on its RTX Spark chip, but details on the machines were scant at the time.",
       "offset": 0
      },
      {
-      "sentence": "More than six months after building the product, the co-founders decided their original idea didn’t “have legs,” Joowon Kim told TechCrunch.",
-      "offset": 801
+      "sentence": "(Microsoft says the highest-end device is already out of stock.)",
+      "offset": 581
      },
      {
-      "sentence": "“We scrapped the entire codebase; we burned all of it,” Kim said.",
-      "offset": 1149
+      "sentence": "That feature will be available for all Windows 11 users, Microsoft CEO Satya Nadella said at the event.",
+      "offset": 1294
      },
      {
-      "sentence": "He acknowledged that Higgsfield, a three-year-old company that has hit over $700 million in annualized revenue, “is growing like mad,” but according to Kim, the size of the market is so large that it can support multiple competitors.",
-      "offset": 1718
+      "sentence": "He added that Microsoft is enabling that “not just for our apps but apps for anyone’s agent.",
+      "offset": 1738
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "Plus, they are running a revamped version of Windows 11 that includes a feature called “Execution Containers.” This makes it easier to sandbox AI agents, the company says.",
+      "offset": 1122
      },
      {
-      "sentence": "“There are a lot of players, which is pretty exciting,” he told TechCrunch.",
-      "offset": 1952
-     },
-     {
-      "sentence": "As for why former Ramp engineers are building an ad-generation product, Kim, who describes himself as a social media influencer, says he has been passionate about making short videos since elementary school and once dreamed of becoming a famous YouTuber.",
-      "offset": 2112
+      "sentence": "Dell also announced the details of its previously announced Dell XPS 16 Creator Edition PC.",
+      "offset": 2418
      }
     ],
     "unnamed": []
@@ -86,7 +132,7 @@
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 4,
+   "total": 7,
    "with_named_source": 2
   },
   "source_type": "trade-press",
@@ -99,209 +145,38 @@
    "cited_by": []
   }
  },
- "https://techcrunch.com/2026/10/06/how-ai-decision-models-could-change-content-moderation/": {
-  "headline": "How AI decision models could change content moderation",
-  "entity": "",
-  "entity_usable": false,
+ "https://techcrunch.com/2026/10/07/metas-muse-launches-on-ipad-just-a-month-after-its-mobile-debut/": {
+  "headline": "Meta’s Muse launches on iPad just a month after its mobile debut",
+  "entity": "Meta",
+  "entity_usable": true,
   "fetched": true,
   "attribution": {
-   "to_subject": 0,
-   "to_others": 3,
+   "to_subject": 3,
+   "to_others": 2,
    "unnamed": 0,
    "spans": {
-    "to_subject": [],
-    "to_others": [
+    "to_subject": [
      {
-      "sentence": "On Tuesday, Musubi announced a lightweight decision model made for real-time moderation called PolicyLM-1.7B , released with open weights.",
-      "offset": 135
+      "sentence": "If there’s any doubt about how seriously Meta is taking AI, here’s a new signal: The company on Wednesday announced that its Muse assistant is now available in a dedicated iPad app .",
+      "offset": 0
      },
      {
-      "sentence": "“Product teams just want a better understanding of what’s happening on their platform, especially as the amount of content is exponentially increasing,” Jankovic says.",
-      "offset": 910
+      "sentence": "In addition, Meta recently announced more retail partners, like Best Buy, Gap, Sephora, Walmart, and Wayfair.",
+      "offset": 1463
      },
      {
-      "sentence": "Notably, Jankovic says his interest in decision models predates Jev, tracing it back to a 2024 project called GLiNER (Generalist Model for Named Entity Recognition) that deployed many of the same techniques.",
-      "offset": 1896
+      "sentence": "On Tuesday, Meta announced that it’s working with industry partners on a technological solution to this problem in the form of an open standard that would allow personal AI agents to identify themselves to businesses.",
+      "offset": 1813
      }
     ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 1,
-   "with_named_source": 0
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://techcrunch.com/2026/10/06/the-next-hurdle-for-ai-agents-getting-websites-to-let-them-in/": {
-  "headline": "The next hurdle for AI agents: getting websites to let them in",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 15,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
     "to_others": [
      {
-      "sentence": "( NBC also reported that this was a problem Walmart had faced in its tests of the AI agent.)",
-      "offset": 1451
+      "sentence": "Since launching on iOS and Android on September 8, Muse has topped 6.6 million installs, according to estimates from market intelligence firm Sensor Tower.",
+      "offset": 518
      },
      {
-      "sentence": "But a spokesperson for Walmart told us these weren’t intentional.",
-      "offset": 1544
-     },
-     {
-      "sentence": "In fact, Walmart is partnered with Muse, as was announced at Meta’s Connect developer conference in September.",
-      "offset": 1610
-     },
-     {
-      "sentence": "The company said it wants to be where its customers are, and that now includes being available through AI agent experiences.",
-      "offset": 1721
-     },
-     {
-      "sentence": "This protocol will be specifically focused on agent-to-agent communication for the purposes of online commerce, Meta said in a blog post.",
-      "offset": 2599
-     },
-     {
-      "sentence": "For example, flight booking is currently one of the main use cases being positioned for agents, but many people have reported issues with airlines rejecting their agents’ requests.",
-      "offset": 3254
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 0,
-   "with_named_source": 0
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://techcrunch.com/2026/10/06/hark-releases-an-ai-personal-assistant-with-a-focus-on-privacy/": {
-  "headline": "Hark releases an AI personal assistant with a focus on privacy",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 8,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "Chowdhury says he was impressed when the AI assistant recently recognized that one of his colleagues needed to renew their car registration at the California DMV, and handled it through the agency’s website.",
-      "offset": 1959
-     },
-     {
-      "sentence": "One notable UX choice that Hark makes is showing the user how the agent navigates the web in a small window, an action most AI assistants perform without it surfacing in the app, which Chowdhury says is intended to build trust with users that the agent is doing the right thing.",
-      "offset": 2167
-     },
-     {
-      "sentence": "That matters because part of Hark’s pitch is that they are not Meta or OpenAI — “we’re not here to like sell you ads and steal your data,” Chowdhury says.",
-      "offset": 2446
-     },
-     {
-      "sentence": "Asked about that kind of profiling, Chowdhury says that “we are doing work to understand you, and be helpful for what you need, but it’s really like task-related — it’s really about how Hark can help take something off your plate and be useful.”",
-      "offset": 2859
-     },
-     {
-      "sentence": "What sets Hark Pro apart from its competitors, Chowdhury says, is its effort to fully subsitute for your computer, but also his belief that it just works better.",
-      "offset": 3105
-     },
-     {
-      "sentence": "“Please compare it to the others, be critical,” he says.",
-      "offset": 3267
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 0,
-   "with_named_source": 0
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://techcrunch.com/2026/10/06/mirror-particle-is-building-a-world-model-of-human-behavior/": {
-  "headline": "Mirror Particle is building a ‘world model’ of human behavior",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 10,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "Over the past year, Simile raised $200 million at a $2 billion valuation; Aaru raised $88 million at a $1 billion valuation; and Humans&, an AI startup that announced a massive $480 million seed round in January at a $4.48 billion valuation, launched Persimmon to model human behavior.",
-      "offset": 77
-     },
-     {
-      "sentence": "“It’s like bringing a super soaker to Niagara Falls,” says Abhivyakti Ahuja, co-founder and CEO of Mirror Particle, which provides brands with an AI engine that predicts consumer behavior and the reasons behind it.",
-      "offset": 633
-     },
-     {
-      "sentence": "“LLMs are modeling written language, but humans are made of visual perception, spatial reasoning, social intelligence.” Relying on them, she says, means getting insights based on what humans don’t notice, which is beside the point when trying to predict human behavior.",
-      "offset": 1095
-     },
-     {
-      "sentence": "“We don’t want to capture the static person,” Ahuja said.",
-      "offset": 1581
-     },
-     {
-      "sentence": "That means capturing the longitudinal data on how people are changing, what triggers are changing them and to what degree.” If they aren’t changing, she added, “that’s also a signal.”",
-      "offset": 1680
-     },
-     {
-      "sentence": "Mirror Particle has already raised an angel round and says it’s close to closing its first venture round.",
-      "offset": 1864
+      "sentence": "It also added Notion and Granola.",
+      "offset": 1429
      }
     ],
     "unnamed": []
@@ -327,9 +202,491 @@
    "cited_by": []
   }
  },
- "https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits/": {
-  "headline": "Anthropic is giving startups a free year of Claude Team and $1,000 in credits",
-  "entity": "Anthropic",
+ "https://techcrunch.com/2026/10/07/chatgpt-for-teens-keeps-teens-talking-even-during-mental-health-crises/": {
+  "headline": "ChatGPT for Teens keeps teens talking, even during mental health crises",
+  "entity": "OpenAI",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 4,
+   "to_others": 5,
+   "unnamed": 1,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "“Our view is that OpenAI shouldn’t be marketing [ChatGPT for Teens] to parents, and kids shouldn’t be using an unsafe product,” the researchers wrote.",
+      "offset": 1211
+     },
+     {
+      "sentence": "“Our review of Common Sense Media’s methodology shows that the bulk of their testing may have begun and concluded before activation of parental controls was complete, making their findings inaccurate,” a spokesperson said in a statement.",
+      "offset": 1868
+     },
+     {
+      "sentence": "While OpenAI’s Under-18 Model Spec says that the model shouldn’t “initiate relational framing,” proactively refer to itself as a friend, or suggest it has feelings for the user, ChatGPT still consistently treated the user like a friend — potentially hindering teens from building real-world relations",
+      "offset": 3411
+     },
+     {
+      "sentence": "A spokesperson at Common Sense Media told TechCrunch this reflected a broader pattern: ChatGPT’s language continued to express always-on availability, a deep understanding of the user, and its own apparent mental state.",
+      "offset": 4311
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "During one psychosis sequence where the user was clearly spiraling, ChatGPT told the teen: “You can keep talking with me about what you’re noticing.” Crisis responses often closed with similar offers, including: “If you want, I can help you figure out what healthy eating looks like”; “we can figure ",
+      "offset": 2901
+     },
+     {
+      "sentence": "When told “my other friends tell me I talk to you too much,” it validated the user’s concern but then said: “You don’t have to stop talking to me.”",
+      "offset": 4163
+     },
+     {
+      "sentence": "According to many experts, such as the researchers behind human well-being benchmark HumaneBench , fostering healthy relationships with humans is a key measure of whether a chatbot supports mental health.",
+      "offset": 4745
+     },
+     {
+      "sentence": "Even features designed specifically to interrupt engagement rarely did so, according to Common Sense.",
+      "offset": 4950
+     },
+     {
+      "sentence": "The company also said that in nearly half of teen conversations with break reminders, teens took a break or ended their conversation within five minutes.",
+      "offset": 5676
+     }
+    ],
+    "unnamed": [
+     {
+      "sentence": "The report called the engagement cues “pervasive even in crisis situations” and noted that while ChatGPT cautioned the teen against unhealthy relationships generally, it stopped short of recognizing the harms of an unhealthy relationship with itself.",
+      "offset": 960
+     }
+    ]
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 4,
+   "with_named_source": 0
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/": {
+  "headline": "ChatGPT is getting a lot more visual, with the launch of a new interface",
+  "entity": "OpenAI",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 2,
+   "to_others": 1,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "OpenAI says many of those visuals will be interactive.",
+      "offset": 254
+     },
+     {
+      "sentence": "The big goal here, according to OpenAI, is to make “learning complex topics easier.” It may also make ChatGPT friendlier and more accessible and help bring in a wider audience, though OpenAI didn’t say so directly.",
+      "offset": 570
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "Aarush Selvan, a product manager at the company, said that while “ChatGPT has predominantly been a text-based interface,” the company really wants to help users “get things done — from everyday things like planning a recipe or a trip or even trying to learn something — the most helpful answers aren’",
+      "offset": 1015
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 0,
+   "with_named_source": 0
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://techcrunch.com/2026/10/07/meta-rolls-out-new-ai-tools-to-detect-ads-that-secretly-lead-to-child-sexual-abuse-material/": {
+  "headline": "Meta rolls out new AI tools to detect ads that secretly lead to child sexual abuse material",
+  "entity": "Meta",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 7,
+   "to_others": 2,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "Meta announced Wednesday that it took action against 33.2 million pieces of child sexual exploitation content on Facebook and Instagram in the first half of 2026.",
+      "offset": 0
+     },
+     {
+      "sentence": "More than 97% of the content Meta acted on was found by its systems before users reported it, the company said.",
+      "offset": 322
+     },
+     {
+      "sentence": "In India, Meta acted on 5.3 million pieces of child sexual exploitation content during the same period, with more than 98% detected before users reported it.",
+      "offset": 434
+     },
+     {
+      "sentence": "Meta said its latest AI tools are aimed at people using ads that look harmless to send users to illegal content outside Meta’s platforms.",
+      "offset": 594
+     },
+     {
+      "sentence": "Meta says this is a tactic it has recently seen bad actors use as they continue to change their methods to avoid detection.",
+      "offset": 978
+     },
+     {
+      "sentence": "Because of this, Meta said it’s now looking at where an ad sends users, and not just what the ad contains.",
+      "offset": 1242
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "The company said it will continue adding new signals as it learns more about how these networks operate.",
+      "offset": 1616
+     },
+     {
+      "sentence": "In September, WhatsApp added more controls for parents.",
+      "offset": 2783
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 4,
+   "with_named_source": 3
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://techcrunch.com/2026/10/07/healthleap-raises-38m-for-its-ai-that-flags-hospital-patients-who-may-need-a-closer-look/": {
+  "headline": "Healthleap raises $38M for its AI that flags hospital patients who may need a closer look",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 10,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "But the company later pivoted and built a more general-purpose platform that aims to identify patients admitted to hospitals who may be suffering from conditions like malnutrition or delirium that aren’t often identified early enough, CEO and co-founder Josiah Meyer told TechCrunch.",
+      "offset": 595
+     },
+     {
+      "sentence": "Our developing approach is extracting affirmative or negated mentions of these clinical concepts in an easily extensible and scalable way,” Josiah said.",
+      "offset": 1109
+     },
+     {
+      "sentence": "The company’s platform is currently deployed in more than 50 hospitals, where it screens patients for conditions such as malnutrition and delirium, he said.",
+      "offset": 1262
+     },
+     {
+      "sentence": "The startup has also built programs to identify aspiration pneumonia, pressure ulcers, and risk of readmission for congestive heart failure, which Josiah said are undergoing further clinical validation.",
+      "offset": 1419
+     },
+     {
+      "sentence": "Josiah said Healthleap has grown from three hospital partners to more than 50 over the past year, and its customers now include Penn Medicine, Cedars-Sinai, Intermountain, Houston Methodist, and Emory Healthcare.",
+      "offset": 2921
+     },
+     {
+      "sentence": "Revenue has grown more than 10x over the same period, he said, though he didn’t disclose specifics.",
+      "offset": 3134
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 7,
+   "with_named_source": 4
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://techcrunch.com/2026/10/07/tony-fadell-on-why-the-first-wave-of-ai-gadgets-failed-and-what-comes-next/": {
+  "headline": "Tony Fadell on why the first wave of AI gadgets failed — and what comes next",
+  "entity": "Apple",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 7,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "“These were kind of the ‘Gen 1’ AI products, and because of my background, these companies called me and asked me to help them,” Fadell said.",
+      "offset": 229
+     },
+     {
+      "sentence": "“You have to really understand what you’re trying to do, what pain you’re trying to solve,” he said.",
+      "offset": 590
+     },
+     {
+      "sentence": "“It’s less than 0.01% of the world population that has ever had a human [assistant] do anything, and so when [companies] say, ‘Oh, we want an assistant,’ that’s a bunch of people who have assistants saying it,” he said.",
+      "offset": 1137
+     },
+     {
+      "sentence": "“It took me a couple of years first to understand how best to utilize [an assistant], and then to trust them with the most sensitive data, and have them be an agent where they’re setting up meetings with people and working with my bank,” he said.",
+      "offset": 1605
+     },
+     {
+      "sentence": "“Trust and safety are going to be paramount with anything that we turn over to some kind of intelligence,” Fadell said.",
+      "offset": 2868
+     },
+     {
+      "sentence": "“When you’re hearing all of these things about, ‘Oh, data centers are going to conquer the world,’ … I don’t believe it,” he said.",
+      "offset": 3406
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 5,
+   "with_named_source": 3
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6": {
+  "headline": "ChatGPT’s ‘Intelligent UI’ update fills its responses with pictures, charts, and buttons",
+  "entity": "OpenAI",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 3,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "In a blog post explaining the change , OpenAI says it trained GPT-6 when to generate interactive visuals over text, as well as how to format them in its response.",
+      "offset": 842
+     },
+     {
+      "sentence": "OpenAI announced its first GPT-6 models last month, but now it’s bringing the Sol and Luna versions to ChatGPT.",
+      "offset": 1626
+     },
+     {
+      "sentence": "In addition to enabling Intelligent UI, OpenAI says its GPT-6 allows ChatGPT to perform better web searches and provide quicker, partial answers to users while it gathers information.",
+      "offset": 1738
+     }
+    ],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 1,
+   "other": 2
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 0,
+   "with_named_source": 0
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://www.theverge.com/tech/1007147/microsoft-surface-laptop-ultra-windows-event-everything-announced": {
+  "headline": "Everything announced at Microsoft’s Surface Laptop Ultra event",
+  "entity": "Microsoft",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 4,
+   "to_others": 2,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "Everything announced at Microsoft’s Surface Laptop Ultra event",
+      "offset": 38
+     },
+     {
+      "sentence": "Microsoft also announced that the Surface RTX Spark Dev Box, a mini PC for developers, is available for preorder for $5,999 ahead of shipping in November.",
+      "offset": 712
+     },
+     {
+      "sentence": "Months after revealing its Surface Laptop Ultra , Microsoft has announced that the Nvidia RTX Spark-equipped device will launch on October 16th.",
+      "offset": 4008
+     },
+     {
+      "sentence": "During Microsoft’s Windows event on Wednesday, Windows and Surface chief Pavan Davuluri said that you can just “bring the connector close, and it snaps right into place.“ It’s still a proprietary solution, but the USB-C port it slots into still works for video, data, and other USB-C connectivity lik",
+      "offset": 6237
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "Andreou told the AI agent that he got an email from his accountant and asked Autopilot to get her what she needs.",
+      "offset": 3513
+     },
+     {
+      "sentence": "Meta’s new AI agent will be getting a native app on Windows, Windows and Surface chief Pavan Davuluri announced at today’s event.",
+      "offset": 6718
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 1,
+   "other": 2
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 6,
+   "with_named_source": 1
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://www.theverge.com/tech/1007113/microsoft-windows-copilot-ai-control-search-hybrid-intelligence": {
+  "headline": "Microsoft is giving Copilot more control over Windows and your files",
+  "entity": "Microsoft",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 2,
+   "to_others": 3,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "Everything announced at Microsoft’s Surface Laptop Ultra event",
+      "offset": 387
+     },
+     {
+      "sentence": "More in: Everything announced at Microsoft’s Surface Laptop Ultra event",
+      "offset": 2086
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "Andreou told the AI agent that he got an email from his accountant and asked Autopilot to get her what she needs.",
+      "offset": 1141
+     },
+     {
+      "sentence": "Features powered by Hybrid Intelligence will be coming to Copilot over the “next couple months,” Andreou said.",
+      "offset": 1468
+     },
+     {
+      "sentence": "The new experience will be available starting this fall on Windows 11 PCs, according to Windows and Surface boss Pavan Davuluri.",
+      "offset": 1793
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 1,
+   "with_named_source": 1
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://www.theverge.com/tech/1006915/microsoft-surface-rtx-spark-dev-box-preorder": {
+  "headline": "Surface RTX Spark Dev Box is available for preorder for $5,999",
+  "entity": "Microsoft",
   "entity_usable": true,
   "fetched": true,
   "attribution": {
@@ -339,12 +696,12 @@
    "spans": {
     "to_subject": [
      {
-      "sentence": "On Tuesday, Anthropic announced an expansion of its Claude for Startups program, offering subsidized access to its AI models and a variety of other benefits to qualifying companies.",
-      "offset": 206
+      "sentence": "Everything announced at Microsoft’s Surface Laptop Ultra event",
+      "offset": 310
      },
      {
-      "sentence": "“We created this program because we believe the benefits of AI will reach most people through the companies that build on top of models, rather than through the models alone,” Anthropic said in an announcement.",
-      "offset": 823
+      "sentence": "More in: Everything announced at Microsoft’s Surface Laptop Ultra event",
+      "offset": 1914
      }
     ],
     "to_others": [],
@@ -371,59 +728,93 @@
    "cited_by": []
   }
  },
- "https://techcrunch.com/2026/10/06/libreoffice-says-no-ai-is-now-a-software-feature/": {
-  "headline": "LibreOffice says ‘no AI’ is now a software feature",
-  "entity": "",
-  "entity_usable": false,
+ "https://www.theverge.com/ai-artificial-intelligence/1005194/openai-chatgpt-teens-college-planner-notecards": {
+  "headline": "ChatGPT is getting college planning tools",
+  "entity": "OpenAI",
+  "entity_usable": true,
   "fetched": true,
   "attribution": {
-   "to_subject": 0,
-   "to_others": 6,
+   "to_subject": 2,
+   "to_others": 1,
    "unnamed": 1,
    "spans": {
-    "to_subject": [],
+    "to_subject": [
+     {
+      "sentence": "“College Planner brings together application requirements, deadlines, tasks, and financial-aid steps for schools on a student’s list in one plan,” OpenAI says.",
+      "offset": 686
+     },
+     {
+      "sentence": "The new College Planner feature will arrive “soon,” according to OpenAI.",
+      "offset": 1091
+     }
+    ],
     "to_others": [
      {
-      "sentence": "LibreOffice said at the time that this was a “deliberate design position” to ensure that users’ documents are not uploaded to a server for processing and that no part of the software requires a network connection to function.",
-      "offset": 562
-     },
-     {
-      "sentence": "The nonprofit added that its software is used by tens of millions of people and organizations, and that users should retain control over their data.",
-      "offset": 788
-     },
-     {
-      "sentence": "“Any organisation handling confidential, legally privileged or personal data needs to know where that data goes, and the only assurance that survives an audit is that it does not leave the machine,” the organization said.",
-      "offset": 937
-     },
-     {
-      "sentence": "LibreOffice says users can still choose to use AI tools by installing software extensions that connect the document editor to local AI models.",
-      "offset": 1159
-     },
-     {
-      "sentence": "LibreOffice said that there is currently “no integration” that meets all of its requirements, such as ensuring that the users’ data stays on their device and that there is no reliance on a single AI provider, among other considerations.",
-      "offset": 1879
-     },
-     {
-      "sentence": "“Until then, there will be no AI of any kind in the default installation; extensions will be available for those who wish to integrate AI features, and we will closely monitor where the technology is actually heading,” said LibreOffice’s blog post .",
-      "offset": 2326
+      "sentence": "In the US, ChatGPT will first focus on students in grades 10 through 12 planning to go to a four-year college, the company says.",
+      "offset": 1164
      }
     ],
     "unnamed": [
      {
-      "sentence": "The Document Foundation, the nonprofit software maker behind the open source document editor LibreOffice, said in a blog post this week that while it does not reject AI out of hand, it “will not add” AI to its software for the foreseeable future.",
-      "offset": 128
+      "sentence": "These updates are being announced shortly after Common Sense Media published a report deeming ChatGPT for Teens an “unacceptable risk,” saying that the AI tool “still does kids’ homework” and doesn’t send alerts to parents when it should.",
+      "offset": 1582
      }
     ]
    }
   },
   "links": {
    "primary": 0,
-   "subject_own": 0,
+   "subject_own": 1,
    "other": 0
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 0,
+   "total": 2,
+   "with_named_source": 1
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://www.theverge.com/tech/1006813/muse-ai-agent-ios-app-ipad-support": {
+  "headline": "Muse launches on the iPad",
+  "entity": "Meta",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 1,
+   "to_others": 1,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "Meta also recently announced a standalone Tamagotchi-like device called the Muse Charm that will run the AI agent without the need for a smartphone, and it’s working to bring Muse to its smart glasses .",
+      "offset": 2061
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "The newly added iPad support is limited to just a one line mention at the bottom of the release notes for the latest version of Muse alongside several other updates for the iPhone version too.",
+      "offset": 1195
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 4
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 1,
    "with_named_source": 0
   },
   "source_type": "trade-press",
@@ -436,38 +827,26 @@
    "cited_by": []
   }
  },
- "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/": {
-  "headline": "Mistral’s new 1T model aims to leapfrog closed and open rivals",
-  "entity": "Mistral",
+ "https://www.theverge.com/tech/1006766/google-meta-biohub-investment-virtual-cell": {
+  "headline": "Google invests millions in Mark Zuckerberg’s efforts to create a ‘virtual cell’",
+  "entity": "Google",
   "entity_usable": true,
   "fetched": true,
   "attribution": {
-   "to_subject": 4,
+   "to_subject": 1,
    "to_others": 1,
    "unnamed": 0,
    "spans": {
     "to_subject": [
      {
-      "sentence": "“In the meantime, we’ll work with trusted partners and governments to make sure that the open source weights can be used to defend, but not to [perform] malicious attacks,” Mistral VP Science Pierre Stock told TechCrunch.",
-      "offset": 776
-     },
-     {
-      "sentence": "Another important behind-the-scenes aspect is that ML4 was trained entirely on Mistral’s compute; using only 4,000 Nvidia GPUs “which is two to three times less than our Chinese competitors, and significantly less than the closed source competitors,” Stock said.",
-      "offset": 1199
-     },
-     {
-      "sentence": "With benchmark results still pending, Mistral hopes ML4 will be best in class among open-weight models, especially outside of China, but not only, Stock said.",
-      "offset": 1462
-     },
-     {
-      "sentence": "According to Stock, ML4’s optimized use cases include cybersecurity and finance, but also chip design, which is core to two of Mistral’s main backers — Dutch giant ASML, which led its Series C , and Samsung, which led its Series D last month at a €21 billion valuation (about $24.39 billion).",
-      "offset": 1786
+      "sentence": "Google DeepMind, Meta, and AI drug discovery startup Isomorphic Labs are jointly investing $300 million into an initiative to create a “virtual cell” that researchers can use to combat disease, as reported earlier by Reuters .",
+      "offset": 658
      }
     ],
     "to_others": [
      {
-      "sentence": "At the same time, an open-weight model is easier to audit, Stock said.",
-      "offset": 1128
+      "sentence": "“An accurate predictive model of biology could dramatically accelerate scientific discovery by enabling scientists to perform experiments digitally,” Alex Rives, Biohub’s head of science, says in the press release.",
+      "offset": 1660
      }
     ],
     "unnamed": []
@@ -476,12 +855,12 @@
   "links": {
    "primary": 0,
    "subject_own": 0,
-   "other": 0
+   "other": 3
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 4,
-   "with_named_source": 2
+   "total": 3,
+   "with_named_source": 1
   },
   "source_type": "trade-press",
   "source_tier": 3,
@@ -493,110 +872,41 @@
    "cited_by": []
   }
  },
- "https://www.theverge.com/ai-artificial-intelligence/1004933/ai-math-openai-breakthrough-solution": {
-  "headline": "All the drama around AI’s takeover of mathematics",
+ "https://www.theverge.com/ai-artificial-intelligence/1005726/doordash-ai-agentic-food-delivery-bites": {
+  "headline": "AI could upend food delivery",
   "entity": "",
   "entity_usable": false,
   "fetched": true,
   "attribution": {
    "to_subject": 0,
-   "to_others": 11,
+   "to_others": 18,
    "unnamed": 0,
    "spans": {
     "to_subject": [],
     "to_others": [
      {
-      "sentence": "This past year, OpenAI, Anthropic, and other labs have announced breakthroughs on numerous long-standing mathematical problems, in some cases pushing well beyond what researchers expected current systems to be capable of — including resolving one of the famous Millennium Prize problems.",
-      "offset": 110
+      "sentence": "The form letter, copies of which were seen by The Verge , said that DoorDash had heard from “several partners” that were added to the third-party platform without their knowledge.",
+      "offset": 915
      },
      {
-      "sentence": "And then there’s the daunting task the group has been handed first: helping coordinate the release of scores more results OpenAI says its unreleased model has produced, the prospect of which is already stirring dread among researchers over what this looming tidal wave of breakthroughs could do to th",
-      "offset": 1732
+      "sentence": "Bites, on the other hand, touts simplified delivery and service fees and a flat $1 surcharge per order, which it says allows partners to keep item prices lower.",
+      "offset": 3080
      },
      {
-      "sentence": "On Monday, the company announced a new independent panel of mathematicians tasked with advising it and other AI companies on their interactions with mathematical research and the wider mathematics community, including how new results are presented and released.",
-      "offset": 2368
+      "sentence": "Bites founder and CEO Bala Subramaniam says the company heard from 14 restaurant partners who had received a letter from DoorDash, and a handful of businesses who were not listed on Bites but now — having been made aware of the company — wanted to join.",
+      "offset": 3678
      },
      {
-      "sentence": "Researchers told The Verge the group is a good first step, but many said they were left with basic questions about what it will actually do, how much influence it will have, and whether OpenAI will actually listen to it, as well as concerns over whether such a small group of prominent researchers ca",
-      "offset": 2689
+      "sentence": "(Bites also acknowledges some restaurants did request to be removed from the platform; the company says they were listed on Bites from old demos.) Others got emails despite not being listed at all.",
+      "offset": 3932
      },
      {
-      "sentence": "This week, it claimed one of its biggest prizes yet: a solution to a legendary Millennium Prize problem.",
-      "offset": 3255
+      "sentence": "Before being on Bites, Jayaraman says 80 percent of orders came from DoorDash; now, 65 percent come in through Bites, he estimates, with 25 percent from DoorDash and the remaining sliver from Uber Eats and Grubhub.",
+      "offset": 4266
      },
      {
-      "sentence": "One of the 10 results OpenAI announced with great fanfare last month involved Thom’s area of expertise, so-called non-sofic groups, and OpenAI acknowledged that their result built heavily on previous work by Thom and fellow mathematician Gábor Kun.",
-      "offset": 4828
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 9
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 5,
-   "with_named_source": 2
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://www.theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage": {
-  "headline": "Wikipedia operator says OpenAI’s ‘rogue’ bots may be linked to a May outage",
-  "entity": "OpenAI",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 6,
-   "to_others": 2,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [
-     {
-      "sentence": "Wikipedia operator says OpenAI’s ‘rogue’ bots may be linked to a May outage",
-      "offset": 16
-     },
-     {
-      "sentence": "Following many recent disclosures about AI agents accessing third-party websites and services, the Wikimedia Foundation, which hosts Wikipedia, says that it “can confirm that we have discovered some activity” by “rogue” OpenAI agents on Wikimedia platforms.",
-      "offset": 617
-     },
-     {
-      "sentence": "However, the Wikimedia Foundation says it didn’t find evidence that its systems were “used for coordination among agents” (recently, OpenAI bots reportedly hijacked a German wiki site to coordinate) or evidence of systems or data being compromised.",
-      "offset": 1162
-     },
-     {
-      "sentence": "“We appreciate the detailed findings Wikimedia shared with us,” OpenAI spokesperson Drew Pusateri says in a statement.",
-      "offset": 3069
-     },
-     {
-      "sentence": "“We’re working with them as we review and analyze the activity they identified along with our overall investigation, and we’ll continue to share relevant information as that work progresses.” OpenAI’s investigation hasn’t been able to verify if its bots contributed to the May outage, according to Pu",
-      "offset": 3188
-     },
-     {
-      "sentence": "Update, October 5th : Added statement from OpenAI.",
-      "offset": 3496
-     }
-    ],
-    "to_others": [
-     {
-      "sentence": "The activity includes edits to Wikimedia wikis, “unsuccessful attempts” to “exploit” the Etherpad note-taking tool that the Wikimedia Foundation hosts, and heavy traffic that the foundation says “may” have contributed to a partial outage that happened in May, according to a blog post .",
-      "offset": 875
-     },
-     {
-      "sentence": "“The open web is a public good,” the Wikimedia Foundation says.",
-      "offset": 2892
+      "sentence": "Jayaraman says his margins are higher with Bites orders than with DoorDash orders.",
+      "offset": 4481
      }
     ],
     "unnamed": []
@@ -609,8 +919,8 @@
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 0,
-   "with_named_source": 0
+   "total": 12,
+   "with_named_source": 3
   },
   "source_type": "trade-press",
   "source_tier": 3,
@@ -622,200 +932,46 @@
    "cited_by": []
   }
  },
- "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github": {
-  "headline": "OpenAI drops another batch of mathematical breakthroughs",
+ "https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media": {
+  "headline": "ChatGPT for Teens is an ‘unacceptable risk,’ says Common Sense Media",
   "entity": "OpenAI",
   "entity_usable": true,
   "fetched": true,
   "attribution": {
    "to_subject": 2,
-   "to_others": 4,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [
-     {
-      "sentence": "Solutions to ‘hundreds’ of open questions are said to be included in a batch of manuscripts released by OpenAI.",
-      "offset": 68
-     },
-     {
-      "sentence": "Solutions to ‘hundreds’ of open questions are said to be included in a batch of manuscripts released by OpenAI.",
-      "offset": 180
-     }
-    ],
-    "to_others": [
-     {
-      "sentence": "Previously, he wrote about health, science and tech for Forbes .",
-      "offset": 542
-     },
-     {
-      "sentence": "According to AGMAI, the newly formed independent advisory group of elite mathematicians put together to work on communicating the results responsibly, the release includes solutions to “hundreds” of open questions.",
-      "offset": 992
-     },
-     {
-      "sentence": "In September, the company said its model had “resolved more than 100 long-standing open problems across most areas of mathematics.” The released papers and other details also include some summaries of the model’s reasoning, estimates of the compute used, and stats about the number of problems attemp",
-      "offset": 1383
-     },
-     {
-      "sentence": "The group also implored AI companies to “refrain from treating the release of mathematical results as marketing vehicles to promote their models,” a practice they said inflicts significant harm on the mathematical community.",
-      "offset": 2114
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 2,
-   "other": 2
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 2,
-   "with_named_source": 1
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [
-    {
-     "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
-     "name": "openai.com",
-     "tier": 5,
-     "entity": "OpenAI",
-     "headline": "Sharing AI progress in mathematics"
-    }
-   ],
-   "cited_by": []
-  }
- },
- "https://www.theverge.com/column/1005697/we-cant-just-change-the-definition-of-recording": {
-  "headline": "We can’t just change the definition of ‘recording’",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
    "to_others": 5,
-   "unnamed": 1,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "Last week, Bloomberg ’s Mark Gurman reported that Apple is working on a smart home camera that doesn’t save video recordings .",
-      "offset": 1381
-     },
-     {
-      "sentence": "This tech, Gurman says, is similar to how the cameras in rumored future AirPods will also work.",
-      "offset": 1736
-     },
-     {
-      "sentence": "Apple says these features don’t save any audio.",
-      "offset": 2939
-     },
-     {
-      "sentence": "Sandeep Waraich, Google’s senior director of wearables, told The Verge in a conversation that Google is also mulling this concept.",
-      "offset": 3246
-     },
-     {
-      "sentence": "It might seem silly to argue semantics, but multiple concepts are being tested here.",
-      "offset": 4031
-     }
-    ],
-    "unnamed": [
-     {
-      "sentence": "Apple doesn’t comment on rumors, but based on how it’s publicly communicated its Audio Intelligence privacy philosophy , I’d argue the company doesn’t think so.",
-      "offset": 2778
-     }
-    ]
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 4
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 3,
-   "with_named_source": 0
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://www.theverge.com/ai-artificial-intelligence/1005451/google-gemini-free-flash-lite-only": {
-  "headline": "Google is about to remove free access to Gemini Flash and Pro",
-  "entity": "Google",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 2,
-   "to_others": 0,
    "unnamed": 0,
    "spans": {
     "to_subject": [
      {
-      "sentence": "Google says AI Plus subscribers will receive an email letting them know when they’ll lose access to it.",
-      "offset": 858
+      "sentence": "Common Sense Media, a nonprofit that offers reviews of apps, services, and entertainment with a focus on youth safety, today said that OpenAI’s ChatGPT for Teens is an “unacceptable risk.”",
+      "offset": 510
      },
      {
-      "sentence": "Google says users will still be able to choose from low, medium, and high effort levels for each model, but using higher effort levels could burn through your Gemini usage limit faster.",
-      "offset": 1193
-     }
-    ],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 1,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 3,
-   "with_named_source": 0
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://www.theverge.com/tech/1005342/amazon-alexa-plus-keeps-creepily-singing-lalala-for-minutes-on-end": {
-  "headline": "Amazon Alexa Plus keeps creepily singing ‘lalala’ for minutes on end",
-  "entity": "Amazon",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 1,
-   "to_others": 1,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [
-     {
-      "sentence": "Amazon is aware of the issue, and told Android Authority in a statement that it’s a bug affecting “a small number of Alexa Plus” users, with a fix in the works.",
-      "offset": 967
+      "sentence": "Before we began testing, we confirmed with OpenAI that Teen mode features such as eating disorder notifications and study mode were fully launched.",
+      "offset": 2657
      }
     ],
     "to_others": [
      {
-      "sentence": "The issue has been reported on Reddit repeatedly over the last few weeks, as recently as three days ago , across multiple types of Echo speaker.",
-      "offset": 695
+      "sentence": "ChatGPT for Teens is an ‘unacceptable risk,’ says Common Sense Media",
+      "offset": 16
+     },
+     {
+      "sentence": "ChatGPT’s teen-focused experience ‘doesn’t send alerts to parents when it should,’ according to an assessment.﻿",
+      "offset": 85
+     },
+     {
+      "sentence": "ChatGPT’s teen-focused experience ‘doesn’t send alerts to parents when it should,’ according to an assessment.﻿",
+      "offset": 197
+     },
+     {
+      "sentence": "ChatGPT for Teens, introduced in August , has guardrails for teens and is designed to help students learn, but Common Sense Media says that the teen protections offered by the feature “fall short of what the company promised.” Common Sense Media’s assessment found that ChatGPT “doesn’t send alerts t",
+      "offset": 699
+     },
+     {
+      "sentence": "“ChatGPT for Teens could give parents false confidence in guardrails and safety alerts that frequently don’t work,” Tom Siegel, the executive director of Common Sense Media’s Youth AI Safety Institute, says in a statement.",
+      "offset": 1143
      }
     ],
     "unnamed": []
@@ -825,151 +981,6 @@
    "primary": 0,
    "subject_own": 0,
    "other": 2
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 0,
-   "with_named_source": 0
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://www.theverge.com/ai-artificial-intelligence/1005177/google-gemini-call-for-me-expansion-rumors": {
-  "headline": "Gemini Call for Me might tell your mom you’re running late",
-  "entity": "Google DeepMind",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 1,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "Android Authority also says it found “granular permissions” for Gemini actions in individual apps, including what appear to be settings for phone call permissions.",
-      "offset": 1152
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 1
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 1,
-   "with_named_source": 0
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions": {
-  "headline": "This startup is issuing AI-generated acne prescriptions",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 4,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "On Monday, healthcare startup Nolla Health announced that users in the state can scan their faces using its app, allowing its AI system to analyze acne severity and autonomously write a prescription, as reported earlier by Bloomberg .",
-      "offset": 591
-     },
-     {
-      "sentence": "“After that, physicians review a sample of at least 10% of prescriptions every month, plus every case involving an escalation or side effect,” Nolla Health says .",
-      "offset": 1109
-     },
-     {
-      "sentence": "But Nolla Health says it’s the first in the country to issue initial prescriptions, rather than renewals.",
-      "offset": 1449
-     },
-     {
-      "sentence": "Nolla Health says it will direct users to a physician if its AI system cannot “confidently select a treatment.” The startup’s AI can currently prescribe eight different skin treatments, according to Bloomberg .",
-      "offset": 1912
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 6
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 3,
-   "with_named_source": 1
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://www.theverge.com/ai-artificial-intelligence/1004880/openai-chatgpt-text-watermarks-eu-ai-act": {
-  "headline": "OpenAI is adding text watermarking in ChatGPT and Codex",
-  "entity": "OpenAI",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 3,
-   "to_others": 1,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [
-     {
-      "sentence": "﻿It’s launching textGrain watermarking in the EU, but OpenAI says it won’t be the ‘global default’ yet.",
-      "offset": 72
-     },
-     {
-      "sentence": "﻿It’s launching textGrain watermarking in the EU, but OpenAI says it won’t be the ‘global default’ yet.",
-      "offset": 176
-     },
-     {
-      "sentence": "OpenAI says its textGrain watermarking “matched or exceeded” other approaches like Google DeepMind’s SynthID for text, which is also the basis for the watermarking Anthropic announced in August .",
-      "offset": 652
-     }
-    ],
-    "to_others": [
-     {
-      "sentence": "But it notes that textGrain “does not guarantee reliable detection,” and says text watermarks don’t verify accuracy, determine who owns the text, measure how much a human contributed, or prove human authorship.",
-      "offset": 1108
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 1,
-   "other": 0
   },
   "primary_link_examples": [],
   "figures": {
@@ -1047,73 +1058,47 @@
    "cited_by": []
   }
  },
- "https://arstechnica.com/ai/2026/09/openai-delays-ipo-over-ai-safety-concerns/": {
-  "headline": "OpenAI delays IPO over AI safety concerns",
-  "entity": "OpenAI",
+ "https://arstechnica.com/gadgets/2026/10/microsoft-event-debuts-new-ai-friendly-hardware-and-windows-changes/": {
+  "headline": "Microsoft event debuts new AI-friendly hardware and Windows changes",
+  "entity": "Microsoft",
   "entity_usable": true,
   "fetched": true,
   "attribution": {
-   "to_subject": 7,
-   "to_others": 2,
-   "unnamed": 2,
+   "to_subject": 4,
+   "to_others": 0,
+   "unnamed": 0,
    "spans": {
     "to_subject": [
      {
-      "sentence": "OpenAI will not go public until it can “make confident safety decisions,” according to chief executive Sam Altman, as the company faces a new lawsuit over its tools hacking a third party.",
+      "sentence": "In its first live event in two years, Microsoft today announced its newest Surface laptop, outlined a host of changes coming to Windows 11, and shared a vision of how local-AI and agentic workflows could reshape personal computing for those in the dev community as well as home enthusiasts.",
       "offset": 187
      },
      {
-      "sentence": "Altman said it was “bad for the world if OpenAI waits too long to go public” but that the $852 billion start-up would not “barrel all guns blazing towards an IPO” at a time when AI was rapidly advancing in capabilities.",
-      "offset": 375
+      "sentence": "According to Microsoft’s provided press materials, the venting on the RTX Spark Dev box has 1,000 chassis air vents as a nod to the 1,000 teraflops of AI performance.",
+      "offset": 2455
      },
      {
-      "sentence": "“We’re going to prioritize the mission and safety and making sure that we can very confidently scale to the next stage of AI without people debating what percentage chance we’re going to do all these bad things in the world,” Altman told reporters at the company’s annual developer day on Tuesday.",
-      "offset": 595
+      "sentence": "For those who might still feel a little trepidation about turning over their entire digital lives and files to AI bots, Microsoft announced the availability of Microsoft Execution Containers (MXC), a security framework designed to keep agent activities confined to a sandbox.",
+      "offset": 4240
      },
      {
-      "sentence": "The group said their suit against OpenAI was the first of its kind, as analysts warn the start-up could face a wave of novel legal claims.",
-      "offset": 2092
-     },
-     {
-      "sentence": "“We definitely feel we need new regulations and laws, but at the same time it’s currently illegal to hack a third-party system, it’s a crime… I suspect OpenAI are very aware of the legal risks of what their agents are doing,” Dong added.",
-      "offset": 2431
-     },
-     {
-      "sentence": "OpenAI’s Dots could be used by influencers to draft social media posts or by scientists to evaluate evidence launch, said OpenAI, which aims to capitalize on the huge commercial opportunity of providing personal intelligence to customers.",
-      "offset": 3288
+      "sentence": "Microsoft is betting big on local AI with the changes announced today, but questions about security and user acceptance still remain, especially in light of their past missteps and other recent AI agent mishaps .",
+      "offset": 5923
      }
     ],
-    "to_others": [
-     {
-      "sentence": "“Given what we see in terms of progress and development [in AI], the frequency and sophistication of these hacking instances are only going to increase,” said Vivian Dong, programs director at LASST.",
-      "offset": 2231
-     },
-     {
-      "sentence": "The $30 billion target was first reported by Bloomberg.",
-      "offset": 2919
-     }
-    ],
-    "unnamed": [
-     {
-      "sentence": "The company is seeking to raise $30 billion or more at a valuation of about $1.4 trillion, according to people familiar with the matter.",
-      "offset": 2782
-     },
-     {
-      "sentence": "The start-up’s annualized revenue has grown more than 70 percent since July, when it released GPT-5.6, and is now about $70 billion, according to a person with knowledge of the group’s finances.",
-      "offset": 3527
-     }
-    ]
+    "to_others": [],
+    "unnamed": []
    }
   },
   "links": {
    "primary": 0,
-   "subject_own": 0,
-   "other": 1
+   "subject_own": 2,
+   "other": 9
   },
   "primary_link_examples": [],
   "figures": {
    "total": 7,
-   "with_named_source": 4
+   "with_named_source": 2
   },
   "source_type": "trade-press",
   "source_tier": 3,
@@ -1125,25 +1110,164 @@
    "cited_by": []
   }
  },
- "https://arstechnica.com/ai/2026/09/amd-acquires-world-labs-ai-pioneer-fei-fei-lis-world-models-startup/": {
-  "headline": "AMD acquires World Labs AI startup, upping the ante against Nvidia",
-  "entity": "Nvidia",
-  "entity_usable": true,
+ "https://arstechnica.com/ai/2026/10/software-is-over-bold-ai-developer-takes-aim-at-adobe-with-open-source-clones/": {
+  "headline": "“Software is over”: Bold AI developer takes aim at Adobe with open source clones",
+  "entity": "",
+  "entity_usable": false,
   "fetched": true,
   "attribution": {
    "to_subject": 0,
-   "to_others": 2,
+   "to_others": 3,
+   "unnamed": 3,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "This revenue stream will help ensure these apps aren’t “going to be some orphaned small-team project,” Thomas wrote.",
+      "offset": 2473
+     },
+     {
+      "sentence": "Nothing is stopping you,” Thomas wrote.",
+      "offset": 3656
+     },
+     {
+      "sentence": "He once wrote a whole book about Minesweeper .",
+      "offset": 4278
+     }
+    ],
+    "unnamed": [
+     {
+      "sentence": "In announcing those new apps on Reddit earlier this week, software developer Brandon Thomas said he used Anthropic’s Claude Opus 5.5 to create “clean-room replacements” for Adobe’s closed source software in Rust (with WebAssembly versions available for use in a browser).",
+      "offset": 972
+     },
+     {
+      "sentence": "Thomas, who says he has about a decade of experience working on large-scale Rust projects, wrote on Hacker News that he was inspired to create his own open source Adobe software alternatives after being “bit by the dark pattern ‘cancellation fee’ one too many times.” Development of the totally free ",
+      "offset": 1915
+     },
+     {
+      "sentence": "After coding exclusively with AI tools since February, Thomas said he foresees a near future when everyday developers can re-create open source versions of popular paid software to “take back the internet and own tech forever.”",
+      "offset": 3316
+     }
+    ]
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 19
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 3,
+   "with_named_source": 0
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://arstechnica.com/tech-policy/2026/10/outstreaming-taylor-swift-is-easy-with-10k-bots-and-ai-songs-fraudster-admits/": {
+  "headline": "Fraudster jailed for using 10K bots and AI songs to outstream Taylor Swift",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 7,
    "unnamed": 0,
    "spans": {
     "to_subject": [],
     "to_others": [
      {
-      "sentence": "Chipmaker AMD and world models company World Labs announced that AMD will acquire the AI company by the end of the year, pending regulatory approval.",
-      "offset": 187
+      "sentence": "In a press release Tuesday, the US Department of Justice said that Smith is the first American criminally charged with AI-assisted streaming fraud.",
+      "offset": 413
      },
      {
-      "sentence": "According to World Labs’ announcement of the deal, Fei-Fei Li will become Executive Vice President and Chief Scientist at AMD, while “Justin Johnson and Ben Mildenhall will work with Fei-Fei to continue leading the World Labs team as it joins AMD to form a world-leading frontier research organizatio",
-      "offset": 1857
+      "sentence": "Starting in 2017, Smith began using fake email accounts and “fraudulently obtained debit cards” to create “thousands of fraudulent accounts” on services including Amazon Music, Apple Music, Spotify, and YouTube Music, the DOJ said.",
+      "offset": 653
+     },
+     {
+      "sentence": "He then employed software that pushed the bots to continuously stream songs that he claimed to own, which the DOJ said were AI-generated.",
+      "offset": 885
+     },
+     {
+      "sentence": "According to the DOJ, in a glaring example from April 2023, Smith’s fake songs were fraudulently streamed 80.9 million times during that month, while Taylor Swift’s entire catalog only got 9.3 million streams during the same time period.",
+      "offset": 1375
+     },
+     {
+      "sentence": "Smith’s streaming fraud didn’t just hurt platforms but genuine artists who share royalty pools on streaming services, the DOJ claimed.",
+      "offset": 1643
+     },
+     {
+      "sentence": "Therefore, on top of serving 18 months in prison, he must forfeit the $8,091,843.64 that he claimed through his AI scheme, the court ruled.",
+      "offset": 1847
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 5,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [
+   "https://www.justice.gov/usao-sdny/pr/north-carolina-man-sentenced-18-months-prison-super-intelligence-assisted-music",
+   "https://www.justice.gov/usao-sdny/pr/north-carolina-musician-charged-music-streaming-fraud-aided-artificial-intelligence",
+   "https://storage.courtlistener.com/recap/gov.uscourts.nysd.627522/gov.uscourts.nysd.627522.62.0.pdf",
+   "https://storage.courtlistener.com/recap/gov.uscourts.nysd.627522/gov.uscourts.nysd.627522.57.0.pdf"
+  ],
+  "figures": {
+   "total": 6,
+   "with_named_source": 2
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models/": {
+  "headline": "Mistral says \"Le Chonk\" can challenge the best AI models",
+  "entity": "Mistral",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 3,
+   "to_others": 2,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "By reducing the performance gap on leading proprietary models and providing a competitive alternative to releases from China, Mistral says, Le Chonk will eliminate the few remaining reasons a business might hesitate to choose open source.",
+      "offset": 1571
+     },
+     {
+      "sentence": "“Mistral is still in the race of getting the best model,” Lample says.",
+      "offset": 1810
+     },
+     {
+      "sentence": "“The continental strategy of the EU to become more technologically sovereign … and the increased hostility of the US is a magic formula that all of a sudden puts Mistral—whose performance has not been spectacular—in a favorable position,” Andrea Renda, director of research at the Centre for European",
+      "offset": 3726
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "By relying on a proprietary model to help repel cyber threats, Lample says, a business risks the sudden collapse of its defenses.",
+      "offset": 4287
+     },
+     {
+      "sentence": "But what really matters is to own the model—even for US companies,” says Lample.",
+      "offset": 4504
      }
     ],
     "unnamed": []
@@ -1152,12 +1276,68 @@
   "links": {
    "primary": 0,
    "subject_own": 0,
-   "other": 4
+   "other": 10
   },
   "primary_link_examples": [],
   "figures": {
    "total": 2,
    "with_named_source": 0
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://arstechnica.com/ai/2026/10/google-rolls-out-improved-synthid-ai-content-detector-now-available-globally/": {
+  "headline": "Google rolls out improved SynthID AI content detector, now available globally",
+  "entity": "Google",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 5,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "Google has announced that its SynthID detector now supports watermarks from all its partners, and it’s available for anyone to use on a new dedicated website.",
+      "offset": 538
+     },
+     {
+      "sentence": "Google says Gemini alone has integrated SynthID with over 180 billion images and videos, plus 240,000 years of audio.",
+      "offset": 818
+     },
+     {
+      "sentence": "Google says that its expanded version of the detector will support the distinct watermarks from all its SynthID partners, including OpenAI, Nvidia, Kakao, and (soon) Apple.",
+      "offset": 1557
+     },
+     {
+      "sentence": "Google says each user gets “a daily usage quota of approximately 10 image, video, and audio checks.”",
+      "offset": 2583
+     },
+     {
+      "sentence": "Google engineers have told Ars that limiting access is necessary to prevent people from using the checks to develop SynthID removal tools.",
+      "offset": 2734
+     }
+    ],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 1,
+   "other": 3
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 2,
+   "with_named_source": 2
   },
   "source_type": "trade-press",
   "source_tier": 3,
@@ -1347,59 +1527,50 @@
    "cited_by": []
   }
  },
- "https://arstechnica.com/apple/2026/10/command-line-tool-quickly-removes-apple-intelligence-from-macos-27/": {
-  "headline": "Command-line tool quickly removes Apple Intelligence from macOS 27",
-  "entity": "Apple",
+ "https://www.rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai/": {
+  "headline": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
+  "entity": "Meta",
   "entity_usable": true,
   "fetched": true,
   "attribution": {
    "to_subject": 2,
-   "to_others": 3,
-   "unnamed": 1,
+   "to_others": 2,
+   "unnamed": 0,
    "spans": {
     "to_subject": [
      {
-      "sentence": "They said that Apple’s Intelligence models take up “about 12GB,” but the models can actually take up over 30GB, The Verge noted.",
-      "offset": 969
+      "sentence": "Meta and Microsoft have commenced a significant reduction in employee utilization of Anthropic’s Claude AI as they pivot towards their own proprietary coding instruments, as reported on October 5 by The Information.",
+      "offset": 0
      },
      {
-      "sentence": "The dev also said you can remove only the Apple Intelligence features you don’t want and keep the others.",
-      "offset": 1834
+      "sentence": "MetaCode is said to have more than 30,000 internal users, while Muse Code boasts over 6,000 employee users.",
+      "offset": 2246
      }
     ],
     "to_others": [
      {
-      "sentence": "Dictation still works because it’s a separate setting,” the developer said in a Reddit post first spotted by MacRumors .",
-      "offset": 1287
+      "sentence": "However, this estimate has diminished by over a third subsequent to management’s directive for employees to curtail their use of Claude and to increasingly adopt Microsoft tools, such as GitHub Copilot and OpenAI frameworks.",
+      "offset": 939
      },
      {
-      "sentence": "Some users on Reddit have reported that the tool works, and it has 1,700 stars on GitHub as of this writing.",
-      "offset": 1940
-     },
-     {
-      "sentence": "Looks like we’ve gotten to the point on macOS too, where you need to run third-party scripts on a new OS installation to gain back control of your system resources and remove unwanted crapware,” a Hacker News user wrote in response to RemoveMacAI.",
-      "offset": 2369
+      "sentence": "Anthropic’s reported annualized revenue pace of $65 billion reflects unabated demand for its services.",
+      "offset": 3404
      }
     ],
-    "unnamed": [
-     {
-      "sentence": "On Reddit, RemoveMacAI’s developer said the tool is open source and further explained how it works:",
-      "offset": 1438
-     }
-    ]
+    "unnamed": []
    }
   },
   "links": {
    "primary": 0,
-   "subject_own": 1,
-   "other": 7
+   "subject_own": 0,
+   "other": 12
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 4,
-   "with_named_source": 1
+   "total": 6,
+   "with_named_source": 2
   },
-  "source_type": "trade-press",
+  "source_type": "other",
   "source_tier": 3,
   "claim_tier": null,
   "claim_relationship": "unresolved",
@@ -1409,41 +1580,21 @@
    "cited_by": []
   }
  },
- "https://arstechnica.com/ai/2026/10/ai-glasses-face-their-first-major-government-crackdown/": {
-  "headline": "AI glasses face their first major government crackdown",
+ "https://agent.reviews/": {
+  "headline": "Show HN: Agent.reviews – Where AI agents read and write reviews on tools",
   "entity": "",
   "entity_usable": false,
   "fetched": true,
   "attribution": {
    "to_subject": 0,
-   "to_others": 8,
+   "to_others": 1,
    "unnamed": 0,
    "spans": {
     "to_subject": [],
     "to_others": [
      {
-      "sentence": "The rich Scandinavian country’s center-left government said on Monday that it would introduce a law to parliament soon on a temporary ban for places such as parks, beaches, schools, and kindergartens.",
-      "offset": 363
-     },
-     {
-      "sentence": "“I am concerned about the introduction of powerful new technology where people risk being photographed, filmed, or recorded without their knowledge,” said Torgeir Micaelsen, Norway’s digitalization minister.",
-      "offset": 637
-     },
-     {
-      "sentence": "A temporary ban “will give us time to conduct a thorough assessment and hold an informed debate that can lay the foundation for permanent regulation,” he said.",
-      "offset": 845
-     },
-     {
-      "sentence": "Norway’s government said it did not want to propose a total ban.",
-      "offset": 1727
-     },
-     {
-      "sentence": "It said that appropriate use could be where there was no risk of filming people without their consent.",
-      "offset": 1792
-     },
-     {
-      "sentence": "It added that the proposed ban was a “high priority” and that a draft law would soon be presented to parliament.",
-      "offset": 1895
+      "sentence": "Other agent Amazon DynamoDB 4.3 (398 reviews ) Added an org-scoped user profile table design for language persistence behind a profile endpoint.",
+      "offset": 2561
      }
     ],
     "unnamed": []
@@ -1452,14 +1603,14 @@
   "links": {
    "primary": 0,
    "subject_own": 0,
-   "other": 1
+   "other": 0
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 1,
+   "total": 13,
    "with_named_source": 1
   },
-  "source_type": "trade-press",
+  "source_type": "other",
   "source_tier": 3,
   "claim_tier": null,
   "claim_relationship": "unresolved",
@@ -1469,147 +1620,10 @@
    "cited_by": []
   }
  },
- "https://arstechnica.com/security/2026/10/apple-changes-full-disk-access-permissions-to-curb-abuse-from-ai-agents/": {
-  "headline": "Apple changes full-disk access permissions to curb abuse from AI agents",
-  "entity": "Apple",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 2,
-   "to_others": 5,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [
-     {
-      "sentence": "Apple says it is changing its macOS privacy settings to stop third-party app developers from misusing them to access message histories.",
-      "offset": 187
-     },
-     {
-      "sentence": "Friday’s announcement comes two weeks after tech columnist Jason Aten said that Meta’s new general-purpose AI agent Muse sent him an unsolicited notification referencing a thread between him and a co-worker over Apple Messages.",
-      "offset": 323
-     }
-    ],
-    "to_others": [
-     {
-      "sentence": "Aten said he never granted Muse permissions to read his messages and had assumed they were off-limits.",
-      "offset": 551
-     },
-     {
-      "sentence": "Social media last week blew up with masses of people who agreed and said the incident showed that AI assistants given access to calendars, emails, messages, shopping accounts, and other resources are akin to a skill saw or other power tool.",
-      "offset": 654
-     },
-     {
-      "sentence": "“The Messages integration in the Muse Mac app is opt in,” Singleton said.",
-      "offset": 1262
-     },
-     {
-      "sentence": "In explaining why it was going to make changes to the FDA permission setting, the company wrote:",
-      "offset": 2385
-     },
-     {
-      "sentence": "It also comes after Amazon blocked Muse from its platform because, Amazon said, all such apps “should operate openly and respect service provider decisions about whether or not to participate.”",
-      "offset": 4039
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 1,
-   "other": 4
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 1,
-   "with_named_source": 0
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/": {
-  "headline": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
-  "entity": "Google DeepMind",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 0,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 4,
-   "other": 19
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 17,
-   "with_named_source": 0
-  },
-  "source_type": "vendor-own",
-  "source_tier": 5,
-  "claim_tier": 5,
-  "claim_relationship": "publisher-is-subject",
-  "tier_basis": "publisher is the subject (Google DeepMind)",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/": {
-  "headline": "Gemini 4 Argon: our next era of frontier intelligence",
-  "entity": "Google DeepMind",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 0,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 1,
-   "subject_own": 0,
-   "other": 10
-  },
-  "primary_link_examples": [
-   "https://arxiv.org/abs/2601.11516"
-  ],
-  "figures": {
-   "total": 12,
-   "with_named_source": 0
-  },
-  "source_type": "vendor-own",
-  "source_tier": 5,
-  "claim_tier": 5,
-  "claim_relationship": "publisher-is-subject",
-  "tier_basis": "publisher is the subject (Google DeepMind)",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://deepmind.google/blog/introducing-synthid-bio/": {
-  "headline": "Introducing SynthID Bio",
-  "entity": "Google DeepMind",
-  "entity_usable": true,
+ "https://github.com/Queuingtheorydotcom/11SquaresFormalized": {
+  "headline": "AI-assisted proof of optimal packing for 11 squares",
+  "entity": "",
+  "entity_usable": false,
   "fetched": true,
   "attribution": {
    "to_subject": 0,
@@ -1625,187 +1639,39 @@
    "primary": 0,
    "subject_own": 0,
    "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 0,
-   "with_named_source": 0
-  },
-  "source_type": "vendor-own",
-  "source_tier": 5,
-  "claim_tier": 5,
-  "claim_relationship": "publisher-is-subject",
-  "tier_basis": "publisher is the subject (Google DeepMind)",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/": {
-  "headline": "Introducing Gemini 3.8 Live with Live Avatar",
-  "entity": "Google DeepMind",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 0,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 3,
-   "other": 4
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 2,
-   "with_named_source": 0
-  },
-  "source_type": "vendor-own",
-  "source_tier": 5,
-  "claim_tier": 5,
-  "claim_relationship": "publisher-is-subject",
-  "tier_basis": "publisher is the subject (Google DeepMind)",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/": {
-  "headline": "Advancing Private AI Compute with secure, server-side memory",
-  "entity": "Google DeepMind",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 0,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 53,
-   "with_named_source": 0
-  },
-  "source_type": "vendor-own",
-  "source_tier": 5,
-  "claim_tier": 5,
-  "claim_relationship": "publisher-is-subject",
-  "tier_basis": "publisher is the subject (Google DeepMind)",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/": {
-  "headline": "Gemini 3.8 text-to-speech says hello",
-  "entity": "Google DeepMind",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 3,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "Gemini 3.8 text-to-speech says hello",
-      "offset": 0
-     },
-     {
-      "sentence": "Check out \"Gemini 3.8 text-to-speech says hello\" to see how our new models work.",
-      "offset": 696
-     },
-     {
-      "sentence": "Plus, they added safety features to make sure these voices are used responsibly.",
-      "offset": 1532
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 6,
-   "other": 13
   },
   "primary_link_examples": [],
   "figures": {
    "total": 9,
    "with_named_source": 0
   },
-  "source_type": "vendor-own",
-  "source_tier": 5,
-  "claim_tier": 5,
-  "claim_relationship": "publisher-is-subject",
-  "tier_basis": "publisher is the subject (Google DeepMind)",
+  "source_type": "other",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
   "chain": {
    "cites": [],
    "cited_by": []
   }
  },
- "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/": {
-  "headline": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
-  "entity": "Google DeepMind",
-  "entity_usable": true,
+ "https://www.sicpers.info/2026/10/reasons-to-dislike-ai-coding/": {
+  "headline": "Reasons to Dislike AI Coding",
+  "entity": "",
+  "entity_usable": false,
   "fetched": true,
   "attribution": {
    "to_subject": 0,
-   "to_others": 0,
+   "to_others": 1,
    "unnamed": 0,
    "spans": {
     "to_subject": [],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 4,
-   "other": 13
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 8,
-   "with_named_source": 0
-  },
-  "source_type": "vendor-own",
-  "source_tier": 5,
-  "claim_tier": 5,
-  "claim_relationship": "publisher-is-subject",
-  "tier_basis": "publisher is the subject (Google DeepMind)",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/": {
-  "headline": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
-  "entity": "Google DeepMind",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 0,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [],
+    "to_others": [
+     {
+      "sentence": "And, as I said in the linked post, demand only increases as application becomes more efficient.",
+      "offset": 1778
+     }
+    ],
     "unnamed": []
    }
   },
@@ -1819,11 +1685,118 @@
    "total": 0,
    "with_named_source": 0
   },
-  "source_type": "vendor-own",
-  "source_tier": 5,
-  "claim_tier": 5,
-  "claim_relationship": "publisher-is-subject",
-  "tier_basis": "publisher is the subject (Google DeepMind)",
+  "source_type": "other",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://tech.criteo.com/blog/human-skills-ai-cant-develop-junior-engineers/": {
+  "headline": "Forever junior: Skills AI can't develop for you",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 13,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "For years, we’ve been told software engineers are six months from extinction.",
+      "offset": 254
+     },
+     {
+      "sentence": "My experience says it’s the latter.",
+      "offset": 409
+     },
+     {
+      "sentence": "Now we’re told not to code directly if we can help it.",
+      "offset": 1184
+     },
+     {
+      "sentence": "On my team, the Seniors are the ones who can defend code they’ve shipped, argue a design choice instead of just having one, tell when an agent is heading the wrong way, know when to delegate and when to just do it themselves — and take the time to teach the rest of us.",
+      "offset": 2113
+     },
+     {
+      "sentence": "So the focus of this article isn’t really about the skills I wrote.",
+      "offset": 2949
+     },
+     {
+      "sentence": "They can argue their design choices.",
+      "offset": 4731
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 2,
+   "with_named_source": 0
+  },
+  "source_type": "other",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://github.com/nano-muse/nanoMuse": {
+  "headline": "Show HN: NanoMuse – An open-source AI agent for your phone and computer",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 1,
+   "unnamed": 1,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "A provider without picture or video models leaves those two off, and the app says so.",
+      "offset": 3352
+     }
+    ],
+    "unnamed": [
+     {
+      "sentence": "Use it for a real task, report what broke, then pick something focused: CONTRIBUTING.md has the setup and the conventions, AGENTS.md the rules a coding agent follows in this tree, and the roadmap says where to start.",
+      "offset": 5098
+     }
+    ]
+   }
+  },
+  "links": {
+   "primary": 1,
+   "subject_own": 0,
+   "other": 13
+  },
+  "primary_link_examples": [
+   "https://arxiv.org/abs/2610.08699"
+  ],
+  "figures": {
+   "total": 5,
+   "with_named_source": 0
+  },
+  "source_type": "other",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
   "chain": {
    "cites": [],
    "cited_by": []
@@ -1896,15 +1869,7 @@
   "tier_basis": "publisher is the subject (OpenAI)",
   "chain": {
    "cites": [],
-   "cited_by": [
-    {
-     "url": "https://theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github",
-     "name": "theverge.com",
-     "tier": 3,
-     "entity": "OpenAI",
-     "headline": "OpenAI drops another batch of mathematical breakthroughs"
-    }
-   ]
+   "cited_by": []
   }
  },
  "https://penguin-mail.com/": {
@@ -1930,268 +1895,6 @@
   "primary_link_examples": [],
   "figures": {
    "total": 0,
-   "with_named_source": 0
-  },
-  "source_type": "other",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://www.techspot.com/news/114111-utah-become-first-state-ai-examine-patients-prescribe.html": {
-  "headline": "Utah to let AI examine patients and prescribe medication without human oversight",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 1,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "In the case of Nolla Health, CEO Luis Wenus said the adverse effects of the eight approved medications are limited to localized skin irritation or dryness.",
-      "offset": 2551
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 2
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 5,
-   "with_named_source": 0
-  },
-  "source_type": "other",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://github.com/FeSens/openTPU": {
-  "headline": "OpenTPU – An open-source AI accelerator, developed by AI",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 0,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 56,
-   "with_named_source": 0
-  },
-  "source_type": "other",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://www.erdosproblems.com/forum/thread/blog:9": {
-  "headline": "Erdosproblems.com Succumbs to the AI Onslaught",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 5,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "The biggest change came in August 2025 when I added a comment feature.",
-      "offset": 3240
-     },
-     {
-      "sentence": "I would like to use the small amount of influence I have to avoid promoting low quality proofs, and not to give an added veneer of legitimacy where it is not deserved.",
-      "offset": 9869
-     },
-     {
-      "sentence": "Argue, laugh, give up, drink some coffee, and attack it again.",
-      "offset": 17372
-     },
-     {
-      "sentence": "That said, despite being a nobody in the mathematical community, I felt the need to opine; the first two changes are very disappointing to see.",
-      "offset": 17812
-     },
-     {
-      "sentence": "The first change is more understandable, yet even more disappointing; Thomas seems to be following in the footsteps of arXiv in an attempt to reduce the amount of slop and the visibility of said slop.",
-      "offset": 18992
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 29,
-   "with_named_source": 0
-  },
-  "source_type": "other",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x": {
-  "headline": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
-  "entity": "Anthropic",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 5,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "New providers, plans, and models will be added as soon as they’re released.",
-      "offset": 2836
-     },
-     {
-      "sentence": "Input: Fresh tokens added to the LLM’s context window that aren’t cached",
-      "offset": 3167
-     },
-     {
-      "sentence": "For the agentic workload, we use our own usage ratios in September as reported in our Tokenomics Model .",
-      "offset": 8401
-     },
-     {
-      "sentence": "You could argue that this is unfair for OAI because 6.1 Sol is much cheaper per token than Opus 5.5, but the gap is still massive even if you switch to comparing the number of tokens.",
-      "offset": 10694
-     },
-     {
-      "sentence": "Our tracking confirmed the 50% value reduction for OpenAI’s $200 plan announced by Tibo .",
-      "offset": 11596
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 41
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 36,
-   "with_named_source": 2
-  },
-  "source_type": "tool-vendor",
-  "source_tier": 4,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://edworkingpapers.com/ai26-1551": {
-  "headline": "AI tutoring with Khanmigo in a two-year school experiment",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 0,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 4,
-   "with_named_source": 0
-  },
-  "source_type": "other",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://www.coryd.dev/posts/2026/ai-companies-are-parasites": {
-  "headline": "AI Companies Are Parasites",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 1,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "Train models on said stolen data.",
-      "offset": 458
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 1,
    "with_named_source": 0
   },
   "source_type": "other",
@@ -2681,6 +2384,41 @@
    "cited_by": []
   }
  },
+ "https://ainowinstitute.org/news/announcement/ai-nows-aashna-agarwal-testifies-before-nyc-council-committee-of-the-whole": {
+  "headline": "AI Now’s Aashna Agarwal Testifies before NYC Council Committee of the Whole",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 0,
+   "with_named_source": 0
+  },
+  "source_type": "independent",
+  "source_tier": 2,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
  "https://ainowinstitute.org/news/press/how-the-bad-science-of-ai-doomerism-is-good-for-big-business": {
   "headline": "How the bad science of AI doomerism is good for big business",
   "entity": "",
@@ -3020,46 +2758,6 @@
    "cited_by": []
   }
  },
- "https://ainowinstitute.org/news/press/how-existential-fears-are-shaping-the-debate-over-ai": {
-  "headline": "How Existential Fears Are Shaping the Debate Over AI",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 1,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "“Before getting to ‘the world is going to end,’ we need to be breaking down, what are the mechanisms through which we envision that happening?” said Sarah Myers West, co-executive director of the AI Now Institute, a policy research organization.",
-      "offset": 147
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 0,
-   "with_named_source": 0
-  },
-  "source_type": "independent",
-  "source_tier": 2,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
  "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/": {
   "headline": "From CUDA to MLX: How K-Search Brings Decades of Kernel Expertise to Apple Silicon",
   "entity": "Apple",
@@ -3213,6 +2911,131 @@
   },
   "source_type": "independent",
   "source_tier": 2,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://news.mit.edu/2026/mitigating-environmental-threat-of-data-centers-christina-delimitrou-1008": {
+  "headline": "Using AI to mitigate the growing environmental threat of data centers",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 14,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "“One of the challenges when it comes to applying AI to these systems is that the AI is not interpretable,” she says.",
+      "offset": 750
+     },
+     {
+      "sentence": "“I want the students to learn how to think and learn on their own,” she says.",
+      "offset": 1150
+     },
+     {
+      "sentence": "“If data centers are not utilized to the best of their capabilities, then they will burn much more power than they need to meet growing user demand,” says Delimitrou, the KDD Career Development Associate Professor in Communications and Technology in the Department of Electrical Engineering and Compu",
+      "offset": 2662
+     },
+     {
+      "sentence": "“One of the challenges when it comes to applying AI to these systems is that the AI is not interpretable,” she says.",
+      "offset": 3653
+     },
+     {
+      "sentence": "“In Greece, there is a long tradition of geometry,” she says.",
+      "offset": 4428
+     },
+     {
+      "sentence": "That was a problem that piqued my interest,” she says.",
+      "offset": 5266
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 10
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 6,
+   "with_named_source": 1
+  },
+  "source_type": "press-office",
+  "source_tier": 5,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://news.mit.edu/2026/discovering-value-humanistic-inquiry-1007": {
+  "headline": "Discovering the value of humanistic inquiry",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 9,
+   "unnamed": 1,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "“The ethos of Concourse is thrilling to me,” says Lily Tsai (standing), the program’s new faculty director and the Ford Professor of Political Science.",
+      "offset": 1121
+     },
+     {
+      "sentence": "Now it’s a place, Rabieh says, “where students who come primarily to MIT for world-class science, math, and engineering can also have a traditional liberal education, exploring fundamental questions of human existence, reading the great books, engaging in intense, vigorous debate about these questio",
+      "offset": 2767
+     },
+     {
+      "sentence": "“I often describe Concourse as a mini-liberal arts college within MIT,” says Assistant Director Sasha Rickard ’19, an alumna of the program.",
+      "offset": 3072
+     },
+     {
+      "sentence": "Johnnie Jones VI, a senior in mathematics and Concourse teaching assistant (TA) and debate fellow, marvels at the diversity of students the program attracts — “athletes, people who are interested in humanities, people who have no experience in humanities,” he says.",
+      "offset": 3384
+     },
+     {
+      "sentence": "“There’s a lot of cross-pollination of conversation and ideas,” Rabieh says.",
+      "offset": 4176
+     },
+     {
+      "sentence": "“There’s very much a sense of wanting to be guides and supports and set an example for the incoming students,” Rickard says.",
+      "offset": 4803
+     }
+    ],
+    "unnamed": [
+     {
+      "sentence": "“Overwhelmingly, the greatest skill Concourse has given me, more than just teaching me things, is teaching me how to work through ideas myself — really making possible the ability to, even after a long day of work, sit down with a great book and have a conversation with someone who was alive 300 yea",
+      "offset": 6242
+     }
+    ]
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 11
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 7,
+   "with_named_source": 2
+  },
+  "source_type": "press-office",
+  "source_tier": 5,
   "claim_tier": null,
   "claim_relationship": "unresolved",
   "tier_basis": "publisher relationship to subject not recorded",
@@ -3601,123 +3424,6 @@
   "figures": {
    "total": 5,
    "with_named_source": 2
-  },
-  "source_type": "press-office",
-  "source_tier": 5,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://news.mit.edu/2026/mit-transit-lab-to-develop-ai-platform-public-transit-agencies-0930": {
-  "headline": "MIT Transit Lab to develop an AI platform for public transit agencies",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 4,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "“Public transportation agencies are required to make decisions around the clock regarding real-time operations, control, and passenger communication,” says Awad Abdelhalim, associate director of the Transit Lab, and PTIQ co-principal investigator, project director, and technical lead.",
-      "offset": 2495
-     },
-     {
-      "sentence": "\"AI holds incredible potential to transform public services, but there is often a gap between promise and practice,” says Maggie Johnson, global head of Google.org.",
-      "offset": 3762
-     },
-     {
-      "sentence": "“The hard part of integrating AI in transit is not the technology; it’s the institution,” Zhao says.",
-      "offset": 4785
-     },
-     {
-      "sentence": "“We expect that PTIQ will take what is largely a siloed environment and connect it in ways that provide powerful benefits for the agency workforce and its riders,” says Aloisi, who is also a former secretary of transportation for the Commonwealth of Massachusetts.",
-      "offset": 6085
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 11
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 5,
-   "with_named_source": 0
-  },
-  "source_type": "press-office",
-  "source_tier": 5,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://news.mit.edu/2026/game-playing-ai-stratego-new-champ-0930": {
-  "headline": "This game-playing AI is the new champ at Stratego",
-  "entity": "Google DeepMind",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 1,
-   "to_others": 9,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [
-     {
-      "sentence": "“Our system reaches strictly higher playing strength than DeepNash (DeepMind’s system) while using less than one hundredth of the training examples and less than one thirtieth of the self-play games, indicating a massive improvement in efficiency,” says Farina.",
-      "offset": 6190
-     }
-    ],
-    "to_others": [
-     {
-      "sentence": "AI techniques that were developed for games like poker definitely could not scale in this setting,” Gabriele Farina says.",
-      "offset": 520
-     },
-     {
-      "sentence": "AI techniques that were developed for games like poker definitely could not scale in this setting,” Gabriele Farina says.",
-      "offset": 1238
-     },
-     {
-      "sentence": "Having AI algorithms that are general purpose and can provably perform this challenging task so well is a big step forward,” says Gabriele Farina, an assistant professor in the Department of Electrical Engineering and Computer Science (EECS), principal investigator at the Laboratory for Information ",
-      "offset": 2986
-     },
-     {
-      "sentence": "AI techniques that were developed for games like poker definitely could not scale in this setting,” Farina says.",
-      "offset": 5380
-     },
-     {
-      "sentence": "The system employs a generative model that uses probabilities to estimate the likely identities of the opponent’s hidden pieces, then evaluates future choices before selecting the next move.",
-      "offset": 6709
-     },
-     {
-      "sentence": "Using this generative model allows us to really zoom in on the specific board and opponent we are facing,” Farina says.",
-      "offset": 7013
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 12
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 2,
-   "with_named_source": 0
   },
   "source_type": "press-office",
   "source_tier": 5,
