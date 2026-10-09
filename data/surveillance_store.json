@@ -73,71 +73,72 @@
     "54b1b80026c38a18cbc27a2657d9270dca2fb517e6a904f2bf2aee3960aebc45": "2026-09-13T05:01:31.276246+00:00",
     "3f5b18c5361a116e8cda95268bda629c953202b3169b944325053a2129c242c3": "2026-09-13T05:01:31.276250+00:00"
   },
-  "last_run": "2026-10-08T05:01:15.908054+00:00",
+  "last_run": "2026-10-09T05:01:34.256590+00:00",
   "source_states": {
     "us_fed_reg_ai": {
-      "checked_at": "2026-10-08T05:00:02.953600+00:00",
+      "checked_at": "2026-10-09T05:00:05.235322+00:00",
       "status": "ok",
       "entries": 40,
-      "queued": 32,
+      "queued": 31,
       "window_days": 30,
-      "last_success": "2026-10-08T05:00:02.953600+00:00"
+      "last_success": "2026-10-09T05:00:05.235322+00:00"
     },
     "us_fed_reg_eo": {
-      "checked_at": "2026-10-08T05:00:04.472684+00:00",
+      "checked_at": "2026-10-09T05:00:07.426947+00:00",
       "status": "ok",
       "entries": 40,
       "queued": 30,
       "window_days": 30,
-      "last_success": "2026-10-08T05:00:04.472684+00:00"
+      "last_success": "2026-10-09T05:00:07.426947+00:00"
     },
     "eu_ai_office": {
-      "checked_at": "2026-10-08T05:00:05.148149+00:00",
+      "checked_at": "2026-10-09T05:00:07.969896+00:00",
       "status": "ok",
       "entries": 10,
-      "queued": 9,
+      "queued": 8,
       "window_days": null,
-      "last_success": "2026-10-08T05:00:05.148149+00:00"
+      "last_success": "2026-10-09T05:00:07.969896+00:00"
     },
     "uk_cma_news": {
-      "checked_at": "2026-10-08T05:00:05.235089+00:00",
+      "checked_at": "2026-10-09T05:00:08.052538+00:00",
       "status": "ok",
       "entries": 20,
       "queued": 0,
       "window_days": null,
-      "last_success": "2026-10-08T05:00:05.235089+00:00"
+      "last_success": "2026-10-09T05:00:08.052538+00:00"
     },
     "uk_ofgem_queue": {
-      "checked_at": "2026-10-08T05:00:05.358385+00:00",
+      "checked_at": "2026-10-09T05:00:08.099541+00:00",
       "status": "ok",
       "entries": 20,
       "queued": 1,
       "window_days": null,
-      "last_success": "2026-10-08T05:00:05.358385+00:00"
+      "last_success": "2026-10-09T05:00:08.099541+00:00"
     },
     "nist_ai_notices": {
-      "checked_at": "2026-10-08T05:00:05.541746+00:00",
+      "checked_at": "2026-10-09T05:00:08.247206+00:00",
       "status": "ok",
       "entries": 40,
-      "queued": 9,
+      "queued": 8,
       "window_days": null,
-      "last_success": "2026-10-08T05:00:05.541746+00:00"
+      "last_success": "2026-10-09T05:00:08.247206+00:00"
     },
     "sec_press_releases": {
-      "checked_at": "2026-10-08T05:00:05.828399+00:00",
+      "checked_at": "2026-10-09T05:00:08.552893+00:00",
       "status": "ok",
       "entries": 25,
       "queued": 1,
       "window_days": null,
-      "last_success": "2026-10-08T05:00:05.828399+00:00"
+      "last_success": "2026-10-09T05:00:08.552893+00:00"
     },
     "ftc_press_releases": {
-      "checked_at": "2026-10-08T05:00:05.874787+00:00",
-      "status": "ok",
-      "entries": 10,
+      "checked_at": "2026-10-09T05:00:08.617759+00:00",
+      "status": "failed",
+      "entries": 0,
       "queued": 0,
       "window_days": null,
-      "last_success": "2026-10-08T05:00:05.874787+00:00"
+      "last_success": "2026-10-08T05:00:05.874787+00:00",
+      "error": "HTTPError: HTTP Error 404: Not Found"
     }
   },
   "jurisdiction_hashes": {
@@ -235,7 +236,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:01:00.962275+00:00",
+      "checked_at": "2026-10-09T05:01:16.169748+00:00",
       "source_sha256": "eb1eddaf773a3253e5f7f035c9c1317b0010f83259a9b4caca539bf2e75879ea",
       "source_text_sha256": "89ffa63e83499655219e9053b4f4de919e4f5b0aaa8adfdcebfc4f3ba9b10b53",
       "error": "document exceeds model input budget; manual review required"
@@ -283,7 +284,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:01:03.806657+00:00",
+      "checked_at": "2026-10-09T05:01:19.228388+00:00",
       "source_sha256": "3ee83a15aa02e1f35f809f0eb4ddfe2adb601346b89901f0accc629880b5d2cb",
       "source_text_sha256": "a53929654bdac68bbd0f084a443518c66e0dc0bad70789d508a29d5079ca0add",
       "error": "document exceeds model input budget; manual review required"
@@ -307,7 +308,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:01:01.310856+00:00",
+      "checked_at": "2026-10-09T05:01:16.447285+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "4f3a608c15f8f04e29feca1b6c63058027b545c03e0fbb2baa316c3d697267f8": {
@@ -329,7 +330,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:01:04.841868+00:00",
+      "checked_at": "2026-10-09T05:01:31.486277+00:00",
       "source_sha256": "115c1f051f5500de7183958a59c12ba9bfb4f54d0c9c55af40b4f67ca80f86f8",
       "source_text_sha256": "efb0c31c89d156a5c14f5294b8969b148c828a8cdc99a8825da4fb5d53582221",
       "evaluated_text_sha256": "efb0c31c89d156a5c14f5294b8969b148c828a8cdc99a8825da4fb5d53582221"
@@ -377,7 +378,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:01:01.732924+00:00",
+      "checked_at": "2026-10-09T05:01:16.868541+00:00",
       "source_sha256": "711f43edaa8cd4d1f261877323c360e5dc822a4483fe5051a63d0989523b13a4",
       "source_text_sha256": "ca1b3cf0f0f3c78ddf801e6598dc6e376367ab163f90e1e2702947cca856e63c",
       "error": "document exceeds model input budget; manual review required"
@@ -400,7 +401,7 @@
         "format": "json_fedreg",
         "priority_base": 1
       },
-      "active": true,
+      "active": false,
       "checked_at": "2026-10-07T05:00:34.419438+00:00",
       "source_sha256": "1a4b2b57093f0e4dccec5d872df00a8242859cf944ed625959cb1bd906f17a55",
       "source_text_sha256": "1a908936beb7673a9555336ed5de1bb5820ed2590031436cfa134cd21b7e53c4",
@@ -424,7 +425,7 @@
         "format": "json_fedreg",
         "priority_base": 1
       },
-      "active": true,
+      "active": false,
       "checked_at": "2026-09-28T05:01:07.983773+00:00",
       "source_sha256": "338320dd121f5e72788b1c3920b90305e72247e66fb2bd33b1139d3c49b21591",
       "source_text_sha256": "f116b0f1bdee2cee509c8f40aad46d978a5d2907ca5de5a9d0fbfe704a1ac66f",
@@ -449,7 +450,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-08T05:00:58.347871+00:00",
+      "checked_at": "2026-10-09T05:01:13.472898+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "f3227389324f7137d15bbb2f3d3a07cc2a3d2d1f69b73d682b660348775bec51": {
@@ -495,7 +496,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-08T05:01:02.467001+00:00",
+      "checked_at": "2026-10-09T05:01:17.723176+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "9d988f6d9277029c3ac6d920018ac38aedd5ac984a6a25fb8d56a6e34f6b3ee2": {
@@ -517,7 +518,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-08T05:00:54.326818+00:00",
+      "checked_at": "2026-10-09T05:01:09.431982+00:00",
       "source_sha256": "a4511bae5da70c354f606c391d50f9ad41e568825f8e0109025f414111f90dc9",
       "source_text_sha256": "fe91c974bf9b2405c6f653e0dda74d08d1a6265a6e628d156bffc7dc259f7bea",
       "error": "document exceeds model input budget; manual review required"
@@ -541,7 +542,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-08T05:00:59.891289+00:00",
+      "checked_at": "2026-10-09T05:01:15.028014+00:00",
       "source_sha256": "fbd5fff4fe0699288f0b65021446cc8dd9d08a94c376413b9a19b6fb6d2da372",
       "source_text_sha256": "2cd3f0dc0045694d0b680943b47d08f04239f7aa6f94aa7136a5fff482fd728e",
       "error": "document exceeds model input budget; manual review required"
@@ -565,7 +566,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-08T05:00:56.988195+00:00",
+      "checked_at": "2026-10-09T05:01:12.104490+00:00",
       "source_sha256": "978bf8bd7945d3beaa2ccf09e14aaa1bfabf6d600c6f472d9707aa1ce0b1110e",
       "source_text_sha256": "640c895a637c3bfbf00d5f8ee04c5621bad85598d7ac09283fb5344a414143d8",
       "error": "document exceeds model input budget; manual review required"
@@ -613,7 +614,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-08T05:00:58.982516+00:00",
+      "checked_at": "2026-10-09T05:01:14.135186+00:00",
       "source_sha256": "78569acd9cc75cd417f395652dfbe9582a43cd92f0320fd9c0a4ac0f74e7c25f",
       "source_text_sha256": "4a8447f5a0993387ea2590db8e8be6d50b8a8e431f1cee6debd1dc45640047b9",
       "error": "document exceeds model input budget; manual review required"
@@ -637,7 +638,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-08T05:00:59.254182+00:00",
+      "checked_at": "2026-10-09T05:01:14.403616+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "45cd6e241ef0f49a81f7569cdcbdf3b115d21f5515637f6ae5e8a6c269ed346a": {
@@ -659,7 +660,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-08T05:01:02.126188+00:00",
+      "checked_at": "2026-10-09T05:01:17.378053+00:00",
       "source_sha256": "7c4c37f6412dccc2795ca2beedfd141df2754c086e9e276c32e97aa99927555b",
       "source_text_sha256": "404d25d32a5cb5fa721fb74ca6c16df48425c1abe2ae321164e0c4796bd520d3",
       "error": "document exceeds model input budget; manual review required"
@@ -683,7 +684,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-08T05:01:00.152647+00:00",
+      "checked_at": "2026-10-09T05:01:15.290519+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "7ad21a2ea23e4e7cfeedf5675164bc4e41af56e08a54475090d6b47820b4a204": {
@@ -705,7 +706,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-08T05:01:02.886213+00:00",
+      "checked_at": "2026-10-09T05:01:18.132811+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "a7320c2f093222e04d723af25b0cbae8c48107c756a2ba5db909095c3850abb3": {
@@ -727,7 +728,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-08T05:00:54.607855+00:00",
+      "checked_at": "2026-10-09T05:01:09.716760+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "6587eda003db0fc2cc6d344a8209cb6b5cd47c3dfcf52d7a6a31afdff94d507d": {
@@ -893,7 +894,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-08T05:01:00.685641+00:00",
+      "checked_at": "2026-10-09T05:01:15.802381+00:00",
       "source_sha256": "483cd8f9f46e29617e6ded47fd3d408d09a14ebb3c1b00b782e3435451ac73cf",
       "source_text_sha256": "59d5cdb31d8e66c9fc37f498e934b7b64f352ff12c43dca835a8d697f632c169",
       "error": "document exceeds model input budget; manual review required"
@@ -917,7 +918,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-07T05:00:34.680214+00:00",
+      "checked_at": "2026-10-09T05:01:19.748876+00:00",
       "source_sha256": "6186f8bfff7f80b94af189271dc3e25c1982fc77641a692edbfdd34f6c7fcff0",
       "source_text_sha256": "a50f35ae1078f4d01ad8d5d28d7621ab7b2bf595b9ee4ef8a6622fb984b27c03",
       "evaluated_text_sha256": "a50f35ae1078f4d01ad8d5d28d7621ab7b2bf595b9ee4ef8a6622fb984b27c03"
@@ -941,7 +942,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:01:04.589109+00:00",
+      "checked_at": "2026-10-09T05:01:31.234039+00:00",
       "source_sha256": "389df6c48aaa19f229e2b0ab22038fde9384fecee0cf637f701e3f7d02747efa",
       "source_text_sha256": "77af7a764b108a9a43847b5f4f78b0c76bbf9f39a504cbc2169985eb9cd8b916",
       "evaluated_text_sha256": "77af7a764b108a9a43847b5f4f78b0c76bbf9f39a504cbc2169985eb9cd8b916"
@@ -965,7 +966,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-07T05:00:37.159339+00:00",
+      "checked_at": "2026-10-09T05:01:20.247737+00:00",
       "source_sha256": "6c3ef288cfaa857a44bfcc08f8baaa2fa71d52d98d56433364332bfb45ec392d",
       "source_text_sha256": "712900da35e374cbb52fb0bc52b05b22774925753e134e5a9f2da77fe29803d1",
       "evaluated_text_sha256": "712900da35e374cbb52fb0bc52b05b22774925753e134e5a9f2da77fe29803d1"
@@ -1061,7 +1062,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-07T05:00:37.676384+00:00",
+      "checked_at": "2026-10-09T05:01:22.228768+00:00",
       "source_sha256": "ce59ce9a224919045775bd3ff08fd58f4999acf8c770a558e3817ef53ae16eb2",
       "source_text_sha256": "55a971182ddb74e94f75c325e8cf02eb0fa8c2a686a33e0daae6b1245d85b46b",
       "evaluated_text_sha256": "55a971182ddb74e94f75c325e8cf02eb0fa8c2a686a33e0daae6b1245d85b46b"
@@ -1085,7 +1086,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:01:05.111449+00:00",
+      "checked_at": "2026-10-09T05:01:33.978426+00:00",
       "source_sha256": "c37c14803511a64bbc16bf30a4a8ead4029b70bfd0cc68787a9cd1efea5871fa",
       "source_text_sha256": "cc968ccd7c158f2274c930e84285b96d16c84f6b9a5360a65aa54df9069d75d6",
       "evaluated_text_sha256": "cc968ccd7c158f2274c930e84285b96d16c84f6b9a5360a65aa54df9069d75d6"
@@ -1373,7 +1374,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-08T05:01:03.295217+00:00",
+      "checked_at": "2026-10-09T05:01:18.543160+00:00",
       "source_sha256": "0d3711dc18e19652f67b43bf0374043db6fa72ea1e19fceb3fc5129b5ced7f7b",
       "source_text_sha256": "421e6c77bf86082a1e3359b64a83524532983e501f1463d9b02608fe4c0e94e2",
       "error": "document exceeds model input budget; manual review required"
@@ -1421,7 +1422,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-08T05:01:03.550041+00:00",
+      "checked_at": "2026-10-09T05:01:18.963272+00:00",
       "source_sha256": "bb9c90378e11423ff231d1326880b038c8264c00eb6439e728cb26ff4bad5d25",
       "source_text_sha256": "5b6fa7f6ca6e3a94d15e5866c7a635601cba12361d95ff84769438a18b52a904",
       "error": "document exceeds model input budget; manual review required"
@@ -1544,7 +1545,7 @@
         "filter_ai": true,
         "priority_base": 1
       },
-      "active": true,
+      "active": false,
       "checked_at": "2026-10-03T05:01:49.555768+00:00",
       "source_sha256": "6a25a713eeaba8db33dcd2340899476cbcb1cd5acbfc95ab26a3d1ffabdbbbb9",
       "source_text_sha256": "ea2569ab9756aa46a4427273bd3e1fa7148d03579593053dfbe8783752693a5f",
@@ -1894,7 +1895,7 @@
         "filter_ai": true,
         "priority_base": 2
       },
-      "active": true,
+      "active": false,
       "checked_at": "2026-10-04T05:01:31.412912+00:00",
       "source_sha256": "20988ddfced070231b64ddfb024873e36ac91dd917e42292d3992484c09456a7",
       "source_text_sha256": "3a7893a2ff19da7b26a8870d14a5adff934c4066272ea5f5086fb45c9746b322",
@@ -1945,7 +1946,7 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-10-08T05:01:02.073724+00:00",
+      "checked_at": "2026-10-09T05:01:17.221167+00:00",
       "error": "source HTTP status 403"
     },
     "00cc6142a1a6b1f6fa6e64da6688ffe5d560d7950cb671e860069f6e0e9948b9": {
@@ -1992,7 +1993,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:00:57.326335+00:00",
+      "checked_at": "2026-10-09T05:01:12.443808+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "acd125fdfd75db95c599f5f3bba2c1c547a48442d5bec1e39fdbbd161c614437": {
@@ -2014,7 +2015,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:00:57.827741+00:00",
+      "checked_at": "2026-10-09T05:01:12.944897+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "2aaa70ffc70ff726df8dbcb1d82079ae56f516d5591fa97f4adff95047795251": {
@@ -2071,7 +2072,7 @@
       "attempts": 2,
       "item": {
         "title": "Proposal for EU KIDS Act - 'EU Keeping Internet Digital Spaces Accountable and Trustworthy'",
-        "summary": "<span>Proposal for EU KIDS Act - 'EU Keeping Internet Digital Spaces Accountable and Trustworthy'</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-09-17T09:21:00+02:00\" title=\"Thursday, September 17, 2026 - 09:21\">Thu, 09/17/2026 - 09:21</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                                    <p class=\"ecl-page-header-standardised__description\">This proposal seeks to protect minors from risky digital services and AI systems, uphold the digital single market and maintain a coherent regulatory framework and enforcement structure for the protection of minors online.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/ProtectingYoungPeopleOnline_600x400_colours_EU_kids_act1_7mj5sARJ3eWJAazOTfaI81Qdp8_245426.jpg?itok=qa7fllkz\" alt=\"illustration of a browser window surrounded by small people, displaying icons for video, location, likes, and a shield protecting children.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>The proposal recognises the risks that minors face on certain online social networking services and video-sharing platforms and therefore limits autonomous account creation on those specific platforms and systems by children below the age of 15 years. By providing one age across the European Union, it harmonises diverging national rules removing obstacles to the implementation of the Digital Single Market, ensuring legal certainty and a similar level of protection for all children in the European Union.</p>\n<div class=\"attachment-container unknown\">\n<div class=\"text-box-container ng-star-inserted\">\n<div class=\"text-box-content\">\n<div class=\"text-box-text gds-body-l\">The <strong>proposal </strong>and its <strong>supporting documents</strong> are available on EUR-Lex and will soon be accessible in <strong>all official EU languages</strong>:</div>\n</div>\n</div>\n</div>\n<ul>\n<li><a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026PC0681\">Proposal for EU KIDS Act - 'EU Keeping Internet Digital Spaces Accountable and Trustworthy'</a></li>\n<li><a href=\"https://eur-lex.europa.eu/legal-content/en/TXT/?uri=COM%3A2026%3A680%3AFIN&amp;qid=1789647397373\">Communication accompanying the KIDS Act - An EU approach to online child safety</a></li>\n<li><a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026SC0681\">Staff Working Document (SWD) - Analysis of Impacts accompanying the proposal for EU kids Act</a></li>\n</ul>\n<p><a href=\"https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19418-Child-online-safety-keeping-digital-spaces-accountable-and-trustworthy-EU-Kids-Act-_en\">Provide your feedback</a><span> to the consultation on the EU KIDS ACT until 26 November 2026 (midnight Brussels time).</span></p>\n<p>Find further information:</p>\n<ul>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/news/eu-kids-act-restrict-social-media-platforms-access-children-eu\">Press release</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/faqs/kids-act-explained\">KIDS Act - questions and answers</a></li>\n</ul></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=154\" class=\"ecl-tag ecl-u-mb-xs\">   Better Internet for Children</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=153\" class=\"ecl-tag ecl-u-mb-xs\">Strengthening trust and security</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=150\" class=\"ecl-tag ecl-u-mb-xs\">Online platforms and e-commerce</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                              <h2>Related content</h2>\n\n      \n  <article class=\"ecl-content-item ecl-content-item--divider ecl-u-mb-xl\"><div class=\"ecl-content-block ecl-content-item__content-block\" data-ecl-auto-init=\"ContentBlock\" data-ecl-content-block><ul class=\"ecl-content-block__primary-meta-container\"><li class=\"ecl-content-block__primary-meta-item\">Press release</li><li class=\"ecl-content-block__primary-meta-item\">17 September 2026</li></ul><div class=\"ecl-content-block__title\"><a href=\"https://digital-strategy.ec.europa.eu/en/news/eu-kids-act-restrict-social-media-platforms-access-children-eu\" class=\"ecl-link ecl-link--standalone\" data-ecl-title-link>EU KIDS Act to restrict social media platforms’ access to children in the EU</a></div><div class=\"ecl-content-block__description\">The European Commission has adopted the EU KIDS Act to enhance the online safety of children throughout the Union.</div></div></article>  \n\n  \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div class=\"cnt-last-update-block\">\n  \n    \n      \n\n  </div>\n<div class=\"cnt-print-pdf-block\">\n  \n    \n      \n  \n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
+        "summary": "<span>Proposal for EU KIDS Act - 'EU Keeping Internet Digital Spaces Accountable and Trustworthy'</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-09-17T09:21:00+02:00\" title=\"Thursday, September 17, 2026 - 09:21\">Thu, 09/17/2026 - 09:21</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                                    <p class=\"ecl-page-header-standardised__description\">This proposal seeks to protect minors from risky digital services and AI systems, uphold the digital single market and maintain a coherent regulatory framework and enforcement structure for the protection of minors online.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/ProtectingYoungPeopleOnline_600x400_colours_EU_kids_act1_7mj5sARJ3eWJAazOTfaI81Qdp8_245426.jpg?itok=qa7fllkz\" alt=\"illustration of a browser window surrounded by small people, displaying icons for video, location, likes, and a shield protecting children.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>The proposal recognises the risks that minors face on certain online social networking services and video-sharing platforms and therefore limits autonomous account creation on those specific platforms and systems by children below the age of 15 years. By providing one age across the European Union, it harmonises diverging national rules removing obstacles to the implementation of the Digital Single Market, ensuring legal certainty and a similar level of protection for all children in the European Union.</p>\n<div class=\"attachment-container unknown\">\n<div class=\"text-box-container ng-star-inserted\">\n<div class=\"text-box-content\">\n<div class=\"text-box-text gds-body-l\">The <strong>proposal </strong>and its <strong>supporting documents</strong> are available on EUR-Lex and will soon be accessible in <strong>all official EU languages</strong>:</div>\n</div>\n</div>\n</div>\n<ul>\n<li><a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026PC0681\">Proposal for EU KIDS Act - 'EU Keeping Internet Digital Spaces Accountable and Trustworthy'</a></li>\n<li><a href=\"https://eur-lex.europa.eu/legal-content/en/TXT/?uri=COM%3A2026%3A680%3AFIN&amp;qid=1789647397373\">Communication accompanying the KIDS Act - An EU approach to online child safety</a></li>\n<li><a href=\"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026SC0681\">Staff Working Document (SWD) - Analysis of Impacts accompanying the proposal for EU kids Act</a></li>\n</ul>\n<p><a href=\"https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19418-Child-online-safety-keeping-digital-spaces-accountable-and-trustworthy-EU-Kids-Act-_en\">Provide your feedback</a><span> to the consultation on the EU KIDS ACT until 3 December 2026 (midnight Brussels time).</span></p>\n<p>Find further information:</p>\n<ul>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/news/eu-kids-act-restrict-social-media-platforms-access-children-eu\">Press release</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/faqs/kids-act-explained\">KIDS Act - questions and answers</a></li>\n</ul></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=154\" class=\"ecl-tag ecl-u-mb-xs\">   Better Internet for Children</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=153\" class=\"ecl-tag ecl-u-mb-xs\">Strengthening trust and security</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=150\" class=\"ecl-tag ecl-u-mb-xs\">Online platforms and e-commerce</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                              <h2>Related content</h2>\n\n      \n  <article class=\"ecl-content-item ecl-content-item--divider ecl-u-mb-xl\"><div class=\"ecl-content-block ecl-content-item__content-block\" data-ecl-auto-init=\"ContentBlock\" data-ecl-content-block><ul class=\"ecl-content-block__primary-meta-container\"><li class=\"ecl-content-block__primary-meta-item\">Press release</li><li class=\"ecl-content-block__primary-meta-item\">17 September 2026</li></ul><div class=\"ecl-content-block__title\"><a href=\"https://digital-strategy.ec.europa.eu/en/news/eu-kids-act-restrict-social-media-platforms-access-children-eu\" class=\"ecl-link ecl-link--standalone\" data-ecl-title-link>EU KIDS Act to restrict social media platforms’ access to children in the EU</a></div><div class=\"ecl-content-block__description\">The European Commission has adopted the EU KIDS Act to enhance the online safety of children throughout the Union.</div></div></article>  \n\n  \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div class=\"cnt-last-update-block\">\n  \n    \n      \n\n  </div>\n<div class=\"cnt-print-pdf-block\">\n  \n    \n      \n  \n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
         "url": "https://digital-strategy.ec.europa.eu/en/library/proposal-eu-kids-act-eu-keeping-internet-digital-spaces-accountable-and-trustworthy",
         "publication_date": "Thu, 17 Sep 2026 07:21:00 +0000"
       },
@@ -2110,7 +2111,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:00:55.328248+00:00",
+      "checked_at": "2026-10-09T05:01:10.423040+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "24b91e42ca39f96250ff8396e2ab4365319553e9a5e9361ad8778925105bc9a5": {
@@ -2132,7 +2133,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:00:55.066584+00:00",
+      "checked_at": "2026-10-09T05:01:10.150305+00:00",
       "source_sha256": "93d27862db1cfbe023f098d1d88ede786d36f184e9daf3b83286d5bcfbd54bf9",
       "source_text_sha256": "7da5c4c5006d37ad7ce3930ab3ce921fa5934fc1651020c2729e94c830c82cda",
       "error": "document exceeds model input budget; manual review required"
@@ -2156,7 +2157,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:00:55.837616+00:00",
+      "checked_at": "2026-10-09T05:01:10.938394+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "920548c8df731e539da02bfa501604ca735b46e184d9ccac682ae4e34627e663": {
@@ -2178,7 +2179,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:00:56.191021+00:00",
+      "checked_at": "2026-10-09T05:01:11.303714+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "fc6caa9ca06598e4de6351640198c601779f0975d004e20968e90c2fac908e61": {
@@ -2200,7 +2201,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:00:56.535119+00:00",
+      "checked_at": "2026-10-09T05:01:11.651025+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "362f4388c4d9496ebf122603c35668888a236dcf2e4af58ad656a707b1c1aa63": {
@@ -2246,7 +2247,7 @@
         "filter_ai": true,
         "priority_base": 1
       },
-      "active": true,
+      "active": false,
       "checked_at": "2026-10-08T05:01:05.959713+00:00",
       "source_sha256": "ef641653702e30224e9621eaf87d100f053e4f967d38e2b322770bac028e1abb",
       "source_text_sha256": "ca2a46e06c5ea66f8cfbff6c63af7820b2682b7c863dd7fcf10b0358e7659dc7",
@@ -2271,7 +2272,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:00:54.064756+00:00",
+      "checked_at": "2026-10-09T05:01:09.166487+00:00",
       "source_sha256": "5732141abd973d8993e6239e197486dbeef5fa07af70a1a8e9e5c0342d47b438",
       "source_text_sha256": "057ae28ab694825203e41fddded2a58b524f530bd1cfef46c64e60da0d6efc8f",
       "error": "document exceeds model input budget; manual review required"
@@ -2367,7 +2368,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-07T05:00:34.148728+00:00",
+      "checked_at": "2026-10-09T05:01:19.496617+00:00",
       "source_sha256": "5301ed4cfd1cff5c6d520d3f50db4427783b303b6b8b7a3aacd5c906aebb7345",
       "source_text_sha256": "10c00bb5a84a266e36fdad2dfe030a025124bd0403dc052bf489bba9b0e4d6a2",
       "evaluated_text_sha256": "10c00bb5a84a266e36fdad2dfe030a025124bd0403dc052bf489bba9b0e4d6a2"
@@ -2391,7 +2392,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:00:53.458999+00:00",
+      "checked_at": "2026-10-09T05:01:08.550315+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "99b981b199350cd18d9dffb46c33f69f183df547fbe49512e2f937371d7cc3ac": {
@@ -2413,7 +2414,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:00:53.809684+00:00",
+      "checked_at": "2026-10-09T05:01:08.900639+00:00",
       "source_sha256": "19d7414eb9185234aac641d5477a120f5b1bbd298866c740acef103e33a51f5f",
       "source_text_sha256": "42b2a605ec6030eff66b91501bfafb930aded7c79002d3c37346d051858ab21a",
       "error": "document exceeds model input budget; manual review required"
@@ -2437,7 +2438,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-07T05:00:37.417301+00:00",
+      "checked_at": "2026-10-09T05:01:21.967263+00:00",
       "source_sha256": "dba8c963fa10705941a9fe37e8262639fe983e4032f077f89cafa236d39ba5a5",
       "source_text_sha256": "776aaf1088d245abb82d05db1d599e5493590b09e98000248b1f3cf5366c0201",
       "evaluated_text_sha256": "776aaf1088d245abb82d05db1d599e5493590b09e98000248b1f3cf5366c0201"
@@ -2461,7 +2462,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:01:04.333152+00:00",
+      "checked_at": "2026-10-09T05:01:30.980469+00:00",
       "source_sha256": "590b9fdc015ab3eb40a3b4909e0a9f196d48cfdaf55da41964e0695ab0e99c81",
       "source_text_sha256": "9e528ba75d11593f96c701117beffacdab26d4b013d13c278ba97a0e3cac206b",
       "evaluated_text_sha256": "9e528ba75d11593f96c701117beffacdab26d4b013d13c278ba97a0e3cac206b"
@@ -2485,7 +2486,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-07T05:00:41.065226+00:00",
+      "checked_at": "2026-10-09T05:01:22.483280+00:00",
       "source_sha256": "ba91ef2f4c7bfb80c5c3bf770c5788ce135714511aec39d8b2ac841f670a6452",
       "source_text_sha256": "e82f6dc2064c6d3f909e28c4acc0aad1a8f4f40a0a530e5d79089859e8041490",
       "evaluated_text_sha256": "e82f6dc2064c6d3f909e28c4acc0aad1a8f4f40a0a530e5d79089859e8041490"
@@ -2509,7 +2510,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:00:53.186655+00:00",
+      "checked_at": "2026-10-09T05:01:08.290321+00:00",
       "source_sha256": "387c58cf45fffaba490ed8c9e7eefb230da279108c6bf0afb7cfa14725bc0f69",
       "source_text_sha256": "960c0ef0cd21704f853ccbd3fcc20d9589a5749c1b89a4de1d24e8c161a9852c",
       "error": "document exceeds model input budget; manual review required"
@@ -2533,7 +2534,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:00:52.937954+00:00",
+      "checked_at": "2026-10-09T05:01:08.038576+00:00",
       "source_sha256": "823800fb40021b6741fdce7b49ed462ad4e8f5c599835080825d505a4223abcf",
       "source_text_sha256": "da0a678e19f9753a6699ade76b54b06b8b9bea17e71214e0c000f4a465ccbcfa",
       "error": "document exceeds model input budget; manual review required"
@@ -2557,7 +2558,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:00:52.336250+00:00",
+      "checked_at": "2026-10-09T05:01:07.427101+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "2b57378a8bc94b4efa5b6e972f31392c58c5b1be99e9b65ecb836b7114e97957": {
@@ -2579,7 +2580,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-07T05:00:34.935706+00:00",
+      "checked_at": "2026-10-09T05:01:19.997983+00:00",
       "source_sha256": "0c84479c52eceebdf9c114bc763a2a612cd9378abffd9a8817aa94a705e35522",
       "source_text_sha256": "9f36eb4346026d78e6b5991da32745a1284d2f6d56123f5c3977ceb6f009d7d9",
       "evaluated_text_sha256": "9f36eb4346026d78e6b5991da32745a1284d2f6d56123f5c3977ceb6f009d7d9"
@@ -2628,7 +2629,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:00:50.954945+00:00",
+      "checked_at": "2026-10-09T05:01:05.986315+00:00",
       "source_sha256": "68d7f8ca29c0ae6e723f580027b3b0faa8c23c7f5ab43218cd6bf58c13fb87aa",
       "source_text_sha256": "953c220894733b7adea02631953ccf29889dc0303a0a497fbceb022db7c029cc",
       "error": "document exceeds model input budget; manual review required"
@@ -2652,7 +2653,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:00:52.088023+00:00",
+      "checked_at": "2026-10-09T05:01:07.163551+00:00",
       "source_sha256": "f3da990edb63a3acb300f049da3a8b29ef0e965d33c7866d89211a7feb9336bd",
       "source_text_sha256": "95dd79890aabe5b7267cc84c8bf1589877e121be502e261e6910157a221e0873",
       "error": "document exceeds model input budget; manual review required"
@@ -2700,7 +2701,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:00:51.314168+00:00",
+      "checked_at": "2026-10-09T05:01:06.354156+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "c72344e306a273fbace5d183d055151cbfa8583ab5218120520fe7511e9c0258": {
@@ -2746,7 +2747,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:01:04.073957+00:00",
+      "checked_at": "2026-10-09T05:01:28.370486+00:00",
       "source_sha256": "f227228ab6bfaa8b3b067454bdd9bac4eeca8b99b9ac3f5694bc8a71a9269904",
       "source_text_sha256": "f792532c5676feb52c7477e53677e058a22e18616d8cd3abbbe69a0cbf1b8641",
       "evaluated_text_sha256": "f792532c5676feb52c7477e53677e058a22e18616d8cd3abbbe69a0cbf1b8641"
@@ -2770,7 +2771,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:00:50.256143+00:00",
+      "checked_at": "2026-10-09T05:01:05.297423+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "768c9228a9059c551cdfe041c9864df4b758e63f70dcd4e8ae7c587a9589f6dc": {
@@ -2792,7 +2793,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-07T05:00:43.671332+00:00",
+      "checked_at": "2026-10-09T05:01:27.656172+00:00",
       "source_sha256": "b7237c908eb128fb5e9c5fd2858343d42631a4c43924d49f84870637b5aa95ce",
       "source_text_sha256": "49dbc0c7ca1f12c503c2ee77a2529cf3b2bf614d810e4e2a9b3d69df0073e4da",
       "evaluated_text_sha256": "49dbc0c7ca1f12c503c2ee77a2529cf3b2bf614d810e4e2a9b3d69df0073e4da"
@@ -2816,7 +2817,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-07T05:00:43.163916+00:00",
+      "checked_at": "2026-10-09T05:01:24.643970+00:00",
       "source_sha256": "5ccc956677f6160181ee5fe279e8ea266b73315ea5be4d8b5ff69a30662d6b4a",
       "source_text_sha256": "ff803b23a6e220432ac11483edd183078670009b5fa6bd1cb558310002d5bfa3",
       "evaluated_text_sha256": "ff803b23a6e220432ac11483edd183078670009b5fa6bd1cb558310002d5bfa3"
@@ -2840,7 +2841,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-07T05:00:41.313958+00:00",
+      "checked_at": "2026-10-09T05:01:22.734652+00:00",
       "source_sha256": "3502d17ef3eb0434cdb8ff7322cd40d8dae525c906892b8cc7a57318220a8e25",
       "source_text_sha256": "c03dc1c3ab36b119d9f1ccc4ecf78428389c6503abbb950f1b8d44fe04e188c7",
       "evaluated_text_sha256": "c03dc1c3ab36b119d9f1ccc4ecf78428389c6503abbb950f1b8d44fe04e188c7"
@@ -2864,7 +2865,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-07T05:00:43.414867+00:00",
+      "checked_at": "2026-10-09T05:01:24.970833+00:00",
       "source_sha256": "af336c57703286122d1e11b0cf286e76ac0713470bdd0e3e2c0c1711c17fec08",
       "source_text_sha256": "4e913e7c96ea6316c345962e04302786d7adda2670cd9b626a97240dcbe9f871",
       "evaluated_text_sha256": "4e913e7c96ea6316c345962e04302786d7adda2670cd9b626a97240dcbe9f871"
@@ -2888,7 +2889,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:00:49.904436+00:00",
+      "checked_at": "2026-10-09T05:01:04.939340+00:00",
       "source_sha256": "27bb39938518b9764ede75e6fd4945a296c30caa5dda029d87b187f78806d9d0",
       "source_text_sha256": "48fac10a019701a09739a4631b72ff1f238b8503052a35cd7fbac3c1c4a34728",
       "error": "document exceeds model input budget; manual review required"
@@ -2936,7 +2937,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:00:49.372441+00:00",
+      "checked_at": "2026-10-09T05:01:04.414430+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "33c3cee138e1c2c1be0e7b5a9bdaeafa7442bbd46faa011545cc4f85327f3a7c": {
@@ -2958,7 +2959,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:00:48.567077+00:00",
+      "checked_at": "2026-10-09T05:01:03.672372+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "bb55975fd75ff160bf2070a405e6ea2cdbca5cd324cea8ae21c630e0f810dc29": {
@@ -2980,7 +2981,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:00:33.837473+00:00",
+      "checked_at": "2026-10-09T05:01:03.333022+00:00",
       "source_sha256": "6a116ccd791f3c27d7a056fad453537b46dbf4b8e1cf0412914840d9db3cbd49",
       "source_text_sha256": "8112b94a54338df8a632e855fcf2de31d01cb0496d4fb91570e6a18c19e0dd82",
       "error": "document exceeds model input budget; manual review required"
@@ -3004,7 +3005,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:00:06.249043+00:00",
+      "checked_at": "2026-10-09T05:01:27.911351+00:00",
       "source_sha256": "0d57175051850adf5841ce14cb9c8cb22d79f84cd5900f95609b4d1170af0b9f",
       "source_text_sha256": "7e8519ac18fc62ccbc5e6d2a890ef24e391bd4f52878234f2f15b3befc826ca1",
       "evaluated_text_sha256": "7e8519ac18fc62ccbc5e6d2a890ef24e391bd4f52878234f2f15b3befc826ca1"
@@ -3029,19 +3030,70 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:00:34.176269+00:00",
-      "source_sha256": "be18c2450f6eed779af2e75a52883ca304fd17ca4ddcecc11587a58a6f8576b4",
+      "checked_at": "2026-10-09T05:01:28.166153+00:00",
+      "source_sha256": "bcc362b6dfabe773eca56cc81a0899a896b51c345ae3c051b9dd4e15ab6ba57d",
       "source_text_sha256": "b0d76f2f24e9fd7962985a73b51e6f0fee96a88ea3825043f46033236f36380a",
       "evaluated_text_sha256": "b0d76f2f24e9fd7962985a73b51e6f0fee96a88ea3825043f46033236f36380a"
+    },
+    "1d2eb6b9c8f17a564f6ec54e0dc6801f7bcd0aa1f8bce16b1f10b6ca933e8904": {
+      "status": "evaluated",
+      "attempts": 1,
+      "item": {
+        "title": "Public Meeting of the National Sea Grant Advisory Board",
+        "summary": "This notice sets forth the schedule and proposed agenda of a forthcoming meeting of the National Sea Grant Advisory Board (Board), a Federal Advisory Committee. Board members will discuss and provide advice on the National Sea Grant College Program (Sea Grant) in the areas of program evaluation, strategic planning, education and extension, science and technology programs, and other matters as described in the agenda found on the Sea Grant website. For more information on this Federal Advisory Committee please visit the Federal Advisory Committee database: https://www.facadatabase.gov/FACA/ FACAPublicPage.",
+        "url": "https://www.federalregister.gov/documents/2026/10/08/2026-20674/public-meeting-of-the-national-sea-grant-advisory-board",
+        "publication_date": "2026-10-08"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-10-09T05:00:08.687257+00:00",
+      "source_sha256": "a524bf2417d6e384b6764acbfc72c9b5ef36ab83db6a79f59ff7c8cca4afea6e",
+      "source_text_sha256": "f11501c7768828a54b0ca55c88eaaa8a5d1f665f8ded5877a30e15a69dc9dc2c",
+      "evaluated_text_sha256": "f11501c7768828a54b0ca55c88eaaa8a5d1f665f8ded5877a30e15a69dc9dc2c"
+    },
+    "246404d0fadf1b90726e41e1bd38baefd1d168536e71fa5ca84a96397c301ec4": {
+      "status": "evaluated",
+      "attempts": 1,
+      "item": {
+        "title": "European AI Innovation Month",
+        "summary": "<span>European AI Innovation Month</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-10-08T09:00:00+02:00\" title=\"Thursday, October 8, 2026 - 09:00\">Thu, 10/08/2026 - 09:00</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                              <ul class=\"ecl-unordered-list ecl-unordered-list--no-bullet ecl-u-mb-xl\">\n      <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n      <span class=\"wt-icon--calendar ecl-icon ecl-icon--fluid ecl-icon--calendar\" aria-hidden=\"true\"></span>&nbsp;\n      14 October 2026 - 17 November 2026\n  </li>\n  \n  </ul>\n\n                <p class=\"ecl-page-header-standardised__description\">From 14 October to 17 November 2026, this initiative led by the European Commission in partnership with the upcoming Irish Presidency of the Council will promote a series of online and in-person events showcasing AI innovation and adoption across Europe.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/AI20Innovation20Month20flow20visual20EUIE_321_5qJzmLzQLKwyHR3FyHbCEIVVM_248015.jpg?itok=l0p2kNkY\" alt=\"European AI Innovation Month, with flowing green and purple wave graphics around a central blue logo with the Irish and EU emblems.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          \n  <div>\n    <h4>Main link</h4>\n              <div><a href=\"https://digital-strategy.ec.europa.eu/en/policies/european-ai-innovation-month\">https://digital-strategy.ec.europa.eu/en/policies/european-ai-innovation-month</a></div>\n          </div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=137\" class=\"ecl-tag ecl-u-mb-xs\">Events</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=119\" class=\"ecl-tag ecl-u-mb-xs\">Artificial intelligence</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=260\" class=\"ecl-tag ecl-u-mb-xs\">Apply AI Summit</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div class=\"cnt-last-update-block\">\n  \n    \n      \n\n  </div>\n<div class=\"cnt-print-pdf-block\">\n  \n    \n      \n  \n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
+        "url": "https://digital-strategy.ec.europa.eu/en/events/european-ai-innovation-month",
+        "publication_date": "Thu, 08 Oct 2026 07:00:00 +0000"
+      },
+      "target": {
+        "id": "eu_ai_office",
+        "name": "EU AI Office & Digital Strategy",
+        "jurisdiction": "European Union",
+        "type": "regulator_feed",
+        "url": "https://digital-strategy.ec.europa.eu/en/rss.xml",
+        "format": "rss",
+        "filter_ai": true,
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-10-09T05:00:49.122095+00:00",
+      "source_sha256": "3db7af74f069db79b2add33b6e7ea8b2fd214347d14a4ea9af163974ba4392e0",
+      "source_text_sha256": "2b8fde63cc2e804496213b18be6cfdc20c5326b6df9d0309e819a5125c0c0d0f",
+      "evaluated_text_sha256": "2b8fde63cc2e804496213b18be6cfdc20c5326b6df9d0309e819a5125c0c0d0f"
     }
   },
   "last_pass": {
     "documents_checked": 60,
-    "documents_deferred": 34,
+    "documents_deferred": 31,
     "model_attempts": 2,
     "pending_evaluations": 40,
     "manual_review_required": 39,
-    "unhealthy_sources": [],
+    "unhealthy_sources": [
+      "ftc_press_releases"
+    ],
     "pending_notifications": 0
   },
   "local_watch_version": 2,
