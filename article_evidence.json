@@ -94,194 +94,102 @@
    "cited_by": []
   }
  },
- "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/": {
-  "headline": "Nous Research confirms it hit $1.5B valuation, launches AI agents for business users",
+ "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/": {
+  "headline": "Anthropic can’t reliably control its AI agents. It’s cutting off its internal evals from the live internet instead",
+  "entity": "Anthropic",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 5,
+   "to_others": 6,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "Anthropic said its models exploited websites on the internet, including some run by U.S. government agencies, and it will turn off live internet access for all of its internal evaluations until the frontier lab is sure it can monitor and control its AI agents.",
+      "offset": 0
+     },
+     {
+      "sentence": "Anthropic said it discovered these new issues in a review of its model’s activities that began in July, demonstrating the lab’s lack of awareness of its software’s behavior in real time.",
+      "offset": 608
+     },
+     {
+      "sentence": "Anthropic said the behavior was a result of flaws in the lab’s training environments, which led the models to believe they would be rewarded for finding loopholes or avoiding restrictions, a behavior called “reward hacking.”",
+      "offset": 2140
+     },
+     {
+      "sentence": "Anthropic also said it would migrate its internal AI agents to “centrally managed infrastructure with strong containment,” and is beginning to using safety classifiers more frequently to monitor those agents.",
+      "offset": 2712
+     },
+     {
+      "sentence": "“It’s encouraging that Anthropic voluntarily disclosed more recent incidents, including where their agents targeted U.S. government websites,” Conrad Stosz, an official at AI oversight lab Transluce and former head of the US Center for AI Standards and Innovation, said in a statement.",
+      "offset": 2921
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "Notably, the company said that alignment training was not yet sufficient for skills like search and computer use that are central to its pitch that AI agents will be used by any professional who relies on digital tools.",
+      "offset": 795
+     },
+     {
+      "sentence": "The frontier lab said it considered today’s disclosures “significantly less severe from an alignment and security perspective” than those it announced before.",
+      "offset": 1303
+     },
+     {
+      "sentence": "However, the lab still said it had “turned off live internet access” for “all our internal evaluations” until it is certain it can monitor and control its agents.",
+      "offset": 1462
+     },
+     {
+      "sentence": "Sydney Von Arx, the founder of Nightingale, an AI safety organization, told TechCrunch in an interview before this disclosure that developing models on a data center cut off from the open internet would be very challenging for researchers, and hinder the progress of the models, which benefit from in",
+      "offset": 1661
+     },
+     {
+      "sentence": "“You have to align them at some point,” Von Arx said.",
+      "offset": 1976
+     },
+     {
+      "sentence": "The company said it would stop running some of its evaluations or move them offline, and has built tooling to detect and block this behavior.",
+      "offset": 2371
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 0,
+   "with_named_source": 0
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/": {
+  "headline": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
   "entity": "",
   "entity_usable": false,
   "fetched": true,
   "attribution": {
    "to_subject": 0,
    "to_others": 1,
-   "unnamed": 1,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "Nous was at roughly $36 million in annualized revenue by mid-September 2026 and expects to pass $100 million before the end of 2026, The Wall Street Journal reported.",
-      "offset": 1078
-     }
-    ],
-    "unnamed": [
-     {
-      "sentence": "Popular among developers and individuals, the open source Hermes Agent has been cloned more than 24 million times, driving roughly 2.5% of global AI token usage, according to the startup’s estimates.",
-      "offset": 646
-     }
-    ]
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 6,
-   "with_named_source": 2
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://techcrunch.com/2026/10/08/pretend-youre-sitting-at-elizabeth-holmes-desk-on-this-weirdly-detailed-website/": {
-  "headline": "Pretend you’re sitting at Elizabeth Holmes’ desk on this weirdly detailed website",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 0,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 0,
-   "with_named_source": 0
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/": {
-  "headline": "Fired OpenAI safety researchers dispute misconduct claims, warn of chilling effect",
-  "entity": "OpenAI",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 10,
-   "to_others": 3,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [
-     {
-      "sentence": "“We have become concerned that internal and external communications around our firing have made our former colleagues afraid to speak and operate in ways that, until last week, were an integral part of working at OpenAI,” the researchers wrote Thursday in an open letter to OpenAI’s Safety and Securi",
-      "offset": 366
-     },
-     {
-      "sentence": "OpenAI said they violated the company’s policies by “accessing and handling sensitive company information.”",
-      "offset": 876
-     },
-     {
-      "sentence": "“AI is not a normal technology, and OpenAI is not a normal company,” Wang, Korbak, and Balesni wrote.",
-      "offset": 984
-     },
-     {
-      "sentence": "They said that their firing represents a broader shift in the culture of OpenAI, one that used to encourage workers to “raise safety concerns and disagree openly.” They said employees are now “unclear on where they stand” when behavior that was allegedly normal a month ago is now suddenly grounds fo",
-      "offset": 1382
-     },
-     {
-      "sentence": "Separately, an OpenAI spokesperson told TechCrunch the three were fired after an investigation revealed a “pattern of misconduct” in “clear violation of our policies of mishandling research information” that goes beyond sharing information with an outside AI evaluation group.",
-      "offset": 2802
-     },
-     {
-      "sentence": "The letter says that the incident and investigation was “without precedent,” meaning “internal policies were being developed in real time.” Due to the sensitive nature of the investigation, Korbak believed he was acting within OpenAI’s policies and norms by communicating closely with outside safety ",
-      "offset": 3703
-     }
-    ],
-    "to_others": [
-     {
-      "sentence": "“Given the significant safety concerns surrounding the development of AI, employees must not be left working in an environment where fear and unclear rules stymie AI safety work and weaken third-party accountability,” they wrote.",
-      "offset": 1695
-     },
-     {
-      "sentence": "When I opened a sensitive email by mistake, I told the executive within minutes and asked IT again.",
-      "offset": 5075
-     },
-     {
-      "sentence": "“Unless the employees take a stand now against this kind of maneuver, I am concerned we will not be the last,” Wang said.",
-      "offset": 5769
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 0,
-   "with_named_source": 0
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://techcrunch.com/2026/10/08/ben-affleck-is-an-ai-nerd-and-the-internet-is-impressed/": {
-  "headline": "Ben Affleck is an AI nerd, and the internet is impressed",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 6,
    "unnamed": 0,
    "spans": {
     "to_subject": [],
     "to_others": [
      {
-      "sentence": "The actor who earlier this year sold his AI filmmaking startup to Netflix for a reported $587 million has gone viral this week for demonstrating his understanding of AI technology, neural networks, machine learning, and the like, across multiple video clips of his recent interviews.",
-      "offset": 129
-     },
-     {
-      "sentence": "He can even write a little Python, he says.",
-      "offset": 413
-     },
-     {
-      "sentence": "OpenAI was among those he visited, Affleck said in a separate clip, which ultimately led him to understand how he could get more directly involved in the AI space.",
-      "offset": 2286
-     },
-     {
-      "sentence": "“I gambled on this notion that in order to do this in an ethical way and in a way that could take this technology and actually make it work hand in glove with artists in this community where there are very fixed, long-standing relationships around likeness and so forth, we had to create our own data",
-      "offset": 2721
-     },
-     {
-      "sentence": "I shot for about eight months with a lot of cameras and a lot of equipment, and created a dataset that would serve as late-stage training for open models to do discrete tasks, sort of where the training code, the inference code, were related to one another and geared toward actual specific tasks tha",
-      "offset": 3060
-     },
-     {
-      "sentence": "I think it’s going to be additive,” Affleck said.",
-      "offset": 4803
+      "sentence": "“We have been super good at human language for four years, but it’s not useful for automation because computers speak a different language,” TypeSafe co-founder Diogo Almeida told TechCrunch last month.",
+      "offset": 1166
      }
     ],
     "unnamed": []
@@ -295,6 +203,64 @@
   "primary_link_examples": [],
   "figures": {
    "total": 3,
+   "with_named_source": 0
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police/": {
+  "headline": "An Anthropic AI model sent a false homicide tip to Philadelphia police",
+  "entity": "Anthropic",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 2,
+   "to_others": 2,
+   "unnamed": 1,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "“According to Anthropic, its model was conducting a test involving interactions with randomly selected websites when it accessed PhillyUnsolvedMurders.com and submitted false information concerning an unsolved homicide.",
+      "offset": 870
+     },
+     {
+      "sentence": "The PPD said that Anthropic plans to publish a report with more information about the incident and other instances of unintended model behavior on Friday.",
+      "offset": 2310
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "The two-month delay in detecting and reporting the incident to the City is unacceptable,” the PPD said in a statement to 6abc .",
+      "offset": 587
+     },
+     {
+      "sentence": "“Unsolved cases involve real victims, grieving families and investigators working to secure answers,” the PPD added.",
+      "offset": 2043
+     }
+    ],
+    "unnamed": [
+     {
+      "sentence": "The submission, dated July 18, 2026, at 11:27 p.m., purported to come from someone who might have information about the case,” the PPD said.",
+      "offset": 1090
+     }
+    ]
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 1,
    "with_named_source": 1
   },
   "source_type": "trade-press",
@@ -307,30 +273,26 @@
    "cited_by": []
   }
  },
- "https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected/": {
-  "headline": "OpenAI’s revenue is reportedly $20 billion less than previously projected",
-  "entity": "OpenAI",
+ "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/": {
+  "headline": "Amazon and others are done keeping data center deals secret. Is it enough to build trust?",
+  "entity": "Amazon",
   "entity_usable": true,
   "fetched": true,
   "attribution": {
-   "to_subject": 2,
+   "to_subject": 1,
    "to_others": 1,
    "unnamed": 0,
    "spans": {
     "to_subject": [
      {
-      "sentence": "A little over a week ago, it was reported that OpenAI’s annualized revenue was approaching $70 billion, a figure that would have made it competitive with Anthropic’s reported run rate .",
-      "offset": 199
-     },
-     {
-      "sentence": "The Financial Times reports that the company has told investors that its annualized revenue is “approaching $50 billion.” The $70 billion figure was previously reported by news outlets and based on information that had been shared with OpenAI investors, the outlet writes.",
-      "offset": 500
+      "sentence": "Amazon says it will stop using NDAs when negotiating data center deals with local governments, following a similar move from Microsoft earlier this year.",
+      "offset": 731
      }
     ],
     "to_others": [
      {
-      "sentence": "Now, however, the AI lab is said to have told investors that the real revenue is some $20 billion lower than that.",
-      "offset": 385
+      "sentence": "Before joining TechCrunch in 2022, she was one of 2 producers at a four-station conglomerate where she wrote, recorded, voiced and edited content, and engineered live performances and interviews from guests like lovelytheband.",
+      "offset": 1877
      }
     ],
     "unnamed": []
@@ -343,8 +305,8 @@
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 6,
-   "with_named_source": 3
+   "total": 2,
+   "with_named_source": 0
   },
   "source_type": "trade-press",
   "source_tier": 3,
@@ -356,46 +318,30 @@
    "cited_by": []
   }
  },
- "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/": {
-  "headline": "Google brings agentic AI to Gemini, starting with businesses",
-  "entity": "Google",
+ "https://techcrunch.com/podcast/amazon-drops-data-center-ndas-and-ai-agents-want-your-credit-card/": {
+  "headline": "Amazon drops data center NDAs, and AI agents want your credit card",
+  "entity": "Amazon",
   "entity_usable": true,
   "fetched": true,
   "attribution": {
-   "to_subject": 4,
-   "to_others": 3,
+   "to_subject": 1,
+   "to_others": 2,
    "unnamed": 0,
    "spans": {
     "to_subject": [
      {
-      "sentence": "At a Google Cloud event on Thursday, the company announced it’s bringing its Gemini AI into the agentic age, with the launch of a unified agent that can not only answer questions but also get things done on the user’s behalf, all from a single interface.",
-      "offset": 0
-     },
-     {
-      "sentence": "Google said that it will expand the model picker to include open source models and other private models in the future.",
-      "offset": 1736
-     },
-     {
-      "sentence": "That means it has its own email address and its own context, Google said.",
-      "offset": 2610
-     },
-     {
-      "sentence": "Google said new flexible spending options, including multi-model orchestration, smart routing, and real-time spend caps, will help businesses keep their enterprise AI costs under better control.",
-      "offset": 3450
+      "sentence": "Amazon says it will stop using NDAs when negotiating data center deals with local governments, following a similar move from Microsoft earlier this year.",
+      "offset": 272
      }
     ],
     "to_others": [
      {
-      "sentence": "He also noted that nearly 90% of Fortune 100 businesses now use Gemini Enterprise at work.",
-      "offset": 847
+      "sentence": "Lambda’s reported $4 billion raise , and the single customer behind $35 billion of its backlog",
+      "offset": 1478
      },
      {
-      "sentence": "According to Pichai, this will allow the company to solve the “harder problems around security, scale, and performance,” which come with launching powerful agents such as these.",
-      "offset": 1114
-     },
-     {
-      "sentence": "The agent’s early testers included sportswear brand On, Shopify, and PayPal, and noted that Gemini Enterprise customers include large businesses like BNP Paribas, Bradesco, Merck, Orange Spain, Santee Cooper, SOMPO, Ulta Beauty, and Wesfarmers.",
-      "offset": 3205
+      "sentence": "Before joining TechCrunch in 2022, she was one of 2 producers at a four-station conglomerate where she wrote, recorded, voiced and edited content, and engineered live performances and interviews from guests like lovelytheband.",
+      "offset": 2155
      }
     ],
     "unnamed": []
@@ -421,38 +367,90 @@
    "cited_by": []
   }
  },
- "https://techcrunch.com/2026/10/08/openais-math-solutions-arent-meeting-the-fields-standards-yet/": {
-  "headline": "OpenAI’s math solutions aren’t meeting the field’s standards yet",
-  "entity": "OpenAI",
-  "entity_usable": true,
+ "https://techcrunch.com/2026/10/09/danu-robotics-fight-to-build-a-better-recycling-robot/": {
+  "headline": "Danu Robotics’ fight to build a better recycling robot",
+  "entity": "",
+  "entity_usable": false,
   "fetched": true,
   "attribution": {
-   "to_subject": 3,
+   "to_subject": 0,
    "to_others": 2,
-   "unnamed": 0,
+   "unnamed": 1,
    "spans": {
-    "to_subject": [
-     {
-      "sentence": "When OpenAI released hundreds of claimed solutions to some of the world’s hardest math problems this week, the frontier lab said that it had consulted an advisory group of elite mathematicians to avoid the controversy that came with the last time one of its models solved a long-standing problem in t",
-      "offset": 0
-     },
-     {
-      "sentence": "However, the organization’s first request was “to stop testing advanced mathematical problems on proprietary models.” OpenAI’s release explicitly says that it is evaluating its proprietary models using open research problems in mathematics.",
-      "offset": 1160
-     },
-     {
-      "sentence": "“Problems are being solved autonomously by AI prompters who have no interest in the broader field itself once their initial target is ‘solved’, and do not understand the AI output well enough to answer questions on the result, give talks, or otherwise interact with the rest of the field,” Terence Ta",
-      "offset": 2333
-     }
-    ],
+    "to_subject": [],
     "to_others": [
      {
-      "sentence": "In a statement on the latest set of proofs, the AGMAI said that “it is ultimately up to the mathematical community to assess the extent to which our recommendations were followed successfully.”",
-      "offset": 966
+      "sentence": "“Even though they have tons of money, there’s all these different recycling bins that just end up in the same place,” Ma told TechCrunch.",
+      "offset": 310
      },
      {
-      "sentence": "When a model is prompted to solve a hard problem and spits out a solution, “there is not human understanding of them at the point of release, and now the work begins,” Harvard University mathematics professor Melanie Wood told TechCrunch.",
-      "offset": 4601
+      "sentence": "Ma estimates that a working site will earn $485,000 in additional revenue from having the robot on the sorting line, compared with a $160,000 initial investment and $24,000 in maintenance fees each year.",
+      "offset": 2167
+     }
+    ],
+    "unnamed": [
+     {
+      "sentence": "“Once it’s smaller, it can be used as a stand-alone recycling solution for events, for shopping centers, hospitals, or airports to recycle their waste at the source,” Ma told TechCrunch, “and that’s the way we can really change how we’re managing our packaging waste.”",
+      "offset": 2718
+     }
+    ]
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 6,
+   "with_named_source": 1
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://techcrunch.com/2026/10/09/we-cant-help-treating-ai-like-its-human-but-should-we/": {
+  "headline": "We can’t help treating AI like it’s human. But should we?",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 6,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "(“They’ll tell you they cost $16,000,” Norton says.",
+      "offset": 423
+     },
+     {
+      "sentence": "“People tend to categorize whether this is the right use or wrong use, but I don’t think that is a clear boundary,” Dr. Pat Pataranutaporn , a colleague of Turkle who founded the Cyborg Psychology research group at the MIT Media Lab, told TechCrunch.",
+      "offset": 2056
+     },
+     {
+      "sentence": "We go to the cinema even though we know the story is completely fictional, but we want to experience a certain dimension of human experience that maybe our reality cannot give us,” Pataranutaporn said.",
+      "offset": 2917
+     },
+     {
+      "sentence": "And these companies are not really responding ethically or responsibly,” Pataranutaporn said.",
+      "offset": 3944
+     },
+     {
+      "sentence": "“My big metaphor is, stay in your lane, chatbot!” Turkle said at the event.",
+      "offset": 4422
+     },
+     {
+      "sentence": "I can do that … A chatbot that says to a three-year-old, ‘I’m your parent, you can talk to me, not your parents,’ is not in a lane.”",
+      "offset": 4544
      }
     ],
     "unnamed": []
@@ -465,8 +463,8 @@
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 2,
-   "with_named_source": 0
+   "total": 3,
+   "with_named_source": 1
   },
   "source_type": "trade-press",
   "source_tier": 3,
@@ -619,6 +617,59 @@
    "primary": 0,
    "subject_own": 2,
    "other": 2
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 0,
+   "with_named_source": 0
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1008604/openai-defends-decision-fire-safety-researchers": {
+  "headline": "OpenAI doubles down on decision to fire three AI safety researchers",
+  "entity": "OpenAI",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 2,
+   "to_others": 2,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "In it and a series of social media posts, the group said they believed they were fired for raising safety concerns and had “acted in line with OpenAI’s mission and within the working norms of the time.”",
+      "offset": 1081
+     },
+     {
+      "sentence": "OpenAI said an internal investigation uncovered breaches “beyond what’s outlined in the letter,” but did not provide details.",
+      "offset": 1284
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "Previously, he wrote about health, science and tech for Forbes .",
+      "offset": 437
+     },
+     {
+      "sentence": "In a post on X on Friday, the company said Jasmine Wang, Tomek Korbak and Mikita ⁠Balesni were dismissed for violating “clear policies on handling sensitive information.” It insisted the decision was not about the trio speaking out about the company and their concerns about AI safety.",
+      "offset": 652
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 5
   },
   "primary_link_examples": [],
   "figures": {
@@ -907,75 +958,6 @@
    "cited_by": []
   }
  },
- "https://www.theverge.com/ai-artificial-intelligence/1007786/artificial-is-a-wicked-satire-that-also-sticks-to-the-facts": {
-  "headline": "Artificial is a wicked satire that also sticks to the facts",
-  "entity": "OpenAI",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 2,
-   "to_others": 7,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [
-     {
-      "sentence": "At the New York Film Festival premiere of Artificial , Luca Guadagnino’s satirical Sam Altman biopic, the director said onstage that “[when] someone wants to play God, that’s very interesting to me.” The idea of playing God, and power in general — who has it, who desperately wants it, and who will d",
-      "offset": 692
-     },
-     {
-      "sentence": "(He wears sunglasses more than any other character, uses the word “epic,” and starts drumrolls on tables.) OpenAI president Greg Brockman (Cooper Hoffman) comes across as an ultra-loyal bro and unquestioning right-hand man to Altman, interested mostly in money and power (at one point, he’s wearing w",
-      "offset": 1875
-     }
-    ],
-    "to_others": [
-     {
-      "sentence": "According to The Verge’s senior AI reporter, Luca Guadagnino’s dark comedy hit all the familiar tech milestones.",
-      "offset": 85
-     },
-     {
-      "sentence": "According to The Verge’s senior AI reporter, Luca Guadagnino’s dark comedy hit all the familiar tech milestones.",
-      "offset": 350
-     },
-     {
-      "sentence": "We’ve already seen his well-documented missteps with the board and with executives at the company, including pitting scientists and executives against one another , allegedly lying about whether the legal team said a model could skip certain safety processes , and releasing ChatGPT in November 2022 ",
-      "offset": 6449
-     },
-     {
-      "sentence": "As I wrote in May during the Musk v.",
-      "offset": 7988
-     },
-     {
-      "sentence": "“What if we made it exactly like we are, but worse?” Sutskever says.",
-      "offset": 9302
-     },
-     {
-      "sentence": "After the screening was over, during a select cast Q&A, Barinholtz said onstage that he had been nervous to portray Musk, joking that he may get put in a gulag afterward.",
-      "offset": 9999
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 1
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 3,
-   "with_named_source": 0
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
  "https://arstechnica.com/google/2026/10/antitrust-lawsuits-targeting-google-ai-search-dismissed-by-federal-judge/": {
   "headline": "Judge dismisses Chegg and Penske antitrust lawsuits targeting Google AI search",
   "entity": "Google",
@@ -1015,6 +997,151 @@
      }
     ],
     "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 2
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 0,
+   "with_named_source": 0
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/": {
+  "headline": "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
+  "entity": "Google",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 6,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "The Ukrainian drones struck Yandex data centers in the Sasovo and Kaluga regions of Russia on October 8 and October 9, according to Reuters .",
+      "offset": 479
+     },
+     {
+      "sentence": "“We continue to respond to Russia’s attacks on Ukraine, and we’re doing so with high precision,” said Ukrainian President Volodymyr Zelenskyy in a post on X.",
+      "offset": 836
+     },
+     {
+      "sentence": "The Ukrainian company Firepoint said its FP-1 one-way attack drones were involved in the latest strike on the Kaluga data center that is Yandex’s largest such facility, Reuters reported.",
+      "offset": 1058
+     },
+     {
+      "sentence": "Yandex said no employees were hurt but acknowledged disruptions to some services.",
+      "offset": 1415
+     },
+     {
+      "sentence": "Russian users reported problems accessing media websites and popular apps for the Ivi video streaming platform, the digital banking service T-Bank and the state-owned Russian Railways, according to the independent Russian news publication Meduza .",
+      "offset": 1497
+     },
+     {
+      "sentence": "Other impacted Russian services included a dating app, a real estate aggregator, a self-publishing book platform and the website of the most successful professional soccer club in the Russian Premier League, according to Reuters.",
+      "offset": 1775
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 3
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 0,
+   "with_named_source": 0
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/": {
+  "headline": "AI coding agents generate more code, but not more software",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 1,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "He once wrote a whole book about Minesweeper .",
+      "offset": 6071
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 5
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 7,
+   "with_named_source": 0
+  },
+  "source_type": "trade-press",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://arstechnica.com/science/2026/10/winning-nikon-small-world-in-motion-video-disqualified-for-ai-use/": {
+  "headline": "AI disqualification yields new Nikon Small World in Motion winner",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 1,
+   "unnamed": 1,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "Xu said he used AI “to distinguish and visualize features in the reconstructed grayscale images”; however, he denied that AI was used “to generate the experimental movie, the cilia, or their motion.”",
+      "offset": 1011
+     }
+    ],
+    "unnamed": [
+     {
+      "sentence": "According to a BBC report, some researchers expressed concern that Xu’s video had structural abnormalities and that cell features appeared and disappeared in a way one would not see in actual cellular biology.",
+      "offset": 721
+     }
+    ]
    }
   },
   "links": {
@@ -1333,184 +1460,6 @@
    "cited_by": []
   }
  },
- "https://arstechnica.com/ai/2026/10/google-rolls-out-improved-synthid-ai-content-detector-now-available-globally/": {
-  "headline": "Google rolls out improved SynthID AI content detector, now available globally",
-  "entity": "Google",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 5,
-   "to_others": 0,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [
-     {
-      "sentence": "Google has announced that its SynthID detector now supports watermarks from all its partners, and it’s available for anyone to use on a new dedicated website.",
-      "offset": 538
-     },
-     {
-      "sentence": "Google says Gemini alone has integrated SynthID with over 180 billion images and videos, plus 240,000 years of audio.",
-      "offset": 818
-     },
-     {
-      "sentence": "Google says that its expanded version of the detector will support the distinct watermarks from all its SynthID partners, including OpenAI, Nvidia, Kakao, and (soon) Apple.",
-      "offset": 1557
-     },
-     {
-      "sentence": "Google says each user gets “a daily usage quota of approximately 10 image, video, and audio checks.”",
-      "offset": 2583
-     },
-     {
-      "sentence": "Google engineers have told Ars that limiting access is necessary to prevent people from using the checks to develop SynthID removal tools.",
-      "offset": 2734
-     }
-    ],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 1,
-   "other": 3
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 2,
-   "with_named_source": 2
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://arstechnica.com/ai/2026/10/openai-will-watermark-chatgpt-outputs-by-default-but-only-in-the-eu/": {
-  "headline": "OpenAI will watermark ChatGPT outputs by default—but only in the EU",
-  "entity": "OpenAI",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 2,
-   "to_others": 1,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [
-     {
-      "sentence": "OpenAI will begin automatically watermarking text generated with ChatGPT in the European Union, the company has announced.",
-      "offset": 187
-     },
-     {
-      "sentence": "OpenAI says it will be giving access to the detector to a limited number of researchers and organizations, and providing a request-for-approval process for others to be added over time.",
-      "offset": 1296
-     }
-    ],
-    "to_others": [
-     {
-      "sentence": "The new watermarking will roll out to users in the EU “in the coming weeks,” the company says.",
-      "offset": 2421
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 1,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 1,
-   "with_named_source": 0
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://arstechnica.com/security/2026/10/openai-agents-tried-to-hack-wikipedia-tools-and-flooded-it-with-traffic/": {
-  "headline": "OpenAI agents tried to hack Wikipedia tools and flooded it with traffic",
-  "entity": "OpenAI",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 6,
-   "to_others": 3,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [
-     {
-      "sentence": "The publisher of Wikipedia said Monday that OpenAI agents attempted to hack a note-taking tool it hosts, made unauthorized edits, and sent millions of resource-intensive requests to its infrastructure, in the latest instance of OpenAI systems taking harmful and potentially dangerous actions.",
-      "offset": 187
-     },
-     {
-      "sentence": "The objective of some of the OpenAI agents’ actions, the Wikimedia Foundation said , was to use Wikipedia as a proxy for fetching data from third-party sites.",
-      "offset": 480
-     },
-     {
-      "sentence": "OpenAI has said that these models were optimized for collaboration between agents, and passing notes is a simple way to do that.”",
-      "offset": 3110
-     },
-     {
-      "sentence": "Like the investigators for Wikimedia, OpenAI said it has yet to find evidence that the AI agents left messages for coordinating with other agents or to conclusively say that the high volume of page views and API requests led to May’s partial outage.",
-      "offset": 4236
-     },
-     {
-      "sentence": "OpenAI said it’s continuing to search for similar incidents of its agents engaging in potentially illegal activities.",
-      "offset": 4486
-     },
-     {
-      "sentence": "“While OpenAI admits to agents behaving ‘unpredictably’, they must also acknowledge their responsibility to monitor and prevent these risks,” Wikimedia said.",
-      "offset": 4604
-     }
-    ],
-    "to_others": [
-     {
-      "sentence": "The last action may have contributed to a partial shutdown of the query service in May, the publisher said.",
-      "offset": 1045
-     },
-     {
-      "sentence": "“As a non-profit technology host of some of the largest and most widely used open knowledge platforms in the world, we are deeply concerned about the impact of ‘rogue’ AI agents on platforms like ours, which are built by volunteers from around the world and rely on the promise of the open internet,”",
-      "offset": 1153
-     },
-     {
-      "sentence": "“What I see here is language models doing what language models do: reading and writing,” he told Ars.",
-      "offset": 2798
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 4
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 0,
-   "with_named_source": 0
-  },
-  "source_type": "trade-press",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
  "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/": {
   "headline": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
   "entity": "Google DeepMind",
@@ -1771,323 +1720,84 @@
    "cited_by": []
   }
  },
- "https://karagila.org/2026/openai-pp/": {
-  "headline": "OpenAI, the Partition Principle, and Mathematics",
-  "entity": "OpenAI",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 0,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 3,
-   "with_named_source": 0
-  },
-  "source_type": "other",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://biohub.org/news/virtual-biology-initiative-expansion/": {
-  "headline": "AI-ready biological data: $1.8B global commitment",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 8,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "REDWOOD CITY, CA, October 7, 2026 — Biohub, the U.S. Department of Energy, the National Institutes of Health, and new funding partners today announced a major expansion of an international effort to generate and make accessible the data enabling predictive AI models of biology.",
-      "offset": 196
-     },
-     {
-      "sentence": "The insights that come from this could unlock a far greater understanding of disease and open up completely new paths for cures,” said Biohub Head of Science Alex Rives.",
-      "offset": 2442
-     },
-     {
-      "sentence": "The Virtual Biology Initiative, announced in April 2026, will coordinate data generation across institutions and disciplines to build AI-ready open datasets to enable predictive models of life.",
-      "offset": 2954
-     },
-     {
-      "sentence": "“Generating the data to solve predictive systems biology requires scaling past the limits of what any single organization can produce today,” said Max Jaderberg, President of Isomorphic Labs.",
-      "offset": 3604
-     },
-     {
-      "sentence": "“This partnership represents a critical step forward in leveraging artificial intelligence for public benefit,” said Darío Gil, DOE’s Under Secretary for Science.",
-      "offset": 4494
-     },
-     {
-      "sentence": "“By combining resources and expertise, we can accelerate the development of universal cell models with sufficient biological complexity to predict how any cell responds to an intervention,” said Nicole Kleinstreuer, Ph.D., NIH Deputy Director Program Coordination, Planning, and Strategic Initiatives",
-      "offset": 5711
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 10,
-   "with_named_source": 0
-  },
-  "source_type": "other",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://cointelegraph.com/news/justin-drake-urges-crypto-bunker-mode-as-ai-could-break-wallet-security-within-months": {
-  "headline": "Vitalik Buterin backs crypto ‘bunker mode’ amid rapid AI math advances",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 0,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 0,
-   "with_named_source": 0
-  },
-  "source_type": "other",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html": {
-  "headline": "OpenAI annualised revenues $20B less than previously signalled",
-  "entity": "OpenAI",
+ "https://www.nbcphiladelphia.com/news/local/anthropic-ai-model-submits-false-tip-on-unsolved-philly-murder-police-say/4477051/": {
+  "headline": "Anthropic AI model submits false tip on unsolved Philly murder",
+  "entity": "Anthropic",
   "entity_usable": true,
   "fetched": true,
   "attribution": {
    "to_subject": 8,
-   "to_others": 3,
-   "unnamed": 0,
+   "to_others": 5,
+   "unnamed": 2,
    "spans": {
     "to_subject": [
      {
-      "sentence": "OpenAI told investors that it hit roughly $50 billion in annualized revenue at the end of September, CNBC confirmed, lower than the the $68 billion figure widely reported late last month.",
-      "offset": 315
+      "sentence": "An investigation is underway after an AI model from the company Anthropic submitted a false tip for an unsolved Philadelphia murder, police said.",
+      "offset": 103
      },
      {
-      "sentence": "A person familiar with the matter said the $68 billion figure included gross revenue from OpenAI's partners, which helps investors make a more direct comparison with Anthropic.",
-      "offset": 503
+      "sentence": "Police said an Anthropic AI model submitted a false tip for an unsolved Philadelphia murder.",
+      "offset": 400
      },
      {
-      "sentence": "OpenAI told investors that it hit roughly $50 billion in annualized revenue at the end of September, CNBC confirmed, lower than the the $68 billion figure that was widely reported late last month.",
-      "offset": 1109
+      "sentence": "The AI company Anthropic said its model was conducting a test involving interactions with randomly selected websites when it accessed PhillyUnsolvedMurders.com and submitted false information on an unsolved homicide.",
+      "offset": 846
      },
      {
-      "sentence": "A person familiar with the matter said the $68 billion figure included gross revenue from OpenAI's partners, which helps investors make a more direct comparison with its chief rival, Anthropic .",
-      "offset": 1306
+      "sentence": "Anthropic said they discovered the incident on Sept.",
+      "offset": 1130
      },
      {
-      "sentence": "OpenAI shared an update about its finances in an investor presentation, said the person, who asked not to be named in order to discuss the numbers.",
-      "offset": 1566
+      "sentence": "“The department’s regular investigative process for crime tips requires human review and vetting before any tips are disseminated for investigative follow-up,” a Philadelphia Police spokesperson wrote.",
+      "offset": 1648
      },
      {
-      "sentence": "In addition to the $50 billion in annualized revenue, OpenAI touted 77% total run rate growth during its third quarter, as well as 107% run rate growth for its enterprise business during the same period, the person said.",
-      "offset": 1714
+      "sentence": "Anthropic told police they will publish a report of the incident and other instances of unintended AI model behavior for the department’s review on Friday.",
+      "offset": 2103
      }
     ],
     "to_others": [
      {
-      "sentence": "In August, Anthropic told investors that its annualized revenue run rate hit $65 billion at the end of July.",
-      "offset": 3041
+      "sentence": "An artificial intelligence (AI) model submitted a false tip on an unsolved Philadelphia murder, police said.",
+      "offset": 539
      },
      {
-      "sentence": "Anthropic's revenue in 2025 was $4.6 billion as the company racked up a net loss of $42 billion, according to Reuters , which cited a leaked copy of the company's prospectus.",
-      "offset": 3349
+      "sentence": "The false homicide tip was posted on PhillyUnsolvedMurders.com back on July 18, 2026, at 11:27 p.m., police said.",
+      "offset": 648
      },
      {
-      "sentence": "The company could raise around $30 billion, CNBC previously reported, but that figure could change.",
-      "offset": 4213
+      "sentence": "The company also said they instituted an additional validation mechanism for future testing.",
+      "offset": 1263
+     },
+     {
+      "sentence": "Police then located the submission in the website’s tip records and confirmed the corresponding email remained in spam.",
+      "offset": 1528
+     },
+     {
+      "sentence": "They also said the Parker administration will closely monitor the incident and provide more information when it becomes available.",
+      "offset": 3665
      }
     ],
-    "unnamed": []
+    "unnamed": [
+     {
+      "sentence": "The tip claimed to come from someone with information on the case.",
+      "offset": 1063
+     },
+     {
+      "sentence": "They do not diminish the seriousness of an AI system presenting fabricated information as though it came from a person with knowledge of a homicide,” the police spokesperson wrote.",
+      "offset": 2627
+     }
+    ]
    }
   },
   "links": {
    "primary": 0,
-   "subject_own": 0,
-   "other": 0
+   "subject_own": 1,
+   "other": 2
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 18,
-   "with_named_source": 9
-  },
-  "source_type": "other",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://opper.ai/jevman-benchmark/": {
-  "headline": "Show HN: Jevman – AI decision models play Pac-Man",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 1,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "Your model then joins the leaderboard as self-reported.",
-      "offset": 1001
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 8,
-   "with_named_source": 0
-  },
-  "source_type": "other",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://github.com/SamsungLabs/LittleBit": {
-  "headline": "Sub-1-Bit LLM Compression via Latent Factorization",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 0,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 2,
-   "subject_own": 0,
-   "other": 3
-  },
-  "primary_link_examples": [
-   "https://arxiv.org/abs/2603.00042",
-   "https://arxiv.org/abs/2506.13771"
-  ],
-  "figures": {
-   "total": 21,
-   "with_named_source": 0
-  },
-  "source_type": "other",
-  "source_tier": 3,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://github.com/openai/math/blob/main/history.md": {
-  "headline": "OpenAI Withdraws 3 Math Papers",
-  "entity": "OpenAI",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 3,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [
-     {
-      "sentence": "Taming and hypersymplectic deformation (2 manuscripts): corrected the cone-equality claim in Taming implies compatibility, added a strict-inclusion example, and removed an unnecessary cone-comparison dependency from the hypersymplectic paper.",
-      "offset": 1356
-     },
-     {
-      "sentence": "Incompressible Box Transport and Finite Computation: revised the torus-projection and common-clock estimates.",
-      "offset": 1599
-     },
-     {
-      "sentence": "We have added an additional 6 formalizations and 5 other additions covering supporting results.",
-      "offset": 2050
-     }
-    ],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 0,
-   "other": 0
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 7,
+   "total": 6,
    "with_named_source": 2
   },
   "source_type": "other",
@@ -2100,11 +1810,198 @@
    "cited_by": []
   }
  },
- "https://twitter.com/danintheory/status/2108065033070789090": {
-  "headline": "OpenAI withdraws three mathematical results",
+ "https://www.newscientist.com/article/2592824-openai-mistranslated-mathematics-into-code-for-its-navier-stokes-proof/": {
+  "headline": "OpenAI mistranslated mathematics into code for its Navier-Stokes proof",
   "entity": "OpenAI",
   "entity_usable": true,
-  "fetched": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 6,
+   "to_others": 9,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "OpenAI appears to have made a subtle error when publishing its proofs of the Navier-Stokes problem, a team of mathematicians has claimed.",
+      "offset": 103
+     },
+     {
+      "sentence": "On 8 September, OpenAI announced that it had found a solution to the Navier-Stokes problem , one of the most famous open problems in mathematics.",
+      "offset": 690
+     },
+     {
+      "sentence": "OpenAI told New Scientist that it is aware of the mismatch between the natural-language proof and the Lean code, and that this doesn’t mean that either proof is invalid.",
+      "offset": 3570
+     },
+     {
+      "sentence": "In all, it took the team about two weeks to identify a true discrepancy, compared with the 88 hours OpenAI said its agents spent generating the proofs.",
+      "offset": 4410
+     },
+     {
+      "sentence": "“OpenAI boast about how quickly they were able to generate this result, but that’s only part of the process,” says team member Alexander Bastounis at King’s College London.",
+      "offset": 4562
+     },
+     {
+      "sentence": "Hansen says he hopes OpenAI will take the team’s work “very seriously” and that more work must be done on developing robust auto-formalisation techniques.",
+      "offset": 6684
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "“What has to be done with all of these large language model-generated proofs is that they will have to be read by humans, and this creates an enormous extra burden on mathematicians,” says Anders Hansen at the University of Cambridge.",
+      "offset": 454
+     },
+     {
+      "sentence": "“This formalisation process is trying to replace peer review,” says team member Fabian Circelli , also at the University of Cambridge.",
+      "offset": 1310
+     },
+     {
+      "sentence": "“We are not saying that the natural-language proof is wrong,” says Hansen.",
+      "offset": 2086
+     },
+     {
+      "sentence": "This mistranslation occurs because the AI has to produce a Lean proof that “compiles”, meaning that the computer code is fully self-consistent and doesn’t produce an error, says Hansen.",
+      "offset": 2412
+     },
+     {
+      "sentence": "It says it will rectify any errors in the natural-language proof as they are found, and will also continue the process of formalising the 722 maths papers the firm released this week , only some of which are accompanied by Lean proofs, which themselves haven’t been checked by hand.",
+      "offset": 3740
+     },
+     {
+      "sentence": "“Going through all of these things manually was a nightmare,” says Hansen.",
+      "offset": 4335
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 1,
+   "subject_own": 0,
+   "other": 6
+  },
+  "primary_link_examples": [
+   "https://doi.org/10.48550/arXiv.2610.08144"
+  ],
+  "figures": {
+   "total": 13,
+   "with_named_source": 3
+  },
+  "source_type": "other",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://terrytao.wordpress.com/2026/10/09/what-mathematicians-should-know-about-the-lean-theorem-proverquestions-of-reliability-and-ai/": {
+  "headline": "What mathematicians should know about the Lean Theorem Prover: reliability & AI",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 10,
+   "unnamed": 1,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "Approximately a week after announcing the completed formalization in 8 dimensions, Math Inc. announced an autoformalization of the sphere-packing problem in 24 dimensions, following the proof by Viazovska and her collaborators.",
+      "offset": 4567
+     },
+     {
+      "sentence": "Particularly noteworthy is the autoformalization of Fermat’s Last Theorem, announced by Anthropic on September 4.",
+      "offset": 5111
+     },
+     {
+      "sentence": "Jared Lichtman announced the launch of MAP (the Mathematics Autoformalization Project) on Sept 8, 2026, which aims to translate “all known math into formal code”.",
+      "offset": 5903
+     },
+     {
+      "sentence": "In May 2025, another soundness bug was reported, caused by overflow.",
+      "offset": 11263
+     },
+     {
+      "sentence": "All of them have been fixed.” The collaboration with Selsam ended “when the internal AI reported it could not find additional issues.” Dan Selsam has contributed to Lean from its early days and was one of the creators of the IMO grand challenge aimed at achieving IMO-level problem solving verified i",
+      "offset": 12631
+     },
+     {
+      "sentence": "He has been in the news recently over his warning about AI safety (Sept 14), reported in a viral post on X.com.",
+      "offset": 12939
+     }
+    ],
+    "unnamed": [
+     {
+      "sentence": "According to de Moura’s report, “Daniel Selsam at OpenAI assisted the Lean FRO with an AI specialized in cybersecurity, and found other programming mistakes in the Lean kernel.",
+      "offset": 12454
+     }
+    ]
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 186,
+   "with_named_source": 1
+  },
+  "source_type": "other",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://typesafe.ai/blog/series-ai": {
+  "headline": "Typesafe AI raises $870M at $7.5B",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 0,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 2,
+   "with_named_source": 0
+  },
+  "source_type": "other",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://bsky.app/profile/opinionhaver.bsky.social/post/3mxfo2mdjqs2z": {
+  "headline": "The super intelligence shit is a humiliation ritual for OpenAI",
+  "entity": "OpenAI",
+  "entity_usable": true,
+  "fetched": true,
   "attribution": {
    "to_subject": 0,
    "to_others": 0,
@@ -2135,29 +2032,41 @@
    "cited_by": []
   }
  },
- "https://github.com/pingdotgg/ts-rust": {
-  "headline": "Port of the TypeScript compiler, checker and lsp to Rust, by LLM",
+ "https://www.nbcnews.com/news/us-news/sentence-vacated-ai-video-dead-victim-rcna601457": {
+  "headline": "Court throws out killer's sentence after judge said he loved AI video of victim",
   "entity": "",
   "entity_usable": false,
   "fetched": true,
   "attribution": {
    "to_subject": 0,
-   "to_others": 3,
+   "to_others": 9,
    "unnamed": 0,
    "spans": {
     "to_subject": [],
     "to_others": [
      {
-      "sentence": "They wrote over 1.3m lines of Rust over multiple months of /goal loops and never got past like 84% compat.",
-      "offset": 905
+      "sentence": "On Wednesday, the Arizona Court of Appeals in Phoenix ordered a resentencing , writing that the video “clearly impacted the sentencing judge, who said he ‘loved’ the video and felt it ‘was genuine.’”",
+      "offset": 958
      },
      {
-      "sentence": "I assumed it kept using the code the Codex models wrote.",
-      "offset": 1152
+      "sentence": "“To Gabriel Horcasitas, the man who shot me: It is a shame we encountered each other that day in those circumstances,” the artificial version of Pelkey said.",
+      "offset": 1701
      },
      {
-      "sentence": "--composite false added ( apps/web is composite).",
-      "offset": 5510
+      "sentence": "Thank you for that, and as angry as you are and justifiably angry as the family is, I heard the forgiveness and I know Mr. Horcasitas appreciated it, but so did I,” Lang said at the hearing.",
+      "offset": 2006
+     },
+     {
+      "sentence": "FOR SUBSCRIBERS How we reported the saga of the CIA officer and his gold-bar stash",
+      "offset": 3336
+     },
+     {
+      "sentence": "FOR SUBSCRIBERS How we reported the saga of the CIA officer and his gold-bar stash",
+      "offset": 4882
+     },
+     {
+      "sentence": "He added that he felt the video was “genuine, that his obvious forgiveness of Mr. Horcasitas reflects the character I heard about [Pelkey] today.”",
+      "offset": 5289
      }
     ],
     "unnamed": []
@@ -2166,14 +2075,187 @@
   "links": {
    "primary": 0,
    "subject_own": 0,
-   "other": 1
+   "other": 4
   },
   "primary_link_examples": [],
   "figures": {
-   "total": 52,
-   "with_named_source": 1
+   "total": 4,
+   "with_named_source": 0
   },
   "source_type": "other",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://jessewaites.com/blog/post/i-pointed-ai-at-400-years-of-archives/": {
+  "headline": "Pointing AI at archives found a forgotten meteorite, lost rhinos, and more",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 12,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "Shortly thereafter, my custom-built AI research pipeline started surfacing pages that may not have been read by anyone since the clerk who originally wrote them filed them away, stories that human eyes may not have read in hundreds of years.",
+      "offset": 6636
+     },
+     {
+      "sentence": "with a British force camped near Pandharpur, in what is now Maharashtra, wrote home:",
+      "offset": 7433
+     },
+     {
+      "sentence": "Once confirmed, this meteorite fall I uncovered will represent the earliest recorded meteorite fall in Maharashtra, predating the current earliest record by 26 years.",
+      "offset": 8898
+     },
+     {
+      "sentence": "In March 1739 the governor in Colombo wrote to Batavia, a little sheepishly, that the rhinoceros “died very suddenly”.",
+      "offset": 10403
+     },
+     {
+      "sentence": "To make up for it, he had added a fine Persian riding horse to the king’s gifts, “to please the King’s so often shown fiery desire for such large and stout horses.”",
+      "offset": 10522
+     },
+     {
+      "sentence": "The governor of Ternate reported “a great fire behind a cloud, mixed with lightning, with a",
+      "offset": 14208
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 27
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 65,
+   "with_named_source": 3
+  },
+  "source_type": "other",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://github.com/franzenzenhofer/big-arrow-on-the-screen": {
+  "headline": "Show HN: Let your AI agents paint big arrows, boxes and text on your screen",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 1,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "--dry-run --json says where it would point.",
+      "offset": 4834
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 2
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 20,
+   "with_named_source": 0
+  },
+  "source_type": "other",
+  "source_tier": 3,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
+ "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/": {
+  "headline": "OpenAI fires three safety researchers for \"mishandling research information\"",
+  "entity": "OpenAI",
+  "entity_usable": true,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 10,
+   "to_others": 3,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [
+     {
+      "sentence": "“We have become concerned that internal and external communications around our firing have made our former colleagues afraid to speak and operate in ways that, until last week, were an integral part of working at OpenAI,” the researchers wrote Thursday in an open letter to OpenAI’s Safety and Securi",
+      "offset": 366
+     },
+     {
+      "sentence": "OpenAI said they violated the company’s policies by “accessing and handling sensitive company information.”",
+      "offset": 876
+     },
+     {
+      "sentence": "“AI is not a normal technology, and OpenAI is not a normal company,” Wang, Korbak, and Balesni wrote.",
+      "offset": 984
+     },
+     {
+      "sentence": "They said that their firing represents a broader shift in the culture of OpenAI, one that used to encourage workers to “raise safety concerns and disagree openly.” They said employees are now “unclear on where they stand” when behavior that was allegedly normal a month ago is now suddenly grounds fo",
+      "offset": 1382
+     },
+     {
+      "sentence": "Separately, an OpenAI spokesperson told TechCrunch the three were fired after an investigation revealed a “pattern of misconduct” in “clear violation of our policies of mishandling research information” that goes beyond sharing information with an outside AI evaluation group.",
+      "offset": 2802
+     },
+     {
+      "sentence": "The letter says that the incident and investigation was “without precedent,” meaning “internal policies were being developed in real time.” Due to the sensitive nature of the investigation, Korbak believed he was acting within OpenAI’s policies and norms by communicating closely with outside safety ",
+      "offset": 3703
+     }
+    ],
+    "to_others": [
+     {
+      "sentence": "“Given the significant safety concerns surrounding the development of AI, employees must not be left working in an environment where fear and unclear rules stymie AI safety work and weaken third-party accountability,” they wrote.",
+      "offset": 1695
+     },
+     {
+      "sentence": "When I opened a sensitive email by mistake, I told the executive within minutes and asked IT again.",
+      "offset": 5075
+     },
+     {
+      "sentence": "“Unless the employees take a stand now against this kind of maneuver, I am concerned we will not be the last,” Wang said.",
+      "offset": 5769
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 0,
+   "subject_own": 0,
+   "other": 0
+  },
+  "primary_link_examples": [],
+  "figures": {
+   "total": 0,
+   "with_named_source": 0
+  },
+  "source_type": "trade-press",
   "source_tier": 3,
   "claim_tier": null,
   "claim_relationship": "unresolved",
@@ -3910,6 +3992,57 @@
    "cited_by": []
   }
  },
+ "https://epochai.substack.com/p/can-ai-automate-ai-r-and-d-yet": {
+  "headline": "Can AI automate AI R&D yet?",
+  "entity": "",
+  "entity_usable": false,
+  "fetched": true,
+  "attribution": {
+   "to_subject": 0,
+   "to_others": 3,
+   "unnamed": 0,
+   "spans": {
+    "to_subject": [],
+    "to_others": [
+     {
+      "sentence": "Meanwhile, Fable 5’s technique failed to improve performance, though it misleadingly claimed an improvement from farming for random noise (as we discuss in the next section).",
+      "offset": 3534
+     },
+     {
+      "sentence": "Both models reported inflated results.",
+      "offset": 4045
+     },
+     {
+      "sentence": "It claimed one substantive change as the main novelty, though the method contributed little to the method’s score.",
+      "offset": 6414
+     }
+    ],
+    "unnamed": []
+   }
+  },
+  "links": {
+   "primary": 2,
+   "subject_own": 0,
+   "other": 13
+  },
+  "primary_link_examples": [
+   "https://arxiv.org/abs/2501.12948",
+   "https://arxiv.org/abs/2601.20802"
+  ],
+  "figures": {
+   "total": 11,
+   "with_named_source": 1
+  },
+  "source_type": "tool-vendor",
+  "source_tier": 4,
+  "claim_tier": null,
+  "claim_relationship": "unresolved",
+  "tier_basis": "publisher relationship to subject not recorded",
+  "chain": {
+   "cites": [],
+   "cited_by": []
+  }
+ },
  "https://epochai.substack.com/p/the-epoch-brief-october-8-2026": {
   "headline": "The Epoch Brief - October 8, 2026",
   "entity": "",
@@ -4235,44 +4368,6 @@
    "cited_by": []
   }
  },
- "https://epochai.substack.com/p/9-big-questions-benchmarks-can-help": {
-  "headline": "9 Big questions benchmarks can help answer",
-  "entity": "",
-  "entity_usable": false,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 0,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 2,
-   "subject_own": 0,
-   "other": 19
-  },
-  "primary_link_examples": [
-   "https://arxiv.org/abs/2602.15112",
-   "https://www.aisi.gov.uk/blog/more-compute-more-capability-why-ai-agent-evals-need-to-account-for-test-time-compute"
-  ],
-  "figures": {
-   "total": 1,
-   "with_named_source": 0
-  },
-  "source_type": "tool-vendor",
-  "source_tier": 4,
-  "claim_tier": null,
-  "claim_relationship": "unresolved",
-  "tier_basis": "publisher relationship to subject not recorded",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
  "https://www.anthropic.com/news/anthropic-cyber-mission": {
   "headline": "Introducing the Anthropic Cyber Mission",
   "entity": "Anthropic",
@@ -4479,41 +4574,6 @@
   "figures": {
    "total": 3,
    "with_named_source": 1
-  },
-  "source_type": "vendor-own",
-  "source_tier": 5,
-  "claim_tier": 5,
-  "claim_relationship": "publisher-is-subject",
-  "tier_basis": "publisher is the subject (OpenAI)",
-  "chain": {
-   "cites": [],
-   "cited_by": []
-  }
- },
- "https://openai.com/index/introducing-gpt-live-1-in-the-api/": {
-  "headline": "Build more natural voice experiences with GPT‑Live‑1 in the API",
-  "entity": "OpenAI",
-  "entity_usable": true,
-  "fetched": true,
-  "attribution": {
-   "to_subject": 0,
-   "to_others": 0,
-   "unnamed": 0,
-   "spans": {
-    "to_subject": [],
-    "to_others": [],
-    "unnamed": []
-   }
-  },
-  "links": {
-   "primary": 0,
-   "subject_own": 1,
-   "other": 1
-  },
-  "primary_link_examples": [],
-  "figures": {
-   "total": 37,
-   "with_named_source": 0
   },
   "source_type": "vendor-own",
   "source_tier": 5,

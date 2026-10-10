@@ -73,66 +73,66 @@
     "54b1b80026c38a18cbc27a2657d9270dca2fb517e6a904f2bf2aee3960aebc45": "2026-09-13T05:01:31.276246+00:00",
     "3f5b18c5361a116e8cda95268bda629c953202b3169b944325053a2129c242c3": "2026-09-13T05:01:31.276250+00:00"
   },
-  "last_run": "2026-10-09T05:01:34.256590+00:00",
+  "last_run": "2026-10-10T05:01:14.740309+00:00",
   "source_states": {
     "us_fed_reg_ai": {
-      "checked_at": "2026-10-09T05:00:05.235322+00:00",
+      "checked_at": "2026-10-10T05:00:01.236449+00:00",
+      "status": "ok",
+      "entries": 40,
+      "queued": 26,
+      "window_days": 30,
+      "last_success": "2026-10-10T05:00:01.236449+00:00"
+    },
+    "us_fed_reg_eo": {
+      "checked_at": "2026-10-10T05:00:02.126623+00:00",
       "status": "ok",
       "entries": 40,
       "queued": 31,
       "window_days": 30,
-      "last_success": "2026-10-09T05:00:05.235322+00:00"
-    },
-    "us_fed_reg_eo": {
-      "checked_at": "2026-10-09T05:00:07.426947+00:00",
-      "status": "ok",
-      "entries": 40,
-      "queued": 30,
-      "window_days": 30,
-      "last_success": "2026-10-09T05:00:07.426947+00:00"
+      "last_success": "2026-10-10T05:00:02.126623+00:00"
     },
     "eu_ai_office": {
-      "checked_at": "2026-10-09T05:00:07.969896+00:00",
+      "checked_at": "2026-10-10T05:00:03.591019+00:00",
       "status": "ok",
       "entries": 10,
       "queued": 8,
       "window_days": null,
-      "last_success": "2026-10-09T05:00:07.969896+00:00"
+      "last_success": "2026-10-10T05:00:03.591019+00:00"
     },
     "uk_cma_news": {
-      "checked_at": "2026-10-09T05:00:08.052538+00:00",
+      "checked_at": "2026-10-10T05:00:03.672048+00:00",
       "status": "ok",
       "entries": 20,
       "queued": 0,
       "window_days": null,
-      "last_success": "2026-10-09T05:00:08.052538+00:00"
+      "last_success": "2026-10-10T05:00:03.672048+00:00"
     },
     "uk_ofgem_queue": {
-      "checked_at": "2026-10-09T05:00:08.099541+00:00",
+      "checked_at": "2026-10-10T05:00:03.831170+00:00",
       "status": "ok",
       "entries": 20,
       "queued": 1,
       "window_days": null,
-      "last_success": "2026-10-09T05:00:08.099541+00:00"
+      "last_success": "2026-10-10T05:00:03.831170+00:00"
     },
     "nist_ai_notices": {
-      "checked_at": "2026-10-09T05:00:08.247206+00:00",
+      "checked_at": "2026-10-10T05:00:04.003443+00:00",
       "status": "ok",
       "entries": 40,
       "queued": 8,
       "window_days": null,
-      "last_success": "2026-10-09T05:00:08.247206+00:00"
+      "last_success": "2026-10-10T05:00:04.003443+00:00"
     },
     "sec_press_releases": {
-      "checked_at": "2026-10-09T05:00:08.552893+00:00",
+      "checked_at": "2026-10-10T05:00:04.290071+00:00",
       "status": "ok",
       "entries": 25,
       "queued": 1,
       "window_days": null,
-      "last_success": "2026-10-09T05:00:08.552893+00:00"
+      "last_success": "2026-10-10T05:00:04.290071+00:00"
     },
     "ftc_press_releases": {
-      "checked_at": "2026-10-09T05:00:08.617759+00:00",
+      "checked_at": "2026-10-10T05:00:04.365931+00:00",
       "status": "failed",
       "entries": 0,
       "queued": 0,
@@ -236,7 +236,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:01:16.169748+00:00",
+      "checked_at": "2026-10-10T05:00:53.715142+00:00",
       "source_sha256": "eb1eddaf773a3253e5f7f035c9c1317b0010f83259a9b4caca539bf2e75879ea",
       "source_text_sha256": "89ffa63e83499655219e9053b4f4de919e4f5b0aaa8adfdcebfc4f3ba9b10b53",
       "error": "document exceeds model input budget; manual review required"
@@ -260,7 +260,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:01:06.046319+00:00",
+      "checked_at": "2026-10-10T05:01:02.710483+00:00",
       "source_sha256": "592fd494146781d8ec578574638da6cd8a41c75648bc7c5d8ff577e84be04899",
       "source_text_sha256": "c86961446a9f009dd79704185cb312be43e4946d7cf12556666bd9bd946c3391",
       "evaluated_text_sha256": "c86961446a9f009dd79704185cb312be43e4946d7cf12556666bd9bd946c3391"
@@ -283,8 +283,8 @@
         "format": "json_fedreg",
         "priority_base": 1
       },
-      "active": true,
-      "checked_at": "2026-10-09T05:01:19.228388+00:00",
+      "active": false,
+      "checked_at": "2026-10-10T05:00:59.713372+00:00",
       "source_sha256": "3ee83a15aa02e1f35f809f0eb4ddfe2adb601346b89901f0accc629880b5d2cb",
       "source_text_sha256": "a53929654bdac68bbd0f084a443518c66e0dc0bad70789d508a29d5079ca0add",
       "error": "document exceeds model input budget; manual review required"
@@ -307,8 +307,8 @@
         "format": "json_fedreg",
         "priority_base": 1
       },
-      "active": true,
-      "checked_at": "2026-10-09T05:01:16.447285+00:00",
+      "active": false,
+      "checked_at": "2026-10-10T05:00:54.057519+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "4f3a608c15f8f04e29feca1b6c63058027b545c03e0fbb2baa316c3d697267f8": {
@@ -329,7 +329,7 @@
         "format": "json_fedreg",
         "priority_base": 1
       },
-      "active": true,
+      "active": false,
       "checked_at": "2026-10-09T05:01:31.486277+00:00",
       "source_sha256": "115c1f051f5500de7183958a59c12ba9bfb4f54d0c9c55af40b4f67ca80f86f8",
       "source_text_sha256": "efb0c31c89d156a5c14f5294b8969b148c828a8cdc99a8825da4fb5d53582221",
@@ -353,7 +353,7 @@
         "format": "json_fedreg",
         "priority_base": 1
       },
-      "active": true,
+      "active": false,
       "checked_at": "2026-10-08T05:01:05.369435+00:00",
       "source_sha256": "dd6a9ec03eb5f041ccf9f958901b9ea1ab37bdfddebd3e5a936378f83afea668",
       "source_text_sha256": "a318ded85267210dca944e7aee51867e86a1d214444375d228ebb5e4dc26b1ad",
@@ -377,8 +377,8 @@
         "format": "json_fedreg",
         "priority_base": 1
       },
-      "active": true,
-      "checked_at": "2026-10-09T05:01:16.868541+00:00",
+      "active": false,
+      "checked_at": "2026-10-10T05:00:54.483236+00:00",
       "source_sha256": "711f43edaa8cd4d1f261877323c360e5dc822a4483fe5051a63d0989523b13a4",
       "source_text_sha256": "ca1b3cf0f0f3c78ddf801e6598dc6e376367ab163f90e1e2702947cca856e63c",
       "error": "document exceeds model input budget; manual review required"
@@ -450,7 +450,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-09T05:01:13.472898+00:00",
+      "checked_at": "2026-10-10T05:00:50.936914+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "f3227389324f7137d15bbb2f3d3a07cc2a3d2d1f69b73d682b660348775bec51": {
@@ -496,7 +496,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-09T05:01:17.723176+00:00",
+      "checked_at": "2026-10-10T05:00:56.711070+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "9d988f6d9277029c3ac6d920018ac38aedd5ac984a6a25fb8d56a6e34f6b3ee2": {
@@ -518,7 +518,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-09T05:01:09.431982+00:00",
+      "checked_at": "2026-10-10T05:00:44.461515+00:00",
       "source_sha256": "a4511bae5da70c354f606c391d50f9ad41e568825f8e0109025f414111f90dc9",
       "source_text_sha256": "fe91c974bf9b2405c6f653e0dda74d08d1a6265a6e628d156bffc7dc259f7bea",
       "error": "document exceeds model input budget; manual review required"
@@ -542,7 +542,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-09T05:01:15.028014+00:00",
+      "checked_at": "2026-10-10T05:00:52.476071+00:00",
       "source_sha256": "fbd5fff4fe0699288f0b65021446cc8dd9d08a94c376413b9a19b6fb6d2da372",
       "source_text_sha256": "2cd3f0dc0045694d0b680943b47d08f04239f7aa6f94aa7136a5fff482fd728e",
       "error": "document exceeds model input budget; manual review required"
@@ -566,7 +566,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-09T05:01:12.104490+00:00",
+      "checked_at": "2026-10-10T05:00:47.884617+00:00",
       "source_sha256": "978bf8bd7945d3beaa2ccf09e14aaa1bfabf6d600c6f472d9707aa1ce0b1110e",
       "source_text_sha256": "640c895a637c3bfbf00d5f8ee04c5621bad85598d7ac09283fb5344a414143d8",
       "error": "document exceeds model input budget; manual review required"
@@ -614,7 +614,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-09T05:01:14.135186+00:00",
+      "checked_at": "2026-10-10T05:00:51.585050+00:00",
       "source_sha256": "78569acd9cc75cd417f395652dfbe9582a43cd92f0320fd9c0a4ac0f74e7c25f",
       "source_text_sha256": "4a8447f5a0993387ea2590db8e8be6d50b8a8e431f1cee6debd1dc45640047b9",
       "error": "document exceeds model input budget; manual review required"
@@ -638,7 +638,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-09T05:01:14.403616+00:00",
+      "checked_at": "2026-10-10T05:00:51.864141+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "45cd6e241ef0f49a81f7569cdcbdf3b115d21f5515637f6ae5e8a6c269ed346a": {
@@ -660,7 +660,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-09T05:01:17.378053+00:00",
+      "checked_at": "2026-10-10T05:00:55.020449+00:00",
       "source_sha256": "7c4c37f6412dccc2795ca2beedfd141df2754c086e9e276c32e97aa99927555b",
       "source_text_sha256": "404d25d32a5cb5fa721fb74ca6c16df48425c1abe2ae321164e0c4796bd520d3",
       "error": "document exceeds model input budget; manual review required"
@@ -684,7 +684,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-09T05:01:15.290519+00:00",
+      "checked_at": "2026-10-10T05:00:52.731958+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "7ad21a2ea23e4e7cfeedf5675164bc4e41af56e08a54475090d6b47820b4a204": {
@@ -706,7 +706,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-09T05:01:18.132811+00:00",
+      "checked_at": "2026-10-10T05:00:57.135634+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "a7320c2f093222e04d723af25b0cbae8c48107c756a2ba5db909095c3850abb3": {
@@ -728,7 +728,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-09T05:01:09.716760+00:00",
+      "checked_at": "2026-10-10T05:00:44.732843+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "6587eda003db0fc2cc6d344a8209cb6b5cd47c3dfcf52d7a6a31afdff94d507d": {
@@ -894,7 +894,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-09T05:01:15.802381+00:00",
+      "checked_at": "2026-10-10T05:00:53.246825+00:00",
       "source_sha256": "483cd8f9f46e29617e6ded47fd3d408d09a14ebb3c1b00b782e3435451ac73cf",
       "source_text_sha256": "59d5cdb31d8e66c9fc37f498e934b7b64f352ff12c43dca835a8d697f632c169",
       "error": "document exceeds model input budget; manual review required"
@@ -918,7 +918,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:01:19.748876+00:00",
+      "checked_at": "2026-10-10T05:01:07.357007+00:00",
       "source_sha256": "6186f8bfff7f80b94af189271dc3e25c1982fc77641a692edbfdd34f6c7fcff0",
       "source_text_sha256": "a50f35ae1078f4d01ad8d5d28d7621ab7b2bf595b9ee4ef8a6622fb984b27c03",
       "evaluated_text_sha256": "a50f35ae1078f4d01ad8d5d28d7621ab7b2bf595b9ee4ef8a6622fb984b27c03"
@@ -966,7 +966,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:01:20.247737+00:00",
+      "checked_at": "2026-10-10T05:01:08.969945+00:00",
       "source_sha256": "6c3ef288cfaa857a44bfcc08f8baaa2fa71d52d98d56433364332bfb45ec392d",
       "source_text_sha256": "712900da35e374cbb52fb0bc52b05b22774925753e134e5a9f2da77fe29803d1",
       "evaluated_text_sha256": "712900da35e374cbb52fb0bc52b05b22774925753e134e5a9f2da77fe29803d1"
@@ -990,7 +990,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:01:10.403478+00:00",
+      "checked_at": "2026-10-10T05:01:05.703311+00:00",
       "source_sha256": "d8025ea9c1e503173a258122faaa2dee445e469aa8e504171ae6af27e1e8de0d",
       "source_text_sha256": "edfd6391453f5aa257a8129814eee001fb1ed3ed3276aae2b78c3c7137aa46be",
       "evaluated_text_sha256": "edfd6391453f5aa257a8129814eee001fb1ed3ed3276aae2b78c3c7137aa46be"
@@ -1110,7 +1110,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:01:06.873689+00:00",
+      "checked_at": "2026-10-10T05:01:03.237391+00:00",
       "source_sha256": "2cba869c4cdafcbda7087b193da99a4d24bf1cad049f9f3d9b9aa2cbad91978c",
       "source_text_sha256": "3198c045ce2494e4c5828b6005f4bc1a036757abd04654f07d6c9b720e904d1d",
       "evaluated_text_sha256": "3198c045ce2494e4c5828b6005f4bc1a036757abd04654f07d6c9b720e904d1d"
@@ -1158,7 +1158,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:01:06.298704+00:00",
+      "checked_at": "2026-10-10T05:01:02.970316+00:00",
       "source_sha256": "9eb4b23bb0fdc9fd69cfc0d878e2487463224f39a10d3c8b8bccf8a9ec3d848a",
       "source_text_sha256": "4f549c2c315a4f5367ddffb06d4696242ead91c246825d278824c2506273da2b",
       "evaluated_text_sha256": "4f549c2c315a4f5367ddffb06d4696242ead91c246825d278824c2506273da2b"
@@ -1374,7 +1374,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-09T05:01:18.543160+00:00",
+      "checked_at": "2026-10-10T05:00:57.543262+00:00",
       "source_sha256": "0d3711dc18e19652f67b43bf0374043db6fa72ea1e19fceb3fc5129b5ced7f7b",
       "source_text_sha256": "421e6c77bf86082a1e3359b64a83524532983e501f1463d9b02608fe4c0e94e2",
       "error": "document exceeds model input budget; manual review required"
@@ -1422,7 +1422,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-10-09T05:01:18.963272+00:00",
+      "checked_at": "2026-10-10T05:00:57.792806+00:00",
       "source_sha256": "bb9c90378e11423ff231d1326880b038c8264c00eb6439e728cb26ff4bad5d25",
       "source_text_sha256": "5b6fa7f6ca6e3a94d15e5866c7a635601cba12361d95ff84769438a18b52a904",
       "error": "document exceeds model input budget; manual review required"
@@ -1521,8 +1521,8 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:01:05.627264+00:00",
-      "source_sha256": "7bc84322d8ab1dc3bbb9e514bcbccf00aa9d12d25c7d05f47903a0abd65773d4",
+      "checked_at": "2026-10-10T05:01:00.050668+00:00",
+      "source_sha256": "f406aca3e18e6a6c17fbf9eb98563e4918408c063452db7696c359c0e66fa458",
       "source_text_sha256": "d023b484ea6402ff0c0090715c8540d8319e9710e114ca7da0d9447332cb30ee",
       "evaluated_text_sha256": "d023b484ea6402ff0c0090715c8540d8319e9710e114ca7da0d9447332cb30ee"
     },
@@ -1570,7 +1570,7 @@
         "filter_ai": true,
         "priority_base": 1
       },
-      "active": true,
+      "active": false,
       "checked_at": "2026-09-28T05:01:36.798291+00:00",
       "source_sha256": "52e26a935e5d99582a5aa2dc82c380829b5e042762c6c8fd16b9f54a0077eae5",
       "source_text_sha256": "b287835e295c0060a33eacb8a6c61cea9c624be599edc42f15f0495d39504c3b",
@@ -1946,7 +1946,7 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-10-09T05:01:17.221167+00:00",
+      "checked_at": "2026-10-10T05:00:54.832304+00:00",
       "error": "source HTTP status 403"
     },
     "00cc6142a1a6b1f6fa6e64da6688ffe5d560d7950cb671e860069f6e0e9948b9": {
@@ -1993,7 +1993,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:01:12.443808+00:00",
+      "checked_at": "2026-10-10T05:00:48.243961+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "acd125fdfd75db95c599f5f3bba2c1c547a48442d5bec1e39fdbbd161c614437": {
@@ -2015,7 +2015,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:01:12.944897+00:00",
+      "checked_at": "2026-10-10T05:00:48.751730+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "2aaa70ffc70ff726df8dbcb1d82079ae56f516d5591fa97f4adff95047795251": {
@@ -2111,7 +2111,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:01:10.423040+00:00",
+      "checked_at": "2026-10-10T05:00:45.440639+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "24b91e42ca39f96250ff8396e2ab4365319553e9a5e9361ad8778925105bc9a5": {
@@ -2133,7 +2133,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:01:10.150305+00:00",
+      "checked_at": "2026-10-10T05:00:45.172999+00:00",
       "source_sha256": "93d27862db1cfbe023f098d1d88ede786d36f184e9daf3b83286d5bcfbd54bf9",
       "source_text_sha256": "7da5c4c5006d37ad7ce3930ab3ce921fa5934fc1651020c2729e94c830c82cda",
       "error": "document exceeds model input budget; manual review required"
@@ -2157,7 +2157,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:01:10.938394+00:00",
+      "checked_at": "2026-10-10T05:00:45.963283+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "920548c8df731e539da02bfa501604ca735b46e184d9ccac682ae4e34627e663": {
@@ -2179,7 +2179,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:01:11.303714+00:00",
+      "checked_at": "2026-10-10T05:00:46.308030+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "fc6caa9ca06598e4de6351640198c601779f0975d004e20968e90c2fac908e61": {
@@ -2201,7 +2201,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:01:11.651025+00:00",
+      "checked_at": "2026-10-10T05:00:46.657736+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "362f4388c4d9496ebf122603c35668888a236dcf2e4af58ad656a707b1c1aa63": {
@@ -2223,7 +2223,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:01:05.697620+00:00",
+      "checked_at": "2026-10-10T05:01:00.630029+00:00",
       "source_sha256": "fa8bad7527d85cd87bbadc4c25271e676c66e8d055bae1ea8e95e636f87d7287",
       "source_text_sha256": "675dbf69310befe7195978a428ac06a41d847cdcd1a1f9a455efe15807d1aff4",
       "evaluated_text_sha256": "675dbf69310befe7195978a428ac06a41d847cdcd1a1f9a455efe15807d1aff4"
@@ -2272,7 +2272,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:01:09.166487+00:00",
+      "checked_at": "2026-10-10T05:00:44.200435+00:00",
       "source_sha256": "5732141abd973d8993e6239e197486dbeef5fa07af70a1a8e9e5c0342d47b438",
       "source_text_sha256": "057ae28ab694825203e41fddded2a58b524f530bd1cfef46c64e60da0d6efc8f",
       "error": "document exceeds model input budget; manual review required"
@@ -2296,7 +2296,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:01:13.149160+00:00",
+      "checked_at": "2026-10-10T05:01:06.467323+00:00",
       "source_sha256": "48f01a7fbb82d608f3f4f0ddd208e125eb8b80535bbc3a67edd11e5b8ca03e29",
       "source_text_sha256": "af7d0f203f03ad2128a0dddc1462b0cb18a9c4be86031760d8da6638cf2f82e1",
       "evaluated_text_sha256": "af7d0f203f03ad2128a0dddc1462b0cb18a9c4be86031760d8da6638cf2f82e1"
@@ -2320,7 +2320,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:01:12.892049+00:00",
+      "checked_at": "2026-10-10T05:01:06.210608+00:00",
       "source_sha256": "584808262478d094bd6aa4081fb3e9bddc01fcf9717fd31ab5a946edcd584cba",
       "source_text_sha256": "831be24fa8c4a5438e14d7525d9e289148ff472c9091ed21dc666289295be13d",
       "evaluated_text_sha256": "831be24fa8c4a5438e14d7525d9e289148ff472c9091ed21dc666289295be13d"
@@ -2344,7 +2344,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:01:10.660487+00:00",
+      "checked_at": "2026-10-10T05:01:05.953429+00:00",
       "source_sha256": "9942cbeb9b044db07964151690400a3d9de48378ab806870ad4870b66343fc4e",
       "source_text_sha256": "dc9382559a4a7b55fcf4d9b45e735e5fe8ec7fa4d5f6c867899d028b32d04b70",
       "evaluated_text_sha256": "dc9382559a4a7b55fcf4d9b45e735e5fe8ec7fa4d5f6c867899d028b32d04b70"
@@ -2368,7 +2368,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:01:19.496617+00:00",
+      "checked_at": "2026-10-10T05:01:07.094372+00:00",
       "source_sha256": "5301ed4cfd1cff5c6d520d3f50db4427783b303b6b8b7a3aacd5c906aebb7345",
       "source_text_sha256": "10c00bb5a84a266e36fdad2dfe030a025124bd0403dc052bf489bba9b0e4d6a2",
       "evaluated_text_sha256": "10c00bb5a84a266e36fdad2dfe030a025124bd0403dc052bf489bba9b0e4d6a2"
@@ -2392,7 +2392,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:01:08.550315+00:00",
+      "checked_at": "2026-10-10T05:00:43.609066+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "99b981b199350cd18d9dffb46c33f69f183df547fbe49512e2f937371d7cc3ac": {
@@ -2414,7 +2414,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:01:08.900639+00:00",
+      "checked_at": "2026-10-10T05:00:43.944843+00:00",
       "source_sha256": "19d7414eb9185234aac641d5477a120f5b1bbd298866c740acef103e33a51f5f",
       "source_text_sha256": "42b2a605ec6030eff66b91501bfafb930aded7c79002d3c37346d051858ab21a",
       "error": "document exceeds model input budget; manual review required"
@@ -2438,7 +2438,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:01:21.967263+00:00",
+      "checked_at": "2026-10-10T05:01:11.722994+00:00",
       "source_sha256": "dba8c963fa10705941a9fe37e8262639fe983e4032f077f89cafa236d39ba5a5",
       "source_text_sha256": "776aaf1088d245abb82d05db1d599e5493590b09e98000248b1f3cf5366c0201",
       "evaluated_text_sha256": "776aaf1088d245abb82d05db1d599e5493590b09e98000248b1f3cf5366c0201"
@@ -2510,7 +2510,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:01:08.290321+00:00",
+      "checked_at": "2026-10-10T05:00:43.345141+00:00",
       "source_sha256": "387c58cf45fffaba490ed8c9e7eefb230da279108c6bf0afb7cfa14725bc0f69",
       "source_text_sha256": "960c0ef0cd21704f853ccbd3fcc20d9589a5749c1b89a4de1d24e8c161a9852c",
       "error": "document exceeds model input budget; manual review required"
@@ -2534,7 +2534,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:01:08.038576+00:00",
+      "checked_at": "2026-10-10T05:00:43.080921+00:00",
       "source_sha256": "823800fb40021b6741fdce7b49ed462ad4e8f5c599835080825d505a4223abcf",
       "source_text_sha256": "da0a678e19f9753a6699ade76b54b06b8b9bea17e71214e0c000f4a465ccbcfa",
       "error": "document exceeds model input budget; manual review required"
@@ -2558,7 +2558,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:01:07.427101+00:00",
+      "checked_at": "2026-10-10T05:00:42.474231+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "2b57378a8bc94b4efa5b6e972f31392c58c5b1be99e9b65ecb836b7114e97957": {
@@ -2580,7 +2580,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:01:19.997983+00:00",
+      "checked_at": "2026-10-10T05:01:08.710657+00:00",
       "source_sha256": "0c84479c52eceebdf9c114bc763a2a612cd9378abffd9a8817aa94a705e35522",
       "source_text_sha256": "9f36eb4346026d78e6b5991da32745a1284d2f6d56123f5c3977ceb6f009d7d9",
       "evaluated_text_sha256": "9f36eb4346026d78e6b5991da32745a1284d2f6d56123f5c3977ceb6f009d7d9"
@@ -2629,7 +2629,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:01:05.986315+00:00",
+      "checked_at": "2026-10-10T05:00:41.058026+00:00",
       "source_sha256": "68d7f8ca29c0ae6e723f580027b3b0faa8c23c7f5ab43218cd6bf58c13fb87aa",
       "source_text_sha256": "953c220894733b7adea02631953ccf29889dc0303a0a497fbceb022db7c029cc",
       "error": "document exceeds model input budget; manual review required"
@@ -2653,7 +2653,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:01:07.163551+00:00",
+      "checked_at": "2026-10-10T05:00:42.207065+00:00",
       "source_sha256": "f3da990edb63a3acb300f049da3a8b29ef0e965d33c7866d89211a7feb9336bd",
       "source_text_sha256": "95dd79890aabe5b7267cc84c8bf1589877e121be502e261e6910157a221e0873",
       "error": "document exceeds model input budget; manual review required"
@@ -2677,7 +2677,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:01:09.884113+00:00",
+      "checked_at": "2026-10-10T05:01:03.488173+00:00",
       "source_sha256": "d914c725646149b78bb7155a006c80453d3c57ecd36d2325b8014a4703e5fd2e",
       "source_text_sha256": "0eaf785a7c36aaa5b593a1bca78c28426c1424008476f289d8876df35d6fb222",
       "evaluated_text_sha256": "0eaf785a7c36aaa5b593a1bca78c28426c1424008476f289d8876df35d6fb222"
@@ -2701,7 +2701,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:01:06.354156+00:00",
+      "checked_at": "2026-10-10T05:00:41.413086+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "c72344e306a273fbace5d183d055151cbfa8583ab5218120520fe7511e9c0258": {
@@ -2771,7 +2771,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:01:05.297423+00:00",
+      "checked_at": "2026-10-10T05:00:40.399765+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "768c9228a9059c551cdfe041c9864df4b758e63f70dcd4e8ae7c587a9589f6dc": {
@@ -2889,7 +2889,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:01:04.939340+00:00",
+      "checked_at": "2026-10-10T05:00:40.051678+00:00",
       "source_sha256": "27bb39938518b9764ede75e6fd4945a296c30caa5dda029d87b187f78806d9d0",
       "source_text_sha256": "48fac10a019701a09739a4631b72ff1f238b8503052a35cd7fbac3c1c4a34728",
       "error": "document exceeds model input budget; manual review required"
@@ -2913,7 +2913,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-08T05:01:10.146099+00:00",
+      "checked_at": "2026-10-10T05:01:03.739240+00:00",
       "source_sha256": "b517fb0a4c0d8f6f452cbe5a413fb722d0cc8d08bc45dbd12fcc1d450030cd10",
       "source_text_sha256": "af85ed8779e895c8917336fbfbdb2f25cc3cc46f2220740072a61694ca5a82b4",
       "evaluated_text_sha256": "af85ed8779e895c8917336fbfbdb2f25cc3cc46f2220740072a61694ca5a82b4"
@@ -2937,7 +2937,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:01:04.414430+00:00",
+      "checked_at": "2026-10-10T05:00:39.521442+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "33c3cee138e1c2c1be0e7b5a9bdaeafa7442bbd46faa011545cc4f85327f3a7c": {
@@ -2959,7 +2959,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:01:03.672372+00:00",
+      "checked_at": "2026-10-10T05:00:38.736308+00:00",
       "error": "document exceeds evaluation text limit; manual review required"
     },
     "bb55975fd75ff160bf2070a405e6ea2cdbca5cd324cea8ae21c630e0f810dc29": {
@@ -2981,7 +2981,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:01:03.333022+00:00",
+      "checked_at": "2026-10-10T05:00:38.391645+00:00",
       "source_sha256": "6a116ccd791f3c27d7a056fad453537b46dbf4b8e1cf0412914840d9db3cbd49",
       "source_text_sha256": "8112b94a54338df8a632e855fcf2de31d01cb0496d4fb91570e6a18c19e0dd82",
       "error": "document exceeds model input budget; manual review required"
@@ -3054,7 +3054,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:00:08.687257+00:00",
+      "checked_at": "2026-10-10T05:01:06.718119+00:00",
       "source_sha256": "a524bf2417d6e384b6764acbfc72c9b5ef36ab83db6a79f59ff7c8cca4afea6e",
       "source_text_sha256": "f11501c7768828a54b0ca55c88eaaa8a5d1f665f8ded5877a30e15a69dc9dc2c",
       "evaluated_text_sha256": "f11501c7768828a54b0ca55c88eaaa8a5d1f665f8ded5877a30e15a69dc9dc2c"
@@ -3079,15 +3079,64 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-09T05:00:49.122095+00:00",
-      "source_sha256": "3db7af74f069db79b2add33b6e7ea8b2fd214347d14a4ea9af163974ba4392e0",
+      "checked_at": "2026-10-10T05:01:06.974415+00:00",
+      "source_sha256": "7631ef07f5306792a5c31b9999923e26a19e2c8ca9c83d5840f7f3363575f4c0",
       "source_text_sha256": "2b8fde63cc2e804496213b18be6cfdc20c5326b6df9d0309e819a5125c0c0d0f",
       "evaluated_text_sha256": "2b8fde63cc2e804496213b18be6cfdc20c5326b6df9d0309e819a5125c0c0d0f"
+    },
+    "73704f999ff30acc70726b57aecc7e3875992ca902708855945634a588955bc0": {
+      "status": "evaluated",
+      "attempts": 1,
+      "item": {
+        "title": "Emergency Tax Relief on Diesel Fuel",
+        "summary": "Emergency Tax Relief on Diesel Fuel",
+        "url": "https://www.federalregister.gov/documents/2026/10/09/2026-20855/emergency-tax-relief-on-diesel-fuel",
+        "publication_date": "2026-10-09"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-10-10T05:00:24.816283+00:00",
+      "source_sha256": "972ed2c17259724b704eb2a2c7f444b6e205971b0401067039d3653ca919c5b2",
+      "source_text_sha256": "ee6ebad05fb6b30d2b88025d2b3fb54f4232b7073ad4da0f47c915041f8e4198",
+      "evaluated_text_sha256": "ee6ebad05fb6b30d2b88025d2b3fb54f4232b7073ad4da0f47c915041f8e4198"
+    },
+    "6d72238cf519d1bc1162146b08173966a3eee70efb8f1673f77f827d2316bcc7": {
+      "status": "evaluated",
+      "attempts": 1,
+      "item": {
+        "title": "Commission holds special meeting of Scientific panel on frontier AI safety and risks",
+        "summary": "<span>Commission holds special meeting of Scientific panel on frontier AI safety and risks</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-10-09T09:16:00+02:00\" title=\"Friday, October 9, 2026 - 09:16\">Fri, 10/09/2026 - 09:16</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                                    <p class=\"ecl-page-header-standardised__description\">Today, the Commission holds a special meeting of the Scientific Panel on artificial intelligence (AI).</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/4_GPAI_CoP_Safety_security_rwseJDm7ss0QRPGhT5Ci3hCLcI_248010.jpg?itok=H3i6DfOX\" alt=\"illustration of a person with a laptop beside data dashboards, an AI face icon, and a shield with a padlock.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p><span class=\"TextRun Underlined SCXW105347739 BCX0\"><span class=\"NormalTextRun SCXW105347739 BCX0\">The panel has been investigating recent loss-of-control incidents, and together with the Commission’s AI Office, has worked on a set of questions for the companies that developed the models involved. Henna Virkkunen, Executive Vice-President for Tech Sovereignty, Security and Democracy, will attend the meeting.<br></span></span></p>\n<p><span class=\"TextRun Underlined SCXW105347739 BCX0\"><span class=\"NormalTextRun SCXW105347739 BCX0\">The Scientific Panel brings together 60 world-leading independent experts who advise the EU AI Office and national authorities on systemic risks, model classification, evaluation methodologies, and cross-border market surveillance. During the meeting, the panel will present recommendations to the Commission on frontier AI safety and security risks.</span></span></p>\n<blockquote>\n<p><span class=\"TextRun Underlined SCXW105347739 BCX0\"><span class=\"NormalTextRun SCXW105347739 BCX0\">Executive-Vice President Henna <strong>Virkkunen </strong>said: “The EU has the first law in the world that addresses systemic risk from AI, and we need state-of-the-art scientific input. AI capabilities are advancing rapidly, but with a strong legal framework, decisive enforcement and the best scientific minds supporting this work, Europe can lead in ensuring safe and secure AI.”</span></span></p>\n</blockquote>\n<p><span class=\"TextRun Underlined SCXW105347739 BCX0\"><span class=\"NormalTextRun SCXW105347739 BCX0\"></span></span>Find out more about the <a href=\"https://digital-strategy.ec.europa.eu/en/policies/ai-scientific-panel\" target=\"_blank\" class=\"Hyperlink SCXW105347739 BCX0\" rel=\"noopener noreferrer\"><span class=\"TextRun Underlined SCXW105347739 BCX0\"><span class=\"NormalTextRun SCXW105347739 BCX0\">Scientific </span><span class=\"NormalTextRun SCXW105347739 BCX0\">P</span><span class=\"NormalTextRun SCXW105347739 BCX0\">anel on artificial intelligence</span><span class=\"NormalTextRun SCXW105347739 BCX0\"> (AI)</span></span></a></p></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=119\" class=\"ecl-tag ecl-u-mb-xs\">Artificial intelligence</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=254\" class=\"ecl-tag ecl-u-mb-xs\">AI Office Scientific panel</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div class=\"cnt-last-update-block\">\n  \n    \n      \n\n  </div>\n<div class=\"cnt-print-pdf-block\">\n  \n    \n      \n  \n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
+        "url": "https://digital-strategy.ec.europa.eu/en/news/commission-holds-special-meeting-scientific-panel-frontier-ai-safety-and-risks",
+        "publication_date": "Fri, 09 Oct 2026 07:16:00 +0000"
+      },
+      "target": {
+        "id": "eu_ai_office",
+        "name": "EU AI Office & Digital Strategy",
+        "jurisdiction": "European Union",
+        "type": "regulator_feed",
+        "url": "https://digital-strategy.ec.europa.eu/en/rss.xml",
+        "format": "rss",
+        "filter_ai": true,
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-10-10T05:00:04.454322+00:00",
+      "source_sha256": "21c7a409e0fb0e630d878bc9a324c238f725a42c4cfc1eecbd2ac4920e95652e",
+      "source_text_sha256": "0909ec9c61e8bfe16a42432d29b5f75c5a18d6dd3746c48d5b58fdcd03fdb8d5",
+      "evaluated_text_sha256": "0909ec9c61e8bfe16a42432d29b5f75c5a18d6dd3746c48d5b58fdcd03fdb8d5"
     }
   },
   "last_pass": {
     "documents_checked": 60,
-    "documents_deferred": 31,
+    "documents_deferred": 30,
     "model_attempts": 2,
     "pending_evaluations": 40,
     "manual_review_required": 39,
