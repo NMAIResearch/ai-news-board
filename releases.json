@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-10 05:27 UTC",
+ "generated": "2026-10-11 05:26 UTC",
  "window_days": 60,
  "counts": {
-  "total": 110,
+  "total": 108,
   "closed": 48,
-  "open_weights": 62
+  "open_weights": 60
  },
  "releases": [
   {
@@ -222,6 +222,30 @@
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Microsoft",
+   "model": "AesCode-32B",
+   "id": "microsoft/AesCode-32B",
+   "date": "2026-09-29",
+   "url": "https://huggingface.co/microsoft/AesCode-32B",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "microsoft/AesCode-32B",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Microsoft",
+   "model": "AesCode-8B",
+   "id": "microsoft/AesCode-8B",
+   "date": "2026-09-29",
+   "url": "https://huggingface.co/microsoft/AesCode-8B",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "microsoft/AesCode-8B",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "Anthropic",
@@ -824,18 +848,6 @@
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
-   "lab": "Microsoft",
-   "model": "VibeVoice-ASR-Streaming-7B",
-   "id": "microsoft/VibeVoice-ASR-Streaming-7B",
-   "date": "2026-09-02",
-   "url": "https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-7B",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "microsoft/VibeVoice-ASR-Streaming-7B",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
    "lab": "Cohere",
    "model": "tiny-aya-en-thinker",
    "id": "CohereLabs/tiny-aya-en-thinker",
@@ -954,18 +966,6 @@
    "evidence_note": "weights published at huggingface.co/tencent/Hy4-preview; downloadable and hashable",
    "hf_id": "tencent/Hy4-preview",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Microsoft",
-   "model": "rho-libero",
-   "id": "microsoft/rho-libero",
-   "date": "2026-08-28",
-   "url": "https://huggingface.co/microsoft/rho-libero",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "microsoft/rho-libero",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "Inclusionai",
@@ -1301,30 +1301,6 @@
    "evidence": "closed",
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Liquid",
-   "model": "LiquidAI: LFM2.5-2.6B (free)",
-   "id": "liquid/lfm-2.5-2.6b",
-   "date": "2026-08-11",
-   "url": "https://openrouter.ai/liquid/lfm-2.5-2.6b",
-   "context_length": 65536,
-   "evidence": "open-weights",
-   "evidence_note": "weights published at huggingface.co/LiquidAI/LFM2.5-2.6B; downloadable and hashable",
-   "hf_id": "LiquidAI/LFM2.5-2.6B",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "NVIDIA: Nemotron 3.5 Lightning",
-   "id": "nvidia/nemotron-3.5-lightning",
-   "date": "2026-08-11",
-   "url": "https://openrouter.ai/nvidia/nemotron-3.5-lightning",
-   "context_length": 262144,
-   "evidence": "open-weights",
-   "evidence_note": "weights published at huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16; downloadable and hashable",
-   "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   }
  ],
