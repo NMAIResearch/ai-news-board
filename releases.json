@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-11 05:26 UTC",
+ "generated": "2026-10-12 05:24 UTC",
  "window_days": 60,
  "counts": {
-  "total": 108,
-  "closed": 48,
-  "open_weights": 60
+  "total": 103,
+  "closed": 45,
+  "open_weights": 58
  },
  "releases": [
   {
@@ -1238,66 +1238,6 @@
    "date": "2026-08-13",
    "url": "https://openrouter.ai/google/gemini-3.7-flash",
    "context_length": 1048576,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Bytedance Seed",
-   "model": "ByteDance Seed: Seed 2.1 Turbo",
-   "id": "bytedance-seed/seed-2-1-turbo",
-   "date": "2026-08-12",
-   "url": "https://openrouter.ai/bytedance-seed/seed-2-1-turbo",
-   "context_length": 262144,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Alibaba (Qwen)",
-   "model": "Qwen: Qwen3.8 2.4T A95B",
-   "id": "qwen/qwen3.8-2.4t-a95b",
-   "date": "2026-08-12",
-   "url": "https://openrouter.ai/qwen/qwen3.8-2.4t-a95b",
-   "context_length": 1048576,
-   "evidence": "open-weights",
-   "evidence_note": "weights published at huggingface.co/Qwen/Qwen3.8-2.4T-A95B; downloadable and hashable",
-   "hf_id": "Qwen/Qwen3.8-2.4T-A95B",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Bytedance Seed",
-   "model": "ByteDance Seed: Seed-2.0-Code",
-   "id": "bytedance-seed/seed-2.0-code",
-   "date": "2026-08-12",
-   "url": "https://openrouter.ai/bytedance-seed/seed-2.0-code",
-   "context_length": 262144,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "DeepSeek",
-   "model": "DeepSeek: DeepSeek V4 Pro 0813",
-   "id": "deepseek/deepseek-v4-pro-0813",
-   "date": "2026-08-12",
-   "url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
-   "context_length": 1048576,
-   "evidence": "open-weights",
-   "evidence_note": "weights published at huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813; downloadable and hashable",
-   "hf_id": "deepseek-ai/DeepSeek-V4-Pro-0813",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "xAI",
-   "model": "SpaceXAI: Grok 4.6",
-   "id": "x-ai/grok-4.6",
-   "date": "2026-08-12",
-   "url": "https://openrouter.ai/x-ai/grok-4.6",
-   "context_length": 500000,
    "evidence": "closed",
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
