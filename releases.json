@@ -1,12 +1,24 @@
 {
- "generated": "2026-10-12 05:24 UTC",
+ "generated": "2026-10-13 05:29 UTC",
  "window_days": 60,
  "counts": {
-  "total": 103,
-  "closed": 45,
-  "open_weights": 58
+  "total": 100,
+  "closed": 44,
+  "open_weights": 56
  },
  "releases": [
+  {
+   "lab": "Meta",
+   "model": "Meta: Muse Wonder",
+   "id": "meta/muse-wonder",
+   "date": "2026-10-12",
+   "url": "https://openrouter.ai/meta/muse-wonder",
+   "context_length": 1048576,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
   {
    "lab": "Nvidia",
    "model": "agile_one_s_pick_ssd_n2_1120",
@@ -57,6 +69,18 @@
   },
   {
    "lab": "Nvidia",
+   "model": "Qwen-Image-NVFP4",
+   "id": "nvidia/Qwen-Image-NVFP4",
+   "date": "2026-10-09",
+   "url": "https://huggingface.co/nvidia/Qwen-Image-NVFP4",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/Qwen-Image-NVFP4",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Nvidia",
    "model": "agile_one_s_place_ssd_n17_24050",
    "id": "nvidia/agile_one_s_place_ssd_n17_24050",
    "date": "2026-10-09",
@@ -65,18 +89,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "nvidia/agile_one_s_place_ssd_n17_24050",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "agile_one_s_walk_n2_1680",
-   "id": "nvidia/agile_one_s_walk_n2_1680",
-   "date": "2026-10-09",
-   "url": "https://huggingface.co/nvidia/agile_one_s_walk_n2_1680",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/agile_one_s_walk_n2_1680",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
@@ -1193,54 +1205,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights published at huggingface.co/Qwen/Qwen3.8-27B; downloadable and hashable",
    "hf_id": "Qwen/Qwen3.8-27B",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Dots Studio",
-   "model": "Dots Studio: Dots3-Note Preview (free)",
-   "id": "dots-studio/dots-3-note-preview",
-   "date": "2026-08-14",
-   "url": "https://openrouter.ai/dots-studio/dots-3-note-preview",
-   "context_length": 512000,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Cohere",
-   "model": "North-Small-Translate-1.0-w4a16",
-   "id": "CohereLabs/North-Small-Translate-1.0-w4a16",
-   "date": "2026-08-14",
-   "url": "https://huggingface.co/CohereLabs/North-Small-Translate-1.0-w4a16",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "CohereLabs/North-Small-Translate-1.0-w4a16",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Cohere",
-   "model": "North-Small-Translate-1.0",
-   "id": "CohereLabs/North-Small-Translate-1.0",
-   "date": "2026-08-14",
-   "url": "https://huggingface.co/CohereLabs/North-Small-Translate-1.0",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "CohereLabs/North-Small-Translate-1.0",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Google",
-   "model": "Google: Gemini 3.7 Flash",
-   "id": "google/gemini-3.7-flash",
-   "date": "2026-08-13",
-   "url": "https://openrouter.ai/google/gemini-3.7-flash",
-   "context_length": 1048576,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   }
  ],
