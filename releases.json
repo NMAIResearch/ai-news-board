@@ -1,12 +1,24 @@
 {
- "generated": "2026-10-14 05:33 UTC",
+ "generated": "2026-10-15 05:35 UTC",
  "window_days": 60,
  "counts": {
   "total": 100,
-  "closed": 44,
-  "open_weights": 56
+  "closed": 43,
+  "open_weights": 57
  },
  "releases": [
+  {
+   "lab": "Microsoft",
+   "model": "UserRepGen-4B",
+   "id": "microsoft/UserRepGen-4B",
+   "date": "2026-10-14",
+   "url": "https://huggingface.co/microsoft/UserRepGen-4B",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "microsoft/UserRepGen-4B",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
   {
    "lab": "Unbiased",
    "model": "Pareto 26.9",
@@ -68,18 +80,6 @@
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
-   "lab": "Nvidia",
-   "model": "GR00T-N1.7-AppleToPlate-cosine40k-checkpoint-15000",
-   "id": "nvidia/GR00T-N1.7-AppleToPlate-cosine40k-checkpoint-15000",
-   "date": "2026-10-13",
-   "url": "https://huggingface.co/nvidia/GR00T-N1.7-AppleToPlate-cosine40k-checkpoint-15000",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/GR00T-N1.7-AppleToPlate-cosine40k-checkpoint-15000",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
    "lab": "Meta",
    "model": "Meta: Muse Wonder",
    "id": "meta/muse-wonder",
@@ -92,39 +92,15 @@
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
-   "lab": "Nvidia",
-   "model": "agile_one_s_pick_ssd_n2_1120",
-   "id": "nvidia/agile_one_s_pick_ssd_n2_1120",
-   "date": "2026-10-10",
-   "url": "https://huggingface.co/nvidia/agile_one_s_pick_ssd_n2_1120",
+   "lab": "Ai2",
+   "model": "HiRO-ACEv2",
+   "id": "allenai/HiRO-ACEv2",
+   "date": "2026-10-12",
+   "url": "https://huggingface.co/allenai/HiRO-ACEv2",
    "context_length": null,
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/agile_one_s_pick_ssd_n2_1120",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "agile_one_s_place_ssd_n2_1260",
-   "id": "nvidia/agile_one_s_place_ssd_n2_1260",
-   "date": "2026-10-10",
-   "url": "https://huggingface.co/nvidia/agile_one_s_place_ssd_n2_1260",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/agile_one_s_place_ssd_n2_1260",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "agile_one_s_pickplace_ssd_n2_18200",
-   "id": "nvidia/agile_one_s_pickplace_ssd_n2_18200",
-   "date": "2026-10-10",
-   "url": "https://huggingface.co/nvidia/agile_one_s_pickplace_ssd_n2_18200",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/agile_one_s_pickplace_ssd_n2_18200",
+   "hf_id": "allenai/HiRO-ACEv2",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
@@ -157,10 +133,10 @@
    "id": "stepfun/step-5-preview",
    "date": "2026-10-08",
    "url": "https://openrouter.ai/stepfun/step-5-preview",
-   "context_length": 1000000,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
+   "context_length": 1048576,
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/stepfun-ai/Step-5-Preview; downloadable and hashable",
+   "hf_id": "stepfun-ai/Step-5-Preview",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
@@ -246,6 +222,30 @@
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "PixelUMM",
+   "id": "nvidia/PixelUMM",
+   "date": "2026-10-01",
+   "url": "https://huggingface.co/nvidia/PixelUMM",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/PixelUMM",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "PixelDiT2-ImageNet",
+   "id": "nvidia/PixelDiT2-ImageNet",
+   "date": "2026-10-01",
+   "url": "https://huggingface.co/nvidia/PixelDiT2-ImageNet",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/PixelDiT2-ImageNet",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "IBM",
@@ -644,6 +644,30 @@
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
+   "lab": "Nvidia",
+   "model": "DeepSeek-V4.1-Flash-NVFP4",
+   "id": "nvidia/DeepSeek-V4.1-Flash-NVFP4",
+   "date": "2026-09-16",
+   "url": "https://huggingface.co/nvidia/DeepSeek-V4.1-Flash-NVFP4",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/DeepSeek-V4.1-Flash-NVFP4",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "RT-DETR-Hand-Detector-v1",
+   "id": "nvidia/RT-DETR-Hand-Detector-v1",
+   "date": "2026-09-15",
+   "url": "https://huggingface.co/nvidia/RT-DETR-Hand-Detector-v1",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/RT-DETR-Hand-Detector-v1",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
    "lab": "Alibaba (Qwen)",
    "model": "Qwen-Image-2.1",
    "id": "Qwen/Qwen-Image-2.1",
@@ -872,18 +896,6 @@
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
-   "lab": "Microsoft",
-   "model": "VibeVoice-ASR-Streaming-1.5B",
-   "id": "microsoft/VibeVoice-ASR-Streaming-1.5B",
-   "date": "2026-09-02",
-   "url": "https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-1.5B",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "microsoft/VibeVoice-ASR-Streaming-1.5B",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
    "lab": "Cohere",
    "model": "tiny-aya-en-thinker",
    "id": "CohereLabs/tiny-aya-en-thinker",
@@ -1061,18 +1073,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "allenai/Llama-3-Blama-8B-Stage1",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Ai2",
-   "model": "Bwen-8B",
-   "id": "allenai/Bwen-8B",
-   "date": "2026-08-26",
-   "url": "https://huggingface.co/allenai/Bwen-8B",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "allenai/Bwen-8B",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
