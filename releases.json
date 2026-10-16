@@ -1,12 +1,144 @@
 {
- "generated": "2026-10-15 05:35 UTC",
+ "generated": "2026-10-16 05:33 UTC",
  "window_days": 60,
  "counts": {
-  "total": 100,
-  "closed": 43,
-  "open_weights": 57
+  "total": 106,
+  "closed": 42,
+  "open_weights": 64
  },
  "releases": [
+  {
+   "lab": "Nvidia",
+   "model": "Muse-Spark-Open-816B-A42B-DFlash2",
+   "id": "nvidia/Muse-Spark-Open-816B-A42B-DFlash2",
+   "date": "2026-10-16",
+   "url": "https://huggingface.co/nvidia/Muse-Spark-Open-816B-A42B-DFlash2",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/Muse-Spark-Open-816B-A42B-DFlash2",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Moondream",
+   "model": "Moondream: Moondream 3 Preview",
+   "id": "moondream/moondream3-preview",
+   "date": "2026-10-15",
+   "url": "https://openrouter.ai/moondream/moondream3-preview",
+   "context_length": 32000,
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/moondream/moondream3-preview; downloadable and hashable",
+   "hf_id": "moondream/moondream3-preview",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Moondream",
+   "model": "Moondream: Moondream 3.1",
+   "id": "moondream/moondream3.1-9b-a2b",
+   "date": "2026-10-15",
+   "url": "https://openrouter.ai/moondream/moondream3.1-9b-a2b",
+   "context_length": 32000,
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/moondream/moondream3.1-9B-A2B; downloadable and hashable",
+   "hf_id": "moondream/moondream3.1-9B-A2B",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Meta",
+   "model": "Meta: Muse Spark Open",
+   "id": "meta/muse-spark-open",
+   "date": "2026-10-15",
+   "url": "https://openrouter.ai/meta/muse-spark-open",
+   "context_length": 1048576,
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/meta-models/Muse-Spark-Open-816B-A42B; downloadable and hashable",
+   "hf_id": "meta-models/Muse-Spark-Open-816B-A42B",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "NVIDIA: Nemotron 3.5 Super VL",
+   "id": "nvidia/nemotron-3.5-super-vl",
+   "date": "2026-10-15",
+   "url": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl",
+   "context_length": 1048576,
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL; downloadable and hashable",
+   "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Microsoft",
+   "model": "scFM-dataselection",
+   "id": "microsoft/scFM-dataselection",
+   "date": "2026-10-15",
+   "url": "https://huggingface.co/microsoft/scFM-dataselection",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "microsoft/scFM-dataselection",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "Nemotron-3.5-Rerank-8B-BF16",
+   "id": "nvidia/Nemotron-3.5-Rerank-8B-BF16",
+   "date": "2026-10-15",
+   "url": "https://huggingface.co/nvidia/Nemotron-3.5-Rerank-8B-BF16",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/Nemotron-3.5-Rerank-8B-BF16",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Mistral",
+   "model": "Timestral-123M",
+   "id": "mistralai/Timestral-123M",
+   "date": "2026-10-14",
+   "url": "https://huggingface.co/mistralai/Timestral-123M",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "mistralai/Timestral-123M",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Mistral",
+   "model": "Timestral-28M",
+   "id": "mistralai/Timestral-28M",
+   "date": "2026-10-14",
+   "url": "https://huggingface.co/mistralai/Timestral-28M",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "mistralai/Timestral-28M",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Mistral",
+   "model": "Timestral-5M",
+   "id": "mistralai/Timestral-5M",
+   "date": "2026-10-14",
+   "url": "https://huggingface.co/mistralai/Timestral-5M",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "mistralai/Timestral-5M",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Mistral",
+   "model": "Timestral-209M",
+   "id": "mistralai/Timestral-209M",
+   "date": "2026-10-14",
+   "url": "https://huggingface.co/mistralai/Timestral-209M",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "mistralai/Timestral-209M",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
   {
    "lab": "Microsoft",
    "model": "UserRepGen-4B",
@@ -17,6 +149,30 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "microsoft/UserRepGen-4B",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "IBM",
+   "model": "granite-switch-4.1-8b",
+   "id": "ibm-granite/granite-switch-4.1-8b",
+   "date": "2026-10-14",
+   "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-8b",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "ibm-granite/granite-switch-4.1-8b",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "IBM",
+   "model": "granite-switch-4.1-30b",
+   "id": "ibm-granite/granite-switch-4.1-30b",
+   "date": "2026-10-14",
+   "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-30b",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "ibm-granite/granite-switch-4.1-30b",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
@@ -80,6 +236,42 @@
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
+   "lab": "Nvidia",
+   "model": "ARDY-SOMA-RP-30FPS-KimodoRep-Horizon60",
+   "id": "nvidia/ARDY-SOMA-RP-30FPS-KimodoRep-Horizon60",
+   "date": "2026-10-13",
+   "url": "https://huggingface.co/nvidia/ARDY-SOMA-RP-30FPS-KimodoRep-Horizon60",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/ARDY-SOMA-RP-30FPS-KimodoRep-Horizon60",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "Kimodo-SOMA-RP-ArdyRep-v1.2",
+   "id": "nvidia/Kimodo-SOMA-RP-ArdyRep-v1.2",
+   "date": "2026-10-13",
+   "url": "https://huggingface.co/nvidia/Kimodo-SOMA-RP-ArdyRep-v1.2",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/Kimodo-SOMA-RP-ArdyRep-v1.2",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "Kimodo-SOMA-RP-v1.2",
+   "id": "nvidia/Kimodo-SOMA-RP-v1.2",
+   "date": "2026-10-13",
+   "url": "https://huggingface.co/nvidia/Kimodo-SOMA-RP-v1.2",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/Kimodo-SOMA-RP-v1.2",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
    "lab": "Meta",
    "model": "Meta: Muse Wonder",
    "id": "meta/muse-wonder",
@@ -116,18 +308,6 @@
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
-   "lab": "Nvidia",
-   "model": "Qwen-Image-NVFP4",
-   "id": "nvidia/Qwen-Image-NVFP4",
-   "date": "2026-10-09",
-   "url": "https://huggingface.co/nvidia/Qwen-Image-NVFP4",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/Qwen-Image-NVFP4",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
    "lab": "Stepfun",
    "model": "StepFun: Step 5 Preview",
    "id": "stepfun/step-5-preview",
@@ -149,18 +329,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "mistralai/LIDstral-Arabic",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Mistral",
-   "model": "Voxtral-Mini-4B-Realtime-Arabic",
-   "id": "mistralai/Voxtral-Mini-4B-Realtime-Arabic",
-   "date": "2026-10-08",
-   "url": "https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-Arabic",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "mistralai/Voxtral-Mini-4B-Realtime-Arabic",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
@@ -210,42 +378,6 @@
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Unbiased",
-   "model": "Pareto 26.10 Preview",
-   "id": "unbiased/pareto-26.10-preview",
-   "date": "2026-10-01",
-   "url": "https://openrouter.ai/unbiased/pareto-26.10-preview",
-   "context_length": 1048576,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "PixelUMM",
-   "id": "nvidia/PixelUMM",
-   "date": "2026-10-01",
-   "url": "https://huggingface.co/nvidia/PixelUMM",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/PixelUMM",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "PixelDiT2-ImageNet",
-   "id": "nvidia/PixelDiT2-ImageNet",
-   "date": "2026-10-01",
-   "url": "https://huggingface.co/nvidia/PixelDiT2-ImageNet",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/PixelDiT2-ImageNet",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "IBM",
@@ -632,42 +764,6 @@
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
-   "lab": "Microsoft",
-   "model": "FrogNano-4B-2609",
-   "id": "microsoft/FrogNano-4B-2609",
-   "date": "2026-09-17",
-   "url": "https://huggingface.co/microsoft/FrogNano-4B-2609",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "microsoft/FrogNano-4B-2609",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "DeepSeek-V4.1-Flash-NVFP4",
-   "id": "nvidia/DeepSeek-V4.1-Flash-NVFP4",
-   "date": "2026-09-16",
-   "url": "https://huggingface.co/nvidia/DeepSeek-V4.1-Flash-NVFP4",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/DeepSeek-V4.1-Flash-NVFP4",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "RT-DETR-Hand-Detector-v1",
-   "id": "nvidia/RT-DETR-Hand-Detector-v1",
-   "date": "2026-09-15",
-   "url": "https://huggingface.co/nvidia/RT-DETR-Hand-Detector-v1",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/RT-DETR-Hand-Detector-v1",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
    "lab": "Alibaba (Qwen)",
    "model": "Qwen-Image-2.1",
    "id": "Qwen/Qwen-Image-2.1",
@@ -965,30 +1061,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "ibm-granite/granite-4.2-30b-bf16-mlx",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "IBM",
-   "model": "granite-4.2-30b-q8-mlx",
-   "id": "ibm-granite/granite-4.2-30b-q8-mlx",
-   "date": "2026-09-01",
-   "url": "https://huggingface.co/ibm-granite/granite-4.2-30b-q8-mlx",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "ibm-granite/granite-4.2-30b-q8-mlx",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "IBM",
-   "model": "granite-4.2-8b-bf16-mlx",
-   "id": "ibm-granite/granite-4.2-8b-bf16-mlx",
-   "date": "2026-09-01",
-   "url": "https://huggingface.co/ibm-granite/granite-4.2-8b-bf16-mlx",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "ibm-granite/granite-4.2-8b-bf16-mlx",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
