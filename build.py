@@ -30,26 +30,81 @@ SHADOW = "var(--shadow)"
 # Shared portfolio typography and header, matching the landing page (portfolio.css).
 # Colours stay in the theme variables above; this block changes type, header and corners only.
 LANDING_ALIGNMENT_CSS = """<style id="landing-alignment">
-:root{--sans:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--mono:var(--sans)}
-body{font-family:var(--sans);font-size:17px;line-height:1.65}
-.site-header{max-width:none;margin:0 20px;padding:24px 0;display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid var(--border)}
+:root,html[data-theme="light"]{color-scheme:light;--bg:#fff;--surface:#fff;--raised:#f7fafc;--text:#2d3748;--muted:#4a5568;--line:#e2e8f0;--accent:#2b6cb0;--heading:#1a365d;--tag:#f7fafc;--sans:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--mono:var(--sans);--glass:rgba(247,250,252,.8);--shadow:0 1px 2px rgba(16,34,64,.05),0 12px 28px -16px rgba(16,34,64,.28);--ease:cubic-bezier(.2,.7,.2,1);--bg-card:var(--surface);--bg-hover:var(--raised);--border:var(--line);--border-bright:#a0aec0;--text-muted:var(--muted);--text-dim:var(--muted);--pill-bg:var(--raised);--pill-fg:var(--heading)}
+:root[data-theme="dark"],html[data-theme="dark"]{color-scheme:dark;--bg:#0f141d;--surface:#161d2b;--raised:#161d2b;--text:#e8edf4;--muted:#a0aec0;--line:#2a3444;--accent:#63b3ed;--heading:#e2e8f0;--tag:#161d2b;--glass:rgba(22,29,43,.74);--shadow:0 1px 2px rgba(0,0,0,.35),0 14px 30px -16px rgba(0,0,0,.8);--bg-card:var(--surface);--bg-hover:#1e293b;--border:var(--line);--border-bright:#4a5568;--text-muted:var(--muted);--text-dim:var(--muted);--pill-bg:#1e293b;--pill-fg:#f1f5f9}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#0f141d;--surface:#161d2b;--raised:#161d2b;--text:#e8edf4;--muted:#a0aec0;--line:#2a3444;--accent:#63b3ed;--heading:#e2e8f0;--tag:#161d2b;--glass:rgba(22,29,43,.74);--shadow:0 1px 2px rgba(0,0,0,.35),0 14px 30px -16px rgba(0,0,0,.8);--bg-card:var(--surface);--bg-hover:#1e293b;--border:var(--line);--border-bright:#4a5568;--text-muted:var(--muted);--text-dim:var(--muted);--pill-bg:#1e293b;--pill-fg:#f1f5f9}}
+*{box-sizing:border-box}html{scroll-padding-top:1.5rem}body{margin:0;background:var(--bg);color:var(--text);font:17px/1.65 var(--sans)}
+a{color:var(--accent);text-underline-offset:.22em;text-decoration-thickness:1px}a:hover{text-decoration-thickness:2px}
+button,input,select{font:inherit;color:var(--text)}button,select{cursor:pointer}
+:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+::selection{background:var(--heading);color:var(--bg)}
+h1,h2,h3,h4{color:var(--heading);line-height:1.3;letter-spacing:-.025em}
+.site-header{max-width:1200px;margin:0 auto;padding:24px 28px;display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid var(--line)}
 .brand{color:var(--heading);font-size:1rem;font-weight:750;text-decoration:none;letter-spacing:.025em}
-.brand-subtitle{font-size:.8rem;color:var(--text-muted);margin-top:2px}
+.brand-subtitle{font-size:.8rem;color:var(--muted);margin-top:2px}
 .site-nav{display:flex;gap:25px;flex-wrap:wrap}
-.site-nav a{font-size:.9rem;color:var(--text-muted);text-decoration:none;padding:7px 0}
+.site-nav a{font-size:.9rem;color:var(--muted);text-decoration:none;padding:7px 0}
+.site-nav a:hover{color:var(--accent)}
 .site-nav a[aria-current]{color:var(--accent);border-bottom:2px solid var(--accent)}
-.header-bar{position:static!important;margin-top:18px!important;border-bottom:0!important}
-.header-kicker{font-family:var(--sans)!important;font-size:.78rem!important;font-weight:700!important;letter-spacing:.12em!important;text-transform:uppercase;color:var(--accent)!important}
-.header-title{font-size:clamp(1.9rem,3.6vw,2.8rem)!important;line-height:1.12!important;letter-spacing:-.04em!important;font-weight:660!important;margin:6px 0 12px!important;color:var(--heading)!important}
-.header-copy{font-size:1.05rem!important;line-height:1.7!important;color:var(--text-muted)!important;max-width:66ch}
-.header-actions a.theme-toggle-btn[href]{display:none}
-.filter-chip,.nav-tab-btn,.theme-toggle-btn{border-radius:6px!important;font-family:var(--sans)!important}
-@media (max-width:640px){.site-header{flex-wrap:wrap;margin:0 16px;padding:18px 0}}
+.theme-toggle-btn{background:var(--surface)!important;border:1px solid var(--line)!important;border-radius:8px!important;padding:.55rem .85rem!important;font-family:var(--sans)!important;font-size:.8rem!important;font-weight:500;min-height:44px;white-space:nowrap;color:var(--text)!important;display:inline-flex;align-items:center;gap:6px}
+.theme-toggle-btn:hover{border-color:var(--accent)!important;color:var(--accent)!important}
+.wrap{max-width:1200px!important;margin:0 auto!important;padding:0 28px 64px!important}
+.header-bar{position:static!important;display:block!important;margin:0!important;padding:48px 0 28px!important;max-width:850px;border-bottom:0!important;background:transparent!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+.eyebrow,.header-kicker{font-family:var(--sans)!important;font-size:.76rem!important;letter-spacing:.12em!important;text-transform:uppercase;color:var(--accent)!important;margin:0 0 16px!important;font-weight:650!important}
+.eyebrow::before,.header-kicker::before,.dayhead::before{content:"";display:inline-block;width:20px;height:1px;margin:0 10px 0 0;background:currentColor;vertical-align:.3em;opacity:.7}
+.header-title{font-size:clamp(2.2rem,5vw,3.6rem)!important;line-height:1.12!important;letter-spacing:-.045em!important;font-weight:660!important;margin:0 0 20px!important;color:var(--heading)!important}
+.header-copy{font-size:1.12rem!important;line-height:1.7!important;color:var(--muted)!important;max-width:66ch;margin:0!important}
+.freshness-strip{background:var(--raised)!important;border:1px solid var(--line)!important;border-radius:10px!important;padding:10px 16px!important;margin:0 0 18px!important;font-size:.82rem!important;gap:6px 0!important}
+.nav-bar-row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px 20px;margin:16px 0 28px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.nav-tab-bar{display:inline-flex;flex-wrap:wrap;gap:6px!important;margin:0!important;padding:5px!important;border:1px solid var(--line)!important;border-radius:10px!important;background:var(--raised)!important}
+.nav-tab-btn{padding:8px 14px!important;border-radius:7px!important;font-family:var(--sans)!important;font-size:.88rem!important;font-weight:650!important;letter-spacing:-.01em!important;text-transform:none!important;color:var(--muted)!important}
+.nav-tab-btn:hover{background:var(--surface)!important;color:var(--heading)!important}
+.nav-tab-btn.active{background:var(--heading)!important;color:var(--bg)!important}
+.tab-badge{padding:1px 7px!important;border-radius:999px!important;font-size:.74rem!important;font-weight:650!important;background:var(--surface);color:var(--heading);border:1px solid var(--line)}
+.nav-tab-btn.active .tab-badge{background:rgba(128,128,128,.22)!important;color:var(--bg)!important;border-color:transparent}
+.harness-jump{display:inline-flex;align-items:center;gap:6px;font-size:.88rem;font-weight:600;color:var(--accent);text-decoration:none;padding:6px 10px;border-radius:8px;border:1px solid var(--line);background:var(--surface)}
+.harness-jump:hover{border-color:var(--accent);box-shadow:var(--shadow)}
+.harness-jump::after{content:"\\2193";font-size:.85em}
+.layout{display:grid;grid-template-columns:236px minmax(0,1fr) 276px!important;gap:24px!important;align-items:start}
+.side{background:var(--raised);border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:12px;padding:18px;position:sticky;top:24px;max-height:calc(100vh - 48px);overflow-y:auto}
+.rail{position:sticky;top:24px;max-height:calc(100vh - 48px);overflow-y:auto}
+.search{padding:.6rem .8rem!important;border:1px solid var(--line)!important;background:var(--surface)!important;border-radius:8px!important;font-family:var(--sans)!important;font-size:.88rem!important;margin-bottom:14px!important}
+.view-toggle{background:var(--surface)!important;border:1px solid var(--line);padding:3px!important;border-radius:8px!important;margin-bottom:16px!important}
+.vmode-btn{border-radius:6px!important;font-family:var(--sans)!important;font-size:.8rem!important}
+.filter-chip{padding:5px 10px!important;border-radius:7px!important;font-family:var(--sans)!important;font-size:.78rem!important;font-weight:600!important;border:1px solid var(--line)!important;background:var(--surface)!important;color:var(--muted)!important}
+.filter-chip:hover{border-color:var(--accent)!important;color:var(--accent)!important}
+.filter-chip.active{background:var(--heading)!important;color:var(--bg)!important;border-color:var(--heading)!important}
+.fgroup h4{font-size:.74rem!important;letter-spacing:.1em!important;text-transform:uppercase;color:var(--accent)!important;font-weight:650!important;margin:0 0 8px!important}
+.tierbtn{padding:.55rem .85rem!important;border:1px solid var(--line)!important;background:var(--surface)!important;color:var(--heading)!important;border-radius:8px!important;font-family:var(--sans)!important;font-size:.82rem!important;font-weight:600}
+.tierbtn:hover{border-color:var(--accent)!important;color:var(--accent)!important}
+.exec-strip{gap:16px!important;margin:0 0 22px!important}
+.exec-card{border:1px solid var(--line)!important;border-top:3px solid var(--accent)!important;border-radius:12px!important;padding:16px 18px!important;background:var(--surface)!important;box-shadow:none!important;transition:box-shadow .25s var(--ease),transform .25s var(--ease)}
+.exec-card:hover{box-shadow:var(--shadow)!important;transform:translateY(-2px)}
+.feedgrid{display:flex!important;flex-direction:column;gap:14px;border-top:0!important}
+.feedgrid .card{margin:0!important;background:var(--surface)!important;border:1px solid var(--line)!important;border-top:3px solid var(--accent)!important;border-radius:12px!important;padding:20px 22px!important;color:var(--text)!important;box-shadow:none!important;transition:border-color .2s var(--ease),box-shadow .3s var(--ease),transform .3s var(--ease)!important}
+.feedgrid .card:hover{background:var(--surface)!important;border-color:color-mix(in srgb,var(--accent) 45%,var(--line))!important;box-shadow:var(--shadow)!important;transform:translateY(-2px)}
+.card-headline{font-size:1.12rem!important;font-weight:650!important;letter-spacing:-.015em;line-height:1.35!important;margin:4px 0 10px!important}
+.dayhead{margin:24px 0 4px!important;padding:0 0 8px!important;border-bottom:1px solid var(--line)!important;color:var(--accent)!important;font-family:var(--sans)!important;font-size:.76rem!important;font-weight:650!important;letter-spacing:.12em!important;text-transform:uppercase}
+.rail-container{border:1px solid var(--line)!important;border-top:3px solid var(--accent)!important;border-radius:12px!important;background:var(--surface)!important;box-shadow:none!important}
+.rail-nav{background:var(--raised)!important;border-bottom:1px solid var(--line)!important;padding:4px!important;gap:4px!important}
+.rail-nav-btn{border-radius:7px!important;font-family:var(--sans)!important;font-size:.76rem!important;font-weight:650!important}
+.railcard,.tierui,.govconflict,.aiwatch,.watch-row{border:1px solid var(--line)!important;border-radius:12px!important;background:var(--surface)!important;box-shadow:none!important}
+.reference-notice{padding:14px 18px!important;border:1px solid var(--line);border-left:3px solid var(--accent)!important;border-radius:10px;background:var(--raised)!important;color:var(--muted)!important;font-size:.88rem!important}
+.radar-grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,460px),1fr))!important;gap:18px!important}
+.radar-card{border:1px solid var(--line)!important;border-top:3px solid var(--accent)!important;border-radius:12px!important;padding:18px 20px!important;background:var(--surface)!important;box-shadow:none!important;margin-bottom:0!important}
+.harness-section{margin-top:56px;padding-top:44px;border-top:1px solid var(--line)}
+.harness-section section{max-width:none!important}
+a,button,.btn{transition:color .18s var(--ease),background-color .18s var(--ease),border-color .18s var(--ease),box-shadow .25s var(--ease),transform .25s var(--ease)}
+@media(prefers-reduced-motion:reduce){a,button,.btn,.card,.exec-card,.radar-card{transition:none!important}.card:hover,.exec-card:hover,.radar-card:hover{transform:none!important}}
+@media(max-width:1100px){.layout{grid-template-columns:220px minmax(0,1fr)!important}.rail{position:static;grid-column:1/-1;max-height:none;overflow:visible;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}}
+@media(max-width:850px){.site-header{flex-wrap:wrap;gap:15px}.site-nav{order:3;width:100%;gap:4px 25px}.theme-toggle-btn{margin-left:auto}.layout{grid-template-columns:1fr!important}.side,.rail{position:static;max-height:none;overflow:visible}.side{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.side .search,.side .view-toggle,.side .railcard{grid-column:1/-1}.exec-strip{grid-template-columns:1fr!important}}
+@media(max-width:620px){body{font-size:16px}.site-header{padding:20px}.wrap{padding:0 20px 48px!important}.header-bar{padding:32px 0 22px!important}.header-copy{font-size:1rem!important}.theme-toggle-btn{font-size:.72rem!important;padding:.45rem .7rem!important;min-height:38px}.site-nav{gap:2px 20px}.site-nav a{font-size:.85rem}.nav-vault{display:none}.side{grid-template-columns:1fr!important}.rail{display:block}.nav-tab-bar{width:100%}.nav-tab-btn{flex:1;justify-content:center;padding:8px 10px!important;font-size:.82rem!important}.radar-grid{grid-template-columns:1fr!important}.govconflict table,.tierui table,.aiwatch table{display:block;overflow-x:auto;max-width:100%}}
 </style>"""
 
-SITE_HEADER_HTML = """<header class="site-header"><div><a class="brand" href="https://nmairesearch.github.io/index.html">NM AI Research</a>
-<div class="brand-subtitle">Public evidence index</div></div>
-<nav aria-label="Main navigation" class="site-nav"><a href="https://nmairesearch.github.io/index.html#work">Research</a><a href="https://nmairesearch.github.io/sovereign-watch-case-study.html">SW case study</a><a href="https://nmairesearch.github.io/portfolio-map.html">Portfolio map</a></nav></header>
+SITE_HEADER_HTML = """<header class="site-header"><div><a class="brand" href="https://nmairesearch.com/">NM AI Research</a>
+<div class="brand-subtitle">Independent AI research</div></div>
+<nav aria-label="Main navigation" class="site-nav"><a href="https://nmairesearch.com/research.html">Research<span class="nav-vault"> Vault</span></a><a href="https://nmairesearch.com/software-vault/">Software<span class="nav-vault"> Vault</span></a><a href="https://nmairesearch.com/game-vault/">Game<span class="nav-vault"> Vault</span></a><a href="https://nmairesearch.com/music-vault/">Music<span class="nav-vault"> Vault</span></a><a href="https://nmairesearch.com/video-vault/">Video<span class="nav-vault"> Vault</span></a></nav>
+<button id="themeToggle" class="theme-toggle-btn" type="button" title="Toggle Light/Dark Theme"><span id="themeIcon">◑</span> <span id="themeLabel">THEME: LIGHT</span></button></header>
 """
 
 # Follow the system colour scheme when no theme has been chosen, as the landing page does.
@@ -1022,8 +1077,8 @@ def harnesses_tab(data=None):
     for entry in data["sources"]:
         colour = colours[entry["source_kind"]]
         cards.append(
-            f'<div style="border:1px solid {LINE};border-left:4px solid {colour};'
-            f'border-radius:8px;padding:15px 17px;background:{PAPER};box-shadow:{SHADOW}">'
+            f'<div style="border:1px solid {LINE};border-top:3px solid {colour};'
+            f'border-radius:12px;padding:18px 20px;background:{PAPER};box-shadow:none">'
             f'<div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap">'
             f'<a href="{esc(entry["url"])}" target="_blank" rel="noopener" '
             f'style="font-size:15px;font-weight:700;color:{NAVY};text-decoration:none">'
@@ -1049,10 +1104,10 @@ def harnesses_tab(data=None):
     project = data["project_status"]
     project_source = project["source"]
     return (
-        f'<section style="max-width:1080px">'
-        f'<div style="border:1px solid {LINE};border-left:4px solid var(--accent);'
-        f'border-radius:8px;padding:15px 18px;margin-bottom:18px;background:{PAPER};'
-        f'box-shadow:{SHADOW}"><h2 style="margin:0 0 5px;color:{NAVY};font-size:19px">'
+        f'<section style="max-width:1200px">'
+        f'<div style="border:1px solid {LINE};border-top:3px solid var(--accent);'
+        f'border-radius:12px;padding:20px 22px;margin-bottom:18px;background:{PAPER};'
+        f'box-shadow:none"><h2 style="margin:0 0 5px;color:{NAVY};font-size:19px">'
         f'{esc(data["title"])}</h2><div style="font-size:13px;color:{BODY};line-height:1.55">'
         f'{esc(data["scope"])}</div><div style="font-size:12px;color:{SLATE};margin-top:8px">'
         f'{esc(data["method"]["order"])}</div>'
@@ -1061,14 +1116,14 @@ def harnesses_tab(data=None):
         f'<div style="font-size:12px;color:{SLATE};margin-top:8px">'
         f'Sources checked {esc(data["checked_date"])} &middot; '
         f'{len(data["sources"])} public source types</div></div>'
-        f'<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));'
-        f'gap:14px">{"".join(cards)}</div>'
-        f'<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));'
-        f'gap:14px;margin-top:18px">'
-        f'<div style="border:1px solid {LINE};border-radius:8px;padding:13px 16px;'
+        f'<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));'
+        f'gap:16px">{"".join(cards)}</div>'
+        f'<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));'
+        f'gap:16px;margin-top:18px">'
+        f'<div style="border:1px solid {LINE};border-radius:12px;padding:16px 18px;'
         f'background:{PAPER}"><div style="font-size:14px;font-weight:700;color:{NAVY}">'
         f'Benchmark method references</div>{references}</div>'
-        f'<details style="border:1px solid {LINE};border-radius:8px;padding:13px 16px;'
+        f'<details style="border:1px solid {LINE};border-radius:12px;padding:16px 18px;'
         f'background:{PAPER}"><summary style="font-size:14px;font-weight:700;color:{NAVY};'
         f'cursor:pointer">{esc(project["title"])}</summary>'
         f'<div style="font-size:12px;color:{BODY};margin-top:9px;line-height:1.5">'
@@ -1743,24 +1798,24 @@ def main():
       document.body.classList.remove('mode-audit');
       document.body.classList.add('mode-digest');
       btnDigest.classList.add('active');
-      btnDigest.style.background = '#fff';
-      btnDigest.style.color = '#1a365d';
+      btnDigest.style.background = 'var(--bg-card)';
+      btnDigest.style.color = 'var(--heading)';
       btnDigest.style.boxShadow = '0 1px 2px rgba(0,0,0,0.08)';
       btnAudit.classList.remove('active');
       btnAudit.style.background = 'transparent';
-      btnAudit.style.color = '#64748b';
+      btnAudit.style.color = 'var(--text-muted)';
       btnAudit.style.boxShadow = 'none';
     });
     btnAudit.addEventListener('click', function(){
       document.body.classList.remove('mode-digest');
       document.body.classList.add('mode-audit');
       btnAudit.classList.add('active');
-      btnAudit.style.background = '#fff';
-      btnAudit.style.color = '#1a365d';
+      btnAudit.style.background = 'var(--bg-card)';
+      btnAudit.style.color = 'var(--heading)';
       btnAudit.style.boxShadow = '0 1px 2px rgba(0,0,0,0.08)';
       btnDigest.classList.remove('active');
       btnDigest.style.background = 'transparent';
-      btnDigest.style.color = '#64748b';
+      btnDigest.style.color = 'var(--text-muted)';
       btnDigest.style.boxShadow = 'none';
     });
   }
@@ -1990,24 +2045,19 @@ def main():
         AI news evidence, daily sovereign regulatory intake, search and market signals, and a source-separated coding-harness landscape. Each panel states the limits of what its evidence can establish.
       </div>
     </div>
-    <div class="header-actions">
-      <a class="theme-toggle-btn" href="https://nmairesearch.github.io/">Portfolio</a>
-      <button id="themeToggle" class="theme-toggle-btn" title="Toggle Light/Dark Theme">
-        <span id="themeIcon">◑</span>
-        <span id="themeLabel">THEME: LIGHT</span>
-      </button>
-    </div>
   </div>
   <div style="font-size:12px;color:var(--text-dim);margin:0 0 14px;max-width:900px">
     AI disclosure: the research is the author's; this text was drafted with AI assistance and reviewed by the author. Machine and human evidence methods are identified per card.
   </div>
   {freshness(built, fetched, mk, _reg if os.path.isfile(reg_path) else {}, rd)}
 
-  <div class="nav-tab-bar">
-    <button class="nav-tab-btn active" data-target="tab-news">News evidence <span class="tab-badge">{len(items)}</span></button>
-    <button class="nav-tab-btn" data-target="tab-radar">Sovereign radar <span class="tab-badge radar-badge">{len(regulatory_alerts)}</span></button>
-    <button class="nav-tab-btn" data-target="tab-harnesses">Harness landscape <span class="tab-badge">{len(harness_data["sources"])}</span></button>
-    <button class="nav-tab-btn" data-target="tab-reference">Watch</button>
+  <div class="nav-bar-row">
+    <div class="nav-tab-bar">
+      <button class="nav-tab-btn active" data-target="tab-news">News evidence <span class="tab-badge">{len(items)}</span></button>
+      <button class="nav-tab-btn" data-target="tab-radar">Sovereign radar <span class="tab-badge radar-badge">{len(regulatory_alerts)}</span></button>
+      <button class="nav-tab-btn" data-target="tab-reference">Watch</button>
+    </div>
+    <a class="harness-jump" href="#tab-harnesses">Harness landscape <span class="tab-badge">{len(harness_data["sources"])}</span></a>
   </div>
 
   <div id="tab-news" class="tab-pane active" style="display:block">
@@ -2042,10 +2092,6 @@ def main():
     {sovereign_radar_tab(regulatory_alerts)}
   </div>
 
-  <div id="tab-harnesses" class="tab-pane" style="display:none">
-    {reference_notice("Harness sources", harness_data.get("checked_date"))}
-    {harnesses_tab(harness_data)}
-  </div>
   <div id="tab-reference" class="tab-pane" style="display:none">
     {watch_html}
     <details class="watch-archive"><summary>Dated archive: earlier roster, gauges and announced models</summary>
@@ -2059,6 +2105,11 @@ def main():
     {govconflict_html}
     </details>
   </div>
+
+  <section id="tab-harnesses" class="harness-section">
+    {reference_notice("Harness sources", harness_data.get("checked_date"))}
+    {harnesses_tab(harness_data)}
+  </section>
 </div>
 {script_block}
 </body></html>"""
