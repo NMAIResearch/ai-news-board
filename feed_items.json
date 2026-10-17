@@ -1,10 +1,10 @@
 {
- "fetched": "2026-10-16 05:20 UTC",
+ "fetched": "2026-10-17 05:20 UTC",
  "items": [
   {
-   "entity": "",
-   "headline": "When it came to Cal AI’s viral success, a small army of influencers paid off",
-   "date": "Thu, 15 Oct 2026",
+   "entity": "Anthropic",
+   "headline": "Replit is no longer working with Anthropic, CEO says",
+   "date": "Fri, 16 Oct 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "?",
@@ -12,7 +12,7 @@
    "sources": [
     {
      "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/",
+     "url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/",
      "source_type": "trade-press",
      "source_tier": 3
     }
@@ -21,31 +21,92 @@
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
-    "total": 4
+    "total": 3
    },
    "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "8d97da6c4c5b1c756ff0dd6cb121c4bfcc316713369ec5d7d1f548f5374c9643",
-   "evidence_hash": "d297fa7c36f088d8ae81ebe7aca37400cb9b9de8f4a7294a260cc9bc19502e6f",
+   "content_hash": "5859b72e4a0c6facd65d50d347dd31e92eb5cd0cd1cc08e00113eee77885641a",
+   "evidence_hash": "17cae7c4585bfeef75368225c41213e2493fce429394849d9ac060fa5cbf3e17",
    "label_schema_version": 2,
    "auto_labelled": true,
    "label_source": "machine",
    "mentions": [
     {
-     "name": "Meta",
+     "name": "Anthropic",
+     "count": 9
+    },
+    {
+     "name": "OpenAI",
+     "count": 2
+    },
+    {
+     "name": "Google",
      "count": 1
     },
     {
-     "name": "xAI",
+     "name": "Meta",
      "count": 1
     }
    ],
-   "publisher_topic": "Cal AI",
+   "publisher_topic": "Anthropic",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "India becomes the latest country to report rogue AI agent activity",
+   "date": "Fri, 16 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 3163 chars of article text",
+   "content_hash": "7e844a686fc359a09efed769f355ee9a399b816f3a9fcdfc4ef1c8b8f8edaf87",
+   "evidence_hash": "bd76c5805061c8f5cc90ab8abda4c2779bf142570c4c28949dbb83f794d1454c",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 5
+    },
+    {
+     "name": "Anthropic",
+     "count": 2
+    },
+    {
+     "name": "Hugging Face",
+     "count": 2
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "India",
    "entity_basis": "unresolved"
   },
   {
-   "entity": "Meta",
-   "headline": "Meta launches an open-weight AI model that runs on Macs",
-   "date": "Thu, 15 Oct 2026",
+   "entity": "Nvidia",
+   "headline": "An Nvidia insider-turned-VC on why robotics hasn’t hit its ChatGPT moment, yet",
+   "date": "Fri, 16 Oct 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "?",
@@ -53,7 +114,121 @@
    "sources": [
     {
      "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
+     "url": "https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 1
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "fc0e42ce30d130a47f848bf746440c1b1b9e962b520de87b2179bb886a155cd6",
+   "evidence_hash": "c0030cf3ccad5b4a2396f4200570a40f898fb670a531e8bb7514ec0a11352d4f",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 6
+    },
+    {
+     "name": "OpenAI",
+     "count": 1
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    },
+    {
+     "name": "Apple",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "early stage venture",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Nvidia",
+   "headline": "Physical AI is more than robots, says the Nvidia veteran now investing in it",
+   "date": "Fri, 16 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 3353 chars of article text",
+   "content_hash": "d4b0df000c331fd601efe65caf0b849f3c9cfee06568ade0bbb3eb5a66a13590",
+   "evidence_hash": "6111a994499a811d04ce152bd81c495fb567fa5c7eb2d617834c862c61f9e7b2",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 5
+    },
+    {
+     "name": "Apple",
+     "count": 2
+    },
+    {
+     "name": "OpenAI",
+     "count": 1
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    },
+    {
+     "name": "Amazon",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "nvidia",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "Elorian’s first AI model wants to reason with images, not just about them",
+   "date": "Fri, 16 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
      "source_type": "trade-press",
      "source_tier": 3
     }
@@ -65,32 +240,40 @@
     "total": 2
    },
    "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "1b91ba6aa48d34b8a921cb6a1567f2b10b48e66c0e0bd98b27ace1708bcc2949",
-   "evidence_hash": "b06f20665a0e47ccb13ccd34efce3f284a94db54b2c8f25c981973ec2396df21",
+   "content_hash": "3d131fe66433665ad2a7949eb0f4110bed3d0cf08449793224cc142f4e46209f",
+   "evidence_hash": "1de27232db4145edfe1c24e36c8116f836619fb212240b0119f58b1142abad51",
    "label_schema_version": 2,
    "auto_labelled": true,
    "label_source": "machine",
    "mentions": [
     {
-     "name": "Meta",
-     "count": 6
+     "name": "Google",
+     "count": 3
     },
     {
-     "name": "Apple",
+     "name": "OpenAI",
      "count": 2
     },
     {
-     "name": "xAI",
+     "name": "Google DeepMind",
+     "count": 2
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    },
+    {
+     "name": "Nvidia",
      "count": 1
     }
    ],
-   "publisher_topic": "Apple",
-   "entity_basis": "headline"
+   "publisher_topic": "ai models",
+   "entity_basis": "unresolved"
   },
   {
-   "entity": "Amazon",
-   "headline": "Amazon devices chief Panos Panay sees a future where AI devices replace the need to use apps",
-   "date": "Thu, 15 Oct 2026",
+   "entity": "",
+   "headline": "Jev is Vercel’s fastest-adopted AI model ever",
+   "date": "Fri, 16 Oct 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "?",
@@ -98,7 +281,7 @@
    "sources": [
     {
      "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/10/15/amazon-devices-chief-panos-panay-sees-a-future-where-ai-devices-replace-the-need-to-use-apps/",
+     "url": "https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/",
      "source_type": "trade-press",
      "source_tier": 3
     }
@@ -107,47 +290,235 @@
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
-    "total": 1
+    "total": 2
    },
    "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "7765f6fcfc3541797803bb914b62520134d782f9eeec2d29eb7452c30d97e0dc",
-   "evidence_hash": "6cb1f41ce348891c7aa0b8ba49294fb80a61894a80c9aed5e698dfb7d4ecb39d",
+   "content_hash": "90b39b2116bf7efbc2c831599293b7ffd36ebb107af1de21e12c3aa9b160fe81",
+   "evidence_hash": "fd0113aa801cb3d52bfae1820319d242a564da9460754032cc7e88098c992e1b",
    "label_schema_version": 2,
    "auto_labelled": true,
    "label_source": "machine",
    "mentions": [
     {
+     "name": "OpenAI",
+     "count": 3
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    },
+    {
      "name": "Amazon",
-     "count": 7
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Vercel",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "Mark Wahlberg on using AI in film ‘the right way’ and being open to an AI clone carrying on his legacy",
+   "date": "Fri, 16 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 3815 chars of article text",
+   "content_hash": "e4d89571d79b2e3caf98cf8aeebed8eb37a8f26b818fbea5b91ee8cbd95f4474",
+   "evidence_hash": "ef026378c9d737bbdbb596f1188ca589b1e26450bd3377450f22c1af07f7a334",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 1
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "filmmaking",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "Veritas expands its anti-counterfeit chip to jewelry, trophies, and fragrance bottles",
+   "date": "Fri, 16 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/10/16/veritas-is-building-a-chip-to-verify-luxury-goods/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 3
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "52ce81352a59dd17b0d66ad7851b4dda02649a0be5b3b3562a8509b1eb9dac74",
+   "evidence_hash": "1033af55e733a9270e06920483fb0dc4ee30bd11508f7628b1de613061bede16",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 1
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "battlefield 20",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "Replit’s CEO says the future of work is the ‘self-driving company’",
+   "date": "Fri, 16 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 3968 chars of article text",
+   "content_hash": "a1ae57cd8dc7ae2e464a9ab04afd49150e2ca13fe8319b5cfd01619e1008e018",
+   "evidence_hash": "ecb9cb39ab0b89a2a41f8833bab544fbe4661cff47eac794f97ae24c1b0c07d9",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 1
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "AI agents",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "Nvidia",
+   "headline": "A week with RTX Spark: everything we’ve learned using Nvidia’s new laptops",
+   "date": "2026-10-16T11:26",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 64
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "1441fb9e49dd1b8fa2a56c1a9a6379a68f0edb69ae49284cb0d38611c3bf40f0",
+   "evidence_hash": "b0973505b52f6244b54bfbb075d54e3ecf5a4f846b0f8d05a73536c0b67646b4",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 24
+    },
+    {
+     "name": "Apple",
+     "count": 8
     },
     {
      "name": "Microsoft",
-     "count": 1
+     "count": 7
     },
     {
-     "name": "Meta",
-     "count": 1
-    },
-    {
-     "name": "xAI",
+     "name": "Perplexity",
      "count": 1
     }
    ],
-   "publisher_topic": "Amazon",
+   "publisher_topic": "Asus",
    "entity_basis": "headline"
   },
   {
-   "entity": "Anthropic",
-   "headline": "Anthropic is letting METR researchers look under the hood with employee-level access",
-   "date": "Thu, 15 Oct 2026",
+   "entity": "Meta",
+   "headline": "Meta’s new terms may allow it to train AI on news sites for free",
+   "date": "2026-10-16T11:22",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "n/a",
    "reviewed": false,
    "sources": [
     {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
      "source_type": "trade-press",
      "source_tier": 3
     }
@@ -158,288 +529,23 @@
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 3384 chars of article text",
-   "content_hash": "1177a501c34dbe504d79333d55d7951e6842e394533fabada44ff5a47c9575b4",
-   "evidence_hash": "f39d565247f5aec29eb43e013bd998604b3aecfa9c605ba42c37dd60ed3e3718",
+   "label_evidence": "no figure in 4391 chars of article text",
+   "content_hash": "e065e6713a39dd32b60604fb32b534200073500ab6aa2ce73ef0e46c02970f11",
+   "evidence_hash": "591f847a5b4b47a913abc742fa9099e58f34fc4d7c05a6cff23c56fcc4e655ca",
    "label_schema_version": 2,
    "auto_labelled": true,
    "label_source": "machine",
    "mentions": [
     {
-     "name": "Anthropic",
-     "count": 15
-    },
-    {
      "name": "Meta",
-     "count": 2
-    },
-    {
-     "name": "xAI",
-     "count": 2
+     "count": 23
     },
     {
      "name": "OpenAI",
      "count": 1
-    },
-    {
-     "name": "Google",
-     "count": 1
-    },
-    {
-     "name": "Nvidia",
-     "count": 1
     }
    ],
-   "publisher_topic": "Anthropic",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "Bluesky expands its AI-powered Attie app to let anyone build websites, games, and more",
-   "date": "Thu, 15 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/10/15/bluesky-expands-its-ai-powered-attie-app-to-let-anyone-build-websites-games-and-more/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 1
-   },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "b264b961c790d005f5848b7091fb149d4b72d15fb11d8aae85e89a78b56e1120",
-   "evidence_hash": "da9ef8621fca3034922ee562b2079631a2f96c6e9609ee2606035a9daa5ed6fc",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 1
-    },
-    {
-     "name": "xAI",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Bluesky",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "TechCrunch",
-   "headline": "Last chance to save up to $200 on your TechCrunch Founder Summit pass: Early booking ends October 16",
-   "date": "Thu, 15 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/10/15/last-chance-to-save-up-to-200-on-techcrunch-founder-summit-early-booking-ends-oct-16/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 4
-   },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "86e802728065bcaf39d9b74ea5c7277e188b897e1c7888d7264f6af0f636ee9d",
-   "evidence_hash": "f2426873f53160085f3d699d8fa5aaaa4cf856435cff792dfca819deff6ed5a9",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 1
-    },
-    {
-     "name": "xAI",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "TechCrunch Founder Summit",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "AI agents are coming to Rivian’s cars",
-   "date": "Thu, 15 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/10/15/ai-agents-are-coming-to-rivians-cars/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_evidence": "no figure in 4660 chars of article text",
-   "content_hash": "50b392fef003969ab9c2c396f44db9a9960f5002dcf3768883c68671473278cb",
-   "evidence_hash": "209ac92b0424a2ed21d43cda9a03ad94170033b1e15169360aafe895d45b85a0",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 2
-    },
-    {
-     "name": "Apple",
-     "count": 2
-    },
-    {
-     "name": "xAI",
-     "count": 2
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Google",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "electric vehicles",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Google",
-   "headline": "Google’s Universal Cart shopping tool launches in the US",
-   "date": "Thu, 15 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/10/15/googles-universal-cart-shopping-tool-launches-in-the-us/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_evidence": "no figure in 2700 chars of article text",
-   "content_hash": "4239994c615c2a41ca4be448c6d4a39773e734ca2e9fdaab5c53517e69488edb",
-   "evidence_hash": "94ddeceb33cfc29508f36c13b3a5b6e4e05aa0b8a341269f36f05ac7f280e6f4",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 10
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    },
-    {
-     "name": "Amazon",
-     "count": 1
-    },
-    {
-     "name": "xAI",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "e-commerce",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "TechCrunch",
-   "headline": "TechCrunch Disrupt 2026: Last day",
-   "date": "Thu, 15 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/10/15/techcrunch-disrupt-2026-last-day/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 15
-   },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "cb6555057f97c152b71836fdbd82060b8b2a5ae394a0a0867d34caa818e72bd8",
-   "evidence_hash": "20bf55aad8403e023f2eb59ac0cd3ace4a2560dce5211d1bff95c442a4ac6c5b",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Nvidia",
-     "count": 2
-    },
-    {
-     "name": "Amazon",
-     "count": 2
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    },
-    {
-     "name": "xAI",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "TechCrunch Disrupt",
+   "publisher_topic": "Meta",
    "entity_basis": "headline"
   },
   {
@@ -458,18 +564,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 2485 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 2485 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "226b485bcdbcf03a89eb84ab52816ce96188b7cd888651a49a34624ed14f3e50",
    "evidence_hash": "8190c90cdac69cc7ef022fb4254b3e4b953314dd5b782170faa1d092931170a5",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -503,18 +609,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 5
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "adbc89ba10cf0ecaaa20e90820c998d37825a8f5a2312b20165131f1a27ae8b8",
    "evidence_hash": "6cda790568dbe1156c062fa021620c9f0d90a21e0e36a760391fdb38d263ef14",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Apple",
@@ -527,7 +633,7 @@
   {
    "entity": "",
    "headline": "The tech backlash is now in theaters",
-   "date": "2026-10-15T17:39",
+   "date": "2026-10-16T12:26",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "?",
@@ -540,18 +646,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 2
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "7c3da5bae7d0794be7ca8f84f8f2e4129b6e81b452cafa3ee34921364785e93a",
    "evidence_hash": "e1335d85b178dead7edbd54fff8f94aeb21c43d3c017e71078c74efe436017d7",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Meta",
@@ -597,18 +703,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 2846 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 2846 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "86c91ccfd12d5c70cf1565419a4de4246e4953a89af423a16ae0d68dd5396b04",
    "evidence_hash": "3a07627659d194c6bb75bd8642dd1da9d7300dac4eb6ed7544c1df264903210b",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -642,18 +748,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 2050 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 2050 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "97082bbdc8e3a4e0189d195df8593f55dd7faa1399bd9b5036cdd9074c01413c",
    "evidence_hash": "0a56a935996fcd3f3aca2a56c6a8b5e47bd6d9f6675c5a7addab85733d81a6fb",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Apple",
@@ -683,18 +789,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 1
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "70b532e570fc206fa51cbac0d56c27f6c6f590ce02bb24f8b847ae829ddd936e",
    "evidence_hash": "de527d7a754ed9f3fa0bcf7eba75ed5f9fbacfc325062548931ccf0196cfeffc",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Apple",
@@ -724,18 +830,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 1
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "e96fa16261b687719e4a8fade3b00ad62880942e24c9d6aeef338e321d523850",
    "evidence_hash": "1d434bd09104d6b862657766dd3ac39a4e48114bedd60e221b74f9f4b699ff1a",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Meta",
@@ -766,17 +872,17 @@
    "entity_basis": "tag"
   },
   {
-   "entity": "Nvidia",
-   "headline": "How Windows is being optimized for Nvidia’s RTX Spark laptops",
-   "date": "2026-10-15T15:09",
+   "entity": "OpenAI",
+   "headline": "OpenAI models hacked a crypto wallet and breached more websites",
+   "date": "Fri, 16 Oct 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "?",
    "reviewed": false,
    "sources": [
     {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/tech/1011996/microsoft-windows-rtx-spark-platform-changes-notepad",
+     "name": "arstechnica.com",
+     "url": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
      "source_type": "trade-press",
      "source_tier": 3
     }
@@ -785,55 +891,121 @@
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
-    "total": 12
+    "total": 1
    },
    "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "80b3bdbef58cf7fc29b8ab3524f8d3b3a1bf3526196ff3652ecd15f5ee311689",
-   "evidence_hash": "6da7e0845682fa5aa94b55c1deeb0683a4af600b6efd84fc8f1e3679d6db0bad",
+   "content_hash": "6cceea0cf49c3eb9be8ed75d2ba3c1251134ade29f0ff08afe9c82ebd42e2a14",
+   "evidence_hash": "e7403d53a7761cf4d609e479c2c03f821a4371e3d8c585c36b914c9c06266a84",
    "label_schema_version": 2,
    "auto_labelled": true,
    "label_source": "machine",
    "mentions": [
     {
-     "name": "Microsoft",
-     "count": 56
-    },
-    {
-     "name": "Nvidia",
-     "count": 16
-    },
-    {
-     "name": "Apple",
-     "count": 3
-    },
-    {
      "name": "OpenAI",
-     "count": 1
+     "count": 8
     },
     {
-     "name": "Google",
-     "count": 1
-    },
-    {
-     "name": "Meta",
+     "name": "Hugging Face",
      "count": 1
     }
    ],
-   "publisher_topic": "Microsoft",
+   "publisher_topic": "",
    "entity_basis": "headline"
   },
   {
    "entity": "",
-   "headline": "Nobody is safe from celebrity AI deepfakes",
-   "date": "2026-10-15T13:45",
+   "headline": "“thegentlemanpervert” producing AI CSAM is a NJ prosecutor, say cops",
+   "date": "Fri, 16 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "arstechnica.com",
+     "url": "https://arstechnica.com/tech-policy/2026/10/thegentlemanpervert-producing-ai-csam-is-a-nj-prosecutor-say-cops/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 3493 chars of article text",
+   "content_hash": "cd752b9ce92f6c96486373c96ce4f79e04892583231e82ac3ffcc0ec80555e00",
+   "evidence_hash": "67d5d3fcfc56cb4670f96de68f970db81220371f72c04c25e1068f7fa8617207",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "Meta",
+   "headline": "Meta may use sweeping new commercial TOS to avoid millions in AI licensing fees",
+   "date": "Fri, 16 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "arstechnica.com",
+     "url": "https://arstechnica.com/tech-policy/2026/10/meta-may-use-sweeping-new-commercial-tos-to-avoid-millions-in-ai-licensing-fees/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 8599 chars of article text",
+   "content_hash": "a5585af68cbb3ae7787cca5cbe20831b2bd2e43ea764bfa1bb4d04d1e987fca6",
+   "evidence_hash": "4712edf3f8a027aa111fc2bbe7356122be476558bab875ab377f8efe6c186cf5",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 42
+    },
+    {
+     "name": "Google",
+     "count": 2
+    },
+    {
+     "name": "OpenAI",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "Super Scam Me documentary shows what it takes to catch a romance scammer",
+   "date": "Fri, 16 Oct 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "?",
    "reviewed": false,
    "sources": [
     {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/report/1011927/instagram-celebrity-ai-slop-likeness-taylor-swift-mia-goth",
+     "name": "arstechnica.com",
+     "url": "https://arstechnica.com/tech-policy/2026/10/romance-scam-doc-super-scam-me-takes-viewers-deep-into-love-bombing-terrain/",
      "source_type": "trade-press",
      "source_tier": 3
     }
@@ -842,33 +1014,29 @@
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
-    "total": 10
+    "total": 1
    },
    "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "004893f15464091eedc9e073fb0a5439acc109022bcb29babbd62e827dc5a4ca",
-   "evidence_hash": "9d84b0d54cdb59a0cde283036bf307a6fbd22e51169253334eeb76f52c750f8a",
+   "content_hash": "b954f8274e208fac13410c63d3fa5c46b377bcb7a02600ee229ab075647ca751",
+   "evidence_hash": "f358b86f0be0e2c9fe0156256bf6f07817ccf7dbbd3adf9a1fd96e327f1c8550",
    "label_schema_version": 2,
    "auto_labelled": true,
    "label_source": "machine",
    "mentions": [
     {
      "name": "Meta",
-     "count": 18
+     "count": 3
     },
     {
-     "name": "OpenAI",
+     "name": "FTC",
      "count": 2
     },
     {
-     "name": "Google",
-     "count": 2
-    },
-    {
-     "name": "Apple",
-     "count": 2
+     "name": "Snap",
+     "count": 1
     }
    ],
-   "publisher_topic": "Creators",
+   "publisher_topic": "",
    "entity_basis": "unresolved"
   },
   {
@@ -887,18 +1055,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 3
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "67fc008de47807b715e582199f315eb267201c4c66c3c2fcd3c8dc4e2ac05fa9",
    "evidence_hash": "163510ac0611d4a9013c95540754a1994b3a971faa3e2aab59ec25715f77ec89",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "FTC",
@@ -932,18 +1100,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 3493 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 3493 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "c531e4b54c80447d5603daa1f3923b96158f89b58b5b27e6d788d1e764479886",
    "evidence_hash": "28f502961c4903f0271ba897269e02a90546cb7ae089bbb1812f15abc41440f2",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Google",
@@ -1060,89 +1228,398 @@
    "entity_basis": "headline"
   },
   {
-   "entity": "Anthropic",
-   "headline": "Anthropic warns small AI models could self-replicate through IoT devices",
+   "entity": "Google DeepMind",
+   "headline": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
    "date": "Wed, 14 Oct 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "?",
+   "denominator_stated": "n/a",
    "reviewed": false,
    "sources": [
     {
-     "name": "arstechnica.com",
-     "url": "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/",
-     "source_type": "trade-press",
-     "source_tier": 3
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+     "source_type": "vendor-own",
+     "source_tier": 5
     }
    ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
+   "rating": "trusted",
+   "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
-    "total": 4
+    "total": 0
    },
+   "label_evidence": "no figure in 107 chars of article text",
+   "content_hash": "b0cf26fa901911b3e36f1e0aa5db23c2625f351563cd1c9af869c2df4eedac21",
+   "evidence_hash": "730d040ab4a6de25cc46c75649a2311274c764f703fcf10d8920e2b2786cf959",
    "label_schema_version": 2,
-   "content_hash": "d7a7bd761767e160d835dcfe835d9658ecdf6173272c85bd56e8e18666d37a43",
-   "evidence_hash": "ed912ffbb089ea9e01fc79e6ecd18b05a5e0a10217bfe8b97bff75e18013443b",
+   "auto_labelled": true,
    "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Anthropic",
-     "count": 10
-    }
-   ],
+   "mentions": [],
    "publisher_topic": "",
    "entity_basis": "headline"
   },
   {
-   "entity": "OpenAI",
-   "headline": "OpenAI, Google pushing new AI models easily tricked into making nudes, researchers say",
-   "date": "Wed, 14 Oct 2026",
+   "entity": "Google",
+   "headline": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+   "date": "Thu, 15 Oct 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "?",
    "reviewed": false,
    "sources": [
     {
-     "name": "arstechnica.com",
-     "url": "https://arstechnica.com/tech-policy/2026/10/openai-google-pushing-new-ai-models-easily-tricked-into-making-nudes-researchers-say/",
-     "source_type": "trade-press",
-     "source_tier": 3
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+     "source_type": "vendor-own",
+     "source_tier": 5
     }
    ],
-   "auto_labelled": true,
+   "rating": "trusted",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 3
+   },
    "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "a39b5cfa239e8ee9c6b7847f0643a5f72af9d12256b472ff78798b61b6a747e9",
+   "evidence_hash": "e481105d734ee1194426f1d5ec70515195bf440eced869dde78a1f3cd03a265f",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Google DeepMind",
+   "headline": "Developing Gemini 4 Argon responsibly and safely",
+   "date": "Tue, 13 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "trusted",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 6
    },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "ccf9ba4217cd1db0928019e7c1bf38444a757f50cf591671b4c74cf392e7609d",
+   "evidence_hash": "509e7989ccb067b3a69f4fcb179037f95b38b669daf3a4f80d93aa93b9269c9a",
    "label_schema_version": 2,
-   "content_hash": "90acc5ce11541bfc16d3aa87991c3f7a008c7d9bcc95f4d99bcd2784691ead67",
-   "evidence_hash": "d2a9c749542640d5e7345234d51b8f64fa3234ffb689bd6a4e719697a702277e",
+   "auto_labelled": true,
    "label_source": "machine",
-   "rating": "ok",
    "mentions": [
     {
-     "name": "Google",
-     "count": 10
+     "name": "Meta",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "None",
+   "entity_basis": "product:Gemini"
+  },
+  {
+   "entity": "Google DeepMind",
+   "headline": "Gemini 4 Argon for Robotics",
+   "date": "Tue, 13 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "trusted",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 69
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "83316c201e03faa1a2f4b1505a5bf1301f6e2ea9ee89c7751b65f6e08afb7045",
+   "evidence_hash": "e6ecda7168338c1b01862207f613eb35957b542b3f4f2966de18c5d1140ce8f2",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 1
     },
     {
-     "name": "OpenAI",
-     "count": 6
-    },
+     "name": "Snap",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "product:Gemini"
+  },
+  {
+   "entity": "Google DeepMind",
+   "headline": "Gemini 4 Argon: Built to solve your hardest problems",
+   "date": "Tue, 13 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
     {
-     "name": "Anthropic",
-     "count": 6
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "trusted",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 17
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "cc68e8a90bf0e26da8dbf6ffebbc182246184d8ed3ca25dfcf4e723a9a969570",
+   "evidence_hash": "0f58ed103da8d8335e0f14412e692fce02e88370c84b5448cc422d0ba01185a6",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "None",
+   "entity_basis": "product:Gemini"
+  },
+  {
+   "entity": "Google DeepMind",
+   "headline": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+   "date": "Tue, 06 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "trusted",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 17
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "06e150a03f22dcfd227dbabc0a4c6a815dac3c06b4c69eb26505c2f8beef866e",
+   "evidence_hash": "5e3247bc79164566fbd0027a18c92c05cfd5082bd76e798ea6a3da6443b2835f",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 2
     },
     {
      "name": "Hugging Face",
      "count": 2
+    }
+   ],
+   "publisher_topic": "None",
+   "entity_basis": "site"
+  },
+  {
+   "entity": "Google DeepMind",
+   "headline": "Gemini 4 Argon: our next era of frontier intelligence",
+   "date": "Wed, 30 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "trusted",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 12
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "f1e7e588315b5c071d9d38003e58a044e1feaf443eda98c75ba7202fa7c1823c",
+   "evidence_hash": "1460987da159f39b053f7855b867826e9029b1a736bf81e03437341bbccf36a2",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "None",
+   "entity_basis": "product:Gemini"
+  },
+  {
+   "entity": "Google DeepMind",
+   "headline": "Introducing SynthID Bio",
+   "date": "Wed, 30 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/introducing-synthid-bio/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "trusted",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 102 chars of article text",
+   "content_hash": "38ef05ad10e22596c77ea4dd51dc3e7c7525df8981c0d4034b6d39a640d683fe",
+   "evidence_hash": "58dcdb670ad120432f0c2b0c11baa421250f5d42b4c06a6bc7a38fd8439af884",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "site"
+  },
+  {
+   "entity": "Google DeepMind",
+   "headline": "Introducing Gemini 3.8 Live with Live Avatar",
+   "date": "Thu, 24 Sep 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "trusted",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 2
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "89b41e43ee8b2825a5fddf7ab47641c7204a7d59f26c97e96945280b0733cf42",
+   "evidence_hash": "68bd542bb91f032e7882a3dd697f4efcb287ce423bc7512eb98626859075705d",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "None",
+   "entity_basis": "product:Gemini"
+  },
+  {
+   "entity": "Anthropic",
+   "headline": "Anthropic assigned highest junk credit rating in June",
+   "date": "Fri, 16 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "ft.com",
+     "url": "https://www.ft.com/content/5a310aee-f555-4266-874c-b1b4db20186d",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "trusted",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "article not fetched (http-403)",
+   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Anthropic",
+   "headline": "Anthropic Console overcharged my card 100x due to internationalization input bug",
+   "date": "Fri, 16 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "news.ycombinator.com",
+     "url": "https://news.ycombinator.com/item?id=50121562",
+     "source_type": "aggregator",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 65
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "1a579a6cf146dc366ef0a7f7cd0dc5f99475f57b6e6f85b0819a32a5426ba9b1",
+   "evidence_hash": "935b0e5e680db500f382cc4f983a25d1e38d2f5957891db80dd82630109141cf",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Anthropic",
+     "count": 17
     },
     {
-     "name": "Google DeepMind",
+     "name": "Amazon",
      "count": 1
     }
    ],
@@ -1151,81 +1628,104 @@
   },
   {
    "entity": "",
-   "headline": "Disney offers $20M for Character.AI’s scandal-plagued chatbot tech",
-   "date": "Tue, 13 Oct 2026",
+   "headline": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
+   "date": "Fri, 16 Oct 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "?",
    "reviewed": false,
    "sources": [
     {
-     "name": "arstechnica.com",
-     "url": "https://arstechnica.com/tech-policy/2026/10/disney-offers-20m-for-character-ais-scandal-plagued-chatbot-tech/",
-     "source_type": "trade-press",
+     "name": "mercor.com",
+     "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
+     "source_type": "other",
      "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "rating": "ok",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
-    "total": 3
+    "total": 58
    },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "fcc4d9dddeeddf15b0c6bd62ad80c642bc2332634ed07db7122a8ee2a1a931ff",
+   "evidence_hash": "968158c9da7342b699be94885c5f000342f3b1dab8c283264d8c4c3ef926c0cb",
    "label_schema_version": 2,
-   "content_hash": "ddab649ddc089b3af7de8a33be33eba44fc3b9ba22442df2e872c544e477668a",
-   "evidence_hash": "b9e2f6cfff5e3d096e5133fcd791a6d2be27510bf450b5f4b5c8f2da2a587f87",
+   "auto_labelled": true,
    "label_source": "machine",
-   "rating": "ok",
    "mentions": [
     {
-     "name": "OpenAI",
+     "name": "Bureau of Labor Statistics",
      "count": 2
-    },
-    {
-     "name": "Google",
-     "count": 1
     }
    ],
    "publisher_topic": "",
    "entity_basis": "unresolved"
   },
   {
-   "entity": "Google",
-   "headline": "Google wants to host your personal vibe-coded apps in the Play Store",
-   "date": "Tue, 13 Oct 2026",
+   "entity": "",
+   "headline": "Postgres 19 delayed after AI reviewers find more bugs than humans can fix",
+   "date": "2026-10-16",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "?",
    "reviewed": false,
    "sources": [
     {
-     "name": "arstechnica.com",
-     "url": "https://arstechnica.com/google/2026/10/google-wants-to-host-your-personal-vibe-coded-apps-in-the-play-store/",
-     "source_type": "trade-press",
+     "name": "theregister.com",
+     "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
+     "source_type": "other",
      "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "rating": "ok",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
-    "total": 1
+    "total": 0
    },
+   "label_evidence": "article not fetched (robots-disallowed)",
+   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
    "label_schema_version": 2,
-   "content_hash": "e675a56cdd1ac784f4c3d98cc7cfeae0c647737c24f97601d8375fb73b410081",
-   "evidence_hash": "cea6afe22b65377800b08edaccb86d959f1f9a0f033dc4789e6b642ed6cb8d40",
+   "auto_labelled": true,
    "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "Show HN: rStation – A shared research lab for your AI agents",
+   "date": "Fri, 16 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
     {
-     "name": "Google",
-     "count": 22
+     "name": "rstation.ai",
+     "url": "https://rstation.ai/",
+     "source_type": "other",
+     "source_tier": 3
     }
    ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 473 chars of article text",
+   "content_hash": "e9e07eeea6e44a6ce133eb9e496e20bb0660b8f5a2a9cbbb1a4ffa77ed1639a8",
+   "evidence_hash": "89669efc1fab0a8f7b32d1d94a59119927cf93cb599826ed407f26490682fb9e",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
    "publisher_topic": "",
-   "entity_basis": "headline"
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -1243,18 +1743,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 6
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "b3593b974d8d3a8ebbcf0eb0a867e29a66cacaef0cb7c18b49723bbaf9417df6",
    "evidence_hash": "4319486d5fde06df899823148c2b0fed771b7278d54003511f2dd2561d54cffa",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "unresolved"
@@ -1275,18 +1775,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 2
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "1d816baf4b1787ecf7ff68f9a855699038b962b4679be606f9e8824b19a81dc0",
    "evidence_hash": "a8556dc1703362e2034f354abe5d59e889b75fd994488992b940a5dc352a8f9a",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Anthropic",
@@ -1316,18 +1816,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "label_evidence": "article not fetched (robots-disallowed)",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "article not fetched (robots-disallowed)",
+   "label_schema_version": 2,
    "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
    "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "unresolved"
@@ -1348,18 +1848,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 1
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "0c1dd46dba3916a54a5c050aaff217c579ba5955533bcb4974b9cd5228d11347",
    "evidence_hash": "8701dd50755273ed780a06f2f807cc3b1c46b2af15b2b93ac7365826ec283a0c",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -1378,51 +1878,19 @@
    "entity_basis": "unresolved"
   },
   {
-   "entity": "",
-   "headline": "Using AI to reverse engineer hardware",
-   "date": "2026-10-15",
+   "entity": "NIST",
+   "headline": "New Chip-Based ‘Tape Measure’ for Light Could Revolutionize Mobile Timekeeping and Enhance National Security",
+   "date": "Fri, 16 Oct 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "?",
    "reviewed": false,
    "sources": [
     {
-     "name": "blogs.gnome.org",
-     "url": "https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 16
-   },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "b3ba35a387f967dc4f8deeae38d443ce7c7f308b00829248196afe5791c6173f",
-   "evidence_hash": "55011e90eea9c5bc5f050dbd96752f2be07d5f7cae8db30737ae239ed8609450",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [],
-   "publisher_topic": "fedora",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "AI was great until it was not",
-   "date": "2026-10-06",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "thetheorygirlie.substack.com",
-     "url": "https://thetheorygirlie.substack.com/p/ai-was-great-until-it-was-not",
-     "source_type": "other",
-     "source_tier": 3
+     "name": "nist.gov",
+     "url": "https://www.nist.gov/news-events/news/2026/10/new-chip-based-tape-measure-light-could-revolutionize-mobile-timekeeping",
+     "source_type": "primary-record",
+     "source_tier": 1
     }
    ],
    "rating": "ok",
@@ -1432,178 +1900,19 @@
     "total": 2
    },
    "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "635e22a3d0147decc44c88d4ebdfe16ea7e7706da637b105fc2db130c9ed4489",
-   "evidence_hash": "51e6e0ea7a2cfdc4a07f55c4da1f8ca3c36f4b67b1c018151b68cc606bbec5e8",
+   "content_hash": "72b1b5eba271c31782eb692615839d1b7e98b754d2ac4336762388871bcf460d",
+   "evidence_hash": "4254d6b15aab795ac3f39b5ee27f2c5e7fafefa87dad10b23a2a4ae33fab3357",
    "label_schema_version": 2,
    "auto_labelled": true,
    "label_source": "machine",
    "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
     {
      "name": "Meta",
      "count": 1
     }
    ],
    "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Anthropic",
-   "headline": "Anthropic's Scion is heavily inspired by Mononoke",
-   "date": "Wed, 14 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "sunshowers.io",
-     "url": "https://sunshowers.io/posts/anthropic-mononoke/",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 1
-   },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "8c14cdd75826d4996ebc6601670ce6756f7c9c8336c7e5e0c8b220c02d31233d",
-   "evidence_hash": "1496471cd8d1b1c303b5400c483cc66ff23798d12d14d0ca0d748149e0a6d6c4",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Anthropic",
-     "count": 7
-    },
-    {
-     "name": "Google",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "Banks are now trying to offload the AI data center debt they just underwrote",
-   "date": "2026-10-11",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "startupfortune.com",
-     "url": "https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote/",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 13
-   },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "5d1a0f5eb5f2e6dafae0165d9721ee98a0261cf3b3e1eceb56dde7a4dd3c359f",
-   "evidence_hash": "004df9f26f4e360696d7104ae3db8a291de50ca26abacbf9d8093fe476957f38",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 3
-    },
-    {
-     "name": "Google",
-     "count": 2
-    },
-    {
-     "name": "Microsoft",
-     "count": 2
-    },
-    {
-     "name": "Amazon",
-     "count": 1
-    },
-    {
-     "name": "xAI",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "AI data center debt financing 2026",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Containment and monitoring failures are to blame for AI hacking reports: experts",
-   "date": "2026-10-14",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "csoonline.com",
-     "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 1
-   },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "7b34ce8d63e5c3f4856420a0ce01ea3a22e2d90e79264e8adefd5118c9cae8ff",
-   "evidence_hash": "c070e83e65d3d366c33f4c1675d390f00b0b7987043a15349c76638017a23f11",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 5
-    },
-    {
-     "name": "Anthropic",
-     "count": 4
-    },
-    {
-     "name": "Hugging Face",
-     "count": 4
-    },
-    {
-     "name": "Mistral",
-     "count": 2
-    },
-    {
-     "name": "Google",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Technology Industry",
-   "entity_basis": "unresolved"
+   "entity_basis": "site"
   },
   {
    "entity": "NIST",
@@ -2017,18 +2326,18 @@
      "source_tier": 2
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 2
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "1ea686e7c3ad11b95332adc8cc13af69dec0748e363b80333185476583a8bf18",
    "evidence_hash": "c540ea6a502fc4bc9f634cce8635fc4aa48d2fadf0281c83a40c176e031139a2",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "FTC",
@@ -2499,6 +2808,43 @@
   },
   {
    "entity": "",
+   "headline": "Fostering community amid Kendall Square’s innovation",
+   "date": "Fri, 16 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "news.mit.edu",
+     "url": "https://news.mit.edu/2026/fostering-community-amid-kendall-square-innovation-1016",
+     "source_type": "press-office",
+     "source_tier": 5
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 3
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "943c031ad8a4468dd52fff1e7ab2f37b0cdb2d348e7dd3cbf617d5519580c8d6",
+   "evidence_hash": "bc773e252003374d641584e2a47b6bf5c7d688ae106bb0899813fe870e894d11",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Lee McGuire",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
    "headline": "State of Supply Chain Sustainability Report finds corporate commitment at record high, but governance lags behind",
    "date": "Thu, 15 Oct 2026",
    "topic": "",
@@ -2513,18 +2859,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 22
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "e1c9a6580c7a1e1edc60e7231526f3ac8ae6dddb99c7ed8032e8e4fbc2a85d83",
    "evidence_hash": "c58b8108ab1bd2b80f1dad06e470d9397cfbf97d7bfffd291f265393dd8a875b",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Meta",
@@ -2550,18 +2896,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 1
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "08f151c6a7a21941211d24c72467d995d54dccad6b8aefe2a6da530778ee8977",
    "evidence_hash": "6d1251c237876ac0f322476ab2efc6065446590fd6a9a1bf86ded5bd7b3c8381",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Meta",
@@ -2807,43 +3153,6 @@
     }
    ],
    "publisher_topic": "Sasha Rakhlin",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Using AI to mitigate the growing environmental threat of data centers",
-   "date": "Thu, 08 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "news.mit.edu",
-     "url": "https://news.mit.edu/2026/mitigating-environmental-threat-of-data-centers-christina-delimitrou-1008",
-     "source_type": "press-office",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 6
-   },
-   "label_schema_version": 2,
-   "content_hash": "2454db495273cb3399e8226896afc656b31bf9c8b57f185cf10a5108832f4d8c",
-   "evidence_hash": "b0c2cc0b355e03a2d010e3c1fc0c57cfc94eec44d29d0389d753984ba1435d42",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Christina Delimitrou",
    "entity_basis": "unresolved"
   },
   {
@@ -3343,18 +3652,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 6010 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 6010 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "7c1306e6cac4336058a17cff83652d1b04a00a774a7d70d641c026f42134cf83",
    "evidence_hash": "93bf5def8e5c9976eb54601a245b83fedd955cca5fbf605cb7da16053b5d6725",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Hugging Face",
@@ -3449,18 +3758,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "article not fetched (http-403)",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "article not fetched (http-403)",
+   "label_schema_version": 2,
    "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
    "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "site"
@@ -3481,18 +3790,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "article not fetched (http-403)",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "article not fetched (http-403)",
+   "label_schema_version": 2,
    "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
    "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "site"
