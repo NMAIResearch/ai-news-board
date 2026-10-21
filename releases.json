@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-20 05:32 UTC",
+ "generated": "2026-10-21 05:36 UTC",
  "window_days": 60,
  "counts": {
-  "total": 108,
-  "closed": 46,
+  "total": 107,
+  "closed": 45,
   "open_weights": 62
  },
  "releases": [
@@ -18,6 +18,66 @@
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "cosmos3-nano-libero10-sdg-export-S5_2_s43",
+   "id": "nvidia/cosmos3-nano-libero10-sdg-export-S5_2_s43",
+   "date": "2026-10-19",
+   "url": "https://huggingface.co/nvidia/cosmos3-nano-libero10-sdg-export-S5_2_s43",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/cosmos3-nano-libero10-sdg-export-S5_2_s43",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "Cosmos3-H-Embodied-Nano",
+   "id": "nvidia/Cosmos3-H-Embodied-Nano",
+   "date": "2026-10-19",
+   "url": "https://huggingface.co/nvidia/Cosmos3-H-Embodied-Nano",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/Cosmos3-H-Embodied-Nano",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "Cosmos3-H-Dreams",
+   "id": "nvidia/Cosmos3-H-Dreams",
+   "date": "2026-10-19",
+   "url": "https://huggingface.co/nvidia/Cosmos3-H-Dreams",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/Cosmos3-H-Dreams",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "cosmos3-nano-libero10-sdg-export-D2_s43",
+   "id": "nvidia/cosmos3-nano-libero10-sdg-export-D2_s43",
+   "date": "2026-10-19",
+   "url": "https://huggingface.co/nvidia/cosmos3-nano-libero10-sdg-export-D2_s43",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/cosmos3-nano-libero10-sdg-export-D2_s43",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "cosmos3-nano-libero10-sdg-export-S2_s43",
+   "id": "nvidia/cosmos3-nano-libero10-sdg-export-S2_s43",
+   "date": "2026-10-19",
+   "url": "https://huggingface.co/nvidia/cosmos3-nano-libero10-sdg-export-S2_s43",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/cosmos3-nano-libero10-sdg-export-S2_s43",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "DeepSeek",
@@ -42,6 +102,18 @@
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Microsoft",
+   "model": "Sentiment-Analysis-7B",
+   "id": "microsoft/Sentiment-Analysis-7B",
+   "date": "2026-10-17",
+   "url": "https://huggingface.co/microsoft/Sentiment-Analysis-7B",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "microsoft/Sentiment-Analysis-7B",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "Xingchen Agi",
@@ -89,66 +161,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "microsoft/scFM-dataselection",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
-   "id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
-   "date": "2026-10-16",
-   "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8",
-   "id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8",
-   "date": "2026-10-16",
-   "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
-   "id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
-   "date": "2026-10-16",
-   "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF",
-   "id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF",
-   "date": "2026-10-16",
-   "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "Muse-Spark-Open-816B-A42B-DFlash2",
-   "id": "nvidia/Muse-Spark-Open-816B-A42B-DFlash2",
-   "date": "2026-10-16",
-   "url": "https://huggingface.co/nvidia/Muse-Spark-Open-816B-A42B-DFlash2",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/Muse-Spark-Open-816B-A42B-DFlash2",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
@@ -788,18 +800,6 @@
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
-   "lab": "Microsoft",
-   "model": "rho-roboeval",
-   "id": "microsoft/rho-roboeval",
-   "date": "2026-09-21",
-   "url": "https://huggingface.co/microsoft/rho-roboeval",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "microsoft/rho-roboeval",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
    "lab": "Alibaba (Qwen)",
    "model": "Qwen-Image-2.1-PE-I2I",
    "id": "Qwen/Qwen-Image-2.1-PE-I2I",
@@ -1160,6 +1160,18 @@
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
+   "lab": "DeepSeek",
+   "model": "DeepSeek-V4-Flash-Vision-Exp",
+   "id": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+   "date": "2026-08-31",
+   "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
    "lab": "Tencent",
    "model": "Tencent: Hy4 preview",
    "id": "tencent/hy4-preview",
@@ -1278,30 +1290,6 @@
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "google/timesfm-3.0-pytorch",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Meta",
-   "model": "Meta: Muse Spark 1.2 Contributor",
-   "id": "meta/muse-spark-1.2-contributor",
-   "date": "2026-08-21",
-   "url": "https://openrouter.ai/meta/muse-spark-1.2-contributor",
-   "context_length": 1048576,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "DeepSeek",
-   "model": "DeepSeek: DeepSeek V4 Flash Vision Exp",
-   "id": "deepseek/deepseek-v4-flash-vision-exp",
-   "date": "2026-08-21",
-   "url": "https://openrouter.ai/deepseek/deepseek-v4-flash-vision-exp",
-   "context_length": 1048576,
-   "evidence": "open-weights",
-   "evidence_note": "weights published at huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp; downloadable and hashable",
-   "hf_id": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   }
  ],
  "errors": [],
