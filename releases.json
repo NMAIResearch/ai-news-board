@@ -1,12 +1,24 @@
 {
- "generated": "2026-10-21 05:36 UTC",
+ "generated": "2026-10-22 05:29 UTC",
  "window_days": 60,
  "counts": {
-  "total": 107,
+  "total": 108,
   "closed": 45,
-  "open_weights": 62
+  "open_weights": 63
  },
  "releases": [
+  {
+   "lab": "Recursive",
+   "model": "Recursive: Flint (free)",
+   "id": "recursive/flint-v1.0",
+   "date": "2026-10-21",
+   "url": "https://openrouter.ai/recursive/flint-v1.0",
+   "context_length": 262144,
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/RecursiveSI/flint; downloadable and hashable",
+   "hf_id": "RecursiveSI/flint",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
   {
    "lab": "Minimax",
    "model": "MiniMax: MiniMax M3.1 Flash (free)",
@@ -308,6 +320,18 @@
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
+   "lab": "IBM",
+   "model": "granite-speech-5.0-2b-GGUF",
+   "id": "ibm-granite/granite-speech-5.0-2b-GGUF",
+   "date": "2026-10-14",
+   "url": "https://huggingface.co/ibm-granite/granite-speech-5.0-2b-GGUF",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "ibm-granite/granite-speech-5.0-2b-GGUF",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
    "lab": "Unbiased",
    "model": "Pareto 26.9",
    "id": "unbiased/pareto-26.9",
@@ -438,6 +462,18 @@
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "IBM",
+   "model": "granite-speech-5.0-2b",
+   "id": "ibm-granite/granite-speech-5.0-2b",
+   "date": "2026-10-07",
+   "url": "https://huggingface.co/ibm-granite/granite-speech-5.0-2b",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "ibm-granite/granite-speech-5.0-2b",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "Google",
@@ -642,18 +678,6 @@
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "IBM",
-   "model": "granite-timeseries-ensemble-r1",
-   "id": "ibm-granite/granite-timeseries-ensemble-r1",
-   "date": "2026-09-23",
-   "url": "https://huggingface.co/ibm-granite/granite-timeseries-ensemble-r1",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "ibm-granite/granite-timeseries-ensemble-r1",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "Cohere",
@@ -1028,6 +1052,18 @@
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
+   "lab": "Ai2",
+   "model": "OlmoEarth-v1_3-Base",
+   "id": "allenai/OlmoEarth-v1_3-Base",
+   "date": "2026-09-04",
+   "url": "https://huggingface.co/allenai/OlmoEarth-v1_3-Base",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "allenai/OlmoEarth-v1_3-Base",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
    "lab": "Alibaba (Qwen)",
    "model": "Qwen: Qwen3.8 Max (0902)",
    "id": "qwen/qwen3.8-max-0902",
@@ -1137,18 +1173,6 @@
   },
   {
    "lab": "IBM",
-   "model": "granite-4.2-30b-bf16-mlx",
-   "id": "ibm-granite/granite-4.2-30b-bf16-mlx",
-   "date": "2026-09-01",
-   "url": "https://huggingface.co/ibm-granite/granite-4.2-30b-bf16-mlx",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "ibm-granite/granite-4.2-30b-bf16-mlx",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "IBM",
    "model": "IBM: Granite 4.2 8B",
    "id": "ibm-granite/granite-4.2-8b",
    "date": "2026-08-31",
@@ -1229,18 +1253,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "allenai/Llama-3-Blama-8B",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Ai2",
-   "model": "Llama-3-Blama-8B-Stage1",
-   "id": "allenai/Llama-3-Blama-8B-Stage1",
-   "date": "2026-08-26",
-   "url": "https://huggingface.co/allenai/Llama-3-Blama-8B-Stage1",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "allenai/Llama-3-Blama-8B-Stage1",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
