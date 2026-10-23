@@ -35,6 +35,10 @@ DENOM = {"y": "Y", "partial": "partial", "n": "N"}
 def call(prompt, timeout=TIMEOUT):
     payload = json.dumps({
         "model": MODEL, "prompt": prompt, "stream": False,
+        # Thinking off. With it on, gemma4:12b spent the whole NUM_PREDICT cap thinking and returned an
+        # empty answer on all 5 batches of the 2026-10-23 06:20 run, resent the same day; with
+        # "think": false, batch 1 answered in 97 tokens, 4.3 s, and parsed 4/4.
+        "think": False,
         # Do not vary num_ctx between calls: ollama reloads the model when it changes.
         # Measured 2026-07-30: same 4-item prompt took 33s at 32768 and 232s at 8192,
         # returning nothing at all on the smaller window.
