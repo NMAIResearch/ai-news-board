@@ -23323,17 +23323,18 @@
   "label_source": "machine"
  },
  "https://arstechnica.com/tech-policy/2026/10/judge-rejects-trumps-wild-claim-epa-can-dismiss-data-center-pollution-lawsuits/": {
-  "denominator_stated": "?",
+  "denominator_stated": "N",
   "auto_labelled": true,
-  "label_evidence": "model review failed; denominator remains unassessed",
-  "evidence_method": "unassessed",
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
   "evidence_coverage": {
-   "seen": 0,
-   "total": 1
+   "seen": 2,
+   "total": 2
   },
   "label_schema_version": 2,
   "content_hash": "f042ab3c8520b7d7137efa1171ee27704801a0356a862941bea53abeff506a38",
-  "evidence_hash": "b9beafdb63fd672e9b3c30a93c771467aa926626c5e30a50c532dff1f5b0737d",
+  "evidence_hash": "4a037ba622b0749d83b141bfc725a47a4ba033433f5a5f8189f61de5a59f69d0",
   "reviewed": false,
   "label_source": "machine"
  },
@@ -23876,6 +23877,366 @@
   "label_schema_version": 2,
   "content_hash": "55b2b18e5680fa0b7d071471c45d610fcf64bb2cf140c180ab1943c6d784d4e0",
   "evidence_hash": "41ee2e069e9c94fe196f3f8b213ba8bfc334dfaf7dd05bba6864ce863463a60c",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 4502 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "464210f372e0e37b809539dfe844520286b8b23caa1571b7c6afdb05ecb39951",
+  "evidence_hash": "c3443998b61c18fc0fd6fa8ea25aca3fab643261fe7d7250ec84280014b52b61",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "2388269c860ca293f85ac73649b837db08ac159b5b1b558d34b529935ba13f5e",
+  "evidence_hash": "9a019f7bb964a34c8c597a59b4afc245e923c87f9e44c020f2327e989cb50edc",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/10/23/from-toast-to-bessemer-who-founders-will-hear-from-at-techcrunch-founder-summit-2026/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "d988ebd86c1256bf1a3afc2b3d679d98f2f8e7cd97ce537fa5598e4e0bf3eabd",
+  "evidence_hash": "525feef673deaf6e583f9135e17815cbaf2f45c13540199db8d705182903102f",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 3679 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "8ad1820b2b06107ef09786bc402cb7b1cc2132545acbb74ffe9608186fec7ed2",
+  "evidence_hash": "aabda373242c33c0420f2c529753662c0ef24d45b57ef82ecc990463d555d33c",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 3117 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "c48886ede80a32ddf3d5f4da4153c33ffc825d640199a556714bf9d4681dc1eb",
+  "evidence_hash": "1fcdbdd8a98a582c525e997191c9c730eca4d9575328893ce21b47e12e9e0b6c",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/podcast/1017447/iphone-duo-ipad-review-score-vergecast": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "38637fe1c85d6777927ccab02af87d99dc7d4691edd52cde240071bdf57a3392",
+  "evidence_hash": "51778edee208d001b5476c201485da8fdf0954e61a3d0139c11b7015f940257e",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 3305 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "4d43b693faeb61f803fe88b203ffcec78933921859874867df711edaf7ab25df",
+  "evidence_hash": "eb3a2c2233220bee77867c58b3ba2410ed10dc92133afbe8bd533d195706d58b",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 2548 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "39712869d8623bfa28170cbb1883e18ae6270908c1727b17cae960af6e7c57ed",
+  "evidence_hash": "5fd132f7c2d2d6273c75ade35ad99dea97d7571f39db16821892739dd56b844b",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1015430/ai-retro-games-decomp-recomp-port": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 3,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "67dc7352dfa6428a65a288978bcc7495468d2cbb7e6712a6d15bc6914eb17df2",
+  "evidence_hash": "065c2a052bfbfff95e100be0778e2da38e0337b03876cfae05f5d67c9be78b75",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/ai/2026/10/intel-gets-waiver-after-worries-fuzzy-us-ban-on-foreign-made-robots-may-hit-fabs/": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 2 figure-sentence(s); 1 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "9e4c9448d7d3e3db179fcc8d78b6d937f40fef34be45e87e7780c2ef971285ef",
+  "evidence_hash": "16bc6cf5882a738884cdbe61d4854509d5fbf80bbd3ea1704f6510104d8fd142",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 5510 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "1d83c5d89ffdbb4423fde494aa0d91de477a197b8614fc77fe593e81c592a2ce",
+  "evidence_hash": "8a697d9353489dfef43f4b7fd98f56c90723d4388ae877ae7c05afcdf39c3cd0",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.thisandthat.chat/enron/": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 10 figure-sentence(s); 1 of 10 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 10,
+   "total": 10
+  },
+  "label_schema_version": 2,
+  "content_hash": "e2a9eb91bda236e04c8cfe34955efe6203023d760bb371872ad2c1241ecfb1cc",
+  "evidence_hash": "058c9463a0c2b25c35fc80333cf10380c06924ff6d21984ee6ef397469d8623d",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://berget.ai/en/blog/per-request-co2-press-release": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 18 figure-sentence(s); 2 of 18 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 18,
+   "total": 18
+  },
+  "label_schema_version": 2,
+  "content_hash": "5f05c38f2789300a189084aeac8c9ad4cde7c1bd2b4a259feb1644bd063112ce",
+  "evidence_hash": "c2dffc347d0450b06ba303fdde0ff713c3a17beeeb6035153dcc07706328e552",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.economist.com/finance-and-economics/2026/10/22/ai-compute-is-the-new-oil-and-needs-a-new-market": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "article not fetched (http-403)",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://news.ycombinator.com/item?id=50200997": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 756 figure-sentence(s); 4 of 756 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 756,
+   "total": 756
+  },
+  "label_schema_version": 2,
+  "content_hash": "1be11c472729c5b3ddd3f942fc147621574f4a0457ab876833c528092c5765f2",
+  "evidence_hash": "48025105a18a9657f715e612032fba7d032e4ebffca948db06f6aba2382fd8a1",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://abcnews.com/Politics/americans-ai-bad-society-oppose-data-centers-abcpostipsos/story?id=137414085": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 40 figure-sentence(s); 4 of 40 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 40,
+   "total": 40
+  },
+  "label_schema_version": 2,
+  "content_hash": "1194d47900da0e6bc6a9fdb167d7a525e26e3c65ae19061923d60dc90f0174b2",
+  "evidence_hash": "4ded5d253885d4c054c1daeeda3f7db4cb5f1d6e0bec2018a74b98b04dffe7fb",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.typeui.sh/micro-interactions": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 50 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "10a4068c9b70be8a0c842d46650ebc9990bbcb4affdea64925dfcc58a018cc11",
+  "evidence_hash": "9d6360d33c739b20f51f926f27a2273b80adfd7508f553120bf85799dbce4ccc",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://jamesyu.org/award-winning-ai-literature/": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 14 figure-sentence(s); 2 of 14 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 14,
+   "total": 14
+  },
+  "label_schema_version": 2,
+  "content_hash": "7921385f39539c91fe782179c0a982bd2fdf181781f093ff710dd16feb03d396",
+  "evidence_hash": "374a13a9dca7b553762210c5ea47e96db2f4df39a61c2d100ed0d2f40ee6b8e7",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arxiv.org/abs/2610.27251": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 6 figure-sentence(s); 0 of 6 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 6,
+   "total": 6
+  },
+  "label_schema_version": 2,
+  "content_hash": "aca402b7fed975bb08515948ff0e00cdc9a836fa76a6e1ff84445d0e4c9dc6dc",
+  "evidence_hash": "103e83593b2ed5d8f386832276af947b1638c2ff8caa27b88a2f7f088d597a29",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.biograph.com/newsroom/biograph-completes-first-u.s.-study-with-caristo-diagnostics%E2%80%99-ai-powered-coronary-inflammation-detection-finding-risk-in-over-42-of-asymptomatic-patients": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 6 figure-sentence(s); 0 of 6 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 6,
+   "total": 6
+  },
+  "label_schema_version": 2,
+  "content_hash": "7dd9f6432eb9cb04acd1669f19b9bac0c03f2965f2295279bcab8f6a73cf09f8",
+  "evidence_hash": "001f09571707ec890683bf32fe95ee31758349d1c1faa7fb1db5d0d0e643bae5",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://news.mit.edu/2026/martha-minow-speaks-on-sustaining-democracy-using-overcoming-ai-1023": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 3,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "3afef663b0a7e66afdf401095f2a08fe99b98580a1e19304f0c32753917ff3de",
+  "evidence_hash": "361fbf974cb972d821f229e1a8fb1dc902fbf9668165f1ecd976e1872a901a9f",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://news.mit.edu/2026/reinforcing-value-of-human-understanding-at-mit-1023": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model returned an invalid denominator label",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 9
+  },
+  "label_schema_version": 2,
+  "content_hash": "f3ba89d724b99b1d5b846df1ecb0e8fc517b5b3518b51fed77c6ef1c6a241964",
+  "evidence_hash": "0db5003b570cb587416db5a3a60a75675f96299deddd8ccbaf8b5e436217ae5b",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://epochai.substack.com/p/the-epoch-brief-october-23-2026": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 13 figure-sentence(s); 1 of 13 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 13,
+   "total": 13
+  },
+  "label_schema_version": 2,
+  "content_hash": "cdebeeb5514f617a4505ee4215a7faf1e736d45b9508c6717b9a187e45f8ab10",
+  "evidence_hash": "b695a8ddedec4c7ba2649dbe1b92ed491cd75dcbe7a4f3b9a05a772613090550",
   "reviewed": false,
   "label_source": "machine"
  }

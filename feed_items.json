@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-23 05:20 UTC",
+ "fetched": "2026-10-24 05:20 UTC",
  "items": [
   {
    "entity": "OpenAI",
@@ -17,18 +17,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 7
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "5cff0123011f885cdba084d6e6ebe703573cfea362540d73f29a8d4ea1da8df8",
    "evidence_hash": "6a7a326fccb49267f1a427034b6eec5e66d46eff2b244d93ee181205e3987387",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -62,18 +62,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 1
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "f24ee8a66126a82f9e1ec52b4944055ad94985cc65c8e737866b6989b05ba690",
    "evidence_hash": "c8b4ca187243735cedf26a531df9a1030a7b6a4b91903748b8d62d3040b83188",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Microsoft",
@@ -92,8 +92,128 @@
    "entity_basis": "tag"
   },
   {
+   "entity": "OpenAI",
+   "headline": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
+   "date": "Fri, 23 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 4502 chars of article text",
+   "content_hash": "464210f372e0e37b809539dfe844520286b8b23caa1571b7c6afdb05ecb39951",
+   "evidence_hash": "c3443998b61c18fc0fd6fa8ea25aca3fab643261fe7d7250ec84280014b52b61",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 7
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    },
+    {
+     "name": "xAI",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
    "entity": "Nvidia",
-   "headline": "Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony.ai and Nvidia",
+   "headline": "Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots, 20,000 sell",
+   "date": "Fri, 23 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 1,
+    "total": 1
+   },
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "content_hash": "2388269c860ca293f85ac73649b837db08ac159b5b1b558d34b529935ba13f5e",
+   "evidence_hash": "9a019f7bb964a34c8c597a59b4afc245e923c87f9e44c020f2327e989cb50edc",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 7
+    },
+    {
+     "name": "Hugging Face",
+     "count": 5
+    }
+   ],
+   "publisher_topic": "nvidia",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "TechCrunch",
+   "headline": "From Toast to Bessemer: Who founders will hear from at TechCrunch Founder Summit 2026",
+   "date": "Fri, 23 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/10/23/from-toast-to-bessemer-who-founders-will-hear-from-at-techcrunch-founder-summit-2026/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 2,
+    "total": 2
+   },
+   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+   "content_hash": "d988ebd86c1256bf1a3afc2b3d679d98f2f8e7cd97ce537fa5598e4e0bf3eabd",
+   "evidence_hash": "525feef673deaf6e583f9135e17815cbaf2f45c13540199db8d705182903102f",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "TechCrunch Founder Summit",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Nvidia",
+   "headline": "Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony AI and Nvidia",
    "date": "Fri, 23 Oct 2026",
    "topic": "",
    "claim_type": "unclassified",
@@ -107,18 +227,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 3
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "f12b8031d6a6a0998993823158a1832cda363d13303d2294ef4aa470e8ebd7bd",
    "evidence_hash": "03a5f9f5b0f934c9f70a4e148642fd1971d362fc4e8cadb9ba329c2ba541c03a",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Nvidia",
@@ -148,18 +268,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 3
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "6c41ec5089d168c950e49e49a416f7e8508ffec66a6cc126ad8b053870e0210d",
    "evidence_hash": "6da3c3532810b43ac39ff561c6fe5841c3f6c7cf1b448629f7cb0ad8a12f97f3",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Anthropic",
@@ -185,18 +305,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 3212 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 3212 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "2b7be9432c33299face8f3398fcf93a42ee687808b4c3cbf5073c7992e56be2f",
    "evidence_hash": "997cbd4658c62090e04aa47090b8a320d5bc34eeb54dc29edc6c76c52ae836ff",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -215,55 +335,6 @@
    "entity_basis": "tag"
   },
   {
-   "entity": "",
-   "headline": "Canva releases its first image generation model",
-   "date": "Thu, 22 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 3
-   },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "1b091f161935518c9e32374117a356a11b5ae3caec6102a48ad85b4b18293af3",
-   "evidence_hash": "b39d486a22940d1a001cf6c2b99ad7e9411cb9dadad44ada9fbe2c3ceab6b854",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Google",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "canva",
-   "entity_basis": "unresolved"
-  },
-  {
    "entity": "OpenAI",
    "headline": "OpenAI makes its Jev competitor widely available as decision model competition heats up",
    "date": "Thu, 22 Oct 2026",
@@ -279,18 +350,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 4
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "4122f868837ccb41aaefd5a04f988238f1e1cff6d4a478a8bca3cb2564c7ae3c",
    "evidence_hash": "bb5181ec5b98e09d22e70fe7adf5267987eb33d434fe5299c8364841ea777c37",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -309,139 +380,248 @@
    "entity_basis": "headline"
   },
   {
-   "entity": "Microsoft",
-   "headline": "Microsoft’s Mustafa Suleyman says its AI outperforms doctors on hard cases as he chases ‘medical superintelligence’",
-   "date": "Thu, 22 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 8
-   },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "53e5401dd39c41eaaa2012f050c123c970d3c1c79bb5a82b1a47ad73bd0c7e40",
-   "evidence_hash": "a58d205581d148109b01acfc1f6d5d05a3e55585f285db2fb3e0c02b94414493",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Microsoft",
-     "count": 19
-    },
-    {
-     "name": "Google",
-     "count": 5
-    },
-    {
-     "name": "Google DeepMind",
-     "count": 4
-    },
-    {
-     "name": "OpenAI",
-     "count": 3
-    },
-    {
-     "name": "Anthropic",
-     "count": 2
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "microsoft AI",
-   "entity_basis": "headline"
-  },
-  {
    "entity": "OpenAI",
-   "headline": "Uber puts all 30,000 employees on ChatGPT Work",
-   "date": "Thu, 22 Oct 2026",
+   "headline": "OpenAI now trains its frontier AI models with no internet access",
+   "date": "2026-10-23T17:11",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 4
-   },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "570b364b4cc5d6834ee35847e9fb6c18e1ce1833f7de41f78404f1b7c1abb034",
-   "evidence_hash": "9ae8c113f137d3347295a394a500ab7e2d2ed48105f921c4ae9b1d9921c77431",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 4
-    },
-    {
-     "name": "Anthropic",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "ChatGPT",
-   "entity_basis": "product:ChatGPT"
-  },
-  {
-   "entity": "",
-   "headline": "Someone hacked the Switch 2 by using an old game and AI",
-   "date": "2026-10-22T13:21",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
+   "denominator_stated": "n/a",
    "reviewed": false,
    "sources": [
     {
      "name": "theverge.com",
-     "url": "https://www.theverge.com/games/1016862/nintendo-switch-2-jailbreak-ai",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet",
      "source_type": "trade-press",
      "source_tier": 3
     }
    ],
    "rating": "ok",
-   "evidence_method": "unassessed",
+   "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
-    "total": 5
+    "total": 0
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "0d324ef03fddda74344ea06e6ce976f2bbda5cb3f1bf4c8a2696bcda95473cf3",
-   "evidence_hash": "8045c3247a9dedd6b6d2fb18ee2d59676108f379ceb89005dd240e6c6f7b5ade",
+   "label_evidence": "no figure in 3679 chars of article text",
+   "content_hash": "8ad1820b2b06107ef09786bc402cb7b1cc2132545acbb74ffe9608186fec7ed2",
+   "evidence_hash": "aabda373242c33c0420f2c529753662c0ef24d45b57ef82ecc990463d555d33c",
    "label_schema_version": 2,
    "auto_labelled": true,
    "label_source": "machine",
    "mentions": [
     {
      "name": "OpenAI",
-     "count": 1
+     "count": 16
     },
     {
      "name": "Google",
+     "count": 2
+    },
+    {
+     "name": "Anthropic",
      "count": 1
+    },
+    {
+     "name": "FTC",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "OpenAI",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
+   "date": "2026-10-23T15:32",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 3117 chars of article text",
+   "content_hash": "c48886ede80a32ddf3d5f4da4153c33ffc825d640199a556714bf9d4681dc1eb",
+   "evidence_hash": "1fcdbdd8a98a582c525e997191c9c730eca4d9575328893ce21b47e12e9e0b6c",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Google",
+     "count": 2
+    },
+    {
+     "name": "OpenAI",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "Apple",
+   "headline": "The iPhone Duo should have been an iPad",
+   "date": "2026-10-23T13:00",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/podcast/1017447/iphone-duo-ipad-review-score-vergecast",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 1,
+    "total": 1
+   },
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "content_hash": "38637fe1c85d6777927ccab02af87d99dc7d4691edd52cde240071bdf57a3392",
+   "evidence_hash": "51778edee208d001b5476c201485da8fdf0954e61a3d0139c11b7015f940257e",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Google",
+     "count": 2
+    },
+    {
+     "name": "Apple",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Apple",
+   "entity_basis": "tag"
+  },
+  {
+   "entity": "Google",
+   "headline": "Now Google says it might use your Gmail and Google Photos data to target ads",
+   "date": "2026-10-23T12:52",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 3305 chars of article text",
+   "content_hash": "4d43b693faeb61f803fe88b203ffcec78933921859874867df711edaf7ab25df",
+   "evidence_hash": "eb3a2c2233220bee77867c58b3ba2410ed10dc92133afbe8bd533d195706d58b",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Google",
+     "count": 17
+    }
+   ],
+   "publisher_topic": "Google",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Meta",
+   "headline": "Meta delays new business terms after publisher pushback on AI scraping",
+   "date": "2026-10-23T10:47",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 2548 chars of article text",
+   "content_hash": "39712869d8623bfa28170cbb1883e18ae6270908c1727b17cae960af6e7c57ed",
+   "evidence_hash": "5fd132f7c2d2d6273c75ade35ad99dea97d7571f39db16821892739dd56b844b",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 14
+    },
+    {
+     "name": "Google",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "Meta",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "Retro gaming is being overrun with AI",
+   "date": "2026-10-23T09:52",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "partial",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1015430/ai-retro-games-decomp-recomp-port",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 3,
+    "total": 3
+   },
+   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+   "content_hash": "67dc7352dfa6428a65a288978bcc7495468d2cbb7e6712a6d15bc6914eb17df2",
+   "evidence_hash": "065c2a052bfbfff95e100be0778e2da38e0337b03876cfae05f5d67c9be78b75",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Google",
+     "count": 2
     }
    ],
    "publisher_topic": "Gaming",
@@ -463,18 +643,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 3
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "38d803ff21f81e453d6d5309af7608f0df3432423d103f09ae246f0c084b0e25",
    "evidence_hash": "e3b5e7674491cb5c20695eef5b9d71f229f6599b472a777591f230066577b622",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -508,18 +688,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 3055 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 3055 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "c51e24c5d9748da8df65b15cb193bc6708ff9134ca7ee435796e0594bea4ab8b",
    "evidence_hash": "7dd2b4f7b169dd641a93bf4570f2d2043ffc803206fe273056c4d0e396b1675c",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Meta",
@@ -549,18 +729,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 2
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "c1bf741d470d75589d3bac34ff69cfcdedecdb19aaedcbeabf995c434351b763",
    "evidence_hash": "b6116dfe9924f7ceca7869ab54e50575db049fc5b7fba81a0bc779eaf59ff1ad",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Meta",
@@ -575,228 +755,41 @@
    "entity_basis": "headline"
   },
   {
-   "entity": "xAI",
-   "headline": "Sure, let’s smoosh SpaceX and Tesla together, who cares",
-   "date": "2026-10-22T17:14",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/1016879/spacex-tesla-cursed-katamari",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 16
-   },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "d21dc28eab2a768c853c412bdb682819ca4dfa43be29e89dc46fc0d8f586b30b",
-   "evidence_hash": "a7a11e72e4c231d8ba8725e3808135367dcd57dc0751f5a3eee2da20254e7c10",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "xAI",
-     "count": 40
-    },
-    {
-     "name": "Nvidia",
-     "count": 4
-    },
-    {
-     "name": "Anthropic",
-     "count": 3
-    },
-    {
-     "name": "Google",
-     "count": 2
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Electric Cars",
-   "entity_basis": "tag"
-  },
-  {
    "entity": "",
-   "headline": "Discord now formats Markdown previews right",
-   "date": "2026-10-22T14:58",
+   "headline": "Intel gets waiver after worries fuzzy US ban on foreign-made robots may hit fabs",
+   "date": "Fri, 23 Oct 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "n/a",
+   "denominator_stated": "partial",
    "reviewed": false,
    "sources": [
     {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/news/1017012/discord-markdown-previews-organize-servers-channels",
+     "name": "arstechnica.com",
+     "url": "https://arstechnica.com/ai/2026/10/intel-gets-waiver-after-worries-fuzzy-us-ban-on-foreign-made-robots-may-hit-fabs/",
      "source_type": "trade-press",
      "source_tier": 3
     }
    ],
    "rating": "ok",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_evidence": "no figure in 2101 chars of article text",
-   "content_hash": "9cfa837c83a6c71bf46c4de7cff6d52d21e6877e08fb9475831ef52a35f97634",
-   "evidence_hash": "a23f5c6783711737c90d9e09b8b3c21621d3613896b1ba13d647f63d813467f9",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "Apps",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Meta",
-   "headline": "In Meta’s version of the future, I’ll have my Muse call your Muse",
-   "date": "2026-10-22T16:30",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/tech/1016905/meta-earnings-fall-2026-muse-network",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 6
-   },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "069013f80724088216850099de87776d2a048f082c3047d26a0f2e9302498fb9",
-   "evidence_hash": "2df146942e62abb10e0d3ecd7a04221f1be5a8233842f03f2cc40062e8002092",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 47
-    },
-    {
-     "name": "Google",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Meta",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Microsoft",
-   "headline": "Microsoft says its AI tool is better than doctors at diagnosing conditions",
-   "date": "2026-10-22T15:48",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "rule",
+   "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 2,
     "total": 2
    },
-   "label_evidence": "all 2 figure-sentence(s) state a base",
-   "content_hash": "c4b66851dce9f2428fcc8f0b5274dcc39af566626edac91d385938a1b72bc362",
-   "evidence_hash": "3e50b69a35df10ac352068f3a26e33d81208192aa59b825abd609fd6beb8dd9f",
+   "label_evidence": "model read all 2 figure-sentence(s); 1 of 2 figure-sentence(s) matched a base cue",
+   "content_hash": "9e4c9448d7d3e3db179fcc8d78b6d937f40fef34be45e87e7780c2ef971285ef",
+   "evidence_hash": "16bc6cf5882a738884cdbe61d4854509d5fbf80bbd3ea1704f6510104d8fd142",
    "label_schema_version": 2,
    "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
    "mentions": [
     {
-     "name": "Microsoft",
-     "count": 18
-    },
-    {
-     "name": "Anthropic",
-     "count": 2
-    },
-    {
-     "name": "Google",
-     "count": 2
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
+     "name": "FCC",
+     "count": 7
     }
    ],
-   "publisher_topic": "Microsoft",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "Wildwood’s director says AI is ‘antithetical to everything that we are at this studio’",
-   "date": "2026-10-22T14:12",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/entertainment/1016647/wildwood-travis-knight-interview-ai-laika-stop-motion",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 3
-   },
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "content_hash": "a8176dccd66083d661118f9748a25a8b92406374e237d3cffc9964ac6587e907",
-   "evidence_hash": "eaf4eb3afd93568bff912eb99f60136882cbb04dbd556dc5477c237d4b5991ed",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Film",
+   "publisher_topic": "",
    "entity_basis": "unresolved"
   },
   {
@@ -815,18 +808,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "all 1 figure-sentence(s) state a base",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 1,
     "total": 1
    },
-   "label_evidence": "all 1 figure-sentence(s) state a base",
+   "label_schema_version": 2,
    "content_hash": "2c67648ab517c6ee1bb5cd71e43c53299202eccc7117570181b7e723127725f1",
    "evidence_hash": "05a506b6435aaf6f566e9e70ff39a01ecd512be1ec14b7b5062b04b00457f0a4",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -931,6 +924,43 @@
    "entity_basis": "headline"
   },
   {
+   "entity": "Google",
+   "headline": "Updated Google privacy policy says your Gmail might be used for advertising",
+   "date": "Fri, 23 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "arstechnica.com",
+     "url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 5510 chars of article text",
+   "content_hash": "1d83c5d89ffdbb4423fde494aa0d91de477a197b8614fc77fe593e81c592a2ce",
+   "evidence_hash": "8a697d9353489dfef43f4b7fd98f56c90723d4388ae877ae7c05afcdf39c3cd0",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Google",
+     "count": 24
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
    "entity": "Apple",
    "headline": "The new human-crafted Apple Music brand matters in an AI world",
    "date": "Wed, 21 Oct 2026",
@@ -1026,7 +1056,7 @@
    "date": "Wed, 21 Oct 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "?",
+   "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
@@ -1037,17 +1067,18 @@
     }
    ],
    "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
+   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+   "evidence_method": "local-model",
    "evidence_coverage": {
-    "seen": 0,
-    "total": 1
+    "seen": 2,
+    "total": 2
    },
    "label_schema_version": 2,
    "content_hash": "f042ab3c8520b7d7137efa1171ee27704801a0356a862941bea53abeff506a38",
-   "evidence_hash": "b9beafdb63fd672e9b3c30a93c771467aa926626c5e30a50c532dff1f5b0737d",
+   "evidence_hash": "4a037ba622b0749d83b141bfc725a47a4ba033433f5a5f8189f61de5a59f69d0",
    "label_source": "machine",
    "rating": "ok",
+   "auto_labelled_by": "gemma4:12b",
    "mentions": [
     {
      "name": "xAI",
@@ -1103,114 +1134,202 @@
    "entity_basis": "unresolved"
   },
   {
-   "entity": "Meta",
-   "headline": "Meta drops the word \"train\" from its commercial TOS after AI backlash",
-   "date": "Tue, 20 Oct 2026",
+   "entity": "",
+   "headline": "Show HN: We had AI write a wiki from 45k Enron emails, every fact cited",
+   "date": "Fri, 23 Oct 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "n/a",
+   "denominator_stated": "partial",
    "reviewed": false,
    "sources": [
     {
-     "name": "arstechnica.com",
-     "url": "https://arstechnica.com/tech-policy/2026/10/meta-drops-the-word-train-from-its-commercial-tos-after-ai-backlash/",
-     "source_type": "trade-press",
+     "name": "thisandthat.chat",
+     "url": "https://www.thisandthat.chat/enron/",
+     "source_type": "other",
      "source_tier": 3
     }
    ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 10,
+    "total": 10
+   },
+   "label_evidence": "model read all 10 figure-sentence(s); 1 of 10 figure-sentence(s) matched a base cue",
+   "content_hash": "e2a9eb91bda236e04c8cfe34955efe6203023d760bb371872ad2c1241ecfb1cc",
+   "evidence_hash": "058c9463a0c2b25c35fc80333cf10380c06924ff6d21984ee6ef397469d8623d",
+   "label_schema_version": 2,
    "auto_labelled": true,
-   "label_evidence": "no figure in 5912 chars of article text",
-   "evidence_method": "rule",
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "The same AI request emits 8.5 times more CO2 in Texas than in Sweden",
+   "date": "Fri, 23 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "partial",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "berget.ai",
+     "url": "https://berget.ai/en/blog/per-request-co2-press-release",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 18,
+    "total": 18
+   },
+   "label_evidence": "model read all 18 figure-sentence(s); 2 of 18 figure-sentence(s) matched a base cue",
+   "content_hash": "5f05c38f2789300a189084aeac8c9ad4cde7c1bd2b4a259feb1644bd063112ce",
+   "evidence_hash": "c2dffc347d0450b06ba303fdde0ff713c3a17beeeb6035153dcc07706328e552",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "AI cloud",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "AI compute is the new oil–and needs a new market",
+   "date": "2026-10-22",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "economist.com",
+     "url": "https://www.economist.com/finance-and-economics/2026/10/22/ai-compute-is-the-new-oil-and-needs-a-new-market",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
+   "label_evidence": "article not fetched (http-403)",
+   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
    "label_schema_version": 2,
-   "content_hash": "ef582a871b3f00621ed617d451fd080f680619231e935d7febcab852441dbe89",
-   "evidence_hash": "2f30f23539c8d0e0041e281290cc0b03a7f00d3510ea517a8c0196f339c18951",
+   "auto_labelled": true,
    "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "OpenAI",
+   "headline": "Ask HN: If the models are so good, why doesn't OpenAI just start 100 companies?",
+   "date": "Thu, 22 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "news.ycombinator.com",
+     "url": "https://news.ycombinator.com/item?id=50200997",
+     "source_type": "aggregator",
+     "source_tier": 3
+    }
+   ],
    "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 756,
+    "total": 756
+   },
+   "label_evidence": "model read all 756 figure-sentence(s); 4 of 756 figure-sentence(s) matched a base cue",
+   "content_hash": "1be11c472729c5b3ddd3f942fc147621574f4a0457ab876833c528092c5765f2",
+   "evidence_hash": "48025105a18a9657f715e612032fba7d032e4ebffca948db06f6aba2382fd8a1",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 5
+    },
+    {
+     "name": "Google",
+     "count": 3
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    },
+    {
+     "name": "Amazon",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "Most Americans Say AI Is Bad for Society, Oppose More Data Centers",
+   "date": "2026-10-21",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "Y",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "abcnews.com",
+     "url": "https://abcnews.com/Politics/americans-ai-bad-society-oppose-data-centers-abcpostipsos/story?id=137414085",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 40,
+    "total": 40
+   },
+   "label_evidence": "model read all 40 figure-sentence(s); 4 of 40 figure-sentence(s) matched a base cue",
+   "content_hash": "1194d47900da0e6bc6a9fdb167d7a525e26e3c65ae19061923d60dc90f0174b2",
+   "evidence_hash": "4ded5d253885d4c054c1daeeda3f7db4cb5f1d6e0bec2018a74b98b04dffe7fb",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
    "mentions": [
     {
      "name": "Meta",
-     "count": 28
+     "count": 2
+    },
+    {
+     "name": "Nvidia",
+     "count": 2
+    },
+    {
+     "name": "xAI",
+     "count": 1
     }
    ],
    "publisher_topic": "",
-   "entity_basis": "headline"
+   "entity_basis": "unresolved"
   },
   {
-   "entity": "Google DeepMind",
-   "headline": "Gemini's Personal Intelligence is coming to cars",
-   "date": "Tue, 20 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "arstechnica.com",
-     "url": "https://arstechnica.com/google/2026/10/geminis-personal-intelligence-is-coming-to-cars/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 4042 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "66cda0798ed038fc64f65d9652dcf11bab62834f2262194eae70d50516254c56",
-   "evidence_hash": "de881950643344e7230531804cb92f8661cd193244f8bd3645fabec916a4f255",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 16
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "product:Gemini"
-  },
-  {
-   "entity": "Google DeepMind",
-   "headline": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
-   "date": "Wed, 14 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 107 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "b0cf26fa901911b3e36f1e0aa5db23c2625f351563cd1c9af869c2df4eedac21",
-   "evidence_hash": "730d040ab4a6de25cc46c75649a2311274c764f703fcf10d8920e2b2786cf959",
-   "label_source": "machine",
-   "rating": "trusted",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Google DeepMind",
-   "headline": "Beyond tree cover: mapping the world’s forest types",
+   "entity": "",
+   "headline": "Show HN: UI micro interactions prompts for AI",
    "date": "Thu, 22 Oct 2026",
    "topic": "",
    "claim_type": "unclassified",
@@ -1218,284 +1337,135 @@
    "reviewed": false,
    "sources": [
     {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
-     "source_type": "vendor-own",
-     "source_tier": 5
+     "name": "typeui.sh",
+     "url": "https://www.typeui.sh/micro-interactions",
+     "source_type": "other",
+     "source_tier": 3
     }
    ],
-   "rating": "trusted",
+   "rating": "ok",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 96 chars of article text",
-   "content_hash": "2c6b3c831e981bce49303c28d1fff5680bdd5a40b9950333cbadc0a212cbc17c",
-   "evidence_hash": "17a5001c22aa4e06ab2dedf962e9e6689c01bf57f638c14d29a3cfd12bb02e9d",
+   "label_evidence": "no figure in 50 chars of article text",
+   "content_hash": "10a4068c9b70be8a0c842d46650ebc9990bbcb4affdea64925dfcc58a018cc11",
+   "evidence_hash": "9d6360d33c739b20f51f926f27a2273b80adfd7508f553120bf85799dbce4ccc",
    "label_schema_version": 2,
    "auto_labelled": true,
    "label_source": "machine",
    "mentions": [],
    "publisher_topic": "",
-   "entity_basis": "site"
+   "entity_basis": "unresolved"
   },
   {
-   "entity": "Google",
-   "headline": "Accelerating the search for antimicrobial peptides with Google Antigravity",
-   "date": "Thu, 15 Oct 2026",
+   "entity": "",
+   "headline": "Award-winning AI literature",
+   "date": "Thu, 22 Oct 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "?",
+   "denominator_stated": "Y",
    "reviewed": false,
    "sources": [
     {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
-     "source_type": "vendor-own",
-     "source_tier": 5
+     "name": "jamesyu.org",
+     "url": "https://jamesyu.org/award-winning-ai-literature/",
+     "source_type": "other",
+     "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
+   "rating": "ok",
+   "evidence_method": "local-model",
    "evidence_coverage": {
-    "seen": 0,
-    "total": 3
+    "seen": 14,
+    "total": 14
    },
+   "label_evidence": "model read all 14 figure-sentence(s); 2 of 14 figure-sentence(s) matched a base cue",
+   "content_hash": "7921385f39539c91fe782179c0a982bd2fdf181781f093ff710dd16feb03d396",
+   "evidence_hash": "374a13a9dca7b553762210c5ea47e96db2f4df39a61c2d100ed0d2f40ee6b8e7",
    "label_schema_version": 2,
-   "content_hash": "a39b5cfa239e8ee9c6b7847f0643a5f72af9d12256b472ff78798b61b6a747e9",
-   "evidence_hash": "e481105d734ee1194426f1d5ec70515195bf440eced869dde78a1f3cd03a265f",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
-   "rating": "trusted",
    "mentions": [],
    "publisher_topic": "",
-   "entity_basis": "headline"
+   "entity_basis": "unresolved"
   },
   {
-   "entity": "Google DeepMind",
-   "headline": "Developing Gemini 4 Argon responsibly and safely",
-   "date": "Tue, 13 Oct 2026",
+   "entity": "",
+   "headline": "AI and the Enclosure of the Scientific Commons",
+   "date": "Thu, 22 Oct 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "?",
+   "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-     "source_type": "vendor-own",
-     "source_tier": 5
+     "name": "arxiv.org",
+     "url": "https://arxiv.org/abs/2610.27251",
+     "source_type": "independent",
+     "source_tier": 2
     }
    ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
+   "rating": "trusted",
+   "evidence_method": "local-model",
    "evidence_coverage": {
-    "seen": 0,
+    "seen": 6,
     "total": 6
    },
+   "label_evidence": "model read all 6 figure-sentence(s); 0 of 6 figure-sentence(s) matched a base cue",
+   "content_hash": "aca402b7fed975bb08515948ff0e00cdc9a836fa76a6e1ff84445d0e4c9dc6dc",
+   "evidence_hash": "103e83593b2ed5d8f386832276af947b1638c2ff8caa27b88a2f7f088d597a29",
    "label_schema_version": 2,
-   "content_hash": "ccf9ba4217cd1db0928019e7c1bf38444a757f50cf591671b4c74cf392e7609d",
-   "evidence_hash": "509e7989ccb067b3a69f4fcb179037f95b38b669daf3a4f80d93aa93b9269c9a",
-   "label_source": "machine",
-   "rating": "trusted",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "None",
-   "entity_basis": "product:Gemini"
-  },
-  {
-   "entity": "Google DeepMind",
-   "headline": "Gemini 4 Argon for Robotics",
-   "date": "Tue, 13 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
    "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 69
-   },
-   "label_schema_version": 2,
-   "content_hash": "83316c201e03faa1a2f4b1505a5bf1301f6e2ea9ee89c7751b65f6e08afb7045",
-   "evidence_hash": "e6ecda7168338c1b01862207f613eb35957b542b3f4f2966de18c5d1140ce8f2",
+   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
-   "rating": "trusted",
    "mentions": [
-    {
-     "name": "Meta",
-     "count": 1
-    },
-    {
-     "name": "Snap",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "product:Gemini"
-  },
-  {
-   "entity": "Google DeepMind",
-   "headline": "Gemini 4 Argon: Built to solve your hardest problems",
-   "date": "Tue, 13 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 17
-   },
-   "label_schema_version": 2,
-   "content_hash": "cc68e8a90bf0e26da8dbf6ffebbc182246184d8ed3ca25dfcf4e723a9a969570",
-   "evidence_hash": "0f58ed103da8d8335e0f14412e692fce02e88370c84b5448cc422d0ba01185a6",
-   "label_source": "machine",
-   "rating": "trusted",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "None",
-   "entity_basis": "product:Gemini"
-  },
-  {
-   "entity": "Google DeepMind",
-   "headline": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
-   "date": "Tue, 06 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 17
-   },
-   "label_schema_version": 2,
-   "content_hash": "06e150a03f22dcfd227dbabc0a4c6a815dac3c06b4c69eb26505c2f8beef866e",
-   "evidence_hash": "5e3247bc79164566fbd0027a18c92c05cfd5082bd76e798ea6a3da6443b2835f",
-   "label_source": "machine",
-   "rating": "trusted",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 2
-    },
     {
      "name": "Hugging Face",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "None",
-   "entity_basis": "site"
-  },
-  {
-   "entity": "Google DeepMind",
-   "headline": "Gemini 4 Argon: our next era of frontier intelligence",
-   "date": "Wed, 30 Sep 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
+     "count": 4
+    },
     {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
-     "source_type": "vendor-own",
-     "source_tier": 5
+     "name": "Google",
+     "count": 1
     }
    ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 12
-   },
-   "label_schema_version": 2,
-   "content_hash": "f1e7e588315b5c071d9d38003e58a044e1feaf443eda98c75ba7202fa7c1823c",
-   "evidence_hash": "1460987da159f39b053f7855b867826e9029b1a736bf81e03437341bbccf36a2",
-   "label_source": "machine",
-   "rating": "trusted",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "None",
-   "entity_basis": "product:Gemini"
-  },
-  {
-   "entity": "Google DeepMind",
-   "headline": "Introducing SynthID Bio",
-   "date": "Wed, 30 Sep 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/introducing-synthid-bio/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 102 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "38ef05ad10e22596c77ea4dd51dc3e7c7525df8981c0d4034b6d39a640d683fe",
-   "evidence_hash": "58dcdb670ad120432f0c2b0c11baa421250f5d42b4c06a6bc7a38fd8439af884",
-   "label_source": "machine",
-   "rating": "trusted",
-   "mentions": [],
    "publisher_topic": "",
-   "entity_basis": "site"
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "AI analysis of CT scans finds 42.9% of patients have coronary inflammation",
+   "date": "Thu, 22 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "Y",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "biograph.com",
+     "url": "https://www.biograph.com/newsroom/biograph-completes-first-u.s.-study-with-caristo-diagnostics%E2%80%99-ai-powered-coronary-inflammation-detection-finding-risk-in-over-42-of-asymptomatic-patients",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 6,
+    "total": 6
+   },
+   "label_evidence": "model read all 6 figure-sentence(s); 0 of 6 figure-sentence(s) matched a base cue",
+   "content_hash": "7dd9f6432eb9cb04acd1669f19b9bac0c03f2965f2295279bcab8f6a73cf09f8",
+   "evidence_hash": "001f09571707ec890683bf32fe95ee31758349d1c1faa7fb1db5d0d0e643bae5",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "longevity clinic",
+   "entity_basis": "unresolved"
   },
   {
    "entity": "NIST",
@@ -1946,18 +1916,18 @@
      "source_tier": 2
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "all 1 figure-sentence(s) state a base",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 1,
     "total": 1
    },
-   "label_evidence": "all 1 figure-sentence(s) state a base",
+   "label_schema_version": 2,
    "content_hash": "4f6970f7ce878402073a51481c882d2e066652422a7cb994118ab7227b944f2d",
    "evidence_hash": "e8edab73fad3d7162b6eee2095d559f5d8bec7145d3597be3c4e19912300a364",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "FTC",
@@ -2015,18 +1985,18 @@
      "source_tier": 2
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 694 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 694 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "6c12440addfc56d74ae406a3867d97344f4e25dc4c0d1a98d1278b9861d624a3",
    "evidence_hash": "05d64397fe95de21ed70b4375c242cb836588b827b5224111126d934d8090ca2",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "unresolved"
@@ -2047,18 +2017,18 @@
      "source_tier": 2
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 222 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 222 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "915d38fefa1a52cdb3643d820dceb0b300d38ab4277c7e824419315afedbcae7",
    "evidence_hash": "f1c1d64711c93661956fed798bffbc9a5725b65cf124d9e7ff6c9b4893bdd635",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "unresolved"
@@ -2419,6 +2389,82 @@
   },
   {
    "entity": "",
+   "headline": "At MIT, Martha Minow speaks on sustaining democracy, both by using and overcoming AI",
+   "date": "Fri, 23 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "Y",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "news.mit.edu",
+     "url": "https://news.mit.edu/2026/martha-minow-speaks-on-sustaining-democracy-using-overcoming-ai-1023",
+     "source_type": "press-office",
+     "source_tier": 5
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 3,
+    "total": 3
+   },
+   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+   "content_hash": "3afef663b0a7e66afdf401095f2a08fe99b98580a1e19304f0c32753917ff3de",
+   "evidence_hash": "361fbf974cb972d821f229e1a8fb1dc902fbf9668165f1ecd976e1872a901a9f",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Martha Minow",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "Reinforcing the value of human understanding at MIT",
+   "date": "Fri, 23 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "news.mit.edu",
+     "url": "https://news.mit.edu/2026/reinforcing-value-of-human-understanding-at-mit-1023",
+     "source_type": "press-office",
+     "source_tier": 5
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 9
+   },
+   "label_evidence": "model returned an invalid denominator label",
+   "content_hash": "f3ba89d724b99b1d5b846df1ecb0e8fc517b5b3518b51fed77c6ef1c6a241964",
+   "evidence_hash": "0db5003b570cb587416db5a3a60a75675f96299deddd8ccbaf8b5e436217ae5b",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "MIT SHASS",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
    "headline": "Q&A: How AI came to model the “messy” human mind",
    "date": "Fri, 23 Oct 2026",
    "topic": "",
@@ -2433,18 +2479,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 1
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "10f94f05b4befc7be9ec9d3d2645ed34c8ca72230cf406857b2e7ccb84f693ba",
    "evidence_hash": "99c207adde7012826be5504d945260119e66fcc0b71a84419915f8868131b03e",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -2478,18 +2524,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "model review failed; denominator remains unassessed",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 1
    },
-   "label_evidence": "model review failed; denominator remains unassessed",
+   "label_schema_version": 2,
    "content_hash": "d43145fac37214aeebec5f463fd7c1d3dd3c9acc941120d2ae68253c0e80abd2",
    "evidence_hash": "b8636d73083365a60c4a48023bb04a118b02b7e87557292b61585509ca5b521f",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Meta",
@@ -2686,88 +2732,6 @@
   },
   {
    "entity": "",
-   "headline": "Q&A: The “collision” between AI, your brain, and society",
-   "date": "Thu, 15 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "news.mit.edu",
-     "url": "https://news.mit.edu/2026/collision-between-ai-your-brain-and-society-eric-so-book-1015",
-     "source_type": "press-office",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 1
-   },
-   "label_schema_version": 2,
-   "content_hash": "15487686cd3ba1dbb3dd28c9a434772d919cc376f530edd86d01320a370c10f8",
-   "evidence_hash": "2e1d231aeb438a8f060b4688757eb436e1511756056879f096e9884a99099d25",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Eric So",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Researchers improve weather forecasts looking two to six weeks out",
-   "date": "Wed, 14 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "news.mit.edu",
-     "url": "https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014",
-     "source_type": "press-office",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 2
-   },
-   "label_schema_version": 2,
-   "content_hash": "7f22b17ec049aa8c0344321a7e188c1b8660ecbef17e6cd0c85bcb9951fc171c",
-   "evidence_hash": "88da474116092e0540fc4dfe773725000362088efa2e03a739ebcb907dd5520e",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Microsoft",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Judah Cohen",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
    "headline": "AI Spend Budget Busters: Expanding the Budget Planning Lens",
    "date": "Tue, 06 Oct 2026",
    "topic": "",
@@ -2872,6 +2836,60 @@
    "label_source": "machine",
    "rating": "ok",
    "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "The Epoch Brief - October 23, 2026",
+   "date": "Fri, 23 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "Y",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "epochai.substack.com",
+     "url": "https://epochai.substack.com/p/the-epoch-brief-october-23-2026",
+     "source_type": "tool-vendor",
+     "source_tier": 4
+    }
+   ],
+   "rating": "trusted",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 13,
+    "total": 13
+   },
+   "label_evidence": "model read all 13 figure-sentence(s); 1 of 13 figure-sentence(s) matched a base cue",
+   "content_hash": "cdebeeb5514f617a4505ee4215a7faf1e736d45b9508c6717b9a187e45f8ab10",
+   "evidence_hash": "b695a8ddedec4c7ba2649dbe1b92ed491cd75dcbe7a4f3b9a05a772613090550",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Google",
+     "count": 3
+    },
+    {
+     "name": "Google DeepMind",
+     "count": 2
+    },
+    {
+     "name": "OpenAI",
+     "count": 1
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
    "publisher_topic": "",
    "entity_basis": "unresolved"
   },
@@ -3203,59 +3221,6 @@
    "entity_basis": "headline"
   },
   {
-   "entity": "",
-   "headline": "9 Big questions benchmarks can help answer",
-   "date": "Fri, 14 Aug 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "epochai.substack.com",
-     "url": "https://epochai.substack.com/p/9-big-questions-benchmarks-can-help",
-     "source_type": "tool-vendor",
-     "source_tier": 4
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 1
-   },
-   "label_schema_version": 2,
-   "content_hash": "e58f5e33ed1625da233609703d278eb11ec0f8de670b5db181e0b87af49ff01f",
-   "evidence_hash": "712b4a1e219a7e47fcaab127ce5893c76608221cb28e8bbf0a0f3e4263802580",
-   "label_source": "machine",
-   "rating": "trusted",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    },
-    {
-     "name": "xAI",
-     "count": 1
-    },
-    {
-     "name": "Hugging Face",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
    "entity": "Anthropic",
    "headline": "Open call for guest investigators in the life sciences",
    "date": "2026-10-22",
@@ -3271,19 +3236,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 2,
     "total": 2
    },
-   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "6a394e863492902059f49eb03e65653d49bc227d161ca6ffd745cf69aef3182c",
    "evidence_hash": "beeee079f85850b28b6e0d38705a10906c641b27959fb3fc739543f8d97f3c50",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "site"
@@ -3304,19 +3269,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 2 figure-sentence(s); 1 of 2 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 2,
     "total": 2
    },
-   "label_evidence": "model read all 2 figure-sentence(s); 1 of 2 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "55b2b18e5680fa0b7d071471c45d610fcf64bb2cf140c180ab1943c6d784d4e0",
    "evidence_hash": "41ee2e069e9c94fe196f3f8b213ba8bfc334dfaf7dd05bba6864ce863463a60c",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",

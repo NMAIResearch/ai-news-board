@@ -1,12 +1,60 @@
 {
- "generated": "2026-10-23 05:28 UTC",
+ "generated": "2026-10-24 05:21 UTC",
  "window_days": 60,
  "counts": {
-  "total": 107,
-  "closed": 44,
-  "open_weights": 63
+  "total": 105,
+  "closed": 45,
+  "open_weights": 60
  },
  "releases": [
+  {
+   "lab": "Moonshot",
+   "model": "MoonshotAI: Kimi K3.1 Pro",
+   "id": "moonshotai/kimi-k3.1-pro",
+   "date": "2026-10-23",
+   "url": "https://openrouter.ai/moonshotai/kimi-k3.1-pro",
+   "context_length": 1048576,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "InternVideo2-CLIP-anomaly-detection",
+   "id": "nvidia/InternVideo2-CLIP-anomaly-detection",
+   "date": "2026-10-22",
+   "url": "https://huggingface.co/nvidia/InternVideo2-CLIP-anomaly-detection",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/InternVideo2-CLIP-anomaly-detection",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "IBM",
+   "model": "granite-switch-4.1-8b-GGUF",
+   "id": "ibm-granite/granite-switch-4.1-8b-GGUF",
+   "date": "2026-10-22",
+   "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-8b-GGUF",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "ibm-granite/granite-switch-4.1-8b-GGUF",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "IBM",
+   "model": "granite-switch-4.1-30b-GGUF",
+   "id": "ibm-granite/granite-switch-4.1-30b-GGUF",
+   "date": "2026-10-22",
+   "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-30b-GGUF",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "ibm-granite/granite-switch-4.1-30b-GGUF",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
   {
    "lab": "Recursive",
    "model": "Recursive: Flint (free)",
@@ -77,18 +125,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "nvidia/cosmos3-nano-libero10-sdg-export-D2_s43",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "cosmos3-nano-libero10-sdg-export-S2_s43",
-   "id": "nvidia/cosmos3-nano-libero10-sdg-export-S2_s43",
-   "date": "2026-10-19",
-   "url": "https://huggingface.co/nvidia/cosmos3-nano-libero10-sdg-export-S2_s43",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/cosmos3-nano-libero10-sdg-export-S2_s43",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
@@ -464,18 +500,6 @@
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
-   "lab": "IBM",
-   "model": "granite-speech-5.0-2b",
-   "id": "ibm-granite/granite-speech-5.0-2b",
-   "date": "2026-10-07",
-   "url": "https://huggingface.co/ibm-granite/granite-speech-5.0-2b",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "ibm-granite/granite-speech-5.0-2b",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
    "lab": "Google",
    "model": "Google: Nano Banana 2.1",
    "id": "google/gemini-nano-banana-2.1",
@@ -510,18 +534,6 @@
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "IBM",
-   "model": "ensemble-forecasting-with-ibm-granite-time-series",
-   "id": "ibm-granite/ensemble-forecasting-with-ibm-granite-time-series",
-   "date": "2026-10-01",
-   "url": "https://huggingface.co/ibm-granite/ensemble-forecasting-with-ibm-granite-time-series",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "ibm-granite/ensemble-forecasting-with-ibm-granite-time-series",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "OpenAI",
@@ -1253,42 +1265,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "allenai/Llama-3-Blama-8B",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Z.ai",
-   "model": "GLM-5.3-Flash-BF16",
-   "id": "zai-org/GLM-5.3-Flash-BF16",
-   "date": "2026-08-25",
-   "url": "https://huggingface.co/zai-org/GLM-5.3-Flash-BF16",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "zai-org/GLM-5.3-Flash-BF16",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Z.ai",
-   "model": "GLM-5.3-BF16",
-   "id": "zai-org/GLM-5.3-BF16",
-   "date": "2026-08-25",
-   "url": "https://huggingface.co/zai-org/GLM-5.3-BF16",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "zai-org/GLM-5.3-BF16",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Z.ai",
-   "model": "GLM-5.3",
-   "id": "zai-org/GLM-5.3",
-   "date": "2026-08-25",
-   "url": "https://huggingface.co/zai-org/GLM-5.3",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "zai-org/GLM-5.3",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   }
  ],
