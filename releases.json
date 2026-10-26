@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-25 06:21 UTC",
+ "generated": "2026-10-26 06:22 UTC",
  "window_days": 60,
  "counts": {
-  "total": 104,
+  "total": 101,
   "closed": 45,
-  "open_weights": 59
+  "open_weights": 56
  },
  "releases": [
   {
@@ -1217,42 +1217,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights published at huggingface.co/tencent/Hy4-preview; downloadable and hashable",
    "hf_id": "tencent/Hy4-preview",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Alibaba (Qwen)",
-   "model": "Qwen-Drive-1.0-4B",
-   "id": "Qwen/Qwen-Drive-1.0-4B",
-   "date": "2026-08-27",
-   "url": "https://huggingface.co/Qwen/Qwen-Drive-1.0-4B",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "Qwen/Qwen-Drive-1.0-4B",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Alibaba (Qwen)",
-   "model": "Qwen: Qwen3.8 Flash",
-   "id": "qwen/qwen3.8-flash",
-   "date": "2026-08-26",
-   "url": "https://openrouter.ai/qwen/qwen3.8-flash",
-   "context_length": 1000000,
-   "evidence": "open-weights",
-   "evidence_note": "weights published at huggingface.co/Qwen/Qwen3.8-Flash-Next; downloadable and hashable",
-   "hf_id": "Qwen/Qwen3.8-Flash-Next",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Z Ai",
-   "model": "Z.ai: GLM 5.3 Flash",
-   "id": "z-ai/glm-5.3-flash",
-   "date": "2026-08-26",
-   "url": "https://openrouter.ai/z-ai/glm-5.3-flash",
-   "context_length": 1048576,
-   "evidence": "open-weights",
-   "evidence_note": "weights published at huggingface.co/zai-org/GLM-5.3-Flash; downloadable and hashable",
-   "hf_id": "zai-org/GLM-5.3-Flash",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   }
  ],

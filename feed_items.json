@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-25 06:20 UTC",
+ "fetched": "2026-10-26 06:20 UTC",
  "items": [
   {
    "entity": "OpenAI",
@@ -92,6 +92,148 @@
    "entity_basis": "tag"
   },
   {
+   "entity": "xAI",
+   "headline": "Grok releases the first seven minutes of its AI-generated ‘Odyssey’",
+   "date": "Sun, 25 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 3,
+    "total": 3
+   },
+   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+   "content_hash": "1c225c9ae3316dfc7e18ef42bb0fb6e7a4ce29e7e845b5f2a89ea74de7eba8eb",
+   "evidence_hash": "594d11b37932a1b89c6e01f06c247de6f86d0d46e2c2962bc58ab3acf5b5a66e",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "xAI",
+     "count": 7
+    }
+   ],
+   "publisher_topic": "Elon Musk",
+   "entity_basis": "product:Grok"
+  },
+  {
+   "entity": "",
+   "headline": "AI delivers ‘zero financial payoff’ to most companies, Apollo economist says",
+   "date": "Sun, 25 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "Y",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 1,
+    "total": 1
+   },
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "content_hash": "654eb4be7b3a7dbf0d8fa669efd5819ae8bcf9fece6bd89dc92744dfc1f02dfa",
+   "evidence_hash": "2adf6065cbd5e535fd991fcda45741271f757129abaf0f849c1a2109828a8db2",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Microsoft",
+     "count": 1
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    },
+    {
+     "name": "Nvidia",
+     "count": 1
+    },
+    {
+     "name": "Amazon",
+     "count": 1
+    },
+    {
+     "name": "Apple",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Apollo Global Management",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "The hottest AI wearables and gadgets you should know about",
+   "date": "Sun, 25 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 14,
+    "total": 14
+   },
+   "label_evidence": "model read all 14 figure-sentence(s); 0 of 14 figure-sentence(s) matched a base cue",
+   "content_hash": "a160837a4925c083eaec75305afa19c46a759b6afdd49dd63bd9d665fe987065",
+   "evidence_hash": "ece46b570c10ed7a5d370584130137d140d6a759dc8e5a3e7bca1b7722377086",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 3
+    },
+    {
+     "name": "Amazon",
+     "count": 3
+    },
+    {
+     "name": "OpenAI",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "wearables",
+   "entity_basis": "unresolved"
+  },
+  {
    "entity": "",
    "headline": "The AI graveyard: a running list of projects and startups that didn’t make it",
    "date": "Sat, 24 Oct 2026",
@@ -107,19 +249,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 11 figure-sentence(s); 0 of 11 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 11,
     "total": 11
    },
-   "label_evidence": "model read all 11 figure-sentence(s); 0 of 11 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "a69fcc470b43c1d662ea377829302fb8f21aeb28e99722d975a691f48e35b8b2",
    "evidence_hash": "29076dae21a62006891716c7de946b75fa3e490a4c957f71b954fcf111869156",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -161,18 +303,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 4200 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 4200 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "8e3f22a8c62ed3c40e37fdc67f81118a3eb6d487eef92a08dd4a30a2786cb828",
    "evidence_hash": "b85d801ed4a240041e072af0f1d1cd2d9ebf2153c5fc8e792ae19c6ab3ba1754",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -202,19 +344,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 11 figure-sentence(s); 5 of 11 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 11,
     "total": 11
    },
-   "label_evidence": "model read all 11 figure-sentence(s); 5 of 11 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "3437f93ee22170bc5310058b40f31bf206338b6e920462303b908633926468ef",
    "evidence_hash": "dbb8f8c11a405e8176a01b0c76a376f0cc201984e4c5444fa2dc28e767106cf5",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -244,19 +386,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 18 figure-sentence(s); 0 of 18 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 18,
     "total": 18
    },
-   "label_evidence": "model read all 18 figure-sentence(s); 0 of 18 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "8317b383716d6038464a84fed7c0b3cdb9968073d3e90d6b245cd0c311eb2859",
    "evidence_hash": "32a34ce7b676d3e243f8e40d3ac3d95c2e4d93e0fedb6786ba6220fa106e8904",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Google",
@@ -275,123 +417,86 @@
    "entity_basis": "unresolved"
   },
   {
-   "entity": "OpenAI",
-   "headline": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
-   "date": "Fri, 23 Oct 2026",
+   "entity": "",
+   "headline": "r/opensource just banned AI, non-English speakers, and more",
+   "date": "2026-10-25T09:52",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "n/a",
    "reviewed": false,
    "sources": [
     {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
      "source_type": "trade-press",
      "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 4502 chars of article text",
+   "rating": "ok",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
+   "label_evidence": "no figure in 2581 chars of article text",
+   "content_hash": "ba92aec4149f20e7cb458e51c3f29a4e4fe46c1b35fb869f57110c431c3f26a9",
+   "evidence_hash": "6376df26cc44c4eed2bf3306477a00a182d305a748566ee9e27e9de396591a17",
    "label_schema_version": 2,
-   "content_hash": "464210f372e0e37b809539dfe844520286b8b23caa1571b7c6afdb05ecb39951",
-   "evidence_hash": "c3443998b61c18fc0fd6fa8ea25aca3fab643261fe7d7250ec84280014b52b61",
+   "auto_labelled": true,
    "label_source": "machine",
-   "rating": "ok",
    "mentions": [
     {
-     "name": "OpenAI",
-     "count": 7
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "xAI",
+     "name": "Apple",
      "count": 1
     }
    ],
-   "publisher_topic": "",
-   "entity_basis": "headline"
+   "publisher_topic": "Reddit",
+   "entity_basis": "unresolved"
   },
   {
-   "entity": "Nvidia",
-   "headline": "Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots, 20,000 sell",
-   "date": "Fri, 23 Oct 2026",
+   "entity": "Google",
+   "headline": "Google’s AI search changes upended online publishing",
+   "date": "2026-10-23T16:42",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "N",
+   "denominator_stated": "Y",
    "reviewed": false,
    "sources": [
     {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing",
      "source_type": "trade-press",
      "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "rating": "ok",
    "evidence_method": "local-model",
    "evidence_coverage": {
-    "seen": 1,
-    "total": 1
+    "seen": 4,
+    "total": 4
    },
+   "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
+   "content_hash": "77328ce935d746ff5bd74ec2b24f95ac4b570ef64cd6d32849c014f60f0896d8",
+   "evidence_hash": "3737112ea1894ca2579a48fa5c5bb48e9716dfc957460d588ef17c00be8b25a3",
    "label_schema_version": 2,
-   "content_hash": "2388269c860ca293f85ac73649b837db08ac159b5b1b558d34b529935ba13f5e",
-   "evidence_hash": "9a019f7bb964a34c8c597a59b4afc245e923c87f9e44c020f2327e989cb50edc",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
-   "rating": "ok",
    "mentions": [
     {
-     "name": "Nvidia",
-     "count": 7
+     "name": "Google",
+     "count": 32
     },
     {
-     "name": "Hugging Face",
-     "count": 5
-    }
-   ],
-   "publisher_topic": "nvidia",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "TechCrunch",
-   "headline": "From Toast to Bessemer: Who founders will hear from at TechCrunch Founder Summit 2026",
-   "date": "Fri, 23 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
+     "name": "Apple",
+     "count": 1
+    },
     {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/10/23/from-toast-to-bessemer-who-founders-will-hear-from-at-techcrunch-founder-summit-2026/",
-     "source_type": "trade-press",
-     "source_tier": 3
+     "name": "CMA",
+     "count": 1
     }
    ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 2,
-    "total": 2
-   },
-   "label_schema_version": 2,
-   "content_hash": "d988ebd86c1256bf1a3afc2b3d679d98f2f8e7cd97ce537fa5598e4e0bf3eabd",
-   "evidence_hash": "525feef673deaf6e583f9135e17815cbaf2f45c13540199db8d705182903102f",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "TechCrunch Founder Summit",
+   "publisher_topic": "Column",
    "entity_basis": "headline"
   },
   {
@@ -410,19 +515,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 1,
     "total": 1
    },
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "adbafb82a283249dbc5d33e220c4d982843e70ac88b47591adb5140e26268d99",
    "evidence_hash": "bae946e6f4754f6988949143f5f8e43929307ab90054bfeefe72c86b768a1de4",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Google",
@@ -452,18 +557,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 2453 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 2453 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "a8173bda6c189ecafdfe44a4dc6e77a117672163ddd4a4d9ad662e690ecd4e9f",
    "evidence_hash": "1beacec6f4540abf29d4c9339498aebf505bda3806c68695827c24bd8d9cf580",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Google",
@@ -686,90 +791,6 @@
    ],
    "publisher_topic": "Meta",
    "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "Retro gaming is being overrun with AI",
-   "date": "2026-10-23T09:52",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "partial",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/1015430/ai-retro-games-decomp-recomp-port",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 3,
-    "total": 3
-   },
-   "label_schema_version": 2,
-   "content_hash": "67dc7352dfa6428a65a288978bcc7495468d2cbb7e6712a6d15bc6914eb17df2",
-   "evidence_hash": "065c2a052bfbfff95e100be0778e2da38e0337b03876cfae05f5d67c9be78b75",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "Gaming",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Canva’s first AI image model plans designs before generating them",
-   "date": "2026-10-22T17:53",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 4,
-    "total": 4
-   },
-   "label_schema_version": 2,
-   "content_hash": "38d803ff21f81e453d6d5309af7608f0df3432423d103f09ae246f0c084b0e25",
-   "evidence_hash": "18f2a98a376e8efefedb2dde576b9a3fc47c441a1012febc37d55f0cd3027c84",
-   "label_source": "machine",
-   "rating": "ok",
-   "auto_labelled_by": "gemma4:12b",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 2
-    },
-    {
-     "name": "Google",
-     "count": 2
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Creators",
-   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -1166,18 +1187,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 107 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 107 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "b0cf26fa901911b3e36f1e0aa5db23c2625f351563cd1c9af869c2df4eedac21",
    "evidence_hash": "730d040ab4a6de25cc46c75649a2311274c764f703fcf10d8920e2b2786cf959",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "headline"
@@ -1198,18 +1219,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 96 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 96 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "2c6b3c831e981bce49303c28d1fff5680bdd5a40b9950333cbadc0a212cbc17c",
    "evidence_hash": "17a5001c22aa4e06ab2dedf962e9e6689c01bf57f638c14d29a3cfd12bb02e9d",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "site"
@@ -1230,19 +1251,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 3 figure-sentence(s); 1 of 3 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 3,
     "total": 3
    },
-   "label_evidence": "model read all 3 figure-sentence(s); 1 of 3 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "a39b5cfa239e8ee9c6b7847f0643a5f72af9d12256b472ff78798b61b6a747e9",
    "evidence_hash": "e481105d734ee1194426f1d5ec70515195bf440eced869dde78a1f3cd03a265f",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "headline"
@@ -1263,19 +1284,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 6 figure-sentence(s); 1 of 6 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 6,
     "total": 6
    },
-   "label_evidence": "model read all 6 figure-sentence(s); 1 of 6 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "ccf9ba4217cd1db0928019e7c1bf38444a757f50cf591671b4c74cf392e7609d",
    "evidence_hash": "509e7989ccb067b3a69f4fcb179037f95b38b669daf3a4f80d93aa93b9269c9a",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [
     {
      "name": "Meta",
@@ -1301,19 +1322,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 69 figure-sentence(s); 2 of 69 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 69,
     "total": 69
    },
-   "label_evidence": "model read all 69 figure-sentence(s); 2 of 69 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "83316c201e03faa1a2f4b1505a5bf1301f6e2ea9ee89c7751b65f6e08afb7045",
    "evidence_hash": "e6ecda7168338c1b01862207f613eb35957b542b3f4f2966de18c5d1140ce8f2",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [
     {
      "name": "Meta",
@@ -1343,19 +1364,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 17 figure-sentence(s); 1 of 17 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 17,
     "total": 17
    },
-   "label_evidence": "model read all 17 figure-sentence(s); 1 of 17 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "cc68e8a90bf0e26da8dbf6ffebbc182246184d8ed3ca25dfcf4e723a9a969570",
    "evidence_hash": "0f58ed103da8d8335e0f14412e692fce02e88370c84b5448cc422d0ba01185a6",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [
     {
      "name": "Meta",
@@ -1381,19 +1402,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 17 figure-sentence(s); 0 of 17 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 17,
     "total": 17
    },
-   "label_evidence": "model read all 17 figure-sentence(s); 0 of 17 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "06e150a03f22dcfd227dbabc0a4c6a815dac3c06b4c69eb26505c2f8beef866e",
    "evidence_hash": "5e3247bc79164566fbd0027a18c92c05cfd5082bd76e798ea6a3da6443b2835f",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [
     {
      "name": "Meta",
@@ -1423,19 +1444,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 12 figure-sentence(s); 3 of 12 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 12,
     "total": 12
    },
-   "label_evidence": "model read all 12 figure-sentence(s); 3 of 12 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "f1e7e588315b5c071d9d38003e58a044e1feaf443eda98c75ba7202fa7c1823c",
    "evidence_hash": "1460987da159f39b053f7855b867826e9029b1a736bf81e03437341bbccf36a2",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [
     {
      "name": "Meta",
@@ -1461,21 +1482,207 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 102 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 102 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "38ef05ad10e22596c77ea4dd51dc3e7c7525df8981c0d4034b6d39a640d683fe",
    "evidence_hash": "58dcdb670ad120432f0c2b0c11baa421250f5d42b4c06a6bc7a38fd8439af884",
+   "label_source": "machine",
+   "rating": "trusted",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "site"
+  },
+  {
+   "entity": "",
+   "headline": "Imagine an AI future where being banned means you are now economically useless",
+   "date": "2026-10-24",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "twitter.com",
+     "url": "https://twitter.com/boneGPT/status/2114035719853265264",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "article not fetched (robots-disallowed)",
+   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
    "label_schema_version": 2,
    "auto_labelled": true,
    "label_source": "machine",
    "mentions": [],
    "publisher_topic": "",
-   "entity_basis": "site"
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "OpenAI",
+   "headline": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+   "date": "2026-10-25",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "minimaxir.com",
+     "url": "https://minimaxir.com/2026/10/cheap-llms/",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 39
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "77734dc7c31e0f5fd76b55916b2772405b532a701390b44677d9959c4b656c86",
+   "evidence_hash": "073e463ce6b6f417db47fef610ba3d8ccaa0feb3a19e7187ab8a327026c82878",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 29
+    },
+    {
+     "name": "Anthropic",
+     "count": 27
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "LLMs",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "A mathematician reads the AI future",
+   "date": "Sun, 25 Oct 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theatlantic.com",
+     "url": "https://www.theatlantic.com/ideas/2026/10/ai-math-human-future/689133/",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "article not fetched (http-403)",
+   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "OpenAI",
+   "headline": "AI use leads UC Berkeley math professor to see 'no point' in grading homework",
+   "date": "2026-10-23",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "dailycal.org",
+     "url": "https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 490 chars of article text",
+   "content_hash": "54bab1c8c4a8c2857235b059b571ec8a5054c627a6077b15f3190f7dd55e8adb",
+   "evidence_hash": "6f30baebb1ff9adee5f18ed9bbc18384c0193efa93a34c16a1cc64692ba389a5",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "richard borcherds",
+   "entity_basis": "tag"
+  },
+  {
+   "entity": "",
+   "headline": "Nikon photography contest winner loses title after scientists spot signs of AI",
+   "date": "2026-10-12",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techspot.com",
+     "url": "https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 4
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "06ec78ec1eaafe07d2455d38cb519ef264b86a758e3c628d748448e8572fd0c8",
+   "evidence_hash": "c0a29e7befe288e94167017e28ac7881f489d587391940c7ac388f117c874b57",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 1
+    },
+    {
+     "name": "Google",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -1493,19 +1700,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 23 figure-sentence(s); 2 of 23 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 23,
     "total": 23
    },
-   "label_evidence": "model read all 23 figure-sentence(s); 2 of 23 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "f8199cb274eb0abd453b4791dd570622b5ab595a6b46a844bbb07355eb94f1b3",
    "evidence_hash": "00a47216475d5afec7e29179b1d2b358c7ce7b503a3f865b28e5511a88675d88",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Hugging Face",
@@ -1531,19 +1738,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 8 figure-sentence(s); 0 of 8 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 8,
     "total": 8
    },
-   "label_evidence": "model read all 8 figure-sentence(s); 0 of 8 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "d2db24d6083147b4c8c0bbfa140572e85e43b573585f42bbbf5e8b72d1f93f78",
    "evidence_hash": "ebf2f77ec89c596296fb989a4d31dc45944f8bda3852094fd41419df9e09c882",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -1581,18 +1788,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 113 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 113 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "6006491ae408266fbd47c1049e2025c8b3aa5200062310644d51fbd0482372bf",
    "evidence_hash": "be03be659186e7cd28746d73946c20a057f6785d9872fa436438d8eb24ef0214",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "unresolved"
@@ -1613,19 +1820,19 @@
      "source_tier": 2
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 6 figure-sentence(s); 0 of 6 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 6,
     "total": 6
    },
-   "label_evidence": "model read all 6 figure-sentence(s); 0 of 6 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "13615920b7fd7d1fa3e629c2ce55c4848e039fac8cf9dc271d557c755a54626b",
    "evidence_hash": "566df42691b65b81dab4ef8a5b1d967ad08ac67b8349d2bd4fc02d1dabe7908f",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [
     {
      "name": "Hugging Face",
@@ -1636,179 +1843,6 @@
      "count": 1
     }
    ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "AI-Assisted Paper on Z-Library Cites a TorrentFreak Article That Doesn't Exist",
-   "date": "2026-10-24",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "torrentfreak.com",
-     "url": "https://torrentfreak.com/ai-assisted-paper-on-z-library-cites-a-torrentfreak-article-that-doesnt-exist/",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 2,
-    "total": 2
-   },
-   "label_evidence": "model read all 2 figure-sentence(s); 1 of 2 figure-sentence(s) matched a base cue",
-   "content_hash": "fdd0d8c7d006194eb72e46a6dd902ca39d724521986943cced5da79ce462a357",
-   "evidence_hash": "13f36c35651bf7fd8421ee045a1bd0bbef8fa5a8ec1aabaf6b94c77d6aa04e3f",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [],
-   "publisher_topic": "z-library",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Microsoft",
-   "headline": "New AI Is More Than Twice as Good at Diagnosing Diseases as Doctors",
-   "date": "2026-10-22",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "gizmodo.com",
-     "url": "https://gizmodo.com/microsoft-says-its-new-ai-is-more-than-twice-as-good-at-diagnosing-diseases-as-doctors-2000829562",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 3,
-    "total": 3
-   },
-   "label_evidence": "model read all 3 figure-sentence(s); 2 of 3 figure-sentence(s) matched a base cue",
-   "content_hash": "e854a7f885a421c281ecaccbac2b44fc76ec9e132763c688f3cdf68df400e5c6",
-   "evidence_hash": "8d0fab95dfbf11a6be0bd26c71823160492cabf5e43d188359a0be30309de1c9",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Microsoft",
-     "count": 7
-    },
-    {
-     "name": "OpenAI",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "Medicine",
-   "entity_basis": "tag"
-  },
-  {
-   "entity": "",
-   "headline": "Show HN: We had AI write a wiki from 45k Enron emails, every fact cited",
-   "date": "Fri, 23 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "partial",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "thisandthat.chat",
-     "url": "https://www.thisandthat.chat/enron/",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 10 figure-sentence(s); 1 of 10 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 10,
-    "total": 10
-   },
-   "label_schema_version": 2,
-   "content_hash": "e2a9eb91bda236e04c8cfe34955efe6203023d760bb371872ad2c1241ecfb1cc",
-   "evidence_hash": "058c9463a0c2b25c35fc80333cf10380c06924ff6d21984ee6ef397469d8623d",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "The same AI request emits 8.5 times more CO2 in Texas than in Sweden",
-   "date": "Fri, 23 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "partial",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "berget.ai",
-     "url": "https://berget.ai/en/blog/per-request-co2-press-release",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 18 figure-sentence(s); 2 of 18 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 18,
-    "total": 18
-   },
-   "label_schema_version": 2,
-   "content_hash": "5f05c38f2789300a189084aeac8c9ad4cde7c1bd2b4a259feb1644bd063112ce",
-   "evidence_hash": "c2dffc347d0450b06ba303fdde0ff713c3a17beeeb6035153dcc07706328e552",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "AI cloud",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "AI compute is the new oil–and needs a new market",
-   "date": "2026-10-22",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "economist.com",
-     "url": "https://www.economist.com/finance-and-economics/2026/10/22/ai-compute-is-the-new-oil-and-needs-a-new-market",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "article not fetched (http-403)",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
    "publisher_topic": "",
    "entity_basis": "unresolved"
   },
@@ -3688,18 +3722,50 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 4 figure-sentence(s); 1 of 4 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 4,
     "total": 4
    },
-   "label_evidence": "model read all 4 figure-sentence(s); 1 of 4 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "1452067836ff94f9bc2dac76335491b2fd7fd0fa67b2b02288e2a659124184c3",
    "evidence_hash": "5a60874ea55986e93c1dfc6b66f120023c52ce857ca160f094e01b26e4648a7e",
+   "label_source": "machine",
+   "rating": "ok",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "site"
+  },
+  {
+   "entity": "OpenAI",
+   "headline": "Broad access through consistent standards",
+   "date": "2026-10-21",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "openai.com",
+     "url": "https://openai.com/index/broad-access-through-consistent-standards/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "article not fetched (http-403)",
+   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
    "label_schema_version": 2,
    "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
    "mentions": [],
    "publisher_topic": "",
@@ -3721,49 +3787,17 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 15 figure-sentence(s); 7 of 15 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 15,
     "total": 15
    },
-   "label_evidence": "model read all 15 figure-sentence(s); 7 of 15 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "d315ad0e2ea6aa22ce08aa47dd31063bbf4d034382a60355febcb29cb6540555",
    "evidence_hash": "789c913ab2d8d4be66a52bf6b7871825d75b577f0b77b43c3ade2800631dfaab",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "site"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "Bringing GPT-Rosalind to academic research labs",
-   "date": "2026-10-15",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "openai.com",
-     "url": "https://openai.com/index/introducing-the-rosalind-academic-plan/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 2
-   },
-   "label_schema_version": 2,
-   "content_hash": "429e9e1b8bfb41de7eb1e040524284b7dfcbfcfb5acfd4067e5bb586e4a55b37",
-   "evidence_hash": "1e5ce52e26842c4d1d7004302415edc73af4d6c2afa730f0ec9bda5321ca1933",
    "label_source": "machine",
    "rating": "ok",
    "mentions": [],
