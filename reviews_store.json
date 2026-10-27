@@ -24610,6 +24610,340 @@
  "https://openai.com/index/broad-access-through-consistent-standards/": {
   "denominator_stated": "?",
   "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model returned an invalid denominator label",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "d2717e2116637035ab68c781da2ac0268b6ee4bf887d890ac28fb8fc534e5d90",
+  "evidence_hash": "430e8502549b5911a480b940eb734da85cafb159f9ce3e7dbbf4437cea88cc3a",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 5 figure-sentence(s); 2 of 5 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 5,
+   "total": 5
+  },
+  "label_schema_version": 2,
+  "content_hash": "3bf5db99ca779163192e820bb2f441d3acc1fd839cf726ecc68c46d8aaa32e45",
+  "evidence_hash": "e8e475da5be3da8a2504a38b3c8e375298d94029ce969c9afc3fc6c9b005b7d9",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/10/26/how-openai-turned-its-coding-tools-into-dots-an-always-on-personal-assistant/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 8178 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "0abc10212667dbfdfbc38c3dc3b857bd5a553349c2e1320486fe53b9b4fd1090",
+  "evidence_hash": "50d7ddcfd8f3743e9671815c4b9450ec8c6fd474bc24cf3c9e8a1a03a651346d",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 4760 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "ce1b95d413b0f821f96f1ed3b4647973532dc8f4565e00565c41a93ae3a12aae",
+  "evidence_hash": "be6e9af6333a6f9cd649c646730eca7bca3fbd2c4f328a7967cb48bfaaa0b109",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 7 figure-sentence(s); 1 of 7 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 7,
+   "total": 7
+  },
+  "label_schema_version": 2,
+  "content_hash": "8a5795a1638a542b124af34325881140668b017457a5b489cd393dbc7d26bbd2",
+  "evidence_hash": "c063c211e74c525c3bd5c87ed5da432dd7693b328a3831b4fb2c6cc23eb69f6c",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 5 figure-sentence(s); 2 of 5 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 5,
+   "total": 5
+  },
+  "label_schema_version": 2,
+  "content_hash": "553ce575d4a5b4c11f28ee68d9581b19b26884355bc99f0c5556dad1ba23981d",
+  "evidence_hash": "5b51c7ca137ce8c3b449baca5fa505726210c72344b4391fc79b8447e66e9137",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1018738/anthropic-ipo-s1-filing-weird-details": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 7 figure-sentence(s); 0 of 7 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 7,
+   "total": 7
+  },
+  "label_schema_version": 2,
+  "content_hash": "303d27510df3836b9e094d32d8553ec78667796fc541af6314acb6a12c060c18",
+  "evidence_hash": "f8be0152303419a53683dc8b44c78a9b6ad317c2327c9277ec4a678c0105ae12",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 4,
+   "total": 4
+  },
+  "label_schema_version": 2,
+  "content_hash": "1e6d95b18b9429915622399016215d0ff32a761134c9af7e4bf8011e78ea668c",
+  "evidence_hash": "5ff909d28bea78fead9210b142a8fa48c76b57ac8a0abf97c79f2b12749b446b",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "056c3046f9fe3388184aae5cb674e03cd67e328423c6e540342a3152f1665dd5",
+  "evidence_hash": "3f49fd8bac104cd08c0248c93bc9a881174ad1164b48701e222f2b666338b675",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "71bc5ebfc82eeb6dd0b2f55133fc41a4fee8520f35eebc82330c7be79c490c9a",
+  "evidence_hash": "104a3a334eec448be7f6a992b017520018cfef0c6652bfe546f627825cdf61e4",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 3,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "c9b4742e1256b0d14a4c4350bc44f3af6ea83b7ce263a587135eee386e07cefb",
+  "evidence_hash": "02d903c84357e30430223a17060ecdf5476c14fdce0924dcd96351bff05d8960",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/tech/1018666/microsoft-expands-buyouts-60000-employees-eligible": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 6 figure-sentence(s); 0 of 6 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 6,
+   "total": 6
+  },
+  "label_schema_version": 2,
+  "content_hash": "a0f3cc7d2d27ce3d7eb7ce8084a4c2af5c8ea2ad74633f3b880e73e221aafa26",
+  "evidence_hash": "a4d54de7bc0781728ce4416b48bb1b357e51ab417d4e9c3520d148e67c60d785",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/podcast/1018264/kevin-roose-the-agi-chronicles-machine-gods-podcast-youtube-openai-anthropic": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 11 figure-sentence(s); 0 of 11 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 11,
+   "total": 11
+  },
+  "label_schema_version": 2,
+  "content_hash": "7fab056ab3bb574c1cc9bcaf63022485dc7da07bd9831a62311e325f1c158b13",
+  "evidence_hash": "6bf6267223fd0d746911c744fe6fe1420700f8e175f0e48d3a8288454f1c161e",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1018434/cobol-migration-legacy-code-openai-anthropic": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 9 figure-sentence(s); 0 of 9 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 9,
+   "total": 9
+  },
+  "label_schema_version": 2,
+  "content_hash": "776b56fb36fcfc5a29f848e48f1a3c166155332df507030b7c37908b4ff4a5fa",
+  "evidence_hash": "bd48d081f2384438e273dbfd5d9fd60bc5b32f67d40e778d3d5fe692d74a8fda",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/ai/2026/10/boston-dynamics-employees-want-to-block-sale-of-robot-dogs-to-ice/": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 5 figure-sentence(s); 1 of 5 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 5,
+   "total": 5
+  },
+  "label_schema_version": 2,
+  "content_hash": "4139f680f421e0871d2c5f42f0d1899e2ef6c406200a8ac621f7137c472b5da3",
+  "evidence_hash": "949b7de1247d466c2328960ce430728b4367a06b1aa6cbc3dc55ab9dc4c4ff83",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/apple/2026/10/apple-releases-ios-and-macos-27-2-with-new-siri-ai-features-new-music-logo/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 7 figure-sentence(s); 0 of 7 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 7,
+   "total": 7
+  },
+  "label_schema_version": 2,
+  "content_hash": "ed442d6b0ffc85005eb46f9473572d9952ba4f07f9794689ee5fd1800c70b15e",
+  "evidence_hash": "2a71497b5a4993ddfe043c231fd518c89e51566032bb6e724fc941e29f77c3ef",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/tech-policy/2026/10/highway-thieves-are-spoofing-gps-to-steal-millions-in-data-center-bound-cargo/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 5 figure-sentence(s); 0 of 5 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 5,
+   "total": 5
+  },
+  "label_schema_version": 2,
+  "content_hash": "a60d5a431f69f654be884c79da1c9ca213a95da24a15a78cc1a94825ec11ad38",
+  "evidence_hash": "e636e2e24084c9517c7b6247a99911f42f65b2951ef3f1679e23be31508b2eca",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/cars/2026/10/tesla-wants-ai-and-software-to-be-its-next-profit-engine/": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 10 figure-sentence(s); 0 of 10 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 10,
+   "total": 10
+  },
+  "label_schema_version": 2,
+  "content_hash": "86e6f55b9850ab2f155c1b9a5c3bd262f593faa46c379ad7c57e338f9759ce2e",
+  "evidence_hash": "7700063b75eaf89963d202094e216d385073b6531c76351cf3d853faf9c85242",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://blog.cloudflare.com/kv-cache-exposure-remediation/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 47 figure-sentence(s); 0 of 47 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 47,
+   "total": 47
+  },
+  "label_schema_version": 2,
+  "content_hash": "2f4c36bd62d8b5a3cbf84feb3bd8b2775e2f7e8191cfca00d7be544f09143293",
+  "evidence_hash": "76a8379a991a0a6b8aca0678ceb790a580b8ee14466f1a5f03d717f8d78ce4e4",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.404media.co/proton-to-re-interview-staff-about-ai-to-see-who-gets-to-keep-their-job/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "d2ac11bef5ea5220c336efa81527fbe885ee6487dbc18901f64b36590a911f38",
+  "evidence_hash": "712f8f0c8d59bbf8f48abc035ca67fba174fb8e6dcebbc4870b266ab89908de7",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 23 figure-sentence(s); 0 of 23 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 23,
+   "total": 23
+  },
+  "label_schema_version": 2,
+  "content_hash": "ca7ac80d07c5dd6ac78843aed2dbb3bf067cbb02e50acacb414a0b2a5d59ec99",
+  "evidence_hash": "e7d2f4bf21b5ef8145db3e99515625bb33132f6385a5be655f7a1c1a78b06df5",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
   "label_evidence": "article not fetched (http-403)",
   "evidence_method": "unassessed",
   "evidence_coverage": {
@@ -24619,6 +24953,146 @@
   "label_schema_version": 2,
   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.brown.edu/news/2026-10-26/ai-data-workers": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 2118 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "5c617e747e858c45bf2037a07f78439f98003b1244c4af1851aa14aedec8b571",
+  "evidence_hash": "fe2ba266d293631d4da3788f2591e1e4b69472133732fd72b346092f47450c6f",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://contraptions.venkateshrao.com/p/cognitive-mercantilism": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 6 figure-sentence(s); 0 of 6 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 6,
+   "total": 6
+  },
+  "label_schema_version": 2,
+  "content_hash": "d5f0ad50bf334284386183c1dec6ef5b5132cc026245cc798195846a004469da",
+  "evidence_hash": "b408075f303cc9fc2eefc2885b54118792ee3a66e85c9f221087605c45759e63",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.businessinsider.com/apollo-ai-zero-financial-payoff-corporate-america-economic-analysis-2026-10": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 62 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "42a102fac276c434ce43f0679ff064c0022762f01c3b345f273d39b6ff711c6d",
+  "evidence_hash": "b85d1bdb5ecbe7626368364180f6e64370665fea0faa2bb0d1b6cafb73c7f642",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://ainowinstitute.org/news/what-should-the-rules-for-a-i-companies-actually-be-we-asked-the-experts": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "9640f1d7043221894fce9e37c8db63ea23bcdd0a4b7d4fb3979ba29523761b89",
+  "evidence_hash": "b91f710ba74ade3ede3713998fc5891eb70547efcd66215a7d683b06734a4ffd",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://ainowinstitute.org/news/the-big-tech-defectors-youre-not-hearing-about": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 843 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "bfef4d4cf3c0b4e3bc39058a906795195c0efb07bde574ca4cbeef2cdec035c1",
+  "evidence_hash": "e6d79ee46b5c716e414e2a12862b6d18f6479676439165eebf9402e9c618cedc",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://ainowinstitute.org/news/apocalypse-now-and-then-author-arundhati-roy-on-artificial-intelligence-capitalism-more": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 292 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "7ddaf65fdbc2d3ee630ad751e38799f3d1d077b48d67fae2fd2b4def6e1a66a8",
+  "evidence_hash": "31552a3a1ba9f1d457d22c974c8af4e193343173f65f7acb6c723b4ad436bcfc",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://news.mit.edu/2026/at-new-york-climate-week-mit-connects-global-network-1026": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 3,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "ec63b4007f0e7ee7a214f1041c66c7ced2074cd2f7d801ff3154a2509426c814",
+  "evidence_hash": "753b55256a3e61b55e73b22bf15eb3311f7a69cedeb53eb6ed56bbd61608c7db",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://epochai.substack.com/p/can-ai-automate-epoch": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 9 figure-sentence(s); 1 of 9 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 9,
+   "total": 9
+  },
+  "label_schema_version": 2,
+  "content_hash": "ee2b8753f4c279ceb746e3cf0f188f514d12b848a343f9246935eb3dd793c002",
+  "evidence_hash": "3ebf5aeea9979c94d7b20b7dfd2854f9a1dd2a3b7d49cbfea90698fc0858218b",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.anthropic.com/news/s1-sec": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model returned an invalid denominator label",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "c6ae8f41341f80a4cd95bfc863f5b322cbf1c46459c3a3b714d06fca6e17f7bb",
+  "evidence_hash": "9c5275e0d70f999d9a11d9e53b7d058ce24d2137ff04884bc377417eb085492c",
   "reviewed": false,
   "label_source": "machine"
  }

@@ -1,12 +1,48 @@
 {
- "generated": "2026-10-26 06:22 UTC",
+ "generated": "2026-10-27 06:21 UTC",
  "window_days": 60,
  "counts": {
-  "total": 101,
-  "closed": 45,
-  "open_weights": 56
+  "total": 102,
+  "closed": 47,
+  "open_weights": 55
  },
  "releases": [
+  {
+   "lab": "OpenAI",
+   "model": "OpenAI: GPT-6.1 Terra Pro",
+   "id": "openai/gpt-6.1-terra-pro",
+   "date": "2026-10-26",
+   "url": "https://openrouter.ai/openai/gpt-6.1-terra-pro",
+   "context_length": 1050000,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "OpenAI",
+   "model": "OpenAI: GPT-6.1 Terra",
+   "id": "openai/gpt-6.1-terra",
+   "date": "2026-10-26",
+   "url": "https://openrouter.ai/openai/gpt-6.1-terra",
+   "context_length": 1050000,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Microsoft",
+   "model": "CogACT-v2-RoboDojo",
+   "id": "microsoft/CogACT-v2-RoboDojo",
+   "date": "2026-10-25",
+   "url": "https://huggingface.co/microsoft/CogACT-v2-RoboDojo",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "microsoft/CogACT-v2-RoboDojo",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
   {
    "lab": "Moonshot",
    "model": "MoonshotAI: Kimi K3.1 Pro",
@@ -18,6 +54,18 @@
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "MotionBricks",
+   "id": "nvidia/MotionBricks",
+   "date": "2026-10-23",
+   "url": "https://huggingface.co/nvidia/MotionBricks",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/MotionBricks",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "Nvidia",
@@ -113,18 +161,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "nvidia/Cosmos3-H-Dreams",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "cosmos3-nano-libero10-sdg-export-D2_s43",
-   "id": "nvidia/cosmos3-nano-libero10-sdg-export-D2_s43",
-   "date": "2026-10-19",
-   "url": "https://huggingface.co/nvidia/cosmos3-nano-libero10-sdg-export-D2_s43",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/cosmos3-nano-libero10-sdg-export-D2_s43",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
@@ -569,18 +605,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "microsoft/AesCode-32B",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Microsoft",
-   "model": "AesCode-8B",
-   "id": "microsoft/AesCode-8B",
-   "date": "2026-09-29",
-   "url": "https://huggingface.co/microsoft/AesCode-8B",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "microsoft/AesCode-8B",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
@@ -1206,18 +1230,6 @@
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Tencent",
-   "model": "Tencent: Hy4 preview",
-   "id": "tencent/hy4-preview",
-   "date": "2026-08-28",
-   "url": "https://openrouter.ai/tencent/hy4-preview",
-   "context_length": 1048576,
-   "evidence": "open-weights",
-   "evidence_note": "weights published at huggingface.co/tencent/Hy4-preview; downloadable and hashable",
-   "hf_id": "tencent/Hy4-preview",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   }
  ],
  "errors": [],
