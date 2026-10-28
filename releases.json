@@ -1,12 +1,36 @@
 {
- "generated": "2026-10-27 06:21 UTC",
+ "generated": "2026-10-28 06:21 UTC",
  "window_days": 60,
  "counts": {
-  "total": 102,
+  "total": 103,
   "closed": 47,
-  "open_weights": 55
+  "open_weights": 56
  },
  "releases": [
+  {
+   "lab": "IBM",
+   "model": "LLMON-Benchmarks",
+   "id": "ibm-granite/LLMON-Benchmarks",
+   "date": "2026-10-28",
+   "url": "https://huggingface.co/ibm-granite/LLMON-Benchmarks",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "ibm-granite/LLMON-Benchmarks",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "Metatron-v1",
+   "id": "nvidia/Metatron-v1",
+   "date": "2026-10-27",
+   "url": "https://huggingface.co/nvidia/Metatron-v1",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/Metatron-v1",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
   {
    "lab": "OpenAI",
    "model": "OpenAI: GPT-6.1 Terra Pro",
@@ -152,18 +176,6 @@
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
-   "lab": "Nvidia",
-   "model": "Cosmos3-H-Dreams",
-   "id": "nvidia/Cosmos3-H-Dreams",
-   "date": "2026-10-19",
-   "url": "https://huggingface.co/nvidia/Cosmos3-H-Dreams",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/Cosmos3-H-Dreams",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
    "lab": "DeepSeek",
    "model": "DeepSeek: DeepSeek V4.1 Flash 1017",
    "id": "deepseek/deepseek-v4.1-flash-1017",
@@ -233,6 +245,18 @@
    "evidence": "closed",
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Prism Ml",
+   "model": "PrismML: Ternary Bonsai 2 9B",
+   "id": "prism-ml/ternary-bonsai-2-9b",
+   "date": "2026-10-16",
+   "url": "https://openrouter.ai/prism-ml/ternary-bonsai-2-9b",
+   "context_length": 262144,
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/prism-ml/Ternary-Bonsai-2-9B-gguf; downloadable and hashable",
+   "hf_id": "prism-ml/Ternary-Bonsai-2-9B-gguf",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
@@ -389,18 +413,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "ibm-granite/granite-switch-4.1-30b",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "IBM",
-   "model": "granite-speech-5.0-2b-GGUF",
-   "id": "ibm-granite/granite-speech-5.0-2b-GGUF",
-   "date": "2026-10-14",
-   "url": "https://huggingface.co/ibm-granite/granite-speech-5.0-2b-GGUF",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "ibm-granite/granite-speech-5.0-2b-GGUF",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
@@ -565,7 +577,7 @@
    "id": "inclusionai/ling-3.1-flash",
    "date": "2026-10-02",
    "url": "https://openrouter.ai/inclusionai/ling-3.1-flash",
-   "context_length": 262144,
+   "context_length": 1000000,
    "evidence": "closed",
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
