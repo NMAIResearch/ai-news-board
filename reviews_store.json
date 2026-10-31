@@ -24608,13 +24608,13 @@
   "label_source": "machine"
  },
  "https://openai.com/index/broad-access-through-consistent-standards/": {
-  "denominator_stated": "?",
+  "denominator_stated": "N",
   "auto_labelled": true,
   "auto_labelled_by": "gemma4:12b",
-  "label_evidence": "model returned an invalid denominator label",
-  "evidence_method": "unassessed",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
   "evidence_coverage": {
-   "seen": 0,
+   "seen": 1,
    "total": 1
   },
   "label_schema_version": 2,
@@ -25994,17 +25994,18 @@
   "label_source": "machine"
  },
  "https://openai.com/index/chatgpt-expanding-world-of-work/": {
-  "denominator_stated": "?",
+  "denominator_stated": "Y",
   "auto_labelled": true,
-  "label_evidence": "article not fetched (http-403)",
-  "evidence_method": "unassessed",
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 11 figure-sentence(s); 1 of 11 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
   "evidence_coverage": {
-   "seen": 0,
-   "total": 0
+   "seen": 11,
+   "total": 11
   },
   "label_schema_version": 2,
-  "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+  "content_hash": "70d5024edad9a2c907ed85a19186df127cfe2118ad27ceb1a7b1f3215e5ed0d2",
+  "evidence_hash": "ff59b4cc01ab65e0054733af9013555b332a61e13894d7e0e5ea0d4e4890e360",
   "reviewed": false,
   "label_source": "machine"
  },
@@ -26476,6 +26477,571 @@
   "label_schema_version": 2,
   "content_hash": "f6f46856cea58dd739368b0a797bbfe735b04a1acd716335cbc6afca3badb958",
   "evidence_hash": "7b71e09a542e0c660d83a9a0a789e3ae8a5ed167e6852d29d2ec7fbb32e2312a",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "e1d973973d4da3f7b1eee014d9e3480b959cb28f0b8298426f8816b8f65507a2",
+  "evidence_hash": "a02c0e5eff1375d2b3841cad6c7711ae1cf393056b5557fe12c6b2ec1d32a183",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 7 figure-sentence(s); 0 of 7 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 7,
+   "total": 7
+  },
+  "label_schema_version": 2,
+  "content_hash": "14d35eab0b18d2f808a39480505b266567cb5ab4ad87ee16aecc3fffa729eace",
+  "evidence_hash": "a53fdf813aa8409843f90d31772225ec1a2ecce17101065977151f47683d6dd8",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "adee1e0ddf1ab1df34e182aab637361aef5a3ca3d87df6baf7d82b9ce2a7cf2a",
+  "evidence_hash": "4005a60e82e501a427e06b1c8d8143a20aa18412d04342556e93c97b01764300",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 7 figure-sentence(s); 0 of 7 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 7,
+   "total": 7
+  },
+  "label_schema_version": 2,
+  "content_hash": "3c5da5ac55a92f0bfdb81a59d7715b32b0d417d757d2f2141230b85d189072d5",
+  "evidence_hash": "173f16f3aa2cedb34e02404b9679e5fde3ec7cb92dec0b18ff565a8a6d222306",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/10/30/last-minute-halloween-costumes-for-tech-nerds/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 7294 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "e6e474262fbdc01ae0726d3caf86918a0259ff70f6a694e36c3dc2df7f4b5b35",
+  "evidence_hash": "e56b656102d5073952261752676da86e79432a322dfec21871accd6669a1d7cc",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 15 figure-sentence(s); 1 of 15 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 15,
+   "total": 15
+  },
+  "label_schema_version": 2,
+  "content_hash": "d592a5d5438b2788da2be2163577a49224ae3154e6aa5fa6ceb37937c717bfc8",
+  "evidence_hash": "29dfa7f8f385fadfa53e29e369d3718fe9f209751321c482c9a7607a071342b4",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "9400a9976656421782004eded198d39796b58602b543ecf0fd1a99c6cbee7942",
+  "evidence_hash": "ff476d88d75f798cca7dab25543bee24a088ba9fbba60de70542eae883b4e49c",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 5 figure-sentence(s); 0 of 5 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 5,
+   "total": 5
+  },
+  "label_schema_version": 2,
+  "content_hash": "1b85113a72812cc084f6aed362ede28314b51b1693dd9059b688aeb2fa7fab83",
+  "evidence_hash": "b32318e3b73ed0dafa27d54e1c61ede55cd7521c01a9f5d2904111f011a855f6",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 4,
+   "total": 4
+  },
+  "label_schema_version": 2,
+  "content_hash": "e5902bf980bc0c5148caedd7521d184a536de193389adabc1e95a1234eb2004d",
+  "evidence_hash": "3935d5b2bb1145947503668828bf69096e79ef1683c361ac6c6c10d09bb8da2d",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 2991 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "6caf06ddaa4787d6fb31a2331dfc185cac4c7898588f9fd6369e16103e38e87f",
+  "evidence_hash": "583ee985e31a6881b7fb8973c43f52aeb947b56ccdac8eab2664abb3efe52cc4",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 3559 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "c1d28c7214e1aa28d2bdf857fb5c4d4c39a038852aed91d7b10dc27c40f29054",
+  "evidence_hash": "fdd17e8306e52a1fffb2ac1b930979aead1033ee87573772e3690ddf871eece5",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "984a3b269dcbc59c650f9bb12b1d1d1dddce54778ad9335b12fcb25ae3b83bc5",
+  "evidence_hash": "2b4c2c8f6c95094b324e28470dd085b752f80849b11b0f78f558ff1f39d125b1",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 2676 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "68dd731cacbdd50aa67d4cbbd68641897800566fdb0e546ec4f275d9c35d5c40",
+  "evidence_hash": "b19d0f2bc85ca8d3405bf637c533e6dd51ef6bc8ccb0b4f675a7a909f8c32318",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1023188/pope-leo-disarm-ai": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 2789 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "04cea2384a3cc66dfd3979ba367ae12996d7a8e6f72ad3ac1bc863a8aeae364d",
+  "evidence_hash": "232ca563f77ce0373e88f127c5ec8f6d34a8b0d2a1cc382376fe2f7c1e0a7665",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1023070/anthropic-ipo-risk-factors-filing-miracles": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 9 figure-sentence(s); 0 of 9 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 9,
+   "total": 9
+  },
+  "label_schema_version": 2,
+  "content_hash": "64a96f5de2a6c36b9285fea7aaed6706352d75551636a53e74376636f7b4f45a",
+  "evidence_hash": "506dcdd357b49bc1a68867f925e56f423532e87bf37abf6d5cd6e837adf1f912",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1023054/altman-cheeky-pint-ai-math-interview": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "3dfc001b0be8c89c8e88c6eb2a84b31ad3adb713cafd88999fe74cc3c0fc4951",
+  "evidence_hash": "30daa0c0c99ea1409242626b992d52b8ac3bde849c68623e95fc8215d4be04cf",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1021080/maine-senate-race-susan-collins-ai-data-centers": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 20 figure-sentence(s); 2 of 20 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 20,
+   "total": 20
+  },
+  "label_schema_version": 2,
+  "content_hash": "45ff8656ca4d5964dd08d00bec65d18255aa2d884ccec9a5d6c874b35091ba38",
+  "evidence_hash": "bb58373ae09e7aaabf08aeee29bef3eb79c7e3c0ce7498ccf9dafb2efda2bc71",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/gadgets/2026/10/united-airlines-ceo-doubts-supersonic-airliner-from-boom-will-be-ready-by-2029/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 6 figure-sentence(s); 0 of 6 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 6,
+   "total": 6
+  },
+  "label_schema_version": 2,
+  "content_hash": "1f074e7df8e13a8b74582ac6b47f9f56719aa64df73ac9d00b96b327254d4168",
+  "evidence_hash": "18a9f705d8ff1d5db259c8b8cb8da6a5d9d73723eb5cdc4a2a41f07c6df5d81f",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 6 figure-sentence(s); 1 of 6 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 6,
+   "total": 6
+  },
+  "label_schema_version": 2,
+  "content_hash": "bc08b71ea2c02fa96f8b69e3dd32d3e72ab1b779d92d1a2f074446cc66930ad8",
+  "evidence_hash": "af9ec961e8e12b8e0e75cb409dc291edbb71cc5047255ac47f7207da7e746231",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-own-ai-use-cost-him-his-job/": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "6f3250023408a934ce576dbbe27cd5746b1f3a65c2aaf7c9d22be3890d00a87f",
+  "evidence_hash": "44c3086b2f764d6eaa0d82f5731c69e30cb4cf35b651aed31900e58f702e5f55",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 2 figure-sentence(s); 1 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "4c30a3580bb3af591dca55014cf0a5fedf08d7c7d593f7f3511cca401ca3bd33",
+  "evidence_hash": "4e524102e4a282a1165b85ec3644a8d09ff3161b708436890a58b62c6a644e78",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 3,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "2accc00e1e35d5e2f638623c82c46de7f318d1553e9fd26671ff7b4bd5c82836",
+  "evidence_hash": "4a7a97a8431f8571799125c8b8440e41d4b0054638ba1ef961790605df5fc54d",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/tech-policy/2026/10/doj-exposes-ghost-students-using-ai-to-complete-courses-steal-student-loans/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 8 figure-sentence(s); 0 of 8 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 8,
+   "total": 8
+  },
+  "label_schema_version": 2,
+  "content_hash": "4f229661ba8dab6fb33b9eca2bf1b2a8d4ff23265e83a212231be242ef898cd7",
+  "evidence_hash": "d05e22f29c8a004180b93c7be3f54e9fbc483e9aedd6e9f0e4ddb1545dce1ef8",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "article not fetched (http-403)",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "article not fetched (robots-disallowed)",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "article not fetched (robots-disallowed)",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.404media.co/protons-ceo-cancels-ai-re-interviews/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 8 figure-sentence(s); 0 of 8 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 8,
+   "total": 8
+  },
+  "label_schema_version": 2,
+  "content_hash": "e3146472068d067be81893bf64dfeb9f1cf360596d6ea7123cb3c77a2e30eae7",
+  "evidence_hash": "35251c9e5a55e1409512e9f9cb5eeec6c723aebbbd0fd51f0819a4b94524105f",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 13 figure-sentence(s); 0 of 13 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 13,
+   "total": 13
+  },
+  "label_schema_version": 2,
+  "content_hash": "25174fcf96a753335202814aa3d56c40b8157bcbf1b3dc5868ab5cf072e0b7b5",
+  "evidence_hash": "308bfdf5418d4b74e08b571e3637f1f1c738e6127db5d1e3b7de14a66016fa42",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://twitter.com/chasmmmmmmmmmmm/status/2116062991686721968": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "article not fetched (robots-disallowed)",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.youtube.com/watch?v=Ii-aeW5pHPQ": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 250 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "a929d0c2c13c01af4c9c546e6cacaa94a27f968ec3690f6c9435d1212a2c333c",
+  "evidence_hash": "ffb1b196949570a67b5c8696b05e57822e37e52cad2bb384962529cf18677aa2",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 5 figure-sentence(s); 0 of 5 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 5,
+   "total": 5
+  },
+  "label_schema_version": 2,
+  "content_hash": "adfd88d80e1eafb23733c3a0f617341644a55d1b389913bea825f23ef07892e3",
+  "evidence_hash": "5de0fc794f74beda6372ec405c7ecda4969ea31eac346c73f18c1d5155be609a",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://news.ycombinator.com/item?id=50301479": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 167 figure-sentence(s); 6 of 167 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 167,
+   "total": 167
+  },
+  "label_schema_version": 2,
+  "content_hash": "1acbfc187d1d5b590c963488f6495cf868dade36389390617aec19ab7174fc02",
+  "evidence_hash": "b38fb956aabce362c66a21e53388840603252b52832ed478953f4e827475abc3",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 3,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "f85a35a72d0803876408fdf27e80e75e17829c31f546885596699d35f657c731",
+  "evidence_hash": "783181d9ae74597ab6de75eafa2a9dbb4365c264eef47b57a30527b0d50fcd0f",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://news.mit.edu/2026/qa-hey-ai-who-should-i-vote-for-this-year-1030": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 13782 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "e9c22c66c45a07fd7176b756a0ffecfb8572b7dfea107bb24e73c5d9da4b83c1",
+  "evidence_hash": "88dc74dd7216f1c9e6201df59feeb536a6c709ce37addd8e54054c707deadcf3",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.finops.org/insights/experimental-ai-spend-endgame/": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "5815ecb9a2a9793680902a88d26646607fa8608b65eb264037287fe99d085476",
+  "evidence_hash": "a86a43f4bb79086c6f317dd3a47002da18e575b9f26c5578002f9126495f8288",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://epochai.substack.com/p/glm-patch-gap-exploit-firefox": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 15 figure-sentence(s); 0 of 15 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 15,
+   "total": 15
+  },
+  "label_schema_version": 2,
+  "content_hash": "bda57baaed30796eddd77cb30864fac9c3eb0a40feb3598b74c1b483a21d85eb",
+  "evidence_hash": "e7868ed7105ac27dad86f09993ae3c94557303d57fac7c1404c2bdb823d03cbb",
   "reviewed": false,
   "label_source": "machine"
  }
