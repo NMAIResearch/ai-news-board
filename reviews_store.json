@@ -21330,7 +21330,7 @@
   "label_source": "machine"
  },
  "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/": {
-  "denominator_stated": "partial",
+  "denominator_stated": "Y",
   "auto_labelled": true,
   "auto_labelled_by": "gemma4:12b",
   "label_evidence": "model read all 6 figure-sentence(s); 1 of 6 figure-sentence(s) matched a base cue",
@@ -21346,7 +21346,7 @@
   "label_source": "machine"
  },
  "https://deepmind.google/blog/gemini-4-argon-for-robotics/": {
-  "denominator_stated": "partial",
+  "denominator_stated": "Y",
   "auto_labelled": true,
   "auto_labelled_by": "gemma4:12b",
   "label_evidence": "model read all 69 figure-sentence(s); 2 of 69 figure-sentence(s) matched a base cue",
@@ -25837,7 +25837,7 @@
   "label_source": "machine"
  },
  "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/": {
-  "denominator_stated": "partial",
+  "denominator_stated": "Y",
   "auto_labelled": true,
   "auto_labelled_by": "gemma4:12b",
   "label_evidence": "model read all 11 figure-sentence(s); 0 of 11 figure-sentence(s) matched a base cue",
@@ -25979,17 +25979,18 @@
   "label_source": "machine"
  },
  "https://openai.com/index/building-scientific-understanding-with-academic-communities/": {
-  "denominator_stated": "?",
+  "denominator_stated": "N",
   "auto_labelled": true,
-  "label_evidence": "article not fetched (http-403)",
-  "evidence_method": "unassessed",
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
   "evidence_coverage": {
-   "seen": 0,
-   "total": 0
+   "seen": 3,
+   "total": 3
   },
   "label_schema_version": 2,
-  "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+  "content_hash": "1787c3c3d126b914ff3ebcda69a33191ea98c82a0c5a4d168bb8c69859ec191d",
+  "evidence_hash": "38bfd387eff17ff5470f6093c16f8fb213bc7de70be626d798afac4b0b809ec1",
   "reviewed": false,
   "label_source": "machine"
  },
@@ -27042,6 +27043,195 @@
   "label_schema_version": 2,
   "content_hash": "bda57baaed30796eddd77cb30864fac9c3eb0a40feb3598b74c1b483a21d85eb",
   "evidence_hash": "e7868ed7105ac27dad86f09993ae3c94557303d57fac7c1404c2bdb823d03cbb",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "0cc607780c2d52cf744c9fe29e193e7f4adf2cadac305a2059001a53592f1192",
+  "evidence_hash": "ab846412cc614ca105126e8f870dccbc803e5817550215b4bbf08b67a326d2ed",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 1683 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "93ce2b4b09a0336ba9c8932dee4880e5ebd1d7ff4b0ebacf07b4fc3e1b86c64d",
+  "evidence_hash": "374c817aa31aeccc376de87e38a1925fbb87d0b4ab7661ab51b52535cb30e607",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/10/31/4-days-left-how-techcrunch-founder-summit-helps-you-make-more-useful-connections-to-scale/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "56324e09544ef2508be8c7fa11cb0dab2220cb74dd0869d84bdd494e36d95f57",
+  "evidence_hash": "c5361db9b33f8adf75da9a515b1b1e81afb8ffc95984bf0d9d66ce577003dbe3",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 4,
+   "total": 4
+  },
+  "label_schema_version": 2,
+  "content_hash": "5ba22ef5ed43226ea9c0aff0b46b1dcceb04e674aa051aa890bbb4737ac18bed",
+  "evidence_hash": "d7d3c0fcf9e2932f5e28e61926e2d6d66c05741a0c54facbaf52768c1826a2b4",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 4,
+   "total": 4
+  },
+  "label_schema_version": 2,
+  "content_hash": "07c62d7fd2dba476f1f39215de8daef1b4bde598294c4e0bdba3cc211e9b174b",
+  "evidence_hash": "2c511e3923b02d94f710c291259dea852127ce9bc5f8b800c24f8b46c7c81025",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 2 figure-sentence(s); 1 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "43f34dfd04676d6e4279b2fd17e6fd0f8139d8ea0b970356bc802f3e9b95a272",
+  "evidence_hash": "f0e08ba223cab8a87743d137e442ff2c17b74fb7fd26402663eb837775d7d968",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://twitter.com/jiahaoshao1/status/2116475922190922088": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "article not fetched (robots-disallowed)",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://dl.acm.org/doi/full/10.1145/3706598.3713778": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "article not fetched (http-403)",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.indiatoday.in/technology/news/story/ai-startup-hacks-anthropic-in-12-hours-gains-access-to-employee-details-and-internal-messages-3025452-2026-10-26": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 9 figure-sentence(s); 0 of 9 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 9,
+   "total": 9
+  },
+  "label_schema_version": 2,
+  "content_hash": "f1ecbdb0266500692c3d2729eee68adb69877c2f1eb9a455ce92f937076ef634",
+  "evidence_hash": "128ef78be6cb25fbb06bf6f4f49fb3483c504ca41390daca4332c4e4edae5e4b",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-ai-model-is-now-blocking-attempts-at-video-game-recreation-and-cloning-users-also-claim-non-malicious-generic-reverse-engineering-tasks-are-blocked": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "4024e5c4c3cd5a3bd81db0c02301fc15731df85392203717f6570369a56faa46",
+  "evidence_hash": "a956b414fa6c57bb6cb33095827ece58c368801aed4572557030671dd2e8080c",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.thebignewsletter.com/p/why-anthropics-filing-crushed-tech": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 14 figure-sentence(s); 0 of 14 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 14,
+   "total": 14
+  },
+  "label_schema_version": 2,
+  "content_hash": "6b95481dada2d3bc2d7714d5c6759c7fc452d79eb3253211c2bbadcb82551e52",
+  "evidence_hash": "68259fc768cee2721786836d9a372f65b97d33d5ec2cfcd2a391eda9de809f02",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://openai.com/index/how-we-detect-frontier-model-misalignment/": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 14 figure-sentence(s); 0 of 14 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 14,
+   "total": 14
+  },
+  "label_schema_version": 2,
+  "content_hash": "920bd10bfa880606f827e77957c03b3f2d39f9b312c3f2af88bd477155e0c239",
+  "evidence_hash": "79cd8246c326aafaa247f369e5fc966858d2b82ca2aa40fe3ca01f8be07ed636",
   "reviewed": false,
   "label_source": "machine"
  }

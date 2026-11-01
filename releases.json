@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-31 06:21 UTC",
+ "generated": "2026-11-01 06:21 UTC",
  "window_days": 60,
  "counts": {
-  "total": 101,
-  "closed": 47,
-  "open_weights": 54
+  "total": 98,
+  "closed": 46,
+  "open_weights": 52
  },
  "releases": [
   {
@@ -1178,42 +1178,6 @@
    "date": "2026-09-02",
    "url": "https://openrouter.ai/google/gemini-3.8-flash",
    "context_length": 1048576,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Cohere",
-   "model": "tiny-aya-en-thinker",
-   "id": "CohereLabs/tiny-aya-en-thinker",
-   "date": "2026-09-02",
-   "url": "https://huggingface.co/CohereLabs/tiny-aya-en-thinker",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "CohereLabs/tiny-aya-en-thinker",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Cohere",
-   "model": "tiny-aya-l2-thinker",
-   "id": "CohereLabs/tiny-aya-l2-thinker",
-   "date": "2026-09-02",
-   "url": "https://huggingface.co/CohereLabs/tiny-aya-l2-thinker",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "CohereLabs/tiny-aya-l2-thinker",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Anthropic",
-   "model": "Anthropic: Claude Fable 5.1",
-   "id": "anthropic/claude-fable-5.1",
-   "date": "2026-09-01",
-   "url": "https://openrouter.ai/anthropic/claude-fable-5.1",
-   "context_length": 1000000,
    "evidence": "closed",
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
