@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-01 06:20 UTC",
+ "fetched": "2026-11-02 06:20 UTC",
  "items": [
   {
    "entity": "xAI",
@@ -17,19 +17,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 1,
     "total": 1
    },
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "0cc607780c2d52cf744c9fe29e193e7f4adf2cadac305a2059001a53592f1192",
    "evidence_hash": "ab846412cc614ca105126e8f870dccbc803e5817550215b4bbf08b67a326d2ed",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "xAI",
@@ -98,6 +98,112 @@
    "entity_basis": "headline"
   },
   {
+   "entity": "OpenAI",
+   "headline": "OpenAI might rebrand its data centers as ‘AI compute campuses’",
+   "date": "Sun, 01 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 1759 chars of article text",
+   "content_hash": "ff882bb9c66ca8e558adfee4fd11089eeda93e9e17715c3b3cb46569474150aa",
+   "evidence_hash": "0a6215ff28dddb2aca9ce6bb75bbd9125159641d985944294c8c1db4ed817a62",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 5
+    },
+    {
+     "name": "Microsoft",
+     "count": 1
+    },
+    {
+     "name": "Amazon",
+     "count": 1
+    },
+    {
+     "name": "Apple",
+     "count": 1
+    },
+    {
+     "name": "xAI",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Chris Lehane",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "AI can make tech CEOs’ lives easier. What about everyone else?",
+   "date": "Sun, 01 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-everyone-else/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 8495 chars of article text",
+   "content_hash": "a39831b325017bfb1b7c9904793c23971f0d75a7b2d9cdd04af9f22c453c62c6",
+   "evidence_hash": "2a7f01cb1f16a8e333cb6d8a5e459701390946157cb14299725f04a5993927cf",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 3
+    },
+    {
+     "name": "Anthropic",
+     "count": 3
+    },
+    {
+     "name": "Meta",
+     "count": 3
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Amazon",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Marissa Mayer",
+   "entity_basis": "unresolved"
+  },
+  {
    "entity": "Apple",
    "headline": "Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’",
    "date": "Sat, 31 Oct 2026",
@@ -113,18 +219,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 1683 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 1683 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "93ce2b4b09a0336ba9c8932dee4880e5ebd1d7ff4b0ebacf07b4fc3e1b86c64d",
    "evidence_hash": "374c817aa31aeccc376de87e38a1925fbb87d0b4ab7661ab51b52535cb30e607",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Apple",
@@ -154,19 +260,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 1,
     "total": 1
    },
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "56324e09544ef2508be8c7fa11cb0dab2220cb74dd0869d84bdd494e36d95f57",
    "evidence_hash": "c5361db9b33f8adf75da9a515b1b1e81afb8ffc95984bf0d9d66ce577003dbe3",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Anthropic",
@@ -200,19 +306,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 4,
     "total": 4
    },
-   "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "5ba22ef5ed43226ea9c0aff0b46b1dcceb04e674aa051aa890bbb4737ac18bed",
    "evidence_hash": "d7d3c0fcf9e2932f5e28e61926e2d6d66c05741a0c54facbaf52768c1826a2b4",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -343,109 +449,6 @@
    "entity_basis": "unresolved"
   },
   {
-   "entity": "",
-   "headline": "Intel’s stock crashes, knocking $12B from government’s stake",
-   "date": "Fri, 30 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 7 figure-sentence(s); 0 of 7 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 7,
-    "total": 7
-   },
-   "label_schema_version": 2,
-   "content_hash": "3c5da5ac55a92f0bfdb81a59d7715b32b0d417d757d2f2141230b85d189072d5",
-   "evidence_hash": "173f16f3aa2cedb34e02404b9679e5fde3ec7cb92dec0b18ff565a8a6d222306",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Nvidia",
-     "count": 2
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    },
-    {
-     "name": "Amazon",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Intel",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Last-minute Halloween costumes for tech nerds",
-   "date": "Fri, 30 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/10/30/last-minute-halloween-costumes-for-tech-nerds/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 7294 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "e6e474262fbdc01ae0726d3caf86918a0259ff70f6a694e36c3dc2df7f4b5b35",
-   "evidence_hash": "e56b656102d5073952261752676da86e79432a322dfec21871accd6669a1d7cc",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 4
-    },
-    {
-     "name": "OpenAI",
-     "count": 3
-    },
-    {
-     "name": "Anthropic",
-     "count": 2
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    },
-    {
-     "name": "Amazon",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Halloween",
-   "entity_basis": "unresolved"
-  },
-  {
    "entity": "Meta",
    "headline": "I built an AI Tamagotchi before Meta could",
    "date": "2026-10-31T12:09",
@@ -461,19 +464,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 4,
     "total": 4
    },
-   "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "07c62d7fd2dba476f1f39215de8daef1b4bde598294c4e0bdba3cc211e9b174b",
    "evidence_hash": "2c511e3923b02d94f710c291259dea852127ce9bc5f8b800c24f8b46c7c81025",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Meta",
@@ -1258,18 +1261,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 107 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 107 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "b0cf26fa901911b3e36f1e0aa5db23c2625f351563cd1c9af869c2df4eedac21",
    "evidence_hash": "730d040ab4a6de25cc46c75649a2311274c764f703fcf10d8920e2b2786cf959",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "headline"
@@ -1290,19 +1293,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 11 figure-sentence(s); 0 of 11 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 11,
     "total": 11
    },
-   "label_evidence": "model read all 11 figure-sentence(s); 0 of 11 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "e15bce1f3562bd9dda95bdec6de8b1dbd84e33d8da43d94a85c0b7c9552ecad0",
    "evidence_hash": "9eb2b420d92c1c48851b419558c2789932a7c5bd422f88e1bdccaf7847acd0c3",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [
     {
      "name": "Meta",
@@ -1332,18 +1335,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 19 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 19 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "7b8f96dff14c59fe077ac980b56fc5438e4292aaa753065aa9ffecc802d58386",
    "evidence_hash": "49b5b46351afde43201a88b1e22a94db8df983b49e9f942376711b02b4abe65a",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "site"
@@ -1364,18 +1367,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 96 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 96 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "2c6b3c831e981bce49303c28d1fff5680bdd5a40b9950333cbadc0a212cbc17c",
    "evidence_hash": "17a5001c22aa4e06ab2dedf962e9e6689c01bf57f638c14d29a3cfd12bb02e9d",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "site"
@@ -1396,19 +1399,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 3 figure-sentence(s); 1 of 3 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 3,
     "total": 3
    },
-   "label_evidence": "model read all 3 figure-sentence(s); 1 of 3 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "a39b5cfa239e8ee9c6b7847f0643a5f72af9d12256b472ff78798b61b6a747e9",
    "evidence_hash": "e481105d734ee1194426f1d5ec70515195bf440eced869dde78a1f3cd03a265f",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "headline"
@@ -1429,19 +1432,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 6 figure-sentence(s); 1 of 6 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 6,
     "total": 6
    },
-   "label_evidence": "model read all 6 figure-sentence(s); 1 of 6 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "ccf9ba4217cd1db0928019e7c1bf38444a757f50cf591671b4c74cf392e7609d",
    "evidence_hash": "509e7989ccb067b3a69f4fcb179037f95b38b669daf3a4f80d93aa93b9269c9a",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [
     {
      "name": "Meta",
@@ -1467,19 +1470,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 69 figure-sentence(s); 2 of 69 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 69,
     "total": 69
    },
-   "label_evidence": "model read all 69 figure-sentence(s); 2 of 69 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "83316c201e03faa1a2f4b1505a5bf1301f6e2ea9ee89c7751b65f6e08afb7045",
    "evidence_hash": "e6ecda7168338c1b01862207f613eb35957b542b3f4f2966de18c5d1140ce8f2",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [
     {
      "name": "Meta",
@@ -1509,19 +1512,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 17 figure-sentence(s); 1 of 17 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 17,
     "total": 17
    },
-   "label_evidence": "model read all 17 figure-sentence(s); 1 of 17 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "cc68e8a90bf0e26da8dbf6ffebbc182246184d8ed3ca25dfcf4e723a9a969570",
    "evidence_hash": "0f58ed103da8d8335e0f14412e692fce02e88370c84b5448cc422d0ba01185a6",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [
     {
      "name": "Meta",
@@ -1547,19 +1550,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 17 figure-sentence(s); 0 of 17 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 17,
     "total": 17
    },
-   "label_evidence": "model read all 17 figure-sentence(s); 0 of 17 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "06e150a03f22dcfd227dbabc0a4c6a815dac3c06b4c69eb26505c2f8beef866e",
    "evidence_hash": "5e3247bc79164566fbd0027a18c92c05cfd5082bd76e798ea6a3da6443b2835f",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [
     {
      "name": "Meta",
@@ -1606,6 +1609,227 @@
    "entity_basis": "headline"
   },
   {
+   "entity": "",
+   "headline": "AI fan wikis riddled with errors are muddying the waters of games culture",
+   "date": "2026-10-27",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "eurogamer.net",
+     "url": "https://www.eurogamer.net/ai-fan-wikis-errors-complicating-games-culture",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 2,
+    "total": 2
+   },
+   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+   "content_hash": "375d253350def98306707208e81eed1836618cdac39bf5f23271e7d64f330c86",
+   "evidence_hash": "9aea656b3129f48319b2171ee81c8a0520a8268649affb6a26b750fc66a755b8",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Google",
+     "count": 2
+    },
+    {
+     "name": "Meta",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "Action Adventure",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
+   "date": "2026-10-25",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "Y",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 1,
+    "total": 1
+   },
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "content_hash": "654eb4be7b3a7dbf0d8fa669efd5819ae8bcf9fece6bd89dc92744dfc1f02dfa",
+   "evidence_hash": "2adf6065cbd5e535fd991fcda45741271f757129abaf0f849c1a2109828a8db2",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Microsoft",
+     "count": 1
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    },
+    {
+     "name": "Nvidia",
+     "count": 1
+    },
+    {
+     "name": "Amazon",
+     "count": 1
+    },
+    {
+     "name": "Apple",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Apollo Global Management",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "It wasn't AI that flipped Proton's charge",
+   "date": "2026-11-01",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "blog.raed.dev",
+     "url": "https://blog.raed.dev/posts/proton-loser-thinking/",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 1
+   },
+   "label_evidence": "model returned an invalid denominator label",
+   "content_hash": "b429baa44f9f3529944f673b77009f52e8b4ea53744fc2768fadc198d0c51c3c",
+   "evidence_hash": "dc2ffbb7505afaea989ffa5a2ce2df53ac471fa86044c49122f801516966aa99",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "AI agent swarms in Minecraft fail to build civilization, drown in bureaucracy",
+   "date": "2026-11-01",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "Y",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "tomshardware.com",
+     "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 3,
+    "total": 3
+   },
+   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+   "content_hash": "bc41e791f483dde62f2fc113bc01b5be73ba462f01038c329083413d36dd4306",
+   "evidence_hash": "b6d87d003c855a770ca80323ef9928718bf07450290cec888bc7791d19d1feef",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 2
+    },
+    {
+     "name": "Google",
+     "count": 2
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    },
+    {
+     "name": "Hugging Face",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Tech Industry",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "The AI cost of JavaScript frameworks",
+   "date": "2026-10-28",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "partial",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "nolanlawson.com",
+     "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 108,
+    "total": 108
+   },
+   "label_evidence": "model read all 108 figure-sentence(s); 5 of 108 figure-sentence(s) matched a base cue",
+   "content_hash": "945d3bbc63e53d8464f0b460b947f531c6162f94dfea40e65cc9ad54d18e55f3",
+   "evidence_hash": "bc557c8529994352d1bf8fe95a3bb0d41d959b67643e52d8b58736f14b0ca697",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 4
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
    "entity": "Anthropic",
    "headline": "Anthropic takes steps to block Claude from reverse-engineering video games",
    "date": "2026-10-31",
@@ -1621,19 +1845,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 2 figure-sentence(s); 1 of 2 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 2,
     "total": 2
    },
-   "label_evidence": "model read all 2 figure-sentence(s); 1 of 2 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "43f34dfd04676d6e4279b2fd17e6fd0f8139d8ea0b970356bc802f3e9b95a272",
    "evidence_hash": "f0e08ba223cab8a87743d137e442ff2c17b74fb7fd26402663eb837775d7d968",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Anthropic",
@@ -1663,18 +1887,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "article not fetched (robots-disallowed)",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "article not fetched (robots-disallowed)",
+   "label_schema_version": 2,
    "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
    "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "headline"
@@ -1695,190 +1919,8 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
+   "auto_labelled": true,
    "label_evidence": "article not fetched (http-403)",
-   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Anthropic",
-   "headline": "AI startup hacks Anthropic, gains access to employee details, internal messages",
-   "date": "2026-10-26",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "indiatoday.in",
-     "url": "https://www.indiatoday.in/technology/news/story/ai-startup-hacks-anthropic-in-12-hours-gains-access-to-employee-details-and-internal-messages-3025452-2026-10-26",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 9,
-    "total": 9
-   },
-   "label_evidence": "model read all 9 figure-sentence(s); 0 of 9 figure-sentence(s) matched a base cue",
-   "content_hash": "f1ecbdb0266500692c3d2729eee68adb69877c2f1eb9a455ce92f937076ef634",
-   "evidence_hash": "128ef78be6cb25fbb06bf6f4f49fb3483c504ca41390daca4332c4e4edae5e4b",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Anthropic",
-     "count": 20
-    }
-   ],
-   "publisher_topic": "Anthropic",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Anthropic",
-   "headline": "Anthropic's Claude AI blocks video game cloning and reverse-engineering",
-   "date": "2026-10-31",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "tomshardware.com",
-     "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-ai-model-is-now-blocking-attempts-at-video-game-recreation-and-cloning-users-also-claim-non-malicious-generic-reverse-engineering-tasks-are-blocked",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 2,
-    "total": 2
-   },
-   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
-   "content_hash": "4024e5c4c3cd5a3bd81db0c02301fc15731df85392203717f6570369a56faa46",
-   "evidence_hash": "a956b414fa6c57bb6cb33095827ece58c368801aed4572557030671dd2e8080c",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Anthropic",
-     "count": 5
-    },
-    {
-     "name": "Microsoft",
-     "count": 2
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Google",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Tech Industry",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Anthropic",
-   "headline": "Why Anthropic's filing crushed tech stocks",
-   "date": "2026-10-31",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "thebignewsletter.com",
-     "url": "https://www.thebignewsletter.com/p/why-anthropics-filing-crushed-tech",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 14,
-    "total": 14
-   },
-   "label_evidence": "model read all 14 figure-sentence(s); 0 of 14 figure-sentence(s) matched a base cue",
-   "content_hash": "6b95481dada2d3bc2d7714d5c6759c7fc452d79eb3253211c2bbadcb82551e52",
-   "evidence_hash": "68259fc768cee2721786836d9a372f65b97d33d5ec2cfcd2a391eda9de809f02",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Anthropic",
-     "count": 40
-    },
-    {
-     "name": "Google",
-     "count": 30
-    },
-    {
-     "name": "Amazon",
-     "count": 24
-    },
-    {
-     "name": "Microsoft",
-     "count": 16
-    },
-    {
-     "name": "OpenAI",
-     "count": 5
-    },
-    {
-     "name": "Meta",
-     "count": 3
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "OpenAI raises less than half of $30B target",
-   "date": "Sat, 31 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "wsj.com",
-     "url": "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "article not fetched (robots-disallowed)",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
@@ -1889,38 +1931,6 @@
    "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
    "label_source": "machine",
    "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "Wall Street closes sharply lower as AI cash burn fears spark tech selloff",
-   "date": "Fri, 30 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "reuters.com",
-     "url": "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "article not fetched (robots-disallowed)",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
-   "label_source": "machine",
-   "rating": "trusted",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "unresolved"
@@ -3733,6 +3743,39 @@
   },
   {
    "entity": "OpenAI",
+   "headline": "Community safety report and new protections for teens",
+   "date": "2026-10-30",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "openai.com",
+     "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 5,
+    "total": 5
+   },
+   "label_evidence": "model read all 5 figure-sentence(s); 0 of 5 figure-sentence(s) matched a base cue",
+   "content_hash": "2d00bde6537e9f030e7e28e4872c2f319ba9832306d8c3ce9bb2a9d37c1e1418",
+   "evidence_hash": "7bf7a7acb12210c51edeef68342b7514d603b74ac1d73eced9bb852279e2069e",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "site"
+  },
+  {
+   "entity": "OpenAI",
    "headline": "How we detect frontier model misalignment",
    "date": "2026-10-29",
    "topic": "",
@@ -3747,19 +3790,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 14 figure-sentence(s); 0 of 14 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 14,
     "total": 14
    },
-   "label_evidence": "model read all 14 figure-sentence(s); 0 of 14 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "920bd10bfa880606f827e77957c03b3f2d39f9b312c3f2af88bd477155e0c239",
    "evidence_hash": "79cd8246c326aafaa247f369e5fc966858d2b82ca2aa40fe3ca01f8be07ed636",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Hugging Face",
@@ -3771,66 +3814,32 @@
   },
   {
    "entity": "OpenAI",
-   "headline": "ChatGPT’s expanding world of work",
-   "date": "2026-10-26",
+   "headline": "An updated Model Spec for more capable and beneficial AI",
+   "date": "2026-10-29",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "Y",
+   "denominator_stated": "n/a",
    "reviewed": false,
    "sources": [
     {
      "name": "openai.com",
-     "url": "https://openai.com/index/chatgpt-expanding-world-of-work/",
+     "url": "https://openai.com/index/updated-model-spec/",
      "source_type": "vendor-own",
      "source_tier": 5
     }
    ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 11 figure-sentence(s); 1 of 11 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 11,
-    "total": 11
-   },
-   "label_schema_version": 2,
-   "content_hash": "70d5024edad9a2c907ed85a19186df127cfe2118ad27ceb1a7b1f3215e5ed0d2",
-   "evidence_hash": "ff59b4cc01ab65e0054733af9013555b332a61e13894d7e0e5ea0d4e4890e360",
-   "label_source": "machine",
    "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "product:ChatGPT"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "Working with academic communities to build scientific understanding",
-   "date": "2026-10-26",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "openai.com",
-     "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
+   "evidence_method": "rule",
    "evidence_coverage": {
-    "seen": 3,
-    "total": 3
+    "seen": 0,
+    "total": 0
    },
+   "label_evidence": "no figure in 8183 chars of article text",
+   "content_hash": "0e5d7741cbe20387bbd99f796ce7fe02f02f3e10cf2b7bc49b096192847c0440",
+   "evidence_hash": "8e7edcc5396b68b15c907b8635a4376f22d56760b0ba93650fb34b23cdf25265",
    "label_schema_version": 2,
-   "content_hash": "1787c3c3d126b914ff3ebcda69a33191ea98c82a0c5a4d168bb8c69859ec191d",
-   "evidence_hash": "38bfd387eff17ff5470f6093c16f8fb213bc7de70be626d798afac4b0b809ec1",
+   "auto_labelled": true,
    "label_source": "machine",
-   "rating": "ok",
-   "auto_labelled_by": "gemma4:12b",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "site"
