@@ -58,7 +58,7 @@ PASS_SECONDS = 9 * 60
 OLLAMA_HOST = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
 DEFAULT_MODEL = os.environ.get("SURVEILLANCE_MODEL", "qwen3.8:latest")
 
-USER_AGENT = "NM-AI-Research-Sovereign-Watch/2.0 (+https://nmairesearch.github.io)"
+USER_AGENT = "NMAI-Research-Sovereign-Watch/2.0 (+https://nmairesearch.github.io)"
 
 # Filter patterns for non-substantive administrative notices
 ADMIN_NOISE_PATTERNS = [

@@ -41,7 +41,7 @@ FEED = os.path.join(HERE, "feed_items.json")
 CACHE = os.path.join(HERE, "article_text.json")
 SPANS = os.path.join(HERE, "article_spans.json")
 
-UA = "Mozilla/5.0 (NM AI Research board; +https://nmairesearch.github.io/ai-news-board)"
+UA = "Mozilla/5.0 (NMAI Research board; +https://nmairesearch.github.io/ai-news-board)"
 TIMEOUT = 25
 # Per-host delay. One request per article, so this is the whole politeness budget.
 DELAY = 1.5

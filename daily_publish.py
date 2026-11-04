@@ -157,7 +157,7 @@ def verify_pages(local_path: pathlib.Path, attempts: int = 18, delay: int = 10) 
     for attempt in range(attempts):
         url = f"{PAGES_URL}?v={int(time.time())}"
         try:
-            request = urllib.request.Request(url, headers={"User-Agent": "NM-AI-Research-Daily-Publisher/1.0"})
+            request = urllib.request.Request(url, headers={"User-Agent": "NMAI-Research-Daily-Publisher/1.0"})
             with urllib.request.urlopen(request, timeout=20) as response:
                 observed = hashlib.sha256(response.read()).hexdigest()
             if observed == expected:

@@ -215,7 +215,7 @@ def _fold(line):
 def calendar_ics(data):
     """Export only published schedules as all-day events without reminders."""
     validate_watch(data)
-    lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//NM AI Research//Evidence watch//EN',
+    lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//NMAI Research//Evidence watch//EN',
              'CALSCALE:GREGORIAN', 'METHOD:PUBLISH']
     for event in sorted(data['events'], key=lambda row: (row['date'], row['id'])):
         day = date.fromisoformat(event['date'])

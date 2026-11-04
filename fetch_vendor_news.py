@@ -37,7 +37,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 FEED = os.path.join(HERE, "feed_items.json")
 TITLES = os.path.join(HERE, "vendor_titles.json")
 
-UA = "Mozilla/5.0 (NM AI Research board; +https://nmairesearch.github.io/ai-news-board)"
+UA = "Mozilla/5.0 (NMAI Research board; +https://nmairesearch.github.io/ai-news-board)"
 PER_VENDOR = 3   # per VENDOR, not per sitemap: OpenAI splits one newsroom across several
 DELAY = 1.5
 CACHE_PURPOSE = (

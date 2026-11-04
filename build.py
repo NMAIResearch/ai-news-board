@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 AI News Board - build.py (stdlib only, no dependencies).
-NM AI Research.
+NMAI Research.
 
 Reads items.json and renders a static index.html. Source class, a resolved claim
 relationship, figure-base evidence, citation links and typed research-context links are separate
@@ -101,7 +101,7 @@ a,button,.btn{transition:color .18s var(--ease),background-color .18s var(--ease
 @media(max-width:620px){body{font-size:16px}.site-header{padding:20px}.wrap{padding:0 20px 48px!important}.header-bar{padding:32px 0 22px!important}.header-copy{font-size:1rem!important}.theme-toggle-btn{font-size:.72rem!important;padding:.45rem .7rem!important;min-height:38px}.site-nav{gap:2px 20px}.site-nav a{font-size:.85rem}.nav-vault{display:none}.side{grid-template-columns:1fr!important}.rail{display:block}.nav-tab-bar{width:100%}.nav-tab-btn{flex:1;justify-content:center;padding:8px 10px!important;font-size:.82rem!important}.radar-grid{grid-template-columns:1fr!important}.govconflict table,.tierui table,.aiwatch table{display:block;overflow-x:auto;max-width:100%}}
 </style>"""
 
-SITE_HEADER_HTML = """<header class="site-header"><div><a class="brand" href="https://nmairesearch.com/">NM AI Research</a>
+SITE_HEADER_HTML = """<header class="site-header"><div><a class="brand" href="https://nmairesearch.com/">NMAI Research</a>
 <div class="brand-subtitle">Independent AI research</div></div>
 <nav aria-label="Main navigation" class="site-nav"><a href="https://nmairesearch.com/research.html">Research<span class="nav-vault"> Vault</span></a><a href="https://nmairesearch.com/software-vault/">Software<span class="nav-vault"> Vault</span></a><a href="https://nmairesearch.com/game-vault/">Game<span class="nav-vault"> Vault</span></a><a href="https://nmairesearch.com/music-vault/">Music<span class="nav-vault"> Vault</span></a><a href="https://nmairesearch.com/video-vault/">Video<span class="nav-vault"> Vault</span></a></nav>
 <button id="themeToggle" class="theme-toggle-btn" type="button" title="Toggle Light/Dark Theme"><span id="themeIcon">◑</span> <span id="themeLabel">THEME: LIGHT</span></button></header>
@@ -235,10 +235,12 @@ def market_chip(entity, mk, tmap):
              f"{'; ' + note if note else ''}. Market context only: no causal link to this "
              f"item is asserted.")
     return (f'<span class="mktchip" data-mkt="{esc(sym)}" title="{esc(title)}" '
+            f'data-mkt-note="{note}" '
             f'style="display:inline-block;padding:2px 8px;margin-left:6px;border-radius:4px;'
             f'font-size:11px;color:#fff;background:{col}">{esc(sym)} '
             f'<span class="mktval">{money(q["value"])}</span> '
-            f'<span class="mktpct">{arrow}</span>{stale}</span>')
+            f'<span class="mktpct">{arrow}</span>'
+            f'<span class="mktcarried">{stale}</span></span>')
 
 
 def _asof_rule(mk):
@@ -266,11 +268,10 @@ def _asof_rule(mk):
 def _vintage(q, ref):
     """Visible mark for a cell older than the freshest cell in the same strip."""
     a = q.get("asof") or ""
-    if not a or not ref or a >= ref:
-        return ""
-    return (f'<span style="color:{SLATE};font-size:10px" '
-            f'title="This cell is from {a}, the strip\'s freshest data is {ref}.">'
-            f' {a[5:]}</span>')
+    older = bool(a and ref and a < ref)
+    title = f"This cell is from {a}, the strip's freshest data is {ref}." if older else ""
+    return (f'<span class="mktvintage" style="color:{SLATE};font-size:10px" '
+            f'title="{esc(title)}">{esc(" " + a[5:]) if older else ""}</span>')
 
 
 def market_strip(mk):
@@ -1919,8 +1920,24 @@ def main():
 
 (function () {
   var NEG = "__NEG__", POS = "__POS__", MUTED = "__MUTED__";
+  function vintage(el, q, ref) {
+    var a = q.asof || "", marker = el.querySelector(".mktvintage");
+    if (marker) {
+      var older = a && ref && a < ref;
+      marker.textContent = older ? " " + a.slice(5) : "";
+      marker.setAttribute("title", older
+        ? "This cell is from " + a + ", the strip's freshest data is " + ref + "." : "");
+    }
+    var carried = el.querySelector(".mktcarried");
+    if (carried) carried.textContent = q.stale ? " · previous close carried forward" : "";
+  }
   function paint(mk) {
     var eq = mk.equities || {}, idx = mk.indices || {};
+    var dates = Object.keys(idx).map(function (k) { return idx[k].asof; })
+      .concat(Object.keys(eq).map(function (k) { return eq[k].asof; })).filter(Boolean).sort();
+    var ref = dates.length ? dates[dates.length - 1] : "";
+    var ia = document.getElementById("mktidxasof");
+    if (ia) ia.textContent = ref;
     document.querySelectorAll("[data-mkt-idx]").forEach(function (el) {
       var q = idx[el.getAttribute("data-mkt-idx")];
       if (!q) return;
@@ -1935,16 +1952,16 @@ def main():
         p.style.color = (q.change_pct === null || q.change_pct === undefined)
           ? MUTED : (q.change_pct < 0 ? NEG : POS);
       }
+      vintage(el, q, ref);
     });
-    var ia = document.getElementById("mktidxasof");
-    if (ia && idx.spx && idx.spx.asof) { ia.textContent = idx.spx.asof; }
 
     document.querySelectorAll("[data-mkt]").forEach(function (el) {
       var q = eq[el.getAttribute("data-mkt")];
       if (!q) return;
       var v = el.querySelector(".mktval"), p = el.querySelector(".mktpct");
-      if (v) v.textContent = q.value.toLocaleString(undefined,
+      var price = q.value.toLocaleString(undefined,
         {minimumFractionDigits: 2, maximumFractionDigits: 2});
+      if (v) v.textContent = price;
       if (p) {
         p.textContent = (q.change_pct === null || q.change_pct === undefined)
           ? "" : (q.change_pct >= 0 ? "+" : "") + q.change_pct.toFixed(2) + "%";
@@ -1952,6 +1969,13 @@ def main():
           p.style.color = (q.change_pct === null || q.change_pct === undefined)
             ? MUTED : (q.change_pct < 0 ? NEG : POS);
         }
+      }
+      vintage(el, q, ref);
+      if (el.classList.contains("mktchip")) {
+        var note = el.getAttribute("data-mkt-note") || "";
+        el.setAttribute("title", el.getAttribute("data-mkt") + " " + price + " as of " +
+          (q.asof || "") + (note ? "; " + note : "") +
+          ". Market context only: no causal link to this item is asserted.");
       }
     });
   }

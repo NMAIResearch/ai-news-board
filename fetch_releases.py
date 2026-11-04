@@ -65,7 +65,7 @@ from datetime import datetime, timedelta, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "releases.json")
-UA = {"User-Agent": "Mozilla/5.0 (NM AI Research board)"}
+UA = {"User-Agent": "Mozilla/5.0 (NMAI Research board)"}
 MAX_AGE_DAYS = int(os.environ.get("RELEASE_MAX_AGE_DAYS", "60"))
 OPENROUTER = "https://openrouter.ai/api/v1/models"
 

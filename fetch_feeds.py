@@ -262,7 +262,7 @@ def publication_date_from_url(url):
 def publication_date_of_url(url):
     """Fetch one article page and return its publication date, if exposed."""
     req = urllib.request.Request(
-        url, headers={"User-Agent": "Mozilla/5.0 (NM AI Research board)"})
+        url, headers={"User-Agent": "Mozilla/5.0 (NMAI Research board)"})
     with urllib.request.urlopen(req, timeout=20) as response:
         raw = response.read().decode(
             response.headers.get_content_charset() or "utf-8", "replace")
@@ -383,12 +383,13 @@ def main():
     # At 9 both fit. Cost is downstream and roughly linear: extract_spans fetches every selected
     # article and label_items runs the local model per item.
     per_feed, collected, dropped_old, dropped_dup = 9, [], 0, 0
+    successful_sources = 0
     seen_urls = set()
     now = datetime.now(timezone.utc)
     for f, needs_filter in FEEDS:
         try:
             req = urllib.request.Request(
-                f, headers={"User-Agent": "Mozilla/5.0 (NM AI Research board)"})
+                f, headers={"User-Agent": "Mozilla/5.0 (NMAI Research board)"})
             raw = urllib.request.urlopen(req, timeout=20).read()
             rows = parse(raw)
             if needs_filter:
@@ -436,6 +437,7 @@ def main():
                     if len(selected) == per_feed:
                         break
                 rows = selected
+            successful_sources += 1
         except Exception as e:
             print(f"skip {domain(f)}: {e}", file=sys.stderr)
             continue
@@ -467,6 +469,8 @@ def main():
                 "sources": [{"name": domain(link or f), "url": link,
                              "source_type": st, "source_tier": TYPE_TIER.get(st, 3)}],
             })
+    if not successful_sources:
+        raise SystemExit("No feeds fetched successfully; keeping the existing feed")
     with open(OUT, "w", encoding="utf-8") as fh:
         json.dump({"fetched": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
                    "items": collected}, fh, indent=1)

@@ -35,7 +35,7 @@ DATA_DIR = HERE / "data"
 MARKET_FILE = DATA_DIR / "market.json"
 TREND_OUT = DATA_DIR / "trend_alerts.json"
 
-USER_AGENT = "Mozilla/5.0 (NM AI Research Trend Monitor; +https://nmairesearch.github.io)"
+USER_AGENT = "Mozilla/5.0 (NMAI Research Trend Monitor; +https://nmairesearch.github.io)"
 
 # 7-Domain taxonomy aligned with project research spine
 WATCH_TOPICS: Dict[str, Dict[str, Any]] = {
@@ -266,7 +266,9 @@ def scan_market_anomalies() -> Dict[str, Any]:
     # Check equities
     equities = mdata.get("equities", {})
     for ticker, info in equities.items():
-        chg = info.get("change_pct", 0.0)
+        chg = info.get("change_pct")
+        if chg is None:
+            continue
         val = info.get("value", 0.0)
         asof = info.get("asof", "")
 
@@ -289,7 +291,9 @@ def scan_market_anomalies() -> Dict[str, Any]:
     # Check macro indices and commodities
     indices = mdata.get("indices", {})
     for sym, info in indices.items():
-        chg = info.get("change_pct", 0.0)
+        chg = info.get("change_pct")
+        if chg is None:
+            continue
         lbl = info.get("label", sym)
         if abs(chg) >= MACRO_MOVE_THRESHOLD:
             indices_alerts.append({
