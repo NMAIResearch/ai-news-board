@@ -60,7 +60,8 @@ def sweep_with_model_result(result):
          mock.patch.object(sovereign_watch, "fetch_url_text", return_value=FEED), \
          mock.patch.object(sovereign_watch, "call_local_model", return_value=result), \
          mock.patch.object(sovereign_watch, "capture_source", return_value=(
-             "Fixture source text for the captured document.", "a" * 64, "b" * 64)), \
+             "Fixture source text for the captured document.", "a" * 64,
+             sovereign_watch.intake.digest("Fixture source text for the captured document."))), \
          mock.patch.object(
              sovereign_watch,
              "send_desktop_notification",

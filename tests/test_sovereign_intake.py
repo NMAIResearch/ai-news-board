@@ -30,6 +30,12 @@ def feed(n=1, **extra):
                                     "abstract": "An AI notice", "document_number": str(i)} for i in range(n)], **extra})
 
 
+def rollover_feed():
+    return json.dumps({"results": [{"title": "Archived notice", "abstract": "",
+                                    "html_url": "https://example.test/archive",
+                                    "publication_date": "2000-01-01"}]})
+
+
 class FeedTests(unittest.TestCase):
     def test_all_entries_queued_and_paginated(self):
         state = {}
@@ -157,8 +163,14 @@ class PipelineTests(unittest.TestCase):
 
     def test_model_timeout_respects_remaining_pass_budget(self):
         with patch.object(sw.time, 'monotonic', side_effect=[0, 0, sw.PASS_SECONDS - 7]):
-            self.run_pass()
-        self.assertEqual(self.model.call_args.kwargs['timeout'], 7)
+            with self.assertRaisesRegex(RuntimeError, "incomplete"):
+                self.run_pass()
+        self.model.assert_not_called()
+        record = next(iter(sw.load_store()["document_states"].values()))
+        self.assertEqual(record["attempts"], 0)
+        self.assertIn("pass time limit", record["error"])
+        self.run_pass()
+        self.assertEqual(self.model.call_args.kwargs["timeout"], 90)
 
     def test_source_body_change_reassessed(self):
         self.run_pass()
@@ -171,12 +183,20 @@ class PipelineTests(unittest.TestCase):
         with patch.object(sw, "save_alerts", side_effect=OSError("fixture storage failure")):
             with self.assertRaises(OSError):
                 self.run_pass()
-        self.assertFalse(sw.STORE_FILE.exists())
+        self.assertEqual(sw.load_store()["last_run_status"], "incomplete")
+        self.assertEqual(sw.load_store().get("document_states", {}), {})
         self.notify.assert_not_called()
         self.assertEqual(self.run_pass(), (1, 1))
 
     def test_state_write_failure_recovers_without_duplicate(self):
-        with patch.object(sw, "save_store", side_effect=OSError("fixture state failure")):
+        save = sw.save_store
+        calls = []
+        def fail_after_start(store):
+            calls.append(True)
+            if len(calls) > 1:
+                raise OSError("fixture state failure")
+            save(store)
+        with patch.object(sw, "save_store", side_effect=fail_after_start):
             with self.assertRaises(OSError):
                 self.run_pass()
         self.assertEqual(len(sw.load_alerts()), 1)
@@ -196,7 +216,7 @@ class PipelineTests(unittest.TestCase):
 
     def test_completed_off_feed_records_do_not_create_permanent_backlog(self):
         self.run_pass()
-        self.fetch.return_value = feed(0)
+        self.fetch.return_value = rollover_feed()
         self.assertEqual(self.run_pass(), (0, 1))
         self.assertEqual(sw.load_store()["last_pass"]["documents_checked"], 0)
 
@@ -223,7 +243,7 @@ class PipelineTests(unittest.TestCase):
         self.model.return_value = None
         with self.assertRaises(RuntimeError):
             self.run_pass()
-        self.fetch.return_value = feed(0)
+        self.fetch.return_value = rollover_feed()
         self.model.return_value = dict(RESULT)
         self.assertEqual(self.run_pass(), (1, 1))
 

@@ -2,6 +2,7 @@
 """Fail-closed integrity checks for data consumed by the static board build."""
 
 import json
+import hashlib
 import pathlib
 import re
 
@@ -129,7 +130,7 @@ def has_valid_alert_evaluation(alert):
         return False
     if alert.get("assessment_withdrawal"):
         return False
-    if alert.get("assessment_version") == 3 and not valid_source_assessment(alert):
+    if alert.get("assessment_version") in (3, 4) and not valid_source_assessment(alert):
         return False
     method = alert.get("evaluation_method")
     priority = alert.get("substantive_priority")
@@ -142,9 +143,54 @@ def has_valid_alert_evaluation(alert):
     return alert.get("reviewed") is True
 
 
+def valid_assessment_coverage(alert):
+    """Require explicit input scope and valid character ranges for version 4."""
+    coverage = alert.get("assessment_coverage")
+    if not isinstance(coverage, dict):
+        return False
+    if alert.get("assessment_version") != 4:
+        return False
+    if any(not isinstance(value, str) or not re.fullmatch(r"[0-9a-f]{64}", value)
+           for value in (alert.get("source_sha256"), alert.get("source_text_sha256"),
+                         coverage.get("selected_text_sha256"))):
+        return False
+    total = coverage.get("text_chars")
+    ranges = coverage.get("ranges")
+    if type(total) is not int or total <= 0 or not isinstance(ranges, list):
+        return False
+    count, read, left = (coverage.get(k) for k in ("passages_total", "passages_read", "passages_left"))
+    if (any(type(n) is not int or n < 0 for n in (count, read, left)) or
+            read + left != count or read != len(ranges)):
+        return False
+    previous_end = 0
+    for span in ranges:
+        if (not isinstance(span, list) or len(span) != 2 or
+                any(type(n) is not int for n in span) or
+                not previous_end <= span[0] < span[1] <= total):
+            return False
+        previous_end = span[1]
+    if coverage.get("scope") == "unassessed":
+        return (not ranges and alert.get("evaluation_method") == "unassessed" and
+                coverage.get("selection_status") == "not assessed" and
+                coverage.get("selected_text_sha256") == hashlib.sha256(b"").hexdigest())
+    if alert.get("evaluation_method") != "local-model" or not ranges:
+        return False
+    if coverage.get("selected_text_sha256") == hashlib.sha256(b"").hexdigest():
+        return False
+    if coverage.get("scope") == "extracted text":
+        return (coverage.get("selector") == "full-text" and ranges == [[0, total]] and
+                coverage.get("selection_status") == "selected" and count == 1 and left == 0 and
+                coverage.get("selected_text_sha256") == alert.get("source_text_sha256"))
+    if coverage.get("scope") != "passages only" or coverage.get("selector") != "ai-keywords-v2":
+        return False
+    return coverage.get("selection_status") == "selected" and ranges[0][0] == 0
+
+
 def valid_source_assessment(alert):
     """Check the new assessment contract; source support remains a separate review."""
     if not _valid_alert_priority(alert.get("substantive_priority")):
+        return False
+    if alert.get("assessment_version") == 4 and not valid_assessment_coverage(alert):
         return False
     if any(not isinstance(alert.get(k), str) or not re.fullmatch(r"[0-9a-f]{64}", alert[k])
            for k in ("source_sha256", "source_text_sha256")):
@@ -165,6 +211,15 @@ def valid_source_assessment(alert):
     if relevance != "relevant" and alert.get("substantive_priority", 5) < 4:
         return False
     return True
+
+
+def validate_surveillance_store(store):
+    """Refuse a complete claim that contradicts the retained progress evidence."""
+    from sovereign_intake import run_is_complete
+    if not isinstance(store, dict):
+        raise BoardIntegrityError("surveillance store must be an object")
+    if store.get("last_run_status") == "complete" and not run_is_complete(store):
+        raise BoardIntegrityError("complete surveillance status contradicts coverage evidence")
 
 
 def evaluated_alert_priority(alert):
@@ -207,8 +262,10 @@ def validate_regulatory_alerts(alerts):
         if method not in allowed_methods:
             errors.append(f"{label} has invalid or missing evaluation method")
             continue
-        if alert.get("assessment_version") == 3 and method == "local-model" and not valid_source_assessment(alert):
+        if alert.get("assessment_version") in (3, 4) and method == "local-model" and not valid_source_assessment(alert):
             errors.append(f"{label} has invalid captured-source assessment metadata")
+        if (alert.get("assessment_version") == 4 or "assessment_coverage" in alert) and not valid_assessment_coverage(alert):
+            errors.append(f"{label} has invalid assessment coverage")
         withdrawal = alert.get("assessment_withdrawal")
         if withdrawal is not None and (not isinstance(withdrawal, dict) or not withdrawal.get("reason") or not withdrawal.get("date")):
             errors.append(f"{label} has invalid assessment withdrawal")
@@ -400,6 +457,9 @@ def main():
     harness_count = validate_harnesses(harnesses)
 
     alert_count = 0
+    store_path = root / "data" / "surveillance_store.json"
+    if store_path.exists():
+        validate_surveillance_store(json.loads(store_path.read_text(encoding="utf-8")))
     alert_path = root / "data" / "regulatory_alerts.json"
     if alert_path.exists():
         alert_count = validate_regulatory_alerts(

@@ -17,7 +17,7 @@ import time
 import urllib.request
 from typing import Iterable
 
-from board_checks import BoardIntegrityError, validate_regulatory_alerts as validate_regulatory_alert_records
+from board_checks import BoardIntegrityError, validate_regulatory_alerts as validate_regulatory_alert_records, validate_surveillance_store
 from sovereign_intake import writer_lock
 
 
@@ -142,6 +142,12 @@ def validate_machine_review_flags() -> None:
 
 
 def validate_regulatory_alerts() -> None:
+    store_path = REPO / "data" / "surveillance_store.json"
+    if store_path.exists():
+        try:
+            validate_surveillance_store(json.loads(store_path.read_text(encoding="utf-8")))
+        except BoardIntegrityError as exc:
+            raise PublishError(str(exc)) from exc
     path = REPO / "data" / "regulatory_alerts.json"
     if not path.exists():
         return

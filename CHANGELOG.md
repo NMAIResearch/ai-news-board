@@ -2,6 +2,29 @@
 
 Dated, descriptive, newest first. Method changes and defects found, not every commit.
 
+## 2026-11-05
+
+Sovereign Watch reports passage totals on the run line and qualifies persistent capture and
+assessment failures for labelled, periodically rechecked end states. Every empty feed keeps the
+run incomplete. A single no-keyword response stays pending; retained evaluations survive it.
+Abbreviation handling, reference specificity, short-element extraction and interrupted-run status
+have additional guards. Domain filters use the sidebar topic data, empty results have a message,
+and the conflict filter uses existing item, source and registry disclosures. The header uses the
+shared Common ground logo in both themes. Offline checks do not establish live source behaviour
+or classification accuracy.
+
+## 2026-11-04
+
+Sovereign Watch keeps the opening of a long document and ranks sentence windows by AI wording.
+Records, cards and bulletins state passages read and left; failed assessments state zero read.
+Coverage describes extracted text. The run line counts passages-only documents, documents with
+passages left and older evaluations without passage counts. Not-evaluated end states have reasons,
+counts and scheduled rechecks; pending work and limited sources still keep a run incomplete.
+The document-check allowance is 120; the six model calls, nine-minute processing window and
+reserved schedule are unchanged. Time-deferred model calls use no attempt, capture recovery restores
+coverage, and settled rechecks rotate by age. The bulletin includes run health and escapes text
+inside its table. These changes establish no classification accuracy or queue drain time.
+
 ## 2026-09-15
 
 Sovereign Watch records source failures and incomplete coverage, watches the actual jurisdiction

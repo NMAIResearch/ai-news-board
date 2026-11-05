@@ -40,7 +40,7 @@ button,input,select{font:inherit;color:var(--text)}button,select{cursor:pointer}
 ::selection{background:var(--heading);color:var(--bg)}
 h1,h2,h3,h4{color:var(--heading);line-height:1.3;letter-spacing:-.025em}
 .site-header{max-width:1200px;margin:0 auto;padding:24px 28px;display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid var(--line)}
-.brand{color:var(--heading);font-size:1rem;font-weight:750;text-decoration:none;letter-spacing:.025em}
+.brand{display:block;width:211px;height:36px;background:url(https://nmairesearch.com/brand/header-nmai-research-light.svg) left center/contain no-repeat;color:transparent;overflow:hidden;white-space:nowrap;text-indent:100%;font-size:1rem;font-weight:750;text-decoration:none}:root[data-theme="dark"] .brand{background-image:url(https://nmairesearch.com/brand/header-nmai-research-dark.svg)}@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .brand{background-image:url(https://nmairesearch.com/brand/header-nmai-research-dark.svg)}}@media(forced-colors:active){.brand{background:none;color:LinkText;text-indent:0;width:auto;height:auto}}
 .brand-subtitle{font-size:.8rem;color:var(--muted);margin-top:2px}
 .site-nav{display:flex;gap:25px;flex-wrap:wrap}
 .site-nav a{font-size:.9rem;color:var(--muted);text-decoration:none;padding:7px 0}
@@ -146,6 +146,7 @@ from board_checks import (
     validate_regulatory_alerts,
 )
 from url_identity import canonical_url
+from sovereign_intake import coverage_text, source_health_text, run_health_text, public_url
 
 
 esc = lambda s: html.escape(str(s), quote=True)
@@ -439,6 +440,22 @@ def article_primary_sources(items, evidence, limit=16):
     return rows
 
 
+def registry_conflicts(item, tier_registry, organisations):
+    """Match existing disclosures to the recorded subject or a registered publisher domain."""
+    disclosed = {row["entity"]: row["basis"] for row in tier_registry.get("entities", [])
+                 if row.get("coi") and not row.get("self")}
+    names = {item.get("entity", "")}
+    for source in item.get("sources", []):
+        try:
+            host = (urllib.parse.urlparse(source.get("url", "")).hostname or "").lower()
+        except ValueError:
+            continue
+        for domain, name in organisations.get("site_org", {}).items():
+            if host == domain or host.endswith("." + domain):
+                names.add(name)
+    return [f"Registry disclosure for {name}: {disclosed[name]}" for name in sorted(names) if name in disclosed]
+
+
 def item_card(it, registry, plain=False, mk=None, tmap=None, ev=None):
     tiers = {}
     chips = []
@@ -565,6 +582,7 @@ def item_card(it, registry, plain=False, mk=None, tmap=None, ev=None):
     if it.get("conflict"):
         cnotes.append(it["conflict"])
     cnotes += [f'{s.get("name","")}: {s["conflict"]}' for s in it["sources"] if s.get("conflict")]
+    cnotes += it.get("_registry_conflicts", [])
     conflict_html = ""
     if cnotes:
         lines = "".join(f'<div style="margin:2px 0">{esc(n)}</div>' for n in cnotes)
@@ -918,7 +936,8 @@ def group_by_day(items, registry, plain, mk, tmap, ev=None):
                 f'padding-bottom:4px;border-bottom:1px solid {LINE}">{esc(head)}</div>')
             current = head
         out.append(item_card(it, registry, plain, mk, tmap, ev))
-    return f'<div class="feedgrid">{"".join(out)}</div>'
+    return (f'<p id="feed-empty" role="status" hidden>No items match these filters.</p>'
+            f'<div class="feedgrid">{"".join(out)}</div>')
 
 
 def sovereign_radar_tab(alerts=None, health=None):
@@ -929,9 +948,8 @@ def sovereign_radar_tab(alerts=None, health=None):
         if os.path.isfile(reg_alerts_path):
             alerts = load_json(reg_alerts_path)
 
-    if not alerts:
-        return f'<div style="padding:20px;background:{PAPER};border-radius:8px;border:1px solid {LINE}">No active sovereign radar alerts banked.</div>'
-    validate_regulatory_alerts(alerts)
+    if alerts:
+        validate_regulatory_alerts(alerts)
 
     cards = []
     for a in alerts:
@@ -977,7 +995,7 @@ def sovereign_radar_tab(alerts=None, health=None):
 
         model = a.get("model")
         method_text = f"{method}: {model}" if model else method
-        if method == "local-model" and a.get("assessment_version") != 3:
+        if method == "local-model" and a.get("assessment_version") not in (3, 4):
             method_text += "; historical snippet assessment, full source not captured"
         if a.get("reviewed") is True:
             review_text = "human-reviewed"
@@ -994,10 +1012,14 @@ def sovereign_radar_tab(alerts=None, health=None):
                 f'Evaluation provenance was not stored.</div>'
             )
         withdrawal_html = (f'<div style="margin-top:6px"><strong>Withdrawn:</strong> {esc(withdrawal["reason"])}</div>' if withdrawal else "")
+        capture_url = a.get("source_capture_url", "")
+        capture_html = (f'<div><a href="{esc(capture_url)}" rel="noopener" target="_blank">Captured source</a></div>'
+                        if public_url(capture_url) else "")
         method_html = (
             f'<div style="font-size:11px;color:{SLATE};margin-top:7px">'
             f'Method: {esc(method_text)}. Status: {esc(review_text)}. {esc(queue_text)}.</div>'
-            f'{legacy_text}{withdrawal_html}'
+            f'<div style="font-size:11px;color:{SLATE};overflow-wrap:anywhere">{esc(coverage_text(a))}</div>'
+            f'{capture_html}{legacy_text}{withdrawal_html}'
         )
 
         stat_ref = a.get("statutory_reference")
@@ -1033,27 +1055,21 @@ def sovereign_radar_tab(alerts=None, health=None):
                 health = json.load(handle)
         else:
             health = {}
-    health_state = health.get("last_run_status", "unverified legacy run")
-    progress = health.get("last_pass", {})
-    health_text = (
-        f"Last sweep: {health.get('last_run') or 'not recorded'}; status: {health_state}. "
-        f"Failed or limited sources: {len(progress.get('unhealthy_sources', [])) if 'last_pass' in health else 'unverified'}; "
-        f"pending evaluations: {progress.get('pending_evaluations', 'unverified')}; "
-        f"manual review required: {progress.get('manual_review_required', 'unverified')}; "
-        f"deferred document checks: {progress.get('documents_deferred', 'unverified')}; "
-        f"pending notifications: {progress.get('pending_notifications', 'unverified')}."
-    )
+    health_text = run_health_text(health)
+    health_text += " " + source_health_text(health)
     summary_banner = (
         f'<div style="border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:8px;padding:14px 18px;margin-bottom:20px;background:{PAPER};box-shadow:{SHADOW}">'
         f'<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px">'
         f'<div><h3 style="margin:0 0 4px;font-size:17px;color:{NAVY}">Sovereign Watch: Global AI Regulatory Radar</h3>'
-        f'<div style="font-size:13px;color:{SLATE}">Daily public sovereign gazette records. Local jurisdiction-pack changes are monitored privately and do not enter this public bank. Source queue order, evaluated priority and human review are displayed separately. Machine output is not a legal finding. Older assessment priorities classify instrument type; version 3 priorities also require AI relevance.</div><div style="margin-top:8px;font-size:13px">{esc(health_text)}</div></div>'
+        f'<div style="font-size:13px;color:{SLATE}">Daily public sovereign gazette records. Local jurisdiction-pack changes are monitored privately and do not enter this public bank. Source queue order, evaluated priority and human review are displayed separately. Machine output is not a legal finding. Older assessment priorities classify instrument type; versions 3 and 4 also require AI relevance. Version 4 records identify extracted text or passages only, with passages read and left; omitted text is unassessed. Not evaluated documents are listed by reason and are checked again.</div><div style="margin-top:8px;font-size:13px">{esc(health_text)}</div></div>'
         f'<div style="display:flex;gap:8px;font-size:12px">'
         f'<span style="padding:4px 8px;background:var(--pill-bg);border-radius:4px;color:var(--pill-fg)"><strong>{len(alerts)}</strong> records</span>'
         f'<span style="padding:4px 8px;background:var(--ok-bg);border-radius:4px;color:var(--ok-fg)"><strong>06:00</strong> scheduled pass</span>'
         f'</div></div></div>'
     )
 
+    if not alerts:
+        return summary_banner + f'<div style="padding:20px;background:{PAPER};border-radius:8px;border:1px solid {LINE}">No active sovereign radar alerts banked.</div>'
     return summary_banner + f'<div class="radar-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(480px,1fr));gap:16px">{"".join(cards)}</div>'
 
 
@@ -1257,6 +1273,9 @@ def main():
     reviewed.sort(key=lambda it: parse_date(it.get("date", "")), reverse=True)
     items = reviewed + incoming
     validate_board(items, _spans, ev, registry, tm.get("source_types", {}))
+    organisations = load_json(os.path.join(HERE, "org_registry.json"))
+    for item in items:
+        item["_registry_conflicts"] = registry_conflicts(item, tm, organisations)
 
     primary_sources = article_primary_sources(items, ev)
     source_rows = []
@@ -1856,6 +1875,9 @@ def main():
   var sch=[].slice.call(document.querySelectorAll('.scholarrow'));
   var cnt=document.getElementById('count');
   var cf=document.getElementById('conflictonly');
+  var chips=[].slice.call(document.querySelectorAll('.filter-chip'));
+  var domains={models:['models'],hardware:['power_demand','energy_forecast','chips'],
+               regulation:['regulation'],labour:['work_automation','code_automation','cost']};
   function vals(a){return a.filter(function(b){return b.checked}).map(function(b){return b.value})}
   function apply(){
     var term=(q.value||'').toLowerCase().trim();
@@ -1877,10 +1899,24 @@ def main():
       e.style.display=okS?'':'none';
     });
     if(cnt)cnt.textContent=shown+' of '+cards.length+' items';
+    var empty=document.getElementById('feed-empty');
+    if(empty)empty.hidden=shown!==0;
+    document.querySelectorAll('.dayhead').forEach(function(heading){
+      var next=heading.nextElementSibling, visible=false;
+      while(next&&!next.classList.contains('dayhead')){
+        if(next.classList.contains('card')&&next.style.display!=='none')visible=true;
+        next=next.nextElementSibling;
+      }
+      heading.hidden=!visible;
+    });
   }
   if(q){
     q.addEventListener('input',apply);
-    tb.concat(tr).forEach(function(b){b.addEventListener('change',apply)});
+    tb.forEach(function(b){b.addEventListener('change',function(){
+      chips.forEach(function(c){c.classList.remove('active');});
+      apply();
+    })});
+    tr.forEach(function(b){b.addEventListener('change',apply)});
     if(cf)cf.addEventListener('change',apply);
   }
   var tt=document.getElementById('tiertoggle');
@@ -1891,26 +1927,16 @@ def main():
     });
   }
 
-  // Category Quick Filter Chips
-  document.querySelectorAll('.filter-chip').forEach(function(chip){
+  // Domains use the same topic identifiers as the sidebar counts.
+  chips.forEach(function(chip){
     chip.addEventListener('click', function(){
       var cat = chip.getAttribute('data-chip');
-      document.querySelectorAll('.filter-chip').forEach(function(c){ c.classList.remove('active'); });
+      chips.forEach(function(c){ c.classList.remove('active'); });
       chip.classList.add('active');
       
-      var topicBoxes = document.querySelectorAll('.f-topic');
-      if (cat === 'all') {
-        topicBoxes.forEach(function(b){ b.checked = true; });
-        if (q) q.value = '';
-      } else if (cat === 'models') {
-        if (q) q.value = 'model';
-      } else if (cat === 'hardware') {
-        if (q) q.value = 'energy';
-      } else if (cat === 'regulation') {
-        if (q) q.value = 'regulation';
-      } else if (cat === 'labour') {
-        if (q) q.value = 'cost';
-      }
+      var selected=domains[cat]||[];
+      tb.forEach(function(b){b.checked=cat==='all'||selected.indexOf(b.value)>-1;});
+      if(q)q.value='';
       apply();
     });
   });

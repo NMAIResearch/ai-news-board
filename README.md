@@ -68,21 +68,68 @@ ignored by Git and are not published as board content.
 The September intake repair records per-source fetch and parse status. An unavailable feed,
 malformed response, capped pagination, pending assessment or undelivered duty notification makes
 the sweep incomplete and exits non-zero. The board shows the last recorded sweep state; a timer
-alone is not evidence of coverage. The FTC RSS endpoint currently denies some direct requests.
-That failure remains visible rather than being interpreted as no regulatory changes.
+alone is not evidence of coverage. An unavailable FTC feed is explicitly labelled limited.
+It still makes the sweep incomplete; a later valid feed with entries can restore source health.
 
 RSS and Atom intake examines every returned entry. Federal Register pagination covers a declared
 30-day window, capped at five pages; reaching that cap is incomplete coverage. The persisted queue
-survives feed rollover and failed evaluations. Each pass checks at most 60 documents and attempts
+survives feed rollover and failed evaluations. Each pass applies the document-check limit below and attempts
 at most six model evaluations within a nine-minute document-processing budget. The source-fetch
 stage has its own request timeouts. This is bounded monitoring, not a complete historical archive.
 
 Assessments use captured document text. Raw captures and extracted text stay in the ignored local
 `data/sovereign_sources/` cache; public records carry source hashes, an evidence quote, document
-status and AI relevance. An inaccessible or over-limit document stays pending. Quote presence is
+status and AI relevance. Long documents use passages only within the unchanged model input
+budget. The opening is kept first, followed by sentence windows ranked by the strength of AI
+wording. Explicit AI phrases rank above everyday words such as compute or transparency.
+The passage vocabulary includes US spellings and plurals; the feed filter is unchanged.
+The model receives those windows in document order. Version 4 records carry zero-based,
+end-exclusive character ranges into the extracted text, passages read and left as counts,
+and the selected-text hash. The board and bulletins show those counts and the raw document
+hash; omitted text is unassessed. A failed assessment reports zero passages read and its reason.
+The label "extracted text" describes the extractor's output, which may omit parts of a page.
+Quote presence is
 a mechanical support check and does not establish the legal interpretation. Older assessments
 are labelled as historical snippet assessments. Withdrawn assessments retain their original fields
 and reason; their actionable trigger and priority are suppressed.
+
+Retry order counts failed captures as processing attempts, separately from model attempts.
+A deferred evaluation uses no attempt. New or unreached documents with the same attempt count
+can precede it on the next run, because a deferral records its check time. Settled documents rotate by their last check time. Records remain queued after
+leaving a feed. A pass allows up to 120 document checks and six model calls within the nine-minute
+document-processing window. Deferred checks still make a pass incomplete even when every stored
+document has an earlier assessment. No queue drain time is promised.
+
+Documents that cannot be assessed can reach a labelled "not evaluated" end state after three
+separate runs with a healthy, non-empty feed. The same capture failure must recur, or assessment
+must remain unsuccessful on the same extracted text. Reasons include HTTP errors, response size
+or encoding limits, challenge or missing pages, insufficient text, other capture failures, no AI
+keyword match, an opening or metadata that cannot fit the input budget, and unsuccessful model
+assessments. A new failure or an unhealthy feed cannot earn an end state. Several page refusals
+with a healthy feed are counted as document failures. An empty feed from any source is unhealthy,
+even if the source might legitimately have no entries; it neither restores health nor retires
+queued records. A non-empty feed with no matching current entries can still be healthy.
+
+End states are checked again every seventh run, within the document-check allowance, including
+after leaving a feed. Capture recovery clears a capture-failure state. Changed text starts a new
+assessment qualification; a valid assessment clears it. A model failure recheck retries at most
+one model call for that document, subject to the unchanged run limits, rather than a call on every
+run. If a due check or evaluation cannot fit, the run stays incomplete. Earlier evaluated alerts
+remain retained, and one wrong no-keyword response cannot settle a document. Old end states without
+the new failure history reopen for verification. Unchanged failed alerts keep their timestamps.
+These records are never counted as evaluated. The page and bulletin list them by reason and count
+beside the run status. They alone do not prevent a complete run; unhealthy sources, pending
+evaluations, deferred checks and notifications still do.
+
+The run line gives passages read and left across recorded selections in the retained queue,
+including known unread passages on unassessed records. These are inventory counts, not model work
+performed during that run. Long-document passage counts cover the opening and AI keyword windows;
+text outside those windows remains unassessed even when no candidate passages are left. Passage
+boundaries retain common abbreviations but remain a heuristic, not a guarantee of complete sentences.
+Older evaluated records without passage counts are counted separately. The "Captured source"
+link identifies the capture URL, which may differ from the landing page. To reproduce the
+selected-text hash, slice the extracted Unicode text at the stated ranges, join the slices with
+the exact separator `\n[... omitted source text ...]\n`, encode as UTF-8, then take SHA-256.
 
 The local watcher hashes the actual `clause_map.csv` and `source_register.csv` pack files. Local
 pack watching detects local edits; it does not itself poll every jurisdiction's legislation.
@@ -494,9 +541,9 @@ registries. Independent analysis, not investment advice.
 
 ## Sovereign Watch execution and coverage
 
-The local model request disables thinking, requests the assessment schema, limits output to 1,024 tokens and uses a 16,384-token context. The request timeout is at most 90 seconds and is reduced to the remaining pass budget. An over-budget prompt is retained for manual review; the source text is never silently shortened. Transport errors, output limits and schema errors remain distinct.
+The local model request disables thinking, requests the assessment schema, limits output to 1,024 tokens and uses a 16,384-token context. A model call starts only when its 90-second timeout fits the remaining processing window. Otherwise the evaluation is deferred without using an attempt; new and unreached documents may precede it next time. Over-budget documents use the opening and ranked sentence windows, with passages read and left stated on each assessment. If the opening cannot fit or the metadata uses the budget, the document remains unassessed and can earn the labelled end state described above. Transport errors, output limits and schema errors retain their assessment details; repeated unsuccessful assessments share an end-state reason.
 
-A pass remains incomplete when a source is unavailable, a document is unassessed, the declared work budget is exhausted or a notification is pending. The model-attempt cap remains six per pass. Fixing a timeout does not clear the existing queue or establish complete regulatory coverage. The status records identify manual-review work separately.
+A pass remains incomplete when a source is unavailable, an evaluation is pending, a document check is deferred or a notification is pending. The labelled not-evaluated end states described above are listed by reason beside any complete status. The model-attempt cap remains six per pass. Fixing a timeout does not clear the existing queue or establish complete regulatory coverage. The status records identify manual-review work separately.
 
 A bounded local smoke test reproduced the original 60-second timeout and obtained a schema-valid, source-quoted response with the revised settings in 23.5 seconds for one cached document. This establishes one observed integration result, not alert accuracy or independent acceptance. No classification-quality baseline was run for this correction. OpenAI GPT-6 assisted the repair.
 
