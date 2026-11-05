@@ -1,12 +1,36 @@
 {
- "generated": "2026-11-04 06:22 UTC",
+ "generated": "2026-11-05 06:21 UTC",
  "window_days": 60,
  "counts": {
-  "total": 94,
+  "total": 96,
   "closed": 42,
-  "open_weights": 52
+  "open_weights": 54
  },
  "releases": [
+  {
+   "lab": "Inclusionai",
+   "model": "inclusionAI: Ling 3.0 Tiny",
+   "id": "inclusionai/ling-3.0-tiny",
+   "date": "2026-11-05",
+   "url": "https://openrouter.ai/inclusionai/ling-3.0-tiny",
+   "context_length": 262144,
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/inclusionAI/Ling-3.0-tiny; downloadable and hashable",
+   "hf_id": "inclusionAI/Ling-3.0-tiny",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Ricursiveai",
+   "model": "ricursiveAI/Ripple-65B-Preview",
+   "id": "ricursiveai/ripple-65b-preview",
+   "date": "2026-11-04",
+   "url": "https://openrouter.ai/ricursiveai/ripple-65b-preview",
+   "context_length": 1048576,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
   {
    "lab": "Tencent",
    "model": "Tencent: Hy4",
@@ -128,27 +152,15 @@
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
-   "lab": "Microsoft",
-   "model": "CogACT-v2-RoboDojo",
-   "id": "microsoft/CogACT-v2-RoboDojo",
-   "date": "2026-10-25",
-   "url": "https://huggingface.co/microsoft/CogACT-v2-RoboDojo",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "microsoft/CogACT-v2-RoboDojo",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
    "lab": "Moonshot",
    "model": "MoonshotAI: Kimi K3.1 Pro",
    "id": "moonshotai/kimi-k3.1-pro",
    "date": "2026-10-23",
    "url": "https://openrouter.ai/moonshotai/kimi-k3.1-pro",
    "context_length": 1048576,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/moonshotai/Kimi-K3.1-Pro; downloadable and hashable",
+   "hf_id": "moonshotai/Kimi-K3.1-Pro",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
@@ -654,6 +666,18 @@
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Microsoft",
+   "model": "UserLM-2.0",
+   "id": "microsoft/UserLM-2.0",
+   "date": "2026-10-01",
+   "url": "https://huggingface.co/microsoft/UserLM-2.0",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "microsoft/UserLM-2.0",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "OpenAI",
