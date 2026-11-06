@@ -1,22 +1,70 @@
 {
- "generated": "2026-11-05 06:21 UTC",
+ "generated": "2026-11-06 06:21 UTC",
  "window_days": 60,
  "counts": {
-  "total": 96,
-  "closed": 42,
-  "open_weights": 54
+  "total": 99,
+  "closed": 44,
+  "open_weights": 55
  },
  "releases": [
   {
-   "lab": "Inclusionai",
-   "model": "inclusionAI: Ling 3.0 Tiny",
-   "id": "inclusionai/ling-3.0-tiny",
+   "lab": "Google",
+   "model": "Google: Gemini Omni 1.2 Flash",
+   "id": "google/gemini-omni-1.2-flash",
    "date": "2026-11-05",
-   "url": "https://openrouter.ai/inclusionai/ling-3.0-tiny",
-   "context_length": 262144,
+   "url": "https://openrouter.ai/google/gemini-omni-1.2-flash",
+   "context_length": 131072,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Ai2",
+   "model": "Molmo2-4B-tb",
+   "id": "allenai/Molmo2-4B-tb",
+   "date": "2026-11-05",
+   "url": "https://huggingface.co/allenai/Molmo2-4B-tb",
+   "context_length": null,
    "evidence": "open-weights",
-   "evidence_note": "weights published at huggingface.co/inclusionAI/Ling-3.0-tiny; downloadable and hashable",
-   "hf_id": "inclusionAI/Ling-3.0-tiny",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "allenai/Molmo2-4B-tb",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Ai2",
+   "model": "maniflow-tb",
+   "id": "allenai/maniflow-tb",
+   "date": "2026-11-05",
+   "url": "https://huggingface.co/allenai/maniflow-tb",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "allenai/maniflow-tb",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "MetricTrail",
+   "id": "nvidia/MetricTrail",
+   "date": "2026-11-05",
+   "url": "https://huggingface.co/nvidia/MetricTrail",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/MetricTrail",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Google",
+   "model": "Google: Gemini Omni 1.1 Flash",
+   "id": "google/gemini-omni-1.1-flash",
+   "date": "2026-11-04",
+   "url": "https://openrouter.ai/google/gemini-omni-1.1-flash",
+   "context_length": 131072,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
@@ -246,18 +294,6 @@
    "evidence_note": "weights published at huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash; downloadable and hashable",
    "hf_id": "MiniMaxAI/MiniMax-M3.1-Flash",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "cosmos3-nano-libero10-sdg-export-S5_2_s43",
-   "id": "nvidia/cosmos3-nano-libero10-sdg-export-S5_2_s43",
-   "date": "2026-10-19",
-   "url": "https://huggingface.co/nvidia/cosmos3-nano-libero10-sdg-export-S5_2_s43",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/cosmos3-nano-libero10-sdg-export-S5_2_s43",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "DeepSeek",

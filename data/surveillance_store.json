@@ -73,72 +73,81 @@
     "54b1b80026c38a18cbc27a2657d9270dca2fb517e6a904f2bf2aee3960aebc45": "2026-09-13T05:01:31.276246+00:00",
     "3f5b18c5361a116e8cda95268bda629c953202b3169b944325053a2129c242c3": "2026-09-13T05:01:31.276250+00:00"
   },
-  "last_run": "2026-11-05T06:01:13.025986+00:00",
+  "last_run": "2026-11-06T06:03:04.093227+00:00",
   "source_states": {
     "us_fed_reg_ai": {
-      "checked_at": "2026-11-05T06:00:00.160530+00:00",
+      "checked_at": "2026-11-06T06:00:00.533085+00:00",
       "status": "ok",
+      "name": "US Federal Register (AI Rules & Notices)",
       "entries": 40,
       "queued": 31,
       "window_days": 30,
-      "last_success": "2026-11-05T06:00:00.160530+00:00"
+      "last_success": "2026-11-06T06:00:00.533085+00:00"
     },
     "us_fed_reg_eo": {
-      "checked_at": "2026-11-05T06:00:00.961309+00:00",
+      "checked_at": "2026-11-06T06:00:01.289235+00:00",
       "status": "ok",
-      "entries": 20,
-      "queued": 17,
+      "name": "US Federal Register (Executive Orders)",
+      "entries": 40,
+      "queued": 21,
       "window_days": 30,
-      "last_success": "2026-11-05T06:00:00.961309+00:00"
+      "last_success": "2026-11-06T06:00:01.289235+00:00"
     },
     "eu_ai_office": {
-      "checked_at": "2026-11-05T06:00:01.496247+00:00",
+      "checked_at": "2026-11-06T06:00:02.941428+00:00",
       "status": "ok",
+      "name": "EU AI Office & Digital Strategy",
       "entries": 10,
       "queued": 9,
       "window_days": null,
-      "last_success": "2026-11-05T06:00:01.496247+00:00"
+      "last_success": "2026-11-06T06:00:02.941428+00:00"
     },
     "uk_cma_news": {
-      "checked_at": "2026-11-05T06:00:01.576211+00:00",
+      "checked_at": "2026-11-06T06:00:03.027358+00:00",
       "status": "ok",
+      "name": "UK Competition and Markets Authority (AI Mergers & Foundation Models)",
       "entries": 20,
       "queued": 0,
       "window_days": null,
-      "last_success": "2026-11-05T06:00:01.576211+00:00"
+      "last_success": "2026-11-06T06:00:03.027358+00:00"
     },
     "uk_ofgem_queue": {
-      "checked_at": "2026-11-05T06:00:01.707101+00:00",
+      "checked_at": "2026-11-06T06:00:03.165536+00:00",
       "status": "ok",
+      "name": "UK Ofgem (Grid Queue & Regulatory Reform)",
       "entries": 20,
       "queued": 1,
       "window_days": null,
-      "last_success": "2026-11-05T06:00:01.707101+00:00"
+      "last_success": "2026-11-06T06:00:03.165536+00:00"
     },
     "nist_ai_notices": {
-      "checked_at": "2026-11-05T06:00:01.855118+00:00",
+      "checked_at": "2026-11-06T06:00:03.311442+00:00",
       "status": "ok",
+      "name": "NIST AI Safety Institute & Risk Framework",
       "entries": 40,
       "queued": 7,
       "window_days": null,
-      "last_success": "2026-11-05T06:00:01.855118+00:00"
+      "last_success": "2026-11-06T06:00:03.311442+00:00"
     },
     "sec_press_releases": {
-      "checked_at": "2026-11-05T06:00:02.139612+00:00",
+      "checked_at": "2026-11-06T06:00:03.611124+00:00",
       "status": "ok",
+      "name": "US SEC (Enforcement & Regulatory Actions)",
       "entries": 25,
       "queued": 0,
       "window_days": null,
-      "last_success": "2026-11-05T06:00:02.139612+00:00"
+      "last_success": "2026-11-06T06:00:03.611124+00:00"
     },
     "ftc_press_releases": {
-      "checked_at": "2026-11-05T06:00:02.222762+00:00",
-      "status": "failed",
+      "checked_at": "2026-11-06T06:00:03.680694+00:00",
+      "status": "limited",
+      "name": "US FTC (Consumer Protection & AI Claims)",
       "entries": 0,
       "queued": 0,
       "window_days": null,
       "last_success": "2026-10-08T05:00:05.874787+00:00",
-      "error": "HTTPError: HTTP Error 404: Not Found"
+      "error": "HTTPError: HTTP Error 404: Not Found",
+      "limitation": "FTC feed unavailable; FTC coverage is limited."
     }
   },
   "jurisdiction_hashes": {
@@ -218,7 +227,7 @@
   },
   "document_states": {
     "29b2690afa1577d6b03ec5330abc5de39720758f1140edc915dbc774d728f6c7": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Draft NIH Biosafety Policy for Research Involving Biohazards",
@@ -236,10 +245,10 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:01:02.976012+00:00",
+      "checked_at": "2026-11-06T06:02:18.886862+00:00",
       "source_sha256": "eb1eddaf773a3253e5f7f035c9c1317b0010f83259a9b4caca539bf2e75879ea",
       "source_text_sha256": "89ffa63e83499655219e9053b4f4de919e4f5b0aaa8adfdcebfc4f3ba9b10b53",
-      "error": "document exceeds model input budget; manual review required"
+      "error": "evaluation deferred: model call limit"
     },
     "ad969d1c9b9131669e8eef1b8743b23754fc4f608762963165d9ffcc3e77fc16": {
       "status": "evaluated",
@@ -266,7 +275,7 @@
       "evaluated_text_sha256": "c86961446a9f009dd79704185cb312be43e4946d7cf12556666bd9bd946c3391"
     },
     "1713135e0fda898e3cb4faead667e3f651a2029f3f3b17978249bae1e06f4c35": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 1,
       "item": {
         "title": "Securing the United States Bulk-Power System",
@@ -284,13 +293,13 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:01:11.963646+00:00",
+      "checked_at": "2026-11-06T06:02:22.239076+00:00",
       "source_sha256": "3ee83a15aa02e1f35f809f0eb4ddfe2adb601346b89901f0accc629880b5d2cb",
       "source_text_sha256": "a53929654bdac68bbd0f084a443518c66e0dc0bad70789d508a29d5079ca0add",
-      "error": "document exceeds model input budget; manual review required"
+      "error": "evaluation deferred: model call limit"
     },
     "2da32ad55827506c9903040af0780919a59f8ae45bba9096c078bec0eb221228": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Improving the Effectiveness of the Robocall Mitigation Database; Call Authentication Trust Anchor; Advanced Methods To Target and Eliminate Unlawful Robocalls",
@@ -308,8 +317,10 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:01:03.317850+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "checked_at": "2026-11-06T06:02:19.565753+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "d565cbd17a5eabeb8ad3878136e3659879437da41b168676cac83e16c5691b15",
+      "source_text_sha256": "c9364e3db7bb3e40a2f1d233eb8e54142bf9910550efaef0d19a79a95ec4f718"
     },
     "4f3a608c15f8f04e29feca1b6c63058027b545c03e0fbb2baa316c3d697267f8": {
       "status": "evaluated",
@@ -360,7 +371,7 @@
       "evaluated_text_sha256": "a318ded85267210dca944e7aee51867e86a1d214444375d228ebb5e4dc26b1ad"
     },
     "2e04b993083bb93051d88e2e26bcf8838beb9e58765e080e2e0dd15c8d91acd5": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Self-Regulatory Organizations; Financial Industry Regulatory Authority, Inc.; Notice of Filing of a Proposed Rule Change To Amend FINRA Rules 0150 (Application of Rules to Exempted Securities Except Municipal Securities), 2165 (Financial Exploitation of Specified Adults) and 4512 (Customer Account Information) and To Adopt FINRA Rule 2166 (Temporary Delays for Suspected Fraud)",
@@ -378,10 +389,10 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:01:03.737752+00:00",
+      "checked_at": "2026-11-06T06:02:20.046966+00:00",
       "source_sha256": "711f43edaa8cd4d1f261877323c360e5dc822a4483fe5051a63d0989523b13a4",
       "source_text_sha256": "ca1b3cf0f0f3c78ddf801e6598dc6e376367ab163f90e1e2702947cca856e63c",
-      "error": "document exceeds model input budget; manual review required"
+      "error": "evaluation deferred: model call limit"
     },
     "962399e7043923f23e35fdd177700056c9c6e8aec0d29e2076d96a7822c6f6ed": {
       "status": "evaluated",
@@ -432,7 +443,7 @@
       "evaluated_text_sha256": "f116b0f1bdee2cee509c8f40aad46d978a5d2907ca5de5a9d0fbfe704a1ac66f"
     },
     "d118a2b0958ac6b5e95f5cc6530be2066b9aaf154a623a1f72b3b60af1e2c8e1": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Transfer Agent Rules",
@@ -450,8 +461,10 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:00:58.693760+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "checked_at": "2026-11-06T06:02:15.957604+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "db33954ea3e9ea0fec8b4f94e80704395f80f29a96495cdcdc5991cc1f7cc082",
+      "source_text_sha256": "1111718358b517f7b023d7b64d5d2a9cf5c4c870a58f9feef4fed12b6826b6fc"
     },
     "f3227389324f7137d15bbb2f3d3a07cc2a3d2d1f69b73d682b660348775bec51": {
       "status": "evaluated",
@@ -478,7 +491,7 @@
       "evaluated_text_sha256": "e664382b6d95ace4eb8cce076c6f453a36ef1aa0f524d30139b7bcce73d88615"
     },
     "61ec96aa8984428f2e9f0a2e9434cd356cdacfe64d33218c5deae9d547ce4b6d": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Determining the Appropriate Penalty for Federal Employees Charged With Misconduct",
@@ -496,11 +509,13 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:01:05.311601+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "checked_at": "2026-11-06T06:02:20.769924+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "e6145292c82907b59db50d1b7cba92154bd01db9155baa188c35c3cfcb27647e",
+      "source_text_sha256": "368585e1a4df65b80f377b8425080e7d6857849d163ff579d783905513ecb308"
     },
     "9d988f6d9277029c3ac6d920018ac38aedd5ac984a6a25fb8d56a6e34f6b3ee2": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Heightened Import Disclosures for Supply Chain Visibility",
@@ -518,13 +533,13 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:00:54.645530+00:00",
+      "checked_at": "2026-11-06T06:02:11.460039+00:00",
       "source_sha256": "a4511bae5da70c354f606c391d50f9ad41e568825f8e0109025f414111f90dc9",
       "source_text_sha256": "fe91c974bf9b2405c6f653e0dda74d08d1a6265a6e628d156bffc7dc259f7bea",
-      "error": "document exceeds model input budget; manual review required"
+      "error": "evaluation deferred: model call limit"
     },
     "f69b594931e31618990e4ecb95b80a3f73dc6c51d236b3790bc6e4be8c07e952": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Declaring a National Emergency To Secure the United States Bulk-Power System",
@@ -542,13 +557,13 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:01:00.265003+00:00",
+      "checked_at": "2026-11-06T06:02:17.741766+00:00",
       "source_sha256": "fbd5fff4fe0699288f0b65021446cc8dd9d08a94c376413b9a19b6fb6d2da372",
       "source_text_sha256": "2cd3f0dc0045694d0b680943b47d08f04239f7aa6f94aa7136a5fff482fd728e",
-      "error": "document exceeds model input budget; manual review required"
+      "error": "evaluation deferred: model call limit"
     },
     "c2a7ceeffc336c32f5290db049a682a888b1de2c080ec2560270b190308ee6f8": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Maximizing Efficiencies in Universal Service Administration",
@@ -566,10 +581,10 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:00:57.306837+00:00",
+      "checked_at": "2026-11-06T06:02:14.450214+00:00",
       "source_sha256": "978bf8bd7945d3beaa2ccf09e14aaa1bfabf6d600c6f472d9707aa1ce0b1110e",
       "source_text_sha256": "640c895a637c3bfbf00d5f8ee04c5621bad85598d7ac09283fb5344a414143d8",
-      "error": "document exceeds model input budget; manual review required"
+      "error": "evaluation deferred: model call limit"
     },
     "68fef63f330c165c74868d438e70e8711e337b904d69a08001db4d953ce0c7c0": {
       "status": "evaluated",
@@ -596,7 +611,7 @@
       "evaluated_text_sha256": "4caaa62b03a72ee595b877daac938985d46ef221ccbc11e842cba265c15c1d79"
     },
     "d5c20c7ea8d2f679a149dd27b239d188f2a491da9eb557e2a83c02c3d7adf622": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Critical Position Pay Authority",
@@ -614,13 +629,13 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:00:59.361591+00:00",
+      "checked_at": "2026-11-06T06:02:16.721158+00:00",
       "source_sha256": "78569acd9cc75cd417f395652dfbe9582a43cd92f0320fd9c0a4ac0f74e7c25f",
       "source_text_sha256": "4a8447f5a0993387ea2590db8e8be6d50b8a8e431f1cee6debd1dc45640047b9",
-      "error": "document exceeds model input budget; manual review required"
+      "error": "evaluation deferred: model call limit"
     },
     "d6aeee587ebb756153f8ea68f33b344a9547e13eed6d53b712ccc14e5e4db82a": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Regulation Crypto Assets",
@@ -638,11 +653,13 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:00:59.631537+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "checked_at": "2026-11-06T06:02:16.998960+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "5c1054715017ecef76c1195438158e5160d81f070aeefc8e18285cfe08755881",
+      "source_text_sha256": "dd10ef56bf8b056d8799a75d9f17221c199c77789ef38369c349ee95b2529d34"
     },
     "45cd6e241ef0f49a81f7569cdcbdf3b115d21f5515637f6ae5e8a6c269ed346a": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Request for Comment on the Listing of Compute Derivatives Contracts",
@@ -660,13 +677,13 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:01:04.964710+00:00",
+      "checked_at": "2026-11-06T06:02:20.491635+00:00",
       "source_sha256": "7c4c37f6412dccc2795ca2beedfd141df2754c086e9e276c32e97aa99927555b",
       "source_text_sha256": "404d25d32a5cb5fa721fb74ca6c16df48425c1abe2ae321164e0c4796bd520d3",
-      "error": "document exceeds model input budget; manual review required"
+      "error": "evaluation deferred: model call limit"
     },
     "109db0c160de79a3ccea4cb1386e9e515254e7ab904f41dfcc7397a32a4ec7c3": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Accreditation, Innovation, and Modernization: The Secretary's Recognition of Accrediting Agencies: Institutional Eligibility Under the Higher Education Act of 1965, as Amended, Student Assistance General Provisions",
@@ -684,11 +701,13 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:01:00.522913+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "checked_at": "2026-11-06T06:02:18.005171+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "ab0c093ce9173da70bed1b9549c7e475216201f4e3cbd6ae040c6795ea9681fe",
+      "source_text_sha256": "ff029e3f141941a9e0b5d79c0e0a77f9f40a62c0fa324135369030a59fc84b07"
     },
     "7ad21a2ea23e4e7cfeedf5675164bc4e41af56e08a54475090d6b47820b4a204": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Wagner-Peyser Act Employment Service Staffing",
@@ -706,11 +725,13 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:01:06.116380+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "checked_at": "2026-11-06T06:02:21.218419+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "2114c9f6c85ee48d10b7924b7ce0b71947672f17cf387e6263627ae9f98048a7",
+      "source_text_sha256": "cbe675cbce5182a50d2ebfa6503cae4e125f02cedfc775884b0ea95d10a662d7"
     },
     "a7320c2f093222e04d723af25b0cbae8c48107c756a2ba5db909095c3850abb3": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Application for Relief From Disabilities Imposed by Federal Laws With Respect to the Acquisition, Receipt, Transfer, Shipment, Transportation, or Possession of Firearms",
@@ -728,8 +749,10 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:00:54.920097+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "checked_at": "2026-11-06T06:02:11.806094+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "f162735a6f4dd6758c2c77ec10fb11a8946f44f9a7bdcabda5ede35992d4c0d6",
+      "source_text_sha256": "c1b6be2319f0e8beaabfc960306b0d8049b332dbe5e489d1528e4a91e2ec4b93"
     },
     "6587eda003db0fc2cc6d344a8209cb6b5cd47c3dfcf52d7a6a31afdff94d507d": {
       "status": "evaluated",
@@ -876,7 +899,7 @@
       "evaluated_text_sha256": "a073787cac3aa3f7c51d20d38ce5a9347371a2bd8c62af6bded88c031af9381a"
     },
     "27de633e1af69c76e5e423362c63c64a7852d6679c74a6a8ae432638fee610a3": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Hematology and Pathology Devices; Reclassification of In Situ Hybridization Test Systems for Use With a Corresponding Approved Oncology Therapeutic Product",
@@ -894,10 +917,10 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:01:01.051276+00:00",
+      "checked_at": "2026-11-06T06:02:18.602160+00:00",
       "source_sha256": "483cd8f9f46e29617e6ded47fd3d408d09a14ebb3c1b00b782e3435451ac73cf",
       "source_text_sha256": "59d5cdb31d8e66c9fc37f498e934b7b64f352ff12c43dca835a8d697f632c169",
-      "error": "document exceeds model input budget; manual review required"
+      "error": "evaluation deferred: model call limit"
     },
     "d55f1bc83d8915f8c19f1ba47901f49148f38e326ae68fde2a107e541d428749": {
       "status": "evaluated",
@@ -1356,7 +1379,7 @@
       "evaluated_text_sha256": "ab41d7e75d7d7cc29a419e7813938af1e60228660465cd31323e03ee2e006d53"
     },
     "8a960c302ff1e66e66dd6da04db2f0bf7d7779451e9e1d86544a6106904be080": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "The National Space Transportation Policy",
@@ -1374,10 +1397,10 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:01:07.794072+00:00",
+      "checked_at": "2026-11-06T06:02:21.663476+00:00",
       "source_sha256": "0d3711dc18e19652f67b43bf0374043db6fa72ea1e19fceb3fc5129b5ced7f7b",
       "source_text_sha256": "421e6c77bf86082a1e3359b64a83524532983e501f1463d9b02608fe4c0e94e2",
-      "error": "document exceeds model input budget; manual review required"
+      "error": "evaluation deferred: model call limit"
     },
     "19d7beb56a24dc6db7d38a9c09f698742a81d750f60693a5e702928ae99e5f01": {
       "status": "evaluated",
@@ -1404,7 +1427,7 @@
       "evaluated_text_sha256": "5492d0ccf756ee39dfcae4f097af0392e47270c90160aea7c843ec0e7aecdb21"
     },
     "cb5a5dc5e2a68bc3d8234abf6b81f5495076b73b43649537a7cfd54d5ad22994": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 1,
       "item": {
         "title": "Adjusting Imports of Unmanned Aircraft Systems and Unmanned Aircraft Systems Components Into the United States",
@@ -1422,10 +1445,29 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:01:08.964433+00:00",
+      "checked_at": "2026-11-06T06:02:21.976350+00:00",
       "source_sha256": "bb9c90378e11423ff231d1326880b038c8264c00eb6439e728cb26ff4bad5d25",
       "source_text_sha256": "5b6fa7f6ca6e3a94d15e5866c7a635601cba12361d95ff84769438a18b52a904",
-      "error": "document exceeds model input budget; manual review required"
+      "error": "no AI keyword match; not evaluated",
+      "assessment_coverage": {
+        "scope": "unassessed",
+        "selection_status": "not assessed",
+        "selector": "ai-keywords-v2",
+        "text_chars": 24561,
+        "ranges": [],
+        "passages_total": 1,
+        "passages_read": 0,
+        "passages_left": 1,
+        "selected_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "failure_history": {
+        "reason": "no AI keyword match",
+        "text_sha256": "5b6fa7f6ca6e3a94d15e5866c7a635601cba12361d95ff84769438a18b52a904",
+        "failure_kind": "no AI keyword match",
+        "runs": [
+          1
+        ]
+      }
     },
     "478b8935eddf294db29946515787df62c11a0cb4fd0e64b63e9ae06ce4688d9a": {
       "status": "evaluated",
@@ -1671,13 +1713,14 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-10-06T05:00:48.462378+00:00",
-      "source_sha256": "c4bbabe50a1be0e1265b82718f2740c4892cfd6996d9c980355ae64c6b1922ad",
+      "checked_at": "2026-11-06T06:02:25.040313+00:00",
+      "source_sha256": "34d61f6a904e9866434270fb1d62a602147c387966e94b0679aa7e5f87b64d90",
       "source_text_sha256": "167b5677d2dad40e67dd5dca3f86ca828c1a012d13b872475699ab8c961989b6",
-      "evaluated_text_sha256": "167b5677d2dad40e67dd5dca3f86ca828c1a012d13b872475699ab8c961989b6"
+      "evaluated_text_sha256": "167b5677d2dad40e67dd5dca3f86ca828c1a012d13b872475699ab8c961989b6",
+      "processing_attempts": 0
     },
     "62ee8f98b799c0827c80bfae8a016cdbfbaf4ae30d8d10c32f4e77e247ab9ea4": {
-      "status": "evaluated",
+      "status": "pending",
       "attempts": 2,
       "item": {
         "title": "NIST Joins National Genesis Mission to Accelerate AI Innovation",
@@ -1696,13 +1739,14 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-10-04T05:01:45.897335+00:00",
-      "source_sha256": "8b7ff98d4f12d1229dee2898e0a6cd704c15354afc96da1736f6a161950ae26f",
-      "source_text_sha256": "231b9c773ab9331b88f582b06973de1812b4000b9d6d04f07ee248673c6b20ef",
-      "evaluated_text_sha256": "231b9c773ab9331b88f582b06973de1812b4000b9d6d04f07ee248673c6b20ef"
+      "checked_at": "2026-11-06T06:02:24.720255+00:00",
+      "source_sha256": "0e8f7fd0b54e42354967bf03a1f5b3024323c280ce7dff567fea316f7accc8f6",
+      "source_text_sha256": "cba1385083a62a2bd2e2665d3f466965e69ae8d55a9ab0d6686ef8db24e8f3b8",
+      "evaluated_text_sha256": "231b9c773ab9331b88f582b06973de1812b4000b9d6d04f07ee248673c6b20ef",
+      "error": "evaluation deferred: model call limit"
     },
     "c884fc912776c1d9883efc915fafd11b34b1d774c5ee15dcb4be4e3f6fdf9a7b": {
-      "status": "evaluated",
+      "status": "pending",
       "attempts": 2,
       "item": {
         "title": "NIST Mathematical Proof Supports Transition to a Continuous-Monitor-and-Update Security Model for AI Systems",
@@ -1721,10 +1765,11 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-10-02T05:01:41.817286+00:00",
-      "source_sha256": "7f0df1003d4422d039d69c8211f84a2c09e987ac4d78d44ed4167743b30aafb5",
-      "source_text_sha256": "f5f6eb2a6616294f7a89cc852da773b798de4bcc0e01e0f742040effff9fc7ff",
-      "evaluated_text_sha256": "f5f6eb2a6616294f7a89cc852da773b798de4bcc0e01e0f742040effff9fc7ff"
+      "checked_at": "2026-11-06T06:02:23.604680+00:00",
+      "source_sha256": "d17e4b52e2aad6a837a1476f707498ad10b8389bca4e41306f132293e26a26e8",
+      "source_text_sha256": "9f5209bb5022a7ade0ee335d941b2f1bdbbd332099198cec85b94c4b0fb0dc06",
+      "evaluated_text_sha256": "f5f6eb2a6616294f7a89cc852da773b798de4bcc0e01e0f742040effff9fc7ff",
+      "error": "evaluation deferred: model call limit"
     },
     "913c4d9d555aac0c49e18a09e30d48b61033ebc36e16d424f0491ae9fee1e34e": {
       "status": "evaluated",
@@ -1746,10 +1791,11 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-10-02T05:01:08.302951+00:00",
-      "source_sha256": "1768d48dd08c11afb3cd738360ccd4497e9aaf3fb6675db91f720f5c9fe8216f",
+      "checked_at": "2026-11-06T06:02:22.885276+00:00",
+      "source_sha256": "27b1e399873cfeed45dd244997acac9c6f03525ab70601cb05aa9116df86ba82",
       "source_text_sha256": "8fd3bac4cecab122bcb316b08d8de0338c9d501efdbe55c47282462dda6976ab",
-      "evaluated_text_sha256": "8fd3bac4cecab122bcb316b08d8de0338c9d501efdbe55c47282462dda6976ab"
+      "evaluated_text_sha256": "8fd3bac4cecab122bcb316b08d8de0338c9d501efdbe55c47282462dda6976ab",
+      "processing_attempts": 0
     },
     "a1480047faf6483a8f0fb020d4fd2a7d4fb5c5073b6e91dd52c0dcc095c93d13": {
       "status": "evaluated",
@@ -1771,10 +1817,11 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-10-02T05:01:25.862441+00:00",
-      "source_sha256": "3b3d95c9de3ea53488616267820f91a3c7f3220169a3d4b97cbfc973262185d8",
+      "checked_at": "2026-11-06T06:02:23.241490+00:00",
+      "source_sha256": "f2a5a2bff29cf25f18c13475d5ffe5762369438350cb3abe2f1e61b9e77342f7",
       "source_text_sha256": "ebdcfae71eb2eb5aa3ff4fe22424cf1975b352501abde31af58d71aa7ebca37c",
-      "evaluated_text_sha256": "ebdcfae71eb2eb5aa3ff4fe22424cf1975b352501abde31af58d71aa7ebca37c"
+      "evaluated_text_sha256": "ebdcfae71eb2eb5aa3ff4fe22424cf1975b352501abde31af58d71aa7ebca37c",
+      "processing_attempts": 0
     },
     "fc3754ca6900e8f446d02e23f5eccd7d0a4313a4c24ec275f14d4ec86155fb2f": {
       "status": "evaluated",
@@ -1796,13 +1843,14 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-10-02T05:02:02.354194+00:00",
-      "source_sha256": "c7caff14708b1ad6a504da0e75971feec99bc92a6a3fb74c80313aa1ad60e847",
+      "checked_at": "2026-11-06T06:02:23.981085+00:00",
+      "source_sha256": "22d3c5ebaf851d6645ccdd18c690f3e81b7e2521e4ad42477acd7c08e6e9f82e",
       "source_text_sha256": "259e64ccfbd3d3bc4059cc2d52db2379dcf1abd2ddb090b6713851dd3fc3ee1e",
-      "evaluated_text_sha256": "259e64ccfbd3d3bc4059cc2d52db2379dcf1abd2ddb090b6713851dd3fc3ee1e"
+      "evaluated_text_sha256": "259e64ccfbd3d3bc4059cc2d52db2379dcf1abd2ddb090b6713851dd3fc3ee1e",
+      "processing_attempts": 0
     },
     "dee85ba4ff5dfae188f2107c358a82a196a59f67dbd4325e46f69f958c058998": {
-      "status": "evaluated",
+      "status": "pending",
       "attempts": 2,
       "item": {
         "title": "NIST Allocates Over $3 Million to Small Businesses Advancing AI, Biotechnology, Semiconductors, Quantum and More",
@@ -1821,10 +1869,11 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-09-29T05:01:35.889681+00:00",
-      "source_sha256": "d074e23a7672d594108b6a49dd1aeb1efd84a6dcb883821eb71ecb9a89e12ed2",
-      "source_text_sha256": "83aeb0a11559e0f0a4f3af95309539ccd6899be98dd92fc50c2f99f60f7e10e9",
-      "evaluated_text_sha256": "83aeb0a11559e0f0a4f3af95309539ccd6899be98dd92fc50c2f99f60f7e10e9"
+      "checked_at": "2026-11-06T06:02:22.502405+00:00",
+      "source_sha256": "5eda0ec61080655efa6fe4399ac601effb7fb7be0716a33d96cd5c18fc4d01e2",
+      "source_text_sha256": "1877093a79c610372117d7e93a1d7b7bd911ad453e14f4c9cd008e1ad5e86399",
+      "evaluated_text_sha256": "83aeb0a11559e0f0a4f3af95309539ccd6899be98dd92fc50c2f99f60f7e10e9",
+      "error": "evaluation deferred: model call limit"
     },
     "208c2512eb49a6f348c96ff9785716e7f0305b798f4dceb46c2219c92893301e": {
       "status": "evaluated",
@@ -1846,10 +1895,11 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-10-04T05:01:02.606639+00:00",
-      "source_sha256": "aa6974489fb154b2564aedd5c6f9e47f90eab1ae47d322b485173bed22cee620",
+      "checked_at": "2026-11-06T06:02:24.347966+00:00",
+      "source_sha256": "ffdb1ceef6af62a456e2a8a56f9bfe3d01128f24f67f21567d76e55e57707d61",
       "source_text_sha256": "990c0c45d7c55a9788163599314fe53bc599577c5ca6c0860f85f4091b4dd88c",
-      "evaluated_text_sha256": "990c0c45d7c55a9788163599314fe53bc599577c5ca6c0860f85f4091b4dd88c"
+      "evaluated_text_sha256": "990c0c45d7c55a9788163599314fe53bc599577c5ca6c0860f85f4091b4dd88c",
+      "processing_attempts": 0
     },
     "563d1d66cd664c488444bb4eb92b7392fa5ecf3884ffa4e743e03228b3813e62": {
       "status": "evaluated",
@@ -1946,8 +1996,17 @@
         "priority_base": 2
       },
       "active": false,
-      "checked_at": "2026-11-05T06:01:04.722928+00:00",
-      "error": "source HTTP status 403"
+      "checked_at": "2026-11-06T06:02:20.419979+00:00",
+      "error": "source HTTP status 403",
+      "processing_attempts": 1,
+      "failure_history": {
+        "reason": "source HTTP status 403",
+        "text_sha256": null,
+        "failure_kind": "HTTPError",
+        "runs": [
+          1
+        ]
+      }
     },
     "00cc6142a1a6b1f6fa6e64da6688ffe5d560d7950cb671e860069f6e0e9948b9": {
       "status": "evaluated",
@@ -1975,7 +2034,7 @@
       "evaluated_text_sha256": "616b86c0ee1d88d597c2fcf6f719645897d088caf2452ddd56f37ff1252f8089"
     },
     "57802728c75064e9f68588b60fe2c2bf09f101b79b66a45341e62957e183f068": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Rescission of the Greenhouse Gas Findings for Fossil Fuel-Fired Power Plants and Repeal of Regulations for Power Plant Greenhouse Gas Emissions Under Clean Air Act Section 111",
@@ -1993,11 +2052,13 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:00:57.647696+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "checked_at": "2026-11-06T06:02:14.806442+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "b70ce6902f017fb5eb692bd231eacc1bcf3d10fdbc8bd1cc4452e5123f57e908",
+      "source_text_sha256": "ff66563395804c1324b38d0237102a91ff2652c8c9d1bb6d56f423cff601a87a"
     },
     "acd125fdfd75db95c599f5f3bba2c1c547a48442d5bec1e39fdbbd161c614437": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Partial Repeal of the Carbon Pollution Standards for Fossil Fuel-Fired Electric Generating Units",
@@ -2015,8 +2076,10 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:00:58.168712+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "checked_at": "2026-11-06T06:02:15.389292+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "44736c07ea04813a67563064ff5dfd3d4234e3f71bace8f0d962e76877cd3630",
+      "source_text_sha256": "df21af362672152be930e527c77cbd77524a9f6bad7b2964c0a0c4c5ffb7469f"
     },
     "2aaa70ffc70ff726df8dbcb1d82079ae56f516d5591fa97f4adff95047795251": {
       "status": "evaluated",
@@ -2093,7 +2156,7 @@
       "evaluated_text_sha256": "f500c7015de8af7faf6db3d30792e8c6704cfb3327f59a4e284433169479bc34"
     },
     "2f30120e49a3130cba77b23b5b5febde7a57055f13f1de7c1fd7c0921cd8d396": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Public Company Accounting Oversight Board; Notice of Filing of Proposed Rules on Amendments to QC 1000, A Firm's System of Quality Control, and Related Rule and Forms",
@@ -2111,11 +2174,13 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:00:55.620811+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "checked_at": "2026-11-06T06:02:12.581820+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "f7de6dc734e4e86c4218c5621b1f646cb26a93c8515b9e7689452774d5db5954",
+      "source_text_sha256": "2b85b91badffb805ff5c24e2cf6babb9cccb8a76a191b06986e6ad9e92425028"
     },
     "24b91e42ca39f96250ff8396e2ab4365319553e9a5e9361ad8778925105bc9a5": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Request for Information (RFI) on Future Needs for Medical Metrology and Standards for Medical Imaging, Devices, Diagnostics and Therapy",
@@ -2133,13 +2198,13 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:00:55.359149+00:00",
+      "checked_at": "2026-11-06T06:02:12.307228+00:00",
       "source_sha256": "93d27862db1cfbe023f098d1d88ede786d36f184e9daf3b83286d5bcfbd54bf9",
       "source_text_sha256": "7da5c4c5006d37ad7ce3930ab3ce921fa5934fc1651020c2729e94c830c82cda",
-      "error": "document exceeds model input budget; manual review required"
+      "error": "evaluation deferred: model call limit"
     },
     "6bc253ab68efb4f40650545eed4bda232e33980c4a7bc93f76b0c9227d5fbace": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of a Proposed Rule Change To Permit the Listing of Binary KPI Options",
@@ -2157,11 +2222,13 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:00:56.147457+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "checked_at": "2026-11-06T06:02:13.181541+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "9bfae00fb5084b7843a0ccabbfe48ac1054591f4c9eb985962a4ea3152c35148",
+      "source_text_sha256": "2393fd8ea7c0060b5727c0db7343b8587fdda0f340a16ad3697454353aa76933"
     },
     "920548c8df731e539da02bfa501604ca735b46e184d9ccac682ae4e34627e663": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Self-Regulatory Organizations; NYSE American LLC; Notice of Filing of a Proposed Rule Change To Permit the Listing of Binary KPI Options",
@@ -2179,11 +2246,13 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:00:56.494449+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "checked_at": "2026-11-06T06:02:13.576727+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "817c2c9d496192d8816227283231a95c243b5d5675b9e6490f77ceb2c15a2ca2",
+      "source_text_sha256": "0aff3662a1b0579999225fdf011dec3b1e833d68b29867bafe107acd1ce289d4"
     },
     "fc6caa9ca06598e4de6351640198c601779f0975d004e20968e90c2fac908e61": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "United States of America, et al. v. RealPage, Inc., et al.; Proposed Final Judgment and Competitive Impact Statement",
@@ -2201,8 +2270,10 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:00:56.833408+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "checked_at": "2026-11-06T06:02:13.934212+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "bdb10826e32bba87d1f49c2993d407a067407968040600271242e87f305521d2",
+      "source_text_sha256": "e17a4185895c2bf206b34e05a2fc0b7d8692525a51c1a9c63051630837c3f0dc"
     },
     "362f4388c4d9496ebf122603c35668888a236dcf2e4af58ad656a707b1c1aa63": {
       "status": "evaluated",
@@ -2254,7 +2325,7 @@
       "evaluated_text_sha256": "ca2a46e06c5ea66f8cfbff6c63af7820b2682b7c863dd7fcf10b0358e7659dc7"
     },
     "4fc8495db52da975ea9df3ace4c524fcabcb034b3d78b335cd7146efd26e471a": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Data Intermediaries and Approaches To Strengthen Public Health Data Exchange",
@@ -2272,10 +2343,10 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:00:54.388164+00:00",
+      "checked_at": "2026-11-06T06:02:11.207751+00:00",
       "source_sha256": "5732141abd973d8993e6239e197486dbeef5fa07af70a1a8e9e5c0342d47b438",
       "source_text_sha256": "057ae28ab694825203e41fddded2a58b524f530bd1cfef46c64e60da0d6efc8f",
-      "error": "document exceeds model input budget; manual review required"
+      "error": "evaluation deferred: model call limit"
     },
     "78db547fa8ea3e2152a12e466d19c9d446bf71a9edbc69e857e8eff2cef6e192": {
       "status": "evaluated",
@@ -2374,7 +2445,7 @@
       "evaluated_text_sha256": "10c00bb5a84a266e36fdad2dfe030a025124bd0403dc052bf489bba9b0e4d6a2"
     },
     "58eefd9ea86cab3fcf1633c92d18a725d07d6a7b343c539e0d3a00f0060bd5a9": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Order Granting Temporary Conditional Exemptive Relief, Pursuant to Section 36(a)(1) of the Securities Exchange Act of 1934, From the Definition of “Exchange” in Section 3(a)(1) of the Exchange Act for the Use of Certain Distributed Ledger Trading Venues for Tokenized NMS Stocks and From the Definition of “Dealer” in Section 3(a)(5) of the Exchange Act for Certain Liquidity Providers for Tokenized NMS Stocks, and Request for Comment",
@@ -2392,11 +2463,13 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:00:53.774486+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "checked_at": "2026-11-06T06:02:10.572298+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "94373ac1458d04cff967b628c87a56a6849c67430797bf4d41c83acaf7fb5476",
+      "source_text_sha256": "645b53a64429aa7bce68df1bfefd6957b56baf33e1e0139945303173acbbf92f"
     },
     "99b981b199350cd18d9dffb46c33f69f183df547fbe49512e2f937371d7cc3ac": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Restoring American Saltwater Angling and Recreation",
@@ -2414,10 +2487,29 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:00:54.129742+00:00",
+      "checked_at": "2026-11-06T06:02:10.946459+00:00",
       "source_sha256": "19d7414eb9185234aac641d5477a120f5b1bbd298866c740acef103e33a51f5f",
       "source_text_sha256": "42b2a605ec6030eff66b91501bfafb930aded7c79002d3c37346d051858ab21a",
-      "error": "document exceeds model input budget; manual review required"
+      "error": "no AI keyword match; not evaluated",
+      "assessment_coverage": {
+        "scope": "unassessed",
+        "selection_status": "not assessed",
+        "selector": "ai-keywords-v2",
+        "text_chars": 14846,
+        "ranges": [],
+        "passages_total": 1,
+        "passages_read": 0,
+        "passages_left": 1,
+        "selected_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "failure_history": {
+        "reason": "no AI keyword match",
+        "text_sha256": "42b2a605ec6030eff66b91501bfafb930aded7c79002d3c37346d051858ab21a",
+        "failure_kind": "no AI keyword match",
+        "runs": [
+          1
+        ]
+      }
     },
     "16dbdea374f9d87939b0a89cf9ac68b92573f9916bc195bbdd7506eb09660b5b": {
       "status": "evaluated",
@@ -2492,7 +2584,7 @@
       "evaluated_text_sha256": "e82f6dc2064c6d3f909e28c4acc0aad1a8f4f40a0a530e5d79089859e8041490"
     },
     "a32ed7dcd8d4274ee4d9679174c4e18db02fce99ca4030bb0656770ca755b985": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Request for Information; Medicare Part D Reasonable and Relevant Pharmacy Contracting Standards",
@@ -2510,13 +2602,13 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:00:53.498551+00:00",
+      "checked_at": "2026-11-06T06:02:10.312832+00:00",
       "source_sha256": "387c58cf45fffaba490ed8c9e7eefb230da279108c6bf0afb7cfa14725bc0f69",
       "source_text_sha256": "960c0ef0cd21704f853ccbd3fcc20d9589a5749c1b89a4de1d24e8c161a9852c",
-      "error": "document exceeds model input budget; manual review required"
+      "error": "evaluation deferred: model call limit"
     },
     "514649fe3d22ff210a72955fecfd01b1647b89d177348ccf2274e96ea944974d": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "HUD Evaluation Policy",
@@ -2534,13 +2626,13 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:00:53.231114+00:00",
+      "checked_at": "2026-11-06T06:02:10.055694+00:00",
       "source_sha256": "823800fb40021b6741fdce7b49ed462ad4e8f5c599835080825d505a4223abcf",
       "source_text_sha256": "da0a678e19f9753a6699ade76b54b06b8b9bea17e71214e0c000f4a465ccbcfa",
-      "error": "document exceeds model input budget; manual review required"
+      "error": "evaluation deferred: model call limit"
     },
     "4a45d26215209de929355a4164808b7932a308447bcce624ca38dd2bdf420148": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Implementing the Federal Reserve Board's Responsibilities Under the GENIUS Act",
@@ -2558,8 +2650,10 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:00:52.617515+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "checked_at": "2026-11-06T06:02:09.321463+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "a428ab456f002d95ded79c3cb7a8fea2fddd425841e63aad7f980e5c192d8fe3",
+      "source_text_sha256": "c761055f814d028a2e153785c3a5fde7e5bb4018924e8078619714c0652f20b5"
     },
     "2b57378a8bc94b4efa5b6e972f31392c58c5b1be99e9b65ecb836b7114e97957": {
       "status": "evaluated",
@@ -2611,7 +2705,7 @@
       "evaluated_text_sha256": "e688a397c8cac4cd28d09e0cf997bba4604ed8f28941b4d58d254ac666ba3d85"
     },
     "4921aabf4ccc975163fbaaa020b1ba5d4a53a8a2566c390e605b2d449d71127c": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Rule on Impersonation of Government and Businesses",
@@ -2629,13 +2723,13 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:00:51.151733+00:00",
+      "checked_at": "2026-11-06T06:02:07.679404+00:00",
       "source_sha256": "68d7f8ca29c0ae6e723f580027b3b0faa8c23c7f5ab43218cd6bf58c13fb87aa",
       "source_text_sha256": "953c220894733b7adea02631953ccf29889dc0303a0a497fbceb022db7c029cc",
-      "error": "document exceeds model input budget; manual review required"
+      "error": "evaluation deferred: model call limit"
     },
     "d483248fa87172274599506521da00b26f51182d99bb833ff8b88f1245841422": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Request for Information (RFI) Regarding the Digitization and Modernization of the National Technical Reports Library (NTRL) and the Leveraging of Scientific, Technical and Engineering Information (STEI) Stored in the NTRL",
@@ -2653,10 +2747,10 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:00:52.340540+00:00",
+      "checked_at": "2026-11-06T06:02:09.048109+00:00",
       "source_sha256": "f3da990edb63a3acb300f049da3a8b29ef0e965d33c7866d89211a7feb9336bd",
       "source_text_sha256": "95dd79890aabe5b7267cc84c8bf1589877e121be502e261e6910157a221e0873",
-      "error": "document exceeds model input budget; manual review required"
+      "error": "evaluation deferred: model call limit"
     },
     "762d0535c8b4fe3495e665064b796af39ff6e7e59c97d71f938efb97325f0993": {
       "status": "evaluated",
@@ -2683,7 +2777,7 @@
       "evaluated_text_sha256": "0eaf785a7c36aaa5b593a1bca78c28426c1424008476f289d8876df35d6fb222"
     },
     "a12d3e4eae54694285c617d016275a2c3a50c025df2a063042e22a813cada293": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "The Safer Affordable Fuel-Efficient (SAFE) Vehicles Rule III for Model Years 2022 to 2031 Passenger Cars and Light Trucks",
@@ -2701,8 +2795,10 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:00:51.501812+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "checked_at": "2026-11-06T06:02:08.046934+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "734213fa278cadabcbdc8dbf85c131407298c8bf285165751b0957359e338751",
+      "source_text_sha256": "ee705cd39f6faf24904f1f2265046beec0c531708993a2be709331dd94bf420b"
     },
     "c72344e306a273fbace5d183d055151cbfa8583ab5218120520fe7511e9c0258": {
       "status": "evaluated",
@@ -2753,7 +2849,7 @@
       "evaluated_text_sha256": "f792532c5676feb52c7477e53677e058a22e18616d8cd3abbbe69a0cbf1b8641"
     },
     "d06058bb78072c470b4e56256b83ff869ce8986828ba97e43fe021cd75232d29": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Global Benchmark for Efficient Drug Pricing (GLOBE) Model",
@@ -2771,8 +2867,10 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:00:50.480881+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "checked_at": "2026-11-06T06:02:06.826157+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "a14cdb8c8caf59d41dab669145beec6486601f021755d817a4bf1b6fead2eda9",
+      "source_text_sha256": "d1405fc931669ec35ed49b24504e6bc61f4240824a1cd8aec42fa104bb46bf50"
     },
     "768c9228a9059c551cdfe041c9864df4b758e63f70dcd4e8ae7c587a9589f6dc": {
       "status": "evaluated",
@@ -2871,7 +2969,7 @@
       "evaluated_text_sha256": "4e913e7c96ea6316c345962e04302786d7adda2670cd9b626a97240dcbe9f871"
     },
     "7e3737813fbc0343ba69d47d200221098f049b5a49d861b495c7e446819945b3": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Potential Designation of Chartered Financial Analyst Designation as Qualifying Natural Persons for Accredited Investor Status",
@@ -2889,10 +2987,10 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-05T06:00:50.128517+00:00",
+      "checked_at": "2026-11-06T06:02:06.385206+00:00",
       "source_sha256": "27bb39938518b9764ede75e6fd4945a296c30caa5dda029d87b187f78806d9d0",
       "source_text_sha256": "48fac10a019701a09739a4631b72ff1f238b8503052a35cd7fbac3c1c4a34728",
-      "error": "document exceeds model input budget; manual review required"
+      "error": "evaluation deferred: model call limit"
     },
     "d7d86f6b9c82d5c25880bf90e80660c4198c28ccf876a1c076d5d0975d69d22f": {
       "status": "evaluated",
@@ -2919,7 +3017,7 @@
       "evaluated_text_sha256": "af85ed8779e895c8917336fbfbdb2f25cc3cc46f2220740072a61694ca5a82b4"
     },
     "5074058cb66103fd83db63f027f0c723d27673b955860c7b6590f2a0190c176d": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Investment Adviser Performance-Based Compensation Modernization",
@@ -2936,12 +3034,14 @@
         "format": "json_fedreg",
         "priority_base": 1
       },
-      "active": true,
-      "checked_at": "2026-11-05T06:00:49.597686+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "active": false,
+      "checked_at": "2026-11-06T06:02:05.773380+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "68678398b5eade47656b2f89f6d66e5dee0b135f262f81ac9f32aef26eb18039",
+      "source_text_sha256": "f2b430dfecab7632d0ccf0b6b593d1ddac680b50b1dabac69b1a798418b0513c"
     },
     "33c3cee138e1c2c1be0e7b5a9bdaeafa7442bbd46faa011545cc4f85327f3a7c": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Adviser and Regulated Fund Custody Rules; Crypto Custody Rules",
@@ -2958,12 +3058,14 @@
         "format": "json_fedreg",
         "priority_base": 1
       },
-      "active": true,
-      "checked_at": "2026-11-05T06:00:48.819283+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "active": false,
+      "checked_at": "2026-11-06T06:02:04.769910+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "8888a2e5115fcb37ebbd53731a6950e89e663e5277ed018b07d9de0e9abed841",
+      "source_text_sha256": "081071f86341b8d49a83187a7c365a01dbb8972cc1052c72af38920c278f2c20"
     },
     "bb55975fd75ff160bf2070a405e6ea2cdbca5cd324cea8ae21c630e0f810dc29": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Music Streaming Fraud",
@@ -2981,10 +3083,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-05T06:00:48.482062+00:00",
+      "checked_at": "2026-11-06T06:02:04.435930+00:00",
       "source_sha256": "6a116ccd791f3c27d7a056fad453537b46dbf4b8e1cf0412914840d9db3cbd49",
       "source_text_sha256": "8112b94a54338df8a632e855fcf2de31d01cb0496d4fb91570e6a18c19e0dd82",
-      "error": "document exceeds model input budget; manual review required"
+      "error": "evaluation deferred: model call limit"
     },
     "8ba8d5e5ade5391e3426d01a195ec2241dcd0f19ef6946c7e4766afefde86c1c": {
       "status": "evaluated",
@@ -3005,10 +3107,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-02T06:00:36.757104+00:00",
+      "checked_at": "2026-11-06T06:02:37.291016+00:00",
       "source_sha256": "0d57175051850adf5841ce14cb9c8cb22d79f84cd5900f95609b4d1170af0b9f",
       "source_text_sha256": "7e8519ac18fc62ccbc5e6d2a890ef24e391bd4f52878234f2f15b3befc826ca1",
-      "evaluated_text_sha256": "7e8519ac18fc62ccbc5e6d2a890ef24e391bd4f52878234f2f15b3befc826ca1"
+      "evaluated_text_sha256": "7e8519ac18fc62ccbc5e6d2a890ef24e391bd4f52878234f2f15b3befc826ca1",
+      "processing_attempts": 0
     },
     "f3919a349f763dfc15dab26216f294770fd80a19c2b51375c6af2c8413f15aad": {
       "status": "evaluated",
@@ -3054,10 +3157,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-31T06:01:07.704991+00:00",
+      "checked_at": "2026-11-06T06:02:28.017308+00:00",
       "source_sha256": "a524bf2417d6e384b6764acbfc72c9b5ef36ab83db6a79f59ff7c8cca4afea6e",
       "source_text_sha256": "f11501c7768828a54b0ca55c88eaaa8a5d1f665f8ded5877a30e15a69dc9dc2c",
-      "evaluated_text_sha256": "f11501c7768828a54b0ca55c88eaaa8a5d1f665f8ded5877a30e15a69dc9dc2c"
+      "evaluated_text_sha256": "f11501c7768828a54b0ca55c88eaaa8a5d1f665f8ded5877a30e15a69dc9dc2c",
+      "processing_attempts": 0
     },
     "246404d0fadf1b90726e41e1bd38baefd1d168536e71fa5ca84a96397c301ec4": {
       "status": "evaluated",
@@ -3079,10 +3183,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-17T05:00:24.193041+00:00",
-      "source_sha256": "5e56985b45d85d6386f5b6b42521a9522bbb246aff802c47a7925a6999c97e4a",
+      "checked_at": "2026-11-06T06:02:25.247032+00:00",
+      "source_sha256": "bfb9e341246cd9f3d98f4b939932e8a0b931cc702edcb84fa52df3179b3c220c",
       "source_text_sha256": "67ceed7a95c368114bb3183347a9bc90a0d0e2b33b3e4a48394868094c795e3b",
-      "evaluated_text_sha256": "67ceed7a95c368114bb3183347a9bc90a0d0e2b33b3e4a48394868094c795e3b"
+      "evaluated_text_sha256": "67ceed7a95c368114bb3183347a9bc90a0d0e2b33b3e4a48394868094c795e3b",
+      "processing_attempts": 0
     },
     "73704f999ff30acc70726b57aecc7e3875992ca902708855945634a588955bc0": {
       "status": "evaluated",
@@ -3103,10 +3208,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-31T06:01:02.022389+00:00",
+      "checked_at": "2026-11-06T06:02:25.578626+00:00",
       "source_sha256": "972ed2c17259724b704eb2a2c7f444b6e205971b0401067039d3653ca919c5b2",
       "source_text_sha256": "ee6ebad05fb6b30d2b88025d2b3fb54f4232b7073ad4da0f47c915041f8e4198",
-      "evaluated_text_sha256": "ee6ebad05fb6b30d2b88025d2b3fb54f4232b7073ad4da0f47c915041f8e4198"
+      "evaluated_text_sha256": "ee6ebad05fb6b30d2b88025d2b3fb54f4232b7073ad4da0f47c915041f8e4198",
+      "processing_attempts": 0
     },
     "6d72238cf519d1bc1162146b08173966a3eee70efb8f1673f77f827d2316bcc7": {
       "status": "evaluated",
@@ -3134,7 +3240,7 @@
       "evaluated_text_sha256": "f4ece7dd9a989d4ebb459287e13124c20b2ce4083df9bb33c3862312f9d65c26"
     },
     "8d223abb809ea810a5aca727124c38ee513d81f54c739c7e143fb009ce482fb2": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Project-Level Predecisional Administrative Review Process",
@@ -3152,13 +3258,13 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-05T06:00:47.661628+00:00",
+      "checked_at": "2026-11-06T06:02:03.570537+00:00",
       "source_sha256": "55d939d3b02599d309a7aad3902d4eab7a35610ae5d2e19841d4b5e1b10a2569",
       "source_text_sha256": "b355179d179040e535df8cdcc33ab30a8cbc333e7c902110925513fe9096a66c",
-      "error": "document exceeds model input budget; manual review required"
+      "error": "evaluation deferred: model call limit"
     },
     "c93921c3bcba117be717b5db7a825bb3525bc37a2bb21b51fec1045b627f1fec": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Regulation Crypto Asset Transactions and Regulation Crypto Asset Markets",
@@ -3176,8 +3282,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-05T06:00:48.020093+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "checked_at": "2026-11-06T06:02:03.933798+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "025c2d2cb61557c8579e85d6921086906591226b8ebf45a2fdac8ace0c9024c7",
+      "source_text_sha256": "ccc1a4a0c9ddc15ce5e9aa29723c8add5086f564fa7e3cd8901f40431ddb6b5a"
     },
     "b3fb51436650ab46b20f1488eec3cc0c0ff248d72ee203736c9791645c286ea7": {
       "status": "evaluated",
@@ -3198,10 +3306,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-01T06:01:32.495331+00:00",
+      "checked_at": "2026-11-06T06:02:37.032174+00:00",
       "source_sha256": "196a4db2dae3f8c2f13288a3c81badaff8f73a3a1f10b6e5f6e58fb14bddf451",
       "source_text_sha256": "eb42584706daf3b9be41db42d18dba9ac0763ea0cd35cef34d3fe9bf4a1abc7a",
-      "evaluated_text_sha256": "eb42584706daf3b9be41db42d18dba9ac0763ea0cd35cef34d3fe9bf4a1abc7a"
+      "evaluated_text_sha256": "eb42584706daf3b9be41db42d18dba9ac0763ea0cd35cef34d3fe9bf4a1abc7a",
+      "processing_attempts": 0
     },
     "9c134a0287b04c08f684351e48ef9ee8120ab644b25bdc8b0f421de4648bf9d0": {
       "status": "evaluated",
@@ -3222,10 +3331,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-01T06:01:32.237711+00:00",
+      "checked_at": "2026-11-06T06:02:34.305946+00:00",
       "source_sha256": "7cc67b45f27b2540782515a5f21aa42f26bd968ba9cffc0a8821690563f454f2",
       "source_text_sha256": "04b9869b38ef038f73d1505804739f3096e37f62799a30856f3dc9f852d6ee9a",
-      "evaluated_text_sha256": "04b9869b38ef038f73d1505804739f3096e37f62799a30856f3dc9f852d6ee9a"
+      "evaluated_text_sha256": "04b9869b38ef038f73d1505804739f3096e37f62799a30856f3dc9f852d6ee9a",
+      "processing_attempts": 0
     },
     "77adf1f7c26b5ab0ad3e404dc55c91a76855451ad1a3016b14d599ce5cc2bf9e": {
       "status": "evaluated",
@@ -3246,10 +3356,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-05T06:01:12.235387+00:00",
+      "checked_at": "2026-11-06T06:02:55.322526+00:00",
       "source_sha256": "db0b695709a85b5a3f9eb419912d0417d144ccfbc0e82acfb835574f420c82ae",
       "source_text_sha256": "ac891b0e55209dc8f309eaeed151c957c50752463e888fe356085774a41b976e",
-      "evaluated_text_sha256": "ac891b0e55209dc8f309eaeed151c957c50752463e888fe356085774a41b976e"
+      "evaluated_text_sha256": "ac891b0e55209dc8f309eaeed151c957c50752463e888fe356085774a41b976e",
+      "processing_attempts": 0
     },
     "7127edfaedaa2be870b7aeb9406a91bfd10fa66672f088bc92dd55c788a8445e": {
       "status": "evaluated",
@@ -3270,10 +3381,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-04T06:01:17.100246+00:00",
+      "checked_at": "2026-11-06T06:02:55.063475+00:00",
       "source_sha256": "295648b4f0ac27519f75753143bc5cba4f1561b47b14e3502be7ddd4d3a3ab10",
       "source_text_sha256": "21173adcb49f2e011577064956c2e1772a413c582e93b74c2ca87ffb8f507f23",
-      "evaluated_text_sha256": "21173adcb49f2e011577064956c2e1772a413c582e93b74c2ca87ffb8f507f23"
+      "evaluated_text_sha256": "21173adcb49f2e011577064956c2e1772a413c582e93b74c2ca87ffb8f507f23",
+      "processing_attempts": 0
     },
     "5a3e471068708abee4a567bf2150fb0780524a3579e6e0e5e7b6d6dc9dc956c6": {
       "status": "evaluated",
@@ -3294,13 +3406,14 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-04T06:01:16.850737+00:00",
+      "checked_at": "2026-11-06T06:02:52.056938+00:00",
       "source_sha256": "55abc6086dcd0163ff4ecd7befc1d01168a2e5e7324ac0ef687b906a5d8e6030",
       "source_text_sha256": "977ca325e8408ef1123a2e6c644ce73ba01f08a66eab981314685ae946235417",
-      "evaluated_text_sha256": "977ca325e8408ef1123a2e6c644ce73ba01f08a66eab981314685ae946235417"
+      "evaluated_text_sha256": "977ca325e8408ef1123a2e6c644ce73ba01f08a66eab981314685ae946235417",
+      "processing_attempts": 0
     },
     "b04a1d3707809c977422248a041313af22247f39c0e4c9009dd6f32bef04a68d": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Self-Regulatory Organizations; Cboe Exchange, Inc.; Notice of Filing of Amendment No. 1 and Order Granting Accelerated Approval of a Proposed Rule Change, as Modified by Amendment No. 1, To Permit the Listing of Binary Options Overlying Key Performance Indicators Reported by Certain Issuers of Stock",
@@ -3318,8 +3431,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-05T06:00:47.224672+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "checked_at": "2026-11-06T06:02:03.057704+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "cb1fe5ddd4269d23fb6be452240b1bd8579c62b423ba4182e4212de0343c938d",
+      "source_text_sha256": "009627f40358d05cbba88541a95c80c0d97345cbb66fec943dfaa93e7b67bb96"
     },
     "892d10ed0e671e74b5bad102ef6b52256e249d835ef7ae2c8fb7a2e20e011361": {
       "status": "evaluated",
@@ -3340,10 +3455,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-04T06:01:13.584951+00:00",
+      "checked_at": "2026-11-06T06:02:46.585099+00:00",
       "source_sha256": "cbcb3a94d3fde8f0db0089576bd6681c5866cd02e48a0826f21b9d48fcc9eb2d",
       "source_text_sha256": "9a231dc556e7dd9bf632065493852d257e1513785536500627a8c7910933e68b",
-      "evaluated_text_sha256": "9a231dc556e7dd9bf632065493852d257e1513785536500627a8c7910933e68b"
+      "evaluated_text_sha256": "9a231dc556e7dd9bf632065493852d257e1513785536500627a8c7910933e68b",
+      "processing_attempts": 0
     },
     "9ed4244e887ec87e23ee289ed76b5bb4cb78bb7a7bbfb7a438ba75d5b795cf12": {
       "status": "evaluated",
@@ -3364,10 +3480,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-04T06:01:16.587627+00:00",
+      "checked_at": "2026-11-06T06:02:49.057710+00:00",
       "source_sha256": "ca9871a684f9f2822c7e3b45d2df0b5d9114fc54ec6e29d9c8323290d6c24c54",
       "source_text_sha256": "2876153013655b8337932575fd4cfb81147e72094adda9fe0d0e244be4493bc8",
-      "evaluated_text_sha256": "2876153013655b8337932575fd4cfb81147e72094adda9fe0d0e244be4493bc8"
+      "evaluated_text_sha256": "2876153013655b8337932575fd4cfb81147e72094adda9fe0d0e244be4493bc8",
+      "processing_attempts": 0
     },
     "77aac622416dbef23e0cd721def79eb1c40b0b12eef113bc2a31ff917987c10e": {
       "status": "evaluated",
@@ -3388,10 +3505,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-03T06:00:53.459972+00:00",
+      "checked_at": "2026-11-06T06:02:45.544261+00:00",
       "source_sha256": "ecd2d2fb812a99fa333d0be2deb80bc00aca51693f7f980425735980e7ab5bf3",
       "source_text_sha256": "aa0fe3ab585945e13b46be62d76274e38266d8892c60b4e7cb571d15afc3c696",
-      "evaluated_text_sha256": "aa0fe3ab585945e13b46be62d76274e38266d8892c60b4e7cb571d15afc3c696"
+      "evaluated_text_sha256": "aa0fe3ab585945e13b46be62d76274e38266d8892c60b4e7cb571d15afc3c696",
+      "processing_attempts": 0
     },
     "089b956cf19dade8edf1589f26c9b185d10db6321c2b16eb189cb2e9aa3f6688": {
       "status": "evaluated",
@@ -3412,10 +3530,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-03T06:00:50.454415+00:00",
+      "checked_at": "2026-11-06T06:02:45.295876+00:00",
       "source_sha256": "2d65629d1de7997c4f9ea1ff7cd1afd901e501020670c15868995465ef648be3",
       "source_text_sha256": "be142ad997135e0a056f751ee6c2fa430cf90f47b6dbc96a8b6099a3169ff956",
-      "evaluated_text_sha256": "be142ad997135e0a056f751ee6c2fa430cf90f47b6dbc96a8b6099a3169ff956"
+      "evaluated_text_sha256": "be142ad997135e0a056f751ee6c2fa430cf90f47b6dbc96a8b6099a3169ff956",
+      "processing_attempts": 0
     },
     "004d24dbfeeb53105ec5baa97e394b3f62def659308b7b6463d511ccc0eb947c": {
       "status": "evaluated",
@@ -3436,10 +3555,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-03T06:00:47.704671+00:00",
+      "checked_at": "2026-11-06T06:02:45.042445+00:00",
       "source_sha256": "00305f1b65e653cf06fa93e29646845571776d89a5f2a4b99e6c70d6d3657dbe",
       "source_text_sha256": "368db77c45beee54d4577a5903187c68c07c00165ee36387854c9a3e8431d813",
-      "evaluated_text_sha256": "368db77c45beee54d4577a5903187c68c07c00165ee36387854c9a3e8431d813"
+      "evaluated_text_sha256": "368db77c45beee54d4577a5903187c68c07c00165ee36387854c9a3e8431d813",
+      "processing_attempts": 0
     },
     "4a5ed66c88631f05d157e79eeecee614adf9af0c590fa6dfe026ec232767d748": {
       "status": "evaluated",
@@ -3461,10 +3581,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-22T05:01:13.899664+00:00",
-      "source_sha256": "ad462b8e99cd7e2b16c7769e28cfe1fbc3bb1b1945f5da016969cd015a5c22d7",
+      "checked_at": "2026-11-06T06:02:25.365829+00:00",
+      "source_sha256": "d23cbe5c0ce2a825801e64f295302f6fba394f1717b0fc1b5b11c1cfc1791613",
       "source_text_sha256": "2f927342c2797a3c9017c2af5c218fae658c2617f05bae5e3fb2c3c1901ed42e",
-      "evaluated_text_sha256": "2f927342c2797a3c9017c2af5c218fae658c2617f05bae5e3fb2c3c1901ed42e"
+      "evaluated_text_sha256": "2f927342c2797a3c9017c2af5c218fae658c2617f05bae5e3fb2c3c1901ed42e",
+      "processing_attempts": 0
     },
     "fdde44cb77dc3421627ed2d9b8a5f928ce8197f10776c33f4f3341fc07bca2c5": {
       "status": "evaluated",
@@ -3485,13 +3606,14 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-31T06:01:07.451822+00:00",
+      "checked_at": "2026-11-06T06:02:26.375950+00:00",
       "source_sha256": "5678fa2416f397632bdb3def5dae1eca3127635608f4c0c27b81a6d0dbe00d1e",
       "source_text_sha256": "85d7fa09679c8be895ef7b503d13da68274ed1e47a82ab84ef4ff3f54d83150a",
-      "evaluated_text_sha256": "85d7fa09679c8be895ef7b503d13da68274ed1e47a82ab84ef4ff3f54d83150a"
+      "evaluated_text_sha256": "85d7fa09679c8be895ef7b503d13da68274ed1e47a82ab84ef4ff3f54d83150a",
+      "processing_attempts": 0
     },
     "ef77ae8be899a531362f0422d1715a975e984bf4c567627090661c54d3c205dc": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Medicare Program; Implementation of Sections 6219, 6220, and 6224 of the Consolidated Appropriations Act, 2026",
@@ -3509,11 +3631,13 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-05T06:00:46.693811+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "checked_at": "2026-11-06T06:02:02.447001+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "28035935dbe1f54ce7085b99416069a4827e0dd5cf5256f27cd50918147dd413",
+      "source_text_sha256": "186a7bec49c32542679d828496014366d7be9d3d8ed061460ab7a51c5365065e"
     },
     "53eabbdeb6eb56ef7c0dc374d9661b8f9000aa33b82c02ced6bf21d7ea31a64c": {
-      "status": "evaluated",
+      "status": "pending",
       "attempts": 2,
       "item": {
         "title": "Digital Services Act study on financial scams on online platforms and ways to counter them",
@@ -3532,13 +3656,14 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-23T05:01:12.273422+00:00",
-      "source_sha256": "d219ce6d47856e4907cb53cefb130ccf724d666b34345643b341e1251263f860",
-      "source_text_sha256": "ce49824392c35616fc5ef8d20607190652c3c79c8944949a584d6a4fd2895084",
-      "evaluated_text_sha256": "ce49824392c35616fc5ef8d20607190652c3c79c8944949a584d6a4fd2895084"
+      "checked_at": "2026-11-06T06:02:25.436548+00:00",
+      "source_sha256": "92d5b40ed4ba9dbcc6fe2723862368a80a5e1947facdce4c439200ae096175b1",
+      "source_text_sha256": "6e7bd0e522c9869572bbd97b201254ee6a74cb5956678c050d15c4925d212046",
+      "evaluated_text_sha256": "ce49824392c35616fc5ef8d20607190652c3c79c8944949a584d6a4fd2895084",
+      "error": "evaluation deferred: model call limit"
     },
     "ec661d72bd35baf8e46a26b377cbe50ab91641f3278efb06e838918de384ba66": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Grant Guideline; Notice",
@@ -3556,10 +3681,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-05T06:00:46.326610+00:00",
+      "checked_at": "2026-11-06T06:02:02.067268+00:00",
       "source_sha256": "ac136190a42c040e6d7a73ac51d25cbf4f34017ceab795768f5a8cac0fe8f3a6",
       "source_text_sha256": "6a070ea029f262eaf621cd1fbeb0c30eef44dacb2ac371b970e1b296341b7c80",
-      "error": "document exceeds model input budget; manual review required"
+      "error": "evaluation deferred: model call limit"
     },
     "1b19ab4e4cd2c40c390850b253d71073f20d319a0ab8622fb83b8ef14f9c07b1": {
       "status": "evaluated",
@@ -3580,10 +3705,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-02T06:00:38.061551+00:00",
+      "checked_at": "2026-11-06T06:02:40.507653+00:00",
       "source_sha256": "2e5b7f3614f1cd471793702c33ed8eaba7430a7b37b3e4b966b3ee6fb07169f3",
       "source_text_sha256": "8a0673bf588a965a5e235fc8fa05be00c69af7c6973ff520cff096e6f78cd398",
-      "evaluated_text_sha256": "8a0673bf588a965a5e235fc8fa05be00c69af7c6973ff520cff096e6f78cd398"
+      "evaluated_text_sha256": "8a0673bf588a965a5e235fc8fa05be00c69af7c6973ff520cff096e6f78cd398",
+      "processing_attempts": 0
     },
     "8c21a02e1704d16b31e9b49477e376b324f0b468a86aad64de6a9c909c5654a9": {
       "status": "evaluated",
@@ -3605,10 +3731,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-24T05:01:05.526101+00:00",
-      "source_sha256": "abc64e372cc51b439d323855305c211b9220bdbff468641d1be365fa082ed2cf",
+      "checked_at": "2026-11-06T06:02:25.495665+00:00",
+      "source_sha256": "3d18ca13ceaaec55a867f3a09b883737aafeee68644b666309feb62be558c912",
       "source_text_sha256": "11a61d0cb2e376cbd82d6b5d008b3fadaf5506f1e358a55fb696021c185e95c9",
-      "evaluated_text_sha256": "11a61d0cb2e376cbd82d6b5d008b3fadaf5506f1e358a55fb696021c185e95c9"
+      "evaluated_text_sha256": "11a61d0cb2e376cbd82d6b5d008b3fadaf5506f1e358a55fb696021c185e95c9",
+      "processing_attempts": 0
     },
     "81480d0c321697c2cf015dab7483c43f08f45c0f6c28ac7930e646604ed32470": {
       "status": "evaluated",
@@ -3629,10 +3756,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-31T06:01:04.709646+00:00",
+      "checked_at": "2026-11-06T06:02:26.122432+00:00",
       "source_sha256": "e2c1b4443d9172d136cd502427fa734eed5f86e28edf1d33db54a994ca5ae36a",
       "source_text_sha256": "7498c2a224a2facf8d0aef0bc78d26bc607b7b16e2c5f6610b94d43f58268f85",
-      "evaluated_text_sha256": "7498c2a224a2facf8d0aef0bc78d26bc607b7b16e2c5f6610b94d43f58268f85"
+      "evaluated_text_sha256": "7498c2a224a2facf8d0aef0bc78d26bc607b7b16e2c5f6610b94d43f58268f85",
+      "processing_attempts": 0
     },
     "1b7400d2f18de665d2f8570b440bba24d93889466fb047667b7d38eda0f666f1": {
       "status": "evaluated",
@@ -3653,10 +3781,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-10-31T06:01:04.451624+00:00",
+      "checked_at": "2026-11-06T06:02:25.863208+00:00",
       "source_sha256": "a601d48bfd1a88a8d0feac66a1a9a145e4cef5dea0109b5fcfdb852f38a0a73e",
       "source_text_sha256": "fbd31565c6223e8bd620911db80b265acf9820735f366bd7118315e7e96d6a48",
-      "evaluated_text_sha256": "fbd31565c6223e8bd620911db80b265acf9820735f366bd7118315e7e96d6a48"
+      "evaluated_text_sha256": "fbd31565c6223e8bd620911db80b265acf9820735f366bd7118315e7e96d6a48",
+      "processing_attempts": 0
     },
     "39a37b2ea9cf18c9f04700e9a739117d703d27d329fc3adc616a7d5368525311": {
       "status": "evaluated",
@@ -3677,13 +3806,14 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-02T06:00:37.009967+00:00",
+      "checked_at": "2026-11-06T06:02:37.551650+00:00",
       "source_sha256": "c0f977d9605f1cf9c19dfe5aa836b2433c6d48a22245ddb36383e8009caef890",
       "source_text_sha256": "3879d0e31cfdb57afaadd230d5c3d2314ef5d7188410282ceaca234b7c356aa7",
-      "evaluated_text_sha256": "3879d0e31cfdb57afaadd230d5c3d2314ef5d7188410282ceaca234b7c356aa7"
+      "evaluated_text_sha256": "3879d0e31cfdb57afaadd230d5c3d2314ef5d7188410282ceaca234b7c356aa7",
+      "processing_attempts": 0
     },
     "885210746b50ffcc04cfb1ff4a2158a84e356b577be1d81a5e2ba0bcb8d2fba0": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Implementing the Guiding and Establishing National Innovation for U.S. Stablecoins Act for the Issuance of Stablecoins by Entities Subject to the Jurisdiction of the Office of the Comptroller of the Currency",
@@ -3701,11 +3831,13 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-05T06:00:45.595429+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "checked_at": "2026-11-06T06:02:01.164505+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "b4693fb2c835c34f51950317b1bd6b149428fde374c3c60c963aac4b579f47ba",
+      "source_text_sha256": "3da63b15ae087a54af6cee16f967c3018cc435e61587f01ff7bde87b9d996f14"
     },
     "6c0ae95b7f83c1584631087b04e6e0aa049c3e37acb9494004d67b563d5b9750": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Supplemental Nutrition Assistance Program: Electronic Benefits Transfer Card Security Measures",
@@ -3723,11 +3855,13 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-05T06:00:45.165197+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "checked_at": "2026-11-06T06:02:00.684352+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "9cdc50f6967af2493f769b2b351da0cd4b1191197d36628ec77960b5684480d1",
+      "source_text_sha256": "7b6c7a43dc90273194e43ca898e339390a53dc29e11e96da5d50b895b0290947"
     },
     "0c20d6ec3b25600bbd9e537e984cdbcb4f8ff822c02f7b22c2422a36c3ec5c8f": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Outbound Investment Security Program Regulations",
@@ -3745,8 +3879,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-05T06:00:44.718276+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "checked_at": "2026-11-06T06:02:00.216158+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "34483538aab33a130771b95d43d45a742c002a419a54dd094a6b46c38c469b74",
+      "source_text_sha256": "c8b99e13843945e36bca74cb10d4774385e64cc3668a87dfeff57da4c9cd9368"
     },
     "f74538dcf56acdbefc957cc846f8a5e9925246c6387fce63e9dd50c69eeeb2b9": {
       "status": "evaluated",
@@ -3767,10 +3903,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-05T06:01:12.756707+00:00",
+      "checked_at": "2026-11-06T06:03:01.070518+00:00",
       "source_sha256": "98658cdba7a7740226b6d5640d31dc8783e37c8f22f6b5e28cb1707599ae96b7",
       "source_text_sha256": "512a4fad6cba092aaa50f9a73ad42547c38929af44fc4bae2bf1035cee326f06",
-      "evaluated_text_sha256": "512a4fad6cba092aaa50f9a73ad42547c38929af44fc4bae2bf1035cee326f06"
+      "evaluated_text_sha256": "512a4fad6cba092aaa50f9a73ad42547c38929af44fc4bae2bf1035cee326f06",
+      "processing_attempts": 0
     },
     "cb4f3e5f1baa0404fe2a815f8eb87c67a474916b357186eff9e99584df65dce0": {
       "status": "evaluated",
@@ -3791,10 +3928,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-01T06:01:31.977486+00:00",
+      "checked_at": "2026-11-06T06:02:34.027269+00:00",
       "source_sha256": "059c2addec1aef7423f8a8e3326ebb6b1e6056fc4fe852b9979e785b954ad9bc",
       "source_text_sha256": "4799ce83aca9760a73d997243b557baba955a05858514e634d7b0f3fd1ccab42",
-      "evaluated_text_sha256": "4799ce83aca9760a73d997243b557baba955a05858514e634d7b0f3fd1ccab42"
+      "evaluated_text_sha256": "4799ce83aca9760a73d997243b557baba955a05858514e634d7b0f3fd1ccab42",
+      "processing_attempts": 0
     },
     "8db0658e12b9ffb01e9389f2a8a08f714bbbb20ab38b0b6ab175d7f59f1b227c": {
       "status": "evaluated",
@@ -3815,10 +3953,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-02T06:00:38.917169+00:00",
+      "checked_at": "2026-11-06T06:02:44.031636+00:00",
       "source_sha256": "cdae9e8a23863ce94d4c93237538654564b827e168838003a216384d5715ba69",
       "source_text_sha256": "1f1b4843a131e981b8d2f15c41cee6148511ae01d764929e1cac4a11c2c35153",
-      "evaluated_text_sha256": "1f1b4843a131e981b8d2f15c41cee6148511ae01d764929e1cac4a11c2c35153"
+      "evaluated_text_sha256": "1f1b4843a131e981b8d2f15c41cee6148511ae01d764929e1cac4a11c2c35153",
+      "processing_attempts": 0
     },
     "3bc5e138fbf0b2fdb961c17803608dad2ac974b0990dc39046ef62d10a0c1cb9": {
       "status": "evaluated",
@@ -3839,13 +3978,14 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-02T06:00:38.656401+00:00",
+      "checked_at": "2026-11-06T06:02:43.787128+00:00",
       "source_sha256": "cca668b6e4bb9103e7aefbf26b0b1ee7da9b94c98266333a3a06f4c448ab8422",
       "source_text_sha256": "fb8438bf6ce351091357c29736f4a43db8eaccc177a88b79f7d2f9d96618e82c",
-      "evaluated_text_sha256": "fb8438bf6ce351091357c29736f4a43db8eaccc177a88b79f7d2f9d96618e82c"
+      "evaluated_text_sha256": "fb8438bf6ce351091357c29736f4a43db8eaccc177a88b79f7d2f9d96618e82c",
+      "processing_attempts": 0
     },
     "036c1d09a1befcf60a39c48677c1cb5c40d497490694982eaa4411bc4e11522b": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "NCUA Draft 2027-2028 Budget",
@@ -3863,13 +4003,13 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-05T06:00:43.400143+00:00",
+      "checked_at": "2026-11-06T06:01:58.821979+00:00",
       "source_sha256": "c6fee58970b33cd05b52d270da256ff76bc14ac74e8a85b08250447d2b395e00",
       "source_text_sha256": "124ca75799cac79f59c2ef472595a228c57b6839bf037f547ffc4f01a499e8b6",
-      "error": "document exceeds model input budget; manual review required"
+      "error": "evaluation deferred: model call limit"
     },
     "3df84b2e6f650e56cf4163a09c2d6c7a605b412093fc4a83043e456f97ee13f7": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Health Data, Technology, and Interoperability: ONC Deregulatory Actions To Unleash Prosperity",
@@ -3887,11 +4027,13 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-05T06:00:44.163763+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "checked_at": "2026-11-06T06:01:59.607673+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "9ce7f79e2aad18d99e078b72d1653976372cf65915d1fd6c3584cbc13f1c5e69",
+      "source_text_sha256": "ca3e999251b2bcd4fd50a77c6cc598aad96f3fed02ad3181ee3f718049e9375c"
     },
     "0d162f871af980a78ca615b733b5190ae50be5452af829d7bf6d99a50bae92f4": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Exemptions To Permit Circumvention of Access Controls on Copyrighted Works",
@@ -3909,8 +4051,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-05T06:00:43.745151+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "checked_at": "2026-11-06T06:01:59.161209+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "6f953e70e2c4b0638807602a75c60edccb0a5246264c6b41aba417b86068250b",
+      "source_text_sha256": "6b776ff9e962f418d0a113991c19a0d0c9747ce32fd19e1a752cc20c024a4140"
     },
     "a137e67baabe5393f3e012fbe8d2ed98c01adf14b2a358fa72248c034b242552": {
       "status": "evaluated",
@@ -3931,10 +4075,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-02T06:00:39.392044+00:00",
+      "checked_at": "2026-11-06T06:02:44.286074+00:00",
       "source_sha256": "988f80705a11498ce2b842468f9d678c59f1ebda8290951d8fa98006af7f9a20",
       "source_text_sha256": "8eb23a83452c8c5f906e1d7d73bc4e6da0e4eeb8e7c216dcb0a245f172988099",
-      "evaluated_text_sha256": "8eb23a83452c8c5f906e1d7d73bc4e6da0e4eeb8e7c216dcb0a245f172988099"
+      "evaluated_text_sha256": "8eb23a83452c8c5f906e1d7d73bc4e6da0e4eeb8e7c216dcb0a245f172988099",
+      "processing_attempts": 0
     },
     "de9f52728f217ea549b88ea3e7fe366a0dcc87ad8f68c297f580647d0dd646e1": {
       "status": "evaluated",
@@ -3955,10 +4100,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-03T06:00:47.449895+00:00",
+      "checked_at": "2026-11-06T06:02:44.792378+00:00",
       "source_sha256": "36b1ac700f687df03e80bd292d8e47e693f624ac21b7f34465c6fcf06a4aa687",
       "source_text_sha256": "f8980e56ef809858566cd33ada9313c8d50162207a3af54817ee38a5ebfeeca5",
-      "evaluated_text_sha256": "f8980e56ef809858566cd33ada9313c8d50162207a3af54817ee38a5ebfeeca5"
+      "evaluated_text_sha256": "f8980e56ef809858566cd33ada9313c8d50162207a3af54817ee38a5ebfeeca5",
+      "processing_attempts": 0
     },
     "12287c8cac5bb1f2caf31b99ede47018e0583e5bed1aa39fe792087ad4024aec": {
       "status": "evaluated",
@@ -3979,10 +4125,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-02T06:00:38.397643+00:00",
+      "checked_at": "2026-11-06T06:02:43.518506+00:00",
       "source_sha256": "266651b2c9fd979100fe8bd394738cf3ca36370dffd7f4ac13bc4b422c44cc9d",
       "source_text_sha256": "ba39f0fc5e9a32c542150cc8216193e6754189289400f679cfcf12e5d10e1c8c",
-      "evaluated_text_sha256": "ba39f0fc5e9a32c542150cc8216193e6754189289400f679cfcf12e5d10e1c8c"
+      "evaluated_text_sha256": "ba39f0fc5e9a32c542150cc8216193e6754189289400f679cfcf12e5d10e1c8c",
+      "processing_attempts": 0
     },
     "d503cb2f219dbf0787c56d2fcca48200739b7c5bf3351397a8f2bd229fc3db10": {
       "status": "evaluated",
@@ -4003,10 +4150,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-03T06:00:46.576455+00:00",
+      "checked_at": "2026-11-06T06:02:44.530286+00:00",
       "source_sha256": "89ba75456718a7d87c5fafa3bb274dca1cc3611736ccaa9b22881a54fd240021",
       "source_text_sha256": "2b82f160ffcb94da8e7bda039f78e03678074174925836d9aa5da4fa39ab5afe",
-      "evaluated_text_sha256": "2b82f160ffcb94da8e7bda039f78e03678074174925836d9aa5da4fa39ab5afe"
+      "evaluated_text_sha256": "2b82f160ffcb94da8e7bda039f78e03678074174925836d9aa5da4fa39ab5afe",
+      "processing_attempts": 0
     },
     "24e13de1d3c0e9e9eb9796ab518218e5bca5fb36fbfb691f39fbfe3df466f0ec": {
       "status": "evaluated",
@@ -4027,10 +4175,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-03T06:00:53.714892+00:00",
+      "checked_at": "2026-11-06T06:02:45.782888+00:00",
       "source_sha256": "b0ca1b1c9005ba8f39cb8f938c83b6b5bcd3c6d90d3e7e4b59a8caa7015638a2",
       "source_text_sha256": "51d3c31428350ddc002ac1ccb28c4b28820f09eea17c8a05558ca1c0d63aa4be",
-      "evaluated_text_sha256": "51d3c31428350ddc002ac1ccb28c4b28820f09eea17c8a05558ca1c0d63aa4be"
+      "evaluated_text_sha256": "51d3c31428350ddc002ac1ccb28c4b28820f09eea17c8a05558ca1c0d63aa4be",
+      "processing_attempts": 0
     },
     "59b323dc432e7e11dbf258276ea885d469fb549d4bf736e31ff6303413487181": {
       "status": "evaluated",
@@ -4051,10 +4200,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-03T06:00:53.977250+00:00",
+      "checked_at": "2026-11-06T06:02:46.050788+00:00",
       "source_sha256": "dcfa4693c104ed2d7bdb1c3cf458dd7f34f2133a5663f885004ba315e7348a66",
       "source_text_sha256": "8cfaa36d84f45f9b7edf8ec05c4a5738881f3f5a975542fb2e1c7447bd716213",
-      "evaluated_text_sha256": "8cfaa36d84f45f9b7edf8ec05c4a5738881f3f5a975542fb2e1c7447bd716213"
+      "evaluated_text_sha256": "8cfaa36d84f45f9b7edf8ec05c4a5738881f3f5a975542fb2e1c7447bd716213",
+      "processing_attempts": 0
     },
     "ef3f9aa78aad83a2fe0fd1824d63e6132c04a8bbe2de5317bf6f055e122891bc": {
       "status": "evaluated",
@@ -4076,13 +4226,14 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-03T06:00:54.250296+00:00",
-      "source_sha256": "4571884df349a7617dd8649806cdb0c30d7aac90cfedec48eb171dcf484a8ad7",
+      "checked_at": "2026-11-06T06:02:46.297554+00:00",
+      "source_sha256": "6ad4cc4183b9695ca7b86de23ecdd207cb2e7f3e61ae4677e67a09ba0513612e",
       "source_text_sha256": "701563781934f712f2b7f4920386bff38307e1eb5fce6011d6d960781cf87d13",
-      "evaluated_text_sha256": "701563781934f712f2b7f4920386bff38307e1eb5fce6011d6d960781cf87d13"
+      "evaluated_text_sha256": "701563781934f712f2b7f4920386bff38307e1eb5fce6011d6d960781cf87d13",
+      "processing_attempts": 0
     },
     "b7a59793882f523d54a31b25a55d4735400c85d6b7aab355335984339c0d7753": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Accreditation, Innovation, and Modernization: The Secretary's Recognition of Accrediting Agencies; Institutional Eligibility Under the Higher Education Act of 1965, as Amended; Student Assistance General Provisions",
@@ -4100,8 +4251,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-05T06:00:42.845568+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "checked_at": "2026-11-06T06:01:58.179312+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "ceb94a16875e99566e38022c9da2ad6c558ab0662c41a09480c4dceb20ab6426",
+      "source_text_sha256": "f3a064946969e4344d3cae6497d903c2c1a800302baf4c3e61228e22d4092176"
     },
     "f10d953ba78d0d0472f02b7a9e35d191580f48c63daee7da5aebc94e9dada2e8": {
       "status": "evaluated",
@@ -4122,10 +4275,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-05T06:01:12.498394+00:00",
+      "checked_at": "2026-11-06T06:02:58.058062+00:00",
       "source_sha256": "baea0d01a82d2dd50c624e1f6745c6eb58b85a2d56177cc3cf11cec48aa42650",
       "source_text_sha256": "5aa3bb36f1293f554cacfc00234c36e7e6f2d7ef19d166709a31089d026804e9",
-      "evaluated_text_sha256": "5aa3bb36f1293f554cacfc00234c36e7e6f2d7ef19d166709a31089d026804e9"
+      "evaluated_text_sha256": "5aa3bb36f1293f554cacfc00234c36e7e6f2d7ef19d166709a31089d026804e9",
+      "processing_attempts": 0
     },
     "9abadbbead3be9f887adf96698749ea5c2e7cc90e5e646f89549bc44e5649f27": {
       "status": "evaluated",
@@ -4146,10 +4300,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-01T06:00:36.375388+00:00",
+      "checked_at": "2026-11-06T06:02:31.284123+00:00",
       "source_sha256": "311ca4f492f92bdda08c87958a16e64aef1e9ad3f4ad07a36768c21b46de997a",
       "source_text_sha256": "ebefe2ee6916a5cad035503ab4ec9e5c2ceb9059afb6af172446226579d116ec",
-      "evaluated_text_sha256": "ebefe2ee6916a5cad035503ab4ec9e5c2ceb9059afb6af172446226579d116ec"
+      "evaluated_text_sha256": "ebefe2ee6916a5cad035503ab4ec9e5c2ceb9059afb6af172446226579d116ec",
+      "processing_attempts": 0
     },
     "89bfa1f7ceb22151a2ccb5b9f89e51dd6357c4c7df889022a5a9bb93540c7ff0": {
       "status": "evaluated",
@@ -4170,13 +4325,14 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-01T06:00:03.450075+00:00",
+      "checked_at": "2026-11-06T06:02:31.026658+00:00",
       "source_sha256": "e69a1891a9f8b39a1362ef558cc2a7ecea9279dd04470b13367c967b6a828c8f",
       "source_text_sha256": "a43e8622d435af29cfc3e11e6bfea356a29c26808918941f9c0d7dd537a9b587",
-      "evaluated_text_sha256": "a43e8622d435af29cfc3e11e6bfea356a29c26808918941f9c0d7dd537a9b587"
+      "evaluated_text_sha256": "a43e8622d435af29cfc3e11e6bfea356a29c26808918941f9c0d7dd537a9b587",
+      "processing_attempts": 0
     },
     "e565f49ced58bb3c51412a4e68a2371f461b08151235510172f0d11e9d8e9217": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Streamlining Contested Adjudications in Licensing Proceedings",
@@ -4194,11 +4350,13 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-05T06:00:42.406330+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "checked_at": "2026-11-06T06:01:57.693008+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "a8ee6adc471679eab967ed9fe304381242eb388398a5e355e35329e01c37edca",
+      "source_text_sha256": "b20cf8fb174659bc714b603f74d6f29a45ab11a4da24307a798a52bb2d011970"
     },
     "329809ee8e7781321257fad351997fd75e4d23139480cb5c516c9f3159230f22": {
-      "status": "manual_review",
+      "status": "pending",
       "attempts": 0,
       "item": {
         "title": "Pipeline Safety: Amendments to Liquefied Natural Gas Facilities",
@@ -4216,8 +4374,10 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-05T06:00:41.650334+00:00",
-      "error": "document exceeds evaluation text limit; manual review required"
+      "checked_at": "2026-11-06T06:01:56.885282+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "00d65c408b5667be236990d23bfccc6d49b464e585eabdd9207c6da2aae6098c",
+      "source_text_sha256": "2699ccf4c37e2db413fdfba491f300c8597e61ac15b7770f32c386fb28de30c8"
     },
     "b450b26388d49b1e50b2ecda602e2af7fdfeabc8527f9cef3054898f3ba74b54": {
       "status": "pending",
@@ -4239,8 +4399,17 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-05T06:00:42.207023+00:00",
-      "error": "source capture failed: ValueError"
+      "checked_at": "2026-11-06T06:01:57.485205+00:00",
+      "error": "insufficient source text",
+      "processing_attempts": 1,
+      "failure_history": {
+        "reason": "insufficient source text",
+        "text_sha256": null,
+        "failure_kind": "ValueError",
+        "runs": [
+          1
+        ]
+      }
     },
     "893dd3b089e5079bbe38fbde3588679a932eede4a0cc864c8abea7871eaf8292": {
       "status": "evaluated",
@@ -4262,10 +4431,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-04T06:00:02.834609+00:00",
-      "source_sha256": "5a8cc010f929ddb6b798ddc3bc76e4e9a86a3e5bb2fe13fe32453b247116798e",
+      "checked_at": "2026-11-06T06:02:46.457457+00:00",
+      "source_sha256": "ed0039c86b81d3ae29a01014da011f12bb328ff7328cc36ea77b2040a3c0f335",
       "source_text_sha256": "3ba427a4d57fb0412d939a98de325f91fa2435566a2ce9b4e30f669a9d581402",
-      "evaluated_text_sha256": "3ba427a4d57fb0412d939a98de325f91fa2435566a2ce9b4e30f669a9d581402"
+      "evaluated_text_sha256": "3ba427a4d57fb0412d939a98de325f91fa2435566a2ce9b4e30f669a9d581402",
+      "processing_attempts": 0
     },
     "b4aabd54716c71bb97151a026d1b5e1d6e69ff1fa68eeb7b9db5c55dee833e27": {
       "status": "pending",
@@ -4287,15 +4457,17 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-05T06:00:41.603025+00:00",
-      "error": "source HTTP status 503"
+      "checked_at": "2026-11-06T06:01:56.789237+00:00",
+      "error": "evaluation deferred: model call limit",
+      "source_sha256": "3925c44ca612db264bc5e9f8b346f4bafcde06a0441deed9db6d8601ced8f934",
+      "source_text_sha256": "be6cf9ec33c91804f1ad605351749e0eb6cbeac68821363a67efef1249626c47"
     },
     "b1694c94405407d57eb05888e487cef9b3964edf6a38c36f0ae8ff169a62d0cf": {
       "status": "pending",
       "attempts": 1,
       "item": {
         "title": "Call for evidence on advertising repositories",
-        "summary": "<span>Call for evidence on advertising repositories</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-11-04T11:10:00+01:00\" title=\"Wednesday, November 4, 2026 - 11:10\">Wed, 11/04/2026 - 11:10</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                              <ul class=\"ecl-unordered-list ecl-unordered-list--no-bullet ecl-u-mb-xl\">\n      <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n      <span class=\"wt-icon--calendar ecl-icon ecl-icon--fluid ecl-icon--calendar\" aria-hidden=\"true\"></span>&nbsp;\n      Opening: 04 November 2026\n    </li>\n    <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n      <span class=\"wt-icon--calendar ecl-icon ecl-icon--fluid ecl-icon--calendar\" aria-hidden=\"true\"></span>&nbsp;\n      Closing: 02 December 2026\n    </li>\n  \n  </ul>\n\n                <p class=\"ecl-page-header-standardised__description\">The Commission is seeking feedback on upcoming technical guidelines concerning advertising repositories under the Digital Services Act (DSA).</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/DSA_variation_v3_W3REBo7ClNb039rqN6HCPAlnoo_2408801_mGY8upNR41r0SRfigTQNIe4Uag_2472391_dFnp8LC6JTjhtZo6TpMr7H3yrU_2492661_8Kb2trKfYF9TGSklmPlxvKhXfQ_251096.png?itok=YcvueQOF\" alt=\"Text &quot;Digital Services Act&quot; inside a white triangle inside a white triangle against a purple background.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>The feedback is being gathered through a <a href=\"https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19419-Digital-Services-Act-advertising-repository-guidelines_en\">call for evidence</a>.</p>\n<p>The responses collected through the call for evidence will help shape guidelines aimed at ensuring that advertising repositories meet the needs of their users. Amongst other things, the guidelines will advise on:</p>\n<ul>\n<li>how to make advertising repositories easily searchable</li>\n<li>how to provide insights on how users are targeted and reached</li>\n<li>how to make the content of advertisements accessible</li>\n</ul>\n<p>Once adopted, these guidelines will aim to ensure that the advertising repositories provided by <a href=\"https://digital-strategy.ec.europa.eu/en/policies/dsa-vlops\">very large online platforms (VLOPs) and very large online search engines (VLOSEs)</a> are effective and fit for purpose.</p>\n<p>Effective advertising repositories are essential tools for enabling greater public scrutiny of online advertising. Transparency in advertising – revealing who pays and how citizens are targeted – helps to protect public health, ensure a high level of consumer protection and safeguard the integrity of elections. Advertising repositories also support effective supervision and enforcement of the DSA.</p>\n<h2>Next steps</h2>\n<p>The call for evidence will be followed by a targeted public consultation in 2027. Researchers, civil society, providers of VLOPs and VLOSEs and representatives from the advertising industry will be invited to share feedback on a draft version of the guidelines. The publication of the guidelines is planned for the second quarter of 2028.</p>\n<h2>Background</h2>\n<p>Under Article 39 of the DSA, providers of VLOPs and VLOSEs are required to maintain publicly accessible repositories of advertisements displayed on their services. These repositories (commonly known as ‘ad libraries’) provide information on the content of advertisements, who paid for them, the period during which they were displayed, how many users the advertisements reached, and the main criteria used to decide who saw the advertisements.</p>\n<p>Article 39(3) of the DSA provides the possibility for the Commission to issue guidelines on the design of advertising repositories, following consultation with the <a href=\"https://digital-strategy.ec.europa.eu/en/policies/dsa-board\">European Board for Digital Services</a>, researchers and the public. The guidelines will support the Commission’s supervision and enforcement of VLOPs and VLOSEs’ compliance with Article 39 of the DSA.</p></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=150\" class=\"ecl-tag ecl-u-mb-xs\">Online platforms and e-commerce</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=193\" class=\"ecl-tag ecl-u-mb-xs\">DSA - Digital Services Act</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                              <h2>Related content</h2>\n\n      \n  <article class=\"ecl-content-item ecl-content-item--divider ecl-u-mb-xl\"><div class=\"ecl-content-block ecl-content-item__content-block\" data-ecl-auto-init=\"ContentBlock\" data-ecl-content-block><ul class=\"ecl-content-block__primary-meta-container\"><li class=\"ecl-content-block__primary-meta-item\">Press release</li><li class=\"ecl-content-block__primary-meta-item\">04 November 2026</li></ul><div class=\"ecl-content-block__title\"><a href=\"https://digital-strategy.ec.europa.eu/en/news/commission-seeks-feedback-advertising-repositories-under-digital-services-act\" class=\"ecl-link ecl-link--standalone\" data-ecl-title-link>Commission seeks feedback on advertising repositories under the Digital Services Act</a></div><div class=\"ecl-content-block__description\">Today, the European Commission is calling for evidence to gather feedback on upcoming technical guidelines concerning advertising repositories under the Digital Services Act (DSA).</div></div></article>  \n\n  \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div class=\"cnt-last-update-block\">\n  \n    \n      \n\n  </div>\n<div class=\"cnt-print-pdf-block\">\n  \n    \n      \n  \n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
+        "summary": "<span>Call for evidence on advertising repositories</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-11-04T11:10:00+01:00\" title=\"Wednesday, November 4, 2026 - 11:10\">Wed, 11/04/2026 - 11:10</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                              <ul class=\"ecl-unordered-list ecl-unordered-list--no-bullet ecl-u-mb-xl\">\n      <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n      <span class=\"wt-icon--calendar ecl-icon ecl-icon--fluid ecl-icon--calendar\" aria-hidden=\"true\"></span>&nbsp;\n      Opening: 04 November 2026\n    </li>\n    <li class=\"cnt-nr-item-metadata ecl-u-mt-l ecl-u-d-flex ecl-u-align-items-center ecl-unordered-list__item\">\n      <span class=\"wt-icon--calendar ecl-icon ecl-icon--fluid ecl-icon--calendar\" aria-hidden=\"true\"></span>&nbsp;\n      Closing: 02 December 2026\n    </li>\n  \n  </ul>\n\n                <p class=\"ecl-page-header-standardised__description\">The Commission is seeking feedback on upcoming technical guidelines concerning advertising repositories under the Digital Services Act (DSA).</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/DSA_variation_v3_W3REBo7ClNb039rqN6HCPAlnoo_2408801_mGY8upNR41r0SRfigTQNIe4Uag_2472391_dFnp8LC6JTjhtZo6TpMr7H3yrU_2492661_8Kb2trKfYF9TGSklmPlxvKhXfQ_251096.png?itok=YcvueQOF\" alt=\"Text &quot;Digital Services Act&quot; inside a white triangle inside a white triangle against a purple background.\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>The feedback is being gathered through a <a href=\"https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19419-Digital-Services-Act-advertising-repository-guidelines_en\">call for evidence</a>.</p>\n<p>The responses collected through the call for evidence will help shape guidelines aimed at ensuring that advertising repositories meet the needs of their users. Amongst other things, the guidelines will advise on:</p>\n<ul>\n<li>how to make advertising repositories easily searchable</li>\n<li>how to provide insights on how users are targeted and reached</li>\n<li>how to make the content of advertisements accessible</li>\n</ul>\n<p>Once adopted, these guidelines will aim to ensure that the advertising repositories provided by <a href=\"https://digital-strategy.ec.europa.eu/en/policies/dsa-vlops\">very large online platforms (VLOPs) and very large online search engines (VLOSEs)</a> are effective and fit for purpose.</p>\n<p>Effective advertising repositories are essential tools for enabling greater public scrutiny of online advertising. Transparency in advertising – revealing who pays and how citizens are targeted – helps to protect public health, ensure a high level of consumer protection and safeguard the integrity of elections. Advertising repositories also support effective supervision and enforcement of the DSA.</p>\n<h2>Next steps</h2>\n<p>The call for evidence will be followed by a targeted public consultation in 2027. Researchers, civil society, providers of VLOPs and VLOSEs and representatives from the advertising industry will be invited to share feedback on a draft version of the guidelines. The publication of the guidelines is planned for the second quarter of 2028.</p>\n<h2>Background</h2>\n<p>Under Article 39 of the DSA, providers of VLOPs and VLOSEs are required to maintain publicly accessible repositories of advertisements displayed on their services. These repositories (commonly known as ‘ad libraries’) provide information on the content of advertisements, who paid for them, the period during which they were displayed, how many users the advertisements reached, and the main criteria used to decide who saw the advertisements.</p>\n<p>Article 39(3) of the DSA provides the possibility for the Commission to issue guidelines on the design of advertising repositories, following consultation with the <a href=\"https://digital-strategy.ec.europa.eu/en/policies/dsa-board\">European Board for Digital Services</a>, researchers and the public. The guidelines will support the Commission’s supervision and enforcement of VLOPs and VLOSEs’ compliance with Article 39 of the DSA.</p></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=150\" class=\"ecl-tag ecl-u-mb-xs\">Online platforms and e-commerce</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=193\" class=\"ecl-tag ecl-u-mb-xs\">DSA - Digital Services Act</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                              <h2>Related content</h2>\n\n      \n  <article class=\"ecl-content-item ecl-content-item--divider ecl-u-mb-xl\"><div class=\"ecl-content-block ecl-content-item__content-block\" data-ecl-auto-init=\"ContentBlock\" data-ecl-content-block><ul class=\"ecl-content-block__primary-meta-container\"><li class=\"ecl-content-block__primary-meta-item\">Press release</li><li class=\"ecl-content-block__primary-meta-item\">04 November 2026</li></ul><div class=\"ecl-content-block__title\"><a href=\"https://digital-strategy.ec.europa.eu/en/news/commission-seeks-feedback-advertising-repositories-under-digital-services-act\" class=\"ecl-link ecl-link--standalone\" data-ecl-title-link>Commission seeks feedback on advertising repositories under the Digital Services Act</a></div><div class=\"ecl-content-block__description\">The European Commission is calling for evidence to gather feedback on upcoming technical guidelines concerning advertising repositories under the Digital Services Act (DSA).</div></div></article>  \n\n  \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div class=\"cnt-last-update-block\">\n  \n    \n      \n\n  </div>\n<div class=\"cnt-print-pdf-block\">\n  \n    \n      \n  \n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
         "url": "https://digital-strategy.ec.europa.eu/en/consultations/call-evidence-advertising-repositories",
         "publication_date": "Wed, 04 Nov 2026 10:10:00 +0000"
       },
@@ -4310,18 +4482,502 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-05T06:00:02.293551+00:00",
-      "source_sha256": "9c46a9fe12bab99cd059ec7e5976e9a1885c1eae65febea1d56eb17cdf573c39",
-      "source_text_sha256": "bc0d989f4d714c2f9e3e1e95a1e841748301b77b41adf01641d55834f53d00d8",
-      "error": "priority exceeds assessed relevance"
+      "checked_at": "2026-11-06T06:02:21.922818+00:00",
+      "source_sha256": "ff355c0a13fbed5ccb0c9dae57e2be3da18044c1fd3decd0f9fd0285116bdfaa",
+      "source_text_sha256": "c43e49433ad732b28d58f3b6dfd5bef7907b2460c06bfe0f48e66e94e7120bee",
+      "error": "evaluation deferred: model call limit"
+    },
+    "40721d5532da79a0fe158e8b61088398fa28ee4220133a4b2f2fce355242c16b": {
+      "status": "evaluated",
+      "attempts": 1,
+      "item": {
+        "title": "Proposed Priorities and Definitions-Secretary's Supplemental Priorities and Definitions",
+        "summary": "The Secretary proposes to amend the Notice of Final Priorities and Definitions--Secretary's Supplemental Priorities and Definitions on Evidence-Based Literacy, Education Choice, and Returning Education to the States published in the Federal Register on September 9, 2025, the Notice of Final Priority and Definitions--Secretary's Supplemental Priority and Definitions on Meaningful Learning Opportunities published in the Federal Register on February 12, 2026, the Notice of Final Priority and Definitions--Secretary's Supplemental Priority and Definitions on Career Pathways and Workforce Readiness published in the Federal Register on April 13, 2026, and the Notice of Final Priority and Definitions--Secretary's Supplemental Priority and Definitions on Advancing Artificial Intelligence in Education published in the Federal Register on April 13, 2026. The proposed amendments are needed to ensure that the U.S. Department of Education (ED, or the Department) has priorities that represent the full spectrum of learners, reflect the expertise of the Federal agencies that are active partners in our mission, and incorporate lessons learned from implementation in FY 2026 grant competitions.",
+        "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22615/proposed-priorities-and-definitions-secretarys-supplemental-priorities-and-definitions",
+        "publication_date": "2026-11-05"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-11-06T06:00:03.743808+00:00",
+      "source_sha256": "5bdb5cb3e03eb0b3fd5d08aa5b667ecb373efa2fc02cc4c034a5f3b50f2d1c86",
+      "source_text_sha256": "a80511bc3ecbd15ae184f465f0892b4ab6a05ac966e9df84056ace6880997b21",
+      "processing_attempts": 0,
+      "assessment_coverage": {
+        "scope": "passages only",
+        "selection_status": "selected",
+        "selector": "ai-keywords-v2",
+        "text_chars": 119642,
+        "ranges": [
+          [
+            0,
+            604
+          ],
+          [
+            649,
+            1870
+          ],
+          [
+            5768,
+            7006
+          ],
+          [
+            8464,
+            9937
+          ],
+          [
+            9937,
+            11339
+          ],
+          [
+            11339,
+            12643
+          ],
+          [
+            55081,
+            56393
+          ],
+          [
+            57794,
+            59075
+          ],
+          [
+            84440,
+            85780
+          ],
+          [
+            96992,
+            98261
+          ]
+        ],
+        "passages_total": 21,
+        "passages_read": 10,
+        "passages_left": 11,
+        "selected_text_sha256": "53cb31027a872a5c494da575d4e166c5aff7c35ec22fbba942c3a243390b1d89"
+      },
+      "evaluated_text_sha256": "a80511bc3ecbd15ae184f465f0892b4ab6a05ac966e9df84056ace6880997b21",
+      "evaluated_coverage": {
+        "scope": "passages only",
+        "selection_status": "selected",
+        "selector": "ai-keywords-v2",
+        "text_chars": 119642,
+        "ranges": [
+          [
+            0,
+            604
+          ],
+          [
+            649,
+            1870
+          ],
+          [
+            5768,
+            7006
+          ],
+          [
+            8464,
+            9937
+          ],
+          [
+            9937,
+            11339
+          ],
+          [
+            11339,
+            12643
+          ],
+          [
+            55081,
+            56393
+          ],
+          [
+            57794,
+            59075
+          ],
+          [
+            84440,
+            85780
+          ],
+          [
+            96992,
+            98261
+          ]
+        ],
+        "passages_total": 21,
+        "passages_read": 10,
+        "passages_left": 11,
+        "selected_text_sha256": "53cb31027a872a5c494da575d4e166c5aff7c35ec22fbba942c3a243390b1d89"
+      }
+    },
+    "a8b1f44d0fc5ebe86955929aa3fdddb0b0d309bdcaa206ad4c664a3a98167961": {
+      "status": "evaluated",
+      "attempts": 1,
+      "item": {
+        "title": "Medical Devices; Hematology and Pathology Devices; Classification of the Digital Cervical Cytology Slide Imaging System With Artificial Intelligence Algorithm",
+        "summary": "The Food and Drug Administration (FDA) is classifying the digital cervical cytology slide imaging system with artificial intelligence algorithm into class II (special controls). The special controls that apply to the device type are identified in this order and will be part of the codified language for classification of the digital cervical cytology slide imaging system with artificial intelligence algorithm. We are taking this action because we have determined that classifying the device into class II will provide a reasonable assurance of the safety and effectiveness of the device. We believe this action will also enhance patients' access to beneficial innovative devices, in part by reducing regulatory burdens.",
+        "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22593/medical-devices-hematology-and-pathology-devices-classification-of-the-digital-cervical-cytology",
+        "publication_date": "2026-11-05"
+      },
+      "target": {
+        "id": "us_fed_reg_ai",
+        "name": "US Federal Register (AI Rules & Notices)",
+        "jurisdiction": "United States",
+        "type": "regulatory_gazette",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=artificial+intelligence&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-11-06T06:01:25.282265+00:00",
+      "source_sha256": "617d5b2df3d2a0ffd32e187bc7bb7d1cc4680385baaf49c5d62cc7a43f840ad1",
+      "source_text_sha256": "8cfea84de9600ca5a0dcf55c3822645621450dbb24d712baedd2e8f3304c9e3b",
+      "processing_attempts": 0,
+      "assessment_coverage": {
+        "scope": "passages only",
+        "selection_status": "selected",
+        "selector": "ai-keywords-v2",
+        "text_chars": 22560,
+        "ranges": [
+          [
+            0,
+            1317
+          ],
+          [
+            1317,
+            2485
+          ],
+          [
+            5489,
+            6733
+          ],
+          [
+            6733,
+            7934
+          ],
+          [
+            7934,
+            8849
+          ],
+          [
+            8994,
+            10228
+          ],
+          [
+            11610,
+            12830
+          ],
+          [
+            12830,
+            16120
+          ],
+          [
+            16120,
+            17402
+          ]
+        ],
+        "passages_total": 11,
+        "passages_read": 9,
+        "passages_left": 2,
+        "selected_text_sha256": "637a512a7696182a689312489d67ada802410b549df0b9a6b9691b63305b5689"
+      },
+      "evaluated_text_sha256": "8cfea84de9600ca5a0dcf55c3822645621450dbb24d712baedd2e8f3304c9e3b",
+      "evaluated_coverage": {
+        "scope": "passages only",
+        "selection_status": "selected",
+        "selector": "ai-keywords-v2",
+        "text_chars": 22560,
+        "ranges": [
+          [
+            0,
+            1317
+          ],
+          [
+            1317,
+            2485
+          ],
+          [
+            5489,
+            6733
+          ],
+          [
+            6733,
+            7934
+          ],
+          [
+            7934,
+            8849
+          ],
+          [
+            8994,
+            10228
+          ],
+          [
+            11610,
+            12830
+          ],
+          [
+            12830,
+            16120
+          ],
+          [
+            16120,
+            17402
+          ]
+        ],
+        "passages_total": 11,
+        "passages_read": 9,
+        "passages_left": 2,
+        "selected_text_sha256": "637a512a7696182a689312489d67ada802410b549df0b9a6b9691b63305b5689"
+      }
+    },
+    "7f0e72b09f2d0c874033d39625a7c07578788ceceeef7fe8ba91f1b1980511e4": {
+      "status": "evaluated",
+      "attempts": 1,
+      "item": {
+        "title": "Continuation of the National Emergency With Respect to the Threat From Securities Investments That Finance Certain Companies of the People's Republic of China",
+        "summary": "Continuation of the National Emergency With Respect to the Threat From Securities Investments That Finance Certain Companies of the People's Republic of China",
+        "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22688/continuation-of-the-national-emergency-with-respect-to-the-threat-from-securities-investments-that",
+        "publication_date": "2026-11-05"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-11-06T06:01:02.592551+00:00",
+      "source_sha256": "b30ed4fb7c1f14475e5e8f0d2869ea6b4ec5eb58fe7e912cf8eb86b9d7a28dec",
+      "source_text_sha256": "82b55e522b5d9f3a6babbd347cd6a7754fcfea28a57132467920af19bcbe58a8",
+      "processing_attempts": 0,
+      "assessment_coverage": {
+        "scope": "extracted text",
+        "selection_status": "selected",
+        "selector": "full-text",
+        "text_chars": 4045,
+        "ranges": [
+          [
+            0,
+            4045
+          ]
+        ],
+        "passages_total": 1,
+        "passages_read": 1,
+        "passages_left": 0,
+        "selected_text_sha256": "82b55e522b5d9f3a6babbd347cd6a7754fcfea28a57132467920af19bcbe58a8"
+      },
+      "evaluated_text_sha256": "82b55e522b5d9f3a6babbd347cd6a7754fcfea28a57132467920af19bcbe58a8",
+      "evaluated_coverage": {
+        "scope": "extracted text",
+        "selection_status": "selected",
+        "selector": "full-text",
+        "text_chars": 4045,
+        "ranges": [
+          [
+            0,
+            4045
+          ]
+        ],
+        "passages_total": 1,
+        "passages_read": 1,
+        "passages_left": 0,
+        "selected_text_sha256": "82b55e522b5d9f3a6babbd347cd6a7754fcfea28a57132467920af19bcbe58a8"
+      }
+    },
+    "f8019a2c1eb3fa6c29b141a3255526e540f993cde399eaaa2fad11263057c457": {
+      "status": "evaluated",
+      "attempts": 1,
+      "item": {
+        "title": "Continuation of the National Emergency With Respect to the Situation in Nicaragua",
+        "summary": "Continuation of the National Emergency With Respect to the Situation in Nicaragua",
+        "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22687/continuation-of-the-national-emergency-with-respect-to-the-situation-in-nicaragua",
+        "publication_date": "2026-11-05"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-11-06T06:01:45.285950+00:00",
+      "source_sha256": "8f6ff80145e78ffe917e5b0baac87d5ac477def6e3bf77cfc27ba3d058653121",
+      "source_text_sha256": "b9ce5f89eed517ce53a2e64b46e90fe76462dd5f92387c618dc58dbba32be880",
+      "processing_attempts": 0,
+      "assessment_coverage": {
+        "scope": "extracted text",
+        "selection_status": "selected",
+        "selector": "full-text",
+        "text_chars": 1716,
+        "ranges": [
+          [
+            0,
+            1716
+          ]
+        ],
+        "passages_total": 1,
+        "passages_read": 1,
+        "passages_left": 0,
+        "selected_text_sha256": "b9ce5f89eed517ce53a2e64b46e90fe76462dd5f92387c618dc58dbba32be880"
+      },
+      "evaluated_text_sha256": "b9ce5f89eed517ce53a2e64b46e90fe76462dd5f92387c618dc58dbba32be880",
+      "evaluated_coverage": {
+        "scope": "extracted text",
+        "selection_status": "selected",
+        "selector": "full-text",
+        "text_chars": 1716,
+        "ranges": [
+          [
+            0,
+            1716
+          ]
+        ],
+        "passages_total": 1,
+        "passages_read": 1,
+        "passages_left": 0,
+        "selected_text_sha256": "b9ce5f89eed517ce53a2e64b46e90fe76462dd5f92387c618dc58dbba32be880"
+      }
+    },
+    "5f107215c2a2c4c135f6d0d46b17227f3e3d14bc4868107522ee6726ffabd54f": {
+      "status": "evaluated",
+      "attempts": 1,
+      "item": {
+        "title": "Continuation of the National Emergency With Respect to the Proliferation of Weapons of Mass Destruction",
+        "summary": "Continuation of the National Emergency With Respect to the Proliferation of Weapons of Mass Destruction",
+        "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22686/continuation-of-the-national-emergency-with-respect-to-the-proliferation-of-weapons-of-mass",
+        "publication_date": "2026-11-05"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-11-06T06:00:50.522837+00:00",
+      "source_sha256": "f3fad33ed22f3f361ced1222b5a0bd98ba3e8b82f2806c10581d9b71a7d47e81",
+      "source_text_sha256": "a8f87359bd2f7e471ca1a8f5729d63c67afc1cc886db91ae4261502bd8995362",
+      "processing_attempts": 0,
+      "assessment_coverage": {
+        "scope": "extracted text",
+        "selection_status": "selected",
+        "selector": "full-text",
+        "text_chars": 1764,
+        "ranges": [
+          [
+            0,
+            1764
+          ]
+        ],
+        "passages_total": 1,
+        "passages_read": 1,
+        "passages_left": 0,
+        "selected_text_sha256": "a8f87359bd2f7e471ca1a8f5729d63c67afc1cc886db91ae4261502bd8995362"
+      },
+      "evaluated_text_sha256": "a8f87359bd2f7e471ca1a8f5729d63c67afc1cc886db91ae4261502bd8995362",
+      "evaluated_coverage": {
+        "scope": "extracted text",
+        "selection_status": "selected",
+        "selector": "full-text",
+        "text_chars": 1764,
+        "ranges": [
+          [
+            0,
+            1764
+          ]
+        ],
+        "passages_total": 1,
+        "passages_read": 1,
+        "passages_left": 0,
+        "selected_text_sha256": "a8f87359bd2f7e471ca1a8f5729d63c67afc1cc886db91ae4261502bd8995362"
+      }
+    },
+    "87b7248f4b56bc6c30a02932e865618c5aac5fe3d65dbbf40c18cdc85d707012": {
+      "status": "evaluated",
+      "attempts": 1,
+      "item": {
+        "title": "Continuation of the National Emergency With Respect to Iran",
+        "summary": "Continuation of the National Emergency With Respect to Iran",
+        "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22685/continuation-of-the-national-emergency-with-respect-to-iran",
+        "publication_date": "2026-11-05"
+      },
+      "target": {
+        "id": "us_fed_reg_eo",
+        "name": "US Federal Register (Executive Orders)",
+        "jurisdiction": "United States",
+        "type": "executive_order",
+        "url": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Btype%5D%5B%5D=PRESDOCU&order=newest",
+        "format": "json_fedreg",
+        "priority_base": 1
+      },
+      "active": true,
+      "checked_at": "2026-11-06T06:01:14.964264+00:00",
+      "source_sha256": "fe1d3b258140a45a2e08d83506826d82002c803ca1c3f52794152ef451317001",
+      "source_text_sha256": "bf694e8273195bd65134cb41d1249f71be3bcf4cba8cc346a1133e2d928f1e18",
+      "processing_attempts": 0,
+      "assessment_coverage": {
+        "scope": "extracted text",
+        "selection_status": "selected",
+        "selector": "full-text",
+        "text_chars": 1417,
+        "ranges": [
+          [
+            0,
+            1417
+          ]
+        ],
+        "passages_total": 1,
+        "passages_read": 1,
+        "passages_left": 0,
+        "selected_text_sha256": "bf694e8273195bd65134cb41d1249f71be3bcf4cba8cc346a1133e2d928f1e18"
+      },
+      "evaluated_text_sha256": "bf694e8273195bd65134cb41d1249f71be3bcf4cba8cc346a1133e2d928f1e18",
+      "evaluated_coverage": {
+        "scope": "extracted text",
+        "selection_status": "selected",
+        "selector": "full-text",
+        "text_chars": 1417,
+        "ranges": [
+          [
+            0,
+            1417
+          ]
+        ],
+        "passages_total": 1,
+        "passages_read": 1,
+        "passages_left": 0,
+        "selected_text_sha256": "bf694e8273195bd65134cb41d1249f71be3bcf4cba8cc346a1133e2d928f1e18"
+      }
     }
   },
   "last_pass": {
-    "documents_checked": 60,
-    "documents_deferred": 42,
-    "model_attempts": 1,
-    "pending_evaluations": 57,
-    "manual_review_required": 53,
+    "documents_checked": 108,
+    "documents_deferred": 0,
+    "model_attempts": 6,
+    "pending_evaluations": 61,
+    "manual_review_required": 0,
+    "not_evaluated_by_reason": {},
+    "passages_read": 23,
+    "passages_left": 15,
+    "passages_only_documents": 2,
+    "documents_with_passages_left": 4,
+    "coverage_not_recorded": 111,
     "unhealthy_sources": [
       "ftc_press_releases"
     ],
@@ -4334,5 +4990,6 @@
     "alert_d498d75e9ad0325171b40054": "2026-09-26T05:02:24.504561+00:00"
   },
   "pending_notifications": [],
-  "last_run_status": "incomplete"
+  "last_run_status": "incomplete",
+  "pass_number": 1
 }

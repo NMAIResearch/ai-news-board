@@ -1,5 +1,415 @@
 [
   {
+    "id": "alert_41eb4e01a867b879ac522d90",
+    "timestamp": "2026-11-06T06:02:22.239032+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (Executive Orders)",
+    "jurisdiction": "United States",
+    "title": "Adjusting Imports of Unmanned Aircraft Systems and Unmanned Aircraft Systems Components Into the United States",
+    "url": "https://www.federalregister.gov/documents/2026/08/19/2026-16979/adjusting-imports-of-unmanned-aircraft-systems-and-unmanned-aircraft-systems-components-into-the",
+    "source_queue_priority": 1,
+    "substantive_priority": null,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "Unassessed capture from US Federal Register (Executive Orders): Adjusting Imports of Unmanned Aircraft Systems and Unmanned Aircraft Systems Components Into the United States",
+    "denominator_disclosed": "unassessed",
+    "actionable_trigger": "Review the captured primary document.",
+    "evaluation_method": "unassessed",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "bb9c90378e11423ff231d1326880b038c8264c00eb6439e728cb26ff4bad5d25",
+    "source_text_sha256": "5b6fa7f6ca6e3a94d15e5866c7a635601cba12361d95ff84769438a18b52a904",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "unassessed",
+      "selection_status": "not assessed",
+      "selector": "ai-keywords-v2",
+      "text_chars": 24561,
+      "ranges": [],
+      "passages_total": 1,
+      "passages_read": 0,
+      "passages_left": 1,
+      "selected_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/08/19/2026-16979.html",
+    "document_status": "unassessed",
+    "ai_relevance": "unassessed",
+    "evidence_quote": null,
+    "assessment_error": "no AI keyword match; not evaluated"
+  },
+  {
+    "id": "alert_801fd47b9cd56d4f59e85c7a",
+    "timestamp": "2026-11-06T06:02:11.207712+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (Executive Orders)",
+    "jurisdiction": "United States",
+    "title": "Restoring American Saltwater Angling and Recreation",
+    "url": "https://www.federalregister.gov/documents/2026/09/22/2026-19417/restoring-american-saltwater-angling-and-recreation",
+    "source_queue_priority": 1,
+    "substantive_priority": null,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "Unassessed capture from US Federal Register (Executive Orders): Restoring American Saltwater Angling and Recreation",
+    "denominator_disclosed": "unassessed",
+    "actionable_trigger": "Review the captured primary document.",
+    "evaluation_method": "unassessed",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "19d7414eb9185234aac641d5477a120f5b1bbd298866c740acef103e33a51f5f",
+    "source_text_sha256": "42b2a605ec6030eff66b91501bfafb930aded7c79002d3c37346d051858ab21a",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "unassessed",
+      "selection_status": "not assessed",
+      "selector": "ai-keywords-v2",
+      "text_chars": 14846,
+      "ranges": [],
+      "passages_total": 1,
+      "passages_read": 0,
+      "passages_left": 1,
+      "selected_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/22/2026-19417.html",
+    "document_status": "unassessed",
+    "ai_relevance": "unassessed",
+    "evidence_quote": null,
+    "assessment_error": "no AI keyword match; not evaluated"
+  },
+  {
+    "id": "alert_278e99bd8de235066aa3a623",
+    "timestamp": "2026-11-06T06:01:56.789194+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (Executive Orders)",
+    "jurisdiction": "United States",
+    "title": "Continuation of the National Emergency With Respect to the Situation in Nicaragua",
+    "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22687/continuation-of-the-national-emergency-with-respect-to-the-situation-in-nicaragua",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a US Executive Order notice continuing a national emergency regarding Nicaragua. It contains no provisions, obligations, or references relevant to AI operators or UK regulatory compliance.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "No action required; document is outside the scope of AI regulatory monitoring.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "8f6ff80145e78ffe917e5b0baac87d5ac477def6e3bf77cfc27ba3d058653121",
+    "source_text_sha256": "b9ce5f89eed517ce53a2e64b46e90fe76462dd5f92387c618dc58dbba32be880",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "extracted text",
+      "selection_status": "selected",
+      "selector": "full-text",
+      "text_chars": 1716,
+      "ranges": [
+        [
+          0,
+          1716
+        ]
+      ],
+      "passages_total": 1,
+      "passages_read": 1,
+      "passages_left": 0,
+      "selected_text_sha256": "b9ce5f89eed517ce53a2e64b46e90fe76462dd5f92387c618dc58dbba32be880"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/05/2026-22687.html",
+    "document_status": "binding",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "Continuation of the National Emergency With Respect to the Situation in Nicaragua",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_e35130b1367f523d89a1d4ae",
+    "timestamp": "2026-11-06T06:01:45.285905+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Medical Devices; Hematology and Pathology Devices; Classification of the Digital Cervical Cytology Slide Imaging System With Artificial Intelligence Algorithm",
+    "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22593/medical-devices-hematology-and-pathology-devices-classification-of-the-digital-cervical-cytology",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a US FDA final order classifying a specific AI-enabled medical device (digital cervical cytology slide imaging system) as Class II. It establishes regulatory requirements for US market entry (510(k) and special controls) but does not impose binding duties on AI operators under UK or EU frameworks, nor does it constitute a general AI regulation.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "No immediate action required for UK/EU AI compliance; monitor for potential cross-border implications if the device is marketed in the UK.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "617d5b2df3d2a0ffd32e187bc7bb7d1cc4680385baaf49c5d62cc7a43f840ad1",
+    "source_text_sha256": "8cfea84de9600ca5a0dcf55c3822645621450dbb24d712baedd2e8f3304c9e3b",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 22560,
+      "ranges": [
+        [
+          0,
+          1317
+        ],
+        [
+          1317,
+          2485
+        ],
+        [
+          5489,
+          6733
+        ],
+        [
+          6733,
+          7934
+        ],
+        [
+          7934,
+          8849
+        ],
+        [
+          8994,
+          10228
+        ],
+        [
+          11610,
+          12830
+        ],
+        [
+          12830,
+          16120
+        ],
+        [
+          16120,
+          17402
+        ]
+      ],
+      "passages_total": 11,
+      "passages_read": 9,
+      "passages_left": 2,
+      "selected_text_sha256": "637a512a7696182a689312489d67ada802410b549df0b9a6b9691b63305b5689"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/05/2026-22593.html",
+    "document_status": "binding",
+    "ai_relevance": "relevant",
+    "evidence_quote": "The Food and Drug Administration (FDA) is classifying the digital cervical cytology slide imaging system with artificial intelligence algorithm into class II (special controls).",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_d77e991cafbe6fc5b5d54167",
+    "timestamp": "2026-11-06T06:01:25.282217+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (Executive Orders)",
+    "jurisdiction": "United States",
+    "title": "Continuation of the National Emergency With Respect to Iran",
+    "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22685/continuation-of-the-national-emergency-with-respect-to-iran",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a US Executive Order notice continuing a national emergency regarding Iran. It contains no provisions, obligations, or references relevant to AI operators or UK regulatory compliance.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "No action required; document is outside the scope of AI regulatory monitoring.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "fe1d3b258140a45a2e08d83506826d82002c803ca1c3f52794152ef451317001",
+    "source_text_sha256": "bf694e8273195bd65134cb41d1249f71be3bcf4cba8cc346a1133e2d928f1e18",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "extracted text",
+      "selection_status": "selected",
+      "selector": "full-text",
+      "text_chars": 1417,
+      "ranges": [
+        [
+          0,
+          1417
+        ]
+      ],
+      "passages_total": 1,
+      "passages_read": 1,
+      "passages_left": 0,
+      "selected_text_sha256": "bf694e8273195bd65134cb41d1249f71be3bcf4cba8cc346a1133e2d928f1e18"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/05/2026-22685.html",
+    "document_status": "binding",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "Continuation of the National Emergency With Respect to Iran",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_1f6369a5afd7071c81b9119e",
+    "timestamp": "2026-11-06T06:01:14.964217+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (Executive Orders)",
+    "jurisdiction": "United States",
+    "title": "Continuation of the National Emergency With Respect to the Threat From Securities Investments That Finance Certain Companies of the People's Republic of China",
+    "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22688/continuation-of-the-national-emergency-with-respect-to-the-threat-from-securities-investments-that",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a US Federal Register notice continuing a national emergency regarding securities investments financing PRC companies. It contains no obligations, regulations, or duties applicable to AI operators or UK regulatory compliance.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "No action required; document is outside the scope of AI operator monitoring.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "b30ed4fb7c1f14475e5e8f0d2869ea6b4ec5eb58fe7e912cf8eb86b9d7a28dec",
+    "source_text_sha256": "82b55e522b5d9f3a6babbd347cd6a7754fcfea28a57132467920af19bcbe58a8",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "extracted text",
+      "selection_status": "selected",
+      "selector": "full-text",
+      "text_chars": 4045,
+      "ranges": [
+        [
+          0,
+          4045
+        ]
+      ],
+      "passages_total": 1,
+      "passages_read": 1,
+      "passages_left": 0,
+      "selected_text_sha256": "82b55e522b5d9f3a6babbd347cd6a7754fcfea28a57132467920af19bcbe58a8"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/05/2026-22688.html",
+    "document_status": "binding",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "Continuation of the National Emergency With Respect to the Threat From Securities Investments That Finance Certain Companies of the People's Republic of China",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_a02a5d5503f6f821481e77eb",
+    "timestamp": "2026-11-06T06:01:02.592503+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (Executive Orders)",
+    "jurisdiction": "United States",
+    "title": "Continuation of the National Emergency With Respect to the Proliferation of Weapons of Mass Destruction",
+    "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22686/continuation-of-the-national-emergency-with-respect-to-the-proliferation-of-weapons-of-mass",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a US Executive Order notice continuing a national emergency regarding the proliferation of weapons of mass destruction. It contains no provisions, obligations, or references relevant to AI operators or AI regulatory compliance.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "No action required; document is outside the scope of AI regulatory monitoring.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "f3fad33ed22f3f361ced1222b5a0bd98ba3e8b82f2806c10581d9b71a7d47e81",
+    "source_text_sha256": "a8f87359bd2f7e471ca1a8f5729d63c67afc1cc886db91ae4261502bd8995362",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "extracted text",
+      "selection_status": "selected",
+      "selector": "full-text",
+      "text_chars": 1764,
+      "ranges": [
+        [
+          0,
+          1764
+        ]
+      ],
+      "passages_total": 1,
+      "passages_read": 1,
+      "passages_left": 0,
+      "selected_text_sha256": "a8f87359bd2f7e471ca1a8f5729d63c67afc1cc886db91ae4261502bd8995362"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/05/2026-22686.html",
+    "document_status": "binding",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "The proliferation of weapons of mass destruction and the means of delivering them continues to pose an unusual and extraordinary threat to the national security, foreign policy, and economy of the United States.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_015a3f6f8b436fc911d33385",
+    "timestamp": "2026-11-06T06:00:50.522788+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Proposed Priorities and Definitions-Secretary's Supplemental Priorities and Definitions",
+    "url": "https://www.federalregister.gov/documents/2026/11/05/2026-22615/proposed-priorities-and-definitions-secretarys-supplemental-priorities-and-definitions",
+    "source_queue_priority": 1,
+    "substantive_priority": 2,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a proposed rule by the US Department of Education to amend existing priorities and definitions, specifically replacing the term 'Artificial Intelligence' with 'Super Intelligence' in accordance with a Presidential Executive Order. It is a non-binding proposal affecting US federal grant competitions and does not impose current binding obligations on AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Monitor the finalisation of the proposed rule to determine if the terminology shift or new definitions (e.g., SI literacy) impact compliance reporting or grant eligibility for US-based entities.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "5bdb5cb3e03eb0b3fd5d08aa5b667ecb373efa2fc02cc4c034a5f3b50f2d1c86",
+    "source_text_sha256": "a80511bc3ecbd15ae184f465f0892b4ab6a05ac966e9df84056ace6880997b21",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 119642,
+      "ranges": [
+        [
+          0,
+          604
+        ],
+        [
+          649,
+          1870
+        ],
+        [
+          5768,
+          7006
+        ],
+        [
+          8464,
+          9937
+        ],
+        [
+          9937,
+          11339
+        ],
+        [
+          11339,
+          12643
+        ],
+        [
+          55081,
+          56393
+        ],
+        [
+          57794,
+          59075
+        ],
+        [
+          84440,
+          85780
+        ],
+        [
+          96992,
+          98261
+        ]
+      ],
+      "passages_total": 21,
+      "passages_read": 10,
+      "passages_left": 11,
+      "selected_text_sha256": "53cb31027a872a5c494da575d4e166c5aff7c35ec22fbba942c3a243390b1d89"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/05/2026-22615.html",
+    "document_status": "proposed",
+    "ai_relevance": "relevant",
+    "evidence_quote": "We propose, with limited exceptions described in the next paragraph, to use the term “Super Intelligence” to replace “Artificial Intelligence” and use “SI” to replace “AI” in every use of the terms.",
+    "assessment_error": null
+  },
+  {
     "id": "alert_311d6a8338e7236b084ee4a1",
     "timestamp": "2026-11-05T06:01:12.235337+00:00",
     "alert_schema_version": 2,
@@ -22,34 +432,6 @@
     "source_text_sha256": "a53929654bdac68bbd0f084a443518c66e0dc0bad70789d508a29d5079ca0add",
     "assessment_version": 3,
     "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/09/2026-18370.html",
-    "document_status": "unassessed",
-    "ai_relevance": "unassessed",
-    "evidence_quote": null,
-    "assessment_error": "document exceeds model input budget; manual review required"
-  },
-  {
-    "id": "alert_41eb4e01a867b879ac522d90",
-    "timestamp": "2026-11-05T06:01:11.963596+00:00",
-    "alert_schema_version": 2,
-    "source": "US Federal Register (Executive Orders)",
-    "jurisdiction": "United States",
-    "title": "Adjusting Imports of Unmanned Aircraft Systems and Unmanned Aircraft Systems Components Into the United States",
-    "url": "https://www.federalregister.gov/documents/2026/08/19/2026-16979/adjusting-imports-of-unmanned-aircraft-systems-and-unmanned-aircraft-systems-components-into-the",
-    "source_queue_priority": 1,
-    "substantive_priority": null,
-    "is_operator_duty_shift": false,
-    "duty_type": "none",
-    "statutory_reference": null,
-    "summary": "Unassessed capture from US Federal Register (Executive Orders): Adjusting Imports of Unmanned Aircraft Systems and Unmanned Aircraft Systems Components Into the United States",
-    "denominator_disclosed": "unassessed",
-    "actionable_trigger": "Review the captured primary document.",
-    "evaluation_method": "unassessed",
-    "model": "qwen3.8:latest",
-    "reviewed": false,
-    "source_sha256": "bb9c90378e11423ff231d1326880b038c8264c00eb6439e728cb26ff4bad5d25",
-    "source_text_sha256": "5b6fa7f6ca6e3a94d15e5866c7a635601cba12361d95ff84769438a18b52a904",
-    "assessment_version": 3,
-    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/08/19/2026-16979.html",
     "document_status": "unassessed",
     "ai_relevance": "unassessed",
     "evidence_quote": null,
@@ -358,34 +740,6 @@
     "source_text_sha256": "057ae28ab694825203e41fddded2a58b524f530bd1cfef46c64e60da0d6efc8f",
     "assessment_version": 3,
     "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/21/2026-19271.html",
-    "document_status": "unassessed",
-    "ai_relevance": "unassessed",
-    "evidence_quote": null,
-    "assessment_error": "document exceeds model input budget; manual review required"
-  },
-  {
-    "id": "alert_801fd47b9cd56d4f59e85c7a",
-    "timestamp": "2026-11-05T06:00:54.388117+00:00",
-    "alert_schema_version": 2,
-    "source": "US Federal Register (Executive Orders)",
-    "jurisdiction": "United States",
-    "title": "Restoring American Saltwater Angling and Recreation",
-    "url": "https://www.federalregister.gov/documents/2026/09/22/2026-19417/restoring-american-saltwater-angling-and-recreation",
-    "source_queue_priority": 1,
-    "substantive_priority": null,
-    "is_operator_duty_shift": false,
-    "duty_type": "none",
-    "statutory_reference": null,
-    "summary": "Unassessed capture from US Federal Register (Executive Orders): Restoring American Saltwater Angling and Recreation",
-    "denominator_disclosed": "unassessed",
-    "actionable_trigger": "Review the captured primary document.",
-    "evaluation_method": "unassessed",
-    "model": "qwen3.8:latest",
-    "reviewed": false,
-    "source_sha256": "19d7414eb9185234aac641d5477a120f5b1bbd298866c740acef103e33a51f5f",
-    "source_text_sha256": "42b2a605ec6030eff66b91501bfafb930aded7c79002d3c37346d051858ab21a",
-    "assessment_version": 3,
-    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/22/2026-19417.html",
     "document_status": "unassessed",
     "ai_relevance": "unassessed",
     "evidence_quote": null,
