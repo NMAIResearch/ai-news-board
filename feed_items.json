@@ -1,6 +1,140 @@
 {
- "fetched": "2026-11-06 06:20 UTC",
+ "fetched": "2026-11-07 06:20 UTC",
  "items": [
+  {
+   "entity": "OpenAI",
+   "headline": "OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation",
+   "date": "Fri, 06 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 6,
+    "total": 6
+   },
+   "label_evidence": "model read all 6 figure-sentence(s); 1 of 6 figure-sentence(s) matched a base cue",
+   "content_hash": "9d249e598cac367cfb20f664ff72e9ae6a2eb01bb575439bf0c7b95161a39b17",
+   "evidence_hash": "edcecbb5827eff0277564da70aa34fa522a65acf39274e628d0772348477b7dc",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 8
+    },
+    {
+     "name": "Anthropic",
+     "count": 5
+    },
+    {
+     "name": "Google",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "Anthropic",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Anthropic",
+   "headline": "Ramp data shows AI spending stalling just as Anthropic nears its IPO",
+   "date": "Fri, 06 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "Y",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 11,
+    "total": 11
+   },
+   "label_evidence": "model read all 11 figure-sentence(s); 1 of 11 figure-sentence(s) matched a base cue",
+   "content_hash": "8a027d7d36ec70b6494208b31df29e6cbdb7f0e7e4c9f234ca031922661e4d19",
+   "evidence_hash": "e6659dff5cf07c77c1ad0a0aa7773a428a10adadab5ec24c96d00376fa94b289",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Anthropic",
+     "count": 8
+    },
+    {
+     "name": "OpenAI",
+     "count": 7
+    },
+    {
+     "name": "Meta",
+     "count": 2
+    },
+    {
+     "name": "Nvidia",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Anthropic",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M",
+   "date": "Fri, 06 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "Y",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 9,
+    "total": 9
+   },
+   "label_evidence": "model read all 9 figure-sentence(s); 0 of 9 figure-sentence(s) matched a base cue",
+   "content_hash": "1db4eecf134646c35311d1e44841dbd9407d72ce6c7b7b33b7c320b658c1a68d",
+   "evidence_hash": "1c16d69d85e8feccc3a2ef8ea781de96581d8b0b4ef99b0de5e8875ada7ba490",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Anthropic",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Lightspeed Venture Capital",
+   "entity_basis": "unresolved"
+  },
   {
    "entity": "OpenAI",
    "headline": "OpenAI president Greg Brockman says company could be IPO ready in 2027",
@@ -17,19 +151,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 2 figure-sentence(s); 1 of 2 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 2,
     "total": 2
    },
-   "label_evidence": "model read all 2 figure-sentence(s); 1 of 2 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "16e5f16733aa4398f67b7c32d50183e7f44398334a0aa1d2718af3a7f9ee5779",
    "evidence_hash": "941332c2f1fa21c27748a53f502436ba3abf6292e23672c2335f28aead3aafc1",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -63,19 +197,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 4 figure-sentence(s); 1 of 4 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 4,
     "total": 4
    },
-   "label_evidence": "model read all 4 figure-sentence(s); 1 of 4 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "9fa7c43ee188db01ffea478da131ba8c6b7888729fca698ce853e59273bc0376",
    "evidence_hash": "9fc6ce845fa879f8f046b637d2d43ef02912158287b85512ff0db885f675f6db",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Anthropic",
@@ -94,9 +228,9 @@
    "entity_basis": "unresolved"
   },
   {
-   "entity": "Meta",
-   "headline": "Meta acquires AI coding startup Conductor",
-   "date": "Wed, 04 Nov 2026",
+   "entity": "Google",
+   "headline": "Crusoe sells troubled Wyoming data center project to Google",
+   "date": "Sat, 07 Nov 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "N",
@@ -104,190 +238,7 @@
    "sources": [
     {
      "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 1,
-    "total": 1
-   },
-   "label_schema_version": 2,
-   "content_hash": "d6141c8eeb8ffa86bd5a915d749e4fbfbf05036f0b46cc17353fcb79b05e9d1a",
-   "evidence_hash": "d8a9322d7487dcc2545cb8b33b3e32080883a3c0f3e3369ec19bbbf72f7a6a13",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 6
-    },
-    {
-     "name": "Anthropic",
-     "count": 3
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Google",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "conductor",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "Airbnb says it’s launching an AI travel agent in the first half of 2027",
-   "date": "Thu, 05 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 3,
-    "total": 3
-   },
-   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
-   "content_hash": "c5dc515626c7f76f79fbfe3a9f2c6592e434ecc5468c60874aeb05f8b353a6fa",
-   "evidence_hash": "af0b51313832ea80f96bd370dac31b067c0f8dae917462e64565cd8b639c5d13",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Anthropic",
-     "count": 2
-    },
-    {
-     "name": "Google",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "AI agents",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Meta",
-   "headline": "Meta says US users can now video chat with their Muse AI avatar",
-   "date": "Thu, 05 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_evidence": "no figure in 3063 chars of article text",
-   "content_hash": "9af4b8a2fa4a8da0dd783f5ff8a3224af36078d376820c512d45a1913b18594e",
-   "evidence_hash": "e4f32004b90ea05ea046ae0371ac141525fb3cef8269075bd62493e4a5af675b",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 9
-    },
-    {
-     "name": "Anthropic",
-     "count": 2
-    },
-    {
-     "name": "Google",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Meta",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Meta",
-   "headline": "Meta warns that election backlash against data centers could make AI expansion harder",
-   "date": "Thu, 05 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 3,
-    "total": 3
-   },
-   "label_evidence": "model read all 3 figure-sentence(s); 1 of 3 figure-sentence(s) matched a base cue",
-   "content_hash": "7dabccfa36d8816bb684a16726513eb31a954018aaa0a3af5326f841b347c38a",
-   "evidence_hash": "01ecbe628b720a651d3c09ac82a0325443a8e0ca1571ad0230f9ae07f264943c",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 11
-    },
-    {
-     "name": "Anthropic",
-     "count": 2
-    },
-    {
-     "name": "Google",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "data centers",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "OpenAI released a new cybersecurity model. Is that enough?",
-   "date": "Thu, 05 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough/",
+     "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
      "source_type": "trade-press",
      "source_tier": 3
     }
@@ -299,82 +250,41 @@
     "total": 6
    },
    "label_evidence": "model read all 6 figure-sentence(s); 0 of 6 figure-sentence(s) matched a base cue",
-   "content_hash": "010cd18d65de8ae53aed08a28b077cf8ea965bb8409b1cad25513a5ea6c5932f",
-   "evidence_hash": "b6806ba8763f7ba57a55b7b4711a4b373f74668e3e1be48c860bf459ca45907f",
+   "content_hash": "0bb84cbf5c101bb9e7d672298ad0746cd405a1860fd5a3400f18d39047e5af6a",
+   "evidence_hash": "883599abca899b908c6990618f6624afeb79f81121b5de366c28f6933585632f",
    "label_schema_version": 2,
    "auto_labelled": true,
    "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
    "mentions": [
     {
+     "name": "Google",
+     "count": 7
+    },
+    {
      "name": "OpenAI",
-     "count": 9
+     "count": 1
     },
     {
      "name": "Anthropic",
-     "count": 2
-    },
-    {
-     "name": "Google",
      "count": 1
     },
     {
-     "name": "xAI",
+     "name": "Microsoft",
+     "count": 1
+    },
+    {
+     "name": "Meta",
      "count": 1
     }
    ],
-   "publisher_topic": "cybersecurity",
+   "publisher_topic": "ai infrastructure",
    "entity_basis": "headline"
   },
   {
-   "entity": "Anthropic",
-   "headline": "Claude can now analyze your spending with its new Personal Finance tool",
-   "date": "Thu, 05 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_evidence": "no figure in 3855 chars of article text",
-   "content_hash": "9c9f1e749161ae8683d6598c41e2d74d252dbaf6b110f3ed876b2ac0f0bcb238",
-   "evidence_hash": "0fc6e7d6f81b3e37b5c0ff7aad0b7c15ed0e1ebff04eded63ea5ccb30892f5b8",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Anthropic",
-     "count": 12
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Google",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Anthropic",
-   "entity_basis": "product:Claude"
-  },
-  {
    "entity": "",
-   "headline": "Axiom Math wants to keep AI slop out of mathematics",
-   "date": "Thu, 05 Nov 2026",
+   "headline": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
+   "date": "Fri, 06 Nov 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "N",
@@ -382,131 +292,7 @@
    "sources": [
     {
      "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 5,
-    "total": 5
-   },
-   "label_evidence": "model read all 5 figure-sentence(s); 0 of 5 figure-sentence(s) matched a base cue",
-   "content_hash": "45174b13e134d3b4714e4015f1b4da5f1398844ffc8c7c806ca927fc17c0af40",
-   "evidence_hash": "c68c4b10487670d2b10614ae3fda692a57238158e22307b1cce2531f18e94f10",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Anthropic",
-     "count": 2
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Google",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "agents",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "OpenAI is stepping back from NDAs for data center projects",
-   "date": "2026-11-05T19:37",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_evidence": "no figure in 2677 chars of article text",
-   "content_hash": "714c54582ee822c85d76ecf6d39438ca9329e9c7f5f31b0a2db70234d07b3d65",
-   "evidence_hash": "be40b4b64ca3233d0bf8491d1a7474fdfe73409b8e61f84d3a75e5770657f69e",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 8
-    },
-    {
-     "name": "Amazon",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "OpenAI",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "Airbnb is working on an AI travel agent",
-   "date": "2026-11-05T19:06",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/tech/1028412/airbnb-ai-travel-agent-q3-2026-earnings",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_evidence": "no figure in 2578 chars of article text",
-   "content_hash": "1af8f866a34441c1c5416c6ccad5b969b23aebbb97813f1a5a2bc6a616f0d205",
-   "evidence_hash": "47e886073c67343b0cb4fb4dab6d972a5e9497a33b82856e19898a8c4f4f3f63",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Apps",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Perplexity",
-   "headline": "Perplexity launches its own take on AI agents for work",
-   "date": "2026-11-05T17:26",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work",
+     "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
      "source_type": "trade-press",
      "source_tier": 3
     }
@@ -518,41 +304,41 @@
     "total": 1
    },
    "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
-   "content_hash": "7a69cf488d292313a12243c8659856cf62ff8c008ed1ef59db19f2d303315dea",
-   "evidence_hash": "3d9c1e68922f6fc286529263494027778a6a4e8a8760005e1ab840c92f12f7b9",
+   "content_hash": "8ba8b084099dba0e71cca7f9bedfef4d83120f7ffd81934f49753bd54b64047f",
+   "evidence_hash": "1f91755adc56b536113ae51a479530f78e60f5b0d4b4a1f7c48d0392d4eaadc8",
    "label_schema_version": 2,
    "auto_labelled": true,
    "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
    "mentions": [
     {
-     "name": "Perplexity",
-     "count": 17
-    },
-    {
-     "name": "OpenAI",
-     "count": 5
+     "name": "Microsoft",
+     "count": 3
     },
     {
      "name": "Anthropic",
+     "count": 2
+    },
+    {
+     "name": "OpenAI",
      "count": 1
     }
    ],
-   "publisher_topic": "",
-   "entity_basis": "headline"
+   "publisher_topic": "cybersecurity",
+   "entity_basis": "unresolved"
   },
   {
    "entity": "Meta",
-   "headline": "Muse has a voice mode now",
-   "date": "2026-11-05T17:45",
+   "headline": "Meta introduces Spaces, a new way to collaborate with your Muse agent",
+   "date": "Fri, 06 Nov 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/tech/1028015/meta-muse-ai-voice-mode-expressive-avatar",
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
      "source_type": "trade-press",
      "source_tier": 3
     }
@@ -560,12 +346,12 @@
    "rating": "ok",
    "evidence_method": "local-model",
    "evidence_coverage": {
-    "seen": 2,
-    "total": 2
+    "seen": 1,
+    "total": 1
    },
-   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
-   "content_hash": "27afbd14a2ea813f897d7fc7c2f034e9ba48f621606a10ee18d15e1e8787f48e",
-   "evidence_hash": "4e6f1a8655377eab73d9b43539397ba17bebb4540caf8cc6cd04b2f632f36bff",
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "content_hash": "0bfb780f1c1f407ca40c979d46e0171088cf131b609b3a6b491c16fbab2f0ade",
+   "evidence_hash": "05222409792a70daed9b0e6d76fb1227572e9b6d96c8ba54b419d69ec13f9adb",
    "label_schema_version": 2,
    "auto_labelled": true,
    "auto_labelled_by": "gemma4:12b",
@@ -573,20 +359,124 @@
    "mentions": [
     {
      "name": "Meta",
-     "count": 13
+     "count": 12
     },
     {
      "name": "OpenAI",
      "count": 1
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
     }
    ],
-   "publisher_topic": "Meta",
+   "publisher_topic": "agents",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "OpenAI",
+   "headline": "How a Blue Wave midterm might reshape the AI industry",
+   "date": "Fri, 06 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 3,
+    "total": 3
+   },
+   "label_evidence": "model read all 3 figure-sentence(s); 1 of 3 figure-sentence(s) matched a base cue",
+   "content_hash": "17186679d73a5a0143a0191ee04dc5fc965c27eb60294387433dae5da7d0b1a9",
+   "evidence_hash": "3e8e002ec9344fb2e6e63e0ae45c8a5563c8fc4df9e9622e1c8b83fc729e3611",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Apple",
+     "count": 2
+    },
+    {
+     "name": "OpenAI",
+     "count": 1
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "xAI",
+     "count": 1
+    },
+    {
+     "name": "Hugging Face",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "marvell",
    "entity_basis": "tag"
   },
   {
-   "entity": "Anthropic",
-   "headline": "Claude AI can plug directly into your bank account",
-   "date": "2026-11-05T12:49",
+   "entity": "OpenAI",
+   "headline": "OpenAI valued at $1.25 trillion, as rival Anthropic nears its IPO",
+   "date": "2026-11-06T18:46",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 4,
+    "total": 4
+   },
+   "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
+   "content_hash": "72c9edb0efa03ee1b7c02a5f43056db5003590734e709d8679ffb25857c1f0ee",
+   "evidence_hash": "5146ac9c96f363667f45823e8ab51e111da46ec0e58b59c4987fb0d5bec8bfbe",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 12
+    },
+    {
+     "name": "Anthropic",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "OpenAI",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Nvidia",
+   "headline": "China reportedly recruited AI exec to spy on Jensen Huang",
+   "date": "2026-11-06T18:00",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "n/a",
@@ -594,7 +484,7 @@
    "sources": [
     {
      "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/1027652/anthropic-claude-plaid-personal-finance",
+     "url": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
      "source_type": "trade-press",
      "source_tier": 3
     }
@@ -605,37 +495,33 @@
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 3261 chars of article text",
-   "content_hash": "e2fba3817eb39f8b394c2b4a2a21a500ca6c3083c1243841f700d83227ac2cd6",
-   "evidence_hash": "c7d32350a8f47aa99aad71f7fae027cb8d218275c624d17705377d06068ef730",
+   "label_evidence": "no figure in 2227 chars of article text",
+   "content_hash": "64c0434631cd00625dd2fde3e9d9b252b05eaf9db1863c7da151d56ea7c57f50",
+   "evidence_hash": "d767cc7310c4ff904e066790f26619659a238e7e10ec8875dc60bd30fd0dcfe5",
    "label_schema_version": 2,
    "auto_labelled": true,
    "label_source": "machine",
    "mentions": [
     {
-     "name": "Anthropic",
-     "count": 9
-    },
-    {
-     "name": "OpenAI",
-     "count": 2
+     "name": "Nvidia",
+     "count": 17
     }
    ],
-   "publisher_topic": "Anthropic",
-   "entity_basis": "product:Claude"
+   "publisher_topic": "Nvidia",
+   "entity_basis": "headline"
   },
   {
    "entity": "",
-   "headline": "‘Total repudiation’: The blue wave is about to hit AI",
-   "date": "2026-11-05T12:51",
+   "headline": "All the latest updates on AI data centers",
+   "date": "2026-11-06T15:03",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "partial",
+   "denominator_stated": "Y",
    "reviewed": false,
    "sources": [
     {
      "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/1026927/total-repudiation-the-blue-wave-is-about-to-hit-ai",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
      "source_type": "trade-press",
      "source_tier": 3
     }
@@ -643,12 +529,12 @@
    "rating": "ok",
    "evidence_method": "local-model",
    "evidence_coverage": {
-    "seen": 5,
-    "total": 5
+    "seen": 22,
+    "total": 22
    },
-   "label_evidence": "model read all 5 figure-sentence(s); 1 of 5 figure-sentence(s) matched a base cue",
-   "content_hash": "d4e7a269ce7b170ef21a91ba0ba34fdd47be67c1498b7f09aaac4d2ceff76f11",
-   "evidence_hash": "8c305ba81f246e89b6f7652894782ecdf45c2eff4fe201f65190a24a756dc727",
+   "label_evidence": "model read all 22 figure-sentence(s); 1 of 22 figure-sentence(s) matched a base cue",
+   "content_hash": "2db84c10d9eab357d4b56713d556a8aecb753f44341f31be1d0083d35852c551",
+   "evidence_hash": "bb23f7221f5738b01e7771a643577bb71f34b92fa26749ea9e576096485cd1ce",
    "label_schema_version": 2,
    "auto_labelled": true,
    "auto_labelled_by": "gemma4:12b",
@@ -656,28 +542,164 @@
    "mentions": [
     {
      "name": "OpenAI",
-     "count": 6
+     "count": 9
+    },
+    {
+     "name": "Anthropic",
+     "count": 5
+    },
+    {
+     "name": "Meta",
+     "count": 2
+    },
+    {
+     "name": "Amazon",
+     "count": 2
+    },
+    {
+     "name": "SEC",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Environment",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "Meta",
+   "headline": "Meta’s Muse AI can create custom ‘spaces’ for the version of the app you need right now",
+   "date": "2026-11-06T15:00",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 2655 chars of article text",
+   "content_hash": "661097ee0e37ead180ce78e2f3717f7c8e3732fb97ab125cd1aaf23873dbfdc5",
+   "evidence_hash": "9f9ef81735b66af8c6be4b4edee51e904881c3cbe5e007a99a6592587059c437",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 9
+    },
+    {
+     "name": "Google",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Apps",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "AI is the new dating dealbreaker",
+   "date": "2026-11-06T16:51",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "Y",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1028609/ai-dating-feelings-doomers-singularity",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 10,
+    "total": 10
+   },
+   "label_evidence": "model read all 10 figure-sentence(s); 0 of 10 figure-sentence(s) matched a base cue",
+   "content_hash": "634efb9c6237c3eb585ecd44dbfa7d4dd2bb7a206a078694957b5c7ebaa95593",
+   "evidence_hash": "a933bed2cb5b1a807f9af086338e6025a37ddc7dbbf589481171f58d30150828",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 3
+    },
+    {
+     "name": "Hugging Face",
+     "count": 2
     },
     {
      "name": "Anthropic",
      "count": 1
     },
     {
-     "name": "Meta",
-     "count": 1
-    },
-    {
-     "name": "xAI",
+     "name": "Salesforce",
      "count": 1
     }
    ],
-   "publisher_topic": "Politics",
+   "publisher_topic": "Internet Culture",
    "entity_basis": "unresolved"
   },
   {
+   "entity": "OpenAI",
+   "headline": "Big Tech lost big in the 2026 election",
+   "date": "2026-11-06T12:09",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/podcast/1028731/2026-midterms-tech-ai-vergecast",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 2810 chars of article text",
+   "content_hash": "8b56af80cfd952e6962762a4e428f60ae2cb5e3292555590ddd2332a76e8b913",
+   "evidence_hash": "dce77cd75f2c4f5512d0790d580dc00051314917a7cf226df1be739d79591653",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 5
+    },
+    {
+     "name": "Google",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "OpenAI",
+   "entity_basis": "tag"
+  },
+  {
    "entity": "",
-   "headline": "Grimes is going to star in an AI movie that’s coming to theaters",
-   "date": "2026-11-05T08:31",
+   "headline": "How Akai and Moog are embracing vibe-coded mods",
+   "date": "2026-11-06T11:34",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "N",
@@ -685,7 +707,81 @@
    "sources": [
     {
      "name": "theverge.com",
-     "url": "https://www.theverge.com/entertainment/1026282/grimes-ai-movie",
+     "url": "https://www.theverge.com/tech/1028720/vibe-coding-open-source-inmusic-akai",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 3,
+    "total": 3
+   },
+   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+   "content_hash": "43b35e4a7b8c041e2232d7bcb78f96d046a7882e11a2e9b75c24b921440ae6d7",
+   "evidence_hash": "10f29dd63ad098f312b39c41f6d4bb288931af33bcddd6b74c0da516681e5c82",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "Interview",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "Amazon",
+   "headline": "Amazon will let you text Alexa your shopping list",
+   "date": "2026-11-06T08:56",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/tech/1028587/amazon-alexa-shopping-ai-text-orders",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 3409 chars of article text",
+   "content_hash": "9b105045eef90c560eeb1bb42169254f48919baa5d0f629ef64a8d351c8d7cd6",
+   "evidence_hash": "e3f134976fb235da0e80295700ec0d909d2365227a02847d5d47f9c983317979",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Amazon",
+     "count": 13
+    },
+    {
+     "name": "OpenAI",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Amazon",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Microsoft",
+   "headline": "Protesters break into Microsoft data center site in Amsterdam",
+   "date": "2026-11-06T07:01",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/news/1028549/protesters-microsoft-data-center-site-amsterdam",
      "source_type": "trade-press",
      "source_tier": 3
     }
@@ -697,104 +793,20 @@
     "total": 2
    },
    "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
-   "content_hash": "168a573cf57ef040d44c6992684a8a9c08edcaa38853166b5157c5e13a8efb7d",
-   "evidence_hash": "1bc7f13ed1ca4e2e39069b73cbe7a12885f6c343b153298959d8ebfd17cea22e",
+   "content_hash": "b4328ef52d60e975492dfbe948c1a9c17bdfb812622892b3fdd14b682a48db68",
+   "evidence_hash": "15d8442de5999102c6054e059129025705c45fb4ad231d2c64c2dfe27df39f67",
    "label_schema_version": 2,
    "auto_labelled": true,
    "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
    "mentions": [
     {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "xAI",
-     "count": 1
+     "name": "Microsoft",
+     "count": 22
     }
    ],
-   "publisher_topic": "Film",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "OpenAI says its new cybersecurity model is better at not hacking other companies",
-   "date": "2026-11-05T12:10",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 5,
-    "total": 5
-   },
-   "label_evidence": "model read all 5 figure-sentence(s); 1 of 5 figure-sentence(s) matched a base cue",
-   "content_hash": "f3517db43f2b93c6c8a8e6e36084a15384d21a5b2447cb24174d7e97d5343127",
-   "evidence_hash": "7234e2504faf1f71b377196c5512121a308b002004f8b01809285f3ae6ce1bea",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 18
-    },
-    {
-     "name": "Hugging Face",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "OpenAI",
+   "publisher_topic": "Microsoft",
    "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "The hidden supply chain costs of the AI boom",
-   "date": "2026-11-05T09:03",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/podcast/1024438/willy-shih-supply-chain-ai-chips-ram-where-does-my-stuff-come-from-book",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 13,
-    "total": 13
-   },
-   "label_evidence": "model read all 13 figure-sentence(s); 2 of 13 figure-sentence(s) matched a base cue",
-   "content_hash": "68d2dfdb5423fadd0f8579a3eb5c359787824d90b53904ca0148171fc5ba414d",
-   "evidence_hash": "72c1a2aed32a80a57d9e526e651d4df221135b89de419af5991a7661b9303e16",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Apple",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "Decoder",
-   "entity_basis": "unresolved"
   },
   {
    "entity": "OpenAI",
@@ -812,19 +824,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 6 figure-sentence(s); 1 of 6 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 6,
     "total": 6
    },
-   "label_evidence": "model read all 6 figure-sentence(s); 1 of 6 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "3db0a88fc9e1a4b775c278ab0a86cf52a1122a2261e0d5f6f169f39d38d1c12d",
    "evidence_hash": "d295b87b6b8e07c9b0ccef192e2cca7f0328063f562fcc540b12f9c2cf9ae8ab",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -839,9 +851,50 @@
    "entity_basis": "product:ChatGPT"
   },
   {
-   "entity": "Anthropic",
-   "headline": "Anthropic IPO warns its AI could blackmail people, become sentient, end humanity",
-   "date": "Tue, 27 Oct 2026",
+   "entity": "Meta",
+   "headline": "“Does Meta think we can’t read?” Meta abandons sketchy commercial terms update.",
+   "date": "Fri, 06 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "arstechnica.com",
+     "url": "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 4268 chars of article text",
+   "content_hash": "53ef6c189461e8700da6917e386edf49ad55a435ea87fbf7a385e132b8b3d712",
+   "evidence_hash": "354b634b78b78b48937c0ed9c993873f407d088cfaffd8426c1450fb012a0a20",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 22
+    },
+    {
+     "name": "CMA",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "Could potential AI clones of GTA VI force a quicker official port?",
+   "date": "Fri, 06 Nov 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "N",
@@ -849,52 +902,32 @@
    "sources": [
     {
      "name": "arstechnica.com",
-     "url": "https://arstechnica.com/ai/2026/10/anthropic-ipo-warns-its-ai-could-blackmail-people-become-sentient-end-humanity/",
+     "url": "https://arstechnica.com/gaming/2026/11/could-potential-ai-clones-of-gta-vi-force-a-quicker-official-port/",
      "source_type": "trade-press",
      "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+   "rating": "ok",
    "evidence_method": "local-model",
    "evidence_coverage": {
-    "seen": 3,
-    "total": 3
+    "seen": 1,
+    "total": 1
    },
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "content_hash": "cd148d09d32eb4b5b518ea3770e80715dda3811ce64bbd0cc1f809d6b180d0d7",
+   "evidence_hash": "a52bfd5f69d3c08dc07719cace4187780fe394d92bdc29eba7c1e424bfe3f62a",
    "label_schema_version": 2,
-   "content_hash": "ffd4cf8cf76293209d78742cd9509f8cbba33a64652e04164bd1570a138b1f20",
-   "evidence_hash": "1bdcc34416c02edc87f52cb8e04906294dfc8e7b1fe06cffd79a22af6beeb24c",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
-   "rating": "ok",
    "mentions": [
     {
-     "name": "Anthropic",
-     "count": 47
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Google",
-     "count": 1
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    },
-    {
-     "name": "Amazon",
-     "count": 1
-    },
-    {
-     "name": "SEC",
+     "name": "Nvidia",
      "count": 1
     }
    ],
    "publisher_topic": "",
-   "entity_basis": "headline"
+   "entity_basis": "unresolved"
   },
   {
    "entity": "Google",
@@ -912,19 +945,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model returned an invalid denominator label",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 1
    },
-   "label_evidence": "model returned an invalid denominator label",
+   "label_schema_version": 2,
    "content_hash": "988e6aae179c5f55efa49e49f441d5a06002da794c0afce5018ca9e61d4ac826",
    "evidence_hash": "d5b883c5c68013e3138bee62a8f2a6737dd0fe321dd61055f9edc112a4117902",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Google",
@@ -950,19 +983,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 17 figure-sentence(s); 2 of 17 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 17,
     "total": 17
    },
-   "label_evidence": "model read all 17 figure-sentence(s); 2 of 17 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "0111cd80f7403b308e71a19dcf71b87c357d6ed3e5342f45ef1225ddbc71fd6b",
    "evidence_hash": "9a98ba69a2f21ea2308d56a04bfcef4337b7b37c5c30f8ae90f92010526358c1",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "SEC",
@@ -989,6 +1022,7 @@
     }
    ],
    "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
    "label_evidence": "model read all 12 figure-sentence(s); 3 of 12 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
@@ -1000,7 +1034,6 @@
    "evidence_hash": "625069b80546e402e31b96ae2484dcbcf50e559897dd21be6dcbeb44dd66374a",
    "label_source": "machine",
    "rating": "ok",
-   "auto_labelled_by": "gemma4:12b",
    "mentions": [
     {
      "name": "xAI",
@@ -1141,351 +1174,99 @@
   },
   {
    "entity": "Anthropic",
-   "headline": "Claude’s new rules against game cloning won’t stop the AI copying boom",
-   "date": "Mon, 02 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "arstechnica.com",
-     "url": "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 7271 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "e8bcc69bfc554b96d01b063ed4bcda07d4b24d51bc5fd50a2b8bea01e7b3540f",
-   "evidence_hash": "78c46f37583e4ff907135fb27810d97ca2bd1f62bf09709f5ed0fb36b8f318c2",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Anthropic",
-     "count": 9
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "product:Claude"
-  },
-  {
-   "entity": "Google DeepMind",
-   "headline": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
-   "date": "Wed, 14 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 107 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "b0cf26fa901911b3e36f1e0aa5db23c2625f351563cd1c9af869c2df4eedac21",
-   "evidence_hash": "730d040ab4a6de25cc46c75649a2311274c764f703fcf10d8920e2b2786cf959",
-   "label_source": "machine",
-   "rating": "trusted",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Google DeepMind",
-   "headline": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
-   "date": "Thu, 05 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "partial",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "rating": "trusted",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 12,
-    "total": 12
-   },
-   "label_evidence": "model read all 12 figure-sentence(s); 2 of 12 figure-sentence(s) matched a base cue",
-   "content_hash": "e5bf6789273a8a3a5d3528505e93e68b840de59cfc5868315cce8c68389998b2",
-   "evidence_hash": "d5f48f8733a95fef97d745eee5b527ab7d1e49a22b1da330aadeecfc14a28ee2",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "None",
-   "entity_basis": "product:Gemini"
-  },
-  {
-   "entity": "Google",
-   "headline": "Agentic cheminformatics with Google Antigravity",
-   "date": "Tue, 03 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 106 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "ced8d08d87566858c455a0a14807f17f4eeca10ec0bb718d1562b4300a91ab07",
-   "evidence_hash": "96aba070a75afec1af127255dec170d73819f40b2c96fd35d558e3d837444621",
-   "label_source": "machine",
-   "rating": "trusted",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Google DeepMind",
-   "headline": "Speeding up planning decisions with AI",
-   "date": "Fri, 30 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 101 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "9ecb3e439362378596affb8c7a9fa8f28f119d81691d9ffcd15f17bc5a0250b5",
-   "evidence_hash": "288cc88371e5ec9163146844bce7c244b058992dcfc855772a358a219ea2e1ba",
-   "label_source": "machine",
-   "rating": "trusted",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "site"
-  },
-  {
-   "entity": "Google DeepMind",
-   "headline": "Gemini 4 Carbon: Our next frontier model",
-   "date": "Wed, 28 Oct 2026",
+   "headline": "Anthropic IPO valuation talks drop to $1.3T",
+   "date": "2026-11-06",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "Y",
    "reviewed": false,
    "sources": [
     {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
-     "source_type": "vendor-own",
-     "source_tier": 5
+     "name": "epyhia.com",
+     "url": "https://epyhia.com/anthropic-ipo-valuation-talks-drop-to-1-3-trillion-as-major-investors",
+     "source_type": "other",
+     "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 11 figure-sentence(s); 0 of 11 figure-sentence(s) matched a base cue",
+   "rating": "ok",
    "evidence_method": "local-model",
    "evidence_coverage": {
-    "seen": 11,
-    "total": 11
+    "seen": 46,
+    "total": 46
    },
+   "label_evidence": "model read all 46 figure-sentence(s); 4 of 46 figure-sentence(s) matched a base cue",
+   "content_hash": "ac79f2a2b3bb8e57ceff2c7ddaf3ee54faa59d6fdc90bbbd8a777e6c5a302b7f",
+   "evidence_hash": "34987804913b6571d8868fab9f5c167542796828be38d8711c8967c0b007c819",
    "label_schema_version": 2,
-   "content_hash": "e15bce1f3562bd9dda95bdec6de8b1dbd84e33d8da43d94a85c0b7c9552ecad0",
-   "evidence_hash": "9eb2b420d92c1c48851b419558c2789932a7c5bd422f88e1bdccaf7847acd0c3",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
-   "rating": "trusted",
    "mentions": [
     {
-     "name": "Meta",
+     "name": "Anthropic",
+     "count": 20
+    },
+    {
+     "name": "OpenAI",
      "count": 2
     },
     {
      "name": "SEC",
      "count": 2
-    }
-   ],
-   "publisher_topic": "None",
-   "entity_basis": "product:Gemini"
-  },
-  {
-   "entity": "Google DeepMind",
-   "headline": "Genie 4: A new generation of world simulation",
-   "date": "Tue, 27 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
+    },
     {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 19 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "7b8f96dff14c59fe077ac980b56fc5438e4292aaa753065aa9ffecc802d58386",
-   "evidence_hash": "49b5b46351afde43201a88b1e22a94db8df983b49e9f942376711b02b4abe65a",
-   "label_source": "machine",
-   "rating": "trusted",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "site"
-  },
-  {
-   "entity": "Google DeepMind",
-   "headline": "Beyond tree cover: mapping the world’s forest types",
-   "date": "Thu, 22 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
+     "name": "Microsoft",
+     "count": 1
+    },
     {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
-     "source_type": "vendor-own",
-     "source_tier": 5
+     "name": "Amazon",
+     "count": 1
+    },
+    {
+     "name": "Nscale",
+     "count": 1
     }
    ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 96 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "2c6b3c831e981bce49303c28d1fff5680bdd5a40b9950333cbadc0a212cbc17c",
-   "evidence_hash": "17a5001c22aa4e06ab2dedf962e9e6689c01bf57f638c14d29a3cfd12bb02e9d",
-   "label_source": "machine",
-   "rating": "trusted",
-   "mentions": [],
    "publisher_topic": "",
-   "entity_basis": "site"
+   "entity_basis": "headline"
   },
   {
-   "entity": "Google",
-   "headline": "Accelerating the search for antimicrobial peptides with Google Antigravity",
-   "date": "Thu, 15 Oct 2026",
+   "entity": "Anthropic",
+   "headline": "Anthropic IPO buyers see valuation as low as $1.1T",
+   "date": "2026-11-06",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
-     "source_type": "vendor-own",
-     "source_tier": 5
+     "name": "bloomberg.com",
+     "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
+     "source_type": "trade-press",
+     "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 3 figure-sentence(s); 1 of 3 figure-sentence(s) matched a base cue",
+   "rating": "trusted",
    "evidence_method": "local-model",
    "evidence_coverage": {
-    "seen": 3,
-    "total": 3
+    "seen": 4,
+    "total": 4
    },
+   "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
+   "content_hash": "a985da379f057680c1c71e97a0311e2ae14255ec107497feb7892f019449f7d5",
+   "evidence_hash": "ff2f993a4cc769bd5b6b4d0614687278c83ee5e01063eb97284ade21f3ae9c3d",
    "label_schema_version": 2,
-   "content_hash": "a39b5cfa239e8ee9c6b7847f0643a5f72af9d12256b472ff78798b61b6a747e9",
-   "evidence_hash": "e481105d734ee1194426f1d5ec70515195bf440eced869dde78a1f3cd03a265f",
-   "label_source": "machine",
-   "rating": "trusted",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Google DeepMind",
-   "headline": "Developing Gemini 4 Argon responsibly and safely",
-   "date": "Tue, 13 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
    "auto_labelled": true,
    "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 6 figure-sentence(s); 1 of 6 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 6,
-    "total": 6
-   },
-   "label_schema_version": 2,
-   "content_hash": "ccf9ba4217cd1db0928019e7c1bf38444a757f50cf591671b4c74cf392e7609d",
-   "evidence_hash": "509e7989ccb067b3a69f4fcb179037f95b38b669daf3a4f80d93aa93b9269c9a",
    "label_source": "machine",
-   "rating": "trusted",
    "mentions": [
     {
-     "name": "Meta",
-     "count": 2
+     "name": "Anthropic",
+     "count": 1
     }
    ],
-   "publisher_topic": "None",
-   "entity_basis": "product:Gemini"
+   "publisher_topic": "IPOs",
+   "entity_basis": "headline"
   },
   {
    "entity": "Anthropic",
@@ -1503,48 +1284,16 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "article not fetched (robots-disallowed)",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "article not fetched (robots-disallowed)",
+   "label_schema_version": 2,
    "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
    "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "OpenAI to acquire Pierre Computer Company",
-   "date": "Wed, 04 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "openai.com",
-     "url": "https://openai.com/index/openai-to-acquire-pierre/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 3147 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "cfb209fbe2cf397aecda3a31a1609e3ebda0e45544501249ec6a17ac437ef8e1",
-   "evidence_hash": "ab4b1a0925df4371f26848126d6d1d6f5694fd44bac6626adb58a7c1c58637d0",
    "label_source": "machine",
    "rating": "ok",
    "mentions": [],
@@ -1553,16 +1302,16 @@
   },
   {
    "entity": "",
-   "headline": "Closed AI models dominate the price-performance frontier",
-   "date": "2026-10-30",
+   "headline": "AI is dramatically accelerating AI research",
+   "date": "2026-11-06",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "Y",
+   "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
-     "name": "village.dev",
-     "url": "https://village.dev/blog/closed-ai-models-now-dominate-the-price-performance-frontier/",
+     "name": "planned-obsolescence.org",
+     "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
      "source_type": "other",
      "source_tier": 3
     }
@@ -1570,213 +1319,23 @@
    "rating": "ok",
    "evidence_method": "local-model",
    "evidence_coverage": {
-    "seen": 6,
-    "total": 6
+    "seen": 28,
+    "total": 28
    },
-   "label_evidence": "model read all 6 figure-sentence(s); 1 of 6 figure-sentence(s) matched a base cue",
-   "content_hash": "04137c6b7ab9932b5ebfff33a4637d3afa615ee7725ba2454e8f691274ddddf3",
-   "evidence_hash": "54a49e44fbf1fd104746d01b6e3f749e4e3192d232dc9329c0ca1f2a97176a64",
+   "label_evidence": "model read all 28 figure-sentence(s); 2 of 28 figure-sentence(s) matched a base cue",
+   "content_hash": "3ba1726b9e778890f228c18f58ec53243f74f5d0a86f37cce8b19b5e3e03b484",
+   "evidence_hash": "bb5c5ad3e661eb45f6a058dd85a5c887189e7985a2c6af97a590f6d71547bf8c",
    "label_schema_version": 2,
    "auto_labelled": true,
    "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
    "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 3
-    },
-    {
-     "name": "Google",
-     "count": 3
-    },
     {
      "name": "Anthropic",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Nasdaq Sinks 5% as Investors Retreat from AI Trade After Election",
-   "date": "Thu, 05 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "wsj.com",
-     "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-05-2026",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_evidence": "article not fetched (robots-disallowed)",
-   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "American Voters Overwhelmingly Reject AI Data Centers",
-   "date": "2026-11-04",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "404media.co",
-     "url": "https://www.404media.co/american-voters-overwhelmingly-reject-ai-data-centers/",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 10,
-    "total": 10
-   },
-   "label_evidence": "model read all 10 figure-sentence(s); 0 of 10 figure-sentence(s) matched a base cue",
-   "content_hash": "c808120bd44063ceab10f75c9479b2b1d8d5f15fce34e1955a9761b13b282cc8",
-   "evidence_hash": "3d60092ff819143e4a1af1596f017affdd83d6d34415ec0772de77dcb59c7040",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "xAI",
-     "count": 3
+     "count": 15
     },
     {
-     "name": "Google",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "You'll need nerves of steel to work with AI agents",
-   "date": "2026-11-04",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "partial",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "orchidfiles.com",
-     "url": "https://orchidfiles.com/youll-need-nerves-of-steel-to-work-with-ai-agents/",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 12,
-    "total": 12
-   },
-   "label_evidence": "model read all 12 figure-sentence(s); 1 of 12 figure-sentence(s) matched a base cue",
-   "content_hash": "f4fd6f4a9989b791ae7a4908c04b89fcb210f76e081f0e6882ba18de7d073991",
-   "evidence_hash": "9be9f3c3536a29e865ed009397d4fecd3bb54bc13baa0abadd5dfd15af967a6f",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [],
-   "publisher_topic": "lang-en",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s",
-   "date": "Wed, 04 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "qualcomm.com",
-     "url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 1,
-    "total": 1
-   },
-   "label_schema_version": 2,
-   "content_hash": "b12527574bf65094a1bf8b9b404cd6b1d9882ec00ecfb26927b3ba4a070d2c99",
-   "evidence_hash": "3d531972fe2eb172976e1f455074002672f8d3218057ca5300bf2b60007f53e7",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Launch HN: Kino AI (YC S23) – AI media manager and video editor",
-   "date": "Wed, 04 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "news.ycombinator.com",
-     "url": "https://news.ycombinator.com/item?id=50368804",
-     "source_type": "aggregator",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 39 figure-sentence(s); 0 of 39 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 39,
-    "total": 39
-   },
-   "label_schema_version": 2,
-   "content_hash": "1b6b76de8e3992e6f7bb561ed653479dd5fc72a95b3f072b9cfd8e8ebb09f7d0",
-   "evidence_hash": "ac0eb30dad48b0535ff9bd5f8739ebcefc5c89c44394e5a28662910b255a181f",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    },
-    {
-     "name": "Nvidia",
+     "name": "OpenAI",
      "count": 1
     },
     {
@@ -1788,57 +1347,170 @@
    "entity_basis": "unresolved"
   },
   {
-   "entity": "",
-   "headline": "AI data centers comprehensively defeated at US midterm elections",
-   "date": "2026-11-04",
+   "entity": "Microsoft",
+   "headline": "Microsoft is winding down Oracle deal to rent AI cloud capacity",
+   "date": "Fri, 06 Nov 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "Y",
+   "denominator_stated": "?",
    "reviewed": false,
    "sources": [
     {
-     "name": "tomshardware.com",
-     "url": "https://www.tomshardware.com/tech-industry/data-centers/ai-data-centers-comprehensively-defeated-at-us-midterm-elections-45-measures-put-on-the-ballot-as-americans-overwhelmingly-vote-against-developments",
+     "name": "reuters.com",
+     "url": "https://www.reuters.com/business/microsoft-is-winding-down-oracle-deal-rent-ai-cloud-capacity-bloomberg-news-2026-11-06/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "trusted",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "article not fetched (robots-disallowed)",
+   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Perplexity",
+   "headline": "Perplexity launches AI agents for work",
+   "date": "Fri, 06 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "perplexity.ai",
+     "url": "https://www.perplexity.ai/en-GB/hub/blog/teammates-are-agents-for-complex-ongoing-work",
      "source_type": "other",
      "source_tier": 3
     }
    ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "article not fetched (http-403)",
+   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+   "label_schema_version": 2,
    "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 7 figure-sentence(s); 2 of 7 figure-sentence(s) matched a base cue",
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "University libraries are being swarmed by AI bots, putting public access at risk",
+   "date": "2026-11-05",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "cbc.ca",
+     "url": "https://www.cbc.ca/news/world/university-libraries-ai-data-scraping-bots-9.7408287",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "article not fetched (timeouterror)",
+   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "Anthropic",
+   "headline": "AI for scientific discovery: How researchers use Claude",
+   "date": "2026-11-05",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "partial",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "anthropic.com",
+     "url": "https://www.anthropic.com/research/how-researchers-use-claude",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "ok",
    "evidence_method": "local-model",
    "evidence_coverage": {
-    "seen": 7,
-    "total": 7
+    "seen": 103,
+    "total": 103
    },
+   "label_evidence": "model read all 103 figure-sentence(s); 17 of 103 figure-sentence(s) matched a base cue",
+   "content_hash": "ff380021be7d8a229f8acf465082d4df345f9f7dd9497698ac8a0dca2d2983a7",
+   "evidence_hash": "75c7a1b29708f3a054b153941c69fb726e348ad24156e39d85c07ccf9b9f6a95",
    "label_schema_version": 2,
-   "content_hash": "3bc99c0619d2a23b4890c11d0cfeee390556fc35ab1d1e76b78a1ef1fb180a69",
-   "evidence_hash": "02336a30ee8a93d167592f5bccc694152844735a92059431c29f4a03e8cb7a6f",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
-   "rating": "ok",
    "mentions": [
-    {
-     "name": "Google",
-     "count": 2
-    },
     {
      "name": "OpenAI",
      "count": 1
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    },
-    {
-     "name": "xAI",
-     "count": 1
     }
    ],
-   "publisher_topic": "Tech Industry",
+   "publisher_topic": "",
+   "entity_basis": "product:Claude"
+  },
+  {
+   "entity": "",
+   "headline": "App Store 2026 in numbers: AI, pricing, abandoned apps",
+   "date": "2026-11-06",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "partial",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "obelisk.club",
+     "url": "https://obelisk.club/research/app-store-2026",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 118,
+    "total": 118
+   },
+   "label_evidence": "model read all 118 figure-sentence(s); 4 of 118 figure-sentence(s) matched a base cue",
+   "content_hash": "15f43660a281e99b63cf02898a802200149b9ae44f76948ce3520318f8f40260",
+   "evidence_hash": "1fd0356cb16f7617be7630ae994938edd3a0aee15267ad23c473784a74c42ab3",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "App Store",
    "entity_basis": "unresolved"
   },
   {
@@ -2282,6 +1954,79 @@
   },
   {
    "entity": "",
+   "headline": "2026 election breakdown: Americans vote down data centers, AI and oligarchy",
+   "date": "Fri, 06 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "ainowinstitute.org",
+     "url": "https://ainowinstitute.org/news/2026-election-breakdown-americans-vote-down-data-centers-ai-and-oligarchy",
+     "source_type": "independent",
+     "source_tier": 2
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 687 chars of article text",
+   "content_hash": "fa203bdb328c786cc702fe3a8ab8c82abcedae130f6a588a524b4c22298928e3",
+   "evidence_hash": "3f5b04a762110784afc44d3312cb71f36598cfe300003a85b12d6efd4ecc3d99",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "OpenAI",
+   "headline": "OpenAI is already trying to shape the 2028 election",
+   "date": "Wed, 04 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "ainowinstitute.org",
+     "url": "https://ainowinstitute.org/news/openai-is-already-trying-to-shape-the-2028-election",
+     "source_type": "independent",
+     "source_tier": 2
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 944 chars of article text",
+   "content_hash": "eb14a58c4f5e02de7f59936023e18482710c5c639c5165356b061768d74224d8",
+   "evidence_hash": "023b80b94d6d67bfa81979f9d370e9706119e6ac3ab4c0a381ca43a4cd87ff8b",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 2
+    },
+    {
+     "name": "TechCrunch",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
    "headline": "Coming Soon: Guest Report on AI Corporate Structure and Mission Accountability",
    "date": "Wed, 04 Nov 2026",
    "topic": "",
@@ -2534,76 +2279,6 @@
    "entity_basis": "unresolved"
   },
   {
-   "entity": "",
-   "headline": "The Bots Are Just The Closers",
-   "date": "Wed, 21 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "ainowinstitute.org",
-     "url": "https://ainowinstitute.org/news/the-bots-are-just-the-closers",
-     "source_type": "independent",
-     "source_tier": 2
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 1,
-    "total": 1
-   },
-   "label_schema_version": 2,
-   "content_hash": "f6f46856cea58dd739368b0a797bbfe735b04a1acd716335cbc6afca3badb958",
-   "evidence_hash": "7b71e09a542e0c660d83a9a0a789e3ae8a5ed167e6852d29d2ec7fbb32e2312a",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Amid AI Boom, “Risk Is Spreading Throughout the Economy”: Astra Taylor & Naomi Klein",
-   "date": "Wed, 21 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "ainowinstitute.org",
-     "url": "https://ainowinstitute.org/news/amid-ai-boom-risk-is-spreading-throughout-the-economy-astra-taylor-naomi-klein",
-     "source_type": "independent",
-     "source_tier": 2
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "all 1 figure-sentence(s) state a base",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 1,
-    "total": 1
-   },
-   "label_schema_version": 2,
-   "content_hash": "4f6970f7ce878402073a51481c882d2e066652422a7cb994118ab7227b944f2d",
-   "evidence_hash": "e8edab73fad3d7162b6eee2095d559f5d8bec7145d3597be3c4e19912300a364",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "FTC",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
    "entity": "Apple",
    "headline": "From CUDA to MLX: How K-Search Brings Decades of Kernel Expertise to Apple Silicon",
    "date": "Wed, 29 Jul 2026",
@@ -2678,6 +2353,44 @@
    "rating": "ok",
    "mentions": [],
    "publisher_topic": "Long Horizon",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "How to predict the behavior of molecules from scant data",
+   "date": "Fri, 06 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "partial",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "news.mit.edu",
+     "url": "https://news.mit.edu/2026/how-to-predict-molecule-behavior-with-scant-data-1106",
+     "source_type": "press-office",
+     "source_tier": 5
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 4,
+    "total": 4
+   },
+   "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
+   "content_hash": "49fb428a81413cfa3e229c3eb1fbfc6d7900c1a402d68c3a16723c28e927b10d",
+   "evidence_hash": "f494cef5643714229421d65a8671ed73549d0b0dc0ca631765f12a49dbf7ec1d",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "MIT ChemE",
    "entity_basis": "unresolved"
   },
   {
@@ -2989,44 +2702,6 @@
     }
    ],
    "publisher_topic": "Paris Smaragdis",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Learner collaborates with MIT peers to develop book of AI insights",
-   "date": "Tue, 27 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "news.mit.edu",
-     "url": "https://news.mit.edu/2026/learner-prabha-jha-collaborates-with-mit-peers-to-develop-book-of-ai-insights-1027",
-     "source_type": "press-office",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 4,
-    "total": 4
-   },
-   "label_schema_version": 2,
-   "content_hash": "069749d5b99cd7cab7af048b241e5651915b0bf97101356f6d3c40d462a89cd7",
-   "evidence_hash": "cc7490cf69fb5bab59fc3528221fa2e138beab7819619bf2fdb41f2495bb4805",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "MIT Open Learning",
    "entity_basis": "unresolved"
   },
   {

@@ -1,5 +1,341 @@
 [
   {
+    "id": "alert_bf8dc0515572e634ade68481",
+    "timestamp": "2026-11-07T06:01:53.564953+00:00",
+    "alert_schema_version": 2,
+    "source": "EU AI Office & Digital Strategy",
+    "jurisdiction": "European Union",
+    "title": "Independent study on the impact of age assurance on fundamental rights and costs for businesses",
+    "url": "https://digital-strategy.ec.europa.eu/en/library/independent-study-impact-age-assurance-fundamental-rights-and-costs-businesses",
+    "source_queue_priority": 1,
+    "substantive_priority": 4,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is an independent study analysing the fundamental rights impacts and business costs of age assurance mechanisms to inform the proposed EU KIDS Act. It is not a binding regulation but a preparatory assessment.",
+    "denominator_disclosed": "yes",
+    "actionable_trigger": "Monitor the finalisation of the EU KIDS Act and the EU age verification blueprint for potential future compliance requirements regarding age assurance.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "a79bebe8681fbdb226cf994553a7c478407ecd43b9aacb009610e22ca8f97b92",
+    "source_text_sha256": "be6cf9ec33c91804f1ad605351749e0eb6cbeac68821363a67efef1249626c47",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "extracted text",
+      "selection_status": "selected",
+      "selector": "full-text",
+      "text_chars": 3309,
+      "ranges": [
+        [
+          0,
+          3309
+        ]
+      ],
+      "passages_total": 1,
+      "passages_read": 1,
+      "passages_left": 0,
+      "selected_text_sha256": "be6cf9ec33c91804f1ad605351749e0eb6cbeac68821363a67efef1249626c47"
+    },
+    "source_capture_url": "https://digital-strategy.ec.europa.eu/en/library/independent-study-impact-age-assurance-fundamental-rights-and-costs-businesses",
+    "document_status": "other",
+    "ai_relevance": "relevant",
+    "evidence_quote": "To further strengthen the preparation of the proposed EU KIDS Act and the accompanying Staff Working Document , the European Commission procured a study to: Analyse the impact of age assurance on key fundamental rights, including data protection and privacy, non-discrimination, freedom of expression and access to information;",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_9c8352f606d03c57b59f1f29",
+    "timestamp": "2026-11-07T06:01:39.280676+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (Executive Orders)",
+    "jurisdiction": "United States",
+    "title": "Anti-Communism Week, 2026",
+    "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22787/anti-communism-week-2026",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a US Presidential Proclamation designating a week of observance. It contains no regulatory obligations, technical standards, or binding duties applicable to AI operators or UK entities.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "No action required; document is outside the scope of AI regulatory monitoring.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "8d3fe29c42e60e0a45fd620c1c94e99b301a5a1b9cb76cc6cd501b7cca02607a",
+    "source_text_sha256": "ba81a43f837eabd2103cf97d43be30ee4cb1f159ca471476434d0c1a8ecafd3e",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "extracted text",
+      "selection_status": "selected",
+      "selector": "full-text",
+      "text_chars": 3099,
+      "ranges": [
+        [
+          0,
+          3099
+        ]
+      ],
+      "passages_total": 1,
+      "passages_read": 1,
+      "passages_left": 0,
+      "selected_text_sha256": "ba81a43f837eabd2103cf97d43be30ee4cb1f159ca471476434d0c1a8ecafd3e"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/06/2026-22787.html",
+    "document_status": "binding",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "NOW, THEREFORE, I, DONALD J. TRUMP, President of the United States of America, by virtue of the authority vested in me by the Constitution and the laws of the United States, do hereby proclaim the week of November 1 through November 7 as Anti-Communism Week.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_eef686592ca26411cce42b4a",
+    "timestamp": "2026-11-07T06:01:27.064562+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Medicare Program: Hospital Outpatient Prospective Payment and Ambulatory Surgical Center Payment Systems; and Quality Reporting Programs; including the Hospital Outpatient Quality Reporting Program and Ambulatory Surgical Center Quality Program; Request for Information on Strengthening the Standardization and Comparability of Hospital Price Transparency (HPT) Data; Prior Authorization; Accrediting Organization (AO) Deeming for Emergency Medical Treatment and Labor Act (EMTALA); and Notices of Closure of Teaching Hospitals and Opportunities To Apply for Available Slots",
+    "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22739/medicare-program-hospital-outpatient-prospective-payment-and-ambulatory-surgical-center-payment",
+    "source_queue_priority": 1,
+    "substantive_priority": 4,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document outlines CMS payment policy changes for Software as a Medical Service (SaMS) and algorithmic analyses under the Medicare OPPS, but contains no binding regulatory duties for AI operators regarding transparency, labelling, or risk assessment.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Monitor final CY 2027 payment rates in Addendum B for SaMS codes to assess financial impact on AI-assisted diagnostic services.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "ad394d1b177eb061d98dc2b573e6bc05b1dbea5cded6a549d09b4e19ebb7c387",
+    "source_text_sha256": "8aa15bf71f8da37791b077292c1687f3ebf03c7fd10cb8ff207731078a36f3b4",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 2542585,
+      "ranges": [
+        [
+          0,
+          774
+        ],
+        [
+          22310,
+          23334
+        ],
+        [
+          304051,
+          305223
+        ],
+        [
+          474718,
+          476309
+        ],
+        [
+          513570,
+          514720
+        ],
+        [
+          785339,
+          786680
+        ],
+        [
+          1715732,
+          1717055
+        ],
+        [
+          1795110,
+          1796354
+        ],
+        [
+          1796354,
+          1797644
+        ],
+        [
+          2526767,
+          2527977
+        ]
+      ],
+      "passages_total": 72,
+      "passages_read": 10,
+      "passages_left": 62,
+      "selected_text_sha256": "861b25de7e4825bbb964a8c849cdb4840013734fd4cfdd01f751e178baddbf5f"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/06/2026-22739.html",
+    "document_status": "binding",
+    "ai_relevance": "relevant",
+    "evidence_quote": "We are finalizing the creation of new status indicator (SI) “O1” (Software as a Medical Service, paid under OPPS; separate APC payment) and assigning the relevant HCPCS codes to this new (SI).",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_83f103d002a0b01a31cd3e7f",
+    "timestamp": "2026-11-07T06:01:08.529183+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Prohibiting Illegal Discrimination in Registered Apprenticeship Programs",
+    "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22680/prohibiting-illegal-discrimination-in-registered-apprenticeship-programs",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document outlines a final rule regarding nondiscrimination in Registered Apprenticeship programs, specifically shifting enforcement of discrimination complaints from Registration Agencies to external bodies like the EEOC. While it mentions the use of artificial intelligence in the context of data collection and reporting burden minimization, it does not impose any binding obligations or duties on AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "No action required as the document does not impose duties on AI operators.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "e32ff505973a28f9610bcc70b94ced71ac60dbde43426ac53c901a6b9ab13df8",
+    "source_text_sha256": "9464ea97ff403944008f0f3ff5dc88362fe6793c49b8fc503f0a9c6253a0178c",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 585346,
+      "ranges": [
+        [
+          0,
+          660
+        ],
+        [
+          67161,
+          68471
+        ],
+        [
+          76855,
+          78348
+        ],
+        [
+          79098,
+          80254
+        ],
+        [
+          88720,
+          89903
+        ],
+        [
+          132288,
+          133655
+        ],
+        [
+          310594,
+          311826
+        ],
+        [
+          358848,
+          360165
+        ],
+        [
+          369165,
+          370377
+        ],
+        [
+          443894,
+          445179
+        ]
+      ],
+      "passages_total": 11,
+      "passages_read": 10,
+      "passages_left": 1,
+      "selected_text_sha256": "7381c618170ebac52821bb069faf864ba4ff0770af17ca9d9237274b77408fa3"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/06/2026-22680.html",
+    "document_status": "binding",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "Another commenter recommended that the Department utilize tools, such as artificial intelligence, to minimize reporting burden, create public dashboards to track this data, and use that data to evaluate the impact of the final rule within 3 years of its implementation and every 5 years thereafter.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_2dc8754748c664a328753e02",
+    "timestamp": "2026-11-07T06:00:51.374447+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (Executive Orders)",
+    "jurisdiction": "United States",
+    "title": "The American Declaration of Freedom in Space",
+    "url": "https://www.federalregister.gov/documents/2026/11/06/2026-22789/the-american-declaration-of-freedom-in-space",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a US Presidential Proclamation regarding space exploration policy and national security. It contains no regulatory obligations, transparency requirements, or operational duties applicable to AI operators in the UK or elsewhere.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "No action required; document is outside the scope of AI regulatory monitoring.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "b002622c294194da67f316eca81cb0143581cfe3dceef1617c0aeadd1e8abe77",
+    "source_text_sha256": "24fb98dcd66490c031d02be932ef527288b55ae2fc24b6ce3460030b8d2da3e8",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "extracted text",
+      "selection_status": "selected",
+      "selector": "full-text",
+      "text_chars": 3787,
+      "ranges": [
+        [
+          0,
+          3787
+        ]
+      ],
+      "passages_total": 1,
+      "passages_read": 1,
+      "passages_left": 0,
+      "selected_text_sha256": "24fb98dcd66490c031d02be932ef527288b55ae2fc24b6ce3460030b8d2da3e8"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/06/2026-22789.html",
+    "document_status": "binding",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "It is America's destiny to explore and expand our frontiers beyond Earth to the farthest depths of space.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_cf96cd26dc8432629f4a2c8c",
+    "timestamp": "2026-11-07T06:00:41.743876+00:00",
+    "alert_schema_version": 2,
+    "source": "EU AI Office & Digital Strategy",
+    "jurisdiction": "European Union",
+    "title": "Commission preliminarily finds TikTok’s ‘For You’ feed in breach of Digital Services Act for harmful ‘rabbit holes’ effect",
+    "url": "https://digital-strategy.ec.europa.eu/en/news/commission-preliminarily-finds-tiktoks-you-feed-breach-digital-services-act-harmful-rabbit-holes",
+    "source_queue_priority": 1,
+    "substantive_priority": 3,
+    "is_operator_duty_shift": false,
+    "duty_type": "risk_assessment",
+    "statutory_reference": null,
+    "summary": "The European Commission has preliminarily found that TikTok's 'For You' feed recommender system breaches the Digital Services Act due to a harmful 'rabbit hole effect' impacting user mental health. This is a preliminary finding, not a final binding decision, and focuses on risk assessment and mitigation measures under the DSA.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Monitor for the final Commission decision and any subsequent enforcement actions or fines, as the current status is only a preliminary finding.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "4ef8af79ef14e84d40a4eb4a46f4c8cd81e494cf7fa6f423e64c204133b3b821",
+    "source_text_sha256": "5a76a40dcdc8e79003ef686c36f77d7410107ff4eb5c028a1630ceb3b37b9f52",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "extracted text",
+      "selection_status": "selected",
+      "selector": "full-text",
+      "text_chars": 1177,
+      "ranges": [
+        [
+          0,
+          1177
+        ]
+      ],
+      "passages_total": 1,
+      "passages_read": 1,
+      "passages_left": 0,
+      "selected_text_sha256": "5a76a40dcdc8e79003ef686c36f77d7410107ff4eb5c028a1630ceb3b37b9f52"
+    },
+    "source_capture_url": "https://digital-strategy.ec.europa.eu/en/news/commission-preliminarily-finds-tiktoks-you-feed-breach-digital-services-act-harmful-rabbit-holes",
+    "document_status": "other",
+    "ai_relevance": "relevant",
+    "evidence_quote": "The European Commission has preliminarily found TikTok in breach of the Digital Services Act (DSA) for the so-called ‘rabbit hole effect’ of its recommender system.",
+    "assessment_error": null
+  },
+  {
     "id": "alert_41eb4e01a867b879ac522d90",
     "timestamp": "2026-11-06T06:02:22.239032+00:00",
     "alert_schema_version": 2,
