@@ -1,10 +1,10 @@
 {
- "generated": "2026-11-07 06:22 UTC",
+ "generated": "2026-11-08 06:20 UTC",
  "window_days": 60,
  "counts": {
-  "total": 99,
-  "closed": 44,
-  "open_weights": 55
+  "total": 95,
+  "closed": 42,
+  "open_weights": 53
  },
  "releases": [
   {
@@ -365,18 +365,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights published at huggingface.co/reflection/Beam-1.0-501B-A23B; downloadable and hashable",
    "hf_id": "reflection/Beam-1.0-501B-A23B",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Inception",
-   "model": "Inception: Mercury 3",
-   "id": "inception/mercury-3",
-   "date": "2026-10-16",
-   "url": "https://openrouter.ai/inception/mercury-3",
-   "context_length": 1000000,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
@@ -1158,42 +1146,6 @@
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "allenai/AstaBrief_8B_SFT",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Inception",
-   "model": "Inception: Mercury 2.5",
-   "id": "inception/mercury-2.5",
-   "date": "2026-09-08",
-   "url": "https://openrouter.ai/inception/mercury-2.5",
-   "context_length": 260000,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Nex Agi",
-   "model": "Nex AGI: Nex-N2.5-Mini",
-   "id": "nex-agi/nex-n2.5-mini",
-   "date": "2026-09-08",
-   "url": "https://openrouter.ai/nex-agi/nex-n2.5-mini",
-   "context_length": 262144,
-   "evidence": "open-weights",
-   "evidence_note": "weights published at huggingface.co/nex-agi/Nex-N2.5-mini; downloadable and hashable",
-   "hf_id": "nex-agi/Nex-N2.5-mini",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Nex Agi",
-   "model": "Nex AGI: Nex-N2.5-Pro",
-   "id": "nex-agi/nex-n2.5-pro",
-   "date": "2026-09-08",
-   "url": "https://openrouter.ai/nex-agi/nex-n2.5-pro",
-   "context_length": 262144,
-   "evidence": "open-weights",
-   "evidence_note": "weights published at huggingface.co/nex-agi/Nex-N2.5-Pro; downloadable and hashable",
-   "hf_id": "nex-agi/Nex-N2.5-Pro",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   }
  ],
  "errors": [],

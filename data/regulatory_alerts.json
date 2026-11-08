@@ -1,5 +1,405 @@
 [
   {
+    "id": "alert_fe8cc01b1106da4dce23689c",
+    "timestamp": "2026-11-08T06:02:00.813028+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Health Data, Technology, and Interoperability: ONC Deregulatory Actions To Unleash Prosperity",
+    "url": "https://www.federalregister.gov/documents/2026/10/28/2026-21943/health-data-technology-and-interoperability-onc-deregulatory-actions-to-unleash-prosperity",
+    "source_queue_priority": 1,
+    "substantive_priority": 3,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document details the removal of existing transparency and 'model card' requirements for predictive decision support interventions (PDSIs) under the US ONC Certification Program. It does not establish new binding duties for AI operators but rather deregulates previous obligations.",
+    "denominator_disclosed": "no",
+    "actionable_trigger": "Monitor for potential divergence between US deregulatory trends and stricter EU/UK AI Act transparency obligations for cross-border health IT deployments.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "9ce7f79e2aad18d99e078b72d1653976372cf65915d1fd6c3584cbc13f1c5e69",
+    "source_text_sha256": "ca3e999251b2bcd4fd50a77c6cc598aad96f3fed02ad3181ee3f718049e9375c",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 559574,
+      "ranges": [
+        [
+          0,
+          755
+        ],
+        [
+          8085,
+          9193
+        ],
+        [
+          43135,
+          44433
+        ],
+        [
+          44433,
+          45750
+        ],
+        [
+          161698,
+          163104
+        ],
+        [
+          172836,
+          174062
+        ],
+        [
+          174062,
+          175062
+        ],
+        [
+          422250,
+          423582
+        ],
+        [
+          553147,
+          554298
+        ],
+        [
+          556087,
+          557141
+        ],
+        [
+          557522,
+          558598
+        ]
+      ],
+      "passages_total": 47,
+      "passages_read": 11,
+      "passages_left": 36,
+      "selected_text_sha256": "619621220f02f65531e4f4e38fd962e34e0ccc54e7994b10caff60838b80a7d4"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/10/28/2026-21943.html",
+    "document_status": "binding",
+    "ai_relevance": "relevant",
+    "evidence_quote": "We have finalized removal of the requirements related to “model cards” as well as other revisions for the reasons discussed in detail below.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_5069e99cf68e0c98f3534a97",
+    "timestamp": "2026-11-08T06:01:42.917761+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Exemptions To Permit Circumvention of Access Controls on Copyrighted Works",
+    "url": "https://www.federalregister.gov/documents/2026/10/28/2026-21939/exemptions-to-permit-circumvention-of-access-controls-on-copyrighted-works",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document discusses the renewal of a DMCA exemption for text and data mining (TDM) research, addressing arguments regarding AI training data. It is a US regulatory proceeding and does not impose binding duties on UK AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Monitor final rulemaking for potential changes to TDM exemptions, though no immediate action is required for UK compliance.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "6f953e70e2c4b0638807602a75c60edccb0a5246264c6b41aba417b86068250b",
+    "source_text_sha256": "6b776ff9e962f418d0a113991c19a0d0c9747ce32fd19e1a752cc20c024a4140",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 161915,
+      "ranges": [
+        [
+          0,
+          624
+        ],
+        [
+          27922,
+          29285
+        ],
+        [
+          32890,
+          34189
+        ],
+        [
+          153162,
+          154345
+        ]
+      ],
+      "passages_total": 4,
+      "passages_read": 4,
+      "passages_left": 0,
+      "selected_text_sha256": "b6703423ead2b7263c62329180bd9ea170723321959e11e57289ed185c0df06a"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/10/28/2026-21939.html",
+    "document_status": "proposed",
+    "ai_relevance": "relevant",
+    "evidence_quote": "AAP's suggestion that “unprotected corpora created under the exemption will be siphoned off to train generative AI models,” also refers to risks outside the scope of the exemption.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_966af37787d96257a050556d",
+    "timestamp": "2026-11-08T06:01:30.037163+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "NCUA Draft 2027-2028 Budget",
+    "url": "https://www.federalregister.gov/documents/2026/10/28/2026-21948/ncua-draft-2027-2028-budget",
+    "source_queue_priority": 1,
+    "substantive_priority": 4,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a draft budget proposal for the National Credit Union Administration (NCUA) for 2027-2028. It outlines internal resource allocation for cybersecurity, SI/AI strategy implementation, and reorganization. It does not impose binding regulatory duties on AI operators.",
+    "denominator_disclosed": "yes",
+    "actionable_trigger": "Monitor final NCUA budget approval and subsequent regulatory guidance regarding the implementation of SI/AI tools in credit union supervision.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "c6fee58970b33cd05b52d270da256ff76bc14ac74e8a85b08250447d2b395e00",
+    "source_text_sha256": "124ca75799cac79f59c2ef472595a228c57b6839bf037f547ffc4f01a499e8b6",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 45622,
+      "ranges": [
+        [
+          0,
+          621
+        ],
+        [
+          3106,
+          4312
+        ],
+        [
+          14076,
+          15358
+        ],
+        [
+          15358,
+          16380
+        ],
+        [
+          18923,
+          20111
+        ],
+        [
+          27950,
+          29083
+        ],
+        [
+          29392,
+          30538
+        ]
+      ],
+      "passages_total": 7,
+      "passages_read": 7,
+      "passages_left": 0,
+      "selected_text_sha256": "fefc04289375ffd553acecc013abbf8d2491610c833c81ee31cb0cc231f02c2d"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/10/28/2026-21948.html",
+    "document_status": "proposed",
+    "ai_relevance": "relevant",
+    "evidence_quote": "NCUA's SI/AI strategy aligns with the Administration's direction and will both enhance examination and supervision capabilities and deliver operational efficiencies.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_c5ebf04a130b2198d144c6e5",
+    "timestamp": "2026-11-08T06:01:17.038469+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Accreditation, Innovation, and Modernization: The Secretary's Recognition of Accrediting Agencies; Institutional Eligibility Under the Higher Education Act of 1965, as Amended; Student Assistance General Provisions",
+    "url": "https://www.federalregister.gov/documents/2026/10/30/2026-22174/accreditation-innovation-and-modernization-the-secretarys-recognition-of-accrediting-agencies",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a US Federal Register final rule concerning the accreditation of higher education institutions and student aid eligibility. It contains no binding obligations, duties, or regulatory requirements applicable to AI operators or the development, deployment, or monitoring of artificial intelligence systems.",
+    "denominator_disclosed": "partial",
+    "actionable_trigger": "No action required; document is outside the scope of AI operator regulatory monitoring.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "ceb94a16875e99566e38022c9da2ad6c558ab0662c41a09480c4dceb20ab6426",
+    "source_text_sha256": "f3a064946969e4344d3cae6497d903c2c1a800302baf4c3e61228e22d4092176",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 619342,
+      "ranges": [
+        [
+          0,
+          687
+        ],
+        [
+          6450,
+          7689
+        ],
+        [
+          10642,
+          11846
+        ],
+        [
+          32556,
+          33890
+        ],
+        [
+          63481,
+          64868
+        ],
+        [
+          67471,
+          68729
+        ],
+        [
+          90887,
+          92034
+        ],
+        [
+          122035,
+          123074
+        ],
+        [
+          419043,
+          420275
+        ],
+        [
+          612157,
+          613308
+        ],
+        [
+          618299,
+          619342
+        ]
+      ],
+      "passages_total": 44,
+      "passages_read": 11,
+      "passages_left": 33,
+      "selected_text_sha256": "af4b2fd439b7e727fd29b486db72da67403c74aeddcb5b78e3a7f44105f1e212"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/10/30/2026-22174.html",
+    "document_status": "binding",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "Pursuant to Executive Order 14434 , 91 FR 63129 (Oct. 2, 2026), this document uses the term “Super Intelligence” or “SI” instead of “Artificial Intelligence” or “AI.”",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_b13092d735a99a59657a2323",
+    "timestamp": "2026-11-08T06:01:01.047725+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Streamlining Contested Adjudications in Licensing Proceedings",
+    "url": "https://www.federalregister.gov/documents/2026/11/03/2026-22443/streamlining-contested-adjudications-in-licensing-proceedings",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document outlines procedural changes to Nuclear Regulatory Commission (NRC) contested adjudications, specifically regarding timelines for evidentiary hearings and initial disclosures. It mentions artificial intelligence only as a tool that may assist litigants in preparing disclosures within a 20-day window, but imposes no direct regulatory duties, standards, or obligations on AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "No action required; the document concerns NRC administrative procedure and does not impose AI-specific regulatory obligations.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "a8ee6adc471679eab967ed9fe304381242eb388398a5e355e35329e01c37edca",
+    "source_text_sha256": "b20cf8fb174659bc714b603f74d6f29a45ab11a4da24307a798a52bb2d011970",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 267710,
+      "ranges": [
+        [
+          0,
+          655
+        ],
+        [
+          40184,
+          41741
+        ],
+        [
+          89573,
+          90777
+        ]
+      ],
+      "passages_total": 3,
+      "passages_read": 3,
+      "passages_left": 0,
+      "selected_text_sha256": "600725590b975991d3bae5e62a6d66e333f0b8018ecc57df97fed7c8a769e574"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/03/2026-22443.html",
+    "document_status": "binding",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "Twenty days should be sufficient for diligent litigants to prepare their § 2.336 disclosures given the reduced scope of disclosures and modern discovery and file management tools, including artificial intelligence.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_8bb72f74e65cd8439817127e",
+    "timestamp": "2026-11-08T06:00:47.193630+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Pipeline Safety: Amendments to Liquefied Natural Gas Facilities",
+    "url": "https://www.federalregister.gov/documents/2026/11/03/2026-22396/pipeline-safety-amendments-to-liquefied-natural-gas-facilities",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a Notice of Proposed Rulemaking (NPRM) regarding safety regulations for Liquefied Natural Gas (LNG) facilities under 49 CFR Parts 191 and 193. It discusses the expansion of LNG infrastructure, including mobile and temporary facilities, driven by energy demand and data center power needs. It contains no binding obligations or specific regulatory duties for AI operators.",
+    "denominator_disclosed": "yes",
+    "actionable_trigger": "No immediate action required for AI operators; monitor for final rule publication if interested in LNG infrastructure safety context.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "00d65c408b5667be236990d23bfccc6d49b464e585eabdd9207c6da2aae6098c",
+    "source_text_sha256": "2699ccf4c37e2db413fdfba491f300c8597e61ac15b7770f32c386fb28de30c8",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 434813,
+      "ranges": [
+        [
+          0,
+          719
+        ],
+        [
+          18361,
+          19520
+        ],
+        [
+          21688,
+          22891
+        ],
+        [
+          373479,
+          374605
+        ]
+      ],
+      "passages_total": 4,
+      "passages_read": 4,
+      "passages_left": 0,
+      "selected_text_sha256": "1229f2d33e638140de19add4b74f0321e23bb528cde5c5b9d9fbad02ab56dd95"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/03/2026-22396.html",
+    "document_status": "proposed",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "ACTION: Notice of proposed rulemaking (NPRM).",
+    "assessment_error": null
+  },
+  {
     "id": "alert_bf8dc0515572e634ade68481",
     "timestamp": "2026-11-07T06:01:53.564953+00:00",
     "alert_schema_version": 2,
@@ -1300,34 +1700,6 @@
     "source_text_sha256": "6a070ea029f262eaf621cd1fbeb0c30eef44dacb2ac371b970e1b296341b7c80",
     "assessment_version": 3,
     "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/10/21/2026-21505.html",
-    "document_status": "unassessed",
-    "ai_relevance": "unassessed",
-    "evidence_quote": null,
-    "assessment_error": "document exceeds model input budget; manual review required"
-  },
-  {
-    "id": "alert_966af37787d96257a050556d",
-    "timestamp": "2026-11-05T06:00:43.745109+00:00",
-    "alert_schema_version": 2,
-    "source": "US Federal Register (AI Rules & Notices)",
-    "jurisdiction": "United States",
-    "title": "NCUA Draft 2027-2028 Budget",
-    "url": "https://www.federalregister.gov/documents/2026/10/28/2026-21948/ncua-draft-2027-2028-budget",
-    "source_queue_priority": 1,
-    "substantive_priority": null,
-    "is_operator_duty_shift": false,
-    "duty_type": "none",
-    "statutory_reference": null,
-    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): NCUA Draft 2027-2028 Budget",
-    "denominator_disclosed": "unassessed",
-    "actionable_trigger": "Review the captured primary document.",
-    "evaluation_method": "unassessed",
-    "model": "qwen3.8:latest",
-    "reviewed": false,
-    "source_sha256": "c6fee58970b33cd05b52d270da256ff76bc14ac74e8a85b08250447d2b395e00",
-    "source_text_sha256": "124ca75799cac79f59c2ef472595a228c57b6839bf037f547ffc4f01a499e8b6",
-    "assessment_version": 3,
-    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/10/28/2026-21948.html",
     "document_status": "unassessed",
     "ai_relevance": "unassessed",
     "evidence_quote": null,
