@@ -1459,12 +1459,102 @@ def main():
                     f'<div style="font-size:11px;color:{SLATE}">{esc(art.get("source",""))}</div>'
                     f'</div>')
 
+    # Audio and video releases: the engines the Releases pane above cannot see.
+    # ⛔ These rows never join the Releases pane and these counts are never summed with it.
+    # Two routes, two windows: that pane is OpenRouter plus a 13-organisation Hugging Face
+    # list over 60 days, this one an 11-maker list over its own window. See fetch_releases.py.
+    # ⚠️ The tab is built only when releases.json carries an `av_releases` key, so a file
+    # written before that key existed shows the three-pane rail unchanged. An empty list
+    # still shows the window and the no-route makers rather than hiding the gap.
+    av_rows_data = rd.get("av_releases")
+    av_c = rd.get("av_counts", {}) or {}
+    av_rows_html = []
+    av_nav_btn = ""
+    av_pane_html = ""
+    if av_rows_data is not None:
+        for r in av_rows_data:
+            av_kind = r.get("kind", "")
+            # ⚠️ These two colours mark modality, not quality. The neutral-badge rule in the
+            # releases block is about grading a release; audio and video are not ranks.
+            kind_col = "#4338ca" if av_kind == "video" else "#0f766e"
+            folded = r.get("folded", 0)
+            if r.get("kind_from") == "pipeline":
+                src_short = "tag"
+                src_title = "kind decided by the maker's own pipeline declaration"
+            else:
+                src_short = "name"
+                src_title = "kind decided by a word in the repository's own name"
+            av_rows_html.append(
+                f'<div class="scholarrow" data-search="{esc((r.get("model","") + " " + r.get("lab","") + " " + av_kind).lower())}" '
+                f'style="padding:7px 0;border-bottom:1px solid {LINE}">'
+                f'<div style="font-size:11px;color:{SLATE}">'
+                # ⚠️ The date is repository creation, which can sit either side of a public
+                # release. The disclosure says so for the section; the row's own source
+                # sentence says it again here, where the date is read.
+                f'<span title="{esc(r.get("source",""))}">{esc(r.get("date",""))}</span> '
+                f'&middot; {esc(r.get("lab",""))}'
+                f'<span title="{esc(src_title)}" style="display:inline-block;'
+                f'font-size:10px;padding:1px 6px;margin-left:6px;border-radius:4px;color:#fff;'
+                f'background:{kind_col}">{esc(av_kind)}</span>'
+                f'<span title="{esc(src_title)}" style="display:inline-block;font-size:10px;'
+                f'padding:1px 5px;margin-left:4px;border-radius:4px;border:1px solid {LINE};'
+                f'color:{SLATE}">{src_short}</span>'
+                + (f'<span title="packaging or pretrained-base copies of this same release, '
+                   f'folded into this row rather than listed again" style="display:inline-block;'
+                   f'font-size:10px;padding:1px 5px;margin-left:4px;border-radius:4px;'
+                   f'border:1px solid {LINE};color:{SLATE}">+{folded} folded</span>'
+                   if folded else "")
+                + '</div>'
+                f'<a href="{esc(r.get("url",""))}" target="_blank" rel="noopener" '
+                f'title="{esc(r.get("evidence_note",""))}" '
+                f'style="color:{NAVY};font-weight:600;font-size:13px;text-decoration:none">'
+                f'{esc(r.get("model",""))}</a></div>')
+        av_nr = rd.get("av_no_route") or []
+        av_nr_html = ""
+        if av_nr:
+            av_nr_html = (
+                f'<div style="margin-top:10px;border-top:1px solid {LINE};padding-top:8px">'
+                f'<div style="font-size:10px;font-weight:700;text-transform:uppercase;'
+                f'letter-spacing:.05em;color:{SLATE};margin-bottom:4px">Watched, no keyless '
+                f'route ({len(av_nr)})</div>'
+                + "".join(
+                    f'<div style="font-size:11px;color:{SLATE};padding:3px 0;line-height:1.4">'
+                    f'<strong style="color:{NAVY}">{esc(x.get("maker",""))}</strong>: '
+                    f'{esc(x.get("note",""))} <span style="opacity:.75">(checked '
+                    f'{esc(x.get("checked",""))})</span></div>' for x in av_nr)
+                + '</div>')
+        av_nav_btn = (
+            f'<button class="rail-nav-btn" data-rail-target="pane-av" style="flex:1;'
+            f'padding:8px 2px;border:none;background:transparent;color:{SLATE};'
+            f'border-radius:6px;font-size:11px;font-weight:600;cursor:pointer;'
+            f'line-height:1.25">Audio &amp; video ({len(av_rows_data)})</button>')
+        av_pane_html = (
+            f'<div id="pane-av" class="rail-pane" style="display:none;padding:12px 14px;'
+            f'max-height:calc(100vh - 120px);overflow-y:auto">'
+            f'<div style="font-size:12px;color:{SLATE};margin-bottom:8px">'
+            f'<strong>{av_c.get("total", len(av_rows_data))} audio and video releases</strong> '
+            f'in the last {rd.get("av_window_days", "")} days, {av_c.get("audio", 0)} audio and '
+            f'{av_c.get("video", 0)} video, from {av_c.get("labs", 0)} of '
+            f'{av_c.get("orgs_watched", 0)} organisations watched. '
+            f'{av_c.get("folded", 0)} packaging or pretrained-base copies were folded into '
+            f'these rows.</div>'
+            + ("".join(av_rows_html) if av_rows_html else
+               f'<div style="font-size:12px;color:{SLATE}">No repository of a watched '
+               f'organisation has a release date inside this window.</div>')
+            + av_nr_html
+            + f'<details style="font-size:11px;color:{SLATE};margin-top:10px">'
+            f'<summary style="cursor:pointer;color:{NAVY}">Sourcing &amp; method limits</summary>'
+            f'<div style="margin-top:6px;line-height:1.4">'
+            f'{esc(rd.get("av_disclosure",""))}</div></details>'
+            f'</div>')
+
     # Unified Segmented Right Rail
     rail_tabbed_html = (
         f'<div class="rail-container" style="border:1px solid {LINE};border-radius:10px;background:{PAPER};box-shadow:{SHADOW};overflow:hidden">'
         f'<div class="rail-nav" style="display:flex;background:{ALT};border-bottom:1px solid {LINE};padding:4px;gap:4px">'
         f'<button class="rail-nav-btn active" data-rail-target="pane-releases" style="flex:1;padding:8px 2px;border:none;background:{PAPER};color:{NAVY};border-radius:6px;font-size:11px;font-weight:600;cursor:pointer;box-shadow:0 1px 2px rgba(0,0,0,0.06)">Releases ({len(rrows)})</button>'
-        f'<button class="rail-nav-btn" data-rail-target="pane-trends" style="flex:1;padding:8px 2px;border:none;background:transparent;color:{SLATE};border-radius:6px;font-size:11px;font-weight:600;cursor:pointer">Search &amp; market ({len(t_rows)})</button>'
+        + av_nav_btn
+        + f'<button class="rail-nav-btn" data-rail-target="pane-trends" style="flex:1;padding:8px 2px;border:none;background:transparent;color:{SLATE};border-radius:6px;font-size:11px;font-weight:600;cursor:pointer">Search &amp; market ({len(t_rows)})</button>'
         f'<button class="rail-nav-btn" data-rail-target="pane-sources" style="flex:1;padding:8px 2px;border:none;background:transparent;color:{SLATE};border-radius:6px;font-size:11px;font-weight:600;cursor:pointer">Sources ({len(primary_sources)})</button>'
         f'</div>'
         f'<div id="pane-releases" class="rail-pane active" style="display:block;padding:12px 14px;max-height:calc(100vh - 120px);overflow-y:auto">'
@@ -1474,7 +1564,8 @@ def main():
         f'<summary style="cursor:pointer;color:{NAVY}">Sourcing &amp; method limits</summary>'
         f'<div style="margin-top:6px;line-height:1.4">{esc(rd.get("disclosure",""))}</div></details>'
         f'</div>'
-        f'<div id="pane-trends" class="rail-pane" style="display:none;padding:12px 14px;max-height:calc(100vh - 120px);overflow-y:auto">'
+        + av_pane_html
+        + f'<div id="pane-trends" class="rail-pane" style="display:none;padding:12px 14px;max-height:calc(100vh - 120px);overflow-y:auto">'
         f'<div style="font-size:12px;color:{SLATE};margin-bottom:8px">Google Trends search spikes, Google News research-topic clusters and symmetrical market anomalies.</div>'
         + "".join(t_rows)
         + f'<details style="font-size:11px;color:{SLATE};margin-top:10px">'
