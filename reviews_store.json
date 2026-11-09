@@ -29085,15 +29085,15 @@
   "denominator_stated": "N",
   "auto_labelled": true,
   "auto_labelled_by": "gemma4:12b",
-  "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
+  "label_evidence": "model read all 5 figure-sentence(s); 0 of 5 figure-sentence(s) matched a base cue",
   "evidence_method": "local-model",
   "evidence_coverage": {
-   "seen": 4,
-   "total": 4
+   "seen": 5,
+   "total": 5
   },
   "label_schema_version": 2,
   "content_hash": "72c9edb0efa03ee1b7c02a5f43056db5003590734e709d8679ffb25857c1f0ee",
-  "evidence_hash": "5146ac9c96f363667f45823e8ab51e111da46ec0e58b59c4987fb0d5bec8bfbe",
+  "evidence_hash": "de635fda05143be2eae2c5382b88a4e259e7f8cc393f22b90622c9a91ec30b34",
   "reviewed": false,
   "label_source": "machine"
  },
@@ -29547,6 +29547,209 @@
   "label_schema_version": 2,
   "content_hash": "6a7d6386a88c2edeb0ce6db9250f74d0ddecd7be2b93b027374bfd1ac1cfaeb5",
   "evidence_hash": "7a6eec7fcef1c081ccf1c445c63323c01992ad77b4766257fa47a5def15c3731",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 5 figure-sentence(s); 1 of 5 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 5,
+   "total": 5
+  },
+  "label_schema_version": 2,
+  "content_hash": "cc65c3b8df74edca72fda620137d24bb4623a7c3d79ce78f221a0a4cd8571a94",
+  "evidence_hash": "67b7f75439382f1c03bedcb3f37a1245d49e255ca1af24c3aa8bb188fab73669",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 2888 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "e227ade0e0b73aa4c07febaa5a43073d768c26f030bb14b4c4c142647fa3e087",
+  "evidence_hash": "c917147e94edae0ae8715f79fe1a46b97f55a4a337f3abd34f5a351d99074738",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "cb92eb1e83a4b333b1e9caf75b3c22f0d9a17f59f7d38c43a2dd44259d6a165a",
+  "evidence_hash": "c949a56f6be7e2f4a0430c0b157c0da8cab724acf0b636eccf91fdb212a0e74d",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 3196 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "98e63608794eaff08e6b7659b6b5ffe4a95a3c3b1efecfefe56b607269aedb06",
+  "evidence_hash": "81e0d1b645bdb97905418f4465c5c1c7f49f69156eb71126f084c7dd8d2ffb16",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "865b76dd8f13aaa7b4d2690be9ebb3ac018e4c1f40fb5a32105f3adabf8dbd3b",
+  "evidence_hash": "12b70e8ff556565fe734a6fc175a83b36cbe152208d58714f1be15452b3bacea",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 3055 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "100f5a5e110d5da2768825de84f0fc5a63be89763c19d79cd77159692f1e37cd",
+  "evidence_hash": "bb6649999cf59427133a30c4e0abe2459f58780fb4c62dc6aa529593e04e7d6c",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 21 figure-sentence(s); 2 of 21 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 21,
+   "total": 21
+  },
+  "label_schema_version": 2,
+  "content_hash": "af2b2c5acd1f7b5ce436666ea24baaf6462b2e12f0cdedcf9653c3a6b8ea4c59",
+  "evidence_hash": "240983346c989e5d309fe436df3aaef185c9388d8f20fb7a0d7c518528105b83",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 15 figure-sentence(s); 3 of 15 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 15,
+   "total": 15
+  },
+  "label_schema_version": 2,
+  "content_hash": "014f086777aa155def9e64e07c37cd961fd9848a3008e21873e7a52e4fd141ca",
+  "evidence_hash": "ae362c7c0aefaf4adadc9233fd38f9616e58b2cbf0d740e45d6ffe260cbb1630",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://sergeykuhne.com/blog/fighting-ai-brain-fry": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "3af6e306c81d9f51143249b04a10f9f063886119e2a0caee4bccbeffe62f4b1a",
+  "evidence_hash": "ac6b1a4169068acbbead9abe03836f93ba12a24032d4342662ebc43324ff579f",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "article not fetched (robots-disallowed)",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://news.mit.edu/2026/single-ai-model-simulates-many-substances-behavior-1109": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "01eeec9af0c715d4fb4643d7f464fae5330b50d8a5d27bbcc8eeb1ba5dbd17aa",
+  "evidence_hash": "15e4f986870264717bcce5aafe81801b85d1406697b6964af13cb2609e882412",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://news.mit.edu/2026/ai-assisted-learning-platform-helps-robots-reason-beyond-literal-commands-1109": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model returned an invalid denominator label",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "2ac37c7985d3c116e96c231f6056b0752d10fb31c8463e0e7c71f9460d6ae4d7",
+  "evidence_hash": "5fe7d19a4821205523423cb1cacf5394b36fe4e5a334f0eec0aea00ddd3b9e9e",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://openai.com/index/introducing-images-2-6/": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "article not fetched (http-403)",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
   "reviewed": false,
   "label_source": "machine"
  }

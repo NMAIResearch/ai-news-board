@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-08 06:20 UTC",
+ "fetched": "2026-11-09 06:20 UTC",
  "items": [
   {
    "entity": "OpenAI",
@@ -182,6 +182,101 @@
    "entity_basis": "headline"
   },
   {
+   "entity": "Nvidia",
+   "headline": "Is Jensen Huang’s job on the line? Yale’s Jeffrey Sonnenfeld estimates it’s “about a 50-50”",
+   "date": "Mon, 09 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 5,
+    "total": 5
+   },
+   "label_evidence": "model read all 5 figure-sentence(s); 1 of 5 figure-sentence(s) matched a base cue",
+   "content_hash": "cc65c3b8df74edca72fda620137d24bb4623a7c3d79ce78f221a0a4cd8571a94",
+   "evidence_hash": "67b7f75439382f1c03bedcb3f37a1245d49e255ca1af24c3aa8bb188fab73669",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 53
+    },
+    {
+     "name": "Anthropic",
+     "count": 4
+    },
+    {
+     "name": "OpenAI",
+     "count": 3
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "xAI",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Jensen Huang",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Nvidia",
+   "headline": "Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy",
+   "date": "Sun, 08 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 2888 chars of article text",
+   "content_hash": "e227ade0e0b73aa4c07febaa5a43073d768c26f030bb14b4c4c142647fa3e087",
+   "evidence_hash": "c917147e94edae0ae8715f79fe1a46b97f55a4a337f3abd34f5a351d99074738",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 18
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "nvidia",
+   "entity_basis": "headline"
+  },
+  {
    "entity": "xAI",
    "headline": "After the midterms, things are looking rocky for Elon Musk and data centers",
    "date": "Sat, 07 Nov 2026",
@@ -197,19 +292,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 1,
     "total": 1
    },
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "2d496cadcf601b3c93b20786c31286973085393a8a05f1e0c400c990b992db9e",
    "evidence_hash": "2d00ded7f576b3e80d2e83acd3dd52f0ff580e25444b638db91e3529f31687b0",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -247,18 +342,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 1737 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 1737 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "822742c681e68b33dc529ff21bb29e85d0e71d21d50525a7e5c0766f6180e433",
    "evidence_hash": "801a5f8afcad37ec83e1c7465b4da4b0a89a57a97e53ea9135ee21fa8c149211",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Nvidia",
@@ -335,98 +430,6 @@
    "entity_basis": "headline"
   },
   {
-   "entity": "",
-   "headline": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
-   "date": "Fri, 06 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 1,
-    "total": 1
-   },
-   "label_schema_version": 2,
-   "content_hash": "8ba8b084099dba0e71cca7f9bedfef4d83120f7ffd81934f49753bd54b64047f",
-   "evidence_hash": "1f91755adc56b536113ae51a479530f78e60f5b0d4b4a1f7c48d0392d4eaadc8",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Microsoft",
-     "count": 3
-    },
-    {
-     "name": "Anthropic",
-     "count": 2
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "cybersecurity",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Meta",
-   "headline": "Meta introduces Spaces, a new way to collaborate with your Muse agent",
-   "date": "Fri, 06 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 1,
-    "total": 1
-   },
-   "label_schema_version": 2,
-   "content_hash": "0bfb780f1c1f407ca40c979d46e0171088cf131b609b3a6b491c16fbab2f0ade",
-   "evidence_hash": "05222409792a70daed9b0e6d76fb1227572e9b6d96c8ba54b419d69ec13f9adb",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 12
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "agents",
-   "entity_basis": "headline"
-  },
-  {
    "entity": "OpenAI",
    "headline": "OpenAI valued at $1.25 trillion, as rival Anthropic nears its IPO",
    "date": "2026-11-06T18:46",
@@ -443,18 +446,18 @@
     }
    ],
    "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
+   "label_evidence": "model read all 5 figure-sentence(s); 0 of 5 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
-    "seen": 4,
-    "total": 4
+    "seen": 5,
+    "total": 5
    },
    "label_schema_version": 2,
    "content_hash": "72c9edb0efa03ee1b7c02a5f43056db5003590734e709d8679ffb25857c1f0ee",
-   "evidence_hash": "5146ac9c96f363667f45823e8ab51e111da46ec0e58b59c4987fb0d5bec8bfbe",
+   "evidence_hash": "de635fda05143be2eae2c5382b88a4e259e7f8cc393f22b90622c9a91ec30b34",
    "label_source": "machine",
    "rating": "ok",
+   "auto_labelled_by": "gemma4:12b",
    "mentions": [
     {
      "name": "OpenAI",
@@ -469,9 +472,187 @@
    "entity_basis": "headline"
   },
   {
+   "entity": "Nvidia",
+   "headline": "Here’s the full text of Jensen Huang’s memo to Nvidia",
+   "date": "2026-11-08T17:54",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 1,
+    "total": 1
+   },
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "content_hash": "cb92eb1e83a4b333b1e9caf75b3c22f0d9a17f59f7d38c43a2dd44259d6a165a",
+   "evidence_hash": "c949a56f6be7e2f4a0430c0b157c0da8cab724acf0b636eccf91fdb212a0e74d",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 23
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Nvidia",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Nvidia",
+   "headline": "Nvidia is investigating Jensen Huang’s relationship with a Chinese spy",
+   "date": "2026-11-08T21:24",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 3196 chars of article text",
+   "content_hash": "98e63608794eaff08e6b7659b6b5ffe4a95a3c3b1efecfefe56b607269aedb06",
+   "evidence_hash": "81e0d1b645bdb97905418f4465c5c1c7f49f69156eb71126f084c7dd8d2ffb16",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 20
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Apple",
+   "headline": "Apple is racing to make Siri more agentic",
+   "date": "2026-11-08T14:18",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 1,
+    "total": 1
+   },
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "content_hash": "865b76dd8f13aaa7b4d2690be9ebb3ac018e4c1f40fb5a32105f3adabf8dbd3b",
+   "evidence_hash": "12b70e8ff556565fe734a6fc175a83b36cbe152208d58714f1be15452b3bacea",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Apple",
+     "count": 6
+    },
+    {
+     "name": "Nvidia",
+     "count": 4
+    },
+    {
+     "name": "OpenAI",
+     "count": 1
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Apple",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "Elvis and Eminem rights holders are suing Suno",
+   "date": "2026-11-08T12:23",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 3055 chars of article text",
+   "content_hash": "100f5a5e110d5da2768825de84f0fc5a63be89763c19d79cd77159692f1e37cd",
+   "evidence_hash": "bb6649999cf59427133a30c4e0abe2459f58780fb4c62dc6aa529593e04e7d6c",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 4
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
    "entity": "",
    "headline": "NYT Cooking’s AI assistant saved my weeknight chicken, but almost ruined my cake",
-   "date": "2026-11-07T10:47",
+   "date": "2026-11-08T14:41",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "N",
@@ -484,19 +665,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 9 figure-sentence(s); 0 of 9 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 9,
     "total": 9
    },
-   "label_evidence": "model read all 9 figure-sentence(s); 0 of 9 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "c41960e9d766e50e1a8813589b3dfe29af79f68ff395929b318a446a49c8d47e",
    "evidence_hash": "60bf071d66c937c594b92c145a1047bd43c9ac7905fe168bf95fbe91f83ba7bc",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Apple",
@@ -534,19 +715,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 1,
     "total": 1
    },
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "0b346d3255632aa2cd66d3d0bd55bab12a14f3c13b6b209c0573abadca810b2a",
    "evidence_hash": "8e991ed737c9ca99a2af06aba8ecf9ecf4ee11b5b0f2ebb319c113602e50df36",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Nvidia",
@@ -576,19 +757,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 33 figure-sentence(s); 1 of 33 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 33,
     "total": 33
    },
-   "label_evidence": "model read all 33 figure-sentence(s); 1 of 33 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "41413538debc44c7f1f9cb591cf2ea76337a8c23ce655c7050794ff27b313518",
    "evidence_hash": "60e057437af633e0e6a7312d9c59c685cba8dc2204734572a4441cbec4d89ca8",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Microsoft",
@@ -626,19 +807,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 2,
     "total": 2
    },
-   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "2629590f70cffc236bb486d8346118ebdd05f1a618d381bd2eff9b6457ef8b41",
    "evidence_hash": "6128086086a97827d7e44cb2cae2e2f4c77d4c0f842421cf978176c9ba1a353e",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Anthropic",
@@ -655,188 +836,6 @@
    ],
    "publisher_topic": "Anthropic",
    "entity_basis": "headline"
-  },
-  {
-   "entity": "Nvidia",
-   "headline": "China reportedly recruited AI exec to spy on Jensen Huang",
-   "date": "2026-11-06T18:00",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 2227 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "64c0434631cd00625dd2fde3e9d9b252b05eaf9db1863c7da151d56ea7c57f50",
-   "evidence_hash": "d767cc7310c4ff904e066790f26619659a238e7e10ec8875dc60bd30fd0dcfe5",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Nvidia",
-     "count": 17
-    }
-   ],
-   "publisher_topic": "Nvidia",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "All the latest updates on AI data centers",
-   "date": "2026-11-06T15:03",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 22 figure-sentence(s); 1 of 22 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 22,
-    "total": 22
-   },
-   "label_schema_version": 2,
-   "content_hash": "2db84c10d9eab357d4b56713d556a8aecb753f44341f31be1d0083d35852c551",
-   "evidence_hash": "bb23f7221f5738b01e7771a643577bb71f34b92fa26749ea9e576096485cd1ce",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 9
-    },
-    {
-     "name": "Anthropic",
-     "count": 5
-    },
-    {
-     "name": "Meta",
-     "count": 2
-    },
-    {
-     "name": "Amazon",
-     "count": 2
-    },
-    {
-     "name": "SEC",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Environment",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Meta",
-   "headline": "Meta’s Muse AI can create custom ‘spaces’ for the version of the app you need right now",
-   "date": "2026-11-06T15:00",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 2655 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "661097ee0e37ead180ce78e2f3717f7c8e3732fb97ab125cd1aaf23873dbfdc5",
-   "evidence_hash": "9f9ef81735b66af8c6be4b4edee51e904881c3cbe5e007a99a6592587059c437",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 9
-    },
-    {
-     "name": "Google",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Apps",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "AI is the new dating dealbreaker",
-   "date": "2026-11-06T16:51",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/1028609/ai-dating-feelings-doomers-singularity",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 10 figure-sentence(s); 0 of 10 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 10,
-    "total": 10
-   },
-   "label_schema_version": 2,
-   "content_hash": "634efb9c6237c3eb585ecd44dbfa7d4dd2bb7a206a078694957b5c7ebaa95593",
-   "evidence_hash": "a933bed2cb5b1a807f9af086338e6025a37ddc7dbbf589481171f58d30150828",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 3
-    },
-    {
-     "name": "Hugging Face",
-     "count": 2
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Salesforce",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Internet Culture",
-   "entity_basis": "unresolved"
   },
   {
    "entity": "OpenAI",
@@ -1218,18 +1217,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 107 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 107 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "b0cf26fa901911b3e36f1e0aa5db23c2625f351563cd1c9af869c2df4eedac21",
    "evidence_hash": "730d040ab4a6de25cc46c75649a2311274c764f703fcf10d8920e2b2786cf959",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "headline"
@@ -1250,19 +1249,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 12 figure-sentence(s); 2 of 12 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 12,
     "total": 12
    },
-   "label_evidence": "model read all 12 figure-sentence(s); 2 of 12 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "e5bf6789273a8a3a5d3528505e93e68b840de59cfc5868315cce8c68389998b2",
    "evidence_hash": "d5f48f8733a95fef97d745eee5b527ab7d1e49a22b1da330aadeecfc14a28ee2",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [
     {
      "name": "Meta",
@@ -1288,18 +1287,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 106 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 106 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "ced8d08d87566858c455a0a14807f17f4eeca10ec0bb718d1562b4300a91ab07",
    "evidence_hash": "96aba070a75afec1af127255dec170d73819f40b2c96fd35d558e3d837444621",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "headline"
@@ -1320,18 +1319,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 101 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 101 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "9ecb3e439362378596affb8c7a9fa8f28f119d81691d9ffcd15f17bc5a0250b5",
    "evidence_hash": "288cc88371e5ec9163146844bce7c244b058992dcfc855772a358a219ea2e1ba",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "site"
@@ -1352,19 +1351,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 11 figure-sentence(s); 0 of 11 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 11,
     "total": 11
    },
-   "label_evidence": "model read all 11 figure-sentence(s); 0 of 11 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "e15bce1f3562bd9dda95bdec6de8b1dbd84e33d8da43d94a85c0b7c9552ecad0",
    "evidence_hash": "9eb2b420d92c1c48851b419558c2789932a7c5bd422f88e1bdccaf7847acd0c3",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [
     {
      "name": "Meta",
@@ -1394,18 +1393,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 19 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 19 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "7b8f96dff14c59fe077ac980b56fc5438e4292aaa753065aa9ffecc802d58386",
    "evidence_hash": "49b5b46351afde43201a88b1e22a94db8df983b49e9f942376711b02b4abe65a",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "site"
@@ -1426,18 +1425,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 96 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 96 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "2c6b3c831e981bce49303c28d1fff5680bdd5a40b9950333cbadc0a212cbc17c",
    "evidence_hash": "17a5001c22aa4e06ab2dedf962e9e6689c01bf57f638c14d29a3cfd12bb02e9d",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "site"
@@ -1458,19 +1457,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 3 figure-sentence(s); 1 of 3 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 3,
     "total": 3
    },
-   "label_evidence": "model read all 3 figure-sentence(s); 1 of 3 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "a39b5cfa239e8ee9c6b7847f0643a5f72af9d12256b472ff78798b61b6a747e9",
    "evidence_hash": "e481105d734ee1194426f1d5ec70515195bf440eced869dde78a1f3cd03a265f",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "headline"
@@ -1491,19 +1490,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 6 figure-sentence(s); 1 of 6 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 6,
     "total": 6
    },
-   "label_evidence": "model read all 6 figure-sentence(s); 1 of 6 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "ccf9ba4217cd1db0928019e7c1bf38444a757f50cf591671b4c74cf392e7609d",
    "evidence_hash": "509e7989ccb067b3a69f4fcb179037f95b38b669daf3a4f80d93aa93b9269c9a",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [
     {
      "name": "Meta",
@@ -1512,6 +1511,56 @@
    ],
    "publisher_topic": "None",
    "entity_basis": "product:Gemini"
+  },
+  {
+   "entity": "OpenAI",
+   "headline": "OpenAI raises $11B at a $1.25T valuation",
+   "date": "2026-11-07",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "Y",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "247wallst.com",
+     "url": "https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 21,
+    "total": 21
+   },
+   "label_evidence": "model read all 21 figure-sentence(s); 2 of 21 figure-sentence(s) matched a base cue",
+   "content_hash": "af2b2c5acd1f7b5ce436666ea24baaf6462b2e12f0cdedcf9653c3a6b8ea4c59",
+   "evidence_hash": "240983346c989e5d309fe436df3aaef185c9388d8f20fb7a0d7c518528105b83",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 16
+    },
+    {
+     "name": "Nvidia",
+     "count": 9
+    },
+    {
+     "name": "Microsoft",
+     "count": 5
+    },
+    {
+     "name": "Anthropic",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "headline"
   },
   {
    "entity": "Anthropic",
@@ -1574,7 +1623,7 @@
   {
    "entity": "Anthropic",
    "headline": "Anthropic IPO buyers see valuation as low as $1.1T",
-   "date": "2026-11-06",
+   "date": "Fri, 06 Nov 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "N",
@@ -1643,6 +1692,125 @@
   },
   {
    "entity": "",
+   "headline": "I'm not convinced the AI bubble exists",
+   "date": "2026-11-08",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "Y",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "matteoraso.github.io",
+     "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 15,
+    "total": 15
+   },
+   "label_evidence": "model read all 15 figure-sentence(s); 3 of 15 figure-sentence(s) matched a base cue",
+   "content_hash": "014f086777aa155def9e64e07c37cd961fd9848a3008e21873e7a52e4fd141ca",
+   "evidence_hash": "ae362c7c0aefaf4adadc9233fd38f9616e58b2cbf0d740e45d6ffe260cbb1630",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Google",
+     "count": 15
+    },
+    {
+     "name": "Anthropic",
+     "count": 7
+    },
+    {
+     "name": "OpenAI",
+     "count": 3
+    },
+    {
+     "name": "Meta",
+     "count": 3
+    },
+    {
+     "name": "Nvidia",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "How I Fight AI Brain Fry",
+   "date": "2026-11-08",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "sergeykuhne.com",
+     "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 1,
+    "total": 1
+   },
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "content_hash": "3af6e306c81d9f51143249b04a10f9f063886119e2a0caee4bccbeffe62f4b1a",
+   "evidence_hash": "ac6b1a4169068acbbead9abe03836f93ba12a24032d4342662ebc43324ff579f",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "Silicon Valley Promises AI Will Cure Disease. Drugmaker CEOs Aren't Buying It",
+   "date": "Sun, 08 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "wsj.com",
+     "url": "https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
+     "source_type": "other",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "article not fetched (robots-disallowed)",
+   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
    "headline": "The End of AI Frontiers",
    "date": "Sat, 07 Nov 2026",
    "topic": "",
@@ -1657,19 +1825,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 2,
     "total": 2
    },
-   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "71369ca3dfe59c643132da109a4f0935dffe4698a7f597ed648aac1577c86d21",
    "evidence_hash": "84c1b6a2cadc1c72efd2227fab2734d7a3ee5538d1cb9b7df751bbe50b898059",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Microsoft",
@@ -1678,149 +1846,6 @@
    ],
    "publisher_topic": "",
    "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "The AI sell-off compared to well-known stock market crashes",
-   "date": "Sat, 07 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "kadoa.com",
-     "url": "https://www.kadoa.com/companies/insights/ai-selloff-perspective",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 59,
-    "total": 59
-   },
-   "label_evidence": "model read all 59 figure-sentence(s); 5 of 59 figure-sentence(s) matched a base cue",
-   "content_hash": "6a7d6386a88c2edeb0ce6db9250f74d0ddecd7be2b93b027374bfd1ac1cfaeb5",
-   "evidence_hash": "7a6eec7fcef1c081ccf1c445c63323c01992ad77b4766257fa47a5def15c3731",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "AI is dramatically accelerating AI research",
-   "date": "2026-11-06",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "planned-obsolescence.org",
-     "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 28 figure-sentence(s); 2 of 28 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 28,
-    "total": 28
-   },
-   "label_schema_version": 2,
-   "content_hash": "3ba1726b9e778890f228c18f58ec53243f74f5d0a86f37cce8b19b5e3e03b484",
-   "evidence_hash": "bb5c5ad3e661eb45f6a058dd85a5c887189e7985a2c6af97a590f6d71547bf8c",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Anthropic",
-     "count": 15
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Hugging Face",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Microsoft",
-   "headline": "Microsoft is winding down Oracle deal to rent AI cloud capacity",
-   "date": "Fri, 06 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "reuters.com",
-     "url": "https://www.reuters.com/business/microsoft-is-winding-down-oracle-deal-rent-ai-cloud-capacity-bloomberg-news-2026-11-06/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "article not fetched (robots-disallowed)",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
-   "label_source": "machine",
-   "rating": "trusted",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Perplexity",
-   "headline": "Perplexity launches AI agents for work",
-   "date": "Fri, 06 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "perplexity.ai",
-     "url": "https://www.perplexity.ai/en-GB/hub/blog/teammates-are-agents-for-complex-ongoing-work",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "article not fetched (http-403)",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "headline"
   },
   {
    "entity": "",
@@ -2666,6 +2691,82 @@
   },
   {
    "entity": "",
+   "headline": "A single AI model simulates the behavior of many substances, from sliding sand to folding proteins",
+   "date": "Mon, 09 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "Y",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "news.mit.edu",
+     "url": "https://news.mit.edu/2026/single-ai-model-simulates-many-substances-behavior-1109",
+     "source_type": "press-office",
+     "source_tier": 5
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 1,
+    "total": 1
+   },
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "content_hash": "01eeec9af0c715d4fb4643d7f464fae5330b50d8a5d27bbcc8eeb1ba5dbd17aa",
+   "evidence_hash": "15e4f986870264717bcce5aafe81801b85d1406697b6964af13cb2609e882412",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "Minghao Guo",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "AI-assisted learning platform helps robots reason beyond literal commands",
+   "date": "Mon, 09 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "news.mit.edu",
+     "url": "https://news.mit.edu/2026/ai-assisted-learning-platform-helps-robots-reason-beyond-literal-commands-1109",
+     "source_type": "press-office",
+     "source_tier": 5
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 1
+   },
+   "label_evidence": "model returned an invalid denominator label",
+   "content_hash": "2ac37c7985d3c116e96c231f6056b0752d10fb31c8463e0e7c71f9460d6ae4d7",
+   "evidence_hash": "5fe7d19a4821205523423cb1cacf5394b36fe4e5a334f0eec0aea00ddd3b9e9e",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "MIT AeroAstro",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
    "headline": "How to predict the behavior of molecules from scant data",
    "date": "Fri, 06 Nov 2026",
    "topic": "",
@@ -2935,82 +3036,6 @@
     }
    ],
    "publisher_topic": "AI and elections",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "3 Questions: Why infrastructure is entering a defining era",
-   "date": "Wed, 28 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "news.mit.edu",
-     "url": "https://news.mit.edu/2026/3-questions-why-infrastructure-is-entering-defining-era-1028",
-     "source_type": "press-office",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 4,
-    "total": 4
-   },
-   "label_schema_version": 2,
-   "content_hash": "3423808c0ea111c75609c08a2593e711355e1f85b409d8833f8450ee012b2b63",
-   "evidence_hash": "74c1ce7dd243c150347a8e3e7bf078c8ae2463749159d21069b8878a4fc5fded",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "MIT CEE",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Making machines that can listen",
-   "date": "Wed, 28 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "news.mit.edu",
-     "url": "https://news.mit.edu/2026/making-machines-that-can-listen-paris-smaragdis-1028",
-     "source_type": "press-office",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 2,
-    "total": 2
-   },
-   "label_schema_version": 2,
-   "content_hash": "c73d2050545967cfbae70d128c3bd1801fe3a6b7840d0b11e7b02345e8e0115a",
-   "evidence_hash": "06c91dde6895a7d4c055f3d9ac77d4b07145e4544e01d251795851c46e675b8d",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Paris Smaragdis",
    "entity_basis": "unresolved"
   },
   {
@@ -3612,6 +3637,38 @@
   },
   {
    "entity": "OpenAI",
+   "headline": "Introducing Images 2.6",
+   "date": "2026-11-04",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "openai.com",
+     "url": "https://openai.com/index/introducing-images-2-6/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "article not fetched (http-403)",
+   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "site"
+  },
+  {
+   "entity": "OpenAI",
    "headline": "Accelerating engineering for the physical world",
    "date": "2026-11-03",
    "topic": "",
@@ -3669,39 +3726,6 @@
    "label_schema_version": 2,
    "content_hash": "5c64fefc8544583c8140502d6d1e8c03fc4dc95b3a12eea7c3a0124844863dc9",
    "evidence_hash": "0fd684bfb85f6472f05f04bda53ce1fddb23bc1810279e1eaceb92440594b48f",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "site"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "Community safety report and new protections for teens",
-   "date": "2026-10-30",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "openai.com",
-     "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 5 figure-sentence(s); 0 of 5 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 5,
-    "total": 5
-   },
-   "label_schema_version": 2,
-   "content_hash": "2d00bde6537e9f030e7e28e4872c2f319ba9832306d8c3ce9bb2a9d37c1e1418",
-   "evidence_hash": "7bf7a7acb12210c51edeef68342b7514d603b74ac1d73eced9bb852279e2069e",
    "label_source": "machine",
    "rating": "ok",
    "mentions": [],

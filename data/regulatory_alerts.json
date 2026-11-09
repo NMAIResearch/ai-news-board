@@ -1,5 +1,425 @@
 [
   {
+    "id": "alert_19e42db5674e2b4adda186b5",
+    "timestamp": "2026-11-09T06:01:49.460483+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Medicare Program; Implementation of Sections 6219, 6220, and 6224 of the Consolidated Appropriations Act, 2026",
+    "url": "https://www.federalregister.gov/documents/2026/10/20/2026-21420/medicare-program-implementation-of-sections-6219-6220-and-6224-of-the-consolidated-appropriations",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document outlines proposed regulations for Medicare Advantage provider directory accuracy and PBM accountability under the Consolidated Appropriations Act, 2026. It contains no binding obligations or specific duties for AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "No action required; document is outside the scope of AI operator monitoring.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "28035935dbe1f54ce7085b99416069a4827e0dd5cf5256f27cd50918147dd413",
+    "source_text_sha256": "186a7bec49c32542679d828496014366d7be9d3d8ed061460ab7a51c5365065e",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 540187,
+      "ranges": [
+        [
+          0,
+          757
+        ],
+        [
+          6359,
+          7450
+        ],
+        [
+          13479,
+          14661
+        ],
+        [
+          15062,
+          16275
+        ],
+        [
+          16275,
+          17524
+        ],
+        [
+          21945,
+          23285
+        ],
+        [
+          27407,
+          28890
+        ],
+        [
+          28890,
+          30135
+        ],
+        [
+          46147,
+          47430
+        ],
+        [
+          125616,
+          126923
+        ],
+        [
+          126923,
+          127507
+        ]
+      ],
+      "passages_total": 30,
+      "passages_read": 11,
+      "passages_left": 19,
+      "selected_text_sha256": "698ef64fd142bdeb9d5d8e158d1b64519e8d46aee28de1b305ade084924ac579"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/10/20/2026-21420.html",
+    "document_status": "proposed",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "CMS is aware that this is a space where technology and the use of artificial intelligence is quickly evolving and CMS's work on the NPD is ongoing, and including this flexibility in proposed § 422.123(b)(2) would enable CMS to respond more quickly to advancements in verification methods, ultimately providing MA organizations with more options for meeting their provider directory verification obligations.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_332f66434e1d51ee0bf573d3",
+    "timestamp": "2026-11-09T06:01:35.248137+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Grant Guideline; Notice",
+    "url": "https://www.federalregister.gov/documents/2026/10/21/2026-21505/grant-guideline-notice",
+    "source_queue_priority": 1,
+    "substantive_priority": 4,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a grant guideline notice from the State Justice Institute outlining funding priorities for court modernization, including the examination of AI integration and cybersecurity. It does not impose binding regulatory duties on AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Monitor for specific grant award announcements or final rulemakings that may impose operational requirements on AI systems used in court proceedings.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "ac136190a42c040e6d7a73ac51d25cbf4f34017ceab795768f5a8cac0fe8f3a6",
+    "source_text_sha256": "6a070ea029f262eaf621cd1fbeb0c30eef44dacb2ac371b970e1b296341b7c80",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 106942,
+      "ranges": [
+        [
+          0,
+          556
+        ],
+        [
+          11437,
+          12633
+        ],
+        [
+          13355,
+          14733
+        ]
+      ],
+      "passages_total": 3,
+      "passages_read": 3,
+      "passages_left": 0,
+      "selected_text_sha256": "8b908a0f425589f17794752aed394d026b18951bed65e436b7050aa721711f8f"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/10/21/2026-21505.html",
+    "document_status": "other",
+    "ai_relevance": "relevant",
+    "evidence_quote": "SJI supports the examination of the potential integration of Artificial Intelligence (AI) into court processes, including identification of positive outcomes and potential limitations of AI.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_94ca02ed05c2a5ed902f480d",
+    "timestamp": "2026-11-09T06:01:24.954949+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Implementing the Guiding and Establishing National Innovation for U.S. Stablecoins Act for the Issuance of Stablecoins by Entities Subject to the Jurisdiction of the Office of the Comptroller of the Currency",
+    "url": "https://www.federalregister.gov/documents/2026/10/23/2026-21706/implementing-the-guiding-and-establishing-national-innovation-for-us-stablecoins-act-for-the",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document outlines OCC regulations for payment stablecoin issuers under the GENIUS Act, focusing on reserve backing, segregation, and supervisory frameworks. It does not impose binding duties on AI operators.",
+    "denominator_disclosed": "yes",
+    "actionable_trigger": "No action required for AI operators; document pertains to financial institution regulation.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "b4693fb2c835c34f51950317b1bd6b149428fde374c3c60c963aac4b579f47ba",
+    "source_text_sha256": "3da63b15ae087a54af6cee16f967c3018cc435e61587f01ff7bde87b9d996f14",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 1445426,
+      "ranges": [
+        [
+          0,
+          724
+        ],
+        [
+          94758,
+          96128
+        ],
+        [
+          105943,
+          107149
+        ],
+        [
+          143270,
+          144318
+        ],
+        [
+          162614,
+          163797
+        ],
+        [
+          257283,
+          258572
+        ],
+        [
+          269585,
+          270833
+        ],
+        [
+          291129,
+          292555
+        ],
+        [
+          292555,
+          293271
+        ],
+        [
+          568462,
+          569703
+        ],
+        [
+          1007196,
+          1008524
+        ]
+      ],
+      "passages_total": 21,
+      "passages_read": 11,
+      "passages_left": 10,
+      "selected_text_sha256": "87d1ee573e50966cac3345eeae649e995290089ce876ba64803855c22e1058e0"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/10/23/2026-21706.html",
+    "document_status": "binding",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "The OCC received several comments addressing the definition of “payment stablecoin.”",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_01856e0df67fe43b9a190984",
+    "timestamp": "2026-11-09T06:01:11.597668+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Supplemental Nutrition Assistance Program: Electronic Benefits Transfer Card Security Measures",
+    "url": "https://www.federalregister.gov/documents/2026/10/23/2026-21658/supplemental-nutrition-assistance-program-electronic-benefits-transfer-card-security-measures",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a proposed rule by the USDA Food and Nutrition Administration regarding security measures for SNAP Electronic Benefits Transfer (EBT) cards. It addresses vulnerabilities in magnetic stripe technology and online purchasing systems, proposing the adoption of chip-based technology and enhanced encryption (AES) to prevent fraud such as card skimming and algorithmic attacks. It does not impose binding duties on AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Monitor for finalization of the rule to assess potential impacts on payment processing infrastructure, though no immediate action is required for AI operators.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "9cdc50f6967af2493f769b2b351da0cd4b1191197d36628ec77960b5684480d1",
+    "source_text_sha256": "7b6c7a43dc90273194e43ca898e339390a53dc29e11e96da5d50b895b0290947",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 279958,
+      "ranges": [
+        [
+          0,
+          695
+        ],
+        [
+          11017,
+          12308
+        ],
+        [
+          12451,
+          13525
+        ],
+        [
+          58477,
+          59643
+        ],
+        [
+          129627,
+          131151
+        ],
+        [
+          203098,
+          204204
+        ],
+        [
+          211952,
+          213086
+        ],
+        [
+          259283,
+          260515
+        ],
+        [
+          276070,
+          277151
+        ]
+      ],
+      "passages_total": 9,
+      "passages_read": 9,
+      "passages_left": 0,
+      "selected_text_sha256": "75e5405d20b4275edfce3ae5d602c2d2f0d0cf2b868f91ea2fd7e34a46051c4c"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/10/23/2026-21658.html",
+    "document_status": "proposed",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "With this proposed rule, the Department looks to address some of the common vulnerabilities inherent to the transaction technologies currently used in EBT systems by bringing EBT in alignment with the consumer credit/debit industry.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_ef53ea006162eff0982568ca",
+    "timestamp": "2026-11-09T06:00:55.933980+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Outbound Investment Security Program Regulations",
+    "url": "https://www.federalregister.gov/documents/2026/10/26/2026-21786/outbound-investment-security-program-regulations",
+    "source_queue_priority": 1,
+    "substantive_priority": 2,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a proposed rule (not a binding obligation) expanding the Outbound Investment Security Program to include 'Super Intelligence' systems and other technologies. It proposes new notification and prohibition requirements for U.S. persons investing in specific sectors in countries of concern, but as a proposal, it does not currently impose binding duties on AI operators.",
+    "denominator_disclosed": "partial",
+    "actionable_trigger": "Monitor the finalization of the Proposed Rule to determine if the expanded prohibitions on 'Super Intelligence' systems and quantum technologies will apply to current investment portfolios or operational structures.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "34483538aab33a130771b95d43d45a742c002a419a54dd094a6b46c38c469b74",
+    "source_text_sha256": "c8b99e13843945e36bca74cb10d4774385e64cc3668a87dfeff57da4c9cd9368",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 269906,
+      "ranges": [
+        [
+          0,
+          716
+        ],
+        [
+          4228,
+          5624
+        ],
+        [
+          44840,
+          46132
+        ],
+        [
+          49377,
+          50504
+        ],
+        [
+          55898,
+          57111
+        ],
+        [
+          77873,
+          79144
+        ],
+        [
+          79144,
+          80006
+        ],
+        [
+          124689,
+          126154
+        ],
+        [
+          128473,
+          129803
+        ],
+        [
+          163367,
+          165412
+        ]
+      ],
+      "passages_total": 32,
+      "passages_read": 10,
+      "passages_left": 22,
+      "selected_text_sha256": "fcd7d5c97253b56b9b73f893c4edb0156107f72eb69b44aee14e1d5edc677b36"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/10/26/2026-21786.html",
+    "document_status": "proposed",
+    "ai_relevance": "relevant",
+    "evidence_quote": "The Treasury Department proposes to define super intelligence (SI) system [ 1 ] in a manner that is generally consistent with the existing definition of an “AI system” found in the Part 850 Regulations, but with some modifications.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_ec028637033eae2bf045a4a9",
+    "timestamp": "2026-11-09T06:00:38.354578+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Notice of Public Meetings of the Maryland Advisory Committee to the U.S. Commission on Civil Rights",
+    "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22799/notice-of-public-meetings-of-the-maryland-advisory-committee-to-the-us-commission-on-civil-rights",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a notice of public meetings for the Maryland Advisory Committee to the U.S. Commission on Civil Rights, focusing on AI in voting administration. It contains no binding regulatory obligations for AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Monitor the committee's final report for potential policy recommendations regarding AI in voting administration.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "0aa776ca0201b7aace9e7bf3b0c33907c6cb573b9f70ca43ae7d766429e64fe4",
+    "source_text_sha256": "c6ccf83ff3f5fe3d68c3ae0f666033375378084ec2471fae55a8ff9c30b4ae55",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "extracted text",
+      "selection_status": "selected",
+      "selector": "full-text",
+      "text_chars": 4349,
+      "ranges": [
+        [
+          0,
+          4349
+        ]
+      ],
+      "passages_total": 1,
+      "passages_read": 1,
+      "passages_left": 0,
+      "selected_text_sha256": "c6ccf83ff3f5fe3d68c3ae0f666033375378084ec2471fae55a8ff9c30b4ae55"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/09/2026-22799.html",
+    "document_status": "other",
+    "ai_relevance": "relevant",
+    "evidence_quote": "The purpose is for the committee to begin hearing expert testimony and continue briefing planning on the committee's chosen topic of artificial intelligence and its application in voting administration.",
+    "assessment_error": null
+  },
+  {
     "id": "alert_fe8cc01b1106da4dce23689c",
     "timestamp": "2026-11-08T06:02:00.813028+00:00",
     "alert_schema_version": 2,
@@ -1672,34 +2092,6 @@
     "source_text_sha256": "b355179d179040e535df8cdcc33ab30a8cbc333e7c902110925513fe9096a66c",
     "assessment_version": 3,
     "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/10/13/2026-20890.html",
-    "document_status": "unassessed",
-    "ai_relevance": "unassessed",
-    "evidence_quote": null,
-    "assessment_error": "document exceeds model input budget; manual review required"
-  },
-  {
-    "id": "alert_332f66434e1d51ee0bf573d3",
-    "timestamp": "2026-11-05T06:00:46.693766+00:00",
-    "alert_schema_version": 2,
-    "source": "US Federal Register (AI Rules & Notices)",
-    "jurisdiction": "United States",
-    "title": "Grant Guideline; Notice",
-    "url": "https://www.federalregister.gov/documents/2026/10/21/2026-21505/grant-guideline-notice",
-    "source_queue_priority": 1,
-    "substantive_priority": null,
-    "is_operator_duty_shift": false,
-    "duty_type": "none",
-    "statutory_reference": null,
-    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): Grant Guideline; Notice",
-    "denominator_disclosed": "unassessed",
-    "actionable_trigger": "Review the captured primary document.",
-    "evaluation_method": "unassessed",
-    "model": "qwen3.8:latest",
-    "reviewed": false,
-    "source_sha256": "ac136190a42c040e6d7a73ac51d25cbf4f34017ceab795768f5a8cac0fe8f3a6",
-    "source_text_sha256": "6a070ea029f262eaf621cd1fbeb0c30eef44dacb2ac371b970e1b296341b7c80",
-    "assessment_version": 3,
-    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/10/21/2026-21505.html",
     "document_status": "unassessed",
     "ai_relevance": "unassessed",
     "evidence_quote": null,

@@ -1,10 +1,10 @@
 {
- "generated": "2026-11-08 06:20 UTC",
+ "generated": "2026-11-09 06:20 UTC",
  "window_days": 60,
  "counts": {
-  "total": 95,
+  "total": 94,
   "closed": 42,
-  "open_weights": 53
+  "open_weights": 52
  },
  "releases": [
   {
@@ -1134,20 +1134,196 @@
    "evidence_note": "weights published at huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash; downloadable and hashable",
    "hf_id": "deepseek-ai/DeepSeek-V4.1-Flash",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Ai2",
-   "model": "AstaBrief_8B_SFT",
-   "id": "allenai/AstaBrief_8B_SFT",
-   "date": "2026-09-10",
-   "url": "https://huggingface.co/allenai/AstaBrief_8B_SFT",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "allenai/AstaBrief_8B_SFT",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
   }
  ],
+ "av_window_days": 180,
+ "av_counts": {
+  "total": 11,
+  "audio": 5,
+  "video": 6,
+  "folded": 7,
+  "labs": 5,
+  "orgs_watched": 11
+ },
+ "av_releases": [
+  {
+   "kind": "video",
+   "kind_from": "pipeline",
+   "lab": "Tencent",
+   "model": "Hy-Nomas",
+   "id": "tencent/Hy-Nomas",
+   "date": "2026-10-21",
+   "url": "https://huggingface.co/tencent/Hy-Nomas",
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "tencent/Hy-Nomas",
+   "source": "Hugging Face API, the tencent organisation list capped at 20 repositories; date is repo creation, not necessarily release",
+   "folded": 1
+  },
+  {
+   "kind": "video",
+   "kind_from": "pipeline",
+   "lab": "Lightricks",
+   "model": "LTX-2.5-Pre-Trained",
+   "id": "Lightricks/LTX-2.5-Pre-Trained",
+   "date": "2026-08-10",
+   "url": "https://huggingface.co/Lightricks/LTX-2.5-Pre-Trained",
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "Lightricks/LTX-2.5-Pre-Trained",
+   "source": "Hugging Face API, the Lightricks organisation list capped at 20 repositories; date is repo creation, not necessarily release",
+   "folded": 0
+  },
+  {
+   "kind": "audio",
+   "kind_from": "pipeline",
+   "lab": "MiniMax",
+   "model": "MiniMax-Music3",
+   "id": "MiniMaxAI/MiniMax-Music3",
+   "date": "2026-08-07",
+   "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "MiniMaxAI/MiniMax-Music3",
+   "source": "Hugging Face API, the MiniMaxAI organisation list capped at 20 repositories; date is repo creation, not necessarily release",
+   "folded": 0
+  },
+  {
+   "kind": "video",
+   "kind_from": "pipeline",
+   "lab": "MiniMax",
+   "model": "MiniMax-H3",
+   "id": "MiniMaxAI/MiniMax-H3",
+   "date": "2026-07-28",
+   "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "MiniMaxAI/MiniMax-H3",
+   "source": "Hugging Face API, the MiniMaxAI organisation list capped at 20 repositories; date is repo creation, not necessarily release",
+   "folded": 0
+  },
+  {
+   "kind": "video",
+   "kind_from": "pipeline",
+   "lab": "Lightricks",
+   "model": "LTX-2.5",
+   "id": "Lightricks/LTX-2.5",
+   "date": "2026-07-23",
+   "url": "https://huggingface.co/Lightricks/LTX-2.5",
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "Lightricks/LTX-2.5",
+   "source": "Hugging Face API, the Lightricks organisation list capped at 20 repositories; date is repo creation, not necessarily release",
+   "folded": 1
+  },
+  {
+   "kind": "video",
+   "kind_from": "name",
+   "lab": "Alibaba (Wan)",
+   "model": "Wan2.2-Animate-2-14B",
+   "id": "Wan-AI/Wan2.2-Animate-2-14B",
+   "date": "2026-07-14",
+   "url": "https://huggingface.co/Wan-AI/Wan2.2-Animate-2-14B",
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "Wan-AI/Wan2.2-Animate-2-14B",
+   "source": "Hugging Face API, the Wan-AI organisation list capped at 20 repositories; date is repo creation, not necessarily release",
+   "folded": 2
+  },
+  {
+   "kind": "video",
+   "kind_from": "pipeline",
+   "lab": "Alibaba (Wan)",
+   "model": "Wan-Dancer-14B",
+   "id": "Wan-AI/Wan-Dancer-14B",
+   "date": "2026-07-10",
+   "url": "https://huggingface.co/Wan-AI/Wan-Dancer-14B",
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "Wan-AI/Wan-Dancer-14B",
+   "source": "Hugging Face API, the Wan-AI organisation list capped at 20 repositories; date is repo creation, not necessarily release",
+   "folded": 0
+  },
+  {
+   "kind": "audio",
+   "kind_from": "pipeline",
+   "lab": "Stability AI",
+   "model": "stable-audio-3-optimized",
+   "id": "stabilityai/stable-audio-3-optimized",
+   "date": "2026-05-18",
+   "url": "https://huggingface.co/stabilityai/stable-audio-3-optimized",
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "stabilityai/stable-audio-3-optimized",
+   "source": "Hugging Face API, the stabilityai organisation list capped at 20 repositories; date is repo creation, not necessarily release",
+   "folded": 0
+  },
+  {
+   "kind": "audio",
+   "kind_from": "pipeline",
+   "lab": "Stability AI",
+   "model": "stable-audio-3-medium",
+   "id": "stabilityai/stable-audio-3-medium",
+   "date": "2026-05-17",
+   "url": "https://huggingface.co/stabilityai/stable-audio-3-medium",
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "stabilityai/stable-audio-3-medium",
+   "source": "Hugging Face API, the stabilityai organisation list capped at 20 repositories; date is repo creation, not necessarily release",
+   "folded": 1
+  },
+  {
+   "kind": "audio",
+   "kind_from": "pipeline",
+   "lab": "Stability AI",
+   "model": "stable-audio-3-small-sfx",
+   "id": "stabilityai/stable-audio-3-small-sfx",
+   "date": "2026-05-17",
+   "url": "https://huggingface.co/stabilityai/stable-audio-3-small-sfx",
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "stabilityai/stable-audio-3-small-sfx",
+   "source": "Hugging Face API, the stabilityai organisation list capped at 20 repositories; date is repo creation, not necessarily release",
+   "folded": 1
+  },
+  {
+   "kind": "audio",
+   "kind_from": "pipeline",
+   "lab": "Stability AI",
+   "model": "stable-audio-3-small-music-base",
+   "id": "stabilityai/stable-audio-3-small-music-base",
+   "date": "2026-05-16",
+   "url": "https://huggingface.co/stabilityai/stable-audio-3-small-music-base",
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "stabilityai/stable-audio-3-small-music-base",
+   "source": "Hugging Face API, the stabilityai organisation list capped at 20 repositories; date is repo creation, not necessarily release",
+   "folded": 1
+  }
+ ],
+ "av_no_route": [
+  {
+   "maker": "Suno (music engine)",
+   "note": "changelog answered 404 and the organisation list carries only the 2023 bark speech repositories",
+   "checked": "2026-11-08"
+  },
+  {
+   "maker": "Mureka",
+   "note": "organisation list empty and the front page carries no changelog or feed",
+   "checked": "2026-11-08"
+  },
+  {
+   "maker": "ElevenLabs",
+   "note": "organisation list empty and the docs feed path serves HTML; only the client library publishes releases, which is not the engine",
+   "checked": "2026-11-08"
+  },
+  {
+   "maker": "Sonauto",
+   "note": "front page carries no changelog or feed",
+   "checked": "2026-11-08"
+  }
+ ],
+ "av_disclosure": "Audio and video engine releases, taken from the makers' own Hugging Face organisation lists: 11 organisations, each capped at 20 repositories. Whether a repository is audio or video is taken from the maker's own pipeline declaration where there is one, and from a word in the repository's name otherwise, which each row records as kind_from. A bare capability tag does not count, because a text model's tags can name video. The window is 180 days, not the 60 of the model release list, because these engines ship far less often, so the two totals are not comparable and are not added together. Every row here is an open-weights repository and the date is repo creation, which can sit either side of a public release. One launch published as several repositories reads as one row: a packaging copy (Diffusers, ONNX, GGUF, MLX, a quantised build) and a pretrained base twin fold into the earliest repository of that release and are counted in its folded field, while size and purpose variants such as medium and small-sfx keep their own rows. Control adapters, LoRAs and auxiliary parts are dropped, and so is a repository its own maker tags as watermarking or as an autoencoder, because a maker-owned repository is not automatically an engine release. A release whose own repository is older than the window is not shown even when a copy of it was published inside the window, so this is a count of releases and not of repository activity. The closed engines are missing by construction rather than by omission: Suno's music engine, Mureka, ElevenLabs and Sonauto published no keyless machine-readable release route when this was checked, which is listed beside the rows. A name-word filter also undercounts, because a release whose repository name carries no audio or video word is not shown, and a maker list cannot show a maker who is not on it. No benchmark scores, by choice.",
  "errors": [],
  "disclosure": "Models that reached OpenRouter or the Hugging Face API in the window. Each row says whether the weights are published, which is an attribute of the release rather than a grade: an API-only model is shipped and serving traffic, it is simply not downloadable. Dates are when the model reached the source, not the vendor's own announcement date, and the Hugging Face dates are repo creation, which can sit either side of a public release. The two sides are not counted the same way, so the open and API-only totals are not comparable: OpenRouter is taken in full, while Hugging Face is a fixed list of labs capped at five repositories each. No benchmark scores, by choice. A model announced but never shipped cannot appear in any release list, including this one."
 }
