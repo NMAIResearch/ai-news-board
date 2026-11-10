@@ -1,12 +1,60 @@
 {
- "generated": "2026-11-09 06:20 UTC",
+ "generated": "2026-11-10 06:21 UTC",
  "window_days": 60,
  "counts": {
-  "total": 94,
-  "closed": 42,
+  "total": 93,
+  "closed": 41,
   "open_weights": 52
  },
  "releases": [
+  {
+   "lab": "Nex Agi",
+   "model": "Nex AGI: Nex-N2.6",
+   "id": "nex-agi/nex-n2.6",
+   "date": "2026-11-10",
+   "url": "https://openrouter.ai/nex-agi/nex-n2.6",
+   "context_length": 262144,
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/nex-agi/Nex-N2.6; downloadable and hashable",
+   "hf_id": "nex-agi/Nex-N2.6",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Thinking Machines",
+   "model": "Thinking Machines: Inkling 2 Small (free)",
+   "id": "thinkingmachines/inkling-2-small",
+   "date": "2026-11-09",
+   "url": "https://openrouter.ai/thinkingmachines/inkling-2-small",
+   "context_length": 1048576,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Anthropic",
+   "model": "Anthropic: Claude Fable 5.2",
+   "id": "anthropic/claude-fable-5.2",
+   "date": "2026-11-09",
+   "url": "https://openrouter.ai/anthropic/claude-fable-5.2",
+   "context_length": 1000000,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Meta",
+   "model": "Meta: Muse Ember",
+   "id": "meta/muse-ember",
+   "date": "2026-11-09",
+   "url": "https://openrouter.ai/meta/muse-ember",
+   "context_length": 1048576,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
   {
    "lab": "Liquid",
    "model": "LiquidAI: LFM3-1.7B",
@@ -86,9 +134,9 @@
    "date": "2026-11-04",
    "url": "https://openrouter.ai/ricursiveai/ripple-65b-preview",
    "context_length": 1048576,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/ricursiveAI/Ripple-65B-Preview; downloadable and hashable",
+   "hf_id": "ricursiveAI/Ripple-65B-Preview",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
@@ -101,18 +149,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights published at huggingface.co/tencent/Hy4; downloadable and hashable",
    "hf_id": "tencent/Hy4",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Stealth",
-   "model": "Crouton Alpha",
-   "id": "stealth/crouton-alpha",
-   "date": "2026-11-03",
-   "url": "https://openrouter.ai/stealth/crouton-alpha",
-   "context_length": 1048576,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
@@ -649,7 +685,7 @@
    "id": "stepfun/step-5-preview",
    "date": "2026-10-08",
    "url": "https://openrouter.ai/stepfun/step-5-preview",
-   "context_length": 1048576,
+   "context_length": 1000000,
    "evidence": "open-weights",
    "evidence_note": "weights published at huggingface.co/stepfun-ai/Step-5-Preview; downloadable and hashable",
    "hf_id": "stepfun-ai/Step-5-Preview",
@@ -1085,54 +1121,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights published at huggingface.co/inference-net/schematron-v2-llama-3.2-3b; downloadable and hashable",
    "hf_id": "inference-net/schematron-v2-llama-3.2-3b",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Sakana",
-   "model": "Sakana: Fugu Ultra v2",
-   "id": "sakana/fugu-ultra-v2",
-   "date": "2026-09-11",
-   "url": "https://openrouter.ai/sakana/fugu-ultra-v2",
-   "context_length": 1000000,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Sakana",
-   "model": "Sakana: Fugu Max",
-   "id": "sakana/fugu-max",
-   "date": "2026-09-11",
-   "url": "https://openrouter.ai/sakana/fugu-max",
-   "context_length": 1000000,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Inclusionai",
-   "model": "inclusionAI: Ling 3.0 Flash VL",
-   "id": "inclusionai/ling-3.0-flash-vl",
-   "date": "2026-09-10",
-   "url": "https://openrouter.ai/inclusionai/ling-3.0-flash-vl",
-   "context_length": 131072,
-   "evidence": "open-weights",
-   "evidence_note": "weights published at huggingface.co/inclusionAI/Ling-3.0-flash-VL; downloadable and hashable",
-   "hf_id": "inclusionAI/Ling-3.0-flash-VL",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "DeepSeek",
-   "model": "DeepSeek: DeepSeek V4.1 Flash",
-   "id": "deepseek/deepseek-v4.1-flash",
-   "date": "2026-09-10",
-   "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash",
-   "context_length": 1048576,
-   "evidence": "open-weights",
-   "evidence_note": "weights published at huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash; downloadable and hashable",
-   "hf_id": "deepseek-ai/DeepSeek-V4.1-Flash",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   }
  ],

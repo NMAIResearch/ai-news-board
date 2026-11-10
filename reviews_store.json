@@ -29739,9 +29739,343 @@
   "label_source": "machine"
  },
  "https://openai.com/index/introducing-images-2-6/": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 17 figure-sentence(s); 0 of 17 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 17,
+   "total": 17
+  },
+  "label_schema_version": 2,
+  "content_hash": "67f02e9ea82284d90968b25e82788473b61a16b598ee653e5f32ce8ea5c2a69c",
+  "evidence_hash": "96d9367fc37e39418296585e56ee540e89429cdd83a203382a1cf7b9a0c579cc",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "f8be2d60b2ed579a9954457800f324493d60268c05be9cf547b1f0af558794d9",
+  "evidence_hash": "06ea5359275bdbc420935b430d35fbd8cd8ac9175fdfd5d4e7fe0889a7b47b55",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/09/the-race-is-on-to-sue-nvidia/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 8 figure-sentence(s); 0 of 8 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 8,
+   "total": 8
+  },
+  "label_schema_version": 2,
+  "content_hash": "feb472d7b288c841f67423bd50e91be6e1809353fc4401e11f023637234f22b1",
+  "evidence_hash": "0b94baa45d23d5c9d5f73e79c8d6017a4cf921edb143fec0b0d6455fa6e8d802",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 3,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "1640736b78cd2fd0d7a17549f12a41ffefab7ab0f4ca937602495afd6b1b9e9a",
+  "evidence_hash": "7410f58d10b676a34ea33d3232df05c6a9e030343de12c4133ad5d776ad74e6d",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/09/jensen-huang-reportedly-engaged-a-pr-firm-with-a-history-of-handling-high-profile-sex-scandals-a-year-ago/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "bdf4d53337a71a6ce00239dc873768ac11cf37121c2809b471f01e33d7620d18",
+  "evidence_hash": "6e8ffdec0dc0fbe9ad62876de50e4660f407877a403d9e5e3607e21548ef03e5",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/09/a-short-seller-flagged-nvidia-ceos-ties-to-a-suspected-chinese-spy-six-months-before-the-scandal/": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "label_evidence": "all 1 figure-sentence(s) state a base",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "9ed05f81e32a30b9751d1f5ecaa6704c1574b7d7b7a7f6082ac4661cdda3ce47",
+  "evidence_hash": "dd416d8a8df8bcb16368b45aede1d0e66d6235435a4436ab21363daafcb6a13f",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/09/jensen-huang-pulls-out-of-elevenlabs-summit-amid-nvidia-controversy/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 1349 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "c429fc49429caecbb8d3a6ef35852474676d5f19aa0eb6e86b02a82fa210b83d",
+  "evidence_hash": "907d23a9e3bf97834ec3f2bf7f47c65fbc3d0d7967632840aca2b2864945692f",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 8 figure-sentence(s); 0 of 8 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 8,
+   "total": 8
+  },
+  "label_schema_version": 2,
+  "content_hash": "8f50be04b42090bd981aa5f154dcdf2701af3bceef94855a8440839975628ba8",
+  "evidence_hash": "a6e362dd2945de5d60cb038dc337330cab1d2b5af8e39b6587c971af9cb5dd2d",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny/": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "35ae68fd96b2ac5827b86a43f2880ff6ae72d7572b6ad79c04ecbdd8c5a6271b",
+  "evidence_hash": "4809b4069220303f01a29c190fde36ce9f6e8774e49ea4567d7e0c6613b4630c",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/entertainment/1030510/paramount-skydance-david-ellison-ai": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 3,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "8cb9e44c998624e186a0498466280eb81b9189ad375b6f5c3547d2c444f785bb",
+  "evidence_hash": "f44a6a67c3edf4cc75b11215a0386d0e6c60af745b9b6e8aea7c5348f6abaef4",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1030328/what-could-china-get-from-jensen-huang": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 4,
+   "total": 4
+  },
+  "label_schema_version": 2,
+  "content_hash": "f807cee9b03c8701b2da0132425752c5ccfe60c489018765dc22ccc4c3d3a468",
+  "evidence_hash": "2a2ba159242e5cf0dda8715acb05b3b85d54ee621c6d4865beb40ab98fe33353",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/tech/1030446/trump-jensen-huang-press-conference": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "cf6e97bebdc756babe144a3ac30227011cb8711bc91deac64b76e9a5b9a4995d",
+  "evidence_hash": "6a877b1287f0f24f250c522bc624be71bcdc3c412a5996267d52a3bcd2434914",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "4ce81d0a961068a397897c8b89c902a409ab141c5e074e4514324fee962097cd",
+  "evidence_hash": "f7456584b757bfc2ed163ba55ca90daed633e2624c929dd2dc117137f5374116",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 3,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "b52fcec928989e5527972fc253b4fc37e34e8d4e87ce442f2851d77914503f24",
+  "evidence_hash": "d07624691ca94489bba1ccf5e05f0153f7f83af0b2431a8d615537cf48212155",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "87858f95cdd3e42610672fd49ae46bc47f9b69c9c045e6d31e4d16a9daaba71a",
+  "evidence_hash": "080c471007b312ea743bfc1b72073aa8e5bf8e3ed916c849882f8d2e005accaa",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/tech/1030061/instagram-ai-effect-builder-filters": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "49f529d2f09479d169368dc93696f478b8560a7ef81b8d34808ebf39e82140b5",
+  "evidence_hash": "2c06f2db37501d85f519bb946a200077503b83c46b181f32f60f2fce629da17b",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1029990/jensen-huang-the-spy-who-loved-me": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "a4e5398cdde36b297194cab0d05c16a7bd9adf7ace6a3b19ac710c72036934ed",
+  "evidence_hash": "75c8f267e6d83b37947d02c84f31604186ef5d7f74dfff34e1617fa7c0410699",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1029802/trump-60-minutes-ai": {
   "denominator_stated": "?",
   "auto_labelled": true,
-  "label_evidence": "article not fetched (http-403)",
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model returned an invalid denominator label",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "621df54de7898c4741a63043ba5eb27c387b0887f37cc8c4b089247ba71b86c9",
+  "evidence_hash": "d57ec59218069c3a73ca20b819a5e49739a33d6c8fd5981f9c82b949ef883540",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 3,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "c241f630a6d36dddb5dc2c64d343fb868b81f7bb03b10116fa36f50e02a34fcc",
+  "evidence_hash": "2d8637301b1309078061d27520d558e1d6cd480b157e868106b43e7444ade828",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/tech-policy/2026/11/ceo-jensen-huang-admits-affair-as-nvidia-probes-possible-chinese-espionage/": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 3,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "3cb7b8c627c6b129e386d965dc19d3437a119db1cabd3bea1b5d749230aa3b2f",
+  "evidence_hash": "7c442703324c68c8813f103d885b9827d252b026c88ebb1feb6fd4cdfaf49dc5",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 13 figure-sentence(s); 1 of 13 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 13,
+   "total": 13
+  },
+  "label_schema_version": 2,
+  "content_hash": "20ab90b506d269f0e8c993da15fd35e3a1695cc379d8c3428b5486c2375b8c59",
+  "evidence_hash": "388ff3814850681f739d3e75d92feb4ada833b337fd7b84c28e803951a1b6865",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody/": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "article not fetched (robots-disallowed)",
   "evidence_method": "unassessed",
   "evidence_coverage": {
    "seen": 0,
@@ -29750,6 +30084,148 @@
   "label_schema_version": 2,
   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://github.com/Dodaios/ste80-humanizer": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 44 figure-sentence(s); 0 of 44 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 44,
+   "total": 44
+  },
+  "label_schema_version": 2,
+  "content_hash": "f147391a168533851f1b37bcfa5f0ed6da7dd36ab111a94d1831cd5ff00aa6a3",
+  "evidence_hash": "d235e11b26a97dd214b174155744859545c84e45aa2c9096b828e1d6064720ae",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://github.com/samir-sarwar/samir-vllm": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 29 figure-sentence(s); 1 of 29 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 29,
+   "total": 29
+  },
+  "label_schema_version": 2,
+  "content_hash": "407caa0bf6a82baa680804e3313f04e840cf370b19c9c4504e6b4780da2f06cd",
+  "evidence_hash": "dfd51ce0535106a06bb124f88b2dd980e5e4d0a7ab6910cf38c33975534c428d",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.stork.ai/newsletter/2026-11-08-apple-capped-engineers-at-a-200-daily-ai-budget": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 10 figure-sentence(s); 0 of 10 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 10,
+   "total": 10
+  },
+  "label_schema_version": 2,
+  "content_hash": "2dbd23e171af7448d4e56c2caf75547626afe4e096ccffb3f9b5c095fdb014c3",
+  "evidence_hash": "041b422b95ac021ade5ac35906d05c829afbb5d3e77c8473e2f9dd0f64494cef",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://itsfoss.com/news/asahi-linux-drops-mit-for-gpl/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "1be47835a40b35ba1d03bd4573e4e7faf87b4f7c8e7609e7f21bb5b062206326",
+  "evidence_hash": "4df2039b640f595c260db42afe68a6c4e17a17136f7ac76bb4587dec322e9c77",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://cset.georgetown.edu/article/the-u-s-china-ai-competition-two-paths-to-artificial-general-intelligence/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 7624 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "bb598895b55084612e10ffbc86677c6bf3844398e9815aa54d91069889a2be89",
+  "evidence_hash": "af0d21b73493db8b4074a1c54f01b14c51ea9e3c308725fef50d72da31eea322",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://ainowinstitute.org/news/palantir-hires-a-former-democratic-senator-as-it-faces-scrutiny-in-new-congress": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 502 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "c647e8c82ae7ad89e818f491807e070f814514f810027396c11f017621c74c34",
+  "evidence_hash": "a641ff22169522722a842a69474e63801a2fd9ee6a6faa530b400246ca4afc4e",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "http://bair.berkeley.edu/blog/2026/11/09/bair-at-corl-2026/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 8 figure-sentence(s); 0 of 8 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 8,
+   "total": 8
+  },
+  "label_schema_version": 2,
+  "content_hash": "72653b87de61b6aecaeb84be0b59149229f0ccb36e2a6ba47e8a5bec4d238b72",
+  "evidence_hash": "8ba811dd688010ad74f727b6dabe4524617a5fec6612c5df48fafa3f518d2df1",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://news.mit.edu/2026/mit-led-team-receives-funding-next-generation-alternatives-modern-weed-killers-1110": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 4,
+   "total": 4
+  },
+  "label_schema_version": 2,
+  "content_hash": "96cdfa2ac64b6465c53f002ae6e140faece5759096c52aad7183fd89bc39573d",
+  "evidence_hash": "c1d246455aa6ace4923dccc3fce26c0a3507656325b809fac8242d6e27eb5cb5",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://openai.com/index/introducing-gpt-6-cyber/": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 52 figure-sentence(s); 6 of 52 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 52,
+   "total": 52
+  },
+  "label_schema_version": 2,
+  "content_hash": "ee3edc3e7421bce79800474e485fce0fafa435ab9929e1749d78fddce5a7456e",
+  "evidence_hash": "e90f959aa301f9b4ce7162a5042114153bf1902764871020d27d02e41a8a1a85",
   "reviewed": false,
   "label_source": "machine"
  }
