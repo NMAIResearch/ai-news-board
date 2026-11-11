@@ -1,5 +1,447 @@
 [
   {
+    "id": "alert_96396c8e2dc04a9ed503a345",
+    "timestamp": "2026-11-11T06:01:55.812535+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Implementing the Federal Reserve Board's Responsibilities Under the GENIUS Act",
+    "url": "https://www.federalregister.gov/documents/2026/09/29/2026-19860/implementing-the-federal-reserve-boards-responsibilities-under-the-genius-act",
+    "source_queue_priority": 1,
+    "substantive_priority": 4,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a proposed rule by the Federal Reserve Board implementing the GENIUS Act for payment stablecoin issuers. It discusses risks associated with AI tools exploiting smart contract vulnerabilities but does not impose binding duties on AI operators. The measures are in a consultation/proposal stage and apply to financial institutions (PPSIs), not AI developers or operators directly.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Monitor final rule adoption for potential indirect impacts on stablecoin infrastructure security requirements.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "a428ab456f002d95ded79c3cb7a8fea2fddd425841e63aad7f980e5c192d8fe3",
+    "source_text_sha256": "c761055f814d028a2e153785c3a5fde7e5bb4018924e8078619714c0652f20b5",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 774637,
+      "ranges": [
+        [
+          0,
+          681
+        ],
+        [
+          4956,
+          6622
+        ],
+        [
+          154600,
+          155745
+        ],
+        [
+          162001,
+          163185
+        ],
+        [
+          213745,
+          214971
+        ],
+        [
+          246148,
+          247545
+        ],
+        [
+          264536,
+          265690
+        ],
+        [
+          302264,
+          303520
+        ],
+        [
+          724772,
+          726451
+        ],
+        [
+          735048,
+          736602
+        ]
+      ],
+      "passages_total": 17,
+      "passages_read": 10,
+      "passages_left": 7,
+      "selected_text_sha256": "f2c69e1e14264cc94fd7926292327030288107bb5b2a8f9d56796deb391e3974"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/29/2026-19860.html",
+    "document_status": "proposed",
+    "ai_relevance": "relevant",
+    "evidence_quote": "Board-supervised PPSIs could be vulnerable to certain information technology and cybersecurity failures or attacks by artificial intelligence tools that are rapidly developing capabilities that allow them to detect and exploit weaknesses in websites and online portals.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_4f672a9c901f5dcd80ce1677",
+    "timestamp": "2026-11-11T06:01:38.979055+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Request for Information (RFI) Regarding the Digitization and Modernization of the National Technical Reports Library (NTRL) and the Leveraging of Scientific, Technical and Engineering Information (STEI) Stored in the NTRL",
+    "url": "https://www.federalregister.gov/documents/2026/09/30/2026-20023/request-for-information-rfi-regarding-the-digitization-and-modernization-of-the-national-technical",
+    "source_queue_priority": 1,
+    "substantive_priority": null,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): Request for Information (RFI) Regarding the Digitization and Modernization of the National Technical Reports Library (NTRL) and the Leveraging of Scientific, Technical and Engineering Information (STEI) Stored in the NTRL",
+    "denominator_disclosed": "unassessed",
+    "actionable_trigger": "Review the captured primary document.",
+    "evaluation_method": "unassessed",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "f3da990edb63a3acb300f049da3a8b29ef0e965d33c7866d89211a7feb9336bd",
+    "source_text_sha256": "95dd79890aabe5b7267cc84c8bf1589877e121be502e261e6910157a221e0873",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "unassessed",
+      "selection_status": "not assessed",
+      "selector": "ai-keywords-v2",
+      "text_chars": 18740,
+      "ranges": [],
+      "passages_total": 9,
+      "passages_read": 0,
+      "passages_left": 9,
+      "selected_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/30/2026-20023.html",
+    "document_status": "unassessed",
+    "ai_relevance": "unassessed",
+    "evidence_quote": null,
+    "assessment_error": "supporting quote is absent from the selected source ranges"
+  },
+  {
+    "id": "alert_62f7efc8a25b2729754c6de1",
+    "timestamp": "2026-11-11T06:01:24.555402+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "The Safer Affordable Fuel-Efficient (SAFE) Vehicles Rule III for Model Years 2022 to 2031 Passenger Cars and Light Trucks",
+    "url": "https://www.federalregister.gov/documents/2026/09/30/2026-19964/the-safer-affordable-fuel-efficient-safe-vehicles-rule-iii-for-model-years-2022-to-2031-passenger",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a US Federal Register final rule regarding vehicle fuel efficiency standards (CAFE). It contains no binding obligations for AI operators. It only mentions AI in the context of public comments requesting transparency regarding the agency's internal use of AI tools during the rulemaking process.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "No action required; document is outside the scope of AI operator regulatory monitoring.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "734213fa278cadabcbdc8dbf85c131407298c8bf285165751b0957359e338751",
+    "source_text_sha256": "ee705cd39f6faf24904f1f2265046beec0c531708993a2be709331dd94bf420b",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 1535607,
+      "ranges": [
+        [
+          0,
+          739
+        ],
+        [
+          61935,
+          63168
+        ],
+        [
+          95868,
+          97824
+        ],
+        [
+          118995,
+          120096
+        ],
+        [
+          124734,
+          126013
+        ],
+        [
+          128795,
+          129952
+        ],
+        [
+          149622,
+          150770
+        ],
+        [
+          152240,
+          153489
+        ],
+        [
+          158222,
+          159496
+        ],
+        [
+          842760,
+          844008
+        ]
+      ],
+      "passages_total": 25,
+      "passages_read": 10,
+      "passages_left": 15,
+      "selected_text_sha256": "8120b07093b91416d7d8bb672bad468a2213575b4b39095316d46a3b42e6275f"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/30/2026-19964.html",
+    "document_status": "binding",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "IPI and NRDC et al. requested that NHTSA disclose whether and how artificial intelligence (AI) tools were utilized in the drafting or analysis of the proposed rule, citing requirements under executive orders, OMB memoranda, and the APA to ensure transparency, prevent hidden biases, and maintain accountability in agency decision-making.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_99f0d0cb13fb016f0d41bacb",
+    "timestamp": "2026-11-11T06:01:08.444628+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Rule on Impersonation of Government and Businesses",
+    "url": "https://www.federalregister.gov/documents/2026/10/01/2026-20143/rule-on-impersonation-of-government-and-businesses",
+    "source_queue_priority": 1,
+    "substantive_priority": 2,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a proposed rule by the US Federal Trade Commission regarding impersonation scams and platform responsibilities. It contains no current binding obligations for AI operators, as it is in a consultation/proposal stage and discusses potential requirements rather than enacted law.",
+    "denominator_disclosed": "no",
+    "actionable_trigger": "Monitor the finalization of the FTC rule to determine if proposed platform obligations regarding ad verification or AI tool usage become binding.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "68d7f8ca29c0ae6e723f580027b3b0faa8c23c7f5ab43218cd6bf58c13fb87aa",
+    "source_text_sha256": "953c220894733b7adea02631953ccf29889dc0303a0a497fbceb022db7c029cc",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 86808,
+      "ranges": [
+        [
+          0,
+          588
+        ],
+        [
+          6545,
+          7751
+        ],
+        [
+          13022,
+          14396
+        ],
+        [
+          39202,
+          40317
+        ],
+        [
+          54096,
+          55718
+        ],
+        [
+          78310,
+          79627
+        ],
+        [
+          79627,
+          80277
+        ],
+        [
+          82127,
+          83359
+        ],
+        [
+          85796,
+          86808
+        ]
+      ],
+      "passages_total": 9,
+      "passages_read": 9,
+      "passages_left": 0,
+      "selected_text_sha256": "135ddbb38c779ec927237a0816870e8b27e2cfef80fd171497c0611f9bb6de2e"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/10/01/2026-20143.html",
+    "document_status": "proposed",
+    "ai_relevance": "relevant",
+    "evidence_quote": "i. Would the requirement discourage Platforms from innovating their services or tools, particularly with respect to services or tools incorporating the use of artificial intelligence?",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_e3ed80b97429dca3c7c376bb",
+    "timestamp": "2026-11-11T06:00:53.109053+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Global Benchmark for Efficient Drug Pricing (GLOBE) Model",
+    "url": "https://www.federalregister.gov/documents/2026/10/02/2026-20281/global-benchmark-for-efficient-drug-pricing-globe-model",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document outlines a proposed pharmaceutical pricing model (GLOBE) by CMS, focusing on drug rebates and international pricing benchmarks. It contains no provisions, duties, or references relevant to AI operators or AI-specific regulatory obligations.",
+    "denominator_disclosed": "partial",
+    "actionable_trigger": "No action required; document is outside the scope of AI regulatory monitoring.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "a14cdb8c8caf59d41dab669145beec6486601f021755d817a4bf1b6fead2eda9",
+    "source_text_sha256": "d1405fc931669ec35ed49b24504e6bc61f4240824a1cd8aec42fa104bb46bf50",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 1278616,
+      "ranges": [
+        [
+          0,
+          748
+        ],
+        [
+          65428,
+          66977
+        ],
+        [
+          342158,
+          343280
+        ],
+        [
+          437069,
+          438569
+        ],
+        [
+          439921,
+          441075
+        ],
+        [
+          556182,
+          557523
+        ],
+        [
+          557523,
+          558921
+        ],
+        [
+          560088,
+          561532
+        ],
+        [
+          561532,
+          563025
+        ],
+        [
+          667346,
+          668562
+        ]
+      ],
+      "passages_total": 29,
+      "passages_read": 10,
+      "passages_left": 19,
+      "selected_text_sha256": "5b60768d8fc8e29a229487f487cac2c7239e6cc7c6773d6942f5801d01d3c9e2"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/10/02/2026-20281.html",
+    "document_status": "binding",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "CMS concludes that the GLOBE Model constitutes a payment model within the meaning of section 1115A of the Act, and that manufacturer rebate obligations under the model represent “payments” that directly affect Medicare's net expenditures for covered drugs.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_a370566f310b2de4e1961716",
+    "timestamp": "2026-11-11T06:00:38.393272+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Potential Designation of Chartered Financial Analyst Designation as Qualifying Natural Persons for Accredited Investor Status",
+    "url": "https://www.federalregister.gov/documents/2026/10/05/2026-20311/potential-designation-of-chartered-financial-analyst-designation-as-qualifying-natural-persons-for",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document discusses the CFA designation as a potential qualifying criterion for accredited investor status, referencing exam pass rates and practical skill modules including AI topics. It does not impose binding duties on AI operators.",
+    "denominator_disclosed": "partial",
+    "actionable_trigger": "No immediate action required; monitor for final rule adoption regarding accredited investor definitions.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "27bb39938518b9764ede75e6fd4945a296c30caa5dda029d87b187f78806d9d0",
+    "source_text_sha256": "48fac10a019701a09739a4631b72ff1f238b8503052a35cd7fbac3c1c4a34728",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 66051,
+      "ranges": [
+        [
+          0,
+          617
+        ],
+        [
+          54754,
+          56094
+        ]
+      ],
+      "passages_total": 2,
+      "passages_read": 2,
+      "passages_left": 0,
+      "selected_text_sha256": "10b84cb329a67d271d7566e833f5e2eb157ffd2c49e693611c9285db2a99157b"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/10/05/2026-20311.html",
+    "document_status": "proposed",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "According to the CFA Institute, “over the past five years, the average pass rate has been less than 50 percent,” cumulatively, for each level of the Exam",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_7573db464bbfc71622680742",
+    "timestamp": "2026-11-11T06:00:06.640978+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Notice of Intent To Reorganize HUD and Revise Headquarters and Field Operating Model",
+    "url": "https://www.federalregister.gov/documents/2026/11/10/2026-22838/notice-of-intent-to-reorganize-hud-and-revise-headquarters-and-field-operating-model",
+    "source_queue_priority": 1,
+    "substantive_priority": null,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): Notice of Intent To Reorganize HUD and Revise Headquarters and Field Operating Model",
+    "denominator_disclosed": "unassessed",
+    "actionable_trigger": "Review the captured primary document.",
+    "evaluation_method": "unassessed",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "2362f201d7ace6d7d51e70f96aee2e030e60717612b322a18f86723f51b92136",
+    "source_text_sha256": "78bc19cdb27d612f1dd0e4202d7aa3d34539d90a2013cfe12c4657852b0f8060",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "unassessed",
+      "selection_status": "not assessed",
+      "selector": "ai-keywords-v2",
+      "text_chars": 27238,
+      "ranges": [],
+      "passages_total": 1,
+      "passages_read": 0,
+      "passages_left": 1,
+      "selected_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/10/2026-22838.html",
+    "document_status": "unassessed",
+    "ai_relevance": "unassessed",
+    "evidence_quote": null,
+    "assessment_error": "no AI keyword match; not evaluated"
+  },
+  {
     "id": "alert_0ea823438b819dcd5896cb45",
     "timestamp": "2026-11-10T06:01:47.732527+00:00",
     "alert_schema_version": 2,
@@ -2338,90 +2780,6 @@
     "source_text_sha256": "da0a678e19f9753a6699ade76b54b06b8b9bea17e71214e0c000f4a465ccbcfa",
     "assessment_version": 3,
     "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/24/2026-19528.html",
-    "document_status": "unassessed",
-    "ai_relevance": "unassessed",
-    "evidence_quote": null,
-    "assessment_error": "document exceeds model input budget; manual review required"
-  },
-  {
-    "id": "alert_4f672a9c901f5dcd80ce1677",
-    "timestamp": "2026-11-05T06:00:52.617452+00:00",
-    "alert_schema_version": 2,
-    "source": "US Federal Register (AI Rules & Notices)",
-    "jurisdiction": "United States",
-    "title": "Request for Information (RFI) Regarding the Digitization and Modernization of the National Technical Reports Library (NTRL) and the Leveraging of Scientific, Technical and Engineering Information (STEI) Stored in the NTRL",
-    "url": "https://www.federalregister.gov/documents/2026/09/30/2026-20023/request-for-information-rfi-regarding-the-digitization-and-modernization-of-the-national-technical",
-    "source_queue_priority": 1,
-    "substantive_priority": null,
-    "is_operator_duty_shift": false,
-    "duty_type": "none",
-    "statutory_reference": null,
-    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): Request for Information (RFI) Regarding the Digitization and Modernization of the National Technical Reports Library (NTRL) and the Leveraging of Scientific, Technical and Engineering Information (STEI) Stored in the NTRL",
-    "denominator_disclosed": "unassessed",
-    "actionable_trigger": "Review the captured primary document.",
-    "evaluation_method": "unassessed",
-    "model": "qwen3.8:latest",
-    "reviewed": false,
-    "source_sha256": "f3da990edb63a3acb300f049da3a8b29ef0e965d33c7866d89211a7feb9336bd",
-    "source_text_sha256": "95dd79890aabe5b7267cc84c8bf1589877e121be502e261e6910157a221e0873",
-    "assessment_version": 3,
-    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/30/2026-20023.html",
-    "document_status": "unassessed",
-    "ai_relevance": "unassessed",
-    "evidence_quote": null,
-    "assessment_error": "document exceeds model input budget; manual review required"
-  },
-  {
-    "id": "alert_99f0d0cb13fb016f0d41bacb",
-    "timestamp": "2026-11-05T06:00:51.501763+00:00",
-    "alert_schema_version": 2,
-    "source": "US Federal Register (AI Rules & Notices)",
-    "jurisdiction": "United States",
-    "title": "Rule on Impersonation of Government and Businesses",
-    "url": "https://www.federalregister.gov/documents/2026/10/01/2026-20143/rule-on-impersonation-of-government-and-businesses",
-    "source_queue_priority": 1,
-    "substantive_priority": null,
-    "is_operator_duty_shift": false,
-    "duty_type": "none",
-    "statutory_reference": null,
-    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): Rule on Impersonation of Government and Businesses",
-    "denominator_disclosed": "unassessed",
-    "actionable_trigger": "Review the captured primary document.",
-    "evaluation_method": "unassessed",
-    "model": "qwen3.8:latest",
-    "reviewed": false,
-    "source_sha256": "68d7f8ca29c0ae6e723f580027b3b0faa8c23c7f5ab43218cd6bf58c13fb87aa",
-    "source_text_sha256": "953c220894733b7adea02631953ccf29889dc0303a0a497fbceb022db7c029cc",
-    "assessment_version": 3,
-    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/10/01/2026-20143.html",
-    "document_status": "unassessed",
-    "ai_relevance": "unassessed",
-    "evidence_quote": null,
-    "assessment_error": "document exceeds model input budget; manual review required"
-  },
-  {
-    "id": "alert_a370566f310b2de4e1961716",
-    "timestamp": "2026-11-05T06:00:50.480838+00:00",
-    "alert_schema_version": 2,
-    "source": "US Federal Register (AI Rules & Notices)",
-    "jurisdiction": "United States",
-    "title": "Potential Designation of Chartered Financial Analyst Designation as Qualifying Natural Persons for Accredited Investor Status",
-    "url": "https://www.federalregister.gov/documents/2026/10/05/2026-20311/potential-designation-of-chartered-financial-analyst-designation-as-qualifying-natural-persons-for",
-    "source_queue_priority": 1,
-    "substantive_priority": null,
-    "is_operator_duty_shift": false,
-    "duty_type": "none",
-    "statutory_reference": null,
-    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): Potential Designation of Chartered Financial Analyst Designation as Qualifying Natural Persons for Accredited Investor Status",
-    "denominator_disclosed": "unassessed",
-    "actionable_trigger": "Review the captured primary document.",
-    "evaluation_method": "unassessed",
-    "model": "qwen3.8:latest",
-    "reviewed": false,
-    "source_sha256": "27bb39938518b9764ede75e6fd4945a296c30caa5dda029d87b187f78806d9d0",
-    "source_text_sha256": "48fac10a019701a09739a4631b72ff1f238b8503052a35cd7fbac3c1c4a34728",
-    "assessment_version": 3,
-    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/10/05/2026-20311.html",
     "document_status": "unassessed",
     "ai_relevance": "unassessed",
     "evidence_quote": null,

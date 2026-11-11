@@ -1,12 +1,48 @@
 {
- "generated": "2026-11-10 06:21 UTC",
+ "generated": "2026-11-11 06:21 UTC",
  "window_days": 60,
  "counts": {
-  "total": 93,
-  "closed": 41,
-  "open_weights": 52
+  "total": 95,
+  "closed": 44,
+  "open_weights": 51
  },
  "releases": [
+  {
+   "lab": "Baidu",
+   "model": "Baidu: ERNIE-5.5-Flash-Preview",
+   "id": "baidu/ernie-5.5-flash-preview",
+   "date": "2026-11-10",
+   "url": "https://openrouter.ai/baidu/ernie-5.5-flash-preview",
+   "context_length": 1024000,
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/baidu/ERNIE-5.5-Flash-Preview; downloadable and hashable",
+   "hf_id": "baidu/ERNIE-5.5-Flash-Preview",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Baidu",
+   "model": "Baidu: ERNIE-Light-DT-1.0",
+   "id": "baidu/ernie-light-dt-1.0-intl",
+   "date": "2026-11-10",
+   "url": "https://openrouter.ai/baidu/ernie-light-dt-1.0-intl",
+   "context_length": 1024000,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Google",
+   "model": "Google: Gemini 4 Carbon",
+   "id": "google/gemini-4-carbon",
+   "date": "2026-11-10",
+   "url": "https://openrouter.ai/google/gemini-4-carbon",
+   "context_length": 1048576,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
   {
    "lab": "Nex Agi",
    "model": "Nex AGI: Nex-N2.6",
@@ -74,6 +110,18 @@
    "date": "2026-11-05",
    "url": "https://openrouter.ai/google/gemini-omni-1.2-flash",
    "context_length": 131072,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Kt",
+   "model": "KT: Mi:dm K 3.0 Pro",
+   "id": "kt/midm-k-3.0-pro",
+   "date": "2026-11-05",
+   "url": "https://openrouter.ai/kt/midm-k-3.0-pro",
+   "context_length": 261795,
    "evidence": "closed",
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
@@ -149,6 +197,18 @@
    "evidence": "open-weights",
    "evidence_note": "weights published at huggingface.co/tencent/Hy4; downloadable and hashable",
    "hf_id": "tencent/Hy4",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Motif Technologies",
+   "model": "Motif Technologies: Motif 3",
+   "id": "motif-technologies/motif-3",
+   "date": "2026-11-02",
+   "url": "https://openrouter.ai/motif-technologies/motif-3",
+   "context_length": 262144,
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/Motif-Technologies/Motif-3; downloadable and hashable",
+   "hf_id": "Motif-Technologies/Motif-3",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
@@ -378,18 +438,6 @@
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "microsoft/Sentiment-Analysis-7B",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Xingchen Agi",
-   "model": "XingChen: Xing4.0 29B A4B (free)",
-   "id": "xingchen-agi/xing4.0-29b-a4b",
-   "date": "2026-10-16",
-   "url": "https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b",
-   "context_length": 262144,
-   "evidence": "open-weights",
-   "evidence_note": "weights published at huggingface.co/XingChen-AGI/Xing4.0-29B-A4B; downloadable and hashable",
-   "hf_id": "XingChen-AGI/Xing4.0-29B-A4B",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
    "lab": "Reflection",
@@ -1098,30 +1146,6 @@
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "google/embeddinggemma-2",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Inference Net",
-   "model": "Inference.net: Schematron V2 Turbo",
-   "id": "inference-net/schematron-v2-turbo",
-   "date": "2026-09-12",
-   "url": "https://openrouter.ai/inference-net/schematron-v2-turbo",
-   "context_length": 128000,
-   "evidence": "open-weights",
-   "evidence_note": "weights published at huggingface.co/inference-net/schematron-v2-granite-4.0-h-micro; downloadable and hashable",
-   "hf_id": "inference-net/schematron-v2-granite-4.0-h-micro",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Inference Net",
-   "model": "Inference.net: Schematron V2 Small",
-   "id": "inference-net/schematron-v2-small",
-   "date": "2026-09-12",
-   "url": "https://openrouter.ai/inference-net/schematron-v2-small",
-   "context_length": 128000,
-   "evidence": "open-weights",
-   "evidence_note": "weights published at huggingface.co/inference-net/schematron-v2-llama-3.2-3b; downloadable and hashable",
-   "hf_id": "inference-net/schematron-v2-llama-3.2-3b",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   }
  ],
  "av_window_days": 180,
