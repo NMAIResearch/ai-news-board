@@ -1,15 +1,27 @@
 {
- "generated": "2026-11-11 06:21 UTC",
+ "generated": "2026-11-12 06:21 UTC",
  "window_days": 60,
  "counts": {
-  "total": 95,
-  "closed": 44,
-  "open_weights": 51
+  "total": 96,
+  "closed": 43,
+  "open_weights": 53
  },
  "releases": [
   {
+   "lab": "Nvidia",
+   "model": "Kimi-K3.1-Pro-NVFP4",
+   "id": "nvidia/Kimi-K3.1-Pro-NVFP4",
+   "date": "2026-11-11",
+   "url": "https://huggingface.co/nvidia/Kimi-K3.1-Pro-NVFP4",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/Kimi-K3.1-Pro-NVFP4",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
    "lab": "Baidu",
-   "model": "Baidu: ERNIE-5.5-Flash-Preview",
+   "model": "Baidu: ERNIE-5.5-Flash-Preview (free)",
    "id": "baidu/ernie-5.5-flash-preview",
    "date": "2026-11-10",
    "url": "https://openrouter.ai/baidu/ernie-5.5-flash-preview",
@@ -344,18 +356,6 @@
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
-   "lab": "Nvidia",
-   "model": "InternVideo2-CLIP-anomaly-detection",
-   "id": "nvidia/InternVideo2-CLIP-anomaly-detection",
-   "date": "2026-10-22",
-   "url": "https://huggingface.co/nvidia/InternVideo2-CLIP-anomaly-detection",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/InternVideo2-CLIP-anomaly-detection",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
    "lab": "IBM",
    "model": "granite-switch-4.1-8b-GGUF",
    "id": "ibm-granite/granite-switch-4.1-8b-GGUF",
@@ -519,8 +519,8 @@
    "url": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl",
    "context_length": 1048576,
    "evidence": "open-weights",
-   "evidence_note": "weights published at huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL; downloadable and hashable",
-   "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL",
+   "evidence_note": "weights published at huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16; downloadable and hashable",
+   "hf_id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
@@ -782,6 +782,18 @@
    "date": "2026-10-02",
    "url": "https://openrouter.ai/inclusionai/ling-3.1-flash",
    "context_length": 1000000,
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/inclusionAI/Ling-3.1-flash; downloadable and hashable",
+   "hf_id": "inclusionAI/Ling-3.1-flash",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Unbiased",
+   "model": "Pareto 26.10 Preview",
+   "id": "unbiased/pareto-26.10-preview",
+   "date": "2026-10-01",
+   "url": "https://openrouter.ai/unbiased/pareto-26.10-preview",
+   "context_length": 1048576,
    "evidence": "closed",
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
@@ -938,9 +950,9 @@
    "date": "2026-09-22",
    "url": "https://openrouter.ai/cohere/command-a-plus",
    "context_length": 192000,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/CohereLabs/command-a-plus-05-2026-bf16; downloadable and hashable",
+   "hf_id": "CohereLabs/command-a-plus-05-2026-bf16",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
@@ -1150,10 +1162,10 @@
  ],
  "av_window_days": 180,
  "av_counts": {
-  "total": 11,
-  "audio": 5,
+  "total": 10,
+  "audio": 4,
   "video": 6,
-  "folded": 7,
+  "folded": 6,
   "labs": 5,
   "orgs_watched": 11
  },
@@ -1295,20 +1307,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "stabilityai/stable-audio-3-small-sfx",
-   "source": "Hugging Face API, the stabilityai organisation list capped at 20 repositories; date is repo creation, not necessarily release",
-   "folded": 1
-  },
-  {
-   "kind": "audio",
-   "kind_from": "pipeline",
-   "lab": "Stability AI",
-   "model": "stable-audio-3-small-music-base",
-   "id": "stabilityai/stable-audio-3-small-music-base",
-   "date": "2026-05-16",
-   "url": "https://huggingface.co/stabilityai/stable-audio-3-small-music-base",
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "stabilityai/stable-audio-3-small-music-base",
    "source": "Hugging Face API, the stabilityai organisation list capped at 20 repositories; date is repo creation, not necessarily release",
    "folded": 1
   }

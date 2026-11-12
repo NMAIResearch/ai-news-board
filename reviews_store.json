@@ -28831,15 +28831,15 @@
   "denominator_stated": "N",
   "auto_labelled": true,
   "auto_labelled_by": "gemma4:12b",
-  "label_evidence": "model read all 6 figure-sentence(s); 1 of 6 figure-sentence(s) matched a base cue",
+  "label_evidence": "model read all 7 figure-sentence(s); 1 of 7 figure-sentence(s) matched a base cue",
   "evidence_method": "local-model",
   "evidence_coverage": {
-   "seen": 6,
-   "total": 6
+   "seen": 7,
+   "total": 7
   },
   "label_schema_version": 2,
   "content_hash": "3db0a88fc9e1a4b775c278ab0a86cf52a1122a2261e0d5f6f169f39d38d1c12d",
-  "evidence_hash": "d295b87b6b8e07c9b0ccef192e2cca7f0328063f562fcc540b12f9c2cf9ae8ab",
+  "evidence_hash": "9237be523a817821dd3cab3d6b08626a0511990d30ba636d94faf9cc3d264f9d",
   "reviewed": false,
   "label_source": "machine"
  },
@@ -30659,15 +30659,404 @@
   "denominator_stated": "N",
   "auto_labelled": true,
   "auto_labelled_by": "gemma4:12b",
-  "label_evidence": "model read all 4 figure-sentence(s); 1 of 4 figure-sentence(s) matched a base cue",
+  "label_evidence": "model read all 5 figure-sentence(s); 1 of 5 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 5,
+   "total": 5
+  },
+  "label_schema_version": 2,
+  "content_hash": "80fc09af6860c7e538159bd96c5f0e6ee02f6914a975f65ee083a758d2a0015e",
+  "evidence_hash": "d1825a1b6cada59c6cec67c555748dd1874d8ea60846306dc3f86e1b7537a630",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/11/who-could-replace-jensen-huang-a-highly-unscientific-list-of-possible-successors/": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 5 figure-sentence(s); 0 of 5 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 5,
+   "total": 5
+  },
+  "label_schema_version": 2,
+  "content_hash": "5c9e2c183e1af39a525173108cb066e30f43616ba20aeda03f0fe29881dfe295",
+  "evidence_hash": "0eca2e939f0b04c443505794b2ea108a039523a35289cd9e7b991ccbc81db425",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 5 figure-sentence(s); 1 of 5 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 5,
+   "total": 5
+  },
+  "label_schema_version": 2,
+  "content_hash": "09dcbe4c9f8844964ceff4ef90f39c8c2cb2c3425164d7e63458d9b367b843f8",
+  "evidence_hash": "8d4e787e4bdd05a5a780b1ab2c6815220ff87f5ded9d86b517c9633dbde16fa1",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/11/nvidias-stock-drops-as-board-reportedly-preps-to-oust-ceo-jensen-huang/": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 3,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "54b7c9de3fee3204c524fc280bfca73c4f06b6a12c3b36f3e70a9bdf3ac2b414",
+  "evidence_hash": "64bc6d0da3cd6775da78f5b6e59464fd6d9f12502b2d5b0ad3f7f7c4b81f0683",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/11/jensen-huang-accused-of-having-another-affair-with-a-nvidia-exec/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 1826 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "17ad8d8622e528b228aa0f99e3f71c87dcd4125096372573ac3cc6e47c22f4b1",
+  "evidence_hash": "f60577c5d9c266754373a7f2a3d943d3102875e90154e683d42a503f29c337a3",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/video/why-the-data-center-you-dread-might-never-even-be-built/": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "label_evidence": "all 1 figure-sentence(s) state a base",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "5009f52fba2be1d48abe27470aa97d9c0acff1757c882984fbce6a7fdd8de809",
+  "evidence_hash": "2473e7705d1dfc1588ab10029c04716c0fce0d8e9b962b85e3df98ffdd130de6",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/11/meta-is-losing-its-longtime-head-of-infrastructure/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "b191a301383a3f8e30aff71bbc75a1aa289e338410da33b93d70fa4752f7a5c2",
+  "evidence_hash": "bb6530601d45cf463b143b54239041c8b94c45c4a4efb88611b92fa2d71aa5cb",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/tech/1031652/jensen-huang-rumor": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "c121dec1d471d66982edb85e13dd007d537613f11f509d39d7f22481dd97bafe",
+  "evidence_hash": "1b29d88e8dea41dcd3fcc2253a374d56bc27017dbd43c175e219e4e6af54744b",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 2927 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "e11c4ab00dcedfeba8de1feca7c7e478c1f8eed3d44457818bb88c8d19e5389d",
+  "evidence_hash": "af0106c466a2ad7504eb6f80614494be96a4c24dc520d03078ec7bafc116333b",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "label_evidence": "all 1 figure-sentence(s) state a base",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "76965d82f044b77701b811e9a497b7a7989176776a126a87ad7148e82ec492ba",
+  "evidence_hash": "faa3938a8ad659c3267071a7f00cd9d19d48167b736b360b67ff0849b26f8aa2",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 11 figure-sentence(s); 0 of 11 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 11,
+   "total": 11
+  },
+  "label_schema_version": 2,
+  "content_hash": "16e6fa1d684b9970ff8bfb145abfcec22e62da6a53465cf92480b0719d96784b",
+  "evidence_hash": "5d02031efebb7e7c759c5ec1f13aa51978561a6995e4fb209d1ebce521a6ee5e",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 7349 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "5eacd463c883b9b81264110fcc02143f60713c0de3287abccc76def538a922dc",
+  "evidence_hash": "8f3472443d38154b1c2b1e827ea7b64db603649067b563c3ac0006b607c92c16",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/ai/2026/11/taiwans-chipmaking-giant-tsmc-to-invest-1b-in-anthropic-openai/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
   "evidence_method": "local-model",
   "evidence_coverage": {
    "seen": 4,
    "total": 4
   },
   "label_schema_version": 2,
-  "content_hash": "80fc09af6860c7e538159bd96c5f0e6ee02f6914a975f65ee083a758d2a0015e",
-  "evidence_hash": "71c411127589ce4b1e5603f7c5c77b052ba4205f7ea591f9ea214008b093b802",
+  "content_hash": "e07d1621e345267f11a5f078b321b1ac0b4665e7579cb530db090cef101acbb8",
+  "evidence_hash": "56694ac1dcb4319b5affa23465df0a8f9055127cda6e44af84489dd0832435fa",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/gaming/2026/11/big-walk-used-ai-to-fix-a-bug-now-the-indie-gaming-world-is-having-a-reckoning/": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 6 figure-sentence(s); 1 of 6 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 6,
+   "total": 6
+  },
+  "label_schema_version": 2,
+  "content_hash": "48bd6909e1a3df0fac22b1b49016d73f8e31832653ee76ba251cd45fc10ccf1c",
+  "evidence_hash": "f55a0440469711e40f569f4ec46d4f97dbe05be05362befa39fd8771be936ac5",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 4789 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "22e5f61b267c23cfc45984681894248dbdc2956bd3fc42c4e44c38632c3f627f",
+  "evidence_hash": "40f9a4c93a74cf07fc61c7cac911820801f78a52ab2f65a0582716ebcaa642a7",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 2651 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "4f35c36e93ef05acb1908a80d0ab5ff4f2df33cc7e48cb56bb19ca67811199fd",
+  "evidence_hash": "1d20e36863232b5091b15bf2b4dfeb173054c93182a41330282ba8f49b3a5497",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://lpeproject.org/blog/your-retirement-savings-are-fueling-the-ai-bubble/": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 7 figure-sentence(s); 0 of 7 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 7,
+   "total": 7
+  },
+  "label_schema_version": 2,
+  "content_hash": "5c3b3d8058e4da5857eb8463d9d648be059a47efdd91682acb38c7c5deff07cd",
+  "evidence_hash": "220c1e9e2c6117069002395854c098f455fe302f6e46cdfd6937f69ab62e7af4",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://cabird.com/talks/shipping-faster/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 10 figure-sentence(s); 0 of 10 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 10,
+   "total": 10
+  },
+  "label_schema_version": 2,
+  "content_hash": "6e485d7daf68076ad717a8de3a04fdcafeb3a34193e0ef7b9799cdf8fca308d6",
+  "evidence_hash": "41cecbddf5bc0dcdc4970ad6b47ba287881610001e86a2291dd6c7ecb447ad46",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://pietromiotti.com/latest/maya-site": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 10 figure-sentence(s); 0 of 10 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 10,
+   "total": 10
+  },
+  "label_schema_version": 2,
+  "content_hash": "b861f961cf1375bb6ead6645ffc10486464cecb680c3e1e55a52bea5bc3ed7b7",
+  "evidence_hash": "5c563e87321de0882f52e0c8b328e50490c25fdfb0f00bdcc228999663dd75ea",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://osssaysno.com": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 290 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "1a83265869c043901c223b9023d172fb509da39f98216202a3954786fdcb7298",
+  "evidence_hash": "5c83de964b111bee8e8f135235c5e619437bfff11508975d683c7b0191d13aa8",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news/": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 16 figure-sentence(s); 3 of 16 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 16,
+   "total": 16
+  },
+  "label_schema_version": 2,
+  "content_hash": "349af30f451fcb9e7f583182394ce9516972b47fde9c01d99b60ceba2d188ab0",
+  "evidence_hash": "270700c3ba2e51e7cd45d2f535ea1037c468c4b2a15934e7376b17e1923b6fa2",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://cset.georgetown.edu/article/espionage-ai-and-the-risks-of-strategic-overreaction/": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "label_evidence": "all 1 figure-sentence(s) state a base",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "640f2c5b5edccf004baf4a46f39f2453e08a6042d7c9f88d801e13c80b1ce139",
+  "evidence_hash": "a3dfecd8a06b08430438cb40bd0076d66590217cafe51e391f96863db6b1ac47",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://cset.georgetown.edu/article/the-phantom-life-of-alice-huang-alleged-chinese-spy-who-had-affair-with-nvidia-ceo/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 1354 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "50d04672f4d98005835a0e7b8bd00f45d2dd66c2b241c892c0831c9d3c0123c7",
+  "evidence_hash": "e277910dc2fb51adbf20809c03dea2b1932164fbac0e57e5066bf9af60b2c765",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://ainowinstitute.org/news/the-ai-safety-debate-has-lost-the-plot-we-asked-10-experts-what-the-real-nightmares-are": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 1322 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "436277c83edd13333b34757306f8eb9879504dba956b3eec7c92d59dce1cfee3",
+  "evidence_hash": "9246a0199c8ef7b4af942a7942881d54e5a575abe93f97b680c9f23dbf35d87b",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://news.mit.edu/2026/new-research-could-lead-faster-trustworthy-ai-models-climate-prediction-1112": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "48d5f7fc1939e3dbf07cc567f296c5ac0b734c657bf99613a0a9ff949734fe3f",
+  "evidence_hash": "bf2fbe60e56be738a79acf046d94c2252012a4fe8e6054c23ef02d6ca3bd610d",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://epochai.substack.com/p/the-epoch-brief-november-11-2026": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 33 figure-sentence(s); 5 of 33 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 33,
+   "total": 33
+  },
+  "label_schema_version": 2,
+  "content_hash": "ba9b5efc992c4c1102d7903e7be29bdb3ae2e6c50243b728c994d04e983174ce",
+  "evidence_hash": "679de4621176fc5886ee5ae7a363015ecd88242b80f745c63da53969508b4197",
   "reviewed": false,
   "label_source": "machine"
  }

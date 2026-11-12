@@ -1,5 +1,348 @@
 [
   {
+    "id": "alert_8326c682d09d7558f500f636",
+    "timestamp": "2026-11-12T06:02:52.856479+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Heightened Import Disclosures for Supply Chain Visibility",
+    "url": "https://www.federalregister.gov/documents/2026/09/02/2026-17926/heightened-import-disclosures-for-supply-chain-visibility",
+    "source_queue_priority": 1,
+    "substantive_priority": 2,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a consultation notice seeking input on AI-driven supply chain traceability and import disclosures. It does not impose current binding obligations on AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Monitor for final rulemaking that may mandate AI-based supply chain data integration with ACE.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "a4511bae5da70c354f606c391d50f9ad41e568825f8e0109025f414111f90dc9",
+    "source_text_sha256": "fe91c974bf9b2405c6f653e0dda74d08d1a6265a6e628d156bffc7dc259f7bea",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 41895,
+      "ranges": [
+        [
+          0,
+          721
+        ],
+        [
+          30441,
+          31686
+        ],
+        [
+          31686,
+          32795
+        ]
+      ],
+      "passages_total": 3,
+      "passages_read": 3,
+      "passages_left": 0,
+      "selected_text_sha256": "b968278676c999b843e1448cee9bfacc851e805fd44e52f713cffca9287ff53e"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/02/2026-17926.html",
+    "document_status": "consultation",
+    "ai_relevance": "relevant",
+    "evidence_quote": "CBP has intensified its enforcement efforts, including evaluating artificial intelligence (AI)-driven solutions for pinpointing illegal transshipment risk.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_62aeae6ad4075fa7137b8fb4",
+    "timestamp": "2026-11-12T06:02:41.154836+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Data Intermediaries and Approaches To Strengthen Public Health Data Exchange",
+    "url": "https://www.federalregister.gov/documents/2026/09/21/2026-19271/data-intermediaries-and-approaches-to-strengthen-public-health-data-exchange",
+    "source_queue_priority": 1,
+    "substantive_priority": 2,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a consultation request seeking public input on data intermediary capabilities and the potential impact of AI on these roles. It does not impose current binding obligations on AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Monitor for final rulemaking or guidance documents that may establish binding requirements based on the consultation responses.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "5732141abd973d8993e6239e197486dbeef5fa07af70a1a8e9e5c0342d47b438",
+    "source_text_sha256": "057ae28ab694825203e41fddded2a58b524f530bd1cfef46c64e60da0d6efc8f",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 22126,
+      "ranges": [
+        [
+          0,
+          732
+        ],
+        [
+          12485,
+          13671
+        ]
+      ],
+      "passages_total": 2,
+      "passages_read": 2,
+      "passages_left": 0,
+      "selected_text_sha256": "4a51a9eff9cf56055260bc61ec47d69aacf1b5fd152ee2a63144fddc096ef26c"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/21/2026-19271.html",
+    "document_status": "consultation",
+    "ai_relevance": "relevant",
+    "evidence_quote": "Question II.B-5: How might artificial intelligence (AI) capabilities affect data intermediaries' technical, governance, and operational roles—including accelerating, replacing, or distributing functions?",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_53debd46ff5bbdc9fb29c00f",
+    "timestamp": "2026-11-12T06:02:29.251478+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Order Granting Temporary Conditional Exemptive Relief, Pursuant to Section 36(a)(1) of the Securities Exchange Act of 1934, From the Definition of “Exchange” in Section 3(a)(1) of the Exchange Act for the Use of Certain Distributed Ledger Trading Venues for Tokenized NMS Stocks and From the Definition of “Dealer” in Section 3(a)(5) of the Exchange Act for Certain Liquidity Providers for Tokenized NMS Stocks, and Request for Comment",
+    "url": "https://www.federalregister.gov/documents/2026/09/22/2026-19388/order-granting-temporary-conditional-exemptive-relief-pursuant-to-section-36a1-of-the-securities",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document grants a temporary conditional exemption from the definition of 'exchange' for Distributed Ledger Trading Venues (TSVs) trading tokenized NMS stocks. While it mandates transparency and risk disclosure regarding AI exploits and smart contract vulnerabilities, it is a US SEC regulatory order, not a binding duty on UK AI operators.",
+    "denominator_disclosed": "no",
+    "actionable_trigger": "Monitor for potential cross-border implications if UK entities seek to access these US-based TSVs, but no immediate action is required for UK AI operators.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "94373ac1458d04cff967b628c87a56a6849c67430797bf4d41c83acaf7fb5476",
+    "source_text_sha256": "645b53a64429aa7bce68df1bfefd6957b56baf33e1e0139945303173acbbf92f",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 130257,
+      "ranges": [
+        [
+          0,
+          594
+        ],
+        [
+          2964,
+          4237
+        ],
+        [
+          11048,
+          12108
+        ],
+        [
+          17507,
+          18805
+        ],
+        [
+          19112,
+          20445
+        ],
+        [
+          24671,
+          26032
+        ],
+        [
+          26032,
+          27438
+        ],
+        [
+          27438,
+          28881
+        ],
+        [
+          42922,
+          44168
+        ],
+        [
+          67307,
+          68508
+        ]
+      ],
+      "passages_total": 14,
+      "passages_read": 10,
+      "passages_left": 4,
+      "selected_text_sha256": "07e25194fd3cf70c6af395d93ba992a823b994f93c883870687ce6c1820f7be2"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/22/2026-19388.html",
+    "document_status": "binding",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "Risks: Describe any known material risks to TSV Participants or the integrity of the TSV's market, such as artificial intelligence exploits or attacks, loss of private keys, compromised wallets, smart contract coding errors or bugs, access control failures, reentrancy attacks, denial-of-service attacks, congestion, impermanent loss, any ( printed page 60180) abusive activity involving MEV ( e.g., front-running, back-running, sandwich attacks), oracle manipulation, network cyber-attacks, or phishing attacks.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_ba25ece55206fd62180acd5a",
+    "timestamp": "2026-11-12T06:02:06.907508+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Request for Information; Medicare Part D Reasonable and Relevant Pharmacy Contracting Standards",
+    "url": "https://www.federalregister.gov/documents/2026/09/24/2026-19535/request-for-information-medicare-part-d-reasonable-and-relevant-pharmacy-contracting-standards",
+    "source_queue_priority": 1,
+    "substantive_priority": 4,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a Request for Information (RFI) regarding Medicare Part D pharmacy contracting standards. It solicits data on reimbursement methodologies, including the use of machine learning and AI for cost estimation, but imposes no binding obligations on AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Monitor for final rulemaking that may codify standards for AI-driven pricing or auditing in healthcare reimbursement.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "387c58cf45fffaba490ed8c9e7eefb230da279108c6bf0afb7cfa14725bc0f69",
+    "source_text_sha256": "960c0ef0cd21704f853ccbd3fcc20d9589a5749c1b89a4de1d24e8c161a9852c",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 30902,
+      "ranges": [
+        [
+          0,
+          727
+        ],
+        [
+          9249,
+          12659
+        ],
+        [
+          16779,
+          19229
+        ],
+        [
+          19229,
+          21474
+        ],
+        [
+          21474,
+          23244
+        ],
+        [
+          24646,
+          25705
+        ]
+      ],
+      "passages_total": 6,
+      "passages_read": 6,
+      "passages_left": 0,
+      "selected_text_sha256": "1ffb9d7e87e51183e82042c9c0bebd7401581d3ca8b0bb2886be3d393018ebfc"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/24/2026-19535.html",
+    "document_status": "consultation",
+    "ai_relevance": "relevant",
+    "evidence_quote": "Opportunities for the use of artificial intelligence (AI) with respect to Part D pharmacy reimbursement;",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_33233a71714ae0829cf10e4b",
+    "timestamp": "2026-11-12T06:01:50.967379+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "HUD Evaluation Policy",
+    "url": "https://www.federalregister.gov/documents/2026/09/24/2026-19528/hud-evaluation-policy",
+    "source_queue_priority": 1,
+    "substantive_priority": 4,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document outlines HUD's internal evaluation policy and commitment to Gold Standard Science, including transparency and reproducibility. It mentions that AI use requirements are communicated via contracts and guidelines, but does not impose a direct, binding regulatory duty on external AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Monitor HUD grant and contract documents for specific AI disclosure clauses, as the policy delegates these requirements to individual agreements.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "823800fb40021b6741fdce7b49ed462ad4e8f5c599835080825d505a4223abcf",
+    "source_text_sha256": "da0a678e19f9753a6699ade76b54b06b8b9bea17e71214e0c000f4a465ccbcfa",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 14303,
+      "ranges": [
+        [
+          0,
+          701
+        ],
+        [
+          2568,
+          4021
+        ],
+        [
+          4021,
+          5185
+        ],
+        [
+          6739,
+          8161
+        ],
+        [
+          8161,
+          9526
+        ]
+      ],
+      "passages_total": 5,
+      "passages_read": 5,
+      "passages_left": 0,
+      "selected_text_sha256": "fa2ad5047a2258c767df7b16ceba0b711002e60b00d89137f2163aaf620001c5"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/24/2026-19528.html",
+    "document_status": "binding",
+    "ai_relevance": "relevant",
+    "evidence_quote": "Requirements for researchers regarding the use of Artificial Intelligence (AI) in producing or informing evaluation findings and regarding the disclosure of AI use in published reports are communicated through grant agreements, contract documents, or publication guidelines.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_817cd983f559377837b33ad7",
+    "timestamp": "2026-11-12T06:01:35.522326+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (Executive Orders)",
+    "jurisdiction": "United States",
+    "title": "Establishment of the Oval Office National Monument",
+    "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23113/establishment-of-the-oval-office-national-monument",
+    "source_queue_priority": 1,
+    "substantive_priority": null,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "Unassessed capture from US Federal Register (Executive Orders): Establishment of the Oval Office National Monument",
+    "denominator_disclosed": "unassessed",
+    "actionable_trigger": "Review the captured primary document.",
+    "evaluation_method": "unassessed",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "fd2e3052ce2bf2e7f8db1ffd2439fe8f7f02a44d4496da88a36d39c34f496d97",
+    "source_text_sha256": "89bace38d611e09a5db545b64ad755b4be69db6c717de632a8bf3824ff2e9fc8",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "unassessed",
+      "selection_status": "not assessed",
+      "selector": "full-text",
+      "text_chars": 4821,
+      "ranges": [],
+      "passages_total": 1,
+      "passages_read": 0,
+      "passages_left": 1,
+      "selected_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/12/2026-23113.html",
+    "document_status": "unassessed",
+    "ai_relevance": "unassessed",
+    "evidence_quote": null,
+    "assessment_error": "model timeout"
+  },
+  {
     "id": "alert_96396c8e2dc04a9ed503a345",
     "timestamp": "2026-11-11T06:01:55.812535+00:00",
     "alert_schema_version": 2,
@@ -2668,118 +3011,6 @@
     "source_text_sha256": "7da5c4c5006d37ad7ce3930ab3ce921fa5934fc1651020c2729e94c830c82cda",
     "assessment_version": 3,
     "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/18/2026-19147.html",
-    "document_status": "unassessed",
-    "ai_relevance": "unassessed",
-    "evidence_quote": null,
-    "assessment_error": "document exceeds model input budget; manual review required"
-  },
-  {
-    "id": "alert_8326c682d09d7558f500f636",
-    "timestamp": "2026-11-05T06:00:54.920051+00:00",
-    "alert_schema_version": 2,
-    "source": "US Federal Register (AI Rules & Notices)",
-    "jurisdiction": "United States",
-    "title": "Heightened Import Disclosures for Supply Chain Visibility",
-    "url": "https://www.federalregister.gov/documents/2026/09/02/2026-17926/heightened-import-disclosures-for-supply-chain-visibility",
-    "source_queue_priority": 1,
-    "substantive_priority": null,
-    "is_operator_duty_shift": false,
-    "duty_type": "none",
-    "statutory_reference": null,
-    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): Heightened Import Disclosures for Supply Chain Visibility",
-    "denominator_disclosed": "unassessed",
-    "actionable_trigger": "Review the captured primary document.",
-    "evaluation_method": "unassessed",
-    "model": "qwen3.8:latest",
-    "reviewed": false,
-    "source_sha256": "a4511bae5da70c354f606c391d50f9ad41e568825f8e0109025f414111f90dc9",
-    "source_text_sha256": "fe91c974bf9b2405c6f653e0dda74d08d1a6265a6e628d156bffc7dc259f7bea",
-    "assessment_version": 3,
-    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/02/2026-17926.html",
-    "document_status": "unassessed",
-    "ai_relevance": "unassessed",
-    "evidence_quote": null,
-    "assessment_error": "document exceeds model input budget; manual review required"
-  },
-  {
-    "id": "alert_62aeae6ad4075fa7137b8fb4",
-    "timestamp": "2026-11-05T06:00:54.645486+00:00",
-    "alert_schema_version": 2,
-    "source": "US Federal Register (AI Rules & Notices)",
-    "jurisdiction": "United States",
-    "title": "Data Intermediaries and Approaches To Strengthen Public Health Data Exchange",
-    "url": "https://www.federalregister.gov/documents/2026/09/21/2026-19271/data-intermediaries-and-approaches-to-strengthen-public-health-data-exchange",
-    "source_queue_priority": 1,
-    "substantive_priority": null,
-    "is_operator_duty_shift": false,
-    "duty_type": "none",
-    "statutory_reference": null,
-    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): Data Intermediaries and Approaches To Strengthen Public Health Data Exchange",
-    "denominator_disclosed": "unassessed",
-    "actionable_trigger": "Review the captured primary document.",
-    "evaluation_method": "unassessed",
-    "model": "qwen3.8:latest",
-    "reviewed": false,
-    "source_sha256": "5732141abd973d8993e6239e197486dbeef5fa07af70a1a8e9e5c0342d47b438",
-    "source_text_sha256": "057ae28ab694825203e41fddded2a58b524f530bd1cfef46c64e60da0d6efc8f",
-    "assessment_version": 3,
-    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/21/2026-19271.html",
-    "document_status": "unassessed",
-    "ai_relevance": "unassessed",
-    "evidence_quote": null,
-    "assessment_error": "document exceeds model input budget; manual review required"
-  },
-  {
-    "id": "alert_ba25ece55206fd62180acd5a",
-    "timestamp": "2026-11-05T06:00:53.774439+00:00",
-    "alert_schema_version": 2,
-    "source": "US Federal Register (AI Rules & Notices)",
-    "jurisdiction": "United States",
-    "title": "Request for Information; Medicare Part D Reasonable and Relevant Pharmacy Contracting Standards",
-    "url": "https://www.federalregister.gov/documents/2026/09/24/2026-19535/request-for-information-medicare-part-d-reasonable-and-relevant-pharmacy-contracting-standards",
-    "source_queue_priority": 1,
-    "substantive_priority": null,
-    "is_operator_duty_shift": false,
-    "duty_type": "none",
-    "statutory_reference": null,
-    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): Request for Information; Medicare Part D Reasonable and Relevant Pharmacy Contracting Standards",
-    "denominator_disclosed": "unassessed",
-    "actionable_trigger": "Review the captured primary document.",
-    "evaluation_method": "unassessed",
-    "model": "qwen3.8:latest",
-    "reviewed": false,
-    "source_sha256": "387c58cf45fffaba490ed8c9e7eefb230da279108c6bf0afb7cfa14725bc0f69",
-    "source_text_sha256": "960c0ef0cd21704f853ccbd3fcc20d9589a5749c1b89a4de1d24e8c161a9852c",
-    "assessment_version": 3,
-    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/24/2026-19535.html",
-    "document_status": "unassessed",
-    "ai_relevance": "unassessed",
-    "evidence_quote": null,
-    "assessment_error": "document exceeds model input budget; manual review required"
-  },
-  {
-    "id": "alert_33233a71714ae0829cf10e4b",
-    "timestamp": "2026-11-05T06:00:53.498502+00:00",
-    "alert_schema_version": 2,
-    "source": "US Federal Register (AI Rules & Notices)",
-    "jurisdiction": "United States",
-    "title": "HUD Evaluation Policy",
-    "url": "https://www.federalregister.gov/documents/2026/09/24/2026-19528/hud-evaluation-policy",
-    "source_queue_priority": 1,
-    "substantive_priority": null,
-    "is_operator_duty_shift": false,
-    "duty_type": "none",
-    "statutory_reference": null,
-    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): HUD Evaluation Policy",
-    "denominator_disclosed": "unassessed",
-    "actionable_trigger": "Review the captured primary document.",
-    "evaluation_method": "unassessed",
-    "model": "qwen3.8:latest",
-    "reviewed": false,
-    "source_sha256": "823800fb40021b6741fdce7b49ed462ad4e8f5c599835080825d505a4223abcf",
-    "source_text_sha256": "da0a678e19f9753a6699ade76b54b06b8b9bea17e71214e0c000f4a465ccbcfa",
-    "assessment_version": 3,
-    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/24/2026-19528.html",
     "document_status": "unassessed",
     "ai_relevance": "unassessed",
     "evidence_quote": null,
