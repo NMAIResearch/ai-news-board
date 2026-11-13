@@ -1,12 +1,24 @@
 {
- "generated": "2026-11-12 06:21 UTC",
+ "generated": "2026-11-13 06:23 UTC",
  "window_days": 60,
  "counts": {
   "total": 96,
-  "closed": 43,
-  "open_weights": 53
+  "closed": 44,
+  "open_weights": 52
  },
  "releases": [
+  {
+   "lab": "Google",
+   "model": "Google: Gemini 4 Hydrogen",
+   "id": "google/gemini-4-hydrogen",
+   "date": "2026-11-12",
+   "url": "https://openrouter.ai/google/gemini-4-hydrogen",
+   "context_length": 1048576,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
   {
    "lab": "Nvidia",
    "model": "Kimi-K3.1-Pro-NVFP4",
@@ -69,14 +81,14 @@
   },
   {
    "lab": "Thinking Machines",
-   "model": "Thinking Machines: Inkling 2 Small (free)",
+   "model": "Thinking Machines: Inkling 2 Small",
    "id": "thinkingmachines/inkling-2-small",
    "date": "2026-11-09",
    "url": "https://openrouter.ai/thinkingmachines/inkling-2-small",
    "context_length": 1048576,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/thinkingmachines/Inkling-2-Small; downloadable and hashable",
+   "hf_id": "thinkingmachines/Inkling-2-Small",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
@@ -788,6 +800,18 @@
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
+   "lab": "Apodex",
+   "model": "Apodex: Apodex 1.1 Mini (free)",
+   "id": "apodex/apodex-1.1-mini",
+   "date": "2026-10-01",
+   "url": "https://openrouter.ai/apodex/apodex-1.1-mini",
+   "context_length": 262144,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
    "lab": "Unbiased",
    "model": "Pareto 26.10 Preview",
    "id": "unbiased/pareto-26.10-preview",
@@ -1134,38 +1158,14 @@
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Alibaba (Qwen)",
-   "model": "Qwen-Image-2.1",
-   "id": "Qwen/Qwen-Image-2.1",
-   "date": "2026-09-14",
-   "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "Qwen/Qwen-Image-2.1",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Google",
-   "model": "embeddinggemma-2",
-   "id": "google/embeddinggemma-2",
-   "date": "2026-09-14",
-   "url": "https://huggingface.co/google/embeddinggemma-2",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "google/embeddinggemma-2",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
   }
  ],
  "av_window_days": 180,
  "av_counts": {
-  "total": 10,
-  "audio": 4,
+  "total": 8,
+  "audio": 2,
   "video": 6,
-  "folded": 6,
+  "folded": 4,
   "labs": 5,
   "orgs_watched": 11
  },
@@ -1281,34 +1281,6 @@
    "hf_id": "stabilityai/stable-audio-3-optimized",
    "source": "Hugging Face API, the stabilityai organisation list capped at 20 repositories; date is repo creation, not necessarily release",
    "folded": 0
-  },
-  {
-   "kind": "audio",
-   "kind_from": "pipeline",
-   "lab": "Stability AI",
-   "model": "stable-audio-3-medium",
-   "id": "stabilityai/stable-audio-3-medium",
-   "date": "2026-05-17",
-   "url": "https://huggingface.co/stabilityai/stable-audio-3-medium",
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "stabilityai/stable-audio-3-medium",
-   "source": "Hugging Face API, the stabilityai organisation list capped at 20 repositories; date is repo creation, not necessarily release",
-   "folded": 1
-  },
-  {
-   "kind": "audio",
-   "kind_from": "pipeline",
-   "lab": "Stability AI",
-   "model": "stable-audio-3-small-sfx",
-   "id": "stabilityai/stable-audio-3-small-sfx",
-   "date": "2026-05-17",
-   "url": "https://huggingface.co/stabilityai/stable-audio-3-small-sfx",
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "stabilityai/stable-audio-3-small-sfx",
-   "source": "Hugging Face API, the stabilityai organisation list capped at 20 repositories; date is repo creation, not necessarily release",
-   "folded": 1
   }
  ],
  "av_no_route": [

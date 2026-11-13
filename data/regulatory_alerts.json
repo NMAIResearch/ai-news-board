@@ -1,5 +1,359 @@
 [
   {
+    "id": "alert_06351994efadd225956c8cca",
+    "timestamp": "2026-11-13T06:02:25.118899+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "United States of America, et al. v. RealPage, Inc., et al.; Proposed Final Judgment and Competitive Impact Statement",
+    "url": "https://www.federalregister.gov/documents/2026/09/18/2026-19100/united-states-of-america-et-al-v-realpage-inc-et-al-proposed-final-judgment-and-competitive-impact",
+    "source_queue_priority": 1,
+    "substantive_priority": 4,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a proposed final judgment in a US antitrust action against RealPage and major landlords, alleging unlawful information-sharing and monopoly conduct in commercial revenue management software. It does not establish a current binding regulatory duty for AI operators under UK or EU frameworks, nor does it impose specific transparency or labelling obligations.",
+    "denominator_disclosed": "partial",
+    "actionable_trigger": "Monitor the finalization of the US Federal Court judgment to assess potential cross-border implications for algorithmic pricing compliance and data sharing practices.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "bdb10826e32bba87d1f49c2993d407a067407968040600271242e87f305521d2",
+    "source_text_sha256": "e17a4185895c2bf206b34e05a2fc0b7d8692525a51c1a9c63051630837c3f0dc",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 295825,
+      "ranges": [
+        [
+          0,
+          932
+        ],
+        [
+          11137,
+          12368
+        ],
+        [
+          14286,
+          15492
+        ],
+        [
+          15566,
+          17012
+        ],
+        [
+          32760,
+          33820
+        ],
+        [
+          77189,
+          78513
+        ],
+        [
+          78513,
+          79144
+        ],
+        [
+          83736,
+          84958
+        ],
+        [
+          104986,
+          106076
+        ],
+        [
+          138075,
+          139410
+        ],
+        [
+          220373,
+          221375
+        ]
+      ],
+      "passages_total": 26,
+      "passages_read": 11,
+      "passages_left": 15,
+      "selected_text_sha256": "386f0bca5bf19dbf099903526b5fe2e9e62e663abd08e933947b6ad1c7ce57a4"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/18/2026-19100.html",
+    "document_status": "proposed",
+    "ai_relevance": "relevant",
+    "evidence_quote": "Notice is hereby given pursuant to the Antitrust Procedures and Penalties Act, 15 U.S.C. 16(b)-(h) , that a proposed Final Judgment, Stipulation, and Competitive Impact Statement have been filed with the United States District Court for the Middle District of North Carolina in United States of America, et al. v. RealPage, Inc., et al., Civil Action No. 1:24-cv-00710.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_09670cd3c458d8e52bcffd9d",
+    "timestamp": "2026-11-13T06:02:03.428611+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Self-Regulatory Organizations; NYSE American LLC; Notice of Filing of a Proposed Rule Change To Permit the Listing of Binary KPI Options",
+    "url": "https://www.federalregister.gov/documents/2026/09/18/2026-19132/self-regulatory-organizations-nyse-american-llc-notice-of-filing-of-a-proposed-rule-change-to-permit",
+    "source_queue_priority": 1,
+    "substantive_priority": null,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): Self-Regulatory Organizations; NYSE American LLC; Notice of Filing of a Proposed Rule Change To Permit the Listing of Binary KPI Options",
+    "denominator_disclosed": "unassessed",
+    "actionable_trigger": "Review the captured primary document.",
+    "evaluation_method": "unassessed",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "817c2c9d496192d8816227283231a95c243b5d5675b9e6490f77ceb2c15a2ca2",
+    "source_text_sha256": "0aff3662a1b0579999225fdf011dec3b1e833d68b29867bafe107acd1ce289d4",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "unassessed",
+      "selection_status": "not assessed",
+      "selector": "ai-keywords-v2",
+      "text_chars": 122462,
+      "ranges": [],
+      "passages_total": 11,
+      "passages_read": 0,
+      "passages_left": 11,
+      "selected_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/18/2026-19132.html",
+    "document_status": "unassessed",
+    "ai_relevance": "unassessed",
+    "evidence_quote": null,
+    "assessment_error": "supporting quote is absent from the selected source ranges"
+  },
+  {
+    "id": "alert_12e32cc7fb590293881bc52f",
+    "timestamp": "2026-11-13T06:01:48.206614+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of a Proposed Rule Change To Permit the Listing of Binary KPI Options",
+    "url": "https://www.federalregister.gov/documents/2026/09/18/2026-19139/self-regulatory-organizations-nyse-arca-inc-notice-of-filing-of-a-proposed-rule-change-to-permit-the",
+    "source_queue_priority": 1,
+    "substantive_priority": null,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of a Proposed Rule Change To Permit the Listing of Binary KPI Options",
+    "denominator_disclosed": "unassessed",
+    "actionable_trigger": "Review the captured primary document.",
+    "evaluation_method": "unassessed",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "9bfae00fb5084b7843a0ccabbfe48ac1054591f4c9eb985962a4ea3152c35148",
+    "source_text_sha256": "2393fd8ea7c0060b5727c0db7343b8587fdda0f340a16ad3697454353aa76933",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "unassessed",
+      "selection_status": "not assessed",
+      "selector": "ai-keywords-v2",
+      "text_chars": 123297,
+      "ranges": [],
+      "passages_total": 11,
+      "passages_read": 0,
+      "passages_left": 11,
+      "selected_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/18/2026-19139.html",
+    "document_status": "unassessed",
+    "ai_relevance": "unassessed",
+    "evidence_quote": null,
+    "assessment_error": "supporting quote is absent from the selected source ranges"
+  },
+  {
+    "id": "alert_853e80c4187d16fa0113c104",
+    "timestamp": "2026-11-13T06:01:24.816935+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Public Company Accounting Oversight Board; Notice of Filing of Proposed Rules on Amendments to QC 1000, A Firm's System of Quality Control, and Related Rule and Forms",
+    "url": "https://www.federalregister.gov/documents/2026/09/18/2026-19148/public-company-accounting-oversight-board-notice-of-filing-of-proposed-rules-on-amendments-to-qc",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a US Federal Register notice regarding proposed amendments to PCAOB quality control standards (QC 1000). It discusses transparency requirements for audit firm metrics and evaluation dates but does not impose binding duties on AI operators. References to AI are limited to commenters requesting guidance on due diligence for AI tools in audit contexts, which is outside the scope of direct AI operator regulation.",
+    "denominator_disclosed": "yes",
+    "actionable_trigger": "No immediate action required for AI operators; monitor for final PCAOB rules if involved in audit firm compliance.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "f7de6dc734e4e86c4218c5621b1f646cb26a93c8515b9e7689452774d5db5954",
+    "source_text_sha256": "2b85b91badffb805ff5c24e2cf6babb9cccb8a76a191b06986e6ad9e92425028",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 346603,
+      "ranges": [
+        [
+          0,
+          624
+        ],
+        [
+          45768,
+          47121
+        ],
+        [
+          47433,
+          48561
+        ],
+        [
+          53688,
+          54927
+        ],
+        [
+          99943,
+          100991
+        ],
+        [
+          148973,
+          150871
+        ],
+        [
+          208811,
+          209949
+        ],
+        [
+          227752,
+          229082
+        ],
+        [
+          230655,
+          231847
+        ],
+        [
+          281035,
+          282109
+        ],
+        [
+          336844,
+          337440
+        ]
+      ],
+      "passages_total": 16,
+      "passages_read": 11,
+      "passages_left": 5,
+      "selected_text_sha256": "461a49e0d472eb9994abd63e7ab9cd0e6e3d8f19196403564c748d275c89da43"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/18/2026-19148.html",
+    "document_status": "proposed",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "g. QC considerations related to technological resources, particularly due diligence on artificial intelligence tools, used on engagements or in the firm's system of quality control;",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_db174398021f2b50c910fe7b",
+    "timestamp": "2026-11-13T06:01:05.880999+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Request for Information (RFI) on Future Needs for Medical Metrology and Standards for Medical Imaging, Devices, Diagnostics and Therapy",
+    "url": "https://www.federalregister.gov/documents/2026/09/18/2026-19147/request-for-information-rfi-on-future-needs-for-medical-metrology-and-standards-for-medical-imaging",
+    "source_queue_priority": 1,
+    "substantive_priority": 3,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": "15 U.S.C. 272(b) and 272(c)",
+    "summary": "The document is a Request for Information (RFI) and notice of a symposium regarding future needs for medical metrology and standards, specifically in the context of AI and medical technology. It seeks public input on improving measurements and standards but does not impose current binding obligations on AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Monitor for final standards or regulatory actions resulting from the RFI and symposium that may impact medical AI validation requirements.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "93d27862db1cfbe023f098d1d88ede786d36f184e9daf3b83286d5bcfbd54bf9",
+    "source_text_sha256": "7da5c4c5006d37ad7ce3930ab3ce921fa5934fc1651020c2729e94c830c82cda",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 13371,
+      "ranges": [
+        [
+          0,
+          729
+        ],
+        [
+          6934,
+          8141
+        ],
+        [
+          11443,
+          12693
+        ]
+      ],
+      "passages_total": 3,
+      "passages_read": 3,
+      "passages_left": 0,
+      "selected_text_sha256": "41754c536cc6878846e2e36c5d9a22c81ed3fb7f742e98ecf26745688c1f5fde"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/18/2026-19147.html",
+    "document_status": "consultation",
+    "ai_relevance": "relevant",
+    "evidence_quote": "NIST and NIBIB seek information on the following topic areas, including but not limited to: Areas where there is a need for improved medical measurements relating to medical imaging, devices, diagnostics and therapy and how we can provide the needed standards and validation of these measurements.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_51d158ff004dae1d4db48e46",
+    "timestamp": "2026-11-13T06:00:49.525535+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Application for Relief From Disabilities Imposed by Federal Laws With Respect to the Acquisition, Receipt, Transfer, Shipment, Transportation, or Possession of Firearms",
+    "url": "https://www.federalregister.gov/documents/2026/08/20/2026-16981/application-for-relief-from-disabilities-imposed-by-federal-laws-with-respect-to-the-acquisition",
+    "source_queue_priority": 1,
+    "substantive_priority": 4,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document outlines the Department of Justice's intention to use AI in a low-impact manner for intake and prioritization, subject to human review and OMB guidelines, but this constitutes an internal administrative process rather than a binding regulatory duty imposed on external AI operators.",
+    "denominator_disclosed": "partial",
+    "actionable_trigger": "Monitor for final rule publication to determine if specific AI governance requirements become binding on third-party vendors or remain internal DOJ procedures.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "f162735a6f4dd6758c2c77ec10fb11a8946f44f9a7bdcabda5ede35992d4c0d6",
+    "source_text_sha256": "c1b6be2319f0e8beaabfc960306b0d8049b332dbe5e489d1528e4a91e2ec4b93",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 299894,
+      "ranges": [
+        [
+          0,
+          846
+        ],
+        [
+          163901,
+          165291
+        ],
+        [
+          171015,
+          172216
+        ],
+        [
+          290533,
+          292021
+        ]
+      ],
+      "passages_total": 4,
+      "passages_read": 4,
+      "passages_left": 0,
+      "selected_text_sha256": "31647f4decb7837fa67ae0f4caa78cc7edd3d286b9f9d82ddcc748d62c0569a7"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/08/20/2026-16981.html",
+    "document_status": "proposed",
+    "ai_relevance": "relevant",
+    "evidence_quote": "Consistent with the Department's obligation to ensure individual review of each application, the Department intends to utilize AI in a low-impact manner and to abide by the requirements outlined by the Office of Management and Budget (“OMB”) and the Administration.",
+    "assessment_error": null
+  },
+  {
     "id": "alert_8326c682d09d7558f500f636",
     "timestamp": "2026-11-12T06:02:52.856479+00:00",
     "alert_schema_version": 2,
@@ -2983,34 +3337,6 @@
     "source_text_sha256": "640c895a637c3bfbf00d5f8ee04c5621bad85598d7ac09283fb5344a414143d8",
     "assessment_version": 3,
     "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/08/31/2026-17761.html",
-    "document_status": "unassessed",
-    "ai_relevance": "unassessed",
-    "evidence_quote": null,
-    "assessment_error": "document exceeds model input budget; manual review required"
-  },
-  {
-    "id": "alert_db174398021f2b50c910fe7b",
-    "timestamp": "2026-11-05T06:00:55.620767+00:00",
-    "alert_schema_version": 2,
-    "source": "US Federal Register (AI Rules & Notices)",
-    "jurisdiction": "United States",
-    "title": "Request for Information (RFI) on Future Needs for Medical Metrology and Standards for Medical Imaging, Devices, Diagnostics and Therapy",
-    "url": "https://www.federalregister.gov/documents/2026/09/18/2026-19147/request-for-information-rfi-on-future-needs-for-medical-metrology-and-standards-for-medical-imaging",
-    "source_queue_priority": 1,
-    "substantive_priority": null,
-    "is_operator_duty_shift": false,
-    "duty_type": "none",
-    "statutory_reference": null,
-    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): Request for Information (RFI) on Future Needs for Medical Metrology and Standards for Medical Imaging, Devices, Diagnostics and Therapy",
-    "denominator_disclosed": "unassessed",
-    "actionable_trigger": "Review the captured primary document.",
-    "evaluation_method": "unassessed",
-    "model": "qwen3.8:latest",
-    "reviewed": false,
-    "source_sha256": "93d27862db1cfbe023f098d1d88ede786d36f184e9daf3b83286d5bcfbd54bf9",
-    "source_text_sha256": "7da5c4c5006d37ad7ce3930ab3ce921fa5934fc1651020c2729e94c830c82cda",
-    "assessment_version": 3,
-    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/18/2026-19147.html",
     "document_status": "unassessed",
     "ai_relevance": "unassessed",
     "evidence_quote": null,
