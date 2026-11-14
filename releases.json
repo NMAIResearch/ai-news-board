@@ -1,12 +1,24 @@
 {
- "generated": "2026-11-13 06:23 UTC",
+ "generated": "2026-11-14 06:21 UTC",
  "window_days": 60,
  "counts": {
   "total": 96,
-  "closed": 44,
-  "open_weights": 52
+  "closed": 43,
+  "open_weights": 53
  },
  "releases": [
+  {
+   "lab": "Inclusionai",
+   "model": "inclusionAI: Ling 3.2 Flash (free)",
+   "id": "inclusionai/ling-3.2-flash",
+   "date": "2026-11-13",
+   "url": "https://openrouter.ai/inclusionai/ling-3.2-flash",
+   "context_length": 1048576,
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/inclusionAI/Ling-3.2-flash; downloadable and hashable",
+   "hf_id": "inclusionAI/Ling-3.2-flash",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
   {
    "lab": "Google",
    "model": "Google: Gemini 4 Hydrogen",
@@ -800,18 +812,6 @@
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
-   "lab": "Apodex",
-   "model": "Apodex: Apodex 1.1 Mini (free)",
-   "id": "apodex/apodex-1.1-mini",
-   "date": "2026-10-01",
-   "url": "https://openrouter.ai/apodex/apodex-1.1-mini",
-   "context_length": 262144,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
    "lab": "Unbiased",
    "model": "Pareto 26.10 Preview",
    "id": "unbiased/pareto-26.10-preview",
@@ -1162,11 +1162,11 @@
  ],
  "av_window_days": 180,
  "av_counts": {
-  "total": 8,
-  "audio": 2,
+  "total": 7,
+  "audio": 1,
   "video": 6,
   "folded": 4,
-  "labs": 5,
+  "labs": 4,
   "orgs_watched": 11
  },
  "av_releases": [
@@ -1266,20 +1266,6 @@
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "Wan-AI/Wan-Dancer-14B",
    "source": "Hugging Face API, the Wan-AI organisation list capped at 20 repositories; date is repo creation, not necessarily release",
-   "folded": 0
-  },
-  {
-   "kind": "audio",
-   "kind_from": "pipeline",
-   "lab": "Stability AI",
-   "model": "stable-audio-3-optimized",
-   "id": "stabilityai/stable-audio-3-optimized",
-   "date": "2026-05-18",
-   "url": "https://huggingface.co/stabilityai/stable-audio-3-optimized",
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "stabilityai/stable-audio-3-optimized",
-   "source": "Hugging Face API, the stabilityai organisation list capped at 20 repositories; date is repo creation, not necessarily release",
    "folded": 0
   }
  ],

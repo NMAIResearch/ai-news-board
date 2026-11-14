@@ -1,5 +1,368 @@
 [
   {
+    "id": "alert_e91eeacbff35fb64977d6611",
+    "timestamp": "2026-11-14T06:02:19.745429+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Transfer Agent Rules",
+    "url": "https://www.federalregister.gov/documents/2026/09/04/2026-18190/transfer-agent-rules",
+    "source_queue_priority": 1,
+    "substantive_priority": 2,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a proposed rulemaking by the US Securities and Exchange Commission regarding transfer agent regulations. It addresses the integration of AI and blockchain technologies in securities transfer but does not establish current binding obligations for AI operators. The text explicitly states that the Commission is proposing changes and soliciting comments, indicating a consultation phase rather than a binding regulatory duty.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Monitor the finalization of SEC Release No. 34-106246 to determine if proposed recordkeeping and AI oversight requirements become binding regulations.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "db33954ea3e9ea0fec8b4f94e80704395f80f29a96495cdcdc5991cc1f7cc082",
+    "source_text_sha256": "1111718358b517f7b023d7b64d5d2a9cf5c4c870a58f9feef4fed12b6826b6fc",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 811231,
+      "ranges": [
+        [
+          0,
+          685
+        ],
+        [
+          9623,
+          11004
+        ],
+        [
+          11004,
+          12255
+        ],
+        [
+          12255,
+          12939
+        ],
+        [
+          57158,
+          58389
+        ],
+        [
+          87111,
+          88476
+        ],
+        [
+          118152,
+          119532
+        ],
+        [
+          218530,
+          220424
+        ],
+        [
+          252432,
+          253606
+        ],
+        [
+          286559,
+          287685
+        ]
+      ],
+      "passages_total": 18,
+      "passages_read": 10,
+      "passages_left": 8,
+      "selected_text_sha256": "ef8146188cd057c3d165a760cf04b4b985b143f1f82f78fb488f91b6f5a3c05b"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/04/2026-18190.html",
+    "document_status": "proposed",
+    "ai_relevance": "relevant",
+    "evidence_quote": "the Commission proposes implementing changes to existing Rule 17ad-6 that will (1) simplify the rule text, specify what recordkeeping requirements apply to uncertificated securities, and appropriately capture the records necessary for modern transfer agents to perform their regulated functions",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_5eeb684b44fae37eaa6ea0e2",
+    "timestamp": "2026-11-14T06:01:59.943346+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Partial Repeal of the Carbon Pollution Standards for Fossil Fuel-Fired Electric Generating Units",
+    "url": "https://www.federalregister.gov/documents/2026/09/17/2026-19071/partial-repeal-of-the-carbon-pollution-standards-for-fossil-fuel-fired-electric-generating-units",
+    "source_queue_priority": 1,
+    "substantive_priority": 4,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a US Federal Register notice regarding the partial repeal of carbon pollution standards for fossil fuel-fired electric generating units. It cites increased electricity demand from AI data centers as a justification for retaining coal capacity and repealing CCS requirements, but imposes no direct regulatory duties on AI operators.",
+    "denominator_disclosed": "yes",
+    "actionable_trigger": "Monitor US energy policy shifts that may impact power supply reliability and costs for AI infrastructure, as this repeal may influence long-term electricity market dynamics.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "44736c07ea04813a67563064ff5dfd3d4234e3f71bace8f0d962e76877cd3630",
+    "source_text_sha256": "df21af362672152be930e527c77cbd77524a9f6bad7b2964c0a0c4c5ffb7469f",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 353120,
+      "ranges": [
+        [
+          0,
+          670
+        ],
+        [
+          3012,
+          5435
+        ],
+        [
+          11525,
+          12743
+        ],
+        [
+          74315,
+          75562
+        ],
+        [
+          137054,
+          138338
+        ],
+        [
+          169409,
+          170616
+        ],
+        [
+          210348,
+          211689
+        ],
+        [
+          233808,
+          234993
+        ],
+        [
+          238209,
+          239506
+        ]
+      ],
+      "passages_total": 10,
+      "passages_read": 9,
+      "passages_left": 1,
+      "selected_text_sha256": "d6d77669bd08ca429cdf2e360ef304f9a0c19319359bd46b73f91c6475c99fb7"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/17/2026-19071.html",
+    "document_status": "binding",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "Increasing amounts of large commercial and industrial loads, particularly those related to data center demand for artificial intelligence (AI) applications, are primarily driving this nearly 2.6-fold increase in projected growth rates.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_901d72d80daf2a337f290e1a",
+    "timestamp": "2026-11-14T06:01:41.356159+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Rescission of the Greenhouse Gas Findings for Fossil Fuel-Fired Power Plants and Repeal of Regulations for Power Plant Greenhouse Gas Emissions Under Clean Air Act Section 111",
+    "url": "https://www.federalregister.gov/documents/2026/09/17/2026-19072/rescission-of-the-greenhouse-gas-findings-for-fossil-fuel-fired-power-plants-and-repeal-of",
+    "source_queue_priority": 1,
+    "substantive_priority": null,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): Rescission of the Greenhouse Gas Findings for Fossil Fuel-Fired Power Plants and Repeal of Regulations for Power Plant Greenhouse Gas Emissions Under Clean Air Act Section 111",
+    "denominator_disclosed": "unassessed",
+    "actionable_trigger": "Review the captured primary document.",
+    "evaluation_method": "unassessed",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "b70ce6902f017fb5eb692bd231eacc1bcf3d10fdbc8bd1cc4452e5123f57e908",
+    "source_text_sha256": "ff66563395804c1324b38d0237102a91ff2652c8c9d1bb6d56f423cff601a87a",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "unassessed",
+      "selection_status": "not assessed",
+      "selector": "ai-keywords-v2",
+      "text_chars": 337407,
+      "ranges": [],
+      "passages_total": 2,
+      "passages_read": 0,
+      "passages_left": 2,
+      "selected_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/17/2026-19072.html",
+    "document_status": "unassessed",
+    "ai_relevance": "unassessed",
+    "evidence_quote": null,
+    "assessment_error": "supporting quote is absent from the selected source ranges"
+  },
+  {
+    "id": "alert_160517d2722fcc9a5ad8d931",
+    "timestamp": "2026-11-14T06:01:29.023071+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Maximizing Efficiencies in Universal Service Administration",
+    "url": "https://www.federalregister.gov/documents/2026/08/31/2026-17761/maximizing-efficiencies-in-universal-service-administration",
+    "source_queue_priority": 1,
+    "substantive_priority": 2,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a proposed rulemaking seeking comment on the use of AI to improve the efficiency of Universal Service Fund administration, specifically regarding application review, audits, and stakeholder engagement. It does not impose current binding obligations on AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Monitor the final rulemaking outcome to determine if specific AI governance or transparency requirements are codified for USAC operations.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "978bf8bd7945d3beaa2ccf09e14aaa1bfabf6d600c6f472d9707aa1ce0b1110e",
+    "source_text_sha256": "640c895a637c3bfbf00d5f8ee04c5621bad85598d7ac09283fb5344a414143d8",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 68322,
+      "ranges": [
+        [
+          0,
+          665
+        ],
+        [
+          6142,
+          7452
+        ],
+        [
+          7452,
+          8727
+        ],
+        [
+          8727,
+          9661
+        ],
+        [
+          13458,
+          14778
+        ],
+        [
+          14778,
+          15678
+        ],
+        [
+          16990,
+          18113
+        ],
+        [
+          30632,
+          31961
+        ],
+        [
+          54929,
+          56076
+        ],
+        [
+          57309,
+          58392
+        ]
+      ],
+      "passages_total": 10,
+      "passages_read": 10,
+      "passages_left": 0,
+      "selected_text_sha256": "958dce389a2d20e25535d185634036a4fda9b8b07a0cf90bf3988cb748a069c1"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/08/31/2026-17761.html",
+    "document_status": "proposed",
+    "ai_relevance": "relevant",
+    "evidence_quote": "Are there operational inefficiencies that could be improved using artificial intelligence (AI)? What processes could be improved with AI, if any?",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_326dc1c330dd367b789ea77c",
+    "timestamp": "2026-11-14T06:01:13.041231+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Request for Information",
+    "url": "https://www.federalregister.gov/documents/2026/11/13/2026-23155/request-for-information",
+    "source_queue_priority": 1,
+    "substantive_priority": 4,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a Request for Information (RFI) issued by the US Department of Education regarding the evaluation of the Individuals with Disabilities Education Act (IDEA). It seeks public input on research priorities and data collection methods, including a specific question on optimizing data for 'Super Intelligence' applications. It does not impose binding regulatory duties on AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Monitor for future binding regulations or final reports resulting from this RFI that may establish data standards or evaluation frameworks relevant to AI applications in education.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "6f2bc598bb820aa68bb492f6966ee17203fedeefc98717797e8850c3de3437fb",
+    "source_text_sha256": "4548609d4712d25381d8d0ee92a0865a0f1fdf9d499e36080b7e948f398d8b17",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "extracted text",
+      "selection_status": "selected",
+      "selector": "full-text",
+      "text_chars": 9501,
+      "ranges": [
+        [
+          0,
+          9501
+        ]
+      ],
+      "passages_total": 1,
+      "passages_read": 1,
+      "passages_left": 0,
+      "selected_text_sha256": "4548609d4712d25381d8d0ee92a0865a0f1fdf9d499e36080b7e948f398d8b17"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/13/2026-23155.html",
+    "document_status": "consultation",
+    "ai_relevance": "relevant",
+    "evidence_quote": "How might data collection and dissemination be optimized for future Super Intelligence or SI (formerly referred to as Artificial Intelligence or AI) applications and uses?",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_4791b5402d01421c6730e85a",
+    "timestamp": "2026-11-14T06:00:55.920898+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (Executive Orders)",
+    "jurisdiction": "United States",
+    "title": "Presidential Determination Pursuant to Section 1245(d)(4)(B) and (C) of the National Defense Authorization Act for Fiscal Year 2012",
+    "url": "https://www.federalregister.gov/documents/2026/11/13/2026-23233/presidential-determination-pursuant-to-section-1245d4b-and-c-of-the-national-defense-authorization",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": "section 1245(d)(4)(B) and (C) of the National Defense Authorization Act for Fiscal Year 2012",
+    "summary": "The document is a US Presidential Determination regarding the supply of petroleum from countries other than Iran. It contains no provisions, obligations, or references relevant to AI operators or UK regulatory compliance.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "No action required; document is outside the scope of AI regulatory monitoring.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "0ea7556b005173cd608c3a21b5cd7070f8e2b127518bfb809b69f82d008f8a27",
+    "source_text_sha256": "8c337cbdb91fdbc3dfb47e1f803a2aa17fcdca9498cc43f6a6e43c5bfb8f0990",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "extracted text",
+      "selection_status": "selected",
+      "selector": "full-text",
+      "text_chars": 1360,
+      "ranges": [
+        [
+          0,
+          1360
+        ]
+      ],
+      "passages_total": 1,
+      "passages_read": 1,
+      "passages_left": 0,
+      "selected_text_sha256": "8c337cbdb91fdbc3dfb47e1f803a2aa17fcdca9498cc43f6a6e43c5bfb8f0990"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/13/2026-23233.html",
+    "document_status": "binding",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "I determine, pursuant to section 1245(d)(4)(B) and (C) of the National Defense Authorization Act for Fiscal Year 2012, Public Law 112-81 , and consistent with prior determinations, that there is a sufficient supply of petroleum and petroleum products from countries other than Iran to permit a significant reduction in the volume of petroleum and petroleum products purchased from Iran by or through foreign financial institutions.",
+    "assessment_error": null
+  },
+  {
     "id": "alert_06351994efadd225956c8cca",
     "timestamp": "2026-11-13T06:02:25.118899+00:00",
     "alert_schema_version": 2,
@@ -3309,34 +3672,6 @@
     "source_text_sha256": "4a8447f5a0993387ea2590db8e8be6d50b8a8e431f1cee6debd1dc45640047b9",
     "assessment_version": 3,
     "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/08/26/2026-17442.html",
-    "document_status": "unassessed",
-    "ai_relevance": "unassessed",
-    "evidence_quote": null,
-    "assessment_error": "document exceeds model input budget; manual review required"
-  },
-  {
-    "id": "alert_160517d2722fcc9a5ad8d931",
-    "timestamp": "2026-11-05T06:00:57.647645+00:00",
-    "alert_schema_version": 2,
-    "source": "US Federal Register (AI Rules & Notices)",
-    "jurisdiction": "United States",
-    "title": "Maximizing Efficiencies in Universal Service Administration",
-    "url": "https://www.federalregister.gov/documents/2026/08/31/2026-17761/maximizing-efficiencies-in-universal-service-administration",
-    "source_queue_priority": 1,
-    "substantive_priority": null,
-    "is_operator_duty_shift": false,
-    "duty_type": "none",
-    "statutory_reference": null,
-    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): Maximizing Efficiencies in Universal Service Administration",
-    "denominator_disclosed": "unassessed",
-    "actionable_trigger": "Review the captured primary document.",
-    "evaluation_method": "unassessed",
-    "model": "qwen3.8:latest",
-    "reviewed": false,
-    "source_sha256": "978bf8bd7945d3beaa2ccf09e14aaa1bfabf6d600c6f472d9707aa1ce0b1110e",
-    "source_text_sha256": "640c895a637c3bfbf00d5f8ee04c5621bad85598d7ac09283fb5344a414143d8",
-    "assessment_version": 3,
-    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/08/31/2026-17761.html",
     "document_status": "unassessed",
     "ai_relevance": "unassessed",
     "evidence_quote": null,
