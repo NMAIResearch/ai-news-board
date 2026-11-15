@@ -1,5 +1,333 @@
 [
   {
+    "id": "alert_b49e6fa22d0d426c19c5271b",
+    "timestamp": "2026-11-15T06:01:59.888541+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Accreditation, Innovation, and Modernization: The Secretary's Recognition of Accrediting Agencies: Institutional Eligibility Under the Higher Education Act of 1965, as Amended, Student Assistance General Provisions",
+    "url": "https://www.federalregister.gov/documents/2026/08/20/2026-17001/accreditation-innovation-and-modernization-the-secretarys-recognition-of-accrediting-agencies",
+    "source_queue_priority": 1,
+    "substantive_priority": 4,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a proposed rule regarding higher education accreditation standards. It contains non-binding guidance encouraging the responsible use of AI in research and teaching but does not establish current binding obligations for AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Monitor final rule publication for any binding requirements on institutional AI policies.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "ab0c093ce9173da70bed1b9549c7e475216201f4e3cbd6ae040c6795ea9681fe",
+    "source_text_sha256": "ff029e3f141941a9e0b5d79c0e0a77f9f40a62c0fa324135369030a59fc84b07",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 493529,
+      "ranges": [
+        [
+          0,
+          687
+        ],
+        [
+          7351,
+          8738
+        ],
+        [
+          11727,
+          12908
+        ],
+        [
+          36211,
+          37416
+        ],
+        [
+          42461,
+          43665
+        ],
+        [
+          135098,
+          136413
+        ],
+        [
+          141083,
+          142310
+        ],
+        [
+          161978,
+          163210
+        ],
+        [
+          175374,
+          176524
+        ],
+        [
+          194655,
+          196010
+        ],
+        [
+          248889,
+          249625
+        ]
+      ],
+      "passages_total": 23,
+      "passages_read": 11,
+      "passages_left": 12,
+      "selected_text_sha256": "77e83c5e244e63ddaef76060cc513529c1874e4fc387022dccb91cb346631c41"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/08/20/2026-17001.html",
+    "document_status": "proposed",
+    "ai_relevance": "relevant",
+    "evidence_quote": "We encourage the use of artificial intelligence to enhance productivity, streamline processes, and make teaching more efficient. However, we also believe agencies and institutions must ensure that artificial intelligence is not used by faculty to supplant teaching and instruction.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_99a6d457cf81e324b3d96060",
+    "timestamp": "2026-11-15T06:01:43.406851+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (Executive Orders)",
+    "jurisdiction": "United States",
+    "title": "Declaring a National Emergency To Secure the United States Bulk-Power System",
+    "url": "https://www.federalregister.gov/documents/2026/08/31/2026-17843/declaring-a-national-emergency-to-secure-the-united-states-bulk-power-system",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a US Executive Order declaring a national emergency regarding the bulk-power system. It cites risks from foreign equipment and cyber threats but does not impose specific binding obligations on AI operators within the provided text.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Monitor for subsequent regulations or specific directives under this Executive Order that may impose technical or supply chain requirements on critical infrastructure components.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "fbd5fff4fe0699288f0b65021446cc8dd9d08a94c376413b9a19b6fb6d2da372",
+    "source_text_sha256": "2cd3f0dc0045694d0b680943b47d08f04239f7aa6f94aa7136a5fff482fd728e",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 16098,
+      "ranges": [
+        [
+          0,
+          516
+        ],
+        [
+          900,
+          2019
+        ]
+      ],
+      "passages_total": 2,
+      "passages_read": 2,
+      "passages_left": 0,
+      "selected_text_sha256": "de93dd7b42b8d94744d4692414f28a6882b80b4434002439e395bb0e1255d19b"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/08/31/2026-17843.html",
+    "document_status": "binding",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "The minimal restrictions on acquisition or operation in the United States of foreign-produced bulk-power system electric equipment augment the ability of some foreign entities to create and exploit vulnerabilities in such equipment",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_cf7bf9b43b314453acb93ef0",
+    "timestamp": "2026-11-15T06:01:29.749204+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Regulation Crypto Assets",
+    "url": "https://www.federalregister.gov/documents/2026/08/21/2026-17183/regulation-crypto-assets",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document outlines proposed regulatory frameworks for crypto assets, including fundraising exemptions and information collection burdens, but contains no binding obligations or specific duties applicable to AI operators.",
+    "denominator_disclosed": "yes",
+    "actionable_trigger": "No immediate action required as the document pertains to crypto asset regulation and does not impose duties on AI operators.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "5c1054715017ecef76c1195438158e5160d81f070aeefc8e18285cfe08755881",
+    "source_text_sha256": "dd10ef56bf8b056d8799a75d9f17221c199c77789ef38369c349ee95b2529d34",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 733268,
+      "ranges": [
+        [
+          0,
+          716
+        ],
+        [
+          320941,
+          322177
+        ],
+        [
+          464185,
+          465574
+        ],
+        [
+          635167,
+          636385
+        ],
+        [
+          714719,
+          715823
+        ]
+      ],
+      "passages_total": 5,
+      "passages_read": 5,
+      "passages_left": 0,
+      "selected_text_sha256": "f8b62b6584bcea407e18f5333ac3450aec09bc8659643cc366aa34a1423f4da3"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/08/21/2026-17183.html",
+    "document_status": "proposed",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "Using an international sample of 2,113 ICOs from March 2014 through October 2018, the study found that almost all whitepapers provided at least some narrative description of the venture's primary business purpose",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_9dbd163492c14987cbd77273",
+    "timestamp": "2026-11-15T06:01:15.780752+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Critical Position Pay Authority",
+    "url": "https://www.federalregister.gov/documents/2026/08/26/2026-17442/critical-position-pay-authority",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a US Federal Register final rule from the Office of Personnel Management regarding critical position pay authority. It is not a binding obligation for AI operators, nor does it impose transparency, labelling, or risk assessment duties. It is a US domestic HR policy measure.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "No action required; document is outside the monitored AI scope.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "78569acd9cc75cd417f395652dfbe9582a43cd92f0320fd9c0a4ac0f74e7c25f",
+    "source_text_sha256": "4a8447f5a0993387ea2590db8e8be6d50b8a8e431f1cee6debd1dc45640047b9",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 29930,
+      "ranges": [
+        [
+          0,
+          657
+        ],
+        [
+          17769,
+          19111
+        ]
+      ],
+      "passages_total": 2,
+      "passages_read": 2,
+      "passages_left": 0,
+      "selected_text_sha256": "8f8802f682c6bea020a1c68725fecd28c6b8aabded6d05f8490055ecb1c4efa8"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/08/26/2026-17442.html",
+    "document_status": "binding",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "OPM is waiving the 30-day delayed effective date of this final rule pursuant to 5 U.S.C. 553(d)(1) , as this rule relieves restrictions that are not required by statute.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_63f3b90dff8c20581a52cbc5",
+    "timestamp": "2026-11-15T06:01:03.249820+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (Executive Orders)",
+    "jurisdiction": "United States",
+    "title": "Presidential Determination Concerning Wildfire Suppression Activities in the United States",
+    "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23349/presidential-determination-concerning-wildfire-suppression-activities-in-the-united-states",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": "section 313 of the Federal Water Pollution Control Act, as amended ( 33 U.S.C. 1323 )",
+    "summary": "The document is a US Presidential Determination exempting federal wildfire suppression activities from Clean Water Act requirements. It contains no provisions, obligations, or references relevant to AI operators or UK regulatory compliance.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "No action required; document is outside the scope of AI regulatory monitoring.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "3f3b29a4c1c7a52be965d99944eeceb26c704a85c98c047bc3e9d0e95c3efb08",
+    "source_text_sha256": "48b6a04f6146611c452c18ce5567da9bb8986c1914549f61c22c81f59a7aa9d9",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "extracted text",
+      "selection_status": "selected",
+      "selector": "full-text",
+      "text_chars": 2758,
+      "ranges": [
+        [
+          0,
+          2758
+        ]
+      ],
+      "passages_total": 1,
+      "passages_read": 1,
+      "passages_left": 0,
+      "selected_text_sha256": "48b6a04f6146611c452c18ce5567da9bb8986c1914549f61c22c81f59a7aa9d9"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/16/2026-23349.html",
+    "document_status": "binding",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "I determine that it is in the paramount interest of the United States to exempt firefighting activities, including the aerial use, deployment, and discharge of fire retardants, conducted by the United States Forest Service, the Department of the Interior, and any other executive departments and agencies (agencies) and their contractors (aspects of which are the subject of litigation in Forest Service Employees for Environmental Ethics v. U.S. Forest Service, No. CV-22-168-M-DLC (D. Mont.)) from Federal, State, interstate, and local requirements, administrative authority, and process and sanctions respecting the control and abatement of water pollution.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_52bdcad54cb195dcaf5ac11f",
+    "timestamp": "2026-11-15T06:00:46.067258+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (Executive Orders)",
+    "jurisdiction": "United States",
+    "title": "Veterans Day, 2026",
+    "url": "https://www.federalregister.gov/documents/2026/11/16/2026-23348/veterans-day-2026",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a US Presidential Proclamation designating November 11, 2026, as Veterans Day. It contains no regulatory obligations, technical standards, or duties applicable to AI operators.",
+    "denominator_disclosed": "no",
+    "actionable_trigger": "No action required; document is outside the scope of AI regulatory monitoring.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "a9d747d5225b7e9ec02e369dc693ab008e22f42ef675e8b367587d6a98b8028b",
+    "source_text_sha256": "c44c74c241193181d2473e7211af9e4ee62b40e33b3a4780e8610600ba0a8a51",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "extracted text",
+      "selection_status": "selected",
+      "selector": "full-text",
+      "text_chars": 4442,
+      "ranges": [
+        [
+          0,
+          4442
+        ]
+      ],
+      "passages_total": 1,
+      "passages_read": 1,
+      "passages_left": 0,
+      "selected_text_sha256": "c44c74c241193181d2473e7211af9e4ee62b40e33b3a4780e8610600ba0a8a51"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/16/2026-23348.html",
+    "document_status": "binding",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "NOW, THEREFORE, I, DONALD J. TRUMP, President of the United States of America, do hereby proclaim November 11, 2026, as Veterans Day.",
+    "assessment_error": null
+  },
+  {
     "id": "alert_e91eeacbff35fb64977d6611",
     "timestamp": "2026-11-14T06:02:19.745429+00:00",
     "alert_schema_version": 2,
@@ -3616,62 +3944,6 @@
     "source_text_sha256": "59d5cdb31d8e66c9fc37f498e934b7b64f352ff12c43dca835a8d697f632c169",
     "assessment_version": 3,
     "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/08/17/2026-16727.html",
-    "document_status": "unassessed",
-    "ai_relevance": "unassessed",
-    "evidence_quote": null,
-    "assessment_error": "document exceeds model input budget; manual review required"
-  },
-  {
-    "id": "alert_99a6d457cf81e324b3d96060",
-    "timestamp": "2026-11-05T06:01:00.522871+00:00",
-    "alert_schema_version": 2,
-    "source": "US Federal Register (Executive Orders)",
-    "jurisdiction": "United States",
-    "title": "Declaring a National Emergency To Secure the United States Bulk-Power System",
-    "url": "https://www.federalregister.gov/documents/2026/08/31/2026-17843/declaring-a-national-emergency-to-secure-the-united-states-bulk-power-system",
-    "source_queue_priority": 1,
-    "substantive_priority": null,
-    "is_operator_duty_shift": false,
-    "duty_type": "none",
-    "statutory_reference": null,
-    "summary": "Unassessed capture from US Federal Register (Executive Orders): Declaring a National Emergency To Secure the United States Bulk-Power System",
-    "denominator_disclosed": "unassessed",
-    "actionable_trigger": "Review the captured primary document.",
-    "evaluation_method": "unassessed",
-    "model": "qwen3.8:latest",
-    "reviewed": false,
-    "source_sha256": "fbd5fff4fe0699288f0b65021446cc8dd9d08a94c376413b9a19b6fb6d2da372",
-    "source_text_sha256": "2cd3f0dc0045694d0b680943b47d08f04239f7aa6f94aa7136a5fff482fd728e",
-    "assessment_version": 3,
-    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/08/31/2026-17843.html",
-    "document_status": "unassessed",
-    "ai_relevance": "unassessed",
-    "evidence_quote": null,
-    "assessment_error": "document exceeds model input budget; manual review required"
-  },
-  {
-    "id": "alert_9dbd163492c14987cbd77273",
-    "timestamp": "2026-11-05T06:00:59.631482+00:00",
-    "alert_schema_version": 2,
-    "source": "US Federal Register (AI Rules & Notices)",
-    "jurisdiction": "United States",
-    "title": "Critical Position Pay Authority",
-    "url": "https://www.federalregister.gov/documents/2026/08/26/2026-17442/critical-position-pay-authority",
-    "source_queue_priority": 1,
-    "substantive_priority": null,
-    "is_operator_duty_shift": false,
-    "duty_type": "none",
-    "statutory_reference": null,
-    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): Critical Position Pay Authority",
-    "denominator_disclosed": "unassessed",
-    "actionable_trigger": "Review the captured primary document.",
-    "evaluation_method": "unassessed",
-    "model": "qwen3.8:latest",
-    "reviewed": false,
-    "source_sha256": "78569acd9cc75cd417f395652dfbe9582a43cd92f0320fd9c0a4ac0f74e7c25f",
-    "source_text_sha256": "4a8447f5a0993387ea2590db8e8be6d50b8a8e431f1cee6debd1dc45640047b9",
-    "assessment_version": 3,
-    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/08/26/2026-17442.html",
     "document_status": "unassessed",
     "ai_relevance": "unassessed",
     "evidence_quote": null,

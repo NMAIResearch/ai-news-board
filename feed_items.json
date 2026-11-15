@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-14 06:20 UTC",
+ "fetched": "2026-11-15 06:20 UTC",
  "items": [
   {
    "entity": "",
@@ -17,19 +17,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 4,
     "total": 4
    },
-   "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "6e2d1d80417a7751497c12d2cca64be984027db8bc33639e1c99d8a9d8fac3cc",
    "evidence_hash": "712aba92acc104d54e7fea8558a32957fc7f591d8e146c8e4402a91f17520788",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Nvidia",
@@ -63,19 +63,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 3,
     "total": 3
    },
-   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "32d8e93ae6fd81c41d3fb682226a8635a5ec9fef1da07b53682ce67cfcf93211",
    "evidence_hash": "85c0a6aaf58b7e930dc4a97de76d9f66ddea0b017a8bc830bd5c4919af198e99",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Nvidia",
@@ -103,6 +103,210 @@
   },
   {
    "entity": "Nvidia",
+   "headline": "Where was Nvidia’s security team?",
+   "date": "Sun, 15 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 3,
+    "total": 3
+   },
+   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+   "content_hash": "8e360b09bcf9707c137ee33de49fd4b87070e774c0a43a20cc03e04371e2f4a1",
+   "evidence_hash": "b98a2fbbe0caf3719820f0d7ed23a180c47ce56d3a6d2f40948ae7736cfd4c10",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 25
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    },
+    {
+     "name": "Microsoft",
+     "count": 1
+    },
+    {
+     "name": "xAI",
+     "count": 1
+    },
+    {
+     "name": "Salesforce",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "nvidia",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "xAI",
+   "headline": "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang",
+   "date": "Sat, 14 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 2,
+    "total": 2
+   },
+   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+   "content_hash": "7ed6d21869a189810961710ada122d3d7dda84edbd91e64a20b7db7eaa266a5a",
+   "evidence_hash": "6ec61b2b1042fe4b385900db028f31d045dbf013845c4c7874d5f19d2ddd7586",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 18
+    },
+    {
+     "name": "xAI",
+     "count": 4
+    }
+   ],
+   "publisher_topic": "Amjad Masad",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "The AI graveyard: a running list of projects and startups that didn’t make it",
+   "date": "Sat, 14 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "Y",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 12,
+    "total": 12
+   },
+   "label_evidence": "model read all 12 figure-sentence(s); 0 of 12 figure-sentence(s) matched a base cue",
+   "content_hash": "16cec181d2142a2e6467640609aaa9e3705705bfd11a68762fe1e74f2e08acce",
+   "evidence_hash": "250142ce25cd945c8c3537172ba6079e405c68225bd75cd18aea648acb31f2dd",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "OpenAI",
+     "count": 9
+    },
+    {
+     "name": "Google",
+     "count": 6
+    },
+    {
+     "name": "Microsoft",
+     "count": 6
+    },
+    {
+     "name": "Apple",
+     "count": 5
+    },
+    {
+     "name": "Nvidia",
+     "count": 4
+    },
+    {
+     "name": "Anthropic",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "Microsoft",
+   "entity_basis": "tags-name-2-orgs"
+  },
+  {
+   "entity": "Nvidia",
+   "headline": "Asian governments react to Nvidia CEO Jensen Huang’s exit",
+   "date": "Sat, 14 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 2,
+    "total": 2
+   },
+   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+   "content_hash": "3c7a06076af9d7ddab101487785ce19831d44e7e97c0904d99b688afe5efcc71",
+   "evidence_hash": "4e75765b141a1577160f7941b1506149e9e75c053d8ddb17665e0e52639c65fa",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 29
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    },
+    {
+     "name": "Microsoft",
+     "count": 1
+    },
+    {
+     "name": "xAI",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Jensen Huang",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Nvidia",
    "headline": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
    "date": "Fri, 13 Nov 2026",
    "topic": "",
@@ -117,19 +321,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 7 figure-sentence(s); 0 of 7 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 7,
     "total": 7
    },
-   "label_evidence": "model read all 7 figure-sentence(s); 0 of 7 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "592cb7c2549dd8fd822092c46a6f3d7c892a574dff852090f489d4f7a546bf1d",
    "evidence_hash": "1f4e0615b1a20922ba83b506f3a32593c9bd01e1a9636514e0a5c65d3e60f9b0",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Nvidia",
@@ -175,19 +379,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 1,
     "total": 1
    },
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "7a90a203becdedef31202ef4bca631857c45e1cc2f82d996c06576d3241e2fb2",
    "evidence_hash": "e76f648e5ee6f2b8686648b7b8c4938ef8382427becd35b448182503d2a74698",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -233,19 +437,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 7 figure-sentence(s); 1 of 7 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 7,
     "total": 7
    },
-   "label_evidence": "model read all 7 figure-sentence(s); 1 of 7 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "6d84b7b9a8215c8fdf621fde4d4fdc66cfcfcbc6fe9c97ed7cf039c684be5e72",
    "evidence_hash": "f6e1ac903ed436600f612909e25d9f478a5fb6bc9a5792884104f7eba8a9517a",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Nvidia",
@@ -272,17 +476,17 @@
    "entity_basis": "headline"
   },
   {
-   "entity": "",
-   "headline": "ElevenLabs’ new app combines meeting note-taking and dictation for teams",
-   "date": "Fri, 13 Nov 2026",
+   "entity": "OpenAI",
+   "headline": "The OpenAI board member who fired Sam Altman says we still can’t trust AI CEOs",
+   "date": "2026-11-13T19:06",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
      "source_type": "trade-press",
      "source_tier": 3
     }
@@ -290,181 +494,101 @@
    "rating": "ok",
    "evidence_method": "local-model",
    "evidence_coverage": {
-    "seen": 2,
-    "total": 2
+    "seen": 13,
+    "total": 13
    },
-   "label_evidence": "model read all 2 figure-sentence(s); 1 of 2 figure-sentence(s) matched a base cue",
-   "content_hash": "4b7d2d83060a531af727bbea210e3e888f458251f9f55e70c574d2c8314b3d51",
-   "evidence_hash": "82530b1d6b242c96bc0899d4e0e044cb8a0ad818a0bc3bf0dd8e9e53ba73ac71",
+   "label_evidence": "model read all 13 figure-sentence(s); 0 of 13 figure-sentence(s) matched a base cue",
+   "content_hash": "9be1290004b541c18202c16040f651efb13bb9e53ab1cf462418d6b8da63c143",
+   "evidence_hash": "119e7fc440c2af61cdc3e0dea85630fc722e4e2c7075bf8065ef3527917d9e7e",
    "label_schema_version": 2,
    "auto_labelled": true,
    "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
    "mentions": [
     {
-     "name": "Nvidia",
-     "count": 4
+     "name": "OpenAI",
+     "count": 16
     },
     {
      "name": "Anthropic",
-     "count": 1
+     "count": 8
     },
     {
-     "name": "Microsoft",
-     "count": 1
+     "name": "Google",
+     "count": 5
     },
     {
-     "name": "xAI",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "ElevenLabs",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Nvidia",
-   "headline": "Israel’s VCs see opportunity for challengers in Nvidia’s turmoil",
-   "date": "Fri, 13 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/13/israels-vcs-see-opportunity-for-challengers-in-nvidias-turmoil/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 2,
-    "total": 2
-   },
-   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
-   "content_hash": "300805d8d953a63e68fe5665bc19d0a818859e14c1b64eaff9c1b15462f1dca3",
-   "evidence_hash": "1c13e0bc7690f6488f1822780bf6a44261c946d8d3c113564b983c391d736b55",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Nvidia",
-     "count": 27
-    },
-    {
-     "name": "Microsoft",
+     "name": "Google DeepMind",
      "count": 2
     },
     {
-     "name": "Anthropic",
+     "name": "Nvidia",
+     "count": 2
+    },
+    {
+     "name": "Meta",
      "count": 1
+    }
+   ],
+   "publisher_topic": "Anthropic",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Nvidia",
+   "headline": "Jensen Huang and the decline of the visionary showman founder CEO",
+   "date": "2026-11-14T10:12",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "Y",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 13,
+    "total": 13
+   },
+   "label_evidence": "model read all 13 figure-sentence(s); 0 of 13 figure-sentence(s) matched a base cue",
+   "content_hash": "b9c278a241b6f817e80b7539be16609880e2c0822eaf2ad9ea2d197647209f53",
+   "evidence_hash": "93132e5a7d940f25c85f781aab11d79a8c2cdcb8bc01d59f84c7349498b49200",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 70
     },
     {
      "name": "Apple",
-     "count": 1
-    },
-    {
-     "name": "xAI",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Jensen Huang",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Nvidia",
-   "headline": "Jensen Huang didn’t show confidence in his successor, report says",
-   "date": "Fri, 13 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/13/jensen-huang-didnt-show-confidence-in-his-successor-report-says/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 3,
-    "total": 3
-   },
-   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
-   "content_hash": "385a50ed0d00ade3827f311bcc28bac5ebe71669c31180e889f6213784a366b1",
-   "evidence_hash": "a53db6734d297c881e7459d70c6fb15517e765e7d91e58161d6826ac34be8f81",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Nvidia",
-     "count": 23
-    },
-    {
-     "name": "OpenAI",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "In Brief",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Nvidia",
-   "headline": "Democrats launch Nvidia investigation, write scathing letter on Huang’s ‘scheme’ with Trump",
-   "date": "Thu, 12 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "partial",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 3,
-    "total": 3
-   },
-   "label_schema_version": 2,
-   "content_hash": "dfb561537a435babaea6c6bb8b4cae5f377d0da629d0b78b02734b00a10d7895",
-   "evidence_hash": "663f9aa3018b2948afc8bb3e959913d9674c36a4efa326c67710648f5a53a90e",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Nvidia",
-     "count": 28
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
+     "count": 6
     },
     {
      "name": "Microsoft",
-     "count": 1
+     "count": 3
+    },
+    {
+     "name": "Google",
+     "count": 2
+    },
+    {
+     "name": "Meta",
+     "count": 2
     },
     {
      "name": "xAI",
-     "count": 1
+     "count": 2
     }
    ],
-   "publisher_topic": "Jensen Huang",
+   "publisher_topic": "Nvidia",
    "entity_basis": "headline"
   },
   {
@@ -483,18 +607,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 3072 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 3072 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "4a0e78b0ce49bdc30f4fbb45c00ebf3e76c331a191956aa1a2e870cd85d4bb92",
    "evidence_hash": "b326d66cbdd21f4057b34e8313100eacaeeb8b3b05fd54ae17dd4c58a36ce804",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Amazon",
@@ -536,18 +660,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 2614 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 2614 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "c825a1b9229419553c61717b7e2978f9b5ef427ab5d8b5d0962d2baf892b0ef8",
    "evidence_hash": "2c325c8b1448117d9dc717e6e6531465f2462696dabfd8993f0200cb9f91c40d",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -593,18 +717,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 2932 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 2932 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "d80228ac2e0447ac494688edd3580703bc8e5178e47be202db780c13c803cbe7",
    "evidence_hash": "5c2fdea2760a39823d844d485add07cbb8fb5186317c198f9e296296bfa5f323",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Nvidia",
@@ -642,19 +766,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 2,
     "total": 2
    },
-   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "770e78a430f2e52fcd7f4c1c5b27f7634c125bef7ae2ef9e8028295fd85d6060",
    "evidence_hash": "27f196ee5c85e7f1b1f92ccabe0534241af79f8d3293979d220483d020bff6a8",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Anthropic",
@@ -700,18 +824,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 2542 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 2542 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "2470d2458d3e0d5d4f59e3149c57fa0b654bbaee5e814e86815eb086ea59480a",
    "evidence_hash": "a0b46f7673ecaf34e78a0a5d35d48f3772e4cb7abf6b7bf6955c838e882040e5",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Nvidia",
@@ -829,106 +953,6 @@
    "entity_basis": "unresolved"
   },
   {
-   "entity": "",
-   "headline": "Oh, Palantir is ‘progressive’ now, is it?",
-   "date": "2026-11-12T13:13",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/1032126/alex-baby-you-were-recorded-on-video",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 1,
-    "total": 1
-   },
-   "label_schema_version": 2,
-   "content_hash": "f0f3e8002009a336f46b18a9fa8762d3652302f4cf0db08678b00e7a93a8c266",
-   "evidence_hash": "7b638b0fde21c28c48df4fa3414c4e4b0a41fd3722cd7d1708850ea3c839637d",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Nvidia",
-     "count": 2
-    },
-    {
-     "name": "xAI",
-     "count": 2
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    },
-    {
-     "name": "Apple",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Politics",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Nvidia",
-   "headline": "The Jensen Huang scandal is hardly over",
-   "date": "2026-11-13T23:51",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "partial",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/1032069/jensen-huang-resignation-affair-chips-smuggling",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model read all 5 figure-sentence(s); 0 of 5 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 5,
-    "total": 5
-   },
-   "label_schema_version": 2,
-   "content_hash": "b6a2a4164a177d9458b71bb1de759868173e23f6dc35367072910b87bcb027c2",
-   "evidence_hash": "ae2faa24e54283e79ee8e5866e487688a344993916bb7e9f363cfb2abafaacfc",
-   "label_source": "machine",
-   "rating": "ok",
-   "auto_labelled_by": "gemma4:12b",
-   "mentions": [
-    {
-     "name": "Nvidia",
-     "count": 60
-    },
-    {
-     "name": "Apple",
-     "count": 2
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    },
-    {
-     "name": "xAI",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Nvidia",
-   "entity_basis": "headline"
-  },
-  {
    "entity": "OpenAI",
    "headline": "OpenAI board member worries an AI \"takeover\" of society could be months away",
    "date": "Fri, 13 Nov 2026",
@@ -944,19 +968,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 1,
     "total": 1
    },
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "d2d39981a345270271540b4cf9e311e590f7510cac7c2fcddfbc3b289a14ff78",
    "evidence_hash": "25efce4806f33bfb6aeae056de4d0be1651a276ae06e3d99f1a937c47aff8a41",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Hugging Face",
@@ -1028,19 +1052,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 4 figure-sentence(s); 2 of 4 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 4,
     "total": 4
    },
-   "label_evidence": "model read all 4 figure-sentence(s); 2 of 4 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "3dbc43449677f86f21ed35be5628dbd17e8c0397bf740db8c7a39941f690a4d0",
    "evidence_hash": "a2bc8ab20007f3552d26ed1c4e99542aecee80234abfa3ad72b6d621b55f1dba",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "unresolved"
@@ -1478,19 +1502,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "trusted",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 1,
     "total": 1
    },
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "1a32a0ceb36c3c147c5364c16d25cd77cf377712b6fefd3afaf62b87d15a846b",
    "evidence_hash": "a1c4c6eec7e8c58e32c1d0d8d13d70f1af645de44b5b91e1e387e5b8d9c62ca2",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "trusted",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "site"
@@ -1628,361 +1652,6 @@
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "site"
-  },
-  {
-   "entity": "Nvidia",
-   "headline": "Nvidia Allegedly Engineered Scarcity by Funding AI Startups to Buy Its GPUs",
-   "date": "Sat, 14 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techpowerup.com",
-     "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 14,
-    "total": 14
-   },
-   "label_evidence": "model read all 14 figure-sentence(s); 0 of 14 figure-sentence(s) matched a base cue",
-   "content_hash": "b0085cd4f5af0b345ad395d21cc9c5bd034d104967e020601799e4c5e6b467c3",
-   "evidence_hash": "dad7bb6fa9fd2fc49104eea237a1e76fad5adbebf0cc9f374f9b82d8a118a3d8",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Nvidia",
-     "count": 23
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Anthropic",
-   "headline": "Anthropic IPO",
-   "date": "Thu, 12 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "ipo.anthropic.com",
-     "url": "https://ipo.anthropic.com/us/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 1,
-    "total": 1
-   },
-   "label_schema_version": 2,
-   "content_hash": "cb50e60ce01035d7eb72e7118734ac648fef50fcf0b954d76ff35e517b3ec992",
-   "evidence_hash": "0ad94f52dd30aa698001568863a93d53268a885a16ba037deab622b783bb8c6b",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "United Airlines bans AI agents from booking flights on behalf of travelers",
-   "date": "2026-11-11",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "cbsnews.com",
-     "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 2651 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "4f35c36e93ef05acb1908a80d0ab5ff4f2df33cc7e48cb56bb19ca67811199fd",
-   "evidence_hash": "1d20e36863232b5091b15bf2b4dfeb173054c93182a41330282ba8f49b3a5497",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 2
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "United Airlines",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "No AI Slop: A Manifesto",
-   "date": "Fri, 13 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "slopmanifesto.com",
-     "url": "https://www.slopmanifesto.com/",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 1,
-    "total": 1
-   },
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
-   "content_hash": "53ae786a2a9c756536fbfdb94ab817928d10a70ab8e544d9e966cd8674a93ef8",
-   "evidence_hash": "b6f5ba1e3e087ba34bc31ff7c2a64d7136627e371b2e613dd452fac6dae42670",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "The avalanche that hit math is coming for AI development",
-   "date": "2026-11-13",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "dwarkesh.com",
-     "url": "https://www.dwarkesh.com/p/rsi",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 48,
-    "total": 48
-   },
-   "label_evidence": "model read all 48 figure-sentence(s); 3 of 48 figure-sentence(s) matched a base cue",
-   "content_hash": "7389b872f4dae281af0d96c818ebbf57e5c16fa2f4f20a70efa62379ab35d864",
-   "evidence_hash": "eebc07751c8c27a3bf677b6d7b00e412bfbdf2a165c077a956dca15f3bc97de1",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Anthropic",
-     "count": 6
-    },
-    {
-     "name": "OpenAI",
-     "count": 4
-    },
-    {
-     "name": "Meta",
-     "count": 2
-    },
-    {
-     "name": "Nvidia",
-     "count": 1
-    },
-    {
-     "name": "Apple",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "OpenAI disbands its robotics team as its general models start running robots",
-   "date": "2026-11-13",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "fortune.com",
-     "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 5,
-    "total": 5
-   },
-   "label_evidence": "model read all 5 figure-sentence(s); 1 of 5 figure-sentence(s) matched a base cue",
-   "content_hash": "05519a9d139f34e9c867178c7da2d416db72f2d765c0545f4fedeb0b9f5d9fb2",
-   "evidence_hash": "9af3e6d51102881503d932a7f9b4111d65470653602c322861a7d0f897167dc9",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 24
-    },
-    {
-     "name": "Nvidia",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "OpenAI",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
-   "date": "2026-11-13",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theguardian.com",
-     "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 8,
-    "total": 8
-   },
-   "label_evidence": "model read all 8 figure-sentence(s); 1 of 8 figure-sentence(s) matched a base cue",
-   "content_hash": "e15d43fcce4268d65cefa22ede941890b341b82b18f7a5c350101f88e4be0ef3",
-   "evidence_hash": "9742dc6c19184b712d0aacea85287d7db0258ca94f04f0bfa717a6c28d514a59",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [],
-   "publisher_topic": "Mathematics",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Google",
-   "headline": "Why is Google cutting off Search from AI-free schools? Here are some theories",
-   "date": "2026-11-13",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "text.npr.org",
-     "url": "https://text.npr.org/nx-s1-6029408",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_evidence": "article not fetched (robots-disallowed)",
-   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
-   "date": "2026-11-13",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "youtube.com",
-     "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_evidence": "no figure in 280 chars of article text",
-   "content_hash": "42ff56a257c417384cb76af91556aebfaf68e6339ee49acbc2d5d760a417fd6e",
-   "evidence_hash": "cca445ce22ad8bc822fc0d6afa66ab4d84db1e79969ca14869f6b428ee15b730",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "video",
-   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -2210,6 +1879,51 @@
   },
   {
    "entity": "",
+   "headline": "Convergent Interests: How America Could Undermine Its Own AI Advantage",
+   "date": "Sat, 14 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "cset.georgetown.edu",
+     "url": "https://cset.georgetown.edu/article/convergent-interests-how-america-could-undermine-its-own-ai-advantage/",
+     "source_type": "independent",
+     "source_tier": 2
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 14607 chars of article text",
+   "content_hash": "74bea42b1324eef0d09c4b1b9423f80bfb9209dfdcebe70606887eebaa73f67f",
+   "evidence_hash": "a2af88cec6aa7878aeddc6bdb5338e187cdb53de46817511aff53ea3710f1efb",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 3
+    },
+    {
+     "name": "NIST",
+     "count": 1
+    },
+    {
+     "name": "FTC",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "China",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
    "headline": "AI Kill Switches: What Policymakers Should Know",
    "date": "Thu, 12 Nov 2026",
    "topic": "",
@@ -2422,38 +2136,6 @@
   },
   {
    "entity": "",
-   "headline": "Should We Track AI Chips?",
-   "date": "Tue, 06 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "cset.georgetown.edu",
-     "url": "https://cset.georgetown.edu/article/should-we-track-ai-chips/",
-     "source_type": "independent",
-     "source_tier": 2
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 4
-   },
-   "label_schema_version": 2,
-   "content_hash": "ceb89952093cd641b1453272b8fa2c1df981922a988a6bbc9f92580ca71cdfac",
-   "evidence_hash": "97e88a95883da4f074a0c8eb7d7532380f147326aa79a3886f9a12b05236d646",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "China",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
    "headline": "Lawfare Daily: Aya Ibrahim on Progressive Priorities for the New Democratic Congress",
    "date": "Fri, 13 Nov 2026",
    "topic": "",
@@ -2468,18 +2150,18 @@
      "source_tier": 2
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 978 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 978 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "d33c5b72554c2fc75b336c775faec5f2f3294e53e7c1264a591f561fc79c5ed4",
    "evidence_hash": "f392f3de9a170c976adf10d6a0dab8ac9c85ac9d66dc73518e8b9c9f1747396a",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "unresolved"
@@ -2500,18 +2182,18 @@
      "source_tier": 2
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 897 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 897 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "507ada5e0251dfffc7239c3a00a912ef13479fbe303bede50ecd57cc65de1f7c",
    "evidence_hash": "b35f7acbd45be95216c85c20934dc9ecb1b5ed69da10115894aa0743e69437e1",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "unresolved"
@@ -2737,7 +2419,7 @@
   },
   {
    "entity": "",
-   "headline": "COP31 pledge on AI lacks climate targets, critics say",
+   "headline": "There’s a Lot of Misinformation About Data Centers. We Set the Record Straight.",
    "date": "Tue, 27 Oct 2026",
    "topic": "",
    "claim_type": "unclassified",
@@ -2746,23 +2428,23 @@
    "sources": [
     {
      "name": "ainowinstitute.org",
-     "url": "https://ainowinstitute.org/news/cop31-pledge-on-ai-lacks-climate-targets-critics-say",
+     "url": "https://ainowinstitute.org/news/press/theres-a-lot-of-misinformation-about-data-centers-we-set-the-record-straight",
      "source_type": "independent",
      "source_tier": 2
     }
    ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 701 chars of article text",
+   "rating": "ok",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
+   "label_evidence": "no figure in 344 chars of article text",
+   "content_hash": "b881b4ba2597b8d32607e987bdbe2826a9f250747a68b7b0d615703913871870",
+   "evidence_hash": "cd46a27cd6cd49530dc9746328ff0df67f2c0dea96345f6b18ca52f8f130fdae",
    "label_schema_version": 2,
-   "content_hash": "dff0dacaec3f13efb6dccfee61c36c78f62d074f3790583f4542fb1327137865",
-   "evidence_hash": "2a2fc777a2640a9fc269aba472400076c0ade93df05f5be45d3962cc507efd93",
+   "auto_labelled": true,
    "label_source": "machine",
-   "rating": "ok",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "unresolved"
