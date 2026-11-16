@@ -1,5 +1,421 @@
 [
   {
+    "id": "alert_857c61319529fd4f548695c0",
+    "timestamp": "2026-11-16T06:01:56.913846+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Determining the Appropriate Penalty for Federal Employees Charged With Misconduct",
+    "url": "https://www.federalregister.gov/documents/2026/09/03/2026-18061/determining-the-appropriate-penalty-for-federal-employees-charged-with-misconduct",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a US Federal Register notice regarding the Merit Systems Protection Board's determination of penalties for federal employee misconduct. It discusses the transition from the Douglas factors to a reasonableness standard and addresses comments regarding transparency and AI misuse in evidence. It contains no binding obligations for AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "No action required; document is outside the scope of AI operator regulatory monitoring.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "e6145292c82907b59db50d1b7cba92154bd01db9155baa188c35c3cfcb27647e",
+    "source_text_sha256": "368585e1a4df65b80f377b8425080e7d6857849d163ff579d783905513ecb308",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 190555,
+      "ranges": [
+        [
+          0,
+          649
+        ],
+        [
+          30293,
+          31444
+        ],
+        [
+          44611,
+          45895
+        ],
+        [
+          68636,
+          69906
+        ],
+        [
+          69906,
+          70495
+        ],
+        [
+          71241,
+          72503
+        ],
+        [
+          111388,
+          112651
+        ],
+        [
+          114560,
+          116097
+        ],
+        [
+          116097,
+          117773
+        ],
+        [
+          166855,
+          168106
+        ]
+      ],
+      "passages_total": 12,
+      "passages_read": 10,
+      "passages_left": 2,
+      "selected_text_sha256": "fc9b78bf2fd94a6ccbff97ac08dcc78fe71f6f597628030abf6383bdcfaa1000"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/03/2026-18061.html",
+    "document_status": "other",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "Commenters 0609 and 0672 proposed augmenting the factors to address the misuse of artificial intelligence, including fabricated or AI-generated evidence and automated monitoring of employees.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_6ff68fde024990bf19c08066",
+    "timestamp": "2026-11-16T06:01:41.704614+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Request for Comment on the Listing of Compute Derivatives Contracts",
+    "url": "https://www.federalregister.gov/documents/2026/08/21/2026-17163/request-for-comment-on-the-listing-of-compute-derivatives-contracts",
+    "source_queue_priority": 1,
+    "substantive_priority": 3,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a US CFTC request for comment regarding the listing of compute derivatives contracts. It is a consultation phase seeking public input on market structure and risks, not a binding regulatory obligation for AI operators.",
+    "denominator_disclosed": "partial",
+    "actionable_trigger": "Monitor the CFTC docket for final rules or guidance on compute derivatives listing standards, as this may impact hedging strategies for AI infrastructure costs.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "7c4c37f6412dccc2795ca2beedfd141df2754c086e9e276c32e97aa99927555b",
+    "source_text_sha256": "404d25d32a5cb5fa721fb74ca6c16df48425c1abe2ae321164e0c4796bd520d3",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 37521,
+      "ranges": [
+        [
+          0,
+          1241
+        ],
+        [
+          5315,
+          6658
+        ],
+        [
+          12836,
+          14176
+        ],
+        [
+          14176,
+          15552
+        ],
+        [
+          15552,
+          17117
+        ],
+        [
+          17117,
+          18403
+        ],
+        [
+          27899,
+          30082
+        ],
+        [
+          33769,
+          35021
+        ],
+        [
+          35021,
+          36018
+        ]
+      ],
+      "passages_total": 18,
+      "passages_read": 9,
+      "passages_left": 9,
+      "selected_text_sha256": "3089622e908a41525682b1dcd92efb91a042453350660bba5333d48ddff77619"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/08/21/2026-17163.html",
+    "document_status": "consultation",
+    "ai_relevance": "relevant",
+    "evidence_quote": "The Commission is seeking comment on the factors that a DCM should consider when addressing certain provisions of the CEA and CFTC regulations thereunder that are relevant to the listing for trading of derivatives with compute as the underlier (“compute derivatives”).",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_7502a66ddcaff29299b8f726",
+    "timestamp": "2026-11-16T06:01:26.126230+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Self-Regulatory Organizations; Financial Industry Regulatory Authority, Inc.; Notice of Filing of a Proposed Rule Change To Amend FINRA Rules 0150 (Application of Rules to Exempted Securities Except Municipal Securities), 2165 (Financial Exploitation of Specified Adults) and 4512 (Customer Account Information) and To Adopt FINRA Rule 2166 (Temporary Delays for Suspected Fraud)",
+    "url": "https://www.federalregister.gov/documents/2026/09/09/2026-18293/self-regulatory-organizations-financial-industry-regulatory-authority-inc-notice-of-filing-of-a",
+    "source_queue_priority": 1,
+    "substantive_priority": 3,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a proposed rule change by FINRA to adopt temporary delays for suspected fraud, citing AI-driven fraud risks. It is not a binding obligation on AI operators.",
+    "denominator_disclosed": "no",
+    "actionable_trigger": "Monitor the status of FINRA Rule 2166 for potential operational impacts on fraud detection systems.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "711f43edaa8cd4d1f261877323c360e5dc822a4483fe5051a63d0989523b13a4",
+    "source_text_sha256": "ca1b3cf0f0f3c78ddf801e6598dc6e376367ab163f90e1e2702947cca856e63c",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 93346,
+      "ranges": [
+        [
+          0,
+          605
+        ],
+        [
+          8111,
+          9250
+        ],
+        [
+          70780,
+          72270
+        ]
+      ],
+      "passages_total": 3,
+      "passages_read": 3,
+      "passages_left": 0,
+      "selected_text_sha256": "1967b667de8b35e563d0db962b372b9a9b65bcdce42d983173a02f743f58af7c"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/09/2026-18293.html",
+    "document_status": "proposed",
+    "ai_relevance": "relevant",
+    "evidence_quote": "Criminal perpetrators employ increasingly sophisticated tactics using technology and artificial intelligence (“AI”), making it more difficult for both member firms and investors to identify scams.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_e5b5b54c2f7e6aec0131f8b4",
+    "timestamp": "2026-11-16T06:01:15.382779+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Improving the Effectiveness of the Robocall Mitigation Database; Call Authentication Trust Anchor; Advanced Methods To Target and Eliminate Unlawful Robocalls",
+    "url": "https://www.federalregister.gov/documents/2026/09/09/2026-18366/improving-the-effectiveness-of-the-robocall-mitigation-database-call-authentication-trust-anchor",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a US Federal Communications Commission (FCC) Further Notice of Proposed Rulemaking (FNPRM) concerning the Robocall Mitigation Database. It proposes measures to improve transparency and accountability for voice service providers regarding illegal robocalls. While it mentions the use of artificial intelligence in the context of technical tools for identifying non-compliant filings, it does not impose any current binding obligations on AI operators. The document is a consultation and proposal stage, not a binding regulation.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Monitor for final rule adoption regarding FCC requirements for voice service providers, as this may indirectly affect AI systems used for call authentication or mitigation, but no immediate action is required for AI operators.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "d565cbd17a5eabeb8ad3878136e3659879437da41b168676cac83e16c5691b15",
+    "source_text_sha256": "c9364e3db7bb3e40a2f1d233eb8e54142bf9910550efaef0d19a79a95ec4f718",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 255702,
+      "ranges": [
+        [
+          0,
+          704
+        ],
+        [
+          4428,
+          5671
+        ],
+        [
+          6623,
+          8042
+        ],
+        [
+          22620,
+          23790
+        ],
+        [
+          46743,
+          48072
+        ],
+        [
+          68112,
+          69230
+        ],
+        [
+          88889,
+          90377
+        ],
+        [
+          108162,
+          109576
+        ],
+        [
+          182875,
+          184093
+        ],
+        [
+          203300,
+          204419
+        ]
+      ],
+      "passages_total": 11,
+      "passages_read": 10,
+      "passages_left": 1,
+      "selected_text_sha256": "ef3780467349b48d160c6225d349b17b19de7068f43a8c459173fcbf26c65a2b"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/09/2026-18366.html",
+    "document_status": "proposed",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "We further propose to direct the Bureau to ensure that any technical measure that it implements complies with all relevant federal data and privacy statutes, along with any other relevant government guidance, such as those addressing use of artificial intelligence.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_f9f2319319ab0f3b0c64d254",
+    "timestamp": "2026-11-16T06:00:56.549879+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Draft NIH Biosafety Policy for Research Involving Biohazards",
+    "url": "https://www.federalregister.gov/documents/2026/09/14/2026-18646/draft-nih-biosafety-policy-for-research-involving-biohazards",
+    "source_queue_priority": 1,
+    "substantive_priority": 4,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a draft NIH policy proposal concerning biosafety in biomedical research. It defines 'novel agent or organism' to include those generated by synthetic biology in conjunction with artificial intelligence, but it does not impose binding regulatory duties on AI operators. The text is in a consultation phase and seeks comments on oversight structures rather than establishing current legal obligations.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Monitor the finalization of the NIH Biosafety Policy to determine if specific containment or reporting requirements apply to AI-assisted synthetic biology research.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "eb1eddaf773a3253e5f7f035c9c1317b0010f83259a9b4caca539bf2e75879ea",
+    "source_text_sha256": "89ffa63e83499655219e9053b4f4de919e4f5b0aaa8adfdcebfc4f3ba9b10b53",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 52219,
+      "ranges": [
+        [
+          0,
+          613
+        ],
+        [
+          3619,
+          5117
+        ],
+        [
+          11683,
+          13044
+        ],
+        [
+          31362,
+          32452
+        ],
+        [
+          50477,
+          51724
+        ]
+      ],
+      "passages_total": 5,
+      "passages_read": 5,
+      "passages_left": 0,
+      "selected_text_sha256": "a2848682294b7f352ffd2b154a040a5be0ae3d1c6a7be3ed4f7474c5de8fa73e"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/14/2026-18646.html",
+    "document_status": "proposed",
+    "ai_relevance": "relevant",
+    "evidence_quote": "Novel agent or organism: An agent or organism not existing in nature, deliberately designed, and possibly derived from multiple, different natural or synthetic sources ( e.g., chimeras, or organisms generated by synthetic biology in conjunction with artificial intelligence).",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_00e9bbe9fcaf597ca5714947",
+    "timestamp": "2026-11-16T06:00:42.131619+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Hematology and Pathology Devices; Reclassification of In Situ Hybridization Test Systems for Use With a Corresponding Approved Oncology Therapeutic Product",
+    "url": "https://www.federalregister.gov/documents/2026/08/17/2026-16727/hematology-and-pathology-devices-reclassification-of-in-situ-hybridization-test-systems-for-use-with",
+    "source_queue_priority": 1,
+    "substantive_priority": 3,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a final order reclassifying In Situ Hybridization (ISH) test systems. It addresses the use of Predetermined Change Control Plans (PCCPs) for AI/ML-enabled devices but explicitly states that no such devices have been approved yet. It encourages the use of the Q-Submission program for feedback but does not impose a new binding duty on AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Monitor FDA guidance on PCCPs for AI-enabled devices and consider using the Q-Submission program for feedback on AI/ML modifications to ISH test systems.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "483cd8f9f46e29617e6ded47fd3d408d09a14ebb3c1b00b782e3435451ac73cf",
+    "source_text_sha256": "59d5cdb31d8e66c9fc37f498e934b7b64f352ff12c43dca835a8d697f632c169",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 53966,
+      "ranges": [
+        [
+          0,
+          656
+        ],
+        [
+          12104,
+          13596
+        ],
+        [
+          13596,
+          14891
+        ],
+        [
+          25598,
+          26997
+        ],
+        [
+          26997,
+          27587
+        ],
+        [
+          42686,
+          43917
+        ],
+        [
+          52315,
+          53659
+        ]
+      ],
+      "passages_total": 7,
+      "passages_read": 7,
+      "passages_left": 0,
+      "selected_text_sha256": "cba77909dda4bf25e0a77eefa89f4b074b925970751c4adcdf250af45f1caddc"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/08/17/2026-16727.html",
+    "document_status": "binding",
+    "ai_relevance": "relevant",
+    "evidence_quote": "We note that, at the time of publication of this final order, FDA has not classified, cleared, approved, or granted authorization for any oncology therapeutic ISH-based test systems that incorporate DP devices, including AI/ML algorithm-assisted DP devices.",
+    "assessment_error": null
+  },
+  {
     "id": "alert_b49e6fa22d0d426c19c5271b",
     "timestamp": "2026-11-15T06:01:59.888541+00:00",
     "alert_schema_version": 2,
@@ -3832,118 +4248,6 @@
     "source_text_sha256": "421e6c77bf86082a1e3359b64a83524532983e501f1463d9b02608fe4c0e94e2",
     "assessment_version": 3,
     "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/08/25/2026-17372.html",
-    "document_status": "unassessed",
-    "ai_relevance": "unassessed",
-    "evidence_quote": null,
-    "assessment_error": "document exceeds model input budget; manual review required"
-  },
-  {
-    "id": "alert_6ff68fde024990bf19c08066",
-    "timestamp": "2026-11-05T06:01:05.311555+00:00",
-    "alert_schema_version": 2,
-    "source": "US Federal Register (AI Rules & Notices)",
-    "jurisdiction": "United States",
-    "title": "Request for Comment on the Listing of Compute Derivatives Contracts",
-    "url": "https://www.federalregister.gov/documents/2026/08/21/2026-17163/request-for-comment-on-the-listing-of-compute-derivatives-contracts",
-    "source_queue_priority": 1,
-    "substantive_priority": null,
-    "is_operator_duty_shift": false,
-    "duty_type": "none",
-    "statutory_reference": null,
-    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): Request for Comment on the Listing of Compute Derivatives Contracts",
-    "denominator_disclosed": "unassessed",
-    "actionable_trigger": "Review the captured primary document.",
-    "evaluation_method": "unassessed",
-    "model": "qwen3.8:latest",
-    "reviewed": false,
-    "source_sha256": "7c4c37f6412dccc2795ca2beedfd141df2754c086e9e276c32e97aa99927555b",
-    "source_text_sha256": "404d25d32a5cb5fa721fb74ca6c16df48425c1abe2ae321164e0c4796bd520d3",
-    "assessment_version": 3,
-    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/08/21/2026-17163.html",
-    "document_status": "unassessed",
-    "ai_relevance": "unassessed",
-    "evidence_quote": null,
-    "assessment_error": "document exceeds model input budget; manual review required"
-  },
-  {
-    "id": "alert_7502a66ddcaff29299b8f726",
-    "timestamp": "2026-11-05T06:01:04.722878+00:00",
-    "alert_schema_version": 2,
-    "source": "US Federal Register (AI Rules & Notices)",
-    "jurisdiction": "United States",
-    "title": "Self-Regulatory Organizations; Financial Industry Regulatory Authority, Inc.; Notice of Filing of a Proposed Rule Change To Amend FINRA Rules 0150 (Application of Rules to Exempted Securities Except Municipal Securities), 2165 (Financial Exploitation of Specified Adults) and 4512 (Customer Account Information) and To Adopt FINRA Rule 2166 (Temporary Delays for Suspected Fraud)",
-    "url": "https://www.federalregister.gov/documents/2026/09/09/2026-18293/self-regulatory-organizations-financial-industry-regulatory-authority-inc-notice-of-filing-of-a",
-    "source_queue_priority": 1,
-    "substantive_priority": null,
-    "is_operator_duty_shift": false,
-    "duty_type": "none",
-    "statutory_reference": null,
-    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): Self-Regulatory Organizations; Financial Industry Regulatory Authority, Inc.; Notice of Filing of a Proposed Rule Change To Amend FINRA Rules 0150 (Application of Rules to Exempted Securities Except Municipal Securities), 2165 (Financial Exploitation of Specified Adults) and 4512 (Customer Account Information) and To Adopt FINRA Rule 2166 (Temporary Delays for Suspected Fraud)",
-    "denominator_disclosed": "unassessed",
-    "actionable_trigger": "Review the captured primary document.",
-    "evaluation_method": "unassessed",
-    "model": "qwen3.8:latest",
-    "reviewed": false,
-    "source_sha256": "711f43edaa8cd4d1f261877323c360e5dc822a4483fe5051a63d0989523b13a4",
-    "source_text_sha256": "ca1b3cf0f0f3c78ddf801e6598dc6e376367ab163f90e1e2702947cca856e63c",
-    "assessment_version": 3,
-    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/09/2026-18293.html",
-    "document_status": "unassessed",
-    "ai_relevance": "unassessed",
-    "evidence_quote": null,
-    "assessment_error": "document exceeds model input budget; manual review required"
-  },
-  {
-    "id": "alert_f9f2319319ab0f3b0c64d254",
-    "timestamp": "2026-11-05T06:01:03.317804+00:00",
-    "alert_schema_version": 2,
-    "source": "US Federal Register (AI Rules & Notices)",
-    "jurisdiction": "United States",
-    "title": "Draft NIH Biosafety Policy for Research Involving Biohazards",
-    "url": "https://www.federalregister.gov/documents/2026/09/14/2026-18646/draft-nih-biosafety-policy-for-research-involving-biohazards",
-    "source_queue_priority": 1,
-    "substantive_priority": null,
-    "is_operator_duty_shift": false,
-    "duty_type": "none",
-    "statutory_reference": null,
-    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): Draft NIH Biosafety Policy for Research Involving Biohazards",
-    "denominator_disclosed": "unassessed",
-    "actionable_trigger": "Review the captured primary document.",
-    "evaluation_method": "unassessed",
-    "model": "qwen3.8:latest",
-    "reviewed": false,
-    "source_sha256": "eb1eddaf773a3253e5f7f035c9c1317b0010f83259a9b4caca539bf2e75879ea",
-    "source_text_sha256": "89ffa63e83499655219e9053b4f4de919e4f5b0aaa8adfdcebfc4f3ba9b10b53",
-    "assessment_version": 3,
-    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/14/2026-18646.html",
-    "document_status": "unassessed",
-    "ai_relevance": "unassessed",
-    "evidence_quote": null,
-    "assessment_error": "document exceeds model input budget; manual review required"
-  },
-  {
-    "id": "alert_00e9bbe9fcaf597ca5714947",
-    "timestamp": "2026-11-05T06:01:02.975970+00:00",
-    "alert_schema_version": 2,
-    "source": "US Federal Register (AI Rules & Notices)",
-    "jurisdiction": "United States",
-    "title": "Hematology and Pathology Devices; Reclassification of In Situ Hybridization Test Systems for Use With a Corresponding Approved Oncology Therapeutic Product",
-    "url": "https://www.federalregister.gov/documents/2026/08/17/2026-16727/hematology-and-pathology-devices-reclassification-of-in-situ-hybridization-test-systems-for-use-with",
-    "source_queue_priority": 1,
-    "substantive_priority": null,
-    "is_operator_duty_shift": false,
-    "duty_type": "none",
-    "statutory_reference": null,
-    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): Hematology and Pathology Devices; Reclassification of In Situ Hybridization Test Systems for Use With a Corresponding Approved Oncology Therapeutic Product",
-    "denominator_disclosed": "unassessed",
-    "actionable_trigger": "Review the captured primary document.",
-    "evaluation_method": "unassessed",
-    "model": "qwen3.8:latest",
-    "reviewed": false,
-    "source_sha256": "483cd8f9f46e29617e6ded47fd3d408d09a14ebb3c1b00b782e3435451ac73cf",
-    "source_text_sha256": "59d5cdb31d8e66c9fc37f498e934b7b64f352ff12c43dca835a8d697f632c169",
-    "assessment_version": 3,
-    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/08/17/2026-16727.html",
     "document_status": "unassessed",
     "ai_relevance": "unassessed",
     "evidence_quote": null,

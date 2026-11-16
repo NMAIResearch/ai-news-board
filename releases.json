@@ -1,12 +1,24 @@
 {
- "generated": "2026-11-15 06:21 UTC",
+ "generated": "2026-11-16 06:21 UTC",
  "window_days": 60,
  "counts": {
-  "total": 96,
-  "closed": 43,
+  "total": 97,
+  "closed": 44,
   "open_weights": 53
  },
  "releases": [
+  {
+   "lab": "Alibaba (Qwen)",
+   "model": "Qwen: Qwen4 Max",
+   "id": "qwen/qwen4-max",
+   "date": "2026-11-16",
+   "url": "https://openrouter.ai/qwen/qwen4-max",
+   "context_length": 1000000,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
   {
    "lab": "Inclusionai",
    "model": "inclusionAI: Ling 3.2 Flash (free)",
