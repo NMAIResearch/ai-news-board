@@ -1,5 +1,225 @@
 [
   {
+    "id": "alert_8c7a208a805f7cd3ea1fd3e5",
+    "timestamp": "2026-11-17T06:01:27.619351+00:00",
+    "alert_schema_version": 2,
+    "source": "UK Ofgem (Grid Queue & Regulatory Reform)",
+    "jurisdiction": "United Kingdom",
+    "title": "Request for regulators to publish an update on their strategic approach to AI: Secretary of State letters",
+    "url": "https://www.gov.uk/government/publications/request-for-regulators-to-publish-an-update-on-their-strategic-approach-to-ai-secretary-of-state-letters",
+    "source_queue_priority": 2,
+    "substantive_priority": 4,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document consists of correspondence requesting regulators to publish updates on their strategic approach to AI by 30 April 2024. It is a request for regulatory transparency and does not impose direct binding obligations on AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Monitor for the published updates from regulators (e.g., Ofgem, FCA) to identify any new sector-specific AI requirements or guidance.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "fdaee47904726336ba3b98bb5715d95d2cac1bcef2131b181399edb9a6e641f1",
+    "source_text_sha256": "94da250a739775f3e5f4412cf9a1e7ce1c89f71e250d14ce746601f87924b7a4",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "extracted text",
+      "selection_status": "selected",
+      "selector": "full-text",
+      "text_chars": 3487,
+      "ranges": [
+        [
+          0,
+          3487
+        ]
+      ],
+      "passages_total": 1,
+      "passages_read": 1,
+      "passages_left": 0,
+      "selected_text_sha256": "94da250a739775f3e5f4412cf9a1e7ce1c89f71e250d14ce746601f87924b7a4"
+    },
+    "source_capture_url": "https://www.gov.uk/government/publications/request-for-regulators-to-publish-an-update-on-their-strategic-approach-to-ai-secretary-of-state-letters",
+    "document_status": "other",
+    "ai_relevance": "relevant",
+    "evidence_quote": "The letters set out a request for an initial set of regulators to publish an update by 30 April 2024, outlining their strategic approach to AI and the steps they are taking in line with the expectations in the AI Regulation White Paper",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_c0a2d0be00dce0ab5400f6b9",
+    "timestamp": "2026-11-17T06:01:13.734682+00:00",
+    "alert_schema_version": 2,
+    "source": "EU AI Office & Digital Strategy",
+    "jurisdiction": "European Union",
+    "title": "Commission preliminarily finds TikTok’s ‘For You’ feed in breach of Digital Services Act for harmful ‘rabbit holes’ effect",
+    "url": "https://digital-strategy.ec.europa.eu/en/news/commission-preliminarily-finds-tiktoks-you-feed-breach-digital-services-act-harmful-rabbit-holes",
+    "source_queue_priority": 1,
+    "substantive_priority": 2,
+    "is_operator_duty_shift": false,
+    "duty_type": "risk_assessment",
+    "statutory_reference": null,
+    "summary": "The European Commission has preliminarily found that TikTok's 'For You' feed recommender system breaches the Digital Services Act due to a harmful 'rabbit hole effect' impacting user mental health. This is a preliminary finding regarding risk assessment and mitigation, not a final binding duty shift.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Monitor for the final Commission decision and any subsequent enforcement actions or fines related to the DSA breach findings.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "37925d283ed5bc335c1c4e36598fdfa5f3e48c29c4acbab7d0e5495400f9c812",
+    "source_text_sha256": "9d50bdd4f2a0cebd9caa5080dd36cf4d70fe4190e19de0dba82a71507c2417ef",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "extracted text",
+      "selection_status": "selected",
+      "selector": "full-text",
+      "text_chars": 1178,
+      "ranges": [
+        [
+          0,
+          1178
+        ]
+      ],
+      "passages_total": 1,
+      "passages_read": 1,
+      "passages_left": 0,
+      "selected_text_sha256": "9d50bdd4f2a0cebd9caa5080dd36cf4d70fe4190e19de0dba82a71507c2417ef"
+    },
+    "source_capture_url": "https://digital-strategy.ec.europa.eu/en/news/commission-preliminarily-finds-tiktoks-you-feed-breach-digital-services-act-harmful-rabbit-holes",
+    "document_status": "proposed",
+    "ai_relevance": "relevant",
+    "evidence_quote": "The European Commission has preliminarily found TikTok in breach of the Digital Services Act (DSA) for the so-called ‘rabbit hole effect’ of its recommender system.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_e771339bef12a5ad531833a6",
+    "timestamp": "2026-11-17T06:01:02.096757+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (Executive Orders)",
+    "jurisdiction": "United States",
+    "title": "The National Space Transportation Policy",
+    "url": "https://www.federalregister.gov/documents/2026/08/25/2026-17372/the-national-space-transportation-policy",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a US National Security Presidential Memorandum concerning space transportation policy, export controls, and international collaboration. It contains no provisions, obligations, or references relevant to AI operators or AI-specific regulatory duties.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "No action required; document is outside the scope of AI regulatory monitoring.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "0d3711dc18e19652f67b43bf0374043db6fa72ea1e19fceb3fc5129b5ced7f7b",
+    "source_text_sha256": "421e6c77bf86082a1e3359b64a83524532983e501f1463d9b02608fe4c0e94e2",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 16619,
+      "ranges": [
+        [
+          0,
+          944
+        ],
+        [
+          8193,
+          9490
+        ]
+      ],
+      "passages_total": 2,
+      "passages_read": 2,
+      "passages_left": 0,
+      "selected_text_sha256": "ecccc5e3d41855955f190f2771056bc8098644abaa54bb0425d70a8f37905d18"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/08/25/2026-17372.html",
+    "document_status": "binding",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "Within 120 days of the date of this memorandum, and every 2 years thereafter, the Secretary of State and the Secretary of Commerce shall update, as appropriate and consistent with United States economic, foreign relations, nonproliferation, and national security interests: (a) export policies and programs, in coordination with the Administrator of NASA, the Secretary of War, and the Secretary of Transportation, to promote United States space transportation capabilities and standards abroad; protect United States intellectual property; and include industry advocacy, foreign sales, co-investment, co-development, market access, regulatory alignment, and technology protections; and (b) export controls, in coordination with the Secretary of War, to enable United States export opportunities for space transportation-related capabilities to allies and partners.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_cc43df0457fcd266f7f10e79",
+    "timestamp": "2026-11-17T06:00:47.561654+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Wagner-Peyser Act Employment Service Staffing",
+    "url": "https://www.federalregister.gov/documents/2026/08/20/2026-16982/wagner-peyser-act-employment-service-staffing",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a US Federal Register final rule regarding Wagner-Peyser Act staffing flexibility. It explicitly states that the rule does not address the use of AI in Employment Service delivery, although it acknowledges AI as a tool and maintains civil rights obligations. It contains no binding duties for AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "No action required; document is outside the scope of AI operator monitoring.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "2114c9f6c85ee48d10b7924b7ce0b71947672f17cf387e6263627ae9f98048a7",
+    "source_text_sha256": "cbe675cbce5182a50d2ebfa6503cae4e125f02cedfc775884b0ea95d10a662d7",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 207060,
+      "ranges": [
+        [
+          0,
+          688
+        ],
+        [
+          1966,
+          3763
+        ],
+        [
+          62193,
+          63432
+        ],
+        [
+          66776,
+          67949
+        ],
+        [
+          126343,
+          127459
+        ],
+        [
+          131874,
+          133121
+        ],
+        [
+          134192,
+          135478
+        ],
+        [
+          135478,
+          136103
+        ],
+        [
+          141993,
+          143325
+        ],
+        [
+          143325,
+          144760
+        ],
+        [
+          162833,
+          163860
+        ]
+      ],
+      "passages_total": 11,
+      "passages_read": 11,
+      "passages_left": 0,
+      "selected_text_sha256": "268cf1f388213841b5d50613942e4b85f7ff223516d23566d114a5b4c26e7a16"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/08/20/2026-16982.html",
+    "document_status": "binding",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "This final rule does not address the use of AI in ES delivery.",
+    "assessment_error": null
+  },
+  {
     "id": "alert_857c61319529fd4f548695c0",
     "timestamp": "2026-11-16T06:01:56.913846+00:00",
     "alert_schema_version": 2,
@@ -4220,34 +4440,6 @@
     "source_text_sha256": "a53929654bdac68bbd0f084a443518c66e0dc0bad70789d508a29d5079ca0add",
     "assessment_version": 3,
     "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/09/2026-18370.html",
-    "document_status": "unassessed",
-    "ai_relevance": "unassessed",
-    "evidence_quote": null,
-    "assessment_error": "document exceeds model input budget; manual review required"
-  },
-  {
-    "id": "alert_e771339bef12a5ad531833a6",
-    "timestamp": "2026-11-05T06:01:08.964388+00:00",
-    "alert_schema_version": 2,
-    "source": "US Federal Register (Executive Orders)",
-    "jurisdiction": "United States",
-    "title": "The National Space Transportation Policy",
-    "url": "https://www.federalregister.gov/documents/2026/08/25/2026-17372/the-national-space-transportation-policy",
-    "source_queue_priority": 1,
-    "substantive_priority": null,
-    "is_operator_duty_shift": false,
-    "duty_type": "none",
-    "statutory_reference": null,
-    "summary": "Unassessed capture from US Federal Register (Executive Orders): The National Space Transportation Policy",
-    "denominator_disclosed": "unassessed",
-    "actionable_trigger": "Review the captured primary document.",
-    "evaluation_method": "unassessed",
-    "model": "qwen3.8:latest",
-    "reviewed": false,
-    "source_sha256": "0d3711dc18e19652f67b43bf0374043db6fa72ea1e19fceb3fc5129b5ced7f7b",
-    "source_text_sha256": "421e6c77bf86082a1e3359b64a83524532983e501f1463d9b02608fe4c0e94e2",
-    "assessment_version": 3,
-    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/08/25/2026-17372.html",
     "document_status": "unassessed",
     "ai_relevance": "unassessed",
     "evidence_quote": null,

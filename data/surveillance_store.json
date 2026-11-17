@@ -73,73 +73,73 @@
     "54b1b80026c38a18cbc27a2657d9270dca2fb517e6a904f2bf2aee3960aebc45": "2026-09-13T05:01:31.276246+00:00",
     "3f5b18c5361a116e8cda95268bda629c953202b3169b944325053a2129c242c3": "2026-09-13T05:01:31.276250+00:00"
   },
-  "last_run": "2026-11-16T06:02:30.527464+00:00",
+  "last_run": "2026-11-17T06:02:35.535193+00:00",
   "source_states": {
     "us_fed_reg_ai": {
-      "checked_at": "2026-11-16T06:00:03.381369+00:00",
+      "checked_at": "2026-11-17T06:00:03.398957+00:00",
       "status": "ok",
       "name": "US Federal Register (AI Rules & Notices)",
       "entries": 40,
       "queued": 30,
       "window_days": 30,
-      "last_success": "2026-11-16T06:00:03.381369+00:00"
+      "last_success": "2026-11-17T06:00:03.398957+00:00"
     },
     "us_fed_reg_eo": {
-      "checked_at": "2026-11-16T06:00:05.553655+00:00",
+      "checked_at": "2026-11-17T06:00:06.613926+00:00",
       "status": "ok",
       "name": "US Federal Register (Executive Orders)",
       "entries": 40,
       "queued": 22,
       "window_days": 30,
-      "last_success": "2026-11-16T06:00:05.553655+00:00"
+      "last_success": "2026-11-17T06:00:06.613926+00:00"
     },
     "eu_ai_office": {
-      "checked_at": "2026-11-16T06:00:06.367253+00:00",
+      "checked_at": "2026-11-17T06:00:07.131139+00:00",
       "status": "ok",
       "name": "EU AI Office & Digital Strategy",
       "entries": 10,
       "queued": 9,
       "window_days": null,
-      "last_success": "2026-11-16T06:00:06.367253+00:00"
+      "last_success": "2026-11-17T06:00:07.131139+00:00"
     },
     "uk_cma_news": {
-      "checked_at": "2026-11-16T06:00:06.448188+00:00",
+      "checked_at": "2026-11-17T06:00:07.222568+00:00",
       "status": "ok",
       "name": "UK Competition and Markets Authority (AI Mergers & Foundation Models)",
       "entries": 20,
       "queued": 0,
       "window_days": null,
-      "last_success": "2026-11-16T06:00:06.448188+00:00"
+      "last_success": "2026-11-17T06:00:07.222568+00:00"
     },
     "uk_ofgem_queue": {
-      "checked_at": "2026-11-16T06:00:06.640270+00:00",
+      "checked_at": "2026-11-17T06:00:07.371275+00:00",
       "status": "ok",
       "name": "UK Ofgem (Grid Queue & Regulatory Reform)",
       "entries": 20,
       "queued": 1,
       "window_days": null,
-      "last_success": "2026-11-16T06:00:06.640270+00:00"
+      "last_success": "2026-11-17T06:00:07.371275+00:00"
     },
     "nist_ai_notices": {
-      "checked_at": "2026-11-16T06:00:06.690038+00:00",
+      "checked_at": "2026-11-17T06:00:07.501469+00:00",
       "status": "ok",
       "name": "NIST AI Safety Institute & Risk Framework",
       "entries": 40,
       "queued": 7,
       "window_days": null,
-      "last_success": "2026-11-16T06:00:06.690038+00:00"
+      "last_success": "2026-11-17T06:00:07.501469+00:00"
     },
     "sec_press_releases": {
-      "checked_at": "2026-11-16T06:00:06.982284+00:00",
+      "checked_at": "2026-11-17T06:00:07.789383+00:00",
       "status": "ok",
       "name": "US SEC (Enforcement & Regulatory Actions)",
       "entries": 25,
       "queued": 0,
       "window_days": null,
-      "last_success": "2026-11-16T06:00:06.982284+00:00"
+      "last_success": "2026-11-17T06:00:07.789383+00:00"
     },
     "ftc_press_releases": {
-      "checked_at": "2026-11-16T06:00:07.051139+00:00",
+      "checked_at": "2026-11-17T06:00:07.882900+00:00",
       "status": "limited",
       "name": "US FTC (Consumer Protection & AI Claims)",
       "entries": 0,
@@ -358,7 +358,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-16T06:02:00.672237+00:00",
+      "checked_at": "2026-11-17T06:02:02.524557+00:00",
       "source_sha256": "3ee83a15aa02e1f35f809f0eb4ddfe2adb601346b89901f0accc629880b5d2cb",
       "source_text_sha256": "a53929654bdac68bbd0f084a443518c66e0dc0bad70789d508a29d5079ca0add",
       "error": "evaluation deferred: model call limit"
@@ -1647,8 +1647,8 @@
       }
     },
     "7ad21a2ea23e4e7cfeedf5675164bc4e41af56e08a54475090d6b47820b4a204": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "Wagner-Peyser Act Employment Service Staffing",
         "summary": "The U.S. Department of Labor (DOL or the Department) is removing the requirement that States use State merit staff to provide Wagner-Peyser Employment Service (ES) services. This final rule allows States to use the staffing model that provides the required services with the most efficient and cost-effective model for their State.",
@@ -1665,10 +1665,123 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-16T06:01:56.913896+00:00",
-      "error": "evaluation deferred: model call limit",
+      "checked_at": "2026-11-17T06:00:07.950486+00:00",
       "source_sha256": "2114c9f6c85ee48d10b7924b7ce0b71947672f17cf387e6263627ae9f98048a7",
-      "source_text_sha256": "cbe675cbce5182a50d2ebfa6503cae4e125f02cedfc775884b0ea95d10a662d7"
+      "source_text_sha256": "cbe675cbce5182a50d2ebfa6503cae4e125f02cedfc775884b0ea95d10a662d7",
+      "processing_attempts": 0,
+      "assessment_coverage": {
+        "scope": "passages only",
+        "selection_status": "selected",
+        "selector": "ai-keywords-v2",
+        "text_chars": 207060,
+        "ranges": [
+          [
+            0,
+            688
+          ],
+          [
+            1966,
+            3763
+          ],
+          [
+            62193,
+            63432
+          ],
+          [
+            66776,
+            67949
+          ],
+          [
+            126343,
+            127459
+          ],
+          [
+            131874,
+            133121
+          ],
+          [
+            134192,
+            135478
+          ],
+          [
+            135478,
+            136103
+          ],
+          [
+            141993,
+            143325
+          ],
+          [
+            143325,
+            144760
+          ],
+          [
+            162833,
+            163860
+          ]
+        ],
+        "passages_total": 11,
+        "passages_read": 11,
+        "passages_left": 0,
+        "selected_text_sha256": "268cf1f388213841b5d50613942e4b85f7ff223516d23566d114a5b4c26e7a16"
+      },
+      "evaluated_text_sha256": "cbe675cbce5182a50d2ebfa6503cae4e125f02cedfc775884b0ea95d10a662d7",
+      "evaluated_coverage": {
+        "scope": "passages only",
+        "selection_status": "selected",
+        "selector": "ai-keywords-v2",
+        "text_chars": 207060,
+        "ranges": [
+          [
+            0,
+            688
+          ],
+          [
+            1966,
+            3763
+          ],
+          [
+            62193,
+            63432
+          ],
+          [
+            66776,
+            67949
+          ],
+          [
+            126343,
+            127459
+          ],
+          [
+            131874,
+            133121
+          ],
+          [
+            134192,
+            135478
+          ],
+          [
+            135478,
+            136103
+          ],
+          [
+            141993,
+            143325
+          ],
+          [
+            143325,
+            144760
+          ],
+          [
+            162833,
+            163860
+          ]
+        ],
+        "passages_total": 11,
+        "passages_read": 11,
+        "passages_left": 0,
+        "selected_text_sha256": "268cf1f388213841b5d50613942e4b85f7ff223516d23566d114a5b4c26e7a16"
+      }
     },
     "a7320c2f093222e04d723af25b0cbae8c48107c756a2ba5db909095c3850abb3": {
       "status": "evaluated",
@@ -2457,8 +2570,8 @@
       "evaluated_text_sha256": "ab41d7e75d7d7cc29a419e7813938af1e60228660465cd31323e03ee2e006d53"
     },
     "8a960c302ff1e66e66dd6da04db2f0bf7d7779451e9e1d86544a6106904be080": {
-      "status": "pending",
-      "attempts": 0,
+      "status": "evaluated",
+      "attempts": 1,
       "item": {
         "title": "The National Space Transportation Policy",
         "summary": "The National Space Transportation Policy",
@@ -2475,10 +2588,51 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-16T06:01:57.355404+00:00",
+      "checked_at": "2026-11-17T06:00:47.561701+00:00",
       "source_sha256": "0d3711dc18e19652f67b43bf0374043db6fa72ea1e19fceb3fc5129b5ced7f7b",
       "source_text_sha256": "421e6c77bf86082a1e3359b64a83524532983e501f1463d9b02608fe4c0e94e2",
-      "error": "evaluation deferred: model call limit"
+      "processing_attempts": 0,
+      "assessment_coverage": {
+        "scope": "passages only",
+        "selection_status": "selected",
+        "selector": "ai-keywords-v2",
+        "text_chars": 16619,
+        "ranges": [
+          [
+            0,
+            944
+          ],
+          [
+            8193,
+            9490
+          ]
+        ],
+        "passages_total": 2,
+        "passages_read": 2,
+        "passages_left": 0,
+        "selected_text_sha256": "ecccc5e3d41855955f190f2771056bc8098644abaa54bb0425d70a8f37905d18"
+      },
+      "evaluated_text_sha256": "421e6c77bf86082a1e3359b64a83524532983e501f1463d9b02608fe4c0e94e2",
+      "evaluated_coverage": {
+        "scope": "passages only",
+        "selection_status": "selected",
+        "selector": "ai-keywords-v2",
+        "text_chars": 16619,
+        "ranges": [
+          [
+            0,
+            944
+          ],
+          [
+            8193,
+            9490
+          ]
+        ],
+        "passages_total": 2,
+        "passages_read": 2,
+        "passages_left": 0,
+        "selected_text_sha256": "ecccc5e3d41855955f190f2771056bc8098644abaa54bb0425d70a8f37905d18"
+      }
     },
     "19d7beb56a24dc6db7d38a9c09f698742a81d750f60693a5e702928ae99e5f01": {
       "status": "evaluated",
@@ -2780,8 +2934,8 @@
       "evaluated_text_sha256": "e095141f7bb9f7ab290ca8b09f62708a1bda2827b8c5b4eb0a31d5521f6572ce"
     },
     "7cbdfe2ae0d5f252946620b3fccc011b7e7a34191d6ea02643bb5bb20e0b42e7": {
-      "status": "pending",
-      "attempts": 2,
+      "status": "evaluated",
+      "attempts": 3,
       "item": {
         "title": "Request for regulators to publish an update on their strategic approach to AI: Secretary of State letters",
         "summary": "Letters requesting a set of regulators to update their strategic approach to AI, with the intention of increasing the transparency around how they are implementing the AI Regulation White Paper proposals.",
@@ -2799,12 +2953,43 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-11-16T06:01:57.693877+00:00",
-      "source_sha256": "77fa648ba23ad3e03edfce932ea02eb6d577b5480832ea15e792c3ce7c11648c",
+      "checked_at": "2026-11-17T06:01:13.734723+00:00",
+      "source_sha256": "fdaee47904726336ba3b98bb5715d95d2cac1bcef2131b181399edb9a6e641f1",
       "source_text_sha256": "94da250a739775f3e5f4412cf9a1e7ce1c89f71e250d14ce746601f87924b7a4",
-      "evaluated_text_sha256": "167b5677d2dad40e67dd5dca3f86ca828c1a012d13b872475699ab8c961989b6",
+      "evaluated_text_sha256": "94da250a739775f3e5f4412cf9a1e7ce1c89f71e250d14ce746601f87924b7a4",
       "processing_attempts": 0,
-      "error": "evaluation deferred: model call limit"
+      "assessment_coverage": {
+        "scope": "extracted text",
+        "selection_status": "selected",
+        "selector": "full-text",
+        "text_chars": 3487,
+        "ranges": [
+          [
+            0,
+            3487
+          ]
+        ],
+        "passages_total": 1,
+        "passages_read": 1,
+        "passages_left": 0,
+        "selected_text_sha256": "94da250a739775f3e5f4412cf9a1e7ce1c89f71e250d14ce746601f87924b7a4"
+      },
+      "evaluated_coverage": {
+        "scope": "extracted text",
+        "selection_status": "selected",
+        "selector": "full-text",
+        "text_chars": 3487,
+        "ranges": [
+          [
+            0,
+            3487
+          ]
+        ],
+        "passages_total": 1,
+        "passages_read": 1,
+        "passages_left": 0,
+        "selected_text_sha256": "94da250a739775f3e5f4412cf9a1e7ce1c89f71e250d14ce746601f87924b7a4"
+      }
     },
     "62ee8f98b799c0827c80bfae8a016cdbfbaf4ae30d8d10c32f4e77e247ab9ea4": {
       "status": "pending",
@@ -2826,8 +3011,8 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:02.358766+00:00",
-      "source_sha256": "be04f3d5e9af07bdfa4ae4a0d12aac05d731665050685492847968e4db9e17c1",
+      "checked_at": "2026-11-17T06:02:04.458135+00:00",
+      "source_sha256": "26b4bfadc901a8f4da332cbd770c34fcc8bb5164515867b83c5f035958437182",
       "source_text_sha256": "cba1385083a62a2bd2e2665d3f466965e69ae8d55a9ab0d6686ef8db24e8f3b8",
       "evaluated_text_sha256": "231b9c773ab9331b88f582b06973de1812b4000b9d6d04f07ee248673c6b20ef",
       "error": "evaluation deferred: model call limit"
@@ -2852,8 +3037,8 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:01.856671+00:00",
-      "source_sha256": "9e2cbc223eb4eed188da02fe29c11791981e0891a4f1efd93bf5fbcc29f14ba3",
+      "checked_at": "2026-11-17T06:02:03.865709+00:00",
+      "source_sha256": "a7084aaed5a01bc388749a71bc65ab055a02c1e8b6c80b24b5608baedb765dc5",
       "source_text_sha256": "9f5209bb5022a7ade0ee335d941b2f1bdbbd332099198cec85b94c4b0fb0dc06",
       "evaluated_text_sha256": "f5f6eb2a6616294f7a89cc852da773b798de4bcc0e01e0f742040effff9fc7ff",
       "error": "evaluation deferred: model call limit"
@@ -2878,8 +3063,8 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:15.211338+00:00",
-      "source_sha256": "e6b87fe5a67c4ef306ba8f757fe7bd1cb575404d86b4a60c18f232b5336d2fef",
+      "checked_at": "2026-11-17T06:02:15.382542+00:00",
+      "source_sha256": "419cdc3d2deeb42a146a1ea3945aeba8f48e4ec91b6d8b00dbff4d483887e234",
       "source_text_sha256": "8fd3bac4cecab122bcb316b08d8de0338c9d501efdbe55c47282462dda6976ab",
       "evaluated_text_sha256": "8fd3bac4cecab122bcb316b08d8de0338c9d501efdbe55c47282462dda6976ab",
       "processing_attempts": 0
@@ -2904,8 +3089,8 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:15.607225+00:00",
-      "source_sha256": "21ee29097db40beef5568e87e2cc6e983cb2d87b16fa843356b0f965e087330e",
+      "checked_at": "2026-11-17T06:02:15.778593+00:00",
+      "source_sha256": "ba3bbdac24d2ae48ac31902e2e9cd1a3c8196439992cda834492e8ba96504f28",
       "source_text_sha256": "ebdcfae71eb2eb5aa3ff4fe22424cf1975b352501abde31af58d71aa7ebca37c",
       "evaluated_text_sha256": "ebdcfae71eb2eb5aa3ff4fe22424cf1975b352501abde31af58d71aa7ebca37c",
       "processing_attempts": 0
@@ -2930,8 +3115,8 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:16.048460+00:00",
-      "source_sha256": "d276f232b80c96c7ef547d0b589e11511f76d843b65e2189f4cdcaad2bf8f60b",
+      "checked_at": "2026-11-17T06:02:16.259963+00:00",
+      "source_sha256": "014b59e6952acf572575ecb8f1fb25216eb676ff53550227648f98cbdb1c4fd4",
       "source_text_sha256": "259e64ccfbd3d3bc4059cc2d52db2379dcf1abd2ddb090b6713851dd3fc3ee1e",
       "evaluated_text_sha256": "259e64ccfbd3d3bc4059cc2d52db2379dcf1abd2ddb090b6713851dd3fc3ee1e",
       "processing_attempts": 0
@@ -2956,8 +3141,8 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:00.941496+00:00",
-      "source_sha256": "424aab10651047be40e24b91f2f4b857397ffb1cad70825e114716ac06fcf9bd",
+      "checked_at": "2026-11-17T06:02:02.867298+00:00",
+      "source_sha256": "4bb91252e8df97746ad045129877ff39077c7250a4236ab49dac616cc09931f9",
       "source_text_sha256": "1877093a79c610372117d7e93a1d7b7bd911ad453e14f4c9cd008e1ad5e86399",
       "evaluated_text_sha256": "83aeb0a11559e0f0a4f3af95309539ccd6899be98dd92fc50c2f99f60f7e10e9",
       "error": "evaluation deferred: model call limit"
@@ -2982,8 +3167,8 @@
         "priority_base": 2
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:16.429070+00:00",
-      "source_sha256": "cf6d5625fca47a19528f34b74e903803968df0a1d9eb2dbe3cb8b3dd4294adc4",
+      "checked_at": "2026-11-17T06:02:16.729513+00:00",
+      "source_sha256": "6cad7a406bf1b9d088de8cf0de25176269c7b03b2ca775c83c2d14a86919988b",
       "source_text_sha256": "990c0c45d7c55a9788163599314fe53bc599577c5ca6c0860f85f4091b4dd88c",
       "evaluated_text_sha256": "990c0c45d7c55a9788163599314fe53bc599577c5ca6c0860f85f4091b4dd88c",
       "processing_attempts": 0
@@ -3129,7 +3314,7 @@
     },
     "57802728c75064e9f68588b60fe2c2bf09f101b79b66a45341e62957e183f068": {
       "status": "pending",
-      "attempts": 1,
+      "attempts": 2,
       "item": {
         "title": "Rescission of the Greenhouse Gas Findings for Fossil Fuel-Fired Power Plants and Repeal of Regulations for Power Plant Greenhouse Gas Emissions Under Clean Air Act Section 111",
         "summary": "In this action, the U.S. Environmental Protection Agency (EPA) is supplementing its proposal to repeal all greenhouse gas (GHG) emission standards for fossil fuel-fired electric generating units (EGUs) to effectuate the best reading of Clean Air Act (CAA) section 111. We propose that CAA section 111 does not authorize the EPA to regulate emissions from power plants in response to global climate change concerns. For the multiple and independent reasons described herein, this additional rationale would also require rescinding the Administrator's contrary findings and determinations in 2015 and repealing all associated 2015 and 2024 GHG standards for the fossil fuel-fired EGU source category. In a separate action published concurrently with this supplemental notice, the EPA is finalizing the repeal of certain 2024 GHG standards for the fossil fuel-fired EGU source category on distinct legal and technical grounds. We are not reopening that final rule. Nor are we soliciting further comment on those issues through this supplemental notice, except to the extent that commenters believe the final rule bears on the distinct questions of statutory authority addressed herein.",
@@ -3146,11 +3331,11 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-16T06:01:57.825571+00:00",
-      "error": "evaluation deferred: model call limit",
+      "checked_at": "2026-11-17T06:01:27.619394+00:00",
+      "error": "supporting quote is absent from the selected source ranges",
       "source_sha256": "b70ce6902f017fb5eb692bd231eacc1bcf3d10fdbc8bd1cc4452e5123f57e908",
       "source_text_sha256": "ff66563395804c1324b38d0237102a91ff2652c8c9d1bb6d56f423cff601a87a",
-      "processing_attempts": 1,
+      "processing_attempts": 2,
       "assessment_coverage": {
         "scope": "unassessed",
         "selection_status": "not assessed",
@@ -3167,7 +3352,8 @@
         "text_sha256": "ff66563395804c1324b38d0237102a91ff2652c8c9d1bb6d56f423cff601a87a",
         "failure_kind": "model assessment unsuccessful",
         "runs": [
-          9
+          9,
+          12
         ]
       }
     },
@@ -3578,7 +3764,7 @@
     },
     "6bc253ab68efb4f40650545eed4bda232e33980c4a7bc93f76b0c9227d5fbace": {
       "status": "pending",
-      "attempts": 1,
+      "attempts": 2,
       "item": {
         "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of a Proposed Rule Change To Permit the Listing of Binary KPI Options",
         "summary": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of a Proposed Rule Change To Permit the Listing of Binary KPI Options",
@@ -3595,11 +3781,11 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-16T06:01:58.375111+00:00",
-      "error": "evaluation deferred: model call limit",
+      "checked_at": "2026-11-17T06:01:39.162827+00:00",
+      "error": "supporting quote is absent from the selected source ranges",
       "source_sha256": "9bfae00fb5084b7843a0ccabbfe48ac1054591f4c9eb985962a4ea3152c35148",
       "source_text_sha256": "2393fd8ea7c0060b5727c0db7343b8587fdda0f340a16ad3697454353aa76933",
-      "processing_attempts": 1,
+      "processing_attempts": 2,
       "assessment_coverage": {
         "scope": "unassessed",
         "selection_status": "not assessed",
@@ -3616,7 +3802,8 @@
         "text_sha256": "2393fd8ea7c0060b5727c0db7343b8587fdda0f340a16ad3697454353aa76933",
         "failure_kind": "model assessment unsuccessful",
         "runs": [
-          8
+          8,
+          12
         ]
       }
     },
@@ -3639,7 +3826,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-16T06:01:58.764203+00:00",
+      "checked_at": "2026-11-17T06:02:00.633911+00:00",
       "error": "evaluation deferred: model call limit",
       "source_sha256": "817c2c9d496192d8816227283231a95c243b5d5675b9e6490f77ceb2c15a2ca2",
       "source_text_sha256": "0aff3662a1b0579999225fdf011dec3b1e833d68b29867bafe107acd1ce289d4",
@@ -4767,7 +4954,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-16T06:01:59.386198+00:00",
+      "checked_at": "2026-11-17T06:02:01.269068+00:00",
       "source_sha256": "f3da990edb63a3acb300f049da3a8b29ef0e965d33c7866d89211a7feb9336bd",
       "source_text_sha256": "95dd79890aabe5b7267cc84c8bf1589877e121be502e261e6910157a221e0873",
       "error": "evaluation deferred: model call limit",
@@ -5969,7 +6156,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-16T06:02:00.136384+00:00",
+      "checked_at": "2026-11-17T06:02:01.992082+00:00",
       "error": "evaluation deferred: model call limit",
       "source_sha256": "025c2d2cb61557c8579e85d6921086906591226b8ebf45a2fdac8ace0c9024c7",
       "source_text_sha256": "ccc1a4a0c9ddc15ce5e9aa29723c8add5086f564fa7e3cd8901f40431ddb6b5a",
@@ -6138,7 +6325,7 @@
         "priority_base": 1
       },
       "active": false,
-      "checked_at": "2026-11-16T06:01:59.654192+00:00",
+      "checked_at": "2026-11-17T06:02:01.521157+00:00",
       "error": "evaluation deferred: model call limit",
       "source_sha256": "cb1fe5ddd4269d23fb6be452240b1bd8579c62b423ba4182e4212de0343c938d",
       "source_text_sha256": "009627f40358d05cbba88541a95c80c0d97345cbb66fec943dfaa93e7b67bb96",
@@ -6182,7 +6369,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:28.367439+00:00",
+      "checked_at": "2026-11-17T06:02:26.289621+00:00",
       "source_sha256": "cbcb3a94d3fde8f0db0089576bd6681c5866cd02e48a0826f21b9d48fcc9eb2d",
       "source_text_sha256": "9a231dc556e7dd9bf632065493852d257e1513785536500627a8c7910933e68b",
       "evaluated_text_sha256": "9a231dc556e7dd9bf632065493852d257e1513785536500627a8c7910933e68b",
@@ -6207,7 +6394,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:28.633114+00:00",
+      "checked_at": "2026-11-17T06:02:29.265155+00:00",
       "source_sha256": "ca9871a684f9f2822c7e3b45d2df0b5d9114fc54ec6e29d9c8323290d6c24c54",
       "source_text_sha256": "2876153013655b8337932575fd4cfb81147e72094adda9fe0d0e244be4493bc8",
       "evaluated_text_sha256": "2876153013655b8337932575fd4cfb81147e72094adda9fe0d0e244be4493bc8",
@@ -6232,7 +6419,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:25.505016+00:00",
+      "checked_at": "2026-11-17T06:02:21.935991+00:00",
       "source_sha256": "ecd2d2fb812a99fa333d0be2deb80bc00aca51693f7f980425735980e7ab5bf3",
       "source_text_sha256": "aa0fe3ab585945e13b46be62d76274e38266d8892c60b4e7cb571d15afc3c696",
       "evaluated_text_sha256": "aa0fe3ab585945e13b46be62d76274e38266d8892c60b4e7cb571d15afc3c696",
@@ -6257,7 +6444,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:25.247081+00:00",
+      "checked_at": "2026-11-17T06:02:21.077953+00:00",
       "source_sha256": "2d65629d1de7997c4f9ea1ff7cd1afd901e501020670c15868995465ef648be3",
       "source_text_sha256": "be142ad997135e0a056f751ee6c2fa430cf90f47b6dbc96a8b6099a3169ff956",
       "evaluated_text_sha256": "be142ad997135e0a056f751ee6c2fa430cf90f47b6dbc96a8b6099a3169ff956",
@@ -6282,7 +6469,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:24.997598+00:00",
+      "checked_at": "2026-11-17T06:02:20.826047+00:00",
       "source_sha256": "00305f1b65e653cf06fa93e29646845571776d89a5f2a4b99e6c70d6d3657dbe",
       "source_text_sha256": "368db77c45beee54d4577a5903187c68c07c00165ee36387854c9a3e8431d813",
       "evaluated_text_sha256": "368db77c45beee54d4577a5903187c68c07c00165ee36387854c9a3e8431d813",
@@ -6308,8 +6495,8 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:17.254547+00:00",
-      "source_sha256": "3c318058a6d386daf4f58ff62b3f762d3cfc34f8d3ced76794665feec60e7b21",
+      "checked_at": "2026-11-17T06:02:17.200110+00:00",
+      "source_sha256": "a68f4bc45bec12a7dceb405ff0255fde02350a0dc8ee013833e024c3082c2fb6",
       "source_text_sha256": "2f927342c2797a3c9017c2af5c218fae658c2617f05bae5e3fb2c3c1901ed42e",
       "evaluated_text_sha256": "2f927342c2797a3c9017c2af5c218fae658c2617f05bae5e3fb2c3c1901ed42e",
       "processing_attempts": 0
@@ -6333,7 +6520,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:17.856822+00:00",
+      "checked_at": "2026-11-17T06:02:17.753093+00:00",
       "source_sha256": "5678fa2416f397632bdb3def5dae1eca3127635608f4c0c27b81a6d0dbe00d1e",
       "source_text_sha256": "85d7fa09679c8be895ef7b503d13da68274ed1e47a82ab84ef4ff3f54d83150a",
       "evaluated_text_sha256": "85d7fa09679c8be895ef7b503d13da68274ed1e47a82ab84ef4ff3f54d83150a",
@@ -6358,7 +6545,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:06.189793+00:00",
+      "checked_at": "2026-11-17T06:02:08.297198+00:00",
       "source_sha256": "28035935dbe1f54ce7085b99416069a4827e0dd5cf5256f27cd50918147dd413",
       "source_text_sha256": "186a7bec49c32542679d828496014366d7be9d3d8ed061460ab7a51c5365065e",
       "processing_attempts": 0,
@@ -6496,8 +6683,8 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:02.843386+00:00",
-      "source_sha256": "a721c4a0a3fc28678d896e2d8a7f772f758768f425d406f549dacd6b761419ed",
+      "checked_at": "2026-11-17T06:02:04.881757+00:00",
+      "source_sha256": "9f3ef3900efeff81f4f0458c37d750c2e2f46927cc852e4ca62a70ff49afb642",
       "source_text_sha256": "6e7bd0e522c9869572bbd97b201254ee6a74cb5956678c050d15c4925d212046",
       "evaluated_text_sha256": "ce49824392c35616fc5ef8d20607190652c3c79c8944949a584d6a4fd2895084",
       "error": "evaluation deferred: model call limit",
@@ -6522,7 +6709,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:05.830669+00:00",
+      "checked_at": "2026-11-17T06:02:07.926615+00:00",
       "source_sha256": "ac136190a42c040e6d7a73ac51d25cbf4f34017ceab795768f5a8cac0fe8f3a6",
       "source_text_sha256": "6a070ea029f262eaf621cd1fbeb0c30eef44dacb2ac371b970e1b296341b7c80",
       "processing_attempts": 0,
@@ -6595,7 +6782,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:21.226351+00:00",
+      "checked_at": "2026-11-17T06:02:19.036352+00:00",
       "source_sha256": "2e5b7f3614f1cd471793702c33ed8eaba7430a7b37b3e4b966b3ee6fb07169f3",
       "source_text_sha256": "8a0673bf588a965a5e235fc8fa05be00c69af7c6973ff520cff096e6f78cd398",
       "evaluated_text_sha256": "8a0673bf588a965a5e235fc8fa05be00c69af7c6973ff520cff096e6f78cd398",
@@ -6621,8 +6808,8 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:03.388205+00:00",
-      "source_sha256": "5cf1eaf7e101bbc5694979ab223fa3b9ef7ae02bfed8e77b00a9ba3dd7644527",
+      "checked_at": "2026-11-17T06:02:05.442562+00:00",
+      "source_sha256": "a50bdd0a4c5f9e42970a8266643a5e98a6c8bf230e5410d083312f134e57999b",
       "source_text_sha256": "11a61d0cb2e376cbd82d6b5d008b3fadaf5506f1e358a55fb696021c185e95c9",
       "evaluated_text_sha256": "11a61d0cb2e376cbd82d6b5d008b3fadaf5506f1e358a55fb696021c185e95c9",
       "processing_attempts": 0
@@ -6646,7 +6833,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:17.598719+00:00",
+      "checked_at": "2026-11-17T06:02:17.494107+00:00",
       "source_sha256": "e2c1b4443d9172d136cd502427fa734eed5f86e28edf1d33db54a994ca5ae36a",
       "source_text_sha256": "7498c2a224a2facf8d0aef0bc78d26bc607b7b16e2c5f6610b94d43f58268f85",
       "evaluated_text_sha256": "7498c2a224a2facf8d0aef0bc78d26bc607b7b16e2c5f6610b94d43f58268f85",
@@ -6671,7 +6858,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:17.319422+00:00",
+      "checked_at": "2026-11-17T06:02:17.242451+00:00",
       "source_sha256": "a601d48bfd1a88a8d0feac66a1a9a145e4cef5dea0109b5fcfdb852f38a0a73e",
       "source_text_sha256": "fbd31565c6223e8bd620911db80b265acf9820735f366bd7118315e7e96d6a48",
       "evaluated_text_sha256": "fbd31565c6223e8bd620911db80b265acf9820735f366bd7118315e7e96d6a48",
@@ -6696,7 +6883,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:18.991900+00:00",
+      "checked_at": "2026-11-17T06:02:18.777219+00:00",
       "source_sha256": "c0f977d9605f1cf9c19dfe5aa836b2433c6d48a22245ddb36383e8009caef890",
       "source_text_sha256": "3879d0e31cfdb57afaadd230d5c3d2314ef5d7188410282ceaca234b7c356aa7",
       "evaluated_text_sha256": "3879d0e31cfdb57afaadd230d5c3d2314ef5d7188410282ceaca234b7c356aa7",
@@ -6721,7 +6908,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:05.126340+00:00",
+      "checked_at": "2026-11-17T06:02:07.201262+00:00",
       "source_sha256": "b4693fb2c835c34f51950317b1bd6b149428fde374c3c60c963aac4b579f47ba",
       "source_text_sha256": "3da63b15ae087a54af6cee16f967c3018cc435e61587f01ff7bde87b9d996f14",
       "processing_attempts": 0,
@@ -6858,7 +7045,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:04.663925+00:00",
+      "checked_at": "2026-11-17T06:02:06.728565+00:00",
       "source_sha256": "9cdc50f6967af2493f769b2b351da0cd4b1191197d36628ec77960b5684480d1",
       "source_text_sha256": "7b6c7a43dc90273194e43ca898e339390a53dc29e11e96da5d50b895b0290947",
       "processing_attempts": 0,
@@ -6979,7 +7166,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:04.228998+00:00",
+      "checked_at": "2026-11-17T06:02:06.277411+00:00",
       "source_sha256": "34483538aab33a130771b95d43d45a742c002a419a54dd094a6b46c38c469b74",
       "source_text_sha256": "c8b99e13843945e36bca74cb10d4774385e64cc3668a87dfeff57da4c9cd9368",
       "processing_attempts": 0,
@@ -7108,7 +7295,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:30.239696+00:00",
+      "checked_at": "2026-11-17T06:02:35.264249+00:00",
       "source_sha256": "98658cdba7a7740226b6d5640d31dc8783e37c8f22f6b5e28cb1707599ae96b7",
       "source_text_sha256": "512a4fad6cba092aaa50f9a73ad42547c38929af44fc4bae2bf1035cee326f06",
       "evaluated_text_sha256": "512a4fad6cba092aaa50f9a73ad42547c38929af44fc4bae2bf1035cee326f06",
@@ -7133,7 +7320,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:18.735889+00:00",
+      "checked_at": "2026-11-17T06:02:18.527666+00:00",
       "source_sha256": "059c2addec1aef7423f8a8e3326ebb6b1e6056fc4fe852b9979e785b954ad9bc",
       "source_text_sha256": "4799ce83aca9760a73d997243b557baba955a05858514e634d7b0f3fd1ccab42",
       "evaluated_text_sha256": "4799ce83aca9760a73d997243b557baba955a05858514e634d7b0f3fd1ccab42",
@@ -7158,7 +7345,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:22.008825+00:00",
+      "checked_at": "2026-11-17T06:02:19.802143+00:00",
       "source_sha256": "cdae9e8a23863ce94d4c93237538654564b827e168838003a216384d5715ba69",
       "source_text_sha256": "1f1b4843a131e981b8d2f15c41cee6148511ae01d764929e1cac4a11c2c35153",
       "evaluated_text_sha256": "1f1b4843a131e981b8d2f15c41cee6148511ae01d764929e1cac4a11c2c35153",
@@ -7183,7 +7370,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:21.745342+00:00",
+      "checked_at": "2026-11-17T06:02:19.538625+00:00",
       "source_sha256": "cca668b6e4bb9103e7aefbf26b0b1ee7da9b94c98266333a3a06f4c448ab8422",
       "source_text_sha256": "fb8438bf6ce351091357c29736f4a43db8eaccc177a88b79f7d2f9d96618e82c",
       "evaluated_text_sha256": "fb8438bf6ce351091357c29736f4a43db8eaccc177a88b79f7d2f9d96618e82c",
@@ -7208,7 +7395,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:08.252815+00:00",
+      "checked_at": "2026-11-17T06:02:10.421060+00:00",
       "source_sha256": "c6fee58970b33cd05b52d270da256ff76bc14ac74e8a85b08250447d2b395e00",
       "source_text_sha256": "124ca75799cac79f59c2ef472595a228c57b6839bf037f547ffc4f01a499e8b6",
       "processing_attempts": 0,
@@ -7313,7 +7500,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:09.024911+00:00",
+      "checked_at": "2026-11-17T06:02:11.184672+00:00",
       "source_sha256": "9ce7f79e2aad18d99e078b72d1653976372cf65915d1fd6c3584cbc13f1c5e69",
       "source_text_sha256": "ca3e999251b2bcd4fd50a77c6cc598aad96f3fed02ad3181ee3f718049e9375c",
       "processing_attempts": 0,
@@ -7450,7 +7637,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:08.593109+00:00",
+      "checked_at": "2026-11-17T06:02:10.753527+00:00",
       "source_sha256": "6f953e70e2c4b0638807602a75c60edccb0a5246264c6b41aba417b86068250b",
       "source_text_sha256": "6b776ff9e962f418d0a113991c19a0d0c9747ce32fd19e1a752cc20c024a4140",
       "processing_attempts": 0,
@@ -7531,7 +7718,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:24.233396+00:00",
+      "checked_at": "2026-11-17T06:02:20.065218+00:00",
       "source_sha256": "988f80705a11498ce2b842468f9d678c59f1ebda8290951d8fa98006af7f9a20",
       "source_text_sha256": "8eb23a83452c8c5f906e1d7d73bc4e6da0e4eeb8e7c216dcb0a245f172988099",
       "evaluated_text_sha256": "8eb23a83452c8c5f906e1d7d73bc4e6da0e4eeb8e7c216dcb0a245f172988099",
@@ -7556,7 +7743,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:24.746142+00:00",
+      "checked_at": "2026-11-17T06:02:20.564869+00:00",
       "source_sha256": "36b1ac700f687df03e80bd292d8e47e693f624ac21b7f34465c6fcf06a4aa687",
       "source_text_sha256": "f8980e56ef809858566cd33ada9313c8d50162207a3af54817ee38a5ebfeeca5",
       "evaluated_text_sha256": "f8980e56ef809858566cd33ada9313c8d50162207a3af54817ee38a5ebfeeca5",
@@ -7581,7 +7768,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:21.482521+00:00",
+      "checked_at": "2026-11-17T06:02:19.290788+00:00",
       "source_sha256": "266651b2c9fd979100fe8bd394738cf3ca36370dffd7f4ac13bc4b422c44cc9d",
       "source_text_sha256": "ba39f0fc5e9a32c542150cc8216193e6754189289400f679cfcf12e5d10e1c8c",
       "evaluated_text_sha256": "ba39f0fc5e9a32c542150cc8216193e6754189289400f679cfcf12e5d10e1c8c",
@@ -7606,7 +7793,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:24.487359+00:00",
+      "checked_at": "2026-11-17T06:02:20.316963+00:00",
       "source_sha256": "89ba75456718a7d87c5fafa3bb274dca1cc3611736ccaa9b22881a54fd240021",
       "source_text_sha256": "2b82f160ffcb94da8e7bda039f78e03678074174925836d9aa5da4fa39ab5afe",
       "evaluated_text_sha256": "2b82f160ffcb94da8e7bda039f78e03678074174925836d9aa5da4fa39ab5afe",
@@ -7631,7 +7818,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:27.229977+00:00",
+      "checked_at": "2026-11-17T06:02:22.183425+00:00",
       "source_sha256": "b0ca1b1c9005ba8f39cb8f938c83b6b5bcd3c6d90d3e7e4b59a8caa7015638a2",
       "source_text_sha256": "51d3c31428350ddc002ac1ccb28c4b28820f09eea17c8a05558ca1c0d63aa4be",
       "evaluated_text_sha256": "51d3c31428350ddc002ac1ccb28c4b28820f09eea17c8a05558ca1c0d63aa4be",
@@ -7656,7 +7843,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:27.489502+00:00",
+      "checked_at": "2026-11-17T06:02:23.248798+00:00",
       "source_sha256": "dcfa4693c104ed2d7bdb1c3cf458dd7f34f2133a5663f885004ba315e7348a66",
       "source_text_sha256": "8cfaa36d84f45f9b7edf8ec05c4a5738881f3f5a975542fb2e1c7447bd716213",
       "evaluated_text_sha256": "8cfaa36d84f45f9b7edf8ec05c4a5738881f3f5a975542fb2e1c7447bd716213",
@@ -7682,8 +7869,8 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:27.749940+00:00",
-      "source_sha256": "517a37c3208cbe4eb70376cd7681d99243ace235c04a738ba1b6d6eff0dbfa6c",
+      "checked_at": "2026-11-17T06:02:26.248142+00:00",
+      "source_sha256": "c6e410a0bab147a925b75936b0526a8bf7ee3898575110761707ee982407a324",
       "source_text_sha256": "701563781934f712f2b7f4920386bff38307e1eb5fce6011d6d960781cf87d13",
       "evaluated_text_sha256": "701563781934f712f2b7f4920386bff38307e1eb5fce6011d6d960781cf87d13",
       "processing_attempts": 0
@@ -7707,7 +7894,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:07.708748+00:00",
+      "checked_at": "2026-11-17T06:02:09.838258+00:00",
       "source_sha256": "ceb94a16875e99566e38022c9da2ad6c558ab0662c41a09480c4dceb20ab6426",
       "source_text_sha256": "f3a064946969e4344d3cae6497d903c2c1a800302baf4c3e61228e22d4092176",
       "processing_attempts": 0,
@@ -7844,7 +8031,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:28.892317+00:00",
+      "checked_at": "2026-11-17T06:02:32.268140+00:00",
       "source_sha256": "baea0d01a82d2dd50c624e1f6745c6eb58b85a2d56177cc3cf11cec48aa42650",
       "source_text_sha256": "5aa3bb36f1293f554cacfc00234c36e7e6f2d7ef19d166709a31089d026804e9",
       "evaluated_text_sha256": "5aa3bb36f1293f554cacfc00234c36e7e6f2d7ef19d166709a31089d026804e9",
@@ -7869,7 +8056,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:18.480973+00:00",
+      "checked_at": "2026-11-17T06:02:18.281866+00:00",
       "source_sha256": "311ca4f492f92bdda08c87958a16e64aef1e9ad3f4ad07a36768c21b46de997a",
       "source_text_sha256": "ebefe2ee6916a5cad035503ab4ec9e5c2ceb9059afb6af172446226579d116ec",
       "evaluated_text_sha256": "ebefe2ee6916a5cad035503ab4ec9e5c2ceb9059afb6af172446226579d116ec",
@@ -7894,7 +8081,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:18.217444+00:00",
+      "checked_at": "2026-11-17T06:02:18.019447+00:00",
       "source_sha256": "e69a1891a9f8b39a1362ef558cc2a7ecea9279dd04470b13367c967b6a828c8f",
       "source_text_sha256": "a43e8622d435af29cfc3e11e6bfea356a29c26808918941f9c0d7dd537a9b587",
       "evaluated_text_sha256": "a43e8622d435af29cfc3e11e6bfea356a29c26808918941f9c0d7dd537a9b587",
@@ -7919,7 +8106,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:07.253676+00:00",
+      "checked_at": "2026-11-17T06:02:09.391073+00:00",
       "source_sha256": "a8ee6adc471679eab967ed9fe304381242eb388398a5e355e35329e01c37edca",
       "source_text_sha256": "b20cf8fb174659bc714b603f74d6f29a45ab11a4da24307a798a52bb2d011970",
       "processing_attempts": 0,
@@ -7992,7 +8179,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:06.716921+00:00",
+      "checked_at": "2026-11-17T06:02:08.839515+00:00",
       "source_sha256": "00d65c408b5667be236990d23bfccc6d49b464e585eabdd9207c6da2aae6098c",
       "source_text_sha256": "2699ccf4c37e2db413fdfba491f300c8597e61ac15b7770f32c386fb28de30c8",
       "processing_attempts": 0,
@@ -8094,7 +8281,7 @@
       }
     },
     "893dd3b089e5079bbe38fbde3588679a932eede4a0cc864c8abea7871eaf8292": {
-      "status": "pending",
+      "status": "evaluated",
       "attempts": 1,
       "item": {
         "title": "Web Summit 2026",
@@ -8113,20 +8300,11 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:28.279886+00:00",
-      "source_sha256": "bb1f49716a3aad5603404c9a8d144484a6344c82d53ea21ab2ffad20c0743e64",
+      "checked_at": "2026-11-17T06:02:02.801624+00:00",
+      "source_sha256": "75c59f46a6f1471d38e1220f58e3051383232d4e03820fdd772bab3a4c7952fa",
       "source_text_sha256": "3ba427a4d57fb0412d939a98de325f91fa2435566a2ce9b4e30f669a9d581402",
       "evaluated_text_sha256": "3ba427a4d57fb0412d939a98de325f91fa2435566a2ce9b4e30f669a9d581402",
-      "processing_attempts": 1,
-      "error": "source HTTP status 429",
-      "failure_history": {
-        "reason": "source HTTP status 429",
-        "text_sha256": null,
-        "failure_kind": "HTTPError",
-        "runs": [
-          11
-        ]
-      }
+      "processing_attempts": 0
     },
     "b4aabd54716c71bb97151a026d1b5e1d6e69ff1fa68eeb7b9db5c55dee833e27": {
       "status": "evaluated",
@@ -8148,8 +8326,8 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:11.507933+00:00",
-      "source_sha256": "662048284a1c282309149b60f2f7f5b1d0455774a2f1075872142ff46c20bcb7",
+      "checked_at": "2026-11-17T06:02:13.697388+00:00",
+      "source_sha256": "93ce41b7f86751485da6f58d99254c2c0c2ffba59a2ebf10ef7208f13e6be5ab",
       "source_text_sha256": "be6cf9ec33c91804f1ad605351749e0eb6cbeac68821363a67efef1249626c47",
       "processing_attempts": 0,
       "assessment_coverage": {
@@ -8206,8 +8384,8 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:00.616839+00:00",
-      "source_sha256": "1b0df77decc6bc5d9ed0f5a40a481202a193873e024d3a3763f7a1c1984e46fe",
+      "checked_at": "2026-11-17T06:02:02.460691+00:00",
+      "source_sha256": "f28f4d060761ff3e9eba60b6a17a2b182ef5141e36e084d3097c2adcadf5b10f",
       "source_text_sha256": "c43e49433ad732b28d58f3b6dfd5bef7907b2460c06bfe0f48e66e94e7120bee",
       "error": "evaluation deferred: model call limit"
     },
@@ -8230,7 +8408,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:11.596384+00:00",
+      "checked_at": "2026-11-17T06:02:13.746566+00:00",
       "source_sha256": "5bdb5cb3e03eb0b3fd5d08aa5b667ecb373efa2fc02cc4c034a5f3b50f2d1c86",
       "source_text_sha256": "a80511bc3ecbd15ae184f465f0892b4ab6a05ac966e9df84056ace6880997b21",
       "processing_attempts": 0,
@@ -8359,7 +8537,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:12.719151+00:00",
+      "checked_at": "2026-11-17T06:02:14.856974+00:00",
       "source_sha256": "617d5b2df3d2a0ffd32e187bc7bb7d1cc4680385baaf49c5d62cc7a43f840ad1",
       "source_text_sha256": "8cfea84de9600ca5a0dcf55c3822645621450dbb24d712baedd2e8f3304c9e3b",
       "processing_attempts": 0,
@@ -8480,7 +8658,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:12.215520+00:00",
+      "checked_at": "2026-11-17T06:02:14.352647+00:00",
       "source_sha256": "b30ed4fb7c1f14475e5e8f0d2869ea6b4ec5eb58fe7e912cf8eb86b9d7a28dec",
       "source_text_sha256": "82b55e522b5d9f3a6babbd347cd6a7754fcfea28a57132467920af19bcbe58a8",
       "processing_attempts": 0,
@@ -8537,7 +8715,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:12.977238+00:00",
+      "checked_at": "2026-11-17T06:02:15.126743+00:00",
       "source_sha256": "8f6ff80145e78ffe917e5b0baac87d5ac477def6e3bf77cfc27ba3d058653121",
       "source_text_sha256": "b9ce5f89eed517ce53a2e64b46e90fe76462dd5f92387c618dc58dbba32be880",
       "processing_attempts": 0,
@@ -8594,7 +8772,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:11.960940+00:00",
+      "checked_at": "2026-11-17T06:02:14.095342+00:00",
       "source_sha256": "f3fad33ed22f3f361ced1222b5a0bd98ba3e8b82f2806c10581d9b71a7d47e81",
       "source_text_sha256": "a8f87359bd2f7e471ca1a8f5729d63c67afc1cc886db91ae4261502bd8995362",
       "processing_attempts": 0,
@@ -8651,7 +8829,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:12.469464+00:00",
+      "checked_at": "2026-11-17T06:02:14.599398+00:00",
       "source_sha256": "fe1d3b258140a45a2e08d83506826d82002c803ca1c3f52794152ef451317001",
       "source_text_sha256": "bf694e8273195bd65134cb41d1249f71be3bcf4cba8cc346a1133e2d928f1e18",
       "processing_attempts": 0,
@@ -8708,7 +8886,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:10.384883+00:00",
+      "checked_at": "2026-11-17T06:02:12.521499+00:00",
       "source_sha256": "ad394d1b177eb061d98dc2b573e6bc05b1dbea5cded6a549d09b4e19ebb7c387",
       "source_text_sha256": "8aa15bf71f8da37791b077292c1687f3ebf03c7fd10cb8ff207731078a36f3b4",
       "processing_attempts": 0,
@@ -8837,7 +9015,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:09.823427+00:00",
+      "checked_at": "2026-11-17T06:02:11.978238+00:00",
       "source_sha256": "e32ff505973a28f9610bcc70b94ced71ac60dbde43426ac53c901a6b9ab13df8",
       "source_text_sha256": "9464ea97ff403944008f0f3ff5dc88362fe6793c49b8fc503f0a9c6253a0178c",
       "processing_attempts": 0,
@@ -8966,7 +9144,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:09.565490+00:00",
+      "checked_at": "2026-11-17T06:02:11.738376+00:00",
       "source_sha256": "b002622c294194da67f316eca81cb0143581cfe3dceef1617c0aeadd1e8abe77",
       "source_text_sha256": "24fb98dcd66490c031d02be932ef527288b55ae2fc24b6ce3460030b8d2da3e8",
       "processing_attempts": 0,
@@ -9023,7 +9201,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:11.253340+00:00",
+      "checked_at": "2026-11-17T06:02:13.441415+00:00",
       "source_sha256": "8d3fe29c42e60e0a45fd620c1c94e99b301a5a1b9cb76cc6cd501b7cca02607a",
       "source_text_sha256": "ba81a43f837eabd2103cf97d43be30ee4cb1f159ca471476434d0c1a8ecafd3e",
       "processing_attempts": 0,
@@ -9062,8 +9240,8 @@
       }
     },
     "1f563aec488591ddf8ceb35be94a79efca4469d6969abb7303f8f2d9ceb76e72": {
-      "status": "pending",
-      "attempts": 1,
+      "status": "evaluated",
+      "attempts": 2,
       "item": {
         "title": "Commission preliminarily finds TikTok’s ‘For You’ feed in breach of Digital Services Act for harmful ‘rabbit holes’ effect",
         "summary": "<span>Commission preliminarily finds TikTok’s ‘For You’ feed in breach of Digital Services Act for harmful ‘rabbit holes’ effect</span>\n<span><span>Anonymous (not verified)</span></span>\n<span><time datetime=\"2026-11-06T12:09:12+01:00\" title=\"Friday, November 6, 2026 - 12:09\">Fri, 11/06/2026 - 12:09</time>\n</span>\n\n<div>\n  <div class=\"cnt-thumbnail-media ecl-u-type-m cnt-content-wrapper\">\n        \n              <div class=\"cnt-teaser ecl-u-type-m ecl-u-mb-xl\">\n                                    <p class=\"ecl-page-header-standardised__description\">The European Commission has preliminarily found TikTok in breach of the Digital Services Act (DSA) for the so-called ‘rabbit hole effect’ of its recommender system.</p>\n\n  \n              </div>\n      <div class=\"cnt-image cnt-media\">\n                     \n            <div>\n\n\n\n\n\n          \n    \n    \n      <div class=\"ecl-media-container\"><figure class=\"ecl-media-container__figure\"><picture class=\"ecl-picture ecl-media-container__picture\"><source><img class=\"ecl-media-container__media\" src=\"https://digital-strategy.ec.europa.eu/sites/default/files/styles/newsroom_large/public/newsroom/items/DSA_variation_v3_tCaOLMFzpo0EqgIcqyulWXEvAvQ_251500.png?itok=wiznj0-z\" alt=\"DSA banner\"></picture></figure></div>  </div>\n      \n  \n      </div>\n    \n    <div class=\"cnt-main-body ecl-u-type-m\">\n                          <div class=\"ecl\"><p>TikTok's ‘For You' feed shows users a continuous stream of personalised videos, even when those are related to mental health struggles and body image.</p>\n<p>The more a user interacts with a certain type of content, the more TikTok's ‘For You' feed algorithm recommends similar content. This design can be harmful when such endless and repeated exposure involves, for example, content about sadness, isolation or body image. These ‘rabbit holes' can have a detrimental impact on users' mental health, especially that of vulnerable adults and minors.</p>\n<p>These preliminary findings focus on both risk assessment and mitigation measures.</p>\n<p><a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2361\" class=\"ecl-link ecl-link--primary-highlight ecl-link--icon ecl-link--icon-after\">Read the full details in the press release</a></p>\n<p>Find further information about:</p>\n<ul>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/list-designated-vlops-and-vloses\">Supervision of the designated very large online platforms and search engines under DSA</a></li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/policies/digital-services-act\">Digital Services Act</a> - main aspects of the regulation</li>\n<li><a href=\"https://digital-strategy.ec.europa.eu/en/factpages/user-rights-under-digital-services-act\">User rights under the Digital Services Act</a> - an overview</li>\n</ul></div>\n\n          \n          </div>\n    <div class=\"cnt-aside ecl-u-type-m\">\n      <aside class=\"ecl-u-height-100\">\n                              <h3>Related topics</h3>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=150\" class=\"ecl-tag ecl-u-mb-xs\">Online platforms and e-commerce</a>\n  <a href=\"https://digital-strategy.ec.europa.eu/en/related-content?topic=193\" class=\"ecl-tag ecl-u-mb-xs\">DSA - Digital Services Act</a>\n\n  \n              </aside>\n    </div>\n\n        <div class=\"cnt-bottom ecl-u-pv-xl\">\n      <div class=\"ecl-u-mb-3xl\">\n                      \n                      </div>\n    </div>\n  </div>\n</div>\n  <div class=\"layout layout--onecol\">\n    <div class=\"layout__region layout__region--content\">\n          <div class=\"cnt-last-update-block\">\n  \n    \n      \n\n  </div>\n<div class=\"cnt-print-pdf-block\">\n  \n    \n      \n  \n  </div>\n\n    </div>\n  </div>\n<div class=\"node_view\"></div>",
@@ -9081,28 +9259,43 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:01:57.611928+00:00",
-      "source_sha256": "60b3658154bbd3132f0dc9b9a83fd851598dbc1af1eabb20bb431c0e9507e783",
+      "checked_at": "2026-11-17T06:01:02.096803+00:00",
+      "source_sha256": "37925d283ed5bc335c1c4e36598fdfa5f3e48c29c4acbab7d0e5495400f9c812",
       "source_text_sha256": "9d50bdd4f2a0cebd9caa5080dd36cf4d70fe4190e19de0dba82a71507c2417ef",
       "processing_attempts": 0,
-      "evaluated_text_sha256": "5a76a40dcdc8e79003ef686c36f77d7410107ff4eb5c028a1630ceb3b37b9f52",
+      "evaluated_text_sha256": "9d50bdd4f2a0cebd9caa5080dd36cf4d70fe4190e19de0dba82a71507c2417ef",
       "evaluated_coverage": {
         "scope": "extracted text",
         "selection_status": "selected",
         "selector": "full-text",
-        "text_chars": 1177,
+        "text_chars": 1178,
         "ranges": [
           [
             0,
-            1177
+            1178
           ]
         ],
         "passages_total": 1,
         "passages_read": 1,
         "passages_left": 0,
-        "selected_text_sha256": "5a76a40dcdc8e79003ef686c36f77d7410107ff4eb5c028a1630ceb3b37b9f52"
+        "selected_text_sha256": "9d50bdd4f2a0cebd9caa5080dd36cf4d70fe4190e19de0dba82a71507c2417ef"
       },
-      "error": "evaluation deferred: model call limit"
+      "assessment_coverage": {
+        "scope": "extracted text",
+        "selection_status": "selected",
+        "selector": "full-text",
+        "text_chars": 1178,
+        "ranges": [
+          [
+            0,
+            1178
+          ]
+        ],
+        "passages_total": 1,
+        "passages_read": 1,
+        "passages_left": 0,
+        "selected_text_sha256": "9d50bdd4f2a0cebd9caa5080dd36cf4d70fe4190e19de0dba82a71507c2417ef"
+      }
     },
     "0fe2ccd7b11029a21993a93311e5bbd7122fcc311d010190cbf53b8cb916c177": {
       "status": "evaluated",
@@ -9123,7 +9316,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:03.969118+00:00",
+      "checked_at": "2026-11-17T06:02:06.011299+00:00",
       "source_sha256": "0aa776ca0201b7aace9e7bf3b0c33907c6cb573b9f70ca43ae7d766429e64fe4",
       "source_text_sha256": "c6ccf83ff3f5fe3d68c3ae0f666033375378084ec2471fae55a8ff9c30b4ae55",
       "processing_attempts": 0,
@@ -9269,7 +9462,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:01:59.127025+00:00",
+      "checked_at": "2026-11-17T06:02:01.008960+00:00",
       "source_sha256": "fd2e3052ce2bf2e7f8db1ffd2439fe8f7f02a44d4496da88a36d39c34f496d97",
       "source_text_sha256": "89bace38d611e09a5db545b64ad755b4be69db6c717de632a8bf3824ff2e9fc8",
       "error": "evaluation deferred: model call limit",
@@ -9313,7 +9506,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:03.714023+00:00",
+      "checked_at": "2026-11-17T06:02:05.745530+00:00",
       "source_sha256": "6f2bc598bb820aa68bb492f6966ee17203fedeefc98717797e8850c3de3437fb",
       "source_text_sha256": "4548609d4712d25381d8d0ee92a0865a0f1fdf9d499e36080b7e948f398d8b17",
       "processing_attempts": 0,
@@ -9370,7 +9563,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:03.463229+00:00",
+      "checked_at": "2026-11-17T06:02:05.488330+00:00",
       "source_sha256": "0ea7556b005173cd608c3a21b5cd7070f8e2b127518bfb809b69f82d008f8a27",
       "source_text_sha256": "8c337cbdb91fdbc3dfb47e1f803a2aa17fcdca9498cc43f6a6e43c5bfb8f0990",
       "processing_attempts": 0,
@@ -9427,7 +9620,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:03.140687+00:00",
+      "checked_at": "2026-11-17T06:02:05.190847+00:00",
       "source_sha256": "3f3b29a4c1c7a52be965d99944eeceb26c704a85c98c047bc3e9d0e95c3efb08",
       "source_text_sha256": "48b6a04f6146611c452c18ce5567da9bb8986c1914549f61c22c81f59a7aa9d9",
       "processing_attempts": 0,
@@ -9484,7 +9677,7 @@
         "priority_base": 1
       },
       "active": true,
-      "checked_at": "2026-11-16T06:02:02.896968+00:00",
+      "checked_at": "2026-11-17T06:02:04.947589+00:00",
       "source_sha256": "a9d747d5225b7e9ec02e369dc693ab008e22f42ef675e8b367587d6a98b8028b",
       "source_text_sha256": "c44c74c241193181d2473e7211af9e4ee62b40e33b3a4780e8610600ba0a8a51",
       "processing_attempts": 0,
@@ -9524,10 +9717,10 @@
     }
   },
   "last_pass": {
-    "documents_checked": 81,
+    "documents_checked": 75,
     "documents_deferred": 0,
     "model_attempts": 6,
-    "pending_evaluations": 18,
+    "pending_evaluations": 13,
     "manual_review_required": 0,
     "not_evaluated_by_reason": {
       "no AI keyword match": 3,
@@ -9535,11 +9728,11 @@
       "insufficient source text": 1,
       "source response exceeds byte limit": 1
     },
-    "passages_read": 361,
+    "passages_read": 376,
     "passages_left": 382,
-    "passages_only_documents": 46,
+    "passages_only_documents": 48,
     "documents_with_passages_left": 34,
-    "coverage_not_recorded": 109,
+    "coverage_not_recorded": 110,
     "unhealthy_sources": [
       "ftc_press_releases"
     ],
@@ -9553,5 +9746,5 @@
   },
   "pending_notifications": [],
   "last_run_status": "incomplete",
-  "pass_number": 11
+  "pass_number": 12
 }

@@ -1,12 +1,24 @@
 {
- "generated": "2026-11-16 06:21 UTC",
+ "generated": "2026-11-17 06:21 UTC",
  "window_days": 60,
  "counts": {
-  "total": 97,
-  "closed": 44,
+  "total": 98,
+  "closed": 45,
   "open_weights": 53
  },
  "releases": [
+  {
+   "lab": "Tencent",
+   "model": "Tencent: Hy4 flash",
+   "id": "tencent/hy4-flash",
+   "date": "2026-11-16",
+   "url": "https://openrouter.ai/tencent/hy4-flash",
+   "context_length": 1048576,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
   {
    "lab": "Alibaba (Qwen)",
    "model": "Qwen: Qwen4 Max",
@@ -140,6 +152,54 @@
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
+   "lab": "Nvidia",
+   "model": "Nemotron-Labs-Sigma-distill-spec-3B",
+   "id": "nvidia/Nemotron-Labs-Sigma-distill-spec-3B",
+   "date": "2026-11-09",
+   "url": "https://huggingface.co/nvidia/Nemotron-Labs-Sigma-distill-spec-3B",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/Nemotron-Labs-Sigma-distill-spec-3B",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "Nemotron-Labs-Sigma-distill-8B-nfe16",
+   "id": "nvidia/Nemotron-Labs-Sigma-distill-8B-nfe16",
+   "date": "2026-11-09",
+   "url": "https://huggingface.co/nvidia/Nemotron-Labs-Sigma-distill-8B-nfe16",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/Nemotron-Labs-Sigma-distill-8B-nfe16",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "Nemotron-Labs-Sigma-distill-8B-nfe8",
+   "id": "nvidia/Nemotron-Labs-Sigma-distill-8B-nfe8",
+   "date": "2026-11-09",
+   "url": "https://huggingface.co/nvidia/Nemotron-Labs-Sigma-distill-8B-nfe8",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/Nemotron-Labs-Sigma-distill-8B-nfe8",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "Nemotron-Labs-Sigma-distill-8B-nfe4",
+   "id": "nvidia/Nemotron-Labs-Sigma-distill-8B-nfe4",
+   "date": "2026-11-09",
+   "url": "https://huggingface.co/nvidia/Nemotron-Labs-Sigma-distill-8B-nfe4",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/Nemotron-Labs-Sigma-distill-8B-nfe4",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
    "lab": "Liquid",
    "model": "LiquidAI: LFM3-1.7B",
    "id": "liquid/lfm-3-1.7b",
@@ -197,18 +257,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "allenai/maniflow-tb",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "MetricTrail",
-   "id": "nvidia/MetricTrail",
-   "date": "2026-11-05",
-   "url": "https://huggingface.co/nvidia/MetricTrail",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/MetricTrail",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
@@ -284,18 +332,6 @@
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
-   "lab": "Nvidia",
-   "model": "DeepSeek-V4.1-Flash-1017-NVFP4",
-   "id": "nvidia/DeepSeek-V4.1-Flash-1017-NVFP4",
-   "date": "2026-10-30",
-   "url": "https://huggingface.co/nvidia/DeepSeek-V4.1-Flash-1017-NVFP4",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/DeepSeek-V4.1-Flash-1017-NVFP4",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
    "lab": "Particle Ai",
    "model": "Particle AI: Particle-1",
    "id": "particle-ai/particle-1",
@@ -317,18 +353,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "ibm-granite/granite-speech-5.0-2b-ONNX",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "Metatron-v1",
-   "id": "nvidia/Metatron-v1",
-   "date": "2026-10-27",
-   "url": "https://huggingface.co/nvidia/Metatron-v1",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/Metatron-v1",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
@@ -377,18 +401,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "allenai/OlmoEarth-v1_2-FT-LFMC-Base",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "MotionBricks",
-   "id": "nvidia/MotionBricks",
-   "date": "2026-10-23",
-   "url": "https://huggingface.co/nvidia/MotionBricks",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/MotionBricks",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
