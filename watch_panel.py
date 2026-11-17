@@ -151,25 +151,37 @@ def render_watch(data):
         f'{escape(row["source_date"])}. {escape(row["current_status"])}</p>'
         f'{_source_links(row["source_ids"], data["sources"])}</article>'
         for row in government["records"])
-    events = ''.join(_row(row, data["sources"], True)
-                     for row in sorted(data["events"], key=lambda item: (item["date"], item["id"])))
+    scheduled = sorted(data["events"], key=lambda row: (row["date"], row["id"]))
+    upcoming = ''.join(_row(row, data["sources"], True)
+                       for row in scheduled if row["date"] >= data["checked_at"])
+    earlier = ''.join(_row(row, data["sources"], True)
+                      for row in reversed(scheduled) if row["date"] < data["checked_at"])
+    if not upcoming:
+        upcoming = '<p>No upcoming published dates were recorded at the last update.</p>'
+    archive = ''
+    if earlier:
+        archive = ('<details class="watch-archive" id="watch-earlier-dates">'
+                   '<summary>Earlier published dates and recorded evidence</summary>'
+                   '<p>A date can pass while its question remains open.</p>'
+                   f'{earlier}</details>')
     watches = ''.join(_row(row, data["sources"], False) for row in data["watches"])
     return (f'<div class="watch-view"><h2>Watch: evidence and upcoming decisions</h2>'
-            f'<p>Source checks: <time datetime="{data["checked_at"]}">{data["checked_at"]}</time>. '
+            f'<p>Calendar updated <time datetime="{data["checked_at"]}">{data["checked_at"]}</time>. '
             'This calendar is manually maintained. Daily news refreshes do not update its evidence. '
             'A passed date does not resolve a question; all outcomes need a recorded source.</p>'
             f'<section class="watch-government"><h3>{escape(government["title"])}</h3>'
             f'<p>{escape(government["intro"])}</p><p>{escape(government["method"])}</p>'
             f'<p>{escape(government["limit"])}</p>{records}'
             f'<p class="watch-meta">Assistance and interests: {escape(government["coi"])}</p></section>'
-            '<section><h3>Published dates</h3><p>Dates announced by the linked source. '
+            '<section id="watch-upcoming"><h3>Upcoming published dates</h3>'
+            '<p>Dates on or after the calendar update, as announced by the linked sources. '
             'Schedules can change. These are opportunities to check evidence, not predictions of a crisis.</p>'
             '<p><a href="AI_OUTLOOK.ics" download>Download calendar (.ics)</a> '
             '· <a href="watch_calendar.json">Structured data</a>. '
             'The download contains published dates only, without alarms; it is not a live subscription.</p>'
-            f'{events}</section><section><h3>Ongoing questions and longer horizons</h3>'
+            f'{upcoming}</section><section><h3>Ongoing questions and longer horizons</h3>'
             '<p>Dates below are editorial checkpoints, not promised court decisions, earnings dates '
-            f'or company deadlines.</p>{watches}</section></div>')
+            f'or company deadlines.</p>{watches}</section>{archive}</div>')
 
 
 def watch_fragment(data):

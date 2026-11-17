@@ -1,12 +1,12 @@
 {
   "purpose": "A manually maintained, source-linked calendar of AI financing, delivery, demand and governance questions.",
-  "checked_at": "2026-09-24",
+  "checked_at": "2026-11-17",
   "interpretation": "Priority is editorial relevance, not a numerical risk score. A date becoming past does not resolve a question. Record evidence, outcome and next review; unresolved remains unresolved.",
   "sources": {
     "BEA": {
       "url": "https://www.bea.gov/news/schedule/full",
-      "locator": "September 30, October 29 and November 25 rows",
-      "kind": "primary calendar"
+      "locator": "2026 release schedule, including the 25 November and 23 December rows",
+      "kind": "official release calendar"
     },
     "BLS": {
       "url": "https://www.bls.gov/schedule/2026/",
@@ -15,18 +15,18 @@
     },
     "FED": {
       "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
-      "locator": "2026 FOMC meetings, October and December",
-      "kind": "primary calendar"
+      "locator": "October and December 2026 and January 2027 meeting rows",
+      "kind": "official meeting calendar"
     },
     "ECB": {
       "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
-      "locator": "2026 monetary-policy meeting days",
-      "kind": "primary calendar"
+      "locator": "Monetary policy meetings in December 2026 and February 2027, Day 2 and press conference rows",
+      "kind": "official meeting calendar"
     },
     "EIA": {
       "url": "https://www.eia.gov/outlooks/steo/release_schedule.php",
-      "locator": "October to December 2026 release schedule",
-      "kind": "primary calendar"
+      "locator": "October 2026 to January 2027 schedule rows and November forecast header",
+      "kind": "official release calendar"
     },
     "IEA": {
       "url": "https://www.iea.org/events/oil-market-report-october-2026",
@@ -50,8 +50,8 @@
     },
     "EUROHPC": {
       "url": "https://www.eurohpc-ju.europa.eu/eurohpc-joint-undertaking-launches-ai-gigafactories-call-2026-07-30_en",
-      "locator": "Submission deadline paragraph, 12 November 2026",
-      "kind": "procurement announcement"
+      "locator": "30 July 2026 call announcement, submission deadline paragraph",
+      "kind": "original procurement announcement"
     },
     "CFR": {
       "url": "https://www.cfr.org/articles/washingtons-growing-portfolio-tracking-u-s-government-investments",
@@ -84,9 +84,9 @@
       "kind": "court case index; latest docket not established"
     },
     "DPC": {
-      "url": "https://www.dataprotection.ie/en/news-media/press-releases/data-protection-commission-opens-investigation-x-xiuc",
-      "locator": "17 February 2026 opening of XIUC/Grok inquiry",
-      "kind": "regulator announcement; later disposition not established"
+      "url": "https://dataprotection.ie/en/news-media/press-releases/data-protection-commission-opens-investigation-x-xiuc",
+      "locator": "17 February 2026 announcement opening the XIUC/Grok inquiry",
+      "kind": "regulator announcement, opening only"
     },
     "PJM": {
       "url": "https://www.pjm.com/-/media/DotCom/documents/ferc/filings/2026/20260910-er26-3380-000.pdf",
@@ -122,6 +122,61 @@
       "url": "https://www.nysd.uscourts.gov/sites/default/files/2026-01/25md3143%20-%2011.24.25%20Order%20re%20ECF%20Nos.%20413%2C%20428%2C%20479%2C%20504%2C%20615.pdf",
       "locator": "Court-hosted order, page 1 caption: 25-md-3143 and copyright infringement litigation",
       "kind": "primary court order; caption only, latest disposition not established"
+    },
+    "BEA_Q3_ADVANCE": {
+      "url": "https://www.bea.gov/news/2026/gdp-advance-estimate-3rd-quarter-2026/",
+      "locator": "29 October release, opening paragraphs and Real GDP and Related Measures table",
+      "kind": "official advance estimate"
+    },
+    "BEA_OCT_OUTLAYS": {
+      "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026",
+      "locator": "Release heading and period, Personal Income and Outlays for September 2026",
+      "kind": "official release"
+    },
+    "EUROHPC_TENDER": {
+      "url": "https://www.eurohpc-ju.europa.eu/call-tenders-selection-artificial-intelligence-gigafactory-consortia-and-establishment-ai_en",
+      "locator": "Important announcement, updated 5 November 2026, with separate Lot 1 and Lot 2 deadlines",
+      "kind": "current procurement call notice"
+    },
+    "FED_DEC": {
+      "url": "https://www.federalreserve.gov/newsevents/2026-december.htm",
+      "locator": "FOMC Meetings section, 8 and 9 December meeting and 9 December press conference",
+      "kind": "official release calendar"
+    },
+    "FED_OCT_RESULT": {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "locator": "28 October statement, target range paragraph",
+      "kind": "official policy statement"
+    },
+    "ECB_OCT_RESULT": {
+      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
+      "locator": "29 October decision, opening paragraph and Key ECB interest rates",
+      "kind": "official policy statement"
+    },
+    "NVIDIA_NOTICE": {
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx",
+      "locator": "28 October notice, opening paragraph on the 17 November FY2027 Q3 call",
+      "kind": "issuer calendar"
+    },
+    "MICRON_Q4_RESULTS": {
+      "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx",
+      "locator": "30 September release, fiscal Q4 2026 highlights",
+      "kind": "issuer earnings release"
+    },
+    "COREWEAVE_RESULTS": {
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx",
+      "locator": "10 November release, CEO statement and forward-looking statements",
+      "kind": "issuer earnings release"
+    },
+    "ANTHROPIC_APRIL": {
+      "url": "https://media.cadc.uscourts.gov/orders/docs/2026/04/26-1049LDSN3.pdf",
+      "locator": "8 April 2026 order, pages 1 and 2, order on stay and expedition in 26-1049",
+      "kind": "primary court order, dated procedural step"
+    },
+    "JPML_NOV": {
+      "url": "https://www.jpml.uscourts.gov/sites/jpml/files/Pending_MDL_Dockets_By_MDL_Number-November-2-2026.pdf",
+      "locator": "2 November 2026 active litigations listing, MDL 3143",
+      "kind": "primary court docket summary, snapshot only"
     }
   },
   "events": [
@@ -145,17 +200,18 @@
       "id": "micron-q4",
       "date": "2026-09-30",
       "date_kind": "published_schedule",
-      "status": "not_observed",
+      "status": "unresolved",
       "title": "Micron fiscal Q4 results",
       "source_ids": [
-        "MICRON"
+        "MICRON",
+        "MICRON_Q4_RESULTS"
       ],
       "priority": "first",
       "question": "Do reported orders and any customer prepayments lead to delivered supply and collected cash?",
       "inspect": "Cash flow, any disclosed customer deposits and their repayment or financing terms, delivered memory and revised capacity plans.",
       "improves": "Disclosed cash receipts and delivery consistent with contractual milestones.",
       "worsens": "Deposit reversals, delivery slippage or financing needs growing faster than operating receipts.",
-      "limit": "An earnings call does not independently confirm customer acceptance; management forecasts remain forecasts."
+      "limit": "Micron published fiscal Q4 results on 30 September. The issuer's cash flow and guidance do not establish individual customer acceptance or the terms of any deposits."
     },
     {
       "id": "jobs-sep",
@@ -257,49 +313,52 @@
       "id": "fed-oct",
       "date": "2026-10-28",
       "date_kind": "published_schedule",
-      "status": "not_observed",
+      "status": "unresolved",
       "title": "FOMC decision after 27-28 October meeting",
       "source_ids": [
-        "FED"
+        "FED",
+        "FED_OCT_RESULT"
       ],
       "priority": "first",
       "question": "How does policy alter financing exposure?",
       "inspect": "Decision and rationale; then compare borrower floating-rate terms, credit margins and hedges.",
       "improves": "Financing costs or risk premiums ease without severe demand deterioration.",
       "worsens": "Benchmark rates or lender margins rise for exposed borrowers.",
-      "limit": "The policy rate is not each borrower's all-in cost. Fixed-rate debt does not instantly reprice."
+      "limit": "On 28 October the FOMC held the federal funds target range at 3.75% to 4.00%. Check borrower margins, hedges and debt terms separately. Fixed-rate debt does not instantly reprice."
     },
     {
       "id": "bea-q3",
       "date": "2026-10-29",
       "date_kind": "published_schedule",
-      "status": "not_observed",
+      "status": "unresolved",
       "title": "US Q3 advance GDP and September income/outlays",
       "source_ids": [
-        "BEA"
+        "BEA",
+        "BEA_Q3_ADVANCE",
+        "BEA_OCT_OUTLAYS"
       ],
       "priority": "first",
       "question": "Is investment-led growth translating into broader demand?",
       "inspect": "Real final domestic demand, investment components, imports and real income.",
       "improves": "Growth broadens and households retain purchasing power.",
       "worsens": "Investment slows while household demand weakens.",
-      "limit": "Advance estimates are revised; no dedicated national-accounts AI category isolates the causal effect."
+      "limit": "The 29 October advance estimate put real GDP growth at a 3.4% annualised rate for Q3 2026. That estimate is revisable. Assess household purchasing power with the separate income and outlays release. Neither release isolates an AI contribution."
     },
     {
       "id": "ecb-oct",
       "date": "2026-10-29",
       "date_kind": "published_schedule",
-      "status": "not_observed",
+      "status": "unresolved",
       "title": "ECB monetary-policy decision",
       "source_ids": [
-        "ECB"
+        "ECB_OCT_RESULT"
       ],
       "priority": "supporting",
       "question": "How are euro-area financing and demand conditions changing?",
       "inspect": "Decision, financing discussion and later bank lending data.",
       "improves": "Credit availability and real demand improve.",
       "worsens": "Tighter financing coincides with weaker demand.",
-      "limit": "Euro-area conditions do not substitute for monetary conditions outside the euro area or for a specific employer's finances."
+      "limit": "The ECB held its three key rates on 29 October. The decision does not establish a specific borrower's financing costs or credit availability."
     },
     {
       "id": "productivity-q3",
@@ -321,7 +380,7 @@
       "id": "eia-nov",
       "date": "2026-11-10",
       "date_kind": "published_schedule",
-      "status": "not_observed",
+      "status": "unresolved",
       "title": "EIA November energy outlook",
       "source_ids": [
         "EIA"
@@ -331,23 +390,24 @@
       "inspect": "Same physical supply, inventory and household-cost measures as October.",
       "improves": "Observed supply and inventory conditions improve across releases.",
       "worsens": "Forecasts repeatedly postpone improvements or depend on new unsupported assumptions.",
-      "limit": "Keep observation periods distinct from publication dates."
+      "limit": "EIA issued the November STEO on 10 November. Its projections remain forecasts. Compare observed production and inventories across vintages and keep the observation periods separate."
     },
     {
       "id": "eurohpc-tender",
-      "date": "2026-11-12",
+      "date": "2026-12-03",
       "date_kind": "published_schedule",
       "status": "not_observed",
-      "title": "EuroHPC AI Gigafactories tender deadline",
+      "title": "EuroHPC AI Gigafactories tender deadline, Lot 2",
       "source_ids": [
+        "EUROHPC_TENDER",
         "EUROHPC"
       ],
       "priority": "first",
       "question": "Which European delivery organisations progress towards funded work?",
-      "inspect": "Subsequent evaluated awards, signed funding, hosting partners, access terms and employer vacancies.",
+      "inspect": "Use the current procurement notice for Lot 2, due at 17:00 Luxembourg time. Check for a later award, signed funding, hosting partners and access terms.",
       "improves": "Executed awards and operating access produce identifiable work and hiring.",
       "worsens": "Awards slip, financing remains conditional or announced jobs do not appear.",
-      "limit": "This is a consortium procurement deadline, not an individual job or research-grant application deadline."
+      "limit": "The July call announcement gave 12 November 2026. The tender notice, updated on 5 November, gives 3 December 2026 for Lot 2 and 4 February 2027 for Lot 1. A submission deadline does not establish an award, a funding transfer, a paid vacancy or operating capacity."
     },
     {
       "id": "bea-q3-profits",
@@ -388,7 +448,8 @@
       "status": "not_observed",
       "title": "FOMC decision and projections after 8-9 December meeting",
       "source_ids": [
-        "FED"
+        "FED",
+        "FED_DEC"
       ],
       "priority": "first",
       "question": "Has the balance of inflation, employment and financing risk changed?",
@@ -428,20 +489,134 @@
       "improves": "Better measurements and explicit sensitivity checks narrow uncertainty.",
       "worsens": "Material exposure gaps persist or assumptions are contradicted by disclosed contracts and cash flows.",
       "limit": "A research presentation is not a financial outcome or a forecast of collapse."
+    },
+    {
+      "id": "nvidia-fy27-q3",
+      "date": "2026-11-17",
+      "title": "NVIDIA fiscal Q3 2027 results call",
+      "source_ids": [
+        "NVIDIA_NOTICE"
+      ],
+      "priority": "first",
+      "question": "Are customer shipments and cash receipts keeping pace with investment commitments?",
+      "inspect": "Read the published results and CFO commentary for data centre revenue, inventories, receivables and cash flow. Separate delivered hardware from future platform plans.",
+      "improves": "Recognised sales and collections move together as capacity is delivered.",
+      "worsens": "Inventory or receivables build faster than comparable sales, or deliveries slip.",
+      "limit": "The dated notice schedules a results call. Customer profitability and service acceptance require separate evidence.",
+      "date_kind": "published_schedule",
+      "status": "not_observed"
+    },
+    {
+      "id": "bea-oct-income",
+      "date": "2026-11-25",
+      "title": "US October personal income and outlays",
+      "source_ids": [
+        "BEA"
+      ],
+      "priority": "first",
+      "question": "Does real household income support consumption growth?",
+      "inspect": "Compare real disposable personal income, real consumption and the saving rate with the previous release.",
+      "improves": "Real income and spending rise together without a material decline in saving.",
+      "worsens": "Consumption relies more on reduced saving while real income weakens.",
+      "limit": "One monthly release is revisable and cannot attribute household outcomes to AI.",
+      "date_kind": "published_schedule",
+      "status": "not_observed"
+    },
+    {
+      "id": "bea-q3-third",
+      "date": "2026-12-23",
+      "title": "US Q3 third GDP estimate and November household income",
+      "source_ids": [
+        "BEA"
+      ],
+      "priority": "first",
+      "question": "Do the GDP revisions and household data still support the existing reading of domestic demand?",
+      "inspect": "Read the separate Q3 GDP, profits and industry release and the November personal income and outlays release. Compare with the earlier estimates.",
+      "improves": "Income and spending support the reading of broader demand after revisions.",
+      "worsens": "Revisions narrow growth to a few industries or weaken the household reading.",
+      "limit": "The two releases cover different periods. Neither provides a counterfactual for AI investment.",
+      "date_kind": "published_schedule",
+      "status": "not_observed"
+    },
+    {
+      "id": "eia-jan",
+      "date": "2027-01-12",
+      "title": "EIA January energy outlook",
+      "source_ids": [
+        "EIA"
+      ],
+      "priority": "supporting",
+      "question": "Do updated physical supply figures support the winter forecast?",
+      "inspect": "Compare the January forecast with the December vintage and check production, inventories and household energy costs.",
+      "improves": "Observed supply and inventories support the forecast path.",
+      "worsens": "Forecast improvements recede as supply or inventories disappoint.",
+      "limit": "The release date is scheduled, and forecasts remain conditional.",
+      "date_kind": "published_schedule",
+      "status": "not_observed"
+    },
+    {
+      "id": "fed-jan",
+      "date": "2027-01-27",
+      "title": "FOMC January meeting, final day",
+      "source_ids": [
+        "FED"
+      ],
+      "priority": "first",
+      "question": "How would the policy decision change the benchmark exposure of floating-rate borrowers?",
+      "inspect": "Read the statement and compare the benchmark with disclosed credit margins, rate caps and maturities.",
+      "improves": "Financing access improves alongside resilient demand.",
+      "worsens": "Exposed borrowers face higher benchmark costs or wider credit margins.",
+      "limit": "A benchmark decision does not determine an individual loan's all-in cost.",
+      "date_kind": "published_schedule",
+      "status": "not_observed"
+    },
+    {
+      "id": "ecb-feb",
+      "date": "2027-02-04",
+      "title": "ECB February monetary policy meeting and press conference",
+      "source_ids": [
+        "ECB"
+      ],
+      "priority": "supporting",
+      "question": "Are European financing conditions still consistent with the earlier operating and demand outlook?",
+      "inspect": "Read the decision and press conference, then compare the account with observed lending and company financing terms.",
+      "improves": "Credit and operating indicators improve together.",
+      "worsens": "Tighter credit accompanies weaker demand or delayed investment.",
+      "limit": "A central bank decision cannot establish any individual company's financing or hiring.",
+      "date_kind": "published_schedule",
+      "status": "not_observed"
+    },
+    {
+      "id": "eurohpc-tender-lot1",
+      "date": "2027-02-04",
+      "title": "EuroHPC AI Gigafactories tender deadline, Lot 1",
+      "source_ids": [
+        "EUROHPC_TENDER",
+        "EUROHPC"
+      ],
+      "priority": "first",
+      "question": "Which proposals progress to awards with documented funding and operating access?",
+      "inspect": "Use the current procurement notice for Lot 1, due at 17:00 Luxembourg time. Check the separate notice for any award, funding commitments, hosting partners and access model.",
+      "improves": "Signed awards and defined access terms support a path to delivered compute.",
+      "worsens": "Further delays or incomplete funding commitments postpone delivery.",
+      "limit": "The extended submission deadline is a procurement milestone. Funding, an award and usable capacity require separate evidence.",
+      "date_kind": "published_schedule",
+      "status": "not_observed"
     }
   ],
   "watches": [
     {
       "id": "credit",
       "title": "Financing and refinancing",
-      "next_review": "2026-10-02",
+      "next_review": "2026-11-24",
       "cadence": "weekly and on new debt filings",
       "question": "Does cash generation cover operations and debt service without increasingly restrictive finance?",
       "inspect": "For CoreWeave, Oracle and selected infrastructure counterparties: debt actually drawn, fixed/floating mix, benchmark plus credit margin, cash interest, maturities, covenants, collateral, hedges, capitalised interest, equity dilution and customer prepayments.",
       "improves": "Operating receipts and contract renewals support repayments; like-for-like financing terms improve.",
       "worsens": "Cash interest rises faster than operating receipts; waivers, failed refinancing, contract loss or supplier payment delays appear.",
-      "limit": "The September convertible-note announcement verifies pricing, not completion. A low convertible coupon is not the total economic financing cost. Backlog is not cash.",
+      "limit": "At its 10 November results, CoreWeave expected about US$9 billion in customer prepayments and deposits over the following three months. Later receipts and terms need separate checks. The September convertible announcement verifies pricing, and backlog is not cash.",
       "source_ids": [
+        "COREWEAVE_RESULTS",
         "COREWEAVE_LOAN",
         "COREWEAVE_NOTES",
         "COREWEAVE_Q2"
@@ -451,20 +626,23 @@
     {
       "id": "earnings",
       "title": "Customer economics and cloud commitments",
-      "next_review": "2026-10-23",
+      "next_review": "2026-11-24",
       "cadence": "during the next issuer reporting round; individual dates require confirmation",
       "question": "Are buyers renewing because they receive measurable value?",
       "inspect": "Microsoft, Alphabet, Amazon, Meta, Oracle and CoreWeave filings plus customer-side accounts. Separate revenue, remaining obligations, recognised revenue and cash; identify customer/vendor financing links.",
       "improves": "Renewals at sustainable pricing, net customer savings after review and integration, and improving operating cash generation.",
       "worsens": "Discount-dependent retention, rising error or review costs, cancellations, or cash increasingly dependent on new funding.",
       "limit": "The review date is an editorial checkpoint, not an announced earnings date. No comparable public renewal series for private frontier labs has been established.",
-      "source_ids": [],
+      "source_ids": [
+        "COREWEAVE_RESULTS",
+        "NVIDIA_NOTICE"
+      ],
       "status": "unresolved"
     },
     {
       "id": "deployments",
       "title": "Deployment, service acceptance and grid access",
-      "next_review": "2026-09-29",
+      "next_review": "2026-11-24",
       "cadence": "weekly while decisions are pending",
       "question": "Does funded capacity become available to paying users on the contracted timetable?",
       "inspect": "PJM ER26-3380 and ER26-3515 (unverified investigation leads in this update), utility energisation, customer acceptance, usable capacity, contracted versus actual power, and project-specific service start dates.",
@@ -479,44 +657,46 @@
     {
       "id": "anthropic-litigation",
       "title": "Anthropic government-contract litigation",
-      "next_review": "2026-10-02",
+      "next_review": "2026-11-24",
       "cadence": "weekly and on an operative order",
       "question": "Which procurement restrictions are actually operative for which agencies and customers?",
-      "inspect": "N.D. California 3:26-cv-01996, subsequent relief and appeals. D.C. Circuit 26-1049 and 26-1162 are unverified investigation leads here; obtain their docket records before relying on them. Identify statute, addressee, stay and effective date.",
+      "inspect": "Read the operative relief and later orders separately for N.D. California 3:26-cv-01996 and D.C. Circuit 26-1049. Check the docket identity for 26-1162 before relying on it.",
       "improves": "Clear operative decisions reduce uncertainty over lawful procurement and customer access.",
       "worsens": "New enforceable restrictions materially exclude products or customers.",
-      "limit": "The 27 August merits order is inspected. The latest full appellate docket and separate relief order are not verified. No court decision date is invented.",
+      "limit": "The D.C. Circuit denied a stay in 26-1049 on 8 April. That procedural order and the dated California merits order do not establish the current scope of procurement restrictions. Later relief, stays, and the full appellate posture remain unverified.",
       "source_ids": [
-        "ANTHROPIC_CASE"
+        "ANTHROPIC_CASE",
+        "ANTHROPIC_APRIL"
       ],
       "status": "unresolved"
     },
     {
       "id": "copyright",
       "title": "OpenAI copyright litigation",
-      "next_review": "2026-10-02",
+      "next_review": "2026-11-24",
       "cadence": "weekly docket check, only material orders promoted",
       "question": "Do operative decisions change training permissions, licensing costs, data retention or distribution?",
       "inspect": "SDNY OpenAI Cases 25-md-3143: scheduling and substantive orders, settlements and actual duties rather than a complaint alone.",
       "improves": "Clear rulings or workable licences reduce uncertainty over deployment and data handling.",
       "worsens": "Enforceable restrictions or liabilities materially change supply costs or customer terms.",
-      "limit": "Case identity and copyright subject are verified from the court index and the caption of a court-hosted order. The latest docket, merits disposition and next hearing date remain unverified.",
+      "limit": "The Judicial Panel on Multidistrict Litigation listed MDL 3143 among active cases on 2 November. Its list does not establish the latest docket activity, disposition or next hearing date.",
       "source_ids": [
         "OPENAI_CASE",
-        "OPENAI_CAPTION"
+        "OPENAI_CAPTION",
+        "JPML_NOV"
       ],
       "status": "unresolved"
     },
     {
       "id": "privacy",
       "title": "EU privacy and deployment restrictions",
-      "next_review": "2026-10-02",
+      "next_review": "2026-12-17",
       "cadence": "monthly and on an official decision",
       "question": "Do privacy decisions change which AI services employers can deploy?",
       "inspect": "DPC XIUC/Grok inquiry: published findings, operative remedies, processing restrictions and appeals. Add other cases only when a specific deployment or employer is affected.",
       "improves": "Implemented safeguards and clear processing terms permit accountable deployment.",
       "worsens": "Binding restrictions, material breaches or unresolved processing obligations affect customers.",
-      "limit": "The February opening of the inquiry is verified. A later final disposition was not established; an investigation is not a finding of breach.",
+      "limit": "The regulator's February notice establishes the opening of the XIUC inquiry. This source check did not establish a later operative decision or a finding of breach.",
       "source_ids": [
         "DPC"
       ],
@@ -525,7 +705,7 @@
     {
       "id": "government-roles",
       "title": "Government regulation, procurement and investment",
-      "next_review": "2026-10-01",
+      "next_review": "2026-12-17",
       "cadence": "monthly and on an executed transaction or policy decision",
       "question": "Do specific public interests or powers affect a claim, contract or market-access decision?",
       "inspect": "Agency and legal entity; held shares versus warrants or preferred conversion rights; loans, guarantees and procurement; proposed versus closed deals; independent judicial or audit findings.",
@@ -543,7 +723,7 @@
     {
       "id": "substitution",
       "title": "Cheaper models and operational reliability",
-      "next_review": "2026-10-16",
+      "next_review": "2026-12-17",
       "cadence": "monthly or after a material model/pricing release",
       "question": "Can a cheaper provider or ordinary code deliver the same accepted work?",
       "inspect": "A bounded fixed task set: total cost per accepted result, failures, human review time, data handling, portability and exit cost. Include code-only and cheaper-model baselines where appropriate.",
@@ -556,14 +736,15 @@
     {
       "id": "eu-employment",
       "title": "European employer and funding opportunities",
-      "next_review": "2026-09-28",
+      "next_review": "2026-11-24",
       "cadence": "weekly",
       "question": "Where are paid roles with progression supported by real operating budgets?",
       "inspect": "Current vacancies, paid employment terms, legal employer, language and relocation conditions, customer demand, runway where disclosed, grant disbursements and hiring after awards.",
       "improves": "Verified paid openings and employers with identifiable customers or executed funding.",
       "worsens": "Unpaid trials, grant-dependent posts before award, repeated hiring freezes or unclear employing entities.",
-      "limit": "Funding announcements do not establish cash receipt or a vacancy.",
+      "limit": "Use the revised lot deadlines in the tender notice. Funding announcements and submission dates do not establish cash receipt or a vacancy.",
       "source_ids": [
+        "EUROHPC_TENDER",
         "EUROHPC"
       ],
       "status": "unresolved"
@@ -601,7 +782,7 @@
     "intro": "An active subject for scrutiny: identify the public body, its powers and any financial or procurement relationship relevant to each AI claim. Dated evidence does not mean that the underlying issue has ended.",
     "method": "Assess statistical releases, forecasts, procurement decisions and investment announcements separately. A government interest can warrant scrutiny; it does not by itself establish that a statement is false or that every agency shares the same interest. No automatic source-tier change follows from this panel.",
     "limit": "The records below establish what their dated sources report. They are not a complete current holdings register. Shares, preferred conversion rights, warrants, loans, guarantees, revenue sharing and proposals must remain distinct. The original roster is preserved in the dated archive below; its current status remains unverified.",
-    "coi": "An Anthropic model assisted the original panel. An OpenAI model prepared this update. A Google model reviewed an earlier draft; an Anthropic model reviewed the repairs. OpenAI, Anthropic and Alphabet are subjects of the calendar. AI review does not remove these relationships or establish complete coverage.",
+    "coi": "An Anthropic model assisted the original panel. An OpenAI model prepared this update. A Google model reviewed an earlier draft; an Anthropic model reviewed the repairs. OpenAI, Anthropic and Alphabet are subjects of the calendar. AI review does not remove these relationships or establish complete coverage. OpenAI GPT-6.2 Sol drafted the 17 November 2026 calendar refresh.",
     "records": [
       {
         "title": "Intel: announced common-stock investment",
@@ -626,9 +807,10 @@
         "claim": "The California court order grants and denies different claims and provides for relief in a separate order.",
         "source_date": "2026-08-27",
         "source_ids": [
-          "ANTHROPIC_CASE"
+          "ANTHROPIC_CASE",
+          "ANTHROPIC_APRIL"
         ],
-        "current_status": "This order alone cannot establish the present scope of federal procurement restrictions. Check operative relief and any stay or appeal. The D.C. case identifiers in the litigation watch remain unverified leads; current exclusions remain unresolved here."
+        "current_status": "This California order does not establish the present scope of federal procurement restrictions. The ongoing litigation watch links a dated D.C. Circuit stay decision in 26-1049. Later relief and current restrictions remain unverified here."
       }
     ]
   }

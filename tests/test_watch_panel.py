@@ -2,6 +2,7 @@
 
 import contextlib
 import copy
+from datetime import date, timedelta
 import io
 import json
 from pathlib import Path
@@ -52,10 +53,15 @@ class WatchTests(unittest.TestCase):
         row['status'] = 'resolved'
         with self.assertRaises(watch.WatchDataError):
             watch.validate_watch(self.data)
-        row['outcome'] = {'finding': 'Synthetic outcome', 'observed_at': '2026-09-24', 'source_ids': ['BEA']}
+        row['outcome'] = {
+            'finding': 'Synthetic outcome',
+            'observed_at': self.data['checked_at'],
+            'source_ids': ['BEA']
+        }
         watch.validate_watch(self.data)
         self.assertIn('Synthetic outcome', watch.render_watch(self.data))
-        row['outcome']['observed_at'] = '2026-09-25'
+        after_check = date.fromisoformat(self.data['checked_at']) + timedelta(days=1)
+        row['outcome']['observed_at'] = after_check.isoformat()
         with self.assertRaises(watch.WatchDataError):
             watch.validate_watch(self.data)
 
@@ -65,6 +71,23 @@ class WatchTests(unittest.TestCase):
         self.assertIn('2020-01-01', rendered)
         self.assertNotIn('Resolved with cited evidence', rendered)
         self.assertIn('Unresolved', rendered)
+
+    def test_watch_shows_same_day_and_future_dates_above_the_archive(self):
+        past, today, future = self.data['events'][:3]
+        self.data['checked_at'] = '2026-11-17'
+        past['date'] = '2026-11-16'
+        today['date'] = '2026-11-17'
+        future['date'] = '2026-11-18'
+
+        rendered = watch.render_watch(self.data)
+        upcoming = rendered.index('id="watch-upcoming"')
+        archive = rendered.index('id="watch-earlier-dates"')
+        for row in (today, future):
+            surface = rendered.index(f'id="watch-{row["id"]}"')
+            self.assertLess(upcoming, surface)
+            self.assertLess(surface, archive)
+        self.assertGreater(rendered.index(f'id="watch-{past["id"]}"'), archive)
+        self.assertEqual(rendered.count(f'id="watch-{past["id"]}"'), 1)
 
     def test_html_escaping_in_prose_and_source_links(self):
         self.data['events'][0]['title'] = '<script>alert(1)</script>'
