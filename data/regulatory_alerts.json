@@ -1,5 +1,292 @@
 [
   {
+    "id": "alert_d99bd35f249ea008783824ad",
+    "timestamp": "2026-11-18T06:01:56.741857+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Self-Regulatory Organizations; Cboe Exchange, Inc.; Notice of Filing of Amendment No. 1 and Order Granting Accelerated Approval of a Proposed Rule Change, as Modified by Amendment No. 1, To Permit the Listing of Binary Options Overlying Key Performance Indicators Reported by Certain Issuers of Stock",
+    "url": "https://www.federalregister.gov/documents/2026/10/16/2026-21149/self-regulatory-organizations-cboe-exchange-inc-notice-of-filing-of-amendment-no-1-and-order",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document details the SEC's approval of Cboe Exchange's proposal to list binary options based on Key Performance Indicators (KPIs) of specific issuers, including NVIDIA and Palantir. It does not impose any regulatory duties, transparency requirements, or operational obligations on AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "No action required; document is outside the scope of AI operator regulatory monitoring.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "cb1fe5ddd4269d23fb6be452240b1bd8579c62b423ba4182e4212de0343c938d",
+    "source_text_sha256": "009627f40358d05cbba88541a95c80c0d97345cbb66fec943dfaa93e7b67bb96",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 264554,
+      "ranges": [
+        [
+          0,
+          625
+        ],
+        [
+          11371,
+          12624
+        ],
+        [
+          12624,
+          13964
+        ],
+        [
+          13964,
+          14652
+        ],
+        [
+          58334,
+          59510
+        ],
+        [
+          88220,
+          89452
+        ],
+        [
+          95763,
+          97074
+        ],
+        [
+          137917,
+          139125
+        ],
+        [
+          139739,
+          141118
+        ],
+        [
+          141654,
+          143023
+        ],
+        [
+          250812,
+          251858
+        ]
+      ],
+      "passages_total": 13,
+      "passages_read": 11,
+      "passages_left": 2,
+      "selected_text_sha256": "81197b916f54fd7b9ac94cde7078cc7aec3576b4792f7effafbd3eddaafa44c9"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/10/16/2026-21149.html",
+    "document_status": "binding",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "The Exchange believes offering investors an additional investment tool on a national securities exchange related to some of the most actively traded stocks and options will perfect the mechanism of a free and open market and benefit investors by allowing them to further refine their investment strategies, including using binary KPI options to hedge idiosyncratic, event-specific risk embedded in the specific KPIs (as further discussed below), for these actively traded companies.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_4f672a9c901f5dcd80ce1677",
+    "timestamp": "2026-11-18T06:01:38.980195+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Request for Information (RFI) Regarding the Digitization and Modernization of the National Technical Reports Library (NTRL) and the Leveraging of Scientific, Technical and Engineering Information (STEI) Stored in the NTRL",
+    "url": "https://www.federalregister.gov/documents/2026/09/30/2026-20023/request-for-information-rfi-regarding-the-digitization-and-modernization-of-the-national-technical",
+    "source_queue_priority": 1,
+    "substantive_priority": 3,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a Request for Information (RFI) seeking stakeholder feedback on the digitization and modernization of the National Technical Reports Library (NTRL) to enhance its utility for AI and advanced computing applications. It does not impose binding regulatory duties on AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Monitor the finalization of the NTRL digitization strategy and subsequent data release frameworks to assess potential new data sources for AI training.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "f3da990edb63a3acb300f049da3a8b29ef0e965d33c7866d89211a7feb9336bd",
+    "source_text_sha256": "95dd79890aabe5b7267cc84c8bf1589877e121be502e261e6910157a221e0873",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 18740,
+      "ranges": [
+        [
+          0,
+          671
+        ],
+        [
+          712,
+          1992
+        ],
+        [
+          4105,
+          5861
+        ],
+        [
+          9682,
+          10948
+        ],
+        [
+          10948,
+          12089
+        ],
+        [
+          12133,
+          13444
+        ],
+        [
+          14149,
+          15469
+        ],
+        [
+          15469,
+          17097
+        ],
+        [
+          17277,
+          18566
+        ]
+      ],
+      "passages_total": 9,
+      "passages_read": 9,
+      "passages_left": 0,
+      "selected_text_sha256": "592d9c1ea29c83b69d9c63864b0b54b51c2892f87b22d0d784f40d13b344f831"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/30/2026-20023.html",
+    "document_status": "consultation",
+    "ai_relevance": "relevant",
+    "evidence_quote": "Leveraging the information archived within the NTRL may include making the data more accessible to AI and advanced computing applications.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_817cd983f559377837b33ad7",
+    "timestamp": "2026-11-18T06:01:24.959701+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (Executive Orders)",
+    "jurisdiction": "United States",
+    "title": "Establishment of the Oval Office National Monument",
+    "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23113/establishment-of-the-oval-office-national-monument",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a US Presidential Proclamation establishing the Oval Office as a National Monument under the Antiquities Act. It imposes management duties on the US Secretary of the Interior and National Park Service regarding the preservation of the White House's Oval Office. It contains no provisions, obligations, or references relevant to AI operators, AI safety, or AI regulatory compliance.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "No action required; document is outside the scope of AI regulatory monitoring.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "fd2e3052ce2bf2e7f8db1ffd2439fe8f7f02a44d4496da88a36d39c34f496d97",
+    "source_text_sha256": "89bace38d611e09a5db545b64ad755b4be69db6c717de632a8bf3824ff2e9fc8",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "extracted text",
+      "selection_status": "selected",
+      "selector": "full-text",
+      "text_chars": 4821,
+      "ranges": [
+        [
+          0,
+          4821
+        ]
+      ],
+      "passages_total": 1,
+      "passages_read": 1,
+      "passages_left": 0,
+      "selected_text_sha256": "89bace38d611e09a5db545b64ad755b4be69db6c717de632a8bf3824ff2e9fc8"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/12/2026-23113.html",
+    "document_status": "binding",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "The Secretary of the Interior (Secretary), through the National Park Service, shall manage the monument in a manner that protects its historic character, architectural integrity, and association with the Presidency.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_ae04e4ef9641d170b36ae265",
+    "timestamp": "2026-11-18T06:00:59.691715+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Modernizing the Labor Market Test and Improving Protections for U.S. Workers in the PERM Immigrant Visa Program",
+    "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23370/modernizing-the-labor-market-test-and-improving-protections-for-us-workers-in-the-perm-immigrant",
+    "source_queue_priority": 1,
+    "substantive_priority": null,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): Modernizing the Labor Market Test and Improving Protections for U.S. Workers in the PERM Immigrant Visa Program",
+    "denominator_disclosed": "unassessed",
+    "actionable_trigger": "Review the captured primary document.",
+    "evaluation_method": "unassessed",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "cf2c5b44c182429ac30e1181e413d6018ad47a53163f784d9db3a9ee520521af",
+    "source_text_sha256": "d134cefcac07d00b40390a842c54e2f6fb6ac3ff602d4702eb443846baa20719",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "unassessed",
+      "selection_status": "not assessed",
+      "selector": "ai-keywords-v2",
+      "text_chars": 713503,
+      "ranges": [],
+      "passages_total": 25,
+      "passages_read": 0,
+      "passages_left": 25,
+      "selected_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/17/2026-23370.html",
+    "document_status": "unassessed",
+    "ai_relevance": "unassessed",
+    "evidence_quote": null,
+    "assessment_error": "supporting quote is absent from the selected source ranges"
+  },
+  {
+    "id": "alert_65f5c82bdc73a61b453cc34e",
+    "timestamp": "2026-11-18T06:00:46.390703+00:00",
+    "alert_schema_version": 2,
+    "source": "EU AI Office & Digital Strategy",
+    "jurisdiction": "European Union",
+    "title": "Commission hosts Apply AI Summit to boost Europe’s AI innovation and uptake",
+    "url": "https://digital-strategy.ec.europa.eu/en/news/commission-hosts-apply-ai-summit-boost-europes-ai-innovation-and-uptake",
+    "source_queue_priority": 1,
+    "substantive_priority": 4,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document announces the Apply AI Summit and related events, highlighting the one-year anniversary of the Apply AI Strategy. It mentions a separate consultation on a draft template for fundamental rights impact assessments under Article 27 of the AI Act, but the primary text describes an event and strategy milestone rather than imposing a new binding duty on operators.",
+    "denominator_disclosed": "no",
+    "actionable_trigger": "Monitor the separate consultation on the draft template for fundamental rights impact assessments under Article 27 AI Act mentioned in the related content section.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "d04c8914ba6053900dab8e7c2d937756213725b55c82ed6b5f7263b5920e8986",
+    "source_text_sha256": "31e73d144143774174c9c5cf2efd2b050be9cf3a81200b624d527bb2132bad02",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "extracted text",
+      "selection_status": "selected",
+      "selector": "full-text",
+      "text_chars": 2030,
+      "ranges": [
+        [
+          0,
+          2030
+        ]
+      ],
+      "passages_total": 1,
+      "passages_read": 1,
+      "passages_left": 0,
+      "selected_text_sha256": "31e73d144143774174c9c5cf2efd2b050be9cf3a81200b624d527bb2132bad02"
+    },
+    "source_capture_url": "https://digital-strategy.ec.europa.eu/en/news/commission-hosts-apply-ai-summit-boost-europes-ai-innovation-and-uptake",
+    "document_status": "other",
+    "ai_relevance": "relevant",
+    "evidence_quote": "The Apply AI Summit marks one year since the adoption of the Apply AI Strategy , which sets out how to speed up the use of AI in Europe’s key industries and the public sector.",
+    "assessment_error": null
+  },
+  {
     "id": "alert_8c7a208a805f7cd3ea1fd3e5",
     "timestamp": "2026-11-17T06:01:27.619351+00:00",
     "alert_schema_version": 2,
@@ -1985,45 +2272,6 @@
     "assessment_error": null
   },
   {
-    "id": "alert_817cd983f559377837b33ad7",
-    "timestamp": "2026-11-12T06:01:35.522326+00:00",
-    "alert_schema_version": 2,
-    "source": "US Federal Register (Executive Orders)",
-    "jurisdiction": "United States",
-    "title": "Establishment of the Oval Office National Monument",
-    "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23113/establishment-of-the-oval-office-national-monument",
-    "source_queue_priority": 1,
-    "substantive_priority": null,
-    "is_operator_duty_shift": false,
-    "duty_type": "none",
-    "statutory_reference": null,
-    "summary": "Unassessed capture from US Federal Register (Executive Orders): Establishment of the Oval Office National Monument",
-    "denominator_disclosed": "unassessed",
-    "actionable_trigger": "Review the captured primary document.",
-    "evaluation_method": "unassessed",
-    "model": "qwen3.8:latest",
-    "reviewed": false,
-    "source_sha256": "fd2e3052ce2bf2e7f8db1ffd2439fe8f7f02a44d4496da88a36d39c34f496d97",
-    "source_text_sha256": "89bace38d611e09a5db545b64ad755b4be69db6c717de632a8bf3824ff2e9fc8",
-    "assessment_version": 4,
-    "assessment_coverage": {
-      "scope": "unassessed",
-      "selection_status": "not assessed",
-      "selector": "full-text",
-      "text_chars": 4821,
-      "ranges": [],
-      "passages_total": 1,
-      "passages_read": 0,
-      "passages_left": 1,
-      "selected_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/12/2026-23113.html",
-    "document_status": "unassessed",
-    "ai_relevance": "unassessed",
-    "evidence_quote": null,
-    "assessment_error": "model timeout"
-  },
-  {
     "id": "alert_96396c8e2dc04a9ed503a345",
     "timestamp": "2026-11-11T06:01:55.812535+00:00",
     "alert_schema_version": 2,
@@ -2102,45 +2350,6 @@
     "ai_relevance": "relevant",
     "evidence_quote": "Board-supervised PPSIs could be vulnerable to certain information technology and cybersecurity failures or attacks by artificial intelligence tools that are rapidly developing capabilities that allow them to detect and exploit weaknesses in websites and online portals.",
     "assessment_error": null
-  },
-  {
-    "id": "alert_4f672a9c901f5dcd80ce1677",
-    "timestamp": "2026-11-11T06:01:38.979055+00:00",
-    "alert_schema_version": 2,
-    "source": "US Federal Register (AI Rules & Notices)",
-    "jurisdiction": "United States",
-    "title": "Request for Information (RFI) Regarding the Digitization and Modernization of the National Technical Reports Library (NTRL) and the Leveraging of Scientific, Technical and Engineering Information (STEI) Stored in the NTRL",
-    "url": "https://www.federalregister.gov/documents/2026/09/30/2026-20023/request-for-information-rfi-regarding-the-digitization-and-modernization-of-the-national-technical",
-    "source_queue_priority": 1,
-    "substantive_priority": null,
-    "is_operator_duty_shift": false,
-    "duty_type": "none",
-    "statutory_reference": null,
-    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): Request for Information (RFI) Regarding the Digitization and Modernization of the National Technical Reports Library (NTRL) and the Leveraging of Scientific, Technical and Engineering Information (STEI) Stored in the NTRL",
-    "denominator_disclosed": "unassessed",
-    "actionable_trigger": "Review the captured primary document.",
-    "evaluation_method": "unassessed",
-    "model": "qwen3.8:latest",
-    "reviewed": false,
-    "source_sha256": "f3da990edb63a3acb300f049da3a8b29ef0e965d33c7866d89211a7feb9336bd",
-    "source_text_sha256": "95dd79890aabe5b7267cc84c8bf1589877e121be502e261e6910157a221e0873",
-    "assessment_version": 4,
-    "assessment_coverage": {
-      "scope": "unassessed",
-      "selection_status": "not assessed",
-      "selector": "ai-keywords-v2",
-      "text_chars": 18740,
-      "ranges": [],
-      "passages_total": 9,
-      "passages_read": 0,
-      "passages_left": 9,
-      "selected_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/30/2026-20023.html",
-    "document_status": "unassessed",
-    "ai_relevance": "unassessed",
-    "evidence_quote": null,
-    "assessment_error": "supporting quote is absent from the selected source ranges"
   },
   {
     "id": "alert_62f7efc8a25b2729754c6de1",
@@ -2811,45 +3020,6 @@
     "ai_relevance": "not_relevant",
     "evidence_quote": "The final rule does not authorize, require, or reference the use of artificial intelligence or automated tools to review, summarize, or filter public comments or objections.",
     "assessment_error": null
-  },
-  {
-    "id": "alert_d99bd35f249ea008783824ad",
-    "timestamp": "2026-11-10T06:00:40.183654+00:00",
-    "alert_schema_version": 2,
-    "source": "US Federal Register (AI Rules & Notices)",
-    "jurisdiction": "United States",
-    "title": "Self-Regulatory Organizations; Cboe Exchange, Inc.; Notice of Filing of Amendment No. 1 and Order Granting Accelerated Approval of a Proposed Rule Change, as Modified by Amendment No. 1, To Permit the Listing of Binary Options Overlying Key Performance Indicators Reported by Certain Issuers of Stock",
-    "url": "https://www.federalregister.gov/documents/2026/10/16/2026-21149/self-regulatory-organizations-cboe-exchange-inc-notice-of-filing-of-amendment-no-1-and-order",
-    "source_queue_priority": 1,
-    "substantive_priority": null,
-    "is_operator_duty_shift": false,
-    "duty_type": "none",
-    "statutory_reference": null,
-    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): Self-Regulatory Organizations; Cboe Exchange, Inc.; Notice of Filing of Amendment No. 1 and Order Granting Accelerated Approval of a Proposed Rule Change, as Modified by Amendment No. 1, To Permit the Listing of Binary Options Overlying Key Performance Indicators Reported by Certain Issuers of Stock",
-    "denominator_disclosed": "unassessed",
-    "actionable_trigger": "Review the captured primary document.",
-    "evaluation_method": "unassessed",
-    "model": "qwen3.8:latest",
-    "reviewed": false,
-    "source_sha256": "cb1fe5ddd4269d23fb6be452240b1bd8579c62b423ba4182e4212de0343c938d",
-    "source_text_sha256": "009627f40358d05cbba88541a95c80c0d97345cbb66fec943dfaa93e7b67bb96",
-    "assessment_version": 4,
-    "assessment_coverage": {
-      "scope": "unassessed",
-      "selection_status": "not assessed",
-      "selector": "ai-keywords-v2",
-      "text_chars": 264554,
-      "ranges": [],
-      "passages_total": 13,
-      "passages_read": 0,
-      "passages_left": 13,
-      "selected_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/10/16/2026-21149.html",
-    "document_status": "unassessed",
-    "ai_relevance": "unassessed",
-    "evidence_quote": null,
-    "assessment_error": "supporting quote is absent from the selected source ranges"
   },
   {
     "id": "alert_19e42db5674e2b4adda186b5",

@@ -1,12 +1,72 @@
 {
- "generated": "2026-11-17 06:21 UTC",
+ "generated": "2026-11-18 06:21 UTC",
  "window_days": 60,
  "counts": {
-  "total": 98,
-  "closed": 45,
-  "open_weights": 53
+  "total": 100,
+  "closed": 48,
+  "open_weights": 52
  },
  "releases": [
+  {
+   "lab": "OpenAI",
+   "model": "OpenAI: GPT-6.2 Astra Pro",
+   "id": "openai/gpt-6.2-astra-pro",
+   "date": "2026-11-17",
+   "url": "https://openrouter.ai/openai/gpt-6.2-astra-pro",
+   "context_length": 1050000,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "OpenAI",
+   "model": "OpenAI: GPT-6.2 Astra",
+   "id": "openai/gpt-6.2-astra",
+   "date": "2026-11-17",
+   "url": "https://openrouter.ai/openai/gpt-6.2-astra",
+   "context_length": 1050000,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "OpenAI",
+   "model": "OpenAI: GPT-6.2 Sol Pro",
+   "id": "openai/gpt-6.2-sol-pro",
+   "date": "2026-11-17",
+   "url": "https://openrouter.ai/openai/gpt-6.2-sol-pro",
+   "context_length": 1050000,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "OpenAI",
+   "model": "OpenAI: GPT-6.2 Sol",
+   "id": "openai/gpt-6.2-sol",
+   "date": "2026-11-17",
+   "url": "https://openrouter.ai/openai/gpt-6.2-sol",
+   "context_length": 1050000,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "Qwen3.8-Flash-Next-NVFP4-QAD",
+   "id": "nvidia/Qwen3.8-Flash-Next-NVFP4-QAD",
+   "date": "2026-11-17",
+   "url": "https://huggingface.co/nvidia/Qwen3.8-Flash-Next-NVFP4-QAD",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/Qwen3.8-Flash-Next-NVFP4-QAD",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
   {
    "lab": "Tencent",
    "model": "Tencent: Hy4 flash",
@@ -54,6 +114,42 @@
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "Llama-3.2-1B-Qwen3.8-27B-Draft",
+   "id": "nvidia/Llama-3.2-1B-Qwen3.8-27B-Draft",
+   "date": "2026-11-11",
+   "url": "https://huggingface.co/nvidia/Llama-3.2-1B-Qwen3.8-27B-Draft",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/Llama-3.2-1B-Qwen3.8-27B-Draft",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "Qwen3.5-0.8B-Qwen3.8-27B-Draft",
+   "id": "nvidia/Qwen3.5-0.8B-Qwen3.8-27B-Draft",
+   "date": "2026-11-11",
+   "url": "https://huggingface.co/nvidia/Qwen3.5-0.8B-Qwen3.8-27B-Draft",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/Qwen3.5-0.8B-Qwen3.8-27B-Draft",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "Qwen3.5-4B-Qwen3.8-27B-Draft",
+   "id": "nvidia/Qwen3.5-4B-Qwen3.8-27B-Draft",
+   "date": "2026-11-11",
+   "url": "https://huggingface.co/nvidia/Qwen3.5-4B-Qwen3.8-27B-Draft",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/Qwen3.5-4B-Qwen3.8-27B-Draft",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "Nvidia",
@@ -150,54 +246,6 @@
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "Nemotron-Labs-Sigma-distill-spec-3B",
-   "id": "nvidia/Nemotron-Labs-Sigma-distill-spec-3B",
-   "date": "2026-11-09",
-   "url": "https://huggingface.co/nvidia/Nemotron-Labs-Sigma-distill-spec-3B",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/Nemotron-Labs-Sigma-distill-spec-3B",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "Nemotron-Labs-Sigma-distill-8B-nfe16",
-   "id": "nvidia/Nemotron-Labs-Sigma-distill-8B-nfe16",
-   "date": "2026-11-09",
-   "url": "https://huggingface.co/nvidia/Nemotron-Labs-Sigma-distill-8B-nfe16",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/Nemotron-Labs-Sigma-distill-8B-nfe16",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "Nemotron-Labs-Sigma-distill-8B-nfe8",
-   "id": "nvidia/Nemotron-Labs-Sigma-distill-8B-nfe8",
-   "date": "2026-11-09",
-   "url": "https://huggingface.co/nvidia/Nemotron-Labs-Sigma-distill-8B-nfe8",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/Nemotron-Labs-Sigma-distill-8B-nfe8",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Nvidia",
-   "model": "Nemotron-Labs-Sigma-distill-8B-nfe4",
-   "id": "nvidia/Nemotron-Labs-Sigma-distill-8B-nfe4",
-   "date": "2026-11-09",
-   "url": "https://huggingface.co/nvidia/Nemotron-Labs-Sigma-distill-8B-nfe4",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/Nemotron-Labs-Sigma-distill-8B-nfe4",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "Liquid",
@@ -1158,30 +1206,6 @@
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "Qwen/Qwen-Image-2.1-PE-T2I",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Prism Ml",
-   "model": "PrismML: Ternary Bonsai 2 27B",
-   "id": "prism-ml/ternary-bonsai-2-27b",
-   "date": "2026-09-18",
-   "url": "https://openrouter.ai/prism-ml/ternary-bonsai-2-27b",
-   "context_length": 262144,
-   "evidence": "open-weights",
-   "evidence_note": "weights published at huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf; downloadable and hashable",
-   "hf_id": "prism-ml/Ternary-Bonsai-2-27B-gguf",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Z Ai",
-   "model": "Z.ai: GLM 5.3 FlashX",
-   "id": "z-ai/glm-5.3-flashx",
-   "date": "2026-09-18",
-   "url": "https://openrouter.ai/z-ai/glm-5.3-flashx",
-   "context_length": 1048576,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   }
  ],
  "av_window_days": 180,
