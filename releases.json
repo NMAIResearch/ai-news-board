@@ -1,12 +1,48 @@
 {
- "generated": "2026-11-18 06:21 UTC",
+ "generated": "2026-11-19 06:23 UTC",
  "window_days": 60,
  "counts": {
-  "total": 100,
+  "total": 99,
   "closed": 48,
-  "open_weights": 52
+  "open_weights": 51
  },
  "releases": [
+  {
+   "lab": "Google",
+   "model": "Google: Gemini 4 Neon",
+   "id": "google/gemini-4-neon",
+   "date": "2026-11-18",
+   "url": "https://openrouter.ai/google/gemini-4-neon",
+   "context_length": 1048576,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Microsoft",
+   "model": "Aion-1.0-Instruct-2.3B-ONNX-WebGPU",
+   "id": "microsoft/Aion-1.0-Instruct-2.3B-ONNX-WebGPU",
+   "date": "2026-11-18",
+   "url": "https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B-ONNX-WebGPU",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "microsoft/Aion-1.0-Instruct-2.3B-ONNX-WebGPU",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Microsoft",
+   "model": "Aion-1.0-Instruct-2.3B",
+   "id": "microsoft/Aion-1.0-Instruct-2.3B",
+   "date": "2026-11-18",
+   "url": "https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "microsoft/Aion-1.0-Instruct-2.3B",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
   {
    "lab": "OpenAI",
    "model": "OpenAI: GPT-6.2 Astra Pro",
@@ -56,27 +92,15 @@
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
-   "lab": "Nvidia",
-   "model": "Qwen3.8-Flash-Next-NVFP4-QAD",
-   "id": "nvidia/Qwen3.8-Flash-Next-NVFP4-QAD",
-   "date": "2026-11-17",
-   "url": "https://huggingface.co/nvidia/Qwen3.8-Flash-Next-NVFP4-QAD",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/Qwen3.8-Flash-Next-NVFP4-QAD",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
    "lab": "Tencent",
    "model": "Tencent: Hy4 flash",
    "id": "tencent/hy4-flash",
    "date": "2026-11-16",
    "url": "https://openrouter.ai/tencent/hy4-flash",
    "context_length": 1048576,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/tencent/Hy4-flash; downloadable and hashable",
+   "hf_id": "tencent/Hy4-flash",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
@@ -246,6 +270,18 @@
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "Nemotron-Labs-Sigma-distill-spec-3B",
+   "id": "nvidia/Nemotron-Labs-Sigma-distill-spec-3B",
+   "date": "2026-11-09",
+   "url": "https://huggingface.co/nvidia/Nemotron-Labs-Sigma-distill-spec-3B",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/Nemotron-Labs-Sigma-distill-spec-3B",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "Liquid",
@@ -692,18 +728,6 @@
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
-   "lab": "Microsoft",
-   "model": "UserRepGen-4B",
-   "id": "microsoft/UserRepGen-4B",
-   "date": "2026-10-14",
-   "url": "https://huggingface.co/microsoft/UserRepGen-4B",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "microsoft/UserRepGen-4B",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
    "lab": "IBM",
    "model": "granite-switch-4.1-8b",
    "id": "ibm-granite/granite-switch-4.1-8b",
@@ -894,18 +918,6 @@
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Microsoft",
-   "model": "UserLM-2.0",
-   "id": "microsoft/UserLM-2.0",
-   "date": "2026-10-01",
-   "url": "https://huggingface.co/microsoft/UserLM-2.0",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "microsoft/UserLM-2.0",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "OpenAI",
@@ -1182,30 +1194,6 @@
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Alibaba (Qwen)",
-   "model": "Qwen-Image-2.1-PE-I2I",
-   "id": "Qwen/Qwen-Image-2.1-PE-I2I",
-   "date": "2026-09-20",
-   "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "Qwen/Qwen-Image-2.1-PE-I2I",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Alibaba (Qwen)",
-   "model": "Qwen-Image-2.1-PE-T2I",
-   "id": "Qwen/Qwen-Image-2.1-PE-T2I",
-   "date": "2026-09-20",
-   "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "Qwen/Qwen-Image-2.1-PE-T2I",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
   }
  ],
  "av_window_days": 180,

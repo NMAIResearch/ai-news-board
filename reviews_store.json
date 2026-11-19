@@ -31443,7 +31443,7 @@
   "label_source": "machine"
  },
  "https://deepmind.google/blog/gemini-4-carbon-is-now-available/": {
-  "denominator_stated": "partial",
+  "denominator_stated": "Y",
   "auto_labelled": true,
   "auto_labelled_by": "gemma4:12b",
   "label_evidence": "model read all 20 figure-sentence(s); 6 of 20 figure-sentence(s) matched a base cue",
@@ -32981,18 +32981,17 @@
   "label_source": "machine"
  },
  "https://arstechnica.com/tech-policy/2026/11/trump-was-in-bed-with-jensen-critics-balk-at-huangs-wish-to-return-to-nvidia/": {
-  "denominator_stated": "N",
+  "denominator_stated": "?",
   "auto_labelled": true,
-  "auto_labelled_by": "gemma4:12b",
-  "label_evidence": "model read all 5 figure-sentence(s); 0 of 5 figure-sentence(s) matched a base cue",
-  "evidence_method": "local-model",
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
   "evidence_coverage": {
-   "seen": 5,
-   "total": 5
+   "seen": 0,
+   "total": 6
   },
   "label_schema_version": 2,
   "content_hash": "41eb234722eb256a087ccc4acc4990a203866025b940a04be5275b6b117e0f6d",
-  "evidence_hash": "bf9f0d0c48aa1b908a0c5a8fcda7aa31590dbd3905e0b6fdfe63d4300935dc5f",
+  "evidence_hash": "214ab06d51b2224fbc19f1834a6c81cee9e4b162dc00c5016171af23e2e82500",
   "reviewed": false,
   "label_source": "machine"
  },
@@ -33230,6 +33229,411 @@
   "label_schema_version": 2,
   "content_hash": "f4c70d40e27a68794dae81f1b7258cc2b8086319d8769f7b22e896372a86caef",
   "evidence_hash": "c5a8158d81ca7eac37baf62a7fdb6eb461dd48916d3b3f7d159858b36ec3d9bd",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 11 figure-sentence(s); 1 of 11 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 11,
+   "total": 11
+  },
+  "label_schema_version": 2,
+  "content_hash": "4dcf524d3e8e16fcfb62511aa9a77e8567de42130721221418b07290899b6b48",
+  "evidence_hash": "e83c188b64fa701005d90d82af465a8daf3126f706de4e4c19b8f2867ea07bb9",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 4415 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "488df799154d99227dd60e67ffb56283c6671acce8c701168b2cca691c6dab4b",
+  "evidence_hash": "365d9c7e8292c64bb9b19a24e755566a8a6a6e24e03b47dcdbe8104948c8986b",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 4,
+   "total": 4
+  },
+  "label_schema_version": 2,
+  "content_hash": "087440e8cb3999c2c3d660ddf2a7061ede3ff9e29b5d8d86371880a1a2b24fde",
+  "evidence_hash": "8102c0404749c6a2038f63ef4a3961115528db999b263026dd6c2dd2a85289b6",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 3384 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "bf50be7cb255f132f6b0cc00f5d4e518f0f34bfffd96f65e8fba83f35edad732",
+  "evidence_hash": "71f8042566a76900d39ca0d7747212c652e450b11434e9ffb263c6a9be6f2126",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 2 figure-sentence(s); 1 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "8f3b139465644c1e02feeeeb5031841f4577abfb188bea3ff77c5c3e8d1db7a9",
+  "evidence_hash": "8f128bdb738793b7981085201f3d00b72e922c7716eac942f30ca108204c23b7",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-remains-confident-in-nvidia-after-huangs-exit/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "5da013ccc5cdf2dadd7636298e98dafa73d98fa3d3d90b6a65bf436a214fda46",
+  "evidence_hash": "44a53d30941e671f013fba4706fc640661146c8dc6617e6aae6328e13fdcd23e",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 2235 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "7bea9c3f3f805e6aaf2a80885af6dd2f47fc4eba9708c3832e28251dc6e6f1d7",
+  "evidence_hash": "3e991cff8a5e1250db20775e4e700b7295463776c74b9115db52b7dcde0f170e",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/18/nvidia-created-a-weird-bit-of-intrigue-by-not-filing-a-routine-sec-report/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "71cffa72fe1d10abeba20c6be7b4ab079ddd5ec227b6c71b4fc9c92593358987",
+  "evidence_hash": "e7f837f61297b32d53e6637578f643a52569e4bd86691800788525da21eee8fb",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/18/palmer-luckey-warns-ai-powered-cyberattacks-are-outpacing-defenses-its-time-to-start-running/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 3281 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "043fac07b0021dd532eaa132079648168986e3bee3fb3133a62e26aa1910ff9c",
+  "evidence_hash": "cb468bce88646ab7ed1aa62d37604bfcd83507e773ae8abe220fded5b92d2121",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1037151/school-districts-ditching-google": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 3397 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "66ba3943c2c047758b9724d01e0ad05dd1352c735e11fd110fc38bd9f12c09bd",
+  "evidence_hash": "2e748e9dcbfdfd126a1a0378bffd7fbed4fb7f5377116ce21187df1a03a7d671",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/policy/1036749/trump-ai-chip-data-center-us-philippines-pax-silica": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 7 figure-sentence(s); 0 of 7 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 7,
+   "total": 7
+  },
+  "label_schema_version": 2,
+  "content_hash": "70b65743f23a294f049aff48ee3eaf9aec81dc2771ee5d11dac344aaa0063ed5",
+  "evidence_hash": "8ed127f7b394eb71489f0271c6318ded5f19bf70c17323009a152fbc01225bb5",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/tech/1035924/nvidia-visualized-revenue-profit-earnings-after-huang": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 14 figure-sentence(s); 2 of 14 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 14,
+   "total": 14
+  },
+  "label_schema_version": 2,
+  "content_hash": "e7ae1aa03879a509d3eef91784bbc3e3d3f029fc33aa450b72c3047a4aeb48d4",
+  "evidence_hash": "71b61aba9564f94e38e648d7a8187c87d74e697841f82c587003c2834bd407aa",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/policy/1036935/congress-forced-arbitration-deepfakes-defiance-act": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 9 figure-sentence(s); 1 of 9 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 9,
+   "total": 9
+  },
+  "label_schema_version": 2,
+  "content_hash": "5d220dda1ce6b456e35902e0b4cc024b767cccbfcef50fc4053c96230e893abd",
+  "evidence_hash": "bd990aac4736cfe1d4f96485d38be3376916a0e132d0b76041aae2f32f32a689",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1036776/nvidia-earnings-kress-jensen-huang-petition": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 3,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "547c61b2f5ac29e623a8bca28526bf9e0b346f1cca5507019e497f1e12350f67",
+  "evidence_hash": "75053e35d76e9af18a40e8fd1849bf0f939030e42c0fed8e8d3811ecc94278cc",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/tech/1036729/disney-star-wars-anzellans-animatronic-amazon-aws-cloud-ai": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 3243 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "781699a9ffdff797697a03732f4af39ea6d3e7fb1fbcf71b013fc4d6491c2b26",
+  "evidence_hash": "81eea584a99d58530979939fcdb91f1b2558ffafd47e3877cf1beedf07d71b0c",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1036549/nvidia-amd-earnings-fall-2026-chips-pause-frontier-models": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 10 figure-sentence(s); 0 of 10 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 10,
+   "total": 10
+  },
+  "label_schema_version": 2,
+  "content_hash": "666fc5a2c016e1cc84d19e876908359cdae8f1b17cff82b113880a6cfe2a425b",
+  "evidence_hash": "1884a425709cfa6d4b59f4639c866bf25eb40e6bbc675e8041869f1a4eb11722",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/games/1036140/will-wright-mymems-ai-game-interview": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 5958 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "26fa3fea1679172fe6ac71b9937e62b00e26e2d4a4ea0072a3756a4c5314bd27",
+  "evidence_hash": "36d0884dd959b1f34df1ae1551350eebcd66a5a39c98060f4249deb872e747f3",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/tech/1036445/nvidia-h200-ai-chips-china-stop-selling": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "5c2b18ed9764e4c7de9b2f21b1be8bc304417544a144da703ef74ea26ff51e6a",
+  "evidence_hash": "637e3a3f13ab9605ff0c0cde1d74e1f5c5a4b05d492da25515536895fc1afcc1",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/tech-policy/2026/11/muse-privacy-invasions-are-freaking-out-meta-staffers-internal-chats-show/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 3,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "d866ff63ba6dd6a7c8fd71df7f118a428bd147f742d2347549a4fa2f0dc08db3",
+  "evidence_hash": "42a57fab55c3352525652b0ca665820d89a73b8f5be9e9759e463221dccdbc44",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/gaming/2026/11/will-wrights-next-simulation-will-use-ai-to-mine-content-from-your-memories/": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "735ad2196d19ee0f2f05eed8aabb0a6a83af3375c7931d87e5035a94177a1dc7",
+  "evidence_hash": "07c476c96f876cdda034acbfe5067985c2ef62451a85d3d6a67cfeb461878b5b",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://deepmind.google/blog/introducing-gemini-4-neon/": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 27
+  },
+  "label_schema_version": 2,
+  "content_hash": "6652777678bf9126f5c0003bfc37e86629ed0ae1dfbb6601cbe2f6c7d6f67c9f",
+  "evidence_hash": "15be8c087ebd85a8e2e6a135c99c9026dce11757021ac8541f0743396cca4150",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://deepmind.google/blog/genie-4-is-now-available/": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "model review failed; denominator remains unassessed",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 19
+  },
+  "label_schema_version": 2,
+  "content_hash": "f3386ea14e6d304ef6cd7336700bcba61c6f5a0d6b0c2b599cce65d02389a46b",
+  "evidence_hash": "82facca7b5ba02654cb07fa3117e78dd96ec4cda2cea9ae485caf23c31deb798",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://ainowinstitute.org/news/press/union-nurses-tell-researchers-that-ai-can-make-their-jobs-harder": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "674cb3ea47f1bdb247694c1d5159a0594f360521116ee761d019c40ec2fe51de",
+  "evidence_hash": "dfbf669aebce347e8e83efb409ac451947d551f7432a9e400493f549833898cb",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://news.mit.edu/2026/featherweight-flying-robot-carries-its-own-sensors-and-computers-1118": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 4 figure-sentence(s); 2 of 4 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 4,
+   "total": 4
+  },
+  "label_schema_version": 2,
+  "content_hash": "277c4ddf30f98b08a7a2477d4461a4b746b77f2a9c432e90fccba21a7bb4f394",
+  "evidence_hash": "7710bb2eb7d4dd1f3c9365fc30dfd8d438d73201cd2795447cfc678fc37be5df",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.anthropic.com/news/anthropic-prices-initial-public-offering": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 4 figure-sentence(s); 1 of 4 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 4,
+   "total": 4
+  },
+  "label_schema_version": 2,
+  "content_hash": "77e86d5453eab459a5a7012244e7a70e8dbb6c542821be8954944096b4396f1a",
+  "evidence_hash": "8ee464191d209de80901a37e0c738959b69a3f9a9c31e7f4f88333479f4c9755",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://openai.com/index/managing-frontier-ai-risk/": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "article not fetched (http-403)",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
   "reviewed": false,
   "label_source": "machine"
  }

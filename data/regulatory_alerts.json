@@ -1,5 +1,216 @@
 [
   {
+    "id": "alert_da5eca368a290c70ff1b4be8",
+    "timestamp": "2026-11-19T06:02:05.927023+00:00",
+    "alert_schema_version": 2,
+    "source": "EU AI Office & Digital Strategy",
+    "jurisdiction": "European Union",
+    "title": "Call for evidence on advertising repositories",
+    "url": "https://digital-strategy.ec.europa.eu/en/consultations/call-evidence-advertising-repositories",
+    "source_queue_priority": 1,
+    "substantive_priority": 4,
+    "is_operator_duty_shift": false,
+    "duty_type": "transparency",
+    "statutory_reference": "Under Article 39 of the DSA, providers of VLOPs and VLOSEs are required to maintain publicly accessible repositories of advertisements displayed on their services.",
+    "summary": "The document outlines a call for evidence regarding upcoming technical guidelines for advertising repositories under the Digital Services Act. While Article 39 imposes a binding duty on VLOPs and VLOSEs to maintain ad libraries, the specific guidelines discussed are in a consultation phase and not yet adopted. The text does not explicitly link these duties to AI operators, but rather to platform providers.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Monitor the targeted public consultation in 2027 and the planned publication of guidelines in Q2 2028 for final operational requirements.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "201148561b019035dce27dfc9cc42a8b6dd1a949d77ecd2fe45ea9307628fb8e",
+    "source_text_sha256": "c43e49433ad732b28d58f3b6dfd5bef7907b2460c06bfe0f48e66e94e7120bee",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "extracted text",
+      "selection_status": "selected",
+      "selector": "full-text",
+      "text_chars": 2840,
+      "ranges": [
+        [
+          0,
+          2840
+        ]
+      ],
+      "passages_total": 1,
+      "passages_read": 1,
+      "passages_left": 0,
+      "selected_text_sha256": "c43e49433ad732b28d58f3b6dfd5bef7907b2460c06bfe0f48e66e94e7120bee"
+    },
+    "source_capture_url": "https://digital-strategy.ec.europa.eu/en/consultations/call-evidence-advertising-repositories",
+    "document_status": "consultation",
+    "ai_relevance": "uncertain",
+    "evidence_quote": "The Commission is seeking feedback on upcoming technical guidelines concerning advertising repositories under the Digital Services Act (DSA).",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_de40a8104fa04f463de399ee",
+    "timestamp": "2026-11-19T06:01:15.845368+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Agency Information Collection Activities; Submission for OMB Review; American Time Use Survey (ATUS) Super Intelligence (SI) Questions",
+    "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23506/agency-information-collection-activities-submission-for-omb-review-american-time-use-survey-atus",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a US Federal notice regarding the collection of survey data on 'Super Intelligence' (SI) usage by the Bureau of Labor Statistics. It is a Paperwork Reduction Act submission for OMB review and does not impose binding regulatory duties on AI operators.",
+    "denominator_disclosed": "yes",
+    "actionable_trigger": "No action required; document is outside the scope of binding AI operator duties.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "78a79420ea01c9f86a79b6d654108dc41e407822e4570d131c6b2899c5c50ab5",
+    "source_text_sha256": "6cbb3b9a7a462d640276625d6c57f1a93d37640bce06c02b3b19bfeee64953f4",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "extracted text",
+      "selection_status": "selected",
+      "selector": "full-text",
+      "text_chars": 3891,
+      "ranges": [
+        [
+          0,
+          3891
+        ]
+      ],
+      "passages_total": 1,
+      "passages_read": 1,
+      "passages_left": 0,
+      "selected_text_sha256": "6cbb3b9a7a462d640276625d6c57f1a93d37640bce06c02b3b19bfeee64953f4"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/18/2026-23506.html",
+    "document_status": "consultation",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "The Department of Labor (DOL) is submitting this Bureau of Labor Statistics (BLS)-sponsored information collection request (ICR) to the Office of Management and Budget (OMB) for review and approval in accordance with the Paperwork Reduction Act of 1995 (PRA).",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_5f397882c12cdcee7e014389",
+    "timestamp": "2026-11-19T06:01:01.137741+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Amend Its Rules its Rules To Permit the Listing of Binary Options Overlying Key Performance Indicators",
+    "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23427/self-regulatory-organizations-nyse-arca-inc-notice-of-filing-and-immediate-effectiveness-of-proposed",
+    "source_queue_priority": 1,
+    "substantive_priority": null,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Amend Its Rules its Rules To Permit the Listing of Binary Options Overlying Key Performance Indicators",
+    "denominator_disclosed": "unassessed",
+    "actionable_trigger": "Review the captured primary document.",
+    "evaluation_method": "unassessed",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "63b97b942b8d38fbdecfbf77dfef479f22ce8aedc76e63779fb036d742d4c22c",
+    "source_text_sha256": "e8f085000717bfdf86bd965d9819e3f0e7d9b635d59c51b109ba2541c12bba40",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "unassessed",
+      "selection_status": "not assessed",
+      "selector": "ai-keywords-v2",
+      "text_chars": 122575,
+      "ranges": [],
+      "passages_total": 11,
+      "passages_read": 0,
+      "passages_left": 11,
+      "selected_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/18/2026-23427.html",
+    "document_status": "unassessed",
+    "ai_relevance": "unassessed",
+    "evidence_quote": null,
+    "assessment_error": "supporting quote is absent from the selected source ranges"
+  },
+  {
+    "id": "alert_570734b77274e1929a891343",
+    "timestamp": "2026-11-19T06:00:44.998169+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Self-Regulatory Organizations; NYSE American LLC; Notice of Filing and Immediate Effectiveness of Proposed Change To Amend Its Rules To Permit the Listing of Binary Options Overlying Key Performance Indicators",
+    "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23425/self-regulatory-organizations-nyse-american-llc-notice-of-filing-and-immediate-effectiveness-of",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a US SEC notice regarding NYSE American's proposal to list binary options on Key Performance Indicators (KPIs) for specific issuers. It contains no obligations, duties, or regulatory requirements applicable to AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "No action required; document is outside the scope of AI regulatory monitoring.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "7e4bc955a2b7741de1cf4aa6881840e1032b49f2294e33f92174a908dc68b42e",
+    "source_text_sha256": "a8b82190b56ab34b27e4373dc9c0b5b5bd31d1559bc04979b4f5a94381178a02",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 122591,
+      "ranges": [
+        [
+          0,
+          607
+        ],
+        [
+          9043,
+          10298
+        ],
+        [
+          10298,
+          11637
+        ],
+        [
+          11637,
+          12325
+        ],
+        [
+          52575,
+          53788
+        ],
+        [
+          62957,
+          64187
+        ],
+        [
+          70149,
+          71440
+        ],
+        [
+          101578,
+          102786
+        ],
+        [
+          103422,
+          104800
+        ],
+        [
+          105337,
+          106682
+        ],
+        [
+          108857,
+          110053
+        ]
+      ],
+      "passages_total": 11,
+      "passages_read": 11,
+      "passages_left": 0,
+      "selected_text_sha256": "d0fbaafbea6b691a7235b33e0c3d4d0577680e35e664745b5e98d8412c896282"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/18/2026-23425.html",
+    "document_status": "proposed",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "Pursuant to proposed Rule 901KPI(a), the Exchange may from time to time approve for listing and trading on the Exchange any of the following binary KPI options contracts for the following issuers",
+    "assessment_error": null
+  },
+  {
     "id": "alert_d99bd35f249ea008783824ad",
     "timestamp": "2026-11-18T06:01:56.741857+00:00",
     "alert_schema_version": 2,

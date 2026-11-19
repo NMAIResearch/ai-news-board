@@ -1,18 +1,18 @@
 {
- "fetched": "2026-11-18 06:20 UTC",
+ "fetched": "2026-11-19 06:20 UTC",
  "items": [
   {
-   "entity": "Amazon",
-   "headline": "Amazon and Google will together own nearly 30% of Anthropic after its IPO",
-   "date": "Tue, 17 Nov 2026",
+   "entity": "Anthropic",
+   "headline": "Anthropic prices IPO at $83 a share, above projected range",
+   "date": "Wed, 18 Nov 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "Y",
+   "denominator_stated": "partial",
    "reviewed": false,
    "sources": [
     {
      "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo/",
+     "url": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/",
      "source_type": "trade-press",
      "source_tier": 3
     }
@@ -20,12 +20,12 @@
    "rating": "ok",
    "evidence_method": "local-model",
    "evidence_coverage": {
-    "seen": 8,
-    "total": 8
+    "seen": 11,
+    "total": 11
    },
-   "label_evidence": "model read all 8 figure-sentence(s); 1 of 8 figure-sentence(s) matched a base cue",
-   "content_hash": "f17dcb50dc123da69be29ad51939bda4a75aaf97b3beeba909045a842eeb97f3",
-   "evidence_hash": "41a5b0231ce403cde3da9ffe7a9a72e6a4029f6e7922ed7a6978d58053850c98",
+   "label_evidence": "model read all 11 figure-sentence(s); 1 of 11 figure-sentence(s) matched a base cue",
+   "content_hash": "4dcf524d3e8e16fcfb62511aa9a77e8567de42130721221418b07290899b6b48",
+   "evidence_hash": "e83c188b64fa701005d90d82af465a8daf3126f706de4e4c19b8f2867ea07bb9",
    "label_schema_version": 2,
    "auto_labelled": true,
    "auto_labelled_by": "gemma4:12b",
@@ -33,36 +33,36 @@
    "mentions": [
     {
      "name": "Anthropic",
-     "count": 9
-    },
-    {
-     "name": "Amazon",
-     "count": 9
+     "count": 13
     },
     {
      "name": "Nvidia",
-     "count": 8
+     "count": 9
     },
     {
      "name": "Google",
-     "count": 5
+     "count": 4
     },
     {
-     "name": "Microsoft",
+     "name": "Amazon",
      "count": 2
     },
     {
      "name": "OpenAI",
      "count": 1
+    },
+    {
+     "name": "Microsoft",
+     "count": 1
     }
    ],
-   "publisher_topic": "Amazon",
+   "publisher_topic": "IPO",
    "entity_basis": "headline"
   },
   {
-   "entity": "Google",
-   "headline": "Google joins the tech outage trend by announcing it’s not having one",
-   "date": "Tue, 17 Nov 2026",
+   "entity": "",
+   "headline": "More banks say customers using AI agents are on their own — even if they get hacked",
+   "date": "Wed, 18 Nov 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "n/a",
@@ -70,7 +70,7 @@
    "sources": [
     {
      "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/17/google-joins-the-tech-outage-trend-by-announcing-its-not-having-one/",
+     "url": "https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/",
      "source_type": "trade-press",
      "source_tier": 3
     }
@@ -81,9 +81,9 @@
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 3247 chars of article text",
-   "content_hash": "7df3b5c46b41b0513cb05782aee7261ca474e0f676de08af5d086d403ea91698",
-   "evidence_hash": "08e3d201dbb4d88671cc2a1aa25cbe24ab282d1d4182cfad60cf6e7ff9d13fda",
+   "label_evidence": "no figure in 4415 chars of article text",
+   "content_hash": "488df799154d99227dd60e67ffb56283c6671acce8c701168b2cca691c6dab4b",
+   "evidence_hash": "365d9c7e8292c64bb9b19a24e755566a8a6a6e24e03b47dcdbe8104948c8986b",
    "label_schema_version": 2,
    "auto_labelled": true,
    "label_source": "machine",
@@ -93,29 +93,29 @@
      "count": 6
     },
     {
-     "name": "Google",
-     "count": 3
-    },
-    {
-     "name": "Microsoft",
-     "count": 2
-    },
-    {
-     "name": "Apple",
+     "name": "Anthropic",
      "count": 2
     },
     {
      "name": "xAI",
+     "count": 2
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Amazon",
      "count": 1
     }
    ],
-   "publisher_topic": "gmail",
-   "entity_basis": "headline"
+   "publisher_topic": "AI agents",
+   "entity_basis": "unresolved"
   },
   {
-   "entity": "Nvidia",
-   "headline": "Nvidia’s startup stakes ballooned to $65B, but Huang’s exit puts future  deals in doubt",
-   "date": "Wed, 18 Nov 2026",
+   "entity": "Microsoft",
+   "headline": "Microsoft CEO Satya Nadella explains why he asked 60K employees to quit",
+   "date": "Thu, 19 Nov 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "N",
@@ -123,157 +123,7 @@
    "sources": [
     {
      "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 5,
-    "total": 5
-   },
-   "label_evidence": "model read all 5 figure-sentence(s); 2 of 5 figure-sentence(s) matched a base cue",
-   "content_hash": "56fe1ebe38939ff54648fc29a593707da4a2f179e168893ee3d268138ddc1482",
-   "evidence_hash": "a73ab9084f6475b055ec70fb3baeb99807a5ddc1cee6cdfefd88330795048ae3",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Nvidia",
-     "count": 15
-    },
-    {
-     "name": "OpenAI",
-     "count": 2
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    },
-    {
-     "name": "xAI",
-     "count": 1
-    },
-    {
-     "name": "Nscale",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Colette Kress",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Nvidia",
-   "headline": "Nvidia promises that revenue will keep soaring — for now",
-   "date": "Wed, 18 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/17/nvidia-promises-that-revenue-will-keep-soaring-for-now/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 9,
-    "total": 9
-   },
-   "label_evidence": "model read all 9 figure-sentence(s); 1 of 9 figure-sentence(s) matched a base cue",
-   "content_hash": "ce28bc2f82e8de32c55a600096e90e4cfe9885bbe2f437a49929f3ea2c510de1",
-   "evidence_hash": "385ad4e852e71da35c526439420414c3c339d89c62a5a1c6bbe42ef1b0f3a36f",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Nvidia",
-     "count": 15
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    },
-    {
-     "name": "xAI",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "nvidia",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Nvidia",
-   "headline": "Nvidia is abandoning China after Jensen Huang’s ouster",
-   "date": "Tue, 17 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 3,
-    "total": 3
-   },
-   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
-   "content_hash": "be54ea6661347fe202796836d34972d2bc779b329fdd1bae18da20081ff00440",
-   "evidence_hash": "a2e20459b9937a876993cb8c2b5c500865337c550cb09584cfd9a5e1eec49cac",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Nvidia",
-     "count": 24
-    },
-    {
-     "name": "xAI",
-     "count": 2
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Jensen Huang",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Nvidia",
-   "headline": "Nvidia says its open source AI strategy remains intact after Jensen Huang’s exit",
-   "date": "Tue, 17 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/17/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jensen-huangs-exit/",
+     "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
      "source_type": "trade-press",
      "source_tier": 3
     }
@@ -285,8 +135,123 @@
     "total": 4
    },
    "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
-   "content_hash": "062509ce28b4fe8bb5b46396e86b4ad8ca4384019c775579abd4feff98b9410e",
-   "evidence_hash": "60838422a0b4be6bb3902180cee25d1adf63ab94eb8cc50e4139c852afc6084b",
+   "content_hash": "087440e8cb3999c2c3d660ddf2a7061ede3ff9e29b5d8d86371880a1a2b24fde",
+   "evidence_hash": "8102c0404749c6a2038f63ef4a3961115528db999b263026dd6c2dd2a85289b6",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Microsoft",
+     "count": 7
+    },
+    {
+     "name": "Nvidia",
+     "count": 6
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Amazon",
+     "count": 1
+    },
+    {
+     "name": "xAI",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "buyouts",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Microsoft",
+   "headline": "Amidst fears of AI cyberattacks, Satya Nadella says lots of critical infrastructure is ‘unpatchable’",
+   "date": "Wed, 18 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 3384 chars of article text",
+   "content_hash": "bf50be7cb255f132f6b0cc00f5d4e518f0f34bfffd96f65e8fba83f35edad732",
+   "evidence_hash": "71f8042566a76900d39ca0d7747212c652e450b11434e9ffb263c6a9be6f2126",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Microsoft",
+     "count": 8
+    },
+    {
+     "name": "Nvidia",
+     "count": 6
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Amazon",
+     "count": 1
+    },
+    {
+     "name": "Apple",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "cyberattacks",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "xAI",
+   "headline": "Elon Musk says ousting Jensen Huang is like ‘kicking Michael Jordan off your team’",
+   "date": "Wed, 18 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 2,
+    "total": 2
+   },
+   "label_evidence": "model read all 2 figure-sentence(s); 1 of 2 figure-sentence(s) matched a base cue",
+   "content_hash": "8f3b139465644c1e02feeeeb5031841f4577abfb188bea3ff77c5c3e8d1db7a9",
+   "evidence_hash": "8f128bdb738793b7981085201f3d00b72e922c7716eac942f30ca108204c23b7",
    "label_schema_version": 2,
    "auto_labelled": true,
    "auto_labelled_by": "gemma4:12b",
@@ -297,466 +262,41 @@
      "count": 24
     },
     {
-     "name": "Hugging Face",
-     "count": 5
+     "name": "xAI",
+     "count": 12
     },
     {
      "name": "Microsoft",
-     "count": 1
-    },
-    {
-     "name": "xAI",
-     "count": 1
-    },
-    {
-     "name": "SEC",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "nvidia",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Nvidia",
-   "headline": "Nvidia says it doesn’t plan to reappoint Jensen Huang as CEO",
-   "date": "Tue, 17 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/17/nvidia-says-it-doesnt-plan-to-reappoint-jensen-huang-as-ceo/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_evidence": "no figure in 2992 chars of article text",
-   "content_hash": "a1087687e5a996632aa4ab20382896476ce059f68a8ff215583c6047394aa6e8",
-   "evidence_hash": "f068292f5d7a78c655f8fdc5baf17606e49e81b7f15fca6b1e17d222f394ed7a",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Nvidia",
-     "count": 25
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    },
-    {
-     "name": "xAI",
-     "count": 1
-    },
-    {
-     "name": "SEC",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Jensen Huang",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "SEC",
-   "headline": "SEC reportedly investigating Nvidia amid Huang exit",
-   "date": "Tue, 17 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/17/sec-reportedly-investigating-nvidia-amid-huang-exit/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 2,
-    "total": 2
-   },
-   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
-   "content_hash": "e066fc0cf876cad0d500c940bcf3f46cbd21806a42f3eb65bf7c07b0d6866d49",
-   "evidence_hash": "74f1089e00c5b0f9952a15431fcfab5f0d1b4374c59fdeff44589b6d080a5a31",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Nvidia",
-     "count": 23
-    },
-    {
-     "name": "SEC",
-     "count": 5
+     "count": 4
     },
     {
      "name": "OpenAI",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "nvidia",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "Model ML raises $250M to automate investment banking grunt work",
-   "date": "Tue, 17 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 6,
-    "total": 6
-   },
-   "label_evidence": "model read all 6 figure-sentence(s); 0 of 6 figure-sentence(s) matched a base cue",
-   "content_hash": "8ad132f0c960073cbc107a4cc4f922b45b8f048a47153b9cf14ef01d710105f8",
-   "evidence_hash": "1e37569b0b0966669a041c0712f7d04488d4ecde02d8c1db9620c008c690dd81",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Nvidia",
-     "count": 7
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
+     "count": 2
     },
     {
      "name": "Anthropic",
      "count": 1
-    }
-   ],
-   "publisher_topic": "general atlantic",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "California sues OpenAI over rogue AI hacking incidents",
-   "date": "2026-11-16T18:04",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 2,
-    "total": 2
-   },
-   "label_schema_version": 2,
-   "content_hash": "fc46dc1d4aadc16e8347abca15a9f3a8fce438185bee3d5d28b7bb4eec65e59d",
-   "evidence_hash": "ec556215d8427e123a7baed3dbb5167ee374a6190a513d1b858085d50f1abe0c",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 15
-    },
-    {
-     "name": "Hugging Face",
-     "count": 4
-    },
-    {
-     "name": "Nvidia",
-     "count": 2
     },
     {
      "name": "Google",
      "count": 1
-    },
-    {
-     "name": "Amazon",
-     "count": 1
     }
    ],
-   "publisher_topic": "OpenAI",
+   "publisher_topic": "Elon Musk",
    "entity_basis": "headline"
   },
   {
    "entity": "Microsoft",
-   "headline": "Satya Nadella says he’s AGI-pilled now",
-   "date": "2026-11-17T20:48",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/tech/1036111/satya-nadella-says-hes-agi-pilled-now",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_evidence": "no figure in 4455 chars of article text",
-   "content_hash": "f680386032a3939a893c3c4c63e2baad1f2a4851a5873fc4c10c6c0d20cc5980",
-   "evidence_hash": "a31d230614e204441b3202e7b6d1870d35102618372c8759d64deda39b7a3891",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Microsoft",
-     "count": 20
-    },
-    {
-     "name": "Anthropic",
-     "count": 4
-    },
-    {
-     "name": "Nvidia",
-     "count": 3
-    }
-   ],
-   "publisher_topic": "Microsoft",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Nvidia",
-   "headline": "Nvidia’s Q3 earnings hit the mark, without mentioning the whole Jensen Huang thing",
-   "date": "2026-11-17T17:50",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/tech/1036032/nvidia-q3-2027-jensen-huang",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 5,
-    "total": 5
-   },
-   "label_evidence": "model read all 5 figure-sentence(s); 0 of 5 figure-sentence(s) matched a base cue",
-   "content_hash": "6dcb91770a5b1a7fea3708d72f9ebf22d443c74dac7a556782da2d0a5a06ee3a",
-   "evidence_hash": "62afb4d13ef3c69738730916c98905fd203c9fd6ccf35649faec95ecbd481f90",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Nvidia",
-     "count": 25
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Nvidia",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "Not even Sam Altman is safe from AI deepfakes on Instagram",
-   "date": "2026-11-17T18:52",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/news/1035957/meta-alexandr-wang-sam-altman-instagram-ai-deepfake",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_evidence": "no figure in 3646 chars of article text",
-   "content_hash": "c11e1ea06bc85cb1e779fb45b12ed9a1bffaa79b37d33420645fe31edc2f5d62",
-   "evidence_hash": "2f58b67ebaf1068775c0d86e40298d309bd3ba6901551769f014a62dfda95d25",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 16
-    },
-    {
-     "name": "OpenAI",
-     "count": 11
-    },
-    {
-     "name": "Nvidia",
-     "count": 3
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Meta",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Google",
-   "headline": "Google’s Spark AI agent becomes ‘Tasks’ — and now it’s free",
-   "date": "2026-11-17T13:58",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/tech/1035756/google-spark-ai-tasks-free",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_evidence": "no figure in 2590 chars of article text",
-   "content_hash": "ed0b9f959180c728a95d2ae5ff58f3373580894c43718da03f3c07b846c1cb18",
-   "evidence_hash": "ef42bad3aa1eda2400c263ab8d49616ba6d2873e0faa7a679592b0e6e7956664",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 13
-    },
-    {
-     "name": "Nvidia",
-     "count": 3
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Google",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Nvidia",
-   "headline": "The DOJ says it’s investigating Megaspeed",
-   "date": "2026-11-17T11:19",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/policy/1035410/doj-megaspeed-nvidia-investigation-update",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_evidence": "no figure in 4134 chars of article text",
-   "content_hash": "21ce6568e8bb7857b03ec567487b51b137abe94aad119ed641d8febc23e05d22",
-   "evidence_hash": "1bc22bdea20039e89437706cd6c7ca829941f3dee80d64cb246f76996fc99ef2",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Nvidia",
-     "count": 31
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    },
-    {
-     "name": "SEC",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Nvidia",
-   "entity_basis": "tag"
-  },
-  {
-   "entity": "Nvidia",
-   "headline": "Jensen Huang says he’s willing to return as Nvidia CEO",
-   "date": "2026-11-17T12:04",
+   "headline": "Microsoft CEO Satya Nadella remains confident in Nvidia after Huang’s exit",
+   "date": "Wed, 18 Nov 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/tech/1035420/jensen-huang-nvidia-return-as-ceo-statement",
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-remains-confident-in-nvidia-after-huangs-exit/",
      "source_type": "trade-press",
      "source_tier": 3
     }
@@ -768,8 +308,8 @@
     "total": 1
    },
    "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
-   "content_hash": "5271f1e0a833857144f60699b1be11a6f72b60058f887a39f6501b5724ce67f2",
-   "evidence_hash": "6fcd52811eb41c4fb4c4ee8f116526928a84fe3068ca7ea0fd55cd721f629272",
+   "content_hash": "5da013ccc5cdf2dadd7636298e98dafa73d98fa3d3d90b6a65bf436a214fda46",
+   "evidence_hash": "44a53d30941e671f013fba4706fc640661146c8dc6617e6aae6328e13fdcd23e",
    "label_schema_version": 2,
    "auto_labelled": true,
    "auto_labelled_by": "gemma4:12b",
@@ -777,19 +317,428 @@
    "mentions": [
     {
      "name": "Nvidia",
-     "count": 38
-    },
-    {
-     "name": "Apple",
-     "count": 2
+     "count": 21
     },
     {
      "name": "Microsoft",
+     "count": 11
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Amazon",
      "count": 1
     },
     {
      "name": "xAI",
      "count": 1
+    }
+   ],
+   "publisher_topic": "Jensen Huang",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Microsoft",
+   "headline": "Satya Nadella predicts AI agents will reshuffle the economics of the web",
+   "date": "Wed, 18 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 2235 chars of article text",
+   "content_hash": "7bea9c3f3f805e6aaf2a80885af6dd2f47fc4eba9708c3832e28251dc6e6f1d7",
+   "evidence_hash": "3e991cff8a5e1250db20775e4e700b7295463776c74b9115db52b7dcde0f170e",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Microsoft",
+     "count": 12
+    },
+    {
+     "name": "Nvidia",
+     "count": 3
+    },
+    {
+     "name": "Amazon",
+     "count": 2
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "xAI",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "AI agents",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Nvidia",
+   "headline": "Nvidia created a weird bit of intrigue by not filing a routine SEC report",
+   "date": "Wed, 18 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/18/nvidia-created-a-weird-bit-of-intrigue-by-not-filing-a-routine-sec-report/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 2,
+    "total": 2
+   },
+   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+   "content_hash": "71cffa72fe1d10abeba20c6be7b4ab079ddd5ec227b6c71b4fc9c92593358987",
+   "evidence_hash": "e7f837f61297b32d53e6637578f643a52569e4bd86691800788525da21eee8fb",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 23
+    },
+    {
+     "name": "SEC",
+     "count": 4
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Amazon",
+     "count": 1
+    },
+    {
+     "name": "xAI",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "nvidia",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "Palmer Luckey warns AI-powered cyberattacks are outpacing defenses: ‘It’s time to start running’",
+   "date": "Wed, 18 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/18/palmer-luckey-warns-ai-powered-cyberattacks-are-outpacing-defenses-its-time-to-start-running/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 3281 chars of article text",
+   "content_hash": "043fac07b0021dd532eaa132079648168986e3bee3fb3133a62e26aa1910ff9c",
+   "evidence_hash": "cb468bce88646ab7ed1aa62d37604bfcd83507e773ae8abe220fded5b92d2121",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 6
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Amazon",
+     "count": 1
+    },
+    {
+     "name": "xAI",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "cyberattacks",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "Google",
+   "headline": "The nation’s largest school districts consider ditching Google Search",
+   "date": "2026-11-18T18:18",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1037151/school-districts-ditching-google",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 3397 chars of article text",
+   "content_hash": "66ba3943c2c047758b9724d01e0ad05dd1352c735e11fd110fc38bd9f12c09bd",
+   "evidence_hash": "2e748e9dcbfdfd126a1a0378bffd7fbed4fb7f5377116ce21187df1a03a7d671",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Google",
+     "count": 14
+    },
+    {
+     "name": "Microsoft",
+     "count": 2
+    },
+    {
+     "name": "Nvidia",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Google",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "Trump’s latest land grab is an AI hub in the Philippines",
+   "date": "2026-11-18T16:44",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/policy/1036749/trump-ai-chip-data-center-us-philippines-pax-silica",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 7,
+    "total": 7
+   },
+   "label_evidence": "model read all 7 figure-sentence(s); 0 of 7 figure-sentence(s) matched a base cue",
+   "content_hash": "70b65743f23a294f049aff48ee3eaf9aec81dc2771ee5d11dac344aaa0063ed5",
+   "evidence_hash": "8ed127f7b394eb71489f0271c6318ded5f19bf70c17323009a152fbc01225bb5",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Microsoft",
+     "count": 2
+    },
+    {
+     "name": "Nvidia",
+     "count": 2
+    },
+    {
+     "name": "Apple",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Environment",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "Nvidia",
+   "headline": "Nvidia’s rise, visualized",
+   "date": "2026-11-18T17:18",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "partial",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/tech/1035924/nvidia-visualized-revenue-profit-earnings-after-huang",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 14,
+    "total": 14
+   },
+   "label_evidence": "model read all 14 figure-sentence(s); 2 of 14 figure-sentence(s) matched a base cue",
+   "content_hash": "e7ae1aa03879a509d3eef91784bbc3e3d3f029fc33aa450b72c3047a4aeb48d4",
+   "evidence_hash": "71b61aba9564f94e38e648d7a8187c87d74e697841f82c587003c2834bd407aa",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 37
+    },
+    {
+     "name": "Microsoft",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "Nvidia",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "Tech lawsuits defined 2026 — and lawmakers want more",
+   "date": "2026-11-18T14:07",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/policy/1036935/congress-forced-arbitration-deepfakes-defiance-act",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 9,
+    "total": 9
+   },
+   "label_evidence": "model read all 9 figure-sentence(s); 1 of 9 figure-sentence(s) matched a base cue",
+   "content_hash": "5d220dda1ce6b456e35902e0b4cc024b767cccbfcef50fc4053c96230e893abd",
+   "evidence_hash": "bd990aac4736cfe1d4f96485d38be3376916a0e132d0b76041aae2f32f32a689",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Microsoft",
+     "count": 2
+    },
+    {
+     "name": "Meta",
+     "count": 2
+    },
+    {
+     "name": "Snap",
+     "count": 2
+    },
+    {
+     "name": "Nvidia",
+     "count": 1
+    },
+    {
+     "name": "FCC",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Gaming",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "Nvidia",
+   "headline": "What is Nvidia without AI’s sugar daddy in charge?",
+   "date": "2026-11-18T13:34",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1036776/nvidia-earnings-kress-jensen-huang-petition",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 3,
+    "total": 3
+   },
+   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+   "content_hash": "547c61b2f5ac29e623a8bca28526bf9e0b346f1cca5507019e497f1e12350f67",
+   "evidence_hash": "75053e35d76e9af18a40e8fd1849bf0f939030e42c0fed8e8d3811ecc94278cc",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 68
+    },
+    {
+     "name": "OpenAI",
+     "count": 5
+    },
+    {
+     "name": "xAI",
+     "count": 4
+    },
+    {
+     "name": "Microsoft",
+     "count": 2
     },
     {
      "name": "SEC",
@@ -800,9 +749,161 @@
    "entity_basis": "headline"
   },
   {
+   "entity": "Amazon",
+   "headline": "Disney’s new Star Wars animatronics interact with guests using AI",
+   "date": "2026-11-18T12:53",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/tech/1036729/disney-star-wars-anzellans-animatronic-amazon-aws-cloud-ai",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 3243 chars of article text",
+   "content_hash": "781699a9ffdff797697a03732f4af39ea6d3e7fb1fbcf71b013fc4d6491c2b26",
+   "evidence_hash": "81eea584a99d58530979939fcdb91f1b2558ffafd47e3877cf1beedf07d71b0c",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Amazon",
+     "count": 5
+    },
+    {
+     "name": "Microsoft",
+     "count": 2
+    },
+    {
+     "name": "Nvidia",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Amazon",
+   "entity_basis": "tag"
+  },
+  {
+   "entity": "",
+   "headline": "Remember the frontier AI pause? Chip companies don’t either",
+   "date": "2026-11-18T11:25",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "Y",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1036549/nvidia-amd-earnings-fall-2026-chips-pause-frontier-models",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 10,
+    "total": 10
+   },
+   "label_evidence": "model read all 10 figure-sentence(s); 0 of 10 figure-sentence(s) matched a base cue",
+   "content_hash": "666fc5a2c016e1cc84d19e876908359cdae8f1b17cff82b113880a6cfe2a425b",
+   "evidence_hash": "1884a425709cfa6d4b59f4639c866bf25eb40e6bbc675e8041869f1a4eb11722",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 22
+    },
+    {
+     "name": "Anthropic",
+     "count": 9
+    },
+    {
+     "name": "OpenAI",
+     "count": 8
+    },
+    {
+     "name": "Microsoft",
+     "count": 3
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "Will Wright’s next game uses AI to map your memories",
+   "date": "2026-11-18T11:27",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/games/1036140/will-wright-mymems-ai-game-interview",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 5958 chars of article text",
+   "content_hash": "26fa3fea1679172fe6ac71b9937e62b00e26e2d4a4ea0072a3756a4c5314bd27",
+   "evidence_hash": "36d0884dd959b1f34df1ae1551350eebcd66a5a39c98060f4249deb872e747f3",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Google",
+     "count": 2
+    },
+    {
+     "name": "Microsoft",
+     "count": 2
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    },
+    {
+     "name": "Nvidia",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Gaming",
+   "entity_basis": "unresolved"
+  },
+  {
    "entity": "Nvidia",
-   "headline": "Tech leaders are convinced that Jensen Huang’s exit was a plot against him",
-   "date": "2026-11-16T18:20",
+   "headline": "Nvidia isn’t selling any more AI chips to China",
+   "date": "2026-11-18T09:28",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "N",
@@ -810,36 +911,32 @@
    "sources": [
     {
      "name": "theverge.com",
-     "url": "https://www.theverge.com/tech/1035027/tech-leaders-nvidia-jensen-huang-theories",
+     "url": "https://www.theverge.com/tech/1036445/nvidia-h200-ai-chips-china-stop-selling",
      "source_type": "trade-press",
      "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+   "rating": "ok",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 2,
     "total": 2
    },
+   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+   "content_hash": "5c2b18ed9764e4c7de9b2f21b1be8bc304417544a144da703ef74ea26ff51e6a",
+   "evidence_hash": "637e3a3f13ab9605ff0c0cde1d74e1f5c5a4b05d492da25515536895fc1afcc1",
    "label_schema_version": 2,
-   "content_hash": "1ecdadf46c5f743220970d92f3fce5125444b1fc31d3efb9da6f7e4003d78049",
-   "evidence_hash": "e4a60d28d13eeab4509f332da624ca27ea8e3823eab842e07bfca8edfa60b45d",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
-   "rating": "ok",
    "mentions": [
     {
      "name": "Nvidia",
-     "count": 33
+     "count": 22
     },
     {
-     "name": "Google",
-     "count": 1
-    },
-    {
-     "name": "Amazon",
-     "count": 1
+     "name": "Microsoft",
+     "count": 2
     },
     {
      "name": "xAI",
@@ -847,56 +944,6 @@
     }
    ],
    "publisher_topic": "Nvidia",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "Sam Altman says he wants everyone ‘to have a lot of RAM’",
-   "date": "2026-11-17T09:45",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/1034787/sam-altman-ram-shortage-semafor",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 2,
-    "total": 2
-   },
-   "label_schema_version": 2,
-   "content_hash": "1283ca74b641fa98678150b8502d12087916509ad2a619cc418ec1cfd5d3c3aa",
-   "evidence_hash": "20c2efa44a787c4b7a95b740d8b1c4994718d5063f82ab81dab949454c471852",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "OpenAI",
-     "count": 14
-    },
-    {
-     "name": "Nvidia",
-     "count": 6
-    },
-    {
-     "name": "Google",
-     "count": 1
-    },
-    {
-     "name": "Amazon",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "OpenAI",
    "entity_basis": "headline"
   },
   {
@@ -942,6 +989,89 @@
    "entity_basis": "headline"
   },
   {
+   "entity": "Meta",
+   "headline": "Muse privacy invasions are freaking out Meta staffers, internal chats show",
+   "date": "Wed, 18 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "arstechnica.com",
+     "url": "https://arstechnica.com/tech-policy/2026/11/muse-privacy-invasions-are-freaking-out-meta-staffers-internal-chats-show/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 3,
+    "total": 3
+   },
+   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+   "content_hash": "d866ff63ba6dd6a7c8fd71df7f118a428bd147f742d2347549a4fa2f0dc08db3",
+   "evidence_hash": "42a57fab55c3352525652b0ca665820d89a73b8f5be9e9759e463221dccdbc44",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 22
+    },
+    {
+     "name": "Apple",
+     "count": 8
+    },
+    {
+     "name": "Google",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "Will Wright's next simulation will use AI to mine content from your memories",
+   "date": "Wed, 18 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "?",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "arstechnica.com",
+     "url": "https://arstechnica.com/gaming/2026/11/will-wrights-next-simulation-will-use-ai-to-mine-content-from-your-memories/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 1
+   },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "735ad2196d19ee0f2f05eed8aabb0a6a83af3375c7931d87e5035a94177a1dc7",
+   "evidence_hash": "07c476c96f876cdda034acbfe5067985c2ef62451a85d3d6a67cfeb461878b5b",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
    "entity": "Microsoft",
    "headline": "Copilot is \"the new OS for work,\" and now Office runs inside of it",
    "date": "Wed, 18 Nov 2026",
@@ -957,19 +1087,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 3,
     "total": 3
    },
-   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "6f9fd6b124a2da89fcf2212b9e223e5376bd16fd502069f9b93a00f6edf2c093",
    "evidence_hash": "a5bb9e01959d622b027adb12a4456daa3810b73481c019bd9cc069aaebc4f917",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Microsoft",
@@ -985,7 +1115,7 @@
    "date": "Tue, 17 Nov 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "N",
+   "denominator_stated": "?",
    "reviewed": false,
    "sources": [
     {
@@ -995,19 +1125,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 5,
-    "total": 5
-   },
-   "label_evidence": "model read all 5 figure-sentence(s); 0 of 5 figure-sentence(s) matched a base cue",
-   "content_hash": "41eb234722eb256a087ccc4acc4990a203866025b940a04be5275b6b117e0f6d",
-   "evidence_hash": "bf9f0d0c48aa1b908a0c5a8fcda7aa31590dbd3905e0b6fdfe63d4300935dc5f",
-   "label_schema_version": 2,
    "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 6
+   },
+   "label_schema_version": 2,
+   "content_hash": "41eb234722eb256a087ccc4acc4990a203866025b940a04be5275b6b117e0f6d",
+   "evidence_hash": "214ab06d51b2224fbc19f1834a6c81cee9e4b162dc00c5016171af23e2e82500",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Nvidia",
@@ -1037,19 +1166,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 1,
     "total": 1
    },
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "8125d5d748bb001fbd2e42bf06170993736292beff4e3883ccfddd4cfe7a4e40",
    "evidence_hash": "771cd655722a20282ec686d67ec4428dfc6d1e3a74f02c67c2bc881e1d847b30",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Google",
@@ -1117,19 +1246,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 1,
     "total": 1
    },
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "e7f814e1ba851ffc7a330bc8a98c424f15a8724c5a09e5a3e32bfda8414358fe",
    "evidence_hash": "861b73dd5a8a991f5f85e2e62026d4eba647543bb2f96d3c6f626c871c0554ec",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "xAI",
@@ -1173,457 +1302,334 @@
    "entity_basis": "unresolved"
   },
   {
-   "entity": "",
-   "headline": "US moves to cut China’s remote access to AI chips",
-   "date": "Mon, 16 Nov 2026",
+   "entity": "Google DeepMind",
+   "headline": "Introducing Gemini 4 Neon",
+   "date": "Wed, 18 Nov 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "N",
+   "denominator_stated": "?",
    "reviewed": false,
    "sources": [
     {
-     "name": "arstechnica.com",
-     "url": "https://arstechnica.com/tech-policy/2026/11/us-moves-to-cut-chinas-remote-access-to-ai-chips/",
-     "source_type": "trade-press",
-     "source_tier": 3
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+     "source_type": "vendor-own",
+     "source_tier": 5
     }
    ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
+   "rating": "trusted",
+   "evidence_method": "unassessed",
    "evidence_coverage": {
-    "seen": 3,
-    "total": 3
+    "seen": 0,
+    "total": 27
    },
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "6652777678bf9126f5c0003bfc37e86629ed0ae1dfbb6601cbe2f6c7d6f67c9f",
+   "evidence_hash": "15be8c087ebd85a8e2e6a135c99c9026dce11757021ac8541f0743396cca4150",
    "label_schema_version": 2,
-   "content_hash": "92892f400fe16f11817ffca8502a9925ae34d070e2f3ea0e423d886171208749",
-   "evidence_hash": "7cf1ddbcfb216da3b566c07793ca1a64fc8c8d062e9ccf8147a3217d6998d0ee",
+   "auto_labelled": true,
    "label_source": "machine",
-   "rating": "ok",
    "mentions": [
     {
-     "name": "Nvidia",
-     "count": 17
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Nvidia",
-   "headline": "Jensen Huang allies build a \"war room\" to get him back at Nvidia",
-   "date": "Mon, 16 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "arstechnica.com",
-     "url": "https://arstechnica.com/ai/2026/11/jensen-huang-allies-build-a-war-room-to-get-him-back-at-nvidia/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 1,
-    "total": 1
-   },
-   "label_schema_version": 2,
-   "content_hash": "b0a8385ecf1a6d8aeee159a22e554dfb936fda22cb841b92ed98e194639c13e7",
-   "evidence_hash": "3640ad130ed9fa1ebcc644d3de95d147eeab5423b75b83f6279e78d91b12d486",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Nvidia",
-     "count": 22
+     "name": "Meta",
+     "count": 2
     },
     {
-     "name": "xAI",
+     "name": "SEC",
      "count": 1
     }
    ],
-   "publisher_topic": "",
-   "entity_basis": "headline"
+   "publisher_topic": "None",
+   "entity_basis": "product:Gemini"
   },
   {
-   "entity": "Nvidia",
-   "headline": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
-   "date": "Sat, 14 Nov 2026",
+   "entity": "Google DeepMind",
+   "headline": "Genie 4 is now available",
+   "date": "Wed, 18 Nov 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "N",
+   "denominator_stated": "?",
    "reviewed": false,
    "sources": [
     {
-     "name": "techpowerup.com",
-     "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
-     "source_type": "other",
-     "source_tier": 3
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/genie-4-is-now-available/",
+     "source_type": "vendor-own",
+     "source_tier": 5
     }
    ],
-   "rating": "ok",
-   "evidence_method": "local-model",
+   "rating": "trusted",
+   "evidence_method": "unassessed",
    "evidence_coverage": {
-    "seen": 14,
-    "total": 14
+    "seen": 0,
+    "total": 19
    },
-   "label_evidence": "model read all 14 figure-sentence(s); 0 of 14 figure-sentence(s) matched a base cue",
-   "content_hash": "b0085cd4f5af0b345ad395d21cc9c5bd034d104967e020601799e4c5e6b467c3",
-   "evidence_hash": "dad7bb6fa9fd2fc49104eea237a1e76fad5adbebf0cc9f374f9b82d8a118a3d8",
+   "label_evidence": "model review failed; denominator remains unassessed",
+   "content_hash": "f3386ea14e6d304ef6cd7336700bcba61c6f5a0d6b0c2b599cce65d02389a46b",
+   "evidence_hash": "82facca7b5ba02654cb07fa3117e78dd96ec4cda2cea9ae485caf23c31deb798",
    "label_schema_version": 2,
    "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
    "mentions": [
     {
-     "name": "Nvidia",
-     "count": 23
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
+     "name": "Meta",
+     "count": 2
     }
    ],
-   "publisher_topic": "",
-   "entity_basis": "headline"
+   "publisher_topic": "None",
+   "entity_basis": "site"
   },
   {
-   "entity": "",
-   "headline": "Bank CEOs, NSA Tell Congress That AI-Driven Patches Are Behind Outages",
-   "date": "2026-11-18",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "washingtonsun.com",
-     "url": "https://www.washingtonsun.com/technology/bank-ceos-nsa-tell-congress-ai-driven-patches-behind-outages",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 3,
-    "total": 3
-   },
-   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
-   "content_hash": "e975f295d634047c41b672597c49a2497155b2d487a214c281ce74323881d236",
-   "evidence_hash": "7c8ef78378e4669636a94568727ca39fa307f28156b47db26daa01278f8b9889",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Microsoft",
-     "count": 4
-    },
-    {
-     "name": "Google",
-     "count": 2
-    },
-    {
-     "name": "Nvidia",
-     "count": 2
-    },
-    {
-     "name": "Apple",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Google",
-   "headline": "Google's AI answers reducing search traffic by 40%",
-   "date": "2026-11-09",
+   "entity": "Google DeepMind",
+   "headline": "Introducing Gemini 4 Hydrogen",
+   "date": "Thu, 12 Nov 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "Y",
    "reviewed": false,
    "sources": [
     {
-     "name": "revscope.co",
-     "url": "https://revscope.co/blog/search-seo-geo-2026/",
-     "source_type": "other",
-     "source_tier": 3
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+     "source_type": "vendor-own",
+     "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "rating": "trusted",
    "evidence_method": "local-model",
    "evidence_coverage": {
-    "seen": 106,
-    "total": 106
+    "seen": 16,
+    "total": 16
    },
-   "label_evidence": "model read all 106 figure-sentence(s); 11 of 106 figure-sentence(s) matched a base cue",
-   "content_hash": "fb0fddbbcb685a6ab32fa7a00251562b1a83784c9be990a4ecad6e222591a813",
-   "evidence_hash": "768a41be7aca5074722d2271f5290597cb749e71ce59180c265c4370c660f90b",
+   "label_evidence": "model read all 16 figure-sentence(s); 3 of 16 figure-sentence(s) matched a base cue",
+   "content_hash": "70c7bbdc5a4425e31de96d2647dd086f2c348ef305a0e958a22a9852c846b7eb",
+   "evidence_hash": "61e9b27bfb11fb38f9ad69f11ab813ea5fc9826620fe03052f08dba434c59fe2",
    "label_schema_version": 2,
    "auto_labelled": true,
    "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
    "mentions": [
     {
-     "name": "Google",
-     "count": 29
-    },
+     "name": "Meta",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "None",
+   "entity_basis": "product:Gemini"
+  },
+  {
+   "entity": "Google DeepMind",
+   "headline": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
+   "date": "Wed, 11 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "Y",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "trusted",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 36,
+    "total": 36
+   },
+   "label_evidence": "model read all 36 figure-sentence(s); 2 of 36 figure-sentence(s) matched a base cue",
+   "content_hash": "9a1f3fb759381ff834468191cd7ceb727c3444bb2f81ead8415d26b1b579a757",
+   "evidence_hash": "a9e50122f1a4f97edd1ca4657d0208e4d35000def591284d35c337f9cc4343a4",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "site"
+  },
+  {
+   "entity": "Google DeepMind",
+   "headline": "Gemini 4 Carbon is now available",
+   "date": "Tue, 10 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "Y",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "trusted",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 20,
+    "total": 20
+   },
+   "label_evidence": "model read all 20 figure-sentence(s); 6 of 20 figure-sentence(s) matched a base cue",
+   "content_hash": "c5ec51b945c9d166fee0c810032cb9ffbb5d96f8d61c6edcbc416c5ddd9036d7",
+   "evidence_hash": "9ee86258ddef71c94bc50c80677b7ae4965e93438638bb8b2fbaa8008c49ba2a",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
     {
      "name": "Meta",
-     "count": 3
-    },
-    {
-     "name": "Perplexity",
      "count": 2
     },
     {
-     "name": "Amazon",
+     "name": "Perplexity",
+     "count": 1
+    },
+    {
+     "name": "SEC",
      "count": 1
     }
    ],
-   "publisher_topic": "",
-   "entity_basis": "headline"
+   "publisher_topic": "None",
+   "entity_basis": "product:Gemini"
   },
   {
-   "entity": "Anthropic",
-   "headline": "Anthropic Paid Rubio's Ex-Chief of Staff's Firm $740k.it Lobbied His NSC",
-   "date": "2026-11-17",
+   "entity": "Google DeepMind",
+   "headline": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+   "date": "Tue, 10 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "trusted",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 101 chars of article text",
+   "content_hash": "a9303ac49c5b93626616103363f2ca70b06915c98c9d3f76f37a26f47acd5110",
+   "evidence_hash": "25803a5428adf8d0ed9145048f30b901f5a4cf7c7c8bb281d3913fbe39273bfd",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "site"
+  },
+  {
+   "entity": "Google DeepMind",
+   "headline": "Opening the datasets behind our AI weather models",
+   "date": "Tue, 10 Nov 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
-     "name": "zerohedge.com",
-     "url": "https://www.zerohedge.com/political/anthropic-paid-rubios-ex-chief-staffs-firm-740000-after-jensen-memo-it-lobbied-his-nsc",
-     "source_type": "other",
-     "source_tier": 3
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
+     "source_type": "vendor-own",
+     "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "rating": "trusted",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 1,
+    "total": 1
+   },
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "content_hash": "1a32a0ceb36c3c147c5364c16d25cd77cf377712b6fefd3afaf62b87d15a846b",
+   "evidence_hash": "a1c4c6eec7e8c58e32c1d0d8d13d70f1af645de44b5b91e1e387e5b8d9c62ca2",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "site"
+  },
+  {
+   "entity": "Google DeepMind",
+   "headline": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+   "date": "Mon, 09 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "trusted",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 58 chars of article text",
+   "content_hash": "b2e8171fcfe4c4a8e7faccd2382d789f388a0f68bbcb8f48f05e4f708bae49af",
+   "evidence_hash": "aec3fe94a31976a95ebf8e946ac52c6558ce770a3fe2b2d182e11723da3da0ad",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "product:Gemini Robotics"
+  },
+  {
+   "entity": "Google DeepMind",
+   "headline": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+   "date": "Thu, 05 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "partial",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "trusted",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 12,
     "total": 12
    },
    "label_evidence": "model read all 12 figure-sentence(s); 2 of 12 figure-sentence(s) matched a base cue",
-   "content_hash": "f24615ec825dba76a9aeb6ea02dfae1db300334892e410d954097e1ec1a24b99",
-   "evidence_hash": "90c479a7a1ee073036a48203874423682f2f88df647891b8a5691c2bc410f00e",
+   "content_hash": "e5bf6789273a8a3a5d3528505e93e68b840de59cfc5868315cce8c68389998b2",
+   "evidence_hash": "d5f48f8733a95fef97d745eee5b527ab7d1e49a22b1da330aadeecfc14a28ee2",
    "label_schema_version": 2,
    "auto_labelled": true,
    "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
    "mentions": [
     {
-     "name": "Nvidia",
-     "count": 34
-    },
-    {
-     "name": "Anthropic",
-     "count": 25
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Hugging Face",
-     "count": 1
+     "name": "Meta",
+     "count": 2
     }
    ],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "Not Everything Needs an LLM",
-   "date": "2026-11-09",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "newsletter.posthog.com",
-     "url": "https://newsletter.posthog.com/p/decision-models",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 19,
-    "total": 19
-   },
-   "label_evidence": "model read all 19 figure-sentence(s); 3 of 19 figure-sentence(s) matched a base cue",
-   "content_hash": "4484c9b9e8efb437801214e48bc623e11c41b7117d36d4a39a155fe9c856ab74",
-   "evidence_hash": "f6261748aaabd7cf4fc1a15f112189a22b80ea18023376ee9903316d7558bb18",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Baidu, Xiaomi CEOs warn of growing gap between AI hype and returns",
-   "date": "Tue, 17 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "scmp.com",
-     "url": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_evidence": "article not fetched (http-403)",
-   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Ask HN: If AI tools are so good, why isn't your bug backlog empty?",
-   "date": "Mon, 16 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "news.ycombinator.com",
-     "url": "https://news.ycombinator.com/item?id=50520076",
-     "source_type": "aggregator",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 152,
-    "total": 152
-   },
-   "label_evidence": "model read all 152 figure-sentence(s); 1 of 152 figure-sentence(s) matched a base cue",
-   "content_hash": "d050df187bd8a6643056950088982129c840d2f36dff18481c3a5248d97e76d1",
-   "evidence_hash": "ec19da543941b2abb47d6f2b71cd9119ec6a8c6295d976e6f307fe87d9d25955",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Amazon",
-     "count": 4
-    },
-    {
-     "name": "Microsoft",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "First phase of embedded assessments at OpenAI",
-   "date": "2026-11-16",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "openai.com",
-     "url": "https://openai.com/index/our-first-phase-of-embedded-assessments/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_evidence": "article not fetched (http-403)",
-   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "\"Who is Hiring?\" postings stuck near 12-year lows as AI reaches half of all jobs",
-   "date": "Mon, 16 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "hntrends.com",
-     "url": "https://www.hntrends.com/2026/november.html",
-     "source_type": "other",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 25,
-    "total": 25
-   },
-   "label_evidence": "model read all 25 figure-sentence(s); 3 of 25 figure-sentence(s) matched a base cue",
-   "content_hash": "56d206df8e930bb8a711515d831679cfeb7fee83aea66a72aa733d8d8b70abc8",
-   "evidence_hash": "ce54fd4409760d8c03bceca1c30d1d9d47d97e10c7f9b9bd43bba1954fae97f0",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Amazon",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
+   "publisher_topic": "None",
+   "entity_basis": "product:Gemini"
   },
   {
    "entity": "",
@@ -2108,6 +2114,39 @@
   },
   {
    "entity": "",
+   "headline": "Union Nurses Tell Researchers That AI Can Make Their Jobs Harder",
+   "date": "Wed, 18 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "ainowinstitute.org",
+     "url": "https://ainowinstitute.org/news/press/union-nurses-tell-researchers-that-ai-can-make-their-jobs-harder",
+     "source_type": "independent",
+     "source_tier": 2
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 1,
+    "total": 1
+   },
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "content_hash": "674cb3ea47f1bdb247694c1d5159a0594f360521116ee761d019c40ec2fe51de",
+   "evidence_hash": "dfbf669aebce347e8e83efb409ac451947d551f7432a9e400493f549833898cb",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
    "headline": "AI Comes for Nursing",
    "date": "Mon, 16 Nov 2026",
    "topic": "",
@@ -2122,18 +2161,18 @@
      "source_tier": 2
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "complete figure evidence needs 95610 prompt characters, above the 74304-character review budget",
    "evidence_method": "unassessed",
    "evidence_coverage": {
     "seen": 0,
     "total": 296
    },
-   "label_evidence": "complete figure evidence needs 95610 prompt characters, above the 74304-character review budget",
+   "label_schema_version": 2,
    "content_hash": "e06e38c8731f780265e6bc89d512ab4c02ed448896cee40e2d962eea78767520",
    "evidence_hash": "adf4e17b5a10ffb596f793a48eef3dc1ea0a143e3b801537892c14fd66920d98",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Bureau of Labor Statistics",
@@ -2395,39 +2434,6 @@
   },
   {
    "entity": "",
-   "headline": "Who will get to define the danger?",
-   "date": "Thu, 29 Oct 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "ainowinstitute.org",
-     "url": "https://ainowinstitute.org/news/who-will-get-to-define-the-danger",
-     "source_type": "independent",
-     "source_tier": 2
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model returned an invalid denominator label",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 1
-   },
-   "label_schema_version": 2,
-   "content_hash": "252acc622af945aa74b920b08affb31844b84be536f5ba5c3d931005d3e42c52",
-   "evidence_hash": "217b0a3580f3b8f5ea2528ca132f46447ad2c85b2f61e4ee96d44ccaba4c545c",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
    "headline": "BAIR at CoRL 2026",
    "date": "Mon, 09 Nov 2026",
    "topic": "",
@@ -2538,6 +2544,44 @@
   },
   {
    "entity": "",
+   "headline": "This featherweight, flying robot carries its own sensors and computers",
+   "date": "Wed, 18 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "Y",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "news.mit.edu",
+     "url": "https://news.mit.edu/2026/featherweight-flying-robot-carries-its-own-sensors-and-computers-1118",
+     "source_type": "press-office",
+     "source_tier": 5
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 4,
+    "total": 4
+   },
+   "label_evidence": "model read all 4 figure-sentence(s); 2 of 4 figure-sentence(s) matched a base cue",
+   "content_hash": "277c4ddf30f98b08a7a2477d4461a4b746b77f2a9c432e90fccba21a7bb4f394",
+   "evidence_hash": "7710bb2eb7d4dd1f3c9365fc30dfd8d438d73201cd2795447cfc678fc37be5df",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Yi-Hsuan (Nemo) Hsiao",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
    "headline": "Helping AI text detectors keep up with changing conditions",
    "date": "Wed, 18 Nov 2026",
    "topic": "",
@@ -2552,19 +2596,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 3,
     "total": 3
    },
-   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "62fc90a517544b42767ed5cde805f637af5cc7c74e775be82519d3e32efa713f",
    "evidence_hash": "2eeca6731e8842c6f2be94709b7fc8646e0e0f01c075b60491fb8f8aa7662d4d",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Meta",
@@ -2590,19 +2634,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 4,
     "total": 4
    },
-   "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "eb4be7f1de4828df8797106c58906b6c1870a6cfefa1e3aca02a1a17af1dc47a",
    "evidence_hash": "c24d70eb552cb7785c642da3451b75892f037959f491e1a31f55f73129100f6a",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Anthropic",
@@ -2848,44 +2892,6 @@
     }
    ],
    "publisher_topic": "Christopher Womack",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "MIT-led team receives funding to develop next-generation alternatives to modern weed killers",
-   "date": "Tue, 10 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "news.mit.edu",
-     "url": "https://news.mit.edu/2026/mit-led-team-receives-funding-next-generation-alternatives-modern-weed-killers-1110",
-     "source_type": "press-office",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 4,
-    "total": 4
-   },
-   "label_schema_version": 2,
-   "content_hash": "96cdfa2ac64b6465c53f002ae6e140faece5759096c52aad7183fd89bc39573d",
-   "evidence_hash": "c1d246455aa6ace4923dccc3fce26c0a3507656325b809fac8242d6e27eb5cb5",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Safer herbicides",
    "entity_basis": "unresolved"
   },
   {
@@ -3380,6 +3386,44 @@
   },
   {
    "entity": "Anthropic",
+   "headline": "Anthropic prices initial public offering",
+   "date": "2026-11-18",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "anthropic.com",
+     "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 4,
+    "total": 4
+   },
+   "label_evidence": "model read all 4 figure-sentence(s); 1 of 4 figure-sentence(s) matched a base cue",
+   "content_hash": "77e86d5453eab459a5a7012244e7a70e8dbb6c542821be8954944096b4396f1a",
+   "evidence_hash": "8ee464191d209de80901a37e0c738959b69a3f9a9c31e7f4f88333479f4c9755",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "SEC",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Anthropic",
    "headline": "Anthropic launches roadshow for proposed initial public offering",
    "date": "2026-11-10",
    "topic": "",
@@ -3450,75 +3494,32 @@
    "entity_basis": "site"
   },
   {
-   "entity": "Anthropic",
-   "headline": "Expanding our partnership with GSA to bring Claude to all levels of government",
-   "date": "2026-10-27",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "anthropic.com",
-     "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 7 figure-sentence(s); 1 of 7 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 7,
-    "total": 7
-   },
-   "label_schema_version": 2,
-   "content_hash": "10351649d921334ff5433572981e7b4d93bc0b5414cfbcfd40f286ec891512ba",
-   "evidence_hash": "3632d21774d84e2fdd94513f48da39b5fa4a265d5b23786d94bebc69e9e853cf",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Amazon",
-     "count": 2
-    },
-    {
-     "name": "Google",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "product:Claude"
-  },
-  {
    "entity": "OpenAI",
-   "headline": "Broadening access to AI for scientists",
-   "date": "2026-11-16",
+   "headline": "Managing frontier AI risk: From training to deployment",
+   "date": "2026-11-18",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "N",
+   "denominator_stated": "?",
    "reviewed": false,
    "sources": [
     {
      "name": "openai.com",
-     "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers/",
+     "url": "https://openai.com/index/managing-frontier-ai-risk/",
      "source_type": "vendor-own",
      "source_tier": 5
     }
    ],
    "rating": "ok",
-   "evidence_method": "local-model",
+   "evidence_method": "unassessed",
    "evidence_coverage": {
-    "seen": 9,
-    "total": 9
+    "seen": 0,
+    "total": 0
    },
-   "label_evidence": "model read all 9 figure-sentence(s); 0 of 9 figure-sentence(s) matched a base cue",
-   "content_hash": "e602c2f50a5f89e7365818f9b65ed58672f7fa061bc9203d705a8c7af96e30fa",
-   "evidence_hash": "22727be86a95144849b3f99aeee2726cf9510cbacf3ec38d2cc9eaf9938b9ee6",
+   "label_evidence": "article not fetched (http-403)",
+   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
    "label_schema_version": 2,
    "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
    "mentions": [],
    "publisher_topic": "",
@@ -3526,36 +3527,35 @@
   },
   {
    "entity": "OpenAI",
-   "headline": "Science at the Frontier: How scientists use ChatGPT",
+   "headline": "Our first phase of embedded assessments",
    "date": "2026-11-16",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "Y",
+   "denominator_stated": "?",
    "reviewed": false,
    "sources": [
     {
      "name": "openai.com",
-     "url": "https://openai.com/index/science-at-the-frontier/",
+     "url": "https://openai.com/index/our-first-phase-of-embedded-assessments/",
      "source_type": "vendor-own",
      "source_tier": 5
     }
    ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 12,
-    "total": 12
-   },
-   "label_evidence": "model read all 12 figure-sentence(s); 1 of 12 figure-sentence(s) matched a base cue",
-   "content_hash": "4ee46458e3471144c249d0f5aa85ead42e693c4bfe90b921f5427f375717243c",
-   "evidence_hash": "abba495b14a3ce8bf2649ea0d1375191250948517ae8f0e535f4cf0f315e1a46",
-   "label_schema_version": 2,
    "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "article not fetched (http-403)",
+   "evidence_method": "unassessed",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_schema_version": 2,
+   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [],
    "publisher_topic": "",
-   "entity_basis": "product:ChatGPT"
+   "entity_basis": "site"
   },
   {
    "entity": "OpenAI",
@@ -3573,19 +3573,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 5 figure-sentence(s); 0 of 5 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 5,
     "total": 5
    },
-   "label_evidence": "model read all 5 figure-sentence(s); 0 of 5 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "f4c70d40e27a68794dae81f1b7258cc2b8086319d8769f7b22e896372a86caef",
    "evidence_hash": "c5a8158d81ca7eac37baf62a7fdb6eb461dd48916d3b3f7d159858b36ec3d9bd",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Anthropic",
