@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19 06:23 UTC",
+ "generated": "2026-11-20 06:22 UTC",
  "window_days": 60,
  "counts": {
   "total": 99,
@@ -7,6 +7,18 @@
   "open_weights": 51
  },
  "releases": [
+  {
+   "lab": "Mistral",
+   "model": "Mistral: Pixtral Large 2502",
+   "id": "mistralai/pixtral-large-2502",
+   "date": "2026-11-20",
+   "url": "https://openrouter.ai/mistralai/pixtral-large-2502",
+   "context_length": 128000,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
   {
    "lab": "Google",
    "model": "Google: Gemini 4 Neon",
@@ -1161,23 +1173,11 @@
   },
   {
    "lab": "xAI",
-   "model": "SpaceXAI: Grok 4.7",
+   "model": "SpaceXSI: Grok 4.7",
    "id": "x-ai/grok-4.7",
    "date": "2026-09-21",
    "url": "https://openrouter.ai/x-ai/grok-4.7",
    "context_length": 500000,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Alibaba (Qwen)",
-   "model": "Qwen: Qwen3.8 Omni Flash",
-   "id": "qwen/qwen3.8-omni-flash",
-   "date": "2026-09-21",
-   "url": "https://openrouter.ai/qwen/qwen3.8-omni-flash",
-   "context_length": 1000000,
    "evidence": "closed",
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
@@ -1198,27 +1198,69 @@
  ],
  "av_window_days": 180,
  "av_counts": {
-  "total": 7,
+  "total": 10,
   "audio": 1,
-  "video": 6,
-  "folded": 4,
+  "video": 9,
+  "folded": 17,
   "labs": 4,
   "orgs_watched": 11
  },
  "av_releases": [
   {
    "kind": "video",
-   "kind_from": "pipeline",
+   "kind_from": "name",
    "lab": "Tencent",
-   "model": "Hy-Nomas",
-   "id": "tencent/Hy-Nomas",
-   "date": "2026-10-21",
-   "url": "https://huggingface.co/tencent/Hy-Nomas",
+   "model": "WeMM-Video-2B",
+   "id": "tencent/WeMM-Video-2B",
+   "date": "2026-11-17",
+   "url": "https://huggingface.co/tencent/WeMM-Video-2B",
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "tencent/Hy-Nomas",
+   "hf_id": "tencent/WeMM-Video-2B",
    "source": "Hugging Face API, the tencent organisation list capped at 20 repositories; date is repo creation, not necessarily release",
-   "folded": 1
+   "folded": 4
+  },
+  {
+   "kind": "video",
+   "kind_from": "name",
+   "lab": "Tencent",
+   "model": "WeMM-Video-4B",
+   "id": "tencent/WeMM-Video-4B",
+   "date": "2026-11-17",
+   "url": "https://huggingface.co/tencent/WeMM-Video-4B",
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "tencent/WeMM-Video-4B",
+   "source": "Hugging Face API, the tencent organisation list capped at 20 repositories; date is repo creation, not necessarily release",
+   "folded": 4
+  },
+  {
+   "kind": "video",
+   "kind_from": "name",
+   "lab": "Tencent",
+   "model": "WeMM-Video-9B",
+   "id": "tencent/WeMM-Video-9B",
+   "date": "2026-11-17",
+   "url": "https://huggingface.co/tencent/WeMM-Video-9B",
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "tencent/WeMM-Video-9B",
+   "source": "Hugging Face API, the tencent organisation list capped at 20 repositories; date is repo creation, not necessarily release",
+   "folded": 4
+  },
+  {
+   "kind": "video",
+   "kind_from": "name",
+   "lab": "Tencent",
+   "model": "WeMM-Video-35BA3B-AWQ",
+   "id": "tencent/WeMM-Video-35BA3B-AWQ",
+   "date": "2026-11-17",
+   "url": "https://huggingface.co/tencent/WeMM-Video-35BA3B-AWQ",
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "tencent/WeMM-Video-35BA3B-AWQ",
+   "source": "Hugging Face API, the tencent organisation list capped at 20 repositories; date is repo creation, not necessarily release",
+   "folded": 2
   },
   {
    "kind": "video",

@@ -1,5 +1,417 @@
 [
   {
+    "id": "alert_311d6a8338e7236b084ee4a1",
+    "timestamp": "2026-11-20T06:02:09.555928+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Securing the United States Bulk-Power System",
+    "url": "https://www.federalregister.gov/documents/2026/09/09/2026-18370/securing-the-united-states-bulk-power-system",
+    "source_queue_priority": 1,
+    "substantive_priority": 4,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document outlines a national emergency declaration regarding the security of the bulk-power system, citing vulnerabilities in foreign-produced equipment and increased reliance on electricity for AI and data centers. It does not impose specific binding duties on AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Monitor for subsequent final rules or binding directives under E.O. 14421 that may impose specific security requirements on equipment used in AI infrastructure.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "3ee83a15aa02e1f35f809f0eb4ddfe2adb601346b89901f0accc629880b5d2cb",
+    "source_text_sha256": "a53929654bdac68bbd0f084a443518c66e0dc0bad70789d508a29d5079ca0add",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 40923,
+      "ranges": [
+        [
+          0,
+          654
+        ],
+        [
+          4923,
+          6161
+        ]
+      ],
+      "passages_total": 2,
+      "passages_read": 2,
+      "passages_left": 0,
+      "selected_text_sha256": "ffa6d37e576658a6b37d708bfd674b8a3875ce51cb91478ba17060c189edd3b9"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/09/2026-18370.html",
+    "document_status": "other",
+    "ai_relevance": "relevant",
+    "evidence_quote": "the rapid growth of advanced manufacturing, data centers, artificial intelligence, and defense production has increased the Nation's dependence on abundant, reliable electricity and magnified the consequences of a potential successful attack or supply disruption.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_5f397882c12cdcee7e014389",
+    "timestamp": "2026-11-20T06:01:56.207597+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Amend Its Rules its Rules To Permit the Listing of Binary Options Overlying Key Performance Indicators",
+    "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23427/self-regulatory-organizations-nyse-arca-inc-notice-of-filing-and-immediate-effectiveness-of-proposed",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a US SEC notice regarding the listing of binary options on Key Performance Indicators (KPIs) for specific issuers on NYSE Arca. It contains no obligations, duties, or regulatory requirements applicable to AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "No action required; document is outside the scope of AI operator regulation.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "63b97b942b8d38fbdecfbf77dfef479f22ce8aedc76e63779fb036d742d4c22c",
+    "source_text_sha256": "e8f085000717bfdf86bd965d9819e3f0e7d9b635d59c51b109ba2541c12bba40",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 122575,
+      "ranges": [
+        [
+          0,
+          608
+        ],
+        [
+          9031,
+          10264
+        ],
+        [
+          10264,
+          11625
+        ],
+        [
+          11625,
+          12314
+        ],
+        [
+          52461,
+          53685
+        ],
+        [
+          62862,
+          64092
+        ],
+        [
+          70163,
+          71454
+        ],
+        [
+          101387,
+          102595
+        ],
+        [
+          103209,
+          104609
+        ],
+        [
+          105146,
+          106492
+        ],
+        [
+          108667,
+          109863
+        ]
+      ],
+      "passages_total": 11,
+      "passages_read": 11,
+      "passages_left": 0,
+      "selected_text_sha256": "9d6e41949bd3ebc880633dbdcd5e418d0bf0df273328b51d236d395865115a3a"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/18/2026-23427.html",
+    "document_status": "proposed",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "Pursuant to proposed Rule 5.97-O(a), the Exchange may from time to time approve for listing and trading on the Exchange any of the following binary KPI options contracts for the following issuers",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_6049555d5fea0279780554ec",
+    "timestamp": "2026-11-20T06:01:40.452387+00:00",
+    "alert_schema_version": 2,
+    "source": "EU AI Office & Digital Strategy",
+    "jurisdiction": "European Union",
+    "title": "Commission hosts Apply AI Summit to boost Europe’s AI innovation and uptake",
+    "url": "https://digital-strategy.ec.europa.eu/en/news/commission-hosts-apply-ai-summit-boost-europes-ai-innovation-and-uptake",
+    "source_queue_priority": 1,
+    "substantive_priority": 4,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document announces the Apply AI Summit and related events, highlighting the adoption of the Apply AI Strategy and a consultation on a fundamental rights impact assessment template. It does not impose new binding obligations on AI operators.",
+    "denominator_disclosed": "no",
+    "actionable_trigger": "Monitor the outcome of the consultation on the fundamental rights impact assessment template for potential future compliance requirements.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "7ae117fe2a4b461d15c86954b443e762dc8ee7fd9700a14be966d3f52c5733fd",
+    "source_text_sha256": "6f2420f39cd939dc82d571fb42ce57136dd26092b41852723e4d491de5edabdc",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "extracted text",
+      "selection_status": "selected",
+      "selector": "full-text",
+      "text_chars": 2046,
+      "ranges": [
+        [
+          0,
+          2046
+        ]
+      ],
+      "passages_total": 1,
+      "passages_read": 1,
+      "passages_left": 0,
+      "selected_text_sha256": "6f2420f39cd939dc82d571fb42ce57136dd26092b41852723e4d491de5edabdc"
+    },
+    "source_capture_url": "https://digital-strategy.ec.europa.eu/en/news/commission-hosts-apply-ai-summit-boost-europes-ai-innovation-and-uptake",
+    "document_status": "other",
+    "ai_relevance": "relevant",
+    "evidence_quote": "The Commission is collecting feedback on the draft template for a questionnaire to facilitate certain deployers of high-risk AI system in complying with their obligations to prepare a fundamental rights impact assessment under Article 27 AI Act.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_a49b135530bcded0e497a211",
+    "timestamp": "2026-11-20T06:01:29.606306+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Policies on the Use of Generative Super Intelligence in Agency Adjudication; Request for Comments",
+    "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23539/policies-on-the-use-of-generative-super-intelligence-in-agency-adjudication-request-for-comments",
+    "source_queue_priority": 1,
+    "substantive_priority": 2,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a request for comments by the Administrative Conference of the United States (ACUS) regarding best practices for the use of generative super intelligence in agency adjudications. It is a consultation phase and does not impose current binding obligations on AI operators.",
+    "denominator_disclosed": "no",
+    "actionable_trigger": "Monitor the ACUS project for final recommendations that may influence agency policies on GenSI use in adjudications.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "6c376cda7d1df037ae0afd8fb51c8ef045e788568a6258cc80c9bec4a576d6b1",
+    "source_text_sha256": "391c34ea3dd67bd745dc23e0be5a95097a0a3facf67b38eafb2134b9ae83457e",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 14005,
+      "ranges": [
+        [
+          0,
+          1202
+        ],
+        [
+          1202,
+          2032
+        ],
+        [
+          2256,
+          3583
+        ],
+        [
+          4493,
+          5851
+        ],
+        [
+          5981,
+          7096
+        ],
+        [
+          10431,
+          11714
+        ],
+        [
+          11714,
+          13116
+        ],
+        [
+          13116,
+          14005
+        ]
+      ],
+      "passages_total": 8,
+      "passages_read": 8,
+      "passages_left": 0,
+      "selected_text_sha256": "7e0870c77a60ace20ebb04916030c007da7f6ec38338d5fde6bead0d19a03687"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/19/2026-23539.html",
+    "document_status": "consultation",
+    "ai_relevance": "relevant",
+    "evidence_quote": "The Office of the Chairman of ACUS is requesting public input on the development of policies regarding the use of generative super intelligence, previously referenced as generative artificial intelligence, [ 1 ] by agency adjudicators, other agency personnel, parties, representatives, and other participants in federal agency adjudications.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_16f7d77f88e1a6c50e660f56",
+    "timestamp": "2026-11-20T06:01:15.121810+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Executive Compensation Disclosure Reform",
+    "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23555/executive-compensation-disclosure-reform",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a proposed SEC rule regarding executive compensation disclosure reform. It discusses the use of AI and LLMs for data analysis and tagging but does not impose binding obligations on AI operators. It is a regulatory proposal concerning financial disclosure standards, not an AI-specific operational duty.",
+    "denominator_disclosed": "partial",
+    "actionable_trigger": "Monitor final rule adoption for changes to data structuring requirements (Inline XBRL) that may affect AI data ingestion pipelines, but no immediate action is required as this is a proposal.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "1c173b6ff60e1b403293d4a0c13c50d646a36ff0705fc7a92fbf018608725b18",
+    "source_text_sha256": "2b6d14a57556f1fcd6147ac99784064d10b8ee2e1938b7cbd9255df32ad29674",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 1112292,
+      "ranges": [
+        [
+          0,
+          726
+        ],
+        [
+          26097,
+          27460
+        ],
+        [
+          88230,
+          89567
+        ],
+        [
+          331473,
+          332082
+        ],
+        [
+          568262,
+          569619
+        ],
+        [
+          957246,
+          958590
+        ],
+        [
+          959346,
+          960553
+        ],
+        [
+          960553,
+          961328
+        ],
+        [
+          975549,
+          976727
+        ],
+        [
+          1066149,
+          1067352
+        ],
+        [
+          1084617,
+          1086406
+        ]
+      ],
+      "passages_total": 49,
+      "passages_read": 11,
+      "passages_left": 38,
+      "selected_text_sha256": "529bbb72da4802e4d9583611b8aa9df43ad6d96bfdf72daa4565dfa6f67c5992"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/19/2026-23555.html",
+    "document_status": "proposed",
+    "ai_relevance": "uncertain",
+    "evidence_quote": "Research indicates that XBRL requirements have led to benefits for individual companies, investors and the market as a whole, by reducing information asymmetry, [ 851 ] improving stock price informativeness of public disclosures, [ 852 ] enhancing market competition, [ 853 ] increasing liquidity, [ 854 ] decreasing cost of capital, [ 855 ] improving the accuracy of financial analysis, [ 856 ] and enhancing artificial intelligence (also known as “super intelligence”) [ 857 ] capabilities.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_f4334a821f53938b4aa44d39",
+    "timestamp": "2026-11-20T06:00:54.601216+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Addressing Remote Access to Advanced Semiconductors",
+    "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23529/addressing-remote-access-to-advanced-semiconductors",
+    "source_queue_priority": 1,
+    "substantive_priority": 3,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a US Federal Register interim final rule concerning export controls on advanced semiconductors and remote access to computing power. It is not a UK regulatory instrument and does not impose direct binding duties on UK AI operators, though it represents a significant operational development in the global AI supply chain.",
+    "denominator_disclosed": "no",
+    "actionable_trigger": "Monitor compliance with US export control restrictions on advanced semiconductors and data center access if operating in or supplying to the US market or entities subject to US jurisdiction.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "ee937bbf34d00f91ba7075c223c9875cf023e4fae83149709708d987f86c6d02",
+    "source_text_sha256": "60d23bec65b85cff58e2248dad166f75fd74b1c8d41fff629454892b977928cc",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 200217,
+      "ranges": [
+        [
+          0,
+          1283
+        ],
+        [
+          1283,
+          2659
+        ],
+        [
+          2659,
+          3902
+        ],
+        [
+          5422,
+          7026
+        ],
+        [
+          7026,
+          8442
+        ],
+        [
+          8442,
+          9805
+        ],
+        [
+          27504,
+          28753
+        ],
+        [
+          28753,
+          29809
+        ],
+        [
+          38708,
+          39983
+        ],
+        [
+          199420,
+          200217
+        ]
+      ],
+      "passages_total": 48,
+      "passages_read": 10,
+      "passages_left": 38,
+      "selected_text_sha256": "a24fbd213fb8edf40a014d28ec0bab7e9da9c8cba026da9a853a25f67a73df34"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/19/2026-23529.html",
+    "document_status": "binding",
+    "ai_relevance": "relevant",
+    "evidence_quote": "In this interim final rule (IFR), the Department of Commerce is establishing new rules to prevent certain foreign actors from leveraging advanced computing power based on U.S. technology to threaten U.S. national security and foreign policy interests.",
+    "assessment_error": null
+  },
+  {
     "id": "alert_da5eca368a290c70ff1b4be8",
     "timestamp": "2026-11-19T06:02:05.927023+00:00",
     "alert_schema_version": 2,
@@ -86,45 +498,6 @@
     "ai_relevance": "not_relevant",
     "evidence_quote": "The Department of Labor (DOL) is submitting this Bureau of Labor Statistics (BLS)-sponsored information collection request (ICR) to the Office of Management and Budget (OMB) for review and approval in accordance with the Paperwork Reduction Act of 1995 (PRA).",
     "assessment_error": null
-  },
-  {
-    "id": "alert_5f397882c12cdcee7e014389",
-    "timestamp": "2026-11-19T06:01:01.137741+00:00",
-    "alert_schema_version": 2,
-    "source": "US Federal Register (AI Rules & Notices)",
-    "jurisdiction": "United States",
-    "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Amend Its Rules its Rules To Permit the Listing of Binary Options Overlying Key Performance Indicators",
-    "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23427/self-regulatory-organizations-nyse-arca-inc-notice-of-filing-and-immediate-effectiveness-of-proposed",
-    "source_queue_priority": 1,
-    "substantive_priority": null,
-    "is_operator_duty_shift": false,
-    "duty_type": "none",
-    "statutory_reference": null,
-    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing and Immediate Effectiveness of Proposed Rule Change To Amend Its Rules its Rules To Permit the Listing of Binary Options Overlying Key Performance Indicators",
-    "denominator_disclosed": "unassessed",
-    "actionable_trigger": "Review the captured primary document.",
-    "evaluation_method": "unassessed",
-    "model": "qwen3.8:latest",
-    "reviewed": false,
-    "source_sha256": "63b97b942b8d38fbdecfbf77dfef479f22ce8aedc76e63779fb036d742d4c22c",
-    "source_text_sha256": "e8f085000717bfdf86bd965d9819e3f0e7d9b635d59c51b109ba2541c12bba40",
-    "assessment_version": 4,
-    "assessment_coverage": {
-      "scope": "unassessed",
-      "selection_status": "not assessed",
-      "selector": "ai-keywords-v2",
-      "text_chars": 122575,
-      "ranges": [],
-      "passages_total": 11,
-      "passages_read": 0,
-      "passages_left": 11,
-      "selected_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/18/2026-23427.html",
-    "document_status": "unassessed",
-    "ai_relevance": "unassessed",
-    "evidence_quote": null,
-    "assessment_error": "supporting quote is absent from the selected source ranges"
   },
   {
     "id": "alert_570734b77274e1929a891343",
@@ -4797,34 +5170,6 @@
     "ai_relevance": "relevant",
     "evidence_quote": "We propose, with limited exceptions described in the next paragraph, to use the term “Super Intelligence” to replace “Artificial Intelligence” and use “SI” to replace “AI” in every use of the terms.",
     "assessment_error": null
-  },
-  {
-    "id": "alert_311d6a8338e7236b084ee4a1",
-    "timestamp": "2026-11-05T06:01:12.235337+00:00",
-    "alert_schema_version": 2,
-    "source": "US Federal Register (AI Rules & Notices)",
-    "jurisdiction": "United States",
-    "title": "Securing the United States Bulk-Power System",
-    "url": "https://www.federalregister.gov/documents/2026/09/09/2026-18370/securing-the-united-states-bulk-power-system",
-    "source_queue_priority": 1,
-    "substantive_priority": null,
-    "is_operator_duty_shift": false,
-    "duty_type": "none",
-    "statutory_reference": null,
-    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): Securing the United States Bulk-Power System",
-    "denominator_disclosed": "unassessed",
-    "actionable_trigger": "Review the captured primary document.",
-    "evaluation_method": "unassessed",
-    "model": "qwen3.8:latest",
-    "reviewed": false,
-    "source_sha256": "3ee83a15aa02e1f35f809f0eb4ddfe2adb601346b89901f0accc629880b5d2cb",
-    "source_text_sha256": "a53929654bdac68bbd0f084a443518c66e0dc0bad70789d508a29d5079ca0add",
-    "assessment_version": 3,
-    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/09/2026-18370.html",
-    "document_status": "unassessed",
-    "ai_relevance": "unassessed",
-    "evidence_quote": null,
-    "assessment_error": "document exceeds model input budget; manual review required"
   },
   {
     "id": "alert_b716dfeaef61d07f494b8fd4",

@@ -28486,15 +28486,15 @@
   "denominator_stated": "N",
   "auto_labelled": true,
   "auto_labelled_by": "gemma4:12b",
-  "label_evidence": "model read all 40 figure-sentence(s); 1 of 40 figure-sentence(s) matched a base cue",
+  "label_evidence": "model read all 37 figure-sentence(s); 1 of 37 figure-sentence(s) matched a base cue",
   "evidence_method": "local-model",
   "evidence_coverage": {
-   "seen": 40,
-   "total": 40
+   "seen": 37,
+   "total": 37
   },
   "label_schema_version": 2,
   "content_hash": "717885b5f808d5e4cbe07356fa1eecbfd02b5bf230183f6e7b9a403c49cf9a57",
-  "evidence_hash": "ae96bb8c15f25c130dfd1bbbaab7f61a0f4756483f2c1023777505924836b1b5",
+  "evidence_hash": "26298bf0f78d356aa5cdb2c78336f1e418a30a957c5b9061e9a493d12329f38f",
   "reviewed": false,
   "label_source": "machine"
  },
@@ -33201,7 +33201,7 @@
   "label_source": "machine"
  },
  "https://openai.com/index/science-at-the-frontier/": {
-  "denominator_stated": "Y",
+  "denominator_stated": "partial",
   "auto_labelled": true,
   "auto_labelled_by": "gemma4:12b",
   "label_evidence": "model read all 12 figure-sentence(s); 1 of 12 figure-sentence(s) matched a base cue",
@@ -33634,6 +33634,614 @@
   "label_schema_version": 2,
   "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 21 figure-sentence(s); 1 of 21 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 21,
+   "total": 21
+  },
+  "label_schema_version": 2,
+  "content_hash": "8ba0cc8bdb34ebdf300e91d3dd2f5f0a5c6b9741e7a5a729f735bfd0eb0c4152",
+  "evidence_hash": "729441f4ae40fb4b7ffd783cf4fe7f1c379ffa740f5984b4d08c50e237a3f68c",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/19/anthropics-ipo-could-deliver-156-billion-to-charity/": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 9 figure-sentence(s); 1 of 9 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 9,
+   "total": 9
+  },
+  "label_schema_version": 2,
+  "content_hash": "e9ef349b3a2e83a0df67cae234b41b879c29c83d2f3f8ca4be61fb3223df2c02",
+  "evidence_hash": "0d0334a481e5a6657e915962571e755e0262252ce51e047e4e553a9dd70addb8",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 6 figure-sentence(s); 0 of 6 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 6,
+   "total": 6
+  },
+  "label_schema_version": 2,
+  "content_hash": "66c80562454f43f3bfc3e60d09cc931e8d2bb7b5671afafb0ac2bace84f39fbe",
+  "evidence_hash": "1732fa9bcc3d86ff488e62a511c40498d75aa4ad4e233d8c21e0ce26287b75a2",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/19/anthropics-ipo-puts-ais-circular-financing-boom-to-the-test/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 9 figure-sentence(s); 0 of 9 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 9,
+   "total": 9
+  },
+  "label_schema_version": 2,
+  "content_hash": "34f72786e9cf846290fa6a34350990a52bde1b5e4dc408f86e03612aec506617",
+  "evidence_hash": "0577488133fa192303e933e3cd00c9080af6dff5fd163bf971d2e26897d3504a",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 2936 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "f083572f801d4584196bbd72bdbccf26aae7b8609dc2798f92e3ecdd042666aa",
+  "evidence_hash": "2f84115ab66e83f7fc85772332bb83d83a465f686cc63545e23708f327540174",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 6 figure-sentence(s); 0 of 6 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 6,
+   "total": 6
+  },
+  "label_schema_version": 2,
+  "content_hash": "2dc1b9f6985bf115b3e1dda4bd1078db7995e8c7e6b1d03ea05874a500e60e7f",
+  "evidence_hash": "a30d25638cc2a846310c1d992a942cb69df319fc071c3d54af912f42f748c72a",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 5758 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "6d419717641b3bffa761376b703d6dfbc5fd272a85e5330462c09b2c8d4e1cf6",
+  "evidence_hash": "ee2fd44ebcc0baff3b18903678c695f7204e2e7a0c127b4e78dc8da91c9e3b0d",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/19/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 10 figure-sentence(s); 1 of 10 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 10,
+   "total": 10
+  },
+  "label_schema_version": 2,
+  "content_hash": "faf3db3f538a09bb94e8156323c2f33d1ec6dac3a68352d70b0efd8c3ab59034",
+  "evidence_hash": "4eaa54f79ddf6426cf8d620ed99b90e42da2a37422326a986da690682e2f0edf",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1037459/anthropic-ipo-safe-ai-reputation-power-structure": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 3 figure-sentence(s); 1 of 3 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 3,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "8b8d87c18589812f4c41a7aa5c5e4e4d194f7f75fbc53a1cc52871e10fa7f3f2",
+  "evidence_hash": "c351d839a53b8c3096a0f4718cfcda57c348db2ca2444c82ef3d4e7006322490",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "088c84e137086dfe50d663fe63e00c59b50bccf101164f539f040d7ccd411503",
+  "evidence_hash": "35661a126dda5cc0384e2420d0ad4042d6ee8427eb2b099a52fcd7aa73d5fb4a",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1038063/nvidia-stock-market-price-earnings": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 17 figure-sentence(s); 1 of 17 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 17,
+   "total": 17
+  },
+  "label_schema_version": 2,
+  "content_hash": "8fb70bde6c10c871cd8f84bc77df38136b7b094cad71de5924f24f80883b4e4c",
+  "evidence_hash": "716e72ac07eb670442c1bf083972e993a57855244f96a106a4713752964edab1",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/tech/1038087/meta-muse-charm-ai-price": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "218729fec89ab9a5741291a7754dfee6b1e888101b179ec8d32c6b9b303e7007",
+  "evidence_hash": "3b00a75b12e6ee2dcfa21ccb97e221a1e958e2fe8578d204ae1e691f185f566f",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/tech/1038059/google-search-homepage-ai-chats": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 2223 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "d94c2a37d99ca0626fc2d51ea32194438a65440f76780d4b0534cee3ef30d850",
+  "evidence_hash": "d5952574da6c3c54ff241902c900c68c3be50470876828ae11b03820d4318afd",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "73784e0487a9e51c515dc2a78b20606a5c56b5f4408d978af68115447ac4ddfd",
+  "evidence_hash": "104f4bde240814805c73ec3e9e17e28a002da5338785c029adc039b9eea9cb85",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1035384/anthropic-ipo-trading-nasdaq": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 3 figure-sentence(s); 1 of 3 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 3,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "1a7a8a7f21939f3245a54d821231cf2c9d7d51201cfeee6dacd11b95d95891e9",
+  "evidence_hash": "8315bb24db64b326324c1c613496a943e18d6c6f2b8d8dab0c202f0d88d733a5",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1037634/openai-chatgpt-live-dictation": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 2140 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "16577d8016c70ad91462d54cc01384f45b29fcd5a315bdb31aad348934b3d8c2",
+  "evidence_hash": "d93fd62d0e84807f09003dbb3447ffda3bb57a1643af78a20ef56283925ffbf6",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/tech/1037100/apple-siri-recap-audio-intelligence-hands-on": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 7 figure-sentence(s); 2 of 7 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 7,
+   "total": 7
+  },
+  "label_schema_version": 2,
+  "content_hash": "2cd64ab0982b7d52b8433c1abff300d7b5e5247cc42d40714f71042f40dd93f8",
+  "evidence_hash": "bf94ace2b428ecb36270b20ac207c97c726c545f96b40b9faa28683009f6a95f",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/tech-policy/2026/11/traumatized-teens-sue-school-cops-after-doritos-bag-triggers-ai-gun-alert/": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "f82bc62834b29c03479da37617adfb1a78dcacbcab6d138d54023dfbd804a7e6",
+  "evidence_hash": "b3f2df0f9ca009fb32c7c1114d35d507f27f09046c1ac3dca31eba15b280ba93",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.lawyerscommittee.org/lawyers-committee-files-lawsuit-on-behalf-of-black-students-detained-and-searched-due-to-ai-alert-falsely-identifying-a-bag-of-chips-as-a-firearm/": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "b22f31046d1d50587556defe96932f0dfaf42fe9ee934b52662f5a641a604d08",
+  "evidence_hash": "c6e63ab7e37f6c4a8e077e404fa1590a8e24f779cb14fdef9caaf3aa7f792b9c",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.techdirt.com/2026/11/19/court-tells-cops-that-the-4th-amendment-doesnt-cover-ai-generated-probable-cause/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 240 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "0f1223df0c46d1a1c08f775ca045334133b03b160a8acbce50fa6e5d27a17761",
+  "evidence_hash": "dfbef5cbf035a298002d8144bb522f34396abca620c8ce59b97d39ef9985532d",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.youtube.com/watch?v=lwfewYL7X0o": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 262 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "fa2899c370375111aad59cb88e49ede5318006edae5c7aee6423b5d28a15edde",
+  "evidence_hash": "bdeb08a8ac9cde0ff4f13c2905fb7b86decf9db261111b88b312e6b7bfa98834",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "label_evidence": "article not fetched (robots-disallowed)",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://perishablepress.com/chrome-ai-wasting-much-bandwidth/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 3,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "74e959e0b60a446868c27611a50beb749a311d2932a882604f7f2dd588f43085",
+  "evidence_hash": "ce44fb6354a5ab01c8989350cc3362b4384d87bf25b68a56bd11d6187f760889",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://restofworld.org/2026/ai-jobs-skills-gig-work/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 13 figure-sentence(s); 1 of 13 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 13,
+   "total": 13
+  },
+  "label_schema_version": 2,
+  "content_hash": "efee9c333fe2e63fd61bcf8704e5943b09cc2ed764d44d37d6bd654613765067",
+  "evidence_hash": "30ddda34449b11990ea424bbf3677aeb635c75e2a5aad8631ddc5f193add21ee",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://ounapuu.ee/posts/2026/11/19/unsafeguards/": {
+  "denominator_stated": "?",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model returned an invalid denominator label",
+  "evidence_method": "unassessed",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "c55593402e70e491ec54070d84ec5a341ec4d29142080b1013875d9ea30343c1",
+  "evidence_hash": "ddd75d1be6360db4ba20ae982c25a23b6e5a6ed64e73218bf3d4c79bd1ec4f6f",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://thedataexchange.media/pete-warden-moonshine/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 14 figure-sentence(s); 0 of 14 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 14,
+   "total": 14
+  },
+  "label_schema_version": 2,
+  "content_hash": "dc3f5482768e873093038624ce30841946f1adfae6e0544b040446eb26bcabbe",
+  "evidence_hash": "cfcfe0b8200702ca5b19e83a88573a3e1de9489f289f0d4130a71cd73ae30ceb",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.federalregister.gov/documents/2026/11/19/2026-23539/policies-on-the-use-of-generative-super-intelligence-in-agency-adjudication-request-for-comments": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 29 figure-sentence(s); 0 of 29 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 29,
+   "total": 29
+  },
+  "label_schema_version": 2,
+  "content_hash": "20150f96d885373b40eb9514d661193172c4ddbee90d3b1ad5706efeb06f1995",
+  "evidence_hash": "7a0501944c39eac63d3a0e6ab07305b141fd82359161586ea0bf0a39a6b0f03a",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://cset.georgetown.edu/article/dutch-resist-unacceptable-us-bid-to-tighten-semiconductor-export-controls/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 1260 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "b1374d2686c2a08c5d5b4b61489a9f732c2fa188df174f97401af0145726fc2e",
+  "evidence_hash": "3cc73afab9b76ba32c2bee7e201c1dee08ee978a074a40a5121d71cdfa7ac8b4",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://ainowinstitute.org/reports/public-good-private-gain/conclusion": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 6 figure-sentence(s); 0 of 6 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 6,
+   "total": 6
+  },
+  "label_schema_version": 2,
+  "content_hash": "6b5a760d79732d9d17b54055185b0064d2b646b46ccaa58f055f62f8cb881c19",
+  "evidence_hash": "0f86b606b97162696bfca980fb6cd0810489baee636e605c1d36bbde21e8ec97",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://ainowinstitute.org/reports/public-good-private-gain/part-ii-business-structures-in-action-assessing-corporate-practices/ai-regulation": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 61 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "e115028f6e9259dcc6bb8b079ee39218ff4c211a98c364a38a547d11ba2eaf9c",
+  "evidence_hash": "1683b3304329d6162baabb9b8e6e2872c62c932d8460c78eb42e3c059e392688",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://ainowinstitute.org/reports/public-good-private-gain/part-ii-business-structures-in-action-assessing-corporate-practices/voluntary-scaling-policies": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 46 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "10a105236a9d1ee55f2063c8d1397964040820de4d6c1cac566596d177478139",
+  "evidence_hash": "9b400de96674497d7770a4665a4ed36e4f531a9e5c632b1b27aa4aa23e8b2b98",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://ainowinstitute.org/reports/public-good-private-gain/part-iii-levers-to-enforce-the-mission/revoking-corporate-charters": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 86 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "07650d1ccb8e830e9ccd04775cf45328b8f37e9acea3db75158592573081bd7c",
+  "evidence_hash": "d46226fb0e82481d1a4adf378b272cbaf06a318f3f0e716593a41a04ec7ba628",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://ainowinstitute.org/reports/public-good-private-gain/part-ii-business-structures-in-action-assessing-corporate-practices/military-ai": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 59 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "f6d7052159e229d489900694165aaf569f2aba9b63b45c61565d54e4796da2a9",
+  "evidence_hash": "9bcdd49faa39193654b8bf14c12181d86ab862f00a4cba9c858ab5c149218953",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://ainowinstitute.org/reports/public-good-private-gain/part-iii-levers-to-enforce-the-mission": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 398 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "95551cd82d4f178e3902c835e64ac5d49979938daba66d6d9475493e2c922111",
+  "evidence_hash": "b804d34ef21b594ff9fff82a97502e28b4020e1e291c91270e4c3af9d3955447",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://ainowinstitute.org/reports/public-good-private-gain/part-iii-levers-to-enforce-the-mission/enforcing-the-mission-of-a-public-benefit-corporation": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 82 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "5afef3fb062842262b080ba57314765f500df26b53e1a58b42add8791571a037",
+  "evidence_hash": "9925b4079ce8939309223ce3370f28210815b4debf3a8d932471bddb12f01f78",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://ainowinstitute.org/reports/public-good-private-gain": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 8 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "d4b1ea5708dd532930a85188b45aff6f0a3ed458500c7577e0127a538eb0d100",
+  "evidence_hash": "13b069a8c5950b9f3b870abc0f0516882a0035f7842da41559f545b4ef4a6653",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://ainowinstitute.org/reports/public-good-private-gain/part-i-taking-stock-of-business-structures/overview": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 61 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "e115028f6e9259dcc6bb8b079ee39218ff4c211a98c364a38a547d11ba2eaf9c",
+  "evidence_hash": "1683b3304329d6162baabb9b8e6e2872c62c932d8460c78eb42e3c059e392688",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://news.mit.edu/2026/ai-helps-researchers-investigate-how-medical-studies-share-code-1119": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 6 figure-sentence(s); 0 of 6 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 6,
+   "total": 6
+  },
+  "label_schema_version": 2,
+  "content_hash": "a1938d48a2925596ff4bcba1958d858f6f7ba904f02924045d19b921c284bafa",
+  "evidence_hash": "9c94b5e74aa4594056e23348b31ff65c1718f742436a934a777486937b724a04",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://news.mit.edu/2026/study-reveals-data-centers-long-distance-damage-air-quality-1119": {
+  "denominator_stated": "partial",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 8 figure-sentence(s); 0 of 8 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 8,
+   "total": 8
+  },
+  "label_schema_version": 2,
+  "content_hash": "be02ba1f7a201bd2606f9351d678fb62ed0a167d79e421a19dce03196b16d35a",
+  "evidence_hash": "41a0f797af297461c317b3fcd5958acc2683be4ec225b2c4417eec9c5eaa886d",
   "reviewed": false,
   "label_source": "machine"
  }
