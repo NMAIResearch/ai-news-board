@@ -33623,17 +33623,18 @@
   "label_source": "machine"
  },
  "https://openai.com/index/managing-frontier-ai-risk/": {
-  "denominator_stated": "?",
+  "denominator_stated": "N",
   "auto_labelled": true,
-  "label_evidence": "article not fetched (http-403)",
-  "evidence_method": "unassessed",
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 5 figure-sentence(s); 1 of 5 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
   "evidence_coverage": {
-   "seen": 0,
-   "total": 0
+   "seen": 5,
+   "total": 5
   },
   "label_schema_version": 2,
-  "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "evidence_hash": "bd7f46b6d19ecd022b6a45257a79043e176347e06896ab63a1fda00572b0f4d8",
+  "content_hash": "27fd9fc1185bf728f5003c7feb25fb1de43584c951af7bef68c7ed79dd33846d",
+  "evidence_hash": "f66ccd843f5ae4c0aadf8aeba38576bbdcc53cf2ca554f50dff3f1df562eeede",
   "reviewed": false,
   "label_source": "machine"
  },
@@ -34242,6 +34243,305 @@
   "label_schema_version": 2,
   "content_hash": "be02ba1f7a201bd2606f9351d678fb62ed0a167d79e421a19dce03196b16d35a",
   "evidence_hash": "41a0f797af297461c317b3fcd5958acc2683be4ec225b2c4417eec9c5eaa886d",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 3470 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "84425f9c3ab9b638500c0b056e6ff5cf0401b604e689106d199c7ef564a10e1a",
+  "evidence_hash": "5bed1de18fadc847af7247b89a18e3935df0009280e906e274c39d29239de6b5",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 3 figure-sentence(s); 1 of 3 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 3,
+   "total": 3
+  },
+  "label_schema_version": 2,
+  "content_hash": "821a788c9577194c524d8b5cd5d251f696409505cf5b9dad1bef196470e6b59c",
+  "evidence_hash": "c74ca5c36a0c6e749fffd80f5ddc6b9464156a1d03942fc4ff90416694a8d213",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 2,
+   "total": 2
+  },
+  "label_schema_version": 2,
+  "content_hash": "7dd52cc1123183c11a4806c74185c9a1dc15da5b1161d01e1fae1667d0d90ed5",
+  "evidence_hash": "3489315de5fbaefc7ebf926d447d3fa0be02a114469fb1ab88be15cdcc3ad363",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "label_evidence": "all 1 figure-sentence(s) state a base",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "3fa9036d2ff8dab8300316043c28191e5138da045fb1901a5edd3bf795dc50fa",
+  "evidence_hash": "14fb1df9c822ad07eca1f6bc88c7d45c61a1a403eb8f18c3fd20862792e690ca",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 14 figure-sentence(s); 0 of 14 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 14,
+   "total": 14
+  },
+  "label_schema_version": 2,
+  "content_hash": "b32317be6867ad5c417d4248500ba7dd8599046dd980d8b3c8e466592c6b35d4",
+  "evidence_hash": "e42eaee94162bafc36757724add5d2d5ef30b887564a7b05fd34b1e040f229e3",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "dbb618b34286b87ecbdaaee31f098719f186ce1b1a1083e0950e6582101bb768",
+  "evidence_hash": "7b627c1c81756d0e746b00014c6e6961f77b504da8e5b42792c0bf3c5ffed8c8",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 4,
+   "total": 4
+  },
+  "label_schema_version": 2,
+  "content_hash": "e71d1152f9dface336360115df17a9fa7e16d19bf002287edac42e44358f5253",
+  "evidence_hash": "69fb5015c8d87d0d5a23c5f0c957ac2d11c24c91150506d7026f6907e0b049b5",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/podcast/1038419/outage-outlook-ground-stop-tech-failure-vergecast": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "dec6105273b1f7823b3ee8a189d8dfcefe2039101e5cf35d2b618ae561623a69",
+  "evidence_hash": "d322da037520cf14d9df34f2b4e7f3e92a6ee1bf057096432e9c6f72c849a975",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "afe29a4a5b7cb3eb25c85030598fc3cbc8f33f18f346b602b43158d7347e42d6",
+  "evidence_hash": "71a401e228e9f1e2802ecd2029d188f8ba5689ef9c103a8c173a6b78614a3a4e",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 3332 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "abbecd272b693895ebe9dce277275c8f4a27853d9e3c6baeb876926e54d5f0f3",
+  "evidence_hash": "aee1e8e5af3a48be1bc0bba353eae65ee38b0e28af3034bbd37d9db0d4f68119",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 8 figure-sentence(s); 0 of 8 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 8,
+   "total": 8
+  },
+  "label_schema_version": 2,
+  "content_hash": "fb3f562c405dc9d677a6545b14f52446717fd05b5965b3bf506a431b21fdffb8",
+  "evidence_hash": "c0f51b042676c3f607022a5225ec9e94359c5c4d7ce068d1b0d0cebebe79d628",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "113ba4ba444eb5b9de95d4a921b48ea5f8dd5c2cf7dea8fbb1a92f2153d528e9",
+  "evidence_hash": "d993cb2c3cdebcfb040e11aa1eca360b2d2ccb4ff88450b58664d335577e5640",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://ainowinstitute.org/reports/public-good-private-gain/part-iii-levers-to-enforce-the-mission/general-shareholder-recourse-and-mandatory-disclosures": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 61 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "e115028f6e9259dcc6bb8b079ee39218ff4c211a98c364a38a547d11ba2eaf9c",
+  "evidence_hash": "1683b3304329d6162baabb9b8e6e2872c62c932d8460c78eb42e3c059e392688",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://news.mit.edu/2026/qa-enabling-more-human-interactions-understanding-multimodal-foundation-models-1120": {
+  "denominator_stated": "n/a",
+  "auto_labelled": true,
+  "label_evidence": "no figure in 10115 chars of article text",
+  "evidence_method": "rule",
+  "evidence_coverage": {
+   "seen": 0,
+   "total": 0
+  },
+  "label_schema_version": 2,
+  "content_hash": "e32caa1dabb18a3552b52563429dfb2ae85273638be4ead3f84c99d86f6fc31c",
+  "evidence_hash": "c1036058356aa3997682cbf5e564c876c044fbe33ffff802177b33886c49d38f",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://news.mit.edu/new-approach-enables-physically-consistent-ai-models-chaotic-systems-1120": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 1,
+   "total": 1
+  },
+  "label_schema_version": 2,
+  "content_hash": "3c648e0a38982c26b32d96b80f9ce7b47ca520886ca3a098381ad8027a217d9a",
+  "evidence_hash": "9442b4807d3d3d48581efef20e7f632dd1744c036087f02b76f46c08dc0b0302",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://news.mit.edu/2026/following-mathocalypse-mathematicians-consider-future-1120": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 5 figure-sentence(s); 0 of 5 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 5,
+   "total": 5
+  },
+  "label_schema_version": 2,
+  "content_hash": "fd47073af9426554776098156f940b110bae8979dacd2294e252c4d35ff84357",
+  "evidence_hash": "8ebe38aadce390aeeb2a4010b3262e1d70cabf21c71009b88702c7c7a76bbc20",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://www.anthropic.com/news/ipo-close": {
+  "denominator_stated": "N",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 7 figure-sentence(s); 3 of 7 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 7,
+   "total": 7
+  },
+  "label_schema_version": 2,
+  "content_hash": "9dc40748e6583cd74061f8c04d0734134daff296f01127af0dc918e955cb619b",
+  "evidence_hash": "b36642d762df4deaa8667062bf8a563221b128f762868cca10230bbb6cd450c1",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://openai.com/index/introducing-medchembench/": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 15 figure-sentence(s); 2 of 15 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 15,
+   "total": 15
+  },
+  "label_schema_version": 2,
+  "content_hash": "c296891ea6d86066706e06f50a01d82316a5d4ab67c572c0b2e7d5367aaeb6a4",
+  "evidence_hash": "751af8a7cab1a2bf755d2521d1c108119e7b7ace5f758bba7eda1e905707a250",
+  "reviewed": false,
+  "label_source": "machine"
+ },
+ "https://openai.com/index/advancing-chip-design-with-our-models/": {
+  "denominator_stated": "Y",
+  "auto_labelled": true,
+  "auto_labelled_by": "gemma4:12b",
+  "label_evidence": "model read all 18 figure-sentence(s); 2 of 18 figure-sentence(s) matched a base cue",
+  "evidence_method": "local-model",
+  "evidence_coverage": {
+   "seen": 18,
+   "total": 18
+  },
+  "label_schema_version": 2,
+  "content_hash": "eeaec05d2b9c393625cd2aa7b7430c8465fe38138439816560120f9fa8f385f7",
+  "evidence_hash": "0bf0785cb97ef5586659ebedf5ecdf48837f34cec35fe6b47ce23bb6dc68adb2",
   "reviewed": false,
   "label_source": "machine"
  }
