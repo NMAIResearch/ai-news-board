@@ -1,5 +1,208 @@
 [
   {
+    "id": "alert_12e32cc7fb590293881bc52f",
+    "timestamp": "2026-11-22T06:01:52.495304+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of a Proposed Rule Change To Permit the Listing of Binary KPI Options",
+    "url": "https://www.federalregister.gov/documents/2026/09/18/2026-19139/self-regulatory-organizations-nyse-arca-inc-notice-of-filing-of-a-proposed-rule-change-to-permit-the",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a proposed rule change by NYSE Arca to list binary KPI options on specific financial metrics of technology and other companies. It contains no binding obligations, duties, or regulatory requirements applicable to AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "No action required; document is outside the scope of AI operator regulatory monitoring.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "9bfae00fb5084b7843a0ccabbfe48ac1054591f4c9eb985962a4ea3152c35148",
+    "source_text_sha256": "2393fd8ea7c0060b5727c0db7343b8587fdda0f340a16ad3697454353aa76933",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 123297,
+      "ranges": [
+        [
+          0,
+          608
+        ],
+        [
+          8981,
+          10198
+        ],
+        [
+          10198,
+          11441
+        ],
+        [
+          11441,
+          12143
+        ],
+        [
+          47214,
+          48439
+        ],
+        [
+          68191,
+          69396
+        ],
+        [
+          75486,
+          76776
+        ],
+        [
+          103896,
+          105104
+        ],
+        [
+          105718,
+          107097
+        ],
+        [
+          107634,
+          109009
+        ],
+        [
+          111205,
+          112395
+        ]
+      ],
+      "passages_total": 11,
+      "passages_read": 11,
+      "passages_left": 0,
+      "selected_text_sha256": "f2bc8bbe8d321f8f7e5e05a28bf771694250fa77402f7a23c0fd11116b27e478"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/18/2026-19139.html",
+    "document_status": "proposed",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "Pursuant to proposed Rule 5.97-O(a), the Exchange may from time to time approve for listing and trading on the Exchange any of the following binary KPI options contracts for the following issuers",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_5c48a27c600efddd274aa58f",
+    "timestamp": "2026-11-22T06:00:58.523221+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Employee or Independent Contractor Status Under the Fair Labor Standards Act, Family and Medical Leave Act, and Migrant and Seasonal Agricultural Worker Protection Act",
+    "url": "https://www.federalregister.gov/documents/2026/11/23/2026-23777/employee-or-independent-contractor-status-under-the-fair-labor-standards-act-family-and-medical",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a US Federal Register final rule regarding the classification of employees versus independent contractors under the FLSA, FMLA, and MSPA. It discusses the economic realities test and the role of technology and algorithms in determining control, but it does not impose binding obligations on AI operators or establish AI-specific regulatory duties.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "No action required for AI operators; document pertains to US labor classification standards.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "b813ddc249fba43c9525545db055694e91543e159f7a0c5228eec22d2db20c46",
+    "source_text_sha256": "df2d4f2bfcf258b878504ba20e5791e772d0c61c73bb42654a8c2b12cc98a3c5",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 743146,
+      "ranges": [
+        [
+          0,
+          689
+        ],
+        [
+          38295,
+          39602
+        ],
+        [
+          60820,
+          62029
+        ],
+        [
+          100321,
+          101768
+        ],
+        [
+          114466,
+          115693
+        ],
+        [
+          117717,
+          119022
+        ],
+        [
+          159135,
+          160430
+        ],
+        [
+          227074,
+          228710
+        ],
+        [
+          243252,
+          244473
+        ],
+        [
+          681256,
+          682490
+        ]
+      ],
+      "passages_total": 19,
+      "passages_read": 10,
+      "passages_left": 9,
+      "selected_text_sha256": "234be9ccc142ef21f14a690031689c120f018bebd594c957cd6d5c99ba0200d4"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/23/2026-23777.html",
+    "document_status": "binding",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "In this rule, the Department uses the terms “SI” and “Super Intelligence” instead of “AI” and “Artificial Intelligence,” as required by section 2 of Executive Order 14434 of September 29, 2026.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_f6587d74ea56ad80b98f3751",
+    "timestamp": "2026-11-22T06:00:42.846479+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Self-Regulatory Organizations; 24X National Exchange LLC; Notice of Filing of a Proposed Rule Change To Adopt Rules To Govern the Trading of Options on the Exchange",
+    "url": "https://www.federalregister.gov/documents/2026/11/23/2026-23748/self-regulatory-organizations-24x-national-exchange-llc-notice-of-filing-of-a-proposed-rule-change",
+    "source_queue_priority": 1,
+    "substantive_priority": null,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): Self-Regulatory Organizations; 24X National Exchange LLC; Notice of Filing of a Proposed Rule Change To Adopt Rules To Govern the Trading of Options on the Exchange",
+    "denominator_disclosed": "unassessed",
+    "actionable_trigger": "Review the captured primary document.",
+    "evaluation_method": "unassessed",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "75f8d42be252bce5e4b45253cfdcbe30c507bc0d6f8cd72f3ef17d87bb1d2ade",
+    "source_text_sha256": "3cc657b2ecd6d78575784f61edb29b7cba8b25624840e4df36b6378d5bb9caec",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "unassessed",
+      "selection_status": "not assessed",
+      "selector": "ai-keywords-v2",
+      "text_chars": 202025,
+      "ranges": [],
+      "passages_total": 12,
+      "passages_read": 0,
+      "passages_left": 12,
+      "selected_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/23/2026-23748.html",
+    "document_status": "unassessed",
+    "ai_relevance": "unassessed",
+    "evidence_quote": null,
+    "assessment_error": "supporting quote is absent from the selected source ranges"
+  },
+  {
     "id": "alert_425355c9e1fba09d62b88aa7",
     "timestamp": "2026-11-21T06:01:05.887131+00:00",
     "alert_schema_version": 2,
@@ -2437,45 +2640,6 @@
       "selected_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/18/2026-19132.html",
-    "document_status": "unassessed",
-    "ai_relevance": "unassessed",
-    "evidence_quote": null,
-    "assessment_error": "supporting quote is absent from the selected source ranges"
-  },
-  {
-    "id": "alert_12e32cc7fb590293881bc52f",
-    "timestamp": "2026-11-13T06:01:48.206614+00:00",
-    "alert_schema_version": 2,
-    "source": "US Federal Register (AI Rules & Notices)",
-    "jurisdiction": "United States",
-    "title": "Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of a Proposed Rule Change To Permit the Listing of Binary KPI Options",
-    "url": "https://www.federalregister.gov/documents/2026/09/18/2026-19139/self-regulatory-organizations-nyse-arca-inc-notice-of-filing-of-a-proposed-rule-change-to-permit-the",
-    "source_queue_priority": 1,
-    "substantive_priority": null,
-    "is_operator_duty_shift": false,
-    "duty_type": "none",
-    "statutory_reference": null,
-    "summary": "Unassessed capture from US Federal Register (AI Rules & Notices): Self-Regulatory Organizations; NYSE Arca, Inc.; Notice of Filing of a Proposed Rule Change To Permit the Listing of Binary KPI Options",
-    "denominator_disclosed": "unassessed",
-    "actionable_trigger": "Review the captured primary document.",
-    "evaluation_method": "unassessed",
-    "model": "qwen3.8:latest",
-    "reviewed": false,
-    "source_sha256": "9bfae00fb5084b7843a0ccabbfe48ac1054591f4c9eb985962a4ea3152c35148",
-    "source_text_sha256": "2393fd8ea7c0060b5727c0db7343b8587fdda0f340a16ad3697454353aa76933",
-    "assessment_version": 4,
-    "assessment_coverage": {
-      "scope": "unassessed",
-      "selection_status": "not assessed",
-      "selector": "ai-keywords-v2",
-      "text_chars": 123297,
-      "ranges": [],
-      "passages_total": 11,
-      "passages_read": 0,
-      "passages_left": 11,
-      "selected_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/09/18/2026-19139.html",
     "document_status": "unassessed",
     "ai_relevance": "unassessed",
     "evidence_quote": null,

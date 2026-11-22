@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-21 06:20 UTC",
+ "fetched": "2026-11-22 06:20 UTC",
  "items": [
   {
    "entity": "Anthropic",
@@ -176,9 +176,104 @@
    "entity_basis": "headline"
   },
   {
-   "entity": "Anthropic",
-   "headline": "Anthropic’s IPO puts AI’s circular financing boom to the test",
-   "date": "Thu, 19 Nov 2026",
+   "entity": "",
+   "headline": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
+   "date": "Sat, 21 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 1825 chars of article text",
+   "content_hash": "cbf73bf57889475eab437e54bb11af06793031e9dc0381ca651021747b0e9859",
+   "evidence_hash": "192e045b4fba4cf6fc11bd8f023eb6c7601622861e75eca33c082df16d840163",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Apple",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Meredith Whittaker",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "Nvidia",
+   "headline": "A tale of two Nvidias",
+   "date": "Sat, 21 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "Y",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 1,
+    "total": 1
+   },
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "content_hash": "515836c35b425288d657fb58a948382f28ca2c9a589c8710a1e5fafa88dd0639",
+   "evidence_hash": "c0349de7afd627307c288d8b2538e780bd2d284499ab50249a86f779c3ae1045",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 22
+    },
+    {
+     "name": "Apple",
+     "count": 3
+    },
+    {
+     "name": "xAI",
+     "count": 3
+    },
+    {
+     "name": "Google",
+     "count": 2
+    },
+    {
+     "name": "Microsoft",
+     "count": 2
+    },
+    {
+     "name": "OpenAI",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Equity podcast",
+   "entity_basis": "tag"
+  },
+  {
+   "entity": "",
+   "headline": "Here are the top AI agents that can live in your text messages",
+   "date": "Sat, 21 Nov 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "N",
@@ -186,52 +281,110 @@
    "sources": [
     {
      "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/19/anthropics-ipo-puts-ais-circular-financing-boom-to-the-test/",
+     "url": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
      "source_type": "trade-press",
      "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 9 figure-sentence(s); 0 of 9 figure-sentence(s) matched a base cue",
+   "rating": "ok",
    "evidence_method": "local-model",
    "evidence_coverage": {
-    "seen": 9,
-    "total": 9
+    "seen": 16,
+    "total": 16
    },
+   "label_evidence": "model read all 16 figure-sentence(s); 0 of 16 figure-sentence(s) matched a base cue",
+   "content_hash": "ff744d0945951a9f663024ec3a223264dc54eb64cf7243281f8512d7dec401a0",
+   "evidence_hash": "217d5f599af4132de1f1bddea7b4c6038276e993d9238d6621ca7a18b2fd4eb7",
    "label_schema_version": 2,
-   "content_hash": "34f72786e9cf846290fa6a34350990a52bde1b5e4dc408f86e03612aec506617",
-   "evidence_hash": "0577488133fa192303e933e3cd00c9080af6dff5fd163bf971d2e26897d3504a",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
-   "rating": "ok",
    "mentions": [
     {
-     "name": "Anthropic",
-     "count": 31
-    },
-    {
      "name": "Google",
-     "count": 10
-    },
-    {
-     "name": "Nvidia",
-     "count": 7
-    },
-    {
-     "name": "Amazon",
-     "count": 7
-    },
-    {
-     "name": "Microsoft",
      "count": 5
     },
     {
-     "name": "Google DeepMind",
+     "name": "Apple",
+     "count": 5
+    },
+    {
+     "name": "Microsoft",
      "count": 2
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    },
+    {
+     "name": "Nvidia",
+     "count": 1
     }
    ],
-   "publisher_topic": "Anthropic",
-   "entity_basis": "headline"
+   "publisher_topic": "instinct",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?",
+   "date": "Sat, 21 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 2,
+    "total": 2
+   },
+   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+   "content_hash": "732f371c3a2f3f785c56882db6e6c68c980f91100130602be6c333f07721fd5e",
+   "evidence_hash": "b08ef18eae39576032e2eee5b029d0486f5686f53aaafb4514d1e0d340995cc4",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Google",
+     "count": 2
+    },
+    {
+     "name": "Microsoft",
+     "count": 2
+    },
+    {
+     "name": "Apple",
+     "count": 2
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    },
+    {
+     "name": "Nvidia",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Hollywood",
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -249,18 +402,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 3470 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 3470 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "84425f9c3ab9b638500c0b056e6ff5cf0401b604e689106d199c7ef564a10e1a",
    "evidence_hash": "5bed1de18fadc847af7247b89a18e3935df0009280e906e274c39d29239de6b5",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Google",
@@ -306,19 +459,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 3 figure-sentence(s); 1 of 3 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 3,
     "total": 3
    },
-   "label_evidence": "model read all 3 figure-sentence(s); 1 of 3 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "821a788c9577194c524d8b5cd5d251f696409505cf5b9dad1bef196470e6b59c",
    "evidence_hash": "c74ca5c36a0c6e749fffd80f5ddc6b9464156a1d03942fc4ff90416694a8d213",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Anthropic",
@@ -350,74 +503,16 @@
   },
   {
    "entity": "",
-   "headline": "Chips can survive the space environment — can their financing?",
-   "date": "Fri, 20 Nov 2026",
+   "headline": "The UN fails to agree on rules regulating ‘killer robots’",
+   "date": "2026-11-21T15:03",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "N",
+   "denominator_stated": "n/a",
    "reviewed": false,
    "sources": [
     {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 2,
-    "total": 2
-   },
-   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
-   "content_hash": "7dd52cc1123183c11a4806c74185c9a1dc15da5b1161d01e1fae1667d0d90ed5",
-   "evidence_hash": "3489315de5fbaefc7ebf926d447d3fa0be02a114469fb1ab88be15cdcc3ad363",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "xAI",
-     "count": 4
-    },
-    {
-     "name": "Google",
-     "count": 3
-    },
-    {
-     "name": "Microsoft",
-     "count": 2
-    },
-    {
-     "name": "Nvidia",
-     "count": 2
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Amazon",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Elon Musk",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Nvidia",
-   "headline": "The fallout from Nvidia’s Jensen Huang scandal continues",
-   "date": "Fri, 20 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/",
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
      "source_type": "trade-press",
      "source_tier": 3
     }
@@ -425,56 +520,40 @@
    "rating": "ok",
    "evidence_method": "rule",
    "evidence_coverage": {
-    "seen": 1,
-    "total": 1
+    "seen": 0,
+    "total": 0
    },
-   "label_evidence": "all 1 figure-sentence(s) state a base",
-   "content_hash": "3fa9036d2ff8dab8300316043c28191e5138da045fb1901a5edd3bf795dc50fa",
-   "evidence_hash": "14fb1df9c822ad07eca1f6bc88c7d45c61a1a403eb8f18c3fd20862792e690ca",
+   "label_evidence": "no figure in 2550 chars of article text",
+   "content_hash": "799a8208c686dfaf042ffe1748a7d8c0a61d5333c8aee641f347920f93f9f696",
+   "evidence_hash": "fa83b53c3f5d6f36c0b4f340db617378704387837a234f810aa6583a07a8c8ef",
    "label_schema_version": 2,
    "auto_labelled": true,
    "label_source": "machine",
    "mentions": [
     {
-     "name": "Nvidia",
-     "count": 10
-    },
-    {
-     "name": "Anthropic",
-     "count": 2
-    },
-    {
      "name": "Google",
      "count": 2
     },
     {
-     "name": "Microsoft",
-     "count": 2
-    },
-    {
-     "name": "Apple",
-     "count": 2
-    },
-    {
-     "name": "Amazon",
+     "name": "Anthropic",
      "count": 1
     }
    ],
-   "publisher_topic": "anthropic ipo",
-   "entity_basis": "headline"
+   "publisher_topic": "Politics",
+   "entity_basis": "unresolved"
   },
   {
-   "entity": "",
-   "headline": "Six AI-powered gadgets that could make your home office smarter",
-   "date": "Fri, 20 Nov 2026",
+   "entity": "Anthropic",
+   "headline": "Can Anthropic afford to put safety first?",
+   "date": "2026-11-21T08:29",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "N",
+   "denominator_stated": "Y",
    "reviewed": false,
    "sources": [
     {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter/",
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
      "source_type": "trade-press",
      "source_tier": 3
     }
@@ -482,43 +561,81 @@
    "rating": "ok",
    "evidence_method": "local-model",
    "evidence_coverage": {
-    "seen": 14,
-    "total": 14
+    "seen": 11,
+    "total": 11
    },
-   "label_evidence": "model read all 14 figure-sentence(s); 0 of 14 figure-sentence(s) matched a base cue",
-   "content_hash": "b32317be6867ad5c417d4248500ba7dd8599046dd980d8b3c8e466592c6b35d4",
-   "evidence_hash": "e42eaee94162bafc36757724add5d2d5ef30b887564a7b05fd34b1e040f229e3",
+   "label_evidence": "model read all 11 figure-sentence(s); 0 of 11 figure-sentence(s) matched a base cue",
+   "content_hash": "c048e620820580b32ac8294b4c8ba9b208d293bdde8977b2d3013eb4a8f7f1e8",
+   "evidence_hash": "0045f878e712cc7f98cff6db5fe4347ac7e7798362b34fde2fecca77845e8ef4",
    "label_schema_version": 2,
    "auto_labelled": true,
    "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
    "mentions": [
     {
+     "name": "Anthropic",
+     "count": 55
+    },
+    {
+     "name": "OpenAI",
+     "count": 19
+    },
+    {
      "name": "Microsoft",
      "count": 3
     },
     {
-     "name": "Amazon",
+     "name": "Nvidia",
      "count": 3
     },
     {
+     "name": "xAI",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Anthropic",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "Chess.com’s next move is a new hub for classic games, from mahjong to sudoku",
+   "date": "2026-11-19T18:04",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/games/1038099/chess-classic-games-expansion-ai",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 8,
+    "total": 8
+   },
+   "label_evidence": "model read all 8 figure-sentence(s); 0 of 8 figure-sentence(s) matched a base cue",
+   "content_hash": "ab00697003dd8171a6577f54a5d82fdbb9cc171207a85ad7a9acc74902642ce3",
+   "evidence_hash": "e4c9f607dc8295d119f1d390b4d373c254904402152505d06405267336e33800",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
      "name": "Google",
      "count": 2
-    },
-    {
-     "name": "Nvidia",
-     "count": 2
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
     },
     {
      "name": "Anthropic",
      "count": 1
     }
    ],
-   "publisher_topic": "",
+   "publisher_topic": "Gaming",
    "entity_basis": "unresolved"
   },
   {
@@ -537,19 +654,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 1,
     "total": 1
    },
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "dbb618b34286b87ecbdaaee31f098719f186ce1b1a1083e0950e6582101bb768",
    "evidence_hash": "7b627c1c81756d0e746b00014c6e6961f77b504da8e5b42792c0bf3c5ffed8c8",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Google",
@@ -579,19 +696,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 4,
     "total": 4
    },
-   "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "e71d1152f9dface336360115df17a9fa7e16d19bf002287edac42e44358f5253",
    "evidence_hash": "69fb5015c8d87d0d5a23c5f0c957ac2d11c24c91150506d7026f6907e0b049b5",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -625,19 +742,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 1,
     "total": 1
    },
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "dec6105273b1f7823b3ee8a189d8dfcefe2039101e5cf35d2b618ae561623a69",
    "evidence_hash": "d322da037520cf14d9df34f2b4e7f3e92a6ee1bf057096432e9c6f72c849a975",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Nvidia",
@@ -675,19 +792,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 1,
     "total": 1
    },
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "afe29a4a5b7cb3eb25c85030598fc3cbc8f33f18f346b602b43158d7347e42d6",
    "evidence_hash": "71a401e228e9f1e2802ecd2029d188f8ba5689ef9c103a8c173a6b78614a3a4e",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Google",
@@ -826,155 +943,6 @@
    "entity_basis": "headline"
   },
   {
-   "entity": "Meta",
-   "headline": "Meta’s Muse Charm might cost $300",
-   "date": "2026-11-19T15:29",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/tech/1038087/meta-muse-charm-ai-price",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 2,
-    "total": 2
-   },
-   "label_schema_version": 2,
-   "content_hash": "218729fec89ab9a5741291a7754dfee6b1e888101b179ec8d32c6b9b303e7007",
-   "evidence_hash": "3b00a75b12e6ee2dcfa21ccb97e221a1e958e2fe8578d204ae1e691f185f566f",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 8
-    },
-    {
-     "name": "Nvidia",
-     "count": 1
-    },
-    {
-     "name": "Apple",
-     "count": 1
-    },
-    {
-     "name": "xAI",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Meta",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Google",
-   "headline": "Google is putting AI chats right on the homepage",
-   "date": "2026-11-19T15:14",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/tech/1038059/google-search-homepage-ai-chats",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 2223 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "d94c2a37d99ca0626fc2d51ea32194438a65440f76780d4b0534cee3ef30d850",
-   "evidence_hash": "d5952574da6c3c54ff241902c900c68c3be50470876828ae11b03820d4318afd",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 11
-    },
-    {
-     "name": "Nvidia",
-     "count": 1
-    },
-    {
-     "name": "Apple",
-     "count": 1
-    },
-    {
-     "name": "xAI",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Google",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Google DeepMind",
-   "headline": "Gemini on Mac can now use your computer",
-   "date": "2026-11-19T14:07",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 1,
-    "total": 1
-   },
-   "label_schema_version": 2,
-   "content_hash": "73784e0487a9e51c515dc2a78b20606a5c56b5f4408d978af68115447ac4ddfd",
-   "evidence_hash": "104f4bde240814805c73ec3e9e17e28a002da5338785c029adc039b9eea9cb85",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 6
-    },
-    {
-     "name": "Apple",
-     "count": 2
-    },
-    {
-     "name": "Nvidia",
-     "count": 1
-    },
-    {
-     "name": "xAI",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Google",
-   "entity_basis": "product:Gemini"
-  },
-  {
    "entity": "",
    "headline": "Traumatized teens sue school, cops after Doritos bag triggers AI gun alert",
    "date": "Thu, 19 Nov 2026",
@@ -1065,18 +1033,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 3332 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 3332 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "abbecd272b693895ebe9dce277275c8f4a27853d9e3c6baeb876926e54d5f0f3",
    "evidence_hash": "aee1e8e5af3a48be1bc0bba353eae65ee38b0e28af3034bbd37d9db0d4f68119",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Google",
@@ -1102,19 +1070,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 8 figure-sentence(s); 0 of 8 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 8,
     "total": 8
    },
-   "label_evidence": "model read all 8 figure-sentence(s); 0 of 8 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "fb3f562c405dc9d677a6545b14f52446717fd05b5965b3bf506a431b21fdffb8",
    "evidence_hash": "c0f51b042676c3f607022a5225ec9e94359c5c4d7ce068d1b0d0cebebe79d628",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Meta",
@@ -1152,19 +1120,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 1,
     "total": 1
    },
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "113ba4ba444eb5b9de95d4a921b48ea5f8dd5c2cf7dea8fbb1a92f2153d528e9",
    "evidence_hash": "d993cb2c3cdebcfb040e11aa1eca360b2d2ccb4ff88450b58664d335577e5640",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Amazon",
@@ -2410,18 +2378,18 @@
      "source_tier": 2
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 61 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 61 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "e115028f6e9259dcc6bb8b079ee39218ff4c211a98c364a38a547d11ba2eaf9c",
    "evidence_hash": "1683b3304329d6162baabb9b8e6e2872c62c932d8460c78eb42e3c059e392688",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "unresolved"
@@ -2584,18 +2552,18 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 10115 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 10115 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "e32caa1dabb18a3552b52563429dfb2ae85273638be4ead3f84c99d86f6fc31c",
    "evidence_hash": "c1036058356aa3997682cbf5e564c876c044fbe33ffff802177b33886c49d38f",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Meta",
@@ -2621,19 +2589,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 1,
     "total": 1
    },
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "3c648e0a38982c26b32d96b80f9ce7b47ca520886ca3a098381ad8027a217d9a",
    "evidence_hash": "9442b4807d3d3d48581efef20e7f632dd1744c036087f02b76f46c08dc0b0302",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Meta",
@@ -2659,19 +2627,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 5 figure-sentence(s); 0 of 5 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 5,
     "total": 5
    },
-   "label_evidence": "model read all 5 figure-sentence(s); 0 of 5 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "fd47073af9426554776098156f940b110bae8979dacd2294e252c4d35ff84357",
    "evidence_hash": "8ebe38aadce390aeeb2a4010b3262e1d70cabf21c71009b88702c7c7a76bbc20",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -3443,19 +3411,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 7 figure-sentence(s); 3 of 7 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 7,
     "total": 7
    },
-   "label_evidence": "model read all 7 figure-sentence(s); 3 of 7 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "9dc40748e6583cd74061f8c04d0734134daff296f01127af0dc918e955cb619b",
    "evidence_hash": "b36642d762df4deaa8667062bf8a563221b128f762868cca10230bbb6cd450c1",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Google",
@@ -3569,19 +3537,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 15 figure-sentence(s); 2 of 15 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 15,
     "total": 15
    },
-   "label_evidence": "model read all 15 figure-sentence(s); 2 of 15 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "c296891ea6d86066706e06f50a01d82316a5d4ab67c572c0b2e7d5367aaeb6a4",
    "evidence_hash": "751af8a7cab1a2bf755d2521d1c108119e7b7ace5f758bba7eda1e905707a250",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "site"
@@ -3603,6 +3571,7 @@
     }
    ],
    "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
    "label_evidence": "model read all 5 figure-sentence(s); 1 of 5 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
@@ -3614,7 +3583,6 @@
    "evidence_hash": "f66ccd843f5ae4c0aadf8aeba38576bbdcc53cf2ca554f50dff3f1df562eeede",
    "label_source": "machine",
    "rating": "ok",
-   "auto_labelled_by": "gemma4:12b",
    "mentions": [
     {
      "name": "Hugging Face",
@@ -3640,19 +3608,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 18 figure-sentence(s); 2 of 18 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 18,
     "total": 18
    },
-   "label_evidence": "model read all 18 figure-sentence(s); 2 of 18 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "eeaec05d2b9c393625cd2aa7b7430c8465fe38138439816560120f9fa8f385f7",
    "evidence_hash": "0bf0785cb97ef5586659ebedf5ecdf48837f34cec35fe6b47ce23bb6dc68adb2",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "headline"
