@@ -1,6 +1,64 @@
 {
- "fetched": "2026-11-22 06:20 UTC",
+ "fetched": "2026-11-23 06:20 UTC",
  "items": [
+  {
+   "entity": "Anthropic",
+   "headline": "How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO",
+   "date": "Mon, 23 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "Y",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 8,
+    "total": 8
+   },
+   "label_evidence": "model read all 8 figure-sentence(s); 0 of 8 figure-sentence(s) matched a base cue",
+   "content_hash": "bfa07da6a6cd38f3f69c308009c791e27e80e4a987fabdb980d21b5367c2e2f5",
+   "evidence_hash": "7785afc74f7a72734f52d6dc25209166d74647d596e5b79faf055d08fe49c2bd",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Anthropic",
+     "count": 15
+    },
+    {
+     "name": "Google",
+     "count": 2
+    },
+    {
+     "name": "Microsoft",
+     "count": 2
+    },
+    {
+     "name": "OpenAI",
+     "count": 1
+    },
+    {
+     "name": "Nvidia",
+     "count": 1
+    },
+    {
+     "name": "Amazon",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Anthropic",
+   "entity_basis": "headline"
+  },
   {
    "entity": "Anthropic",
    "headline": "Anthropic’s 7 founders cashed out nearly $2B in record-breaking IPO",
@@ -118,62 +176,116 @@
    "entity_basis": "headline"
   },
   {
-   "entity": "Anthropic",
-   "headline": "Anthropic hits Nasdaq exchanges at $111, 33% above IPO price",
-   "date": "Thu, 19 Nov 2026",
+   "entity": "OpenAI",
+   "headline": "OpenAI’s chief scientist has thoughts on how to limit AI development",
+   "date": "Sun, 22 Nov 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "partial",
+   "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
      "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/",
+     "url": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
      "source_type": "trade-press",
      "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 6 figure-sentence(s); 0 of 6 figure-sentence(s) matched a base cue",
+   "rating": "ok",
    "evidence_method": "local-model",
    "evidence_coverage": {
-    "seen": 6,
-    "total": 6
+    "seen": 3,
+    "total": 3
    },
+   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+   "content_hash": "550da5a1b1501ed430830e8ab797efdc477cd8cbe2dc2eadcf10c6a3bb822e5c",
+   "evidence_hash": "b422ecba0fa74b7b124085d40c928a8dc5093c8f22f719f93a716e1613db9650",
    "label_schema_version": 2,
-   "content_hash": "66c80562454f43f3bfc3e60d09cc931e8d2bb7b5671afafb0ac2bace84f39fbe",
-   "evidence_hash": "1732fa9bcc3d86ff488e62a511c40498d75aa4ad4e233d8c21e0ce26287b75a2",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
-   "rating": "ok",
    "mentions": [
     {
+     "name": "OpenAI",
+     "count": 9
+    },
+    {
+     "name": "Perplexity",
+     "count": 7
+    },
+    {
      "name": "Anthropic",
-     "count": 12
-    },
-    {
-     "name": "Meta",
-     "count": 2
-    },
-    {
-     "name": "Apple",
-     "count": 2
+     "count": 6
     },
     {
      "name": "Google",
-     "count": 1
+     "count": 2
     },
     {
      "name": "Microsoft",
-     "count": 1
+     "count": 2
     },
     {
      "name": "Nvidia",
      "count": 1
     }
    ],
-   "publisher_topic": "Anthropic",
+   "publisher_topic": "OpenAI",
    "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "Why data centers are at the center of the Big Tech backlash",
+   "date": "Sun, 22 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "Y",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 3,
+    "total": 3
+   },
+   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+   "content_hash": "47924520691aeef577abf0c8c43055079d7aa0ec5070e52a3e4a358d75b9ff5e",
+   "evidence_hash": "6af160cab35d6866f3522a8135d1b1f24c516d1721d4ae235e8594ec5664d8ee",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Google",
+     "count": 9
+    },
+    {
+     "name": "Microsoft",
+     "count": 3
+    },
+    {
+     "name": "OpenAI",
+     "count": 2
+    },
+    {
+     "name": "Meta",
+     "count": 2
+    },
+    {
+     "name": "Amazon",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "data centers",
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -191,18 +303,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 1825 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 1825 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "cbf73bf57889475eab437e54bb11af06793031e9dc0381ca651021747b0e9859",
    "evidence_hash": "192e045b4fba4cf6fc11bd8f023eb6c7601622861e75eca33c082df16d840163",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Apple",
@@ -228,19 +340,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 1,
     "total": 1
    },
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "515836c35b425288d657fb58a948382f28ca2c9a589c8710a1e5fafa88dd0639",
    "evidence_hash": "c0349de7afd627307c288d8b2538e780bd2d284499ab50249a86f779c3ae1045",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Nvidia",
@@ -286,19 +398,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 16 figure-sentence(s); 0 of 16 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 16,
     "total": 16
    },
-   "label_evidence": "model read all 16 figure-sentence(s); 0 of 16 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "ff744d0945951a9f663024ec3a223264dc54eb64cf7243281f8512d7dec401a0",
    "evidence_hash": "217d5f599af4132de1f1bddea7b4c6038276e993d9238d6621ca7a18b2fd4eb7",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Google",
@@ -344,19 +456,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 2,
     "total": 2
    },
-   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "732f371c3a2f3f785c56882db6e6c68c980f91100130602be6c333f07721fd5e",
    "evidence_hash": "b08ef18eae39576032e2eee5b029d0486f5686f53aaafb4514d1e0d340995cc4",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Google",
@@ -388,118 +500,118 @@
   },
   {
    "entity": "",
-   "headline": "Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.",
-   "date": "Fri, 20 Nov 2026",
+   "headline": "We haven’t seen the last of the major tech outages",
+   "date": "2026-11-22T21:41",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "n/a",
    "reviewed": false,
    "sources": [
     {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/",
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/tech/1039851/major-tech-outages",
      "source_type": "trade-press",
      "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 3470 chars of article text",
+   "rating": "ok",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
+   "label_evidence": "no figure in 2910 chars of article text",
+   "content_hash": "2dce4f9296f3981a1105e9cd37857c90ff2dcefb770e97e72fc645409b211905",
+   "evidence_hash": "933135b95e5c062f2298b1a2c46081ba0b09ad1c5b478aef95ef26136eb9391b",
    "label_schema_version": 2,
-   "content_hash": "84425f9c3ab9b638500c0b056e6ff5cf0401b604e689106d199c7ef564a10e1a",
-   "evidence_hash": "5bed1de18fadc847af7247b89a18e3935df0009280e906e274c39d29239de6b5",
+   "auto_labelled": true,
    "label_source": "machine",
-   "rating": "ok",
    "mentions": [
-    {
-     "name": "Google",
-     "count": 3
-    },
     {
      "name": "Microsoft",
      "count": 3
-    },
-    {
-     "name": "Google DeepMind",
-     "count": 2
-    },
-    {
-     "name": "Nvidia",
-     "count": 2
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
     }
    ],
-   "publisher_topic": "fusion power",
+   "publisher_topic": "",
    "entity_basis": "unresolved"
   },
   {
-   "entity": "Anthropic",
-   "headline": "AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too",
-   "date": "Fri, 20 Nov 2026",
+   "entity": "",
+   "headline": "Binding of Isaac developer removes AI music from Repentance Plus",
+   "date": "2026-11-22T12:25",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 2360 chars of article text",
+   "content_hash": "9527c95f2745a19238b410d38970c2543fe3cbcd0f400287517ec61775c6a7bf",
+   "evidence_hash": "1d7d2fd0c11265eb0809b58c35dc92136f9994ba1647cbe6d3d40c97f0d59701",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [],
+   "publisher_topic": "Gaming",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
+   "headline": "The vibe-coding revolution is coming to all the gadgets",
+   "date": "2026-11-20T16:30",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera",
      "source_type": "trade-press",
      "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 3 figure-sentence(s); 1 of 3 figure-sentence(s) matched a base cue",
+   "rating": "ok",
    "evidence_method": "local-model",
    "evidence_coverage": {
-    "seen": 3,
-    "total": 3
+    "seen": 1,
+    "total": 1
    },
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "content_hash": "e5d0c368ff11818d681ba4777cc69bb8be80c6183b78c12ef6e3cfd347e73630",
+   "evidence_hash": "2773913b161f3eebadc73c3132e7a16df65e9982971194cddefbae46a996f4f8",
    "label_schema_version": 2,
-   "content_hash": "821a788c9577194c524d8b5cd5d251f696409505cf5b9dad1bef196470e6b59c",
-   "evidence_hash": "c74ca5c36a0c6e749fffd80f5ddc6b9464156a1d03942fc4ff90416694a8d213",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
-   "rating": "ok",
    "mentions": [
     {
-     "name": "Anthropic",
-     "count": 5
-    },
-    {
-     "name": "Google",
-     "count": 2
-    },
-    {
-     "name": "Microsoft",
-     "count": 2
-    },
-    {
-     "name": "Nvidia",
-     "count": 2
+     "name": "Meta",
+     "count": 1
     },
     {
      "name": "Amazon",
      "count": 1
     },
     {
-     "name": "xAI",
+     "name": "Apple",
      "count": 1
     }
    ],
-   "publisher_topic": "Anthropic",
-   "entity_basis": "tag"
+   "publisher_topic": "Column",
+   "entity_basis": "unresolved"
   },
   {
    "entity": "",
@@ -517,18 +629,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 2550 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 2550 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "799a8208c686dfaf042ffe1748a7d8c0a61d5333c8aee641f347920f93f9f696",
    "evidence_hash": "fa83b53c3f5d6f36c0b4f340db617378704387837a234f810aa6583a07a8c8ef",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Google",
@@ -558,19 +670,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 11 figure-sentence(s); 0 of 11 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 11,
     "total": 11
    },
-   "label_evidence": "model read all 11 figure-sentence(s); 0 of 11 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "c048e620820580b32ac8294b4c8ba9b208d293bdde8977b2d3013eb4a8f7f1e8",
    "evidence_hash": "0045f878e712cc7f98cff6db5fe4347ac7e7798362b34fde2fecca77845e8ef4",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Anthropic",
@@ -612,19 +724,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 8 figure-sentence(s); 0 of 8 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 8,
     "total": 8
    },
-   "label_evidence": "model read all 8 figure-sentence(s); 0 of 8 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "ab00697003dd8171a6577f54a5d82fdbb9cc171207a85ad7a9acc74902642ce3",
    "evidence_hash": "e4c9f607dc8295d119f1d390b4d373c254904402152505d06405267336e33800",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Google",
@@ -775,172 +887,6 @@
    ],
    "publisher_topic": "Nvidia",
    "entity_basis": "tag"
-  },
-  {
-   "entity": "Google DeepMind",
-   "headline": "Signal is blocking Gemini and Siri AI from reading your screen",
-   "date": "2026-11-20T09:36",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 1,
-    "total": 1
-   },
-   "label_schema_version": 2,
-   "content_hash": "afe29a4a5b7cb3eb25c85030598fc3cbc8f33f18f346b602b43158d7347e42d6",
-   "evidence_hash": "71a401e228e9f1e2802ecd2029d188f8ba5689ef9c103a8c173a6b78614a3a4e",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 5
-    },
-    {
-     "name": "Microsoft",
-     "count": 3
-    },
-    {
-     "name": "Apple",
-     "count": 3
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Android",
-   "entity_basis": "product:Gemini"
-  },
-  {
-   "entity": "Apple",
-   "headline": "Apple is hiring engineers to build its own AI agent",
-   "date": "2026-11-20T10:13",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 1,
-    "total": 1
-   },
-   "label_schema_version": 2,
-   "content_hash": "088c84e137086dfe50d663fe63e00c59b50bccf101164f539f040d7ccd411503",
-   "evidence_hash": "35661a126dda5cc0384e2420d0ad4042d6ee8427eb2b099a52fcd7aa73d5fb4a",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Apple",
-     "count": 15
-    },
-    {
-     "name": "Google",
-     "count": 2
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    },
-    {
-     "name": "Nvidia",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Apple",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Nvidia",
-   "headline": "A brief history of Nvidia’s recent stock fluctuations",
-   "date": "2026-11-20T09:20",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/1038063/nvidia-stock-market-price-earnings",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 17 figure-sentence(s); 1 of 17 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 17,
-    "total": 17
-   },
-   "label_schema_version": 2,
-   "content_hash": "8fb70bde6c10c871cd8f84bc77df38136b7b094cad71de5924f24f80883b4e4c",
-   "evidence_hash": "716e72ac07eb670442c1bf083972e993a57855244f96a106a4713752964edab1",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Nvidia",
-     "count": 49
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Google",
-     "count": 1
-    },
-    {
-     "name": "Apple",
-     "count": 1
-    },
-    {
-     "name": "xAI",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "headline"
   },
   {
    "entity": "",
@@ -2538,6 +2484,44 @@
   },
   {
    "entity": "",
+   "headline": "AI-driven technique could help engineers design analog chips faster and with less expense",
+   "date": "Mon, 23 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "news.mit.edu",
+     "url": "https://news.mit.edu/2026/ai-driven-technique-could-help-engineers-design-analog-chips-faster-and-less-expensive-1123",
+     "source_type": "press-office",
+     "source_tier": 5
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 1,
+    "total": 1
+   },
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "content_hash": "1fa0e5f9c4cd1c6e4455c9572c852152712397fba8673628e5e9bf788db713fc",
+   "evidence_hash": "d0d50c3a95a08056c6a79c587e8297d81f5fffdd37ce772aec6dc259796834c2",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Yan Xu",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "",
    "headline": "Q&A: Enabling more human-like interactions and understanding in multimodal foundation models",
    "date": "Fri, 20 Nov 2026",
    "topic": "",
@@ -2861,48 +2845,6 @@
     }
    ],
    "publisher_topic": "MIT Human Insight Collaborative (MITHIC)",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Q&A: Why building math muscles remains important in the AI era",
-   "date": "Tue, 17 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "news.mit.edu",
-     "url": "https://news.mit.edu/2026/qa-why-building-math-muscles-remains-important-ai-era-1117",
-     "source_type": "press-office",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 2 figure-sentence(s); 1 of 2 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 2,
-    "total": 2
-   },
-   "label_schema_version": 2,
-   "content_hash": "ab5a3cae67a1ff2fef14c92849d410848fc7895033713aafeabbba8482444da1",
-   "evidence_hash": "6ca12d2fc1f22f244c1b4b5050bf5aea92acd502503d03a76dadab3cf0c1c920",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 2
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "mathematics education",
    "entity_basis": "unresolved"
   },
   {
@@ -3522,6 +3464,44 @@
    "entity_basis": "headline"
   },
   {
+   "entity": "Perplexity",
+   "headline": "Perplexity and Intelligence",
+   "date": "2026-11-22",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "partial",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "openai.com",
+     "url": "https://openai.com/index/perplexity-and-intelligence/",
+     "source_type": "vendor-own",
+     "source_tier": 5
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 17,
+    "total": 17
+   },
+   "label_evidence": "model read all 17 figure-sentence(s); 1 of 17 figure-sentence(s) matched a base cue",
+   "content_hash": "405946c82834b601d8929cf32ef912b1b130dbccfd38ae986dff7d348a7e2548",
+   "evidence_hash": "696bafcd712af025abdd9f198942b69a61b192c427665e678f98aba7681ab488",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Perplexity",
+     "count": 22
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
    "entity": "OpenAI",
    "headline": "Can AI help scientists identify promising drug candidates?",
    "date": "2026-11-20",
@@ -3591,39 +3571,6 @@
    ],
    "publisher_topic": "",
    "entity_basis": "site"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "Advancing chip design with OpenAI models",
-   "date": "2026-11-18",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "openai.com",
-     "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 18 figure-sentence(s); 2 of 18 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 18,
-    "total": 18
-   },
-   "label_schema_version": 2,
-   "content_hash": "eeaec05d2b9c393625cd2aa7b7430c8465fe38138439816560120f9fa8f385f7",
-   "evidence_hash": "0bf0785cb97ef5586659ebedf5ecdf48837f34cec35fe6b47ce23bb6dc68adb2",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "headline"
   }
  ],
  "rated_against": "sources.md"

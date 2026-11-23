@@ -1,5 +1,137 @@
 [
   {
+    "id": "alert_58e0af7c42860beeb74e6d3c",
+    "timestamp": "2026-11-23T06:05:50.470255+00:00",
+    "alert_schema_version": 2,
+    "source": "NIST AI Safety Institute & Risk Framework",
+    "jurisdiction": "United States",
+    "title": "NIST Joins National Genesis Mission to Accelerate AI Innovation",
+    "url": "https://www.nist.gov/news-events/news/2026/08/nist-joins-national-genesis-mission-accelerate-ai-innovation",
+    "source_queue_priority": 2,
+    "substantive_priority": 4,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document announces a Memorandum of Understanding (MOU) between NIST and DOE to collaborate on AI-accelerated innovation under the Genesis Mission. It describes internal agency initiatives and public-private partnerships but does not impose new binding regulatory duties on AI operators.",
+    "denominator_disclosed": "no",
+    "actionable_trigger": "Monitor for subsequent regulatory guidance or standards issued by NIST arising from the Genesis Mission collaboration.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "3adb15f9ac1b5d1deafa985fc59231c7b88293b12a4c92b79ee2384c8a6ecf36",
+    "source_text_sha256": "cba1385083a62a2bd2e2665d3f466965e69ae8d55a9ab0d6686ef8db24e8f3b8",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "extracted text",
+      "selection_status": "selected",
+      "selector": "full-text",
+      "text_chars": 4527,
+      "ranges": [
+        [
+          0,
+          4527
+        ]
+      ],
+      "passages_total": 1,
+      "passages_read": 1,
+      "passages_left": 0,
+      "selected_text_sha256": "cba1385083a62a2bd2e2665d3f466965e69ae8d55a9ab0d6686ef8db24e8f3b8"
+    },
+    "source_capture_url": "https://www.nist.gov/news-events/news/2026/08/nist-joins-national-genesis-mission-accelerate-ai-innovation",
+    "document_status": "other",
+    "ai_relevance": "relevant",
+    "evidence_quote": "The U.S. Department of Commerce’s National Institute of Standards and Technology (NIST) and the U.S. Department of Energy (DOE) Office of Science have signed a memorandum of understanding establishing a collaboration to use AI-accelerated innovation to address national science and technology challenges established by the Genesis Mission.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_3fbc697090b34dd95799bd57",
+    "timestamp": "2026-11-23T06:05:02.784366+00:00",
+    "alert_schema_version": 2,
+    "source": "NIST AI Safety Institute & Risk Framework",
+    "jurisdiction": "United States",
+    "title": "NIST Mathematical Proof Supports Transition to a Continuous-Monitor-and-Update Security Model for AI Systems",
+    "url": "https://www.nist.gov/news-events/news/2026/06/nist-mathematical-proof-supports-transition-continuous-monitor-and-update",
+    "source_queue_priority": 2,
+    "substantive_priority": 3,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document presents a mathematical proof demonstrating that finite AI guardrails are inherently vulnerable to adversarial prompts, advocating for a continuous monitoring and update security model rather than a one-time compliance approach. It does not establish a new binding legal duty for operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Review AI security architecture to ensure it supports continuous red-teaming and rapid guardrail updates rather than relying on static, one-time security configurations.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "c14f469d770bee59dac986c3c7b15c048cbe02f1a1c40d50d47cdffcab44cf6a",
+    "source_text_sha256": "9f5209bb5022a7ade0ee335d941b2f1bdbbd332099198cec85b94c4b0fb0dc06",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "extracted text",
+      "selection_status": "selected",
+      "selector": "full-text",
+      "text_chars": 7645,
+      "ranges": [
+        [
+          0,
+          7645
+        ]
+      ],
+      "passages_total": 1,
+      "passages_read": 1,
+      "passages_left": 0,
+      "selected_text_sha256": "9f5209bb5022a7ade0ee335d941b2f1bdbbd332099198cec85b94c4b0fb0dc06"
+    },
+    "source_capture_url": "https://www.nist.gov/news-events/news/2026/06/nist-mathematical-proof-supports-transition-continuous-monitor-and-update",
+    "document_status": "other",
+    "ai_relevance": "relevant",
+    "evidence_quote": "The findings show that developers and organizations deploying AI systems need to dedicate resources to finding prompts that would break the security of AI systems, and to address them before adversaries can exploit them.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_101daa59c9ab3ecb9f5b1ea1",
+    "timestamp": "2026-11-23T06:04:11.049335+00:00",
+    "alert_schema_version": 2,
+    "source": "NIST AI Safety Institute & Risk Framework",
+    "jurisdiction": "United States",
+    "title": "NIST Allocates Over $3 Million to Small Businesses Advancing AI, Biotechnology, Semiconductors, Quantum and More",
+    "url": "https://www.nist.gov/news-events/news/2026/02/nist-allocates-over-3-million-small-businesses-advancing-ai-biotechnology",
+    "source_queue_priority": 2,
+    "substantive_priority": 4,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document announces the allocation of $3.19 million in SBIR Phase II funding to eight small businesses for R&D in AI, biotechnology, and other sectors. It describes specific research projects, including an AI compliance tool for operational technology, but contains no binding regulatory obligations, statutory duties, or compliance requirements for AI operators.",
+    "denominator_disclosed": "no",
+    "actionable_trigger": "Monitor the development of the 'OTAI-NCT' tool by ObjectSecurity LLC, as it may influence future cybersecurity hygiene scoring standards for AI hardware and software manufacturers.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "2dae83b4571ee94f6a11d89a639308f243ae4ae99a22f4313d68e49865a99673",
+    "source_text_sha256": "1877093a79c610372117d7e93a1d7b7bd911ad453e14f4c9cd008e1ad5e86399",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "extracted text",
+      "selection_status": "selected",
+      "selector": "full-text",
+      "text_chars": 7099,
+      "ranges": [
+        [
+          0,
+          7099
+        ]
+      ],
+      "passages_total": 1,
+      "passages_read": 1,
+      "passages_left": 0,
+      "selected_text_sha256": "1877093a79c610372117d7e93a1d7b7bd911ad453e14f4c9cd008e1ad5e86399"
+    },
+    "source_capture_url": "https://www.nist.gov/news-events/news/2026/02/nist-allocates-over-3-million-small-businesses-advancing-ai-biotechnology",
+    "document_status": "other",
+    "ai_relevance": "relevant",
+    "evidence_quote": "The U.S. Department of Commerce’s National Institute of Standards and Technology (NIST) is allocating funding totaling $3.19 million to eight small businesses in seven states under the Small Business Innovation Research (SBIR) program.",
+    "assessment_error": null
+  },
+  {
     "id": "alert_12e32cc7fb590293881bc52f",
     "timestamp": "2026-11-22T06:01:52.495304+00:00",
     "alert_schema_version": 2,
