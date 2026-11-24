@@ -1,6 +1,64 @@
 {
- "fetched": "2026-11-23 06:20 UTC",
+ "fetched": "2026-11-24 06:20 UTC",
  "items": [
+  {
+   "entity": "",
+   "headline": "Sierra doubles valuation to $30B within six months as demand for AI in CX takes off",
+   "date": "Mon, 23 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "partial",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 6,
+    "total": 6
+   },
+   "label_evidence": "model read all 6 figure-sentence(s); 0 of 6 figure-sentence(s) matched a base cue",
+   "content_hash": "e815b363202d670fc37200709631951bd815f4ee7b94cdfb850847deb11e5fb0",
+   "evidence_hash": "6548c49c49f3c0816297e6319bdc77455e6d045d1334c794d969f831d5f8333e",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Anthropic",
+     "count": 2
+    },
+    {
+     "name": "Microsoft",
+     "count": 2
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    },
+    {
+     "name": "Nvidia",
+     "count": 1
+    },
+    {
+     "name": "Amazon",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Bret Taylor",
+   "entity_basis": "unresolved"
+  },
   {
    "entity": "Anthropic",
    "headline": "How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO",
@@ -17,19 +75,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 8 figure-sentence(s); 0 of 8 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 8,
     "total": 8
    },
-   "label_evidence": "model read all 8 figure-sentence(s); 0 of 8 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "bfa07da6a6cd38f3f69c308009c791e27e80e4a987fabdb980d21b5367c2e2f5",
    "evidence_hash": "7785afc74f7a72734f52d6dc25209166d74647d596e5b79faf055d08fe49c2bd",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Anthropic",
@@ -61,56 +119,55 @@
   },
   {
    "entity": "Anthropic",
-   "headline": "Anthropic’s 7 founders cashed out nearly $2B in record-breaking IPO",
-   "date": "Fri, 20 Nov 2026",
+   "headline": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
+   "date": "Mon, 23 Nov 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "partial",
+   "denominator_stated": "n/a",
    "reviewed": false,
    "sources": [
     {
      "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
+     "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
      "source_type": "trade-press",
      "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 21 figure-sentence(s); 1 of 21 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 21,
-    "total": 21
-   },
-   "label_schema_version": 2,
-   "content_hash": "8ba0cc8bdb34ebdf300e91d3dd2f5f0a5c6b9741e7a5a729f735bfd0eb0c4152",
-   "evidence_hash": "729441f4ae40fb4b7ffd783cf4fe7f1c379ffa740f5984b4d08c50e237a3f68c",
-   "label_source": "machine",
    "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 3736 chars of article text",
+   "content_hash": "41fd952cec3fb4ed74f25f308b2c9810e92ebff73d8b4cf93b5c4cf18bc73b25",
+   "evidence_hash": "fa96436c4e18acefaff67849a46b5089228c597efc1b71cbc918577eac052e9a",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
    "mentions": [
     {
      "name": "Anthropic",
-     "count": 11
+     "count": 8
+    },
+    {
+     "name": "Microsoft",
+     "count": 2
     },
     {
      "name": "Google",
-     "count": 5
+     "count": 1
     },
     {
      "name": "Nvidia",
-     "count": 4
+     "count": 1
     },
     {
      "name": "Amazon",
-     "count": 4
+     "count": 1
     },
     {
-     "name": "Microsoft",
-     "count": 3
-    },
-    {
-     "name": "Meta",
+     "name": "Apple",
      "count": 1
     }
    ],
@@ -118,67 +175,9 @@
    "entity_basis": "headline"
   },
   {
-   "entity": "Anthropic",
-   "headline": "Anthropic’s IPO could deliver $156B to charity",
-   "date": "Thu, 19 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "partial",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/19/anthropics-ipo-could-deliver-156-billion-to-charity/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 9 figure-sentence(s); 1 of 9 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 9,
-    "total": 9
-   },
-   "label_schema_version": 2,
-   "content_hash": "e9ef349b3a2e83a0df67cae234b41b879c29c83d2f3f8ca4be61fb3223df2c02",
-   "evidence_hash": "0d0334a481e5a6657e915962571e755e0262252ce51e047e4e553a9dd70addb8",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Anthropic",
-     "count": 11
-    },
-    {
-     "name": "Nvidia",
-     "count": 3
-    },
-    {
-     "name": "Google",
-     "count": 2
-    },
-    {
-     "name": "Microsoft",
-     "count": 2
-    },
-    {
-     "name": "xAI",
-     "count": 2
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Anthropic",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "OpenAI",
-   "headline": "OpenAI’s chief scientist has thoughts on how to limit AI development",
-   "date": "Sun, 22 Nov 2026",
+   "entity": "",
+   "headline": "Supertake raises $20M to let AI agents turn your market predictions into stock portfolios",
+   "date": "Mon, 23 Nov 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "N",
@@ -186,7 +185,7 @@
    "sources": [
     {
      "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
+     "url": "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
      "source_type": "trade-press",
      "source_tier": 3
     }
@@ -198,27 +197,225 @@
     "total": 3
    },
    "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
-   "content_hash": "550da5a1b1501ed430830e8ab797efdc477cd8cbe2dc2eadcf10c6a3bb822e5c",
-   "evidence_hash": "b422ecba0fa74b7b124085d40c928a8dc5093c8f22f719f93a716e1613db9650",
+   "content_hash": "efdd29aa2956fbc110e3b6f8176ade4889f0fa220106151a577a5b3ac69b8e67",
+   "evidence_hash": "ccfaea37a1944bcf5426104bbaa518f9789cbc923a93775c7d1f7cb5fe9c3063",
    "label_schema_version": 2,
    "auto_labelled": true,
    "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
    "mentions": [
     {
-     "name": "OpenAI",
-     "count": 9
-    },
-    {
-     "name": "Perplexity",
-     "count": 7
-    },
-    {
      "name": "Anthropic",
+     "count": 2
+    },
+    {
+     "name": "Microsoft",
+     "count": 2
+    },
+    {
+     "name": "Google",
+     "count": 1
+    },
+    {
+     "name": "Meta",
+     "count": 1
+    },
+    {
+     "name": "Nvidia",
+     "count": 1
+    },
+    {
+     "name": "Amazon",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "AI agents",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "xAI",
+   "headline": "Elon Musk and others rejoice as Jensen Huang is reinstated at Nvidia amid scandal",
+   "date": "Mon, 23 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "Y",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/23/elon-musk-and-others-rejoice-as-jensen-huang-is-reinstated-at-nvidia-amid-scandal/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 1,
+    "total": 1
+   },
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "content_hash": "16af189fb572ec8ccc0d5e45b4c4b3b48579ba69f6fa760c9cc4104ffe21719d",
+   "evidence_hash": "26fbfdae7ed5de979130293b10b08f65d1ada42ff0ef7f8cc3f094468ec269ab",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 27
+    },
+    {
+     "name": "OpenAI",
      "count": 6
     },
     {
+     "name": "xAI",
+     "count": 6
+    },
+    {
+     "name": "Anthropic",
+     "count": 2
+    },
+    {
+     "name": "Microsoft",
+     "count": 2
+    },
+    {
      "name": "Google",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Jensen Huang",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Nvidia",
+   "headline": "Megaspeed, the company at the center of the Jensen Huang scandal, appears headed for a US blacklist",
+   "date": "Mon, 23 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 2294 chars of article text",
+   "content_hash": "a9804fa166464796892a8d7839bd1d13c11f28c940823639f8db2bb1799c4eb9",
+   "evidence_hash": "859bc28073ae0f752c35b16700cb729c15cf6590f3d80940192be8209eb91254",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 21
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    },
+    {
+     "name": "xAI",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Donald Trump",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Nvidia",
+   "headline": "Nvidia employees greet Jensen Huang like a hero as he returns to company’s HQ",
+   "date": "Mon, 23 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "Y",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/23/nvidia-employees-greet-jensen-huang-like-a-hero-as-he-returns-to-companys-hq/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 1,
+    "total": 1
+   },
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "content_hash": "0e2f72e30d6eb78bebd85cf7aa5cdad07c7e3dd0e13cbf1ff868e1adf1929fc6",
+   "evidence_hash": "4f9ef9939e85018d4c9636649c27e9f1b9771f2796d9f1c9fad7b1de21bc9c85",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 24
+    },
+    {
+     "name": "xAI",
+     "count": 3
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "In Brief",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Google",
+   "headline": "Google Search’s AI Mode can now tap into Drive and Wallet for more personalized responses",
+   "date": "Mon, 23 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 3066 chars of article text",
+   "content_hash": "91e7298ff9767d161f60b1f3fedb42c54e61a6a9da84b7df405c32d8047c1f8e",
+   "evidence_hash": "22efef27a3ddd66b838b34d7cca134f0d3950f6e2e1e7a1550c8fca147e5a6c4",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Google",
+     "count": 14
+    },
+    {
+     "name": "Anthropic",
      "count": 2
     },
     {
@@ -228,23 +425,125 @@
     {
      "name": "Nvidia",
      "count": 1
+    },
+    {
+     "name": "Amazon",
+     "count": 1
+    },
+    {
+     "name": "Apple",
+     "count": 1
     }
    ],
-   "publisher_topic": "OpenAI",
+   "publisher_topic": "Google",
    "entity_basis": "headline"
   },
   {
-   "entity": "",
-   "headline": "Why data centers are at the center of the Big Tech backlash",
-   "date": "Sun, 22 Nov 2026",
+   "entity": "Nvidia",
+   "headline": "Jensen Huang scheduled to testify next week in Senate following reinstatement as Nvidia CEO",
+   "date": "Mon, 23 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/23/jensen-huang-scheduled-to-testify-next-week-in-senate-following-reinstatement-as-nvidia-ceo/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 1694 chars of article text",
+   "content_hash": "cb6e98d07732cab80a2a76aa787b3903b044d5614268efd7268292af1f4f04e5",
+   "evidence_hash": "8669eb4f0d86d01274d00d4dbbb9179882c5fa1b230352c5ef780f88f8dad980",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 16
+    },
+    {
+     "name": "Anthropic",
+     "count": 1
+    },
+    {
+     "name": "xAI",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Congress",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "xAI",
+   "headline": "Oregon and Virginia sue SpaceX over Grok’s porn deepfakes",
+   "date": "2026-11-23T13:26",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 4533 chars of article text",
+   "content_hash": "34a002c05e0e2cd20bf0735698aac6021723ebad1e962dd7f0ed3d0fc3a5c6c5",
+   "evidence_hash": "62f5db0de59c2417a945e490375b1acf5deef3fb81b5094e0a7f6f35a7aff7a5",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "xAI",
+     "count": 12
+    },
+    {
+     "name": "Nvidia",
+     "count": 3
+    },
+    {
+     "name": "Apple",
+     "count": 2
+    },
+    {
+     "name": "Google",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Space",
+   "entity_basis": "product:Grok"
+  },
+  {
+   "entity": "Nvidia",
+   "headline": "Trump engineered a risky comeback for Jensen Huang",
+   "date": "2026-11-23T17:34",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "Y",
    "reviewed": false,
    "sources": [
     {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash/",
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1040652/jensen-huang-nvidia-trump-reinstated",
      "source_type": "trade-press",
      "source_tier": 3
     }
@@ -256,592 +555,79 @@
     "total": 3
    },
    "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
-   "content_hash": "47924520691aeef577abf0c8c43055079d7aa0ec5070e52a3e4a358d75b9ff5e",
-   "evidence_hash": "6af160cab35d6866f3522a8135d1b1f24c516d1721d4ae235e8594ec5664d8ee",
+   "content_hash": "52ea7667b4995da678052e3de64a78794295891580f0f9d635e18389f236ef75",
+   "evidence_hash": "62b30c9dee33788726bc5b7f3387888403a5d6e776ee0eb3bd106baf600191da",
    "label_schema_version": 2,
    "auto_labelled": true,
    "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
    "mentions": [
     {
-     "name": "Google",
-     "count": 9
-    },
-    {
-     "name": "Microsoft",
-     "count": 3
+     "name": "Nvidia",
+     "count": 106
     },
     {
      "name": "OpenAI",
      "count": 2
     },
     {
-     "name": "Meta",
+     "name": "Apple",
      "count": 2
-    },
-    {
-     "name": "Amazon",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "data centers",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
-   "date": "Sat, 21 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 1825 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "cbf73bf57889475eab437e54bb11af06793031e9dc0381ca651021747b0e9859",
-   "evidence_hash": "192e045b4fba4cf6fc11bd8f023eb6c7601622861e75eca33c082df16d840163",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Apple",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Meredith Whittaker",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Nvidia",
-   "headline": "A tale of two Nvidias",
-   "date": "Sat, 21 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 1,
-    "total": 1
-   },
-   "label_schema_version": 2,
-   "content_hash": "515836c35b425288d657fb58a948382f28ca2c9a589c8710a1e5fafa88dd0639",
-   "evidence_hash": "c0349de7afd627307c288d8b2538e780bd2d284499ab50249a86f779c3ae1045",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Nvidia",
-     "count": 22
-    },
-    {
-     "name": "Apple",
-     "count": 3
     },
     {
      "name": "xAI",
-     "count": 3
-    },
-    {
-     "name": "Google",
      "count": 2
     },
     {
-     "name": "Microsoft",
-     "count": 2
-    },
-    {
-     "name": "OpenAI",
+     "name": "SEC",
      "count": 1
     }
    ],
-   "publisher_topic": "Equity podcast",
-   "entity_basis": "tag"
-  },
-  {
-   "entity": "",
-   "headline": "Here are the top AI agents that can live in your text messages",
-   "date": "Sat, 21 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 16 figure-sentence(s); 0 of 16 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 16,
-    "total": 16
-   },
-   "label_schema_version": 2,
-   "content_hash": "ff744d0945951a9f663024ec3a223264dc54eb64cf7243281f8512d7dec401a0",
-   "evidence_hash": "217d5f599af4132de1f1bddea7b4c6038276e993d9238d6621ca7a18b2fd4eb7",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 5
-    },
-    {
-     "name": "Apple",
-     "count": 5
-    },
-    {
-     "name": "Microsoft",
-     "count": 2
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    },
-    {
-     "name": "Nvidia",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "instinct",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?",
-   "date": "Sat, 21 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 2,
-    "total": 2
-   },
-   "label_schema_version": 2,
-   "content_hash": "732f371c3a2f3f785c56882db6e6c68c980f91100130602be6c333f07721fd5e",
-   "evidence_hash": "b08ef18eae39576032e2eee5b029d0486f5686f53aaafb4514d1e0d340995cc4",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 2
-    },
-    {
-     "name": "Microsoft",
-     "count": 2
-    },
-    {
-     "name": "Apple",
-     "count": 2
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    },
-    {
-     "name": "Nvidia",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Hollywood",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "We haven’t seen the last of the major tech outages",
-   "date": "2026-11-22T21:41",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/tech/1039851/major-tech-outages",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_evidence": "no figure in 2910 chars of article text",
-   "content_hash": "2dce4f9296f3981a1105e9cd37857c90ff2dcefb770e97e72fc645409b211905",
-   "evidence_hash": "933135b95e5c062f2298b1a2c46081ba0b09ad1c5b478aef95ef26136eb9391b",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Microsoft",
-     "count": 3
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Binding of Isaac developer removes AI music from Repentance Plus",
-   "date": "2026-11-22T12:25",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_evidence": "no figure in 2360 chars of article text",
-   "content_hash": "9527c95f2745a19238b410d38970c2543fe3cbcd0f400287517ec61775c6a7bf",
-   "evidence_hash": "1d7d2fd0c11265eb0809b58c35dc92136f9994ba1647cbe6d3d40c97f0d59701",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [],
-   "publisher_topic": "Gaming",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "The vibe-coding revolution is coming to all the gadgets",
-   "date": "2026-11-20T16:30",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "rating": "ok",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 1,
-    "total": 1
-   },
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
-   "content_hash": "e5d0c368ff11818d681ba4777cc69bb8be80c6183b78c12ef6e3cfd347e73630",
-   "evidence_hash": "2773913b161f3eebadc73c3132e7a16df65e9982971194cddefbae46a996f4f8",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_source": "machine",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 1
-    },
-    {
-     "name": "Amazon",
-     "count": 1
-    },
-    {
-     "name": "Apple",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Column",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "The UN fails to agree on rules regulating ‘killer robots’",
-   "date": "2026-11-21T15:03",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 2550 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "799a8208c686dfaf042ffe1748a7d8c0a61d5333c8aee641f347920f93f9f696",
-   "evidence_hash": "fa83b53c3f5d6f36c0b4f340db617378704387837a234f810aa6583a07a8c8ef",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 2
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Politics",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Anthropic",
-   "headline": "Can Anthropic afford to put safety first?",
-   "date": "2026-11-21T08:29",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 11 figure-sentence(s); 0 of 11 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 11,
-    "total": 11
-   },
-   "label_schema_version": 2,
-   "content_hash": "c048e620820580b32ac8294b4c8ba9b208d293bdde8977b2d3013eb4a8f7f1e8",
-   "evidence_hash": "0045f878e712cc7f98cff6db5fe4347ac7e7798362b34fde2fecca77845e8ef4",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Anthropic",
-     "count": 55
-    },
-    {
-     "name": "OpenAI",
-     "count": 19
-    },
-    {
-     "name": "Microsoft",
-     "count": 3
-    },
-    {
-     "name": "Nvidia",
-     "count": 3
-    },
-    {
-     "name": "xAI",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Anthropic",
+   "publisher_topic": "Nvidia",
    "entity_basis": "headline"
   },
   {
-   "entity": "",
-   "headline": "Chess.com’s next move is a new hub for classic games, from mahjong to sudoku",
-   "date": "2026-11-19T18:04",
+   "entity": "Nvidia",
+   "headline": "Nvidia CEO Jensen Huang is back. What happens next?",
+   "date": "2026-11-23T17:18",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "N",
+   "denominator_stated": "partial",
    "reviewed": false,
    "sources": [
     {
      "name": "theverge.com",
-     "url": "https://www.theverge.com/games/1038099/chess-classic-games-expansion-ai",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
      "source_type": "trade-press",
      "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 8 figure-sentence(s); 0 of 8 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 8,
-    "total": 8
-   },
-   "label_schema_version": 2,
-   "content_hash": "ab00697003dd8171a6577f54a5d82fdbb9cc171207a85ad7a9acc74902642ce3",
-   "evidence_hash": "e4c9f607dc8295d119f1d390b4d373c254904402152505d06405267336e33800",
-   "label_source": "machine",
    "rating": "ok",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 2
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Gaming",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Trump threatens ‘tremendous tax’ for moving AI data centers outside the US",
-   "date": "2026-11-20T13:50",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 1,
-    "total": 1
-   },
-   "label_schema_version": 2,
-   "content_hash": "dbb618b34286b87ecbdaaee31f098719f186ce1b1a1083e0950e6582101bb768",
-   "evidence_hash": "7b627c1c81756d0e746b00014c6e6961f77b504da8e5b42792c0bf3c5ffed8c8",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Google",
-     "count": 2
-    },
-    {
-     "name": "Anthropic",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "Politics",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Anthropic",
-   "headline": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
-   "date": "2026-11-20T11:57",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 4,
     "total": 4
    },
+   "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
+   "content_hash": "4ce81d0a961068a397897c8b89c902a409ab141c5e074e4514324fee962097cd",
+   "evidence_hash": "000aa409266c2884fab8cbeb1b0f0f9b431ffc3c43bc69c6def174162c369373",
    "label_schema_version": 2,
-   "content_hash": "e71d1152f9dface336360115df17a9fa7e16d19bf002287edac42e44358f5253",
-   "evidence_hash": "69fb5015c8d87d0d5a23c5f0c957ac2d11c24c91150506d7026f6907e0b049b5",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
-   "rating": "ok",
    "mentions": [
     {
-     "name": "OpenAI",
-     "count": 12
-    },
-    {
-     "name": "Anthropic",
-     "count": 12
-    },
-    {
-     "name": "Google",
-     "count": 2
+     "name": "Nvidia",
+     "count": 47
     }
    ],
-   "publisher_topic": "Anthropic",
+   "publisher_topic": "Nvidia",
    "entity_basis": "headline"
   },
   {
    "entity": "Nvidia",
-   "headline": "The week everything fell apart",
-   "date": "2026-11-20T09:06",
+   "headline": "Welcome to elite impunity, Jensen Huang",
+   "date": "2026-11-23T17:21",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "N",
@@ -849,35 +635,226 @@
    "sources": [
     {
      "name": "theverge.com",
-     "url": "https://www.theverge.com/podcast/1038419/outage-outlook-ground-stop-tech-failure-vergecast",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1040819/welcome-to-elite-impunity-jensen-huang",
      "source_type": "trade-press",
      "source_tier": 3
     }
    ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 2,
+    "total": 2
+   },
+   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+   "content_hash": "bdc5c55e9940f0136868da24722c7eb234c6cf45d754f6dd4636664672886eb5",
+   "evidence_hash": "cc4bc360bb31e94337d5541b92fe3090d7fa8adc860975fe65e21322fcbcb117",
+   "label_schema_version": 2,
    "auto_labelled": true,
    "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 56
+    },
+    {
+     "name": "xAI",
+     "count": 4
+    },
+    {
+     "name": "OpenAI",
+     "count": 1
+    },
+    {
+     "name": "Google",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Nvidia",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "AI data centers throw another wrench into chaotic UN climate talks",
+   "date": "2026-11-23T16:09",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "Y",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/science/1040497/ai-data-centers-electricity-un-climate-summit",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 4,
+    "total": 4
+   },
+   "label_evidence": "model read all 4 figure-sentence(s); 1 of 4 figure-sentence(s) matched a base cue",
+   "content_hash": "344a046a787c24a94fa05104bd19a2f8c271590a944e86c2651c758369f3d90d",
+   "evidence_hash": "d2b7b592ebb99e5ed613e86bd008630f5fdedad2862a741931a8b31ea06dc441",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 3
+    },
+    {
+     "name": "Nvidia",
+     "count": 3
+    },
+    {
+     "name": "Google",
+     "count": 2
+    },
+    {
+     "name": "Microsoft",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "Environment",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "Anthropic",
+   "headline": "Claude AI can review pull requests and ship fixes on its own now",
+   "date": "2026-11-23T12:10",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 2062 chars of article text",
+   "content_hash": "a5836410667003407858419225abb92dbfb0356a8ee561de04d715a51334cd7b",
+   "evidence_hash": "ba777ae66d7bd5a5c67d1875e74496d869ece2ffc7f526b42c3e122225b33b42",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Anthropic",
+     "count": 6
+    },
+    {
+     "name": "Nvidia",
+     "count": 3
+    }
+   ],
+   "publisher_topic": "Anthropic",
+   "entity_basis": "product:Claude"
+  },
+  {
+   "entity": "Nvidia",
+   "headline": "How Jensen Huang ended up as Nvidia CEO again",
+   "date": "2026-11-23T15:38",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/tech/1040428/nvidia-jensen-huang-ceo-return",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 1,
     "total": 1
    },
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "content_hash": "2dce8b381cebea5e5ba89d429053c1274e95f7d1f702ab8afdca7b7ffb1c1098",
+   "evidence_hash": "5e2524996044a8add9d84c063bc01e1624df523a12a2a651ebe2fe916471337d",
    "label_schema_version": 2,
-   "content_hash": "dec6105273b1f7823b3ee8a189d8dfcefe2039101e5cf35d2b618ae561623a69",
-   "evidence_hash": "d322da037520cf14d9df34f2b4e7f3e92a6ee1bf057096432e9c6f72c849a975",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
-   "rating": "ok",
    "mentions": [
     {
      "name": "Nvidia",
-     "count": 9
+     "count": 67
     },
     {
-     "name": "Google",
+     "name": "Apple",
      "count": 3
     },
     {
-     "name": "Anthropic",
+     "name": "OpenAI",
+     "count": 2
+    },
+    {
+     "name": "xAI",
+     "count": 1
+    },
+    {
+     "name": "SEC",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Nvidia",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "Nothing’s upcoming Ear Note is a pair of earbuds with AI transcription",
+   "date": "2026-11-23T14:04",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/gadgets/1040357/nothing-ear-note-earbuds-ai-recording",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 2,
+    "total": 2
+   },
+   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+   "content_hash": "ef2c131f8c784977184f6b37d6aa218464b29528b33651378ef49e1ca9833388",
+   "evidence_hash": "befb1c258d47d3cc393a26c2f2b7e4cf56e05d09055584ee7f4a27a0feb2ef29",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 3
+    },
+    {
+     "name": "Amazon",
      "count": 1
     },
     {
@@ -885,8 +862,84 @@
      "count": 1
     }
    ],
+   "publisher_topic": "Audio",
+   "entity_basis": "unresolved"
+  },
+  {
+   "entity": "Nvidia",
+   "headline": "White House brags that Trump was ‘totally involved’ in getting Jensen reinstated",
+   "date": "2026-11-23T13:48",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/policy/1040096/trump-nvidia-jensen-huang-reinstated",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 1,
+    "total": 1
+   },
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "content_hash": "6746a358bfefaee73ec7073b91467f2abfcddd8b1f13be63be5d76899731afd6",
+   "evidence_hash": "63432e70b2fbc61fa4805cfe599798603234f906b5d6580b4964f3d377ee53aa",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 28
+    }
+   ],
    "publisher_topic": "Nvidia",
    "entity_basis": "tag"
+  },
+  {
+   "entity": "xAI",
+   "headline": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+   "date": "Mon, 23 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "Y",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "arstechnica.com",
+     "url": "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 4,
+    "total": 4
+   },
+   "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
+   "content_hash": "4cb513e25874433bfecff23211980ba29dd4fec00230dfade876e143bb56c861",
+   "evidence_hash": "a78f35ab9e5a4b0797e884fdd87561828af2773daad196e64b18e9da06567fe3",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "xAI",
+     "count": 20
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "product:Grok"
   },
   {
    "entity": "",
@@ -962,6 +1015,102 @@
    ],
    "publisher_topic": "",
    "entity_basis": "headline"
+  },
+  {
+   "entity": "Nvidia",
+   "headline": "Jensen Huang reinstated as Nvidia CEO, board chair",
+   "date": "Mon, 23 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "Y",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "arstechnica.com",
+     "url": "https://arstechnica.com/ai/2026/11/jensen-huang-reinstated-as-nvidia-ceo-board-chair/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 2,
+    "total": 2
+   },
+   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+   "content_hash": "63834b2392c7152ed8c4e38ca2f184f48d69d8970ab480ee65cc67393b2dfb5c",
+   "evidence_hash": "a9a5a048d0acd8f5d0b3896b0cea16888ba1e8604347f5ebb35804437caeb524",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 27
+    },
+    {
+     "name": "OpenAI",
+     "count": 6
+    },
+    {
+     "name": "xAI",
+     "count": 2
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "",
+   "headline": "Review: The Asus ProArt P16 offers a glimpse of a future powered by local AI",
+   "date": "Mon, 23 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "partial",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "arstechnica.com",
+     "url": "https://arstechnica.com/reviews/2026/11/review-the-asus-proart-p16-offers-a-glimpse-of-a-future-powered-by-local-ai/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 34,
+    "total": 34
+   },
+   "label_evidence": "model read all 34 figure-sentence(s); 1 of 34 figure-sentence(s) matched a base cue",
+   "content_hash": "d1d3986f19cc82484850138b638fd0d5bf414742a73429b8843455339106c424",
+   "evidence_hash": "d0c7346af7bd32920c2085397b21bfe9c9a3ef510e74835faa12e691dfbff8ef",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 14
+    },
+    {
+     "name": "Google",
+     "count": 4
+    },
+    {
+     "name": "Microsoft",
+     "count": 1
+    },
+    {
+     "name": "Apple",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
   },
   {
    "entity": "Google",
@@ -1143,120 +1292,36 @@
    "entity_basis": "headline"
   },
   {
-   "entity": "",
-   "headline": "Will Wright's next simulation will use AI to mine content from your memories",
-   "date": "Wed, 18 Nov 2026",
+   "entity": "Google DeepMind",
+   "headline": "Finding faster quantum algorithms with agents and formal verification",
+   "date": "Mon, 23 Nov 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "?",
+   "denominator_stated": "n/a",
    "reviewed": false,
    "sources": [
     {
-     "name": "arstechnica.com",
-     "url": "https://arstechnica.com/gaming/2026/11/will-wrights-next-simulation-will-use-ai-to-mine-content-from-your-memories/",
-     "source_type": "trade-press",
-     "source_tier": 3
+     "name": "deepmind.google",
+     "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+     "source_type": "vendor-own",
+     "source_tier": 5
     }
    ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
+   "rating": "trusted",
+   "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
-    "total": 1
+    "total": 0
    },
+   "label_evidence": "no figure in 104 chars of article text",
+   "content_hash": "54fb7644495930cef114742054744c2f96fcecbca5b993bff547215011f995fb",
+   "evidence_hash": "e74f482d3be4f4df266452a6de776b1d7594cabc8ba1a960c04f32c0a61eec58",
    "label_schema_version": 2,
-   "content_hash": "735ad2196d19ee0f2f05eed8aabb0a6a83af3375c7931d87e5035a94177a1dc7",
-   "evidence_hash": "07c476c96f876cdda034acbfe5067985c2ef62451a85d3d6a67cfeb461878b5b",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Microsoft",
-   "headline": "Copilot is \"the new OS for work,\" and now Office runs inside of it",
-   "date": "Wed, 18 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "arstechnica.com",
-     "url": "https://arstechnica.com/gadgets/2026/11/microsoft-calls-copilot-the-new-os-for-work-at-ignite-keynote/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
    "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 3,
-    "total": 3
-   },
-   "label_schema_version": 2,
-   "content_hash": "6f9fd6b124a2da89fcf2212b9e223e5376bd16fd502069f9b93a00f6edf2c093",
-   "evidence_hash": "a5bb9e01959d622b027adb12a4456daa3810b73481c019bd9cc069aaebc4f917",
    "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Microsoft",
-     "count": 28
-    }
-   ],
+   "mentions": [],
    "publisher_topic": "",
-   "entity_basis": "product:Copilot"
-  },
-  {
-   "entity": "Nvidia",
-   "headline": "“Trump was in bed with Jensen”: Critics balk at Huang’s wish to return to Nvidia",
-   "date": "Tue, 17 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "arstechnica.com",
-     "url": "https://arstechnica.com/tech-policy/2026/11/trump-was-in-bed-with-jensen-critics-balk-at-huangs-wish-to-return-to-nvidia/",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 6
-   },
-   "label_schema_version": 2,
-   "content_hash": "41eb234722eb256a087ccc4acc4990a203866025b940a04be5275b6b117e0f6d",
-   "evidence_hash": "214ab06d51b2224fbc19f1834a6c81cee9e4b162dc00c5016171af23e2e82500",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Nvidia",
-     "count": 68
-    },
-    {
-     "name": "Google",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "",
-   "entity_basis": "headline"
+   "entity_basis": "site"
   },
   {
    "entity": "Google DeepMind",
@@ -1549,44 +1614,6 @@
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "product:Gemini Robotics"
-  },
-  {
-   "entity": "Google DeepMind",
-   "headline": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
-   "date": "Thu, 05 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "partial",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 12 figure-sentence(s); 2 of 12 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 12,
-    "total": 12
-   },
-   "label_schema_version": 2,
-   "content_hash": "e5bf6789273a8a3a5d3528505e93e68b840de59cfc5868315cce8c68389998b2",
-   "evidence_hash": "d5f48f8733a95fef97d745eee5b527ab7d1e49a22b1da330aadeecfc14a28ee2",
-   "label_source": "machine",
-   "rating": "trusted",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "None",
-   "entity_basis": "product:Gemini"
   },
   {
    "entity": "",
@@ -1937,6 +1964,43 @@
    "entity_basis": "unresolved"
   },
   {
+   "entity": "Nvidia",
+   "headline": "How Nvidia’s Scandal Will Reverberate Across Washington",
+   "date": "Fri, 13 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "n/a",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "cset.georgetown.edu",
+     "url": "https://cset.georgetown.edu/article/how-nvidias-scandal-will-reverberate-across-washington/",
+     "source_type": "independent",
+     "source_tier": 2
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "rule",
+   "evidence_coverage": {
+    "seen": 0,
+    "total": 0
+   },
+   "label_evidence": "no figure in 1045 chars of article text",
+   "content_hash": "71b0f3b06ff73dcc274aa0693f6e84435c6fc4e2c01c7f29fb5d659f472afdc6",
+   "evidence_hash": "f42169d02077674aa37206f62e2dbcf76b0512c1123831de3372a30428a8bda6",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 13
+    }
+   ],
+   "publisher_topic": "Investment",
+   "entity_basis": "headline"
+  },
+  {
    "entity": "",
    "headline": "AI Kill Switches: What Policymakers Should Know",
    "date": "Thu, 12 Nov 2026",
@@ -2002,75 +2066,6 @@
      "count": 11
     }
    ],
-   "publisher_topic": "China",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Nvidia",
-   "headline": "The phantom life of Alice Huang, alleged Chinese spy who had affair with Nvidia CEO",
-   "date": "Tue, 10 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "cset.georgetown.edu",
-     "url": "https://cset.georgetown.edu/article/the-phantom-life-of-alice-huang-alleged-chinese-spy-who-had-affair-with-nvidia-ceo/",
-     "source_type": "independent",
-     "source_tier": 2
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 1354 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "50d04672f4d98005835a0e7b8bd00f45d2dd66c2b241c892c0831c9d3c0123c7",
-   "evidence_hash": "e277910dc2fb51adbf20809c03dea2b1932164fbac0e57e5066bf9af60b2c765",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Nvidia",
-     "count": 17
-    }
-   ],
-   "publisher_topic": "Export controls",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "",
-   "headline": "The U.S.–China AI Competition: Two Paths to Artificial General Intelligence",
-   "date": "Mon, 09 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "cset.georgetown.edu",
-     "url": "https://cset.georgetown.edu/article/the-u-s-china-ai-competition-two-paths-to-artificial-general-intelligence/",
-     "source_type": "independent",
-     "source_tier": 2
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 7624 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "bb598895b55084612e10ffbc86677c6bf3844398e9815aa54d91069889a2be89",
-   "evidence_hash": "af0d21b73493db8b4074a1c54f01b14c51ea9e3c308725fef50d72da31eea322",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [],
    "publisher_topic": "China",
    "entity_basis": "unresolved"
   },
@@ -2452,34 +2447,40 @@
   },
   {
    "entity": "",
-   "headline": "Teaching LLMs to Update Beliefs for Efficient Long-Horizon Interaction",
-   "date": "Sun, 26 Jul 2026",
+   "headline": "Many languages, one common neural code",
+   "date": "Mon, 23 Nov 2026",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "?",
+   "denominator_stated": "N",
    "reviewed": false,
    "sources": [
     {
-     "name": "bair.berkeley.edu",
-     "url": "http://bair.berkeley.edu/blog/2026/07/26/abbel/",
-     "source_type": "independent",
-     "source_tier": 2
+     "name": "news.mit.edu",
+     "url": "https://news.mit.edu/2026/many-languages-one-common-neural-code-1123",
+     "source_type": "press-office",
+     "source_tier": 5
     }
    ],
-   "auto_labelled": true,
-   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 24
-   },
-   "label_schema_version": 2,
-   "content_hash": "fed9abfcea74109137e6a5337372966defc3291549386bae08822788f7bda552",
-   "evidence_hash": "938d9554c34c84733715dad4099becc7332157abac4c11473d4ef3e7f0adbec6",
-   "label_source": "machine",
    "rating": "ok",
-   "mentions": [],
-   "publisher_topic": "Long Horizon",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 4,
+    "total": 4
+   },
+   "label_evidence": "model read all 4 figure-sentence(s); 2 of 4 figure-sentence(s) matched a base cue",
+   "content_hash": "9319e90bd51ea5cbbcb0e9160b00f243c31b1ab4dd64fa4ca38914b142c8b0db",
+   "evidence_hash": "9c1a37155f6c5bbf4e4b8fa42f8edf2a2aabbcef5f77c468cb945668acc578cb",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Meta",
+     "count": 1
+    }
+   ],
+   "publisher_topic": "Evelina Fedorenko",
    "entity_basis": "unresolved"
   },
   {
@@ -2498,19 +2499,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 1,
     "total": 1
    },
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "1fa0e5f9c4cd1c6e4455c9572c852152712397fba8673628e5e9bf788db713fc",
    "evidence_hash": "d0d50c3a95a08056c6a79c587e8297d81f5fffdd37ce772aec6dc259796834c2",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Meta",
@@ -2799,52 +2800,6 @@
     }
    ],
    "publisher_topic": "Kevin Ren",
-   "entity_basis": "unresolved"
-  },
-  {
-   "entity": "",
-   "headline": "Putting a spotlight on AI, society, and humanity",
-   "date": "Tue, 17 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "news.mit.edu",
-     "url": "https://news.mit.edu/2026/putting-spotlight-ai-society-humanity-1117",
-     "source_type": "press-office",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 4,
-    "total": 4
-   },
-   "label_schema_version": 2,
-   "content_hash": "eb4be7f1de4828df8797106c58906b6c1870a6cfefa1e3aca02a1a17af1dc47a",
-   "evidence_hash": "c24d70eb552cb7785c642da3451b75892f037959f491e1a31f55f73129100f6a",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Anthropic",
-     "count": 1
-    },
-    {
-     "name": "Meta",
-     "count": 1
-    },
-    {
-     "name": "Nvidia",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "MIT Human Insight Collaborative (MITHIC)",
    "entity_basis": "unresolved"
   },
   {
@@ -3479,19 +3434,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 17 figure-sentence(s); 1 of 17 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 17,
     "total": 17
    },
-   "label_evidence": "model read all 17 figure-sentence(s); 1 of 17 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "405946c82834b601d8929cf32ef912b1b130dbccfd38ae986dff7d348a7e2548",
    "evidence_hash": "696bafcd712af025abdd9f198942b69a61b192c427665e678f98aba7681ab488",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Perplexity",
@@ -3536,41 +3491,36 @@
   },
   {
    "entity": "OpenAI",
-   "headline": "Managing frontier AI risk: From training to deployment",
+   "headline": "Advancing chip design with OpenAI models",
    "date": "2026-11-18",
    "topic": "",
    "claim_type": "unclassified",
-   "denominator_stated": "N",
+   "denominator_stated": "partial",
    "reviewed": false,
    "sources": [
     {
      "name": "openai.com",
-     "url": "https://openai.com/index/managing-frontier-ai-risk/",
+     "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
      "source_type": "vendor-own",
      "source_tier": 5
     }
    ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 5 figure-sentence(s); 1 of 5 figure-sentence(s) matched a base cue",
+   "rating": "ok",
    "evidence_method": "local-model",
    "evidence_coverage": {
-    "seen": 5,
-    "total": 5
+    "seen": 18,
+    "total": 18
    },
+   "label_evidence": "model read all 18 figure-sentence(s); 2 of 18 figure-sentence(s) matched a base cue",
+   "content_hash": "eeaec05d2b9c393625cd2aa7b7430c8465fe38138439816560120f9fa8f385f7",
+   "evidence_hash": "0bf0785cb97ef5586659ebedf5ecdf48837f34cec35fe6b47ce23bb6dc68adb2",
    "label_schema_version": 2,
-   "content_hash": "27fd9fc1185bf728f5003c7feb25fb1de43584c951af7bef68c7ed79dd33846d",
-   "evidence_hash": "f66ccd843f5ae4c0aadf8aeba38576bbdcc53cf2ca554f50dff3f1df562eeede",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Hugging Face",
-     "count": 5
-    }
-   ],
+   "mentions": [],
    "publisher_topic": "",
-   "entity_basis": "site"
+   "entity_basis": "headline"
   }
  ],
  "rated_against": "sources.md"

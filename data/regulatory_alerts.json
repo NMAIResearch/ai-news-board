@@ -1,5 +1,49 @@
 [
   {
+    "id": "alert_1f623f0f7242e4fe1f8c1311",
+    "timestamp": "2026-11-24T06:00:59.027351+00:00",
+    "alert_schema_version": 2,
+    "source": "EU AI Office & Digital Strategy",
+    "jurisdiction": "European Union",
+    "title": "Digital Services Act study on financial scams on online platforms and ways to counter them",
+    "url": "https://digital-strategy.ec.europa.eu/en/library/digital-services-act-study-financial-scams-online-platforms-and-ways-counter-them",
+    "source_queue_priority": 1,
+    "substantive_priority": 4,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document describes a 2025 study commissioned by the European Commission to map online financial scams and mitigation strategies under the Digital Services Act. It explicitly states that the study does not evaluate compliance by providers and presents findings and countermeasures rather than imposing new binding obligations on AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Review the study's identified countermeasures (e.g., detection and removal measures) to inform internal risk assessments for AI-driven financial services, noting that no specific new regulatory duty is imposed by this text.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "29c184cd31a6238a2ed1aaea8083708297b1921f3c1b82feb877f1110adcda78",
+    "source_text_sha256": "6e7bd0e522c9869572bbd97b201254ee6a74cb5956678c050d15c4925d212046",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "extracted text",
+      "selection_status": "selected",
+      "selector": "full-text",
+      "text_chars": 2953,
+      "ranges": [
+        [
+          0,
+          2953
+        ]
+      ],
+      "passages_total": 1,
+      "passages_read": 1,
+      "passages_left": 0,
+      "selected_text_sha256": "6e7bd0e522c9869572bbd97b201254ee6a74cb5956678c050d15c4925d212046"
+    },
+    "source_capture_url": "https://digital-strategy.ec.europa.eu/en/library/digital-services-act-study-financial-scams-online-platforms-and-ways-counter-them",
+    "document_status": "other",
+    "ai_relevance": "relevant",
+    "evidence_quote": "The study was carried out by Open Evidence and Spark Legal and Policy Consulting. It does not evaluate compliance by providers of VLOPs and VLOSEs.",
+    "assessment_error": null
+  },
+  {
     "id": "alert_58e0af7c42860beeb74e6d3c",
     "timestamp": "2026-11-23T06:05:50.470255+00:00",
     "alert_schema_version": 2,

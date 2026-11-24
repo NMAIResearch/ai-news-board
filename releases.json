@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23 06:21 UTC",
+ "generated": "2026-11-24 06:21 UTC",
  "window_days": 60,
  "counts": {
   "total": 85,
@@ -80,6 +80,18 @@
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
+   "lab": "Ai2",
+   "model": "RoboTracker-Warp",
+   "id": "allenai/RoboTracker-Warp",
+   "date": "2026-11-18",
+   "url": "https://huggingface.co/allenai/RoboTracker-Warp",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "allenai/RoboTracker-Warp",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
    "lab": "Microsoft",
    "model": "Aion-1.0-Instruct-2.3B-ONNX-WebGPU",
    "id": "microsoft/Aion-1.0-Instruct-2.3B-ONNX-WebGPU",
@@ -150,6 +162,30 @@
    "evidence_note": "served over an API only; no artefact to inspect",
    "hf_id": "",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Ai2",
+   "model": "RoboTracker",
+   "id": "allenai/RoboTracker",
+   "date": "2026-11-17",
+   "url": "https://huggingface.co/allenai/RoboTracker",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "allenai/RoboTracker",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
+  },
+  {
+   "lab": "Nvidia",
+   "model": "MiMo-V2.6-Flash-RL-NVFP4",
+   "id": "nvidia/MiMo-V2.6-Flash-RL-NVFP4",
+   "date": "2026-11-17",
+   "url": "https://huggingface.co/nvidia/MiMo-V2.6-Flash-RL-NVFP4",
+   "context_length": null,
+   "evidence": "open-weights",
+   "evidence_note": "weights on Hugging Face; downloadable and hashable",
+   "hf_id": "nvidia/MiMo-V2.6-Flash-RL-NVFP4",
+   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "Tencent",
@@ -332,18 +368,6 @@
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
   },
   {
-   "lab": "Nvidia",
-   "model": "Nemotron-Labs-Sigma-distill-spec-3B",
-   "id": "nvidia/Nemotron-Labs-Sigma-distill-spec-3B",
-   "date": "2026-11-09",
-   "url": "https://huggingface.co/nvidia/Nemotron-Labs-Sigma-distill-spec-3B",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "nvidia/Nemotron-Labs-Sigma-distill-spec-3B",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
    "lab": "Liquid",
    "model": "LiquidAI: LFM3-1.7B",
    "id": "liquid/lfm-3-1.7b",
@@ -389,18 +413,6 @@
    "evidence": "open-weights",
    "evidence_note": "weights on Hugging Face; downloadable and hashable",
    "hf_id": "allenai/Molmo2-4B-tb",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
-  },
-  {
-   "lab": "Ai2",
-   "model": "maniflow-tb",
-   "id": "allenai/maniflow-tb",
-   "date": "2026-11-05",
-   "url": "https://huggingface.co/allenai/maniflow-tb",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "allenai/maniflow-tb",
    "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
@@ -534,18 +546,6 @@
    "evidence_note": "weights published at huggingface.co/moonshotai/Kimi-K3.1-Pro; downloadable and hashable",
    "hf_id": "moonshotai/Kimi-K3.1-Pro",
    "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Ai2",
-   "model": "OlmoEarth-v1_2-FT-LFMC-Base",
-   "id": "allenai/OlmoEarth-v1_2-FT-LFMC-Base",
-   "date": "2026-10-23",
-   "url": "https://huggingface.co/allenai/OlmoEarth-v1_2-FT-LFMC-Base",
-   "context_length": null,
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "allenai/OlmoEarth-v1_2-FT-LFMC-Base",
-   "source": "Hugging Face API; date is repo creation, not necessarily release"
   },
   {
    "lab": "IBM",
@@ -949,7 +949,7 @@
    "id": "inclusionai/ling-3.1-flash",
    "date": "2026-10-02",
    "url": "https://openrouter.ai/inclusionai/ling-3.1-flash",
-   "context_length": 1000000,
+   "context_length": 1048576,
    "evidence": "open-weights",
    "evidence_note": "weights published at huggingface.co/inclusionAI/Ling-3.1-flash; downloadable and hashable",
    "hf_id": "inclusionAI/Ling-3.1-flash",
@@ -1030,70 +1030,14 @@
  ],
  "av_window_days": 180,
  "av_counts": {
-  "total": 10,
+  "total": 6,
   "audio": 1,
-  "video": 9,
-  "folded": 17,
-  "labs": 4,
+  "video": 5,
+  "folded": 3,
+  "labs": 3,
   "orgs_watched": 11
  },
  "av_releases": [
-  {
-   "kind": "video",
-   "kind_from": "name",
-   "lab": "Tencent",
-   "model": "WeMM-Video-2B",
-   "id": "tencent/WeMM-Video-2B",
-   "date": "2026-11-17",
-   "url": "https://huggingface.co/tencent/WeMM-Video-2B",
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "tencent/WeMM-Video-2B",
-   "source": "Hugging Face API, the tencent organisation list capped at 20 repositories; date is repo creation, not necessarily release",
-   "folded": 4
-  },
-  {
-   "kind": "video",
-   "kind_from": "name",
-   "lab": "Tencent",
-   "model": "WeMM-Video-4B",
-   "id": "tencent/WeMM-Video-4B",
-   "date": "2026-11-17",
-   "url": "https://huggingface.co/tencent/WeMM-Video-4B",
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "tencent/WeMM-Video-4B",
-   "source": "Hugging Face API, the tencent organisation list capped at 20 repositories; date is repo creation, not necessarily release",
-   "folded": 4
-  },
-  {
-   "kind": "video",
-   "kind_from": "name",
-   "lab": "Tencent",
-   "model": "WeMM-Video-9B",
-   "id": "tencent/WeMM-Video-9B",
-   "date": "2026-11-17",
-   "url": "https://huggingface.co/tencent/WeMM-Video-9B",
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "tencent/WeMM-Video-9B",
-   "source": "Hugging Face API, the tencent organisation list capped at 20 repositories; date is repo creation, not necessarily release",
-   "folded": 4
-  },
-  {
-   "kind": "video",
-   "kind_from": "name",
-   "lab": "Tencent",
-   "model": "WeMM-Video-35BA3B-AWQ",
-   "id": "tencent/WeMM-Video-35BA3B-AWQ",
-   "date": "2026-11-17",
-   "url": "https://huggingface.co/tencent/WeMM-Video-35BA3B-AWQ",
-   "evidence": "open-weights",
-   "evidence_note": "weights on Hugging Face; downloadable and hashable",
-   "hf_id": "tencent/WeMM-Video-35BA3B-AWQ",
-   "source": "Hugging Face API, the tencent organisation list capped at 20 repositories; date is repo creation, not necessarily release",
-   "folded": 2
-  },
   {
    "kind": "video",
    "kind_from": "pipeline",
