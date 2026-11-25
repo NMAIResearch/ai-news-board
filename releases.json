@@ -1,12 +1,48 @@
 {
- "generated": "2026-11-24 06:21 UTC",
+ "generated": "2026-11-25 06:21 UTC",
  "window_days": 60,
  "counts": {
-  "total": 85,
+  "total": 86,
   "closed": 34,
-  "open_weights": 51
+  "open_weights": 52
  },
  "releases": [
+  {
+   "lab": "Upstage",
+   "model": "Upstage: Solar Mini 4.5 (Preview)",
+   "id": "upstage/solar-mini-4-5",
+   "date": "2026-11-24",
+   "url": "https://openrouter.ai/upstage/solar-mini-4-5",
+   "context_length": 524288,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Upstage",
+   "model": "Upstage: Solar Pro 4 Contributor",
+   "id": "upstage/solar-pro-4-contributor",
+   "date": "2026-11-24",
+   "url": "https://openrouter.ai/upstage/solar-pro-4-contributor",
+   "context_length": 524288,
+   "evidence": "closed",
+   "evidence_note": "served over an API only; no artefact to inspect",
+   "hf_id": "",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
+  {
+   "lab": "Xiaomi",
+   "model": "Xiaomi: MiMo-V2.6-Flash-MOPD",
+   "id": "xiaomi/mimo-v2.6-flash-mopd",
+   "date": "2026-11-23",
+   "url": "https://openrouter.ai/xiaomi/mimo-v2.6-flash-mopd",
+   "context_length": 1048576,
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-MOPD; downloadable and hashable",
+   "hf_id": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
   {
    "lab": "Thinking Machines",
    "model": "Thinking Machines: Inkling 2 Mini",
@@ -997,30 +1033,6 @@
    "id": "anthropic/claude-sonnet-5.5",
    "date": "2026-09-28",
    "url": "https://openrouter.ai/anthropic/claude-sonnet-5.5",
-   "context_length": 1000000,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Perceptron",
-   "model": "Perceptron: Perceptron Mk1.5",
-   "id": "perceptron/perceptron-mk1.5",
-   "date": "2026-09-25",
-   "url": "https://openrouter.ai/perceptron/perceptron-mk1.5",
-   "context_length": 36864,
-   "evidence": "closed",
-   "evidence_note": "served over an API only; no artefact to inspect",
-   "hf_id": "",
-   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
-  },
-  {
-   "lab": "Typesafe",
-   "model": "TypeSafe: Jev Router",
-   "id": "typesafe/jev-router",
-   "date": "2026-09-25",
-   "url": "https://openrouter.ai/typesafe/jev-router",
    "context_length": 1000000,
    "evidence": "closed",
    "evidence_note": "served over an API only; no artefact to inspect",
