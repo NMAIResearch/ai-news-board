@@ -1,5 +1,217 @@
 [
   {
+    "id": "alert_e7909fc032bb417e99e47cb8",
+    "timestamp": "2026-11-26T06:01:21.710346+00:00",
+    "alert_schema_version": 2,
+    "source": "EU AI Office & Digital Strategy",
+    "jurisdiction": "European Union",
+    "title": "European Digital Infrastructure Consortium launches today to strengthen digital sovereignty in education",
+    "url": "https://digital-strategy.ec.europa.eu/en/news/european-digital-infrastructure-consortium-launches-today-strengthen-digital-sovereignty-education",
+    "source_queue_priority": 1,
+    "substantive_priority": 4,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document announces the launch of the European Digital Infrastructure Consortium on Education (EDU-EDIC) to develop shared digital infrastructure. It mentions AI for education as a strategic area for expertise pooling but does not impose specific binding obligations on AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Monitor subsequent regulatory guidance or consortium outputs for specific AI compliance requirements.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "95e23590714e6abadd6ddac2f3949f2650a3189c845c315a85ec65deef834f5b",
+    "source_text_sha256": "016b60866852763d48db477b30ff2f9005551b708bac7d22e28bcd8c2bb69891",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "extracted text",
+      "selection_status": "selected",
+      "selector": "full-text",
+      "text_chars": 2907,
+      "ranges": [
+        [
+          0,
+          2907
+        ]
+      ],
+      "passages_total": 1,
+      "passages_read": 1,
+      "passages_left": 0,
+      "selected_text_sha256": "016b60866852763d48db477b30ff2f9005551b708bac7d22e28bcd8c2bb69891"
+    },
+    "source_capture_url": "https://digital-strategy.ec.europa.eu/en/news/european-digital-infrastructure-consortium-launches-today-strengthen-digital-sovereignty-education",
+    "document_status": "other",
+    "ai_relevance": "relevant",
+    "evidence_quote": "We will work together with Member States to pool expertise in strategic areas such as cloud infrastructure, AI for education, secure data exchange across educational institutions, and Europe's education technology (EdTech) sector.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_dd2490d8a18556b080a2f4ce",
+    "timestamp": "2026-11-26T06:01:11.593343+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (Executive Orders)",
+    "jurisdiction": "United States",
+    "title": "National Adoption Month, 2026",
+    "url": "https://www.federalregister.gov/documents/2026/11/25/2026-24113/national-adoption-month-2026",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a US Presidential Proclamation designating November 2026 as National Adoption Month. It contains no binding regulatory obligations, statutory duties, or specific requirements applicable to AI operators or UK regulatory compliance.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "No action required; document is outside the scope of AI regulatory monitoring.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "547142662545881de8db6c7f18f09f860cd87770a35b43aca92f9aa6407e8741",
+    "source_text_sha256": "a8da645122c3686f41df7085aab29f45b54a499030a962ca92e4e01324c59724",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "extracted text",
+      "selection_status": "selected",
+      "selector": "full-text",
+      "text_chars": 3991,
+      "ranges": [
+        [
+          0,
+          3991
+        ]
+      ],
+      "passages_total": 1,
+      "passages_read": 1,
+      "passages_left": 0,
+      "selected_text_sha256": "a8da645122c3686f41df7085aab29f45b54a499030a962ca92e4e01324c59724"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/25/2026-24113.html",
+    "document_status": "other",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "NOW, THEREFORE, I, DONALD J. TRUMP, President of the United States of America, by virtue of the authority vested in me by the Constitution and the laws of the United States, do hereby proclaim November 2026 as National Adoption Month.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_f190d50d7ef7072242b970ac",
+    "timestamp": "2026-11-26T06:01:00.896628+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "Medicare Program; Contract Year 2028 Policy and Technical Changes to the Medicare Advantage Program, Medicare Prescription Drug Benefit Program, and Programs of All-Inclusive Care for the Elderly",
+    "url": "https://www.federalregister.gov/documents/2026/11/25/2026-23960/medicare-program-contract-year-2028-policy-and-technical-changes-to-the-medicare-advantage-program",
+    "source_queue_priority": 1,
+    "substantive_priority": 3,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document outlines proposed policy changes for the Medicare Advantage program, including the shadow testing of a CMMI Inferred Risk Adjustment Model using Super Intelligence (SI) and Machine Learning (ML) methodologies. However, the text explicitly states that the shadow test is implemented solely by CMS and places no additional obligations on MA organizations. As this is a proposed rule with no current binding duties for AI operators, no duty shift is identified.",
+    "denominator_disclosed": "partial",
+    "actionable_trigger": "Monitor the finalization of the CMMI Inferred Risk Adjustment Model technical specifications scheduled for release in 2027 to assess potential future compliance requirements for risk adjustment data.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "13f0fbbdaf90596fdd6842ff88e5525fc06e90ea65b277beae45287caa238f1d",
+    "source_text_sha256": "a27826071ed6a2c0dd92fbb225e551969cee4e383fead01c8e772c374e9a0c3b",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 1790308,
+      "ranges": [
+        [
+          0,
+          769
+        ],
+        [
+          235419,
+          236627
+        ],
+        [
+          861745,
+          862953
+        ],
+        [
+          944231,
+          945600
+        ],
+        [
+          965279,
+          966506
+        ],
+        [
+          985239,
+          986840
+        ],
+        [
+          1009244,
+          1010462
+        ],
+        [
+          1011177,
+          1012299
+        ],
+        [
+          1059968,
+          1061229
+        ],
+        [
+          1733239,
+          1734510
+        ]
+      ],
+      "passages_total": 41,
+      "passages_read": 10,
+      "passages_left": 31,
+      "selected_text_sha256": "6684d14415961a14a8a94a3a2c0f760a0e55794322f40aa190cb5ca1c476b7ca"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/25/2026-23960.html",
+    "document_status": "proposed",
+    "ai_relevance": "relevant",
+    "evidence_quote": "The shadow test for our new risk adjustment model would be solely implemented by CMS, there are no additional obligations placed on ( printed page 76471) MA organizations to implement this shadow test.",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_d896caf25a4a5cf6b6b3a74b",
+    "timestamp": "2026-11-26T06:00:42.601056+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (Executive Orders)",
+    "jurisdiction": "United States",
+    "title": "Protecting the Executive's Privileges and Enhancing Efficiencies in Federal Contracting",
+    "url": "https://www.federalregister.gov/documents/2026/11/25/2026-24114/protecting-the-executives-privileges-and-enhancing-efficiencies-in-federal-contracting",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a US Executive Order concerning federal contracting and executive privilege. It imposes obligations on US federal contractors to coordinate with the White House regarding congressional requests for information. It contains no provisions, references, or duties applicable to UK AI operators or AI-specific regulatory compliance.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "No action required; document is outside the scope of UK AI operator monitoring.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "f37b2f1bd6c3d9f5ef900fb5cbf914f96bdd390d098b926591dd7a43b13fe0e5",
+    "source_text_sha256": "54d163203def4a52e984186eb8a829195d41faf9de419f7858cf5a417268a72e",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "extracted text",
+      "selection_status": "selected",
+      "selector": "full-text",
+      "text_chars": 7299,
+      "ranges": [
+        [
+          0,
+          7299
+        ]
+      ],
+      "passages_total": 1,
+      "passages_read": 1,
+      "passages_left": 0,
+      "selected_text_sha256": "54d163203def4a52e984186eb8a829195d41faf9de419f7858cf5a417268a72e"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/25/2026-24114.html",
+    "document_status": "binding",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "all Federal contractors must immediately: (a) notify the White House and the contracting agencies of any pending or future congressional request respecting the contractors' communications or work with the executive branch",
+    "assessment_error": null
+  },
+  {
     "id": "alert_1f623f0f7242e4fe1f8c1311",
     "timestamp": "2026-11-24T06:00:59.027351+00:00",
     "alert_schema_version": 2,
