@@ -1,5 +1,105 @@
 [
   {
+    "id": "alert_a792c265d6e290d06b44b6b9",
+    "timestamp": "2026-11-27T06:00:56.959629+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (AI Rules & Notices)",
+    "jurisdiction": "United States",
+    "title": "American SI Exports Program; On-Demand Consortia for Specific Foreign Opportunities",
+    "url": "https://www.federalregister.gov/documents/2026/11/27/2026-24107/american-si-exports-program-on-demand-consortia-for-specific-foreign-opportunities",
+    "source_queue_priority": 1,
+    "substantive_priority": 4,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document outlines a proposed framework for on-demand consortia to pursue foreign opportunities, requiring disclosures regarding national interest and export control compliance. It is a procedural notice for a support program rather than a binding regulatory duty imposed directly on AI operators.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "Monitor for final rulemaking that may impose specific compliance or disclosure obligations on entities participating in these consortia.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "6e2a9e68d8eadd4788f5d6cb480ea8cc4afa796d42fb54a41c45bb4d64292a96",
+    "source_text_sha256": "340f0355e248c7fcdaa2b1ade8a102932daabd83f907767ef69819a6cee61889",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "passages only",
+      "selection_status": "selected",
+      "selector": "ai-keywords-v2",
+      "text_chars": 17987,
+      "ranges": [
+        [
+          0,
+          655
+        ],
+        [
+          9219,
+          10583
+        ],
+        [
+          10583,
+          11543
+        ],
+        [
+          17164,
+          17987
+        ]
+      ],
+      "passages_total": 4,
+      "passages_read": 4,
+      "passages_left": 0,
+      "selected_text_sha256": "13191b5010a0d8420901be0f0193b01c8bd2debb39903e0206aba6ad643c10bd"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/27/2026-24107.html",
+    "document_status": "proposed",
+    "ai_relevance": "relevant",
+    "evidence_quote": "A description of how the proposal advances the policy objectives of Executive Order 14320 .",
+    "assessment_error": null
+  },
+  {
+    "id": "alert_029a56653351a481d6aaa0ad",
+    "timestamp": "2026-11-27T06:00:44.422153+00:00",
+    "alert_schema_version": 2,
+    "source": "US Federal Register (Executive Orders)",
+    "jurisdiction": "United States",
+    "title": "Expeditious Enforcement of Capital Sentences and the Pursuit of Justice for Victims of Heinous Crimes",
+    "url": "https://www.federalregister.gov/documents/2026/11/27/2026-24236/expeditious-enforcement-of-capital-sentences-and-the-pursuit-of-justice-for-victims-of-heinous",
+    "source_queue_priority": 1,
+    "substantive_priority": 5,
+    "is_operator_duty_shift": false,
+    "duty_type": "none",
+    "statutory_reference": null,
+    "summary": "The document is a US Presidential Memorandum directing the Attorney General to expedite the enforcement of federal capital sentences and pursue the death penalty for specific heinous crimes. It contains no provisions, obligations, or references relevant to AI operators, AI safety, or AI regulatory compliance.",
+    "denominator_disclosed": "n/a",
+    "actionable_trigger": "No action required; document is outside the scope of AI regulatory monitoring.",
+    "evaluation_method": "local-model",
+    "model": "qwen3.8:latest",
+    "reviewed": false,
+    "source_sha256": "0250bb209e12eff99736f34971c39d6290f0060db6125da2f29f9b57a005943d",
+    "source_text_sha256": "d065e93f119bd7c0f3263af579030a05ba07b265586e3c0ab13c9dc50b485e57",
+    "assessment_version": 4,
+    "assessment_coverage": {
+      "scope": "extracted text",
+      "selection_status": "selected",
+      "selector": "full-text",
+      "text_chars": 2939,
+      "ranges": [
+        [
+          0,
+          2939
+        ]
+      ],
+      "passages_total": 1,
+      "passages_read": 1,
+      "passages_left": 0,
+      "selected_text_sha256": "d065e93f119bd7c0f3263af579030a05ba07b265586e3c0ab13c9dc50b485e57"
+    },
+    "source_capture_url": "https://www.federalregister.gov/documents/full_text/html/2026/11/27/2026-24236.html",
+    "document_status": "binding",
+    "ai_relevance": "not_relevant",
+    "evidence_quote": "The Attorney General shall take all lawful and appropriate measures to ensure that federally imposed sentences of death are carried out as expeditiously as possible.",
+    "assessment_error": null
+  },
+  {
     "id": "alert_e7909fc032bb417e99e47cb8",
     "timestamp": "2026-11-26T06:01:21.710346+00:00",
     "alert_schema_version": 2,

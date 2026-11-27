@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-26 06:20 UTC",
+ "fetched": "2026-11-27 06:20 UTC",
  "items": [
   {
    "entity": "",
@@ -17,19 +17,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 2,
     "total": 2
    },
-   "label_evidence": "model read all 2 figure-sentence(s); 0 of 2 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "bda909e4ef11bedad78be87da668e56887232c08aa25cf8361c4f758c7e00c44",
    "evidence_hash": "f44a4df8f0182be285caab47b7a67b2b54540b4ce8dc05f3f90a5189b7a463d3",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Anthropic",
@@ -94,9 +94,9 @@
    "entity_basis": "headline"
   },
   {
-   "entity": "",
-   "headline": "Tidal to ban and remove millions of AI-generated tracks as AI slop inundates music streaming",
-   "date": "Tue, 24 Nov 2026",
+   "entity": "Nvidia",
+   "headline": "Nvidia hits pause on chip shipments to Southeast Asia",
+   "date": "Thu, 26 Nov 2026",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "Y",
@@ -104,40 +104,90 @@
    "sources": [
     {
      "name": "techcrunch.com",
-     "url": "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/",
+     "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
      "source_type": "trade-press",
      "source_tier": 3
     }
    ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 7 figure-sentence(s); 0 of 7 figure-sentence(s) matched a base cue",
+   "rating": "ok",
    "evidence_method": "local-model",
    "evidence_coverage": {
-    "seen": 7,
-    "total": 7
+    "seen": 1,
+    "total": 1
    },
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "content_hash": "e2472ae2cb7511d844291e5c9b125fc2a6bf7a85c886cb16835bae086c3e3031",
+   "evidence_hash": "f5db9b3d1b5010b2883075f7d40d2d63df47fa127cee3c24ba43adaf4bb85bd9",
    "label_schema_version": 2,
-   "content_hash": "3c0fb69e12e68b609d9334e6d332692413235d3e6aced1d4e856fb63524e9352",
-   "evidence_hash": "2fe330396d23810e5898df6d76dba7c682c0602ae99d3d6a0e93252aa95f27ff",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
-   "rating": "ok",
    "mentions": [
+    {
+     "name": "Nvidia",
+     "count": 8
+    },
     {
      "name": "Anthropic",
      "count": 2
+    }
+   ],
+   "publisher_topic": "",
+   "entity_basis": "headline"
+  },
+  {
+   "entity": "Anthropic",
+   "headline": "Grand Theft Auto VI proves why efficiency isn’t a virtue",
+   "date": "Thu, 26 Nov 2026",
+   "topic": "",
+   "claim_type": "unclassified",
+   "denominator_stated": "N",
+   "reviewed": false,
+   "sources": [
+    {
+     "name": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/",
+     "source_type": "trade-press",
+     "source_tier": 3
+    }
+   ],
+   "rating": "ok",
+   "evidence_method": "local-model",
+   "evidence_coverage": {
+    "seen": 6,
+    "total": 6
+   },
+   "label_evidence": "model read all 6 figure-sentence(s); 1 of 6 figure-sentence(s) matched a base cue",
+   "content_hash": "e3461532fefcb45fe79d9673f2d92f24bd0c98256320cbb11f85d0276e51a744",
+   "evidence_hash": "e9be441c96e44448e1b411c34bd61da3a8f8ce02de0774e64ef0161b5fa83f77",
+   "label_schema_version": 2,
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_source": "machine",
+   "mentions": [
+    {
+     "name": "Anthropic",
+     "count": 7
     },
     {
-     "name": "Microsoft",
+     "name": "Meta",
+     "count": 3
+    },
+    {
+     "name": "xAI",
      "count": 2
+    },
+    {
+     "name": "Google",
+     "count": 1
     },
     {
      "name": "Apple",
      "count": 1
     }
    ],
-   "publisher_topic": "ai music",
-   "entity_basis": "unresolved"
+   "publisher_topic": "Anthropic",
+   "entity_basis": "tag"
   },
   {
    "entity": "Nvidia",
@@ -155,19 +205,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 3,
     "total": 3
    },
-   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "8c6f8ddd4e37347d61c734bea370ed9d1fe2207fd2f03d08a9fa1dcb1e3eaa94",
    "evidence_hash": "794d4061c68bf4191c0b66a5e545906967845395759334a569f7e1aabab6980c",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Nvidia",
@@ -197,18 +247,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 2848 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 2848 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "134c158f0d922d46d9622dd5c9a1ca136bae4a7759cecc5511c7737af9129813",
    "evidence_hash": "388f47ffb25f7490e74744eed96697ccd2e67b37278fea58013611b517b76d7d",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -242,19 +292,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 1,
     "total": 1
    },
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "a58ca6d460f230a699537cff000b0cdd312320e7d72551e7ecd67f34b4d9f1fb",
    "evidence_hash": "8608f49b96f24f2386b183ad65ca3177ed611d3d1b7db4df1b06b9fd3751a0d9",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Nvidia",
@@ -288,19 +338,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 1,
     "total": 1
    },
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "981b53579fc4b2f978b7d499e7fc3cb835d1328fe63672f01723b7ebdbd5a0df",
    "evidence_hash": "9543ec46cc5c987ed8e6641e8ca54ef7e74033b1af88132c0408f769ca522913",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Anthropic",
@@ -338,19 +388,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 4 figure-sentence(s); 1 of 4 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 4,
     "total": 4
    },
-   "label_evidence": "model read all 4 figure-sentence(s); 1 of 4 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "5180a1ff0b68cbb26e92b7ec3126c811e629b66d6bbdbfb678464b9fc9c0a43d",
    "evidence_hash": "1b3e509ca645dac8b0df69cf9cf1c33c92642318abad75034ee1d839e4df22b9",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Anthropic",
@@ -369,49 +419,42 @@
    "entity_basis": "unresolved"
   },
   {
-   "entity": "Nvidia",
-   "headline": "AI data centers are becoming harder to build, and neoclouds are feeling it",
-   "date": "Wed, 25 Nov 2026",
+   "entity": "",
+   "headline": "42 state AGs are trying to stop Character.AI from selling users’ chats",
+   "date": "2026-11-26T04:54",
    "topic": "",
    "claim_type": "unclassified",
    "denominator_stated": "Y",
    "reviewed": false,
    "sources": [
     {
-     "name": "techcrunch.com",
-     "url": "https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it/",
+     "name": "theverge.com",
+     "url": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats",
      "source_type": "trade-press",
      "source_tier": 3
     }
    ],
    "rating": "ok",
-   "evidence_method": "rule",
+   "evidence_method": "local-model",
    "evidence_coverage": {
-    "seen": 1,
-    "total": 1
+    "seen": 4,
+    "total": 4
    },
-   "label_evidence": "all 1 figure-sentence(s) state a base",
-   "content_hash": "dc866ab375bbb38c23a210b5d761ff727ea34aacd9c1a12ddb6833724a4bd238",
-   "evidence_hash": "e2fdd202f6422d2bfea2b08a9517ed9cf4cf88cb365c7c4d1b51756d5ea2a5bf",
+   "label_evidence": "model read all 4 figure-sentence(s); 1 of 4 figure-sentence(s) matched a base cue",
+   "content_hash": "a2e0860fffa74c931593e5436e80d85d994e83a55c6c1ae8c4bb40c9b1e68d40",
+   "evidence_hash": "67b6e692b4276ce4059cb33d2bf50e584c3c3af4f2a3704ad14c70bf2027bbaf",
    "label_schema_version": 2,
    "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
    "mentions": [
     {
-     "name": "Apple",
-     "count": 3
-    },
-    {
-     "name": "Anthropic",
-     "count": 2
-    },
-    {
-     "name": "Nvidia",
-     "count": 2
+     "name": "Microsoft",
+     "count": 1
     }
    ],
-   "publisher_topic": "AI data center",
-   "entity_basis": "tag"
+   "publisher_topic": "",
+   "entity_basis": "unresolved"
   },
   {
    "entity": "Google",
@@ -429,18 +472,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 5258 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 5258 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "275f003231ee88fc4eb9814425224d8c85f5a1695ce08e1512d0b76ee8792d88",
    "evidence_hash": "1a8ad27675a31e19bf63df1acbed40e1d55adbb7fe39c6ba81fe96c8d5d64b41",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Google",
@@ -470,19 +513,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 3,
     "total": 3
    },
-   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "25e77e531fb86d41a898966a340dfe29464fcb7d47d8bdf37eb7289ceebdf296",
    "evidence_hash": "ccacb362ed16ab2b20898192093707a0bbd1a7ced667d4fb5840a2febf21758b",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "FCC",
@@ -520,19 +563,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 3,
     "total": 3
    },
-   "label_evidence": "model read all 3 figure-sentence(s); 0 of 3 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "91672ef14ea8e73a859c65d00d16d53aa2eff9270923bb3290561aa51eb41604",
    "evidence_hash": "11c4dba74607267f4b91cd0fe9778ff1c07b90a3f7e59370172000489602756d",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Microsoft",
@@ -566,18 +609,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 2739 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 2739 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "d2c1b0e9e7eae3b98392ce5a17962ab6e878fd1616fd4308053d49c1e21fd9b0",
    "evidence_hash": "96060acf0df28892ba61c7724abcbaaffd4438224515bde30ccaf1a6f39e8d87",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Amazon",
@@ -615,19 +658,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 4,
     "total": 4
    },
-   "label_evidence": "model read all 4 figure-sentence(s); 0 of 4 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "ca9c42c8a272c7221bc66f66c2325a1cb7c924b19d3c1cc81376a155dca10dad",
    "evidence_hash": "b9aed331c761079ea25b5461a2b5ba9991c8d5b31ba2d3bb56f5a0d199e09114",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Microsoft",
@@ -769,56 +812,6 @@
    ],
    "publisher_topic": "Tidal",
    "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Nvidia",
-   "headline": "Jensen Huang deepfakes are the hot new AI slop",
-   "date": "2026-11-24T11:18",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "theverge.com",
-     "url": "https://www.theverge.com/tech/1041222/jensen-huang-nvidia-scandal-deepfakes",
-     "source_type": "trade-press",
-     "source_tier": 3
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 6 figure-sentence(s); 0 of 6 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 6,
-    "total": 6
-   },
-   "label_schema_version": 2,
-   "content_hash": "38f7c97fc1700e830f6ddc88a8afe30829855916bb2bad35c5312f1a3379f628",
-   "evidence_hash": "08d0dab4db581466aa1c52baaf124fee93635106541d5e3f47844c2140375da5",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Nvidia",
-     "count": 46
-    },
-    {
-     "name": "Meta",
-     "count": 10
-    },
-    {
-     "name": "Google",
-     "count": 2
-    },
-    {
-     "name": "xAI",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "Nvidia",
-   "entity_basis": "headline"
   },
   {
    "entity": "",
@@ -987,18 +980,18 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 5105 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 5105 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "38ec5304b2f65b0964ce82eda591628034b3ed52a8c3212b32b0b8e8e28d72ad",
    "evidence_hash": "a6c57e973439ebe7f5c86291bb5c9b6d250f2a617bf0933cc3127ba9d9d32ff6",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Amazon",
@@ -1036,19 +1029,19 @@
      "source_tier": 3
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 18 figure-sentence(s); 2 of 18 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 18,
     "total": 18
    },
-   "label_evidence": "model read all 18 figure-sentence(s); 2 of 18 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "107d7b51d41113e485fc1c27982255e15f035e59e4e614042ec60fea8c53a25b",
    "evidence_hash": "c7f9ede18d03fb5df3bfc1cab5c1fecca9685175a3071af5a1e17a5748af1eff",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "OpenAI",
@@ -1190,330 +1183,6 @@
    ],
    "publisher_topic": "",
    "entity_basis": "headline"
-  },
-  {
-   "entity": "Google",
-   "headline": "From spectrum to structure: Identifying molecules with Mass Spec Skills for Google Antigravity",
-   "date": "Tue, 24 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "rating": "trusted",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_evidence": "no figure in 80 chars of article text",
-   "content_hash": "4691d7668e66cbfc7f2de97a9f6401da0173bc6b9e46d538aa15865d2ccac002",
-   "evidence_hash": "3e67de6cdc5c2744f65c0f3b492a6587b81146a42b4a867d4dd89039470139c9",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "label_source": "machine",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "headline"
-  },
-  {
-   "entity": "Google DeepMind",
-   "headline": "Finding faster quantum algorithms with agents and formal verification",
-   "date": "Mon, 23 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 104 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "54fb7644495930cef114742054744c2f96fcecbca5b993bff547215011f995fb",
-   "evidence_hash": "e74f482d3be4f4df266452a6de776b1d7594cabc8ba1a960c04f32c0a61eec58",
-   "label_source": "machine",
-   "rating": "trusted",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "site"
-  },
-  {
-   "entity": "Google DeepMind",
-   "headline": "Introducing Gemini 4 Neon",
-   "date": "Wed, 18 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 27
-   },
-   "label_schema_version": 2,
-   "content_hash": "6652777678bf9126f5c0003bfc37e86629ed0ae1dfbb6601cbe2f6c7d6f67c9f",
-   "evidence_hash": "15be8c087ebd85a8e2e6a135c99c9026dce11757021ac8541f0743396cca4150",
-   "label_source": "machine",
-   "rating": "trusted",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 2
-    },
-    {
-     "name": "SEC",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "None",
-   "entity_basis": "product:Gemini"
-  },
-  {
-   "entity": "Google DeepMind",
-   "headline": "Genie 4 is now available",
-   "date": "Wed, 18 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/genie-4-is-now-available/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review failed; denominator remains unassessed",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 19
-   },
-   "label_schema_version": 2,
-   "content_hash": "f3386ea14e6d304ef6cd7336700bcba61c6f5a0d6b0c2b599cce65d02389a46b",
-   "evidence_hash": "82facca7b5ba02654cb07fa3117e78dd96ec4cda2cea9ae485caf23c31deb798",
-   "label_source": "machine",
-   "rating": "trusted",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "None",
-   "entity_basis": "site"
-  },
-  {
-   "entity": "Google DeepMind",
-   "headline": "Introducing Gemini 4 Hydrogen",
-   "date": "Thu, 12 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 16 figure-sentence(s); 3 of 16 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 16,
-    "total": 16
-   },
-   "label_schema_version": 2,
-   "content_hash": "70c7bbdc5a4425e31de96d2647dd086f2c348ef305a0e958a22a9852c846b7eb",
-   "evidence_hash": "61e9b27bfb11fb38f9ad69f11ab813ea5fc9826620fe03052f08dba434c59fe2",
-   "label_source": "machine",
-   "rating": "trusted",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 2
-    }
-   ],
-   "publisher_topic": "None",
-   "entity_basis": "product:Gemini"
-  },
-  {
-   "entity": "Google DeepMind",
-   "headline": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
-   "date": "Wed, 11 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 36 figure-sentence(s); 2 of 36 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 36,
-    "total": 36
-   },
-   "label_schema_version": 2,
-   "content_hash": "9a1f3fb759381ff834468191cd7ceb727c3444bb2f81ead8415d26b1b579a757",
-   "evidence_hash": "a9e50122f1a4f97edd1ca4657d0208e4d35000def591284d35c337f9cc4343a4",
-   "label_source": "machine",
-   "rating": "trusted",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "site"
-  },
-  {
-   "entity": "Google DeepMind",
-   "headline": "Gemini 4 Carbon is now available",
-   "date": "Tue, 10 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "Y",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 20 figure-sentence(s); 6 of 20 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 20,
-    "total": 20
-   },
-   "label_schema_version": 2,
-   "content_hash": "c5ec51b945c9d166fee0c810032cb9ffbb5d96f8d61c6edcbc416c5ddd9036d7",
-   "evidence_hash": "9ee86258ddef71c94bc50c80677b7ae4965e93438638bb8b2fbaa8008c49ba2a",
-   "label_source": "machine",
-   "rating": "trusted",
-   "mentions": [
-    {
-     "name": "Meta",
-     "count": 2
-    },
-    {
-     "name": "Perplexity",
-     "count": 1
-    },
-    {
-     "name": "SEC",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "None",
-   "entity_basis": "product:Gemini"
-  },
-  {
-   "entity": "Google DeepMind",
-   "headline": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
-   "date": "Tue, 10 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "n/a",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "no figure in 101 chars of article text",
-   "evidence_method": "rule",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 0
-   },
-   "label_schema_version": 2,
-   "content_hash": "a9303ac49c5b93626616103363f2ca70b06915c98c9d3f76f37a26f47acd5110",
-   "evidence_hash": "25803a5428adf8d0ed9145048f30b901f5a4cf7c7c8bb281d3913fbe39273bfd",
-   "label_source": "machine",
-   "rating": "trusted",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "site"
-  },
-  {
-   "entity": "Google DeepMind",
-   "headline": "Opening the datasets behind our AI weather models",
-   "date": "Tue, 10 Nov 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "N",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "deepmind.google",
-     "url": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
-     "source_type": "vendor-own",
-     "source_tier": 5
-    }
-   ],
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
-   "label_evidence": "model read all 1 figure-sentence(s); 0 of 1 figure-sentence(s) matched a base cue",
-   "evidence_method": "local-model",
-   "evidence_coverage": {
-    "seen": 1,
-    "total": 1
-   },
-   "label_schema_version": 2,
-   "content_hash": "1a32a0ceb36c3c147c5364c16d25cd77cf377712b6fefd3afaf62b87d15a846b",
-   "evidence_hash": "a1c4c6eec7e8c58e32c1d0d8d13d70f1af645de44b5b91e1e387e5b8d9c62ca2",
-   "label_source": "machine",
-   "rating": "trusted",
-   "mentions": [],
-   "publisher_topic": "",
-   "entity_basis": "site"
   },
   {
    "entity": "",
@@ -2022,18 +1691,18 @@
      "source_tier": 2
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 655 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 655 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "9400b5ff1019f02fd562a60d85b4d0e5d1f2177ae29510c0008e9daf60c4b9e9",
    "evidence_hash": "c130bef9238a05dcd66954c055f46c56037d87a989f40a58dbfeadd554aae327",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Nvidia",
@@ -2059,18 +1728,18 @@
      "source_tier": 2
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 733 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 733 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "f6723ea4c33ae6bb2dfc345a281b2b090e05bf918126ed090b7addb15fb138ec",
    "evidence_hash": "0acddeba5e6e6152a084281e67c4e59dd2653ff72c12551278dfe9cb6fd21a08",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [
     {
      "name": "Nvidia",
@@ -2096,18 +1765,18 @@
      "source_tier": 2
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "label_evidence": "no figure in 474 chars of article text",
    "evidence_method": "rule",
    "evidence_coverage": {
     "seen": 0,
     "total": 0
    },
-   "label_evidence": "no figure in 474 chars of article text",
+   "label_schema_version": 2,
    "content_hash": "26b95fbc340996c56f613ad1ab68508e23cb8e6fe059f9abd38749539d72f649",
    "evidence_hash": "61f0bd6d8eb64fcf254435b6b9d09f2ccf0f3cf9f6737a5832a18016cfc65c93",
-   "label_schema_version": 2,
-   "auto_labelled": true,
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "unresolved"
@@ -2314,51 +1983,6 @@
    "mentions": [],
    "publisher_topic": "CoRL",
    "entity_basis": "unresolved"
-  },
-  {
-   "entity": "Apple",
-   "headline": "From CUDA to MLX: How K-Search Brings Decades of Kernel Expertise to Apple Silicon",
-   "date": "Wed, 29 Jul 2026",
-   "topic": "",
-   "claim_type": "unclassified",
-   "denominator_stated": "?",
-   "reviewed": false,
-   "sources": [
-    {
-     "name": "bair.berkeley.edu",
-     "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
-     "source_type": "independent",
-     "source_tier": 2
-    }
-   ],
-   "auto_labelled": true,
-   "label_evidence": "model review skipped; regex did not settle every figure-sentence",
-   "evidence_method": "unassessed",
-   "evidence_coverage": {
-    "seen": 0,
-    "total": 25
-   },
-   "label_schema_version": 2,
-   "content_hash": "c816a7212aa8b27488da7806ace22f547c8e0fd616bb584b78371194c0b360b3",
-   "evidence_hash": "4f817a6ea669410166971ef6c4032e25af19273b85d9f0cc9852c2ddf9ac335e",
-   "label_source": "machine",
-   "rating": "ok",
-   "mentions": [
-    {
-     "name": "Apple",
-     "count": 20
-    },
-    {
-     "name": "Nvidia",
-     "count": 3
-    },
-    {
-     "name": "OpenAI",
-     "count": 1
-    }
-   ],
-   "publisher_topic": "CUDA",
-   "entity_basis": "headline"
   },
   {
    "entity": "",
@@ -3428,19 +3052,19 @@
      "source_tier": 5
     }
    ],
-   "rating": "ok",
+   "auto_labelled": true,
+   "auto_labelled_by": "gemma4:12b",
+   "label_evidence": "model read all 18 figure-sentence(s); 2 of 18 figure-sentence(s) matched a base cue",
    "evidence_method": "local-model",
    "evidence_coverage": {
     "seen": 18,
     "total": 18
    },
-   "label_evidence": "model read all 18 figure-sentence(s); 2 of 18 figure-sentence(s) matched a base cue",
+   "label_schema_version": 2,
    "content_hash": "eeaec05d2b9c393625cd2aa7b7430c8465fe38138439816560120f9fa8f385f7",
    "evidence_hash": "0bf0785cb97ef5586659ebedf5ecdf48837f34cec35fe6b47ce23bb6dc68adb2",
-   "label_schema_version": 2,
-   "auto_labelled": true,
-   "auto_labelled_by": "gemma4:12b",
    "label_source": "machine",
+   "rating": "ok",
    "mentions": [],
    "publisher_topic": "",
    "entity_basis": "headline"

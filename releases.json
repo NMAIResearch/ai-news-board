@@ -1,12 +1,24 @@
 {
- "generated": "2026-11-26 06:21 UTC",
+ "generated": "2026-11-27 06:21 UTC",
  "window_days": 60,
  "counts": {
-  "total": 83,
+  "total": 84,
   "closed": 31,
-  "open_weights": 52
+  "open_weights": 53
  },
  "releases": [
+  {
+   "lab": "Inclusionai",
+   "model": "inclusionAI: LingSante 3.1 Air VL",
+   "id": "inclusionai/lingsante-3.1-air-vl",
+   "date": "2026-11-26",
+   "url": "https://openrouter.ai/inclusionai/lingsante-3.1-air-vl",
+   "context_length": 131072,
+   "evidence": "open-weights",
+   "evidence_note": "weights published at huggingface.co/inclusionAI/LingSante-3.1-air-VL; downloadable and hashable",
+   "hf_id": "inclusionAI/LingSante-3.1-air-VL",
+   "source": "OpenRouter (reseller, tier 4); date is when the model reached OpenRouter"
+  },
   {
    "lab": "Upstage",
    "model": "Upstage: Solar Mini 4.5 (Preview)",
